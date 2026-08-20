@@ -1,0 +1,507 @@
+{
+  "generatedAt": "2026-05-11T22:36:01.792Z",
+  "note": "Frontmatter statistics entries that currently lack a sourceUrl. New statistics added after this snapshot MUST include an https sourceUrl on the ALLOWED_CITATION_HOSTS allowlist. Entries here may keep their stat+source pair, but should migrate to a verified sourceUrl over time and be removed from this file.",
+  "entryCount": 100,
+  "entries": [
+    {
+      "filepath": "packages/shared/src/knowledge/marketing/content/alternatives/classy-alternative.md",
+      "index": 0,
+      "stat": "GoFundMe acquired Classy in January 2022 for $484 million"
+    },
+    {
+      "filepath": "packages/shared/src/knowledge/marketing/content/alternatives/donorbox-alternative.md",
+      "index": 0,
+      "stat": "Donorbox has processed over $2 billion in donations for 50,000+ nonprofits globally as of 2024"
+    },
+    {
+      "filepath": "packages/shared/src/knowledge/marketing/content/alternatives/donorbox-alternative.md",
+      "index": 2,
+      "stat": "Nonprofits using donation-form-only tools as their primary CRM report spending 3-5 hours per week on manual reconciliation between donation records and grant tracking spreadsheets"
+    },
+    {
+      "filepath": "packages/shared/src/knowledge/marketing/content/alternatives/every-action-alternative.md",
+      "index": 1,
+      "stat": "Bonterra's 2022 merger combined EveryAction, Network for Good, Apricot, and other nonprofit software products under one umbrella"
+    },
+    {
+      "filepath": "packages/shared/src/knowledge/marketing/content/alternatives/funraise-alternative.md",
+      "index": 0,
+      "stat": "Funraise was founded in 2016 and serves thousands of nonprofits with fundraising form and campaign tools"
+    },
+    {
+      "filepath": "packages/shared/src/knowledge/marketing/content/alternatives/funraise-alternative.md",
+      "index": 1,
+      "stat": "60%+ of mid-sized nonprofits using fundraising-first platforms report needing a secondary system for donor relationship management"
+    },
+    {
+      "filepath": "packages/shared/src/knowledge/marketing/content/alternatives/kindful-alternative.md",
+      "index": 0,
+      "stat": "Bloomerang acquired Kindful in June 2021 for an undisclosed sum"
+    },
+    {
+      "filepath": "packages/shared/src/knowledge/marketing/content/alternatives/kindful-alternative.md",
+      "index": 1,
+      "stat": "The nonprofit CRM market sees 40%+ of organizations considering platform changes within any 24-month window"
+    },
+    {
+      "filepath": "packages/shared/src/knowledge/marketing/content/alternatives/kindful-alternative.md",
+      "index": 2,
+      "stat": "Mid-sized nonprofits ($500K-$10M budget) managing 3+ active grants typically require separate grant tracking tools when using donor-only CRMs, adding $100-$400/month in supplementary software cost"
+    },
+    {
+      "filepath": "packages/shared/src/knowledge/marketing/content/alternatives/neon-one-alternative.md",
+      "index": 0,
+      "stat": "Neon One has made at least five acquisitions in the nonprofit software space including Arts People, Rallybound, and others"
+    },
+    {
+      "filepath": "packages/shared/src/knowledge/marketing/content/alternatives/nimble-ams-alternative.md",
+      "index": 0,
+      "stat": "Salesforce-based nonprofit implementations (NPSP, Nimble AMS) have typical year-one consulting costs of $15,000-$75,000 based on nonprofit technology survey data"
+    },
+    {
+      "filepath": "packages/shared/src/knowledge/marketing/content/alternatives/qgiv-alternative.md",
+      "index": 0,
+      "stat": "Bloomerang acquired Qgiv in 2024, integrating Qgiv's peer-to-peer and event fundraising tools into the Bloomerang ecosystem"
+    },
+    {
+      "filepath": "packages/shared/src/knowledge/marketing/content/alternatives/qgiv-alternative.md",
+      "index": 1,
+      "stat": "Organizations using fundraising-form-only platforms alongside a separate CRM report managing two separate donor records systems in over 60% of cases"
+    },
+    {
+      "filepath": "packages/shared/src/knowledge/marketing/content/benchmarks/chicago-nonprofit-sector-benchmarks-2026.md",
+      "index": 0,
+      "stat": "Illinois has approximately 73,000 registered 501(c)(3) public charities, with the Chicago metro accounting for approximately 30,000 - roughly 41% of the state total"
+    },
+    {
+      "filepath": "packages/shared/src/knowledge/marketing/content/benchmarks/chicago-nonprofit-sector-benchmarks-2026.md",
+      "index": 1,
+      "stat": "Illinois Attorney General Charitable Trust Bureau registers approximately 23,000 charitable organizations under the Illinois Solicitation for Charity Act, requiring AG-440 annual filings"
+    },
+    {
+      "filepath": "packages/shared/src/knowledge/marketing/content/benchmarks/chicago-nonprofit-sector-benchmarks-2026.md",
+      "index": 2,
+      "stat": "MacArthur Foundation distributed approximately $290 million in grants in 2023; Joyce Foundation distributed approximately $50 million in 2023; together they fund a meaningful share of Chicago-area institutional grant dollars"
+    },
+    {
+      "filepath": "packages/shared/src/knowledge/marketing/content/benchmarks/chicago-nonprofit-sector-benchmarks-2026.md",
+      "index": 3,
+      "stat": "Illinois requires an independent audit attached to AG-990 filings for charitable organizations with gross contributions over $300,000, a notably lower threshold than New York's $1 million"
+    },
+    {
+      "filepath": "packages/shared/src/knowledge/marketing/content/benchmarks/chicago-nonprofit-sector-benchmarks-2026.md",
+      "index": 4,
+      "stat": "Chicago metro nonprofits collectively employ approximately 350,000-400,000 workers across health care, social services, education, and arts subsectors"
+    },
+    {
+      "filepath": "packages/shared/src/knowledge/marketing/content/benchmarks/chicago-nonprofit-sector-benchmarks-2026.md",
+      "index": 5,
+      "stat": "Sector-wide donor retention in Chicago tracks national AFP Fundraising Effectiveness Project data at 43-46%, with first-year retention at 19-23% and multi-year retention at 60-65%"
+    },
+    {
+      "filepath": "packages/shared/src/knowledge/marketing/content/benchmarks/donor-retention-benchmarks-2026.md",
+      "index": 0,
+      "stat": "The sector-wide nonprofit donor retention rate was 43.6% in 2023, meaning 56.4% of donors who gave in 2022 did not make another gift in 2023"
+    },
+    {
+      "filepath": "packages/shared/src/knowledge/marketing/content/benchmarks/donor-retention-benchmarks-2026.md",
+      "index": 1,
+      "stat": "First-year (new) donor retention averages 19-23% - fewer than one in four new donors makes a second gift"
+    },
+    {
+      "filepath": "packages/shared/src/knowledge/marketing/content/benchmarks/donor-retention-benchmarks-2026.md",
+      "index": 2,
+      "stat": "Multi-year (repeat) donor retention averages 60-65%, meaning organizations that cultivate donors through the second gift retain nearly two-thirds in subsequent years"
+    },
+    {
+      "filepath": "packages/shared/src/knowledge/marketing/content/benchmarks/donor-retention-benchmarks-2026.md",
+      "index": 3,
+      "stat": "The average cost to acquire a new donor is $25-$50, compared to $4-$8 to retain an existing donor - a 5:1 to 12:1 cost differential"
+    },
+    {
+      "filepath": "packages/shared/src/knowledge/marketing/content/benchmarks/donor-retention-benchmarks-2026.md",
+      "index": 4,
+      "stat": "A 10-percentage-point improvement in retention rate - from 43% to 53% - increases a nonprofit's five-year cumulative revenue by approximately 25-30%, holding acquisition constant"
+    },
+    {
+      "filepath": "packages/shared/src/knowledge/marketing/content/benchmarks/grant-compliance-benchmarks-2026.md",
+      "index": 0,
+      "stat": "Allowable costs/cost principles findings account for 28% of all compliance findings in nonprofit Single Audits, making it the most frequently cited finding category for five consecutive fiscal years"
+    },
+    {
+      "filepath": "packages/shared/src/knowledge/marketing/content/benchmarks/grant-compliance-benchmarks-2026.md",
+      "index": 1,
+      "stat": "43% of compliance findings in nonprofit Single Audits are repeat findings - findings that were identified in a prior audit period and have not been fully resolved"
+    },
+    {
+      "filepath": "packages/shared/src/knowledge/marketing/content/benchmarks/grant-compliance-benchmarks-2026.md",
+      "index": 2,
+      "stat": "The average disallowance amount for an allowable costs finding at a nonprofit organization is $23,000-$67,000 per finding, depending on award size and the scope of the violation"
+    },
+    {
+      "filepath": "packages/shared/src/knowledge/marketing/content/benchmarks/grant-compliance-benchmarks-2026.md",
+      "index": 3,
+      "stat": "68% of nonprofits that receive a compliance finding in their first Single Audit have no dedicated grant compliance staff - grant management is handled by the executive director, a program director, or a development associate"
+    },
+    {
+      "filepath": "packages/shared/src/knowledge/marketing/content/benchmarks/grant-compliance-benchmarks-2026.md",
+      "index": 4,
+      "stat": "Organizations using dedicated grants management software have a 22-percentage-point lower compliance finding rate than organizations tracking grants in spreadsheets, controlling for organization size and grant portfolio complexity"
+    },
+    {
+      "filepath": "packages/shared/src/knowledge/marketing/content/benchmarks/grant-funding-benchmarks-2026.md",
+      "index": 0,
+      "stat": "Government grants and contracts represent 65% of total grant revenue for human services nonprofits, compared to 38% for arts and culture organizations"
+    },
+    {
+      "filepath": "packages/shared/src/knowledge/marketing/content/benchmarks/grant-funding-benchmarks-2026.md",
+      "index": 1,
+      "stat": "The average time from federal grant application submission to award notification is 4.2 months for competitive discretionary grants"
+    },
+    {
+      "filepath": "packages/shared/src/knowledge/marketing/content/benchmarks/grant-funding-benchmarks-2026.md",
+      "index": 2,
+      "stat": "Renewal win rates for existing government grantees average 68-75% across major federal agencies including HHS, DOJ, and HUD"
+    },
+    {
+      "filepath": "packages/shared/src/knowledge/marketing/content/benchmarks/grant-funding-benchmarks-2026.md",
+      "index": 3,
+      "stat": "New grant win rates from private foundations average 20-25% for unsolicited proposals and 35-45% for invited proposals"
+    },
+    {
+      "filepath": "packages/shared/src/knowledge/marketing/content/benchmarks/houston-nonprofit-sector-benchmarks-2026.md",
+      "index": 0,
+      "stat": "Texas has approximately 117,000 registered 501(c)(3) public charities, with the Houston-The Woodlands-Sugar Land MSA accounting for approximately 15,000 - roughly 13% of the state total"
+    },
+    {
+      "filepath": "packages/shared/src/knowledge/marketing/content/benchmarks/houston-nonprofit-sector-benchmarks-2026.md",
+      "index": 1,
+      "stat": "Houston Endowment, founded by Jesse H. Jones and Mary Gibbs Jones, has approximately $2.7 billion in assets and distributes approximately $90-100 million in grants annually, making it one of the largest single-region private foundations in the United States"
+    },
+    {
+      "filepath": "packages/shared/src/knowledge/marketing/content/benchmarks/houston-nonprofit-sector-benchmarks-2026.md",
+      "index": 2,
+      "stat": "Texas does not require state-level charitable solicitation registration for most 501(c)(3) public charities, in contrast to New York, Illinois, and California; Texas charities file a state Public Information Report (PIR) with the Texas Comptroller and otherwise rely on federal Form 990 for state-level oversight"
+    },
+    {
+      "filepath": "packages/shared/src/knowledge/marketing/content/benchmarks/houston-nonprofit-sector-benchmarks-2026.md",
+      "index": 3,
+      "stat": "United Way of Greater Houston raised approximately $80-90 million in its most recent campaign, distributing funds to a network of approximately 80-100 partner agencies across the Houston region"
+    },
+    {
+      "filepath": "packages/shared/src/knowledge/marketing/content/benchmarks/houston-nonprofit-sector-benchmarks-2026.md",
+      "index": 4,
+      "stat": "Hurricane Harvey (2017) drove approximately $1.6 billion in philanthropic disaster-relief giving to Houston-area nonprofits within 12 months of landfall, the largest single-event philanthropic mobilization in Texas history"
+    },
+    {
+      "filepath": "packages/shared/src/knowledge/marketing/content/benchmarks/houston-nonprofit-sector-benchmarks-2026.md",
+      "index": 5,
+      "stat": "Sector-wide donor retention in Houston tracks national AFP Fundraising Effectiveness Project data at 43-46%, with first-year retention at 19-23% and multi-year retention at 60-65%"
+    },
+    {
+      "filepath": "packages/shared/src/knowledge/marketing/content/benchmarks/los-angeles-nonprofit-sector-benchmarks-2026.md",
+      "index": 0,
+      "stat": "California has approximately 195,000 registered 501(c)(3) public charities, with Los Angeles County accounting for approximately 30,000 - the largest single-county concentration in the state"
+    },
+    {
+      "filepath": "packages/shared/src/knowledge/marketing/content/benchmarks/los-angeles-nonprofit-sector-benchmarks-2026.md",
+      "index": 1,
+      "stat": "LA County's Measure H quarter-cent sales tax for homelessness services generates approximately $355 million annually, the largest dedicated local revenue stream for homelessness services in the country"
+    },
+    {
+      "filepath": "packages/shared/src/knowledge/marketing/content/benchmarks/los-angeles-nonprofit-sector-benchmarks-2026.md",
+      "index": 2,
+      "stat": "California requires Form RRF-1 annual filings from charitable organizations registered with the Registry of Charitable Trusts; the audit threshold is gross revenue of $2 million or more for an attached audit"
+    },
+    {
+      "filepath": "packages/shared/src/knowledge/marketing/content/benchmarks/los-angeles-nonprofit-sector-benchmarks-2026.md",
+      "index": 3,
+      "stat": "LA County nonprofits collectively employ approximately 350,000-400,000 workers, with health care and social services representing the largest single employment subsector"
+    },
+    {
+      "filepath": "packages/shared/src/knowledge/marketing/content/benchmarks/los-angeles-nonprofit-sector-benchmarks-2026.md",
+      "index": 4,
+      "stat": "Sector-wide donor retention in LA tracks national AFP Fundraising Effectiveness Project data at 43-46%, with first-year retention at 19-23% and multi-year retention at 60-65%"
+    },
+    {
+      "filepath": "packages/shared/src/knowledge/marketing/content/benchmarks/los-angeles-nonprofit-sector-benchmarks-2026.md",
+      "index": 5,
+      "stat": "The California Community Foundation distributed approximately $250 million in grants in 2023; the Annenberg Foundation distributed approximately $90 million in 2023 from its LA-area programs"
+    },
+    {
+      "filepath": "packages/shared/src/knowledge/marketing/content/benchmarks/nonprofit-accounting-software-benchmarks-2026.md",
+      "index": 0,
+      "stat": "56% of nonprofits with revenues under $1 million use QuickBooks as their primary accounting system, compared to 22% using a purpose-built nonprofit accounting platform"
+    },
+    {
+      "filepath": "packages/shared/src/knowledge/marketing/content/benchmarks/nonprofit-accounting-software-benchmarks-2026.md",
+      "index": 1,
+      "stat": "The median annual cost of purpose-built nonprofit accounting software (fund accounting with grant tracking) is $4,800-$12,000 for organizations with $500K-$5M budgets"
+    },
+    {
+      "filepath": "packages/shared/src/knowledge/marketing/content/benchmarks/nonprofit-accounting-software-benchmarks-2026.md",
+      "index": 2,
+      "stat": "Organizations using purpose-built fund accounting software spend an average of 6.2 hours per week less on manual reconciliation than those using adapted small-business software"
+    },
+    {
+      "filepath": "packages/shared/src/knowledge/marketing/content/benchmarks/nonprofit-accounting-software-benchmarks-2026.md",
+      "index": 3,
+      "stat": "The average cost to remediate a Single Audit material weakness is $18,000-$42,000 in staff time, audit fees, and corrective action plan implementation"
+    },
+    {
+      "filepath": "packages/shared/src/knowledge/marketing/content/benchmarks/nonprofit-accounting-software-benchmarks-2026.md",
+      "index": 4,
+      "stat": "Only 34% of nonprofits subject to Single Audit (federal expenditures exceeding $1,000,000) have an accounting system capable of producing a Schedule of Expenditures of Federal Awards (SEFA) without manual spreadsheet construction"
+    },
+    {
+      "filepath": "packages/shared/src/knowledge/marketing/content/benchmarks/nonprofit-audit-benchmarks-2026.md",
+      "index": 0,
+      "stat": "Approximately 32,000 nonprofit organizations filed Single Audit reports with the Federal Audit Clearinghouse in fiscal year 2022, representing organizations with federal expenditures exceeding $1,000,000 "
+    },
+    {
+      "filepath": "packages/shared/src/knowledge/marketing/content/benchmarks/nonprofit-audit-benchmarks-2026.md",
+      "index": 1,
+      "stat": "34.8% of Single Audits filed by nonprofit organizations in FY2022 contained at least one finding - either a material weakness, significant deficiency, or compliance finding"
+    },
+    {
+      "filepath": "packages/shared/src/knowledge/marketing/content/benchmarks/nonprofit-audit-benchmarks-2026.md",
+      "index": 2,
+      "stat": "The five most frequent finding categories in nonprofit Single Audits are: allowable costs/cost principles (28% of findings), activities allowed/unallowed (19%), reporting (17%), cash management (14%), and subrecipient monitoring (11%)"
+    },
+    {
+      "filepath": "packages/shared/src/knowledge/marketing/content/benchmarks/nonprofit-audit-benchmarks-2026.md",
+      "index": 3,
+      "stat": "48% of nonprofits that receive a material weakness finding in year one receive a repeat finding in year two, compared to 23% for significant deficiencies"
+    },
+    {
+      "filepath": "packages/shared/src/knowledge/marketing/content/benchmarks/nonprofit-audit-benchmarks-2026.md",
+      "index": 4,
+      "stat": "The average cost to resolve a material weakness - including corrective action plan development, incremental audit fees, and system or process changes - is $18,000-$42,000"
+    },
+    {
+      "filepath": "packages/shared/src/knowledge/marketing/content/benchmarks/nonprofit-crm-adoption-benchmarks-2026.md",
+      "index": 0,
+      "stat": "62% of nonprofits with annual revenues above $500,000 report using a dedicated CRM for donor management; the rate drops to 31% for organizations under $250,000 in revenue"
+    },
+    {
+      "filepath": "packages/shared/src/knowledge/marketing/content/benchmarks/nonprofit-crm-adoption-benchmarks-2026.md",
+      "index": 1,
+      "stat": "Data quality is cited as a top-3 technology challenge by 71% of nonprofits that use a CRM - the most frequently cited challenge for the fifth consecutive year"
+    },
+    {
+      "filepath": "packages/shared/src/knowledge/marketing/content/benchmarks/nonprofit-crm-adoption-benchmarks-2026.md",
+      "index": 2,
+      "stat": "Only 24% of nonprofits that use a CRM report using it for grant tracking - the majority track grants in spreadsheets, even when a CRM is in use for donor management"
+    },
+    {
+      "filepath": "packages/shared/src/knowledge/marketing/content/benchmarks/nonprofit-crm-adoption-benchmarks-2026.md",
+      "index": 3,
+      "stat": "Overall CRM satisfaction in the nonprofit sector averages 3.4 out of 5.0 - below the 3.8 average satisfaction reported for accounting software in the same survey"
+    },
+    {
+      "filepath": "packages/shared/src/knowledge/marketing/content/benchmarks/nonprofit-crm-adoption-benchmarks-2026.md",
+      "index": 4,
+      "stat": "The average cost of CRM implementation - including licensing, configuration, data migration, and training - is $8,000-$22,000 for nonprofits with donor files of 1,000-10,000 records"
+    },
+    {
+      "filepath": "packages/shared/src/knowledge/marketing/content/benchmarks/nonprofit-financial-health-benchmarks-2026.md",
+      "index": 0,
+      "stat": "52% of nonprofits surveyed reported having 3 months or fewer of operating reserves in 2024"
+    },
+    {
+      "filepath": "packages/shared/src/knowledge/marketing/content/benchmarks/nonprofit-financial-health-benchmarks-2026.md",
+      "index": 1,
+      "stat": "36% of nonprofits ended FY2024 operating at a structural deficit - spending more than they earned for the year"
+    },
+    {
+      "filepath": "packages/shared/src/knowledge/marketing/content/benchmarks/nonprofit-financial-health-benchmarks-2026.md",
+      "index": 2,
+      "stat": "Nonprofits with $1M-$5M budgets held a median of 47 days cash on hand in 2023, compared to 91 days for organizations with budgets above $10M"
+    },
+    {
+      "filepath": "packages/shared/src/knowledge/marketing/content/benchmarks/nonprofit-financial-health-benchmarks-2026.md",
+      "index": 3,
+      "stat": "Only 32% of nonprofits reported having a formal operating reserve policy in 2024"
+    },
+    {
+      "filepath": "packages/shared/src/knowledge/marketing/content/benchmarks/nonprofit-overhead-rate-benchmarks.md",
+      "index": 0,
+      "stat": "The median management and general expense ratio for nonprofits with $1M-$5M budgets was 18.3% of total expenses in FY2023"
+    },
+    {
+      "filepath": "packages/shared/src/knowledge/marketing/content/benchmarks/nonprofit-overhead-rate-benchmarks.md",
+      "index": 1,
+      "stat": "Nonprofits with M&G ratios below 12% are 2.3x more likely to have a material audit finding related to financial controls in their most recent audit"
+    },
+    {
+      "filepath": "packages/shared/src/knowledge/marketing/content/benchmarks/nonprofit-overhead-rate-benchmarks.md",
+      "index": 2,
+      "stat": "Only 22% of nonprofits that qualify for a negotiated indirect cost rate under 2 CFR 200.414 have actually negotiated one - leaving federal cost recovery on the table"
+    },
+    {
+      "filepath": "packages/shared/src/knowledge/marketing/content/benchmarks/nonprofit-overhead-rate-benchmarks.md",
+      "index": 3,
+      "stat": "The de minimis indirect cost rate under 2 CFR 200.414(b) is 10% of modified total direct costs (MTDC) - available to any organization that has never had a negotiated rate"
+    },
+    {
+      "filepath": "packages/shared/src/knowledge/marketing/content/benchmarks/nyc-nonprofit-sector-benchmarks-2026.md",
+      "index": 0,
+      "stat": "New York State has approximately 95,000 registered 501(c)(3) public charities, with roughly 40,000 headquartered in New York City according to IRS Business Master File and NCCS data"
+    },
+    {
+      "filepath": "packages/shared/src/knowledge/marketing/content/benchmarks/nyc-nonprofit-sector-benchmarks-2026.md",
+      "index": 1,
+      "stat": "The New York State Charities Bureau registers approximately 87,000 charitable organizations under Article 7-A of the Executive Law, the broadest single-state registry in the country"
+    },
+    {
+      "filepath": "packages/shared/src/knowledge/marketing/content/benchmarks/nyc-nonprofit-sector-benchmarks-2026.md",
+      "index": 2,
+      "stat": "NYC nonprofits collectively report over $200 billion in annual revenue and employ approximately 600,000 workers, making the nonprofit sector roughly 15% of total NYC private-sector employment"
+    },
+    {
+      "filepath": "packages/shared/src/knowledge/marketing/content/benchmarks/nyc-nonprofit-sector-benchmarks-2026.md",
+      "index": 3,
+      "stat": "Government contracts and grants account for approximately 60% of NYC nonprofit revenue across the human services subsector, with city contracts alone exceeding $7 billion annually"
+    },
+    {
+      "filepath": "packages/shared/src/knowledge/marketing/content/benchmarks/nyc-nonprofit-sector-benchmarks-2026.md",
+      "index": 4,
+      "stat": "Approximately 11% of NY State registered charities meet the CHAR500 audit threshold (gross revenue over $1 million in NY State), requiring an independent audit attached to the annual filing"
+    },
+    {
+      "filepath": "packages/shared/src/knowledge/marketing/content/benchmarks/nyc-nonprofit-sector-benchmarks-2026.md",
+      "index": 5,
+      "stat": "Sector-wide donor retention in NYC tracks national AFP Fundraising Effectiveness Project data at 43-46%, with first-year retention at 19-23% and multi-year retention at 60-65%"
+    },
+    {
+      "filepath": "packages/shared/src/knowledge/marketing/content/benchmarks/washington-dc-nonprofit-sector-benchmarks-2026.md",
+      "index": 0,
+      "stat": "The District of Columbia and adjacent jurisdictions (Northern Virginia, Suburban Maryland) collectively host approximately 10,000 registered 501(c)(3) public charities, the highest per-capita nonprofit density of any US metro"
+    },
+    {
+      "filepath": "packages/shared/src/knowledge/marketing/content/benchmarks/washington-dc-nonprofit-sector-benchmarks-2026.md",
+      "index": 1,
+      "stat": "Federal pass-through grants and direct federal contracts can account for 60-70% of revenue across the DC metro human services and policy subsectors, the highest federal-dependency rate of any US metro nonprofit sector"
+    },
+    {
+      "filepath": "packages/shared/src/knowledge/marketing/content/benchmarks/washington-dc-nonprofit-sector-benchmarks-2026.md",
+      "index": 2,
+      "stat": "The Combined Federal Campaign (CFC), the federal employee workplace giving program, raised approximately $80 million in its most recent annual campaign across all CFC zones nationally, with the National Capital Area zone the largest single contributor"
+    },
+    {
+      "filepath": "packages/shared/src/knowledge/marketing/content/benchmarks/washington-dc-nonprofit-sector-benchmarks-2026.md",
+      "index": 3,
+      "stat": "Washington DC has approximately 5,500 nonprofits headquartered in the District alone, plus an estimated 2,500 in Northern Virginia and 2,000 in Suburban Maryland in the adjacent counties"
+    },
+    {
+      "filepath": "packages/shared/src/knowledge/marketing/content/benchmarks/washington-dc-nonprofit-sector-benchmarks-2026.md",
+      "index": 4,
+      "stat": "DC requires charitable solicitation registration through the DC Office of the Attorney General; Virginia requires registration through the Office of Charitable and Regulatory Programs (OCRP); Maryland requires registration through the Secretary of State Charities Division"
+    },
+    {
+      "filepath": "packages/shared/src/knowledge/marketing/content/benchmarks/washington-dc-nonprofit-sector-benchmarks-2026.md",
+      "index": 5,
+      "stat": "Sector-wide donor retention in DC tracks national AFP Fundraising Effectiveness Project data at 43-46%, with first-year retention at 19-23% and multi-year retention at 60-65%"
+    },
+    {
+      "filepath": "packages/shared/src/knowledge/marketing/content/comparisons/blackbaud-nxt-vs-raisers-edge.md",
+      "index": 0,
+      "stat": "Blackbaud has reported 45,000+ customers across its product portfolio in recent annual filings, with Raiser's Edge family products serving a substantial share of US fundraising organizations."
+    },
+    {
+      "filepath": "packages/shared/src/knowledge/marketing/content/comparisons/blackbaud-nxt-vs-raisers-edge.md",
+      "index": 1,
+      "stat": "Blackbaud's 2020 ransomware incident - disclosed publicly - affected hundreds of nonprofit, education, and healthcare customers and remains relevant context for procurement and data-handling decisions on the platform."
+    },
+    {
+      "filepath": "packages/shared/src/knowledge/marketing/content/comparisons/grantpipe-vs-netsuite-nonprofit.md",
+      "index": 2,
+      "stat": "Nonprofit Quarterly and Idealware industry surveys consistently report ERP implementation budgets exceeding $100,000 for organizations adopting NetSuite, Sage Intacct, or comparable enterprise platforms."
+    },
+    {
+      "filepath": "packages/shared/src/knowledge/marketing/content/comparisons/quickbooks-vs-sage-intacct-nonprofits.md",
+      "index": 2,
+      "stat": "Sage Intacct is the AICPA's preferred provider of financial management software, a partnership in place since 2017."
+    },
+    {
+      "filepath": "packages/shared/src/knowledge/marketing/content/guides/switching-from-neon-one.md",
+      "index": 2,
+      "stat": "Industry data from Idealware and TechSoup consistently reports nonprofit CRM migration projects run 6-16 weeks for mid-sized organizations and produce 5-15% recurring donor attrition through transition without proactive communication."
+    },
+    {
+      "filepath": "packages/shared/src/knowledge/marketing/content/lead-magnets/atlanta-grant-deadline-calendar-2026.md",
+      "index": 0,
+      "stat": "The Community Foundation for Greater Atlanta distributed over $200 million in grants in 2023 across competitive, designated, donor-advised, and field-of-interest funds"
+    },
+    {
+      "filepath": "packages/shared/src/knowledge/marketing/content/lead-magnets/atlanta-grant-deadline-calendar-2026.md",
+      "index": 1,
+      "stat": "Robert W. Woodruff Foundation has awarded over $4 billion in grants since its founding, with a current annual giving rate of approximately $200 million"
+    },
+    {
+      "filepath": "packages/shared/src/knowledge/marketing/content/lead-magnets/atlanta-grant-deadline-calendar-2026.md",
+      "index": 2,
+      "stat": "Georgia has approximately 47,000 registered nonprofits, with roughly 60% in the Atlanta metro statistical area"
+    },
+    {
+      "filepath": "packages/shared/src/knowledge/marketing/content/lead-magnets/boston-foundation-funder-map-2026.md",
+      "index": 0,
+      "stat": "Greater Boston has approximately 1,800 private foundations registered with the Massachusetts Attorney General's Non-Profit Organizations/Public Charities Division"
+    },
+    {
+      "filepath": "packages/shared/src/knowledge/marketing/content/lead-magnets/boston-foundation-funder-map-2026.md",
+      "index": 1,
+      "stat": "The Boston Foundation distributed approximately $200 million in grants in FY2023 from its combined discretionary and donor-advised fund pools"
+    },
+    {
+      "filepath": "packages/shared/src/knowledge/marketing/content/lead-magnets/boston-foundation-funder-map-2026.md",
+      "index": 2,
+      "stat": "Cummings Foundation has awarded over $500 million in grants to Massachusetts nonprofits since its founding in 1986, with the annual $30K and $100K open program directing roughly $30 million per year"
+    },
+    {
+      "filepath": "packages/shared/src/knowledge/marketing/content/lead-magnets/denver-foundation-funder-map-2026.md",
+      "index": 0,
+      "stat": "Daniels Fund has awarded over $1.7 billion in grants and scholarships since 2000 across its four-state region (Colorado, New Mexico, Utah, Wyoming)"
+    },
+    {
+      "filepath": "packages/shared/src/knowledge/marketing/content/lead-magnets/denver-foundation-funder-map-2026.md",
+      "index": 1,
+      "stat": "The Denver Foundation distributed over $130 million in grants in 2023 across its community grants and donor-advised fund pools"
+    },
+    {
+      "filepath": "packages/shared/src/knowledge/marketing/content/lead-magnets/denver-foundation-funder-map-2026.md",
+      "index": 2,
+      "stat": "Colorado has approximately 26,000 registered nonprofits, with roughly 60% headquartered in the Denver metro and Front Range corridor"
+    },
+    {
+      "filepath": "packages/shared/src/knowledge/marketing/content/lead-magnets/minneapolis-foundation-funder-map-2026.md",
+      "index": 0,
+      "stat": "McKnight Foundation distributed approximately $130 million in grants in 2023 across its arts, environment, education, and Mississippi River programs"
+    },
+    {
+      "filepath": "packages/shared/src/knowledge/marketing/content/lead-magnets/minneapolis-foundation-funder-map-2026.md",
+      "index": 1,
+      "stat": "Bush Foundation has awarded over $1 billion in grants since its founding in 1953, with current annual grantmaking of approximately $50 million"
+    },
+    {
+      "filepath": "packages/shared/src/knowledge/marketing/content/lead-magnets/minneapolis-foundation-funder-map-2026.md",
+      "index": 2,
+      "stat": "Minnesota has approximately 31,000 registered nonprofits, with roughly half headquartered in the Twin Cities seven-county metro"
+    },
+    {
+      "filepath": "packages/shared/src/knowledge/marketing/content/lead-magnets/seattle-foundation-funder-map-2026.md",
+      "index": 0,
+      "stat": "Seattle Foundation distributed over $235 million in grants in 2023 across its discretionary, donor-advised, and designated fund pools"
+    },
+    {
+      "filepath": "packages/shared/src/knowledge/marketing/content/lead-magnets/seattle-foundation-funder-map-2026.md",
+      "index": 1,
+      "stat": "Bill & Melinda Gates Foundation has awarded over $77.6 billion in grants since inception, the largest cumulative grantmaking total of any private foundation in the United States"
+    },
+    {
+      "filepath": "packages/shared/src/knowledge/marketing/content/lead-magnets/seattle-foundation-funder-map-2026.md",
+      "index": 2,
+      "stat": "Washington State has approximately 36,000 registered nonprofits, with the Puget Sound region accounting for over half"
+    }
+  ]
+}

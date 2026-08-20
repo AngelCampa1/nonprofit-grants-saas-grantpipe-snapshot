@@ -1,0 +1,11 @@
+Myth: entering the grant award amount in your system means the award is set up.
+
+What most organizations actually enter: a grant name, a dollar total, and a due date. That is not a grant setup — it is a note.
+
+A complete grant record has the project period start and end dates from the Notice of Award (not the application), the approved budget broken down by category, the restriction type, every reporting deadline for the full performance period, and the program officer contact. It also needs the accounting system grant code that links expenditures to this award in the GL.
+
+The most common error in setup is using the application budget instead of the approved budget. Funders modify budgets at award time. An application that asked for $50,000 in personnel may be awarded with $42,000 in personnel and the remainder cut entirely. If the system holds the application budget, every budget-vs-actual report for the life of the award is wrong.
+
+The hour invested in a complete setup at week one eliminates a recurring compliance debt that compounds across every expenditure, every report, and every audit.
+
+#grantmanagement #grantcompliance #nonprofitfinance #postwardcompliance

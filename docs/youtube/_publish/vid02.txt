@@ -1,0 +1,51 @@
+Build a grant budget template the way a reviewer reads it and an auditor checks it, and grab the free version (Google Sheets + Excel) below.
+
+Funders reject more budgets for one quiet reason than for asking too much: the numbers don't match the story. The proposal promises one thing, the budget adds up to another, and the reviewer notices before you do. A grant budget isn't a wish list and it isn't a guess. It's a financial argument, and every line is a claim someone can check.
+
+So in this video I build a grant budget from a blank sheet, line by line, with the compliance layer most walkthroughs skip. I build grant-compliance software for a living, so I'm showing you the structure that holds up in a federal review, not the one that just fills the boxes. Everything works in plain Google Sheets or Excel. No add-ons, no macros.
+
+WHAT YOU'LL BUILD
+- The standard federal cost categories, in the order reviewers expect them: Personnel, Fringe, Travel, Equipment, Supplies, Contractual, Other, Indirect.
+- Personnel done right: salary times percent of effort, with fringe as a percentage on top, not folded in or left out.
+- Direct costs broken into units (3 staff times airfare, 25 kits times unit price) instead of one round lump sum.
+- The equipment vs. supplies line: anything $10,000 or more per unit that lasts over a year is equipment (the 2024 Uniform Guidance raised this from $5,000), and it changes your indirect math.
+- A real indirect line using the de minimis rate, which the 2024 Uniform Guidance raised from 10% to 15%, applied to modified total direct costs.
+- Cost share and match: cash vs. in-kind, and the rule that a committed match is a promise you have to document.
+- A budget narrative tab, one sentence per line, the piece that wins or loses more budgets than the math.
+
+⬇️ FREE TEMPLATE (Google Sheets + Excel)
+Drop your email at the link and I'll send both versions to your inbox, with every line item, the indirect calculation, and the budget narrative tab already built:
+https://grantpipe.com/grant-budget-template
+
+Swap in your own numbers and you're ready for your next proposal.
+
+CHAPTERS
+0:00 When the numbers don't match the story
+1:14 Why most grant budgets get rejected
+1:57 The line items funders expect
+3:00 Personnel and fringe, the biggest number
+4:22 The other direct costs
+5:40 Indirect costs and the de minimis rate
+6:58 Cost share and match
+7:51 The budget narrative
+8:57 Allowable costs and the spending window
+9:51 Where a budget template breaks
+10:40 Free template + what's next
+
+FOUR THINGS THAT TRIP PEOPLE UP (all covered in the video)
+- Round numbers: a column of $50,000 and $10,000 tells a reviewer you estimated instead of calculated.
+- The de minimis rate: a lot of older videos still say 10%. As of the 2024 Uniform Guidance it's 15%, applied to modified total direct costs (which leaves out equipment and the part of any subaward over $50,000).
+- Equipment vs. supplies: the $10,000 per-unit, one-year line (raised from $5,000 in the 2024 Uniform Guidance) decides how a cost gets treated in your indirect math.
+- Period of performance: money spent before the start date or after the end date can get disallowed, even when the expense was reasonable.
+
+WHO THIS IS FOR
+Executive directors, development directors, grants managers, and finance leads at nonprofits writing federal, state, or foundation budgets. If you've ever padded round numbers the night before a deadline, this one's for you.
+
+WHERE A TEMPLATE STOPS WORKING
+I'm honest about this in the video. A budget template is built for one moment, the proposal. The day the grant is awarded it has to become a living thing you track against, and that's where a static sheet cracks: budget vs. actual by hand all year, one cost that has to split across two grants, and the sheer volume once you're running several awards at once. That's not you doing it wrong. It's a static template doing exactly what a static template does. When you hit that wall, you want software that keeps the budget alive after the award. That's what I build at GrantPipe (https://grantpipe.com). The template you build here is the right tool for your next proposal.
+
+A quick note: this is general guidance from someone who builds grant-compliance software, not legal or accounting advice. When the rules get specific to your award, check with your funder or your auditor.
+
+Next up: The Single Audit, Explained, without the jargon. Subscribe so you catch it.
+
+#nonprofit #grants #grantwriting #grantbudget #nonprofitfinance #grantcompliance #uniformguidance #grantmanagement

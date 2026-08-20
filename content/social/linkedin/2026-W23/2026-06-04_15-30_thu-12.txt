@@ -1,0 +1,7 @@
+The Donor-to-Grant Reconciliation Template is for the awkward middle.
+
+The CRM has the relationship.
+The ledger has the dollars.
+The grant file has the restriction and reporting trail.
+
+The template gives Development and Finance one worksheet for matching those facts before they drift.

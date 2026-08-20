@@ -1,0 +1,13 @@
+If you import a grant into your CRM, do not stop at the funder name and amount.
+
+Minimum fields worth carrying:
+
+- award ID
+- period of performance
+- approved budget version
+- reporting cadence
+- restriction purpose
+- fund code
+- next report owner
+
+That is the difference between a contact note and a working grant record.

@@ -1,0 +1,190 @@
+---
+import { getPublicApiBaseUrl } from "../lib/public-api-url"
+import BaseLayout from "./base-layout.astro"
+import BreadcrumbNav from "../components/breadcrumb-nav.astro"
+import BlufBlock from "../seo/bluf-block.astro"
+import FunnelCta from "../components/funnel-cta.astro"
+import SidebarCta from "../components/sidebar-cta.astro"
+import TableOfContents from "../components/table-of-contents.astro"
+import SchemaMarkup from "../seo/schema-markup.astro"
+import SiteHeader from "../components/site-header.astro"
+import SiteFooter from "../components/site-footer.astro"
+import { ExitIntentPopup } from "../components/exit-intent-popup"
+import { resolveExitPopupProps } from "../lib/exit-popup-props"
+import { resolveLoginHref } from "../lib/resolve-login-href"
+import { BOTTOM_CTA_TRUST_NOTE } from "../lib/bottom-cta-copy"
+import { buildSidebarCtaProps } from "../lib/sidebar-cta-utils"
+import { buildArticleSchema, mergeFaqSources } from "../lib/schema-builders"
+import { buildGraph, withId } from "../lib/schema-graph"
+import { resolveSchemaImage, buyerStageToSection, ensureTrailingSlash } from "../lib/meta"
+import { shouldShowToc } from "../lib/headings"
+import ArticleMeta from "../components/article-meta.astro"
+import type { TocHeading } from "../lib/headings"
+import type { SiteConfig, BuyerStage, FaqItem, LeadMagnetOffer } from "../types"
+
+interface Props {
+  title: string
+  description: string
+  seoTitle?: string
+  seoDescription?: string
+  bluf: string
+  buyerStage: BuyerStage
+  publishedAt: string
+  updatedAt: string
+  lastReviewedAt?: string
+  verifiedAt?: string
+  canonicalPath: string
+  config: SiteConfig
+  breadcrumbs: { label: string; href: string }[]
+  schemas?: Record<string, unknown>[]
+  maxWidth?: string
+  ctaHeading?: string
+  headings?: TocHeading[]
+  ogImage?: string
+  noindex?: boolean
+  answers?: { question: string; answer: string }[]
+  faqs?: FaqItem[]
+  tags?: string[]
+  sourceUrls?: string[]
+  leadMagnet?: LeadMagnetOffer
+}
+const { title, description, seoTitle, seoDescription, bluf, buyerStage, publishedAt, updatedAt, lastReviewedAt, verifiedAt, canonicalPath, config, breadcrumbs, schemas = [], maxWidth = "max-w-3xl", ctaHeading, headings = [], ogImage, noindex, answers = [], faqs = [], tags, sourceUrls = [], leadMagnet } = Astro.props
+const exitPopupProps = config.exitPopup?.enabled !== false ? resolveExitPopupProps(config) : undefined
+const showToc = shouldShowToc(headings)
+const sidebarCtaProps = buildSidebarCtaProps(config, buyerStage)
+const canonicalUrl = ensureTrailingSlash(`https://${config.domain}${canonicalPath}`)
+
+const orgId = `https://${config.domain}/#organization`
+const articleSchema = buildArticleSchema({
+  headline: title,
+  description,
+  datePublished: publishedAt,
+  dateModified: updatedAt,
+  lastReviewed: lastReviewedAt ?? updatedAt,
+  publisher: { "@id": orgId },
+  author: config.author,
+  image: resolveSchemaImage(config.domain, ogImage, config.defaultOgImage),
+  mainEntityOfPage: canonicalUrl,
+  speakableCssSelectors: [".bluf-block", ".faq-answer", ".answer-block-answer"],
+})
+// Merge frontmatter faqs (primary, wins on conflict) with inline AnswerBlock answers (secondary)
+const faqSchema = mergeFaqSources(faqs, answers)
+const articleId = `${canonicalUrl}#article`
+const graph = buildGraph([
+  withId(articleSchema, articleId),
+  ...schemas,
+  ...(faqSchema ? [faqSchema] : []),
+])
+const publicApiUrl = getPublicApiBaseUrl()
+
+---
+
+<BaseLayout
+  title={seoTitle ?? `${title} | ${config.name}`}
+  description={seoDescription ?? description}
+  canonicalUrl={canonicalUrl}
+  siteName={config.name}
+  publishedAt={publishedAt}
+  updatedAt={updatedAt}
+  twitterSite={config.social?.twitterHandle}
+  articleAuthor={config.author?.name}
+  themeColor={config.theme.primary}
+  theme={config.theme}
+  fonts={config.theme.fonts}
+  preserveMetaTagCopy={seoTitle !== undefined || seoDescription !== undefined || config.preserveMetaTagCopy}
+  appleTouchIcon={config.appleTouchIcon}
+  ogImage={ogImage}
+  noindex={noindex}
+  siteUrl={`https://${config.domain}`}
+  siteLogo={config.logo?.light ? `https://${config.domain}${config.logo.light}` : undefined}
+  analyticsEnabled={config.analytics?.enabled ?? true}
+  enableScrollReveal={false}
+  articleSection={buyerStageToSection(buyerStage)}
+  articleTags={tags}
+  rssUrl="/rss.xml"
+  siteFounder={config.author}
+  siteSameAs={config.sameAs}
+>
+  <SiteHeader
+    slot="header"
+    siteName={config.name}
+    navItems={config.nav?.items}
+    ctaText={config.funnel.bofu.ctaText}
+    ctaHref={config.funnel.bofu.ctaTarget}
+    loginHref={config.appLoginUrl ?? resolveLoginHref(config.funnel.bofu.ctaTarget)}
+    ctaVariant="primary"
+    ctaPill
+    currentPath={Astro.url.pathname}
+    logoLight={config.logo?.light}
+  />
+  <BreadcrumbNav items={breadcrumbs} siteUrl={`https://${config.domain}`} />
+  <div
+    data-editorial-layout
+    data-seo-template-shell
+    class={`px-4 py-[var(--section-py)] ${maxWidth} mx-auto ${showToc || sidebarCtaProps ? "lg:grid lg:grid-cols-[minmax(0,1fr)_240px] lg:gap-10 lg:max-w-5xl" : ""}`}
+  >
+    <article data-editorial-article>
+      <h1 class="mb-4 font-heading text-[length:var(--text-heading)] font-bold text-brand-text">
+        {title}
+      </h1>
+      <hr class="gp-hairline--accent mb-4" />
+      <ArticleMeta
+        publishedAt={publishedAt}
+        updatedAt={updatedAt}
+        lastReviewedAt={lastReviewedAt}
+        verifiedAt={verifiedAt}
+        sourceUrls={sourceUrls}
+      />
+      <BlufBlock text={bluf} />
+      <div class="prose prose-lg max-w-none prose-p:max-w-prose prose-li:max-w-prose">
+        <slot />
+      </div>
+    </article>
+    {(showToc || sidebarCtaProps) && (
+      <aside data-editorial-sidebar data-seo-sidebar-cta>
+        {showToc && <TableOfContents headings={headings} />}
+        {sidebarCtaProps && (
+          <div class={showToc ? "mt-6" : ""}>
+            <SidebarCta {...sidebarCtaProps} />
+          </div>
+        )}
+      </aside>
+    )}
+  </div>
+  <FunnelCta
+    stage={buyerStage}
+    funnel={config.funnel}
+    subtitle={config.funnel.ctaSubtitle}
+    heading={ctaHeading}
+    trustNote={config.copy?.funnelCta?.trustNote}
+    benefitBullets={config.copy?.funnelCta?.benefitBullets}
+    secondaryCtaText={config.copy?.funnelCta?.secondaryCta?.text}
+    secondaryCtaTarget={config.copy?.funnelCta?.secondaryCta?.target}
+  />
+  <section data-seo-bottom-cta class="gp-seo-bottom-cta mx-auto max-w-5xl px-4">
+    <p class="gp-kicker--accent">Ready to test it</p>
+    <h2>Bring the workflow into one system.</h2>
+    <p>{BOTTOM_CTA_TRUST_NOTE}</p>
+    <a href={config.funnel.bofu.ctaTarget} class="btn-primary no-underline">{config.funnel.bofu.ctaText}</a>
+  </section>
+  <SchemaMarkup graph={graph} />
+  {exitPopupProps && (
+    <ExitIntentPopup
+      client:load
+      apiUrl={publicApiUrl}
+      leadMagnet={leadMagnet}
+      {...exitPopupProps}
+    />
+  )}
+  <SiteFooter
+    slot="footer"
+    siteName={config.name}
+    tagline={config.tagline}
+    linkGroups={config.footer?.linkGroups}
+    legalLinks={config.footer?.legalLinks}
+    contactEmail={config.contactEmail}
+    logoLight={config.logo?.light}
+    captureVariant="none"
+    currentPath={Astro.url.pathname}
+  />
+</BaseLayout>

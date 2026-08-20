@@ -1,0 +1,358 @@
+---
+import "../styles/global.css";
+import BillingToggle from "@/components/billing-toggle.astro";
+import ExplainerVideo from "@/components/explainer-video.astro";
+import FinalCta from "@/components/final-cta.astro";
+import FeatureComparisonMatrix from "@/components/feature-comparison-matrix.astro";
+import OfferStack from "@/components/offer-stack.astro";
+import PricingPlanCards from "@/components/pricing-plan-cards.astro";
+import ProductSurface from "@/components/product-surface.astro";
+import { getSignupCtaTarget, shouldShowMobileStickyCta, siteConfig } from "@/config/site";
+import { getAppLoginUrl } from "@/lib/app-url";
+import BaseLayout from "@grantpipe/ui/site/layouts/base-layout.astro";
+import SiteFooter from "@grantpipe/ui/site/components/site-footer.astro";
+import SiteHeader from "@grantpipe/ui/site/components/site-header.astro";
+import { ExitIntentPopup } from "@grantpipe/ui/site/components/exit-intent-popup";
+import { resolveExitPopupProps } from "@grantpipe/ui/site/lib/exit-popup-props";
+import { getPublicApiBaseUrl } from "@grantpipe/ui/site/lib/public-api-url";
+import { getCollection } from "astro:content";
+import { resolveExitLeadMagnetOffer } from "@/lib/lead-magnet-routing";
+import ViewportAwareDetails from "@grantpipe/ui/site/components/viewport-aware-details.astro";
+import {
+  GRANT_CAP_OVERAGE_COPY,
+  GRANT_CAP_SOFT_HEADROOM,
+} from "../../../../packages/shared/src/constants";
+import {
+  FEDERAL_EDITION_SKU,
+  FOUNDER_CONTACT_EMAIL,
+  FOUNDER_LINKEDIN_URL,
+  PLAN_CATALOG,
+  getSelfServePlans,
+} from "../../../../packages/shared/src/pricing";
+import {
+  buildFaqPageSchema,
+  buildProductSchema,
+  buildSoftwareApplicationSchema,
+} from "@grantpipe/ui/site/lib/schema-builders";
+import { buildGraph, withId } from "@grantpipe/ui/site/lib/schema-graph";
+import SchemaMarkup from "@grantpipe/ui/site/seo/schema-markup.astro";
+
+const leadMagnets = await getCollection("lead-magnets");
+const exitLeadMagnet = resolveExitLeadMagnetOffer(siteConfig, leadMagnets, { family: "pricing-breakdown" });
+const exitPopupProps = siteConfig.exitPopup?.enabled !== false ? resolveExitPopupProps(siteConfig) : undefined;
+const publicApiUrl = getPublicApiBaseUrl();
+const federalSku = FEDERAL_EDITION_SKU;
+const pricingUrl = `https://${siteConfig.domain}/pricing/`;
+const trialHref = getSignupCtaTarget();
+const founderMailto = `mailto:${FOUNDER_CONTACT_EMAIL}`;
+const schemaPriceFromCents = (cents: number) => String(Math.round(cents / 100));
+const schemaPlanPriceFromCents = (plan: (typeof PLAN_CATALOG)[number]): string | null => {
+  if (!plan.prices) return null;
+  return schemaPriceFromCents(plan.prices.monthlyCents);
+};
+const starterPlan = PLAN_CATALOG.find((plan) => plan.tier === "starter")!;
+const selfServePlanGuides = getSelfServePlans().map((plan) => ({
+  label: plan.name,
+  body: plan.pricingPageGuide,
+}));
+const pricingProofStats = [
+  { value: String(getSelfServePlans().length), label: "Self-serve plans, one flat price each" },
+  { value: "1 mo", label: "Free trial, no credit card required" },
+  { value: `+${GRANT_CAP_SOFT_HEADROOM}`, label: "Grant soft headroom on every plan before overage" },
+  { value: "Unlimited", label: "Users included on every plan" },
+] as const;
+const federalEditionSurfaceItems = federalSku.features.map((feature) => ({
+  label: feature,
+}));
+const pricingObjections = [
+  {
+    q: "Will this replace our CRM?",
+    a: "GrantPipe stores donor records and donation history, and links them to grants, restrictions, documents, and reports. If your current CRM still matters, start by importing the records you need for grant-funded work.",
+  },
+  {
+    q: "What happens during the trial?",
+    a: "You get a 1-month free trial. No credit card needed. Import a small slice of your data and see if the pipeline, reminders, restrictions, and reports work for your team.",
+  },
+  {
+    q: "What if we outgrow the grant cap?",
+    a: `Each plan includes ${GRANT_CAP_SOFT_HEADROOM}-grant soft headroom. If a short spike becomes the norm, move up a tier or use ${GRANT_CAP_OVERAGE_COPY} pending overage so you do not lose access mid-cycle.`,
+  },
+  {
+    q: "Do we need a consultant or admin?",
+    a: "Self-serve plans are built for staff-led setup. Audit-Ready adds guided onboarding when the import, accounting, or evidence workflow needs closer help. For larger or unusual cases, contact the founder directly.",
+  },
+] as const;
+const visiblePricingFaqs = siteConfig.faqs.slice(0, 8);
+const pricingFaqs = [
+  ...visiblePricingFaqs,
+  {
+    q: "What counts as an active grant for billing?",
+    a: "Active grant definition: for billing-cap purposes, a grant counts as active when its status is awarded, active, reporting, or renewal. Closed, archived, and deleted grants do not count toward plan caps.",
+  },
+  {
+    q: "What happens if we exceed the active-grant cap?",
+    a: `Each plan includes ${GRANT_CAP_SOFT_HEADROOM}-grant soft headroom before hard blocking. Grants above the included cap are tracked as pending overage at ${GRANT_CAP_OVERAGE_COPY}, so a temporary spike does not force an immediate plan change.`,
+  },
+];
+const pricingGraph = buildGraph([
+  withId(
+    buildSoftwareApplicationSchema({
+      name: siteConfig.name,
+      description: siteConfig.metaDescription ?? siteConfig.tagline,
+      url: pricingUrl,
+      brand: { name: siteConfig.name },
+      applicationCategory: "BusinessApplication",
+      operatingSystem: "Web",
+      offers: {
+        price: schemaPlanPriceFromCents(starterPlan) ?? starterPlan.name,
+        priceCurrency: "USD",
+        url: pricingUrl,
+      },
+    }),
+    `${pricingUrl}#software`,
+  ),
+  withId(
+    buildProductSchema({
+      name: "GrantPipe pricing",
+      description: "Transparent pricing for GrantPipe plans.",
+      url: pricingUrl,
+      category: siteConfig.product.category,
+      brand: { name: siteConfig.name },
+      offers:
+        getSelfServePlans().map((plan) => ({
+          price: schemaPlanPriceFromCents(plan) ?? plan.name,
+          priceCurrency: "USD",
+          url: pricingUrl,
+        })) ?? [],
+    }),
+    `${pricingUrl}#pricing-product`,
+  ),
+  withId(buildFaqPageSchema(pricingFaqs), `${pricingUrl}#faq`),
+]);
+---
+
+<BaseLayout
+  title={`Pricing | ${siteConfig.name}`}
+  description="Simple, clear pricing for GrantPipe, the compliance-first grant management system. Pick the plan that fits your grant load. No hidden fees."
+  canonicalUrl={`https://${siteConfig.domain}/pricing/`}
+  siteName={siteConfig.name}
+  ogType="website"
+  twitterSite={siteConfig.social?.twitterHandle}
+  theme={siteConfig.theme}
+  fonts={siteConfig.theme.fonts}
+  themeColor={siteConfig.theme.primary}
+  appleTouchIcon={siteConfig.appleTouchIcon}
+  siteUrl={`https://${siteConfig.domain}`}
+  siteLogo={siteConfig.logo?.light ? `https://${siteConfig.domain}${siteConfig.logo.light}` : undefined}
+  siteFounder={siteConfig.author}
+  siteSameAs={siteConfig.sameAs}
+  showStickyMobileCta={shouldShowMobileStickyCta(Astro.url.pathname)}
+  stickyCtaTarget={trialHref}
+>
+  <SiteHeader
+    slot="header"
+    siteName={siteConfig.name}
+    navItems={siteConfig.nav?.items}
+    ctaText={siteConfig.funnel.bofu.ctaText}
+    ctaHref={siteConfig.funnel.bofu.ctaTarget}
+    loginHref={getAppLoginUrl()}
+    ctaVariant="primary"
+    ctaPill
+    currentPath={Astro.url.pathname}
+    logoLight={siteConfig.logo?.light}
+  />
+
+  <SchemaMarkup graph={pricingGraph} />
+  <main data-marketing-page="pricing">
+    <section class="gp-section" data-hero data-section="hero">
+      <div class="gp-wrap" data-billing-controller="annual">
+        <div class="gp-section-head center">
+          <p class="gp-eyebrow-pill">Plans &amp; pricing</p>
+          <h1>Compliance-first grant management system pricing.</h1>
+          <p>
+            Pick your plan by grant load and proof needs. Starter gets a small team out of
+            spreadsheets. It adds reminders and built-in AI. Growth fits most grant-funded teams.
+            It adds drafting help and higher AI limits. Audit-Ready is for teams facing a review.
+            It adds evidence packages and an auditor portal. Pick the plan that fits first.
+            Read the <a href="/resources/guides/compliance-first-grant-management-system/">compliance-first grant management system guide</a>
+            if you need the category checklist.
+          </p>
+          <BillingToggle page="/pricing" />
+        </div>
+
+        <div class="gp-plan-choice-guide scroll-in" data-section="plan-choice-guide">
+          <div>
+            <span class="gp-type-label">How to choose</span>
+            <h2>Start with fit. Choose billing after the plan makes sense.</h2>
+          </div>
+          <div class="gp-plan-choice-guide__list">
+            {selfServePlanGuides.map((guide) => (
+              <article>
+                <strong>{guide.label}</strong>
+                <p>{guide.body}</p>
+              </article>
+            ))}
+          </div>
+        </div>
+
+        <PricingPlanCards
+          sectionId="plans"
+          showAllFeatures={false}
+          featureLimit={6}
+        />
+      </div>
+    </section>
+
+    <section class="gp-proof-band" data-section="pricing-proof">
+      <div class="gp-wrap scroll-in">
+        <p class="gp-proof-band__lede">
+          The facts that decide which plan fits, before you read a single feature row.
+        </p>
+        <div class="gp-proof-band__grid">
+          {pricingProofStats.map((stat) => (
+            <div class="gp-proof-stat">
+              <p class="gp-proof-stat__value">{stat.value}</p>
+              <p class="gp-proof-stat__label">{stat.label}</p>
+            </div>
+          ))}
+        </div>
+      </div>
+    </section>
+
+    <section class="gp-section alt" data-section="federal-edition">
+      <div class="gp-wrap">
+        <div class="gp-feature-split scroll-in">
+          <div class="gp-feature-split__body gp-enterprise-path__intro">
+            <span class="gp-type-label">{federalSku.eyebrow}</span>
+            <h3>{federalSku.name}</h3>
+            <p>{federalSku.description}</p>
+            <p class="gp-enterprise-path__price">{federalSku.priceAnchor}</p>
+            <span class="gp-type-label">Best for</span>
+            <p class="gp-enterprise-path__bestfit">{federalSku.bestFit}</p>
+            <div class="gp-enterprise-path__actions">
+              <a class="gp-mkt-btn primary" href={founderMailto}>
+                {federalSku.ctaLabel}
+              </a>
+              <a class="gp-mkt-btn secondary" href={FOUNDER_LINKEDIN_URL}>
+                LinkedIn
+              </a>
+            </div>
+          </div>
+          <div class="gp-feature-split__media">
+            <ProductSurface
+              label="Federal Edition rollout"
+              variant="rows"
+              items={federalEditionSurfaceItems}
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <ExplainerVideo
+      eyebrow="Still deciding?"
+      title="See how it works before you pick a tier"
+      body="Watch the 1-minute overview to see how grants, donors, restricted funds, deadlines, documents, and reports fit together. Then start the trial."
+      ctaHref={trialHref}
+      ctaLabel="Start 1-month free trial"
+      variant="compact"
+    />
+
+    <section class="gp-section" data-section="pricing-objections">
+      <div class="gp-wrap">
+        <div class="gp-section-head scroll-in">
+          <p class="gp-eyebrow-pill">Before you compare rows</p>
+          <h2>Four questions teams ask before picking a plan</h2>
+          <p>
+            The matrix matters. But most questions are really about fit, trial risk, and how much
+            work setup takes.
+          </p>
+        </div>
+        <div class="gp-objection-grid">
+          {pricingObjections.map((objection) => (
+            <article class="gp-objection-card scroll-in">
+              <h3>{objection.q}</h3>
+              <p>{objection.a}</p>
+            </article>
+          ))}
+        </div>
+      </div>
+    </section>
+
+    <section class="gp-section alt" data-section="plan-comparison-matrix">
+      <div class="gp-wrap scroll-in">
+        <FeatureComparisonMatrix
+          heading="Plan comparison"
+          caption="What each plan includes, pulled from the same data that controls account access. Use this to see which features are in each tier."
+        />
+      </div>
+    </section>
+
+    <section class="gp-section alt" data-section="offer-stack">
+      <div class="gp-wrap scroll-in">
+        <div class="gp-section-head">
+          <h2 class="gp-section-title">What you get with every trial</h2>
+        </div>
+        <OfferStack />
+      </div>
+    </section>
+
+    <section class="gp-section" data-section="pricing-faq">
+      <div class="gp-wrap gp-faq-layout scroll-in">
+        <div>
+          <h2 class="gp-section-title">Pricing FAQ</h2>
+          <p class="gp-hero-lede">
+            Questions about plans, billing, what each tier includes, and how to get started.
+          </p>
+        </div>
+        <div class="gp-faq-list">
+          {pricingFaqs.map((faq, index) => (
+            <ViewportAwareDetails open={index === 0}>
+              <Fragment slot="summary">{faq.q}</Fragment>
+              <p>{faq.a}</p>
+            </ViewportAwareDetails>
+          ))}
+        </div>
+      </div>
+    </section>
+
+    <section class="gp-section alt" data-section="final-cta">
+      <div class="gp-wrap scroll-in">
+        <p class="gp-kicker--accent">Ready when you are</p>
+        <FinalCta
+          title="Bring your tracker. Walk out with a working pipeline."
+          body="Start a 1-month free trial. Use the import flow to bring in a small tracker slice, no credit card, no setup fees."
+          primaryHref={trialHref}
+          primaryLabel="Start 1-month free trial"
+          secondaryHref="/compare/"
+          secondaryLabel="Compare alternatives"
+          items={[
+            "1-month free trial. No credit card.",
+            "Unlimited users on every plan.",
+            "Cancel anytime. Export your data.",
+          ]}
+        />
+      </div>
+    </section>
+  </main>
+
+  <SiteFooter
+    slot="footer"
+    siteName={siteConfig.name}
+    tagline={siteConfig.tagline}
+    linkGroups={siteConfig.footer?.linkGroups ?? []}
+    legalLinks={siteConfig.footer?.legalLinks ?? []}
+    contactEmail={siteConfig.contactEmail}
+    logoLight={siteConfig.logo?.light}
+    captureVariant="none"
+    currentPath={Astro.url.pathname}
+  />
+  {exitPopupProps && (
+    <ExitIntentPopup
+      client:idle
+      apiUrl={publicApiUrl}
+      {...exitPopupProps}
+      leadMagnet={exitLeadMagnet}
+    />
+  )}
+</BaseLayout>

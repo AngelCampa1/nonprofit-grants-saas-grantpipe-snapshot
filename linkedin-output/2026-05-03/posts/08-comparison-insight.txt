@@ -1,0 +1,13 @@
+Blackbaud vs Bloomerang is a comparison between two operating assumptions, not two products.
+
+Blackbaud assumes the organization can support more software depth, more services, and longer implementation. Pricing runs $5,000-$15,000+/year with $10,000-$50,000+ implementation fees and a 3-6 month rollout.
+
+Bloomerang assumes a leaner team that wants donor workflows working quickly. Pricing is $125-$249/month with no implementation fee and a 1-2 week setup.
+
+The shared limitation: both are strongest on donor and fundraising operations. Neither covers post-award grant compliance and restricted fund tracking cleanly out of the box.
+
+For a grant-active nonprofit, the migration question is whether the next system reduces operating burden after launch — or whether donors live in one system and grant reporting still lives in another.
+
+The reporting walkthrough in the demo reveals that gap faster than any feature comparison.
+
+#blackbaud #bloomerang #nonprofitcrm #grantcompliance

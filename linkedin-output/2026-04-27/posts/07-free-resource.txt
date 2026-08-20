@@ -1,0 +1,9 @@
+The single audit threshold moved to $1,000,000 in federal expenditures, effective for fiscal years ending September 30, 2025 or later. The old figure is out of date.
+
+Most organizations crossing the threshold for the first time discover their documentation isn't where the auditors expect it. The OMB Compliance Supplement defines what gets tested and which programs each requirement applies to. The work is mapping that test list to documentation you already have on hand — not assembling it during fieldwork.
+
+A practical prep approach: build a folder structure organized by compliance requirement (allowable costs, cash management, eligibility, equipment, matching, period of performance, procurement, program income, reporting, subrecipient monitoring, special tests). Keep a running index of where each piece lives. When the auditor asks for the procurement file, you don't go hunting.
+
+Free download — the 2 CFR 200 Audit Prep Checklist organizes the documentation auditors test, by compliance requirement: grantpipe.com/lead-magnets/2-cfr-200-audit-prep-checklist
+
+#singleaudit #2cfr200 #nonprofitaudit #grantcompliance

@@ -1,0 +1,16 @@
+{
+  "name": "grantpipe-yt-video-p1",
+  "private": true,
+  "version": "1.0.0",
+  "type": "module",
+  "description": "Self-contained Hyperframes production for GrantPipe YouTube video P1: Getting Started — Set Up Your Org & Import Your Data.",
+  "scripts": {
+    "voiceover": "node voiceover.mjs",
+    "durations": "node build-durations.mjs",
+    "compositions": "node build-compositions.mjs",
+    "srt": "node gen-srt.mjs"
+  },
+  "dependencies": {
+    "hyperframes": "^0.6.29"
+  }
+}

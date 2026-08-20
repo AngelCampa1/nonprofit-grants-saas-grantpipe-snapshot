@@ -1,0 +1,376 @@
+---
+import "../styles/global.css"
+import BaseLayout from "@grantpipe/ui/site/layouts/base-layout.astro"
+import SiteHeader from "@grantpipe/ui/site/components/site-header.astro"
+import SiteFooter from "@grantpipe/ui/site/components/site-footer.astro"
+import { ensureTrailingSlash } from "@grantpipe/ui/site/lib/meta"
+import Button from "@/components/ui/button.astro"
+import ProductSurface from "@/components/product-surface.astro"
+import { siteConfig, getSignupCtaTarget } from "@/config/site"
+import { getAppLoginUrl } from "@/lib/app-url"
+import { ExitIntentPopup } from "@grantpipe/ui/site/components/exit-intent-popup"
+import { resolveExitPopupProps } from "@grantpipe/ui/site/lib/exit-popup-props"
+import { getPublicApiBaseUrl } from "@grantpipe/ui/site/lib/public-api-url"
+import { getCollection } from "astro:content"
+import { resolveExitLeadMagnetOffer } from "@/lib/lead-magnet-routing"
+
+const canonicalUrl = ensureTrailingSlash(`https://${siteConfig.domain}/about`)
+const leadMagnets = await getCollection("lead-magnets")
+const exitLeadMagnet = resolveExitLeadMagnetOffer(siteConfig, leadMagnets, { family: "solution" })
+const exitPopupProps = siteConfig.exitPopup?.enabled !== false ? resolveExitPopupProps(siteConfig) : undefined
+const publicApiUrl = getPublicApiBaseUrl()
+
+if (!siteConfig.author) {
+  throw new Error("siteConfig.author must be defined to render /about/")
+}
+const author = siteConfig.author
+
+const personSchema = {
+  "@context": "https://schema.org",
+  "@type": "Person",
+  "@id": `${canonicalUrl}#person`,
+  name: author.name,
+  jobTitle: author.jobTitle,
+  url: author.url,
+  sameAs: author.sameAs,
+  worksFor: {
+    "@type": "Organization",
+    name: siteConfig.name,
+    url: `https://${siteConfig.domain}/`,
+  },
+  description:
+    "Principal SDET and founder of GrantPipe. Builder behind a compliance-first grant management system.",
+  knowsAbout: [
+    "Grant management software",
+    "Grant compliance workflows",
+    "Restricted fund tracking software",
+    "Compliance-driven product design",
+    "Software quality engineering",
+  ],
+}
+
+const profilePageSchema = {
+  "@context": "https://schema.org",
+  "@type": "ProfilePage",
+  "@id": `${canonicalUrl}#profilepage`,
+  url: canonicalUrl,
+  name: `About ${siteConfig.author.name} | ${siteConfig.name}`,
+  mainEntity: { "@id": `${canonicalUrl}#person` },
+  isPartOf: { "@type": "WebSite", name: siteConfig.name, url: `https://${siteConfig.domain}/` },
+}
+
+const graph = { "@context": "https://schema.org", "@graph": [personSchema, profilePageSchema] }
+const trialHref = getSignupCtaTarget()
+
+const principles = [
+  {
+    title: "I answer the phone",
+    body: "Every customer message comes to me. No support queue, no ticket system routing you to someone new.",
+  },
+  {
+    title: "Bugs get fixed fast",
+    body: "Confirmed bugs get a fix within 24 hours. You will not wait on a roadmap vote to get something working.",
+  },
+  {
+    title: "Feature requests get a real answer",
+    body: "You tell me what is missing, I tell you honestly whether it fits and when, not a form letter.",
+  },
+]
+---
+
+<BaseLayout
+  title={`About ${siteConfig.author.name} | ${siteConfig.name}`}
+  description={`${siteConfig.author.name}, ${siteConfig.author.jobTitle} of ${siteConfig.name}. Why GrantPipe exists: nonprofits need a compliance-first grant management system for awards, deadlines, restricted funds, donor records, evidence, reporting, and finance context.`}
+  canonicalUrl={canonicalUrl}
+  siteName={siteConfig.name}
+  ogType="profile"
+  twitterSite={siteConfig.social?.twitterHandle}
+  theme={siteConfig.theme}
+  themeColor={siteConfig.theme.primary}
+  appleTouchIcon={siteConfig.appleTouchIcon}
+  fonts={siteConfig.theme.fonts}
+  siteUrl={`https://${siteConfig.domain}`}
+  siteLogo={siteConfig.logo?.light ? `https://${siteConfig.domain}${siteConfig.logo.light}` : undefined}
+  siteFounder={siteConfig.author}
+  siteSameAs={siteConfig.sameAs}
+>
+  <script is:inline type="application/ld+json" set:html={JSON.stringify(graph)} slot="head" />
+
+  <SiteHeader
+    slot="header"
+    siteName={siteConfig.name}
+    navItems={siteConfig.nav?.items}
+    ctaText={siteConfig.funnel.bofu.ctaText}
+    ctaHref={getSignupCtaTarget()}
+    loginHref={getAppLoginUrl()}
+    logoLight={siteConfig.logo?.light}
+  >
+  </SiteHeader>
+
+  <main data-marketing-page="about">
+    <section class="gp-section about-hero">
+      <div class="gp-wrap">
+        <nav aria-label="Breadcrumb" class="about-crumbs">
+          <ol>
+            <li><a href="/">Home</a></li>
+            <li aria-hidden="true">/</li>
+            <li aria-current="page">About</li>
+          </ol>
+        </nav>
+
+        <div class="gp-section-head">
+          <p class="gp-eyebrow-pill">About the builder</p>
+          <h1>A founder's note</h1>
+          <p>
+            GrantPipe is a compliance-first grant management system. The story behind it is
+            shorter than the product itself.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section class="gp-section alt">
+      <div class="gp-wrap">
+        <div class="gp-feature-split">
+          <div class="gp-feature-split__body">
+            <p class="gp-kicker--accent">Why it's built this way</p>
+            <h2 class="gp-section-title">One person, answering every message.</h2>
+            <p>
+              GrantPipe is a solo-operated, bootstrapped business. That might be reason enough to
+              walk away, and I understand why. Reputation matters. This is not a big
+              private-equity company or a VC-funded startup with millions to burn.
+            </p>
+            <p>
+              That is a promise, not a slogan. Feature requests get a real answer, not a link to
+              a roadmap. I built GrantPipe for nonprofit grant compliance, and I want your
+              reporting work to feel lighter because the person who built the tool also answers
+              the phone.
+            </p>
+          </div>
+          <div class="gp-feature-split__media">
+            <ProductSurface
+              label="Direct line"
+              variant="rows"
+              items={[
+                { label: "Support queue", value: "None" },
+                { label: "Who answers", value: author.name },
+                { label: "Confirmed bug fix", status: "Within 24h" },
+              ]}
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="gp-section">
+      <div class="gp-wrap">
+        <div class="gp-section-head center">
+          <p class="gp-kicker--accent">What that means for you</p>
+          <h2>Three commitments, not marketing lines.</h2>
+        </div>
+
+        <div class="gp-step-band">
+          {principles.map((principle) => (
+            <div class="gp-step">
+              <h3>{principle.title}</h3>
+              <p>{principle.body}</p>
+            </div>
+          ))}
+        </div>
+
+        <hr class="gp-hairline--accent mt-7" />
+
+        <blockquote class="about-quote">
+          <p>
+            I read every customer message myself, take every call, and fix confirmed bugs within
+            24 hours.
+          </p>
+          <cite>{author.name}, {author.jobTitle}</cite>
+        </blockquote>
+      </div>
+    </section>
+
+    <section class="gp-section alt">
+      <div class="gp-wrap">
+        <div class="gp-section-head">
+          <p class="gp-kicker--accent">Get in touch</p>
+          <h2>Try it, or just talk it through.</h2>
+          <p>
+            My goal is personal, hands-on service. If that sounds right, start a{" "}
+            <a href={trialHref}>1-month free trial</a>. If you decide not to buy, I'm grateful
+            you tried, and I'd genuinely value your feedback.
+          </p>
+        </div>
+        <p class="about-contact">
+          You can reach me on{" "}
+          <a href="https://www.linkedin.com/in/angelcampa1/">LinkedIn</a>{" "}
+          or by email at{" "}
+          <a href={`mailto:${siteConfig.contactEmail}`}>{siteConfig.contactEmail}</a>.{" "}
+          Looking forward to hearing from you.
+        </p>
+      </div>
+    </section>
+
+    <section class="gp-section gp-section--emerald" aria-label="Start a free trial">
+      <div class="gp-wrap about-cta">
+        <div>
+          <p class="gp-kicker--accent">Ready when you are</p>
+          <h2 class="gp-section-title max-w-[22ch]">Bring a tracker. See real grants in the workspace.</h2>
+          <p>Decide whether GrantPipe fits during the trial. No pressure either way.</p>
+        </div>
+        <Button variant="primary" size="lg" href={trialHref}>
+          Start 1-month free trial &rarr;
+        </Button>
+      </div>
+    </section>
+  </main>
+
+  <SiteFooter
+    slot="footer"
+    siteName={siteConfig.name}
+    tagline={siteConfig.tagline}
+    linkGroups={siteConfig.footer?.linkGroups ?? []}
+    legalLinks={siteConfig.footer?.legalLinks ?? []}
+    logoLight={siteConfig.logo?.light}
+  />
+  {exitPopupProps && (
+    <ExitIntentPopup
+      client:idle
+      apiUrl={publicApiUrl}
+      {...exitPopupProps}
+      leadMagnet={exitLeadMagnet}
+    />
+  )}
+</BaseLayout>
+
+<style>
+  .about-crumbs {
+    margin-bottom: 1.5rem;
+  }
+
+  .about-crumbs ol {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 0.5rem;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    color: var(--gp-ink-500);
+    font-size: 0.875rem;
+  }
+
+  .about-crumbs a {
+    color: var(--gp-ink-600);
+    text-decoration: none;
+    transition: color 0.15s ease;
+  }
+
+  .about-crumbs a:hover,
+  .about-crumbs a:focus-visible {
+    color: var(--gp-emerald-700);
+  }
+
+  .about-crumbs [aria-hidden="true"] {
+    color: var(--gp-ink-300);
+  }
+
+  .about-crumbs [aria-current="page"] {
+    color: var(--gp-ink-700);
+    font-weight: 500;
+  }
+
+  .about-hero {
+    padding-bottom: 0;
+  }
+
+  main[data-marketing-page="about"] .gp-feature-split__body a,
+  main[data-marketing-page="about"] .gp-section-head a {
+    color: var(--gp-emerald-700);
+    text-decoration: underline;
+    text-underline-offset: 3px;
+    text-decoration-thickness: 1px;
+    transition: color 0.15s ease;
+  }
+
+  main[data-marketing-page="about"] .gp-feature-split__body a:hover,
+  main[data-marketing-page="about"] .gp-feature-split__body a:focus-visible,
+  main[data-marketing-page="about"] .gp-section-head a:hover,
+  main[data-marketing-page="about"] .gp-section-head a:focus-visible {
+    color: var(--gp-emerald-800);
+  }
+
+  .about-quote {
+    margin: 2rem auto 0;
+    max-width: 42rem;
+    padding: 1.25rem 1.5rem;
+    border-left: 3px solid var(--gp-emerald-600);
+    background: var(--gp-paper-2);
+    border-radius: var(--radius-md);
+  }
+
+  .about-quote p {
+    margin: 0;
+    color: var(--gp-ink-900);
+    font-family: var(--font-heading);
+    font-size: 1.25rem;
+    font-style: normal;
+    line-height: 1.4;
+    font-weight: 500;
+  }
+
+  .about-quote cite {
+    display: block;
+    margin-top: 0.75rem;
+    color: var(--gp-ink-600);
+    font-size: 0.8125rem;
+    font-style: normal;
+    font-family: var(--font-mono);
+    letter-spacing: 0.04em;
+  }
+
+  .about-contact {
+    margin-top: 1.5rem;
+    color: var(--gp-ink-700);
+    font-size: 1rem;
+    line-height: 1.7;
+  }
+
+  .about-contact a {
+    color: var(--gp-emerald-700);
+    text-decoration: underline;
+    text-underline-offset: 3px;
+    text-decoration-thickness: 1px;
+    transition: color 0.15s ease;
+  }
+
+  .about-contact a:hover,
+  .about-contact a:focus-visible {
+    color: var(--gp-emerald-800);
+  }
+
+  .about-cta {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    align-items: flex-start;
+  }
+
+  .about-cta h2 {
+    margin-top: 0.5rem;
+  }
+
+  .about-cta p {
+    margin-top: 0.75rem;
+    max-width: 34rem;
+  }
+
+  @media (min-width: 760px) {
+    .about-cta {
+      flex-direction: row;
+      align-items: center;
+      justify-content: space-between;
+      gap: 2rem;
+    }
+  }
+</style>

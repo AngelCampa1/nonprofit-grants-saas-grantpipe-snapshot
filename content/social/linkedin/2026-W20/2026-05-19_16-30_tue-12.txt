@@ -1,0 +1,7 @@
+We decided early on that GrantPipe would not have a hard cap on the number of grants you can track at any pricing tier.
+
+Hard caps are how vendors force upgrades on customers who are already paying. A nonprofit that just closed a fifth grant should not have to call sales because the system locked them out of entering the sixth.
+
+Instead we use a soft headroom: a five-grant buffer above your stated tier, with a calm notice that you have grown into the next plan. No interrupted workflow. No locked records. Just a heads-up.
+
+The principle: the software should never be the reason a Finance Director cannot do their job today. Pricing changes can wait until tomorrow.

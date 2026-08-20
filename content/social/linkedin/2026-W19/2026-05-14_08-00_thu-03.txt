@@ -1,0 +1,9 @@
+If a federal program officer called this morning and asked for your Q2 SF-425 numbers, how long until you could read them out?
+
+Be honest. Are they in the accounting system, a working spreadsheet, or three places that do not match?
+
+The FFR (Federal Financial Report, formerly SF-425) wants cash receipts, cash disbursements, federal share of expenditures, and obligations as of the report date. Cash basis, accrual basis, or both, depending on the award.
+
+An org can rebuild it given a week. The actual job is being able to answer in 10 minutes, the day the call comes, with numbers your auditor will not flag in the fall.
+
+That gap (between "we can produce it" and "we can produce it on demand") is where compliance risk hides.

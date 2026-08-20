@@ -1,0 +1,11 @@
+Step 3 of a subaward budget modification: apply the 10% rule before you escalate.
+
+Under 2 CFR 200.308(e)(4), a non-federal entity may transfer funds among direct cost categories when the total of transfers does not exceed 10% of the total award budget and the change does not alter project scope. Inside that envelope, the pass-through can approve a subrecipient request without going up to the federal awarding agency.
+
+Step 4 is where most pass-throughs get the sequence wrong. If the modification crosses 10%, changes scope, adds equipment that wasn't budgeted, or touches a category the prime award restricted, federal prior approval is required before the pass-through can approve the subrecipient.
+
+Tell the subrecipient up front: federal prior approval typically runs four to twelve weeks depending on the agency. That sets the modification request deadline to roughly three months before the change needs to take effect.
+
+Document the 10% calculation in the file. Auditors look for the math, not just the email.
+
+#subawardmanagement #uniformguidance #grantcompliance #2cfr200

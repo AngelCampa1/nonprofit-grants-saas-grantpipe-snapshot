@@ -1,0 +1,13 @@
+A federal pass-through award is not a federal grant. The difference matters at audit time.
+
+Pass-through means the dollars start federal (HHS, HUD), travel through a state agency or a larger nonprofit, and land at your org under a sub-award. You are the sub-recipient.
+
+Three things change.
+
+The original ALN (formerly CFDA) follows the dollars to you for single audit reporting on the SEFA.
+
+The pass-through entity is required to monitor you under 2 CFR 200.332. That is where the desk reviews come from.
+
+Your reporting cadence and allowable cost rules come from both the federal terms and the pass-through's own conditions, whichever is stricter.
+
+Read the sub-award agreement before you read the program narrative.

@@ -1,0 +1,967 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Compare — GrantPipe vs alternatives</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Spectral:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="gp-shared.css" />
+    <style>
+      .page-head {
+        padding: 64px 0 36px;
+        text-align: center;
+      }
+      .page-head h1 {
+        font-family: var(--display);
+        font-weight: 600;
+        font-size: clamp(36px, 4.6vw, 56px);
+        line-height: 1.06;
+        letter-spacing: -0.02em;
+        margin: 14px 0 12px;
+      }
+      .page-head p.lede {
+        max-width: 660px;
+        margin: 0 auto;
+        font-size: 18px;
+        color: var(--ink-700);
+      }
+
+      /* alt cards */
+      .alts {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 14px;
+        margin-bottom: 56px;
+      }
+      @media (max-width: 980px) {
+        .alts {
+          grid-template-columns: repeat(2, 1fr);
+        }
+      }
+      @media (max-width: 560px) {
+        .alts {
+          grid-template-columns: 1fr;
+        }
+      }
+      .alt {
+        background: var(--card);
+        border: 1px solid var(--ink-100);
+        border-radius: var(--rad-lg);
+        padding: 22px;
+      }
+      .alt h3 {
+        font-family: var(--display);
+        font-weight: 600;
+        font-size: 19px;
+        margin: 0 0 4px;
+      }
+      .alt .who {
+        font-family: var(--mono);
+        font-size: 11px;
+        color: var(--ink-500);
+        text-transform: uppercase;
+        letter-spacing: 0.06em;
+        margin-bottom: 12px;
+      }
+      .alt p {
+        font-size: 13.5px;
+        color: var(--ink-700);
+        margin: 0 0 14px;
+        line-height: 1.5;
+      }
+      .alt .row {
+        display: flex;
+        justify-content: space-between;
+        padding: 6px 0;
+        font-size: 12.5px;
+        border-top: 1px dashed var(--ink-200);
+      }
+      .alt .row .l {
+        color: var(--ink-500);
+      }
+      .alt .row .v {
+        font-family: var(--mono);
+        font-weight: 600;
+        color: var(--ink-900);
+      }
+      .alt .row .v.warn {
+        color: var(--warn);
+      }
+      .alt .row .v.bad {
+        color: var(--danger);
+      }
+      .alt .row .v.good {
+        color: var(--emerald-700);
+      }
+
+      /* compare matrix (reuse styles from pricing matrix) */
+      .matrix {
+        background: var(--card);
+        border: 1px solid var(--ink-100);
+        border-radius: var(--rad-lg);
+        overflow: hidden;
+        margin-bottom: 64px;
+      }
+      .matrix table {
+        border-collapse: collapse;
+        width: 100%;
+        font-size: 13.5px;
+      }
+      .matrix thead th {
+        background: var(--paper-2);
+        font-family: var(--mono);
+        font-size: 10.5px;
+        letter-spacing: 0.06em;
+        text-transform: uppercase;
+        color: var(--ink-500);
+        text-align: left;
+        padding: 14px 16px;
+        border-bottom: 1px solid var(--ink-100);
+        font-weight: 500;
+      }
+      .matrix thead th.col {
+        text-align: center;
+        font-family: var(--display);
+        font-size: 16px;
+        letter-spacing: -0.01em;
+        text-transform: none;
+        color: var(--ink-700);
+        font-weight: 600;
+      }
+      .matrix thead th.col.us {
+        color: var(--emerald-700);
+      }
+      .matrix thead th.col.us::after {
+        content: "GrantPipe";
+        display: none;
+      }
+      .matrix tbody tr td:first-child {
+        color: var(--ink-900);
+        font-weight: 500;
+      }
+      .matrix tbody td {
+        padding: 12px 16px;
+        border-bottom: 1px solid var(--ink-100);
+        color: var(--ink-700);
+        text-align: center;
+      }
+      .matrix tbody td:first-child {
+        text-align: left;
+      }
+      .matrix tbody td.us {
+        background: color-mix(in oklab, var(--emerald-50) 60%, var(--card));
+      }
+      .matrix tbody tr.cat td {
+        background: var(--paper-2);
+        font-family: var(--mono);
+        font-size: 10.5px;
+        letter-spacing: 0.06em;
+        text-transform: uppercase;
+        color: var(--ink-500);
+        text-align: left;
+        font-weight: 500;
+        padding: 10px 16px;
+      }
+      .matrix .yes {
+        color: var(--emerald-700);
+        font-weight: 600;
+      }
+      .matrix .no {
+        color: var(--ink-300);
+      }
+      .matrix .partial {
+        color: var(--gold-700);
+      }
+      .matrix .num {
+        font-family: var(--mono);
+        font-size: 12.5px;
+      }
+
+      /* head-to-head sections */
+      .h2h {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 14px;
+        margin-bottom: 64px;
+      }
+      @media (max-width: 880px) {
+        .h2h {
+          grid-template-columns: 1fr;
+        }
+      }
+      .h2h-card {
+        background: var(--card);
+        border: 1px solid var(--ink-100);
+        border-radius: var(--rad-lg);
+        padding: 28px;
+      }
+      .h2h-card.us {
+        background: var(--emerald-900);
+        color: #fff;
+        border-color: var(--emerald-900);
+        position: relative;
+        overflow: hidden;
+      }
+      .h2h-card.us::before {
+        content: "";
+        position: absolute;
+        right: -80px;
+        top: -80px;
+        width: 240px;
+        height: 240px;
+        border-radius: 50%;
+        background: radial-gradient(circle, rgba(184, 137, 40, 0.15), transparent 60%);
+      }
+      .h2h-card .lab {
+        font-family: var(--mono);
+        font-size: 11px;
+        letter-spacing: 0.08em;
+        text-transform: uppercase;
+        color: var(--ink-500);
+        margin-bottom: 4px;
+      }
+      .h2h-card.us .lab {
+        color: var(--gold-500);
+      }
+      .h2h-card h3 {
+        font-family: var(--display);
+        font-weight: 600;
+        font-size: 24px;
+        line-height: 1.18;
+        letter-spacing: -0.01em;
+        margin: 0 0 14px;
+      }
+      .h2h-card ul {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        display: grid;
+        gap: 10px;
+      }
+      .h2h-card li {
+        display: flex;
+        gap: 10px;
+        align-items: flex-start;
+        font-size: 14.5px;
+        line-height: 1.45;
+      }
+      .h2h-card li svg {
+        flex-shrink: 0;
+        margin-top: 3px;
+      }
+      .h2h-card.us li {
+        color: #d4ebe1;
+      }
+      .h2h-card.us li svg {
+        color: var(--gold-500);
+      }
+      .h2h-card li svg {
+        color: var(--ink-300);
+      }
+      .h2h-card.bad li svg {
+        color: var(--danger);
+      }
+
+      .why-row {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 14px;
+        margin-bottom: 64px;
+      }
+      @media (max-width: 880px) {
+        .why-row {
+          grid-template-columns: 1fr;
+        }
+      }
+      .why {
+        background: var(--card);
+        border: 1px solid var(--ink-100);
+        border-radius: var(--rad-lg);
+        padding: 24px;
+      }
+      .why .num {
+        font-family: var(--display);
+        font-weight: 600;
+        font-size: 28px;
+        color: var(--gold-600);
+        line-height: 1;
+        margin-bottom: 8px;
+      }
+      .why h4 {
+        font-family: var(--display);
+        font-weight: 600;
+        font-size: 18px;
+        margin: 0 0 6px;
+        letter-spacing: -0.01em;
+      }
+      .why p {
+        color: var(--ink-700);
+        font-size: 14px;
+        margin: 0;
+        line-height: 1.5;
+      }
+    </style>
+  </head>
+  <body data-screen-label="Compare">
+    <header class="top">
+      <div class="wrap top-inner">
+        <a class="brand" href="GrantPipe Landing v2 Dashboard.html">
+          <span class="brand-mark">G</span>
+          GrantPipe
+        </a>
+        <nav>
+          <a href="GrantPipe Landing v2 Dashboard.html">Product</a>
+          <a href="resources.html">Resources</a>
+          <a href="pricing.html">Pricing</a>
+          <a href="compare.html" style="color: var(--emerald-700)">Compare</a>
+        </nav>
+        <div class="top-cta">
+          <a class="btn btn-link" href="#">Sign in</a>
+          <a class="btn btn-primary" href="#">Start free trial</a>
+        </div>
+      </div>
+    </header>
+
+    <section class="page-head">
+      <div class="wrap-narrow">
+        <span class="eyebrow"><span class="dot"></span>Compare</span>
+        <h1>How GrantPipe stacks up.</h1>
+        <p class="lede">
+          An honest look at the tools nonprofits actually use to run grants—what each one is good
+          at, where they fall short, and where GrantPipe fits.
+        </p>
+      </div>
+    </section>
+
+    <div class="wrap">
+      <!-- alt cards summary -->
+      <div class="alts">
+        <div class="alt">
+          <h3>Spreadsheets</h3>
+          <div class="who">Excel · Google Sheets · Airtable</div>
+          <p>The default. Free, flexible, falls apart somewhere between grant 8 and grant 15.</p>
+          <div class="row"><span class="l">Cost</span><span class="v good">10–120/mo</span></div>
+          <div class="row">
+            <span class="l">Setup time</span><span class="v good">Minutes</span>
+          </div>
+          <div class="row"><span class="l">Audit-ready</span><span class="v bad">No</span></div>
+          <div class="row">
+            <span class="l">Restricted funds</span><span class="v bad">Manual</span>
+          </div>
+        </div>
+        <div class="alt">
+          <h3>Donor CRMs</h3>
+          <div class="who">Bloomerang · DonorPerfect · Little Green Light</div>
+          <p>Built for individual giving. Bolted-on grant tracking that doesn't speak finance.</p>
+          <div class="row"><span class="l">Cost</span><span class="v warn">1120–1500/mo</span></div>
+          <div class="row">
+            <span class="l">Setup time</span><span class="v warn">2–4 weeks</span>
+          </div>
+          <div class="row"><span class="l">Audit-ready</span><span class="v bad">No</span></div>
+          <div class="row">
+            <span class="l">Restricted funds</span><span class="v bad">Bolt-on</span>
+          </div>
+        </div>
+        <div class="alt">
+          <h3>Salesforce NPSP</h3>
+          <div class="who">+ Salesforce Grants Mgmt</div>
+          <p>Powerful, infinitely configurable. Needs an admin you don't have.</p>
+          <div class="row"><span class="l">Cost</span><span class="v warn">160+/user/mo</span></div>
+          <div class="row">
+            <span class="l">Setup time</span><span class="v bad">3–9 months</span>
+          </div>
+          <div class="row">
+            <span class="l">Audit-ready</span><span class="v warn">With config</span>
+          </div>
+          <div class="row">
+            <span class="l">Restricted funds</span><span class="v warn">Custom build</span>
+          </div>
+        </div>
+        <div
+          class="alt"
+          style="border-color: var(--emerald-700); box-shadow: 0 0 0 4px var(--emerald-50)"
+        >
+          <h3 style="color: var(--emerald-700)">GrantPipe</h3>
+          <div class="who">Donor CRM + grants + funds</div>
+          <p>
+            One record for funder, board, audit, and finance. Built for the team running the work.
+          </p>
+          <div class="row">
+            <span class="l">Cost</span><span class="v good">1165–1665/mo flat</span>
+          </div>
+          <div class="row">
+            <span class="l">Setup time</span><span class="v good">Same day</span>
+          </div>
+          <div class="row">
+            <span class="l">Audit-ready</span><span class="v good">Native</span>
+          </div>
+          <div class="row">
+            <span class="l">Restricted funds</span><span class="v good">Native (ASC 958)</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- big matrix -->
+      <div class="s-head" style="margin-bottom: 24px">
+        <span class="eyebrow"><span class="dot"></span>Feature comparison</span>
+        <h2>Feature by feature.</h2>
+        <p>The honest version. Where competitors do something well, I say so.</p>
+      </div>
+      <div class="matrix">
+        <table>
+          <thead>
+            <tr>
+              <th>Feature</th>
+              <th class="col">Spreadsheets</th>
+              <th class="col">Donor CRM</th>
+              <th class="col">Salesforce NPSP</th>
+              <th class="col us">GrantPipe</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr class="cat">
+              <td colspan="5">Pipeline &amp; pursuit</td>
+            </tr>
+            <tr>
+              <td>Grant pipeline (lead → report)</td>
+              <td class="partial">DIY</td>
+              <td class="partial">Limited</td>
+              <td class="yes">●</td>
+              <td class="us yes">●</td>
+            </tr>
+            <tr>
+              <td>Federal grants search (Grants.gov)</td>
+              <td class="no">—</td>
+              <td class="no">—</td>
+              <td class="no">—</td>
+              <td class="us yes">●</td>
+            </tr>
+            <tr>
+              <td>Deadline reminders</td>
+              <td class="partial">Manual</td>
+              <td class="yes">●</td>
+              <td class="yes">●</td>
+              <td class="us yes">●</td>
+            </tr>
+            <tr>
+              <td>Pipeline forecasting</td>
+              <td class="partial">Manual</td>
+              <td class="partial">Limited</td>
+              <td class="yes">●</td>
+              <td class="us yes">●</td>
+            </tr>
+
+            <tr class="cat">
+              <td colspan="5">Donor &amp; relationship</td>
+            </tr>
+            <tr>
+              <td>Donor CRM</td>
+              <td class="no">—</td>
+              <td class="yes">●</td>
+              <td class="yes">●</td>
+              <td class="us yes">●</td>
+            </tr>
+            <tr>
+              <td>Individual gift tracking</td>
+              <td class="partial">Manual</td>
+              <td class="yes">●</td>
+              <td class="yes">●</td>
+              <td class="us yes">●</td>
+            </tr>
+            <tr>
+              <td>Email integration</td>
+              <td class="no">—</td>
+              <td class="yes">●</td>
+              <td class="yes">●</td>
+              <td class="us yes">●</td>
+            </tr>
+
+            <tr class="cat">
+              <td colspan="5">Financials &amp; compliance</td>
+            </tr>
+            <tr>
+              <td>Restricted-fund tracking</td>
+              <td class="partial">Side sheet</td>
+              <td class="partial">Bolt-on</td>
+              <td class="partial">Custom build</td>
+              <td class="us yes">●</td>
+            </tr>
+            <tr>
+              <td>FASB ASC 958 fund accounting</td>
+              <td class="no">—</td>
+              <td class="no">—</td>
+              <td class="partial">Custom build</td>
+              <td class="us yes">●</td>
+            </tr>
+            <tr>
+              <td>Program allocation &amp; budget vs actual</td>
+              <td class="partial">DIY</td>
+              <td class="no">—</td>
+              <td class="partial">Custom build</td>
+              <td class="us yes">●</td>
+            </tr>
+            <tr>
+              <td>Audit-ready exports</td>
+              <td class="no">—</td>
+              <td class="no">—</td>
+              <td class="partial">With config</td>
+              <td class="us yes">●</td>
+            </tr>
+
+            <tr class="cat">
+              <td colspan="5">Reporting</td>
+            </tr>
+            <tr>
+              <td>Board-ready exports (PDF / CSV)</td>
+              <td class="partial">Manual</td>
+              <td class="partial">Limited</td>
+              <td class="yes">●</td>
+              <td class="us yes">●</td>
+            </tr>
+            <tr>
+              <td>Funder report templates</td>
+              <td class="no">—</td>
+              <td class="no">—</td>
+              <td class="partial">Custom build</td>
+              <td class="us yes">●</td>
+            </tr>
+            <tr>
+              <td>Compliance report packs</td>
+              <td class="no">—</td>
+              <td class="no">—</td>
+              <td class="partial">Custom build</td>
+              <td class="us yes">●</td>
+            </tr>
+
+            <tr class="cat">
+              <td colspan="5">Setup &amp; cost</td>
+            </tr>
+            <tr>
+              <td>Time to first useful day</td>
+              <td class="num">Hours</td>
+              <td class="num">2–4 weeks</td>
+              <td class="num">3–9 months</td>
+              <td class="us num">Same day</td>
+            </tr>
+            <tr>
+              <td>Pricing model</td>
+              <td>Per seat</td>
+              <td>Per record</td>
+              <td>Per user</td>
+              <td class="us">Per active grant</td>
+            </tr>
+            <tr>
+              <td>Unlimited users included</td>
+              <td class="no">—</td>
+              <td class="no">—</td>
+              <td class="no">—</td>
+              <td class="us yes">●</td>
+            </tr>
+            <tr>
+              <td>Setup fees</td>
+              <td class="num">10</td>
+              <td class="num">1500–12k</td>
+              <td class="num">15k+</td>
+              <td class="us num">10</td>
+            </tr>
+            <tr>
+              <td>Salesforce admin required</td>
+              <td class="yes">No</td>
+              <td class="yes">No</td>
+              <td class="no">Yes</td>
+              <td class="us yes">No</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <!-- head to head: GrantPipe vs spreadsheets -->
+      <div class="s-head">
+        <h2
+          style="
+            font-family: var(--display);
+            font-size: 28px;
+            font-weight: 600;
+            letter-spacing: -0.015em;
+            margin: 0 0 4px;
+          "
+        >
+          GrantPipe vs spreadsheets
+        </h2>
+        <p>The default tooling. Why it stops working.</p>
+      </div>
+      <div class="h2h">
+        <div class="h2h-card bad">
+          <div class="lab">Spreadsheets</div>
+          <h3>Free, fast, fragile.</h3>
+          <ul>
+            <li>
+              <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
+                <path
+                  d="M3 3l10 10M13 3L3 13"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                /></svg
+              >One person owns the file. When they're out, the org is blind.
+            </li>
+            <li>
+              <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
+                <path
+                  d="M3 3l10 10M13 3L3 13"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                /></svg
+              >Restricted funds tracked in a side tab no auditor will accept.
+            </li>
+            <li>
+              <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
+                <path
+                  d="M3 3l10 10M13 3L3 13"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                /></svg
+              >"What's our grant position?" takes a Monday morning to answer.
+            </li>
+            <li>
+              <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
+                <path
+                  d="M3 3l10 10M13 3L3 13"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                /></svg
+              >Board reports are screenshots. Audit prep is panic.
+            </li>
+            <li>
+              <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
+                <path
+                  d="M3 3l10 10M13 3L3 13"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                /></svg
+              >No deadline alerts. You miss one grant a year, average.
+            </li>
+          </ul>
+        </div>
+        <div class="h2h-card us">
+          <div class="lab">GrantPipe</div>
+          <h3>One record. Same answer for everyone.</h3>
+          <ul>
+            <li>
+              <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
+                <path
+                  d="M3 8.5l3 3 7-7"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                /></svg
+              >Imports your existing tracker. You don't lose the work you've done.
+            </li>
+            <li>
+              <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
+                <path
+                  d="M3 8.5l3 3 7-7"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                /></svg
+              >Restricted funds are first-class. ASC 958 native, not a side sheet.
+            </li>
+            <li>
+              <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
+                <path
+                  d="M3 8.5l3 3 7-7"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                /></svg
+              >Real-time pipeline + restricted position. Your treasurer can self-serve.
+            </li>
+            <li>
+              <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
+                <path
+                  d="M3 8.5l3 3 7-7"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                /></svg
+              >Board exports and audit packs are one click.
+            </li>
+            <li>
+              <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
+                <path
+                  d="M3 8.5l3 3 7-7"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                /></svg
+              >Deadline reminders + federal-grants search built in.
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- head to head: GrantPipe vs Salesforce -->
+      <div class="s-head">
+        <h2
+          style="
+            font-family: var(--display);
+            font-size: 28px;
+            font-weight: 600;
+            letter-spacing: -0.015em;
+            margin: 0 0 4px;
+          "
+        >
+          GrantPipe vs Salesforce NPSP
+        </h2>
+        <p>The enterprise option. Why it's a heavy lift for most nonprofits.</p>
+      </div>
+      <div class="h2h">
+        <div class="h2h-card bad">
+          <div class="lab">Salesforce NPSP + Grants Management</div>
+          <h3>Powerful, but it needs a person.</h3>
+          <ul>
+            <li>
+              <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
+                <path
+                  d="M3 3l10 10M13 3L3 13"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                /></svg
+              >3–9 month implementation. Often a consultant on retainer.
+            </li>
+            <li>
+              <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
+                <path
+                  d="M3 3l10 10M13 3L3 13"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                /></svg
+              >Restricted-fund accounting is a custom build, not a feature.
+            </li>
+            <li>
+              <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
+                <path
+                  d="M3 3l10 10M13 3L3 13"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                /></svg
+              >Per-user licensing punishes inviting your auditor or board.
+            </li>
+            <li>
+              <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
+                <path
+                  d="M3 3l10 10M13 3L3 13"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                /></svg
+              >Configuration drift: your setup ages out as Salesforce changes.
+            </li>
+            <li>
+              <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
+                <path
+                  d="M3 3l10 10M13 3L3 13"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                /></svg
+              >10 nonprofit grants discount, but you still need an admin.
+            </li>
+          </ul>
+        </div>
+        <div class="h2h-card us">
+          <div class="lab">GrantPipe</div>
+          <h3>Built for the team running the work.</h3>
+          <ul>
+            <li>
+              <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
+                <path
+                  d="M3 8.5l3 3 7-7"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                /></svg
+              >Up and running same day. No admin, no consultants.
+            </li>
+            <li>
+              <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
+                <path
+                  d="M3 8.5l3 3 7-7"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                /></svg
+              >Fund accounting is the core, not an add-on package.
+            </li>
+            <li>
+              <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
+                <path
+                  d="M3 8.5l3 3 7-7"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                /></svg
+              >Unlimited users on every plan. Auditor and treasurer included.
+            </li>
+            <li>
+              <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
+                <path
+                  d="M3 8.5l3 3 7-7"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                /></svg
+              >Opinionated workflows—no config rabbit holes.
+            </li>
+            <li>
+              <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
+                <path
+                  d="M3 8.5l3 3 7-7"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                /></svg
+              >Pricing scales with grants, not seats.
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- why we win -->
+      <div class="s-head">
+        <h2
+          style="
+            font-family: var(--display);
+            font-size: 28px;
+            font-weight: 600;
+            letter-spacing: -0.015em;
+            margin: 0 0 4px;
+          "
+        >
+          Where GrantPipe fits
+        </h2>
+        <p>And where it doesn't. I'd rather you pick the right tool.</p>
+      </div>
+      <div class="why-row">
+        <div class="why">
+          <div class="num">01</div>
+          <h4>Pick GrantPipe if…</h4>
+          <p>
+            You run grants seriously (5+ active), have restricted-fund obligations, and don't have a
+            Salesforce admin. The team is 2–20 people who want one record everyone trusts.
+          </p>
+        </div>
+        <div class="why">
+          <div class="num">02</div>
+          <h4>Stick with spreadsheets if…</h4>
+          <p>
+            You're running 1–3 grants and they're all unrestricted. You don't have an audit. The
+            current setup genuinely works. It's fine—come back when it stops.
+          </p>
+        </div>
+        <div class="why">
+          <div class="num">03</div>
+          <h4>Pick Salesforce if…</h4>
+          <p>
+            You already have a Salesforce admin, you live in the broader Salesforce ecosystem, and
+            individual giving (not grants) is your dominant revenue. NPSP earns its keep there.
+          </p>
+        </div>
+      </div>
+
+      <!-- final cta -->
+      <section class="s alt" style="background: transparent; padding: 0 0 80px">
+        <div class="final-cta">
+          <div>
+            <h2>Not sure which side you're on?</h2>
+            <p>
+              Send me your current tracker. I'll tell you—honestly—whether GrantPipe is right for
+              you, or which alternative would serve you better. Founder-to-founder.
+            </p>
+            <div class="cta-row" style="margin-top: 22px">
+              <a class="btn btn-primary btn-lg" href="#"
+                >Start free trial <span class="btn-arrow">→</span></a
+              >
+              <a class="btn btn-ghost btn-lg" href="pricing.html">See pricing</a>
+            </div>
+          </div>
+          <div class="quick">
+            <div class="q-row">
+              <svg width="18" height="18" viewBox="0 0 18 18" fill="none">
+                <path
+                  d="M3 9.5l3 3 9-9"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+              </svg>
+              <span>30-day trial, no card.</span>
+            </div>
+            <div class="q-row">
+              <svg width="18" height="18" viewBox="0 0 18 18" fill="none">
+                <path
+                  d="M3 9.5l3 3 9-9"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+              </svg>
+              <span>Imports from Bloomerang, DonorPerfect, Salesforce, spreadsheets.</span>
+            </div>
+            <div class="q-row">
+              <svg width="18" height="18" viewBox="0 0 18 18" fill="none">
+                <path
+                  d="M3 9.5l3 3 9-9"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+              </svg>
+              <span>Talk to me directly.</span>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <footer>
+      <div class="wrap foot-inner">
+        <div class="brand"><span class="brand-mark">G</span> GrantPipe</div>
+        <div class="foot-links">
+          <a href="GrantPipe Landing v2 Dashboard.html">Product</a>
+          <a href="pricing.html">Pricing</a>
+          <a href="resources.html">Resources</a>
+          <a href="compare.html">Compare</a>
+          <a href="#">Privacy</a>
+        </div>
+        <div>© 2026 GrantPipe · Made with care for nonprofits</div>
+      </div>
+    </footer>
+  </body>
+</html>

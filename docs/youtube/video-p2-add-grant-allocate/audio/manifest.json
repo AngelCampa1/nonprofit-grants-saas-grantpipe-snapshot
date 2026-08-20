@@ -1,0 +1,62 @@
+[
+  {
+    "id": "00",
+    "title": "New money, new rules",
+    "slug": "new-money-new-rules",
+    "chars": 470,
+    "voice": "Laomedeia",
+    "model": "gemini-3.1-flash-tts-preview",
+    "file": "audio/chapter-00.mp3",
+    "text": "New money should feel good. Mostly it feels like paperwork you're scared to get wrong. A funder said yes. The award letter is in your inbox. But the money came with strings. It can only pay for certain things. And now you have to record it and split it the right way before you spend a cent. So let's do that. We'll add a grant, then split its money across the funds it's allowed to pay for. And GrantPipe does the math, so you can't promise more than you actually have."
+  },
+  {
+    "id": "01",
+    "title": "Add the grant",
+    "slug": "add-the-grant",
+    "chars": 615,
+    "voice": "Laomedeia",
+    "model": "gemini-3.1-flash-tts-preview",
+    "file": "audio/chapter-01.mp3",
+    "text": "This is where your grants live. To add one, you click \"Add grant.\" It's a short form, two steps. First, the name. Call it what your funder calls it, so you recognize it later. Then the funder, the people who gave you the money. You pick from funders you already have. This one came from the Greater Cincinnati Foundation. The amount: sixty thousand dollars. And the status. We'll set this one to \"Awarded,\" because that's what it is. The funder approved it. GrantPipe even tells you the next move: set up the award details before you spend. Step two is the dates, when the grant starts and ends. Then you create it."
+  },
+  {
+    "id": "02",
+    "title": "Open the grant: the four numbers",
+    "slug": "open-the-grant-the-four-numbers",
+    "chars": 479,
+    "voice": "Laomedeia",
+    "model": "gemini-3.1-flash-tts-preview",
+    "file": "audio/chapter-02.mp3",
+    "text": "Here's the grant. And here are the four numbers that matter, right at the top. Grant Amount is the whole award: sixty thousand. Allocated is how much you've assigned to a fund so far. Right now, zero. Unallocated is what's still loose, the full sixty thousand. And Remaining to Spend is what's left after you pay bills against the grant. You haven't spent a cent yet, so that's sixty thousand too. So the money is in, but you haven't told GrantPipe what it's for. Let's fix that."
+  },
+  {
+    "id": "03",
+    "title": "Split it across funds",
+    "slug": "split-it-across-funds",
+    "chars": 583,
+    "voice": "Laomedeia",
+    "model": "gemini-3.1-flash-tts-preview",
+    "file": "audio/chapter-03.mp3",
+    "text": "A grant isn't one bucket of money. This one pays for two things, so it goes into two funds. You do that on the Allocations tab. First fund: Capacity Building, forty thousand dollars. You're saying, of this award, forty thousand pays for capacity work. Save it, and watch the numbers move. Allocated is now forty thousand. Unallocated dropped to twenty. You're assigning the money where it belongs. Second fund: General Operating, the last twenty thousand. And Unallocated hits zero. Every dollar of this grant now has a home. The math checks out, and you didn't do any of it by hand."
+  },
+  {
+    "id": "04",
+    "title": "The guardrail",
+    "slug": "the-guardrail",
+    "chars": 444,
+    "voice": "Laomedeia",
+    "model": "gemini-3.1-flash-tts-preview",
+    "file": "audio/chapter-04.mp3",
+    "text": "Now the part I'm proud of. Say you try to assign more than the grant is worth. A typo, or one fund too many. GrantPipe stops you. \"Allocation would exceed grant amount.\" This is what makes restricted money scary, and it's the whole reason a tool helps. You can't promise sixty-five thousand dollars of a sixty-thousand-dollar grant. When an auditor asks if your allocations add up, the answer is yes, because the software won't let you go over."
+  },
+  {
+    "id": "05",
+    "title": "You're set",
+    "slug": "you-re-set",
+    "chars": 412,
+    "voice": "Laomedeia",
+    "model": "gemini-3.1-flash-tts-preview",
+    "file": "audio/chapter-05.mp3",
+    "text": "That's a grant recorded and split across its funds, with the math handled for you. Two minutes, no spreadsheet, no second-guessing. Not in GrantPipe yet? Maybe you're tracking this in a spreadsheet. We made a free one built for restricted funds: the Restricted Fund Tracking Spreadsheet. Want it? We'll send it to your inbox. Next, we'll track what you actually spend against this grant, so you know what's left."
+  }
+]

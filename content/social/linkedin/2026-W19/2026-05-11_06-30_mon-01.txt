@@ -1,0 +1,5 @@
+How long do you keep grant records after closeout?
+
+Federal answer: 3 years from the date you submit the final FFR. Longer if there is litigation, a claim, or an audit finding still open.
+
+If your retention policy is "until the file gets too big," the policy is the audit finding.

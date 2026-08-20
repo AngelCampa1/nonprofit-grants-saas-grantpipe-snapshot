@@ -1,0 +1,9 @@
+Most Development Directors rebuild the board fundraising packet from scratch every quarter. Same charts, same categories, same questions, fresh exports each time.
+
+We wrote down a version of that workflow and turned it into a Board Fundraising Toolkit.
+
+What is in it:
+- A board meeting fundraising packet template, designed so the same numbers feed every quarter without rebuilding
+- A board prospect introduction worksheet for getting members to surface warm contacts
+- A retention dashboard outline with the four metrics most boards care about
+- A 90-day onboarding sequence for new board members on the development side

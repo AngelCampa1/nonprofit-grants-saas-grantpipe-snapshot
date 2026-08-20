@@ -1,0 +1,151 @@
+---
+import "../../../styles/global.css"
+import { getCollection } from "astro:content"
+import CategoryHub from "@grantpipe/ui/site/hubs/category-hub.astro"
+import PublicSignupCta from "@grantpipe/ui/site/components/public-signup-cta"
+import { shouldShowMobileStickyCta, siteConfig } from "@/config/site"
+import { hubFaqs } from "@/config/hub-faqs"
+import { sortByUpdatedAtDesc } from "@grantpipe/ui/site/lib/collections"
+import { buildCompareVersusHubModel } from "@/lib/compare-hub"
+import { resolveExitLeadMagnetOffer } from "@/lib/lead-magnet-routing"
+
+export async function getStaticPaths() {
+  const entries = await getCollection("comparisons")
+  const sorted = sortByUpdatedAtDesc(entries)
+  const versusHub = buildCompareVersusHubModel(sorted)
+  return [
+    {
+      params: { page: undefined },
+      props: {
+        page: {
+          data: versusHub.items,
+          currentPage: 1,
+          lastPage: 1,
+          url: { prev: undefined, next: undefined },
+        },
+      },
+    },
+  ]
+}
+
+const { page } = Astro.props
+const comparisons = await getCollection("comparisons")
+const leadMagnets = await getCollection("lead-magnets")
+const versusHub = buildCompareVersusHubModel(sortByUpdatedAtDesc(comparisons))
+const exitLeadMagnet = resolveExitLeadMagnetOffer(siteConfig, leadMagnets, { family: "comparison" })
+---
+
+<CategoryHub
+  config={siteConfig}
+  title="Head-to-Head Comparisons"
+  description="Side-by-side breakdowns of nonprofit software — features, pricing, and honest assessments."
+  showStickyMobileCta={shouldShowMobileStickyCta(Astro.url.pathname)}
+  leadMagnet={exitLeadMagnet}
+  items={page.data}
+  page={page}
+  basePath="/compare/versus"
+  breadcrumbs={[
+    { label: "Home", href: "/" },
+    { label: "Compare", href: "/compare" },
+    { label: "Head-to-Head", href: "/compare/versus" },
+  ]}
+  faqs={hubFaqs["/compare/versus"]}
+  emptyStateHeading="No head-to-head comparisons match this page yet."
+  emptyStateBody="See the alternatives and pricing breakdowns for related comparisons across nonprofit software."
+  renderListing={false}
+>
+  <section slot="intro" class="mb-10 space-y-8">
+    <section class="gp-resource-decision-panel editorial-panel p-6" aria-label="Head-to-head start">
+      <p class="gp-proof-label">Decision path</p>
+      <h2 class="gp-link-card-title">Use this once the shortlist has names.</h2>
+      <p class="gp-link-card-copy mt-3">
+        These pages compare two tools. Use them after broad research. Use them before price checks
+        or trial setup.
+      </p>
+    </section>
+
+    <section aria-label="Head-to-head paths">
+      <div class="mb-5 max-w-2xl">
+        <p class="gp-kicker--accent">Topic paths</p>
+        <h2 class="mt-3 font-heading text-[length:var(--text-heading)] font-bold text-brand-text">
+          Pick a software area.
+        </h2>
+      </div>
+      <div data-compare-child-versus-grid class="grid gap-4 lg:grid-cols-3">
+        {versusHub.topicSummaries.map((topic) => (
+          <article class="gp-card-base h-full rounded-lg p-5">
+            <div class="flex flex-wrap items-start justify-between gap-3">
+              <h3 class="font-heading text-[length:var(--text-subheading)] font-bold text-brand-text">
+                {topic.title}
+              </h3>
+              <span class="rounded-full border border-[var(--gp-ink-200)] px-3 py-1 text-[length:var(--text-caption)] font-medium text-brand-primary">
+                {topic.totalCount} pages
+              </span>
+            </div>
+            <p class="mt-3 text-[length:var(--text-body)] leading-7 text-brand-muted">
+              {topic.description}
+            </p>
+            <div class="mt-5 grid gap-2">
+              {topic.previewItems.map((item) => (
+                <a href={item.href} class="gp-filter-chip">{item.title}</a>
+              ))}
+            </div>
+            <div class="mt-5 flex flex-wrap gap-2">
+              <a class="gp-filter-chip" href={`${topic.href}/`}>See topic path</a>
+              {topic.overflowCount > 0 && (
+                <span class="gp-filter-chip" aria-label={`${topic.overflowCount} more head-to-head pages in this topic`}>
+                  {topic.overflowCount} more
+                </span>
+              )}
+            </div>
+          </article>
+        ))}
+      </div>
+    </section>
+  </section>
+
+  <section slot="cta" class="hub-cta" id="signup">
+    <p class="hub-cta__eyebrow">Move from research to decision</p>
+    <h2 class="hub-cta__heading">Need help deciding?</h2>
+    <p class="hub-cta__body">Pick a plan to see pricing details and next steps.</p>
+    <PublicSignupCta
+      client:load
+      sourcePage="/compare/versus"
+      buttonText={siteConfig.funnel.bofu.ctaText}
+    />
+  </section>
+</CategoryHub>
+
+<style>
+  .hub-cta {
+    margin-top: 2rem;
+    padding: 2.5rem 1.5rem;
+    text-align: center;
+    border-top: 1px solid var(--gp-ink-100);
+  }
+
+  .hub-cta__eyebrow {
+    margin: 0 0 0.5rem;
+    font-size: 0.75rem;
+    font-weight: 700;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: var(--gp-emerald-700);
+  }
+
+  .hub-cta__heading {
+    margin: 0 0 0.5rem;
+    font-family: var(--font-heading, inherit);
+    font-size: clamp(1.5rem, 2.5vw, 1.875rem);
+    line-height: 1.2;
+    font-weight: 700;
+    color: var(--gp-ink-900);
+  }
+
+  .hub-cta__body {
+    max-width: 28rem;
+    margin: 0 auto 1.5rem;
+    color: var(--gp-ink-600);
+    line-height: 1.5;
+  }
+</style>

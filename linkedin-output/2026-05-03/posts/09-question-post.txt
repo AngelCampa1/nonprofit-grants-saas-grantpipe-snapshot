@@ -1,0 +1,11 @@
+A grants manager at a mid-sized nonprofit typically owns 10 to 40 active awards across HHS, USDA, DOJ, state pass-throughs, and private foundations.
+
+The Center for Effective Philanthropy found reporting alone consumes 6 to 8 hours per grant per year. Cumulative compliance effort reaches 30+ hours per grant over its life.
+
+A grants manager running on spreadsheets realistically handles 15 to 25 active awards before the reconciliation work breaks. Purpose-built compliance software roughly doubles that capacity.
+
+GAO's April 2024 analysis (GAO-24-106173) linked 17% of federal award spending from 2017-2021 to severe, persistent Single Audit findings — almost always traceable to fragmented record-keeping rather than intentional misuse.
+
+Question for grants managers reading this: what is the portfolio size where your current setup stops scaling, and what breaks first — the reporting calendar, the drawdown reconciliation, or the audit binder?
+
+#grantsmanager #nonprofitfinance #singleaudit #compliance

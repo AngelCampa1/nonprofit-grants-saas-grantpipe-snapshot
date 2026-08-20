@@ -1,0 +1,55 @@
+node_modules/
+dist/
+.astro/
+.turbo/
+.wrangler/
+.superpowers/
+coverage/
+playwright-report/
+test-results/
+*.local
+.env
+.env.*
+!.env.example
+apps/api/.dev.vars
+.DS_Store
+.worktrees/
+.claude/worktrees/
+.claude/scheduled_tasks.lock
+audit-scratch/
+audit/
+.playwright-mcp/
+.playwright-cli/
+apps/web/.tanstack/
+.codex-local/
+tmp/
+output/db/
+
+# LinkedIn content engine artifacts
+scripts/linkedin/queue.json
+
+# Commit-message scratch files (heredoc workflow)
+.msg
+.rmmsg
+
+# Generated artifacts
+qa-*.png
+/*.png
+/*.jpg
+/*.jpeg
+/*.webp
+/*.gif
+/*.mp4
+/*.webm
+/guide.yaml
+/homepage.yaml
+/lead-magnet.yaml
+/pricing.yaml
+apps/site/.lead-magnet-pdfs/
+apps/site/public/downloads/
+.worktrees/
+.cro-screenshots/
+gate.log
+
+# Transient gate/build poll logs written by agent workflows
+*_LOG.txt

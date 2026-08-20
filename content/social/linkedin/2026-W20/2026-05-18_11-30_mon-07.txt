@@ -1,0 +1,7 @@
+The Donor-to-Grant Reconciliation Template covers one report. Teams rebuild it when donor and grant records live apart.
+
+What it does:
+
+A side-by-side reconciliation between what the development team recorded as a grant gift in the donor system, and what the finance team recorded as restricted revenue in the general ledger. With variance columns, a notes column for explanations, and a sign-off line for both sides.
+
+It is the conversation that keeps the audit cleaner: where finance and development agree on the same number for the same award, every quarter, before anyone has to ask.

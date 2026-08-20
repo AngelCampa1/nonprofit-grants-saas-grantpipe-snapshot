@@ -1,0 +1,7 @@
+Assistance Listing numbers matter.
+
+The old name was CFDA. The current federal term is Assistance Listing.
+
+For SEFA work, pass-through awards, and subrecipient files, that number tells auditors which federal program the money belongs to.
+
+If it is missing from the award file, request it before closeout pressure starts.

@@ -1,0 +1,996 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=1920, height=1080" />
+    <title>GrantPipe Launch Video - Landscape</title>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.14.2/dist/gsap.min.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@500;600&family=Manrope:wght@400;500;600;700;800&family=Spectral:wght@500;600;700&display=block"
+      rel="stylesheet"
+    />
+    <style>
+      :root {
+        --paper: #fbfaf6;
+        --paper-2: #f4f1e9;
+        --card: #ffffff;
+        --ink: #0e1a16;
+        --ink-700: #2a3a33;
+        --muted: #5b6e66;
+        --border: #e3e9e6;
+        --emerald: #047857;
+        --emerald-soft: #ecf6f1;
+        --gold: #d99a18;
+        --shadow: 0 30px 80px rgba(14, 26, 22, 0.16);
+      }
+
+      * {
+        box-sizing: border-box;
+      }
+
+      html,
+      body {
+        margin: 0;
+        width: 1920px;
+        height: 1080px;
+        overflow: hidden;
+        background: var(--paper);
+        color: var(--ink);
+        font-family: "Manrope", system-ui, sans-serif;
+      }
+
+      #root {
+        position: relative;
+        width: 1920px;
+        height: 1080px;
+        overflow: hidden;
+        background:
+          linear-gradient(180deg, rgba(255, 255, 255, 0.5), rgba(244, 241, 233, 0.7)), var(--paper);
+      }
+
+      .grain {
+        position: absolute;
+        inset: 0;
+        opacity: 0.45;
+        pointer-events: none;
+        background-image:
+          linear-gradient(rgba(4, 120, 87, 0.025) 1px, transparent 1px),
+          linear-gradient(90deg, rgba(4, 120, 87, 0.025) 1px, transparent 1px);
+        background-size: 72px 72px;
+      }
+
+      .scene {
+        position: absolute;
+        inset: 0;
+        display: flex;
+        width: 100%;
+        height: 100%;
+      }
+
+      .scene-content {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        height: 100%;
+        padding: 96px 128px;
+        gap: 30px;
+      }
+
+      .brand-logo {
+        width: 430px;
+        height: auto;
+        display: block;
+      }
+
+      .eyebrow {
+        display: inline-flex;
+        align-items: center;
+        width: max-content;
+        gap: 10px;
+        padding: 10px 14px;
+        border: 1px solid #d4ebe1;
+        border-radius: 999px;
+        background: var(--emerald-soft);
+        color: var(--emerald);
+        font-family: "JetBrains Mono", ui-monospace, monospace;
+        font-size: 16px;
+        font-weight: 600;
+        text-transform: uppercase;
+      }
+
+      .eyebrow::before {
+        content: "";
+        width: 8px;
+        height: 8px;
+        border-radius: 50%;
+        background: var(--emerald);
+        box-shadow: 0 0 0 4px rgba(4, 120, 87, 0.14);
+      }
+
+      h1,
+      h2 {
+        margin: 0;
+        color: var(--ink);
+        font-family: "Spectral", Georgia, serif;
+        font-weight: 600;
+      }
+
+      h1 {
+        max-width: 1100px;
+        font-size: 106px;
+        line-height: 0.98;
+      }
+
+      h2 {
+        max-width: 980px;
+        font-size: 76px;
+        line-height: 1.02;
+      }
+
+      .word {
+        display: inline-block;
+        white-space: nowrap;
+      }
+
+      .char {
+        display: inline-block;
+        transform-origin: 50% 78%;
+        will-change: transform, opacity;
+      }
+
+      .lede {
+        max-width: 810px;
+        margin: 0;
+        color: var(--ink-700);
+        font-size: 34px;
+        line-height: 1.32;
+        font-weight: 500;
+      }
+
+      .proof-rail {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 12px;
+        max-width: 820px;
+      }
+
+      .proof-step {
+        display: inline-flex;
+        align-items: center;
+        gap: 10px;
+        padding: 12px 16px;
+        border: 1px solid rgba(4, 120, 87, 0.16);
+        border-radius: 999px;
+        background: rgba(255, 255, 255, 0.74);
+        color: var(--ink-700);
+        font-size: 20px;
+        font-weight: 700;
+        box-shadow: 0 12px 28px rgba(14, 26, 22, 0.06);
+      }
+
+      .proof-step::before {
+        content: "";
+        width: 9px;
+        height: 9px;
+        border-radius: 999px;
+        background: var(--emerald);
+        box-shadow: 0 0 0 5px rgba(4, 120, 87, 0.1);
+      }
+
+      .split {
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        gap: 80px;
+      }
+
+      .copy-stack {
+        display: flex;
+        flex: 0 0 760px;
+        flex-direction: column;
+        gap: 28px;
+      }
+
+      .screen-stack {
+        position: relative;
+        flex: 1;
+        height: 780px;
+      }
+
+      .screen {
+        position: absolute;
+        overflow: hidden;
+        border: 1px solid rgba(14, 26, 22, 0.08);
+        border-radius: 24px;
+        background: var(--card);
+        box-shadow: var(--shadow);
+      }
+
+      .screen img {
+        display: block;
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
+      }
+
+      .detail-card {
+        position: absolute;
+        z-index: 4;
+        display: flex;
+        flex-direction: column;
+        gap: 4px;
+        min-width: 235px;
+        padding: 16px 18px;
+        border: 1px solid rgba(4, 120, 87, 0.18);
+        border-radius: 16px;
+        background: rgba(255, 255, 255, 0.94);
+        box-shadow: 0 18px 44px rgba(14, 26, 22, 0.14);
+      }
+
+      .detail-card strong {
+        color: var(--ink);
+        font-size: 22px;
+        line-height: 1.05;
+      }
+
+      .detail-card span {
+        color: var(--muted);
+        font-family: "JetBrains Mono", ui-monospace, monospace;
+        font-size: 13px;
+        font-weight: 600;
+        text-transform: uppercase;
+      }
+
+      .detail-card.one {
+        right: 22px;
+        top: 36px;
+      }
+
+      .detail-card.two {
+        left: 76px;
+        bottom: 26px;
+      }
+
+      .detail-card.three {
+        right: 26px;
+        bottom: 28px;
+      }
+
+      .screen-main {
+        right: 0;
+        top: 90px;
+        width: 920px;
+        height: 518px;
+      }
+
+      .screen-secondary {
+        left: 40px;
+        bottom: 58px;
+        width: 620px;
+        height: 349px;
+      }
+
+      .phone {
+        right: 80px;
+        bottom: 0;
+        width: 280px;
+        height: 374px;
+        border-radius: 34px;
+      }
+
+      #compliance .screen-stack {
+        flex: 0 0 820px;
+        height: 690px;
+      }
+
+      #compliance .screen-main {
+        right: 0;
+        top: 88px;
+        width: 790px;
+        height: 398px;
+      }
+
+      #compliance .screen-secondary {
+        left: 0;
+        bottom: 36px;
+        width: 560px;
+        height: 282px;
+      }
+
+      .problem-grid {
+        display: grid;
+        grid-template-columns: repeat(4, minmax(0, 1fr));
+        gap: 22px;
+        width: 100%;
+        margin-top: auto;
+      }
+
+      .problem-card {
+        min-height: 250px;
+        padding: 28px;
+        border: 1px solid var(--border);
+        border-radius: 18px;
+        background: rgba(255, 255, 255, 0.72);
+        box-shadow: 0 10px 30px rgba(14, 26, 22, 0.06);
+      }
+
+      .problem-card .label {
+        margin-bottom: 58px;
+        color: var(--muted);
+        font-family: "JetBrains Mono", ui-monospace, monospace;
+        font-size: 15px;
+        font-weight: 600;
+        text-transform: uppercase;
+      }
+
+      .problem-card .title {
+        color: var(--ink);
+        font-size: 32px;
+        line-height: 1.14;
+        font-weight: 700;
+      }
+
+      .connector {
+        position: absolute;
+        width: 180px;
+        height: 2px;
+        background: linear-gradient(90deg, rgba(4, 120, 87, 0), rgba(4, 120, 87, 0.5));
+        transform-origin: left center;
+      }
+
+      .connector.one {
+        left: 620px;
+        top: 375px;
+        transform: rotate(-8deg);
+      }
+
+      .connector.two {
+        left: 690px;
+        top: 590px;
+        transform: rotate(14deg);
+      }
+
+      .outcome {
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+      }
+
+      .outcome .scene-content {
+        align-items: center;
+        justify-content: center;
+        padding: 110px 180px;
+      }
+
+      .outcome h2 {
+        max-width: 1250px;
+        font-size: 96px;
+      }
+
+      .cta {
+        display: inline-flex;
+        align-items: center;
+        margin-top: 18px;
+        padding: 24px 40px;
+        border-radius: 999px;
+        background: var(--emerald);
+        color: #fff;
+        font-size: 34px;
+        font-weight: 800;
+        box-shadow: 0 22px 40px rgba(4, 120, 87, 0.22);
+      }
+
+      .gold-chip {
+        display: inline-flex;
+        width: max-content;
+        padding: 8px 12px;
+        border: 1px solid rgba(217, 154, 24, 0.32);
+        border-radius: 999px;
+        background: #faf3df;
+        color: var(--emerald);
+        font-family: "JetBrains Mono", ui-monospace, monospace;
+        font-size: 15px;
+        font-weight: 600;
+        text-transform: uppercase;
+      }
+    </style>
+  </head>
+  <body>
+    <div
+      id="root"
+      data-composition-id="grantpipe-launch-landscape"
+      data-start="0"
+      data-duration="20"
+      data-width="1920"
+      data-height="1080"
+    >
+      <audio
+        id="sfx-intro-rise"
+        class="clip"
+        data-start="0.2"
+        data-duration="0.8"
+        data-track-index="10"
+        data-volume="0.495"
+        src="./assets/audio/sfx/intro-rise.mp3"
+      ></audio>
+      <audio
+        id="sfx-intro-title"
+        class="clip"
+        data-start="0.55"
+        data-duration="0.48"
+        data-track-index="11"
+        data-volume="0.132"
+        src="./assets/audio/sfx/text-tick.mp3"
+      ></audio>
+      <audio
+        id="sfx-intro-lede"
+        class="clip"
+        data-start="0.9"
+        data-duration="0.48"
+        data-track-index="12"
+        data-volume="0.132"
+        src="./assets/audio/sfx/text-tick.mp3"
+      ></audio>
+      <audio
+        id="sfx-problem-swipe"
+        class="clip"
+        data-start="3.3"
+        data-duration="0.8"
+        data-track-index="13"
+        data-volume="0.429"
+        src="./assets/audio/sfx/scene-swipe.mp3"
+      ></audio>
+      <audio
+        id="sfx-problem-eyebrow"
+        class="clip"
+        data-start="3.8"
+        data-duration="0.48"
+        data-track-index="14"
+        data-volume="0.154"
+        src="./assets/audio/sfx/text-tick.mp3"
+      ></audio>
+      <audio
+        id="sfx-problem-title"
+        class="clip"
+        data-start="4.05"
+        data-duration="0.48"
+        data-track-index="15"
+        data-volume="0.154"
+        src="./assets/audio/sfx/text-tick.mp3"
+      ></audio>
+      <audio
+        id="sfx-card-1"
+        class="clip"
+        data-start="4.6"
+        data-duration="0.48"
+        data-track-index="16"
+        data-volume="0.231"
+        src="./assets/audio/sfx/card-pop.mp3"
+      ></audio>
+      <audio
+        id="sfx-card-2"
+        class="clip"
+        data-start="4.72"
+        data-duration="0.48"
+        data-track-index="17"
+        data-volume="0.165"
+        src="./assets/audio/sfx/card-pop.mp3"
+      ></audio>
+      <audio
+        id="sfx-card-3"
+        class="clip"
+        data-start="4.84"
+        data-duration="0.48"
+        data-track-index="18"
+        data-volume="0.198"
+        src="./assets/audio/sfx/card-pop.mp3"
+      ></audio>
+      <audio
+        id="sfx-card-4"
+        class="clip"
+        data-start="4.96"
+        data-duration="0.48"
+        data-track-index="19"
+        data-volume="0.143"
+        src="./assets/audio/sfx/card-pop.mp3"
+      ></audio>
+      <audio
+        id="sfx-product-swipe"
+        class="clip"
+        data-start="7.4"
+        data-duration="0.8"
+        data-track-index="20"
+        data-volume="0.451"
+        src="./assets/audio/sfx/scene-swipe.mp3"
+      ></audio>
+      <audio
+        id="sfx-product-copy"
+        class="clip"
+        data-start="7.65"
+        data-duration="0.48"
+        data-track-index="21"
+        data-volume="0.165"
+        src="./assets/audio/sfx/text-tick.mp3"
+      ></audio>
+      <audio
+        id="sfx-dashboard-slide"
+        class="clip"
+        data-start="8"
+        data-duration="0.8"
+        data-track-index="22"
+        data-volume="0.275"
+        src="./assets/audio/sfx/screen-slide.mp3"
+      ></audio>
+      <audio
+        id="sfx-grants-slide"
+        class="clip"
+        data-start="8.25"
+        data-duration="0.8"
+        data-track-index="23"
+        data-volume="0.275"
+        src="./assets/audio/sfx/screen-slide.mp3"
+      ></audio>
+      <audio
+        id="sfx-phone-slide"
+        class="clip"
+        data-start="8.5"
+        data-duration="0.8"
+        data-track-index="24"
+        data-volume="0.253"
+        src="./assets/audio/sfx/screen-slide.mp3"
+      ></audio>
+      <audio
+        id="sfx-connectors"
+        class="clip"
+        data-start="8.75"
+        data-duration="0.48"
+        data-track-index="25"
+        data-volume="0.275"
+        src="./assets/audio/sfx/connector-zip.mp3"
+      ></audio>
+      <audio
+        id="sfx-compliance-swipe"
+        class="clip"
+        data-start="12.6"
+        data-duration="0.8"
+        data-track-index="26"
+        data-volume="0.429"
+        src="./assets/audio/sfx/scene-swipe.mp3"
+      ></audio>
+      <audio
+        id="sfx-compliance-copy"
+        class="clip"
+        data-start="12.85"
+        data-duration="0.48"
+        data-track-index="27"
+        data-volume="0.143"
+        src="./assets/audio/sfx/text-tick.mp3"
+      ></audio>
+      <audio
+        id="sfx-accounting-slide"
+        class="clip"
+        data-start="13.1"
+        data-duration="0.8"
+        data-track-index="28"
+        data-volume="0.319"
+        src="./assets/audio/sfx/screen-slide.mp3"
+      ></audio>
+      <audio
+        id="sfx-activity-slide"
+        class="clip"
+        data-start="13.45"
+        data-duration="0.8"
+        data-track-index="29"
+        data-volume="0.253"
+        src="./assets/audio/sfx/screen-slide.mp3"
+      ></audio>
+      <audio
+        id="sfx-outro-swipe"
+        class="clip"
+        data-start="16.35"
+        data-duration="0.8"
+        data-track-index="30"
+        data-volume="0.407"
+        src="./assets/audio/sfx/scene-swipe.mp3"
+      ></audio>
+      <audio
+        id="sfx-outro-logo"
+        class="clip"
+        data-start="16.55"
+        data-duration="1.08"
+        data-track-index="31"
+        data-volume="0.275"
+        src="./assets/audio/sfx/final-resolve.mp3"
+      ></audio>
+      <audio
+        id="sfx-outro-title"
+        class="clip"
+        data-start="16.85"
+        data-duration="0.48"
+        data-track-index="32"
+        data-volume="0.143"
+        src="./assets/audio/sfx/text-tick.mp3"
+      ></audio>
+      <audio
+        id="sfx-cta-tap"
+        class="clip"
+        data-start="17.35"
+        data-duration="0.48"
+        data-track-index="33"
+        data-volume="0.429"
+        src="./assets/audio/sfx/cta-tap.mp3"
+      ></audio>
+      <audio
+        id="sfx-problem-impact"
+        class="clip"
+        data-start="3.65"
+        data-duration="0.48"
+        data-track-index="34"
+        data-volume="0.286"
+        src="./assets/audio/sfx/soft-impact.mp3"
+      ></audio>
+      <audio
+        id="sfx-product-impact"
+        class="clip"
+        data-start="7.4"
+        data-duration="0.48"
+        data-track-index="35"
+        data-volume="0.253"
+        src="./assets/audio/sfx/soft-impact.mp3"
+      ></audio>
+      <audio
+        id="sfx-product-chip"
+        class="clip"
+        data-start="8.01"
+        data-duration="0.48"
+        data-track-index="36"
+        data-volume="0.165"
+        src="./assets/audio/sfx/snap-click.mp3"
+      ></audio>
+      <audio
+        id="sfx-connector-spark"
+        class="clip"
+        data-start="8.86"
+        data-duration="0.48"
+        data-track-index="37"
+        data-volume="0.231"
+        src="./assets/audio/sfx/data-spark.mp3"
+      ></audio>
+      <audio
+        id="sfx-compliance-impact"
+        class="clip"
+        data-start="12.6"
+        data-duration="0.48"
+        data-track-index="38"
+        data-volume="0.297"
+        src="./assets/audio/sfx/soft-impact.mp3"
+      ></audio>
+      <audio
+        id="sfx-outro-impact"
+        class="clip"
+        data-start="16.35"
+        data-duration="0.48"
+        data-track-index="39"
+        data-volume="0.297"
+        src="./assets/audio/sfx/soft-impact.mp3"
+      ></audio>
+      <audio
+        id="sfx-cta-spark"
+        class="clip"
+        data-start="17.58"
+        data-duration="0.48"
+        data-track-index="40"
+        data-volume="0.143"
+        src="./assets/audio/sfx/data-spark.mp3"
+      ></audio>
+      <div class="grain"></div>
+
+      <section class="scene intro" id="intro">
+        <div class="scene-content outcome">
+          <img class="brand-logo" src="./assets/grantpipe-logo-light-outro.svg" alt="GrantPipe" />
+          <span class="eyebrow launch-kicker">Now launching</span>
+          <h1>A new compliance-first grant management system.</h1>
+          <div class="proof-rail">
+            <span class="proof-step">Donors</span>
+            <span class="proof-step">Grants</span>
+            <span class="proof-step">Restricted funds</span>
+            <span class="proof-step">Audit evidence</span>
+          </div>
+        </div>
+      </section>
+
+      <section class="scene problem" id="problem">
+        <div class="scene-content">
+          <span class="eyebrow">The problem</span>
+          <h2>Compliance gets harder when the work is split.</h2>
+          <div class="problem-grid">
+            <div class="problem-card">
+              <div class="label">Donor CRM</div>
+              <div class="title">Relationships and gifts</div>
+            </div>
+            <div class="problem-card">
+              <div class="label">Grant tracker</div>
+              <div class="title">Deadlines and awards</div>
+            </div>
+            <div class="problem-card">
+              <div class="label">Restricted funds</div>
+              <div class="title">Spend-down and releases</div>
+            </div>
+            <div class="problem-card">
+              <div class="label">Audit trail</div>
+              <div class="title">Evidence for reporting</div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="scene product" id="product">
+        <div class="scene-content split">
+          <div class="copy-stack">
+            <span class="eyebrow">New solution: GrantPipe</span>
+            <h2>Every record keeps the reporting trail intact.</h2>
+            <div class="proof-rail">
+              <span class="proof-step">Award context</span>
+              <span class="proof-step">Fund restrictions</span>
+              <span class="proof-step">Donor history</span>
+            </div>
+            <span class="gold-chip">Launch-ready workflow</span>
+          </div>
+          <div class="screen-stack">
+            <div class="connector one"></div>
+            <div class="connector two"></div>
+            <div class="screen screen-main">
+              <img src="./assets/grantpipe-dashboard-clean.png" alt="" />
+            </div>
+            <div class="detail-card one">
+              <span>Compliance view</span>
+              <strong>Grant context stays attached</strong>
+            </div>
+            <div class="screen screen-secondary">
+              <img src="./assets/grantpipe-grants-clean.png" alt="" />
+            </div>
+            <div class="screen phone">
+              <img src="./assets/grantpipe-donors-mobile-clean.png" alt="" />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="scene compliance" id="compliance">
+        <div class="scene-content split">
+          <div class="copy-stack">
+            <span class="eyebrow">Audit-ready by design</span>
+            <h2>Reports start with evidence already in motion.</h2>
+            <div class="proof-rail">
+              <span class="proof-step">Restricted funds</span>
+              <span class="proof-step">Accounting activity</span>
+              <span class="proof-step">Change history</span>
+            </div>
+          </div>
+          <div class="screen-stack">
+            <div class="screen screen-main">
+              <img src="./assets/grantpipe-accounting-light-clean.png" alt="" />
+            </div>
+            <div class="detail-card three">
+              <span>Evidence ready</span>
+              <strong>Activity tied to records</strong>
+            </div>
+            <div class="screen screen-secondary">
+              <img src="./assets/grantpipe-activity-log-clean.png" alt="" />
+            </div>
+            <div class="detail-card two">
+              <span>Audit trail</span>
+              <strong>Changes stay visible</strong>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="scene outcome" id="outro">
+        <div class="scene-content">
+          <span class="eyebrow launch-kicker">Launch preview</span>
+          <img class="brand-logo" src="./assets/grantpipe-logo-light.svg" alt="GrantPipe" />
+          <h2>Compliance-first operations for grant-funded non&#8209;profits.</h2>
+          <div class="cta">grantpipe.com</div>
+        </div>
+      </section>
+    </div>
+
+    <script>
+      window.__timelines = window.__timelines || {};
+
+      const splitHeadline = (selector) => {
+        document.querySelectorAll(selector).forEach((heading) => {
+          const label = heading.textContent.trim();
+          heading.setAttribute("aria-label", label);
+          heading.textContent = "";
+
+          label.split(/(\s+)/).forEach((part) => {
+            if (/^\s+$/.test(part)) {
+              heading.append(document.createTextNode(part));
+              return;
+            }
+
+            const word = document.createElement("span");
+            word.className = "word";
+            word.setAttribute("aria-hidden", "true");
+
+            Array.from(part).forEach((character) => {
+              const char = document.createElement("span");
+              char.className = "char";
+              char.textContent = character;
+              word.append(char);
+            });
+
+            heading.append(word);
+          });
+        });
+      };
+
+      splitHeadline("h1, h2");
+
+      const tl = gsap.timeline({ paused: true });
+
+      tl.set(["#problem", "#product", "#compliance", "#outro"], { opacity: 0 });
+      tl.from(
+        "#intro .brand-logo",
+        { y: 28, opacity: 0, scale: 0.96, duration: 0.72, ease: "back.out(1.35)" },
+        0.2,
+      );
+      tl.from(
+        "#intro .launch-kicker",
+        { y: 18, opacity: 0, scale: 0.96, duration: 0.38, ease: "back.out(1.4)" },
+        0.48,
+      );
+      tl.from(
+        "#intro h1 .char",
+        { y: 32, opacity: 0, rotationX: 35, stagger: 0.012, duration: 0.42, ease: "power4.out" },
+        0.68,
+      );
+      tl.from(
+        "#intro .proof-step",
+        { y: 20, opacity: 0, scale: 0.92, stagger: 0.1, duration: 0.42, ease: "back.out(1.35)" },
+        1.05,
+      );
+      tl.to(
+        "#intro .proof-step",
+        { y: -5, duration: 0.18, yoyo: true, repeat: 1, stagger: 0.08, ease: "power2.inOut" },
+        2.25,
+      );
+      tl.to("#intro", { opacity: 0, duration: 0.55, ease: "power2.inOut" }, 3.3);
+      tl.set("#intro", { opacity: 0 }, 3.8);
+
+      tl.to("#problem", { opacity: 1, duration: 0.25, ease: "power2.out" }, 3.65);
+      tl.from(
+        "#problem .eyebrow",
+        { y: 18, opacity: 0, scale: 0.96, duration: 0.38, ease: "back.out(1.4)" },
+        3.8,
+      );
+      tl.from(
+        "#problem h2 .char",
+        { y: 26, opacity: 0, rotationX: 28, stagger: 0.014, duration: 0.34, ease: "power4.out" },
+        4.05,
+      );
+      tl.from(
+        "#problem .problem-card",
+        { y: 34, opacity: 0, scale: 0.96, stagger: 0.1, duration: 0.46, ease: "back.out(1.25)" },
+        4.6,
+      );
+      tl.to("#problem", { opacity: 0, duration: 0.55, ease: "power2.inOut" }, 7.05);
+
+      tl.to("#product", { opacity: 1, duration: 0.25, ease: "power2.out" }, 7.4);
+      tl.from(
+        "#product .copy-stack > *",
+        { y: 28, opacity: 0, scale: 0.98, stagger: 0.1, duration: 0.48, ease: "power4.out" },
+        7.65,
+      );
+      tl.from(
+        "#product h2 .char",
+        { y: 24, opacity: 0, rotationX: 28, stagger: 0.01, duration: 0.32, ease: "power4.out" },
+        7.82,
+      );
+      tl.from(
+        "#product .proof-step",
+        { x: -22, opacity: 0, scale: 0.92, stagger: 0.08, duration: 0.38, ease: "back.out(1.3)" },
+        8.05,
+      );
+      tl.from(
+        "#product .screen-main",
+        { x: 110, y: 24, opacity: 0, scale: 0.93, duration: 0.62, ease: "back.out(1.2)" },
+        8.0,
+      );
+      tl.from(
+        "#product .screen-secondary",
+        { x: -90, y: 42, opacity: 0, scale: 0.93, duration: 0.58, ease: "back.out(1.2)" },
+        8.22,
+      );
+      tl.from(
+        "#product .phone",
+        { y: 72, opacity: 0, scale: 0.9, duration: 0.54, ease: "back.out(1.28)" },
+        8.46,
+      );
+      tl.from(
+        "#product .detail-card",
+        { y: 22, opacity: 0, scale: 0.92, duration: 0.42, ease: "back.out(1.35)" },
+        8.95,
+      );
+      tl.from(
+        "#product .connector",
+        { scaleX: 0, opacity: 0, stagger: 0.08, duration: 0.36, ease: "power4.out" },
+        8.75,
+      );
+      tl.to(
+        "#product .connector",
+        { scaleY: 1.8, duration: 0.16, yoyo: true, repeat: 1, ease: "power2.inOut" },
+        8.86,
+      );
+      tl.to("#product .screen-stack", { y: -18, duration: 2.7, ease: "power2.inOut" }, 9.1);
+      tl.to("#product", { opacity: 0, duration: 0.55, ease: "power2.inOut" }, 12.25);
+      tl.set("#product", { opacity: 0 }, 12.85);
+
+      tl.to("#compliance", { opacity: 1, duration: 0.25, ease: "power2.out" }, 12.6);
+      tl.from(
+        "#compliance .copy-stack > *",
+        { y: 28, opacity: 0, scale: 0.98, stagger: 0.1, duration: 0.48, ease: "power4.out" },
+        12.85,
+      );
+      tl.from(
+        "#compliance h2 .char",
+        { y: 24, opacity: 0, rotationX: 28, stagger: 0.011, duration: 0.32, ease: "power4.out" },
+        12.98,
+      );
+      tl.from(
+        "#compliance .proof-step",
+        { x: -22, opacity: 0, scale: 0.92, stagger: 0.08, duration: 0.38, ease: "back.out(1.3)" },
+        13.15,
+      );
+      tl.from(
+        "#compliance .screen-main",
+        { x: 110, opacity: 0, scale: 0.93, duration: 0.62, ease: "back.out(1.2)" },
+        13.1,
+      );
+      tl.from(
+        "#compliance .screen-secondary",
+        { x: -80, y: 48, opacity: 0, scale: 0.93, duration: 0.58, ease: "back.out(1.2)" },
+        13.42,
+      );
+      tl.from(
+        "#compliance .detail-card",
+        { y: 22, opacity: 0, scale: 0.92, stagger: 0.12, duration: 0.42, ease: "back.out(1.35)" },
+        14.08,
+      );
+      tl.to("#compliance", { opacity: 0, duration: 0.55, ease: "power2.inOut" }, 16.05);
+
+      tl.to("#outro", { opacity: 1, duration: 0.32, ease: "power2.out" }, 16.35);
+      tl.from(
+        "#outro .launch-kicker",
+        { y: 18, opacity: 0, scale: 0.96, duration: 0.36, ease: "back.out(1.35)" },
+        16.48,
+      );
+      tl.from(
+        "#outro .brand-logo",
+        { y: 24, opacity: 0, scale: 0.96, duration: 0.55, ease: "back.out(1.35)" },
+        16.65,
+      );
+      tl.from(
+        "#outro h2 .char",
+        { y: 30, opacity: 0, rotationX: 32, stagger: 0.012, duration: 0.36, ease: "power4.out" },
+        16.85,
+      );
+      tl.from(
+        "#outro .cta",
+        { y: 26, opacity: 0, scale: 0.88, duration: 0.42, ease: "back.out(1.5)" },
+        17.35,
+      );
+      tl.to(
+        "#outro .cta",
+        { scale: 1.04, duration: 0.18, yoyo: true, repeat: 1, ease: "power2.inOut" },
+        18.05,
+      );
+
+      window.__timelines["grantpipe-launch-landscape"] = tl;
+    </script>
+  </body>
+</html>

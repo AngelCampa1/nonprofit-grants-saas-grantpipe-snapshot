@@ -1,0 +1,197 @@
+# GrantPipe LinkedIn Posts — 2026-05-06
+
+---
+
+**Post 1 — STAT_BOMB**
+
+1,400 Section 330 grantees served 31.5 million patients in 2023 — each one subject to 19 program requirements, an annual UDS report due February 15, and an Operational Site Visit that tests all three compliance systems simultaneously.
+
+91 percent of health center patients had incomes at or below 200 percent of the federal poverty guidelines in UDS 2023 — the same population the sliding fee discount program is legally required to cover under Compliance Manual Chapter 9.
+
+FTCA deeming, credentialing files, board composition, and UDS data quality are not independent checklists. They are cross-referenced against each other during every OSV.
+
+Missing documentation at any of the 19 requirements generates a condition requiring corrective action within a defined timeframe.
+
+UDS data quality is particularly unforgiving: HRSA cross-references reported clinical quality measures against sampled patient records. A measure that cannot be substantiated at the site visit is a finding — regardless of what the February 15 submission said.
+
+GrantPipe tracks restricted funds by HRSA funding stream and grant reporting calendars keyed to UDS deadlines. If your health center is managing Section 330 compliance across disconnected spreadsheets, the risk is structural, not operational. Start a trial at grantpipe.com/signup.
+
+#hrsa #sectionn330 #fqhc #grantcompliance #nonprofitfinance
+
+---
+
+**Post 2 — MYTH_BUSTER**
+
+eCivis is not a nonprofit CRM — it is a government grants administration platform, and the distinction matters before you sign a contract.
+
+Public procurement records show eCivis contracts at $20,000 to $60,000 per year for state and local government agencies, with implementation fees often quoted at $10,000 or more. That pricing reflects the buyer it was designed for.
+
+The product's core workflows reflect government grant administration: subrecipient monitoring, pass-through fund management, federal opportunity prospecting. Those are legitimate capabilities — for a county grants office.
+
+For a mid-sized nonprofit managing a diversified funding mix of federal grants, foundation awards, and individual donors, eCivis addresses one slice of the problem at enterprise cost and leaves donor CRM entirely unaddressed.
+
+Customer reviews and procurement records describe 90 to 180 day rollouts with dedicated IT and project management. Most nonprofits with $500K to $10M in annual budget do not have that capacity available.
+
+The practical test: if you are a nonprofit (not a government agency) and you need both grant compliance and donor relationship management, you are buying a tool designed for a different buyer type. Evaluate alternatives before the sales call.
+
+#federalgrants #grantmanagement #nonprofitoperations #grantsoftware
+
+---
+
+**Post 3 — WORKFLOW_STEP**
+
+Booking a pledge write-off as bad debt expense is one of the most common accounting errors in nonprofit finance — and under FASB ASC 958, it is wrong.
+
+The correct entry debits the allowance for uncollectible pledges and credits the pledge receivable. The write-off reduces the contra-asset and eliminates the receivable. It does not create a new expense on the Statement of Activities.
+
+This matters because most accounting staff coming from for-profit environments do exactly the opposite. The for-profit instinct is a debit to bad debt expense — which is not the correct account under ASC 958-605.
+
+The complication is the allowance itself. If the organization set the allowance to zero when the pledge was recorded, the write-off has nowhere to absorb: it becomes a direct charge to contribution revenue, reducing the current period's reported contributions.
+
+Multi-year pledges add a second entry that gets missed: the unamortized present-value discount attributable to the written-off portion must also be eliminated per ASC 958-605-30-6. Leaving the discount in place after the receivable is gone overstates the discount contra-asset.
+
+Auditors testing pledge receivables will sample write-offs and look for: the original pledge documentation, payment history, collection effort evidence, the collectibility assessment memo, and approval at the threshold specified in your policy.
+
+What dollar threshold triggers board approval at your organization for a write-off decision?
+
+#fasbasc958 #nonprofitaccounting #pledgemanagement #auditreadiness
+
+---
+
+**Post 4 — TERM_EXPLAINED**
+
+The SF-425 Federal Financial Report is not a routine form. It is a compliance obligation submitted under the False Claims Act, and one specific error accounts for most of the findings it generates.
+
+Line 10f — Federal Share of Expenditures — must show cumulative expenditures for the entire period of performance, from day one of the award through the last day of the reporting period. Not just the current quarter. Cumulative.
+
+If your grant started October 1 and you are submitting the March 31 quarterly report, line 10f must show total expenditures from October through March. An agency receiving reports that appear to show expenditures declining or fluctuating rather than steadily accumulating will flag the discrepancy.
+
+The final SF-425 is due no later than 120 calendar days after the period-of-performance end date. Some agencies specify shorter deadlines in the notice of award. The final report must reconcile exactly to your general ledger — a discrepancy is a compliance finding in the financial reporting area of a single audit and prevents award closeout.
+
+Line 10g (unliquidated obligations) should be zero on the final report: all obligations should be liquidated before submission.
+
+Line 10j (program income) requires reporting and accounting for any gross income earned directly as a result of federally funded activities, per the method specified in the award.
+
+A wrong number on the SF-425 is not a clerical error in a program monitor's view. It is a finding.
+
+#sf425 #federalgrants #grantreporting #uniformguidance #grantsmanagement
+
+---
+
+**Post 5 — TOOL_TEARDOWN**
+
+DonorPerfect has a 93 percent customer retention rate and an average customer tenure of 13 years. Those numbers are real. They also explain why the pricing and feature gaps do not get fixed faster.
+
+The grant tracking gap is specific: DonorPerfect covers deadline alerts, fund designations, and grant status fields. It does not track actual expenditures against a grant budget line by line, flag over-expenditure on restricted funds, or produce audit-ready reports showing funders how their money was spent.
+
+Organizations receiving federal grants or multi-year restricted foundation grants typically handle compliance documentation outside DonorPerfect — in a spreadsheet, a separate grants management system, or with an accountant managing fund restrictions manually in the accounting software. That is the standard workaround. It works until an audit.
+
+The pricing structure compounds the issue: DonorPerfect has three named tiers (Core, Plus, Pro) but does not publish dollar amounts. Phone support is Plus and Pro only; Core is limited to chat. A renewal conversation without a public price anchor gives the vendor's side most of the negotiating power.
+
+Nearly half of nonprofits are considering switching CRMs in the next 12 months, up from just 10 percent the year prior, according to the Omatic 2025 Nonprofit Integration Report. The driver cited is feature gaps and growth — not cost.
+
+The question worth asking before renewal: what does DonorPerfect plus your separate compliance system cost annually, combined?
+
+#donormanagement #nonprofitcrm #grantcompliance #restrictedFunds #nonprofitfinance
+
+---
+
+**Post 6 — VERTICAL_HOOK**
+
+USDA Rural Development administers over $20 billion in loans, loan guarantees, and grants annually across three mission areas — and each program has its own authorizing statute, compliance requirements, and eligible activity definitions.
+
+A nonprofit managing Community Facilities grants, Rural Business Development Grants, and REAP energy grants simultaneously is not managing one compliance framework. It is managing three, on top of standard 2 CFR 200 Uniform Guidance.
+
+The geographic eligibility problem compounds this: all USDA Rural Development programs require that funded activities benefit rural areas, defined by population thresholds that vary by program. Communities near urban boundaries can lose eligibility between decennial census updates. Rural area eligibility is not a one-time determination — it is an ongoing documentation obligation.
+
+EDA Public Works grants add a multi-year tracking requirement on top: job creation and private investment outcomes must be documented at specific intervals, typically five years after project completion. A grant that closed five years ago still has reporting obligations.
+
+Rural development nonprofits often face this compliance burden with two or three administrative staff covering multi-county service areas. The documentation requirements were written for program densities that do not reflect rural operational reality.
+
+What compliance infrastructure does your rural development organization have in place for geographic eligibility documentation across multi-county programs?
+
+#ruraldevelopment #usdagrants #eda #grantcompliance #nonprofitoperations
+
+---
+
+**Post 7 — FREE_RESOURCE**
+
+CRM migrations fail at the field mapping step or the data quality step — not the software step.
+
+The field mapping problem is structural: every data element in the source system needs a documented destination in the target, a defined transformation if formats differ, and a validation rule that confirms the migration succeeded. Skip that step and the errors surface after go-live, when fixing them disrupts live operations.
+
+The data quality problem is older than the migration. Most source systems contain years of accumulated quality problems — duplicate contacts, blank required fields, inconsistent fund designation naming, phone numbers in five formats — that transfer directly into the new system if not addressed first.
+
+The pre-migration data audit should take two to three weeks. Target zero duplicate contacts by primary identifier. Run a report of records where required fields are blank in the target system. Establish a merge rule for duplicates before you start. Decide which records to migrate (active donor records, five to seven years of giving history, active grants) versus exclude (closed grants older than five years, test records, deprecated fields with no current use).
+
+Post-migration validation requires record count reconciliation, a random sample of 20 donor giving histories, and financial validation confirming total giving history in the target matches the source for the same period.
+
+A free CRM migration data map template — with field-level mapping tables, transformation documentation, and validation checklists — is available at grantpipe.com. No form required.
+
+#crmmigration #nonprofitcrm #datamanagement #donormanagement
+
+---
+
+**Post 8 — COMPARISON_INSIGHT**
+
+Keela and Little Green Light occupy the same tier of the nonprofit CRM market and solve different versions of the same problem. The decision is simpler than most comparison posts make it.
+
+Little Green Light: $45 to $119 per month, flat-rate pricing regardless of contact count, solid donor management, dated interface, zero grant management at any tier. The absence is complete — no status tracking, no funder records, no deadline alerts.
+
+Keela: $99 to $299 per month, pricing scales with contact volume, modern interface, built-in email marketing, a basic grant tracking module that covers status and deadlines. The grant module is a genuine differentiator — but covering status and deadlines is not covering compliance. There is no restricted fund expenditure tracking, no audit trail tied to specific grants, no compliance report.
+
+Only 33.3 percent of nonprofits rate their CRM systems as effective, according to the Fifty & Fifty 2025 Nonprofit Peer Report. The most common failure mode is not the CRM they chose — it is that every grant-related workflow lives outside the system they chose.
+
+Both platforms leave that gap unaddressed. If your organization manages three or more active grants with restricted use provisions, the total cost of the CRM plus the separate compliance workaround typically exceeds $2,000 per year in either direction before you count staff hours.
+
+The practical question for an executive director evaluating these two: is grant compliance a current operational accountability, or a future one? The answer usually determines the right tier.
+
+#nonprofitcrm #keela #littlegreenlight #grantmanagement #nonprofitoperations
+
+---
+
+**Post 9 — LIST_POST**
+
+10 nonprofit CRMs evaluated for grant management. Most of the list disqualifies itself in one sentence.
+
+Bloomerang: no grant management. Strong donor retention analytics, but if you win a $500,000 restricted grant, Bloomerang cannot track where those dollars go.
+
+Neon CRM: basic grant record-keeping. No post-award compliance, no restricted fund tracking. Works for organizations where grants are under 20 percent of revenue.
+
+Keela: basic grant tracking — status and deadlines. Federal grant recipients will find this insufficient for compliance documentation.
+
+DonorPerfect: custom fields configurable for grant tracking. No compliance automation. Every tracking decision depends on staff discipline.
+
+Virtuous: no grant management module. Built for scaling individual donor relationships through automation.
+
+Instrumentl: grant discovery and pre-award pipeline management. No donor CRM, no post-award compliance. Typically paired with a second system, which recreates the reconciliation problem.
+
+Foundant GrantHub: application tracking and funder research. Post-award compliance features are basic.
+
+Blackbaud Raiser's Edge NXT: grant management via add-on modules requiring configuration. $5,000 to $15,000-plus annually, quote-based.
+
+Salesforce NPSP: configurable for full grant compliance if you spend $30,000 to $100,000 in implementation and maintain a dedicated admin or ongoing consultant.
+
+The pattern: donor CRMs and grant management are separate product categories that most platforms have not unified. For nonprofits managing three or more active restricted grants, that separation creates a recurring reconciliation cost.
+
+What is the compliance documentation workflow at your organization when a funder requests an expenditure report?
+
+#nonprofitcrm #grantmanagement #restrictedFunds #nonprofitfinance #grantsoftware
+
+---
+
+**Post 10 — PRODUCT_INSIGHT**
+
+The AFP Fundraising Effectiveness Project reports overall donor retention at approximately 43 percent sector-wide. New-donor retention runs around 20 to 25 percent. The gap between those two numbers is where most development programs leak.
+
+LYBUNT and SYBUNT lists — Last Year But Unfortunately Not This, and Some Year But Unfortunately Not This — are how development teams operationalize the retention problem. They name the specific donors who are at risk, not the aggregate rate.
+
+The difficulty is not generating the lists. It is generating them accurately: with a consistent fiscal year definition, with recurring gifts rolled up to annualized figures, with suppression applied at export for do-not-solicit and deceased flags, and with the numbers matching whatever the board report said last quarter.
+
+Retention rates are easy to get wrong in three specific ways. First, inconsistent fiscal year definitions across reports. Second, recurring gifts counted inconsistently — some periods treat monthly donors as one donor, others count each payment. Third, snapshot reporting mismatches, where the development director's query returns a different number than the board report because one pulls from a nightly refresh and one queries live records.
+
+GrantPipe computes retention cohorts on live gift history using AFP methodology — overall retention, new-donor retention, repeat-donor retention, and monthly-donor retention — with a single canonical fiscal year definition. Lapse risk scores recompute nightly using each donor's own cadence. LYBUNT and SYBUNT lists apply suppression at export, not after.
+
+Nonprofit Tech for Good found that 51 percent of small nonprofits did not have a written retention strategy despite using a donor CRM. The tool is not the gap. The metrics are. Start a trial at grantpipe.com/signup.
+
+#donorretention #lybunt #nonprofitfundraising #developmentdirectors #grantpipe

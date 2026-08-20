@@ -1,0 +1,10 @@
+When a funder asks how a grant has been spent, the answer often requires reconciling the donor CRM and the GL. The variance is rarely zero, and it is rarely small.
+
+We wrote a Donor-to-Grant Reconciliation Template for the moments before that email goes back to the funder. It walks through:
+
+- Tying donor CRM gift records to GL revenue by fund
+- Reconciling pledge schedules against booked receivables
+- Splitting one funder gift across multiple program funds
+- A sign-off block for both Development and Finance
+
+It will not fix the system count problem. It will keep the next funder email from being a guess.

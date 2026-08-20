@@ -1,0 +1,16 @@
+Federal opportunity search is not the same as federal grant management.
+
+Search helps you find the NOFO.
+
+Management starts when the award creates:
+
+- a period of performance
+- approved budget
+- reporting cadence
+- payment method
+- indirect cost rule
+- closeout deadline
+
+GrantPipe includes Grants.gov federal opportunity search.
+
+It also treats post-award records as first-class work.

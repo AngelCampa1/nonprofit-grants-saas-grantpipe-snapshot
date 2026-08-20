@@ -1,0 +1,9 @@
+Net assets with donor restrictions: dollars donors and grant makers gave you for a specific purpose or time. You own them. The constraint travels with them.
+
+Net assets without donor restrictions: dollars you can use for general operations. Your board decides priorities.
+
+Board-designated: a subset of "without donor restrictions" the board has internally earmarked. The board can undesignate them at any time. Not restricted in the FASB sense.
+
+Three categories. They appear on every nonprofit Statement of Financial Position. They drive how the audit reads, how grants release, and what the 990 says.
+
+If your software treats all three as the same field with a label, the audit binder gets harder every year. The ledger has to be the model, not a reporting overlay.

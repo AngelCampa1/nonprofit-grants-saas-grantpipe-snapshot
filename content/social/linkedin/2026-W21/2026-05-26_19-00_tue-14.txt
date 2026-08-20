@@ -1,0 +1,13 @@
+Five figures.
+
+That is where consultant invoices for a Salesforce Nonprofit Cloud implementation at a $2M to $5M nonprofit tend to start, before the first user logs in.
+
+You also pay for licenses, training, and a part-time admin to keep the configuration alive. Or you keep paying the consultant.
+
+Salesforce is a platform, not a product for nonprofits. Nonprofit Cloud is a set of objects and configurations on top. Someone has to set up the objects, page layouts, flows, and reports for your use case.
+
+That someone bills hourly.
+
+If you have a Development team of two and a Finance team of one, the dependency is the cost. Not the license. The labor.
+
+A different shape of product is one where the model for grants, funds, donors, and compliance is built in and shipped on day one. No configuration project. The first hour is data import. The second is real work.

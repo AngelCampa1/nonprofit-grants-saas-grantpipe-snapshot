@@ -1,0 +1,7 @@
+Donor-restricted is not the same as board-designated.
+
+Under ASC 958, donor restrictions come from outside the organization. The board can designate funds internally, but it can also change that designation later.
+
+That difference should show up in the schedule.
+
+If the board packet merges both into "restricted," the cash picture gets muddy fast.

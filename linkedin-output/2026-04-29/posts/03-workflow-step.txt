@@ -1,0 +1,9 @@
+Steps 5 and 6 of the in-kind contribution valuation workflow are where most organizations create their next audit finding.
+
+Step 5 is the journal entry. Under ASU 2020-07, debit the asset account (food inventory, supplies, property) or the relevant expense account if the goods are consumed in program delivery, and credit contribution revenue with or without donor restrictions depending on intent. Do not net in-kind gifts against expenses. Netting is the most common error and it understates both revenue and program expense on the 990.
+
+Step 6 is the donor acknowledgment letter. IRS rules require written acknowledgment for any contribution of $250 or more. For in-kind gifts, the letter describes the goods or services in enough detail to support the donor's deduction but does not state a value — that is the donor's responsibility to substantiate.
+
+The standard took effect for fiscal years beginning after June 15, 2021. Most organizations updated their journal entries and forgot to update their footnote disclosures. Audit firms catch this in year three.
+
+#nonprofitaccounting #inkindcontributions #asu202007 #fasb

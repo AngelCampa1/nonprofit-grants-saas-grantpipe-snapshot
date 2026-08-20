@@ -1,0 +1,7 @@
+Quick check: if a federal program officer emailed today asking for the cumulative drawdown total on your active pass-through award, how long would it take you to send a defensible number?
+
+If the answer involves opening QuickBooks, the donor CRM, two spreadsheets, and a shared drive, the number is not defensible. It is a guess assembled from four sources that disagree at the edges.
+
+Drawdown timing matters under 2 CFR 200. You have to draw funds close to when you spend them, document the basis, and reconcile against actual cash needs.
+
+If the source of truth is "wherever the most recent spreadsheet lives", the audit finding writes itself.

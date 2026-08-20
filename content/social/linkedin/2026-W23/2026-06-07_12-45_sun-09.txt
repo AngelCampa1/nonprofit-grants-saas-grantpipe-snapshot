@@ -1,0 +1,7 @@
+A shared grant record should reduce translation.
+
+Development should not need to translate funder language into a separate finance tracker.
+
+Finance should not need to translate ledger codes back into a separate grant tracker.
+
+The record should carry both meanings from the start.

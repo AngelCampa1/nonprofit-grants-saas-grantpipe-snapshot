@@ -1,0 +1,9 @@
+Under 2 CFR 200.430, payroll charges to federal awards must be supported by after-the-fact records reflecting actual time worked — not budget percentages. Personnel costs are 65-75% of expenditures on most human services awards and the largest single category of disallowed costs in federal Single Audits.
+
+The two-system problem is where this falls apart. Payroll runs in ADP or QuickBooks. The grants manager keeps a salary allocation spreadsheet. Finance posts journal entries to move costs from a general payroll account to grant-specific accounts. The time-and-effort certifications are PDFs in a shared folder. At audit time, the auditor wants three things lined up — the certification, the allocation entry matching the certification, and the payroll register confirming gross pay. Reconciling three sources for every employee, every month, every award, is the manual work that consumes days and still leaves gaps.
+
+The most common finding is allocation percentages that do not match the certified time — usually because the allocation was entered at budget percentages instead of certified ones. The second most common is late certifications signed more than 30 days after period end. Both create dollar-for-dollar repayment exposure.
+
+GrantPipe records salary and fringe allocations directly to grant ledgers per pay period, links each entry to the corresponding time-and-effort certification, flags percentage mismatches before audit, and supports CSV imports from ADP, Paychex, and QuickBooks Payroll.
+
+#payrollallocation #2cfr200430 #grantcompliance #federalgrants

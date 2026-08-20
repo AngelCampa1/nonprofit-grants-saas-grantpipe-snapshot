@@ -1,0 +1,40 @@
+If you heard the single audit threshold was $750,000, that number changed. As of the 2024 Uniform Guidance it's $1,000,000 in federal funds expended in a year, and this video explains who needs a single audit, why, and what the auditor actually does.
+
+A single audit is the part of federal grant compliance that catches nonprofits off guard, because the name is misleading. It isn't a small audit and it isn't one audit. It's an organization-wide review with two halves: an audit of your financial statements, plus a compliance audit of how you spent your federal money. Most of the explainers ranking for this topic are CPA-exam lectures or hour-long firm webinars, and a lot of them still quote the old $750,000 number. This is the tight, plain-English version for nonprofit finance leaders.
+
+I build grant-compliance software, so my job is to model these federal rules precisely. I'm not an auditor and I'm not pitching audit services. This is the version a busy finance director actually needs.
+
+WHAT THE VIDEO COVERS
+- What a single audit is: financial statements plus a federal compliance audit, under the Single Audit Act and 2 CFR 200, Subpart F (the old Circular A-133).
+- Who needs one: non-federal entities (nonprofits, states, local and tribal governments, universities) that expend $1,000,000+ in federal awards in a fiscal year.
+- Why "expended" is the word that trips people up: the trigger is what you spent, not what you were awarded or received in cash.
+- What counts toward the threshold: direct federal awards plus pass-through subawards. Contractor income for goods and services does not count.
+- Single audit vs. program-specific audit: the narrower option for an organization with just one federal program.
+- What the auditor tests: the Schedule of Expenditures of Federal Awards (SEFA), risk-based selection of major programs, and the independent CPA following the Yellow Book.
+- Findings, questioned costs, and the corrective action plan, plus how a clean track record can make you a low-risk auditee.
+- How and where you file: the reporting package and data collection form go to the Federal Audit Clearinghouse at fac.gov (moved to GSA in October 2023), due the earlier of 30 days after the auditor's report or 9 months after your fiscal year ends.
+
+⬇️ FREE: 2 CFR 200 AUDIT PREP CHECKLIST
+Drop your email at the link and I'll send the checklist to your inbox: what to gather, what the auditor will ask for, and how to sanity-check your SEFA.
+https://grantpipe.com/2-cfr-200-audit-prep-checklist
+
+CHAPTERS
+0:00 The number that changed: $750k to $1M
+0:52 What a single audit actually is
+2:08 Who needs one (and the 2024 threshold)
+3:21 The word that trips everyone up: "expended"
+4:38 Single audit vs. program-specific audit
+5:28 What the auditor actually tests
+6:42 Findings, questioned costs, and corrective action
+7:50 How and where you file it
+8:51 Where preparing for this breaks down
+10:00 Free checklist + what's next
+
+WHO THIS IS FOR
+Executive directors, finance directors, and grants managers at nonprofits that take federal money, directly or as a subrecipient, and want to know whether a single audit applies to them.
+
+A quick note: this is general guidance from someone who builds grant-compliance software, not legal or accounting advice. When the rules get specific to your award, check with your funder or your auditor. Thresholds and rules can change again.
+
+Next up: How to Prepare for a Single Audit, step by step. Subscribe so you catch it.
+
+#nonprofit #singleaudit #grantcompliance #uniformguidance #2cfr200 #nonprofitfinance #federalgrants #auditprep

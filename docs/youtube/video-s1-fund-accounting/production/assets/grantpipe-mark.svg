@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" width="64" height="64" role="img" aria-labelledby="grantpipe-mark-title">
+  <title id="grantpipe-mark-title">GrantPipe logo</title>
+  <g data-logo-mark="grantpipe-mark" transform="translate(6 4)">
+    <path d="M26 0 52 13.5 26 27 0 13.5Z" fill="#047857"/>
+    <path d="M0 19 20 29.5v28L0 47Z" fill="#047857"/>
+    <path d="M52 19 32 29.5v28L52 47Z" fill="#047857"/>
+    <path d="M20 29.5 26 32.7 32 29.5v28L26 61 20 57.5Z" fill="#ffffff"/>
+    <path d="M0 13.5 5.6 10.6 26 21.2 46.4 10.6 52 13.5 26 27Z" fill="#ffffff"/>
+    <rect data-gold-accent="1" x="22.1" y="30.8" width="7.8" height="8" rx="1.4" fill="#d99a18"/>
+    <rect data-gold-accent="2" x="22.1" y="43.2" width="7.8" height="8" rx="1.4" fill="#d99a18"/>
+  </g>
+</svg>

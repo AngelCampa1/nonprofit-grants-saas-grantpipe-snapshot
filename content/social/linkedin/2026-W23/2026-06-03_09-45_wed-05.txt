@@ -1,0 +1,23 @@
+Before submitting an SF-425, reconcile three stories.
+
+1. The grant ledger
+
+This is the spending story. It should show cumulative expenditures from the beginning of the period of performance through the reporting date.
+
+2. The draw history
+
+This is the cash story. It should show cumulative federal cash received through PMS, ASAP, or the agency payment portal.
+
+3. The award record
+
+This is the permission story. It should show authorized federal funds, budget changes, match requirements, program income treatment, and period dates.
+
+The SF-425 sits where those stories meet.
+
+The federal expenditure field should come from cumulative federal expenditures, not current-quarter activity.
+
+The unliquidated obligations field should include actual commitments, not future plans.
+
+The program income field should not be blank if program income exists.
+
+The report is short. The support behind it is where the discipline lives.

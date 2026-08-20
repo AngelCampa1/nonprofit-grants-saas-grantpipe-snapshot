@@ -1,0 +1,64 @@
+{
+  "captured_at": "2026-05-10",
+  "company_page": "linkedin.com/company/113210122",
+  "follower_count": "not published: sample too small to be meaningful",
+  "posts_visible": "not published: sample too small to be meaningful",
+  "engagement_summary": {
+    "total_reactions": "not published: sample too small to be meaningful",
+    "total_comments": "not published: sample too small to be meaningful",
+    "total_reposts": "not published: sample too small to be meaningful",
+    "note": "Page is brand new. Sample size too small for statistical pattern analysis."
+  },
+  "posts": [
+    {
+      "urn": "7459219947324579840",
+      "age_at_capture": "13m",
+      "engagement_count_visible": "not published: sample too small to be meaningful",
+      "hook": "Myth callout",
+      "topic": "Donor CRM gap (Neon CRM specific)",
+      "length_chars": 1137,
+      "format": "long-form essay",
+      "first_line": "Myth: \"Our CRM handles grants, so we're covered.\""
+    },
+    {
+      "urn": "7459198807994654720",
+      "age_at_capture": "1h",
+      "engagement_count_visible": "not published: sample too small to be meaningful",
+      "hook": "Article share",
+      "topic": "Nonprofit management",
+      "length_chars": 1409,
+      "format": "long-form with article link"
+    },
+    {
+      "urn": "7459047813071568897",
+      "age_at_capture": "11h",
+      "engagement_count_visible": "not published: sample too small to be meaningful",
+      "topic": "Grant/donor compliance",
+      "length_chars": 1388,
+      "format": "long-form"
+    },
+    {
+      "urn": "7459026673817190402",
+      "age_at_capture": "13h",
+      "engagement_count_visible": "not published: sample too small to be meaningful",
+      "topic": "Grant/donor compliance",
+      "length_chars": 1292,
+      "format": "long-form"
+    },
+    {
+      "urn": "7458984395501162496",
+      "age_at_capture": "15h",
+      "engagement_count_visible": "not published: sample too small to be meaningful",
+      "topic": "Grant/donor compliance",
+      "length_chars": 1269,
+      "format": "long-form"
+    }
+  ],
+  "observations": [
+    "All posts visible at capture are long-form (1100 to 1400 chars). No format variety yet.",
+    "Heavy use of em dashes in prior copy (for example, between two clauses such as 'are not standard features. They require custom configuration.'). New copy must avoid em dashes per brand voice update.",
+    "Topic concentration in compliance and donor CRM gap. No ICP-adjacent posts. No build-in-public posts. No short hooks.",
+    "Posting cadence: a burst of posts over roughly 15 hours suggests a recent push rather than a sustained schedule.",
+    "Engagement across the visible posts is too small a sample to draw signal from."
+  ]
+}

@@ -1,0 +1,7 @@
+If you spent last weekend rebuilding a grant report because Development used a different number than the GL:
+
+The number was not wrong in either place. The donor CRM showed the gift date. The GL showed the recognition date. The grant report wanted the spending date. Three valid views of one award.
+
+This is the unification problem. It is not solved by configuring more fields. It is solved by modeling grants and funds as separate entities from the start, with a many-to-many relationship to track which dollars from which award fund which program. FASB ASC 958 already says this. Sage Intacct and Blackbaud Financial Edge already model it. Donor CRMs do not, because they were never asked to.
+
+Three numbers reconciling to one truth is not a workflow problem. It is a data model problem.

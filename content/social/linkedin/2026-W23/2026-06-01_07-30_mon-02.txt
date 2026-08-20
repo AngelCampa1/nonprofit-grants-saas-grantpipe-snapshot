@@ -1,0 +1,15 @@
+The donor CRM and the general ledger answer different questions.
+
+The CRM says: who funded us, when did the relationship change, what did we promise?
+
+The GL says: what cash arrived, where was it coded, what restriction class did Finance use?
+
+The risk shows up when those answers drift.
+
+A June 1 check worth doing:
+
+Pick five active funders.
+
+For each one, compare CRM amount, grant record amount, GL receipt, restriction code, and report deadline.
+
+If the same funder has five different names, fix the naming before you build another report.

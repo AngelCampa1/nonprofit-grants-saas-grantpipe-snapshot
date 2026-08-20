@@ -1,0 +1,26 @@
+---
+import { buildSignupUrl } from "@/lib/app-url";
+
+// Signup lives on the app subdomain, not the marketing site. This page exists so
+// grantpipe.com/signup (from old links, ads, backlinks, AI citations, or typed
+// URLs) resolves to a real route and bounces visitors to the real attributed
+// signup instead of erroring on the catch-all route. The worker patch
+// (scripts/patch-site-canonical-host-redirect.ts) serves a server-side 301 first;
+// this client-side replace is the fallback and preserves any UTM/click
+// attribution carried in the query string and hash.
+const targetUrl = buildSignupUrl();
+---
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="robots" content="noindex, follow" />
+    <link rel="canonical" href={targetUrl} />
+    <script is:inline define:vars={{ targetUrl }}>
+      window.location.replace(`${targetUrl}${window.location.search}${window.location.hash}`);
+    </script>
+  </head>
+  <body>
+    <a href={targetUrl}>Continue to GrantPipe signup</a>
+  </body>
+</html>

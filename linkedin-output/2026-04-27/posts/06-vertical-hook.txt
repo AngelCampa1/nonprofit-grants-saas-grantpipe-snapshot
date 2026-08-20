@@ -1,0 +1,11 @@
+HUD HOME rental housing compliance lasts 15 to 20 years after the project closes.
+
+Affordable housing nonprofits running HOME, CDBG, and ESG grants live with a compliance horizon that outlasts most staff tenures. Davis-Bacon wage documentation has to survive the construction phase. Matching fund records have to be reconstructable a decade later. Affordability period rent and income certifications run annually until the obligation expires.
+
+The standard nonprofit CRM does not handle this. Donor records weren't designed to track a tenant income recertification due in 2039.
+
+What works in practice: separate the development-phase restricted funds from the operations-phase restricted funds inside the accounting system, store the regulatory file (HUD agreement, Davis-Bacon payrolls, environmental review) against the project as a permanent attachment, and put the affordability period end date on a calendar with annual review triggers — not in someone's head.
+
+The institutional system has to outlive the people. That's the design constraint.
+
+#affordablehousing #hudcompliance #homeinvestmentpartnerships #nonprofitcompliance

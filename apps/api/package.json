@@ -1,0 +1,38 @@
+{
+  "name": "@grantpipe/api",
+  "private": true,
+  "type": "module",
+  "exports": {
+    ".": "./src/app.ts"
+  },
+  "engines": {
+    "node": ">=20"
+  },
+  "scripts": {
+    "dev": "wrangler dev",
+    "deploy": "tsx ../../scripts/deploy-api.ts",
+    "typecheck": "tsc --noEmit",
+    "test": "vitest run",
+    "test:watch": "vitest watch",
+    "test:coverage": "vitest run --coverage",
+    "lint": "eslint src/"
+  },
+  "dependencies": {
+    "@cloudflare/puppeteer": "^1.0.6",
+    "@grantpipe/db": "workspace:*",
+    "@grantpipe/shared": "workspace:*",
+    "@hono/zod-validator": "^0.7",
+    "@sentry/cloudflare": "^10.49.0",
+    "better-auth": "^1.6.0",
+    "drizzle-orm": "^0.44",
+    "hono": "^4",
+    "zod": "^4.3.6"
+  },
+  "devDependencies": {
+    "@cloudflare/workers-types": "^4",
+    "@vitest/coverage-v8": "^3",
+    "typescript": "^5",
+    "vitest": "^3",
+    "wrangler": "^4"
+  }
+}

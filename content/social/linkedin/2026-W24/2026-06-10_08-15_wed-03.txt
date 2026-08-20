@@ -1,0 +1,15 @@
+The cleanest restricted fund schedule has a boring shape:
+
+Opening balance.
+
+New restricted revenue.
+
+Releases.
+
+Ending balance.
+
+Source document.
+
+Restriction type.
+
+That boring shape is a gift to the Executive Director, the board treasurer, and the auditor reading your internal shorthand for the first time.

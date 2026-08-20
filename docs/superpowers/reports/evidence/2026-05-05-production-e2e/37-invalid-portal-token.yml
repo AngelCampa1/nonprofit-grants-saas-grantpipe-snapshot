@@ -1,0 +1,11 @@
+- generic [ref=e4]:
+    - main [ref=e5]:
+        - generic [ref=e7]:
+            - paragraph [ref=e13]: Access link invalid
+            - paragraph [ref=e14]: Invalid or expired portal link.
+            - paragraph [ref=e15]: Links are single-use and expire after their set duration. Contact the organization to request a new link.
+    - contentinfo [ref=e9]:
+        - paragraph [ref=e11]:
+            - text: Powered by
+            - link "GrantPipe" [ref=e12] [cursor=pointer]:
+                - /url: https://grantpipe.com

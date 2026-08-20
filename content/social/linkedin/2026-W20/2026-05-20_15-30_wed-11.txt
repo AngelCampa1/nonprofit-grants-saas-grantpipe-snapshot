@@ -1,0 +1,5 @@
+A common shape at $1M to $5M nonprofits: three CRMs. Bloomerang for individuals. Airtable for grants. QuickBooks classes for restricted funds.
+
+The question is not which is best. The question is which one carries the audit trail.
+
+Often, none of them do.

@@ -1,0 +1,5 @@
+Before: SAM.gov UEI registration expired three days before the drawdown request. Payment held. Program staff wait two weeks.
+
+After: a renewal date on the calendar 60 days out, with the registered Entity Administrator on the reminder.
+
+The fix is not software. The fix is treating SAM.gov registration as a recurring compliance task, not a one-time setup.

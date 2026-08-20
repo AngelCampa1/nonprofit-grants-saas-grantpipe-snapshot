@@ -1,0 +1,11 @@
+An SF-425 should come from the ledger.
+
+Not from last quarter's form.
+
+Not from a guessed spend-down percentage.
+
+Not from the number that feels close enough.
+
+Run the grant-specific report, check cumulative federal expenditures, compare cash drawn, then submit.
+
+If Box 10e and the grant ledger disagree, the report is not ready.

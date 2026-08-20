@@ -1,0 +1,9 @@
+Board packet test:
+
+Can the narrative paragraph about restricted funds tie to the financial statement line without a manual explanation?
+
+The board may not ask for the schedule by fund.
+
+The auditor may ask for it later.
+
+Write the packet so both readers see the same story.

@@ -1,0 +1,679 @@
+1
+00:00:00,000 --> 00:00:04,829
+There's one column missing from almost every grant tracking spreadsheet I've seen.
+
+2
+00:00:04,829 --> 00:00:07,655
+It's also the first thing an auditor asks about.
+
+3
+00:00:07,655 --> 00:00:11,130
+Stick around and I'll hand you the finished template, free.
+
+4
+00:00:11,130 --> 00:00:14,781
+But first, the column that quietly gets nonprofits in trouble.
+
+5
+00:00:14,781 --> 00:00:19,197
+If you're running your grants on a spreadsheet, this is not a knock on you.
+
+6
+00:00:19,197 --> 00:00:21,670
+A spreadsheet is the right place to start.
+
+7
+00:00:21,670 --> 00:00:25,675
+The trouble is that most grant trackers get built like a to-do list.
+
+8
+00:00:25,675 --> 00:00:28,030
+Applied, approved, money received, done.
+
+9
+00:00:28,030 --> 00:00:34,508
+But your funder and your auditor are asking a completely different question, and a to-do list can't answer it.
+
+10
+00:00:34,508 --> 00:00:39,160
+So over the next ten minutes, let's build a grant tracking spreadsheet together
+
+11
+00:00:39,160 --> 00:00:40,220
+from a blank sheet
+
+12
+00:00:40,220 --> 00:00:44,695
+the way it should be built if you ever expect to sit across from an auditor.
+
+13
+00:00:44,695 --> 00:00:47,050
+The finished template is genuinely free.
+
+14
+00:00:47,050 --> 00:00:53,469
+Drop your email at the link in the description and I'll send you both the Google Sheets and the Excel version
+
+15
+00:00:53,469 --> 00:00:56,413
+with every column we build today already in place.
+
+16
+00:00:56,413 --> 00:00:58,533
+Quick note on where I'm coming from.
+
+17
+00:00:58,533 --> 00:01:00,477
+I build grant compliance software
+
+18
+00:01:00,477 --> 00:01:04,069
+so I'm going to show you the structure that survives an audit
+
+19
+00:01:04,069 --> 00:01:07,190
+not just the one that looks tidy on a Monday morning.
+
+20
+00:01:07,190 --> 00:01:11,017
+Everything I show you here works in plain Google Sheets or Excel.
+
+21
+00:01:11,017 --> 00:01:12,725
+No add-ons, no special tools.
+
+22
+00:01:12,725 --> 00:01:15,250
+Picture a typical grant tracker for a second.
+
+23
+00:01:15,250 --> 00:01:19,066
+Grant name, funder, award amount, a status column, maybe a due date.
+
+24
+00:01:19,066 --> 00:01:24,397
+All of it tracks whether the money showed up, and nothing about how you're allowed to spend it.
+
+25
+00:01:24,397 --> 00:01:26,586
+That sheet falls apart in three places.
+
+26
+00:01:26,586 --> 00:01:30,177
+You can't tell which dollars are promised to a specific program.
+
+27
+00:01:30,177 --> 00:01:35,452
+You know the award was fifty thousand, but not that you've already burned through forty-eight.
+
+28
+00:01:35,452 --> 00:01:39,043
+And when a number changes, nobody knows who changed it, or when.
+
+29
+00:01:39,043 --> 00:01:41,681
+By the end of this, we'll have fixed all three.
+
+30
+00:01:41,681 --> 00:01:42,354
+Let's build.
+
+31
+00:01:42,354 --> 00:01:43,428
+Open a new sheet.
+
+32
+00:01:43,428 --> 00:01:45,765
+Your first tab is the Grant Register.
+
+33
+00:01:45,765 --> 00:01:48,798
+One row per grant, and this is your master list.
+
+34
+00:01:48,798 --> 00:01:51,578
+These are the columns that earn their place.
+
+35
+00:01:51,578 --> 00:01:56,632
+Start with a Grant ID, a short code like E-D dash twenty-twenty-six dash oh-one.
+
+36
+00:01:56,632 --> 00:01:59,854
+The funder prefix, the year, then a running number.
+
+37
+00:01:59,854 --> 00:02:05,982
+You'll thank yourself the day you have twenty grants and three of them come from the same funder.
+
+38
+00:02:05,982 --> 00:02:12,173
+Then grant name, funder, and funder type, whether that's federal, state, foundation, or corporate.
+
+39
+00:02:12,173 --> 00:02:16,279
+The funder type matters because the rules change with the source.
+
+40
+00:02:16,279 --> 00:02:21,839
+A federal award comes with a stack of requirements a local family foundation never will.
+
+41
+00:02:21,839 --> 00:02:25,187
+Then the award amount, a start date, and an end date.
+
+42
+00:02:25,187 --> 00:02:26,640
+That window has a name.
+
+43
+00:02:26,640 --> 00:02:28,978
+It's called the period of performance
+
+44
+00:02:28,978 --> 00:02:34,032
+and spending outside that window is one of the more common things auditors flag.
+
+45
+00:02:34,032 --> 00:02:38,960
+Money you spend the week before the grant officially starts can get disallowed
+
+46
+00:02:38,960 --> 00:02:42,371
+even when the expense itself was perfectly reasonable.
+
+47
+00:02:42,371 --> 00:02:46,920
+Last, a real status column: Applied, Awarded, Active, Reporting, Closed.
+
+48
+00:02:46,920 --> 00:02:49,699
+A grant isn't finished when the money lands.
+
+49
+00:02:49,699 --> 00:02:52,732
+It's finished when the final report is accepted.
+
+50
+00:02:52,732 --> 00:02:54,501
+The register's taking shape.
+
+51
+00:02:54,501 --> 00:03:01,008
+But we still haven't added the column from the start of this video, and it's the one that matters most.
+
+52
+00:03:01,008 --> 00:03:01,766
+That's next.
+
+53
+00:03:01,766 --> 00:03:04,988
+Now the column from the very start of this video.
+
+54
+00:03:04,988 --> 00:03:08,933
+Add one called Restricted, with a simple yes-or-no dropdown.
+
+55
+00:03:08,933 --> 00:03:11,695
+Right next to it, add Restriction Purpose.
+
+56
+00:03:11,695 --> 00:03:13,931
+This one column is the whole game.
+
+57
+00:03:13,931 --> 00:03:20,638
+A restricted grant is money a funder gave you for one specific purpose, say your after-school program.
+
+58
+00:03:20,638 --> 00:03:25,241
+You're obligated, legally or by contract, to spend it on that purpose.
+
+59
+00:03:25,241 --> 00:03:28,989
+Unrestricted money you can put toward general operations.
+
+60
+00:03:28,989 --> 00:03:34,841
+Now, a restricted grant can usually cover a fair share of your overhead, things like rent
+
+61
+00:03:34,841 --> 00:03:38,129
+but only when the award budget actually allows it.
+
+62
+00:03:38,129 --> 00:03:42,666
+Charge general costs the grant never approved, and that isn't a typo.
+
+63
+00:03:42,666 --> 00:03:44,639
+That's a compliance violation.
+
+64
+00:03:44,639 --> 00:03:49,899
+If your organization spends a million dollars or more in federal money in a year
+
+65
+00:03:49,899 --> 00:03:52,332
+the place that catches it has a name.
+
+66
+00:03:52,332 --> 00:03:57,198
+It's called the single audit, and we'll do a whole video on that one soon.
+
+67
+00:03:57,198 --> 00:04:02,130
+A spreadsheet without this column can't tell you whether you're in trouble.
+
+68
+00:04:02,130 --> 00:04:05,089
+So we add it now, to every grant, on day one.
+
+69
+00:04:05,089 --> 00:04:11,730
+The Restriction Purpose field next to it is where you write the actual sentence from the award letter
+
+70
+00:04:11,730 --> 00:04:12,914
+in plain language.
+
+71
+00:04:12,914 --> 00:04:17,254
+Future you, eighteen months from now, will not remember the terms.
+
+72
+00:04:17,254 --> 00:04:18,174
+The cell will.
+
+73
+00:04:18,174 --> 00:04:19,095
+One small tip.
+
+74
+00:04:19,095 --> 00:04:23,501
+Use Data, then Data validation, to make Restricted a real dropdown.
+
+75
+00:04:23,501 --> 00:04:26,262
+It stops the typos before they ever happen
+
+76
+00:04:26,262 --> 00:04:31,720
+and a typo here is the kind of thing that quietly breaks a formula three tabs away.
+
+77
+00:04:31,720 --> 00:04:34,757
+Next tab, and this is the one that protects you.
+
+78
+00:04:34,757 --> 00:04:36,085
+Budget versus Actual.
+
+79
+00:04:36,085 --> 00:04:42,222
+Here you track spending against a single grant, not your whole organization, just this one award.
+
+80
+00:04:42,222 --> 00:04:46,461
+Down the left side, list the budget categories the funder approved.
+
+81
+00:04:46,461 --> 00:04:50,193
+Personnel, supplies, travel, whatever the award spells out.
+
+82
+00:04:50,193 --> 00:04:52,155
+Match their wording, not yours.
+
+83
+00:04:52,155 --> 00:04:55,444
+If the award says "Personnel, " don't call it "Staff
+
+84
+00:04:55,444 --> 00:05:00,569
+" because at report time you want your line items to line up with theirs exactly.
+
+85
+00:05:00,569 --> 00:05:04,744
+Then three columns across the top: Budgeted, Spent, and Remaining.
+
+86
+00:05:04,744 --> 00:05:09,110
+Remaining is just budgeted minus spent, so let the sheet do the math.
+
+87
+00:05:09,110 --> 00:05:11,450
+Equals B2 minus C2, and copy it down.
+
+88
+00:05:11,450 --> 00:05:14,930
+Why break it out by category instead of one big number?
+
+89
+00:05:14,930 --> 00:05:19,801
+Because many funders approve your budget by category, not just as a lump sum.
+
+90
+00:05:19,801 --> 00:05:23,914
+Say they gave you eight thousand for travel and you spend twelve.
+
+91
+00:05:23,914 --> 00:05:28,848
+Your grand total might still be under budget, but you've overspent a category.
+
+92
+00:05:28,848 --> 00:05:30,873
+With federal awards, for example
+
+93
+00:05:30,873 --> 00:05:35,554
+once you shift more than about ten percent of the total between categories
+
+94
+00:05:35,554 --> 00:05:38,401
+you usually need the funder's sign-off first.
+
+95
+00:05:38,401 --> 00:05:44,538
+Tracking by line is how you catch that in March, instead of finding out at the audit in November.
+
+96
+00:05:44,538 --> 00:05:47,531
+So how does that Spent number fill itself in?
+
+97
+00:05:47,531 --> 00:05:48,862
+With an expense log.
+
+98
+00:05:48,862 --> 00:05:52,587
+One tab, one row for every dollar you charge to a grant.
+
+99
+00:05:52,587 --> 00:05:54,117
+The columns are simple.
+
+100
+00:05:54,117 --> 00:05:58,907
+Date, Grant ID, Category, Vendor, Amount, and a Notes field for the why.
+
+101
+00:05:58,907 --> 00:06:02,499
+The Grant ID is the key that ties everything together.
+
+102
+00:06:02,499 --> 00:06:07,222
+It's how each expense connects back to the right grant in your register
+
+103
+00:06:07,222 --> 00:06:11,213
+and it's why we gave every grant a code back in chapter two.
+
+104
+00:06:11,213 --> 00:06:17,266
+Over on the Budget versus Actual tab, your Spent column becomes one formula, called SUMIFS.
+
+105
+00:06:17,266 --> 00:06:19,196
+Think of it as a smart total.
+
+106
+00:06:19,196 --> 00:06:25,781
+It scans your whole expense log and pulls only the rows that match this grant and this budget line.
+
+107
+00:06:25,781 --> 00:06:28,775
+Log a receipt, and the budget updates itself.
+
+108
+00:06:28,775 --> 00:06:32,367
+That single connection, expense log feeding the budget
+
+109
+00:06:32,367 --> 00:06:39,418
+is the difference between a spreadsheet you actually trust and one you rebuild from scratch every quarter.
+
+110
+00:06:39,418 --> 00:06:43,476
+Get this part right and you stop doing math by hand entirely.
+
+111
+00:06:43,476 --> 00:06:48,997
+You just log expenses as they happen, and every other tab stays current on its own.
+
+112
+00:06:48,997 --> 00:06:52,241
+Funders don't only want their money spent correctly.
+
+113
+00:06:52,241 --> 00:06:54,861
+They want to hear about it, on a schedule.
+
+114
+00:06:54,861 --> 00:06:56,296
+So add a Reporting tab.
+
+115
+00:06:56,296 --> 00:07:00,663
+Grant ID, report type, due date, the date you submitted, and a status.
+
+116
+00:07:00,663 --> 00:07:04,219
+Now for a genuinely useful trick: conditional formatting.
+
+117
+00:07:04,219 --> 00:07:06,902
+Select your due-date column and add a rule.
+
+118
+00:07:06,902 --> 00:07:10,583
+If a date falls within the next thirty days, turn it amber.
+
+119
+00:07:10,583 --> 00:07:14,638
+If it's already passed and nothing's been submitted, turn it red.
+
+120
+00:07:14,638 --> 00:07:19,941
+Your deadlines start finding you, instead of you trying to remember them at midnight.
+
+121
+00:07:19,941 --> 00:07:25,681
+A missed report is one of the fastest ways to lose a renewal, and it's completely avoidable.
+
+122
+00:07:25,681 --> 00:07:28,987
+And put a tiny dashboard at the top of your register.
+
+123
+00:07:28,987 --> 00:07:34,602
+Four numbers: total awarded, total spent, the percentage of your funding that's restricted
+
+124
+00:07:34,602 --> 00:07:37,908
+and how many reports are due in the next thirty days.
+
+125
+00:07:37,908 --> 00:07:40,841
+Those are just a few SUM and COUNTIFS formulas.
+
+126
+00:07:40,841 --> 00:07:44,147
+That's your entire grant portfolio in a single glance
+
+127
+00:07:44,147 --> 00:07:48,951
+which is exactly the view your executive director or your board will ask for.
+
+128
+00:07:48,951 --> 00:07:53,897
+Before we talk about where this breaks, here are two minutes that will save you.
+
+129
+00:07:53,897 --> 00:07:57,729
+First, protect the cells that should never change by accident.
+
+130
+00:07:57,729 --> 00:08:01,500
+In Google Sheets that's Data, then Protect sheets and ranges.
+
+131
+00:08:01,500 --> 00:08:04,035
+Lock your award amounts and your formulas
+
+132
+00:08:04,035 --> 00:08:09,475
+so a well-meaning volunteer can't overwrite the math while they're fixing a vendor name.
+
+133
+00:08:09,475 --> 00:08:12,319
+Second, give people the right level of access.
+
+134
+00:08:12,319 --> 00:08:16,584
+Anyone who only needs to read the numbers gets View access, not Edit.
+
+135
+00:08:16,584 --> 00:08:21,282
+Fewer hands on the keys means fewer mystery changes you can't explain later.
+
+136
+00:08:21,282 --> 00:08:26,599
+Third, name the file like someone will ask you about it, because someday someone will.
+
+137
+00:08:26,599 --> 00:08:30,246
+Pick one pattern, something like Grant Tracker and the year
+
+138
+00:08:30,246 --> 00:08:33,337
+and save a dated copy at the end of every quarter.
+
+139
+00:08:33,337 --> 00:08:38,839
+When a funder asks what your budget looked like back in June, you can actually show them.
+
+140
+00:08:38,839 --> 00:08:40,446
+None of this is glamorous.
+
+141
+00:08:40,446 --> 00:08:46,072
+It's the difference between a spreadsheet you can defend and one you have to apologize for.
+
+142
+00:08:46,072 --> 00:08:52,783
+I make grant software for a living, so let me be straight with you about where this spreadsheet stops working.
+
+143
+00:08:52,783 --> 00:08:54,674
+Because at some point, it will.
+
+144
+00:08:54,674 --> 00:08:58,639
+The first crack shows up when more than one person edits the file
+
+145
+00:08:58,639 --> 00:09:02,727
+and you genuinely can't tell who changed the award amount, or when.
+
+146
+00:09:02,727 --> 00:09:07,607
+There's no audit trail, and the trail is the first thing an auditor asks to see.
+
+147
+00:09:07,607 --> 00:09:11,816
+The second comes when a single expense has to split across two grants
+
+148
+00:09:11,816 --> 00:09:14,562
+and no clean formula can allocate it cleanly.
+
+149
+00:09:14,562 --> 00:09:16,087
+The third is just volume.
+
+150
+00:09:16,087 --> 00:09:20,845
+Enough grants, and that reporting tab quietly becomes someone's full-time job.
+
+151
+00:09:20,845 --> 00:09:22,980
+None of that is you doing it wrong.
+
+152
+00:09:22,980 --> 00:09:29,447
+It's a spreadsheet doing exactly what a spreadsheet does, right up until your compliance load outgrows it.
+
+153
+00:09:29,447 --> 00:09:34,384
+When you hit that wall, the next step is software that keeps the audit trail for you.
+
+154
+00:09:34,384 --> 00:09:37,869
+Every change logged on its own, with a name and a timestamp.
+
+155
+00:09:37,869 --> 00:09:43,677
+Restricted funds kept separate by the system, so you physically can't spend them on the wrong thing.
+
+156
+00:09:43,677 --> 00:09:46,639
+Deadlines tracked without anyone babysitting a tab.
+
+157
+00:09:46,639 --> 00:09:48,788
+That's exactly why I built GrantPipe.
+
+158
+00:09:48,788 --> 00:09:52,040
+It's the same structure you just put in this spreadsheet
+
+159
+00:09:52,040 --> 00:09:55,874
+except the audit trail and the fund accounting are handled for you
+
+160
+00:09:55,874 --> 00:09:59,010
+instead of resting on whoever remembers to be careful.
+
+161
+00:09:59,010 --> 00:10:01,101
+I'm not going to pitch it hard here.
+
+162
+00:10:01,101 --> 00:10:04,237
+The spreadsheet you just built is the right tool today
+
+163
+00:10:04,237 --> 00:10:09,058
+and when it stops being the right tool, you'll know, and you'll know where to look.
+
+164
+00:10:09,058 --> 00:10:10,742
+So go grab the free template.
+
+165
+00:10:10,742 --> 00:10:17,073
+Drop your email at the link in the description and I'll send you both the Google Sheets and the Excel version
+
+166
+00:10:17,073 --> 00:10:19,977
+with every column we built today already in there.
+
+167
+00:10:19,977 --> 00:10:22,707
+If this saved you a future headache, subscribe.
+
+168
+00:10:22,707 --> 00:10:27,470
+The next video breaks down the single audit, in plain English, without the jargon.
+
+169
+00:10:27,470 --> 00:10:29,212
+Build it right the first time.
+
+170
+00:10:29,212 --> 00:10:34,091
+The version of you sitting across from an auditor someday will be very glad you did.

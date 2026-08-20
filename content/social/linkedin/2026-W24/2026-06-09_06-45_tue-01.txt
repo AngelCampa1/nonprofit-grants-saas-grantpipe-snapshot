@@ -1,0 +1,14 @@
+Match tracking fails quietly.
+
+The grant can look healthy on spend-down while the required recipient share is behind.
+
+For every match requirement, keep a separate ledger:
+
+- cash match
+- in-kind match
+- valuation basis
+- source document
+- grant period date
+- already claimed elsewhere: yes or no
+
+That last line matters. Under 2 CFR 200.306, the same match cannot satisfy two federal awards.

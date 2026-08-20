@@ -1,0 +1,13 @@
+Four signs your donor CRM is not the right home for grant compliance:
+
+1. You cannot store the period of performance start and end dates as required, validated fields. They live in a notes field or a custom text box.
+
+2. The system has no concept of a reporting deadline that is not the same as a renewal date. Grants have both. Donor cycles usually do not.
+
+3. Restricted fund balance is not a calculated value. It is a number someone types in.
+
+4. There is no audit-only read role. The auditor either gets full access or gets a PDF export.
+
+A donor CRM is built around the donor relationship. A grant is a contract with a reporting cadence, an evidence trail, and a closeout package. The two share a contact record. They do not share a workflow.
+
+If you bought a CRM and bolted grants on, you are not wrong to have done it. You are just at the size where the bolt is the bottleneck.

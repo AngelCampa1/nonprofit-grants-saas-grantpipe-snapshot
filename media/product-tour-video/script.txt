@@ -1,0 +1,57 @@
+Grant work gets messy for a simple reason: one award turns into a stack of records almost immediately.
+
+The award starts in a spreadsheet. Funder history lives in the donor database. Restriction details sit near accounting. The agreement ends up in a folder. The report deadline lands on somebody's calendar. Then a funder, board member, or auditor asks a simple question: what happened with this grant?
+
+GrantPipe gives the team one operating record to answer from.
+
+For this walkthrough, follow an active award from dashboard status to fund balance, documents, evidence, reporting, and access.
+
+Start with the dashboard. This is the weekly check-in view: deadlines that need attention, grants with risk, giving activity, restricted fund balances, and recent updates.
+
+In a Monday meeting, the team starts from the same status picture before anyone exports a report or asks another department for an update.
+
+The order matters. Deadlines come first, then awards that need attention, balances, and recent activity. A leader can decide where to spend the next fifteen minutes.
+
+Now open the grant portfolio. The team can see which awards are active, pending, closing out, or waiting on follow up. Each grant has the basics people need quickly: funder, amount, owner, period, status, and next step.
+
+Open the Title III-C Nutrition Services Grant. This is where the tour gets concrete. The award record pulls the later questions into view: allocation, expenses, reporting requirements, documents, impact metrics, and spend down.
+
+The record is also the handoff between teams. Development can start with the funder and award. Finance can move to the restriction and balance. Program staff can find deliverables and evidence.
+
+Winning the grant starts the operational work. The team still has to know what can be spent, what is restricted, what has to be reported, and what backup belongs with the file.
+
+Move from the award to the restricted fund. The fund has its own approved use, balance, restriction terms, expenses, and related evidence.
+
+Finance can check remaining restricted balance. Program staff can see what the money is for. Development can understand what the funder or donor supported. The same award carries context into each meeting.
+
+Now look at compliance inside the same workflow. A report requirement stays attached to the award, tied to the due date, and connected to the documents and evidence the team will need. The work becomes visible before it turns into a scramble.
+
+The deadline view gives the team a place to prepare before the final week. If the agreement, expenses, and support files are current, the report becomes a review task.
+
+A deadline calendar gives the date. A grant workflow carries the agreement, allowed uses, spending context, documents, and notes that explain the work already done.
+
+In a real review meeting, this is where time disappears. Someone knows the program update. Someone else knows the balance. A third person has the agreement. Another person remembers which expenses were allowable. GrantPipe keeps those pieces near the requirement, so the team can answer from the record.
+
+Evidence bundles are the handoff. When someone asks for backup, the team can gather the award, fund, agreement, restriction terms, and supporting files into a reviewable package.
+
+When those details live in separate places, the team has to rebuild the answer. Here, the award, fund, agreement, and evidence stay connected.
+
+Donor and funder context still matters. A restricted gift or foundation award is also a relationship. Notes, gifts, documents, and related records stay close to the program and grant work they support. Development can see what a funder cares about while keeping the financial and compliance context nearby.
+
+Access is controlled too. Role-based permissions and activity history help keep sensitive operational data in the right hands. Leaders can review the full picture, staff can work in their assigned areas, and read-only visibility can support review.
+
+After the meeting, the activity trail keeps the record readable. When a report changes, a document is attached, or a record is updated, the team can see what happened.
+
+During handoffs, the next person can see the last update, the attached files, and the records connected to the requirement.
+
+For an executive director, the weekly rhythm gets simpler: what is due next, which awards are drifting, what money remains restricted, and what needs attention before the report goes out.
+
+For finance, the restriction, balance, spend down, and support files are easier to connect. For program staff, deadlines and evidence become part of the workflow. For development, funder history stays tied to what the money supported.
+
+Pick an award your team already knows. Add the fund, restriction, agreement, and next reporting requirement. If the next meeting is easier to run from the record, the workflow is doing its job.
+
+GrantPipe can sit beside the tools a nonprofit already uses on day one. GrantPipe is a compliance-first grant management system: compliance calendar, evidence trail, restricted funds, grant pipeline, donor CRM, multi-source grant pipeline, fund accounting, and reviewer context in one place.
+
+Keep the first setup small. Start with a current grant, one related restricted fund, and the next report. Add the documents you already rely on. Then use the dashboard and activity trail to run the next check-in from the product.
+
+If your organization manages active grants, restricted funds, and recurring compliance deadlines, start at GrantPipe dot com. Begin a one month free trial with no credit card, and try it with a grant file your team already knows.

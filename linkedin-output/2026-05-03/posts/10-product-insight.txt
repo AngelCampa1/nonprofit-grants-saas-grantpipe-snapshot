@@ -1,0 +1,13 @@
+NTEN's 2024 Security Survey found 46% of nonprofits reported a data breach or unauthorized access incident in the past three years. Improper access controls were the leading contributing factor.
+
+Salesforce NPSP implementations average $15,000-$50,000 in consulting fees just for permission and security model configuration. The platforms are flexible, but configuring them correctly requires expertise most nonprofit operations staff do not have.
+
+The result: organizations leave default permissions in place because locking it down requires a consultant.
+
+GrantPipe uses three roles — Admin, Editor, Viewer — that cover every legitimate access pattern for nonprofit operations. Role assignment is two fields and takes effect immediately. No support ticket, no setup project.
+
+Board members get Viewer access for dashboards. Program staff get Editor access to update grant milestones. The audit trail logs every create, edit, and delete by user and timestamp.
+
+Staff turnover at nonprofits runs 20-30% annually. Simpler permission systems handle the recurring deprovisioning work more reliably.
+
+#nonprofitcrm #permissions #datasecurity #grantpipe

@@ -1,0 +1,9 @@
+$1,000,000. That is the federal expenditure threshold that triggers a single audit under 2 CFR 200 Subpart F.
+
+Federal awards in your fiscal year, aggregated, not per grant. Pass-through funds count. Loans count under specific conditions.
+
+If you are at $620K this year and you just signed a new HRSA award for $250K, you are over. The audit is not optional, and the auditor needs to be procured under your written procurement policy, which itself has to comply with 2 CFR 200.318.
+
+Orgs often first encounter this on the engagement call with their independent auditor.
+
+The orgs that find out in May, when the second federal award comes in, have time to plan for it.

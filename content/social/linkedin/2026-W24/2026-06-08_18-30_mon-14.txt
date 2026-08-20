@@ -1,0 +1,15 @@
+Grants.gov search is only the front door.
+
+For federal awards, the harder operating work starts after the opportunity becomes an award:
+
+- UEI and SAM.gov details
+- period of performance
+- ALN or FAIN
+- reporting cadence
+- indirect cost basis
+- pass-through or direct award status
+- closeout deadline
+
+GrantPipe includes Grants.gov federal opportunity search.
+
+The post-award record is where the compliance work has to hold together.

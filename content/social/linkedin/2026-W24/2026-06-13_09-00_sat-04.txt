@@ -1,0 +1,7 @@
+UEI cleanup is a decent weekend task.
+
+Check that the UEI on your SAM.gov registration matches the UEI on current federal award documents and pass-through agreements.
+
+Then check who owns the renewal calendar.
+
+The work is administrative, but the cost of a stale registration is operational. It can slow applications, amendments, and payments.

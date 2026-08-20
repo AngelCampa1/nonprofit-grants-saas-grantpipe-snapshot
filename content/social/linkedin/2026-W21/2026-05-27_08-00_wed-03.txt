@@ -1,0 +1,13 @@
+Your CRM is not the audit trail. It is one input to the audit trail.
+
+The audit trail is whatever your auditor can follow without you in the room. If they need you to explain the field naming convention, the workflow rule that fires sometimes, or the spreadsheet that lives on someone's desktop, the trail has gaps.
+
+The 2 CFR 200 retention rule is three years from final report submission. Three years is long enough that the person who built the configuration has probably moved on. The trail has to outlive them.
+
+What that looks like in practice:
+
+- Every change to a grant record has a timestamp, an actor, and a before/after value.
+- Every restricted fund release ties to a specific transaction, not a journal entry someone made up later.
+- Every supporting document has a path that does not depend on someone remembering where they filed it.
+
+If your current setup needs a tour guide, that is the work to do before the next audit, not the week of.

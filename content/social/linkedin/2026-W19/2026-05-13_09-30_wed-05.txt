@@ -1,0 +1,11 @@
+To Executive Directors who have lived through a failed Salesforce or Blackbaud implementation: this is for you.
+
+You know the pattern. A vendor pitches a "platform". A consultant scopes implementation in the five-figure range and six months. The Development Director picks the configuration. Finance is not in the room. Six months later the donor data is in, the grant data is half in, and nobody can run a board report without exporting to Excel.
+
+The reason this keeps happening is not the vendor. It is the shape. Donor CRMs are built for cultivation pipelines: stages, owners, asks, gift records. They do not have award letters, budget categories, restricted balances, drawdown schedules, FFR boxes, or 2 CFR 200 cost categories. The implementation team builds those as custom objects. Custom objects do not have audit trails by default. Audit trails get bolted on. Bolt-ons break.
+
+The shape that works is donors and grants modeled as peers from day one. One activity log. One restricted-fund ledger. One report writer that pulls both. Built in, not configured in.
+
+That is the bet GrantPipe is making. Current plan prices live at grantpipe.com/pricing. No setup fee. The trial runs on your real data so the test is the shape, not the demo.
+
+See current offer terms at grantpipe.com/pricing.

@@ -1,0 +1,13 @@
+An evidence trail is only useful if it follows the work.
+
+For grant spending, keep these pieces close:
+
+- award term
+- approved budget line
+- invoice or receipt
+- proof of payment
+- approval
+- coding
+- report where the cost was claimed
+
+If the report number cannot trace back to the transaction, the report is too detached from the record.

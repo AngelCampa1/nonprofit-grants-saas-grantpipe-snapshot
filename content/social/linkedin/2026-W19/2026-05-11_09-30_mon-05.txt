@@ -1,0 +1,21 @@
+Eight things that should be in your audit binder before fieldwork starts.
+
+Not "in a folder somewhere." In the binder. Tabbed. Page-numbered. With a cover memo that points to where each item lives.
+
+1. Award documents. The original notice, every modification, the budget on file, the approved indirect cost rate agreement.
+
+2. The general ledger detail tied to each award, by month, with reconciling notes if a journal entry moved spending between funds.
+
+3. Drawdown history. Date, amount, system reference number, and the period covered.
+
+4. Time and effort records. For every employee charged to a federal award, a certification covering the audit period.
+
+5. Procurement files for any purchase over the threshold. Three-quote evidence, sole-source memo if applicable, conflict of interest disclosure.
+
+6. Sub-recipient monitoring file if you pass dollars through. Risk assessment, executed agreement, monitoring evidence, sub-recipient single audit.
+
+7. Match documentation. Cash match has bank evidence. In-kind match has valuation memos.
+
+8. Filed reports. SF-425 / FFR for every quarter, Performance Progress Report on the funder's cadence, and the audit findings response from last year.
+
+If any of these live across QuickBooks, three Google Sheets, the donor CRM, and a shared drive, the binder is not the work product. The reconciliation is.

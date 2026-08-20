@@ -1,0 +1,9 @@
+Period of performance is the date range that decides whether a cost belongs on a federal grant.
+
+Not the invoice date alone.
+
+Not the payment date alone.
+
+The work has to be incurred inside the approved period, with liquidation and reporting handled inside the closeout rules.
+
+When you review old invoices, read the service dates first.

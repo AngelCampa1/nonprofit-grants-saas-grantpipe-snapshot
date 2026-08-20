@@ -1,0 +1,17 @@
+We decided early that GrantPipe would not have a setup fee.
+
+Not because setup is free. It is not. We absorb the cost.
+
+The reason is simpler. Implementation quotes from Salesforce and Blackbaud partners routinely run into five and six figures. That number is not a fee. It is a barrier.
+
+A nonprofit with a $2M budget cannot underwrite a $40K bet on whether the software fits. So they do not buy. They keep the spreadsheet.
+
+A setup fee on our side would replicate the same problem at a smaller scale.
+
+So instead: month-to-month, public pricing, no setup fee, real data in the trial. If it does not fit, you leave.
+
+The cost shows up on our P&L. The benefit is that nobody has to write a check before they know.
+
+See current offer terms at grantpipe.com/pricing.
+
+Public pricing at grantpipe.com/pricing.

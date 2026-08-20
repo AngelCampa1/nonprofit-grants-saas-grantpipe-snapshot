@@ -1,0 +1,13 @@
+For every Finance Director who has been told "just configure the CRM for grants", here is what that sentence usually hides.
+
+The donor CRM tracks gifts. A grant is not a gift. It is a contract.
+
+A gift has a date and an amount. A grant has a period of performance, a budget by line item, allowable cost rules, a reporting cadence, a drawdown schedule, match requirements, a sub-recipient list, and a closeout package.
+
+You can stuff some of that into custom fields. The data goes in. It does not come back out as the report your auditor wants.
+
+The CRM gives you a contact record. It does not give you the schedule of expenditures of federal awards, or the variance report by fund, or the spend-down by purpose restriction.
+
+Configuring the CRM for grants is how you end up with three systems pretending to be one.
+
+This is the gap GrantPipe was built for. The trial runs on your real data.

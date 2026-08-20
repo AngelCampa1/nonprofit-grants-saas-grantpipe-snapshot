@@ -1,0 +1,58 @@
+---
+import "../styles/global.css"
+import BaseLayout from "@grantpipe/ui/site/layouts/base-layout.astro"
+import SiteHeader from "@grantpipe/ui/site/components/site-header.astro"
+import SiteFooter from "@grantpipe/ui/site/components/site-footer.astro"
+import Button from "@/components/ui/button.astro"
+import { siteConfig } from "@/config/site"
+import { getAppLoginUrl } from "@/lib/app-url"
+---
+
+<BaseLayout
+  title={`Server Error | ${siteConfig.name}`}
+  description={`An unexpected error occurred on ${siteConfig.name}. Please try again.`}
+  canonicalUrl={`https://${siteConfig.domain}/500/`}
+  siteName={siteConfig.name}
+  noindex={true}
+  theme={siteConfig.theme}
+  fonts={siteConfig.theme.fonts}
+  themeColor={siteConfig.theme.primary}
+  appleTouchIcon={siteConfig.appleTouchIcon}
+>
+  <SiteHeader
+    slot="header"
+    siteName={siteConfig.name}
+    navItems={siteConfig.nav?.items}
+    ctaText={siteConfig.funnel.bofu.ctaText}
+    ctaHref={siteConfig.funnel.bofu.ctaTarget}
+    loginHref={getAppLoginUrl()}
+    ctaVariant="primary"
+    ctaPill
+    logoLight={siteConfig.logo?.light}
+  >
+  </SiteHeader>
+
+  <div class="mx-auto flex max-w-2xl flex-col items-center px-4 py-24 text-center">
+    <p class="editorial-kicker mb-4 justify-center">500 error</p>
+    <h1 class="font-heading mb-4 text-4xl font-bold text-brand-text">
+      Something went wrong
+    </h1>
+    <p class="mb-10 text-lg text-brand-muted">
+      We hit an unexpected error. Try again in a moment, or head back home.
+    </p>
+    <div class="flex flex-col gap-3 sm:flex-row sm:gap-4">
+      <Button variant="primary" href="/">Back to home</Button>
+      <Button variant="ghost" href="/resources/">Browse resources</Button>
+    </div>
+  </div>
+
+  <SiteFooter
+    slot="footer"
+    siteName={siteConfig.name}
+    tagline={siteConfig.tagline}
+    linkGroups={siteConfig.footer?.linkGroups}
+    legalLinks={siteConfig.footer?.legalLinks}
+    contactEmail={siteConfig.contactEmail}
+    logoLight={siteConfig.logo?.light}
+  />
+</BaseLayout>

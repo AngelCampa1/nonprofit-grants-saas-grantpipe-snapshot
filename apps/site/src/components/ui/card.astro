@@ -1,0 +1,51 @@
+---
+/**
+ * Marketing card primitive.
+ *
+ * Wraps content in the shared `.gp-card-base` token surface. Variants:
+ * - "default": static card.
+ * - "feature": tinted emerald emphasis.
+ * - "interactive": hover lift + focus ring for clickable cards.
+ *
+ * The element tag is controlled by `as`. When `href` is set the card renders
+ * as an `<a>` regardless of `as`, so interactive cards stay keyboard reachable.
+ */
+import type { HTMLAttributes } from "astro/types";
+
+type Variant = "default" | "feature" | "interactive";
+type Tag = "div" | "article" | "a";
+
+type DivAttrs = Omit<HTMLAttributes<"div">, "class">;
+type ArticleAttrs = Omit<HTMLAttributes<"article">, "class">;
+type AnchorAttrs = Omit<HTMLAttributes<"a">, "class">;
+
+interface Props extends DivAttrs, ArticleAttrs, AnchorAttrs {
+  /** Visual treatment. Defaults to "default". */
+  variant?: Variant;
+  /** Element tag. Defaults to "div". Forced to "a" when `href` is set. */
+  as?: Tag;
+  /** When set, the card renders as an anchor pointing here. */
+  href?: string | URL;
+  /** Extra classes appended after the generated `.gp-card-base` classes. */
+  class?: string;
+}
+
+const {
+  variant = "default",
+  as = "div",
+  href,
+  class: className,
+  ...rest
+} = Astro.props as Props;
+
+const Tag: Tag = href ? "a" : as;
+
+const variantClass = variant === "default" ? undefined : variant;
+const classes = ["gp-card-base", variantClass, className]
+  .filter((value): value is string => Boolean(value))
+  .join(" ");
+---
+
+<Tag class={classes} href={href} {...rest}>
+  <slot />
+</Tag>

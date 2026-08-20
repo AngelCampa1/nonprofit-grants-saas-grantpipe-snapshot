@@ -1,0 +1,11 @@
+New York's CHAR500 audit threshold sits at $1 million in gross revenue plus support — exactly the same dollar figure as the federal single audit threshold, but governed by NY Executive Law 172-b, not 2 CFR 200.501.
+
+Same number, different authority. A New York charity that crosses $1M in total revenue and also expends $1M in federal awards in the same year owes both the state-required independent audit under Article 7-A and a single audit under the OMB 2 CFR Part 200 October 2024 revision. Coordinated through one CPA engagement, but two distinct compliance obligations with separate reporting paths.
+
+Below $1M but above $250K of gross revenue plus support, New York requires a CPA review — not the full audit. Below $250K, neither.
+
+The CHAR500 itself is due May 15 for calendar-year filers, four months and fifteen days after fiscal year end. Filing fees range from $25 to $750 depending on Article 7-A and EPTL registration. Most rejection notices come from missing the Form 990 attachment, missing the second officer signature, or miscalculating the fee tier.
+
+GrantPipe tracks CHAR500 deadlines next to federal SF-425 cadence and the audit engagement so the May 15 due date does not collide with single audit fieldwork unsupervised.
+
+#char500 #nonprofitcompliance #stateregistration #singleaudit

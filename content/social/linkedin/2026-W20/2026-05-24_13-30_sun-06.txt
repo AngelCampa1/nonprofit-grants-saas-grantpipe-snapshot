@@ -1,0 +1,9 @@
+3. The number of places one grant typically lives at a small nonprofit.
+
+QuickBooks (the accounting truth). The donor CRM (the relationship truth). A shared Google Sheet (the working truth that finance and development both edit).
+
+None of those three are wrong. The problem is that none of them are complete on their own, and reconciling them is a person's job, not a process. When that person is out for a week, the org loses its grip on its own awards.
+
+The fix is not better discipline. It is a single record per award where finance and development both write, and where the audit trail is automatic.
+
+Worth thinking about before Monday.

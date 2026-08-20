@@ -1,0 +1,13 @@
+Approximately 30% of nonprofits with revenues over $1M operate more than one related legal entity per IRS Statistics of Income data.
+
+The single-database problem: running a 501(c)(3), a 501(c)(4), and a related private foundation in one CRM workspace forces all entity data into a shared environment with manual tags as the only separation. A staff member with access to charity data can see advocacy data because they share a workspace. Compliance calendars merge into one list.
+
+The legal separation exists for regulatory reasons. The data separation should match.
+
+Multi-entity consolidation in GrantPipe gives each legal entity an isolated workspace with its own donor records, grant portfolio, restricted fund ledgers, and compliance calendar. Roles are assigned independently per entity — a user can be Editor on the 501(c)(3) and have no access to the 501(c)(4).
+
+Rollup reporting spans authorized entities with intercompany elimination. When the foundation grants to the operating charity, that transaction appears as revenue and expense in separate workspaces and is netted in the consolidated view, matching FASB ASC 958-810 treatment.
+
+Multi-entity nonprofit structures incur an estimated 40% higher compliance administration cost than single-entity peers per the Nonprofit Finance Fund 2024 State of the Sector. The tooling should reduce that gap, not widen it.
+
+#multientity #nonprofitfinance #fasb #consolidation

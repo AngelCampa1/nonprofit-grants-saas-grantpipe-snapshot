@@ -1,0 +1,122 @@
+---
+import PaidSearchLandingPage from "@/components/paid-search-landing-page.astro";
+import type { PaidLandingPageData } from "@/components/paid-search-landing-page.astro";
+
+const page: PaidLandingPageData = {
+  slug: "split-payroll-across-grants",
+  title: "Split Payroll Across Grants Without the Spreadsheet | GrantPipe",
+  description:
+    "Allocate each paycheck to the right grant. Keep a clean payroll split record for every restricted fund without the fragile spreadsheet that breaks each pay period.",
+  kicker: "Grant payroll allocation",
+  headline: "Split payroll across grants cleanly.",
+  subhead:
+    "Allocate each paycheck to the right grant. No fragile spreadsheet to babysit.",
+  primaryCta: "Start 1-month free trial",
+  exitLeadMagnet: {
+    slug: "grant-staff-time-tracking-template",
+    title: "Grant Staff Time Tracking Template",
+    description:
+      "A template for tracking staff time and pay across restricted grants, with fields for effort percentage, pay period, and 2 CFR 200.",
+  },
+  trust: "No credit card required. Keep QuickBooks separate. No setup project needed.",
+  proofCard: {
+    label: "Payroll allocation",
+    status: "Allocated",
+    rows: [
+      { label: "Staff allocated", value: "8" },
+      { label: "Grants covered", value: "7" },
+      { label: "Allocation gaps", value: "0" },
+      { label: "Last pay period", value: "Jun 14" },
+    ],
+    progressLabel: "Pay period allocated",
+    progress: "100%",
+  },
+  painsTitle: "A payroll spreadsheet that breaks each pay period costs more than it saves.",
+  pains: [
+    "One renamed cost line breaks the formula for every staff member on that grant.",
+    "Effort percentages shift mid-year and the spreadsheet rarely reflects the change.",
+    "A missed allocation is a disallowed cost if an auditor finds it first.",
+    "Indirect cost rate math done by hand gives a different answer each month.",
+    "Payroll evidence scattered across payroll runs is hard to pull for a grant report.",
+  ],
+  workflowTitle: "Allocate payroll to grants with a record that survives each pay period.",
+  workflowSteps: [
+    {
+      icon: "ledger",
+      heading: "Set up the allocation",
+      copy: "Assign each staff member an effort percentage to each grant they work on.",
+    },
+    {
+      icon: "transfer",
+      heading: "Apply each pay period",
+      copy: "Record the payroll split for the period with each grant's share tied to the award.",
+    },
+    {
+      icon: "evidence",
+      heading: "Keep the audit trail",
+      copy: "Attach payroll records and effort documentation to each grant's file.",
+    },
+  ],
+  featureTitle: "The payroll tools a nonprofit finance team needs each pay period.",
+  features: [
+    {
+      icon: "transfer",
+      heading: "Payroll split record",
+      copy: "Track each staff member's grant allocation by pay period and effort percentage.",
+    },
+    {
+      icon: "balance",
+      heading: "Cost charged per grant",
+      copy: "See salary and fringe charged to each restricted fund for the period.",
+    },
+    {
+      icon: "evidence",
+      heading: "Effort documentation",
+      copy: "Attach time records and certifications to the grant that needs them for audit.",
+    },
+  ],
+  proofTitle: "Payroll is the biggest cost on most grants. Keep the record clean.",
+  proofPoints: [
+    {
+      value: "2 CFR 200",
+      label: "requires effort documentation for federally funded staff costs to support each charge.",
+      source: "Uniform Guidance, 2 CFR Part 200 compensation rules",
+    },
+    {
+      value: "15%",
+      label: "de minimis MTDC rate under 2 CFR 200.414(f). Apply it the same way on every grant.",
+      source: "2 CFR 200.414(f) de minimis indirect cost rate",
+    },
+    {
+      value: "1 record",
+      label: "per grant holds the payroll split, effort docs, and indirect cost charge together.",
+      source: "GrantPipe payroll allocation workflow",
+    },
+  ],
+  trustLabels: ["2 CFR 200 aware", "Keep QuickBooks separate", "Effort documentation attached"],
+  faqTitle: "Answers for nonprofit finance teams allocating payroll across grants.",
+  faqs: [
+    {
+      q: "Does GrantPipe replace QuickBooks?",
+      a: "GrantPipe has native accounting records, but it does not sync with QuickBooks right now. It holds the grant-level payroll allocation record and effort documentation alongside the award file.",
+    },
+    {
+      q: "Will it post payroll entries back to QuickBooks?",
+      a: "Not in this release. GrantPipe records the allocation for review and documentation. It does not write journal entries back to QuickBooks.",
+    },
+    {
+      q: "What is the de minimis indirect cost rate?",
+      a: "2 CFR 200.414(f) allows a default rate. Without a set rate, use 15 percent of MTDC. GrantPipe helps you apply it the same way on every grant.",
+    },
+    {
+      q: "Can I track effort percentages that change mid-year?",
+      a: "Yes. Update each staff member's effort split when their grant time changes. The record shows when the change happened.",
+    },
+  ],
+  finalTitle: "Start with the grant with the most staff on it. Allocate this pay period clean.",
+  finalBody:
+    "GrantPipe keeps the payroll split and effort record for each grant in one place. No spreadsheet to rebuild next pay period.",
+};
+---
+
+<PaidSearchLandingPage page={page} />

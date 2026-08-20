@@ -1,0 +1,9 @@
+Quick check for federal cash draws:
+
+Cumulative draws should reconcile to cumulative grant expenditures and any allowed advance cash.
+
+If draws exceed expenses, you may be holding federal cash too long.
+
+If expenses exceed draws, you have a reimbursement timing issue.
+
+Both belong in the monthly close, not in the audit scramble.

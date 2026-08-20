@@ -1,0 +1,11 @@
+Church donor management runs on a weekly cadence — tithes, offerings, designated gifts — not the quarterly cycle most nonprofit CRMs assume.
+
+A typical secular nonprofit drops appeal letters in Q4, runs an end-of-year campaign, and cultivates major donors across a 12-month plan. A church processes giving every Sunday and every online gift in between, with designated funds for building campaigns, missions, benevolence, and youth programs running in parallel year-round.
+
+When the same church also receives grants for secular programs — early childhood, food pantry, after-school — the data model gets more complicated. Restricted grant funds cannot be commingled with the General Fund or the Building Fund in the books, even if one bank account holds all of it.
+
+Most church-specific tools handle the giving side well and ignore grants entirely. Most nonprofit CRMs handle grants and treat weekly tithing as an afterthought. The shops that get this right pick a system that separates donor giving records from restricted grant funds at the data layer, then maps both up to the appropriate fund balance under FASB ASC 958.
+
+If your accounting system and your donor system disagree about which fund a check belongs to, you have a reconciliation problem waiting to happen.
+
+#churchaccounting #fundaccounting #restrictedfunds #nonprofitfinance

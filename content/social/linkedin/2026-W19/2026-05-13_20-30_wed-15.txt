@@ -1,0 +1,5 @@
+Deobligation: when a federal funder reduces the unspent portion of your award at closeout.
+
+It happens when you under-spend, miss a deadline, or fail to document allowable costs. The unspent dollars go back to the agency. They do not roll forward.
+
+Worth tracking quarterly, not at closeout.

@@ -1,0 +1,7 @@
+When a major foundation gift comes in, who updates the grant pipeline?
+
+If the answer is "Development logs the gift in the donor CRM, and someone on Finance manually opens a new grant record in a different system," you have already paid the integration tax twice. Once on entry, once on every reconciliation forever after.
+
+The hand-off between Development and Finance is the most expensive seam in nonprofit operations. It is also the one hidden behind goodwill and Friday afternoons.
+
+The test is simple. From the moment a grant is awarded, can both teams read the same numbers, the same restrictions, and the same reporting deadlines from the same record? If not, the seam is still there. The cost is just being absorbed by people, not invoiced.

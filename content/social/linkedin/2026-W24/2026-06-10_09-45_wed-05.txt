@@ -1,0 +1,16 @@
+Four records I want connected before a grant becomes active:
+
+1. The award record
+2. The restricted fund record
+3. The reporting calendar
+4. The evidence folder
+
+That is the minimum operating map.
+
+The award tells you what was promised.
+
+The fund tells you what can be spent.
+
+The calendar tells you when the funder expects an answer.
+
+The evidence folder proves the answer.

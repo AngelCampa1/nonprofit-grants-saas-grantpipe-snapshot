@@ -1,0 +1,7 @@
+UEI belongs in more places than SAM.gov.
+
+For federal and pass-through awards, keep the UEI, Assistance Listing Number, pass-through entity, award number, and period of performance on the grant record.
+
+That data later feeds SEFA prep, subrecipient files, reporting portals, and audit requests.
+
+The time to collect it is award setup, not the week the auditor asks.

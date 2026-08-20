@@ -1,0 +1,527 @@
+- generic [active] [ref=e1]:
+    - link "Skip to main content" [ref=e2] [cursor=pointer]:
+        - /url: "#main-content"
+    - region "Promotional announcement" [ref=e3]:
+        - generic [ref=e4]:
+            - generic [ref=e5]:
+                - generic [ref=e6]: Limited-time offer
+                - generic [ref=e7]: 80% off your first year. Subscriptions only.
+                - link "Start free trial" [ref=e8] [cursor=pointer]:
+                    - /url: https://app.grantpipe.com/signup
+            - button "Dismiss promotional banner" [ref=e9] [cursor=pointer]:
+                - img [ref=e10]
+    - banner [ref=e12]:
+        - generic [ref=e14]:
+            - link "GrantPipe home" [ref=e15] [cursor=pointer]:
+                - /url: /
+                - img "GrantPipe logo" [ref=e16]
+            - navigation "Main navigation" [ref=e17]:
+                - list [ref=e18]:
+                    - listitem [ref=e19]:
+                        - link "Product" [ref=e20] [cursor=pointer]:
+                            - /url: /product
+                    - listitem [ref=e21]:
+                        - link "Resources" [ref=e22] [cursor=pointer]:
+                            - /url: /resources
+                    - listitem [ref=e23]:
+                        - link "Pricing" [ref=e24] [cursor=pointer]:
+                            - /url: /pricing
+                    - listitem [ref=e25]:
+                        - link "Compare" [ref=e26] [cursor=pointer]:
+                            - /url: /compare
+            - generic [ref=e27]:
+                - button "System theme" [ref=e29]:
+                    - img [ref=e30]
+                - link "Sign in" [ref=e33] [cursor=pointer]:
+                    - /url: https://app.grantpipe.com/login
+                - link "Start your 1-month free trial" [ref=e35] [cursor=pointer]:
+                    - /url: https://app.grantpipe.com/signup
+    - main [ref=e36]:
+        - generic [ref=e37]:
+            - generic [ref=e39]:
+                - generic [ref=e40]:
+                    - paragraph [ref=e41]: Clear grant-funded operations
+                    - heading "Keep grants, donors, restricted funds, and reports in one place." [level=1] [ref=e42]
+                    - paragraph [ref=e43]: GrantPipe helps grant-funded nonprofits answer funder, board, audit, and finance questions from the same record instead of rebuilding the story across a CRM, spreadsheets, accounting files, and shared drives.
+                    - generic [ref=e44]:
+                        - link "Start your 1-month free trial" [ref=e45] [cursor=pointer]:
+                            - /url: https://app.grantpipe.com/signup
+                        - link "See how GrantPipe works" [ref=e46] [cursor=pointer]:
+                            - /url: /product/
+                    - generic [ref=e47]:
+                        - generic [ref=e48]: Funder, board, audit, and finance answers from the same record
+                        - generic [ref=e49]: Donor context, grant deadlines, restricted funds, and reports connected
+                        - generic [ref=e50]: Built for nonprofit staff to run without a system admin
+                        - generic [ref=e51]: Start with a 1-month free trial and no credit card
+                    - generic [ref=e52]: Built for nonprofit teams that manage grants, donors, restrictions, and recurring reports together
+                    - img "Generated GrantPipe product visual showing operations dashboard, grant pipeline, and mobile check views" [ref=e54]:
+                        - generic [ref=e55]:
+                            - region [ref=e56]:
+                                - strong [ref=e61]: Operations dashboard
+                                - generic [ref=e62]:
+                                    - generic [ref=e63]:
+                                        - paragraph [ref=e64]: Today
+                                        - heading [level=2] [ref=e65]: Grant-funded operating view
+                                    - generic [ref=e66]: Board packet ready
+                                - generic [ref=e67]:
+                                    - article [ref=e68]:
+                                        - generic [ref=e69]: Restricted funds
+                                        - strong [ref=e70]: $1.42M
+                                        - generic [ref=e71]: 83% allocated
+                                    - article [ref=e72]:
+                                        - generic [ref=e73]: Active grants
+                                        - strong [ref=e74]: "18"
+                                        - generic [ref=e75]: 4 due this month
+                                    - article [ref=e76]:
+                                        - generic [ref=e77]: Donor revenue
+                                        - strong [ref=e78]: $286K
+                                        - generic [ref=e79]: +12% trailing 90 days
+                                    - article [ref=e80]:
+                                        - generic [ref=e81]: Reporting risk
+                                        - strong [ref=e82]: "3"
+                                        - generic [ref=e83]: needs finance review
+                                - generic [ref=e84]:
+                                    - article [ref=e85]:
+                                        - generic [ref=e86]:
+                                            - heading [level=3] [ref=e87]: Restricted fund coverage
+                                            - generic [ref=e88]: Live ledger
+                                    - article [ref=e93]:
+                                        - generic [ref=e94]:
+                                            - heading [level=3] [ref=e95]: Reporting queue
+                                            - generic [ref=e96]: 3 flagged
+                                        - list [ref=e97]:
+                                            - listitem [ref=e98]: Budget variance review
+                                            - listitem [ref=e100]: Funder narrative draft
+                                            - listitem [ref=e102]: Document evidence check
+                                - table [ref=e104]:
+                                    - rowgroup [ref=e105]:
+                                        - row [ref=e106]:
+                                            - columnheader [ref=e107]: Fund
+                                            - columnheader [ref=e108]: Balance
+                                            - columnheader [ref=e109]: Grant
+                                            - columnheader [ref=e110]: Status
+                                    - rowgroup [ref=e111]:
+                                        - row [ref=e112]:
+                                            - cell [ref=e113]: Youth programs
+                                            - cell [ref=e114]: $418K
+                                            - cell [ref=e115]: Meyer Family
+                                            - cell [ref=e116]: On track
+                                        - row [ref=e117]:
+                                            - cell [ref=e118]: Housing support
+                                            - cell [ref=e119]: $296K
+                                            - cell [ref=e120]: HUD renewal
+                                            - cell [ref=e121]: Review
+                                        - row [ref=e122]:
+                                            - cell [ref=e123]: Food access
+                                            - cell [ref=e124]: $184K
+                                            - cell [ref=e125]: County HHS
+                                            - cell [ref=e126]: Ready
+                            - generic [ref=e127]:
+                                - article [ref=e128]:
+                                    - paragraph [ref=e129]: Grant pipeline
+                                    - generic [ref=e130]:
+                                        - generic [ref=e131]:
+                                            - heading [level=3] [ref=e132]: Work queue
+                                            - generic [ref=e133]: Next 21 days
+                                        - generic [ref=e134]:
+                                            - generic [ref=e135]:
+                                                - time [ref=e136]: May 09
+                                                - generic [ref=e137]:
+                                                    - strong [ref=e138]: State Arts Council
+                                                    - generic [ref=e139]: Narrative
+                                                - emphasis [ref=e140]: Grants
+                                            - generic [ref=e141]:
+                                                - time [ref=e142]: May 14
+                                                - generic [ref=e143]:
+                                                    - strong [ref=e144]: HUD Continuum
+                                                    - generic [ref=e145]: Budget proof
+                                                - emphasis [ref=e146]: Finance
+                                            - generic [ref=e147]:
+                                                - time [ref=e148]: May 21
+                                                - generic [ref=e149]:
+                                                    - strong [ref=e150]: Meyer Family
+                                                    - generic [ref=e151]: Board packet
+                                                - emphasis [ref=e152]: Ops
+                                        - generic [ref=e153]:
+                                            - generic [ref=e154]: Budget.xlsx
+                                            - generic [ref=e155]: LOA.pdf
+                                            - generic [ref=e156]: Report.docx
+                                - article [ref=e157]:
+                                    - paragraph [ref=e158]: Mobile check
+                                    - generic [ref=e159]:
+                                        - paragraph [ref=e161]: Friday close
+                                        - heading [level=3] [ref=e162]: 3 checks before submission
+                                        - generic [ref=e163]:
+                                            - generic [ref=e164]:
+                                                - generic [ref=e165]: Final report
+                                                - strong [ref=e166]: Due May 09
+                                            - generic [ref=e167]:
+                                                - generic [ref=e168]: Restricted balance
+                                                - strong [ref=e169]: $418K
+                                            - generic [ref=e170]:
+                                                - generic [ref=e171]: Open documents
+                                                - strong [ref=e172]: "6"
+                                        - generic [ref=e173]: Review packet
+                - complementary [ref=e174]:
+                    - generic [ref=e175]:
+                        - paragraph [ref=e176]: Built for the shared reporting week
+                        - paragraph [ref=e177]: GrantPipe is for teams that need finance, development, grants, and leadership to answer from the same record when funders, board members, or auditors ask what happened.
+                    - generic [ref=e178]:
+                        - article [ref=e179]:
+                            - paragraph [ref=e180]: What breaks
+                            - paragraph [ref=e181]: Answers split across tools
+                            - paragraph [ref=e182]: The donor CRM, grant tracker, restricted-fund spreadsheet, accounting file, and shared drive all tell part of the story. Reporting week turns into reconciliation instead of review.
+                        - article [ref=e183]:
+                            - paragraph [ref=e184]: How GrantPipe fixes it
+                            - paragraph [ref=e185]: One connected record
+                            - paragraph [ref=e186]: Donor context, Grants.gov opportunities, grant deadlines, supporting documents, restricted funds, ledger activity, and report outputs stay connected to the same record.
+                        - article [ref=e187]:
+                            - paragraph [ref=e188]: Who it is for
+                            - paragraph [ref=e189]: Grant-funded teams
+                            - paragraph [ref=e190]: GrantPipe is for nonprofit finance, development, grants, and leadership teams that need one shared view without a dedicated system admin or consultant project.
+                        - article [ref=e191]:
+                            - paragraph [ref=e192]: What teams can test
+                            - paragraph [ref=e193]: Real workflow fit
+                            - paragraph [ref=e194]: Teams can test federal grant search, donor and grant records, deadlines, restricted-fund visibility, reporting output, and guided import support starting at $159/month.
+            - generic [ref=e196]:
+                - generic [ref=e197]:
+                    - paragraph [ref=e198]: How it works
+                    - heading "How GrantPipe keeps the answer connected." [level=2] [ref=e199]
+                    - paragraph [ref=e200]: "GrantPipe connects the parts of grant-funded operations that usually drift apart: the donor, the opportunity, the award, the deadline, the restricted fund, the ledger, and the report."
+                - generic [ref=e201]:
+                    - article [ref=e202]:
+                        - paragraph [ref=e203]: Fundraising
+                        - heading "Keep donor and grant work on the same record" [level=3] [ref=e204]
+                        - paragraph [ref=e205]: Search federal opportunities, keep donor history, manage grant pursuit, and preserve the next finance touchpoint on the same record.
+                        - list [ref=e206]:
+                            - listitem [ref=e207]: Federal grants database
+                            - listitem [ref=e208]: Grants.gov opportunity search
+                            - listitem [ref=e209]: Donor CRM
+                            - listitem [ref=e210]: Donor pipeline
+                        - link "Open workflow section →" [ref=e211] [cursor=pointer]:
+                            - /url: /product#fundraising
+                    - article [ref=e212]:
+                        - paragraph [ref=e213]: Compliance
+                        - heading "Turn reporting deadlines into a workflow" [level=3] [ref=e214]
+                        - paragraph [ref=e215]: Keep grant deadlines, supporting documents, reminder logic, and the activity trail in the workflow staff already use.
+                        - list [ref=e216]:
+                            - listitem [ref=e217]: Funds
+                            - listitem [ref=e218]: Spend-down tracking
+                            - listitem [ref=e219]: Deadline reminders
+                            - listitem [ref=e220]: Notifications
+                        - link "Open workflow section →" [ref=e221] [cursor=pointer]:
+                            - /url: /product#compliance
+                    - article [ref=e222]:
+                        - paragraph [ref=e223]: Accounting
+                        - heading "See restricted funds and accounting output together" [level=3] [ref=e224]
+                        - paragraph [ref=e225]: Keep the general ledger, recurring entries, trial balance, and nonprofit statements inside the same product your fundraising and grants teams already use.
+                        - list [ref=e226]:
+                            - listitem [ref=e227]: Chart of accounts
+                            - listitem [ref=e228]: Journal
+                            - listitem [ref=e229]: Program Allocation
+                            - listitem [ref=e230]: Program budget vs actual
+                        - link "Open workflow section →" [ref=e231] [cursor=pointer]:
+                            - /url: /product#accounting
+                    - article [ref=e232]:
+                        - paragraph [ref=e233]: Migration
+                        - heading "Move onto GrantPipe with a bounded rollout" [level=3] [ref=e234]
+                        - paragraph [ref=e235]: Move with guided import, plan-fit onboarding, and a rollout shape that stays tied to the product surface that already ships.
+                        - list [ref=e236]:
+                            - listitem [ref=e237]: Onboarding
+                            - listitem [ref=e238]: Guided import
+                            - listitem [ref=e239]: Plan-fit onboarding
+                            - listitem [ref=e240]: Bounded rollout path
+                        - link "Open workflow section →" [ref=e241] [cursor=pointer]:
+                            - /url: /product#migration
+            - generic [ref=e243]:
+                - generic [ref=e244]:
+                    - paragraph [ref=e245]: Who it is for
+                    - heading "For nonprofit teams where grant reporting is shared work." [level=2] [ref=e246]
+                    - paragraph [ref=e247]: GrantPipe is not built around a narrow segment label. It is for organizations where grants, donors, restrictions, reports, and finance reviews touch the same staff week.
+                - generic [ref=e248]:
+                    - article [ref=e249]:
+                        - paragraph [ref=e250]: Clarity
+                        - heading "What GrantPipe solves" [level=3] [ref=e251]
+                        - paragraph [ref=e252]: GrantPipe solves the recurring moment when the team has to answer a funder, board, auditor, or finance question and the answer is scattered across a CRM, grant spreadsheet, accounting export, and shared drive.
+                    - article [ref=e253]:
+                        - paragraph [ref=e254]: Clarity
+                        - heading "How the workflow stays connected" [level=3] [ref=e255]
+                        - paragraph [ref=e256]: The product keeps donor history, federal grant search, award work, deadlines, documents, restricted funds, ledger activity, and reports close enough that staff can review the same story instead of translating between tools.
+                    - article [ref=e257]:
+                        - paragraph [ref=e258]: Clarity
+                        - heading "Who should evaluate it" [level=3] [ref=e259]
+                        - paragraph [ref=e260]: GrantPipe is built for grant-funded nonprofits where finance, development, grants, and leadership all touch the same reporting cycle and need software the existing team can operate.
+            - generic [ref=e262]:
+                - generic [ref=e263]:
+                    - paragraph [ref=e264]: Plan fit
+                    - heading "Choose the plan that matches the reporting load." [level=2] [ref=e265]
+                    - paragraph [ref=e266]: The difference between tiers is operational load, not access to a separate product. Every plan starts with the same free-trial path, while the product page shows how the workflow expands from shared records through reporting, accounting, and rollout support.
+                    - generic [ref=e267]:
+                        - link "See pricing and fit" [ref=e268] [cursor=pointer]:
+                            - /url: /pricing/
+                        - link "Review how it works →" [ref=e269] [cursor=pointer]:
+                            - /url: /product/
+                - generic [ref=e270]:
+                    - radiogroup "Billing period" [ref=e271]:
+                        - generic [ref=e272]:
+                            - 'radio "Annual limited offer: 80% off the first year" [checked] [ref=e273] [cursor=pointer]':
+                                - text: Annual
+                                - generic [ref=e274]: "Limited offer: 80% off the first year"
+                            - radio "Monthly" [ref=e275] [cursor=pointer]
+                    - generic [ref=e276]:
+                        - article [ref=e277]:
+                            - generic [ref=e279]:
+                                - heading "Starter" [level=3] [ref=e280]
+                                - generic [ref=e281]:
+                                    - paragraph [ref=e282]: ~$129/mo
+                                    - paragraph [ref=e283]: billed annually · $1980/yr
+                            - paragraph [ref=e284]: For small teams replacing spreadsheets with one grant management operating system
+                            - list [ref=e285]:
+                                - listitem [ref=e286]: Up to 5 active grants
+                                - listitem [ref=e287]: Donor CRM and donor pipeline
+                                - listitem [ref=e288]: Grant pipeline tracking
+                                - listitem [ref=e289]: Basic restricted fund visibility
+                                - listitem [ref=e290]: Compliance calendar
+                                - listitem [ref=e291]: Spend-down tracking
+                                - listitem [ref=e292]: 990 export templates
+                                - listitem [ref=e293]: Email support
+                            - generic [ref=e294]:
+                                - link "Start your 1-month free trial" [ref=e295] [cursor=pointer]:
+                                    - /url: https://app.grantpipe.com/signup?plan=starter&cycle=annual
+                                - link "See matching workflow →" [ref=e296] [cursor=pointer]:
+                                    - /url: /product#fundraising
+                        - article [ref=e297]:
+                            - generic [ref=e298]:
+                                - generic [ref=e299]:
+                                    - heading "Growth" [level=3] [ref=e300]
+                                    - generic [ref=e301]:
+                                        - paragraph [ref=e302]: ~$329/mo
+                                        - paragraph [ref=e303]: billed annually · $3948/yr
+                                - generic [ref=e304]: Recommended
+                            - paragraph [ref=e305]: For teams managing 4x more active grants than Starter with automated compliance reminders
+                            - list [ref=e306]:
+                                - listitem [ref=e307]: Everything in Starter
+                                - listitem [ref=e308]: Up to 20 active grants (4x Starter)
+                                - listitem [ref=e309]: Automated deadline reminder emails
+                                - listitem [ref=e310]: Spend-down threshold email alerts
+                                - listitem [ref=e311]: "Restriction lifecycle: terms, additions, releases"
+                                - listitem [ref=e312]: Restriction evidence links and alerts
+                                - listitem [ref=e313]: Restricted rollforward reports
+                                - listitem [ref=e314]: Compliance report pack
+                                - listitem [ref=e315]: Read-only Program Allocation previews
+                                - listitem [ref=e316]: Drawdowns & reimbursement requests
+                            - generic [ref=e317]:
+                                - link "Start your 1-month free trial" [ref=e318] [cursor=pointer]:
+                                    - /url: https://app.grantpipe.com/signup?plan=growth&cycle=annual
+                                - link "See matching workflow →" [ref=e319] [cursor=pointer]:
+                                    - /url: /product#compliance
+                        - article [ref=e320]:
+                            - generic [ref=e322]:
+                                - heading "Audit-Ready" [level=3] [ref=e323]
+                                - generic [ref=e324]:
+                                    - paragraph [ref=e325]: ~$665/mo
+                                    - paragraph [ref=e326]: billed annually · $7980/yr
+                            - paragraph [ref=e327]: For organizations needing audit-ready reporting and guided setup
+                            - list [ref=e328]:
+                                - listitem [ref=e329]: Everything in Growth
+                                - listitem [ref=e330]: Up to 100 active grants (5x Growth)
+                                - listitem [ref=e331]: Program Allocation management and budget-vs-actual exports
+                                - listitem [ref=e332]: Advanced fund accounting
+                                - listitem [ref=e333]: Restriction evidence package output
+                                - listitem [ref=e334]: Financial statements and board-ready outputs
+                                - listitem [ref=e335]: Auditor & Funder Portal
+                                - listitem [ref=e336]: Guided onboarding, import, and setup
+                                - listitem [ref=e337]: Indirect cost rules
+                                - listitem [ref=e338]: Reimbursement evidence packets
+                            - generic [ref=e339]:
+                                - link "Start your 1-month free trial" [ref=e340] [cursor=pointer]:
+                                    - /url: https://app.grantpipe.com/signup?plan=audit_ready&cycle=annual
+                                - link "See matching workflow →" [ref=e341] [cursor=pointer]:
+                                    - /url: /product#accounting
+                        - article [ref=e342]:
+                            - generic [ref=e344]:
+                                - heading "Enterprise" [level=3] [ref=e345]
+                                - paragraph [ref=e347]: Enterprise $1,599/mo contact-sales
+                            - paragraph [ref=e348]: For complex grant-funded nonprofits that need custom onboarding and commercial terms
+                            - list [ref=e349]:
+                                - listitem [ref=e350]: Everything in Audit-Ready
+                                - listitem [ref=e351]: Unlimited active grants
+                                - listitem [ref=e352]: Custom implementation planning
+                                - listitem [ref=e353]: Priority support
+                            - generic [ref=e354]:
+                                - link "Start your 1-month free trial" [ref=e355] [cursor=pointer]:
+                                    - /url: https://cal.com/grantpipe/discovery
+                                - link "See matching workflow →" [ref=e356] [cursor=pointer]:
+                                    - /url: /contact
+            - generic [ref=e358]:
+                - generic [ref=e359]:
+                    - paragraph [ref=e360]: Research paths
+                    - heading "Keep evaluating before you migrate anything." [level=2] [ref=e361]
+                    - paragraph [ref=e362]: Use the product overview, pricing path, and research library to verify the workflow and the rollout scope before moving live data.
+                - generic [ref=e363]:
+                    - link "Explore Explore the full product overview See how donor records, grant work, deadlines, funds, and reports stay connected. Open research path →" [ref=e364] [cursor=pointer]:
+                        - /url: /product
+                        - generic [ref=e365]: Explore
+                        - generic [ref=e366]: Explore the full product overview
+                        - generic [ref=e367]: See how donor records, grant work, deadlines, funds, and reports stay connected.
+                        - generic [ref=e368]: Open research path →
+                    - link "Explore See pricing through the product lens Match each tier to the amount of reporting, deadline, and audit pressure your team carries. Open research path →" [ref=e369] [cursor=pointer]:
+                        - /url: /pricing
+                        - generic [ref=e370]: Explore
+                        - generic [ref=e371]: See pricing through the product lens
+                        - generic [ref=e372]: Match each tier to the amount of reporting, deadline, and audit pressure your team carries.
+                        - generic [ref=e373]: Open research path →
+                    - link "Explore Read the evaluation guides Compare grant, compliance, and restricted-fund workflows before moving live data. Open research path →" [ref=e374] [cursor=pointer]:
+                        - /url: /resources
+                        - generic [ref=e375]: Explore
+                        - generic [ref=e376]: Read the evaluation guides
+                        - generic [ref=e377]: Compare grant, compliance, and restricted-fund workflows before moving live data.
+                        - generic [ref=e378]: Open research path →
+            - generic [ref=e381]:
+                - generic [ref=e382]:
+                    - paragraph [ref=e383]: Frequently asked
+                    - heading "Frequently Asked Questions" [level=2] [ref=e384]
+                - generic [ref=e385]:
+                    - group [ref=e386]:
+                        - generic "How much does GrantPipe cost?" [ref=e387] [cursor=pointer]:
+                            - generic [ref=e388]: How much does GrantPipe cost?
+                            - img [ref=e391]
+                    - group [ref=e393]:
+                        - generic "Can GrantPipe replace our existing CRM?" [ref=e394] [cursor=pointer]:
+                            - generic [ref=e395]: Can GrantPipe replace our existing CRM?
+                            - img [ref=e398]
+                    - group [ref=e400]:
+                        - generic "Does GrantPipe include a federal grants database?" [ref=e401] [cursor=pointer]:
+                            - generic [ref=e402]: Does GrantPipe include a federal grants database?
+                            - img [ref=e405]
+                    - group [ref=e407]:
+                        - generic "How does GrantPipe compare to Salesforce Nonprofit?" [ref=e408] [cursor=pointer]:
+                            - generic [ref=e409]: How does GrantPipe compare to Salesforce Nonprofit?
+                            - img [ref=e412]
+                    - group [ref=e414]:
+                        - generic "What does migration support look like?" [ref=e415] [cursor=pointer]:
+                            - generic [ref=e416]: What does migration support look like?
+                            - img [ref=e419]
+                    - group [ref=e421]:
+                        - generic "Does GrantPipe handle restricted fund tracking?" [ref=e422] [cursor=pointer]:
+                            - generic [ref=e423]: Does GrantPipe handle restricted fund tracking?
+                            - img [ref=e426]
+                    - group [ref=e428]:
+                        - generic "Why are so many nonprofits switching CRMs right now?" [ref=e429] [cursor=pointer]:
+                            - generic [ref=e430]: Why are so many nonprofits switching CRMs right now?
+                            - img [ref=e433]
+                    - group [ref=e435]:
+                        - generic "How do auditors access GrantPipe?" [ref=e436] [cursor=pointer]:
+                            - generic [ref=e437]: How do auditors access GrantPipe?
+                            - img [ref=e440]
+                    - group [ref=e442]:
+                        - generic "Can I revoke external reviewer access?" [ref=e443] [cursor=pointer]:
+                            - generic [ref=e444]: Can I revoke external reviewer access?
+                            - img [ref=e447]
+    - contentinfo [ref=e449]:
+        - generic [ref=e450]:
+            - generic [ref=e451]:
+                - generic [ref=e452]:
+                    - img "GrantPipe logo" [ref=e454]
+                    - paragraph [ref=e455]: One system for donors, federal grant opportunities, restricted funds, and compliance.
+                    - generic [ref=e456]:
+                        - generic [ref=e457]:
+                            - paragraph [ref=e458]: Built for
+                            - paragraph [ref=e459]: Mid-sized nonprofits
+                        - generic [ref=e460]:
+                            - paragraph [ref=e461]: Outcome
+                            - paragraph [ref=e462]: Donors and grants in one workflow
+                - generic [ref=e463]:
+                    - generic [ref=e464]:
+                        - heading "Product" [level=3] [ref=e465]
+                        - list [ref=e466]:
+                            - listitem [ref=e467]:
+                                - link "Product overview" [ref=e468] [cursor=pointer]:
+                                    - /url: /product
+                            - listitem [ref=e469]:
+                                - link "Shared records" [ref=e470] [cursor=pointer]:
+                                    - /url: /product#fundraising
+                            - listitem [ref=e471]:
+                                - link "Fund and accounting visibility" [ref=e472] [cursor=pointer]:
+                                    - /url: /product#accounting
+                            - listitem [ref=e473]:
+                                - link "Pricing" [ref=e474] [cursor=pointer]:
+                                    - /url: /pricing
+                            - listitem [ref=e475]:
+                                - link "Start your 1-month free trial" [ref=e476] [cursor=pointer]:
+                                    - /url: https://app.grantpipe.com/signup
+                    - generic [ref=e477]:
+                        - heading "Resources" [level=3] [ref=e478]
+                        - list [ref=e479]:
+                            - listitem [ref=e480]:
+                                - link "Resources hub" [ref=e481] [cursor=pointer]:
+                                    - /url: /resources
+                            - listitem [ref=e482]:
+                                - link "Topic Hubs" [ref=e483] [cursor=pointer]:
+                                    - /url: /resources/topics
+                            - listitem [ref=e484]:
+                                - link "Guides" [ref=e485] [cursor=pointer]:
+                                    - /url: /resources/guides
+                            - listitem [ref=e486]:
+                                - link "Software Roundups" [ref=e487] [cursor=pointer]:
+                                    - /url: /resources/best
+                            - listitem [ref=e488]:
+                                - link "Free Resources" [ref=e489] [cursor=pointer]:
+                                    - /url: /free
+                            - listitem [ref=e490]:
+                                - link "Glossary" [ref=e491] [cursor=pointer]:
+                                    - /url: /glossary
+                            - listitem [ref=e492]:
+                                - link "Workflows" [ref=e493] [cursor=pointer]:
+                                    - /url: /workflows
+                            - listitem [ref=e494]:
+                                - link "Compare Alternatives" [ref=e495] [cursor=pointer]:
+                                    - /url: /compare/alternatives
+                            - listitem [ref=e496]:
+                                - link "Pricing Breakdowns" [ref=e497] [cursor=pointer]:
+                                    - /url: /compare/pricing
+                            - listitem [ref=e498]:
+                                - link "By State" [ref=e499] [cursor=pointer]:
+                                    - /url: /nonprofit-software
+                            - listitem [ref=e500]:
+                                - link "By Org Type" [ref=e501] [cursor=pointer]:
+                                    - /url: /solutions
+                            - listitem [ref=e502]:
+                                - link "By Role" [ref=e503] [cursor=pointer]:
+                                    - /url: /for
+                            - listitem [ref=e504]:
+                                - link "Integrations" [ref=e505] [cursor=pointer]:
+                                    - /url: /integrations
+                            - listitem [ref=e506]:
+                                - link "AI-Readable Pricing" [ref=e507] [cursor=pointer]:
+                                    - /url: /pricing.txt
+                            - listitem [ref=e508]:
+                                - link "Free Grant Checklist" [ref=e509] [cursor=pointer]:
+                                    - /url: /free/grant-compliance-checklist
+                    - generic [ref=e510]:
+                        - heading "Company" [level=3] [ref=e511]
+                        - list [ref=e512]:
+                            - listitem [ref=e513]:
+                                - link "About" [ref=e514] [cursor=pointer]:
+                                    - /url: /about
+                            - listitem [ref=e515]:
+                                - link "GrantPipe Books" [ref=e516] [cursor=pointer]:
+                                    - /url: /books
+                            - listitem [ref=e517]:
+                                - link "GrantPipe LinkedIn" [ref=e518] [cursor=pointer]:
+                                    - /url: https://www.linkedin.com/company/grantpipe/
+                            - listitem [ref=e519]:
+                                - link "Angel Campa LinkedIn" [ref=e520] [cursor=pointer]:
+                                    - /url: https://www.linkedin.com/in/angelcampa1/
+                            - listitem [ref=e521]:
+                                - link "Discovery Call" [ref=e522] [cursor=pointer]:
+                                    - /url: https://cal.com/grantpipe/discovery
+            - generic [ref=e523]:
+                - paragraph [ref=e524]: © 2026 GrantPipe. All rights reserved.
+                - navigation "Footer links" [ref=e525]:
+                    - link "Contact" [ref=e526] [cursor=pointer]:
+                        - /url: mailto:hello@grantpipe.com
+                    - link "Privacy Policy" [ref=e527] [cursor=pointer]:
+                        - /url: /privacy
+                    - link "Terms of Service" [ref=e528] [cursor=pointer]:
+                        - /url: /terms

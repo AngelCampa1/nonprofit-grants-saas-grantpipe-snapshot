@@ -1,0 +1,1 @@
+ALTER TABLE "organizations" ADD COLUMN "trial_expired_event_at" timestamp with time zone;

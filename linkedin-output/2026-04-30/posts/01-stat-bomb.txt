@@ -1,0 +1,13 @@
+The nonprofit CRM market reached $846 million in 2025, and 48% of nonprofits are actively considering switching platforms in the next 12 months — up from 10% the year before.
+
+Blackbaud holds 40-50% of U.S. mid-to-large deployments and processes nearly $31 billion in annual charitable donations. Salesforce serves about 55,000 organizations through Power of Us. Bonterra absorbed Network for Good, EveryAction, Social Solutions, CyberGrants, and added OneCause in October 2025 — 14,000 more clients in one transaction.
+
+The top five vendors hold only 40-45% of global revenue. The other 55-60% is spread across dozens of focused tools.
+
+The blind spot in the consolidation story is the gap between donor management and grant compliance. Most CRMs were built around individual giving. Grant management — restricted funds, post-award compliance, funder reports — is treated as a secondary feature or shipped to a separate tool.
+
+For mid-sized nonprofits running both, that gap is operational drag, not a feature checklist. The vendor you sign with today may be a different company in two years. Prioritize data portability and contract flexibility over brand loyalty.
+
+GrantPipe sits in that donor-plus-grants gap at $329-$1,079/month with no implementation fees.
+
+#nonprofitcrm #grantcompliance #nonprofittech #nonprofitfinance

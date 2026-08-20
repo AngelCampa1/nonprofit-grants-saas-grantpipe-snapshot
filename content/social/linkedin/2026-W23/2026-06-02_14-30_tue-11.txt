@@ -1,0 +1,13 @@
+A board packet mismatch can start small.
+
+Development reports the award amount.
+
+Finance reports cash received.
+
+Programs report expenses incurred.
+
+The Executive Director asks what is still available.
+
+Those are four related numbers, not one number.
+
+The packet gets clearer when each number has a label and a date.

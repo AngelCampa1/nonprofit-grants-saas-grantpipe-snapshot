@@ -1,0 +1,7 @@
+Before: the Development team tracks foundation grants in the donor CRM. Finance tracks the same grants in QuickBooks classes. The Executive Director gets a board report that pulls from both, hand-stitched, every quarter.
+
+After: the grant is one record. The funder is one contact. The dollars hit one ledger with the right fund coding. The board report runs from the same data the SF-425 runs from.
+
+The "after" is not a feature toggle. It is a decision about where the source of truth lives, made on day one of the system, and held the entire life of the grant.
+
+Parallel-tracking pain comes from skipping that decision and letting two systems both feel partly authoritative. Pick one. Make the other downstream.

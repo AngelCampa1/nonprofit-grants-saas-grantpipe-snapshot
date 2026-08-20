@@ -1,0 +1,101 @@
+slug,collection,funnel_stage,state,primary_keyword,search_volume,word_count_target,piece_type
+california-nonprofit-startup-guide,guides,tofu,"California","how to start a nonprofit in california",880,1500,guide
+california-charitable-registration-workflow,workflows,mofu,"California","registry of charitable trusts",1600,1800,workflow
+california-top-foundation-grants,listicles,tofu,"California","california nonprofit grants",480,2500,listicle
+california-grant-management-software,guides,bofu,"California","california grant management software",0,1500,software-comparison
+texas-nonprofit-startup-guide,guides,tofu,"Texas","how to start a nonprofit in texas",880,1500,guide
+texas-charitable-registration-workflow,workflows,mofu,"Texas","form 202",210,1800,workflow
+texas-top-foundation-grants,listicles,tofu,"Texas","texas nonprofit grants",320,2500,listicle
+texas-grant-management-software,guides,bofu,"Texas","texas grant management software",0,1500,software-comparison
+new-york-nonprofit-startup-guide,guides,tofu,"New York","how to start a nonprofit in new york",140,1500,guide
+new-york-charitable-registration-workflow,workflows,mofu,"New York","char500",880,1800,workflow
+new-york-top-foundation-grants,listicles,tofu,"New York","new york foundation grants",30,2500,listicle
+new-york-grant-management-software,guides,bofu,"New York","new york grant management software",0,1500,software-comparison
+florida-nonprofit-startup-guide,guides,tofu,"Florida","how to start a nonprofit in florida",720,1500,guide
+florida-charitable-registration-workflow,workflows,mofu,"Florida","florida charitable solicitation registration",140,1800,workflow
+florida-top-foundation-grants,listicles,tofu,"Florida","florida nonprofit grants",260,2500,listicle
+florida-grant-management-software,guides,bofu,"Florida","florida grant management software",0,1500,software-comparison
+illinois-nonprofit-startup-guide,guides,tofu,"Illinois","how to start a nonprofit in illinois",260,1500,guide
+illinois-charitable-registration-workflow,workflows,mofu,"Illinois","co-1",390,1800,workflow
+illinois-top-foundation-grants,listicles,tofu,"Illinois","illinois foundation grants",0,2500,listicle
+illinois-grant-management-software,guides,bofu,"Illinois","illinois grant management software",0,1500,software-comparison
+pennsylvania-nonprofit-startup-guide,guides,tofu,"Pennsylvania","how to start a nonprofit in pennsylvania",30,1500,guide
+pennsylvania-charitable-registration-workflow,workflows,mofu,"Pennsylvania","bco-10",390,1800,workflow
+pennsylvania-top-foundation-grants,listicles,tofu,"Pennsylvania","pennsylvania nonprofit grants",210,2500,listicle
+pennsylvania-grant-management-software,guides,bofu,"Pennsylvania","pennsylvania grant management software",0,1500,software-comparison
+ohio-nonprofit-startup-guide,guides,tofu,"Ohio","how to start a nonprofit in ohio",390,1500,guide
+ohio-charitable-registration-workflow,workflows,mofu,"Ohio","ohio charitable registration",720,1800,workflow
+ohio-top-foundation-grants,listicles,tofu,"Ohio","ohio nonprofit grants",20,2500,listicle
+ohio-grant-management-software,guides,bofu,"Ohio","ohio grant management software",0,1500,software-comparison
+georgia-nonprofit-startup-guide,guides,tofu,"Georgia","how to start a nonprofit in georgia",170,1500,guide
+georgia-charitable-registration-workflow,workflows,mofu,"Georgia","c-100",8100,1800,workflow
+georgia-top-foundation-grants,listicles,tofu,"Georgia","georgia nonprofit grants",210,2500,listicle
+georgia-grant-management-software,guides,bofu,"Georgia","georgia grant management software",0,1500,software-comparison
+north-carolina-nonprofit-startup-guide,guides,tofu,"North Carolina","how to start a nonprofit in north carolina",70,1500,guide
+north-carolina-charitable-registration-workflow,workflows,mofu,"North Carolina","north carolina charitable solicitation registration",40,1800,workflow
+north-carolina-top-foundation-grants,listicles,tofu,"North Carolina","north carolina nonprofit grants",10,2500,listicle
+north-carolina-grant-management-software,guides,bofu,"North Carolina","north carolina grant management software",0,1500,software-comparison
+massachusetts-nonprofit-startup-guide,guides,tofu,"Massachusetts","how to start a nonprofit in massachusetts",40,1500,guide
+massachusetts-charitable-registration-workflow,workflows,mofu,"Massachusetts","form pc",170,1800,workflow
+massachusetts-top-foundation-grants,listicles,tofu,"Massachusetts","massachusetts foundation grants",0,2500,listicle
+massachusetts-grant-management-software,guides,bofu,"Massachusetts","massachusetts grant management software",0,1500,software-comparison
+california-compliance-checklist,lead-magnets,bofu,"California","california charitable solicitation registration",50,1600,lead-magnet
+texas-compliance-checklist,lead-magnets,bofu,"Texas","texas charitable solicitation registration",40,1600,lead-magnet
+new-york-compliance-checklist,lead-magnets,bofu,"New York","new york charitable solicitation registration",30,1600,lead-magnet
+florida-compliance-checklist,lead-magnets,bofu,"Florida","florida charitable solicitation registration",140,1600,lead-magnet
+illinois-compliance-checklist,lead-magnets,bofu,"Illinois","illinois charitable solicitation registration",30,1600,lead-magnet
+pennsylvania-compliance-checklist,lead-magnets,bofu,"Pennsylvania","pennsylvania charitable solicitation registration",30,1600,lead-magnet
+ohio-compliance-checklist,lead-magnets,bofu,"Ohio","ohio charitable solicitation registration",10,1600,lead-magnet
+georgia-compliance-checklist,lead-magnets,bofu,"Georgia","georgia charitable solicitation registration",70,1600,lead-magnet
+north-carolina-compliance-checklist,lead-magnets,bofu,"North Carolina","north carolina charitable solicitation registration",40,1600,lead-magnet
+massachusetts-compliance-checklist,lead-magnets,bofu,"Massachusetts","massachusetts charitable solicitation registration",20,1600,lead-magnet
+washington-nonprofit-startup-guide,guides,tofu,"Washington","how to start a nonprofit in washington",170,1500,guide
+washington-charitable-registration-workflow,workflows,mofu,"Washington","washington charitable solicitation registration",30,1800,workflow
+michigan-nonprofit-startup-guide,guides,tofu,"Michigan","how to start a nonprofit in michigan",390,1500,guide
+michigan-charitable-registration-workflow,workflows,mofu,"Michigan","michigan charitable solicitation registration",110,1800,workflow
+new-jersey-nonprofit-startup-guide,guides,tofu,"New Jersey","how to start a nonprofit in new jersey",210,1500,guide
+new-jersey-charitable-registration-workflow,workflows,mofu,"New Jersey","nj charitable registration",90,1800,workflow
+virginia-nonprofit-startup-guide,guides,tofu,"Virginia","how to start a nonprofit in virginia",210,1500,guide
+virginia-charitable-registration-workflow,workflows,mofu,"Virginia","virginia charitable solicitation registration",110,1800,workflow
+arizona-nonprofit-startup-guide,guides,tofu,"Arizona","how to start a nonprofit in arizona",210,1500,guide
+arizona-charitable-registration-workflow,workflows,mofu,"Arizona","arizona charitable solicitation registration",30,1800,workflow
+tennessee-nonprofit-startup-guide,guides,tofu,"Tennessee","how to start a nonprofit in tennessee",140,1500,guide
+tennessee-charitable-registration-workflow,workflows,mofu,"Tennessee","tennessee charitable solicitation registration",90,1800,workflow
+minnesota-nonprofit-startup-guide,guides,tofu,"Minnesota","minnesota 501c3 requirements",40,1500,guide
+minnesota-charitable-registration-workflow,workflows,mofu,"Minnesota","minnesota charitable registration",50,1800,workflow
+missouri-nonprofit-startup-guide,guides,tofu,"Missouri","how to start a nonprofit in missouri",170,1500,guide
+missouri-charitable-registration-workflow,workflows,mofu,"Missouri","missouri charitable registration",20,1800,workflow
+maryland-nonprofit-startup-guide,guides,tofu,"Maryland","how to start a nonprofit in maryland",170,1500,guide
+maryland-charitable-registration-workflow,workflows,mofu,"Maryland","maryland charitable registration",140,1800,workflow
+colorado-nonprofit-startup-guide,guides,tofu,"Colorado","how to start a nonprofit in colorado",140,1500,guide
+colorado-charitable-registration-workflow,workflows,mofu,"Colorado","colorado charitable solicitation registration",50,1800,workflow
+indiana-nonprofit-startup-guide,guides,tofu,"Indiana","how to start a nonprofit in indiana",170,1500,guide
+indiana-charitable-registration-workflow,workflows,mofu,"Indiana","indiana charitable solicitation registration",10,1800,workflow
+wisconsin-nonprofit-startup-guide,guides,tofu,"Wisconsin","how to start a nonprofit in wisconsin",110,1500,guide
+wisconsin-charitable-registration-workflow,workflows,mofu,"Wisconsin","wisconsin charitable registration",90,1800,workflow
+oregon-nonprofit-startup-guide,guides,tofu,"Oregon","how to start a nonprofit in oregon",170,1500,guide
+oregon-charitable-registration-workflow,workflows,mofu,"Oregon","oregon ct-12",260,1800,workflow
+connecticut-nonprofit-startup-guide,guides,tofu,"Connecticut","how to start a nonprofit in connecticut",10,1500,guide
+connecticut-charitable-registration-workflow,workflows,mofu,"Connecticut","connecticut charitable registration",30,1800,workflow
+kentucky-nonprofit-startup-guide,guides,tofu,"Kentucky","how to start a nonprofit in kentucky",70,1500,guide
+kentucky-charitable-registration-workflow,workflows,mofu,"Kentucky","kentucky charitable registration",30,1800,workflow
+top-foundation-grants-northeast,listicles,tofu,"Northeast","nonprofit grants northeast",0,2500,regional-listicle
+top-foundation-grants-midwest,listicles,tofu,"Midwest","nonprofit grants midwest",0,2500,regional-listicle
+top-foundation-grants-south,listicles,tofu,"South","nonprofit grants south",0,2500,regional-listicle
+top-foundation-grants-west,listicles,tofu,"West","nonprofit grants west",0,2500,regional-listicle
+top-foundation-grants-pacific-northwest,listicles,tofu,"Pacific Northwest","nonprofit grants pacific northwest",0,2500,regional-listicle
+top-foundation-grants-new-england,listicles,tofu,"New England","new england foundation grants nonprofits",0,2500,regional-listicle
+top-foundation-grants-mid-atlantic,listicles,tofu,"Mid-Atlantic","nonprofit grants mid-atlantic",0,2500,regional-listicle
+top-foundation-grants-southeast,listicles,tofu,"Southeast","nonprofit grants southeast",0,2500,regional-listicle
+top-foundation-grants-southwest,listicles,tofu,"Southwest","nonprofit grants southwest",0,2500,regional-listicle
+top-foundation-grants-mountain-west,listicles,tofu,"Mountain West","nonprofit grants mountain west",0,2500,regional-listicle
+california-nonprofit-faq,faq-hubs,tofu,"California","california charitable solicitation registration",50,1200,faq-hub
+texas-nonprofit-faq,faq-hubs,tofu,"Texas","texas charitable solicitation registration",40,1200,faq-hub
+new-york-nonprofit-faq,faq-hubs,tofu,"New York","new york charitable solicitation registration",30,1200,faq-hub
+florida-nonprofit-faq,faq-hubs,tofu,"Florida","florida charitable solicitation registration",140,1200,faq-hub
+illinois-nonprofit-faq,faq-hubs,tofu,"Illinois","illinois 501c3 requirements",40,1200,faq-hub
+pennsylvania-nonprofit-faq,faq-hubs,tofu,"Pennsylvania","pennsylvania charitable solicitation registration",30,1200,faq-hub
+ohio-nonprofit-faq,faq-hubs,tofu,"Ohio","ohio 501c3 requirements",10,1200,faq-hub
+georgia-nonprofit-faq,faq-hubs,tofu,"Georgia","georgia charitable solicitation registration",70,1200,faq-hub
+north-carolina-nonprofit-faq,faq-hubs,tofu,"North Carolina","north carolina charitable solicitation registration",40,1200,faq-hub
+massachusetts-nonprofit-faq,faq-hubs,tofu,"Massachusetts","massachusetts charitable solicitation registration",20,1200,faq-hub

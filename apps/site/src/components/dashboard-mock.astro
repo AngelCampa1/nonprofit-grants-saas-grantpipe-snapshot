@@ -1,0 +1,179 @@
+<div
+  class="gp-dashboard-mock"
+  role="img"
+  aria-label="GrantPipe dashboard mock with sample data showing restricted funds, grant pipeline, deadlines, and audit-ready status"
+>
+  <div class="gp-dashboard-chrome" aria-hidden="true">
+    <span></span><span></span><span></span>
+    <strong>grantpipe.com/app/grants</strong>
+  </div>
+  <div class="gp-dashboard-body" aria-hidden="true">
+    <aside class="gp-dashboard-sidebar">
+      <div class="gp-dashboard-org">GP</div>
+      <span class="is-active">Grants</span>
+      <span>Funds</span>
+      <span>Reports</span>
+      <div class="gp-dashboard-funds">
+        <p>Restricted funds</p>
+        <i style="--bar: 68%"></i>
+        <i style="--bar: 42%"></i>
+        <i style="--bar: 81%"></i>
+      </div>
+    </aside>
+    <div class="gp-dashboard-main">
+      <header>
+        <div>
+          <p>Grant workspace</p>
+          <h2>Sample reporting week</h2>
+        </div>
+        <span>Sample data</span>
+      </header>
+      <section class="gp-dashboard-kpis">
+        <div><span>Active grants</span><strong>$1.8M</strong></div>
+        <div><span>Reports due</span><strong>3</strong></div>
+        <div><span>Evidence</span><strong>92%</strong></div>
+      </section>
+      <section class="gp-dashboard-list">
+        {([
+          [
+            "Youth STEM renewal",
+            "$125,000 award - SF-425 due Jun 20",
+            "Reporting",
+            "Evidence ready",
+          ],
+          [
+            "Food access expansion",
+            "$84,200 restricted - report draft due Jul 08",
+            "Awarded",
+            "Review",
+          ],
+          [
+            "Clinic capacity grant",
+            "$46,750 balance - budget narrative attached",
+            "Submitted",
+            "Queued",
+          ],
+        ] as const).map(([name, meta, stage, due]) => (
+          <article>
+            <div>
+              <h3>{name}</h3>
+              <p>{meta}</p>
+            </div>
+            <span class={`stage-${stage.toLowerCase()}`}>{stage}</span>
+            <time>{due}</time>
+          </article>
+        ))}
+      </section>
+    </div>
+  </div>
+</div>
+
+<style>
+  /* Ambient on-load animation for the decorative (aria-hidden) mock. All
+     values here are already labeled "Sample data" in the markup, so
+     animating toward the same static final state on load is safe. Only
+     `opacity`/`transform` and the registered `--bar` custom property are
+     animated — no layout-shifting properties, so there is no CLS. */
+
+  @property --bar {
+    syntax: "<percentage>";
+    inherits: true;
+    initial-value: 0%;
+  }
+
+  .gp-dashboard-funds i {
+    --bar: 0%;
+    animation: gp-bar-fill 900ms cubic-bezier(0.16, 1, 0.3, 1) 260ms both;
+  }
+
+  .gp-dashboard-funds i:nth-of-type(1) {
+    animation-delay: 260ms;
+  }
+  .gp-dashboard-funds i:nth-of-type(2) {
+    animation-delay: 360ms;
+  }
+  .gp-dashboard-funds i:nth-of-type(3) {
+    animation-delay: 460ms;
+  }
+
+  /* The target percentage still comes from the inline `--bar` style on each
+     element; the keyframes below only animate the registered custom
+     property from 0% up to whatever that target value is. */
+  @keyframes gp-bar-fill {
+    from {
+      --bar: 0%;
+    }
+  }
+
+  .gp-dashboard-kpis div,
+  .gp-dashboard-list article {
+    opacity: 0;
+    transform: translateY(0.5rem);
+    animation: gp-tile-in 420ms ease-out 520ms both;
+  }
+
+  .gp-dashboard-kpis div:nth-child(2) {
+    animation-delay: 580ms;
+  }
+  .gp-dashboard-kpis div:nth-child(3) {
+    animation-delay: 640ms;
+  }
+
+  .gp-dashboard-list article:nth-of-type(1) {
+    animation-delay: 620ms;
+  }
+  .gp-dashboard-list article:nth-of-type(2) {
+    animation-delay: 690ms;
+  }
+  .gp-dashboard-list article:nth-of-type(3) {
+    animation-delay: 760ms;
+  }
+
+  @keyframes gp-tile-in {
+    from {
+      opacity: 0;
+      transform: translateY(0.5rem);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  .gp-dashboard-list article > span {
+    opacity: 0;
+    animation: gp-badge-tick 320ms ease-out 900ms both;
+  }
+
+  .gp-dashboard-list article:nth-of-type(1) > span {
+    animation-delay: 920ms;
+  }
+  .gp-dashboard-list article:nth-of-type(2) > span {
+    animation-delay: 990ms;
+  }
+  .gp-dashboard-list article:nth-of-type(3) > span {
+    animation-delay: 1060ms;
+  }
+
+  @keyframes gp-badge-tick {
+    from {
+      opacity: 0;
+      transform: scale(0.85);
+    }
+    to {
+      opacity: 1;
+      transform: scale(1);
+    }
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    .gp-dashboard-funds i,
+    .gp-dashboard-kpis div,
+    .gp-dashboard-list article,
+    .gp-dashboard-list article > span {
+      animation: none;
+      opacity: 1;
+      transform: none;
+    }
+  }
+</style>

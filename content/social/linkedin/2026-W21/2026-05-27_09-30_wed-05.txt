@@ -1,0 +1,13 @@
+For every Development Director who has rebuilt the same grant report three times this year because Finance and Development store the data differently.
+
+You are not the problem. The shape of the tooling is the problem.
+
+Here is what this often looks like: Donors live in Bloomerang or Salesforce NPSP. Grants live in a Google Sheet, sometimes two. Restricted fund balances live in QuickBooks classes. The grant narrative lives in a shared drive. The board report combines all of it, manually, the night before the meeting.
+
+Each system is fine. None of them was built to talk to the others. The hand-off between Development and Finance happens in someone's inbox.
+
+The visible cost is the hours you spend reconciling. The invisible cost is what gets dropped. The grant report that shipped with last quarter's spend-down number. The donor whose restricted gift got coded to the wrong fund. The board memo where the numbers tied at 11pm but not the next morning.
+
+A unified system is not glamour. It is one less reconciliation per week. It is the thing that makes audit prep a checklist instead of a project.
+
+If you want a closer look, the trial runs on your real data. app.grantpipe.com.

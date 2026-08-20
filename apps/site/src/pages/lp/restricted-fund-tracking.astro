@@ -1,0 +1,122 @@
+---
+import PaidSearchLandingPage from "@/components/paid-search-landing-page.astro";
+import type { PaidLandingPageData } from "@/components/paid-search-landing-page.astro";
+
+const page: PaidLandingPageData = {
+  slug: "restricted-fund-tracking",
+  title: "Restricted Fund Tracking Software for Nonprofits | GrantPipe",
+  description:
+    "Track restricted grant funds, releases, spend-down, and audit evidence without relying on QuickBooks Classes as the fund balance record.",
+  kicker: "Restricted fund tracking",
+  headline: "QuickBooks Classes label expenses. They don't track restricted balances.",
+  subhead:
+    "See restricted balances by award, not by class memo. Track releases, spend-down, and audit evidence without rebuilding a spreadsheet every month.",
+  primaryCta: "Start 1-month free trial",
+  exitLeadMagnet: {
+    slug: "restricted-fund-tracking-spreadsheet",
+    title: "Restricted Fund Tracking Spreadsheet",
+    description:
+      "Get a practical restricted fund tracking spreadsheet template with setup fields, monthly update guidance, and warning signs that spreadsheet control is no longer enough.",
+  },
+  trust: "No credit card required. Keep QuickBooks as the books. Use GrantPipe for the restricted fund record.",
+  proofCard: {
+    label: "Restricted fund ledger",
+    status: "On track",
+    rows: [
+      { label: "Awarded", value: "$425,000" },
+      { label: "Spent", value: "$286,430" },
+      { label: "Net released", value: "$214,700" },
+      { label: "Remaining restricted", value: "$210,300" },
+    ],
+    progressLabel: "Restricted fund spend-down",
+    progress: "67%",
+  },
+  painsTitle: "Class reports show activity. They do not answer the restriction question.",
+  pains: [
+    "Classes tag expenses but do not maintain awarded, released, and remaining balances.",
+    "Net asset releases are rebuilt manually from grant schedules and journal entries.",
+    "Evidence for restriction satisfaction is separated from the transaction.",
+    "Month-end review depends on whoever remembers the spreadsheet logic.",
+    "Auditors ask for the trail after the context has already moved on.",
+  ],
+  workflowTitle: "Keep accounting activity tied to the restriction lifecycle.",
+  workflowSteps: [
+    {
+      icon: "ledger",
+      heading: "Create the fund",
+      copy: "Record award amount, restriction terms, release basis, and reporting obligations from the grant agreement.",
+    },
+    {
+      icon: "balance",
+      heading: "Track activity",
+      copy: "Connect expenses, releases, evidence, and remaining balances without using classes as the only source of truth.",
+    },
+    {
+      icon: "audit",
+      heading: "Close the month",
+      copy: "Review spend-down, confirm releases, attach evidence, and leave a clear trail for audit prep.",
+    },
+  ],
+  featureTitle: "A fund record that works alongside the books.",
+  features: [
+    {
+      icon: "balance",
+      heading: "Fund balances by award",
+      copy: "Track awarded, spent, released, remaining, and at-risk balances by restricted fund.",
+    },
+    {
+      icon: "evidence",
+      heading: "Release evidence",
+      copy: "Attach reports, invoices, approvals, and support to each restriction satisfaction event.",
+    },
+    {
+      icon: "report",
+      heading: "Month-end review",
+      copy: "Give finance a consistent close checklist for restrictions without replacing accounting.",
+    },
+  ],
+  proofTitle: "Restricted funds need a record that survives month-end.",
+  proofPoints: [
+    {
+      value: "ASC 958",
+      label: "requires nonprofit net assets to distinguish donor restrictions from unrestricted resources.",
+      source: "FASB ASC 958 nonprofit presentation model",
+    },
+    {
+      value: "1 source",
+      label: "for award terms, fund balance, release evidence, and reporting status reduces manual reconciliation.",
+      source: "GrantPipe restricted fund workflow",
+    },
+    {
+      value: "0 journals",
+      label: "are created by GrantPipe. Accounting stays in the books while restriction context stays searchable.",
+      source: "GrantPipe accounting integration boundary",
+    },
+  ],
+  trustLabels: ["FASB ASC 958 aligned", "Keep QuickBooks separate", "Audit evidence attached"],
+  faqTitle: "Answers for finance teams tracking restrictions.",
+  faqs: [
+    {
+      q: "Does GrantPipe replace QuickBooks?",
+      a: "No. QuickBooks remains the accounting system. GrantPipe maintains the grant, restriction, release, and evidence record that classes do not model on their own.",
+    },
+    {
+      q: "Can I track multiple restrictions on one award?",
+      a: "Yes. Funds can be tracked separately from grants, so one grant can support multiple restricted funds and one fund can connect to multiple awards when needed.",
+    },
+    {
+      q: "How do releases work?",
+      a: "GrantPipe records the basis for the release, the amount, the date, and the supporting evidence so the release is not just a spreadsheet line.",
+    },
+    {
+      q: "Can auditors review the evidence?",
+      a: "Yes. Evidence is attached to the relevant fund, grant, report, or activity record so review does not depend on shared-drive archaeology.",
+    },
+  ],
+  finalTitle: "Pick one restricted award. See its balance and release evidence by Friday.",
+  finalBody:
+    "Keep QuickBooks as the books. Use GrantPipe to hold awarded, released, remaining, and at-risk balances with the evidence attached to each release.",
+};
+---
+
+<PaidSearchLandingPage page={page} />

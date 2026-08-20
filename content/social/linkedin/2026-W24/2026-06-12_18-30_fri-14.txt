@@ -1,0 +1,10 @@
+We publish GrantPipe pricing because early trust should not require a sales call.
+
+The current source of truth is grantpipe.com/pricing.
+
+It lists Starter, Growth, and Audit-Ready.
+Enterprise is a custom path below the price list.
+
+Unlimited users. One-month free trial. No credit card to start. No setup fee.
+
+There is enough uncertainty in choosing new software. The price should not be part of it.

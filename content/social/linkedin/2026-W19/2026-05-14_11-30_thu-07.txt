@@ -1,0 +1,9 @@
+Integration tax: the recurring cost of keeping two systems pretending to be one.
+
+It looks like a Zapier line item, a part-time consultant, a staff person who exports a CSV every Friday, and the recurring Slack thread asking why two numbers do not agree.
+
+It compounds. Every new field on the donor CRM needs a matching field on the accounting side. Every change to the chart of accounts needs a sync rule. When something breaks, no one owns the fix because the bug crosses two products.
+
+The case for one record per grant in one system is not aesthetic. It is the recovery of the hours your team currently spends translating between tools.
+
+Worth measuring before the next renewal cycle: hours per month spent reconciling donor records to financial records. That number is the integration tax.

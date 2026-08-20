@@ -1,0 +1,9 @@
+Picture a $1.2 million federal pass-through grant tracked in three places. The grants pipeline tab in the donor CRM. A separate spend-down spreadsheet maintained by Finance. The accounting system the auditor trusts.
+
+When a board member asks "how much is left on the pass-through," the answer depends on which file got opened.
+
+The cause is not laziness. It is that donor CRMs were built for cultivation pipelines, accounting systems were built for the general ledger, and grant compliance lives in the gap between them. The spreadsheet is the duct tape.
+
+We think the spreadsheet is the symptom. The fix is to model the grant, the fund allocations, and the spend-down schedule as one entity that both Development and Finance can edit, with audit history attached.
+
+That is the bet we are making at GrantPipe.

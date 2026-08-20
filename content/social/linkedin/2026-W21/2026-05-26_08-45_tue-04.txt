@@ -1,0 +1,11 @@
+For the Finance Director who has been asked, again, to "just put restricted funds in the donor CRM."
+
+It will not hold. Here is why.
+
+Donor CRMs track gifts and donors. Restricted funds are a balance-sheet concept. The dollars sit in net assets with donor restrictions until released against the purpose or time stipulation the donor specified.
+
+Your CRM does not have a chart of accounts. It does not know what a release from restriction is. It cannot produce the schedule of activity by net asset class your auditor will ask for.
+
+You can fake it with custom fields and pivot tables. The cost is reconciliation work every month and a fragile audit trail every year.
+
+Restricted funds belong in a system that models FASB ASC 958 directly. If your software does not have those concepts as first-class entities, you are configuring around them.

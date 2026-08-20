@@ -1,0 +1,204 @@
+---
+import {
+  MARKETED_FEATURE_CATALOG,
+  MARKETED_FEATURE_GROUPS,
+  SELF_SERVE_PLAN_TIERS,
+  getMarketedFeatureCellLabel,
+} from "../../../../packages/shared/src/pricing";
+import {
+  PLAN_LABELS,
+  PLAN_TIERS,
+  type PlanTier,
+} from "../../../../packages/shared/src/constants";
+
+interface Props {
+  /** Optional heading rendered above the matrix. */
+  heading?: string;
+  /** Optional support copy rendered below the heading. */
+  caption?: string;
+  /** Optional id added to the wrapper for deep links / tests. */
+  sectionId?: string;
+  /** Enterprise is hidden by default on public pricing surfaces. */
+  includeEnterprise?: boolean;
+}
+
+const { heading, caption, sectionId, includeEnterprise = false } = Astro.props;
+const tiers = includeEnterprise ? PLAN_TIERS : SELF_SERVE_PLAN_TIERS;
+const recommendedTier = "growth";
+
+const tierCaptions: Record<PlanTier, string> = {
+  starter: "Solo operators",
+  growth: "Common pick",
+  audit_ready: "Audit-grade evidence",
+  enterprise: "Network of programs",
+};
+
+const rowsByGroup = MARKETED_FEATURE_GROUPS.map((group) => ({
+  ...group,
+  rows: MARKETED_FEATURE_CATALOG.filter((row) => row.group === group.group),
+})).filter((entry) => entry.rows.length > 0);
+---
+
+<div class="gp-matrix-wrap" data-feature-comparison-matrix id={sectionId}>
+  {(heading || caption) && (
+    <div class="gp-section-head">
+      {heading && <h2>{heading}</h2>}
+      {caption && <p>{caption}</p>}
+    </div>
+  )}
+  <p class="gp-matrix-swipe-hint" data-matrix-swipe-hint aria-hidden="true">
+    Swipe to see all plans →
+  </p>
+  <div class="gp-matrix-scroll overflow-x-auto -mx-4 sm:mx-0" data-matrix-scroll>
+    <table class="gp-matrix">
+      <colgroup>
+        <col class="gp-matrix-col gp-matrix-col-feature" />
+        {tiers.map((tier) => (
+          <col
+            class:list={[
+              "gp-matrix-col",
+              tier === recommendedTier && "is-popular",
+            ]}
+          />
+        ))}
+      </colgroup>
+      <thead>
+        <tr class="gp-matrix-head-row">
+          <th scope="col" class="gp-matrix-feature-head">
+            <span class="gp-matrix-feature-eyebrow">Feature</span>
+          </th>
+          {tiers.map((tier) => {
+            const isRecommended = tier === recommendedTier;
+            return (
+              <th
+                scope="col"
+                class:list={["gp-matrix-tier-head", isRecommended && "is-popular"]}
+              >
+                {isRecommended && <span class="gp-matrix-popular-pill">Recommended</span>}
+                <span class="gp-matrix-tier-name">{PLAN_LABELS[tier]}</span>
+                <span class="gp-matrix-tier-caption">{tierCaptions[tier]}</span>
+              </th>
+            );
+          })}
+        </tr>
+      </thead>
+      <tbody>
+        {rowsByGroup.map((group, groupIndex) => (
+          <>
+            <tr class="gp-matrix-group-row">
+              <th colspan={tiers.length + 1} scope="colgroup">
+                <span class="gp-matrix-group-rule" aria-hidden="true"></span>
+                <span class="gp-matrix-group-label">{group.label}</span>
+                <span class="gp-matrix-group-count">
+                  {group.rows.length}{" "}
+                  {group.rows.length === 1 ? "capability" : "capabilities"}
+                </span>
+              </th>
+            </tr>
+            {group.rows.map((row, rowIndex) => (
+              <tr
+                class:list={[
+                  "gp-matrix-body-row",
+                  groupIndex === rowsByGroup.length - 1 &&
+                    rowIndex === group.rows.length - 1 &&
+                    "is-last",
+                ]}
+              >
+                <th scope="row" class="gp-matrix-row-label">{row.label}</th>
+                {tiers.map((tier) => {
+                  const cell = row.byTier[tier];
+                  const label = getMarketedFeatureCellLabel(cell);
+                  const isIncluded = cell === "included";
+                  const isExcluded = cell === "not_included";
+                  const isPreview = cell === "preview";
+                  const isRecommended = tier === recommendedTier;
+                  return (
+                    <td
+                      class:list={[
+                        "gp-matrix-cell",
+                        isIncluded && "is-included",
+                        isExcluded && "is-excluded",
+                        isPreview && "is-preview",
+                        !isIncluded && !isExcluded && !isPreview && "is-value",
+                        isRecommended && "is-popular",
+                      ]}
+                      data-cell={cell}
+                    >
+                      {isIncluded ? (
+                        <span class="gp-matrix-mark gp-matrix-mark-yes" aria-label="Included">
+                          <svg viewBox="0 0 16 16" aria-hidden="true" focusable="false">
+                            <path
+                              d="M3.5 8.4 6.6 11.5 12.5 5"
+                              fill="none"
+                              stroke="currentColor"
+                              stroke-width="2.2"
+                              stroke-linecap="round"
+                              stroke-linejoin="round"
+                            />
+                          </svg>
+                        </span>
+                      ) : isExcluded ? (
+                        <span class="gp-matrix-mark gp-matrix-mark-no" aria-label="Not included">
+                          <svg viewBox="0 0 16 16" aria-hidden="true" focusable="false">
+                            <path
+                              d="M4 8h8"
+                              fill="none"
+                              stroke="currentColor"
+                              stroke-width="2"
+                              stroke-linecap="round"
+                            />
+                          </svg>
+                        </span>
+                      ) : isPreview ? (
+                        <span class="gp-matrix-pill is-preview">Preview</span>
+                      ) : (
+                        <span class="gp-matrix-pill">{label}</span>
+                      )}
+                    </td>
+                  );
+                })}
+              </tr>
+            ))}
+          </>
+        ))}
+      </tbody>
+    </table>
+  </div>
+</div>
+
+<script>
+  // Progressive enhancement: reveal a right-edge fade only while the matrix has
+  // more columns hidden to the right, and retract the swipe hint once the reader
+  // starts scrolling. Without JS the hint stays visible — still a useful signal.
+  function initMatrixScrollAffordance() {
+    const wraps = document.querySelectorAll<HTMLElement>(
+      "[data-feature-comparison-matrix]:not([data-matrix-affordance-bound])",
+    );
+    wraps.forEach((wrap) => {
+      const scroller = wrap.querySelector<HTMLElement>("[data-matrix-scroll]");
+      const hint = wrap.querySelector<HTMLElement>("[data-matrix-swipe-hint]");
+      if (!scroller) return;
+      wrap.setAttribute("data-matrix-affordance-bound", "true");
+
+      const update = () => {
+        const maxScroll = scroller.scrollWidth - scroller.clientWidth;
+        const hasOverflow = maxScroll > 4;
+        const atEnd = scroller.scrollLeft >= maxScroll - 4;
+        wrap.toggleAttribute("data-matrix-overflowing", hasOverflow);
+        wrap.toggleAttribute("data-matrix-at-end", !hasOverflow || atEnd);
+        if (hint && scroller.scrollLeft > 8) hint.setAttribute("data-matrix-dismissed", "");
+      };
+
+      update();
+      scroller.addEventListener("scroll", update, { passive: true });
+      window.addEventListener("resize", update, { passive: true });
+    });
+  }
+
+  if (document.readyState === "loading") {
+    document.addEventListener("DOMContentLoaded", initMatrixScrollAffordance);
+  } else {
+    initMatrixScrollAffordance();
+  }
+  document.addEventListener("astro:page-load", initMatrixScrollAffordance);
+</script>

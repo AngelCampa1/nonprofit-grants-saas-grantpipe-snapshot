@@ -1,0 +1,11 @@
+The SF-SAC has two certifications, and missing either one keeps the submission in draft.
+
+Step seven of the Single Audit Data Collection Form workflow at fac.gov: the auditee certifies the submission is accurate and complete, then the auditor separately certifies the audit findings.
+
+Neither party can submit unilaterally. A form sitting at one signature is not filed, even if every field is complete and the reporting package uploaded cleanly.
+
+Deadline pressure compounds this. The SF-SAC is due 30 days after the auditor's report or 9 months after fiscal year-end, whichever is earlier. Late filings affect low-risk auditee status under 2 CFR 200.520 in subsequent years.
+
+Confirm both certifications cleared before treating an SF-SAC as submitted. Download the FAC confirmation PDF and retain it in the audit binder.
+
+#singleaudit #sfsac #grantcompliance #federalaudit

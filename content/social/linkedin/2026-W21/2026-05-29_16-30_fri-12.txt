@@ -1,0 +1,9 @@
+We decided early to model grants and funds as separate entities, joined many-to-many through an allocations table.
+
+Reason: that is how the work actually happens. One grant can fund three programs. One program can be funded by five grants. Forcing a one-to-one relationship in the data model means every report becomes a join in someone's head.
+
+Sage Intacct models it this way. Blackbaud Financial Edge NXT models it this way. FASB ASC 958 expects the books to reflect the underlying restriction structure, and the underlying structure is many-to-many.
+
+We could have shipped a simpler one-to-one model and called it "easy to use." It would have collapsed the first time anyone tried to allocate a federal pass-through across three program lines.
+
+Build the model that matches the regulation, not the model that ships fastest.

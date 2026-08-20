@@ -1,0 +1,14 @@
+---
+import "../styles/global.css";
+import GrantRecipientCategoryPage from "@/components/grant-recipient-category-page.astro";
+import { getGrantCategoryPage } from "@/config/grant-recipient-seo";
+
+const basePage = getGrantCategoryPage("subrecipient-monitoring-software");
+const page = {
+  ...basePage,
+  heroDescription:
+    "GrantPipe is the compliance-first grant management system, spanning eight modules. Use this page to evaluate subrecipient monitoring, then check pricing for what each plan includes.",
+};
+---
+
+<GrantRecipientCategoryPage page={page} />

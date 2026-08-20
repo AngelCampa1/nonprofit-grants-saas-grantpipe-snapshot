@@ -1,0 +1,11 @@
+Foundations cite inconsistent reporting compliance as the most common non-programmatic reason for declining grant renewals, according to a 2023 Candid funder survey.
+
+The Federal Audit Clearinghouse data shows approximately 60% of Single Audit submissions arrive after the 30-day submission window. Late reporting is the top corrective action trigger in HHS Office of Inspector General findings. Development staff at mid-sized nonprofits spend an estimated 15–20% of their time on grant compliance administration, including deadline tracking, per NTEN benchmarking.
+
+A grant deadline missed because it lived in an Outlook calendar that was not updated when a grant was amended is a compliance finding. A report submitted late because the finance contact did not know the drawdown window was closing is a compliance finding.
+
+GrantPipe's grant calendar consolidates application deadlines, reporting deadlines, drawdown windows, and compliance milestones for every active grant into one view. Alerts fire at 30, 14, 7, and 1 day before each deadline by default — configurable per deadline, per funder. When a grant record is updated, the calendar updates. Reporting schedules generate automatically on award, calculated from the grant record rather than manually entered into a shared calendar someone must remember to check.
+
+A single missed grant report can cost more than a year of software. See how the calendar works at app.grantpipe.com/signup.
+
+#grantcompliance #grantmanagement #nonprofitfinance #deadlinetracking #grants

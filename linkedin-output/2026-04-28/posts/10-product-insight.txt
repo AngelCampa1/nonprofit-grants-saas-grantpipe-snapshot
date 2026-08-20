@@ -1,0 +1,11 @@
+The split between pre-award tools and post-award tools is the single biggest reason grant data goes stale.
+
+Most nonprofits run an Instrumentl or GrantHub subscription for the pipeline, then re-key the awarded grant into a spreadsheet or QuickBooks class for compliance tracking. The same grant gets modeled twice, in two systems, with two custodians, and two slightly different sets of facts. By month six of the award, the pipeline tool says "awarded" with a stale amount, the accounting system shows posted expenses, and no one is sure which restriction language is the latest.
+
+The architectural fix is to make the opportunity and the grant the same record at different lifecycle stages. Pre-award fields stay editable through prospect, LOI, and applied. On award, post-award fields open up — reporting schedule, fund restrictions, allocation rules — and the pre-award history becomes read-only. No re-keying because there is no handoff.
+
+Default stage probabilities anchor the forecast: prospect 10%, LOI 30%, applied 50%, awarded 100%, declined 0%. Override per opportunity when funder history justifies it. AFP's Fundraising Effectiveness Project shows cold application win rates in the 10-20% range, which is what the prospect default reflects.
+
+GrantPipe runs the pipeline, the awarded grant, and the restricted fund as one connected record so the forecast a board sees is the same forecast the development director and the finance lead are running on.
+
+#grantmanagement #nonprofitcrm #grantpipeline #restrictedfunds

@@ -1,0 +1,2126 @@
+{
+  "week": 3,
+  "rows": [
+    {
+      "id": "grantpipe-2026-252-2026-06-29-morning-linkedin",
+      "groupId": "grantpipe-2026-252-2026-06-29-morning",
+      "source_worker_id": "grantpipe-week3-252-2026-06-29-linkedin-01",
+      "local_date": "2026-06-29",
+      "local_time": "08:45 America/Matamoros",
+      "slot_label": "morning",
+      "platform": "linkedin",
+      "integrationId": "cmorp6oby03pgmq0ye7e3n7j0",
+      "date": "2026-06-29T13:45:00.000Z",
+      "type": "schedule",
+      "content": "funder email check.\n\nMatch decision note to next step. Name the grant owner.\n\nIf it breaks, write the next step.",
+      "attachments": [],
+      "settings": {
+        "__type": "linkedin-page",
+        "post_as_images_carousel": false
+      },
+      "claim_sources": [
+        "GrantPipe product marketing context",
+        "LinkedIn analytics export grantpipe_content_1780933338832.xls",
+        "GrantPipe social source files"
+      ],
+      "review_status": "ready_to_schedule",
+      "review_checks": {
+        "humanized": true,
+        "third_grade": true,
+        "no_em_dash": true,
+        "no_lies": true,
+        "source_reviewed": true,
+        "brand_reviewed": true,
+        "duplicate_reviewed": true,
+        "final_schedule_ready": true
+      },
+      "humanizer_status": "passed"
+    },
+    {
+      "id": "grantpipe-2026-252-2026-06-29-midday-linkedin",
+      "groupId": "grantpipe-2026-252-2026-06-29-midday",
+      "source_worker_id": "grantpipe-week3-252-2026-06-29-linkedin-02",
+      "local_date": "2026-06-29",
+      "local_time": "13:15 America/Matamoros",
+      "slot_label": "midday",
+      "platform": "linkedin",
+      "integrationId": "cmorp6oby03pgmq0ye7e3n7j0",
+      "date": "2026-06-29T18:15:00.000Z",
+      "type": "schedule",
+      "content": "Keep award renewal plain.\n\nShow old budget. Show new ask.\n\nThen name who owns the next step.",
+      "attachments": [],
+      "settings": {
+        "__type": "linkedin-page",
+        "post_as_images_carousel": false
+      },
+      "claim_sources": [
+        "GrantPipe product marketing context",
+        "LinkedIn analytics export grantpipe_content_1780933338832.xls",
+        "GrantPipe social source files"
+      ],
+      "review_status": "ready_to_schedule",
+      "review_checks": {
+        "humanized": true,
+        "third_grade": true,
+        "no_em_dash": true,
+        "no_lies": true,
+        "source_reviewed": true,
+        "brand_reviewed": true,
+        "duplicate_reviewed": true,
+        "final_schedule_ready": true
+      },
+      "humanizer_status": "passed"
+    },
+    {
+      "id": "grantpipe-2026-252-2026-06-29-late-linkedin",
+      "groupId": "grantpipe-2026-252-2026-06-29-late",
+      "source_worker_id": "grantpipe-week3-252-2026-06-29-linkedin-03",
+      "local_date": "2026-06-29",
+      "local_time": "17:35 America/Matamoros",
+      "slot_label": "late",
+      "platform": "linkedin",
+      "integrationId": "cmorp6oby03pgmq0ye7e3n7j0",
+      "date": "2026-06-29T22:35:00.000Z",
+      "type": "schedule",
+      "content": "End the day with closeout binder.\n\nSave final report near support file.\n\nA clean file helps the next reviewer.",
+      "attachments": [],
+      "settings": {
+        "__type": "linkedin-page",
+        "post_as_images_carousel": false
+      },
+      "claim_sources": [
+        "GrantPipe product marketing context",
+        "LinkedIn analytics export grantpipe_content_1780933338832.xls",
+        "GrantPipe social source files"
+      ],
+      "review_status": "ready_to_schedule",
+      "review_checks": {
+        "humanized": true,
+        "third_grade": true,
+        "no_em_dash": true,
+        "no_lies": true,
+        "source_reviewed": true,
+        "brand_reviewed": true,
+        "duplicate_reviewed": true,
+        "final_schedule_ready": true
+      },
+      "humanizer_status": "passed"
+    },
+    {
+      "id": "grantpipe-2026-252-2026-06-29-morning-x",
+      "groupId": "grantpipe-2026-252-2026-06-29-morning",
+      "source_worker_id": "grantpipe-week3-252-2026-06-29-x-01",
+      "local_date": "2026-06-29",
+      "local_time": "08:45 America/Matamoros",
+      "slot_label": "morning",
+      "platform": "x",
+      "integrationId": "cmq5aut9y0087mv0yt9otastk",
+      "date": "2026-06-29T13:45:00.000Z",
+      "type": "schedule",
+      "content": "funder email check: match decision note to next step. Name the grant owner.",
+      "attachments": [],
+      "settings": {
+        "who_can_reply_post": "everyone"
+      },
+      "claim_sources": [
+        "GrantPipe product marketing context",
+        "LinkedIn analytics export grantpipe_content_1780933338832.xls",
+        "GrantPipe social source files"
+      ],
+      "review_status": "ready_to_schedule",
+      "review_checks": {
+        "humanized": true,
+        "third_grade": true,
+        "no_em_dash": true,
+        "no_lies": true,
+        "source_reviewed": true,
+        "brand_reviewed": true,
+        "duplicate_reviewed": true,
+        "final_schedule_ready": true
+      },
+      "humanizer_status": "passed"
+    },
+    {
+      "id": "grantpipe-2026-252-2026-06-29-midday-x",
+      "groupId": "grantpipe-2026-252-2026-06-29-midday",
+      "source_worker_id": "grantpipe-week3-252-2026-06-29-x-02",
+      "local_date": "2026-06-29",
+      "local_time": "13:15 America/Matamoros",
+      "slot_label": "midday",
+      "platform": "x",
+      "integrationId": "cmq5aut9y0087mv0yt9otastk",
+      "date": "2026-06-29T18:15:00.000Z",
+      "type": "schedule",
+      "content": "Keep award renewal simple. Show old budget. Show new ask. Name the next owner.",
+      "attachments": [],
+      "settings": {
+        "who_can_reply_post": "everyone"
+      },
+      "claim_sources": [
+        "GrantPipe product marketing context",
+        "LinkedIn analytics export grantpipe_content_1780933338832.xls",
+        "GrantPipe social source files"
+      ],
+      "review_status": "ready_to_schedule",
+      "review_checks": {
+        "humanized": true,
+        "third_grade": true,
+        "no_em_dash": true,
+        "no_lies": true,
+        "source_reviewed": true,
+        "brand_reviewed": true,
+        "duplicate_reviewed": true,
+        "final_schedule_ready": true
+      },
+      "humanizer_status": "passed"
+    },
+    {
+      "id": "grantpipe-2026-252-2026-06-29-late-x",
+      "groupId": "grantpipe-2026-252-2026-06-29-late",
+      "source_worker_id": "grantpipe-week3-252-2026-06-29-x-03",
+      "local_date": "2026-06-29",
+      "local_time": "17:35 America/Matamoros",
+      "slot_label": "late",
+      "platform": "x",
+      "integrationId": "cmq5aut9y0087mv0yt9otastk",
+      "date": "2026-06-29T22:35:00.000Z",
+      "type": "schedule",
+      "content": "Close the loop on closeout binder. Save final report near support file.",
+      "attachments": [],
+      "settings": {
+        "who_can_reply_post": "everyone"
+      },
+      "claim_sources": [
+        "GrantPipe product marketing context",
+        "LinkedIn analytics export grantpipe_content_1780933338832.xls",
+        "GrantPipe social source files"
+      ],
+      "review_status": "ready_to_schedule",
+      "review_checks": {
+        "humanized": true,
+        "third_grade": true,
+        "no_em_dash": true,
+        "no_lies": true,
+        "source_reviewed": true,
+        "brand_reviewed": true,
+        "duplicate_reviewed": true,
+        "final_schedule_ready": true
+      },
+      "humanizer_status": "passed"
+    },
+    {
+      "id": "grantpipe-2026-252-2026-06-29-morning-threads",
+      "groupId": "grantpipe-2026-252-2026-06-29-morning",
+      "source_worker_id": "grantpipe-week3-252-2026-06-29-threads-01",
+      "local_date": "2026-06-29",
+      "local_time": "08:45 America/Matamoros",
+      "slot_label": "morning",
+      "platform": "threads",
+      "integrationId": "cmq5b15k300k4qp0yypplg57c",
+      "date": "2026-06-29T13:45:00.000Z",
+      "type": "schedule",
+      "content": "Small grant check: funder email. Match decision note to next step. Then name the grant owner.",
+      "attachments": [],
+      "settings": {},
+      "claim_sources": [
+        "GrantPipe product marketing context",
+        "LinkedIn analytics export grantpipe_content_1780933338832.xls",
+        "GrantPipe social source files"
+      ],
+      "review_status": "ready_to_schedule",
+      "review_checks": {
+        "humanized": true,
+        "third_grade": true,
+        "no_em_dash": true,
+        "no_lies": true,
+        "source_reviewed": true,
+        "brand_reviewed": true,
+        "duplicate_reviewed": true,
+        "final_schedule_ready": true
+      },
+      "humanizer_status": "passed"
+    },
+    {
+      "id": "grantpipe-2026-252-2026-06-29-midday-threads",
+      "groupId": "grantpipe-2026-252-2026-06-29-midday",
+      "source_worker_id": "grantpipe-week3-252-2026-06-29-threads-02",
+      "local_date": "2026-06-29",
+      "local_time": "13:15 America/Matamoros",
+      "slot_label": "midday",
+      "platform": "threads",
+      "integrationId": "cmq5b15k300k4qp0yypplg57c",
+      "date": "2026-06-29T18:15:00.000Z",
+      "type": "schedule",
+      "content": "For award renewal, keep the file plain. Show old budget. Show new ask. Name the next step.",
+      "attachments": [],
+      "settings": {},
+      "claim_sources": [
+        "GrantPipe product marketing context",
+        "LinkedIn analytics export grantpipe_content_1780933338832.xls",
+        "GrantPipe social source files"
+      ],
+      "review_status": "ready_to_schedule",
+      "review_checks": {
+        "humanized": true,
+        "third_grade": true,
+        "no_em_dash": true,
+        "no_lies": true,
+        "source_reviewed": true,
+        "brand_reviewed": true,
+        "duplicate_reviewed": true,
+        "final_schedule_ready": true
+      },
+      "humanizer_status": "passed"
+    },
+    {
+      "id": "grantpipe-2026-252-2026-06-29-late-threads",
+      "groupId": "grantpipe-2026-252-2026-06-29-late",
+      "source_worker_id": "grantpipe-week3-252-2026-06-29-threads-03",
+      "local_date": "2026-06-29",
+      "local_time": "17:35 America/Matamoros",
+      "slot_label": "late",
+      "platform": "threads",
+      "integrationId": "cmq5b15k300k4qp0yypplg57c",
+      "date": "2026-06-29T22:35:00.000Z",
+      "type": "schedule",
+      "content": "Before the day ends, check closeout binder. Put final report next to support file.",
+      "attachments": [],
+      "settings": {},
+      "claim_sources": [
+        "GrantPipe product marketing context",
+        "LinkedIn analytics export grantpipe_content_1780933338832.xls",
+        "GrantPipe social source files"
+      ],
+      "review_status": "ready_to_schedule",
+      "review_checks": {
+        "humanized": true,
+        "third_grade": true,
+        "no_em_dash": true,
+        "no_lies": true,
+        "source_reviewed": true,
+        "brand_reviewed": true,
+        "duplicate_reviewed": true,
+        "final_schedule_ready": true
+      },
+      "humanizer_status": "passed"
+    },
+    {
+      "id": "grantpipe-2026-252-2026-06-30-morning-linkedin",
+      "groupId": "grantpipe-2026-252-2026-06-30-morning",
+      "source_worker_id": "grantpipe-week3-252-2026-06-30-linkedin-01",
+      "local_date": "2026-06-30",
+      "local_time": "08:45 America/Matamoros",
+      "slot_label": "morning",
+      "platform": "linkedin",
+      "integrationId": "cmorp6oby03pgmq0ye7e3n7j0",
+      "date": "2026-06-30T13:45:00.000Z",
+      "type": "schedule",
+      "content": "foundation note check.\n\nMatch public filing to prospect file. Name the development.\n\nIf it breaks, write the next step.",
+      "attachments": [],
+      "settings": {
+        "__type": "linkedin-page",
+        "post_as_images_carousel": false
+      },
+      "claim_sources": [
+        "GrantPipe product marketing context",
+        "LinkedIn analytics export grantpipe_content_1780933338832.xls",
+        "GrantPipe social source files"
+      ],
+      "review_status": "ready_to_schedule",
+      "review_checks": {
+        "humanized": true,
+        "third_grade": true,
+        "no_em_dash": true,
+        "no_lies": true,
+        "source_reviewed": true,
+        "brand_reviewed": true,
+        "duplicate_reviewed": true,
+        "final_schedule_ready": true
+      },
+      "humanizer_status": "passed"
+    },
+    {
+      "id": "grantpipe-2026-252-2026-06-30-midday-linkedin",
+      "groupId": "grantpipe-2026-252-2026-06-30-midday",
+      "source_worker_id": "grantpipe-week3-252-2026-06-30-linkedin-02",
+      "local_date": "2026-06-30",
+      "local_time": "13:15 America/Matamoros",
+      "slot_label": "midday",
+      "platform": "linkedin",
+      "integrationId": "cmorp6oby03pgmq0ye7e3n7j0",
+      "date": "2026-06-30T18:15:00.000Z",
+      "type": "schedule",
+      "content": "Keep Grants.gov hit plain.\n\nShow source link. Show pipeline record.\n\nThen name who owns the next step.",
+      "attachments": [],
+      "settings": {
+        "__type": "linkedin-page",
+        "post_as_images_carousel": false
+      },
+      "claim_sources": [
+        "GrantPipe product marketing context",
+        "LinkedIn analytics export grantpipe_content_1780933338832.xls",
+        "GrantPipe social source files"
+      ],
+      "review_status": "ready_to_schedule",
+      "review_checks": {
+        "humanized": true,
+        "third_grade": true,
+        "no_em_dash": true,
+        "no_lies": true,
+        "source_reviewed": true,
+        "brand_reviewed": true,
+        "duplicate_reviewed": true,
+        "final_schedule_ready": true
+      },
+      "humanizer_status": "passed"
+    },
+    {
+      "id": "grantpipe-2026-252-2026-06-30-late-linkedin",
+      "groupId": "grantpipe-2026-252-2026-06-30-late",
+      "source_worker_id": "grantpipe-week3-252-2026-06-30-linkedin-03",
+      "local_date": "2026-06-30",
+      "local_time": "17:35 America/Matamoros",
+      "slot_label": "late",
+      "platform": "linkedin",
+      "integrationId": "cmorp6oby03pgmq0ye7e3n7j0",
+      "date": "2026-06-30T22:35:00.000Z",
+      "type": "schedule",
+      "content": "End the day with CSV import.\n\nSave old sheet near new record.\n\nA clean file helps the next reviewer.",
+      "attachments": [],
+      "settings": {
+        "__type": "linkedin-page",
+        "post_as_images_carousel": false
+      },
+      "claim_sources": [
+        "GrantPipe product marketing context",
+        "LinkedIn analytics export grantpipe_content_1780933338832.xls",
+        "GrantPipe social source files"
+      ],
+      "review_status": "ready_to_schedule",
+      "review_checks": {
+        "humanized": true,
+        "third_grade": true,
+        "no_em_dash": true,
+        "no_lies": true,
+        "source_reviewed": true,
+        "brand_reviewed": true,
+        "duplicate_reviewed": true,
+        "final_schedule_ready": true
+      },
+      "humanizer_status": "passed"
+    },
+    {
+      "id": "grantpipe-2026-252-2026-06-30-morning-x",
+      "groupId": "grantpipe-2026-252-2026-06-30-morning",
+      "source_worker_id": "grantpipe-week3-252-2026-06-30-x-01",
+      "local_date": "2026-06-30",
+      "local_time": "08:45 America/Matamoros",
+      "slot_label": "morning",
+      "platform": "x",
+      "integrationId": "cmq5aut9y0087mv0yt9otastk",
+      "date": "2026-06-30T13:45:00.000Z",
+      "type": "schedule",
+      "content": "foundation note check: match public filing to prospect file. Name the development.",
+      "attachments": [],
+      "settings": {
+        "who_can_reply_post": "everyone"
+      },
+      "claim_sources": [
+        "GrantPipe product marketing context",
+        "LinkedIn analytics export grantpipe_content_1780933338832.xls",
+        "GrantPipe social source files"
+      ],
+      "review_status": "ready_to_schedule",
+      "review_checks": {
+        "humanized": true,
+        "third_grade": true,
+        "no_em_dash": true,
+        "no_lies": true,
+        "source_reviewed": true,
+        "brand_reviewed": true,
+        "duplicate_reviewed": true,
+        "final_schedule_ready": true
+      },
+      "humanizer_status": "passed"
+    },
+    {
+      "id": "grantpipe-2026-252-2026-06-30-midday-x",
+      "groupId": "grantpipe-2026-252-2026-06-30-midday",
+      "source_worker_id": "grantpipe-week3-252-2026-06-30-x-02",
+      "local_date": "2026-06-30",
+      "local_time": "13:15 America/Matamoros",
+      "slot_label": "midday",
+      "platform": "x",
+      "integrationId": "cmq5aut9y0087mv0yt9otastk",
+      "date": "2026-06-30T18:15:00.000Z",
+      "type": "schedule",
+      "content": "Keep Grants.gov hit simple. Show source link. Show pipeline record. Name the next owner.",
+      "attachments": [],
+      "settings": {
+        "who_can_reply_post": "everyone"
+      },
+      "claim_sources": [
+        "GrantPipe product marketing context",
+        "LinkedIn analytics export grantpipe_content_1780933338832.xls",
+        "GrantPipe social source files"
+      ],
+      "review_status": "ready_to_schedule",
+      "review_checks": {
+        "humanized": true,
+        "third_grade": true,
+        "no_em_dash": true,
+        "no_lies": true,
+        "source_reviewed": true,
+        "brand_reviewed": true,
+        "duplicate_reviewed": true,
+        "final_schedule_ready": true
+      },
+      "humanizer_status": "passed"
+    },
+    {
+      "id": "grantpipe-2026-252-2026-06-30-late-x",
+      "groupId": "grantpipe-2026-252-2026-06-30-late",
+      "source_worker_id": "grantpipe-week3-252-2026-06-30-x-03",
+      "local_date": "2026-06-30",
+      "local_time": "17:35 America/Matamoros",
+      "slot_label": "late",
+      "platform": "x",
+      "integrationId": "cmq5aut9y0087mv0yt9otastk",
+      "date": "2026-06-30T22:35:00.000Z",
+      "type": "schedule",
+      "content": "Close the loop on CSV import. Save old sheet near new record.",
+      "attachments": [],
+      "settings": {
+        "who_can_reply_post": "everyone"
+      },
+      "claim_sources": [
+        "GrantPipe product marketing context",
+        "LinkedIn analytics export grantpipe_content_1780933338832.xls",
+        "GrantPipe social source files"
+      ],
+      "review_status": "ready_to_schedule",
+      "review_checks": {
+        "humanized": true,
+        "third_grade": true,
+        "no_em_dash": true,
+        "no_lies": true,
+        "source_reviewed": true,
+        "brand_reviewed": true,
+        "duplicate_reviewed": true,
+        "final_schedule_ready": true
+      },
+      "humanizer_status": "passed"
+    },
+    {
+      "id": "grantpipe-2026-252-2026-06-30-morning-threads",
+      "groupId": "grantpipe-2026-252-2026-06-30-morning",
+      "source_worker_id": "grantpipe-week3-252-2026-06-30-threads-01",
+      "local_date": "2026-06-30",
+      "local_time": "08:45 America/Matamoros",
+      "slot_label": "morning",
+      "platform": "threads",
+      "integrationId": "cmq5b15k300k4qp0yypplg57c",
+      "date": "2026-06-30T13:45:00.000Z",
+      "type": "schedule",
+      "content": "Small grant check: foundation note. Match public filing to prospect file. Then name the development.",
+      "attachments": [],
+      "settings": {},
+      "claim_sources": [
+        "GrantPipe product marketing context",
+        "LinkedIn analytics export grantpipe_content_1780933338832.xls",
+        "GrantPipe social source files"
+      ],
+      "review_status": "ready_to_schedule",
+      "review_checks": {
+        "humanized": true,
+        "third_grade": true,
+        "no_em_dash": true,
+        "no_lies": true,
+        "source_reviewed": true,
+        "brand_reviewed": true,
+        "duplicate_reviewed": true,
+        "final_schedule_ready": true
+      },
+      "humanizer_status": "passed"
+    },
+    {
+      "id": "grantpipe-2026-252-2026-06-30-midday-threads",
+      "groupId": "grantpipe-2026-252-2026-06-30-midday",
+      "source_worker_id": "grantpipe-week3-252-2026-06-30-threads-02",
+      "local_date": "2026-06-30",
+      "local_time": "13:15 America/Matamoros",
+      "slot_label": "midday",
+      "platform": "threads",
+      "integrationId": "cmq5b15k300k4qp0yypplg57c",
+      "date": "2026-06-30T18:15:00.000Z",
+      "type": "schedule",
+      "content": "For Grants.gov hit, keep the file plain. Show source link. Show pipeline record. Name the next step.",
+      "attachments": [],
+      "settings": {},
+      "claim_sources": [
+        "GrantPipe product marketing context",
+        "LinkedIn analytics export grantpipe_content_1780933338832.xls",
+        "GrantPipe social source files"
+      ],
+      "review_status": "ready_to_schedule",
+      "review_checks": {
+        "humanized": true,
+        "third_grade": true,
+        "no_em_dash": true,
+        "no_lies": true,
+        "source_reviewed": true,
+        "brand_reviewed": true,
+        "duplicate_reviewed": true,
+        "final_schedule_ready": true
+      },
+      "humanizer_status": "passed"
+    },
+    {
+      "id": "grantpipe-2026-252-2026-06-30-late-threads",
+      "groupId": "grantpipe-2026-252-2026-06-30-late",
+      "source_worker_id": "grantpipe-week3-252-2026-06-30-threads-03",
+      "local_date": "2026-06-30",
+      "local_time": "17:35 America/Matamoros",
+      "slot_label": "late",
+      "platform": "threads",
+      "integrationId": "cmq5b15k300k4qp0yypplg57c",
+      "date": "2026-06-30T22:35:00.000Z",
+      "type": "schedule",
+      "content": "Before the day ends, check CSV import. Put old sheet next to new record.",
+      "attachments": [],
+      "settings": {},
+      "claim_sources": [
+        "GrantPipe product marketing context",
+        "LinkedIn analytics export grantpipe_content_1780933338832.xls",
+        "GrantPipe social source files"
+      ],
+      "review_status": "ready_to_schedule",
+      "review_checks": {
+        "humanized": true,
+        "third_grade": true,
+        "no_em_dash": true,
+        "no_lies": true,
+        "source_reviewed": true,
+        "brand_reviewed": true,
+        "duplicate_reviewed": true,
+        "final_schedule_ready": true
+      },
+      "humanizer_status": "passed"
+    },
+    {
+      "id": "grantpipe-2026-252-2026-07-01-morning-linkedin",
+      "groupId": "grantpipe-2026-252-2026-07-01-morning",
+      "source_worker_id": "grantpipe-week3-252-2026-07-01-linkedin-01",
+      "local_date": "2026-07-01",
+      "local_time": "08:45 America/Matamoros",
+      "slot_label": "morning",
+      "platform": "linkedin",
+      "integrationId": "cmorp6oby03pgmq0ye7e3n7j0",
+      "date": "2026-07-01T13:45:00.000Z",
+      "type": "schedule",
+      "content": "spreadsheet risk check.\n\nMatch manual total to source row. Name the finance.\n\nIf it breaks, write the next step.",
+      "attachments": [],
+      "settings": {
+        "__type": "linkedin-page",
+        "post_as_images_carousel": false
+      },
+      "claim_sources": [
+        "GrantPipe product marketing context",
+        "LinkedIn analytics export grantpipe_content_1780933338832.xls",
+        "GrantPipe social source files"
+      ],
+      "review_status": "ready_to_schedule",
+      "review_checks": {
+        "humanized": true,
+        "third_grade": true,
+        "no_em_dash": true,
+        "no_lies": true,
+        "source_reviewed": true,
+        "brand_reviewed": true,
+        "duplicate_reviewed": true,
+        "final_schedule_ready": true
+      },
+      "humanizer_status": "passed"
+    },
+    {
+      "id": "grantpipe-2026-252-2026-07-01-midday-linkedin",
+      "groupId": "grantpipe-2026-252-2026-07-01-midday",
+      "source_worker_id": "grantpipe-week3-252-2026-07-01-linkedin-02",
+      "local_date": "2026-07-01",
+      "local_time": "13:15 America/Matamoros",
+      "slot_label": "midday",
+      "platform": "linkedin",
+      "integrationId": "cmorp6oby03pgmq0ye7e3n7j0",
+      "date": "2026-07-01T18:15:00.000Z",
+      "type": "schedule",
+      "content": "Keep shared drive gap plain.\n\nShow file link. Show owner note.\n\nThen name who owns the next step.",
+      "attachments": [],
+      "settings": {
+        "__type": "linkedin-page",
+        "post_as_images_carousel": false
+      },
+      "claim_sources": [
+        "GrantPipe product marketing context",
+        "LinkedIn analytics export grantpipe_content_1780933338832.xls",
+        "GrantPipe social source files"
+      ],
+      "review_status": "ready_to_schedule",
+      "review_checks": {
+        "humanized": true,
+        "third_grade": true,
+        "no_em_dash": true,
+        "no_lies": true,
+        "source_reviewed": true,
+        "brand_reviewed": true,
+        "duplicate_reviewed": true,
+        "final_schedule_ready": true
+      },
+      "humanizer_status": "passed"
+    },
+    {
+      "id": "grantpipe-2026-252-2026-07-01-late-linkedin",
+      "groupId": "grantpipe-2026-252-2026-07-01-late",
+      "source_worker_id": "grantpipe-week3-252-2026-07-01-linkedin-03",
+      "local_date": "2026-07-01",
+      "local_time": "17:35 America/Matamoros",
+      "slot_label": "late",
+      "platform": "linkedin",
+      "integrationId": "cmorp6oby03pgmq0ye7e3n7j0",
+      "date": "2026-07-01T22:35:00.000Z",
+      "type": "schedule",
+      "content": "End the day with donor CRM gap.\n\nSave grant term near finance note.\n\nA clean file helps the next reviewer.",
+      "attachments": [],
+      "settings": {
+        "__type": "linkedin-page",
+        "post_as_images_carousel": false
+      },
+      "claim_sources": [
+        "GrantPipe product marketing context",
+        "LinkedIn analytics export grantpipe_content_1780933338832.xls",
+        "GrantPipe social source files"
+      ],
+      "review_status": "ready_to_schedule",
+      "review_checks": {
+        "humanized": true,
+        "third_grade": true,
+        "no_em_dash": true,
+        "no_lies": true,
+        "source_reviewed": true,
+        "brand_reviewed": true,
+        "duplicate_reviewed": true,
+        "final_schedule_ready": true
+      },
+      "humanizer_status": "passed"
+    },
+    {
+      "id": "grantpipe-2026-252-2026-07-01-morning-x",
+      "groupId": "grantpipe-2026-252-2026-07-01-morning",
+      "source_worker_id": "grantpipe-week3-252-2026-07-01-x-01",
+      "local_date": "2026-07-01",
+      "local_time": "08:45 America/Matamoros",
+      "slot_label": "morning",
+      "platform": "x",
+      "integrationId": "cmq5aut9y0087mv0yt9otastk",
+      "date": "2026-07-01T13:45:00.000Z",
+      "type": "schedule",
+      "content": "spreadsheet risk check: match manual total to source row. Name the finance.",
+      "attachments": [],
+      "settings": {
+        "who_can_reply_post": "everyone"
+      },
+      "claim_sources": [
+        "GrantPipe product marketing context",
+        "LinkedIn analytics export grantpipe_content_1780933338832.xls",
+        "GrantPipe social source files"
+      ],
+      "review_status": "ready_to_schedule",
+      "review_checks": {
+        "humanized": true,
+        "third_grade": true,
+        "no_em_dash": true,
+        "no_lies": true,
+        "source_reviewed": true,
+        "brand_reviewed": true,
+        "duplicate_reviewed": true,
+        "final_schedule_ready": true
+      },
+      "humanizer_status": "passed"
+    },
+    {
+      "id": "grantpipe-2026-252-2026-07-01-midday-x",
+      "groupId": "grantpipe-2026-252-2026-07-01-midday",
+      "source_worker_id": "grantpipe-week3-252-2026-07-01-x-02",
+      "local_date": "2026-07-01",
+      "local_time": "13:15 America/Matamoros",
+      "slot_label": "midday",
+      "platform": "x",
+      "integrationId": "cmq5aut9y0087mv0yt9otastk",
+      "date": "2026-07-01T18:15:00.000Z",
+      "type": "schedule",
+      "content": "Keep shared drive gap simple. Show file link. Show owner note. Name the next owner.",
+      "attachments": [],
+      "settings": {
+        "who_can_reply_post": "everyone"
+      },
+      "claim_sources": [
+        "GrantPipe product marketing context",
+        "LinkedIn analytics export grantpipe_content_1780933338832.xls",
+        "GrantPipe social source files"
+      ],
+      "review_status": "ready_to_schedule",
+      "review_checks": {
+        "humanized": true,
+        "third_grade": true,
+        "no_em_dash": true,
+        "no_lies": true,
+        "source_reviewed": true,
+        "brand_reviewed": true,
+        "duplicate_reviewed": true,
+        "final_schedule_ready": true
+      },
+      "humanizer_status": "passed"
+    },
+    {
+      "id": "grantpipe-2026-252-2026-07-01-late-x",
+      "groupId": "grantpipe-2026-252-2026-07-01-late",
+      "source_worker_id": "grantpipe-week3-252-2026-07-01-x-03",
+      "local_date": "2026-07-01",
+      "local_time": "17:35 America/Matamoros",
+      "slot_label": "late",
+      "platform": "x",
+      "integrationId": "cmq5aut9y0087mv0yt9otastk",
+      "date": "2026-07-01T22:35:00.000Z",
+      "type": "schedule",
+      "content": "Close the loop on donor CRM gap. Save grant term near finance note.",
+      "attachments": [],
+      "settings": {
+        "who_can_reply_post": "everyone"
+      },
+      "claim_sources": [
+        "GrantPipe product marketing context",
+        "LinkedIn analytics export grantpipe_content_1780933338832.xls",
+        "GrantPipe social source files"
+      ],
+      "review_status": "ready_to_schedule",
+      "review_checks": {
+        "humanized": true,
+        "third_grade": true,
+        "no_em_dash": true,
+        "no_lies": true,
+        "source_reviewed": true,
+        "brand_reviewed": true,
+        "duplicate_reviewed": true,
+        "final_schedule_ready": true
+      },
+      "humanizer_status": "passed"
+    },
+    {
+      "id": "grantpipe-2026-252-2026-07-01-morning-threads",
+      "groupId": "grantpipe-2026-252-2026-07-01-morning",
+      "source_worker_id": "grantpipe-week3-252-2026-07-01-threads-01",
+      "local_date": "2026-07-01",
+      "local_time": "08:45 America/Matamoros",
+      "slot_label": "morning",
+      "platform": "threads",
+      "integrationId": "cmq5b15k300k4qp0yypplg57c",
+      "date": "2026-07-01T13:45:00.000Z",
+      "type": "schedule",
+      "content": "Small grant check: spreadsheet risk. Match manual total to source row. Then name the finance.",
+      "attachments": [],
+      "settings": {},
+      "claim_sources": [
+        "GrantPipe product marketing context",
+        "LinkedIn analytics export grantpipe_content_1780933338832.xls",
+        "GrantPipe social source files"
+      ],
+      "review_status": "ready_to_schedule",
+      "review_checks": {
+        "humanized": true,
+        "third_grade": true,
+        "no_em_dash": true,
+        "no_lies": true,
+        "source_reviewed": true,
+        "brand_reviewed": true,
+        "duplicate_reviewed": true,
+        "final_schedule_ready": true
+      },
+      "humanizer_status": "passed"
+    },
+    {
+      "id": "grantpipe-2026-252-2026-07-01-midday-threads",
+      "groupId": "grantpipe-2026-252-2026-07-01-midday",
+      "source_worker_id": "grantpipe-week3-252-2026-07-01-threads-02",
+      "local_date": "2026-07-01",
+      "local_time": "13:15 America/Matamoros",
+      "slot_label": "midday",
+      "platform": "threads",
+      "integrationId": "cmq5b15k300k4qp0yypplg57c",
+      "date": "2026-07-01T18:15:00.000Z",
+      "type": "schedule",
+      "content": "For shared drive gap, keep the file plain. Show file link. Show owner note. Name the next step.",
+      "attachments": [],
+      "settings": {},
+      "claim_sources": [
+        "GrantPipe product marketing context",
+        "LinkedIn analytics export grantpipe_content_1780933338832.xls",
+        "GrantPipe social source files"
+      ],
+      "review_status": "ready_to_schedule",
+      "review_checks": {
+        "humanized": true,
+        "third_grade": true,
+        "no_em_dash": true,
+        "no_lies": true,
+        "source_reviewed": true,
+        "brand_reviewed": true,
+        "duplicate_reviewed": true,
+        "final_schedule_ready": true
+      },
+      "humanizer_status": "passed"
+    },
+    {
+      "id": "grantpipe-2026-252-2026-07-01-late-threads",
+      "groupId": "grantpipe-2026-252-2026-07-01-late",
+      "source_worker_id": "grantpipe-week3-252-2026-07-01-threads-03",
+      "local_date": "2026-07-01",
+      "local_time": "17:35 America/Matamoros",
+      "slot_label": "late",
+      "platform": "threads",
+      "integrationId": "cmq5b15k300k4qp0yypplg57c",
+      "date": "2026-07-01T22:35:00.000Z",
+      "type": "schedule",
+      "content": "Before the day ends, check donor CRM gap. Put grant term next to finance note.",
+      "attachments": [],
+      "settings": {},
+      "claim_sources": [
+        "GrantPipe product marketing context",
+        "LinkedIn analytics export grantpipe_content_1780933338832.xls",
+        "GrantPipe social source files"
+      ],
+      "review_status": "ready_to_schedule",
+      "review_checks": {
+        "humanized": true,
+        "third_grade": true,
+        "no_em_dash": true,
+        "no_lies": true,
+        "source_reviewed": true,
+        "brand_reviewed": true,
+        "duplicate_reviewed": true,
+        "final_schedule_ready": true
+      },
+      "humanizer_status": "passed"
+    },
+    {
+      "id": "grantpipe-2026-252-2026-07-02-morning-linkedin",
+      "groupId": "grantpipe-2026-252-2026-07-02-morning",
+      "source_worker_id": "grantpipe-week3-252-2026-07-02-linkedin-01",
+      "local_date": "2026-07-02",
+      "local_time": "08:45 America/Matamoros",
+      "slot_label": "morning",
+      "platform": "linkedin",
+      "integrationId": "cmorp6oby03pgmq0ye7e3n7j0",
+      "date": "2026-07-02T13:45:00.000Z",
+      "type": "schedule",
+      "content": "no setup fee check.\n\nMatch signup path to team note. Name the buyer.\n\nIf it breaks, write the next step.",
+      "attachments": [],
+      "settings": {
+        "__type": "linkedin-page",
+        "post_as_images_carousel": false
+      },
+      "claim_sources": [
+        "GrantPipe product marketing context",
+        "LinkedIn analytics export grantpipe_content_1780933338832.xls",
+        "GrantPipe social source files"
+      ],
+      "review_status": "ready_to_schedule",
+      "review_checks": {
+        "humanized": true,
+        "third_grade": true,
+        "no_em_dash": true,
+        "no_lies": true,
+        "source_reviewed": true,
+        "brand_reviewed": true,
+        "duplicate_reviewed": true,
+        "final_schedule_ready": true
+      },
+      "humanizer_status": "passed"
+    },
+    {
+      "id": "grantpipe-2026-252-2026-07-02-midday-linkedin",
+      "groupId": "grantpipe-2026-252-2026-07-02-midday",
+      "source_worker_id": "grantpipe-week3-252-2026-07-02-linkedin-02",
+      "local_date": "2026-07-02",
+      "local_time": "13:15 America/Matamoros",
+      "slot_label": "midday",
+      "platform": "linkedin",
+      "integrationId": "cmorp6oby03pgmq0ye7e3n7j0",
+      "date": "2026-07-02T18:15:00.000Z",
+      "type": "schedule",
+      "content": "Keep free trial plain.\n\nShow real data. Show setup step.\n\nThen name who owns the next step.",
+      "attachments": [],
+      "settings": {
+        "__type": "linkedin-page",
+        "post_as_images_carousel": false
+      },
+      "claim_sources": [
+        "GrantPipe product marketing context",
+        "LinkedIn analytics export grantpipe_content_1780933338832.xls",
+        "GrantPipe social source files"
+      ],
+      "review_status": "ready_to_schedule",
+      "review_checks": {
+        "humanized": true,
+        "third_grade": true,
+        "no_em_dash": true,
+        "no_lies": true,
+        "source_reviewed": true,
+        "brand_reviewed": true,
+        "duplicate_reviewed": true,
+        "final_schedule_ready": true
+      },
+      "humanizer_status": "passed"
+    },
+    {
+      "id": "grantpipe-2026-252-2026-07-02-late-linkedin",
+      "groupId": "grantpipe-2026-252-2026-07-02-late",
+      "source_worker_id": "grantpipe-week3-252-2026-07-02-linkedin-03",
+      "local_date": "2026-07-02",
+      "local_time": "17:35 America/Matamoros",
+      "slot_label": "late",
+      "platform": "linkedin",
+      "integrationId": "cmorp6oby03pgmq0ye7e3n7j0",
+      "date": "2026-07-02T22:35:00.000Z",
+      "type": "schedule",
+      "content": "End the day with public pricing.\n\nSave plan page near trial note.\n\nA clean file helps the next reviewer.",
+      "attachments": [],
+      "settings": {
+        "__type": "linkedin-page",
+        "post_as_images_carousel": false
+      },
+      "claim_sources": [
+        "GrantPipe product marketing context",
+        "LinkedIn analytics export grantpipe_content_1780933338832.xls",
+        "GrantPipe social source files"
+      ],
+      "review_status": "ready_to_schedule",
+      "review_checks": {
+        "humanized": true,
+        "third_grade": true,
+        "no_em_dash": true,
+        "no_lies": true,
+        "source_reviewed": true,
+        "brand_reviewed": true,
+        "duplicate_reviewed": true,
+        "final_schedule_ready": true
+      },
+      "humanizer_status": "passed"
+    },
+    {
+      "id": "grantpipe-2026-252-2026-07-02-morning-x",
+      "groupId": "grantpipe-2026-252-2026-07-02-morning",
+      "source_worker_id": "grantpipe-week3-252-2026-07-02-x-01",
+      "local_date": "2026-07-02",
+      "local_time": "08:45 America/Matamoros",
+      "slot_label": "morning",
+      "platform": "x",
+      "integrationId": "cmq5aut9y0087mv0yt9otastk",
+      "date": "2026-07-02T13:45:00.000Z",
+      "type": "schedule",
+      "content": "no setup fee check: match signup path to team note. Name the buyer.",
+      "attachments": [],
+      "settings": {
+        "who_can_reply_post": "everyone"
+      },
+      "claim_sources": [
+        "GrantPipe product marketing context",
+        "LinkedIn analytics export grantpipe_content_1780933338832.xls",
+        "GrantPipe social source files"
+      ],
+      "review_status": "ready_to_schedule",
+      "review_checks": {
+        "humanized": true,
+        "third_grade": true,
+        "no_em_dash": true,
+        "no_lies": true,
+        "source_reviewed": true,
+        "brand_reviewed": true,
+        "duplicate_reviewed": true,
+        "final_schedule_ready": true
+      },
+      "humanizer_status": "passed"
+    },
+    {
+      "id": "grantpipe-2026-252-2026-07-02-midday-x",
+      "groupId": "grantpipe-2026-252-2026-07-02-midday",
+      "source_worker_id": "grantpipe-week3-252-2026-07-02-x-02",
+      "local_date": "2026-07-02",
+      "local_time": "13:15 America/Matamoros",
+      "slot_label": "midday",
+      "platform": "x",
+      "integrationId": "cmq5aut9y0087mv0yt9otastk",
+      "date": "2026-07-02T18:15:00.000Z",
+      "type": "schedule",
+      "content": "Keep free trial simple. Show real data. Show setup step. Name the next owner.",
+      "attachments": [],
+      "settings": {
+        "who_can_reply_post": "everyone"
+      },
+      "claim_sources": [
+        "GrantPipe product marketing context",
+        "LinkedIn analytics export grantpipe_content_1780933338832.xls",
+        "GrantPipe social source files"
+      ],
+      "review_status": "ready_to_schedule",
+      "review_checks": {
+        "humanized": true,
+        "third_grade": true,
+        "no_em_dash": true,
+        "no_lies": true,
+        "source_reviewed": true,
+        "brand_reviewed": true,
+        "duplicate_reviewed": true,
+        "final_schedule_ready": true
+      },
+      "humanizer_status": "passed"
+    },
+    {
+      "id": "grantpipe-2026-252-2026-07-02-late-x",
+      "groupId": "grantpipe-2026-252-2026-07-02-late",
+      "source_worker_id": "grantpipe-week3-252-2026-07-02-x-03",
+      "local_date": "2026-07-02",
+      "local_time": "17:35 America/Matamoros",
+      "slot_label": "late",
+      "platform": "x",
+      "integrationId": "cmq5aut9y0087mv0yt9otastk",
+      "date": "2026-07-02T22:35:00.000Z",
+      "type": "schedule",
+      "content": "Close the loop on public pricing. Save plan page near trial note.",
+      "attachments": [],
+      "settings": {
+        "who_can_reply_post": "everyone"
+      },
+      "claim_sources": [
+        "GrantPipe product marketing context",
+        "LinkedIn analytics export grantpipe_content_1780933338832.xls",
+        "GrantPipe social source files"
+      ],
+      "review_status": "ready_to_schedule",
+      "review_checks": {
+        "humanized": true,
+        "third_grade": true,
+        "no_em_dash": true,
+        "no_lies": true,
+        "source_reviewed": true,
+        "brand_reviewed": true,
+        "duplicate_reviewed": true,
+        "final_schedule_ready": true
+      },
+      "humanizer_status": "passed"
+    },
+    {
+      "id": "grantpipe-2026-252-2026-07-02-morning-threads",
+      "groupId": "grantpipe-2026-252-2026-07-02-morning",
+      "source_worker_id": "grantpipe-week3-252-2026-07-02-threads-01",
+      "local_date": "2026-07-02",
+      "local_time": "08:45 America/Matamoros",
+      "slot_label": "morning",
+      "platform": "threads",
+      "integrationId": "cmq5b15k300k4qp0yypplg57c",
+      "date": "2026-07-02T13:45:00.000Z",
+      "type": "schedule",
+      "content": "Small grant check: no setup fee. Match signup path to team note. Then name the buyer.",
+      "attachments": [],
+      "settings": {},
+      "claim_sources": [
+        "GrantPipe product marketing context",
+        "LinkedIn analytics export grantpipe_content_1780933338832.xls",
+        "GrantPipe social source files"
+      ],
+      "review_status": "ready_to_schedule",
+      "review_checks": {
+        "humanized": true,
+        "third_grade": true,
+        "no_em_dash": true,
+        "no_lies": true,
+        "source_reviewed": true,
+        "brand_reviewed": true,
+        "duplicate_reviewed": true,
+        "final_schedule_ready": true
+      },
+      "humanizer_status": "passed"
+    },
+    {
+      "id": "grantpipe-2026-252-2026-07-02-midday-threads",
+      "groupId": "grantpipe-2026-252-2026-07-02-midday",
+      "source_worker_id": "grantpipe-week3-252-2026-07-02-threads-02",
+      "local_date": "2026-07-02",
+      "local_time": "13:15 America/Matamoros",
+      "slot_label": "midday",
+      "platform": "threads",
+      "integrationId": "cmq5b15k300k4qp0yypplg57c",
+      "date": "2026-07-02T18:15:00.000Z",
+      "type": "schedule",
+      "content": "For free trial, keep the file plain. Show real data. Show setup step. Name the next step.",
+      "attachments": [],
+      "settings": {},
+      "claim_sources": [
+        "GrantPipe product marketing context",
+        "LinkedIn analytics export grantpipe_content_1780933338832.xls",
+        "GrantPipe social source files"
+      ],
+      "review_status": "ready_to_schedule",
+      "review_checks": {
+        "humanized": true,
+        "third_grade": true,
+        "no_em_dash": true,
+        "no_lies": true,
+        "source_reviewed": true,
+        "brand_reviewed": true,
+        "duplicate_reviewed": true,
+        "final_schedule_ready": true
+      },
+      "humanizer_status": "passed"
+    },
+    {
+      "id": "grantpipe-2026-252-2026-07-02-late-threads",
+      "groupId": "grantpipe-2026-252-2026-07-02-late",
+      "source_worker_id": "grantpipe-week3-252-2026-07-02-threads-03",
+      "local_date": "2026-07-02",
+      "local_time": "17:35 America/Matamoros",
+      "slot_label": "late",
+      "platform": "threads",
+      "integrationId": "cmq5b15k300k4qp0yypplg57c",
+      "date": "2026-07-02T22:35:00.000Z",
+      "type": "schedule",
+      "content": "Before the day ends, check public pricing. Put plan page next to trial note.",
+      "attachments": [],
+      "settings": {},
+      "claim_sources": [
+        "GrantPipe product marketing context",
+        "LinkedIn analytics export grantpipe_content_1780933338832.xls",
+        "GrantPipe social source files"
+      ],
+      "review_status": "ready_to_schedule",
+      "review_checks": {
+        "humanized": true,
+        "third_grade": true,
+        "no_em_dash": true,
+        "no_lies": true,
+        "source_reviewed": true,
+        "brand_reviewed": true,
+        "duplicate_reviewed": true,
+        "final_schedule_ready": true
+      },
+      "humanizer_status": "passed"
+    },
+    {
+      "id": "grantpipe-2026-252-2026-07-03-morning-linkedin",
+      "groupId": "grantpipe-2026-252-2026-07-03-morning",
+      "source_worker_id": "grantpipe-week3-252-2026-07-03-linkedin-01",
+      "local_date": "2026-07-03",
+      "local_time": "08:45 America/Matamoros",
+      "slot_label": "morning",
+      "platform": "linkedin",
+      "integrationId": "cmorp6oby03pgmq0ye7e3n7j0",
+      "date": "2026-07-03T13:45:00.000Z",
+      "type": "schedule",
+      "content": "activity log check.\n\nMatch change note to record owner. Name the reviewer.\n\nIf it breaks, write the next step.",
+      "attachments": [],
+      "settings": {
+        "__type": "linkedin-page",
+        "post_as_images_carousel": false
+      },
+      "claim_sources": [
+        "GrantPipe product marketing context",
+        "LinkedIn analytics export grantpipe_content_1780933338832.xls",
+        "GrantPipe social source files"
+      ],
+      "review_status": "ready_to_schedule",
+      "review_checks": {
+        "humanized": true,
+        "third_grade": true,
+        "no_em_dash": true,
+        "no_lies": true,
+        "source_reviewed": true,
+        "brand_reviewed": true,
+        "duplicate_reviewed": true,
+        "final_schedule_ready": true
+      },
+      "humanizer_status": "passed"
+    },
+    {
+      "id": "grantpipe-2026-252-2026-07-03-midday-linkedin",
+      "groupId": "grantpipe-2026-252-2026-07-03-midday",
+      "source_worker_id": "grantpipe-week3-252-2026-07-03-linkedin-02",
+      "local_date": "2026-07-03",
+      "local_time": "13:15 America/Matamoros",
+      "slot_label": "midday",
+      "platform": "linkedin",
+      "integrationId": "cmorp6oby03pgmq0ye7e3n7j0",
+      "date": "2026-07-03T18:15:00.000Z",
+      "type": "schedule",
+      "content": "Keep funder portal plain.\n\nShow grant file. Show report proof.\n\nThen name who owns the next step.",
+      "attachments": [],
+      "settings": {
+        "__type": "linkedin-page",
+        "post_as_images_carousel": false
+      },
+      "claim_sources": [
+        "GrantPipe product marketing context",
+        "LinkedIn analytics export grantpipe_content_1780933338832.xls",
+        "GrantPipe social source files"
+      ],
+      "review_status": "ready_to_schedule",
+      "review_checks": {
+        "humanized": true,
+        "third_grade": true,
+        "no_em_dash": true,
+        "no_lies": true,
+        "source_reviewed": true,
+        "brand_reviewed": true,
+        "duplicate_reviewed": true,
+        "final_schedule_ready": true
+      },
+      "humanizer_status": "passed"
+    },
+    {
+      "id": "grantpipe-2026-252-2026-07-03-late-linkedin",
+      "groupId": "grantpipe-2026-252-2026-07-03-late",
+      "source_worker_id": "grantpipe-week3-252-2026-07-03-linkedin-03",
+      "local_date": "2026-07-03",
+      "local_time": "17:35 America/Matamoros",
+      "slot_label": "late",
+      "platform": "linkedin",
+      "integrationId": "cmorp6oby03pgmq0ye7e3n7j0",
+      "date": "2026-07-03T22:35:00.000Z",
+      "type": "schedule",
+      "content": "End the day with auditor portal.\n\nSave read-only file near review scope.\n\nA clean file helps the next reviewer.",
+      "attachments": [],
+      "settings": {
+        "__type": "linkedin-page",
+        "post_as_images_carousel": false
+      },
+      "claim_sources": [
+        "GrantPipe product marketing context",
+        "LinkedIn analytics export grantpipe_content_1780933338832.xls",
+        "GrantPipe social source files"
+      ],
+      "review_status": "ready_to_schedule",
+      "review_checks": {
+        "humanized": true,
+        "third_grade": true,
+        "no_em_dash": true,
+        "no_lies": true,
+        "source_reviewed": true,
+        "brand_reviewed": true,
+        "duplicate_reviewed": true,
+        "final_schedule_ready": true
+      },
+      "humanizer_status": "passed"
+    },
+    {
+      "id": "grantpipe-2026-252-2026-07-03-morning-x",
+      "groupId": "grantpipe-2026-252-2026-07-03-morning",
+      "source_worker_id": "grantpipe-week3-252-2026-07-03-x-01",
+      "local_date": "2026-07-03",
+      "local_time": "08:45 America/Matamoros",
+      "slot_label": "morning",
+      "platform": "x",
+      "integrationId": "cmq5aut9y0087mv0yt9otastk",
+      "date": "2026-07-03T13:45:00.000Z",
+      "type": "schedule",
+      "content": "activity log check: match change note to record owner. Name the reviewer.",
+      "attachments": [],
+      "settings": {
+        "who_can_reply_post": "everyone"
+      },
+      "claim_sources": [
+        "GrantPipe product marketing context",
+        "LinkedIn analytics export grantpipe_content_1780933338832.xls",
+        "GrantPipe social source files"
+      ],
+      "review_status": "ready_to_schedule",
+      "review_checks": {
+        "humanized": true,
+        "third_grade": true,
+        "no_em_dash": true,
+        "no_lies": true,
+        "source_reviewed": true,
+        "brand_reviewed": true,
+        "duplicate_reviewed": true,
+        "final_schedule_ready": true
+      },
+      "humanizer_status": "passed"
+    },
+    {
+      "id": "grantpipe-2026-252-2026-07-03-midday-x",
+      "groupId": "grantpipe-2026-252-2026-07-03-midday",
+      "source_worker_id": "grantpipe-week3-252-2026-07-03-x-02",
+      "local_date": "2026-07-03",
+      "local_time": "13:15 America/Matamoros",
+      "slot_label": "midday",
+      "platform": "x",
+      "integrationId": "cmq5aut9y0087mv0yt9otastk",
+      "date": "2026-07-03T18:15:00.000Z",
+      "type": "schedule",
+      "content": "Keep funder portal simple. Show grant file. Show report proof. Name the next owner.",
+      "attachments": [],
+      "settings": {
+        "who_can_reply_post": "everyone"
+      },
+      "claim_sources": [
+        "GrantPipe product marketing context",
+        "LinkedIn analytics export grantpipe_content_1780933338832.xls",
+        "GrantPipe social source files"
+      ],
+      "review_status": "ready_to_schedule",
+      "review_checks": {
+        "humanized": true,
+        "third_grade": true,
+        "no_em_dash": true,
+        "no_lies": true,
+        "source_reviewed": true,
+        "brand_reviewed": true,
+        "duplicate_reviewed": true,
+        "final_schedule_ready": true
+      },
+      "humanizer_status": "passed"
+    },
+    {
+      "id": "grantpipe-2026-252-2026-07-03-late-x",
+      "groupId": "grantpipe-2026-252-2026-07-03-late",
+      "source_worker_id": "grantpipe-week3-252-2026-07-03-x-03",
+      "local_date": "2026-07-03",
+      "local_time": "17:35 America/Matamoros",
+      "slot_label": "late",
+      "platform": "x",
+      "integrationId": "cmq5aut9y0087mv0yt9otastk",
+      "date": "2026-07-03T22:35:00.000Z",
+      "type": "schedule",
+      "content": "Close the loop on auditor portal. Save read-only file near review scope.",
+      "attachments": [],
+      "settings": {
+        "who_can_reply_post": "everyone"
+      },
+      "claim_sources": [
+        "GrantPipe product marketing context",
+        "LinkedIn analytics export grantpipe_content_1780933338832.xls",
+        "GrantPipe social source files"
+      ],
+      "review_status": "ready_to_schedule",
+      "review_checks": {
+        "humanized": true,
+        "third_grade": true,
+        "no_em_dash": true,
+        "no_lies": true,
+        "source_reviewed": true,
+        "brand_reviewed": true,
+        "duplicate_reviewed": true,
+        "final_schedule_ready": true
+      },
+      "humanizer_status": "passed"
+    },
+    {
+      "id": "grantpipe-2026-252-2026-07-03-morning-threads",
+      "groupId": "grantpipe-2026-252-2026-07-03-morning",
+      "source_worker_id": "grantpipe-week3-252-2026-07-03-threads-01",
+      "local_date": "2026-07-03",
+      "local_time": "08:45 America/Matamoros",
+      "slot_label": "morning",
+      "platform": "threads",
+      "integrationId": "cmq5b15k300k4qp0yypplg57c",
+      "date": "2026-07-03T13:45:00.000Z",
+      "type": "schedule",
+      "content": "Small grant check: activity log. Match change note to record owner. Then name the reviewer.",
+      "attachments": [],
+      "settings": {},
+      "claim_sources": [
+        "GrantPipe product marketing context",
+        "LinkedIn analytics export grantpipe_content_1780933338832.xls",
+        "GrantPipe social source files"
+      ],
+      "review_status": "ready_to_schedule",
+      "review_checks": {
+        "humanized": true,
+        "third_grade": true,
+        "no_em_dash": true,
+        "no_lies": true,
+        "source_reviewed": true,
+        "brand_reviewed": true,
+        "duplicate_reviewed": true,
+        "final_schedule_ready": true
+      },
+      "humanizer_status": "passed"
+    },
+    {
+      "id": "grantpipe-2026-252-2026-07-03-midday-threads",
+      "groupId": "grantpipe-2026-252-2026-07-03-midday",
+      "source_worker_id": "grantpipe-week3-252-2026-07-03-threads-02",
+      "local_date": "2026-07-03",
+      "local_time": "13:15 America/Matamoros",
+      "slot_label": "midday",
+      "platform": "threads",
+      "integrationId": "cmq5b15k300k4qp0yypplg57c",
+      "date": "2026-07-03T18:15:00.000Z",
+      "type": "schedule",
+      "content": "For funder portal, keep the file plain. Show grant file. Show report proof. Name the next step.",
+      "attachments": [],
+      "settings": {},
+      "claim_sources": [
+        "GrantPipe product marketing context",
+        "LinkedIn analytics export grantpipe_content_1780933338832.xls",
+        "GrantPipe social source files"
+      ],
+      "review_status": "ready_to_schedule",
+      "review_checks": {
+        "humanized": true,
+        "third_grade": true,
+        "no_em_dash": true,
+        "no_lies": true,
+        "source_reviewed": true,
+        "brand_reviewed": true,
+        "duplicate_reviewed": true,
+        "final_schedule_ready": true
+      },
+      "humanizer_status": "passed"
+    },
+    {
+      "id": "grantpipe-2026-252-2026-07-03-late-threads",
+      "groupId": "grantpipe-2026-252-2026-07-03-late",
+      "source_worker_id": "grantpipe-week3-252-2026-07-03-threads-03",
+      "local_date": "2026-07-03",
+      "local_time": "17:35 America/Matamoros",
+      "slot_label": "late",
+      "platform": "threads",
+      "integrationId": "cmq5b15k300k4qp0yypplg57c",
+      "date": "2026-07-03T22:35:00.000Z",
+      "type": "schedule",
+      "content": "Before the day ends, check auditor portal. Put read-only file next to review scope.",
+      "attachments": [],
+      "settings": {},
+      "claim_sources": [
+        "GrantPipe product marketing context",
+        "LinkedIn analytics export grantpipe_content_1780933338832.xls",
+        "GrantPipe social source files"
+      ],
+      "review_status": "ready_to_schedule",
+      "review_checks": {
+        "humanized": true,
+        "third_grade": true,
+        "no_em_dash": true,
+        "no_lies": true,
+        "source_reviewed": true,
+        "brand_reviewed": true,
+        "duplicate_reviewed": true,
+        "final_schedule_ready": true
+      },
+      "humanizer_status": "passed"
+    },
+    {
+      "id": "grantpipe-2026-252-2026-07-04-morning-linkedin",
+      "groupId": "grantpipe-2026-252-2026-07-04-morning",
+      "source_worker_id": "grantpipe-week3-252-2026-07-04-linkedin-01",
+      "local_date": "2026-07-04",
+      "local_time": "08:45 America/Matamoros",
+      "slot_label": "morning",
+      "platform": "linkedin",
+      "integrationId": "cmorp6oby03pgmq0ye7e3n7j0",
+      "date": "2026-07-04T13:45:00.000Z",
+      "type": "schedule",
+      "content": "spend-down note check.\n\nMatch spent line to balance. Name the grant owner.\n\nIf it breaks, write the next step.",
+      "attachments": [],
+      "settings": {
+        "__type": "linkedin-page",
+        "post_as_images_carousel": false
+      },
+      "claim_sources": [
+        "GrantPipe product marketing context",
+        "LinkedIn analytics export grantpipe_content_1780933338832.xls",
+        "GrantPipe social source files"
+      ],
+      "review_status": "ready_to_schedule",
+      "review_checks": {
+        "humanized": true,
+        "third_grade": true,
+        "no_em_dash": true,
+        "no_lies": true,
+        "source_reviewed": true,
+        "brand_reviewed": true,
+        "duplicate_reviewed": true,
+        "final_schedule_ready": true
+      },
+      "humanizer_status": "passed"
+    },
+    {
+      "id": "grantpipe-2026-252-2026-07-04-midday-linkedin",
+      "groupId": "grantpipe-2026-252-2026-07-04-midday",
+      "source_worker_id": "grantpipe-week3-252-2026-07-04-linkedin-02",
+      "local_date": "2026-07-04",
+      "local_time": "13:15 America/Matamoros",
+      "slot_label": "midday",
+      "platform": "linkedin",
+      "integrationId": "cmorp6oby03pgmq0ye7e3n7j0",
+      "date": "2026-07-04T18:15:00.000Z",
+      "type": "schedule",
+      "content": "Keep fund release plain.\n\nShow purpose met. Show proof note.\n\nThen name who owns the next step.",
+      "attachments": [],
+      "settings": {
+        "__type": "linkedin-page",
+        "post_as_images_carousel": false
+      },
+      "claim_sources": [
+        "GrantPipe product marketing context",
+        "LinkedIn analytics export grantpipe_content_1780933338832.xls",
+        "GrantPipe social source files"
+      ],
+      "review_status": "ready_to_schedule",
+      "review_checks": {
+        "humanized": true,
+        "third_grade": true,
+        "no_em_dash": true,
+        "no_lies": true,
+        "source_reviewed": true,
+        "brand_reviewed": true,
+        "duplicate_reviewed": true,
+        "final_schedule_ready": true
+      },
+      "humanizer_status": "passed"
+    },
+    {
+      "id": "grantpipe-2026-252-2026-07-04-late-linkedin",
+      "groupId": "grantpipe-2026-252-2026-07-04-late",
+      "source_worker_id": "grantpipe-week3-252-2026-07-04-linkedin-03",
+      "local_date": "2026-07-04",
+      "local_time": "17:35 America/Matamoros",
+      "slot_label": "late",
+      "platform": "linkedin",
+      "integrationId": "cmorp6oby03pgmq0ye7e3n7j0",
+      "date": "2026-07-04T22:35:00.000Z",
+      "type": "schedule",
+      "content": "End the day with evidence trail.\n\nSave source file near report answer.\n\nA clean file helps the next reviewer.",
+      "attachments": [],
+      "settings": {
+        "__type": "linkedin-page",
+        "post_as_images_carousel": false
+      },
+      "claim_sources": [
+        "GrantPipe product marketing context",
+        "LinkedIn analytics export grantpipe_content_1780933338832.xls",
+        "GrantPipe social source files"
+      ],
+      "review_status": "ready_to_schedule",
+      "review_checks": {
+        "humanized": true,
+        "third_grade": true,
+        "no_em_dash": true,
+        "no_lies": true,
+        "source_reviewed": true,
+        "brand_reviewed": true,
+        "duplicate_reviewed": true,
+        "final_schedule_ready": true
+      },
+      "humanizer_status": "passed"
+    },
+    {
+      "id": "grantpipe-2026-252-2026-07-04-morning-x",
+      "groupId": "grantpipe-2026-252-2026-07-04-morning",
+      "source_worker_id": "grantpipe-week3-252-2026-07-04-x-01",
+      "local_date": "2026-07-04",
+      "local_time": "08:45 America/Matamoros",
+      "slot_label": "morning",
+      "platform": "x",
+      "integrationId": "cmq5aut9y0087mv0yt9otastk",
+      "date": "2026-07-04T13:45:00.000Z",
+      "type": "schedule",
+      "content": "spend-down note check: match spent line to balance. Name the grant owner.",
+      "attachments": [],
+      "settings": {
+        "who_can_reply_post": "everyone"
+      },
+      "claim_sources": [
+        "GrantPipe product marketing context",
+        "LinkedIn analytics export grantpipe_content_1780933338832.xls",
+        "GrantPipe social source files"
+      ],
+      "review_status": "ready_to_schedule",
+      "review_checks": {
+        "humanized": true,
+        "third_grade": true,
+        "no_em_dash": true,
+        "no_lies": true,
+        "source_reviewed": true,
+        "brand_reviewed": true,
+        "duplicate_reviewed": true,
+        "final_schedule_ready": true
+      },
+      "humanizer_status": "passed"
+    },
+    {
+      "id": "grantpipe-2026-252-2026-07-04-midday-x",
+      "groupId": "grantpipe-2026-252-2026-07-04-midday",
+      "source_worker_id": "grantpipe-week3-252-2026-07-04-x-02",
+      "local_date": "2026-07-04",
+      "local_time": "13:15 America/Matamoros",
+      "slot_label": "midday",
+      "platform": "x",
+      "integrationId": "cmq5aut9y0087mv0yt9otastk",
+      "date": "2026-07-04T18:15:00.000Z",
+      "type": "schedule",
+      "content": "Keep fund release simple. Show purpose met. Show proof note. Name the next owner.",
+      "attachments": [],
+      "settings": {
+        "who_can_reply_post": "everyone"
+      },
+      "claim_sources": [
+        "GrantPipe product marketing context",
+        "LinkedIn analytics export grantpipe_content_1780933338832.xls",
+        "GrantPipe social source files"
+      ],
+      "review_status": "ready_to_schedule",
+      "review_checks": {
+        "humanized": true,
+        "third_grade": true,
+        "no_em_dash": true,
+        "no_lies": true,
+        "source_reviewed": true,
+        "brand_reviewed": true,
+        "duplicate_reviewed": true,
+        "final_schedule_ready": true
+      },
+      "humanizer_status": "passed"
+    },
+    {
+      "id": "grantpipe-2026-252-2026-07-04-late-x",
+      "groupId": "grantpipe-2026-252-2026-07-04-late",
+      "source_worker_id": "grantpipe-week3-252-2026-07-04-x-03",
+      "local_date": "2026-07-04",
+      "local_time": "17:35 America/Matamoros",
+      "slot_label": "late",
+      "platform": "x",
+      "integrationId": "cmq5aut9y0087mv0yt9otastk",
+      "date": "2026-07-04T22:35:00.000Z",
+      "type": "schedule",
+      "content": "Close the loop on evidence trail. Save source file near report answer.",
+      "attachments": [],
+      "settings": {
+        "who_can_reply_post": "everyone"
+      },
+      "claim_sources": [
+        "GrantPipe product marketing context",
+        "LinkedIn analytics export grantpipe_content_1780933338832.xls",
+        "GrantPipe social source files"
+      ],
+      "review_status": "ready_to_schedule",
+      "review_checks": {
+        "humanized": true,
+        "third_grade": true,
+        "no_em_dash": true,
+        "no_lies": true,
+        "source_reviewed": true,
+        "brand_reviewed": true,
+        "duplicate_reviewed": true,
+        "final_schedule_ready": true
+      },
+      "humanizer_status": "passed"
+    },
+    {
+      "id": "grantpipe-2026-252-2026-07-04-morning-threads",
+      "groupId": "grantpipe-2026-252-2026-07-04-morning",
+      "source_worker_id": "grantpipe-week3-252-2026-07-04-threads-01",
+      "local_date": "2026-07-04",
+      "local_time": "08:45 America/Matamoros",
+      "slot_label": "morning",
+      "platform": "threads",
+      "integrationId": "cmq5b15k300k4qp0yypplg57c",
+      "date": "2026-07-04T13:45:00.000Z",
+      "type": "schedule",
+      "content": "Small grant check: spend-down note. Match spent line to balance. Then name the grant owner.",
+      "attachments": [],
+      "settings": {},
+      "claim_sources": [
+        "GrantPipe product marketing context",
+        "LinkedIn analytics export grantpipe_content_1780933338832.xls",
+        "GrantPipe social source files"
+      ],
+      "review_status": "ready_to_schedule",
+      "review_checks": {
+        "humanized": true,
+        "third_grade": true,
+        "no_em_dash": true,
+        "no_lies": true,
+        "source_reviewed": true,
+        "brand_reviewed": true,
+        "duplicate_reviewed": true,
+        "final_schedule_ready": true
+      },
+      "humanizer_status": "passed"
+    },
+    {
+      "id": "grantpipe-2026-252-2026-07-04-midday-threads",
+      "groupId": "grantpipe-2026-252-2026-07-04-midday",
+      "source_worker_id": "grantpipe-week3-252-2026-07-04-threads-02",
+      "local_date": "2026-07-04",
+      "local_time": "13:15 America/Matamoros",
+      "slot_label": "midday",
+      "platform": "threads",
+      "integrationId": "cmq5b15k300k4qp0yypplg57c",
+      "date": "2026-07-04T18:15:00.000Z",
+      "type": "schedule",
+      "content": "For fund release, keep the file plain. Show purpose met. Show proof note. Name the next step.",
+      "attachments": [],
+      "settings": {},
+      "claim_sources": [
+        "GrantPipe product marketing context",
+        "LinkedIn analytics export grantpipe_content_1780933338832.xls",
+        "GrantPipe social source files"
+      ],
+      "review_status": "ready_to_schedule",
+      "review_checks": {
+        "humanized": true,
+        "third_grade": true,
+        "no_em_dash": true,
+        "no_lies": true,
+        "source_reviewed": true,
+        "brand_reviewed": true,
+        "duplicate_reviewed": true,
+        "final_schedule_ready": true
+      },
+      "humanizer_status": "passed"
+    },
+    {
+      "id": "grantpipe-2026-252-2026-07-04-late-threads",
+      "groupId": "grantpipe-2026-252-2026-07-04-late",
+      "source_worker_id": "grantpipe-week3-252-2026-07-04-threads-03",
+      "local_date": "2026-07-04",
+      "local_time": "17:35 America/Matamoros",
+      "slot_label": "late",
+      "platform": "threads",
+      "integrationId": "cmq5b15k300k4qp0yypplg57c",
+      "date": "2026-07-04T22:35:00.000Z",
+      "type": "schedule",
+      "content": "Before the day ends, check evidence trail. Put source file next to report answer.",
+      "attachments": [],
+      "settings": {},
+      "claim_sources": [
+        "GrantPipe product marketing context",
+        "LinkedIn analytics export grantpipe_content_1780933338832.xls",
+        "GrantPipe social source files"
+      ],
+      "review_status": "ready_to_schedule",
+      "review_checks": {
+        "humanized": true,
+        "third_grade": true,
+        "no_em_dash": true,
+        "no_lies": true,
+        "source_reviewed": true,
+        "brand_reviewed": true,
+        "duplicate_reviewed": true,
+        "final_schedule_ready": true
+      },
+      "humanizer_status": "passed"
+    },
+    {
+      "id": "grantpipe-2026-252-2026-07-05-morning-linkedin",
+      "groupId": "grantpipe-2026-252-2026-07-05-morning",
+      "source_worker_id": "grantpipe-week3-252-2026-07-05-linkedin-01",
+      "local_date": "2026-07-05",
+      "local_time": "08:45 America/Matamoros",
+      "slot_label": "morning",
+      "platform": "linkedin",
+      "integrationId": "cmorp6oby03pgmq0ye7e3n7j0",
+      "date": "2026-07-05T13:45:00.000Z",
+      "type": "schedule",
+      "content": "Friday check check.\n\nMatch changed item to next step. Name the team.\n\nIf it breaks, write the next step.",
+      "attachments": [],
+      "settings": {
+        "__type": "linkedin-page",
+        "post_as_images_carousel": false
+      },
+      "claim_sources": [
+        "GrantPipe product marketing context",
+        "LinkedIn analytics export grantpipe_content_1780933338832.xls",
+        "GrantPipe social source files"
+      ],
+      "review_status": "ready_to_schedule",
+      "review_checks": {
+        "humanized": true,
+        "third_grade": true,
+        "no_em_dash": true,
+        "no_lies": true,
+        "source_reviewed": true,
+        "brand_reviewed": true,
+        "duplicate_reviewed": true,
+        "final_schedule_ready": true
+      },
+      "humanizer_status": "passed"
+    },
+    {
+      "id": "grantpipe-2026-252-2026-07-05-midday-linkedin",
+      "groupId": "grantpipe-2026-252-2026-07-05-midday",
+      "source_worker_id": "grantpipe-week3-252-2026-07-05-linkedin-02",
+      "local_date": "2026-07-05",
+      "local_time": "13:15 America/Matamoros",
+      "slot_label": "midday",
+      "platform": "linkedin",
+      "integrationId": "cmorp6oby03pgmq0ye7e3n7j0",
+      "date": "2026-07-05T18:15:00.000Z",
+      "type": "schedule",
+      "content": "Keep Monday list plain.\n\nShow due item. Show blocked item.\n\nThen name who owns the next step.",
+      "attachments": [],
+      "settings": {
+        "__type": "linkedin-page",
+        "post_as_images_carousel": false
+      },
+      "claim_sources": [
+        "GrantPipe product marketing context",
+        "LinkedIn analytics export grantpipe_content_1780933338832.xls",
+        "GrantPipe social source files"
+      ],
+      "review_status": "ready_to_schedule",
+      "review_checks": {
+        "humanized": true,
+        "third_grade": true,
+        "no_em_dash": true,
+        "no_lies": true,
+        "source_reviewed": true,
+        "brand_reviewed": true,
+        "duplicate_reviewed": true,
+        "final_schedule_ready": true
+      },
+      "humanizer_status": "passed"
+    },
+    {
+      "id": "grantpipe-2026-252-2026-07-05-late-linkedin",
+      "groupId": "grantpipe-2026-252-2026-07-05-late",
+      "source_worker_id": "grantpipe-week3-252-2026-07-05-linkedin-03",
+      "local_date": "2026-07-05",
+      "local_time": "17:35 America/Matamoros",
+      "slot_label": "late",
+      "platform": "linkedin",
+      "integrationId": "cmorp6oby03pgmq0ye7e3n7j0",
+      "date": "2026-07-05T22:35:00.000Z",
+      "type": "schedule",
+      "content": "End the day with board prep.\n\nSave grant list near risk note.\n\nA clean file helps the next reviewer.",
+      "attachments": [],
+      "settings": {
+        "__type": "linkedin-page",
+        "post_as_images_carousel": false
+      },
+      "claim_sources": [
+        "GrantPipe product marketing context",
+        "LinkedIn analytics export grantpipe_content_1780933338832.xls",
+        "GrantPipe social source files"
+      ],
+      "review_status": "ready_to_schedule",
+      "review_checks": {
+        "humanized": true,
+        "third_grade": true,
+        "no_em_dash": true,
+        "no_lies": true,
+        "source_reviewed": true,
+        "brand_reviewed": true,
+        "duplicate_reviewed": true,
+        "final_schedule_ready": true
+      },
+      "humanizer_status": "passed"
+    },
+    {
+      "id": "grantpipe-2026-252-2026-07-05-morning-x",
+      "groupId": "grantpipe-2026-252-2026-07-05-morning",
+      "source_worker_id": "grantpipe-week3-252-2026-07-05-x-01",
+      "local_date": "2026-07-05",
+      "local_time": "08:45 America/Matamoros",
+      "slot_label": "morning",
+      "platform": "x",
+      "integrationId": "cmq5aut9y0087mv0yt9otastk",
+      "date": "2026-07-05T13:45:00.000Z",
+      "type": "schedule",
+      "content": "Friday check check: match changed item to next step. Name the team.",
+      "attachments": [],
+      "settings": {
+        "who_can_reply_post": "everyone"
+      },
+      "claim_sources": [
+        "GrantPipe product marketing context",
+        "LinkedIn analytics export grantpipe_content_1780933338832.xls",
+        "GrantPipe social source files"
+      ],
+      "review_status": "ready_to_schedule",
+      "review_checks": {
+        "humanized": true,
+        "third_grade": true,
+        "no_em_dash": true,
+        "no_lies": true,
+        "source_reviewed": true,
+        "brand_reviewed": true,
+        "duplicate_reviewed": true,
+        "final_schedule_ready": true
+      },
+      "humanizer_status": "passed"
+    },
+    {
+      "id": "grantpipe-2026-252-2026-07-05-midday-x",
+      "groupId": "grantpipe-2026-252-2026-07-05-midday",
+      "source_worker_id": "grantpipe-week3-252-2026-07-05-x-02",
+      "local_date": "2026-07-05",
+      "local_time": "13:15 America/Matamoros",
+      "slot_label": "midday",
+      "platform": "x",
+      "integrationId": "cmq5aut9y0087mv0yt9otastk",
+      "date": "2026-07-05T18:15:00.000Z",
+      "type": "schedule",
+      "content": "Keep Monday list simple. Show due item. Show blocked item. Name the next owner.",
+      "attachments": [],
+      "settings": {
+        "who_can_reply_post": "everyone"
+      },
+      "claim_sources": [
+        "GrantPipe product marketing context",
+        "LinkedIn analytics export grantpipe_content_1780933338832.xls",
+        "GrantPipe social source files"
+      ],
+      "review_status": "ready_to_schedule",
+      "review_checks": {
+        "humanized": true,
+        "third_grade": true,
+        "no_em_dash": true,
+        "no_lies": true,
+        "source_reviewed": true,
+        "brand_reviewed": true,
+        "duplicate_reviewed": true,
+        "final_schedule_ready": true
+      },
+      "humanizer_status": "passed"
+    },
+    {
+      "id": "grantpipe-2026-252-2026-07-05-late-x",
+      "groupId": "grantpipe-2026-252-2026-07-05-late",
+      "source_worker_id": "grantpipe-week3-252-2026-07-05-x-03",
+      "local_date": "2026-07-05",
+      "local_time": "17:35 America/Matamoros",
+      "slot_label": "late",
+      "platform": "x",
+      "integrationId": "cmq5aut9y0087mv0yt9otastk",
+      "date": "2026-07-05T22:35:00.000Z",
+      "type": "schedule",
+      "content": "Close the loop on board prep. Save grant list near risk note.",
+      "attachments": [],
+      "settings": {
+        "who_can_reply_post": "everyone"
+      },
+      "claim_sources": [
+        "GrantPipe product marketing context",
+        "LinkedIn analytics export grantpipe_content_1780933338832.xls",
+        "GrantPipe social source files"
+      ],
+      "review_status": "ready_to_schedule",
+      "review_checks": {
+        "humanized": true,
+        "third_grade": true,
+        "no_em_dash": true,
+        "no_lies": true,
+        "source_reviewed": true,
+        "brand_reviewed": true,
+        "duplicate_reviewed": true,
+        "final_schedule_ready": true
+      },
+      "humanizer_status": "passed"
+    },
+    {
+      "id": "grantpipe-2026-252-2026-07-05-morning-threads",
+      "groupId": "grantpipe-2026-252-2026-07-05-morning",
+      "source_worker_id": "grantpipe-week3-252-2026-07-05-threads-01",
+      "local_date": "2026-07-05",
+      "local_time": "08:45 America/Matamoros",
+      "slot_label": "morning",
+      "platform": "threads",
+      "integrationId": "cmq5b15k300k4qp0yypplg57c",
+      "date": "2026-07-05T13:45:00.000Z",
+      "type": "schedule",
+      "content": "Small grant check: Friday check. Match changed item to next step. Then name the team.",
+      "attachments": [],
+      "settings": {},
+      "claim_sources": [
+        "GrantPipe product marketing context",
+        "LinkedIn analytics export grantpipe_content_1780933338832.xls",
+        "GrantPipe social source files"
+      ],
+      "review_status": "ready_to_schedule",
+      "review_checks": {
+        "humanized": true,
+        "third_grade": true,
+        "no_em_dash": true,
+        "no_lies": true,
+        "source_reviewed": true,
+        "brand_reviewed": true,
+        "duplicate_reviewed": true,
+        "final_schedule_ready": true
+      },
+      "humanizer_status": "passed"
+    },
+    {
+      "id": "grantpipe-2026-252-2026-07-05-midday-threads",
+      "groupId": "grantpipe-2026-252-2026-07-05-midday",
+      "source_worker_id": "grantpipe-week3-252-2026-07-05-threads-02",
+      "local_date": "2026-07-05",
+      "local_time": "13:15 America/Matamoros",
+      "slot_label": "midday",
+      "platform": "threads",
+      "integrationId": "cmq5b15k300k4qp0yypplg57c",
+      "date": "2026-07-05T18:15:00.000Z",
+      "type": "schedule",
+      "content": "For Monday list, keep the file plain. Show due item. Show blocked item. Name the next step.",
+      "attachments": [],
+      "settings": {},
+      "claim_sources": [
+        "GrantPipe product marketing context",
+        "LinkedIn analytics export grantpipe_content_1780933338832.xls",
+        "GrantPipe social source files"
+      ],
+      "review_status": "ready_to_schedule",
+      "review_checks": {
+        "humanized": true,
+        "third_grade": true,
+        "no_em_dash": true,
+        "no_lies": true,
+        "source_reviewed": true,
+        "brand_reviewed": true,
+        "duplicate_reviewed": true,
+        "final_schedule_ready": true
+      },
+      "humanizer_status": "passed"
+    },
+    {
+      "id": "grantpipe-2026-252-2026-07-05-late-threads",
+      "groupId": "grantpipe-2026-252-2026-07-05-late",
+      "source_worker_id": "grantpipe-week3-252-2026-07-05-threads-03",
+      "local_date": "2026-07-05",
+      "local_time": "17:35 America/Matamoros",
+      "slot_label": "late",
+      "platform": "threads",
+      "integrationId": "cmq5b15k300k4qp0yypplg57c",
+      "date": "2026-07-05T22:35:00.000Z",
+      "type": "schedule",
+      "content": "Before the day ends, check board prep. Put grant list next to risk note.",
+      "attachments": [],
+      "settings": {},
+      "claim_sources": [
+        "GrantPipe product marketing context",
+        "LinkedIn analytics export grantpipe_content_1780933338832.xls",
+        "GrantPipe social source files"
+      ],
+      "review_status": "ready_to_schedule",
+      "review_checks": {
+        "humanized": true,
+        "third_grade": true,
+        "no_em_dash": true,
+        "no_lies": true,
+        "source_reviewed": true,
+        "brand_reviewed": true,
+        "duplicate_reviewed": true,
+        "final_schedule_ready": true
+      },
+      "humanizer_status": "passed"
+    }
+  ]
+}

@@ -1,0 +1,91 @@
+{
+  "bucket": "F_faq_hubs",
+  "generatedAt": "2026-04-30",
+  "collection": "faq-hubs",
+  "outputDir": "apps/site/src/content/faq-hubs/",
+  "urlPrefix": "/resources/faq/",
+  "schema": "FAQPage",
+  "buyerStage": "tofu",
+  "files": [
+    {
+      "slug": "texas-nonprofit-grant-compliance-faq",
+      "state": "Texas",
+      "stateCode": "TX",
+      "targetKeyword": "texas nonprofit compliance faq",
+      "faqCount": 22,
+      "path": "apps/site/src/content/faq-hubs/texas-nonprofit-grant-compliance-faq.md"
+    },
+    {
+      "slug": "california-nonprofit-grant-compliance-faq",
+      "state": "California",
+      "stateCode": "CA",
+      "targetKeyword": "california nonprofit compliance faq",
+      "faqCount": 22,
+      "path": "apps/site/src/content/faq-hubs/california-nonprofit-grant-compliance-faq.md"
+    },
+    {
+      "slug": "new-york-nonprofit-grant-compliance-faq",
+      "state": "New York",
+      "stateCode": "NY",
+      "targetKeyword": "new york nonprofit compliance faq",
+      "faqCount": 22,
+      "path": "apps/site/src/content/faq-hubs/new-york-nonprofit-grant-compliance-faq.md"
+    },
+    {
+      "slug": "florida-nonprofit-grant-compliance-faq",
+      "state": "Florida",
+      "stateCode": "FL",
+      "targetKeyword": "florida nonprofit compliance faq",
+      "faqCount": 22,
+      "path": "apps/site/src/content/faq-hubs/florida-nonprofit-grant-compliance-faq.md"
+    },
+    {
+      "slug": "illinois-nonprofit-grant-compliance-faq",
+      "state": "Illinois",
+      "stateCode": "IL",
+      "targetKeyword": "illinois nonprofit compliance faq",
+      "faqCount": 22,
+      "path": "apps/site/src/content/faq-hubs/illinois-nonprofit-grant-compliance-faq.md"
+    },
+    {
+      "slug": "ohio-nonprofit-grant-compliance-faq",
+      "state": "Ohio",
+      "stateCode": "OH",
+      "targetKeyword": "ohio nonprofit compliance faq",
+      "faqCount": 22,
+      "path": "apps/site/src/content/faq-hubs/ohio-nonprofit-grant-compliance-faq.md"
+    },
+    {
+      "slug": "pennsylvania-nonprofit-grant-compliance-faq",
+      "state": "Pennsylvania",
+      "stateCode": "PA",
+      "targetKeyword": "pennsylvania nonprofit compliance faq",
+      "faqCount": 22,
+      "path": "apps/site/src/content/faq-hubs/pennsylvania-nonprofit-grant-compliance-faq.md"
+    },
+    {
+      "slug": "georgia-nonprofit-grant-compliance-faq",
+      "state": "Georgia",
+      "stateCode": "GA",
+      "targetKeyword": "georgia nonprofit compliance faq",
+      "faqCount": 22,
+      "path": "apps/site/src/content/faq-hubs/georgia-nonprofit-grant-compliance-faq.md"
+    },
+    {
+      "slug": "north-carolina-nonprofit-grant-compliance-faq",
+      "state": "North Carolina",
+      "stateCode": "NC",
+      "targetKeyword": "north carolina nonprofit compliance faq",
+      "faqCount": 22,
+      "path": "apps/site/src/content/faq-hubs/north-carolina-nonprofit-grant-compliance-faq.md"
+    },
+    {
+      "slug": "massachusetts-nonprofit-grant-compliance-faq",
+      "state": "Massachusetts",
+      "stateCode": "MA",
+      "targetKeyword": "massachusetts nonprofit compliance faq",
+      "faqCount": 22,
+      "path": "apps/site/src/content/faq-hubs/massachusetts-nonprofit-grant-compliance-faq.md"
+    }
+  ]
+}

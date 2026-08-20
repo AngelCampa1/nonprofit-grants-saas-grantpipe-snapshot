@@ -1,0 +1,122 @@
+---
+import PaidSearchLandingPage from "@/components/paid-search-landing-page.astro";
+import type { PaidLandingPageData } from "@/components/paid-search-landing-page.astro";
+
+const page: PaidLandingPageData = {
+  slug: "audit-prep-in-days",
+  title: "Nonprofit Audit Prep in Days, Not Weeks | GrantPipe",
+  description:
+    "Keep your grant file ready all year. Hand auditors a clean export instead of rebuilding evidence under deadline. Built for mid-sized nonprofit finance teams.",
+  kicker: "Nonprofit audit prep",
+  headline: "Audit prep in days, not weeks.",
+  subhead:
+    "Keep the grant file ready all year. Hand auditors a clean export.",
+  primaryCta: "Start 1-month free trial",
+  exitLeadMagnet: {
+    slug: "audit-prep-week-by-week-checklist",
+    title: "4-Week Audit Preparation Checklist",
+    description:
+      "A week-by-week checklist to get your grant files audit-ready, with fields for evidence, fund release records, and Single Audit steps.",
+  },
+  trust: "No credit card required. Keep QuickBooks as the books. Built for one-person finance offices.",
+  proofCard: {
+    label: "Audit readiness",
+    status: "Ready",
+    rows: [
+      { label: "Grants with full evidence", value: "11 / 12" },
+      { label: "Open evidence gaps", value: "1" },
+      { label: "Releases documented", value: "34" },
+      { label: "Days to close last audit", value: "3" },
+    ],
+    progressLabel: "Audit readiness",
+    progress: "92%",
+  },
+  painsTitle: "Audit prep is a scramble when grant files sit in six folders.",
+  pains: [
+    "Evidence is scattered across email, shared drives, and old spreadsheets.",
+    "Gaps in the grant file only surface when an auditor asks for the document.",
+    "Rebuilding the release schedule from year-end memory takes days.",
+    "2 CFR 200 requires documentation your class reports cannot produce.",
+    "A Single Audit finding costs more time than a year of monthly upkeep.",
+  ],
+  workflowTitle: "Keep the grant file ready before the auditor calls.",
+  workflowSteps: [
+    {
+      icon: "evidence",
+      heading: "Attach as you go",
+      copy: "Add reports, invoices, and approvals to each grant record as work happens.",
+    },
+    {
+      icon: "check",
+      heading: "Review gaps monthly",
+      copy: "See which grants have missing evidence before the deadline finds them first.",
+    },
+    {
+      icon: "audit",
+      heading: "Export for the auditor",
+      copy: "Hand over a clean grant file with evidence attached to each release.",
+    },
+  ],
+  featureTitle: "The audit tools a nonprofit finance team needs all year.",
+  features: [
+    {
+      icon: "evidence",
+      heading: "Attached evidence",
+      copy: "Keep invoices, approvals, and reports tied to the release they support.",
+    },
+    {
+      icon: "audit",
+      heading: "Gap review",
+      copy: "Check which grants have open evidence gaps before the auditor does.",
+    },
+    {
+      icon: "report",
+      heading: "Clean export",
+      copy: "Give auditors the grant file in the format they ask for, not a folder walk.",
+    },
+  ],
+  proofTitle: "Audit prep takes days when the file is kept all year.",
+  proofPoints: [
+    {
+      value: "2 CFR 200",
+      label: "sets the documentation rules for federal grants, including records for each expenditure.",
+      source: "Uniform Guidance, 2 CFR Part 200",
+    },
+    {
+      value: "$1,000,000",
+      label: "in federal spend triggers a Single Audit. Your grant file is the first thing they review.",
+      source: "2 CFR 200.501 audit threshold",
+    },
+    {
+      value: "1 export",
+      label: "can hand auditors the full grant record with releases and evidence attached.",
+      source: "GrantPipe audit export workflow",
+    },
+  ],
+  trustLabels: ["Evidence attached to each release", "2 CFR 200 aware", "Single Audit ready"],
+  faqTitle: "Answers for nonprofit finance teams preparing for audit.",
+  faqs: [
+    {
+      q: "Does GrantPipe replace QuickBooks?",
+      a: "GrantPipe has native accounting records, but it does not sync with QuickBooks right now. It holds the grant file, restriction record, and release evidence so audit prep is an export, not a rebuild.",
+    },
+    {
+      q: "Will it post entries back to QuickBooks?",
+      a: "No. GrantPipe does not connect to QuickBooks right now. Keep journal entries in QuickBooks. Store the grant file and proof in GrantPipe.",
+    },
+    {
+      q: "What counts as a Single Audit?",
+      a: "A Single Audit is required at $1,000,000 in federal spend per year. The grant file GrantPipe keeps is what auditors review first.",
+    },
+    {
+      q: "Can I use it with both federal and foundation grants?",
+      a: "Yes. The same post-award file structure works for federal, state, and private foundation awards.",
+    },
+  ],
+  finalTitle: "Start with the grant most likely to have a gap. Close it this week.",
+  finalBody:
+    "GrantPipe keeps each grant's evidence, releases, and balance in one record. When the auditor calls, the file is ready.",
+};
+---
+
+<PaidSearchLandingPage page={page} />

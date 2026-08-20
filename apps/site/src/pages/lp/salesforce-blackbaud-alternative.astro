@@ -1,0 +1,125 @@
+---
+import PaidSearchLandingPage from "@/components/paid-search-landing-page.astro";
+import type { PaidLandingPageData } from "@/components/paid-search-landing-page.astro";
+
+const page: PaidLandingPageData = {
+  slug: "salesforce-blackbaud-alternative",
+  title: "Leave Salesforce or Blackbaud Behind | GrantPipe",
+  description:
+    "Built for $500K to $10M nonprofits. Staff-led setup for donors, grants, and restricted funds in one place.",
+  kicker: "Nonprofit CRM alternative for mid-sized organizations",
+  headline: "Leave Salesforce or Blackbaud behind.",
+  subhead:
+    "Built for $500K to $10M nonprofits. Start with CSV import and staff-led setup.",
+  primaryCta: "Start 1-month free trial",
+  exitLeadMagnet: {
+    slug: "nonprofit-crm-cost-calculator",
+    title: "Nonprofit CRM Total Cost Calculator",
+    description:
+      "Calculate the true all-in cost of your current nonprofit CRM, including setup, consultant fees, and staff time, and compare it to alternatives.",
+  },
+  trust: "No credit card required. Staff-led setup with no required outside retainer for standard imports.",
+  proofCard: {
+    label: "Migration status",
+    status: "Running on GrantPipe",
+    rows: [
+      { label: "Donors migrated", value: "580" },
+      { label: "Active grants", value: "16" },
+      { label: "Consultant cost", value: "$0" },
+      { label: "Weeks to go live", value: "2" },
+    ],
+    progressLabel: "Migration in progress",
+    progress: "80%",
+  },
+  painsTitle: "Enterprise platforms can cost more than they deliver for mid-sized nonprofits.",
+  pains: [
+    "You pay a consultant every time you need to change a field or run a report.",
+    "Staff avoid the system because it takes training just to log a contact.",
+    "The annual contract renews before you can justify the ROI to the board.",
+    "Restricted fund tracking still happens in a spreadsheet next to the CRM.",
+    "Setup took six months and you still do not use half the features.",
+  ],
+  workflowTitle: "Switch to a system built for your size, not scaled down from enterprise.",
+  workflowSteps: [
+    {
+      icon: "transfer",
+      heading: "Import your existing data",
+      copy: "Bring donors, grants, and contacts over by CSV in the trial.",
+    },
+    {
+      icon: "ledger",
+      heading: "Run donors and grants together",
+      copy: "One record tracks cultivation, awards, and restricted balances.",
+    },
+    {
+      icon: "report",
+      heading: "Pull board and funder reports",
+      copy: "Built-in reports replace the exports and manual edits.",
+    },
+  ],
+  featureTitle: "What mid-sized nonprofits actually use every day.",
+  features: [
+    {
+      icon: "transfer",
+      heading: "Self-service migration",
+      copy: "CSV import for donors, grants, and contacts. No migration project.",
+    },
+    {
+      icon: "balance",
+      heading: "Restricted fund tracking",
+      copy: "See balances and releases without a separate spreadsheet or accounting pull.",
+    },
+    {
+      icon: "audit",
+      heading: "Audit-ready evidence",
+      copy: "Grant files with attached reports and proof, ready when the auditor asks.",
+    },
+  ],
+  proofTitle: "$500K to $10M nonprofits can start without an enterprise migration project.",
+  proofPoints: [
+    {
+      value: "$15K to $90K",
+      label:
+        "typical all-in yearly cost. 10-user enterprise CRM.",
+      source: "GrantPipe total cost of ownership research",
+    },
+    {
+      value: "Staff-led",
+      label:
+        "setup path for standard CSV imports.",
+      source: "GrantPipe product workflow",
+    },
+    {
+      value: "No setup fee",
+      label:
+        "for self-serve plans using the standard import path.",
+      source: "GrantPipe pricing model",
+    },
+  ],
+  trustLabels: ["Staff-led setup", "Self-service migration", "Built for mid-sized nonprofits"],
+  faqTitle: "Questions from executive directors evaluating the switch.",
+  faqs: [
+    {
+      q: "Can GrantPipe replace Salesforce NPSP or Blackbaud Raiser's Edge for our org?",
+      a: "For many $500K to $10M nonprofits, yes. A 50-user shop with heavy custom Salesforce is different. That move is bigger. Scope it first.",
+    },
+    {
+      q: "Does migration require a consultant?",
+      a: "Standard imports use CSV and do not require a paid migration project. Larger or unusual data moves should be scoped first.",
+    },
+    {
+      q: "Does this replace our accounting system?",
+      a: "No. GrantPipe does not connect to QuickBooks or Sage Intacct right now. Keep your books there. Keep donor, grant, and fund records in GrantPipe.",
+    },
+    {
+      q: "What is the real total cost compared to Salesforce NPSP?",
+      a: "GrantPipe uses flat self-serve plans with unlimited users, no setup fee, and no required consultant retainer for the standard path.",
+    },
+  ],
+  finalTitle: "Start the trial and import your data yourself.",
+  finalBody:
+    "Bring your top donors and active grants over by CSV. Use the standard import path before you scope any larger migration work.",
+};
+---
+
+<PaidSearchLandingPage page={page} />

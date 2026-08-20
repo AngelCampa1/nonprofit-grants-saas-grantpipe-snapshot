@@ -1,0 +1,13 @@
+Four signs your donor CRM is not the right home for grant compliance.
+
+1. There is no field for period of performance. Just a single "close date" that does not distinguish between the grant ending and the report being due.
+
+2. Restricted fund balances are calculated by exporting to a spreadsheet. The CRM does not know which dollars are spent and which are still owed to a purpose.
+
+3. Reporting cadence lives in a calendar, not in the record. A quarterly FFR is not the same shape as a "follow up" task.
+
+4. The auditor cannot get a read-only view. Every user pays a per-seat license to look.
+
+A donor CRM is built for the gift cycle. Compliance is a different job, with different fields and a different audience.
+
+Two systems with one clean handoff. Or one workspace that holds both. What does not work is asking the donor CRM to do the second job by force of configuration.

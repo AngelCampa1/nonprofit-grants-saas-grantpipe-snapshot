@@ -1,0 +1,47 @@
+{
+  "total": 225.24,
+  "chapters": [
+    {
+      "id": "00",
+      "label": "The part everyone dreads",
+      "audio": "audio/chapter-00.mp3",
+      "duration": 27.76,
+      "start": 0
+    },
+    {
+      "id": "01",
+      "label": "Set up your org. It's three fields, not a quiz.",
+      "audio": "audio/chapter-01.mp3",
+      "duration": 43.84,
+      "start": 27.76
+    },
+    {
+      "id": "02",
+      "label": "Bring your data in. Pick what you're importing.",
+      "audio": "audio/chapter-02.mp3",
+      "duration": 38.4,
+      "start": 71.6
+    },
+    {
+      "id": "03",
+      "label": "Upload and preview. The part where nothing can go wrong.",
+      "audio": "audio/chapter-03.mp3",
+      "duration": 31.64,
+      "start": 110
+    },
+    {
+      "id": "04",
+      "label": "Commit, and read the result honestly.",
+      "audio": "audio/chapter-04.mp3",
+      "duration": 48.44,
+      "start": 141.64
+    },
+    {
+      "id": "05",
+      "label": "You're set up",
+      "audio": "audio/chapter-05.mp3",
+      "duration": 35.16,
+      "start": 190.08
+    }
+  ]
+}

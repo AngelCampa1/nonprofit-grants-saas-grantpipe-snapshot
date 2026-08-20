@@ -1,0 +1,9 @@
+Most "grant tracking" features inside donor CRMs are a contact record with extra custom fields.
+
+That works for a small portfolio of unrestricted operating grants. It stops working the moment one grant funds two programs, or two grants fund one program, or a single grant has a budget allocated across personnel, supplies, and indirect cost.
+
+A grant is not a contact. A grant is a set of restrictions, a budget structure, a period of performance, a reporting cadence, and a relationship to one or more funds. The program officer is one attribute, not the parent record.
+
+Forcing the grant into a contact-shaped slot is what produces the spreadsheet sidecar every Finance Director keeps. It is also what produces the audit finding three years later when nobody can reconstruct which grant paid for which expense.
+
+The fix is not better custom fields. It is the right primitive.

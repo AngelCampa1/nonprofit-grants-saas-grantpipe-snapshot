@@ -1,0 +1,17 @@
+---
+const targetPath = "/lp/donor-retention-rescue/";
+---
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="robots" content="noindex, follow" />
+    <link rel="canonical" href={targetPath} />
+    <script is:inline define:vars={{ targetPath }}>
+      window.location.replace(`${targetPath}${window.location.search}${window.location.hash}`);
+    </script>
+  </head>
+  <body>
+    <a href={targetPath}>Continue to GrantPipe</a>
+  </body>
+</html>

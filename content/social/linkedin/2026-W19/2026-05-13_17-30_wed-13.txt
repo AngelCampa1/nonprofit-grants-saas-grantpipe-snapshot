@@ -1,0 +1,9 @@
+$1,000,000.
+
+That is the federal expenditure threshold that triggers a Single Audit under 2 CFR 200 Subpart F.
+
+If your federal expenditures in a fiscal year cross that line, you owe a Single Audit. A separate engagement, with its own report on internal controls, its own report on compliance, and its own Schedule of Expenditures of Federal Awards (SEFA).
+
+The line is on expenditures, not awards. A $1.2M three-year award that spends $400K per year stays under each year. A $400K award plus a $400K pass-through plus $50K in smaller awards crosses it.
+
+Orgs can cross by accident, in a year where a pass-through draws down faster than expected. Model the threshold before the fiscal year ends.

@@ -1,0 +1,13 @@
+Four signs your donor CRM is not the right home for grant compliance.
+
+1. You cannot generate a Schedule of Expenditures of Federal Awards from it. The data is there. The shape is not.
+
+2. Period of performance is a custom field, not a constraint. The system lets you record an expense outside the window without flagging it.
+
+3. Restricted fund balances are calculated by exporting to a spreadsheet. If the math lives outside the system, the system is a list.
+
+4. Your auditor asks for read-only access and the only way to give it is to create a full user seat or print a stack of PDFs.
+
+None of these are signs the CRM is bad. They are signs that grant compliance is a different problem with a different shape.
+
+The fix is not switching donor systems. It is recognizing that the second job needs a tool designed for it.

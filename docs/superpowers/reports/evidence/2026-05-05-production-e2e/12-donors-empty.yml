@@ -1,0 +1,69 @@
+- generic [ref=e3]:
+    - generic [ref=e13]:
+        - banner [ref=e14]:
+            - button "Open navigation" [ref=e16]:
+                - img
+            - generic [ref=e17]:
+                - link "Add billing, trial ends in 30 days" [ref=e18] [cursor=pointer]:
+                    - /url: /app/settings#billing
+                    - img [ref=e19]
+                    - generic [ref=e22]: Trial
+                    - generic [ref=e23]: 30d
+                - button "Open command palette" [ref=e24]:
+                    - img
+                - link "Notifications" [ref=e25] [cursor=pointer]:
+                    - /url: /app/notifications
+                    - img
+                - button "Switch to dark theme" [ref=e26]:
+                    - img
+        - main [ref=e28]:
+            - generic [ref=e30]:
+                - generic [ref=e31]:
+                    - paragraph [ref=e32]: Donor workspace
+                    - generic [ref=e33]:
+                        - generic [ref=e35]:
+                            - heading "Donors" [level=1] [ref=e36]
+                            - button "Help for Donors" [ref=e37]:
+                                - img [ref=e38]
+                        - generic [ref=e42]:
+                            - button "Export CSV" [ref=e44]
+                            - button "Add contact" [ref=e45]
+                - generic [ref=e46]:
+                    - generic [ref=e47]:
+                        - generic [ref=e49]: Total Donors
+                        - paragraph [ref=e51]: "0"
+                    - generic [ref=e52]:
+                        - generic [ref=e54]: New This FY
+                        - paragraph [ref=e56]: "0"
+                    - generic [ref=e57]:
+                        - generic [ref=e59]: Retention Rate
+                        - generic [ref=e60]:
+                            - paragraph [ref=e61]: 0.0%
+                            - application [ref=e64]
+                    - generic [ref=e65]:
+                        - generic [ref=e67]: Total Giving This FY
+                        - paragraph [ref=e69]: $0
+                - button "Save current filters" [ref=e72]
+                - generic [ref=e74]:
+                    - textbox "Search contacts..." [ref=e75]
+                    - combobox [ref=e76]:
+                        - generic:
+                            - generic: All stages
+                        - img
+                    - combobox "Type" [ref=e77]:
+                        - generic: All types
+                        - img
+                - region "Your donors live here" [ref=e79]:
+                    - img [ref=e82]
+                    - heading "Your donors live here" [level=3] [ref=e87]
+                    - generic [ref=e88]:
+                        - button "+ Add a donor" [ref=e89]
+                        - button "Import from spreadsheet" [ref=e90]
+                        - link "How donor records work →" [ref=e91] [cursor=pointer]:
+                            - /url: /help
+                - generic [ref=e92]:
+                    - generic [ref=e93]: Page 1 of 1
+                    - generic [ref=e94]:
+                        - button "Previous" [disabled]
+                        - button "Next" [disabled]
+    - region "Notifications alt+T"

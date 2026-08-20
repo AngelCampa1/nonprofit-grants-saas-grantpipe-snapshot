@@ -1,0 +1,62 @@
+[
+  {
+    "id": "00",
+    "title": "The part everyone dreads",
+    "slug": "the-part-everyone-dreads",
+    "chars": 405,
+    "voice": "Laomedeia",
+    "model": "gemini-3.1-flash-tts-preview",
+    "file": "audio/chapter-00.mp3",
+    "text": "Setting up new software is where good intentions go to die. You sign up, you get a blank screen, and somewhere there's a spreadsheet you're scared to touch. So let's just do it. In the next few minutes you'll set up your nonprofit and get your donors into GrantPipe. Three fields, one file. And before anything saves, you'll see exactly what GrantPipe is about to do. I built this. Let me show you around."
+  },
+  {
+    "id": "01",
+    "title": "Set up your org. It's three fields, not a quiz.",
+    "slug": "set-up-your-org-it-s-three-fields-not-a-",
+    "chars": 669,
+    "voice": "Laomedeia",
+    "model": "gemini-3.1-flash-tts-preview",
+    "file": "audio/chapter-01.mp3",
+    "text": "When you first sign in, GrantPipe asks you three things. Not a long form. Three. Your nonprofit's name. This is what shows up on your reports and exports, so spell it the way you want a funder to see it. The month your fiscal year starts. Most nonprofits don't run on a January calendar, and that's why year-end numbers can feel impossible to line up. Set it once here, and your dashboards and reports follow it. And your timezone. This one's quiet, but it counts. It's how GrantPipe knows when a deadline is really due. So a report doesn't get marked late just because some server runs on a different clock. That's the whole setup. Save it, and you've got a workspace."
+  },
+  {
+    "id": "02",
+    "title": "Bring your data in. Pick what you're importing.",
+    "slug": "bring-your-data-in-pick-what-you-re-impo",
+    "chars": 583,
+    "voice": "Laomedeia",
+    "model": "gemini-3.1-flash-tts-preview",
+    "file": "audio/chapter-02.mp3",
+    "text": "Now your data. If you've got a spreadsheet of donors, you are not typing them in one by one. GrantPipe imports four kinds of records: contacts, donations, grants, and grant opportunities. Start with contacts. That's the donor list almost everyone already has sitting in a file somewhere. Came out of Bloomerang, DonorPerfect, or Salesforce's nonprofit pack? Pick that preset, and the columns line up for you. Anything else, like a plain Excel sheet or an old Blackbaud export, choose Generic CSV and match the columns yourself. It's simple. And you can download a template to follow."
+  },
+  {
+    "id": "03",
+    "title": "Upload and preview. The part where nothing can go wrong.",
+    "slug": "upload-and-preview-the-part-where-nothin",
+    "chars": 453,
+    "voice": "Laomedeia",
+    "model": "gemini-3.1-flash-tts-preview",
+    "file": "audio/chapter-03.mp3",
+    "text": "Upload your file. Any CSV up to ten megabytes. Then GrantPipe shows you a preview. Here's the part I want you to relax about. This is a preview. Nothing saves. GrantPipe reads your file and tells you how many rows it found. It shows you the first five, so you can check the columns landed where you expected. If something looks wrong, back out and fix the spreadsheet. Nothing has touched your account. That's the idea. You look before anything happens."
+  },
+  {
+    "id": "04",
+    "title": "Commit, and read the result honestly.",
+    "slug": "commit-and-read-the-result-honestly",
+    "chars": 743,
+    "voice": "Laomedeia",
+    "model": "gemini-3.1-flash-tts-preview",
+    "file": "audio/chapter-04.mp3",
+    "text": "When the preview looks right, you commit. Now GrantPipe writes the records, and it tells you the truth about what happened. Three numbers. Two added. Three skipped as duplicates. When GrantPipe spots a contact you already have, it skips it instead of making a second copy. And one failed, with the line and the field, so you know what to fix. A few rows failing is normal. Here, line seven used a contact type GrantPipe doesn't know, so it tells you the two it accepts. A blank required field or a date it can't read fail the same clear way. Fix those lines and re-import just them. GrantPipe logs every import you run right here, with its counts, so you've got a record of what came in and when. And there they are. Your donors, in GrantPipe."
+  },
+  {
+    "id": "05",
+    "title": "You're set up",
+    "slug": "you-re-set-up",
+    "chars": 493,
+    "voice": "Laomedeia",
+    "model": "gemini-3.1-flash-tts-preview",
+    "file": "audio/chapter-05.mp3",
+    "text": "That's your org set up and your data in. No consultant, no migration project, and nobody had to dread it. One tip before you go. If your spreadsheet is messy, and most are, map your columns before you import. We made a free template for that: the CRM Migration Data Map. It tells you which column goes where and what to clean up first. Want it? We'll send it to your inbox. Next, we'll add your first grant and split it across your funds. That's where GrantPipe really starts earning its keep."
+  }
+]

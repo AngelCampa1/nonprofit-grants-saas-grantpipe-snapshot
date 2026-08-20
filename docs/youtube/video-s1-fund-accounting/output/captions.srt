@@ -1,0 +1,491 @@
+1
+00:00:00,000 --> 00:00:04,097
+Every business answers one question at the end of the year.
+
+2
+00:00:04,097 --> 00:00:05,555
+Did we make a profit?
+
+3
+00:00:05,555 --> 00:00:08,471
+A nonprofit has to answer a different one.
+
+4
+00:00:08,471 --> 00:00:11,457
+Did we use each dollar the way we promised?
+
+5
+00:00:11,457 --> 00:00:13,679
+Those are not the same question.
+
+6
+00:00:13,679 --> 00:00:17,568
+And that gap is the whole reason fund accounting exists.
+
+7
+00:00:17,568 --> 00:00:23,331
+If you run a nonprofit, you've probably seen a report full of words like restricted
+
+8
+00:00:23,331 --> 00:00:25,345
+unrestricted, and net assets.
+
+9
+00:00:25,345 --> 00:00:27,220
+Most people just nod along.
+
+10
+00:00:27,220 --> 00:00:33,191
+Today I'll explain what those actually mean, in plain English, in about seven minutes.
+
+11
+00:00:33,191 --> 00:00:35,066
+No jargon for its own sake.
+
+12
+00:00:35,066 --> 00:00:38,260
+And no pitch to go hire a big accounting firm.
+
+13
+00:00:38,260 --> 00:00:40,760
+Quick note on where I'm coming from.
+
+14
+00:00:40,760 --> 00:00:43,121
+I build grant compliance software.
+
+15
+00:00:43,121 --> 00:00:49,578
+To make a computer follow these rules, I had to learn exactly how the money is meant to move.
+
+16
+00:00:49,578 --> 00:00:52,773
+I'm not an auditor, and I won't talk like one.
+
+17
+00:00:52,773 --> 00:00:56,450
+You're getting the version a busy director actually needs.
+
+18
+00:00:56,450 --> 00:00:57,390
+So what is it?
+
+19
+00:00:57,390 --> 00:01:02,022
+Fund accounting is a way of tracking money by purpose, not by profit.
+
+20
+00:01:02,022 --> 00:01:06,722
+Instead of pooling everything into one pot and asking what's left over
+
+21
+00:01:06,722 --> 00:01:09,475
+you split your money into separate funds.
+
+22
+00:01:09,475 --> 00:01:12,227
+Each fund is its own little set of books.
+
+23
+00:01:12,227 --> 00:01:15,786
+Each one has its own rules about what it can pay for.
+
+24
+00:01:15,786 --> 00:01:19,747
+Picture one bank account versus a row of labeled envelopes.
+
+25
+00:01:19,747 --> 00:01:24,044
+A regular business runs the one account and watches the balance.
+
+26
+00:01:24,044 --> 00:01:26,125
+A nonprofit runs the envelopes.
+
+27
+00:01:26,125 --> 00:01:28,609
+This one is the after-school program.
+
+28
+00:01:28,609 --> 00:01:30,288
+This one is the building.
+
+29
+00:01:30,288 --> 00:01:33,242
+This one is money you can spend on anything.
+
+30
+00:01:33,242 --> 00:01:35,659
+The cash might sit in the same bank.
+
+31
+00:01:35,659 --> 00:01:39,821
+But on paper, every dollar knows which envelope it belongs to.
+
+32
+00:01:39,821 --> 00:01:42,641
+The point isn't to make accounting harder.
+
+33
+00:01:42,641 --> 00:01:48,885
+The point is accountability, which just means being able to show what you did with the money.
+
+34
+00:01:48,885 --> 00:01:51,906
+Fund accounting is built to answer one thing.
+
+35
+00:01:51,906 --> 00:01:54,980
+Can you prove every dollar did the job you gave it?
+
+36
+00:01:54,980 --> 00:01:59,705
+Here's why a normal profit-and-loss report doesn't work for a nonprofit.
+
+37
+00:01:59,705 --> 00:02:02,133
+Most of the money comes with strings.
+
+38
+00:02:02,133 --> 00:02:07,449
+A funder gives you fifty thousand dollars, but only for the after-school program.
+
+39
+00:02:07,449 --> 00:02:11,124
+A donor leaves money for the building, and nothing else.
+
+40
+00:02:11,124 --> 00:02:13,158
+That's called restricted money.
+
+41
+00:02:13,158 --> 00:02:16,505
+You can spend it, but only on the thing they named.
+
+42
+00:02:16,505 --> 00:02:20,508
+A regular income statement just shows money in and money out.
+
+43
+00:02:20,508 --> 00:02:23,527
+It can't show whether you kept those promises.
+
+44
+00:02:23,527 --> 00:02:24,839
+Fund accounting can.
+
+45
+00:02:24,839 --> 00:02:28,121
+It keeps the restricted money in its own envelope.
+
+46
+00:02:28,121 --> 00:02:33,568
+So at any moment, you can show that those dollars went where they were supposed to.
+
+47
+00:02:33,568 --> 00:02:35,733
+And that question does get asked.
+
+48
+00:02:35,733 --> 00:02:39,999
+When a funder or an auditor reviews you, they look for one thing.
+
+49
+00:02:39,999 --> 00:02:43,674
+Did the restricted money pay for its restricted purpose?
+
+50
+00:02:43,674 --> 00:02:46,824
+If you can't show it, that's where trust breaks.
+
+51
+00:02:46,824 --> 00:02:49,230
+Fund accounting is what makes it provable.
+
+52
+00:02:49,230 --> 00:02:51,086
+Okay, the building blocks.
+
+53
+00:02:51,086 --> 00:02:54,583
+Money in a nonprofit gets sorted into two groups.
+
+54
+00:02:54,583 --> 00:03:01,791
+The official names are net assets without donor restrictions, and net assets with donor restrictions.
+
+55
+00:03:01,791 --> 00:03:03,932
+Don't let the words scare you.
+
+56
+00:03:03,932 --> 00:03:06,787
+It's just free money and promised money.
+
+57
+00:03:06,787 --> 00:03:10,284
+Without donor restrictions is the flexible money.
+
+58
+00:03:10,284 --> 00:03:13,638
+You can spend it on whatever the mission needs.
+
+59
+00:03:13,638 --> 00:03:15,565
+Salaries, rent, the lights.
+
+60
+00:03:15,565 --> 00:03:21,560
+With donor restrictions is money a donor or grantor tied to a purpose, or to a time.
+
+61
+00:03:21,560 --> 00:03:23,986
+The after-school grant lives here.
+
+62
+00:03:23,986 --> 00:03:28,483
+So does a gift you're asked to hold forever, like an endowment.
+
+63
+00:03:28,483 --> 00:03:33,050
+If you've read older articles, you might have seen three groups.
+
+64
+00:03:33,050 --> 00:03:37,689
+Unrestricted, temporarily restricted, and permanently restricted.
+
+65
+00:03:37,689 --> 00:03:39,259
+That was the old rule.
+
+66
+00:03:39,259 --> 00:03:46,681
+The standards changed it to just two groups, for financial years that start after late twenty seventeen.
+
+67
+00:03:46,681 --> 00:03:50,250
+So if a guide still lists three, it's out of date.
+
+68
+00:03:50,250 --> 00:03:51,249
+There are two.
+
+69
+00:03:51,249 --> 00:03:52,248
+One more trap.
+
+70
+00:03:52,248 --> 00:03:55,674
+Say your board sets aside money for a rainy day.
+
+71
+00:03:55,674 --> 00:03:57,743
+That is not restricted money.
+
+72
+00:03:57,743 --> 00:04:00,598
+The board can change its own mind later.
+
+73
+00:04:00,598 --> 00:04:04,024
+Only an outside donor can truly restrict a gift.
+
+74
+00:04:04,024 --> 00:04:06,600
+Board savings stay in the flexible group.
+
+75
+00:04:06,600 --> 00:04:09,633
+Let me make this real with a tiny example.
+
+76
+00:04:09,633 --> 00:04:13,244
+Say a nonprofit gets two pots of money this month.
+
+77
+00:04:13,244 --> 00:04:18,299
+A fifty-thousand-dollar grant, restricted to the after-school program.
+
+78
+00:04:18,299 --> 00:04:22,488
+And thirty thousand in general donations, with no strings.
+
+79
+00:04:22,488 --> 00:04:25,232
+In fund accounting, those don't merge.
+
+80
+00:04:25,232 --> 00:04:28,915
+The fifty thousand goes into the after-school fund.
+
+81
+00:04:28,915 --> 00:04:32,309
+The thirty thousand goes into the general fund.
+
+82
+00:04:32,309 --> 00:04:37,292
+Now say the program is running fine, but the office is short on rent.
+
+83
+00:04:37,292 --> 00:04:41,264
+Can you borrow from the after-school grant to cover it?
+
+84
+00:04:41,264 --> 00:04:41,481
+No.
+
+85
+00:04:41,481 --> 00:04:43,142
+That money is promised.
+
+86
+00:04:43,142 --> 00:04:46,608
+Spending it on rent would break the restriction.
+
+87
+00:04:46,608 --> 00:04:47,908
+And it would show.
+
+88
+00:04:47,908 --> 00:04:50,580
+That's the whole idea in one picture.
+
+89
+00:04:50,580 --> 00:04:55,274
+Two funds, two sets of rules, and a line you can't quietly cross.
+
+90
+00:04:55,274 --> 00:04:59,896
+Later, the after-school program spends its grant on the program.
+
+91
+00:04:59,896 --> 00:05:04,085
+The promise is kept, and that money is now free and clear.
+
+92
+00:05:04,085 --> 00:05:07,840
+Accountants call that releasing it from restriction.
+
+93
+00:05:07,840 --> 00:05:10,090
+You can just call it a promise kept.
+
+94
+00:05:10,090 --> 00:05:14,479
+Because the goal is different, the reports look different too.
+
+95
+00:05:14,479 --> 00:05:16,673
+A business has a balance sheet.
+
+96
+00:05:16,673 --> 00:05:20,212
+A nonprofit has a statement of financial position.
+
+97
+00:05:20,212 --> 00:05:21,628
+Same idea, new name.
+
+98
+00:05:21,628 --> 00:05:24,106
+A business has an income statement.
+
+99
+00:05:24,106 --> 00:05:30,972
+A nonprofit has a statement of activities, which just lists what came in and what it went toward.
+
+100
+00:05:30,972 --> 00:05:34,157
+And a business has owner's equity, or profit.
+
+101
+00:05:34,157 --> 00:05:36,069
+A nonprofit has net assets.
+
+102
+00:05:36,069 --> 00:05:39,962
+There are no owners to pay, so there is no profit line.
+
+103
+00:05:39,962 --> 00:05:42,085
+What's left over isn't profit.
+
+104
+00:05:42,085 --> 00:05:46,049
+It's net assets, carried forward to keep doing the work.
+
+105
+00:05:46,049 --> 00:05:49,164
+One quick aside, so I'm not hiding anything.
+
+106
+00:05:49,164 --> 00:05:52,633
+Governments use a version of fund accounting too.
+
+107
+00:05:52,633 --> 00:05:57,163
+It runs under a different rulebook, with its own kinds of funds.
+
+108
+00:05:57,163 --> 00:05:58,862
+That's a separate world.
+
+109
+00:05:58,862 --> 00:06:01,060
+Everything here is about nonprofits.
+
+110
+00:06:01,060 --> 00:06:02,878
+So that's fund accounting.
+
+111
+00:06:02,878 --> 00:06:05,255
+One idea sits under all the terms.
+
+112
+00:06:05,255 --> 00:06:10,778
+Track money by the promise attached to it, so you can prove you kept your word.
+
+113
+00:06:10,778 --> 00:06:13,225
+Promised money in its own envelope.
+
+114
+00:06:13,225 --> 00:06:16,161
+Flexible money where the mission needs it.
+
+115
+00:06:16,161 --> 00:06:17,699
+Two groups, not three.
+
+116
+00:06:17,699 --> 00:06:21,124
+You don't need an army of accountants to do this.
+
+117
+00:06:21,124 --> 00:06:27,906
+You need a system that keeps the funds separate for you, so the proof is ready when someone asks.
+
+118
+00:06:27,906 --> 00:06:31,681
+That's the kind of thing we built GrantPipe to handle.
+
+119
+00:06:31,681 --> 00:06:34,477
+But the idea matters more than any tool.
+
+120
+00:06:34,477 --> 00:06:39,931
+If you want a head start, we made a free Restricted Fund Tracking Spreadsheet.
+
+121
+00:06:39,931 --> 00:06:42,238
+It sets up the envelopes for you.
+
+122
+00:06:42,238 --> 00:06:44,195
+We'll send it to your inbox.
+
+123
+00:06:44,195 --> 00:06:48,180
+Thanks for watching, and good luck keeping your promises.

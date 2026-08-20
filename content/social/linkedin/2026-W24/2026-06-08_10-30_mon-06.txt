@@ -1,0 +1,11 @@
+SF-425 line 10e deserves more respect than it gets.
+
+That line is the federal share of expenditures. On a final SF-425, it is cumulative from the start of the award through the end of the period of performance.
+
+Before submission, compare it to the grant-specific general ledger.
+
+If the form and the ledger do not match, do not explain it later.
+
+Find the variance before the report goes out.
+
+That is the cleaner audit trail.

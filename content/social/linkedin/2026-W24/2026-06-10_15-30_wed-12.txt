@@ -1,0 +1,9 @@
+Access controls are part of grant operations.
+
+An auditor or funder reviewer may need grant, fund, document, compliance, accounting, and report access.
+
+They do not need donor records, billing, team settings, or admin controls.
+
+That is why GrantPipe's reviewer access is intentionally scoped.
+
+Read-only should mean read-only in the right part of the system.

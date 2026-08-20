@@ -1,0 +1,3 @@
+Before: a quarterly board meeting where the grant pipeline slide is rebuilt from scratch every time, and the numbers do not match the finance slide.
+
+After: the same number, pulled from the same place, by both teams. Boring slides. Calmer meetings.

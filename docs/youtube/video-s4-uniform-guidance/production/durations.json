@@ -1,0 +1,54 @@
+{
+  "total": 337.76,
+  "chapters": [
+    {
+      "id": "00",
+      "label": "One rulebook for federal money",
+      "audio": "audio/chapter-00.mp3",
+      "duration": 46.32,
+      "start": 0
+    },
+    {
+      "id": "01",
+      "label": "What the Uniform Guidance is",
+      "audio": "audio/chapter-01.mp3",
+      "duration": 45.88,
+      "start": 46.32
+    },
+    {
+      "id": "02",
+      "label": "One rulebook, three jobs",
+      "audio": "audio/chapter-02.mp3",
+      "duration": 34.52,
+      "start": 92.2
+    },
+    {
+      "id": "03",
+      "label": "The cost test",
+      "audio": "audio/chapter-03.mp3",
+      "duration": 50.64,
+      "start": 126.72
+    },
+    {
+      "id": "04",
+      "label": "The four numbers that changed in 2024",
+      "audio": "audio/chapter-04.mp3",
+      "duration": 68.52,
+      "start": 177.36
+    },
+    {
+      "id": "05",
+      "label": "The single audit",
+      "audio": "audio/chapter-05.mp3",
+      "duration": 50,
+      "start": 245.88
+    },
+    {
+      "id": "06",
+      "label": "What to remember",
+      "audio": "audio/chapter-06.mp3",
+      "duration": 41.88,
+      "start": 295.88
+    }
+  ]
+}

@@ -1,0 +1,7 @@
+Picture a scenario: Before: the Development Director sends the funder report draft to Finance for "the numbers." Finance opens QuickBooks, opens a spreadsheet that maps GL accounts to grant line items, fills in the template, and emails it back. Two days lost.
+
+After: the funder report template lives in the same workspace as the grant. Line items are mapped once at award setup. The number you see in the report is the number Finance sees in the ledger, scoped to the period of performance, with the supporting transactions one click away.
+
+The hand-off is the bug. The fix is not faster email. The fix is one record.
+
+This is the design choice we made on day one: donors, grants, funds, and ledgers in one workspace, with the activity log tying every change back to a person and a timestamp.

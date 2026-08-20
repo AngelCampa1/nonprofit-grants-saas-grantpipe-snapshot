@@ -1,0 +1,57 @@
+---
+import "../styles/global.css"
+import BaseLayout from "@grantpipe/ui/site/layouts/base-layout.astro"
+import SiteHeader from "@grantpipe/ui/site/components/site-header.astro"
+import SiteFooter from "@grantpipe/ui/site/components/site-footer.astro"
+import Button from "@/components/ui/button.astro"
+import { siteConfig, getSignupCtaTarget } from "@/config/site"
+import { getAppLoginUrl } from "@/lib/app-url"
+---
+
+<BaseLayout
+  title={`Page Not Found | ${siteConfig.name}`}
+  description={`The page you're looking for doesn't exist. Head back to ${siteConfig.name}.`}
+  siteName={siteConfig.name}
+  noindex={true}
+  theme={siteConfig.theme}
+  fonts={siteConfig.theme.fonts}
+  themeColor={siteConfig.theme.primary}
+  appleTouchIcon={siteConfig.appleTouchIcon}
+>
+  <SiteHeader
+    slot="header"
+    siteName={siteConfig.name}
+    navItems={siteConfig.nav?.items}
+    ctaText={siteConfig.funnel.bofu.ctaText}
+    ctaHref={getSignupCtaTarget()}
+    loginHref={getAppLoginUrl()}
+    ctaVariant="primary"
+    ctaPill
+    logoLight={siteConfig.logo?.light}
+  >
+  </SiteHeader>
+
+  <div class="mx-auto flex max-w-2xl flex-col items-center px-4 py-24 text-center">
+    <p class="editorial-kicker mb-4 justify-center">404 error</p>
+    <h1 class="font-heading mb-4 text-4xl font-bold text-brand-text">
+      Page not found
+    </h1>
+    <p class="mb-10 text-lg text-brand-muted">
+      That page doesn't exist. It may have moved, or the link you followed is out of date.
+    </p>
+    <div class="flex flex-col gap-3 sm:flex-row sm:gap-4">
+      <Button variant="primary" href="/">Back to home</Button>
+      <Button variant="ghost" href="/resources/">Browse resources</Button>
+    </div>
+  </div>
+
+  <SiteFooter
+    slot="footer"
+    siteName={siteConfig.name}
+    tagline={siteConfig.tagline}
+    linkGroups={siteConfig.footer?.linkGroups}
+    legalLinks={siteConfig.footer?.legalLinks}
+    contactEmail={siteConfig.contactEmail}
+    logoLight={siteConfig.logo?.light}
+  />
+</BaseLayout>

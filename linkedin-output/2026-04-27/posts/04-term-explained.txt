@@ -1,0 +1,11 @@
+A donor-advised fund is not a donor.
+
+The DAF is an account at a sponsoring 501(c)(3) — Fidelity Charitable, Schwab Charitable, Vanguard Charitable, or a community foundation. The donor contributes assets, takes the deduction immediately, and then recommends grants from the account at any future time. Legal control sits with the sponsor; the donor holds advisory rights.
+
+Operationally this matters because the check arrives in the sponsor's name. Memo line might say "donor advised grant" with no individual attribution. If your CRM records that gift under "Fidelity Charitable," you've just lost the relationship.
+
+The fix is a stewardship rule: any DAF distribution gets routed for investigation before it posts. The underlying donor is usually identifiable from the cover letter or the sponsor's portal. Code the gift to the human; tag the DAF as the vehicle.
+
+The acknowledgement letter goes to the donor, not the sponsor. The sponsor already has the deduction on file.
+
+#donoradvisedfunds #fundraisingoperations #nonprofitcrm #majorgifts

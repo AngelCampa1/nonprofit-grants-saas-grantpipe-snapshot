@@ -1,0 +1,30 @@
+---
+import "../styles/global.css";
+import GrantRecipientCategoryPage from "@/components/grant-recipient-category-page.astro";
+import { getGrantCategoryPage } from "@/config/grant-recipient-seo";
+import { getVideoForPage } from "@grantpipe/shared";
+import VideoEmbed from "@/components/video-embed.astro";
+import { videoSchema } from "@/lib/video-schema";
+
+const basePage = getGrantCategoryPage("restricted-fund-tracking-software");
+const page = {
+  ...basePage,
+  heroDescription:
+    "GrantPipe is the compliance-first grant management system, spanning eight modules. Use this page to evaluate restricted-fund tracking, then check pricing for what each plan includes.",
+};
+const contextualVideo = getVideoForPage("/restricted-fund-tracking-software");
+---
+
+<GrantRecipientCategoryPage page={page}>
+  {contextualVideo && (
+    <section slot="contextual-video" class="editorial-panel mb-8 p-6" data-section="contextual-video">
+      <h2 class="gp-link-card-title mb-5">See it in action</h2>
+      <VideoEmbed
+        youtubeId={contextualVideo.youtubeId}
+        iframeTitle={contextualVideo.title}
+        playLabel={`Play: ${contextualVideo.shortTitle}`}
+      />
+      <script type="application/ld+json" set:html={JSON.stringify(videoSchema(contextualVideo))} />
+    </section>
+  )}
+</GrantRecipientCategoryPage>

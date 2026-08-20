@@ -1,0 +1,307 @@
+---
+import { getPublicApiBaseUrl } from "@grantpipe/ui/site/lib/public-api-url"
+import "../../styles/global.css"
+import { getCollection, render } from "astro:content"
+import { getContentEntrySlug } from "@/lib/content-entry-slug"
+import ArticleLayout from "@grantpipe/ui/site/layouts/article-layout.astro"
+import { LeadMagnetSignup } from "@grantpipe/ui/site/components/lead-magnet-signup"
+import FaqSection from "@grantpipe/ui/site/components/faq-section.astro"
+import RelatedPages from "@grantpipe/ui/site/components/related-pages.astro"
+import { siteConfig, shouldShowMobileStickyCta } from "@/config/site"
+import StatisticCitation from "@grantpipe/ui/site/seo/statistic-citation.astro"
+import DataTableBlock from "@grantpipe/ui/site/seo/data-table-block.astro"
+import { buildStateBreadcrumbs } from "@/lib/breadcrumbs"
+import { buildGeoArticleSchema } from "@grantpipe/ui/site/lib/schema-builders"
+import { formatNumber } from "@grantpipe/ui/site/lib/collections"
+import { buildContentMap } from "@/lib/page-helpers"
+import { resolveLeadMagnetOffer, resolveExitLeadMagnetOffer } from "@/lib/lead-magnet-routing"
+import { resolveGrantPipeOgImage } from "@/lib/og-image"
+import { resolveRelatedPageLinks } from "@grantpipe/ui/site/lib/related-page-resolver"
+
+export async function getStaticPaths() {
+  const entries = await getCollection("state-pages")
+  return entries.map((entry) => ({
+    params: { slug: getContentEntrySlug(entry) },
+    props: { entry },
+  }))
+}
+
+const { entry } = Astro.props
+const { Content, headings } = await render(entry)
+const {
+  title,
+  description,
+  seoTitle,
+  seoDescription,
+  bluf,
+  buyerStage,
+  publishedAt,
+  updatedAt,
+  lastReviewedAt,
+  verifiedAt,
+  faqs,
+  relatedPages,
+  state,
+  stateCode,
+  establishmentCount,
+  topMetros,
+  topMarkets,
+  marketSize,
+  regulations,
+  licensingNotes,
+  seasonalNotes,
+  pricingStats,
+  tableData,
+  answers,
+  sourceUrls,
+} = entry.data
+const canonicalPath = `/nonprofit-software/${getContentEntrySlug(entry)}`
+
+const [
+  alternatives,
+  comparisons,
+  pricingBreakdowns,
+  listicles,
+  guides,
+  statePages,
+  cityPages,
+  verticalPages,
+  leadMagnets,
+  faqHubs,
+  benchmarks,
+] = await Promise.all([
+  getCollection("alternatives"),
+  getCollection("comparisons"),
+  getCollection("pricing-breakdowns"),
+  getCollection("listicles"),
+  getCollection("guides"),
+  getCollection("state-pages"),
+  getCollection("city-pages"),
+  getCollection("vertical-pages"),
+  getCollection("lead-magnets"),
+  getCollection("faq-hubs"),
+  getCollection("benchmarks"),
+])
+const contentMap = buildContentMap({
+  alternatives,
+  comparisons,
+  pricingBreakdowns,
+  listicles,
+  guides,
+  statePages,
+  cityPages,
+  verticalPages,
+  leadMagnets,
+  faqHubs,
+  benchmarks,
+})
+
+const breadcrumbs = buildStateBreadcrumbs(state, canonicalPath)
+const geoSchema = buildGeoArticleSchema({ title, description, state })
+const relatedPageLinks = resolveRelatedPageLinks(relatedPages, contentMap)
+const hasMarketLabels = topMarkets.some(
+  (market: { name: string; count: number; label?: string }) => Boolean(market.label),
+)
+const leadMagnet = resolveLeadMagnetOffer(siteConfig, leadMagnets, {
+  family: "state-page",
+  explicitSlug: entry.data.leadMagnetSlug,
+  relatedPages,
+})
+const exitLeadMagnet = resolveExitLeadMagnetOffer(siteConfig, leadMagnets, {
+  family: "state-page",
+  exitSlug: entry.data.exitMagnetSlug,
+  leadMagnetSlug: entry.data.leadMagnetSlug,
+  relatedPages,
+})
+const publicApiUrl = getPublicApiBaseUrl()
+
+---
+
+<ArticleLayout
+  title={title}
+  description={description}
+  seoTitle={seoTitle}
+  seoDescription={seoDescription}
+  bluf={bluf}
+  buyerStage={buyerStage}
+  publishedAt={publishedAt}
+  updatedAt={updatedAt}
+  lastReviewedAt={lastReviewedAt}
+  verifiedAt={verifiedAt}
+  canonicalPath={canonicalPath}
+  config={siteConfig}
+  breadcrumbs={breadcrumbs}
+  schemas={[geoSchema]}
+  headings={headings}
+  ogImage={resolveGrantPipeOgImage(canonicalPath)}
+  answers={answers?.map(a => ({ question: a.q, answer: a.a }))}
+  sourceUrls={sourceUrls}
+  leadMagnet={exitLeadMagnet}
+  sidebarLeadMagnet={leadMagnet}
+  showStickyMobileCta={shouldShowMobileStickyCta(canonicalPath)}
+  stickyCtaText={siteConfig.funnel.bofu.ctaText}
+  stickyCtaTarget={siteConfig.funnel.bofu.ctaTarget}
+>
+  <div data-reading-frame>
+    <Content />
+
+    {pricingStats?.map((s) => (
+      <StatisticCitation stat={s.stat} source={s.source} sourceUrl={s.sourceUrl} />
+    ))}
+    {tableData && (
+      <DataTableBlock
+        name={tableData.name}
+        description={tableData.description}
+        columns={tableData.columns}
+        rows={tableData.rows}
+      />
+    )}
+    <LeadMagnetSignup
+      client:load
+      apiUrl={publicApiUrl}
+      sourcePage={canonicalPath}
+      leadMagnet={leadMagnet}
+      privacyNote="We'll email the resource and a short follow-up sequence. Unsubscribe any time."
+      trialCtaHref={siteConfig.funnel.bofu.ctaTarget}
+      trialCtaText={siteConfig.funnel.bofu.ctaText}
+    />
+
+    {topMarkets.length > 0 && (
+      <section class="editorial-panel my-8 p-6">
+        <h2 class="mb-4 text-lg font-semibold text-brand-text">
+          Top {state} Markets by Nonprofit Count
+        </h2>
+        <div class="overflow-x-auto -mx-4 sm:mx-0">
+          <table class="w-full min-w-[36rem] text-sm">
+            <caption class="sr-only">Top {state} markets by nonprofit count</caption>
+            <thead>
+              <tr class="border-b border-neutral-200 text-left">
+                <th scope="col" class="pb-2 font-medium text-neutral-700">Metro Area</th>
+                {hasMarketLabels && (
+                  <th scope="col" class="pb-2 font-medium text-neutral-700">Notes</th>
+                )}
+                <th scope="col" class="pb-2 text-right font-medium text-neutral-700">
+                  Registered Nonprofits
+                </th>
+              </tr>
+            </thead>
+            <tbody>
+              {topMarkets.map((market: { name: string; count: number; label?: string }) => (
+                <tr class="border-b border-neutral-100 last:border-0">
+                  <td class="py-2 text-neutral-800">{market.name}</td>
+                  {hasMarketLabels && (
+                    <td class="py-2 text-sm text-neutral-600">{market.label ?? ""}</td>
+                  )}
+                  <td class="py-2 text-right text-neutral-800">
+                    {formatNumber(market.count)}
+                  </td>
+                </tr>
+              ))}
+              {marketSize && (
+                <tr class="font-medium">
+                  <td class="pt-3 text-brand-text">Total - {stateCode}</td>
+                  {hasMarketLabels && <td />}
+                  <td class="pt-3 text-right text-brand-text">{formatNumber(marketSize)}+</td>
+                </tr>
+              )}
+            </tbody>
+          </table>
+        </div>
+      </section>
+    )}
+
+    {topMetros && topMetros.length > 0 && !topMarkets.length && (
+      <section class="editorial-panel my-8 p-6">
+        <h2 class="mb-4 text-lg font-semibold text-brand-text">
+          Top {state} Markets by Nonprofit Count
+        </h2>
+        <div class="overflow-x-auto -mx-4 sm:mx-0">
+          <table class="w-full min-w-[32rem] text-sm">
+            <caption class="sr-only">Top {state} metros by nonprofit count</caption>
+            <thead>
+              <tr class="border-b border-neutral-200 text-left">
+                <th scope="col" class="pb-2 font-medium text-neutral-700">Metro Area</th>
+                <th scope="col" class="pb-2 text-right font-medium text-neutral-700">
+                  Registered Nonprofits
+                </th>
+              </tr>
+            </thead>
+            <tbody>
+              {topMetros.map((metro) => (
+                <tr class="border-b border-neutral-100 last:border-0">
+                  <td class="py-2 text-neutral-800">{metro.name}</td>
+                  <td class="py-2 text-right text-neutral-800">
+                    {formatNumber(metro.count)}
+                  </td>
+                </tr>
+              ))}
+              <tr class="font-medium">
+                <td class="pt-3 text-brand-text">Total - {stateCode}</td>
+                <td class="pt-3 text-right text-brand-text">
+                  {formatNumber(establishmentCount ?? 0)}+
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+    )}
+
+    {regulations.length > 0 && (
+      <section class="editorial-panel editorial-panel--soft my-8 p-6">
+        <h2 class="mb-4 text-lg font-semibold text-brand-text">
+          Compliance &amp; Registration Notes - {state}
+        </h2>
+        <div class="space-y-4">
+          {regulations.map(
+            (reg: {
+              heading: string
+              content: string
+              variant: "info" | "warning" | "success"
+            }) => (
+              <div
+                class={`rounded-md p-4 ${reg.variant === "warning" ? "border border-warning-200 bg-warning-50" : reg.variant === "success" ? "border border-success-200 bg-success-50" : "border border-neutral-200 bg-surface-secondary"}`}
+              >
+                <h3 class="mb-1 text-sm font-semibold text-brand-text">{reg.heading}</h3>
+                <p class="text-sm text-neutral-700">{reg.content}</p>
+              </div>
+            ),
+          )}
+        </div>
+      </section>
+    )}
+
+    {licensingNotes && (
+      <section class="editorial-panel editorial-panel--soft my-8 p-6">
+        <h2 class="mb-2 text-lg font-semibold text-brand-text">
+          Registration Requirements - {state}
+        </h2>
+        <p class="text-sm text-neutral-700">{licensingNotes}</p>
+      </section>
+    )}
+
+    {seasonalNotes && (
+      <section class="editorial-panel my-8 p-6">
+        <h2 class="mb-2 text-lg font-semibold text-brand-text">
+          Grant Cycle Seasonality - {state}
+        </h2>
+        <p class="text-sm text-neutral-700">{seasonalNotes}</p>
+      </section>
+    )}
+
+    <FaqSection
+      faqs={faqs}
+      heading="Frequently Asked Questions"
+      showBottomCta={false}
+      ctaVariant="compact"
+    />
+
+    {relatedPages.length > 0 && (
+      <RelatedPages
+        pages={relatedPageLinks}
+        stage={buyerStage}
+        variant="editorial"
+      />
+    )}
+  </div>
+</ArticleLayout>

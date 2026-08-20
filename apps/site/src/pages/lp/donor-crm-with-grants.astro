@@ -1,0 +1,122 @@
+---
+import PaidSearchLandingPage from "@/components/paid-search-landing-page.astro";
+import type { PaidLandingPageData } from "@/components/paid-search-landing-page.astro";
+
+const page: PaidLandingPageData = {
+  slug: "donor-crm-with-grants",
+  title: "A Donor CRM That Tracks Grants Too | GrantPipe",
+  description:
+    "Most donor tools stop at gifts. GrantPipe tracks major donors, grant awards, and restricted fund balances in one place so development directors run one system.",
+  kicker: "Donor CRM with built-in grant and fund tracking",
+  headline: "A donor CRM that tracks grants too.",
+  subhead:
+    "Most donor tools stop at gifts. This one tracks grants and restricted funds with them.",
+  primaryCta: "Start 1-month free trial",
+  exitLeadMagnet: {
+    slug: "nonprofit-crm-evaluation-scorecard",
+    title: "Nonprofit CRM Evaluation Scorecard",
+    description:
+      "Score any donor CRM across grant tracking, restricted fund support, board reporting, and migration effort before you commit to a trial.",
+  },
+  trust: "No credit card required. Compare before you commit.",
+  proofCard: {
+    label: "Development workspace",
+    status: "All in one place",
+    rows: [
+      { label: "Major donor prospects", value: "92" },
+      { label: "Active grants", value: "14" },
+      { label: "Restricted funds open", value: "8" },
+      { label: "Board report due", value: "Nov 12" },
+    ],
+    progressLabel: "Systems consolidated",
+    progress: "94%",
+  },
+  painsTitle: "Your donor CRM does not know what a grant is.",
+  pains: [
+    "Bloomerang and DonorPerfect track gifts. Grants go in a spreadsheet.",
+    "Restricted fund balances live in accounting. Development rarely sees them.",
+    "You run three systems and reconcile all three before every board meeting.",
+    "When a staffer leaves, the grant history and donor notes go with them.",
+    "You cannot show one revenue picture that covers donors, grants, and funds.",
+  ],
+  workflowTitle: "One workspace for donors, grants, and restricted funds.",
+  workflowSteps: [
+    {
+      icon: "ledger",
+      heading: "Manage donors and grants together",
+      copy: "Major gifts, pledges, and grant awards sit in one record.",
+    },
+    {
+      icon: "balance",
+      heading: "Track restricted fund balances",
+      copy: "See what each restricted fund has left without a call to finance.",
+    },
+    {
+      icon: "report",
+      heading: "Run one board report",
+      copy: "Pull donors, grants, and fund releases into one revenue view.",
+    },
+  ],
+  featureTitle: "What a donor CRM with grants built in actually does.",
+  features: [
+    {
+      icon: "ledger",
+      heading: "Donor and grant records together",
+      copy: "Track cultivation stages and grant pipeline stages in the same workspace.",
+    },
+    {
+      icon: "balance",
+      heading: "Restricted fund tracking",
+      copy: "See balances and releases on each restricted fund without leaving the CRM.",
+    },
+    {
+      icon: "report",
+      heading: "Unified board report",
+      copy: "One view covers gifts, pledges, awards, and restricted releases by program.",
+    },
+  ],
+  proofTitle: "One system is less expensive than three systems and a spreadsheet.",
+  proofPoints: [
+    {
+      value: "3 systems",
+      label: "is what most development directors reconcile before each board meeting when donor and grant data is split.",
+      source: "GrantPipe ICP research — development director intake",
+    },
+    {
+      value: "40 to 120",
+      label: "is the typical major-donor prospect count for a development director running a $2M to $10M shop.",
+      source: "GrantPipe ICP research — development director profile",
+    },
+    {
+      value: "1 workspace",
+      label: "in GrantPipe covers major donors, grant pipeline, and restricted fund balances with no spreadsheet in between.",
+      source: "GrantPipe development dashboard",
+    },
+  ],
+  trustLabels: ["Donors and grants unified", "Restricted fund tracking built in", "Board-ready revenue view"],
+  faqTitle: "Questions from directors evaluating a combined donor and grant system.",
+  faqs: [
+    {
+      q: "How is this different from Bloomerang or DonorPerfect?",
+      a: "Those tools track donor gifts. GrantPipe also tracks grant pipeline stages, post-award compliance, and restricted fund balances. Grants do not live in a side spreadsheet.",
+    },
+    {
+      q: "Can we migrate our existing donor data?",
+      a: "Yes. Import by CSV. Soft credits, solicitation codes, and custom fields come with the import.",
+    },
+    {
+      q: "Does it replace our accounting system?",
+      a: "No. GrantPipe does not connect to QuickBooks or Sage Intacct right now. Keep your books there. Keep donor, grant, and fund records in GrantPipe.",
+    },
+    {
+      q: "Does a solo development director have enough time to run this?",
+      a: "Yes. GrantPipe is built for teams of one to five. Setup takes about a day with your active donors and grants.",
+    },
+  ],
+  finalTitle: "Import your donors and your active grants today. Run one system from here.",
+  finalBody:
+    "Start a free trial. Import your donor list and grant portfolio by CSV. See donors, grants, and restricted funds in one view before the week is out.",
+};
+---
+
+<PaidSearchLandingPage page={page} />

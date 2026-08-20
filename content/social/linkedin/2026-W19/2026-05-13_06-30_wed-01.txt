@@ -1,0 +1,5 @@
+Picture this: an auditor walks in. They ask for the spend-down detail on the Federal pass-through grant.
+
+The Finance Director opens a spreadsheet. The Development Director opens a different spreadsheet. They do not match.
+
+This is the moment compliance software has to earn its place. Not with dashboards. With a single number that both people see.

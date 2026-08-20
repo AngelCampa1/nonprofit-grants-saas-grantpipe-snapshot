@@ -1,0 +1,13 @@
+We model grants and funds as separate records in GrantPipe.
+
+That choice is slower to build, but it matches the work.
+
+One grant can fund several restricted funds.
+
+One fund can support work tied to several awards.
+
+A donor restriction can outlive a reporting deadline.
+
+An award can close while the financial statement still needs the right restriction history.
+
+For grant-funded nonprofits, flattening that into one "grant" object makes the early screen simpler and the later audit trail worse.

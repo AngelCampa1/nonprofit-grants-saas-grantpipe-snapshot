@@ -1,0 +1,9 @@
+We decided early that GrantPipe would model grants and funds as separate entities, with a many-to-many table between them.
+
+The shorter path was to treat a grant as a fund. Simpler queries, faster to build. A lot of donor CRMs that bolt on grant tracking do it this way.
+
+The problem is FASB ASC 958. A fund (a restricted net asset) and a grant (an award agreement) are not the same object. A single grant can fund three programs, each with its own restrictions. A single program can receive money from five grants and a board-designated reserve.
+
+So the model is grants on one side, funds on the other, and a grant_fund_allocations table in the middle. It is how Sage Intacct and Blackbaud Financial Edge model it. It is more work to build. It is the only model that survives an audit.
+
+The complexity is the product. Hiding it is how the consultant became the competitor.

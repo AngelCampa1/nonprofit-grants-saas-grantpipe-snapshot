@@ -1,0 +1,11 @@
+Salesforce NPSP implementation quotes for a $3M nonprofit routinely land in the mid five-figure range, before the first user logs in.
+
+That number includes the partner consultant, the data migration, the custom field configuration, and the first round of training. It does not include the second consultant call six months later when restricted-fund tracking still does not produce the report the auditor wants.
+
+The real cost is not the line item on the invoice. It is that the system requires a consultant relationship to keep working. Every new grant type, every new compliance reporting wrinkle, every staff transition is another billable hour.
+
+We built GrantPipe on the opposite premise: the software should be self-evident. If a Development Director cannot set up a new restricted fund without calling support, the design failed.
+
+See current offer terms at grantpipe.com/pricing.
+
+Public pricing at grantpipe.com/pricing.

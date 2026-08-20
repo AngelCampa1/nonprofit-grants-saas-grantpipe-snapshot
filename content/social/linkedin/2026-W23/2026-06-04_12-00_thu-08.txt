@@ -1,0 +1,7 @@
+A donor record can tell you who funded the work.
+
+It may not tell you whether the money is restricted, which report is due, what evidence supports the spending, or whether Finance released the restriction.
+
+That is the gap between donor tracking and grant operations.
+
+The handoff matters because the same dollar has to satisfy more than one audience.

@@ -1,0 +1,11 @@
+VAWA grantees cannot maintain grant files that link identifiable survivor information to service records accessible to outside reviewers.
+
+That requirement is not a suggestion from a program officer. The confidentiality provisions of the Violence Against Women Act are statutory — they prohibit shelters from disclosing personally identifying survivor information without informed, written, reasonably time-limited consent. Critically, confidentiality extends into the grant record itself.
+
+This creates a specific data architecture requirement for domestic violence shelters: program tracking systems must report aggregate service data to funders without exposing individual case records. VOCA performance reporting requires aggregate counts of victims served by crime type, services provided by category, and demographic data. OVW semiannual progress reports through GMS require similar aggregate documentation. Neither accepts individual survivor records.
+
+Most shelters operate with VAWA, VOCA, and FVPSA grants simultaneously. Each has different period of performance dates, different allowable cost categories, and different reporting timelines. VOCA funds are typically capped at 10% for administrative costs. Time for a shelter director whose salary is split across VAWA, VOCA, and operating funds must be documented separately for each funding source.
+
+Using a single case management database for both service delivery and grant compliance tracking creates the linkage that the VAWA confidentiality provisions prohibit. The compliance architecture and the service delivery architecture must be designed separately from the start.
+
+#domesticviolence #vawa #victimservices #grantcompliance #nonprofitcompliance

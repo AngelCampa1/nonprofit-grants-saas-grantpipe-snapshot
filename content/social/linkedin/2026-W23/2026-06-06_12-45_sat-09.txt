@@ -1,0 +1,8 @@
+FASB ASC 958 uses two net asset classes:
+
+With donor restrictions.
+Without donor restrictions.
+
+The hard work is not memorizing the names.
+
+The hard work is keeping each restriction tied to purpose, time, release, and balance so the financial statements have support behind the totals.

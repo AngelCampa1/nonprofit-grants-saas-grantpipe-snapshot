@@ -1,0 +1,10 @@
+- main [ref=e13]:
+    - generic [ref=e15]:
+        - paragraph [ref=e17]: Step 3 of 4
+        - generic [ref=e61]:
+            - paragraph [ref=e62]: Do you have a spreadsheet of donors or contacts?
+            - paragraph [ref=e63]: GrantPipe accepts CSV exports from Excel, Salesforce, Raiser's Edge, and Blackbaud.
+            - generic [ref=e64]:
+                - button "Import a CSV" [ref=e65]
+                - button "Skip for now — I'll add data manually" [ref=e67]
+            - button "← Back" [ref=e68]

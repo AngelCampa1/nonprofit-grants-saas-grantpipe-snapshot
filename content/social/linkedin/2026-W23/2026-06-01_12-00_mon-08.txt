@@ -1,0 +1,16 @@
+Development and Finance do not need the same screen.
+
+They need the same facts.
+
+For a restricted grant, those facts are:
+
+- Funder name
+- Award amount
+- Restriction terms
+- Cash received
+- Expenses incurred
+- Release from restriction
+- Reports due
+- Evidence attached
+
+If Development owns the promise and Finance owns the ledger, the handoff should be a record, not a meeting that happens again every month.

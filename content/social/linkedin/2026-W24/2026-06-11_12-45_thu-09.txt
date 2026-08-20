@@ -1,0 +1,9 @@
+Grants.gov is for finding and applying to federal opportunities.
+
+Post-award reporting happens somewhere else.
+
+SF-425s, drawdowns, performance reports, and closeout steps live in agency systems such as PMS, GrantSolutions, IDIS, DRGR, or JustGrants, depending on the award.
+
+That distinction matters when you build a compliance calendar.
+
+"Submitted in Grants.gov" is not the end of the operating record.

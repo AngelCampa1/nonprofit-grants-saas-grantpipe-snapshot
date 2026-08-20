@@ -1,0 +1,34 @@
+- generic [ref=e7]:
+    - generic [ref=e8]:
+        - generic [ref=e9]:
+            - link "GrantPipe home" [ref=e10] [cursor=pointer]:
+                - /url: /app/
+                - img [ref=e11]
+            - generic [ref=e12]:
+                - paragraph [ref=e13]: Secure account access
+                - heading "Create your GrantPipe account" [level=1] [ref=e14]
+                - paragraph [ref=e15]: Start with a 1-month free trial. No credit card required.
+        - generic [ref=e17]:
+            - generic [ref=e18]:
+                - generic [ref=e19]: Name
+                - textbox "Name" [ref=e20]:
+                    - /placeholder: Your full name
+            - generic [ref=e21]:
+                - generic [ref=e22]: Email
+                - textbox "Email" [ref=e23]:
+                    - /placeholder: you@example.com
+            - generic [ref=e24]:
+                - generic [ref=e25]: Password
+                - textbox "Password" [ref=e26]
+            - button "Create account" [ref=e27]
+            - generic [ref=e32]: or
+            - button "Continue with Google" [ref=e33]:
+                - img
+                - text: Continue with Google
+        - generic [ref=e34]:
+            - text: Already have an account?
+            - link "Sign in" [ref=e35] [cursor=pointer]:
+                - /url: /app/login
+    - generic [ref=e36]:
+        - generic [ref=e37]: Encrypted session
+        - generic [ref=e38]: Reduced-motion safe

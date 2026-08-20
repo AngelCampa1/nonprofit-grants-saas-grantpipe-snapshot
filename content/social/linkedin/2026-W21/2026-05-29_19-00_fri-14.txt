@@ -1,0 +1,13 @@
+For the Executive Director closing out May with three open compliance questions and a board meeting next week.
+
+You probably do not need a bigger system. You need the system you have to answer three questions in under a minute each:
+
+What is the spend-down position on every active grant?
+
+Which restricted fund balances need to be released this quarter, and which need to roll forward?
+
+What is due to a funder in the next 30 days, and who owns it?
+
+If the answer to any of those is "let me build a report," the system is not actually working. It is a filing cabinet with a UI.
+
+A working system answers the question on the first click and shows you the supporting detail on the second.

@@ -1,0 +1,9 @@
+For every Finance Director who has been asked to "just configure the CRM" for grant compliance: this is for you.
+
+The ask sounds reasonable. The CRM is already paid for. It has custom fields. It has reports. Why not?
+
+Because grant compliance is not a custom field problem. It is a ledger problem. Restricted funds need release schedules. Awards need period-of-performance windows. Drawdowns need cash basis and accrual basis at the same time. FFR Box 12 needs an indirect cost rate that travels with the award.
+
+You can put fields on the donor record for all of this. You will spend the next two years explaining to auditors why the labels do not match FASB categories.
+
+The donor record is the wrong home for this. Not because the CRM is bad. Because the shape of the data is different.

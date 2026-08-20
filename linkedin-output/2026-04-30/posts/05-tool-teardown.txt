@@ -1,0 +1,13 @@
+Bloomerang Standard runs $125 per month for up to 1,000 records and Pro runs $249 per month for up to 5,000. Capterra puts it at 4.66 out of 5 across more than 1,286 reviews — second highest in the nonprofit CRM category.
+
+The product earns those numbers honestly on the donor side. The retention dashboard, lapse-risk indicators, and donor timeline are the most developed in the under-$300 tier. Development staff coming off spreadsheets find it intuitive on day one.
+
+The gap is grants. Bloomerang has no grant lifecycle module — not a thin one, a complete absence. No restricted fund tracking, no budget-versus-actual against grant line items, no compliance report generation. An organization that wins a $500,000 federal grant cannot model where the restricted dollars go inside Bloomerang.
+
+The result for grant-receiving nonprofits is a parallel system: Bloomerang for donors, a spreadsheet or standalone tracker for grants. Duplicate entry, manual reconciliation, and compliance records that drift away from CRM records by month six.
+
+The honest evaluation question is whether the organization is donor-funded or grant-funded. Donor-funded under $5M with no restricted grant exposure — Bloomerang is a strong choice. Grant-receiving with three or more active awards — the parallel-system tax becomes the actual cost.
+
+Per-record pricing also keeps climbing as the database grows.
+
+#bloomerang #nonprofitcrm #grantmanagement #donormanagement

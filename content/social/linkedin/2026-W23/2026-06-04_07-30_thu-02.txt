@@ -1,0 +1,13 @@
+Development to Finance handoff should not depend on memory.
+
+For each awarded grant, hand over:
+
+- award amount
+- restriction purpose
+- period of performance
+- reporting dates
+- match requirement
+- fund or project code
+- who owns evidence
+
+The cleaner the handoff, the fewer board packet surprises later.

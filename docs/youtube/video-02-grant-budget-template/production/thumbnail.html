@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="en"><head><meta charset="UTF-8"/>
+<style>
+@font-face{font-family:'Sora';font-weight:700;src:url('assets/fonts/Sora-700.woff2') format('woff2')}
+@font-face{font-family:'Sora';font-weight:600;src:url('assets/fonts/Sora-600.woff2') format('woff2')}
+@font-face{font-family:'Plex';font-weight:600;src:url('assets/fonts/PlexSans-600.woff2') format('woff2')}
+@font-face{font-family:'Mono';font-weight:500;src:url('assets/fonts/PlexMono-500.woff2') format('woff2')}
+:root{--paper:#faf7f0;--paper2:#f0e9da;--ink:#17211c;--emerald:#065f46;--emerald-d:#053d2e;--emerald-50:#e7f3ee;
+  --ochre:#b9842b;--ochre-50:#f6ecd6;--ochre-line:#e4cf9f;--muted:#6c726a;--line:#e6e0d2;--white:#fff}
+*{margin:0;padding:0;box-sizing:border-box}
+html,body{width:1280px;height:720px;overflow:hidden;font-family:'Plex',sans-serif;color:var(--ink)}
+.bg{position:relative;width:1280px;height:720px;
+  background:radial-gradient(900px 520px at 80% -10%,rgba(6,95,70,.14),transparent 60%),
+    radial-gradient(700px 460px at 0% 110%,rgba(185,132,43,.16),transparent 60%),
+    linear-gradient(180deg,var(--paper),var(--paper2));overflow:hidden}
+.wm{position:absolute;top:34px;left:42px;display:flex;align-items:center;gap:12px;z-index:5}
+.wm .mark{width:36px;height:36px;display:block}
+.wm .name{font-family:'Sora';font-weight:700;font-size:26px}
+.free{position:absolute;top:34px;right:42px;z-index:5;background:var(--emerald);color:#fff;font-family:'Sora';font-weight:600;font-size:22px;padding:9px 20px;border-radius:999px;box-shadow:0 10px 24px -10px rgba(6,95,70,.6)}
+.free span{font-family:'Mono';font-size:16px;background:var(--ochre);color:#3a2a07;padding:2px 10px;border-radius:999px;margin-left:8px}
+.wrap{position:absolute;inset:0;display:flex;align-items:center;justify-content:space-between;padding:0 56px;z-index:2}
+.left{max-width:560px}
+.kick{font-family:'Mono';font-weight:500;font-size:22px;letter-spacing:4px;text-transform:uppercase;color:var(--ochre);margin-bottom:14px}
+.head{font-family:'Sora';font-weight:700;font-size:96px;line-height:.96;letter-spacing:-2.5px}
+.head em{font-style:normal;color:var(--emerald)}
+.sub{margin-top:22px;font-family:'Plex';font-weight:600;font-size:25px;color:var(--muted)}
+/* mini sheet */
+.sheet{width:520px;background:var(--white);border:1px solid var(--line);border-radius:16px;box-shadow:0 30px 60px -28px rgba(20,40,30,.5);overflow:hidden;transform:rotate(2deg)}
+.sheet .bar{height:38px;background:linear-gradient(180deg,#fff,#fbf8f1);border-bottom:1px solid var(--line);display:flex;align-items:center;padding:0 16px;gap:7px}
+.sheet .bar i{width:11px;height:11px;border-radius:50%;background:#e4ddcc;display:inline-block}
+table{border-collapse:collapse;width:100%;table-layout:fixed}
+td,th{border:1px solid var(--line);height:54px;padding:0 14px;font-size:19px;text-align:left;white-space:nowrap;overflow:hidden}
+th{background:var(--emerald-50);color:var(--emerald-d);font-family:'Plex';font-weight:600;font-size:17px}
+td{font-family:'Plex'}
+.q{position:relative}
+.q .cell{background:var(--ochre-50);box-shadow:inset 0 0 0 3px var(--ochre)}
+.circle{position:absolute;top:-58px;left:50%;transform:translateX(-50%);font-family:'Sora';font-weight:700;font-size:22px;color:var(--ochre);white-space:nowrap}
+.arrow{position:absolute;top:-24px;left:50%;transform:translateX(-50%);width:3px;height:22px;background:var(--ochre)}
+.arrow::after{content:"";position:absolute;bottom:-2px;left:-4px;border:6px solid transparent;border-top-color:var(--ochre)}
+.tag{display:inline-block;font-family:'Mono';font-size:15px;padding:2px 10px;border-radius:999px;background:var(--ochre-50);color:#7a5410;border:1px solid var(--ochre-line)}
+.stamp{position:absolute;top:-30px;right:-26px;transform:rotate(-10deg);border:4px solid var(--red);color:var(--red);font-family:'Sora';font-weight:700;font-size:24px;padding:5px 14px;border-radius:10px;letter-spacing:1px;background:rgba(251,233,231,.7)}
+:root{--red:#b3261e}
+.calc{background:var(--emerald-50);color:var(--emerald-d);font-family:'Mono';font-weight:500}
+</style></head>
+<body>
+<div class="bg">
+  <div class="wm"><img class="mark" src="assets/grantpipe-mark.svg" alt="GrantPipe"/><div class="name">GrantPipe</div></div>
+  <div class="free">Free template <span>link below</span></div>
+  <div class="wrap">
+    <div class="left">
+      <div class="kick">Grant Budget Template</div>
+      <div class="head">Build it like a <em>reviewer</em> reads it</div>
+      <div class="sub">Line by line, the way it survives a federal review.</div>
+    </div>
+    <div style="position:relative">
+    <span class="stamp">NOT JUSTIFIED</span>
+    <div class="sheet">
+      <div class="bar"><i></i><i></i><i></i></div>
+      <table>
+        <colgroup><col style="width:42%"><col style="width:34%"><col style="width:24%"></colgroup>
+        <tr><th>Category</th><th>Math</th><th>Total</th></tr>
+        <tr><td>Personnel</td><td class="calc">$80k × 25%</td><td>$20,000</td></tr>
+        <tr><td>Indirect</td><td class="calc">MTDC × 15%</td><td>$7,530</td></tr>
+        <tr><td>Travel</td><td class="q"><span class="cell" style="display:block">round #?</span><span class="circle">← padded</span><span class="arrow"></span></td><td>$5,000</td></tr>
+      </table>
+    </div>
+    </div>
+  </div>
+</div>
+</body></html>

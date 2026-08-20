@@ -1,0 +1,7 @@
+Time-restricted contribution: the donor has tied the gift to a future period. You can spend it, but only after the period begins, or only across the period the donor named.
+
+Purpose-restricted contribution: the donor has tied the gift to a specific program or activity. You can spend it any time, but only on the named purpose.
+
+A multi-year pledge that says "for our scholarship program over the next three years" is both. Time and purpose. The release schedule has to satisfy both at once, and the audit trail has to show it.
+
+This is where spreadsheets quietly fail. They release on one axis or the other. Rarely both.

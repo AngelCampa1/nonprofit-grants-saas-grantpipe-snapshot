@@ -1,0 +1,13 @@
+Five things a federal program officer can ask for with no warning, that should not require a fire drill.
+
+1. Current cumulative draw against the award, by budget category. Federal share only.
+
+2. The last three months of payroll allocation across this award, with time and effort certifications attached.
+
+3. A list of any cost transfers between budget categories during the period, with the supporting memo for each.
+
+4. Sub-recipient invoices and the monitoring activity you performed before paying them.
+
+5. The most recent SF-425 (FFR) you submitted, plus the reconciliation between it and the GL.
+
+If any of these takes more than 30 minutes to assemble, the underlying record-keeping has drifted from what 2 CFR 200 expects. The call is a signal, not the problem.

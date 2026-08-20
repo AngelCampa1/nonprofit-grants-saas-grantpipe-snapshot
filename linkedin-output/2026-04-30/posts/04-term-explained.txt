@@ -1,0 +1,13 @@
+The Unique Entity Identifier is a 12-character alphanumeric code assigned by SAM.gov. It replaced DUNS effective April 4, 2022.
+
+Without an active UEI and current SAM.gov registration, a federal grant recipient cannot draw funds — even on an award already in flight. SAM.gov registration is valid for 12 months. There is no grace period. A registration that lapses on Tuesday halts payments on Wednesday.
+
+The UEI is not the EIN. The EIN is the IRS tax identifier. The UEI is the SAM.gov procurement and grants identifier. Both are required, both go on federal applications, and they are different numbers stored in different systems.
+
+Domestic activation runs 7 to 14 business days, with IRS verification typically the bottleneck. Renewal reminders go out 60 days before expiration. The recommended practice is to start renewal on the first reminder, not the last one.
+
+Pass-through entities have a separate obligation under 2 CFR 200.332: collect the subrecipient's UEI before executing any sub-award and check the SAM.gov exclusions list. If the subrecipient is not registered, the pass-through cannot legally execute the agreement.
+
+Registration lapses are among the top five administrative reasons OMB cites for delayed grant drawdowns. The fix is calendar discipline, not a software purchase.
+
+#uei #samgov #federalgrants #grantcompliance

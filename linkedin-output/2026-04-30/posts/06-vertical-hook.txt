@@ -1,0 +1,11 @@
+A church that receives a USDA Community Food Projects grant cannot spend a single grant dollar on worship services, religious instruction, or staff time supporting religious activities — even if the food pantry runs out of the same building.
+
+Federal funding requires documented separation between grant-funded secular programs and religious activity. That means tracking personnel time by grant-funded versus religious duties, allocating facility costs proportionally, and documenting that grant participants were not required to participate in religious activities. Reconstructed records at audit time do not satisfy the standard.
+
+The data structure most congregations already use makes this harder than it looks. Building Fund, Missions Fund, General Fund, and youth program designations are restricted in the church's internal sense. They are not the same as grant restriction. Commingling a federal award into the General Fund creates Form 990 reporting errors and audit exposure.
+
+There are roughly 380,000 religious congregations in the U.S. with combined annual revenue of $100-$120 billion (Duke National Congregations Study). Faith-based organizations account for about 32% of all U.S. charitable giving (Giving USA 2023). FEMA Public Assistance, USDA Community Food Projects, and historic preservation grants are the most common federal entry points.
+
+The compliance fix is fund separation enforced at the transaction level — not a tag retroactively applied to a journal entry someone already posted to the wrong account.
+
+#churchaccounting #fundaccounting #faithbasednonprofits #federalgrants

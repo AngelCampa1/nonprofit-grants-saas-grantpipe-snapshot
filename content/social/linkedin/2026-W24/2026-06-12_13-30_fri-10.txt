@@ -1,0 +1,11 @@
+ALN replaced CFDA as the federal assistance listing identifier.
+
+If you receive a pass-through award, the ALN is not trivia. It tells auditors which federal program is behind the money.
+
+Put it on the grant record.
+
+Put it on the SEFA support file.
+
+Put it in the folder name if that is what your team actually searches.
+
+Tiny identifiers save real time during fieldwork.

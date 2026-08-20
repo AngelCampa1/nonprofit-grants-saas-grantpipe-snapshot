@@ -1,0 +1,139 @@
+---
+import { getPublicApiBaseUrl } from "@grantpipe/ui/site/lib/public-api-url"
+import "../../styles/global.css"
+import { getCollection, render } from "astro:content"
+import { getContentEntrySlug } from "@/lib/content-entry-slug"
+import ArticleLayout from "@grantpipe/ui/site/layouts/article-layout.astro"
+import { LeadMagnetSignup } from "@grantpipe/ui/site/components/lead-magnet-signup"
+import FaqSection from "@grantpipe/ui/site/components/faq-section.astro"
+import RelatedPages from "@grantpipe/ui/site/components/related-pages.astro"
+import { siteConfig, shouldShowMobileStickyCta } from "@/config/site"
+import DefinitionBlock from "@grantpipe/ui/site/seo/definition-block.astro"
+import AnswerBlock from "@grantpipe/ui/site/seo/answer-block.astro"
+import ExpertQuote from "@grantpipe/ui/site/seo/expert-quote.astro"
+import StatisticCitation from "@grantpipe/ui/site/seo/statistic-citation.astro"
+import { buildGlossaryBreadcrumbs } from "@/lib/breadcrumbs"
+import { buildContentMap } from "@/lib/page-helpers"
+import { resolveLeadMagnetOffer, resolveExitLeadMagnetOffer } from "@/lib/lead-magnet-routing"
+import { resolveGrantPipeOgImage } from "@/lib/og-image"
+import { resolveRelatedPageLinks } from "@grantpipe/ui/site/lib/related-page-resolver"
+
+export async function getStaticPaths() {
+  const entries = await getCollection("glossary")
+  return entries.map((entry) => ({
+    params: { slug: getContentEntrySlug(entry) },
+    props: { entry },
+  }))
+}
+
+const { entry } = Astro.props
+const { Content, headings } = await render(entry)
+const { title, description, seoTitle, seoDescription, bluf, buyerStage, publishedAt, updatedAt, lastReviewedAt, verifiedAt, faqs, relatedPages, definitions, answers, expertQuotes, pricingStats, sourceUrls, term, shortDefinition } = entry.data
+const canonicalPath = `/glossary/${getContentEntrySlug(entry)}`
+
+const [alternatives, comparisons, pricingBreakdowns, listicles, guides, statePages, cityPages, verticalPages, leadMagnets, personas, workflows, glossary, features, faqHubs, benchmarks] = await Promise.all([
+  getCollection("alternatives"),
+  getCollection("comparisons"),
+  getCollection("pricing-breakdowns"),
+  getCollection("listicles"),
+  getCollection("guides"),
+  getCollection("state-pages"),
+  getCollection("city-pages"),
+  getCollection("vertical-pages"),
+  getCollection("lead-magnets"),
+  getCollection("personas"),
+  getCollection("workflows"),
+  getCollection("glossary"),
+  getCollection("features"),
+  getCollection("faq-hubs"),
+  getCollection("benchmarks"),
+])
+const contentMap = buildContentMap({ alternatives, comparisons, pricingBreakdowns, listicles, guides, statePages, cityPages, verticalPages, leadMagnets, personas, workflows, glossary, features, faqHubs, benchmarks })
+
+const breadcrumbs = buildGlossaryBreadcrumbs(term, canonicalPath)
+const definedTermSchema: Record<string, unknown> = {
+  "@context": "https://schema.org",
+  "@type": "DefinedTerm",
+  name: term,
+  description: shortDefinition,
+  inDefinedTermSet: "https://grantpipe.com/glossary",
+}
+const relatedPageLinks = resolveRelatedPageLinks(relatedPages, contentMap)
+const leadMagnet = resolveLeadMagnetOffer(siteConfig, leadMagnets, {
+  family: "guide",
+  explicitSlug: entry.data.leadMagnetSlug,
+  relatedPages,
+})
+const exitLeadMagnet = resolveExitLeadMagnetOffer(siteConfig, leadMagnets, {
+  family: "guide",
+  exitSlug: entry.data.exitMagnetSlug,
+  leadMagnetSlug: entry.data.leadMagnetSlug,
+  relatedPages,
+})
+const publicApiUrl = getPublicApiBaseUrl()
+
+---
+
+<ArticleLayout
+  title={title}
+  description={description}
+  seoTitle={seoTitle}
+  seoDescription={seoDescription}
+  bluf={bluf}
+  buyerStage={buyerStage}
+  publishedAt={publishedAt}
+  updatedAt={updatedAt}
+  lastReviewedAt={lastReviewedAt}
+  verifiedAt={verifiedAt}
+  canonicalPath={canonicalPath}
+  config={siteConfig}
+  breadcrumbs={breadcrumbs}
+  schemas={[definedTermSchema]}
+  headings={headings}
+  ogImage={resolveGrantPipeOgImage(canonicalPath)}
+  answers={answers?.map(a => ({ question: a.q, answer: a.a }))}
+  sourceUrls={sourceUrls}
+  leadMagnet={exitLeadMagnet}
+  sidebarLeadMagnet={leadMagnet}
+  showStickyMobileCta={shouldShowMobileStickyCta(canonicalPath)}
+>
+  <Content />
+
+  <LeadMagnetSignup
+    client:load
+    apiUrl={publicApiUrl}
+    sourcePage={canonicalPath}
+    leadMagnet={leadMagnet}
+    privacyNote="We'll email the resource and a short follow-up sequence. Unsubscribe any time."
+    trialCtaHref={siteConfig.funnel.bofu.ctaTarget}
+    trialCtaText={siteConfig.funnel.bofu.ctaText}
+  />
+
+  {pricingStats?.map((s) => (
+    <StatisticCitation stat={s.stat} source={s.source} sourceUrl={s.sourceUrl} />
+  ))}
+  {definitions?.map((d) => (
+    <DefinitionBlock term={d.term} definition={d.definition} />
+  ))}
+  {expertQuotes?.map((q) => (
+    <ExpertQuote quote={q.quote} personName={q.personName} jobTitle={q.jobTitle} organization={q.organization} />
+  ))}
+  {answers?.map((a) => (
+    <AnswerBlock question={a.q} answer={a.a} />
+  ))}
+
+  <FaqSection
+    faqs={faqs}
+    heading="Frequently Asked Questions"
+    showBottomCta={false}
+    ctaVariant="compact"
+  />
+
+  {relatedPages.length > 0 && (
+    <RelatedPages
+      pages={relatedPageLinks}
+      stage={buyerStage}
+      variant="editorial"
+    />
+  )}
+</ArticleLayout>

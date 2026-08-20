@@ -1,0 +1,11 @@
+$1,000,000. The single audit threshold under 2 CFR 200 Subpart F.
+
+If your organization expends $1,000,000 or more in federal awards during your fiscal year, a single audit is required. Different scope and fee than a standard financial statement audit.
+
+Two things to know about this number:
+
+It is expended, not received. If you drew down $400,000 in cash but accrued and spent $800,000 on federal grant activities during the year, you are over.
+
+It is total federal awards, including pass-through. State agencies and large nonprofits pass federal money through to subrecipients, and that money still counts. The pass-through entity should label funds with the Assistance Listing Number (formerly CFDA), but track it on your end too.
+
+If you are within shouting distance of the threshold, talk to your auditor before fiscal year-end, not after.

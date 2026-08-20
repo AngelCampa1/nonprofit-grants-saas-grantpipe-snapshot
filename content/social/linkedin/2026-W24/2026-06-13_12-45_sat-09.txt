@@ -1,0 +1,9 @@
+Board-designated is not donor-restricted.
+
+A board can set aside dollars for a building reserve, operating cushion, or future program.
+
+That internal designation still sits inside net assets without donor restrictions under FASB ASC 958.
+
+Donor restrictions come from outside the organization. Board designations come from governance.
+
+Mixing those two makes financial statements harder to read.

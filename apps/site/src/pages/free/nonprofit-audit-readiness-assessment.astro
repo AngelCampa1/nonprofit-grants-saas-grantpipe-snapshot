@@ -1,0 +1,22 @@
+---
+export const prerender = true
+import "../../styles/global.css"
+import { getEntry, render } from "astro:content"
+import { getContentEntrySlug } from "@/lib/content-entry-slug"
+import LeadMagnetPage from "@grantpipe/ui/site/components/lead-magnet-page.astro"
+import { NonprofitAuditReadinessAssessment as Assessment } from "@grantpipe/ui/site/components/nonprofit-audit-readiness-assessment"
+import { getPublicApiBaseUrl } from "@grantpipe/ui/site/lib/public-api-url"
+import { siteConfig, getSignupCtaTarget } from "@/config/site"
+
+const entry = await getEntry("lead-magnets", "nonprofit-audit-readiness-assessment")
+if (!entry) throw new Error("Audit readiness assessment entry not found")
+const { Content } = await render(entry)
+const leadMagnetEntry = { ...entry, slug: getContentEntrySlug(entry) }
+const apiUrl = getPublicApiBaseUrl()
+---
+<LeadMagnetPage entry={leadMagnetEntry} config={siteConfig}>
+  <Content />
+</LeadMagnetPage>
+<div class="px-4 max-w-4xl mx-auto pb-16">
+  <Assessment client:load apiUrl={apiUrl} appUrl={getSignupCtaTarget()} />
+</div>

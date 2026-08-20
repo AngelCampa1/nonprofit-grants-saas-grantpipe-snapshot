@@ -1,0 +1,7 @@
+Before: "I think we have about $42K left on the Clinic Capacity grant. Let me check with Finance and get back to you."
+
+After: "$41,847 remaining. Released $8,200 last week against the equipment line. SF-425 is due in 14 days. Drawdown is set up for the 22nd."
+
+The difference is not the amount of work. It is where the answer lives. In the first version, the answer is reconstructed every time someone asks. In the second, the answer is a query. The work happens once, when the transaction is recorded, not every time a board member or program officer asks for a number.
+
+Compliance work is mostly the cost of not having the answer ready. Once the answer is ready, the cost goes away.

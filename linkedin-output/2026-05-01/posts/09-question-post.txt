@@ -1,0 +1,13 @@
+A $3M nonprofit typically runs Bloomerang for donors, QuickBooks Online for accounting, a spreadsheet for grants, Google Workspace for documents, and a separate payroll system.
+
+That stack is normal. It is also where the operations manager's week disappears.
+
+The role's effectiveness correlates almost perfectly with the fragmentation of the toolset the staff uses. Every extra system is another integration, another vendor renewal, another set of permissions, another place audit evidence might live.
+
+The question for ops managers reading this: if you wrote down every system the development, finance, and program teams touch in a normal week, how many show up?
+
+For most $500K to $10M nonprofits the count lands between 8 and 14.
+
+What is the one consolidation that would actually free up the most time — not the most license cost, the most time?
+
+#nonprofitoperations #saas #toolfragmentation

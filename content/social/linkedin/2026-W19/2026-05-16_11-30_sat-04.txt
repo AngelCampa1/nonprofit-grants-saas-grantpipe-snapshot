@@ -1,0 +1,5 @@
+Conditional contribution: a gift that depends on a future event the donor specifies, like a matching threshold or a program milestone. Under FASB ASC 958-605, you do not recognize revenue until the condition is substantially met.
+
+Unconditional contribution: a gift the donor has handed over with no measurable barrier. Recognize on receipt.
+
+Most "restricted vs unrestricted" confusion is actually conditional vs unconditional confusion. Worth checking on a quiet Saturday.

@@ -1,0 +1,108 @@
+---
+/**
+ * ViewportAwareDetails — a <details> wrapper that stays closed on mobile
+ * (≤ 639px) and opens automatically on wider viewports (≥ 640px).
+ *
+ * Props:
+ *   - open?: boolean — server-side initial open state (default false)
+ *   - class?: string — extra classes forwarded to the <details> element
+ *   - summaryClass?: string — extra classes forwarded to the <summary> element
+ *   - All other HTMLAttributes<"details"> are forwarded.
+ *
+ * Slots:
+ *   - summary — the trigger text / element (rendered inside <summary>)
+ *   - default — the expanded panel content
+ *
+ * Behaviour:
+ *   On load and on every resize event:
+ *   - If window.innerWidth >= 640 → set open=true
+ *   - If window.innerWidth < 640 → leave user's current state alone (first
+ *     load starts closed; user can toggle and their state is preserved until
+ *     the next resize event that crosses the 640px boundary)
+ *
+ * Tap target: the <summary> element gets min-height: 48px to meet the 48px
+ * minimum tap target requirement.
+ */
+import type { HTMLAttributes } from "astro/types";
+
+type DetailsAttrs = Omit<HTMLAttributes<"details">, "class">;
+
+interface Props extends DetailsAttrs {
+  /** Extra classes forwarded to the <details> element. */
+  class?: string;
+  /** Extra classes forwarded to the <summary> element. */
+  summaryClass?: string;
+  /** Server-side initial open state. Defaults to false. */
+  open?: boolean;
+}
+
+const {
+  class: className,
+  summaryClass,
+  open = false,
+  ...rest
+} = Astro.props;
+
+const detailsClasses = ["gp-viewport-details", className]
+  .filter(Boolean)
+  .join(" ");
+
+const summaryClasses = ["gp-viewport-details__summary", summaryClass]
+  .filter(Boolean)
+  .join(" ");
+---
+
+<details class={detailsClasses} open={open || undefined} {...rest}>
+  <summary class={summaryClasses}>
+    <slot name="summary" />
+  </summary>
+  <slot />
+</details>
+
+<script>
+  function syncViewportDetails(): void {
+    const isWide = window.innerWidth >= 640;
+    const detailsEls = document.querySelectorAll<HTMLDetailsElement>(
+      ".gp-viewport-details",
+    );
+    detailsEls.forEach((el) => {
+      if (isWide) {
+        el.open = true;
+      }
+      // On narrow viewports, leave user's toggle state as-is.
+    });
+  }
+
+  syncViewportDetails();
+
+  let resizeTimer: ReturnType<typeof setTimeout> | undefined;
+  function handleResize(): void {
+    clearTimeout(resizeTimer);
+    resizeTimer = setTimeout(syncViewportDetails, 100);
+  }
+
+  window.addEventListener("resize", handleResize, { passive: true });
+
+  document.addEventListener(
+    "astro:before-swap",
+    () => {
+      window.removeEventListener("resize", handleResize);
+      clearTimeout(resizeTimer);
+    },
+    { once: true },
+  );
+</script>
+
+<style>
+  .gp-viewport-details__summary {
+    display: flex;
+    align-items: center;
+    min-height: 3rem; /* 48px tap target */
+    cursor: pointer;
+    list-style: none;
+  }
+
+  .gp-viewport-details__summary::-webkit-details-marker {
+    display: none;
+  }
+</style>

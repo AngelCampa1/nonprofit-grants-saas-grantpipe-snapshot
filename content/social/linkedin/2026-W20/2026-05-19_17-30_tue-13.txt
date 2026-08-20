@@ -1,0 +1,11 @@
+Four signs the restricted-fund tracking in your donor CRM is going to fail an audit.
+
+1. Fund balance is calculated by summing donations and subtracting a manually entered "spent" number. No link to actual expenditures.
+
+2. Releases from restriction are recorded as a note on the gift, not as a journal entry against the fund.
+
+3. No schedule of restricted activity ties the fund balance back to the GL at period end.
+
+4. The "purpose" field is free-text, so the same restriction shows up as "Youth STEM," "Youth STEM Program," and "STEM youth grant" across three years of gifts.
+
+The donor CRM was not designed for fund accounting. FASB ASC 958 expects net assets with donor restrictions to be tracked and reported with balance-sheet rigor.

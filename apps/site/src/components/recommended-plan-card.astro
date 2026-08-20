@@ -1,0 +1,121 @@
+---
+import {
+  FOUNDER_LINKEDIN_URL,
+  getPlanListDisplayPrice,
+  getPricingPlan,
+} from "../../../../packages/shared/src/pricing";
+import { type PlanTier } from "../../../../packages/shared/src/constants";
+import { getSignupCtaTarget, siteConfig } from "@/config/site";
+
+interface Props {
+  /** The tier we recommend for this audience. */
+  tier: PlanTier;
+  /** Optional eyebrow label, defaults to "Recommended plan". */
+  label?: string;
+  /** Optional explanation rendered under the price. */
+  rationale?: string;
+}
+
+const { tier, label = "Recommended plan", rationale } = Astro.props;
+const plan = getPricingPlan(tier);
+const isEnterprise = tier === "enterprise";
+const ctaHref = isEnterprise
+  ? `mailto:${siteConfig.contactEmail}`
+  : getSignupCtaTarget({
+      plan: tier,
+      cycle: "annual",
+    });
+const annualListDisplay = getPlanListDisplayPrice(tier, "annual");
+---
+
+<aside class="gp-recommended-plan" data-recommended-plan={tier}>
+  <div class="gp-recommended-plan__head">
+    <p class="gp-recommended-plan__label">{label}</p>
+    <h3>{plan.name}</h3>
+    <p class="gp-recommended-plan__bestfit">Best for {plan.bestFit.toLowerCase()}.</p>
+  </div>
+  <div class="gp-recommended-plan__price">
+    <strong>{annualListDisplay.price}</strong>
+    <span>{annualListDisplay.billingContext}</span>
+  </div>
+  {rationale && <p class="gp-recommended-plan__rationale">{rationale}</p>}
+  <div class="gp-recommended-plan__actions">
+    <a class="gp-mkt-btn primary sm" href={ctaHref}>
+      {isEnterprise ? "Contact founder" : siteConfig.funnel.bofu.ctaText}
+    </a>
+    {isEnterprise && (
+      <a class="gp-mkt-btn ghost sm" href={FOUNDER_LINKEDIN_URL}>LinkedIn</a>
+    )}
+    <a class="gp-mkt-btn ghost sm" href="/pricing/">See full pricing</a>
+  </div>
+</aside>
+
+<style>
+  .gp-recommended-plan {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 0.75rem;
+    padding: 1.25rem 1.4rem;
+    margin: 1.75rem 0;
+    border-radius: 1rem;
+    background: color-mix(in srgb, var(--surface-secondary, #f6f4ee) 75%, transparent);
+    border: 1px solid color-mix(in srgb, var(--color-primary-500, #047857) 35%, transparent);
+  }
+  @media (min-width: 720px) {
+    .gp-recommended-plan {
+      grid-template-columns: 1.4fr 1fr;
+      align-items: center;
+    }
+    .gp-recommended-plan__rationale,
+    .gp-recommended-plan__actions {
+      grid-column: 1 / -1;
+    }
+  }
+  .gp-recommended-plan__label {
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    font-size: 0.72rem;
+    font-weight: 600;
+    color: var(--color-primary-800, #064e3b);
+    margin: 0 0 0.25rem;
+  }
+  .gp-recommended-plan__head h3 {
+    margin: 0 0 0.25rem;
+    font-size: 1.2rem;
+  }
+  .gp-recommended-plan__bestfit {
+    margin: 0;
+    color: var(--color-neutral-700, #4b5563);
+    font-size: 0.85rem;
+  }
+  .gp-recommended-plan__price {
+    display: flex;
+    flex-direction: column;
+    gap: 0.1rem;
+  }
+  .gp-recommended-plan__price strong {
+    font-size: 1.4rem;
+    line-height: 1.1;
+  }
+  .gp-recommended-plan__price span {
+    font-size: 0.78rem;
+    color: var(--color-neutral-700, #4b5563);
+  }
+  .gp-recommended-plan__price .gp-recommended-plan__list {
+    color: var(--color-neutral-600, #4b5563);
+  }
+  .gp-recommended-plan__price .gp-recommended-plan__promo {
+    color: var(--color-primary-800, #064e3b);
+    font-weight: 700;
+  }
+  .gp-recommended-plan__rationale {
+    margin: 0;
+    font-size: 0.9rem;
+    color: var(--color-neutral-700, #4b5563);
+  }
+  .gp-recommended-plan__actions {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.6rem;
+  }
+</style>

@@ -1,0 +1,13 @@
+The de minimis indirect cost rate is 15% of MTDC, raised from 10% by the 2024 Uniform Guidance revision under 2 CFR 200.414(f).
+
+Eligible nonprofits — those that have never received a federally negotiated indirect cost rate — can claim it on federal awards without going through NICRA negotiation.
+
+Two facts that get organizations into trouble.
+
+First, the base is Modified Total Direct Costs, not total direct costs. MTDC excludes equipment, capital expenditures, participant support, and sub-award amounts above $50,000 per subcontract. Applying 15% to the full budget is a recurring audit finding.
+
+Second, once a NICRA is executed, there is no return to de minimis — even after the NICRA period closes.
+
+Urban Institute analysis of Form 990 data found roughly 25% of eligible nonprofits claim no indirect cost recovery at all. That is real money left unrecovered.
+
+#indirectcosts #deminimis #grantcompliance #2cfr200

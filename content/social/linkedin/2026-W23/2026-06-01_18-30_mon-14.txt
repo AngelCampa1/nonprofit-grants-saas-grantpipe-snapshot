@@ -1,0 +1,13 @@
+A grant can live in four places at once.
+
+In the CRM, it is a relationship.
+
+In the grant tracker, it is a deadline set.
+
+In the accounting system, it is revenue, restriction, and expense coding.
+
+In the shared drive, it is evidence.
+
+If those places disagree, the board packet becomes a negotiation.
+
+The goal is boring: one record that lets each team see its own view without inventing a new truth.

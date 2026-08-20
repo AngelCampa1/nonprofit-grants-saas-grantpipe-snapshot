@@ -1,0 +1,11 @@
+Picture this: three different versions of the same grant budget at a Development office. One in QuickBooks, one in a Google Sheet, one in the donor CRM. None of them are wrong. They are all incomplete.
+
+The QuickBooks version has the GL detail but no funder reporting categories.
+
+The Sheet has the funder categories but the actuals are a month stale.
+
+The CRM has the award amount and the contact but no spend data at all.
+
+Three systems, one truth split into thirds. The hand-off between Development and Finance happens by copying numbers between tabs. Every quarter. By a person whose actual job is something else.
+
+Single source of truth is not a slogan. It is the moment one number stops needing reconciliation.

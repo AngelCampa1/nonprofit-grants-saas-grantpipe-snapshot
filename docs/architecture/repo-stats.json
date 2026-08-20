@@ -1,0 +1,91 @@
+{
+  "generatedBy": "scripts/repo-stats.ts",
+  "stats": {
+    "trackedFiles": 5639,
+    "sourceFiles": 1117,
+    "testFiles": 905,
+    "unitTestFiles": 686,
+    "componentTestFiles": 219,
+    "e2eSpecFiles": 13,
+    "apiDomains": 37,
+    "migrations": 95,
+    "webRoutes": 88,
+    "contentEntries": 1526,
+    "sourceLines": 250218,
+    "testLines": 388074,
+    "commits": 4266,
+    "firstCommitDate": "2026-04-07",
+    "lastCommitDate": "2026-08-07",
+    "dbTables": 115,
+    "dbIndexes": 167,
+    "testCases": 18248,
+    "endpoints": {
+      "get": 142,
+      "post": 139,
+      "put": 6,
+      "patch": 53,
+      "delete": 43,
+      "total": 383
+    },
+    "churn": {
+      "insertions": 3756905,
+      "deletions": 412287
+    },
+    "coverage": [
+      {
+        "workspace": "apps/api",
+        "coverage": {
+          "lines": 99.32,
+          "statements": 99.32,
+          "functions": 99.83,
+          "branches": 96.95
+        }
+      },
+      {
+        "workspace": "apps/site",
+        "coverage": {
+          "lines": 99.13,
+          "statements": 99.13,
+          "functions": 99.14,
+          "branches": 96.39
+        }
+      },
+      {
+        "workspace": "apps/web",
+        "coverage": {
+          "lines": 99.56,
+          "statements": 99.56,
+          "functions": 99.35,
+          "branches": 97.24
+        }
+      },
+      {
+        "workspace": "packages/db",
+        "coverage": {
+          "lines": 100,
+          "statements": 100,
+          "functions": 100,
+          "branches": 100
+        }
+      },
+      {
+        "workspace": "packages/shared",
+        "coverage": {
+          "lines": 99.97,
+          "statements": 99.97,
+          "functions": 99.56,
+          "branches": 99.22
+        }
+      },
+      {
+        "workspace": "packages/ui",
+        "coverage": {
+          "lines": 99.63,
+          "statements": 99.63,
+          "functions": 100,
+          "branches": 98.18
+        }
+      }
+    ]
+  }
+}

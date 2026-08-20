@@ -1,0 +1,15 @@
+Picture an Executive Director who has signed two failed implementation contracts. The vendor demo was clean. Configuration ran past the timeline. The consultant invoice came in over estimate. The team adopted maybe a third of the system.
+
+A few things that look different on a system built for this size of org from the start.
+
+Public pricing on the marketing page. A number, by tier, with what is included.
+
+No setup fee. The product either works on your real data in week one or it does not.
+
+Month-to-month billing. Annual contracts make sense for vendors. They make sense for buyers only when the product is already proven inside the org.
+
+Grants and funds modeled correctly under FASB ASC 958. Not bolted onto a contact record.
+
+These are not features. They are signals about who the product is built for.
+
+See current offer terms at grantpipe.com/pricing.

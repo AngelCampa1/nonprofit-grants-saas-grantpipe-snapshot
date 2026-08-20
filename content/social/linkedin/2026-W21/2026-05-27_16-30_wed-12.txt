@@ -1,0 +1,11 @@
+We decided early that grants and funds would be separate entities in the data model, with a many-to-many table between them.
+
+Most simpler grant tools collapse the two. One grant equals one fund. It feels right at first.
+
+It breaks the moment you take a $200K federal pass-through that funds parts of three programs, or a multi-year foundation grant where year one is unrestricted operating and year two is purpose-restricted.
+
+FASB ASC 958 cares about the restriction, not the funding source. Sage Intacct and Blackbaud model it the same way. The audit binder needs both views.
+
+So the model has grants. It has funds. It has grant_fund_allocations between them. The UI hides the join when you do not need it and shows it when you do.
+
+That is the kind of decision that pays off in year three, not week one. We made it in week one anyway.

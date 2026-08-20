@@ -1,0 +1,5 @@
+Before: a Development Director enters a $50,000 multi-year pledge in the donor CRM as a single record. The Finance Director booked $25,000 this fiscal year and $25,000 next. The 990 prep team asks which version is right. Both answers are partially right.
+
+After: the pledge lives once. It carries the donor, the restriction language, the schedule, and the conditional clauses. Finance and Development read the same record. The 990 prep team pulls a report instead of asking a question.
+
+The shape of the data has to match the shape of the work. A pledge is not a transaction. It is a schedule of obligations a donor has made and a schedule of receivables an organization has accepted. Treating it as a row in a CRM is how you end up with three different correct answers.

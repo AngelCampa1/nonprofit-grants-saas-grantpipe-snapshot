@@ -1,0 +1,960 @@
+---
+import { getPublicApiBaseUrl } from "@grantpipe/ui/site/lib/public-api-url"
+import "../styles/global.css";
+import { getCollection } from "astro:content";
+import { getContentEntrySlug } from "@/lib/content-entry-slug";
+import BaseLayout from "@grantpipe/ui/site/layouts/base-layout.astro";
+import SiteHeader from "@grantpipe/ui/site/components/site-header.astro";
+import SiteFooter from "@grantpipe/ui/site/components/site-footer.astro";
+import BreadcrumbNav from "@grantpipe/ui/site/components/breadcrumb-nav.astro";
+import FaqSection from "@grantpipe/ui/site/components/faq-section.astro";
+import { ExitIntentPopup } from "@grantpipe/ui/site/components/exit-intent-popup";
+import { buildOsPositioningViewScript } from "@grantpipe/ui/site/lib/analytics";
+import { resolveExitPopupProps } from "@grantpipe/ui/site/lib/exit-popup-props";
+import SchemaMarkup from "@grantpipe/ui/site/seo/schema-markup.astro";
+import {
+  buildFaqPageSchema,
+  buildProductSchema,
+  buildSoftwareApplicationSchema,
+} from "@grantpipe/ui/site/lib/schema-builders";
+import { buildGraph, withId } from "@grantpipe/ui/site/lib/schema-graph";
+import {
+  GRANTPIPE_OS_MODULES,
+  GRANTPIPE_OS_PLAN_LANGUAGE,
+} from "../../../../packages/shared/src/positioning";
+import {
+  getPlanDisplayPrice,
+} from "../../../../packages/shared/src/pricing";
+import { siteConfig, getSignupCtaTarget } from "@/config/site";
+import { getAppLoginUrl } from "@/lib/app-url";
+import { resolveExitLeadMagnetOffer } from "@/lib/lead-magnet-routing";
+import {
+  getMarketedCapabilities,
+  getProductAnchorLinks,
+} from "@/lib/marketed-capabilities";
+import ExplainerVideo from "@/components/explainer-video.astro";
+import VideoEmbed from "@/components/video-embed.astro";
+import ProductProofSection from "@/components/product-proof-section.astro";
+import PricingSummaryBlock from "@/components/pricing-summary-block.astro";
+import { getVideoForPage } from "@grantpipe/shared";
+import { videoSchema } from "@/lib/video-schema";
+import ProductSurface from "@/components/product-surface.astro";
+
+const contextualVideo = getVideoForPage("/product");
+const capabilities = getMarketedCapabilities();
+const featureEntries = await getCollection("features");
+const featureDirectory = featureEntries
+  .map((feature) => ({
+    entry: feature,
+    title: feature.data.title,
+    description: feature.data.description,
+    href: `/features/${getContentEntrySlug(feature)}`,
+    cluster: feature.data.topicCluster,
+  }))
+  .sort((a, b) => a.title.localeCompare(b.title));
+const anchorLinks = [
+  { label: "Product tour", href: "/product/#product-tour" },
+  ...getProductAnchorLinks(),
+  { label: "All feature pages", href: "/product/#feature-directory" },
+];
+const osModules = [...GRANTPIPE_OS_MODULES];
+const osModuleBenefits: Record<string, string> = {
+  "Compliance calendar": "See every deadline and renewal in one view. Track each review task too.",
+  "Evidence trail": "Keep documents and approvals on the grant record. They stay ready for audit.",
+  "Restricted funds": "See restricted balances and how much is left to spend. No fund spreadsheets to rebuild.",
+  "Grant pipeline": "Track each grant from draft to award. See the funder and the due date.",
+  "Donor CRM": "Connect donor history to grants and funds. It lives on the same record.",
+  "Multi-source grant pipeline": "Search Grants.gov. Add non-federal grants to the same place.",
+  "Fund accounting": "Match drawdowns and spending right on the grant record.",
+  "Auditor and funder portal": "Give outside reviewers limited access. See a full log of what they viewed.",
+};
+// Sticky walkthrough steps group the eight OS modules into four narrative
+// beats. Every module name and benefit line still renders as static copy in
+// the full grid below the walkthrough — this grouping only drives which
+// module the sticky visual highlights as each copy block scrolls into view.
+const osWalkthroughSteps = [
+  {
+    stepLabel: "01 · Track it",
+    modules: ["Compliance calendar", "Grant pipeline"] as const,
+    heading: "Every deadline and every grant, one shared view.",
+  },
+  {
+    stepLabel: "02 · Prove it",
+    modules: ["Evidence trail", "Auditor and funder portal"] as const,
+    heading: "Documents and reviewer access stay on the record.",
+  },
+  {
+    stepLabel: "03 · Fund it",
+    modules: ["Restricted funds", "Fund accounting"] as const,
+    heading: "Restricted balances and drawdowns, connected to the grant.",
+  },
+  {
+    stepLabel: "04 · Grow it",
+    modules: ["Donor CRM", "Multi-source grant pipeline"] as const,
+    heading: "Donor history and new opportunities, same workspace.",
+  },
+];
+const canonicalUrl = `https://${siteConfig.domain}/product/`;
+const primarySignupHref = getSignupCtaTarget();
+const productFaqs = siteConfig.faqs.slice(0, 6);
+const leadMagnets = await getCollection("lead-magnets");
+const exitLeadMagnet = resolveExitLeadMagnetOffer(siteConfig, leadMagnets, {
+  family: "solution",
+});
+const exitPopupProps =
+  siteConfig.exitPopup?.enabled !== false
+    ? resolveExitPopupProps(siteConfig)
+    : undefined;
+const publicApiUrl = getPublicApiBaseUrl()
+const osPositioningViewScript = buildOsPositioningViewScript("product", "/product/")
+const pricingUrl = `https://${siteConfig.domain}/pricing/`;
+const productTourUrl = `${canonicalUrl}#product-tour`;
+const productTourYoutubeId = "o-FVZeO3rjw";
+const productTourEmbedUrl = `https://www.youtube-nocookie.com/embed/${productTourYoutubeId}`;
+const starterSchemaPrice = getPlanDisplayPrice("starter", "monthly");
+const trustFacts = [
+  "1-month free trial",
+  "No credit card",
+  "No setup fee",
+  "Unlimited users",
+  "Public pricing",
+  "Built for US mid-sized nonprofits",
+];
+const productProofStats = [
+  { value: String(osModules.length), label: "Product areas in one shared workspace" },
+  { value: String(featureDirectory.length), label: "Feature pages covering real workflows" },
+  { value: "Unlimited", label: "Users on every plan" },
+  { value: "1 month", label: "Free trial, no credit card" },
+];
+const productObjections = [
+  {
+    question: "Will this replace our CRM?",
+    answer:
+      "GrantPipe includes donor CRM, grant pipeline, restricted funds, compliance, and reporting in one workspace. Use it to get off parallel spreadsheets and trackers.",
+  },
+  {
+    question: "How hard is migration?",
+    answer:
+      "Guided CSV import brings in donor, grant, and fund history during the trial. Rollout starts with the workflows your team will actually use.",
+  },
+  {
+    question: "Do we need an admin?",
+    answer:
+      "No. GrantPipe is built for staff-led setup. Public pricing, no setup fee, no admin role needed.",
+  },
+  {
+    question: "Can finance trust the restricted-fund model?",
+    answer:
+      "Restricted funds follow FASB ASC 958. Grants and funds are separate records, linked through allocations with activity history and evidence attached.",
+  },
+];
+const productOffers = (["starter", "growth", "audit_ready"] as const).map((tier) => ({
+    price: getPlanDisplayPrice(tier, "monthly"),
+    url: pricingUrl,
+    availability: "https://schema.org/InStock",
+  }));
+const productSchema = buildProductSchema({
+  name: siteConfig.name,
+  description: siteConfig.metaDescription ?? siteConfig.tagline,
+  url: canonicalUrl,
+  image: `https://${siteConfig.domain}${siteConfig.defaultOgImage}`,
+  category: siteConfig.product.category,
+  brand: { name: siteConfig.name },
+  offers: productOffers,
+});
+const softwareApplicationSchema = buildSoftwareApplicationSchema({
+  name: siteConfig.name,
+  description: siteConfig.metaDescription ?? siteConfig.tagline,
+  url: canonicalUrl,
+  image: `https://${siteConfig.domain}${siteConfig.defaultOgImage}`,
+  brand: { name: siteConfig.name },
+  featureList: osModules,
+  offers: {
+    price: starterSchemaPrice,
+    url: pricingUrl,
+    availability: "https://schema.org/InStock",
+  },
+});
+const explainerVideoSchema = {
+  "@type": "VideoObject",
+  name: "GrantPipe: One Workspace for Grants, Funds, Donors, and Compliance",
+  description:
+    "A 1-minute overview of how GrantPipe connects donor context, grant pipelines, restricted funds, compliance deadlines, documents, reports, and audit trails for nonprofits.",
+  thumbnailUrl: [`https://${siteConfig.domain}/grantpipe-dashboard.png`],
+  uploadDate: "2026-05-12",
+  duration: "PT1M5S",
+  embedUrl: "https://www.youtube-nocookie.com/embed/dd2pJ6ZdEHI",
+};
+const productTourVideoSchema = {
+  "@type": "VideoObject",
+  name: "GrantPipe Product Tour: Grants, Restricted Funds, Compliance, and Reporting",
+  description:
+    "A 5-minute GrantPipe product tour following one active grant through dashboard status, grant portfolio, restricted fund context, spend-down, compliance deadlines, documents, evidence, reports, access, and activity history.",
+  thumbnailUrl: [`https://${siteConfig.domain}/grantpipe-grants.png`],
+  uploadDate: "2026-05-13",
+  duration: "PT5M",
+  embedUrl: productTourEmbedUrl,
+  url: productTourUrl,
+};
+const productPageGraph = buildGraph([
+  withId(productSchema, `${canonicalUrl}#product`),
+  withId(softwareApplicationSchema, `${canonicalUrl}#software-application`),
+  withId(explainerVideoSchema, `${canonicalUrl}#overview-video`),
+  withId(productTourVideoSchema, `${canonicalUrl}#product-tour`),
+  withId(buildFaqPageSchema(productFaqs), `${canonicalUrl}#faq`),
+]);
+
+---
+
+<BaseLayout
+  title={`Product | ${siteConfig.name}`}
+  description="See how GrantPipe's compliance-first grant management system connects awards, restricted funds, deadlines, donor context, evidence, reports, and audit trails in one workspace."
+  canonicalUrl={canonicalUrl}
+  siteName={siteConfig.name}
+  ogType="website"
+  twitterSite={siteConfig.social?.twitterHandle}
+  theme={siteConfig.theme}
+  fonts={siteConfig.theme.fonts}
+  themeColor={siteConfig.theme.primary}
+  appleTouchIcon={siteConfig.appleTouchIcon}
+  siteUrl={`https://${siteConfig.domain}`}
+  siteLogo={siteConfig.logo?.light ? `https://${siteConfig.domain}${siteConfig.logo.light}` : undefined}
+  siteFounder={siteConfig.author}
+  siteSameAs={siteConfig.sameAs}
+>
+  <SiteHeader
+    slot="header"
+    siteName={siteConfig.name}
+    navItems={siteConfig.nav?.items}
+    ctaText={siteConfig.funnel.bofu.ctaText}
+    ctaHref={getSignupCtaTarget()}
+    loginHref={getAppLoginUrl()}
+    ctaVariant="primary"
+    ctaPill
+    logoLight={siteConfig.logo?.light}
+  >
+  </SiteHeader>
+
+  <div class="px-4 pb-20 pt-8 md:pt-12">
+    <div class="mx-auto max-w-7xl">
+      <BreadcrumbNav
+        items={[
+          { label: "Home", href: "/" },
+          { label: "Product", href: "/product" },
+        ]}
+        siteUrl={`https://${siteConfig.domain}`}
+      />
+
+      <section
+        class="relative overflow-hidden rounded-[1.4rem] border border-[color-mix(in_srgb,var(--color-neutral-300)_48%,transparent)] bg-[color-mix(in_srgb,var(--surface-primary)_98%,var(--surface-secondary))] px-6 py-8 shadow-[0_18px_42px_-32px_rgba(42,31,24,0.22)] md:px-8 md:py-12 xl:px-10"
+        data-section="hero"
+      >
+        <div class="absolute inset-x-0 top-0 h-px bg-[color-mix(in_srgb,var(--color-neutral-300)_48%,transparent)]"></div>
+        <div class="grid gap-12 lg:grid-cols-[minmax(0,1fr)_minmax(0,1fr)] lg:items-center">
+          <div class="max-w-xl">
+            <p class="gp-eyebrow-pill">How GrantPipe works</p>
+            <h1 class="gp-page-title mt-4">
+              Compliance-first grant management system for post-award work.
+            </h1>
+            <p class="gp-page-intro mt-5">
+              GrantPipe connects the records nonprofits need after an award is won. Track deadlines,
+              restricted funds, evidence, reports, donor context, fund accounting support, and audit
+              trails. Read the <a href="/resources/guides/compliance-first-grant-management-system/">compliance-first grant management system guide</a>
+              to see the category checklist.
+            </p>
+
+            <div class="mt-7 flex flex-col gap-3 sm:flex-row sm:items-center">
+              <a
+                href={primarySignupHref}
+                class="gp-mkt-btn primary"
+                data-cta-button=""
+                data-cta-page-family="product"
+                data-cta-buyer-stage="bofu"
+                data-cta-placement="product-primary"
+                data-cta-section="hero"
+                data-cta-intent="convert"
+                data-cta-target={primarySignupHref}
+              >
+                {siteConfig.funnel.bofu.ctaText}
+              </a>
+              <a
+                href="/pricing/"
+                class="gp-mkt-btn ghost"
+                data-cta-button=""
+                data-cta-page-family="product"
+                data-cta-buyer-stage="mofu"
+                data-cta-placement="product-secondary"
+                data-cta-section="hero"
+                data-cta-intent="evaluate"
+                data-cta-target="/pricing/"
+              >
+                See pricing and fit
+              </a>
+            </div>
+
+            <ul
+              class="mt-6 grid gap-2 border-y border-[color-mix(in_srgb,var(--color-neutral-300)_40%,transparent)] py-4 text-sm font-semibold text-[color:var(--color-neutral-800)] sm:grid-cols-2"
+              data-section="trust-strip"
+              aria-label="Verified GrantPipe trial and fit details"
+            >
+              {
+                trustFacts.map((fact) => (
+                  <li class="flex min-h-10 items-center gap-3">
+                    <span
+                      aria-hidden="true"
+                      class="h-1.5 w-1.5 shrink-0 rounded-full bg-[color:var(--color-primary-600)]"
+                    />
+                    <span>{fact}</span>
+                  </li>
+                ))
+              }
+            </ul>
+
+            <ul class="mt-8 grid gap-2 text-sm leading-6 text-[color:var(--color-neutral-700)]">
+              <li class="flex items-start gap-3">
+                <span aria-hidden="true" class="mt-2 h-1.5 w-1.5 shrink-0 rounded-full bg-[color:var(--color-primary-600)]"></span>
+                <span>Compliance deadlines, documents, and activity history stay review-ready.</span>
+              </li>
+              <li class="flex items-start gap-3">
+                <span aria-hidden="true" class="mt-2 h-1.5 w-1.5 shrink-0 rounded-full bg-[color:var(--color-primary-600)]"></span>
+                <span>Restricted funds and grant pipeline stay connected.</span>
+              </li>
+              <li class="flex items-start gap-3">
+                <span aria-hidden="true" class="mt-2 h-1.5 w-1.5 shrink-0 rounded-full bg-[color:var(--color-primary-600)]"></span>
+                <span>Donor CRM, Grants.gov search, non-federal opportunity tracking, and fund accounting in one workspace.</span>
+              </li>
+            </ul>
+          </div>
+
+          <div
+            class="rounded-[1.2rem] border border-[color-mix(in_srgb,var(--color-neutral-300)_44%,transparent)] bg-[color-mix(in_srgb,var(--surface-primary)_94%,var(--surface-secondary))] p-6 shadow-[0_18px_40px_-30px_rgba(17,24,39,0.2)] md:p-7"
+            aria-label="Shared record preview"
+          >
+            <div class="flex flex-wrap items-center justify-between gap-3 border-b border-[color-mix(in_srgb,var(--color-neutral-300)_42%,transparent)] pb-4">
+              <p class="gp-side-label text-[color:var(--color-neutral-700)]">Shared record</p>
+              <div class="flex items-center gap-2 flex-wrap">
+                <span class="inline-flex items-center rounded-full border border-[color-mix(in_srgb,var(--color-neutral-300)_60%,transparent)] px-2.5 py-1 text-xs font-medium text-[color:var(--color-neutral-500)]">
+                  Sample record
+                </span>
+                <span class="inline-flex items-center rounded-full bg-[color-mix(in_srgb,var(--color-accent-100)_72%,var(--surface-primary))] px-3 py-1.5 text-xs font-semibold text-[color:var(--color-accent-900)]">
+                  Review-ready workflow
+                </span>
+              </div>
+            </div>
+
+            <div class="mt-5 rounded-[1rem] border border-[color-mix(in_srgb,var(--color-primary-300)_44%,transparent)] bg-[color-mix(in_srgb,var(--color-primary-50)_54%,var(--surface-primary))] p-5">
+              <div class="flex flex-wrap items-start justify-between gap-3">
+                <div>
+                  <p class="gp-side-label text-[color:var(--color-primary-700)]">North County Literacy Fund</p>
+                  <p class="mt-2 font-heading text-xl leading-tight text-brand-text">
+                    Active award, current donor plan, next report already queued.
+                  </p>
+                </div>
+                <span class="rounded-full bg-[color-mix(in_srgb,var(--color-primary-100)_82%,transparent)] px-3 py-1.5 text-xs font-semibold text-[color:var(--color-primary-800)] whitespace-nowrap">
+                  Reporting due May 14
+                </span>
+              </div>
+              <div class="mt-5 grid gap-4 sm:grid-cols-3">
+                <div class="gp-stat-callout">
+                  <span class="gp-stat-callout__value">$85,000</span>
+                  <span class="gp-stat-callout__label">Current ask linked to same record</span>
+                </div>
+                <div class="gp-stat-callout">
+                  <span class="gp-stat-callout__value">$186,240</span>
+                  <span class="gp-stat-callout__label">Restricted balance visible to finance</span>
+                </div>
+                <div class="gp-stat-callout">
+                  <span class="gp-stat-callout__value">Live</span>
+                  <span class="gp-stat-callout__label">Audit trail and acknowledgment attached</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="mt-4 flex flex-wrap items-center gap-x-5 gap-y-2 text-xs font-medium text-[color:var(--color-neutral-700)]">
+              <span class="inline-flex items-center gap-2">
+                <span aria-hidden="true" class="h-1.5 w-1.5 rounded-full bg-[color:var(--color-primary-600)]"></span>
+                4 live asks
+              </span>
+              <span class="inline-flex items-center gap-2">
+                <span aria-hidden="true" class="h-1.5 w-1.5 rounded-full bg-[color:var(--color-primary-600)]"></span>
+                7 reports queued
+              </span>
+              <span class="inline-flex items-center gap-2">
+                <span aria-hidden="true" class="h-1.5 w-1.5 rounded-full bg-[color:var(--color-primary-600)]"></span>
+                April close in progress
+              </span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="gp-proof-band mt-8 rounded-[1.2rem]" data-section="proof">
+        <div class="gp-proof-band__grid px-6 md:px-7">
+          {productProofStats.map((stat) => (
+            <div class="gp-proof-stat">
+              <span class="gp-proof-stat__value">{stat.value}</span>
+              <span class="gp-proof-stat__label">{stat.label}</span>
+            </div>
+          ))}
+        </div>
+      </section>
+
+      <ExplainerVideo
+        eyebrow="1-minute overview"
+        title="See GrantPipe in 1 minute"
+        body="Watch the operating model end to end: donors, awards, restricted funds, spend-down, reporting, and audit evidence in one shared workspace."
+        ctaHref={primarySignupHref}
+        ctaLabel="Start 1-month free trial"
+      />
+
+      <nav
+        class="scroll-in mt-8 rounded-[1.2rem] border border-[color-mix(in_srgb,var(--color-neutral-300)_44%,transparent)] bg-[color-mix(in_srgb,var(--surface-primary)_96%,var(--surface-secondary))] px-5 py-5 shadow-[0_14px_32px_-28px_rgba(42,31,24,0.18)] md:px-6"
+        aria-label="How GrantPipe works sections"
+        data-section="page-nav"
+      >
+        <div class="flex flex-col gap-4 md:flex-row md:items-center md:justify-between">
+          <div class="max-w-xl">
+            <p class="gp-side-label text-[color:var(--color-neutral-700)]">How GrantPipe works</p>
+            <p class="mt-2 text-sm leading-6 text-[color:var(--color-neutral-700)]">
+              Jump to any section: compliance calendar, evidence trail, restricted funds, grant pipeline, donor CRM, accounting, and rollout.
+            </p>
+          </div>
+          <div class="grid gap-3 sm:grid-cols-2 xl:flex xl:flex-wrap xl:justify-end">
+            {anchorLinks.map((link) => (
+              <a
+                href={`#${link.href.split("#")[1]}`}
+                class="inline-flex min-h-11 min-w-11 items-center justify-center rounded-full border border-[color-mix(in_srgb,var(--color-neutral-300)_58%,transparent)] bg-[color-mix(in_srgb,var(--surface-primary)_92%,var(--surface-secondary))] px-4 text-center text-sm font-semibold text-[color:var(--color-neutral-800)] no-underline transition hover:border-[color:var(--color-primary-300)] hover:bg-[color-mix(in_srgb,var(--color-primary-50)_70%,var(--surface-primary))]"
+              >
+                {link.label}
+              </a>
+            ))}
+          </div>
+        </div>
+      </nav>
+
+      <ExplainerVideo
+        id="product-tour"
+        eyebrow="5-minute product tour"
+        title="Follow one grant from dashboard to evidence and reporting"
+        body="Watch a full GrantPipe workflow: dashboard status, grant portfolio, award record, restricted fund balance, spend-down, compliance deadlines, documents, evidence bundles, reports, role-based access, and activity history."
+        ctaHref={primarySignupHref}
+        ctaLabel="Start 1-month free trial"
+        posterSrc="/grantpipe-grants.png"
+        posterAlt="GrantPipe grant portfolio preview"
+        youtubeId={productTourYoutubeId}
+        iframeTitle="GrantPipe 5-minute product tour video"
+        playLabel="Play the GrantPipe 5-minute product tour"
+      />
+
+      <section
+        class="gp-section alt mt-8 rounded-[1.2rem]"
+        data-section="os-modules"
+      >
+        <div class="scroll-in max-w-2xl px-6 md:px-7">
+          <p class="gp-kicker--accent">GrantPipe product areas</p>
+          <h2 class="gp-section-title mt-3">
+            Eight modules. One shared workspace.
+          </h2>
+          <p class="gp-section-copy mt-3">
+            {GRANTPIPE_OS_PLAN_LANGUAGE}
+          </p>
+        </div>
+
+        <div class="gp-os-walkthrough mt-7 px-6 md:px-7" data-os-walkthrough>
+          <div class="gp-os-walkthrough__copy">
+            {osWalkthroughSteps.map((step, index) => (
+              <div
+                class="gp-os-walkthrough__step scroll-in"
+                data-os-step={index}
+                aria-label={step.heading}
+              >
+                <p class="gp-side-label text-[color:var(--color-primary-700)]">{step.stepLabel}</p>
+                <h3 class="mt-2 font-heading text-lg leading-tight text-brand-text">
+                  {step.heading}
+                </h3>
+                <ul class="gp-list--accent mt-4">
+                  {step.modules.map((moduleName) => (
+                    <li>
+                      <span class="block text-sm font-semibold text-[color:var(--color-neutral-800)]">{moduleName}</span>
+                      {osModuleBenefits[moduleName] && (
+                        <span class="mt-1 block text-xs leading-5 text-[color:var(--color-neutral-600)]">{osModuleBenefits[moduleName]}</span>
+                      )}
+                    </li>
+                  ))}
+                </ul>
+              </div>
+            ))}
+          </div>
+
+          <div class="gp-os-walkthrough__visual-rail">
+            <div class="gp-os-walkthrough__visual" aria-hidden="true">
+              <p class="gp-side-label text-[color:var(--color-neutral-700)]">GrantPipe workspace</p>
+              <ul class="mt-4 grid gap-2.5">
+                {osModules.map((moduleName, index) => (
+                  <li
+                    class="gp-os-walkthrough__module"
+                    data-os-module={index}
+                  >
+                    <span class="gp-icon-chip gp-icon-chip--primary gp-os-walkthrough__dot" aria-hidden="true">
+                      {index + 1}
+                    </span>
+                    <span class="text-sm font-semibold leading-5 text-[color:var(--color-neutral-800)]">
+                      {moduleName}
+                    </span>
+                  </li>
+                ))}
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <hr class="gp-hairline--accent mt-7" />
+
+        <ul class="mt-5 grid gap-3 px-6 sm:grid-cols-2 md:px-7" aria-label="GrantPipe product areas">
+          {osModules.map((moduleName) => (
+            <li class="gp-card rounded-[0.95rem] border border-[color-mix(in_srgb,var(--color-neutral-300)_48%,transparent)] bg-[color-mix(in_srgb,var(--surface-primary)_92%,var(--surface-secondary))] px-4 py-3">
+              <span class="block text-sm font-semibold text-[color:var(--color-neutral-800)]">{moduleName}</span>
+              {osModuleBenefits[moduleName] && (
+                <span class="mt-1 block text-xs leading-5 text-[color:var(--color-neutral-600)]">{osModuleBenefits[moduleName]}</span>
+              )}
+            </li>
+          ))}
+        </ul>
+      </section>
+
+      {contextualVideo && (
+        <section
+          class="scroll-in mt-8 rounded-[1.2rem] border border-[color-mix(in_srgb,var(--color-neutral-300)_44%,transparent)] bg-[color-mix(in_srgb,var(--surface-primary)_96%,var(--surface-secondary))] p-6 shadow-[0_14px_32px_-28px_rgba(42,31,24,0.18)] md:p-7"
+          data-section="contextual-video"
+        >
+          <h2 class="gp-section-title mb-5">See it in action</h2>
+          <VideoEmbed
+            youtubeId={contextualVideo.youtubeId}
+            iframeTitle={contextualVideo.title}
+            playLabel={`Play: ${contextualVideo.shortTitle}`}
+          />
+          <script type="application/ld+json" set:html={JSON.stringify(videoSchema(contextualVideo))} />
+        </section>
+      )}
+
+      <div class="mt-10 space-y-7">
+        {capabilities.map((capability) => (
+          <ProductProofSection section={capability} id={capability.slug} />
+        ))}
+      </div>
+
+      <section
+        id="feature-directory"
+        class="gp-section mt-10 rounded-[1.3rem]"
+        data-section="feature-directory"
+      >
+        <div class="gp-feature-split px-6 md:px-7">
+          <div class="gp-feature-split__body scroll-in">
+            <p class="gp-kicker--accent">Feature pages</p>
+            <h2 class="gp-section-title mt-3">
+              Go deeper on any workflow.
+            </h2>
+            <p class="gp-section-copy mt-3">
+              Each feature page starts with the real problem, then shows how GrantPipe handles it, what evidence it tracks, and what records connect to it.
+            </p>
+            <div class="mt-6 flex flex-col gap-3 sm:flex-row">
+              <a href="/features/" class="gp-mkt-btn ghost">
+                Browse all features
+              </a>
+              <a href="/pricing/" class="gp-mkt-btn ghost">
+                Match features to plans
+              </a>
+            </div>
+          </div>
+
+          <div class="gp-feature-split__media scroll-in">
+            <ProductSurface
+              label="Feature directory"
+              variant="rows"
+              items={featureDirectory.slice(0, 5).map((feature) => ({
+                label: feature.title,
+                status: feature.cluster?.replace(/-/g, " ") ?? "feature",
+              }))}
+            />
+          </div>
+        </div>
+
+        <div class="mt-8 grid gap-3 px-6 sm:grid-cols-2 md:px-7">
+          {featureDirectory.map((feature) => (
+            <a
+              href={`/features/${getContentEntrySlug(feature.entry)}`}
+              class="gp-card scroll-in group rounded-[1.05rem] border border-[color-mix(in_srgb,var(--color-neutral-300)_46%,transparent)] bg-[color-mix(in_srgb,var(--surface-primary)_90%,transparent)] p-4 text-left no-underline transition hover:border-[color:var(--color-primary-300)] hover:bg-[color-mix(in_srgb,var(--color-primary-50)_60%,var(--surface-primary))]"
+            >
+              <span class="gp-side-label text-[color:var(--color-primary-700)]">
+                {feature.cluster?.replace(/-/g, " ") ?? "feature"}
+              </span>
+              <span class="mt-2 block text-base font-semibold leading-snug text-[color:var(--color-brand-text)]">
+                {feature.title}
+              </span>
+              <span class="mt-2 block text-sm leading-6 text-[color:var(--color-neutral-700)]">
+                {feature.description}
+              </span>
+            </a>
+          ))}
+        </div>
+      </section>
+
+      <section
+        class="gp-section alt scroll-in mt-10 rounded-[1.3rem]"
+        data-section="objections"
+      >
+        <div class="grid gap-8 px-6 md:px-7 lg:grid-cols-[minmax(0,0.72fr)_minmax(0,1.28fr)] lg:items-start">
+          <div>
+            <p class="gp-kicker--accent">Common fit questions</p>
+            <h2 class="gp-section-title mt-3">
+              Common questions before switching.
+            </h2>
+            <p class="gp-section-copy mt-3">
+              GrantPipe is built for mid-sized US nonprofits that need grant management, donor context, restricted funds, compliance, and finance in one place.
+            </p>
+            <div class="mt-6 flex flex-col gap-3 sm:flex-row lg:flex-col">
+              <a
+                href={primarySignupHref}
+                class="gp-mkt-btn primary"
+                data-cta-button=""
+                data-cta-page-family="product"
+                data-cta-buyer-stage="bofu"
+                data-cta-placement="product-primary"
+                data-cta-section="objections"
+                data-cta-intent="convert"
+                data-cta-target={primarySignupHref}
+              >
+                {siteConfig.funnel.bofu.ctaText}
+              </a>
+              <a
+                href="/pricing/"
+                class="gp-mkt-btn ghost"
+                data-cta-button=""
+                data-cta-page-family="product"
+                data-cta-buyer-stage="mofu"
+                data-cta-placement="product-secondary"
+                data-cta-section="objections"
+                data-cta-intent="evaluate"
+                data-cta-target="/pricing/"
+              >
+                See pricing and fit
+              </a>
+            </div>
+          </div>
+
+          <div class="grid gap-4 sm:grid-cols-2">
+            {productObjections.map((item) => (
+              <article class="gp-card scroll-in rounded-[1.1rem] border border-[color-mix(in_srgb,var(--color-neutral-300)_44%,transparent)] bg-[color-mix(in_srgb,var(--surface-primary)_88%,transparent)] p-5">
+                <h3 class="text-base font-semibold text-[color:var(--color-brand-text)]">
+                  {item.question}
+                </h3>
+                <p class="mt-3 text-sm leading-6 text-[color:var(--color-neutral-700)]">
+                  {item.answer}
+                </p>
+              </article>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      <PricingSummaryBlock recommendedTier="growth" />
+
+      <FaqSection
+        faqs={productFaqs}
+        heading="Product Questions"
+        emitSchema={false}
+        showBottomCta={false}
+        ctaVariant="compact"
+      />
+
+      <section
+        class="gp-section--emerald scroll-in mt-10 rounded-[1.3rem] p-6 md:p-8"
+        data-section="cta"
+      >
+        <div class="grid gap-6 lg:grid-cols-[minmax(0,1fr)_auto] lg:items-center">
+          <div class="max-w-2xl">
+            <p class="gp-kicker--accent">Run it with your own data next</p>
+            <h2 class="gp-section-title mt-3 max-w-[12ch]">
+              One clean view of what is funded, due, and ready.
+            </h2>
+            <p class="gp-section-copy mt-3">
+              Bring your grants, funds, donor records, and deadlines. GrantPipe shows what is funded, restricted, due, and ready for review, all from one workspace.
+            </p>
+          </div>
+
+          <div class="flex flex-col gap-3 sm:flex-row lg:justify-end">
+            <a
+              href={primarySignupHref}
+              class="gp-mkt-btn primary"
+              data-cta-button=""
+              data-cta-page-family="product"
+              data-cta-buyer-stage="bofu"
+              data-cta-placement="product-primary"
+              data-cta-section="closing"
+              data-cta-intent="convert"
+              data-cta-target={primarySignupHref}
+            >
+              {siteConfig.funnel.bofu.ctaText}
+            </a>
+            <a
+              href="/pricing/"
+              class="gp-mkt-btn ghost gp-mkt-btn--on-emerald"
+              data-cta-button=""
+              data-cta-page-family="product"
+              data-cta-buyer-stage="mofu"
+              data-cta-placement="product-secondary"
+              data-cta-section="closing"
+              data-cta-intent="evaluate"
+              data-cta-target="/pricing/"
+            >
+              See pricing and fit
+            </a>
+          </div>
+        </div>
+      </section>
+    </div>
+  </div>
+
+  <SiteFooter
+    slot="footer"
+    siteName={siteConfig.name}
+    tagline={siteConfig.tagline}
+    linkGroups={siteConfig.footer?.linkGroups}
+    legalLinks={siteConfig.footer?.legalLinks}
+    contactEmail={siteConfig.contactEmail}
+    logoLight={siteConfig.logo?.light}
+    captureVariant="compact"
+  />
+  {exitPopupProps && (
+    <ExitIntentPopup
+      client:load
+      apiUrl={publicApiUrl}
+      leadMagnet={exitLeadMagnet}
+      {...exitPopupProps}
+    />
+  )}
+  <SchemaMarkup graph={productPageGraph} />
+  <script is:inline set:html={osPositioningViewScript} />
+</BaseLayout>
+
+<style>
+  /*
+   * Closing CTA band override.
+   * `.gp-mkt-btn.ghost` is dark-ink-on-transparent by default, which reads as
+   * near-invisible on the `.gp-section--emerald` dark fill. This scoped
+   * override keeps the same ghost/pill shape and hover behavior but swaps to
+   * a white-on-transparent treatment for the one CTA that lives on the
+   * emerald band.
+   */
+  .gp-mkt-btn--on-emerald {
+    border-color: color-mix(in srgb, #ffffff 45%, transparent);
+    color: #ffffff;
+  }
+
+  .gp-mkt-btn--on-emerald:hover {
+    background: color-mix(in srgb, #ffffff 12%, transparent);
+    border-color: color-mix(in srgb, #ffffff 65%, transparent);
+  }
+
+  .gp-mkt-btn--on-emerald:active {
+    background: color-mix(in srgb, #ffffff 18%, transparent);
+  }
+
+  /*
+   * OS-modules sticky walkthrough.
+   * - Desktop/JS-on: the module rail becomes `position: sticky` and each
+   *   copy block's IntersectionObserver entry highlights its matching
+   *   modules in the rail as it scrolls through the viewport center.
+   * - Reduced-motion / no-JS / narrow viewports: the rail is static and
+   *   stacks below the copy. All copy and all module names/benefits are
+   *   present in the markup either way (see the full grid rendered right
+   *   after the walkthrough), so nothing here is required for readability.
+   */
+  .gp-os-walkthrough {
+    display: grid;
+    gap: 1.5rem;
+  }
+
+  .gp-os-walkthrough__copy {
+    display: grid;
+    gap: 1.25rem;
+  }
+
+  .gp-os-walkthrough__step {
+    padding: 1.25rem;
+    border-radius: var(--card-radius, 1rem);
+    border: 1px solid color-mix(in srgb, var(--color-neutral-300) 44%, transparent);
+    background: color-mix(in srgb, var(--surface-primary) 92%, var(--surface-secondary));
+  }
+
+  .gp-os-walkthrough__visual-rail {
+    /* Reserve height up front so activating sticky/JS state never shifts layout (CLS-safe). */
+    min-height: 1px;
+  }
+
+  .gp-os-walkthrough__visual {
+    padding: 1.25rem;
+    border-radius: var(--card-radius, 1rem);
+    border: 1px solid color-mix(in srgb, var(--color-primary-300) 40%, transparent);
+    background: color-mix(in srgb, var(--color-primary-50) 46%, var(--surface-primary));
+  }
+
+  .gp-os-walkthrough__module {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    padding: 0.5rem 0.6rem;
+    border-radius: 0.75rem;
+    opacity: 0.55;
+    transition:
+      opacity var(--transition-base, 240ms ease),
+      background-color var(--transition-base, 240ms ease),
+      transform var(--transition-base, 240ms ease);
+  }
+
+  .gp-os-walkthrough__module[data-os-active="true"] {
+    opacity: 1;
+    background: color-mix(in srgb, var(--surface-primary) 88%, transparent);
+    transform: translateX(0.15rem);
+  }
+
+  .gp-os-walkthrough__dot {
+    width: 1.75rem;
+    height: 1.75rem;
+    font-size: 0.75rem;
+    font-weight: 700;
+  }
+
+  /* Sticky visual only on viewports wide enough for the two-column layout,
+     and only when the visitor allows motion. Everywhere else this is a
+     normal stacked, non-sticky block. */
+  @media (min-width: 1024px) {
+    .gp-os-walkthrough {
+      grid-template-columns: minmax(0, 1fr) minmax(18rem, 0.85fr);
+      align-items: start;
+    }
+
+    .gp-os-walkthrough__visual-rail {
+      position: sticky;
+      top: 6rem;
+      align-self: start;
+    }
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    .gp-os-walkthrough__module {
+      transition: none;
+    }
+  }
+</style>
+
+<script>
+  // Highlights the OS modules in the sticky rail that match whichever
+  // walkthrough copy block is currently in view. Progressive enhancement
+  // only: every module name/benefit already renders as static text in both
+  // the walkthrough copy blocks and the full grid below, so this script
+  // never gates content — it only adjusts which rail rows look emphasized.
+  (function () {
+    var activeObservers: IntersectionObserver[] = [];
+
+    function disconnectObservers() {
+      activeObservers.forEach(function (observer) {
+        observer.disconnect();
+      });
+      activeObservers = [];
+    }
+
+    function initOsWalkthrough() {
+      disconnectObservers();
+
+      var prefersReducedMotion =
+        typeof window.matchMedia === "function" &&
+        window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+
+      if (prefersReducedMotion || typeof IntersectionObserver === "undefined") {
+        return;
+      }
+
+      var walkthroughs = Array.prototype.slice.call(
+        document.querySelectorAll("[data-os-walkthrough]:not([data-os-walkthrough-bound])"),
+      );
+
+      walkthroughs.forEach(function (walkthrough) {
+        walkthrough.setAttribute("data-os-walkthrough-bound", "true");
+
+        var stepEls = Array.prototype.slice.call(
+          walkthrough.querySelectorAll("[data-os-step]"),
+        );
+        var moduleEls = Array.prototype.slice.call(
+          walkthrough.querySelectorAll("[data-os-module]"),
+        );
+
+        if (!stepEls.length || !moduleEls.length) {
+          return;
+        }
+
+        // Module indices (into the full osModules array) that each step
+        // highlights, keyed by the step's own index. Derived at runtime from
+        // each step block's rendered module names so this script never needs
+        // to duplicate the server-rendered grouping data.
+        var stepModuleIndexes = stepEls.map(function (stepEl) {
+          var moduleNames = Array.prototype.slice
+            .call(stepEl.querySelectorAll("span.font-semibold"))
+            .map(function (el) {
+              return el.textContent ? el.textContent.trim() : "";
+            });
+
+          return moduleEls
+            .filter(function (moduleEl) {
+              var label = moduleEl.querySelector("span:last-child");
+              var text = label && label.textContent ? label.textContent.trim() : "";
+              return moduleNames.indexOf(text) !== -1;
+            })
+            .map(function (moduleEl) {
+              return moduleEl.getAttribute("data-os-module");
+            });
+        });
+
+        function setActiveStep(stepIndex: number) {
+          var activeModuleIndexes = stepModuleIndexes[stepIndex] || [];
+          moduleEls.forEach(function (moduleEl) {
+            var isActive = activeModuleIndexes.indexOf(moduleEl.getAttribute("data-os-module")) !== -1;
+            if (isActive) {
+              moduleEl.setAttribute("data-os-active", "true");
+            } else {
+              moduleEl.removeAttribute("data-os-active");
+            }
+          });
+        }
+
+        var observer = new IntersectionObserver(
+          function (entries) {
+            entries.forEach(function (entry) {
+              if (!entry.isIntersecting) {
+                return;
+              }
+              var stepIndex = Number(entry.target.getAttribute("data-os-step"));
+              if (!Number.isNaN(stepIndex)) {
+                setActiveStep(stepIndex);
+              }
+            });
+          },
+          { rootMargin: "-40% 0px -40% 0px", threshold: 0 },
+        );
+        activeObservers.push(observer);
+
+        stepEls.forEach(function (stepEl) {
+          observer.observe(stepEl);
+        });
+
+        // Start with the first step highlighted so the rail isn't fully dim
+        // before any step has crossed the observer's viewport-center band.
+        setActiveStep(0);
+      });
+    }
+
+    initOsWalkthrough();
+    document.addEventListener("astro:page-load", initOsWalkthrough);
+    document.addEventListener("astro:before-swap", disconnectObservers);
+  })();
+</script>

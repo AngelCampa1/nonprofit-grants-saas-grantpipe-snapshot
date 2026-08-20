@@ -1,0 +1,40 @@
+{
+  "slug": "getting-started",
+  "youtubeId": "3c5Txb_PPW0",
+  "title": "Getting Started with GrantPipe: Set Up Your Org & Import Your Donors",
+  "shortTitle": "Getting Started",
+  "description": "How to set up your org and import your donors into GrantPipe in under four minutes.",
+  "category": "product",
+  "runtimeSeconds": 225,
+  "publishedAt": "2026-06-09",
+  "chapters": [
+    {
+      "label": "The part everyone dreads",
+      "seconds": 0
+    },
+    {
+      "label": "Set up your org (three fields)",
+      "seconds": 27
+    },
+    {
+      "label": "Pick what you're importing",
+      "seconds": 71
+    },
+    {
+      "label": "Upload and preview (nothing saves yet)",
+      "seconds": 110
+    },
+    {
+      "label": "Commit and read the result",
+      "seconds": 141
+    },
+    {
+      "label": "You're set up",
+      "seconds": 190
+    }
+  ],
+  "targetPages": [],
+  "url": "https://www.youtube.com/watch?v=3c5Txb_PPW0",
+  "embedUrl": "https://www.youtube-nocookie.com/embed/3c5Txb_PPW0?rel=0&playsinline=1",
+  "thumbnailUrl": "https://i.ytimg.com/vi/3c5Txb_PPW0/hqdefault.jpg"
+}

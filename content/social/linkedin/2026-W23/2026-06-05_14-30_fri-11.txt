@@ -1,0 +1,9 @@
+Restricted balance reviews need a plain-English answer.
+
+What remains restricted?
+Why is it restricted?
+What condition releases it?
+What changed this month?
+What needs follow-up?
+
+If only Finance can interpret the answer, the rest of the organization will rebuild it in parallel.

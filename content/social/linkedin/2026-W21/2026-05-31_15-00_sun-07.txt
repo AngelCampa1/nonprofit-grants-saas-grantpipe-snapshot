@@ -1,0 +1,11 @@
+We decided early that grants and funds would be separate entities in the data model. Not the same table with a flag. Two distinct things, joined by a many-to-many allocation table.
+
+Here is why that matters in practice.
+
+A single grant from a community foundation can fund three programs at once. A single program can be funded by four grants and two donor-restricted gifts. The dollars do not flow one-to-one. They flow many-to-many.
+
+If grants and funds are the same object, you cannot represent that without overloading fields or duplicating records. Once you duplicate, the audit trail starts to drift.
+
+Sage Intacct and Blackbaud Financial Edge both model these as separate entities for the same reason. FASB ASC 958 treats restriction status as a property of net assets, not of the gift transaction. The accounting follows the model.
+
+We could have shipped a simpler version sooner. We did not. The first audit run on data inside GrantPipe will be evidence of whether that decision was right.

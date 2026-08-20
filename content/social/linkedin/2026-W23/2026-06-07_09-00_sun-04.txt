@@ -1,0 +1,7 @@
+"Our CRM handles grants" can be true for pipeline tracking and false for compliance.
+
+The test is simple:
+
+Can it track restrictions, evidence, reporting dates, fund releases, grant spend, reimbursement status, and audit access next to the award?
+
+If not, it handles part of the grant.

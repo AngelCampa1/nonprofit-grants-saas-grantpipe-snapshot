@@ -1,0 +1,15 @@
+Five things a good board onboarding packet contains, in order, for a mid-sized nonprofit.
+
+1. The most recent audited financials. Two years if you have them. Not a summary. The actual statements.
+
+2. The current Form 990, with the schedules. Schedule B redacted if your state requires.
+
+3. A one-page list of active grants: funder, award amount, period of performance, restricted purpose, and current spend-down status. Not a CRM export. A human-readable list.
+
+4. The strategic plan, with the dates. Approved when, refreshed when, next refresh due when. If those dates are missing, the plan is decoration.
+
+5. The bylaws, the conflict-of-interest policy, and the most recent D&O insurance certificate. Boring. Required.
+
+A new board member can read all of this in under ninety minutes. If they cannot, the packet is too long. The point is not to make them feel briefed. The point is to make them able to ask the right questions at their first meeting.
+
+Onboarding packets can run seventy pages of context and zero pages of the five documents above. The packet is a signal of how the organization treats its time.

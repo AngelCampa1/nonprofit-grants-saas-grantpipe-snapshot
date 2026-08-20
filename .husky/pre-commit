@@ -1,0 +1,5 @@
+#!/usr/bin/env sh
+set -e
+pnpm exec lint-staged
+node scripts/check-design-tokens.mjs
+pnpm exec tsx scripts/run-affected-checks.ts

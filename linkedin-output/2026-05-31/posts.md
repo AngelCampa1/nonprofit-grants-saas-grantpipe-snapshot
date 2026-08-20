@@ -1,0 +1,207 @@
+# LinkedIn Posts — 2026-05-31
+
+---
+
+**Post 1 — STAT_BOMB**
+
+Massachusetts's $500,000 audit threshold is lower than the federal $1,000,000 Single Audit threshold — and most nonprofits do not realize that gap until they get a deficiency notice.
+
+A mid-sized nonprofit at $600,000 in gross support and revenue needs a CPA audit for Form PC purposes even though it is nowhere near the federal trigger.
+
+The Massachusetts Attorney General's Public Charities Division administers Form PC under M.G.L. Chapter 12 Sections 8E through 8M.
+
+Fees run from $35 (under $100,000) to $2,000 (above $100 million) — using the wrong tier triggers a deficiency notice with a 30-60 day cure window.
+
+Calendar-year filers typically file under the six-month extension, putting the practical deadline at November 15 — which is also when the audit engagement needs to be finished.
+
+Most rejections come down to four things: missing audit, wrong fee, missing Form 990 attachment, and late filing without documented extension.
+
+GrantPipe tracks Form PC deadlines alongside federal SF-425 cadence and restricted-fund workflow in one operating record — the compliance calendar does not require a separate system.
+
+#nonprofitcompliance #massachusettsnonprofit #grantcompliance #nonprofitfinance
+
+---
+
+**Post 2 — MYTH_BUSTER**
+
+"Grant management software" means two completely different things depending on which side of the transaction you are on.
+
+Submittable is an application intake and review platform — it exists for organizations that receive applications, score them, and award funds.
+
+GrantPipe is a donor and grant compliance platform — it exists for organizations that apply for grants and need to operate the awards they win.
+
+Most $500K-$10M nonprofits are applicant-side. They submit into other organizations' Submittable portals. They do not need to run Submittable themselves.
+
+What they need is a tool that connects donor records, restricted fund balances, SF-425 deadlines, and the Single Audit threshold raised to $1,000,000 under the October 2024 Uniform Guidance revision.
+
+The two products do not meaningfully compete. They sit on opposite sides of the grant transaction.
+
+If you have been comparing them, the useful question is: are you primarily receiving applications or managing the grants you win?
+
+#grantmanagement #nonprofitsoftware #grantcompliance #nonprofitfinance
+
+---
+
+**Post 3 — WORKFLOW_STEP**
+
+A Single Audit finding is not a disaster. Responding to one without a Corrective Action Plan is.
+
+Under 2 CFR 200.511(c), every finding requires a written CAP that identifies five things: auditee position (agree or disagree), specific corrective action, responsible party, completion date, and the finding reference number.
+
+"We will strengthen our controls" does not satisfy any of those five requirements.
+
+The CAP goes to the Federal Audit Clearinghouse with the Single Audit package — due the earlier of 30 days after the auditor's report or nine months after fiscal year end, per 2 CFR 200.512(a)(1).
+
+A finding in two consecutive audits is a repeat finding. That triggers specific conditions under 2 CFR 200.208: prior approval for draws, enhanced monitoring, possible high-risk designation.
+
+Break the repeat pattern before the second audit, not after.
+
+Every questioned cost decision — repay, dispute, or request allowance — should be communicated to the awarding agency alongside the CAP, not months later.
+
+#singleaudit #grantcompliance #uniformguidance #nonprofitfinance
+
+---
+
+**Post 4 — TERM_EXPLAINED**
+
+Every nonprofit expense has two labels. Most finance teams only track one.
+
+The natural label says what you bought: salaries, rent, supplies, depreciation.
+
+The functional label says why you spent it: program services, management and general, or fundraising.
+
+FASB ASC 958-205 requires nonprofits to present expenses by both classifications. Acceptable methods under ASC 958-720 include time studies, FTE allocations, square footage, and direct charging.
+
+The most common error: treating the Executive Director as 100% program. Most EDs perform a mix of program oversight, management, and fundraising. Allocating the full salary to programs inflates the program ratio and is a routine audit finding.
+
+Stale percentages are the second most common error — applying the same 70/20/10 split for five years without a review. ASC 958-720 requires methods that reflect current resource consumption.
+
+Roughly 20% of Form 990 amendments filed by public charities relate to reclassification between functional expense categories, per Urban Institute analysis.
+
+The methodology must be documented, consistently applied, and defensible under audit.
+
+#nonprofitaccounting #fasbasc958 #functionalexpenses #nonprofitfinance
+
+---
+
+**Post 5 — TOOL_TEARDOWN**
+
+Fluxx does not publish pricing. Foundation disclosures and public 990s place contracts between $25,000 and $100,000 annually — and that is before implementation.
+
+The implementation fee typically runs $10,000 to $50,000 depending on configuration scope. Data migration is quoted separately. User seat increases push renewal cost up every year. Annual price escalation of 5-8% is standard.
+
+The biggest hidden cost is IT and administrator time. Fluxx is flexible — which means someone has to maintain the configuration. That ongoing cost does not appear in the sales quote.
+
+For the grantseeker tier at $20,000/year, the real first-year cost with implementation, migration, and a separate donor CRM (which Fluxx does not include) lands closer to $35,000 to $50,000.
+
+G2 reviewers describe implementations taking 3-6 months with dedicated internal IT support.
+
+The honest budget conversation starts with: what is the total annual cost of Fluxx plus a donor CRM plus the administrator time to maintain both?
+
+For a portfolio of 5-15 grants, that question rarely produces a number that the platform's capabilities can justify.
+
+#nonprofitsoftware #grantmanagementsoftware #fluxx #nonprofitfinance
+
+---
+
+**Post 6 — HOW_TO**
+
+The evidence that survives a Single Audit is not created in the weeks before the auditor arrives. It is created throughout the year.
+
+Time records completed every pay period rather than reconstructed quarterly. Invoices attached to expenditure entries at payment rather than filed separately. Subrecipient monitoring completed on schedule rather than assembled retroactively.
+
+For a financial statement audit, the request list includes: general ledger, bank reconciliations for each month, board minutes, major contracts and grant agreements, fixed asset schedules, and functional expense allocation methodology.
+
+A Single Audit adds: the Schedule of Expenditures of Federal Awards (SEFA), all federal award agreements, personnel time records by grant, procurement records for federally funded purchases, and subrecipient monitoring documentation.
+
+The SEFA preparation should start 60-90 days before fiscal year end — not at year end. Missing federal programs (often passthrough awards from state agencies) result in audit adjustments.
+
+The formal evidence binder organized by auditor request categories reduces fieldwork duration and demonstrates that records were maintained contemporaneously.
+
+Organizations that close audits quickly are not doing more work at audit time. They are doing less — because the work was already done.
+
+#nonprofitaudit #singleaudit #grantcompliance #uniformguidance
+
+---
+
+**Post 7 — FREE_RESOURCE**
+
+CRM licensing is only 5-15% of total cost. The rest shows up in implementation, training, data migration, ongoing administration, and integrations.
+
+A self-implemented mid-market CRM with a consulting partner for implementation runs $15,000-$50,000 over three years for a typical mid-sized nonprofit.
+
+Salesforce NPSP with a consulting partner for the same organization: $50,000-$150,000 or more — implementation is $55,000+ alone, plus a fractional admin retainer running $24,000/year.
+
+The retraining problem is the cost category most frequently omitted from vendor proposals. Staff turnover means CRM training has a shelf life. When the Development Director who was trained on the system leaves, that institutional knowledge leaves with them.
+
+Integration maintenance is the third surprise: every connection between a CRM and an accounting system, email platform, or payment processor is a maintenance liability. APIs change. Middleware breaks. Costs add up.
+
+The Nonprofit CRM Cost Calculator at grantpipe.com/free/nonprofit-crm-cost-calculator models seven cost categories over a three-year horizon: licensing, implementation, migration, training, administration, integrations, and storage.
+
+Worth running before booking vendor demos — the real number is usually higher than the quoted number.
+
+#nonprofitcrm #nonprofitsoftware #nonprofitfinance #donormanagement
+
+---
+
+**Post 8 — HOW_TO**
+
+Pennsylvania's BCO-10 charitable registration has a deadline that most nonprofits get wrong: 315 days after fiscal year end, not the end of the calendar year.
+
+For a December 31 fiscal year end, that puts the renewal due date around November 11.
+
+Fees scale with gross annual contributions: $15 at the bottom tier (under $25,000), $250 at the top tier (above $1,000,000). Using the wrong tier is one of the five most common rejection reasons.
+
+The audit attachment threshold matches the top fee tier: audited financial statements are required above $1,000,000 in gross contributions. Reviewed statements apply at mid-tiers; compiled statements at lower tiers.
+
+A nonprofit that crosses $1,000,000 for the first time needs to engage a CPA early — an audit started the month before the 315-day deadline rarely finishes without rush billing.
+
+Pennsylvania accepts the Uniform Registration Statement (URS) in place of BCO-10, with a PA-specific supplement and fee. Organizations filing in multiple URS states use this to reduce duplicate data entry.
+
+The BCO-10 fee and audit thresholds can shift when the Department of State updates the schedule — verify against the current schedule before each filing, not the prior year.
+
+#pennsylvanianonprofit #charitableregistration #nonprofitcompliance #stateregistration
+
+---
+
+**Post 9 — LIST_POST**
+
+Five affordable donor management platforms, compared on what actually matters for mid-sized nonprofits:
+
+Little Green Light ($39-$90/month): lowest price, basic donor records and gifts. No grant management, no restricted fund tracking, limited analytics.
+
+Keela ($99-$299/month): best value for email marketing bundled with donor CRM. Grant lifecycle management is limited.
+
+Bloomerang ($125-$249/month): best donor retention analytics in this price range. Per-record pricing — a platform that costs $125/month at 1,000 contacts can cost $249/month at 15,000 contacts.
+
+DonorPerfect ($89-$200+/month): broad feature set through add-ons, long track record, dated interface. Add-on costs can push total price above listed range.
+
+GrantPipe ($329-$1,079/month): flat-rate pricing, combined donor management and grant compliance, no per-record increases.
+
+The more useful question than "cheapest CRM" is: what is the total cost of your current system, including staff time spent on grant compliance in spreadsheets, and the second system running alongside your CRM?
+
+Only 33.3% of nonprofits rate their CRM systems as effective, per the 2025 Fifty & Fifty Nonprofit Peer Report.
+
+#nonprofitcrm #donormanagement #nonprofitsoftware #affordablenonprofit
+
+---
+
+**Post 10 — HOW_TO**
+
+A grant compliance calendar that only tracks report due dates is a reporting calendar. Those are not the same thing.
+
+Report due dates are the output of compliance work. The compliance work that generates accurate data needs to be calendared separately.
+
+For a single federal grant with an annual period of performance, the compliance calendar has approximately 30-40 entries: 12 monthly drawdown reconciliations, 4 quarterly SF-425 submissions, time and effort certifications for personnel, budget-vs-actual reviews, and subrecipient monitoring if applicable.
+
+Every entry needs a named owner — not a role, a person. "The SF-425 for the federal workforce development grant is due October 30, and Maria is responsible" is an owned deadline. "Finance" is not.
+
+Preparation lead time matters as much as the deadline itself. Quarterly SF-425 reports need 10-14 business days of preparation. Set calendar reminders at the prep start date, not the submission deadline.
+
+At 15 active grants, monthly compliance tasks alone total 60-80 recurring calendar entries. At that scale, manual calendar maintenance becomes itself a compliance risk.
+
+GrantPipe builds the compliance task schedule from each grant's award terms — the calendar is a byproduct of the grant record, not a separate document to maintain.
+
+Start with the free Grant Reporting Calendar Template at grantpipe.com/free/grant-reporting-calendar-template to map your current compliance obligations before migrating to software.
+
+#grantcompliance #grantmanagement #nonprofitfinance #uniformguidance

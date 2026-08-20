@@ -1,0 +1,13 @@
+For Finance Directors looking at SAM.gov for the first time.
+
+The UEI registration is free. It used to be DUNS, then it changed in April 2022. Existing DUNS holders were transitioned automatically; everyone else gets a fresh UEI.
+
+The renewal cycle is annual. Miss it and your active federal awards can be paused mid-drawdown. The renewal email comes from a noreply address that ends up in spam more often than it should.
+
+Two things that catch new registrants:
+
+1. The Entity Administrator role is tied to a specific person. When that person leaves, the next Admin has to be appointed through the role-management workflow inside SAM.gov. Not through email.
+
+2. Banking information for federal payment goes through a separate system (PAM, plus the agency's payment portal). Updating one does not update the other.
+
+The registration takes a couple of hours. The maintenance is what costs orgs an award.

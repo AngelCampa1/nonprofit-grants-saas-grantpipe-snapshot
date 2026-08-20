@@ -1,0 +1,29 @@
+Grant work gets messy fast.
+
+An award starts as a promise, then turns into deadlines, restricted funds, documents, expenses, evidence, and the question every team eventually has to answer: what happened with this grant?
+
+GrantPipe gives that work one operating record.
+
+Start on the dashboard. This is the weekly check-in view: reports due soon, grants that need attention, fund balances, and recent activity. The point is simple. A team can decide what matters before the meeting turns into a scavenger hunt.
+
+Open the grant portfolio and the picture gets more specific. Each award has the funder, amount, owner, status, award period, and next step in one place.
+
+Then open the award record. This is where the later questions come into view. The grant connects to allocations, expenses, reporting requirements, documents, impact metrics, and spend down. Development can see the funder story. Finance can see the restriction and balance. Program staff can see deliverables and evidence.
+
+Now move to the restricted fund. The approved use, remaining balance, restriction terms, related expenses, and support files stay connected to the award. That matters because restricted money is rarely just an amount. It comes with rules, timing, and proof.
+
+Compliance lives in the same workflow. A report requirement is tied to the due date, the agreement, the documents, and the evidence the team will need. The report stops being a surprise in the final week.
+
+When someone asks for backup, evidence bundles pull the award, fund, agreement, restriction terms, and files into a reviewable package. The team does not have to rebuild the story from folders, spreadsheets, and memory.
+
+GrantPipe also keeps relationship context close. A foundation award or restricted gift is still tied to a funder. Notes, gifts, documents, and related records stay near the grant and program work they support.
+
+Access stays controlled. Leaders can review the full picture. Staff can work in their areas. Read-only visibility can support review without handing everyone the keys.
+
+The activity trail makes handoffs easier. When a report changes, a document is attached, or a record is updated, the next person can see what happened.
+
+The best way to evaluate GrantPipe is small. Pick one active award, one restricted fund, and the next report. Add the agreement and the files your team already relies on. Then run the next check-in from the record.
+
+If that meeting gets easier, the workflow is doing its job.
+
+Start a one-month free trial at GrantPipe dot com. No credit card.

@@ -1,0 +1,11 @@
+Restricted funds are not one balance.
+
+A restricted balance needs a reason:
+
+- donor purpose
+- grant purpose
+- time limit
+- release trigger
+- remaining amount
+
+If those details live in separate files, the number may be right while the explanation is still fragile.

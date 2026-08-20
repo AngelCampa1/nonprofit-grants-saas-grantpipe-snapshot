@@ -1,0 +1,117 @@
+---
+import type { ContentItem } from "../types"
+import { STAGE_BADGES, formatContentDate, filterMetadata } from "../lib/content-helpers"
+
+interface Props {
+  item: ContentItem
+  featuredBadgeText?: string
+  datePrefixText?: string
+}
+
+const { item, featuredBadgeText = "Popular", datePrefixText = "Updated" } = Astro.props
+
+const badge = STAGE_BADGES[item.buyerStage]
+const formattedDate = formatContentDate(item.updatedAt)
+const readTime = item.metadata?.readTime
+const metadataEntries = filterMetadata(item.metadata, ["readTime"])
+const isFeatured = item.featured === true
+const isBofuOnly = item.buyerStage === "bofu" && !isFeatured
+const resourceCardFamily = item.metadata?.contentType ?? item.metadata?.category ?? "resource"
+const resourceCardPath = (() => {
+  try {
+    return new URL(item.href, "https://grantpipe.com").pathname
+  } catch {
+    return item.href.split(/[?#]/, 1)[0]
+  }
+})()
+const resourceCardId =
+  resourceCardPath.replace(/^\/+|\/+$/g, "").replace(/[^a-zA-Z0-9_-]+/g, "-") || "resource"
+---
+
+<a
+  href={item.href}
+  data-resource-card
+  data-resource-card-id={resourceCardId}
+  data-resource-card-family={resourceCardFamily}
+  data-resource-card-stage={item.buyerStage}
+  data-resource-card-featured={isFeatured ? "true" : "false"}
+  class:list={[
+    "gp-card-base interactive content-card group h-full no-underline",
+    isFeatured && "content-card-featured",
+    isBofuOnly && "content-card-bofu",
+  ]}
+>
+  <div class="mb-3 flex items-start justify-between gap-3">
+    <h3 class="text-[length:var(--text-subheading)] font-bold font-heading leading-snug text-brand-text transition-colors group-hover:text-brand-primary">
+      {item.title}
+    </h3>
+    <div class="flex shrink-0 items-center gap-1.5">
+      {
+        isFeatured && (
+          <span class="rounded-full border border-accent-200 bg-accent-50 px-2.5 py-1 text-[length:var(--text-caption)] font-medium text-accent-700">
+            {featuredBadgeText}
+          </span>
+        )
+      }
+      <span
+        class:list={[
+          "rounded-full border px-2.5 py-1 text-[length:var(--text-caption)] font-medium",
+          badge.classes,
+        ]}
+      >
+        {badge.label}
+      </span>
+    </div>
+  </div>
+
+  <p class="line-clamp-3 text-[length:var(--text-body)] leading-7 text-brand-muted">
+    {item.description}
+  </p>
+
+  <div
+    data-content-card-meta
+    class="mt-4 flex flex-wrap items-center gap-2 border-t border-[var(--gp-ink-100)] pt-3 text-[length:var(--text-caption)] text-neutral-500"
+  >
+    <span>{datePrefixText} {formattedDate}</span>
+    {
+      readTime && (
+        <>
+          <span aria-hidden="true">&middot;</span>
+          <span class="flex items-center gap-1">
+            <svg
+              width="12"
+              height="12"
+              viewBox="0 0 12 12"
+              fill="none"
+              aria-hidden="true"
+            >
+              <circle
+                cx="6"
+                cy="6"
+                r="5"
+                stroke="currentColor"
+                stroke-width="1.2"
+              />
+              <path
+                d="M6 3.5V6l1.5 1.5"
+                stroke="currentColor"
+                stroke-width="1.2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+            </svg>
+            {readTime}
+          </span>
+        </>
+      )
+    }
+    {
+      metadataEntries.map(([, value]) => (
+        <>
+          <span aria-hidden="true">&middot;</span>
+          <span>{value}</span>
+        </>
+      ))
+    }
+  </div>
+</a>

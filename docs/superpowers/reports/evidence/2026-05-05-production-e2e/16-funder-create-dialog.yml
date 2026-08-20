@@ -1,0 +1,87 @@
+- generic:
+    - generic:
+        - generic:
+            - generic:
+                - generic:
+                    - banner:
+                        - generic:
+                            - button:
+                                - img
+                        - generic:
+                            - link:
+                                - /url: /app/settings#billing
+                                - img
+                                - generic: Trial
+                                - generic: 30d
+                            - button:
+                                - img
+                            - link:
+                                - /url: /app/notifications
+                                - img
+                            - button:
+                                - img
+                    - generic:
+                        - main:
+                            - generic:
+                                - generic:
+                                    - generic:
+                                        - paragraph: Funder workspace
+                                        - generic:
+                                            - generic:
+                                                - generic:
+                                                    - heading [level=1]: Funders
+                                            - generic:
+                                                - button [expanded]: Add funder
+                                    - generic:
+                                        - generic:
+                                            - textbox:
+                                                - /placeholder: Search funders...
+                                            - combobox:
+                                                - generic: All funder types
+                                                - img
+                                    - generic:
+                                        - generic:
+                                            - generic:
+                                                - table:
+                                                    - rowgroup:
+                                                        - row:
+                                                            - columnheader:
+                                                                - button:
+                                                                    - text: Name
+                                                                    - img
+                                                            - columnheader:
+                                                                - button:
+                                                                    - text: Type
+                                                                    - img
+                                                    - rowgroup:
+                                                        - row:
+                                                            - cell:
+                                                                - region:
+                                                                    - generic:
+                                                                        - generic:
+                                                                            - img
+                                                                    - heading [level=3]: Your funders live here
+                                                                    - generic:
+                                                                        - button: + Add a funder
+                                                                        - link:
+                                                                            - /url: /help
+                                                                            - text: How funders work →
+            - region "Notifications alt+T"
+    - dialog "Create funder" [ref=e74]:
+        - generic [ref=e75]:
+            - heading "Create funder" [level=2] [ref=e76]
+            - paragraph [ref=e77]: Create a funder profile and start storing institutional context.
+        - generic [ref=e78]:
+            - generic [ref=e79]:
+                - generic [ref=e80]: Funder name
+                - textbox "Funder name" [active] [ref=e81]
+            - generic [ref=e82]:
+                - generic [ref=e83]: Type
+                - combobox "Type" [ref=e84]:
+                    - generic: Foundation
+                    - img
+                - combobox [ref=e85]
+            - button "Save funder" [ref=e86]
+        - button "Close" [ref=e87]:
+            - img
+            - generic [ref=e88]: Close

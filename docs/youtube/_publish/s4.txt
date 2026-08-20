@@ -1,0 +1,45 @@
+If your nonprofit takes federal money, one rulebook covers all of it. It's called the Uniform Guidance, officially 2 CFR 200. Most people never read it. They just hear "compliance" and tense up. This video explains what's actually in it, in plain English, in about six minutes.
+
+You really live in three parts of the rule: how you run the grant, what you can charge to it, and who checks your work. I walk through all three, then show you the four numbers that changed in 2024, because a lot of advice online still uses the old ones.
+
+I build grant compliance software, so I had to learn exactly what these rules require. I'm not an auditor, and I won't talk like one. You get the version a busy director actually needs.
+
+WHAT'S IN THE VIDEO
+- What the Uniform Guidance is, and why eight separate old rulebooks were merged into one in 2013.
+- Who it binds: the federal agency, the pass-through that hands money down, you, and any subrecipients you fund in turn.
+- The three jobs every federal grant asks of you: run it, cost it, prove it.
+- The cost test every single charge has to pass: it must be reasonable, allocable to the grant, and allowable under the rules.
+- Direct vs. indirect costs, and the de minimis indirect rate you can use without negotiating your own.
+- The four 2024 changes, stated as the current numbers: the de minimis indirect rate is now up to 15% of modified total direct costs (raised from 10%), the equipment threshold is $10,000 per unit (raised from $5,000), the first $50,000 of each subaward counts toward your indirect base (raised from $25,000), and the single audit threshold is $1,000,000 in federal funds expended (raised from $750,000).
+- What a single audit is, and the spend trigger that decides whether you need one.
+
+RUN IT, COST IT, PROVE IT
+Most of the rule sorts into those three jobs, and it helps to hold them in your head. Run it covers how you manage the award day to day: procurement, subrecipient monitoring, and keeping good records. Cost it covers what you're allowed to charge, which is where the cost test lives. Prove it covers reporting and audit, including the single audit. Almost every requirement in 2 CFR 200 is a detail under one of those three headings, so when a new rule lands on your desk, ask which job it belongs to and it gets a lot less intimidating.
+
+THE COST TEST, A LITTLE DEEPER
+Before any charge hits a federal grant, it has to clear three words. Reasonable means a careful person would have paid about that much for it. Allocable means it actually benefits this grant, and only the share that does gets charged here. Allowable means nothing in the rules or your award terms forbids it. A cost can be reasonable and still fail the test if it isn't allocable to the grant, so all three have to hold at once. Get in the habit of running a charge through those three words and most spending questions answer themselves.
+
+WHY THE NUMBERS MATTER
+These four figures show up in budgets, indirect calculations, and audit planning all year long. Getting one wrong can mean an indirect line that's too low, equipment booked as a supply, or a single audit you didn't see coming. The 2024 revision moved all four, and a lot of templates and explainers still quote the old values, so this is the part worth pausing on.
+
+WANT A SIMPLE PLACE TO START?
+We made a free Grant Compliance Checklist. It covers the basics so nothing slips through. Drop your email and we'll send it to your inbox:
+https://grantpipe.com/free/grant-compliance-checklist/
+
+WHO THIS IS FOR
+Executive directors, finance directors, and grants managers at nonprofits that take federal money, directly or as a subrecipient, and want the rules in plain language before the auditor explains them the hard way.
+
+A quick note: this is general guidance from someone who builds grant compliance software, not legal or accounting advice. When the rules get specific to your award, check with your funder or your auditor. Thresholds can change again.
+
+GrantPipe is donor management and grant compliance in one place, built for mid-sized nonprofits running real grants. Learn more: https://grantpipe.com
+
+CHAPTERS
+0:00 One rulebook for federal money
+0:45 What the Uniform Guidance is
+1:31 One rulebook, three jobs
+2:05 The cost test
+2:55 The four numbers that changed in 2024
+4:04 The single audit
+4:53 What to remember
+
+#nonprofit #uniformguidance #2cfr200 #federalgrants #grantcompliance #singleaudit #nonprofitfinance #grantmanagement

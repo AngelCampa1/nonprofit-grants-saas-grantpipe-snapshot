@@ -1,0 +1,42 @@
+{
+  "version": "0.0.1",
+  "configurations": [
+    {
+      "name": "site",
+      "runtimeExecutable": "pnpm",
+      "runtimeArgs": ["--filter", "@grantpipe/site", "dev", "--port", "4322"],
+      "port": 4322
+    },
+    {
+      "name": "site-worktree",
+      "runtimeExecutable": "bash",
+      "runtimeArgs": [
+        "-c",
+        "cd /Users/angel/Code/grantpipe/.worktrees/mobile-audit && pnpm --filter @grantpipe/site dev --port 4323"
+      ],
+      "port": 4323
+    },
+    {
+      "name": "web",
+      "runtimeExecutable": "pnpm",
+      "runtimeArgs": ["--filter", "@grantpipe/web", "dev"],
+      "port": 3050,
+      "autoPort": false,
+      "env": {
+        "GRANTPIPE_WEB_PORT": "3050",
+        "GRANTPIPE_API_PORT": "5050"
+      }
+    },
+    {
+      "name": "web-aics-wt",
+      "runtimeExecutable": "pnpm",
+      "runtimeArgs": ["-C", ".worktrees/ai-cs-eval-harness", "--filter", "@grantpipe/web", "dev"],
+      "port": 3051,
+      "autoPort": false,
+      "env": {
+        "GRANTPIPE_WEB_PORT": "3051",
+        "GRANTPIPE_API_PORT": "8787"
+      }
+    }
+  ]
+}

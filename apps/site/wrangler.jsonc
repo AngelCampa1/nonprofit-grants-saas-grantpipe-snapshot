@@ -1,0 +1,32 @@
+{
+  "$schema": "node_modules/wrangler/config-schema.json",
+  "name": "grantpipe-site",
+  "compatibility_date": "2026-04-01",
+  "routes": [
+    { "pattern": "grantpipe.com", "custom_domain": true },
+    { "pattern": "www.grantpipe.com", "custom_domain": true },
+  ],
+  "assets": {
+    "run_worker_first": true,
+  },
+  // Top-level vars default to production values so any build that does not
+  // override via .env.local ships safe production defaults.
+  // PUBLIC_POSTHOG_* are read at build time and baked into the bootstrap
+  // snippet; the code still falls back to the explicit defaults in packages/ui.
+  "vars": {
+    "PUBLIC_APP_URL": "https://app.grantpipe.com",
+    "PUBLIC_POSTHOG_KEY": "phc_examplePostHogProjectKey0000000000000000",
+    "PUBLIC_POSTHOG_HOST": "https://us.i.posthog.com",
+    "PUBLIC_SENTRY_ENVIRONMENT": "production",
+  },
+  "env": {
+    "production": {
+      "vars": {
+        "PUBLIC_APP_URL": "https://app.grantpipe.com",
+        "PUBLIC_POSTHOG_KEY": "phc_examplePostHogProjectKey0000000000000000",
+        "PUBLIC_POSTHOG_HOST": "https://us.i.posthog.com",
+        "PUBLIC_SENTRY_ENVIRONMENT": "production",
+      },
+    },
+  },
+}

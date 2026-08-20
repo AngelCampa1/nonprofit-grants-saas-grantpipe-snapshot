@@ -1,0 +1,13 @@
+Donorbox at $300,000/year in donations costs $5,250 in platform fees alone. At $400,000/year it costs $7,000.
+
+The free tier is genuinely free — no monthly subscription. The 1.75% platform fee is deducted from each donation. Donorbox Pro at $199/month waives the fee on the first $1,000/month of donations.
+
+What Donorbox does well: embeddable donation forms deploy in hours, recurring gift management with a donor-facing portal for payment updates, and zero setup friction for organizations without a software budget.
+
+What it does not do at any tier: full donor CRM with moves management, major gift officer assignment, restricted fund tracking, or grant lifecycle management. Donorbox Pro adds basic CRM features, but they remain shallow relative to purpose-built CRMs.
+
+Donorbox has processed over $2 billion across 50,000+ nonprofits. The product is good at what it does. The problem is total cost of ownership shifts as donation volume grows past roughly $200,000 annually, where the fee model starts crossing the cost of a dedicated CRM with grant compliance built in.
+
+The break-even calculation is rarely run until the organization is already past it.
+
+#donorbox #nonprofitcrm #fundraising #donormanagement

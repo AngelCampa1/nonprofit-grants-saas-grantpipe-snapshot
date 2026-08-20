@@ -1,0 +1,11 @@
+Grant work often gets split across systems. Donors live in the CRM. Grant deadlines live in spreadsheets. Restricted funds sit in accounting. Evidence gets buried in shared drives.
+
+The usual fixes solve pieces, not the operating model. Teams add a grant tracker. They stretch a donor CRM. Or they start a months-long enterprise implementation with consultants, admins, and annual contracts.
+
+The problem is that those tools were built around pieces of the work. They do not connect the full grant management record: compliance calendar, evidence trail, restricted funds, grant pipeline, donor CRM, multi-source grant pipeline, fund accounting, and auditor or funder portal.
+
+GrantPipe is a compliance-first grant management system. It brings compliance deadlines, evidence, restricted funds, grant pipelines, donor records, federal search, fund accounting, and reviewer access into one shared workspace.
+
+Development, finance, and leadership can see what is funded, restricted, due, and reportable without rebuilding the story every month. Audit evidence becomes part of the workflow, not a last-minute scramble.
+
+Start a one-month free trial at GrantPipe, dot com. No credit card. No setup fee. Just one place to run grants, funds, donors, and compliance.

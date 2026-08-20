@@ -1,0 +1,2 @@
+CREATE TYPE "public"."recurring_frequency" AS ENUM('monthly', 'quarterly', 'annually');--> statement-breakpoint
+ALTER TABLE "recurring_journal_templates" ALTER COLUMN "frequency" SET DATA TYPE "public"."recurring_frequency" USING "frequency"::"public"."recurring_frequency";

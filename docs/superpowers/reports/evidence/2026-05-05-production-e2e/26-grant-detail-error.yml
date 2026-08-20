@@ -1,0 +1,104 @@
+- generic [ref=e3]:
+    - generic [ref=e13]:
+        - banner [ref=e14]:
+            - button "Open navigation" [ref=e16]:
+                - img
+            - generic [ref=e17]:
+                - link "Add billing, trial ends in 30 days" [ref=e18] [cursor=pointer]:
+                    - /url: /app/settings#billing
+                    - img [ref=e19]
+                    - generic [ref=e22]: Trial
+                    - generic [ref=e23]: 30d
+                - button "Open command palette" [ref=e24]:
+                    - img
+                - link "Notifications" [ref=e25] [cursor=pointer]:
+                    - /url: /app/notifications
+                    - img
+                - button "Switch to dark theme" [ref=e26]:
+                    - img
+        - main [ref=e28]:
+            - generic [ref=e139]:
+                - generic [ref=e140]:
+                    - navigation "breadcrumb" [ref=e142]:
+                        - list [ref=e143]:
+                            - listitem [ref=e144]:
+                                - link "Grants" [ref=e145] [cursor=pointer]:
+                                    - /url: /app/grants
+                            - listitem [ref=e146]:
+                                - img [ref=e147]
+                            - listitem [ref=e149]:
+                                - generic [ref=e150]: Prod E2E Grant 160129
+                    - generic [ref=e151]:
+                        - generic [ref=e152]:
+                            - heading "Prod E2E Grant 160129" [level=1] [ref=e154]
+                            - paragraph [ref=e155]: Discovery
+                        - generic [ref=e157]:
+                            - generic [ref=e158]: Threshold --
+                            - button "Share" [ref=e159]
+                            - button "Delete grant" [ref=e160]
+                - generic [ref=e161]:
+                    - generic [ref=e162]:
+                        - generic [ref=e164]: Grant Amount
+                        - generic [ref=e165]: Not set
+                    - generic [ref=e166]:
+                        - generic [ref=e168]: Allocated
+                        - generic [ref=e169]: $0
+                    - generic [ref=e170]:
+                        - generic [ref=e172]: Unallocated
+                        - generic [ref=e173]: "--"
+                    - generic [ref=e174]:
+                        - generic [ref=e176]: Remaining to Spend
+                        - generic [ref=e177]: "--"
+                - generic [ref=e178]:
+                    - tablist [ref=e179]:
+                        - tab "Overview" [selected] [ref=e180]
+                        - tab "Allocations" [ref=e181]
+                        - tab "Expenses" [ref=e182]
+                        - tab "Impact Metrics" [ref=e183]
+                        - tab "Reporting" [ref=e184]
+                        - tab "Payments" [ref=e185]
+                        - tab "Closeout" [ref=e186]
+                        - tab "Spend-Down" [ref=e187]
+                        - tab "Restrictions" [ref=e188]
+                        - tab "Custom Fields" [ref=e189]
+                        - tab "Activity" [ref=e190]
+                        - tab "Documents" [ref=e191]
+                    - tabpanel "Overview" [ref=e192]:
+                        - generic [ref=e194]:
+                            - generic [ref=e196]: Grant details
+                            - generic [ref=e198]:
+                                - generic [ref=e199]:
+                                    - generic [ref=e200]: Grant name
+                                    - textbox "Grant name" [ref=e201]: Prod E2E Grant 160129
+                                - generic [ref=e202]:
+                                    - generic [ref=e203]: Description
+                                    - textbox "Description" [ref=e204]:
+                                        - /placeholder: Describe what this grant funds and its goals…
+                                - generic [ref=e205]:
+                                    - generic [ref=e206]: Notes
+                                    - textbox "Notes" [ref=e207]:
+                                        - /placeholder: Internal notes, contacts, context…
+                                - generic [ref=e208]:
+                                    - generic [ref=e209]: Pipeline status
+                                    - combobox "Pipeline status" [ref=e210]:
+                                        - generic: Discovery
+                                        - img
+                                    - combobox [ref=e211]
+                                    - generic [ref=e212]:
+                                        - paragraph [ref=e213]: You found a possible grant and are deciding if it is worth pursuing.
+                                        - paragraph [ref=e214]: "Next: confirm fit, deadline, funder requirements, and whether to apply."
+                                - generic [ref=e215]:
+                                    - generic [ref=e216]: Grant amount (USD)
+                                    - spinbutton "Grant amount (USD)" [ref=e217]
+                                - generic [ref=e218]:
+                                    - generic [ref=e219]:
+                                        - generic [ref=e220]: Application deadline
+                                        - textbox "Application deadline" [ref=e221]
+                                    - generic [ref=e222]:
+                                        - generic [ref=e223]: Start date
+                                        - textbox "Start date" [ref=e224]
+                                    - generic [ref=e225]:
+                                        - generic [ref=e226]: End date
+                                        - textbox "End date" [ref=e227]
+                                - button "Save changes" [ref=e229]
+    - region "Notifications alt+T"

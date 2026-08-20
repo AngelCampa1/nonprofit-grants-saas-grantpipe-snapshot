@@ -1,0 +1,88 @@
+---
+import { pageUrl, getPageNumbers } from "../lib/pagination"
+
+interface Props {
+  currentPage: number
+  totalPages: number
+  basePath: string
+}
+
+const { currentPage, totalPages, basePath } = Astro.props
+
+const pages = getPageNumbers(currentPage, totalPages)
+const hasPrev = currentPage > 1
+const hasNext = currentPage < totalPages
+
+// Shared class lists kept here so the page-number tiles, the prev/next
+// controls, and the disabled spans stay structurally identical. The pill
+// radius (`rounded-full`) matches the `.gp-mkt-btn` system used elsewhere
+// on the marketing site.
+const baseTile =
+  "min-h-11 min-w-11 inline-flex items-center justify-center px-3 py-2 text-[length:var(--text-caption)] font-medium rounded-full transition-colors duration-[var(--transition-fast)] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary-500 focus-visible:ring-offset-2"
+const linkTile = `${baseTile} text-brand-text hover:bg-surface-secondary`
+const currentTile = `${baseTile} font-bold bg-brand-primary text-neutral-50`
+const disabledTile = `${baseTile} text-neutral-300 cursor-not-allowed`
+---
+
+{
+  totalPages > 1 && (
+    <nav
+      aria-label="Pagination"
+      class="mt-10 flex flex-wrap items-center justify-center gap-1"
+    >
+      {hasPrev ? (
+        <a
+          href={pageUrl(currentPage - 1, basePath)}
+          class={linkTile}
+          aria-label="Previous page"
+          rel="prev"
+        >
+          <span aria-hidden="true">&larr;</span>
+          <span class="ml-1 hidden sm:inline">Prev</span>
+        </a>
+      ) : (
+        <span class={disabledTile} aria-hidden="true">
+          <span>&larr;</span>
+          <span class="ml-1 hidden sm:inline">Prev</span>
+        </span>
+      )}
+
+      {pages.map((page) =>
+        page === "ellipsis" ? (
+          <span class="px-2 py-2 text-[length:var(--text-caption)] text-neutral-400" aria-hidden="true">
+            &hellip;
+          </span>
+        ) : page === currentPage ? (
+          <span class={currentTile} aria-current="page" aria-label={`Page ${page}, current page`}>
+            {page}
+          </span>
+        ) : (
+          <a
+            href={pageUrl(page, basePath)}
+            class={linkTile}
+            aria-label={`Page ${page}`}
+          >
+            {page}
+          </a>
+        )
+      )}
+
+      {hasNext ? (
+        <a
+          href={pageUrl(currentPage + 1, basePath)}
+          class={linkTile}
+          aria-label="Next page"
+          rel="next"
+        >
+          <span class="mr-1 hidden sm:inline">Next</span>
+          <span aria-hidden="true">&rarr;</span>
+        </a>
+      ) : (
+        <span class={disabledTile} aria-hidden="true">
+          <span class="mr-1 hidden sm:inline">Next</span>
+          <span>&rarr;</span>
+        </span>
+      )}
+    </nav>
+  )
+}

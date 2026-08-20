@@ -1,0 +1,5 @@
+$0. That is what the Donor Retention Playbook costs.
+
+Inside: a thirteen-touch annual stewardship cadence for first-year donors, scripts for the 30-day welcome call, a lapsed-donor reactivation sequence with three templates, and a dashboard layout that shows donor count by segment, retention rate by source, and average gift trend over twenty-four months.
+
+It is the working version we built for the development director persona. Not generic. Specific to mid-sized nonprofits running an annual fund alongside grant work.

@@ -1,0 +1,122 @@
+---
+import PaidSearchLandingPage from "@/components/paid-search-landing-page.astro";
+import type { PaidLandingPageData } from "@/components/paid-search-landing-page.astro";
+
+const page: PaidLandingPageData = {
+  slug: "fund-accounting-without-the-price",
+  title: "Nonprofit Fund Accounting Without the Enterprise Price | GrantPipe",
+  description:
+    "Get restricted-fund control built for a one-person finance office. Track balances, releases, and audit evidence without paying Sage Intacct prices.",
+  kicker: "Nonprofit fund accounting",
+  headline: "Fund accounting without the big price.",
+  subhead:
+    "Get restricted-fund control like Sage Intacct. Built for a one-person finance office.",
+  primaryCta: "Start 1-month free trial",
+  exitLeadMagnet: {
+    slug: "grant-software-roi-calculator",
+    title: "Grant Software ROI Calculator",
+    description:
+      "A simple calculator that weighs grant software cost against the staff hours and audit risk it saves your nonprofit each year.",
+  },
+  trust: "No credit card required. Keep QuickBooks separate. No setup project needed.",
+  proofCard: {
+    label: "Fund accounting ledger",
+    status: "On track",
+    rows: [
+      { label: "Restricted funds tracked", value: "14" },
+      { label: "Total awarded", value: "$1,240,000" },
+      { label: "Remaining restricted", value: "$416,200" },
+      { label: "Audit evidence attached", value: "Yes" },
+    ],
+    progressLabel: "Spend-down on track",
+    progress: "66%",
+  },
+  painsTitle: "QuickBooks classes label charges. They do not track restricted balances.",
+  pains: [
+    "A wrong fund code sits unnoticed until audit time.",
+    "Net-asset-release entries get rebuilt from memory at year-end.",
+    "Sage Intacct and Blackbaud Financial Edge cost tens of thousands per year.",
+    "Month-end close on restricted funds takes a week of spreadsheet work.",
+    "Evidence for each release lives in six different folders.",
+  ],
+  workflowTitle: "Keep restricted dollars tied to each grant from day one.",
+  workflowSteps: [
+    {
+      icon: "ledger",
+      heading: "Create each fund",
+      copy: "Record award amount, restriction terms, and release basis from the grant agreement.",
+    },
+    {
+      icon: "balance",
+      heading: "Track spend and releases",
+      copy: "See awarded, spent, released, and remaining balances by grant without class reports.",
+    },
+    {
+      icon: "audit",
+      heading: "Close the month clean",
+      copy: "Confirm releases, attach evidence, and leave a trail auditors can follow.",
+    },
+  ],
+  featureTitle: "The fund-accounting controls a small finance team needs most.",
+  features: [
+    {
+      icon: "balance",
+      heading: "Balances by award",
+      copy: "Track awarded, spent, released, and remaining by restricted fund.",
+    },
+    {
+      icon: "evidence",
+      heading: "Release evidence",
+      copy: "Attach reports, invoices, and approvals to each release event.",
+    },
+    {
+      icon: "report",
+      heading: "Month-end review",
+      copy: "Run a consistent close checklist for restrictions without replacing the books.",
+    },
+  ],
+  proofTitle: "Restricted-fund control should not cost enterprise money.",
+  proofPoints: [
+    {
+      value: "ASC 958",
+      label: "requires net assets to distinguish donor restrictions from unrestricted resources.",
+      source: "FASB ASC 958 nonprofit presentation model",
+    },
+    {
+      value: "0 entries",
+      label: "written back to QuickBooks. GrantPipe does not connect to QuickBooks right now.",
+      source: "GrantPipe accounting boundary",
+    },
+    {
+      value: "1 place",
+      label: "for award terms, fund balance, release evidence, and audit trail reduces manual work.",
+      source: "GrantPipe restricted fund workflow",
+    },
+  ],
+  trustLabels: ["Keep QuickBooks separate", "FASB ASC 958 aligned", "No enterprise price"],
+  faqTitle: "Answers for finance teams weighing fund-accounting options.",
+  faqs: [
+    {
+      q: "Does this replace QuickBooks?",
+      a: "GrantPipe has native accounting records, but it does not sync with QuickBooks right now. It holds the restricted-fund record, balances, release evidence, and reporting context that classes do not model on their own.",
+    },
+    {
+      q: "Will it post net-asset-release entries back to QuickBooks?",
+      a: "No. GrantPipe does not connect to QuickBooks right now. Keep journal entries in QuickBooks. Record each grant release in GrantPipe.",
+    },
+    {
+      q: "How does it compare to Sage Intacct or Blackbaud Financial Edge?",
+      a: "Both cost tens of thousands per year plus setup. GrantPipe adds the restricted-fund tracking layer. The price fits a mid-sized nonprofit, not an enterprise team.",
+    },
+    {
+      q: "How long does setup take?",
+      a: "Import active grants and add restriction terms. Run your first fund balance in the trial. There is no paid setup project.",
+    },
+  ],
+  finalTitle: "Pick one restricted fund. Have its balance and evidence in place this week.",
+  finalBody:
+    "Keep QuickBooks as the books. Use GrantPipe to hold each restricted balance with the release evidence attached.",
+};
+---
+
+<PaidSearchLandingPage page={page} />

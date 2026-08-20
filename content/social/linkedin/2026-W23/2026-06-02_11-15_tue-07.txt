@@ -1,0 +1,7 @@
+Matching funds under 2 CFR 200.306 need the same discipline as direct grant costs.
+
+They must be verifiable, not counted as match for another federal award, necessary and reasonable for the work, and allowed under the award terms.
+
+The risky version is "we have in-kind support somewhere."
+
+The better version is a match log with source, date, valuation method, restriction, and reviewer.

@@ -1,0 +1,179 @@
+---
+/**
+ * Feature-comparison table for /compare/ "vs" pages.
+ *
+ * Renders a semantic HTML table with GrantPipe and a named competitor as the
+ * two data columns, and one row per feature. Cells accept either a boolean
+ * (rendered as a check/x glyph) or a short text label (rendered as-is) so
+ * pages can express partial/native/manual support without losing the
+ * plain-language claim already made in the surrounding copy.
+ *
+ * Mobile: wrapped in an overflow-x-auto scroller with a visible scroll hint,
+ * matching the pattern already used by the other compare-page matrices.
+ */
+export type ComparisonCellValue = boolean | string
+
+export interface ComparisonRow {
+  feature: string
+  grantpipe: ComparisonCellValue
+  competitor: ComparisonCellValue
+}
+
+interface Props {
+  competitorName: string
+  rows: ComparisonRow[]
+  caption?: string
+  id?: string
+}
+
+const { competitorName, rows, caption, id } = Astro.props
+
+function cellGlyph(value: ComparisonCellValue): { glyph: string; className: string; srLabel: string } {
+  if (value === true) {
+    return { glyph: "✓", className: "gp-comparison-cell--yes", srLabel: "Yes" }
+  }
+  if (value === false) {
+    return { glyph: "✕", className: "gp-comparison-cell--no", srLabel: "No" }
+  }
+  return { glyph: value, className: "gp-comparison-cell--text", srLabel: value }
+}
+---
+
+<div class="gp-comparison-table-scroll overflow-x-auto -mx-4 sm:mx-0" id={id}>
+  <p class="gp-comparison-table-scroll-hint sm:hidden" aria-hidden="true">&#8592; scroll &#8594;</p>
+  <table class="gp-comparison-table" aria-label={`GrantPipe versus ${competitorName} feature comparison`}>
+    {caption && <caption class="sr-only">{caption}</caption>}
+    <thead>
+      <tr>
+        <th scope="col" class="gp-comparison-table__col gp-comparison-table__col--feature">Feature</th>
+        <th scope="col" class="gp-comparison-table__col gp-comparison-table__col--winner">GrantPipe</th>
+        <th scope="col" class="gp-comparison-table__col">{competitorName}</th>
+      </tr>
+    </thead>
+    <tbody>
+      {rows.map((row) => {
+        const gp = cellGlyph(row.grantpipe)
+        const competitor = cellGlyph(row.competitor)
+        return (
+          <tr>
+            <th scope="row" class="gp-comparison-table__feature">{row.feature}</th>
+            <td class={`gp-comparison-table__cell gp-comparison-table__cell--winner ${gp.className}`}>
+              <span aria-hidden={typeof row.grantpipe === "boolean" ? "true" : undefined}>{gp.glyph}</span>
+              {typeof row.grantpipe === "boolean" && <span class="sr-only">{gp.srLabel}</span>}
+            </td>
+            <td class={`gp-comparison-table__cell ${competitor.className}`}>
+              <span aria-hidden={typeof row.competitor === "boolean" ? "true" : undefined}>{competitor.glyph}</span>
+              {typeof row.competitor === "boolean" && <span class="sr-only">{competitor.srLabel}</span>}
+            </td>
+          </tr>
+        )
+      })}
+    </tbody>
+  </table>
+</div>
+
+<style>
+  .gp-comparison-table-scroll {
+    -webkit-overflow-scrolling: touch;
+    border: 1px solid var(--gp-ink-100);
+    border-radius: var(--radius-lg);
+    background: var(--gp-card);
+    box-shadow: var(--shadow-card);
+  }
+
+  .gp-comparison-table-scroll-hint {
+    margin: 0.5rem 1rem 0;
+    font-size: 0.75rem;
+    color: var(--gp-ink-500);
+    text-align: center;
+    letter-spacing: 0.04em;
+  }
+
+  .gp-comparison-table {
+    width: 100%;
+    min-width: 32rem;
+    border-collapse: collapse;
+    text-align: left;
+  }
+
+  .gp-comparison-table thead th {
+    background: var(--gp-paper-2);
+    padding: 0.875rem 1.25rem;
+    font-family: var(--font-mono, inherit);
+    font-size: 0.6875rem;
+    font-weight: 800;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: var(--gp-ink-600);
+    border-bottom: 1px solid var(--gp-ink-100);
+  }
+
+  .gp-comparison-table__col--winner {
+    color: var(--gp-emerald-700);
+  }
+
+  .gp-comparison-table__feature,
+  .gp-comparison-table__cell {
+    padding: 0.875rem 1.25rem;
+    border-top: 1px solid var(--gp-ink-100);
+    vertical-align: middle;
+    font-weight: 400;
+  }
+
+  .gp-comparison-table tbody tr:first-child .gp-comparison-table__feature,
+  .gp-comparison-table tbody tr:first-child .gp-comparison-table__cell {
+    border-top: 0;
+  }
+
+  .gp-comparison-table tbody tr:hover .gp-comparison-table__feature,
+  .gp-comparison-table tbody tr:hover .gp-comparison-table__cell {
+    background: color-mix(in srgb, var(--gp-paper-2) 55%, transparent);
+  }
+
+  .gp-comparison-table__cell + .gp-comparison-table__cell,
+  .gp-comparison-table__feature + .gp-comparison-table__cell {
+    border-left: 1px solid var(--gp-ink-100);
+  }
+
+  .gp-comparison-table__cell--winner {
+    background: var(--gp-emerald-50);
+  }
+
+  .gp-comparison-table tbody tr:hover .gp-comparison-table__cell--winner {
+    background: color-mix(in srgb, var(--gp-emerald-50) 80%, var(--gp-paper-2));
+  }
+
+  .gp-comparison-table__feature {
+    text-align: left;
+    background: var(--gp-card);
+    color: var(--gp-ink-900);
+    font-weight: 600;
+    font-size: 0.9375rem;
+  }
+
+  .gp-comparison-table tbody tr:hover .gp-comparison-table__feature {
+    background: color-mix(in srgb, var(--gp-paper-2) 55%, var(--gp-card));
+  }
+
+  .gp-comparison-table__cell {
+    font-size: 0.9375rem;
+    color: var(--gp-ink-700);
+    line-height: 1.5;
+  }
+
+  .gp-comparison-cell--yes {
+    color: var(--gp-emerald-700);
+    font-weight: 700;
+    font-size: 1.0625rem;
+  }
+
+  .gp-comparison-cell--no {
+    color: var(--gp-ink-400);
+    font-weight: 700;
+    font-size: 1.0625rem;
+  }
+
+  .gp-comparison-cell--text {
+    font-size: 0.875rem;
+  }
+</style>

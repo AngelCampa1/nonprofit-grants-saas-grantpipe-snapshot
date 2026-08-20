@@ -1,0 +1,108 @@
+---
+import { CheckIconHidden } from "../lib/icons"
+import { buildCtaAnalyticsAttributes } from "../lib/cta-analytics"
+import { resolveFunnelConfig } from "../lib/funnel-cta-utils"
+import type { BuyerStage, FunnelStage } from "../types"
+
+interface Props {
+  stage: BuyerStage
+  funnel: Record<BuyerStage, FunnelStage>
+  heading?: string
+  trustNote?: string
+  secondaryCtaText?: string
+  secondaryCtaTarget?: string
+  subtitle?: string
+  benefitBullets?: string[]
+}
+const { stage, funnel, heading, trustNote, secondaryCtaText, secondaryCtaTarget, subtitle, benefitBullets } = Astro.props
+const config = resolveFunnelConfig(funnel, stage)
+const primaryAnalyticsAttributes = config
+  ? buildCtaAnalyticsAttributes({
+      buyerStage: stage,
+      intent: config.ctaMode,
+      placement: "funnel-primary",
+      target: config.ctaTarget,
+    })
+  : undefined
+const secondaryAnalyticsAttributes =
+  secondaryCtaTarget &&
+  buildCtaAnalyticsAttributes({
+    buyerStage: stage,
+    intent: config?.ctaMode,
+    placement: "funnel-secondary",
+    target: secondaryCtaTarget,
+  })
+
+// One primary CTA per section. At bofu the primary CTA converts (solid); at
+// tofu/mofu it educates/evaluates, still solid so the section has a clear
+// next action. A page-supplied secondary always renders as a quieter ghost.
+const primaryVariant = "primary"
+---
+
+{
+  config && (
+    <section
+      class="w-full px-4 py-[var(--section-py-sm)]"
+      style="background: var(--surface-secondary)"
+      data-funnel-cta
+      data-section="funnel-cta"
+      data-stage={stage}
+      data-cta-motion="settled"
+    >
+      <div
+        data-funnel-shell
+        class="gp-card-base mx-auto flex max-w-5xl flex-col gap-5 px-6 py-8 text-left md:px-8"
+      >
+        {heading && (
+          <h2 class="font-heading text-[length:var(--text-heading)] font-bold leading-tight text-brand-text">
+            {heading}
+          </h2>
+        )}
+        {benefitBullets && benefitBullets.length > 0 && (
+          <ul class="flex list-none flex-wrap gap-x-6 gap-y-2 p-0">
+            {benefitBullets.map((bullet) => (
+              <li class="inline-flex items-center gap-2">
+                <span
+                  class="inline-flex h-[var(--icon-md)] w-[var(--icon-md)] flex-shrink-0 items-center justify-center rounded-full bg-accent-500 text-xs font-bold text-neutral-50"
+                  aria-hidden="true"
+                  set:html={CheckIconHidden}
+                />
+                <span class="text-[length:var(--text-caption)] font-semibold text-brand-text">
+                  {bullet}
+                </span>
+              </li>
+            ))}
+          </ul>
+        )}
+        <div class="flex flex-col gap-[var(--component-gap-sm)]">
+          <div class="flex flex-col gap-[var(--component-gap-sm)] sm:flex-row">
+            <a
+              href={config.ctaTarget}
+              class={`gp-mkt-btn ${primaryVariant} md inline-flex items-center justify-center no-underline`}
+              {...primaryAnalyticsAttributes}
+            >
+              {config.ctaText}
+            </a>
+            {secondaryCtaText && secondaryCtaTarget && (
+              <a
+                href={secondaryCtaTarget}
+                class="gp-mkt-btn ghost md inline-flex items-center justify-center no-underline"
+                {...secondaryAnalyticsAttributes}
+              >
+                {secondaryCtaText}
+              </a>
+            )}
+          </div>
+          {subtitle && (
+            <p class="text-[length:var(--text-caption)] text-brand-muted">{subtitle}</p>
+          )}
+        </div>
+        {trustNote && (stage === "mofu" || stage === "bofu") && (
+          <p class="text-[length:var(--text-caption)] text-brand-muted">
+            {trustNote}
+          </p>
+        )}
+      </div>
+    </section>
+  )
+}

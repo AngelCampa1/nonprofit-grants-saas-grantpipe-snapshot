@@ -1,0 +1,427 @@
+1
+00:00:00,000 --> 00:00:04,813
+If your nonprofit takes federal money, one rulebook covers all of it.
+
+2
+00:00:04,813 --> 00:00:07,115
+It's called the Uniform Guidance.
+
+3
+00:00:07,115 --> 00:00:10,115
+The official name is two C F R two hundred.
+
+4
+00:00:10,115 --> 00:00:11,929
+Most people never read it.
+
+5
+00:00:11,929 --> 00:00:15,277
+They just hear the word compliance and tense up.
+
+6
+00:00:15,277 --> 00:00:18,137
+Today I'll explain what's actually in it.
+
+7
+00:00:18,137 --> 00:00:21,765
+Plain English, about seven minutes, no lawyer-speak.
+
+8
+00:00:21,765 --> 00:00:26,648
+And I'll show you the four numbers that changed in twenty twenty-four.
+
+9
+00:00:26,648 --> 00:00:29,927
+A lot of advice online still uses the old ones.
+
+10
+00:00:29,927 --> 00:00:32,438
+Quick note on where I'm coming from.
+
+11
+00:00:32,438 --> 00:00:34,810
+I build grant compliance software.
+
+12
+00:00:34,810 --> 00:00:39,065
+To build it, I had to learn exactly what these rules require.
+
+13
+00:00:39,065 --> 00:00:42,274
+I'm not an auditor, and I won't talk like one.
+
+14
+00:00:42,274 --> 00:00:45,970
+You're getting the version a busy director actually needs.
+
+15
+00:00:45,970 --> 00:00:46,915
+So what is it?
+
+16
+00:00:46,915 --> 00:00:50,693
+The Uniform Guidance is one rulebook for federal grants.
+
+17
+00:00:50,693 --> 00:00:54,066
+The federal budget office, called O M B, wrote it.
+
+18
+00:00:54,066 --> 00:00:57,845
+It covers grants and the agreements that come with them.
+
+19
+00:00:57,845 --> 00:01:01,016
+Back in twenty thirteen, the rules were a mess.
+
+20
+00:01:01,016 --> 00:01:03,445
+There were eight separate rulebooks.
+
+21
+00:01:03,445 --> 00:01:08,370
+Which one applied depended on who you were and what kind of cost you had.
+
+22
+00:01:08,370 --> 00:01:11,541
+The Uniform Guidance pulled all eight into one.
+
+23
+00:01:11,541 --> 00:01:14,173
+People nicknamed it the Super Circular.
+
+24
+00:01:14,173 --> 00:01:16,467
+It took effect in twenty fourteen.
+
+25
+00:01:16,467 --> 00:01:18,423
+And it doesn't just bind you.
+
+26
+00:01:18,423 --> 00:01:21,729
+It binds the federal agency that gives the money.
+
+27
+00:01:21,729 --> 00:01:26,722
+It binds any group in the middle that passes the money down, like a state.
+
+28
+00:01:26,722 --> 00:01:29,893
+And it binds anyone you hand the money to next.
+
+29
+00:01:29,893 --> 00:01:31,500
+Same rulebook, top to bottom.
+
+30
+00:01:31,500 --> 00:01:33,026
+The rulebook is long.
+
+31
+00:01:33,026 --> 00:01:36,006
+But you really live in three parts of it.
+
+32
+00:01:36,006 --> 00:01:38,913
+The first part is how you run the grant.
+
+33
+00:01:38,913 --> 00:01:40,003
+The day to day.
+
+34
+00:01:40,003 --> 00:01:44,145
+How you buy things, how you keep records, how you report.
+
+35
+00:01:44,145 --> 00:01:48,651
+The second part is what you're allowed to charge to the grant.
+
+36
+00:01:48,651 --> 00:01:50,322
+This is the money part.
+
+37
+00:01:50,322 --> 00:01:52,357
+It trips people up the most.
+
+38
+00:01:52,357 --> 00:01:55,192
+The third part is who checks your work.
+
+39
+00:01:55,192 --> 00:01:56,427
+That's the audit.
+
+40
+00:01:56,427 --> 00:01:58,389
+We'll get to it at the end.
+
+41
+00:01:58,389 --> 00:02:00,279
+Run it, cost it, prove it.
+
+42
+00:02:00,279 --> 00:02:05,670
+Keep those three jobs straight and you understand the shape of the whole thing.
+
+43
+00:02:05,670 --> 00:02:10,280
+Let's do the money part, because it's the one you touch every day.
+
+44
+00:02:10,280 --> 00:02:15,309
+Before you charge a cost to a federal grant, it has to pass three words.
+
+45
+00:02:15,309 --> 00:02:16,077
+Reasonable.
+
+46
+00:02:16,077 --> 00:02:16,776
+Allocable.
+
+47
+00:02:16,776 --> 00:02:17,474
+Allowable.
+
+48
+00:02:17,474 --> 00:02:21,805
+Reasonable means a careful person would spend about that much.
+
+49
+00:02:21,805 --> 00:02:27,253
+Allocable means the cost really belongs to this grant, not some other program.
+
+50
+00:02:27,253 --> 00:02:30,187
+Allowable means the rules don't forbid it.
+
+51
+00:02:30,187 --> 00:02:33,959
+Some things, like alcohol or lobbying, are simply out.
+
+52
+00:02:33,959 --> 00:02:35,914
+There are two kinds of cost.
+
+53
+00:02:35,914 --> 00:02:40,804
+Direct costs you can tie to one project, like a program staffer's pay.
+
+54
+00:02:40,804 --> 00:02:45,763
+Indirect costs keep the whole place running, like rent and bookkeeping.
+
+55
+00:02:45,763 --> 00:02:48,068
+You can't pin those to one grant.
+
+56
+00:02:48,068 --> 00:02:51,002
+So you recover them with an indirect rate.
+
+57
+00:02:51,002 --> 00:02:52,259
+Hold that thought.
+
+58
+00:02:52,259 --> 00:02:55,960
+The indirect rate is one of the numbers that just changed.
+
+59
+00:02:55,960 --> 00:03:02,955
+In twenty twenty-four, O M B rewrote the rulebook in plainer language and raised a bunch of thresholds.
+
+60
+00:03:02,955 --> 00:03:08,931
+Most of them kick in for awards given out on or after October first, twenty twenty-four.
+
+61
+00:03:08,931 --> 00:03:11,783
+Here are the four that matter most to you.
+
+62
+00:03:11,783 --> 00:03:12,054
+One.
+
+63
+00:03:12,054 --> 00:03:18,709
+If you don't have a negotiated rate, you can now charge an indirect rate of up to fifteen percent.
+
+64
+00:03:18,709 --> 00:03:19,932
+It used to be ten.
+
+65
+00:03:19,932 --> 00:03:25,093
+That's real money back for overhead, and you don't have to negotiate for it.
+
+66
+00:03:25,093 --> 00:03:25,365
+Two.
+
+67
+00:03:25,365 --> 00:03:31,205
+The line for what counts as equipment went from five thousand dollars to ten thousand.
+
+68
+00:03:31,205 --> 00:03:36,909
+So something that costs, say, eight thousand dollars used to be tracked as equipment
+
+69
+00:03:36,909 --> 00:03:39,014
+with all the rules that brings.
+
+70
+00:03:39,014 --> 00:03:40,576
+Now it's just a supply.
+
+71
+00:03:40,576 --> 00:03:41,595
+Less paperwork.
+
+72
+00:03:41,595 --> 00:03:42,002
+Three.
+
+73
+00:03:42,002 --> 00:03:44,379
+When you pass money to a subgrantee
+
+74
+00:03:44,379 --> 00:03:50,015
+the first fifty thousand dollars of that subaward counts toward your indirect base.
+
+75
+00:03:50,015 --> 00:03:52,732
+It used to be only twenty-five thousand.
+
+76
+00:03:52,732 --> 00:03:57,282
+So you can recover a bit more overhead on your bigger partnerships.
+
+77
+00:03:57,282 --> 00:03:57,621
+Four.
+
+78
+00:03:57,621 --> 00:03:58,436
+The big one.
+
+79
+00:03:58,436 --> 00:04:04,130
+The single audit threshold went from seven hundred fifty thousand dollars to one million.
+
+80
+00:04:04,130 --> 00:04:05,866
+So what's a single audit?
+
+81
+00:04:05,866 --> 00:04:11,352
+It's one outside audit of your whole group, not a separate audit of each grant.
+
+82
+00:04:11,352 --> 00:04:13,852
+One audit covers everything federal.
+
+83
+00:04:13,852 --> 00:04:15,172
+Here's the trigger.
+
+84
+00:04:15,172 --> 00:04:21,352
+If you spend one million dollars or more in federal money in a single year, you need one.
+
+85
+00:04:21,352 --> 00:04:22,880
+Notice the word spend.
+
+86
+00:04:22,880 --> 00:04:27,949
+It's about what you actually spent that year, not what you were promised.
+
+87
+00:04:27,949 --> 00:04:30,311
+This one follows your fiscal year.
+
+88
+00:04:30,311 --> 00:04:36,144
+It applies to fiscal years that start on or after October first, twenty twenty-four.
+
+89
+00:04:36,144 --> 00:04:39,894
+A single audit has to be done by an independent C P A.
+
+90
+00:04:39,894 --> 00:04:45,936
+They follow the government's audit standards and file the result in a federal database.
+
+91
+00:04:45,936 --> 00:04:47,741
+It's a real piece of work.
+
+92
+00:04:47,741 --> 00:04:50,033
+The line moved up to one million.
+
+93
+00:04:50,033 --> 00:04:53,780
+So some smaller groups that used to need one don't anymore.
+
+94
+00:04:53,780 --> 00:04:55,847
+So that's the Uniform Guidance.
+
+95
+00:04:55,847 --> 00:04:57,915
+One rulebook for federal money.
+
+96
+00:04:57,915 --> 00:04:58,648
+Three jobs.
+
+97
+00:04:58,648 --> 00:05:02,449
+Run the grant, charge it right, and prove it in an audit.
+
+98
+00:05:02,449 --> 00:05:07,318
+And as of twenty twenty-four, four of the numbers moved up in your favor.
+
+99
+00:05:07,318 --> 00:05:09,785
+You don't need a consultant to start.
+
+100
+00:05:09,785 --> 00:05:13,119
+You need to know which rules apply to your grants.
+
+101
+00:05:13,119 --> 00:05:16,387
+And you need a system that keeps the proof ready.
+
+102
+00:05:16,387 --> 00:05:19,988
+That's the kind of thing we built GrantPipe to handle.
+
+103
+00:05:19,988 --> 00:05:22,989
+But the knowledge matters more than any tool.
+
+104
+00:05:22,989 --> 00:05:28,258
+If you want a simple place to start, we made a free Grant Compliance Checklist.
+
+105
+00:05:28,258 --> 00:05:30,792
+It covers the basics so nothing slips.
+
+106
+00:05:30,792 --> 00:05:32,659
+We'll send it to your inbox.
+
+107
+00:05:32,659 --> 00:05:35,660
+Thanks for watching, and good luck out there.

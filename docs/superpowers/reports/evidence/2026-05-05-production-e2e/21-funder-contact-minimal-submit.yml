@@ -1,0 +1,52 @@
+- generic [ref=e3]:
+    - generic [ref=e13]:
+        - banner [ref=e14]:
+            - button "Open navigation" [ref=e16]:
+                - img
+            - generic [ref=e17]:
+                - link "Add billing, trial ends in 30 days" [ref=e18] [cursor=pointer]:
+                    - /url: /app/settings#billing
+                    - img [ref=e19]
+                    - generic [ref=e22]: Trial
+                    - generic [ref=e23]: 30d
+                - button "Open command palette" [ref=e24]:
+                    - img
+                - link "Notifications" [ref=e25] [cursor=pointer]:
+                    - /url: /app/notifications
+                    - img
+                - button "Switch to dark theme" [ref=e26]:
+                    - img
+        - main [ref=e28]:
+            - generic [ref=e94]:
+                - generic [ref=e95]:
+                    - navigation "breadcrumb" [ref=e97]:
+                        - list [ref=e98]:
+                            - listitem [ref=e99]:
+                                - link "Funders" [ref=e100] [cursor=pointer]:
+                                    - /url: /app/funders
+                            - listitem [ref=e101]:
+                                - img [ref=e102]
+                            - listitem [ref=e104]:
+                                - generic [ref=e105]: Prod E2E Funder 160129
+                    - generic [ref=e106]:
+                        - heading "Prod E2E Funder 160129" [level=1] [ref=e109]
+                        - generic [ref=e111]: Foundation
+                - generic [ref=e112]:
+                    - tablist [ref=e113]:
+                        - tab "Overview" [ref=e114]
+                        - tab "Program Officers" [selected] [ref=e115]
+                        - tab "Grant History" [ref=e116]
+                        - tab "Activity" [ref=e117]
+                        - tab "Documents" [ref=e118]
+                    - tabpanel "Program Officers" [ref=e142]:
+                        - generic [ref=e143]:
+                            - heading "Program Officers" [level=2] [ref=e144]
+                            - button "Add contact" [active] [ref=e145]
+                        - generic [ref=e165]:
+                            - paragraph [ref=e166]: Minimal Officer 160129
+                            - paragraph [ref=e167]: Program Officer
+                            - paragraph [ref=e168]: No email
+                            - generic [ref=e169]:
+                                - button "Edit contact Minimal Officer 160129" [ref=e170]
+                                - button "Delete contact Minimal Officer 160129" [ref=e171]
+    - region "Notifications alt+T"

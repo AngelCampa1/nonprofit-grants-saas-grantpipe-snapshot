@@ -1,0 +1,11 @@
+Board reporting gets sharper when every grant has a status flag.
+
+Not a mood. A defined flag.
+
+On track: spend and time are aligned.
+
+Needs attention: pacing, documentation, or renewal risk needs leadership review.
+
+Compliance issue: a missed report, finding, late submission, or unresolved funder request exists.
+
+The definitions matter more than the colors.

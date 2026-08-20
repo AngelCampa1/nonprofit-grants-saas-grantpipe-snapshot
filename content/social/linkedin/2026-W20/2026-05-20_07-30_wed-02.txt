@@ -1,0 +1,13 @@
+$1,000,000 in federal awards expended in a fiscal year. That is the single audit threshold under 2 CFR 200 Subpart F.
+
+It is not a per-grant figure. It is the combined total across every direct federal award and every federal pass-through award you draw on during the year.
+
+Three things this catches small orgs off guard with.
+
+One. Pass-through awards count. A state agency hands you ARPA dollars, those dollars are still federal for the threshold test.
+
+Two. The clock is your fiscal year, not the grant period. A grant that crosses two fiscal years can push you under the threshold one year and over it the next.
+
+Three. Expended, not awarded. A $1.2M award you spent $400K of in the year does not trigger the audit. A $400K award you fully spent does count its full $400K.
+
+If you are within $100K of the line, build the binder anyway. Easier to have it and not need it than the reverse.

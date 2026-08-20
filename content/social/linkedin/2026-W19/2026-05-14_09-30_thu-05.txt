@@ -1,0 +1,21 @@
+Six things that should already be in your audit binder before May 31.
+
+Single audit season starts earlier than teams often plan for. The $1M threshold catches orgs that cross it mid-year without realizing, and "we will pull it together when they ask" is how Q3 becomes a finding.
+
+Here is what auditors typically ask for first under 2 CFR 200.
+
+1. The schedule of expenditures of federal awards (SEFA), organized by ALN, pass-through entity, and direct vs sub-award. Tied to the GL.
+
+2. A reconciliation between the SEFA total and the federal revenue line on your Statement of Activities. Auditors want the bridge.
+
+3. Internal control narratives for grants management, cash receipts, disbursements, and payroll allocation. Especially at small orgs.
+
+4. Time and effort certifications for staff charged across multiple federal awards. Must reflect actual after-the-fact activity, not the budget.
+
+5. Sub-recipient monitoring: risk assessments, recent audit reports, and the monitoring activity you performed during the period.
+
+6. Procurement records under 2 CFR 200.318. Method, conflict of interest disclosures, cost or price analysis where required.
+
+If any of these live in someone's head or someone's inbox, that is where the audit finding will land.
+
+See current offer terms at grantpipe.com/pricing.

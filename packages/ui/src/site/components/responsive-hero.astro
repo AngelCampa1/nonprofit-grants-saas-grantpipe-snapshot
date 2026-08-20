@@ -1,0 +1,154 @@
+---
+/**
+ * ResponsiveHero — slot-based hero with mobile-stack → desktop-grid layout.
+ *
+ * Layout:
+ *   - Default: single column stack on mobile (all slots flow vertically).
+ *   - At min-width 900px: two-column grid with copy on the left and media
+ *     on the right. Column widths: `minmax(0, 1fr) minmax(21rem, 0.64fr)`.
+ *
+ * Slots:
+ *   - eyebrow   — small kicker text above the heading (optional)
+ *   - heading   — the H1 / main headline; gets clamp() typography via wrapper
+ *   - copy      — body copy / subheadline paragraph(s)
+ *   - cta       — call-to-action button(s) and micro-trust line
+ *   - media     — screenshot, illustration, or proof card (optional)
+ *
+ * Props:
+ *   - class? — extra classes on the outer section element
+ *   - innerClass? — extra classes on the inner container (shell)
+ *   - id? — id forwarded to the section element (for anchor links)
+ *
+ * Typography:
+ *   The `.responsive-hero__heading` wrapper forces `clamp()` font-size so the
+ *   H1 scales smoothly from mobile to desktop. Consumers can override via
+ *   scoped styles if needed.
+ */
+import type { HTMLAttributes } from "astro/types";
+
+type SectionAttrs = Omit<HTMLAttributes<"section">, "class">;
+
+interface Props extends SectionAttrs {
+  /** Extra classes on the outer <section> element. */
+  class?: string;
+  /** Extra classes on the inner shell container. */
+  innerClass?: string;
+}
+
+const {
+  class: className,
+  innerClass,
+  ...rest
+} = Astro.props;
+
+const sectionClasses = ["responsive-hero", className]
+  .filter(Boolean)
+  .join(" ");
+
+const innerClasses = ["responsive-hero__shell", innerClass]
+  .filter(Boolean)
+  .join(" ");
+---
+
+<section class={sectionClasses} {...rest}>
+  <div class={innerClasses}>
+    <div class="responsive-hero__copy">
+      {
+        Astro.slots.has("eyebrow") && (
+          <div class="responsive-hero__eyebrow">
+            <slot name="eyebrow" />
+          </div>
+        )
+      }
+      <div class="responsive-hero__heading">
+        <slot name="heading" />
+      </div>
+      {
+        Astro.slots.has("copy") && (
+          <div class="responsive-hero__body">
+            <slot name="copy" />
+          </div>
+        )
+      }
+      {
+        Astro.slots.has("cta") && (
+          <div class="responsive-hero__actions">
+            <slot name="cta" />
+          </div>
+        )
+      }
+    </div>
+    {
+      Astro.slots.has("media") && (
+        <div class="responsive-hero__media">
+          <slot name="media" />
+        </div>
+      )
+    }
+  </div>
+</section>
+
+<style>
+  .responsive-hero {
+    padding: clamp(2.25rem, 8vw, 5rem) 0 clamp(2.5rem, 6vw, 4rem);
+  }
+
+  .responsive-hero__shell {
+    width: min(100% - 2rem, 70rem);
+    margin-inline: auto;
+    display: grid;
+    gap: clamp(2rem, 5vw, 4rem);
+    align-items: center;
+  }
+
+  .responsive-hero__copy {
+    min-width: 0;
+  }
+
+  .responsive-hero__eyebrow {
+    margin-bottom: 0.75rem;
+  }
+
+  /*
+   * Force clamp() typography on the heading slot content.
+   * The :global selector targets the slotted H1/H2 so consumers don't need
+   * to add inline styles.
+   */
+  .responsive-hero__heading :global(h1),
+  .responsive-hero__heading :global(h2) {
+    margin-top: 0;
+    font-size: clamp(2.35rem, 7vw, 4.25rem);
+    font-weight: 800;
+    line-height: 0.98;
+    letter-spacing: 0;
+  }
+
+  .responsive-hero__body {
+    margin-top: 1.25rem;
+  }
+
+  .responsive-hero__actions {
+    margin-top: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+  }
+
+  .responsive-hero__media {
+    min-width: 0;
+  }
+
+  @media (min-width: 640px) {
+    .responsive-hero__actions {
+      flex-direction: row;
+      flex-wrap: wrap;
+      align-items: center;
+    }
+  }
+
+  @media (min-width: 900px) {
+    .responsive-hero__shell {
+      grid-template-columns: minmax(0, 1fr) minmax(21rem, 0.64fr);
+    }
+  }
+</style>

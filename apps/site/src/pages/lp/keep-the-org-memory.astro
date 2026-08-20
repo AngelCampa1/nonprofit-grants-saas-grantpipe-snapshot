@@ -1,0 +1,125 @@
+---
+import PaidSearchLandingPage from "@/components/paid-search-landing-page.astro";
+import type { PaidLandingPageData } from "@/components/paid-search-landing-page.astro";
+
+const page: PaidLandingPageData = {
+  slug: "keep-the-org-memory",
+  title: "When a Staffer Leaves, the Memory Stays | GrantPipe",
+  description:
+    "Donor relationships, grant history, and fund records live in the system, not in one person's inbox. GrantPipe keeps institutional memory safe when staff turns over.",
+  kicker: "Key-person risk for nonprofit executive directors",
+  headline: "When a staffer leaves, the memory stays.",
+  subhead:
+    "Donor and grant history lives in the system. Not in one person's inbox.",
+  primaryCta: "Start 1-month free trial",
+  exitLeadMagnet: {
+    slug: "nonprofit-crm-evaluation-scorecard",
+    title: "Nonprofit CRM Evaluation Scorecard",
+    description:
+      "A structured scorecard for comparing nonprofit CRM options on the criteria that matter most: cost, fit, migration risk, and ongoing support burden.",
+  },
+  trust: "No credit card required. Built for nonprofits that cannot afford to lose institutional memory.",
+  proofCard: {
+    label: "Transition readiness",
+    status: "Memory protected",
+    rows: [
+      { label: "Donor records complete", value: "412" },
+      { label: "Grant files attached", value: "100%" },
+      { label: "Open deadlines assigned", value: "8" },
+      { label: "Staff handoff risk", value: "Low" },
+    ],
+    progressLabel: "Org memory in the system",
+    progress: "94%",
+  },
+  painsTitle: "One resignation can take years of relationship history with it.",
+  pains: [
+    "Your development director knows every major donor by name and backstory.",
+    "Grant contact notes live in one staffer's Outlook and Google Drive.",
+    "A transition means weeks of catch-up calls and lost funder relationships.",
+    "New staff cannot find prior grant reports or compliance documents.",
+    "Board members ask what happened to a lapsed donor and no one knows.",
+  ],
+  workflowTitle: "Put the record in the system so any staff member can pick it up.",
+  workflowSteps: [
+    {
+      icon: "ledger",
+      heading: "Log every donor and grant contact",
+      copy: "Notes, calls, and meetings attach to the record, not the inbox.",
+    },
+    {
+      icon: "evidence",
+      heading: "Attach files as you work",
+      copy: "Grant reports, funder correspondence, and proof live in the grant file.",
+    },
+    {
+      icon: "transfer",
+      heading: "Hand off without a project",
+      copy: "Any staff member can open the record and see the full history.",
+    },
+  ],
+  featureTitle: "The record keeps the memory when a person cannot.",
+  features: [
+    {
+      icon: "ledger",
+      heading: "Contact history by record",
+      copy: "Every donor and grant contact log is in the system, not an inbox.",
+    },
+    {
+      icon: "evidence",
+      heading: "Attached files per grant",
+      copy: "Reports, approvals, and funder emails stay with the grant record.",
+    },
+    {
+      icon: "calendar",
+      heading: "Deadline visibility for the whole team",
+      copy: "Open tasks and deadlines are visible to every team member.",
+    },
+  ],
+  proofTitle: "Organizations that keep history in the system survive transitions.",
+  proofPoints: [
+    {
+      value: "1 in 3",
+      label:
+        "nonprofit executives say staff turnover is a top risk to funder relationships and grant continuity.",
+      source: "Nonprofit Finance Fund sector survey",
+    },
+    {
+      value: "Weeks",
+      label:
+        "average ramp time when notes live in one inbox.",
+      source: "GrantPipe ICP research",
+    },
+    {
+      value: "1 place",
+      label:
+        "for donor notes, grant files, and deadlines. New staff pick up fast.",
+      source: "GrantPipe org-memory design principle",
+    },
+  ],
+  trustLabels: ["History in the system", "File-per-grant records", "Handoff-ready"],
+  faqTitle: "Questions about staff transitions and org memory.",
+  faqs: [
+    {
+      q: "What happens to the data if a staff member leaves?",
+      a: "All donor notes, grant files, and deadlines stay in the system. Access can be reassigned to a new team member in minutes.",
+    },
+    {
+      q: "Can we restrict which staff see donor gift amounts?",
+      a: "Yes. Role-based access lets you control who sees financial details versus relationship history.",
+    },
+    {
+      q: "Does this replace our accounting system?",
+      a: "No. GrantPipe does not connect to QuickBooks or Sage Intacct right now. Keep your books there. Keep donor, grant, and fund records in GrantPipe.",
+    },
+    {
+      q: "How long does it take new staff to get up to speed?",
+      a: "Most new team members can navigate the record and pull a grant report in their first day, without training from the person who left.",
+    },
+  ],
+  finalTitle: "Put one grant file and one donor record in the system this week.",
+  finalBody:
+    "Start with the staffer whose departure would hurt most. Get their records into the system before the risk becomes real.",
+};
+---
+
+<PaidSearchLandingPage page={page} />

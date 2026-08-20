@@ -1,0 +1,12 @@
+The restricted fund schedule should be readable by someone who was not in the close meeting.
+
+For each fund:
+
+- opening restricted balance
+- new restricted gifts or grants
+- releases from restriction
+- ending restricted balance
+- restriction purpose
+- source document
+
+If the schedule needs oral history to explain it, it is not ready for board or audit use.

@@ -1,0 +1,6 @@
+Quick check: can every questioned cost in your file point to a source document?
+
+Not a summary.
+Not a screenshot of a total.
+
+The invoice, payment proof, approval, coding, and grant term should live close enough together that a reviewer can follow the dollar without asking your team to rebuild the story.

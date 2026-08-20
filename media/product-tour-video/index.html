@@ -1,0 +1,364 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=1920, height=1080" />
+    <title>GrantPipe Product Tour Video</title>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.14.2/dist/gsap.min.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@500;600&family=Manrope:wght@400;500;600;700;800&family=Spectral:wght@500;600;700&display=block"
+      rel="stylesheet"
+    />
+    <style>
+      :root {
+        --paper: #fbfaf6;
+        --paper-2: #f4f1e9;
+        --card: #ffffff;
+        --ink: #0e1a16;
+        --muted: #5b6e66;
+        --border: #dfe7e3;
+        --emerald: #047857;
+        --emerald-soft: #e9f6f1;
+        --gold: #d99a18;
+        --shadow: 0 34px 80px rgba(14, 26, 22, 0.16);
+      }
+
+      * {
+        box-sizing: border-box;
+      }
+
+      html,
+      body {
+        width: 1920px;
+        height: 1080px;
+        margin: 0;
+        overflow: hidden;
+        background: var(--paper);
+        color: var(--ink);
+        font-family: "Manrope", system-ui, sans-serif;
+      }
+
+      #root {
+        position: relative;
+        width: 1920px;
+        height: 1080px;
+        overflow: hidden;
+        background:
+          linear-gradient(180deg, rgba(255, 255, 255, 0.62), rgba(244, 241, 233, 0.72)),
+          var(--paper);
+      }
+
+      .grain {
+        position: absolute;
+        inset: -60px;
+        opacity: 0.42;
+        pointer-events: none;
+        background-image:
+          linear-gradient(rgba(4, 120, 87, 0.026) 1px, transparent 1px),
+          linear-gradient(90deg, rgba(4, 120, 87, 0.026) 1px, transparent 1px);
+        background-size: 72px 72px;
+      }
+
+      .ambient {
+        position: absolute;
+        inset: -20%;
+        opacity: 0.24;
+        pointer-events: none;
+        background:
+          radial-gradient(circle at 16% 28%, rgba(4, 120, 87, 0.18), transparent 25%),
+          radial-gradient(circle at 82% 72%, rgba(217, 154, 24, 0.12), transparent 28%),
+          linear-gradient(115deg, transparent 18%, rgba(4, 120, 87, 0.08) 48%, transparent 70%);
+      }
+
+      video {
+        position: absolute;
+        left: 86px;
+        top: 74px;
+        z-index: 4;
+        width: 1748px;
+        height: 932px;
+        border: 1px solid rgba(4, 120, 87, 0.12);
+        border-radius: 18px;
+        background: var(--card);
+        box-shadow: var(--shadow);
+        object-fit: cover;
+        transform-origin: center center;
+        will-change: transform;
+      }
+
+      .scene-card {
+        position: absolute;
+        inset: 0;
+        z-index: 20;
+        display: flex;
+        width: 100%;
+        height: 100%;
+        padding: 104px 132px;
+        align-items: center;
+        justify-content: space-between;
+        gap: 80px;
+        background:
+          linear-gradient(180deg, rgba(251, 250, 246, 0.96), rgba(244, 241, 233, 0.96)),
+          var(--paper);
+        opacity: 0;
+        visibility: hidden;
+      }
+
+      .scene-card.copy-only {
+        justify-content: center;
+        text-align: center;
+      }
+
+      .card-copy {
+        max-width: 980px;
+      }
+
+      .brand-logo {
+        width: 430px;
+        height: auto;
+        margin-bottom: 36px;
+      }
+
+      .eyebrow {
+        display: inline-flex;
+        align-items: center;
+        gap: 10px;
+        margin-bottom: 24px;
+        padding: 10px 14px;
+        border: 1px solid #d4ebe1;
+        border-radius: 999px;
+        background: var(--emerald-soft);
+        color: var(--emerald);
+        font-family: "JetBrains Mono", ui-monospace, monospace;
+        font-size: 16px;
+        font-weight: 700;
+        text-transform: uppercase;
+      }
+
+      .eyebrow::before {
+        content: "";
+        width: 8px;
+        height: 8px;
+        border-radius: 999px;
+        background: var(--emerald);
+      }
+
+      h1,
+      h2 {
+        margin: 0;
+        color: var(--ink);
+        font-family: "Spectral", Georgia, serif;
+        font-weight: 600;
+        letter-spacing: 0;
+      }
+
+      h1 {
+        max-width: 1060px;
+        font-size: 76px;
+        line-height: 0.98;
+      }
+
+      h2 {
+        max-width: 960px;
+        font-size: 58px;
+        line-height: 1;
+      }
+
+      .lede {
+        max-width: 860px;
+        margin: 28px 0 0;
+        color: var(--muted);
+        font-size: 26px;
+        font-weight: 580;
+        line-height: 1.34;
+      }
+
+      .pill-row {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 14px;
+        margin-top: 34px;
+      }
+
+      .pill {
+        padding: 13px 17px;
+        border: 1px solid rgba(4, 120, 87, 0.18);
+        border-radius: 999px;
+        background: rgba(255, 255, 255, 0.72);
+        color: var(--ink);
+        font-size: 21px;
+        font-weight: 750;
+      }
+
+      .cta {
+        display: inline-flex;
+        align-items: center;
+        gap: 16px;
+        margin-top: 36px;
+        padding: 20px 26px;
+        border-radius: 999px;
+        background: var(--emerald);
+        color: white;
+        font-size: 26px;
+        font-weight: 800;
+        box-shadow: 0 28px 54px rgba(4, 120, 87, 0.24);
+      }
+
+      .card-spacer {
+        margin-top: 30px;
+        background: rgba(4, 120, 87, 0.1);
+        color: var(--emerald);
+        box-shadow: none;
+      }
+
+      .progress {
+        position: absolute;
+        left: 86px;
+        bottom: 34px;
+        z-index: 30;
+        width: 1748px;
+        height: 5px;
+        border-radius: 999px;
+        overflow: hidden;
+        background: rgba(4, 120, 87, 0.1);
+      }
+
+      .progress-fill {
+        width: 100%;
+        height: 100%;
+        background: linear-gradient(90deg, var(--emerald), #0f8a67);
+        transform-origin: left center;
+        transform: scaleX(0);
+      }
+
+      .transition-wash {
+        position: absolute;
+        inset: 0;
+        z-index: 18;
+        background: rgba(251, 250, 246, 0.72);
+        opacity: 0;
+        pointer-events: none;
+      }
+
+    </style>
+  </head>
+  <body>
+    <main
+      id="root"
+      data-composition-id="grantpipe-product-tour-landscape"
+      data-width="1920"
+      data-height="1080"
+      data-start="0"
+      data-duration="300"
+      data-track-index="0"
+    >
+      <div class="grain"></div>
+      <div class="ambient"></div>
+
+      <audio
+        id="voice"
+        data-start="0"
+        data-duration="297.344"
+        data-track-index="30"
+        data-volume="1"
+        src="./assets/audio/voice/grantpipe-product-tour-voice.wav"
+      ></audio>
+      <audio id="sfx-intro" data-start="0.2" data-duration="0.8" data-track-index="31" data-volume="0.035" src="./assets/audio/sfx/intro-rise.mp3"></audio>
+      <audio id="sfx-outro" data-start="288.6" data-duration="1.08" data-track-index="32" data-volume="0.04" src="./assets/audio/sfx/final-resolve.mp3"></audio>
+
+      <video id="clip-dashboard" data-start="0" data-duration="25.16" data-track-index="1" src="./assets/video/01-dashboard.webm" muted playsinline></video>
+      <video id="clip-grants" data-start="25.3" data-duration="53.2" data-track-index="1" src="./assets/video/02-grant-portfolio.webm" muted playsinline></video>
+      <video id="clip-funds" data-start="78.7" data-duration="45.16" data-track-index="1" src="./assets/video/03-funds-restrictions.webm" muted playsinline></video>
+      <video id="clip-reports" data-start="124.1" data-duration="37.12" data-track-index="1" src="./assets/video/05-reports-compliance.webm" muted playsinline></video>
+      <video id="clip-evidence" data-start="161.5" data-duration="25.0" data-track-index="1" data-media-start="2" src="./assets/video/06-evidence-bundles.webm" muted playsinline></video>
+      <video id="clip-team-activity" data-start="186.8" data-duration="33.2" data-track-index="1" src="./assets/video/07-team-activity.webm" muted playsinline></video>
+      <video id="clip-award-reprise" data-start="220.3" data-duration="26.0" data-track-index="1" data-media-start="20" src="./assets/video/02-grant-portfolio.webm" muted playsinline></video>
+      <video id="clip-funds-reprise" data-start="246.6" data-duration="24.0" data-track-index="1" data-media-start="16" src="./assets/video/03-funds-restrictions.webm" muted playsinline></video>
+      <video id="clip-reports-reprise" data-start="270.9" data-duration="17.5" data-track-index="1" data-media-start="8" src="./assets/video/05-reports-compliance.webm" muted playsinline></video>
+
+      <section id="intro-card" class="scene-card">
+        <div class="card-copy">
+          <img class="brand-logo" src="./assets/brand/grantpipe-logo-light.svg" alt="GrantPipe" />
+          <div class="eyebrow">GrantPipe</div>
+        <h1>Compliance-first grant management system.</h1>
+          <div class="cta card-spacer">5-minute product walkthrough</div>
+          <p class="lede">
+            Compliance calendar, evidence trail, restricted funds, grant pipeline, donor CRM,
+            multi-source opportunity tracking, fund accounting, and reporting context in one workspace.
+          </p>
+        </div>
+      </section>
+
+      <section id="outro-card" class="scene-card copy-only">
+        <div class="card-copy">
+          <img class="brand-logo" src="./assets/brand/grantpipe-logo-light-outro.svg" alt="GrantPipe" />
+          <div class="eyebrow">Evaluate it with one real workflow</div>
+          <h2>One active award. One restricted fund. One upcoming report.</h2>
+          <div class="cta">Start a one-month free trial at GrantPipe.com</div>
+          <p class="lede">No credit card. Evaluate it with your real grant workflow.</p>
+        </div>
+      </section>
+
+      <div class="progress"><div id="progress-fill" class="progress-fill"></div></div>
+      <div id="transition-wash" class="transition-wash"></div>
+    </main>
+
+    <script>
+      window.__timelines = window.__timelines || {};
+      const tl = gsap.timeline({ paused: true });
+
+      const cards = [
+        ["#intro-card", 0, 7.8],
+        ["#outro-card", 288.8, 300],
+      ];
+      cards.forEach(([selector, start, end]) => {
+        tl.set(selector, { visibility: "visible" }, start);
+        tl.fromTo(selector, { opacity: 0 }, { opacity: 1, duration: 0.55, ease: "power2.out" }, start);
+        tl.from(`${selector} .eyebrow`, { opacity: 0, y: 18, duration: 0.5, ease: "power3.out" }, start + 0.18);
+        tl.from(`${selector} h1, ${selector} h2`, { opacity: 0, y: 28, duration: 0.65, ease: "power3.out" }, start + 0.32);
+        tl.from(`${selector} .lede`, { opacity: 0, y: 18, duration: 0.5, ease: "power2.out" }, start + 0.55);
+        tl.from(`${selector} .cta`, { opacity: 0, y: 18, duration: 0.5, ease: "power2.out" }, start + 0.66);
+        if (end < 300) {
+          tl.to(selector, { opacity: 0, duration: 0.45, ease: "power2.inOut" }, end - 0.45);
+          tl.set(selector, { opacity: 0, visibility: "hidden" }, end);
+        }
+      });
+
+      const cameraMoves = [
+        ["#clip-dashboard", 0, 25.16, 1.006, 1.028, 0, 0, -16, -8],
+        ["#clip-grants", 25.3, 53.2, 1.02, 1.04, 10, -6, -18, 10],
+        ["#clip-funds", 78.7, 45.16, 1.014, 1.036, -12, 8, 14, -10],
+        ["#clip-reports", 124.1, 37.12, 1.018, 1.034, 8, 0, -10, 4],
+        ["#clip-evidence", 161.5, 25.0, 1.018, 1.038, -10, -4, 12, 8],
+        ["#clip-team-activity", 186.8, 33.2, 1.016, 1.034, 10, 4, -12, -6],
+        ["#clip-award-reprise", 220.3, 26.0, 1.018, 1.036, 12, 4, -14, -8],
+        ["#clip-funds-reprise", 246.6, 24.0, 1.02, 1.034, 8, -4, -8, 4],
+        ["#clip-reports-reprise", 270.9, 17.5, 1.018, 1.032, -8, 4, 8, -4],
+      ];
+      cameraMoves.forEach(([selector, start, duration, fromScale, toScale, fromX, fromY, toX, toY]) => {
+        tl.fromTo(
+          selector,
+          { scale: fromScale, x: fromX, y: fromY },
+          { scale: toScale, x: toX, y: toY, duration, ease: "none" },
+          start,
+        );
+      });
+
+      [25.3, 78.7, 124.1, 161.5, 186.8, 220.3, 246.6, 270.9].forEach((start) => {
+        tl.fromTo(
+          "#transition-wash",
+          { opacity: 0 },
+          { opacity: 0.42, duration: 0.12, ease: "power1.out", yoyo: true, repeat: 1 },
+          start - 0.08,
+        );
+      });
+
+      tl.to("#progress-fill", { scaleX: 1, duration: 300, ease: "none" }, 0);
+      tl.to("#outro-card", { opacity: 0, duration: 0.6, ease: "power2.inOut" }, 299.4);
+
+      window.__timelines["grantpipe-product-tour-landscape"] = tl;
+    </script>
+  </body>
+</html>

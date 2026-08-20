@@ -1,0 +1,5 @@
+Quick check: when did you last reconcile your SF-425 cash drawn against your general ledger?
+
+If the answer is "at the next FFR deadline," that is the audit finding waiting to happen.
+
+Reconcile monthly. The variance is always smaller than you expect when you catch it early.

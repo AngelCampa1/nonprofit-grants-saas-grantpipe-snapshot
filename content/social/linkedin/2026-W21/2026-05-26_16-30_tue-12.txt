@@ -1,0 +1,11 @@
+We decided early that grants and funds would be separate entities in the data model. Not the same table with a flag.
+
+A grant is an agreement with a funder. Start date, end date, award amount, reporting cadence.
+
+A fund is a pool of restricted dollars governed by donor or grant stipulations, with a balance, a schedule of activity, and a net asset classification.
+
+One grant can fund three programs across two funds. One fund can be supplied by five gifts and two grants. The cardinality is many-to-many.
+
+Collapse these into one record and you model the simple case but misrepresent the realistic one. The realistic case is what auditors examine.
+
+So we built the join table on day one. It cost more upfront. It removes a class of reconciliation work for the rest of the product's life. This is what FASB ASC 958 requires. We did not invent it. We refused to pretend it was simpler.

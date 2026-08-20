@@ -1,0 +1,52 @@
+{
+  "type": "schedule",
+  "date": "2026-07-12T13:45:00.000Z",
+  "shortLink": false,
+  "tags": [],
+  "posts": [
+    {
+      "integration": {
+        "id": "cmorp6oby03pgmq0ye7e3n7j0"
+      },
+      "value": [
+        {
+          "content": "board memo check.\n\nMatch changed item to ask needed. Name the ED.\n\nIf it breaks, write the next step.",
+          "image": [],
+          "delay": 0
+        }
+      ],
+      "settings": {
+        "__type": "linkedin-page",
+        "post_as_images_carousel": false
+      }
+    },
+    {
+      "integration": {
+        "id": "cmq5aut9y0087mv0yt9otastk"
+      },
+      "value": [
+        {
+          "content": "board memo check: match changed item to ask needed. Name the ED.",
+          "image": [],
+          "delay": 0
+        }
+      ],
+      "settings": {
+        "who_can_reply_post": "everyone"
+      }
+    },
+    {
+      "integration": {
+        "id": "cmq5b15k300k4qp0yypplg57c"
+      },
+      "value": [
+        {
+          "content": "Small grant check: board memo. Match changed item to ask needed. Then name the ED.",
+          "image": [],
+          "delay": 0
+        }
+      ],
+      "settings": {}
+    }
+  ]
+}

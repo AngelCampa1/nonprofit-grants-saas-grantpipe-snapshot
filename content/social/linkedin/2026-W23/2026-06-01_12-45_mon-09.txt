@@ -1,0 +1,7 @@
+Release from restriction is not new revenue.
+
+Under FASB ASC 958, it is a reclassification from net assets with donor restrictions to net assets without donor restrictions after the time or purpose restriction has been satisfied.
+
+That distinction matters in board packets.
+
+If the release is missing, the organization can look restricted on paper even when qualifying program expenses already happened.

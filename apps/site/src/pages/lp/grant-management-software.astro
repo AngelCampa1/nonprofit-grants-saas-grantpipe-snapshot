@@ -1,0 +1,122 @@
+---
+import PaidSearchLandingPage from "@/components/paid-search-landing-page.astro";
+import type { PaidLandingPageData } from "@/components/paid-search-landing-page.astro";
+
+const page: PaidLandingPageData = {
+  slug: "grant-management-software",
+  title: "Grant Management Software for Nonprofits | GrantPipe",
+  description:
+    "Run grant portfolios with restricted funds, reporting deadlines, drawdown reconciliation, SF-425 inputs, and audit evidence in one GrantPipe workspace.",
+  kicker: "Grant management software",
+  headline: "Built for the SF-425, the drawdown, and the audit binder.",
+  subhead:
+    "Run a 10-to-40 award portfolio without spreadsheets, Outlook reminders, or a consultant. Restricted funds, reporting calendars, drawdowns, and evidence in one workspace.",
+  primaryCta: "Start 1-month free trial",
+  exitLeadMagnet: {
+    slug: "award-setup-worksheet",
+    title: "Award Setup Worksheet",
+    description:
+      "Capture the project period, award amount, budget categories, restrictions, reporting schedule, key contacts, and special conditions before the grant record fragments.",
+  },
+  trust: "No credit card required. No setup fees. Start with one live award and the next report deadline.",
+  proofCard: {
+    label: "Award workspace",
+    status: "Active",
+    rows: [
+      { label: "Open awards", value: "18" },
+      { label: "Next SF-425", value: "Jul 30" },
+      { label: "Drawn vs. spent", value: "$184k / $180k" },
+      { label: "Evidence attached", value: "42 files" },
+    ],
+    progressLabel: "Grant portfolio readiness",
+    progress: "74%",
+  },
+  painsTitle: "Grant management breaks when the award record is split across spreadsheets, accounting exports, and inbox reminders.",
+  pains: [
+    "Grant status lives in one tracker while restricted fund status lives somewhere else.",
+    "Reporting deadlines depend on calendar reminders with no evidence context.",
+    "Drawdown timing is reconciled separately from expenditures and cash on hand.",
+    "Audit binders are rebuilt from folders after the work already happened.",
+    "Portfolio visibility disappears when the person maintaining the spreadsheet is out.",
+  ],
+  workflowTitle: "Manage the grant from award setup through closeout.",
+  workflowSteps: [
+    {
+      icon: "ledger",
+      heading: "Create the award",
+      copy: "Record funder, award terms, budget lines, restricted funds, reporting obligations, and owners in one grant record.",
+    },
+    {
+      icon: "calendar",
+      heading: "Run the calendar",
+      copy: "Track upcoming reports, drawdown checks, evidence gaps, and review tasks before they become deadline pressure.",
+    },
+    {
+      icon: "audit",
+      heading: "Preserve the trail",
+      copy: "Keep agreements, amendments, reports, approvals, expenses, and closeout evidence attached to the award.",
+    },
+  ],
+  featureTitle: "Grant controls built for the post-award work.",
+  features: [
+    {
+      icon: "balance",
+      heading: "Restricted fund tracking",
+      copy: "See awarded, spent, released, remaining, and at-risk balances by grant and restricted fund.",
+    },
+    {
+      icon: "report",
+      heading: "Report preparation",
+      copy: "Organize SF-425 inputs, foundation reports, SEFA prep details, owners, status, and evidence before submission.",
+    },
+    {
+      icon: "evidence",
+      heading: "Grant evidence record",
+      copy: "Attach source documents and approvals to the relevant grant, fund, report, or activity record.",
+    },
+  ],
+  proofTitle: "A grant portfolio needs an operating record, not just a pipeline.",
+  proofPoints: [
+    {
+      value: "10-40",
+      label: "active awards is where spreadsheet ownership, reporting calendars, and fund tracking start to fragment.",
+      source: "GrantPipe target portfolio model",
+    },
+    {
+      value: "1 record",
+      label: "for awards, restrictions, reports, and evidence gives grants, finance, and leadership the same answer.",
+      source: "GrantPipe product architecture",
+    },
+    {
+      value: "30 days",
+      label: "of forward deadline visibility helps teams assign owners and collect evidence before funder reports are due.",
+      source: "GrantPipe reporting calendar workflow",
+    },
+  ],
+  trustLabels: ["FASB ASC 958 aware", "2 CFR 200 aligned", "Staff-led setup"],
+  faqTitle: "Answers for grants managers comparing software.",
+  faqs: [
+    {
+      q: "Does GrantPipe replace our accounting system?",
+      a: "No. Accounting remains in your books. GrantPipe keeps the grant, restriction, report, and evidence context that accounting systems usually do not model for program teams.",
+    },
+    {
+      q: "How is GrantPipe different from a grant spreadsheet?",
+      a: "A spreadsheet can list awards and deadlines. GrantPipe connects the award to restricted funds, reporting status, documents, activity history, and evidence so the record survives audit and staff turnover.",
+    },
+    {
+      q: "Can we import our current grant list?",
+      a: "Yes. Start with active grants, funders, contacts, deadlines, and documents, then add restricted fund and report context during the trial.",
+    },
+    {
+      q: "Is this for pre-award or post-award management?",
+      a: "GrantPipe covers the pipeline, but the strongest fit is post-award work: restrictions, reporting, drawdowns, closeout, and audit evidence.",
+    },
+  ],
+  finalTitle: "Pick one award. Have its deadlines, funds, and evidence in one place by Friday.",
+  finalBody:
+    "Bring the grants under the most reporting pressure, plus the files your team already maintains. GrantPipe turns them into a reusable operating record the whole team can inspect.",
+};
+---
+
+<PaidSearchLandingPage page={page} />

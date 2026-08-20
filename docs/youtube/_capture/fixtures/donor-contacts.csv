@@ -1,0 +1,7 @@
+type,firstName,lastName,email
+individual,Dorothy,Harmon,d.harmon@sample.example
+individual,Robert,Chen,rchen@sample.example
+individual,Margaret,Ellison,mellison@sample.example
+individual,Helen,Whitfield,hwhitfield@example.org
+individual,Frank,Delgado,fdelgado@example.org
+banana,Bad,Row,badrow@example.org

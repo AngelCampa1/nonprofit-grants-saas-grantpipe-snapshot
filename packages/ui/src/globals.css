@@ -1,0 +1,420 @@
+@import "tailwindcss";
+
+/* Self-hosted web fonts — served from /fonts/ (apps/web/public/fonts/) */
+@font-face {
+  font-family: "Sora";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("/fonts/sora-400.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "Sora";
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url("/fonts/sora-500.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "Sora";
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url("/fonts/sora-600.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "Sora";
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url("/fonts/sora-700.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "IBM Plex Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("/fonts/ibm-plex-sans-400.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "IBM Plex Sans";
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url("/fonts/ibm-plex-sans-500.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "IBM Plex Sans";
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url("/fonts/ibm-plex-sans-600.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "IBM Plex Mono";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("/fonts/ibm-plex-mono-400.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "IBM Plex Mono";
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url("/fonts/ibm-plex-mono-500.woff2") format("woff2");
+}
+
+@theme {
+  /* GrantPipe brand colors */
+  --color-primary-50: #ecfdf5;
+  --color-primary-100: #d1fae5;
+  --color-primary-200: #a7f3d0;
+  --color-primary-300: #6ee7b7;
+  --color-primary-400: #34d399;
+  --color-primary-500: #10b981;
+  --color-primary-600: #059669;
+  --color-primary-700: #047857;
+  --color-primary-800: #065f46;
+  --color-primary-900: #064e3b;
+  --color-primary-950: #022c22;
+
+  /* Brand accent scale — archival ochre (hue ~78).
+     Pairs with emerald like a library desk: green leather + gilt lettering.
+     Reads as "highlight / important," not "alert / error." */
+  --color-accent-50: oklch(0.97 0.025 78);
+  --color-accent-100: oklch(0.94 0.055 78);
+  --color-accent-200: oklch(0.88 0.09 78);
+  --color-accent-300: oklch(0.81 0.12 78);
+  --color-accent-400: oklch(0.74 0.14 78);
+  --color-accent-500: oklch(0.67 0.135 78);
+  --color-accent-600: oklch(0.58 0.12 78);
+  --color-accent-700: oklch(0.48 0.1 78);
+  --color-accent-800: oklch(0.38 0.08 78);
+  --color-accent-900: oklch(0.29 0.06 78);
+  --color-accent-950: oklch(0.2 0.04 78);
+
+  /* Success scale (emerald; mirrors primary) */
+  --color-success-50: #ecfdf5;
+  --color-success-100: #d1fae5;
+  --color-success-200: #a7f3d0;
+  --color-success-300: #6ee7b7;
+  --color-success-400: #34d399;
+  --color-success-500: #10b981;
+  --color-success-600: #059669;
+  --color-success-700: #047857;
+  --color-success-800: #065f46;
+  --color-success-900: #064e3b;
+  --color-success-950: #022c22;
+
+  /* Warning scale (amber) */
+  --color-warning-50: #fffbeb;
+  --color-warning-100: #fef3c7;
+  --color-warning-200: #fde68a;
+  --color-warning-300: #fcd34d;
+  --color-warning-400: #fbbf24;
+  --color-warning-500: #f59e0b;
+  --color-warning-600: #d97706;
+  --color-warning-700: #b45309;
+  --color-warning-800: #92400e;
+  --color-warning-900: #78350f;
+  --color-warning-950: #451a03;
+
+  /* Info scale (blue) */
+  --color-info-50: #eff6ff;
+  --color-info-100: #dbeafe;
+  --color-info-200: #bfdbfe;
+  --color-info-300: #93c5fd;
+  --color-info-400: #60a5fa;
+  --color-info-500: #3b82f6;
+  --color-info-600: #2563eb;
+  --color-info-700: #1d4ed8;
+  --color-info-800: #1e40af;
+  --color-info-900: #1e3a8a;
+  --color-info-950: #172554;
+
+  /* Accent ramps for stage/status lanes that sit outside the brand
+     emerald/ochre/amber/blue families. Only the shades referenced by the
+     stage tokens below are defined. */
+  /* Rose — distinct negative signal (lapsed donors, declined grants) that
+     does not collide with semantic warning/destructive. */
+  --color-rose-100: #ffe4e6;
+  --color-rose-700: #be123c;
+  /* Cyan — reporting lane. A calm, ongoing-obligation signal that reads as
+     healthy/informational and stays clear of the warm rose/pink red family
+     (which is reserved for negative states like declined/lapsed). */
+  --color-cyan-100: #cffafe;
+  --color-cyan-700: #0e7490;
+  /* Slate — neutral grey keeps closed/closeout states visually inert. */
+  --color-slate-100: #f1f5f9;
+  --color-slate-500: #64748b;
+  /* Violet — renewal is its own lane (re-engaging a closed grant). */
+  --color-violet-100: #ede9fe;
+  --color-violet-700: #6d28d9;
+
+  /* Donor stage semantic tokens — bg + foreground pairs */
+  --color-stage-cultivation: var(--color-info-100);
+  --color-stage-cultivation-foreground: var(--color-info-700);
+  --color-stage-solicitation: var(--color-warning-100);
+  --color-stage-solicitation-foreground: var(--color-warning-700);
+  --color-stage-stewardship: var(--color-success-100);
+  --color-stage-stewardship-foreground: var(--color-success-700);
+  --color-stage-donor: var(--color-success-100);
+  --color-stage-donor-foreground: var(--color-success-700);
+  /* rose-100/700 — distinct red signal so lapsed donors don't collide with
+     semantic warning/destructive. */
+  --color-stage-lapsed: var(--color-rose-100);
+  --color-stage-lapsed-foreground: var(--color-rose-700);
+
+  /* Grant stage semantic tokens — bg + foreground pairs */
+  --color-gs-research: var(--color-success-50);
+  --color-gs-research-foreground: var(--color-success-700);
+  --color-gs-drafting: var(--color-info-50);
+  --color-gs-drafting-foreground: var(--color-info-700);
+  --color-gs-submitted: var(--color-warning-100);
+  --color-gs-submitted-foreground: var(--color-warning-700);
+  --color-gs-awarded: var(--color-success-100);
+  --color-gs-awarded-foreground: var(--color-success-700);
+  /* accent-100/700 (archival ochre) — reporting is a healthy, won,
+     active-obligation stage, but it must not read as a lighter variant of the
+     emerald `active` lane; the warm ochre accent separates the two while
+     staying out of the red family reserved for declined/lapsed. */
+  --color-gs-reporting: var(--color-accent-100);
+  --color-gs-reporting-foreground: var(--color-accent-700);
+  /* slate-100/500 — neutral grey for closed/closeout stages keeps the
+     finished state visually inert next to the active stage colors. */
+  --color-gs-closed: var(--color-slate-100);
+  --color-gs-closed-foreground: var(--color-slate-500);
+
+  /* Grant status badge tokens — mapped to GRANT_STATUSES enum */
+  --color-gs-discovery: var(--color-success-50);
+  --color-gs-discovery-foreground: var(--color-success-700);
+  --color-gs-application: var(--color-info-50);
+  --color-gs-application-foreground: var(--color-info-700);
+  --color-gs-active: var(--color-success-100);
+  --color-gs-active-foreground: var(--color-success-700);
+  --color-gs-closeout: var(--color-slate-100);
+  --color-gs-closeout-foreground: var(--color-slate-500);
+  /* violet-100/700 — renewal is its own lane (re-engaging a closed grant) and
+     would lose meaning if collapsed into success or info. */
+  --color-gs-renewal: var(--color-violet-100);
+  --color-gs-renewal-foreground: var(--color-violet-700);
+  /* rose-100/700 — declined mirrors lapsed donors as a distinct negative
+     signal separate from destructive (which is reserved for delete actions). */
+  --color-gs-declined: var(--color-rose-100);
+  --color-gs-declined-foreground: var(--color-rose-700);
+
+  /* Layout sizing tokens — auto-generate max-w-*, w-*, min-w-* utilities */
+  --spacing-layout-shell: 1400px;
+  --spacing-layout-mobile-nav: 280px;
+  --spacing-layout-sidebar: 14rem;
+  --spacing-layout-sidebar-collapsed: 72px;
+  --spacing-layout-topbar-height: 56px;
+  --spacing-layout-topbar-offset: 80px;
+  --spacing-layout-report-min: 400px;
+  --spacing-layout-report-max: 1100px;
+
+  /* Chart thumbnail dimensions (retention sparkline, etc.) */
+  --spacing-chart-thumb-width: 200px;
+  --spacing-chart-thumb-height: 60px;
+
+  /* Fonts */
+  --font-display: "Sora", system-ui, sans-serif;
+  --font-heading: "Sora", system-ui, sans-serif;
+  --font-body: "IBM Plex Sans", system-ui, sans-serif;
+  --font-mono: "IBM Plex Mono", ui-monospace, monospace;
+
+  /* Letter-spacing — canonical value for text-xs uppercase metadata labels */
+  --tracking-caps: 0.14em;
+
+  /* Radii */
+  --radius-sm: 4px;
+  --radius-md: 8px;
+  --radius-lg: 12px;
+  --radius-xl: 16px;
+  --radius-2xl: 24px;
+
+  /* Accordion animations */
+  --animate-accordion-down: accordion-down 0.2s ease-out;
+  --animate-accordion-up: accordion-up 0.2s ease-out;
+}
+
+@keyframes accordion-down {
+  from {
+    grid-template-rows: 0fr;
+  }
+  to {
+    grid-template-rows: 1fr;
+  }
+}
+
+@keyframes accordion-up {
+  from {
+    grid-template-rows: 1fr;
+  }
+  to {
+    grid-template-rows: 0fr;
+  }
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-card: var(--card);
+  --color-card-foreground: var(--card-foreground);
+  --color-popover: var(--popover);
+  --color-popover-foreground: var(--popover-foreground);
+  --color-primary: var(--primary);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-secondary: var(--secondary);
+  --color-secondary-foreground: var(--secondary-foreground);
+  --color-muted: var(--muted);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-accent: var(--accent);
+  --color-accent-foreground: var(--accent-foreground);
+  --color-destructive: var(--destructive);
+  --color-destructive-foreground: var(--destructive-foreground);
+  --color-success: var(--success);
+  --color-success-foreground: var(--success-foreground);
+  --color-warning: var(--warning);
+  --color-warning-foreground: var(--warning-foreground);
+  --color-info: var(--info);
+  --color-info-foreground: var(--info-foreground);
+  --color-border: var(--border);
+  --color-input: var(--input);
+  --color-ring: var(--ring);
+}
+
+/* Shadcn CSS variables — OKLCH color tokens */
+:root {
+  /* Surfaces — very slightly tinted toward emerald (chroma 0.006) */
+  --background: oklch(0.99 0.006 165);
+  --foreground: oklch(0.2 0.012 165);
+
+  --card: oklch(0.99 0.006 165);
+  --card-foreground: oklch(0.2 0.012 165);
+
+  --popover: oklch(0.99 0.006 165);
+  --popover-foreground: oklch(0.2 0.012 165);
+
+  /* Brand — visible emerald, not near-black */
+  --primary: oklch(0.42 0.13 165);
+  --primary-foreground: oklch(0.99 0.006 165);
+
+  /* Secondary — slightly tinted cool-neutral */
+  --secondary: oklch(0.95 0.008 220);
+  --secondary-foreground: oklch(0.22 0.012 220);
+
+  /* Muted — light surface, neutral text with enough contrast */
+  --muted: oklch(0.95 0.007 165);
+  --muted-foreground: oklch(0.44 0.01 220);
+
+  /* Accent — subtle emerald hover/focus surface used by skeletons, nav
+     hovers, and low-emphasis controls. Foreground stays high-contrast for AA. */
+  --accent: oklch(0.94 0.014 155);
+  --accent-foreground: oklch(0.22 0.012 155);
+
+  /* Semantic — destructive/error (red family) */
+  --destructive: oklch(0.52 0.2 25);
+  --destructive-foreground: oklch(0.99 0.006 25);
+
+  /* Semantic — success (emerald family) */
+  --success: oklch(0.52 0.15 155);
+  --success-foreground: oklch(0.99 0.006 155);
+
+  /* Semantic — warning (amber family) */
+  --warning: oklch(0.72 0.16 75);
+  --warning-foreground: oklch(0.22 0.03 75);
+
+  /* Semantic — info (blue family) */
+  --info: oklch(0.55 0.17 250);
+  --info-foreground: oklch(0.99 0.006 250);
+
+  /* Borders & inputs — tinted neutral */
+  --border: oklch(0.88 0.008 220);
+  --input: oklch(0.88 0.008 220);
+
+  /* Ring — matches primary */
+  --ring: oklch(0.42 0.13 165);
+  --ring-offset: 2px;
+
+  --scrim: color-mix(in srgb, oklch(0.18 0.01 265) 72%, transparent);
+
+  --radius: 0.5rem;
+}
+
+/* Base typography */
+body {
+  font-family: var(--font-body);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: var(--font-heading);
+}
+
+code,
+pre,
+kbd {
+  font-family: var(--font-mono);
+}
+
+@layer base {
+  /* Tailwind v4 defaults border/divide color to currentColor, which renders
+     bare `border` utilities at text color (near-black). Restore the design
+     token as the default; explicit border-color utilities still win. */
+  *,
+  ::after,
+  ::before,
+  ::backdrop,
+  ::file-selector-button {
+    border-color: var(--border);
+  }
+
+  /* Normalize focus-visible across all interactive elements.
+     Components that already apply focus-visible:ring-* via Tailwind classes
+     will override this naturally through specificity. */
+  *:focus-visible {
+    outline: 2px solid var(--ring);
+    outline-offset: var(--ring-offset);
+  }
+
+  /* Browser UA stylesheets default <button> to cursor:default (Tailwind v4
+     preflight does not restore pointer). Give every enabled interactive
+     control the pointer affordance; soft-disabled (aria-disabled) controls
+     are excluded and get not-allowed like natively disabled ones. */
+  button:not(:disabled):not([aria-disabled="true"]),
+  [role="button"]:not([aria-disabled="true"]),
+  a[href]:not([aria-disabled="true"]),
+  select:not(:disabled),
+  summary {
+    cursor: pointer;
+  }
+
+  button:disabled,
+  select:disabled,
+  [aria-disabled="true"] {
+    cursor: not-allowed;
+  }
+}
+
+@layer utilities {
+  /* Shared transition shorthand — color, bg, border, opacity, transform, shadow */
+  .transition-standard {
+    transition-property: color, background-color, border-color, opacity, transform, box-shadow;
+    transition-timing-function: cubic-bezier(0.25, 1, 0.5, 1);
+    transition-duration: 200ms;
+  }
+}

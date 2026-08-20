@@ -1,0 +1,41 @@
+- generic [ref=e3]:
+    - generic [ref=e13]:
+        - banner [ref=e14]:
+            - button "Open navigation" [ref=e16]:
+                - img
+            - generic [ref=e17]:
+                - link "Add billing, trial ends in 30 days" [ref=e18] [cursor=pointer]:
+                    - /url: /app/settings#billing
+                    - img [ref=e19]
+                    - generic [ref=e22]: Trial
+                    - generic [ref=e23]: 30d
+                - button "Open command palette" [ref=e24]:
+                    - img
+                - link "Notifications" [ref=e25] [cursor=pointer]:
+                    - /url: /app/notifications
+                    - img
+                - button "Switch to dark theme" [ref=e26]:
+                    - img
+        - main [ref=e28]:
+            - generic [ref=e30]:
+                - heading "Portal access" [level=1] [ref=e35]
+                - region "Reviewer sessions" [ref=e36]:
+                    - generic [ref=e37]:
+                        - heading "Reviewer sessions" [level=2] [ref=e39]
+                        - button "Invite a reviewer" [ref=e40]
+                    - alert [ref=e41]:
+                        - paragraph [ref=e43]: Unable to load sessions.
+                        - generic [ref=e44]: "Failed to load sessions: 402"
+                - region "Reviewers" [ref=e45]:
+                    - generic [ref=e46]:
+                        - heading "Reviewers" [level=2] [ref=e48]
+                        - button "Add reviewer" [ref=e49]
+                    - alert [ref=e50]:
+                        - paragraph [ref=e52]: Unable to load reviewers.
+                        - generic [ref=e53]: "Failed to load reviewers: 402"
+                - region "Reviewer activity" [ref=e54]:
+                    - heading "Reviewer activity" [level=2] [ref=e56]
+                    - alert [ref=e57]:
+                        - paragraph [ref=e59]: Unable to load activity.
+                        - generic [ref=e60]: "Failed to load audit events: 402"
+    - region "Notifications alt+T"

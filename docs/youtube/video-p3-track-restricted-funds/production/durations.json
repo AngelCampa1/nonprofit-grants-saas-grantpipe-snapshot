@@ -1,0 +1,54 @@
+{
+  "total": 249.16,
+  "chapters": [
+    {
+      "id": "00",
+      "label": "The question a report can't answer",
+      "audio": "audio/chapter-00.mp3",
+      "duration": 44,
+      "start": 0
+    },
+    {
+      "id": "01",
+      "label": "What restricted really means",
+      "audio": "audio/chapter-01.mp3",
+      "duration": 38.16,
+      "start": 44
+    },
+    {
+      "id": "02",
+      "label": "What tracking it actually takes",
+      "audio": "audio/chapter-02.mp3",
+      "duration": 33.04,
+      "start": 82.16
+    },
+    {
+      "id": "03",
+      "label": "Set up the fund",
+      "audio": "audio/chapter-03.mp3",
+      "duration": 30.12,
+      "start": 115.2
+    },
+    {
+      "id": "04",
+      "label": "See the balance per award",
+      "audio": "audio/chapter-04.mp3",
+      "duration": 30.68,
+      "start": 145.32
+    },
+    {
+      "id": "05",
+      "label": "Prove the restriction",
+      "audio": "audio/chapter-05.mp3",
+      "duration": 35.12,
+      "start": 176
+    },
+    {
+      "id": "06",
+      "label": "One thing to remember",
+      "audio": "audio/chapter-06.mp3",
+      "duration": 38.04,
+      "start": 211.12
+    }
+  ]
+}

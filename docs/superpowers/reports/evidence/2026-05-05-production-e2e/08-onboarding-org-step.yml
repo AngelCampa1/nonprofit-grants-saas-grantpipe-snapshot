@@ -1,0 +1,32 @@
+- main [ref=e13]:
+    - generic [ref=e15]:
+        - paragraph [ref=e17]: Step 2 of 4
+        - generic [ref=e31]:
+            - generic [ref=e32]:
+                - generic [ref=e33]:
+                    - generic [ref=e34]: Organization name
+                    - button "Why does organization name matter?" [ref=e35]:
+                        - img [ref=e36]
+                - textbox "Organization name" [ref=e39]:
+                    - /placeholder: Acme Nonprofit Inc.
+            - generic [ref=e40]:
+                - generic [ref=e41]:
+                    - generic [ref=e42]: Fiscal year start month
+                    - button "What is fiscal year start month?" [ref=e43]:
+                        - img [ref=e44]
+                - combobox "Fiscal year start month" [ref=e47]:
+                    - generic: January
+                    - img
+                - combobox [ref=e48]
+            - generic [ref=e49]:
+                - generic [ref=e50]:
+                    - generic [ref=e51]: Timezone
+                    - button "Why does timezone matter?" [ref=e52]:
+                        - img [ref=e53]
+                - combobox "Timezone" [ref=e56]:
+                    - generic: America/New_York
+                    - img
+                - combobox [ref=e57]
+            - generic [ref=e58]:
+                - button "← Back" [ref=e59]
+                - button "Continue →" [ref=e60]

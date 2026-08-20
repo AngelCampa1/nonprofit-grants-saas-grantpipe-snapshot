@@ -1,0 +1,42 @@
+New to GrantPipe? Start here. In about four minutes I'll show you the first two jobs: set up your nonprofit, and bring your donor list in from a spreadsheet without breaking anything.
+
+I built GrantPipe, so I'll walk you through it the way I'd show a colleague at the next desk. No jargon, no filler, no pretending the boring parts are exciting. Setup and import are the two steps people dread most, so this video makes them quick and safe.
+
+WHAT YOU'LL NEED BEFORE YOU START
+- A few minutes and your nonprofit's basics: legal name, the month your fiscal year starts, and the timezone your team works in.
+- An export of your current donor list as a CSV. Most tools and spreadsheets can save one. If you're on another CRM, look for an export to CSV option.
+- That's it. You don't need to clean every cell first, because the preview step lets you check the file before anything is written.
+
+WHAT'S IN THE VIDEO
+- The three setup fields that actually matter: your organization name, your fiscal year start, and your timezone. Each one quietly changes what you see later, so getting them right on day one saves you a cleanup down the road.
+- Why the fiscal year start matters more than it looks: it decides how your reports group a year, so a nonprofit running July to June sees the right periods instead of a default calendar year.
+- Importing a CSV of contacts, donations, grants, or grant opportunities from whatever you use now, a spreadsheet or an old system you're leaving behind.
+- The preview step that saves nothing. You see exactly what will be created before a single row is written, so a messy file can't quietly corrupt your data.
+- Reading the result after you commit: what got added, what was skipped as a duplicate, and what needs a fix. No mystery, no guessing.
+- Where your import history lives, so you can look back later and see what came in and when.
+
+MAP YOUR COLUMNS FIRST
+The smoothest imports start with a tidy source file, so it helps to know which column maps to which field before you upload. We made a free CRM Migration Data Map template that shows where each column goes and what to fix first. Drop your email and we'll send it to your inbox:
+https://grantpipe.com/free/crm-migration-data-map-template/
+
+WHO THIS IS FOR
+Executive directors, development directors, and operations leads at mid-sized nonprofits who just signed up and want their data in without a consultant on the phone. If you're moving off spreadsheets or an old CRM, this is your first ten minutes.
+
+AN HONEST NOTE ON IMPORTS
+Importing is where most setups go wrong, so the preview step is the part to slow down on. Check the count of new records against the rows in your file. If the numbers don't match, something got skipped as a duplicate, and that's usually a good thing, but it's worth a look. You can always re-run an import after you fix the source file. Nothing here is one-way, and nothing commits until you say so.
+
+If your spreadsheet is messy, and most are, the fix is almost always in the source file, not the tool. The usual culprits are one column doing two jobs, a full name where you need a first and last, or amounts saved as text instead of numbers. Sort those out in your spreadsheet, export a fresh CSV, and the import goes clean the first time. Spending five minutes on the file beats an hour untangling records later.
+
+Next video: add your first grant and split it across your funds.
+
+GrantPipe is donor management and grant compliance in one place, built for mid-sized nonprofits running real grants. Learn more: https://grantpipe.com
+
+CHAPTERS
+0:00 The part everyone dreads
+0:27 Set up your org (three fields)
+1:11 Pick what you're importing
+1:50 Upload and preview (nothing saves yet)
+2:21 Commit and read the result
+3:10 You're set up
+
+#nonprofit #nonprofitsoftware #donormanagement #grantmanagement #nonprofitcrm #fundaccounting #csvimport #grantcompliance

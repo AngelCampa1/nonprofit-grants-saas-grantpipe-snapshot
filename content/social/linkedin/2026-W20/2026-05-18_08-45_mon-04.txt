@@ -1,0 +1,10 @@
+The Cost Allocation Plan Worksheet, free to download, walks through how to split shared costs across funding sources without tripping 2 CFR 200.
+
+What is in it:
+
+- A worked example of allocating a Program Director's salary across three awards using time-and-effort data.
+- The five allocation bases auditors will accept (square footage, FTE, direct labor hours, usage logs, total direct costs) and when each one applies.
+- A reasonable/allocable/allowable cross-check column, so every allocated cost has a defensible answer to all three tests.
+- Sample language for the methodology narrative auditors expect on file.
+
+Most cost allocation findings come from one missing thing: a written plan that says how the split is done and why. The worksheet is the plan in template form.

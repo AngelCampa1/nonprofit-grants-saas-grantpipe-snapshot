@@ -1,0 +1,12 @@
+The SEFA is not just an audit schedule.
+
+It is a test of whether federal award data has been maintained all year:
+
+- federal agency
+- pass-through entity, if any
+- ALN
+- FAIN or award number
+- federal expenditures
+- subrecipient amounts
+
+If that data has to be rebuilt at audit time, the audit is now doing the job a compliance-first grant management system should have done earlier.

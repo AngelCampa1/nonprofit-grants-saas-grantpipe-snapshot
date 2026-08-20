@@ -1,0 +1,11 @@
+We built GrantPipe with eight modules instead of one big "everything" workspace, and the structure raises a fair question worth answering: why eight, why not three?
+
+The short version: each module maps to a real workflow that has its own cadence and its own audience.
+
+Donors run on a stewardship calendar. Grants run on funder deadlines. Funds run on FASB ASC 958 release schedules. Compliance runs on award terms. Reports run on board and audit cycles.
+
+Squeezing those into a single "fundraising" or "operations" module means the dashboard is always wrong for whoever is looking at it. The Development Director wants pipeline. The Finance Director wants spend. The Executive Director wants the one-page roll-up. The auditor wants evidence.
+
+Eight modules means each role lands on the screen that was built for them. The shared data underneath is the same. The view is not.
+
+We are still tuning the boundaries. The eight may become seven or nine before the year is out. But the principle is staying: build the views around the work, not around an org chart.

@@ -1,0 +1,52 @@
+---
+import type { ProblemAgitationConfig } from "../types"
+
+interface Props {
+  config: ProblemAgitationConfig
+}
+const { config } = Astro.props
+---
+
+<section
+  data-section="problem-agitation"
+  class="relative overflow-hidden px-4 py-[var(--section-py)]"
+  style="background: var(--surface-primary)"
+>
+  <div
+    class="pointer-events-none absolute inset-x-0 top-0 h-px"
+    style="background: var(--gp-ink-100)"
+  ></div>
+  <div class="mx-auto max-w-4xl">
+    <p class="text-center text-[length:var(--text-caption)] font-semibold tracking-[0.04em] text-brand-primary">
+      {config.eyebrow ?? "What the app prevents"}
+    </p>
+    <h2 class="mb-[var(--component-gap)] mt-4 max-w-3xl text-balance text-center font-heading text-[length:var(--text-heading)] font-bold text-brand-text">
+      {config.heading}
+    </h2>
+    <ul
+      class="grid gap-[var(--component-gap-sm)] border-y border-[var(--gp-ink-100)] py-6 md:gap-[var(--component-gap)] lg:grid-cols-3 lg:gap-0 lg:py-8"
+    >
+      {config.painPoints.map((point, index) => (
+        <li
+          class="scroll-in min-w-0 flex h-full items-start gap-3 px-1 py-2 md:gap-4 md:px-6 lg:border-l lg:border-[var(--gp-ink-100)] lg:px-8 lg:first:border-l-0"
+        >
+          <span class="mt-0.5 inline-flex min-w-[2.25rem] justify-center text-[length:var(--text-caption)] font-semibold tracking-[0.04em] text-neutral-500">
+            0{index + 1}
+          </span>
+          <p
+            class="min-w-0 text-base leading-7 text-brand-text md:text-[length:var(--text-body-lg)]"
+            style="overflow-wrap:anywhere"
+          >
+            {point}
+          </p>
+        </li>
+      ))}
+    </ul>
+    <p class="mx-auto mt-8 max-w-2xl text-center font-heading text-[length:var(--text-subheading)] font-semibold leading-snug text-accent-700 md:mt-10">
+      {config.closingLine}
+    </p>
+    <div class="mx-auto mt-6 max-w-xl md:mt-8">
+      <slot />
+    </div>
+  </div>
+</section>

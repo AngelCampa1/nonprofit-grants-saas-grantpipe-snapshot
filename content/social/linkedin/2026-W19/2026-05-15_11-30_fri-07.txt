@@ -1,0 +1,11 @@
+SAM.gov UEI registration expires every 12 months. The hard discovery tends to come the week the federal payment fails to clear.
+
+A few things that help:
+
+Set the renewal reminder 60 days out, not 30. Renewals can take longer than they should, and a lapsed UEI freezes drawdowns on every active federal award you hold.
+
+Document who owns the renewal. The Entity Administrator role on SAM is a person, not a shared mailbox. When that person leaves, the org can lose access until it goes through identity verification again.
+
+Save the active registration confirmation as a PDF and attach it to your federal award records. Auditors check it. Pass-through grantors sometimes ask too.
+
+The system is not friendly. The deadlines are not generous. The cost of missing it is real cash flow, not a slap on the wrist.

@@ -1,0 +1,150 @@
+---
+import {
+  MARKETED_FEATURE_CATALOG,
+  type MarketedFeatureKey,
+} from "../../../../packages/shared/src/pricing";
+import { PLAN_LABELS, PLAN_TIERS } from "../../../../packages/shared/src/constants";
+
+type Variant = "matrix" | "baseline";
+
+interface Props {
+  /** The PlanEntitlements key (or "activeGrantCap") that gates this feature. */
+  entitlement?: MarketedFeatureKey;
+  /** Optional eyebrow label shown above the chips. */
+  label?: string;
+  /**
+   * Rendering mode:
+   * - "matrix" (default when entitlement is set) shows per-tier chips.
+   * - "baseline" renders a single "Available on all plans" chip.
+   */
+  variant?: Variant;
+}
+
+const { entitlement, label = "Available on", variant } = Astro.props;
+const resolvedVariant: Variant = variant ?? (entitlement ? "matrix" : "baseline");
+
+if (resolvedVariant === "matrix" && !entitlement) {
+  throw new Error("TierAvailabilityBadge: entitlement is required for matrix variant");
+}
+
+const row = entitlement
+  ? MARKETED_FEATURE_CATALOG.find((r) => r.key === entitlement)
+  : undefined;
+if (resolvedVariant === "matrix" && !row) {
+  throw new Error(`Unknown entitlement key for tier badge: ${entitlement}`);
+}
+---
+
+<aside
+  class="gp-tier-badge"
+  data-tier-badge={entitlement ?? "baseline"}
+  data-tier-badge-variant={resolvedVariant}
+  aria-label={`${label} GrantPipe plans`}
+>
+  <span class="gp-tier-badge__label">{label}</span>
+  {resolvedVariant === "matrix" && row ? (
+    <ul class="gp-tier-badge__chips">
+      {PLAN_TIERS.map((tier) => {
+        const cell = row.byTier[tier];
+        const isIncluded = cell === "included" || cell === "preview";
+        const chipVariant = cell === "preview" ? "preview" : isIncluded ? "included" : "excluded";
+        const detail =
+          cell === "included"
+            ? "Included"
+            : cell === "preview"
+              ? "Preview"
+              : cell === "not_included"
+                ? "Not included"
+                : cell;
+        return (
+          <li
+            class:list={[
+              "gp-tier-badge__chip",
+              `gp-tier-badge__chip--${chipVariant}`,
+            ]}
+            data-variant={chipVariant}
+          >
+            <span class="gp-tier-badge__chip-name">{PLAN_LABELS[tier]}</span>
+            <span class="gp-tier-badge__chip-detail">{detail}</span>
+          </li>
+        );
+      })}
+    </ul>
+  ) : (
+    <ul class="gp-tier-badge__chips">
+      <li
+        class="gp-tier-badge__chip gp-tier-badge__chip--included gp-tier-badge__chip--full"
+        data-variant="included"
+      >
+        <span class="gp-tier-badge__chip-name">All plans</span>
+        <span class="gp-tier-badge__chip-detail">
+          Included on Starter, Growth, and Audit-Ready; custom Enterprise
+          coverage follows account terms
+        </span>
+      </li>
+    </ul>
+  )}
+</aside>
+
+<style>
+  .gp-tier-badge {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    padding: 1rem 1.1rem;
+    border-radius: 0.9rem;
+    background: color-mix(in srgb, var(--surface-secondary, #f6f4ee) 85%, transparent);
+    border: 1px solid color-mix(in srgb, var(--color-neutral-300, #d1d5db) 60%, transparent);
+    margin: 1.5rem 0;
+  }
+  .gp-tier-badge__label {
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    font-size: 0.75rem;
+    font-weight: 600;
+    color: var(--color-neutral-700, #4b5563);
+  }
+  .gp-tier-badge__chips {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.4rem;
+  }
+  .gp-tier-badge__chip {
+    display: inline-flex;
+    align-items: baseline;
+    gap: 0.4rem;
+    padding: 0.3rem 0.7rem;
+    border-radius: 999px;
+    font-size: 0.85rem;
+    border: 1px solid transparent;
+  }
+  .gp-tier-badge__chip--full {
+    flex: 1 1 auto;
+  }
+  .gp-tier-badge__chip-name {
+    font-weight: 600;
+  }
+  .gp-tier-badge__chip-detail {
+    font-size: 0.75rem;
+    opacity: 0.8;
+  }
+  .gp-tier-badge__chip--included {
+    background: color-mix(in srgb, var(--color-success-100, #d1fae5) 70%, transparent);
+    color: var(--color-success-800, #065f46);
+    border-color: color-mix(in srgb, var(--color-success-300, #6ee7b7) 50%, transparent);
+  }
+  .gp-tier-badge__chip--preview {
+    background: color-mix(in srgb, var(--color-accent-100, #fef3c7) 70%, transparent);
+    color: var(--color-accent-800, #92400e);
+    border-color: color-mix(in srgb, var(--color-accent-300, #fcd34d) 50%, transparent);
+  }
+  .gp-tier-badge__chip--excluded {
+    background: transparent;
+    color: var(--color-neutral-500, #6b7280);
+    border-color: color-mix(in srgb, var(--color-neutral-300, #d1d5db) 70%, transparent);
+    text-decoration: line-through;
+  }
+</style>

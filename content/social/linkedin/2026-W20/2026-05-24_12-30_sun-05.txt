@@ -1,0 +1,11 @@
+The Salesforce/Blackbaud reflex says: configure the CRM until it does grant compliance.
+
+The reality is that grant compliance lives in a different shape. It needs an award record with a period of performance, a budget by category, restrictions that travel with dollars, an evidence trail that ties expenses to allowable cost categories, and a closeout package the funder can read.
+
+CRMs were built around a contact and an opportunity. Bolting compliance on top means custom objects, custom fields, custom validation rules, and a consultant on retainer to keep the bolts tight.
+
+The math gets uncomfortable fast. A mid-sized nonprofit with five federal awards and forty restricted private grants does not need a more configurable CRM. It needs a system shaped like the work.
+
+That is not a pitch. It is the design choice that drives every product in this category. When you evaluate tools next quarter, ask which entities are first-class and which ones are glued on. The shape of the data tells you the shape of the future labor.
+
+Sunday-evening reading. Take your time.

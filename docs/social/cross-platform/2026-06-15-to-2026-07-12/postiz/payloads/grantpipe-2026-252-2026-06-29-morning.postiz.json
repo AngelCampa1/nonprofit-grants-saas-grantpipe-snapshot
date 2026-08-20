@@ -1,0 +1,52 @@
+{
+  "type": "schedule",
+  "date": "2026-06-29T13:45:00.000Z",
+  "shortLink": false,
+  "tags": [],
+  "posts": [
+    {
+      "integration": {
+        "id": "cmorp6oby03pgmq0ye7e3n7j0"
+      },
+      "value": [
+        {
+          "content": "funder email check.\n\nMatch decision note to next step. Name the grant owner.\n\nIf it breaks, write the next step.",
+          "image": [],
+          "delay": 0
+        }
+      ],
+      "settings": {
+        "__type": "linkedin-page",
+        "post_as_images_carousel": false
+      }
+    },
+    {
+      "integration": {
+        "id": "cmq5aut9y0087mv0yt9otastk"
+      },
+      "value": [
+        {
+          "content": "funder email check: match decision note to next step. Name the grant owner.",
+          "image": [],
+          "delay": 0
+        }
+      ],
+      "settings": {
+        "who_can_reply_post": "everyone"
+      }
+    },
+    {
+      "integration": {
+        "id": "cmq5b15k300k4qp0yypplg57c"
+      },
+      "value": [
+        {
+          "content": "Small grant check: funder email. Match decision note to next step. Then name the grant owner.",
+          "image": [],
+          "delay": 0
+        }
+      ],
+      "settings": {}
+    }
+  ]
+}

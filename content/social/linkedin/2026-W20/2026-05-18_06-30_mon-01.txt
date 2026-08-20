@@ -1,0 +1,5 @@
+Quick check: do you know the ALN number on your largest federal award without opening a file?
+
+ALN replaced CFDA in 2022. Same number, new label. It is the first thing an auditor looks up, and it lives on your Notice of Award.
+
+If you cannot say it from memory, the number is fine. The retrieval time is the test.

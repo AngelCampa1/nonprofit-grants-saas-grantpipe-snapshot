@@ -1,0 +1,7 @@
+Your donor CRM was not built for grant compliance. That is fine. The problem is when people pretend it was.
+
+Donor CRMs track gifts. They are good at it. They model a constituent, a gift record, an appeal, a campaign.
+
+Grants need different fields. Period of performance start and end. Allowable cost categories. Indirect cost rate. Match commitment. Drawdown schedule. Sub-recipient flags. SF-425 due dates.
+
+You can bolt custom fields onto a donor CRM until the form has 80 fields and nobody fills any of them. Or you can run grants in a tool shaped like grants and let the donor CRM be a donor CRM.

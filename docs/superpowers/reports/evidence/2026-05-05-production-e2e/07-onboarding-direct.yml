@@ -1,0 +1,10 @@
+- main [ref=e13]:
+    - generic [ref=e15]:
+        - paragraph [ref=e17]: Step 1 of 4
+        - generic [ref=e23]:
+            - heading "Welcome to GrantPipe." [level=1] [ref=e25]
+            - list [ref=e26]:
+                - listitem [ref=e27]: Track every donor relationship and giving history
+                - listitem [ref=e28]: Never miss a grant deadline or compliance report
+                - listitem [ref=e29]: Stay audit-ready with restricted fund balances
+            - button "Get started →" [ref=e30]

@@ -1,0 +1,7 @@
+SF-425 line 10f should match the general ledger.
+
+It is cumulative federal expenditures for the full period of performance to date.
+
+Before submission, reconcile the amount to the grant-specific ledger report and prior SF-425 totals.
+
+That small check prevents a hard cleanup later.

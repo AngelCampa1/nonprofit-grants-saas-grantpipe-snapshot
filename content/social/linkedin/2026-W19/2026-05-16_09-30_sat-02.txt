@@ -1,0 +1,3 @@
+Audit fieldwork tends to expose the gap between QuickBooks journal entries and the program-side accruals nobody has posted yet. The fix is one place where program spend, fund release, and the audit trail live in the same row.
+
+That is the bet GrantPipe is making.

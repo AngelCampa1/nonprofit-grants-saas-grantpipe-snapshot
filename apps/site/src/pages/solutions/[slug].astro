@@ -1,0 +1,228 @@
+---
+import { getPublicApiBaseUrl } from "@grantpipe/ui/site/lib/public-api-url"
+import "../../styles/global.css"
+import { getCollection, render } from "astro:content"
+import { getContentEntrySlug } from "@/lib/content-entry-slug"
+import ArticleLayout from "@grantpipe/ui/site/layouts/article-layout.astro"
+import { LeadMagnetSignup } from "@grantpipe/ui/site/components/lead-magnet-signup"
+import FaqSection from "@grantpipe/ui/site/components/faq-section.astro"
+import RelatedPages from "@grantpipe/ui/site/components/related-pages.astro"
+import { siteConfig, shouldShowMobileStickyCta } from "@/config/site"
+import StatisticCitation from "@grantpipe/ui/site/seo/statistic-citation.astro"
+import DataTableBlock from "@grantpipe/ui/site/seo/data-table-block.astro"
+import AnswerBlock from "@grantpipe/ui/site/seo/answer-block.astro"
+import { buildVerticalBreadcrumbs } from "@/lib/breadcrumbs"
+import { buildContentMap } from "@/lib/page-helpers"
+import { resolveLeadMagnetOffer, resolveExitLeadMagnetOffer } from "@/lib/lead-magnet-routing"
+import { resolveGrantPipeOgImage } from "@/lib/og-image"
+import { resolveRelatedPageLinks } from "@grantpipe/ui/site/lib/related-page-resolver"
+import RecommendedPlanCard from "@/components/recommended-plan-card.astro"
+import PricingSummaryBlock from "@/components/pricing-summary-block.astro"
+import TierAvailabilityBadge from "@/components/tier-availability-badge.astro"
+
+export async function getStaticPaths() {
+  const entries = await getCollection("vertical-pages")
+  return entries.map((entry) => ({
+    params: { slug: getContentEntrySlug(entry) },
+    props: { entry },
+  }))
+}
+
+const { entry } = Astro.props
+const { Content, headings } = await render(entry)
+const { title, description, seoTitle, seoDescription, bluf, buyerStage, publishedAt, updatedAt, lastReviewedAt, verifiedAt, faqs, relatedPages, verticalType, keyPainPoints, commonGrantTypes, complianceNotes, estimatedOrgCount, pricingStats, tableData, answers, sourceUrls, entitlement, recommendedTier } = entry.data
+const resolvedRecommendedTier = recommendedTier ?? "growth"
+const canonicalPath = `/solutions/${getContentEntrySlug(entry)}`
+
+const [alternatives, comparisons, pricingBreakdowns, listicles, guides, statePages, cityPages, verticalPages, leadMagnets, faqHubs, benchmarks] = await Promise.all([
+  getCollection("alternatives"),
+  getCollection("comparisons"),
+  getCollection("pricing-breakdowns"),
+  getCollection("listicles"),
+  getCollection("guides"),
+  getCollection("state-pages"),
+  getCollection("city-pages"),
+  getCollection("vertical-pages"),
+  getCollection("lead-magnets"),
+  getCollection("faq-hubs"),
+  getCollection("benchmarks"),
+])
+const contentMap = buildContentMap({ alternatives, comparisons, pricingBreakdowns, listicles, guides, statePages, cityPages, verticalPages, leadMagnets, faqHubs, benchmarks })
+
+const breadcrumbs = buildVerticalBreadcrumbs(verticalType, canonicalPath)
+const relatedPageLinks = resolveRelatedPageLinks(relatedPages, contentMap)
+const leadMagnet = resolveLeadMagnetOffer(siteConfig, leadMagnets, {
+  family: "solution",
+  explicitSlug: entry.data.leadMagnetSlug,
+  relatedPages,
+})
+const exitLeadMagnet = resolveExitLeadMagnetOffer(siteConfig, leadMagnets, {
+  family: "solution",
+  exitSlug: entry.data.exitMagnetSlug,
+  leadMagnetSlug: entry.data.leadMagnetSlug,
+  relatedPages,
+})
+const publicApiUrl = getPublicApiBaseUrl()
+
+---
+
+<ArticleLayout
+  title={title}
+  description={description}
+  seoTitle={seoTitle}
+  seoDescription={seoDescription}
+  bluf={bluf}
+  buyerStage={buyerStage}
+  publishedAt={publishedAt}
+  updatedAt={updatedAt}
+  lastReviewedAt={lastReviewedAt}
+  verifiedAt={verifiedAt}
+  canonicalPath={canonicalPath}
+  config={siteConfig}
+  breadcrumbs={breadcrumbs}
+  headings={headings}
+  ogImage={resolveGrantPipeOgImage(canonicalPath)}
+  answers={answers?.map(a => ({ question: a.q, answer: a.a }))}
+  sourceUrls={sourceUrls}
+  leadMagnet={exitLeadMagnet}
+  sidebarLeadMagnet={leadMagnet}
+  showStickyMobileCta={shouldShowMobileStickyCta(Astro.url.pathname)}
+>
+  <div data-reading-frame>
+    <RecommendedPlanCard tier={resolvedRecommendedTier} />
+    {entitlement && <TierAvailabilityBadge entitlement={entitlement} />}
+
+    <Content />
+
+    {pricingStats?.map((s) => (
+      <StatisticCitation stat={s.stat} source={s.source} sourceUrl={s.sourceUrl} />
+    ))}
+    {tableData && (
+      <DataTableBlock name={tableData.name} description={tableData.description} columns={tableData.columns} rows={tableData.rows} />
+    )}
+    {answers?.map((a) => (
+      <AnswerBlock question={a.q} answer={a.a} />
+    ))}
+    <LeadMagnetSignup
+      client:load
+      apiUrl={publicApiUrl}
+      sourcePage={canonicalPath}
+      leadMagnet={leadMagnet}
+      privacyNote="We'll email the resource and a short follow-up sequence. Unsubscribe any time."
+      trialCtaHref={siteConfig.funnel.bofu.ctaTarget}
+      trialCtaText={siteConfig.funnel.bofu.ctaText}
+    />
+
+    {estimatedOrgCount && (
+      <section class="editorial-panel editorial-panel--soft solution-callout">
+        <p class="solution-callout__copy">
+          There are approximately <strong>{estimatedOrgCount.toLocaleString()}</strong> {verticalType.toLowerCase()} in the United States that could benefit from unified donor and grant management.
+        </p>
+      </section>
+    )}
+
+    <section class="editorial-panel solution-callout">
+      <h2 class="solution-callout__heading">Key Pain Points for {verticalType}</h2>
+      <ul class="solution-callout__list">
+        {keyPainPoints.map((point) => (
+          <li class="solution-callout__item solution-callout__item--pain">
+            <span class="solution-callout__marker solution-callout__marker--pain" aria-hidden="true">&#9679;</span>
+            <span>{point}</span>
+          </li>
+        ))}
+      </ul>
+    </section>
+
+    <section class="editorial-panel editorial-panel--soft solution-callout">
+      <h2 class="solution-callout__heading">Common Grant Types</h2>
+      <ul class="solution-callout__list">
+        {commonGrantTypes.map((grant) => (
+          <li class="solution-callout__item">
+            <span class="solution-callout__marker solution-callout__marker--accent" aria-hidden="true">&#10003;</span>
+            <span>{grant}</span>
+          </li>
+        ))}
+      </ul>
+    </section>
+
+    <section class="editorial-panel solution-callout">
+      <h2 class="solution-callout__heading solution-callout__heading--tight">Compliance Notes</h2>
+      <p class="solution-callout__copy">{complianceNotes}</p>
+    </section>
+
+    <PricingSummaryBlock recommendedTier={resolvedRecommendedTier} />
+
+    <FaqSection
+      faqs={faqs}
+      heading="Frequently Asked Questions"
+      showBottomCta={false}
+      ctaVariant="compact"
+    />
+
+    {relatedPages.length > 0 && (
+      <RelatedPages
+        pages={relatedPageLinks}
+        stage={buyerStage}
+        variant="editorial"
+      />
+    )}
+  </div>
+</ArticleLayout>
+
+<style>
+  .solution-callout {
+    margin-block: 2rem;
+    padding: 1.5rem;
+  }
+
+  .solution-callout__heading {
+    font-size: 1.125rem;
+    font-weight: 600;
+    color: var(--gp-ink-900);
+    margin: 0 0 1rem;
+  }
+
+  .solution-callout__heading--tight {
+    margin-bottom: 0.5rem;
+  }
+
+  .solution-callout__copy {
+    font-size: 0.875rem;
+    color: var(--gp-ink-700);
+    margin: 0;
+    line-height: 1.6;
+  }
+
+  .solution-callout__list {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+
+  .solution-callout__item {
+    display: flex;
+    align-items: flex-start;
+    gap: 0.75rem;
+    font-size: 0.875rem;
+    color: var(--gp-ink-700);
+    line-height: 1.55;
+  }
+
+  .solution-callout__marker {
+    flex-shrink: 0;
+    margin-top: 0.125rem;
+    font-size: 0.875rem;
+    line-height: 1;
+  }
+
+  .solution-callout__marker--pain {
+    color: var(--gp-danger);
+  }
+
+  .solution-callout__marker--accent {
+    color: var(--gp-gold-600);
+  }
+</style>

@@ -1,0 +1,11 @@
+Monthly reports go sideways when the same number has two homes.
+
+Development has the funder-facing story.
+
+Finance has the ledger.
+
+Program has the activity data.
+
+The report needs all three, but the reconciliation should not happen in the final draft.
+
+Put the grant record together before writing. Numbers first, narrative second.

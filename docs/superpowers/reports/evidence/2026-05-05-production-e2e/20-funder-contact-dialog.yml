@@ -1,0 +1,78 @@
+- generic:
+    - generic:
+        - generic:
+            - generic:
+                - generic:
+                    - banner:
+                        - generic:
+                            - button:
+                                - img
+                        - generic:
+                            - link:
+                                - /url: /app/settings#billing
+                                - img
+                                - generic: Trial
+                                - generic: 30d
+                            - button:
+                                - img
+                            - link:
+                                - /url: /app/notifications
+                                - img
+                            - button:
+                                - img
+                    - generic:
+                        - main:
+                            - generic:
+                                - generic:
+                                    - generic:
+                                        - generic:
+                                            - navigation:
+                                                - list:
+                                                    - listitem:
+                                                        - link:
+                                                            - /url: /app/funders
+                                                            - text: Funders
+                                                    - listitem:
+                                                        - img
+                                                    - listitem:
+                                                        - generic: Prod E2E Funder 160129
+                                        - generic:
+                                            - generic:
+                                                - generic:
+                                                    - heading [level=1]: Prod E2E Funder 160129
+                                            - generic:
+                                                - generic: Foundation
+                                    - generic:
+                                        - tablist:
+                                            - tab: Overview
+                                            - tab [selected]: Program Officers
+                                            - tab: Grant History
+                                            - tab: Activity
+                                            - tab: Documents
+                                        - tabpanel:
+                                            - generic:
+                                                - heading [level=2]: Program Officers
+                                                - button [expanded]: Add contact
+                                            - paragraph: No funder contacts recorded.
+            - region "Notifications alt+T"
+    - dialog "Add funder contact" [ref=e148]:
+        - generic [ref=e149]:
+            - heading "Add funder contact" [level=2] [ref=e150]
+            - paragraph [ref=e151]: Add a program officer or staff contact for this funder.
+        - generic [ref=e152]:
+            - generic [ref=e153]:
+                - generic [ref=e154]: Name
+                - textbox "Name" [active] [ref=e155]:
+                    - /placeholder: Full name
+            - generic [ref=e156]:
+                - generic [ref=e157]: Title
+                - textbox "Title" [ref=e158]:
+                    - /placeholder: e.g. Program Officer
+            - generic [ref=e159]:
+                - generic [ref=e160]: Email
+                - textbox "Email" [ref=e161]:
+                    - /placeholder: name@example.org
+            - button "Save contact" [ref=e162]
+        - button "Close" [ref=e163]:
+            - img
+            - generic [ref=e164]: Close

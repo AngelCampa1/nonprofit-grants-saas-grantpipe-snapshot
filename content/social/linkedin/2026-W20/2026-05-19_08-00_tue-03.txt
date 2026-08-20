@@ -1,0 +1,13 @@
+Picture this:
+
+An auditor asks for the donor receipt that backs the $25,000 release from the Youth STEM restricted fund.
+
+The Development Director opens the donor CRM. The receipt is there.
+
+The Finance Director opens the accounting system. The release entry is there.
+
+The auditor asks for the document that ties them together. Both directors look at each other.
+
+This is the unification gap. It is not a tooling preference. It is the moment the audit trail breaks. The receipt and the release are two halves of one fact. When they live in two systems, the proof of the fact lives in nobody's head and on nobody's screen.
+
+The fix is not "integrate the systems." The fix is to model donations and fund releases as the same record from the start.

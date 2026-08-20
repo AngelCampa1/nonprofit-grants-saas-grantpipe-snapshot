@@ -1,0 +1,15 @@
+Six things that should be in your audit binder before May 31, if you operate on a calendar fiscal year.
+
+1. The grant agreement itself, fully executed, with all amendments. Not the application. Not the award letter. The signed contract and every modification, in date order.
+
+2. The internal budget that maps grant line items to your chart of accounts, with version history. Auditors want to see how the budget evolved and who approved each change.
+
+3. Drawdown records or invoice copies for every reimbursement request. Date submitted, date received, amount, expenses claimed, tied back to the GL.
+
+4. Time and effort certifications for any staff allocated to the grant. Signed by the employee and supervisor. Quarterly at minimum, monthly is safer.
+
+5. Procurement documentation for any purchase over your micro-purchase threshold. Quotes, sole-source justifications, conflict of interest disclosures. 2 CFR 200.318 through 200.327 for federal awards.
+
+6. The reconciliation between what you reported on the most recent FFR and what the GL says, with explanations for any variance over your materiality threshold.
+
+If you can produce all six in under an hour, you are ready. If you need a week, the binder is fiction. Build the workflow now, while May still has a few days left.

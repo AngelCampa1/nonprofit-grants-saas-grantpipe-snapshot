@@ -1,0 +1,7 @@
+The audit binder is not the audit.
+
+The binder is a retrieval system.
+
+It should help a reviewer move from grant agreement to spending support to report submission without depending on staff memory.
+
+If the binder only proves that files exist, it is not doing enough.

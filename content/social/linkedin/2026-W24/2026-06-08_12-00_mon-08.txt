@@ -1,0 +1,15 @@
+"One record" is not the same as "one login."
+
+A team can buy five tools with single sign-on and still have five competing versions of the grant story.
+
+The harder question is data shape:
+
+Does the award connect to the fund?
+
+Does the fund connect to spend-down?
+
+Does spend-down connect to the report?
+
+Does the report connect to evidence?
+
+That is the operating problem GrantPipe is built around.

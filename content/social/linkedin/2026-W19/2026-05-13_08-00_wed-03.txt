@@ -1,0 +1,9 @@
+Audit-ready is not a feature. It is a workflow.
+
+The vendors who put "audit-ready" on the marketing page rarely define it. So here is a working definition.
+
+Audit-ready means: every dollar of restricted spending has a date, an approver, a receipt, and a fund tag. The tag matches the grant award letter. The approver matches the policy. The receipt is in the same record as the journal entry.
+
+If pulling that evidence for one transaction takes more than two minutes, you are not audit-ready. You are audit-recoverable. There is a difference.
+
+The 2 CFR 200 retention rule is three years from the closeout report. That is three years of evidence you have to be able to retrieve on demand. Not regenerate. Retrieve.

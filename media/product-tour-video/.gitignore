@@ -1,0 +1,8 @@
+.capture-tmp/
+.venv/
+renders/*
+!renders/
+assets/audio/sfx/*.mp3
+assets/audio/voice/*.wav
+assets/video/*.mp4
+assets/video/*.webm

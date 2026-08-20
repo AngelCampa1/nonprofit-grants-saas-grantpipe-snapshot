@@ -1,0 +1,42 @@
+---
+interface Props {
+  page: string;
+}
+
+const { page } = Astro.props;
+---
+
+<div
+  role="radiogroup"
+  aria-label="Billing period"
+  class="gp-billing-toggle gp-billing-segmented"
+  data-billing-toggle-page={page}
+>
+  <button
+    type="button"
+    role="radio"
+    aria-checked="true"
+    data-billing-btn="annual"
+    class="gp-billing-toggle__btn gp-billing-toggle__btn--active"
+    tabindex="0"
+  >
+    Annual
+  </button>
+  <button
+    type="button"
+    role="radio"
+    aria-checked="false"
+    data-billing-btn="monthly"
+    class="gp-billing-toggle__btn"
+    tabindex="-1"
+  >
+    Monthly
+  </button>
+</div>
+
+<script>
+  import { initBillingToggle } from "@/lib/billing-toggle";
+
+  initBillingToggle();
+  document.addEventListener("astro:page-load", () => initBillingToggle());
+</script>

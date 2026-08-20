@@ -1,0 +1,13 @@
+The CRM amount and the accounting amount can both be right.
+
+The CRM may show the full award.
+
+Accounting may show the first cash installment.
+
+The grant record may show the approved budget.
+
+The board packet may need the remaining spend-down.
+
+Reconciliation is not about forcing one number into every field.
+
+It is about naming what each number means.

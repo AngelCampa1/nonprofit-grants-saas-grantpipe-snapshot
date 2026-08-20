@@ -1,0 +1,1804 @@
+{
+  "version": "0.1.20260430",
+  "status_code": 20000,
+  "status_message": "Ok.",
+  "time": "2.4092 sec.",
+  "cost": 0.075,
+  "tasks_count": 1,
+  "tasks_error": 0,
+  "tasks": [
+    {
+      "id": "04302336-1520-0367-0000-350edad5383c",
+      "status_code": 20000,
+      "status_message": "Ok.",
+      "time": "2.3088 sec.",
+      "cost": 0.075,
+      "result_count": 45,
+      "path": ["v3", "keywords_data", "google_ads", "search_volume", "live"],
+      "data": {
+        "api": "keywords_data",
+        "function": "search_volume",
+        "se": "google_ads",
+        "keywords": [
+          "nonprofits in houston",
+          "nonprofits in dallas",
+          "nonprofits in nyc",
+          "nonprofits in los angeles",
+          "nonprofits in chicago",
+          "nonprofits in san francisco",
+          "nonprofits in boston",
+          "nonprofits in atlanta",
+          "nonprofits in philadelphia",
+          "nonprofits in miami",
+          "nonprofits in seattle",
+          "nonprofits in denver",
+          "nonprofits in phoenix",
+          "nonprofits in minneapolis",
+          "nonprofits in portland",
+          "houston grant management",
+          "dallas grant management",
+          "nyc grant management",
+          "los angeles grant management",
+          "chicago grant management",
+          "san francisco grant management",
+          "boston grant management",
+          "atlanta grant management",
+          "philadelphia grant management",
+          "miami grant management",
+          "seattle grant management",
+          "denver grant management",
+          "phoenix grant management",
+          "minneapolis grant management",
+          "portland grant management",
+          "houston nonprofit grants",
+          "atlanta nonprofit grants",
+          "chicago nonprofit grants",
+          "nyc nonprofit grants",
+          "los angeles nonprofit grants",
+          "san francisco bay area nonprofits",
+          "boston nonprofit grants",
+          "seattle nonprofit grants",
+          "denver nonprofit grants",
+          "miami nonprofit grants",
+          "phoenix nonprofit grants",
+          "portland nonprofit grants",
+          "minneapolis nonprofit grants",
+          "philadelphia nonprofit grants",
+          "dallas nonprofit grants"
+        ],
+        "language_code": "en",
+        "location_code": 2840
+      },
+      "result": [
+        {
+          "keyword": "nonprofits in houston",
+          "spell": null,
+          "location_code": 2840,
+          "language_code": "en",
+          "search_partners": false,
+          "competition": "LOW",
+          "competition_index": 17,
+          "search_volume": 1300,
+          "low_top_of_page_bid": 1.02,
+          "high_top_of_page_bid": 7.73,
+          "cpc": 10.34,
+          "monthly_searches": [
+            {
+              "year": 2026,
+              "month": 3,
+              "search_volume": 1000
+            },
+            {
+              "year": 2026,
+              "month": 2,
+              "search_volume": 1000
+            },
+            {
+              "year": 2026,
+              "month": 1,
+              "search_volume": 1300
+            },
+            {
+              "year": 2025,
+              "month": 12,
+              "search_volume": 880
+            },
+            {
+              "year": 2025,
+              "month": 11,
+              "search_volume": 1300
+            },
+            {
+              "year": 2025,
+              "month": 10,
+              "search_volume": 1600
+            },
+            {
+              "year": 2025,
+              "month": 9,
+              "search_volume": 1600
+            },
+            {
+              "year": 2025,
+              "month": 8,
+              "search_volume": 1300
+            },
+            {
+              "year": 2025,
+              "month": 7,
+              "search_volume": 1300
+            },
+            {
+              "year": 2025,
+              "month": 6,
+              "search_volume": 1600
+            },
+            {
+              "year": 2025,
+              "month": 5,
+              "search_volume": 1300
+            },
+            {
+              "year": 2025,
+              "month": 4,
+              "search_volume": 1900
+            }
+          ]
+        },
+        {
+          "keyword": "nonprofits in dallas",
+          "spell": null,
+          "location_code": 2840,
+          "language_code": "en",
+          "search_partners": false,
+          "competition": "LOW",
+          "competition_index": 22,
+          "search_volume": 1000,
+          "low_top_of_page_bid": 1.57,
+          "high_top_of_page_bid": 5.84,
+          "cpc": 14.79,
+          "monthly_searches": [
+            {
+              "year": 2026,
+              "month": 3,
+              "search_volume": 880
+            },
+            {
+              "year": 2026,
+              "month": 2,
+              "search_volume": 1000
+            },
+            {
+              "year": 2026,
+              "month": 1,
+              "search_volume": 880
+            },
+            {
+              "year": 2025,
+              "month": 12,
+              "search_volume": 880
+            },
+            {
+              "year": 2025,
+              "month": 11,
+              "search_volume": 880
+            },
+            {
+              "year": 2025,
+              "month": 10,
+              "search_volume": 1300
+            },
+            {
+              "year": 2025,
+              "month": 9,
+              "search_volume": 1000
+            },
+            {
+              "year": 2025,
+              "month": 8,
+              "search_volume": 880
+            },
+            {
+              "year": 2025,
+              "month": 7,
+              "search_volume": 880
+            },
+            {
+              "year": 2025,
+              "month": 6,
+              "search_volume": 1000
+            },
+            {
+              "year": 2025,
+              "month": 5,
+              "search_volume": 1000
+            },
+            {
+              "year": 2025,
+              "month": 4,
+              "search_volume": 1300
+            }
+          ]
+        },
+        {
+          "keyword": "nonprofits in nyc",
+          "spell": null,
+          "location_code": 2840,
+          "language_code": "en",
+          "search_partners": false,
+          "competition": "LOW",
+          "competition_index": 17,
+          "search_volume": 2900,
+          "low_top_of_page_bid": 1.5,
+          "high_top_of_page_bid": 20,
+          "cpc": 14.31,
+          "monthly_searches": [
+            {
+              "year": 2026,
+              "month": 3,
+              "search_volume": 2400
+            },
+            {
+              "year": 2026,
+              "month": 2,
+              "search_volume": 2400
+            },
+            {
+              "year": 2026,
+              "month": 1,
+              "search_volume": 2400
+            },
+            {
+              "year": 2025,
+              "month": 12,
+              "search_volume": 1900
+            },
+            {
+              "year": 2025,
+              "month": 11,
+              "search_volume": 2900
+            },
+            {
+              "year": 2025,
+              "month": 10,
+              "search_volume": 2900
+            },
+            {
+              "year": 2025,
+              "month": 9,
+              "search_volume": 2900
+            },
+            {
+              "year": 2025,
+              "month": 8,
+              "search_volume": 2400
+            },
+            {
+              "year": 2025,
+              "month": 7,
+              "search_volume": 3600
+            },
+            {
+              "year": 2025,
+              "month": 6,
+              "search_volume": 2900
+            },
+            {
+              "year": 2025,
+              "month": 5,
+              "search_volume": 3600
+            },
+            {
+              "year": 2025,
+              "month": 4,
+              "search_volume": 2900
+            }
+          ]
+        },
+        {
+          "keyword": "nonprofits in los angeles",
+          "spell": null,
+          "location_code": 2840,
+          "language_code": "en",
+          "search_partners": false,
+          "competition": "LOW",
+          "competition_index": 24,
+          "search_volume": 1300,
+          "low_top_of_page_bid": 1.46,
+          "high_top_of_page_bid": 20,
+          "cpc": 14.72,
+          "monthly_searches": [
+            {
+              "year": 2026,
+              "month": 3,
+              "search_volume": 1000
+            },
+            {
+              "year": 2026,
+              "month": 2,
+              "search_volume": 1000
+            },
+            {
+              "year": 2026,
+              "month": 1,
+              "search_volume": 1000
+            },
+            {
+              "year": 2025,
+              "month": 12,
+              "search_volume": 880
+            },
+            {
+              "year": 2025,
+              "month": 11,
+              "search_volume": 1000
+            },
+            {
+              "year": 2025,
+              "month": 10,
+              "search_volume": 1300
+            },
+            {
+              "year": 2025,
+              "month": 9,
+              "search_volume": 1000
+            },
+            {
+              "year": 2025,
+              "month": 8,
+              "search_volume": 1300
+            },
+            {
+              "year": 2025,
+              "month": 7,
+              "search_volume": 1000
+            },
+            {
+              "year": 2025,
+              "month": 6,
+              "search_volume": 1300
+            },
+            {
+              "year": 2025,
+              "month": 5,
+              "search_volume": 1300
+            },
+            {
+              "year": 2025,
+              "month": 4,
+              "search_volume": 1600
+            }
+          ]
+        },
+        {
+          "keyword": "nonprofits in chicago",
+          "spell": null,
+          "location_code": 2840,
+          "language_code": "en",
+          "search_partners": false,
+          "competition": "LOW",
+          "competition_index": 17,
+          "search_volume": 1900,
+          "low_top_of_page_bid": 1.65,
+          "high_top_of_page_bid": 20,
+          "cpc": 14.06,
+          "monthly_searches": [
+            {
+              "year": 2026,
+              "month": 3,
+              "search_volume": 1900
+            },
+            {
+              "year": 2026,
+              "month": 2,
+              "search_volume": 1600
+            },
+            {
+              "year": 2026,
+              "month": 1,
+              "search_volume": 1900
+            },
+            {
+              "year": 2025,
+              "month": 12,
+              "search_volume": 1300
+            },
+            {
+              "year": 2025,
+              "month": 11,
+              "search_volume": 1600
+            },
+            {
+              "year": 2025,
+              "month": 10,
+              "search_volume": 1900
+            },
+            {
+              "year": 2025,
+              "month": 9,
+              "search_volume": 1900
+            },
+            {
+              "year": 2025,
+              "month": 8,
+              "search_volume": 1600
+            },
+            {
+              "year": 2025,
+              "month": 7,
+              "search_volume": 1900
+            },
+            {
+              "year": 2025,
+              "month": 6,
+              "search_volume": 1900
+            },
+            {
+              "year": 2025,
+              "month": 5,
+              "search_volume": 1900
+            },
+            {
+              "year": 2025,
+              "month": 4,
+              "search_volume": 2400
+            }
+          ]
+        },
+        {
+          "keyword": "nonprofits in san francisco",
+          "spell": null,
+          "location_code": 2840,
+          "language_code": "en",
+          "search_partners": false,
+          "competition": "LOW",
+          "competition_index": 16,
+          "search_volume": 720,
+          "low_top_of_page_bid": 1.1,
+          "high_top_of_page_bid": 16.87,
+          "cpc": 16.21,
+          "monthly_searches": [
+            {
+              "year": 2026,
+              "month": 3,
+              "search_volume": 720
+            },
+            {
+              "year": 2026,
+              "month": 2,
+              "search_volume": 590
+            },
+            {
+              "year": 2026,
+              "month": 1,
+              "search_volume": 880
+            },
+            {
+              "year": 2025,
+              "month": 12,
+              "search_volume": 720
+            },
+            {
+              "year": 2025,
+              "month": 11,
+              "search_volume": 720
+            },
+            {
+              "year": 2025,
+              "month": 10,
+              "search_volume": 720
+            },
+            {
+              "year": 2025,
+              "month": 9,
+              "search_volume": 880
+            },
+            {
+              "year": 2025,
+              "month": 8,
+              "search_volume": 720
+            },
+            {
+              "year": 2025,
+              "month": 7,
+              "search_volume": 590
+            },
+            {
+              "year": 2025,
+              "month": 6,
+              "search_volume": 720
+            },
+            {
+              "year": 2025,
+              "month": 5,
+              "search_volume": 720
+            },
+            {
+              "year": 2025,
+              "month": 4,
+              "search_volume": 720
+            }
+          ]
+        },
+        {
+          "keyword": "nonprofits in boston",
+          "spell": null,
+          "location_code": 2840,
+          "language_code": "en",
+          "search_partners": false,
+          "competition": "LOW",
+          "competition_index": 20,
+          "search_volume": 880,
+          "low_top_of_page_bid": 1.38,
+          "high_top_of_page_bid": 20,
+          "cpc": 15.39,
+          "monthly_searches": [
+            {
+              "year": 2026,
+              "month": 3,
+              "search_volume": 720
+            },
+            {
+              "year": 2026,
+              "month": 2,
+              "search_volume": 720
+            },
+            {
+              "year": 2026,
+              "month": 1,
+              "search_volume": 720
+            },
+            {
+              "year": 2025,
+              "month": 12,
+              "search_volume": 590
+            },
+            {
+              "year": 2025,
+              "month": 11,
+              "search_volume": 880
+            },
+            {
+              "year": 2025,
+              "month": 10,
+              "search_volume": 880
+            },
+            {
+              "year": 2025,
+              "month": 9,
+              "search_volume": 1000
+            },
+            {
+              "year": 2025,
+              "month": 8,
+              "search_volume": 590
+            },
+            {
+              "year": 2025,
+              "month": 7,
+              "search_volume": 880
+            },
+            {
+              "year": 2025,
+              "month": 6,
+              "search_volume": 720
+            },
+            {
+              "year": 2025,
+              "month": 5,
+              "search_volume": 720
+            },
+            {
+              "year": 2025,
+              "month": 4,
+              "search_volume": 880
+            }
+          ]
+        },
+        {
+          "keyword": "nonprofits in atlanta",
+          "spell": null,
+          "location_code": 2840,
+          "language_code": "en",
+          "search_partners": false,
+          "competition": "LOW",
+          "competition_index": 17,
+          "search_volume": 1000,
+          "low_top_of_page_bid": 1.27,
+          "high_top_of_page_bid": 20,
+          "cpc": 14.93,
+          "monthly_searches": [
+            {
+              "year": 2026,
+              "month": 3,
+              "search_volume": 1000
+            },
+            {
+              "year": 2026,
+              "month": 2,
+              "search_volume": 880
+            },
+            {
+              "year": 2026,
+              "month": 1,
+              "search_volume": 1000
+            },
+            {
+              "year": 2025,
+              "month": 12,
+              "search_volume": 880
+            },
+            {
+              "year": 2025,
+              "month": 11,
+              "search_volume": 1300
+            },
+            {
+              "year": 2025,
+              "month": 10,
+              "search_volume": 1300
+            },
+            {
+              "year": 2025,
+              "month": 9,
+              "search_volume": 1300
+            },
+            {
+              "year": 2025,
+              "month": 8,
+              "search_volume": 1300
+            },
+            {
+              "year": 2025,
+              "month": 7,
+              "search_volume": 1300
+            },
+            {
+              "year": 2025,
+              "month": 6,
+              "search_volume": 1000
+            },
+            {
+              "year": 2025,
+              "month": 5,
+              "search_volume": 1000
+            },
+            {
+              "year": 2025,
+              "month": 4,
+              "search_volume": 1300
+            }
+          ]
+        },
+        {
+          "keyword": "nonprofits in philadelphia",
+          "spell": null,
+          "location_code": 2840,
+          "language_code": "en",
+          "search_partners": false,
+          "competition": "LOW",
+          "competition_index": 18,
+          "search_volume": 880,
+          "low_top_of_page_bid": 1.4,
+          "high_top_of_page_bid": 20,
+          "cpc": 14.19,
+          "monthly_searches": [
+            {
+              "year": 2026,
+              "month": 3,
+              "search_volume": 880
+            },
+            {
+              "year": 2026,
+              "month": 2,
+              "search_volume": 880
+            },
+            {
+              "year": 2026,
+              "month": 1,
+              "search_volume": 720
+            },
+            {
+              "year": 2025,
+              "month": 12,
+              "search_volume": 720
+            },
+            {
+              "year": 2025,
+              "month": 11,
+              "search_volume": 880
+            },
+            {
+              "year": 2025,
+              "month": 10,
+              "search_volume": 880
+            },
+            {
+              "year": 2025,
+              "month": 9,
+              "search_volume": 1000
+            },
+            {
+              "year": 2025,
+              "month": 8,
+              "search_volume": 720
+            },
+            {
+              "year": 2025,
+              "month": 7,
+              "search_volume": 880
+            },
+            {
+              "year": 2025,
+              "month": 6,
+              "search_volume": 880
+            },
+            {
+              "year": 2025,
+              "month": 5,
+              "search_volume": 1000
+            },
+            {
+              "year": 2025,
+              "month": 4,
+              "search_volume": 1300
+            }
+          ]
+        },
+        {
+          "keyword": "nonprofits in miami",
+          "spell": null,
+          "location_code": 2840,
+          "language_code": "en",
+          "search_partners": false,
+          "competition": "LOW",
+          "competition_index": 17,
+          "search_volume": 390,
+          "low_top_of_page_bid": 1.98,
+          "high_top_of_page_bid": 20,
+          "cpc": 14.89,
+          "monthly_searches": [
+            {
+              "year": 2026,
+              "month": 3,
+              "search_volume": 320
+            },
+            {
+              "year": 2026,
+              "month": 2,
+              "search_volume": 390
+            },
+            {
+              "year": 2026,
+              "month": 1,
+              "search_volume": 390
+            },
+            {
+              "year": 2025,
+              "month": 12,
+              "search_volume": 320
+            },
+            {
+              "year": 2025,
+              "month": 11,
+              "search_volume": 390
+            },
+            {
+              "year": 2025,
+              "month": 10,
+              "search_volume": 480
+            },
+            {
+              "year": 2025,
+              "month": 9,
+              "search_volume": 480
+            },
+            {
+              "year": 2025,
+              "month": 8,
+              "search_volume": 390
+            },
+            {
+              "year": 2025,
+              "month": 7,
+              "search_volume": 480
+            },
+            {
+              "year": 2025,
+              "month": 6,
+              "search_volume": 390
+            },
+            {
+              "year": 2025,
+              "month": 5,
+              "search_volume": 590
+            },
+            {
+              "year": 2025,
+              "month": 4,
+              "search_volume": 480
+            }
+          ]
+        },
+        {
+          "keyword": "nonprofits in seattle",
+          "spell": null,
+          "location_code": 2840,
+          "language_code": "en",
+          "search_partners": false,
+          "competition": "LOW",
+          "competition_index": 15,
+          "search_volume": 720,
+          "low_top_of_page_bid": 1.54,
+          "high_top_of_page_bid": 20,
+          "cpc": 6.88,
+          "monthly_searches": [
+            {
+              "year": 2026,
+              "month": 3,
+              "search_volume": 720
+            },
+            {
+              "year": 2026,
+              "month": 2,
+              "search_volume": 880
+            },
+            {
+              "year": 2026,
+              "month": 1,
+              "search_volume": 590
+            },
+            {
+              "year": 2025,
+              "month": 12,
+              "search_volume": 720
+            },
+            {
+              "year": 2025,
+              "month": 11,
+              "search_volume": 720
+            },
+            {
+              "year": 2025,
+              "month": 10,
+              "search_volume": 880
+            },
+            {
+              "year": 2025,
+              "month": 9,
+              "search_volume": 880
+            },
+            {
+              "year": 2025,
+              "month": 8,
+              "search_volume": 720
+            },
+            {
+              "year": 2025,
+              "month": 7,
+              "search_volume": 720
+            },
+            {
+              "year": 2025,
+              "month": 6,
+              "search_volume": 720
+            },
+            {
+              "year": 2025,
+              "month": 5,
+              "search_volume": 880
+            },
+            {
+              "year": 2025,
+              "month": 4,
+              "search_volume": 1000
+            }
+          ]
+        },
+        {
+          "keyword": "nonprofits in denver",
+          "spell": null,
+          "location_code": 2840,
+          "language_code": "en",
+          "search_partners": false,
+          "competition": "LOW",
+          "competition_index": 18,
+          "search_volume": 590,
+          "low_top_of_page_bid": 1.63,
+          "high_top_of_page_bid": 15.17,
+          "cpc": 12.68,
+          "monthly_searches": [
+            {
+              "year": 2026,
+              "month": 3,
+              "search_volume": 590
+            },
+            {
+              "year": 2026,
+              "month": 2,
+              "search_volume": 590
+            },
+            {
+              "year": 2026,
+              "month": 1,
+              "search_volume": 590
+            },
+            {
+              "year": 2025,
+              "month": 12,
+              "search_volume": 480
+            },
+            {
+              "year": 2025,
+              "month": 11,
+              "search_volume": 480
+            },
+            {
+              "year": 2025,
+              "month": 10,
+              "search_volume": 590
+            },
+            {
+              "year": 2025,
+              "month": 9,
+              "search_volume": 720
+            },
+            {
+              "year": 2025,
+              "month": 8,
+              "search_volume": 720
+            },
+            {
+              "year": 2025,
+              "month": 7,
+              "search_volume": 590
+            },
+            {
+              "year": 2025,
+              "month": 6,
+              "search_volume": 590
+            },
+            {
+              "year": 2025,
+              "month": 5,
+              "search_volume": 590
+            },
+            {
+              "year": 2025,
+              "month": 4,
+              "search_volume": 880
+            }
+          ]
+        },
+        {
+          "keyword": "nonprofits in phoenix",
+          "spell": null,
+          "location_code": 2840,
+          "language_code": "en",
+          "search_partners": false,
+          "competition": "MEDIUM",
+          "competition_index": 38,
+          "search_volume": 480,
+          "low_top_of_page_bid": 1.73,
+          "high_top_of_page_bid": 5.15,
+          "cpc": 9.27,
+          "monthly_searches": [
+            {
+              "year": 2026,
+              "month": 3,
+              "search_volume": 320
+            },
+            {
+              "year": 2026,
+              "month": 2,
+              "search_volume": 390
+            },
+            {
+              "year": 2026,
+              "month": 1,
+              "search_volume": 480
+            },
+            {
+              "year": 2025,
+              "month": 12,
+              "search_volume": 390
+            },
+            {
+              "year": 2025,
+              "month": 11,
+              "search_volume": 480
+            },
+            {
+              "year": 2025,
+              "month": 10,
+              "search_volume": 590
+            },
+            {
+              "year": 2025,
+              "month": 9,
+              "search_volume": 880
+            },
+            {
+              "year": 2025,
+              "month": 8,
+              "search_volume": 390
+            },
+            {
+              "year": 2025,
+              "month": 7,
+              "search_volume": 390
+            },
+            {
+              "year": 2025,
+              "month": 6,
+              "search_volume": 590
+            },
+            {
+              "year": 2025,
+              "month": 5,
+              "search_volume": 480
+            },
+            {
+              "year": 2025,
+              "month": 4,
+              "search_volume": 480
+            }
+          ]
+        },
+        {
+          "keyword": "nonprofits in minneapolis",
+          "spell": null,
+          "location_code": 2840,
+          "language_code": "en",
+          "search_partners": false,
+          "competition": "LOW",
+          "competition_index": 25,
+          "search_volume": 390,
+          "low_top_of_page_bid": 1.4,
+          "high_top_of_page_bid": 6.71,
+          "cpc": 7.64,
+          "monthly_searches": [
+            {
+              "year": 2026,
+              "month": 3,
+              "search_volume": 260
+            },
+            {
+              "year": 2026,
+              "month": 2,
+              "search_volume": 320
+            },
+            {
+              "year": 2026,
+              "month": 1,
+              "search_volume": 590
+            },
+            {
+              "year": 2025,
+              "month": 12,
+              "search_volume": 320
+            },
+            {
+              "year": 2025,
+              "month": 11,
+              "search_volume": 260
+            },
+            {
+              "year": 2025,
+              "month": 10,
+              "search_volume": 480
+            },
+            {
+              "year": 2025,
+              "month": 9,
+              "search_volume": 390
+            },
+            {
+              "year": 2025,
+              "month": 8,
+              "search_volume": 320
+            },
+            {
+              "year": 2025,
+              "month": 7,
+              "search_volume": 320
+            },
+            {
+              "year": 2025,
+              "month": 6,
+              "search_volume": 260
+            },
+            {
+              "year": 2025,
+              "month": 5,
+              "search_volume": 320
+            },
+            {
+              "year": 2025,
+              "month": 4,
+              "search_volume": 590
+            }
+          ]
+        },
+        {
+          "keyword": "nonprofits in portland",
+          "spell": null,
+          "location_code": 2840,
+          "language_code": "en",
+          "search_partners": false,
+          "competition": "LOW",
+          "competition_index": 18,
+          "search_volume": 590,
+          "low_top_of_page_bid": 1.38,
+          "high_top_of_page_bid": 4.9,
+          "cpc": 7.95,
+          "monthly_searches": [
+            {
+              "year": 2026,
+              "month": 3,
+              "search_volume": 480
+            },
+            {
+              "year": 2026,
+              "month": 2,
+              "search_volume": 590
+            },
+            {
+              "year": 2026,
+              "month": 1,
+              "search_volume": 590
+            },
+            {
+              "year": 2025,
+              "month": 12,
+              "search_volume": 590
+            },
+            {
+              "year": 2025,
+              "month": 11,
+              "search_volume": 480
+            },
+            {
+              "year": 2025,
+              "month": 10,
+              "search_volume": 720
+            },
+            {
+              "year": 2025,
+              "month": 9,
+              "search_volume": 720
+            },
+            {
+              "year": 2025,
+              "month": 8,
+              "search_volume": 590
+            },
+            {
+              "year": 2025,
+              "month": 7,
+              "search_volume": 590
+            },
+            {
+              "year": 2025,
+              "month": 6,
+              "search_volume": 590
+            },
+            {
+              "year": 2025,
+              "month": 5,
+              "search_volume": 590
+            },
+            {
+              "year": 2025,
+              "month": 4,
+              "search_volume": 720
+            }
+          ]
+        },
+        {
+          "keyword": "houston grant management",
+          "spell": null,
+          "location_code": 2840,
+          "language_code": "en",
+          "search_partners": false,
+          "competition": null,
+          "competition_index": null,
+          "search_volume": null,
+          "low_top_of_page_bid": null,
+          "high_top_of_page_bid": null,
+          "cpc": null,
+          "monthly_searches": null
+        },
+        {
+          "keyword": "dallas grant management",
+          "spell": null,
+          "location_code": 2840,
+          "language_code": "en",
+          "search_partners": false,
+          "competition": null,
+          "competition_index": null,
+          "search_volume": null,
+          "low_top_of_page_bid": null,
+          "high_top_of_page_bid": null,
+          "cpc": null,
+          "monthly_searches": null
+        },
+        {
+          "keyword": "nyc grant management",
+          "spell": null,
+          "location_code": 2840,
+          "language_code": "en",
+          "search_partners": false,
+          "competition": null,
+          "competition_index": null,
+          "search_volume": null,
+          "low_top_of_page_bid": null,
+          "high_top_of_page_bid": null,
+          "cpc": null,
+          "monthly_searches": null
+        },
+        {
+          "keyword": "los angeles grant management",
+          "spell": null,
+          "location_code": 2840,
+          "language_code": "en",
+          "search_partners": false,
+          "competition": null,
+          "competition_index": null,
+          "search_volume": null,
+          "low_top_of_page_bid": null,
+          "high_top_of_page_bid": null,
+          "cpc": null,
+          "monthly_searches": null
+        },
+        {
+          "keyword": "chicago grant management",
+          "spell": null,
+          "location_code": 2840,
+          "language_code": "en",
+          "search_partners": false,
+          "competition": null,
+          "competition_index": null,
+          "search_volume": null,
+          "low_top_of_page_bid": null,
+          "high_top_of_page_bid": null,
+          "cpc": null,
+          "monthly_searches": null
+        },
+        {
+          "keyword": "san francisco grant management",
+          "spell": null,
+          "location_code": 2840,
+          "language_code": "en",
+          "search_partners": false,
+          "competition": null,
+          "competition_index": null,
+          "search_volume": null,
+          "low_top_of_page_bid": null,
+          "high_top_of_page_bid": null,
+          "cpc": null,
+          "monthly_searches": null
+        },
+        {
+          "keyword": "boston grant management",
+          "spell": null,
+          "location_code": 2840,
+          "language_code": "en",
+          "search_partners": false,
+          "competition": null,
+          "competition_index": null,
+          "search_volume": null,
+          "low_top_of_page_bid": null,
+          "high_top_of_page_bid": null,
+          "cpc": null,
+          "monthly_searches": null
+        },
+        {
+          "keyword": "atlanta grant management",
+          "spell": null,
+          "location_code": 2840,
+          "language_code": "en",
+          "search_partners": false,
+          "competition": null,
+          "competition_index": null,
+          "search_volume": null,
+          "low_top_of_page_bid": null,
+          "high_top_of_page_bid": null,
+          "cpc": null,
+          "monthly_searches": null
+        },
+        {
+          "keyword": "philadelphia grant management",
+          "spell": null,
+          "location_code": 2840,
+          "language_code": "en",
+          "search_partners": false,
+          "competition": null,
+          "competition_index": null,
+          "search_volume": null,
+          "low_top_of_page_bid": null,
+          "high_top_of_page_bid": null,
+          "cpc": null,
+          "monthly_searches": null
+        },
+        {
+          "keyword": "miami grant management",
+          "spell": null,
+          "location_code": 2840,
+          "language_code": "en",
+          "search_partners": false,
+          "competition": null,
+          "competition_index": null,
+          "search_volume": null,
+          "low_top_of_page_bid": null,
+          "high_top_of_page_bid": null,
+          "cpc": null,
+          "monthly_searches": null
+        },
+        {
+          "keyword": "seattle grant management",
+          "spell": null,
+          "location_code": 2840,
+          "language_code": "en",
+          "search_partners": false,
+          "competition": null,
+          "competition_index": null,
+          "search_volume": null,
+          "low_top_of_page_bid": null,
+          "high_top_of_page_bid": null,
+          "cpc": null,
+          "monthly_searches": null
+        },
+        {
+          "keyword": "denver grant management",
+          "spell": null,
+          "location_code": 2840,
+          "language_code": "en",
+          "search_partners": false,
+          "competition": null,
+          "competition_index": null,
+          "search_volume": null,
+          "low_top_of_page_bid": null,
+          "high_top_of_page_bid": null,
+          "cpc": null,
+          "monthly_searches": null
+        },
+        {
+          "keyword": "phoenix grant management",
+          "spell": null,
+          "location_code": 2840,
+          "language_code": "en",
+          "search_partners": false,
+          "competition": null,
+          "competition_index": null,
+          "search_volume": null,
+          "low_top_of_page_bid": null,
+          "high_top_of_page_bid": null,
+          "cpc": null,
+          "monthly_searches": null
+        },
+        {
+          "keyword": "minneapolis grant management",
+          "spell": null,
+          "location_code": 2840,
+          "language_code": "en",
+          "search_partners": false,
+          "competition": null,
+          "competition_index": null,
+          "search_volume": null,
+          "low_top_of_page_bid": null,
+          "high_top_of_page_bid": null,
+          "cpc": null,
+          "monthly_searches": null
+        },
+        {
+          "keyword": "portland grant management",
+          "spell": null,
+          "location_code": 2840,
+          "language_code": "en",
+          "search_partners": false,
+          "competition": null,
+          "competition_index": null,
+          "search_volume": null,
+          "low_top_of_page_bid": null,
+          "high_top_of_page_bid": null,
+          "cpc": null,
+          "monthly_searches": null
+        },
+        {
+          "keyword": "houston nonprofit grants",
+          "spell": null,
+          "location_code": 2840,
+          "language_code": "en",
+          "search_partners": false,
+          "competition": null,
+          "competition_index": null,
+          "search_volume": null,
+          "low_top_of_page_bid": null,
+          "high_top_of_page_bid": null,
+          "cpc": null,
+          "monthly_searches": null
+        },
+        {
+          "keyword": "atlanta nonprofit grants",
+          "spell": null,
+          "location_code": 2840,
+          "language_code": "en",
+          "search_partners": false,
+          "competition": null,
+          "competition_index": null,
+          "search_volume": null,
+          "low_top_of_page_bid": null,
+          "high_top_of_page_bid": null,
+          "cpc": null,
+          "monthly_searches": null
+        },
+        {
+          "keyword": "chicago nonprofit grants",
+          "spell": null,
+          "location_code": 2840,
+          "language_code": "en",
+          "search_partners": false,
+          "competition": "LOW",
+          "competition_index": 28,
+          "search_volume": 90,
+          "low_top_of_page_bid": 1.89,
+          "high_top_of_page_bid": 8.18,
+          "cpc": 9.98,
+          "monthly_searches": [
+            {
+              "year": 2026,
+              "month": 3,
+              "search_volume": 70
+            },
+            {
+              "year": 2026,
+              "month": 2,
+              "search_volume": 70
+            },
+            {
+              "year": 2026,
+              "month": 1,
+              "search_volume": 70
+            },
+            {
+              "year": 2025,
+              "month": 12,
+              "search_volume": 50
+            },
+            {
+              "year": 2025,
+              "month": 11,
+              "search_volume": 50
+            },
+            {
+              "year": 2025,
+              "month": 10,
+              "search_volume": 90
+            },
+            {
+              "year": 2025,
+              "month": 9,
+              "search_volume": 90
+            },
+            {
+              "year": 2025,
+              "month": 8,
+              "search_volume": 90
+            },
+            {
+              "year": 2025,
+              "month": 7,
+              "search_volume": 90
+            },
+            {
+              "year": 2025,
+              "month": 6,
+              "search_volume": 90
+            },
+            {
+              "year": 2025,
+              "month": 5,
+              "search_volume": 90
+            },
+            {
+              "year": 2025,
+              "month": 4,
+              "search_volume": 90
+            }
+          ]
+        },
+        {
+          "keyword": "nyc nonprofit grants",
+          "spell": null,
+          "location_code": 2840,
+          "language_code": "en",
+          "search_partners": false,
+          "competition": "LOW",
+          "competition_index": 12,
+          "search_volume": 10,
+          "low_top_of_page_bid": null,
+          "high_top_of_page_bid": null,
+          "cpc": 2.62,
+          "monthly_searches": [
+            {
+              "year": 2026,
+              "month": 3,
+              "search_volume": 10
+            },
+            {
+              "year": 2026,
+              "month": 2,
+              "search_volume": 10
+            },
+            {
+              "year": 2026,
+              "month": 1,
+              "search_volume": 10
+            },
+            {
+              "year": 2025,
+              "month": 12,
+              "search_volume": 10
+            },
+            {
+              "year": 2025,
+              "month": 11,
+              "search_volume": 20
+            },
+            {
+              "year": 2025,
+              "month": 10,
+              "search_volume": 10
+            },
+            {
+              "year": 2025,
+              "month": 9,
+              "search_volume": 10
+            },
+            {
+              "year": 2025,
+              "month": 8,
+              "search_volume": 10
+            },
+            {
+              "year": 2025,
+              "month": 7,
+              "search_volume": 10
+            },
+            {
+              "year": 2025,
+              "month": 6,
+              "search_volume": 10
+            },
+            {
+              "year": 2025,
+              "month": 5,
+              "search_volume": 10
+            },
+            {
+              "year": 2025,
+              "month": 4,
+              "search_volume": 10
+            }
+          ]
+        },
+        {
+          "keyword": "los angeles nonprofit grants",
+          "spell": null,
+          "location_code": 2840,
+          "language_code": "en",
+          "search_partners": false,
+          "competition": null,
+          "competition_index": null,
+          "search_volume": null,
+          "low_top_of_page_bid": null,
+          "high_top_of_page_bid": null,
+          "cpc": null,
+          "monthly_searches": null
+        },
+        {
+          "keyword": "san francisco bay area nonprofits",
+          "spell": null,
+          "location_code": 2840,
+          "language_code": "en",
+          "search_partners": false,
+          "competition": "LOW",
+          "competition_index": 16,
+          "search_volume": 720,
+          "low_top_of_page_bid": 1.1,
+          "high_top_of_page_bid": 16.87,
+          "cpc": 16.21,
+          "monthly_searches": [
+            {
+              "year": 2026,
+              "month": 3,
+              "search_volume": 720
+            },
+            {
+              "year": 2026,
+              "month": 2,
+              "search_volume": 590
+            },
+            {
+              "year": 2026,
+              "month": 1,
+              "search_volume": 880
+            },
+            {
+              "year": 2025,
+              "month": 12,
+              "search_volume": 720
+            },
+            {
+              "year": 2025,
+              "month": 11,
+              "search_volume": 720
+            },
+            {
+              "year": 2025,
+              "month": 10,
+              "search_volume": 720
+            },
+            {
+              "year": 2025,
+              "month": 9,
+              "search_volume": 880
+            },
+            {
+              "year": 2025,
+              "month": 8,
+              "search_volume": 720
+            },
+            {
+              "year": 2025,
+              "month": 7,
+              "search_volume": 590
+            },
+            {
+              "year": 2025,
+              "month": 6,
+              "search_volume": 720
+            },
+            {
+              "year": 2025,
+              "month": 5,
+              "search_volume": 720
+            },
+            {
+              "year": 2025,
+              "month": 4,
+              "search_volume": 720
+            }
+          ]
+        },
+        {
+          "keyword": "boston nonprofit grants",
+          "spell": null,
+          "location_code": 2840,
+          "language_code": "en",
+          "search_partners": false,
+          "competition": null,
+          "competition_index": null,
+          "search_volume": null,
+          "low_top_of_page_bid": null,
+          "high_top_of_page_bid": null,
+          "cpc": null,
+          "monthly_searches": null
+        },
+        {
+          "keyword": "seattle nonprofit grants",
+          "spell": null,
+          "location_code": 2840,
+          "language_code": "en",
+          "search_partners": false,
+          "competition": null,
+          "competition_index": null,
+          "search_volume": null,
+          "low_top_of_page_bid": null,
+          "high_top_of_page_bid": null,
+          "cpc": null,
+          "monthly_searches": null
+        },
+        {
+          "keyword": "denver nonprofit grants",
+          "spell": null,
+          "location_code": 2840,
+          "language_code": "en",
+          "search_partners": false,
+          "competition": null,
+          "competition_index": null,
+          "search_volume": null,
+          "low_top_of_page_bid": null,
+          "high_top_of_page_bid": null,
+          "cpc": null,
+          "monthly_searches": null
+        },
+        {
+          "keyword": "miami nonprofit grants",
+          "spell": null,
+          "location_code": 2840,
+          "language_code": "en",
+          "search_partners": false,
+          "competition": null,
+          "competition_index": null,
+          "search_volume": null,
+          "low_top_of_page_bid": null,
+          "high_top_of_page_bid": null,
+          "cpc": null,
+          "monthly_searches": null
+        },
+        {
+          "keyword": "phoenix nonprofit grants",
+          "spell": null,
+          "location_code": 2840,
+          "language_code": "en",
+          "search_partners": false,
+          "competition": null,
+          "competition_index": null,
+          "search_volume": null,
+          "low_top_of_page_bid": null,
+          "high_top_of_page_bid": null,
+          "cpc": null,
+          "monthly_searches": null
+        },
+        {
+          "keyword": "portland nonprofit grants",
+          "spell": null,
+          "location_code": 2840,
+          "language_code": "en",
+          "search_partners": false,
+          "competition": null,
+          "competition_index": null,
+          "search_volume": null,
+          "low_top_of_page_bid": null,
+          "high_top_of_page_bid": null,
+          "cpc": null,
+          "monthly_searches": null
+        },
+        {
+          "keyword": "minneapolis nonprofit grants",
+          "spell": null,
+          "location_code": 2840,
+          "language_code": "en",
+          "search_partners": false,
+          "competition": null,
+          "competition_index": null,
+          "search_volume": null,
+          "low_top_of_page_bid": null,
+          "high_top_of_page_bid": null,
+          "cpc": null,
+          "monthly_searches": null
+        },
+        {
+          "keyword": "philadelphia nonprofit grants",
+          "spell": null,
+          "location_code": 2840,
+          "language_code": "en",
+          "search_partners": false,
+          "competition": null,
+          "competition_index": null,
+          "search_volume": null,
+          "low_top_of_page_bid": null,
+          "high_top_of_page_bid": null,
+          "cpc": null,
+          "monthly_searches": null
+        },
+        {
+          "keyword": "dallas nonprofit grants",
+          "spell": null,
+          "location_code": 2840,
+          "language_code": "en",
+          "search_partners": false,
+          "competition": null,
+          "competition_index": null,
+          "search_volume": null,
+          "low_top_of_page_bid": null,
+          "high_top_of_page_bid": null,
+          "cpc": null,
+          "monthly_searches": null
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,113 @@
+---
+import "../../styles/global.css"
+import { getCollection } from "astro:content"
+import { getContentEntrySlug } from "@/lib/content-entry-slug"
+import CategoryHub from "@grantpipe/ui/site/hubs/category-hub.astro"
+import { siteConfig, shouldShowMobileStickyCta } from "@/config/site"
+import { mapToContentItems } from "@grantpipe/ui/site/lib/collections"
+import { resolveExitLeadMagnetOffer } from "@/lib/lead-magnet-routing"
+import ContentCard from "@grantpipe/ui/site/components/content-card.astro"
+
+const leadMagnets = await getCollection("lead-magnets")
+const exitLeadMagnet = resolveExitLeadMagnetOffer(siteConfig, leadMagnets, { family: "guide" })
+const entries = await getCollection("glossary")
+const sorted = [...entries].sort((a, b) => a.data.title.localeCompare(b.data.title))
+const items = mapToContentItems(sorted, (e) => `/glossary/${getContentEntrySlug(e)}`)
+const page = {
+  data: items,
+  currentPage: 1,
+  lastPage: 1,
+  url: { prev: undefined, next: undefined },
+}
+
+const ALPHABET = "ABCDEFGHIJKLMNOPQRSTUVWXYZ".split("")
+
+/** Letters that actually have at least one glossary entry */
+const activeLetters = new Set(
+  items
+    .map((item) => item.title.charAt(0).toUpperCase())
+    .filter((ch) => /[A-Z]/.test(ch))
+)
+const glossarySections = ALPHABET.map((letter) => ({
+  letter,
+  items: items.filter((item) => item.title.charAt(0).toUpperCase() === letter),
+})).filter((section) => section.items.length > 0)
+---
+
+<CategoryHub
+  config={siteConfig}
+  title="Glossary"
+  description="Plain-English definitions for donor, grant, and nonprofit fund-accounting terms."
+  variant="editorial"
+  items={items}
+  page={page}
+  basePath="/glossary"
+  breadcrumbs={[
+    { label: "Home", href: "/" },
+    { label: "Glossary", href: "/glossary" },
+  ]}
+  emptyStateHeading="No glossary terms match this view yet."
+  emptyStateBody="Browse the resources hub for guides and FAQ hubs that cover related terminology."
+  showStickyMobileCta={shouldShowMobileStickyCta("/glossary")}
+  leadMagnet={exitLeadMagnet}
+  renderListing={false}
+>
+  <div slot="intro" class="space-y-8">
+    <nav
+      aria-label="Jump to letter"
+      class="gp-glossary-az-strip"
+      data-glossary-az-strip
+    >
+      <div class="gp-glossary-az-strip__inner">
+        {ALPHABET.map((letter) => (
+          activeLetters.has(letter) ? (
+            <a
+              href={`#glossary-${letter.toLowerCase()}`}
+              class="gp-glossary-az-link"
+              aria-label={`Jump to ${letter}`}
+            >
+              {letter}
+            </a>
+          ) : (
+            <span
+              class="gp-glossary-az-link"
+              aria-disabled="true"
+              style="opacity: 0.3; cursor: default;"
+            >
+              {letter}
+            </span>
+          )
+        ))}
+      </div>
+    </nav>
+
+    <section aria-label="Glossary terms by letter" class="space-y-8">
+      {glossarySections.map((section) => (
+        <section
+          id={`glossary-${section.letter.toLowerCase()}`}
+          data-glossary-letter-section
+          aria-labelledby={`glossary-${section.letter.toLowerCase()}-heading`}
+        >
+          <div class="mb-4 flex flex-wrap items-center justify-between gap-3">
+            <h2
+              id={`glossary-${section.letter.toLowerCase()}-heading`}
+              class="font-heading text-[length:var(--text-heading)] font-bold text-brand-text"
+            >
+              {section.letter}
+            </h2>
+            <span class="rounded-full border border-[var(--gp-ink-200)] px-3 py-1 text-[length:var(--text-caption)] font-medium text-brand-muted">
+              {section.items.length} {section.items.length === 1 ? "term" : "terms"}
+            </span>
+          </div>
+          <div class="hub-grid grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
+            {section.items.map((item) => (
+              <div class="scroll-in h-full">
+                <ContentCard item={item} />
+              </div>
+            ))}
+          </div>
+        </section>
+      ))}
+    </section>
+  </div>
+</CategoryHub>

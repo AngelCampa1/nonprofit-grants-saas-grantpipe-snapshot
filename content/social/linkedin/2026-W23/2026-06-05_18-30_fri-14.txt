@@ -1,0 +1,13 @@
+A questioned cost response should not start from panic.
+
+Start with the record:
+
+- award term
+- 2 CFR 200 cost principle
+- budget line
+- allocation basis
+- invoice or receipt
+- payment proof
+- approval trail
+
+Then decide whether the cost is defensible, needs correction, or should be repaid.

@@ -1,0 +1,70 @@
+- generic [ref=e3]:
+    - generic [ref=e13]:
+        - banner [ref=e14]:
+            - button "Open navigation" [ref=e16]:
+                - img
+            - generic [ref=e17]:
+                - link "Add billing, trial ends in 30 days" [ref=e18] [cursor=pointer]:
+                    - /url: /app/settings#billing
+                    - img [ref=e19]
+                    - generic [ref=e22]: Trial
+                    - generic [ref=e23]: 30d
+                - button "Open command palette" [ref=e24]:
+                    - img
+                - link "Notifications" [ref=e25] [cursor=pointer]:
+                    - /url: /app/notifications
+                    - img
+                - button "Switch to dark theme" [ref=e26]:
+                    - img
+        - main [ref=e28]:
+            - generic [ref=e139]:
+                - generic [ref=e140]:
+                    - navigation "breadcrumb" [ref=e142]:
+                        - list [ref=e143]:
+                            - listitem [ref=e144]:
+                                - link "Grants" [ref=e145] [cursor=pointer]:
+                                    - /url: /app/grants
+                            - listitem [ref=e146]:
+                                - img [ref=e147]
+                            - listitem [ref=e149]:
+                                - generic [ref=e150]: Prod E2E Grant 160129
+                    - generic [ref=e151]:
+                        - generic [ref=e152]:
+                            - heading "Prod E2E Grant 160129" [level=1] [ref=e154]
+                            - paragraph [ref=e155]: Discovery
+                        - generic [ref=e157]:
+                            - generic [ref=e158]: Threshold --
+                            - button "Share" [ref=e159]
+                            - button "Delete grant" [ref=e160]
+                - generic [ref=e161]:
+                    - generic [ref=e162]:
+                        - generic [ref=e164]: Grant Amount
+                        - generic [ref=e165]: Not set
+                    - generic [ref=e166]:
+                        - generic [ref=e168]: Allocated
+                        - generic [ref=e169]: $0
+                    - generic [ref=e170]:
+                        - generic [ref=e172]: Unallocated
+                        - generic [ref=e173]: "--"
+                    - generic [ref=e174]:
+                        - generic [ref=e176]: Remaining to Spend
+                        - generic [ref=e177]: "--"
+                - generic [ref=e178]:
+                    - tablist [ref=e179]:
+                        - tab "Overview" [ref=e180]
+                        - tab "Allocations" [ref=e181]
+                        - tab "Expenses" [active] [selected] [ref=e182]
+                        - tab "Impact Metrics" [ref=e183]
+                        - tab "Reporting" [ref=e184]
+                        - tab "Payments" [ref=e185]
+                        - tab "Closeout" [ref=e186]
+                        - tab "Spend-Down" [ref=e187]
+                        - tab "Restrictions" [ref=e188]
+                        - tab "Custom Fields" [ref=e189]
+                        - tab "Activity" [ref=e190]
+                        - tab "Documents" [ref=e191]
+                    - tabpanel "Expenses" [ref=e230]:
+                        - generic [ref=e231]:
+                            - button "Add expense" [ref=e232]
+                            - paragraph [ref=e233]: No expenses recorded yet. Log spending to keep the burn rate and remaining balance accurate.
+    - region "Notifications alt+T"

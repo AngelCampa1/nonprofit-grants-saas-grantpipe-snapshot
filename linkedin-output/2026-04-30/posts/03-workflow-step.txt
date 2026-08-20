@@ -1,0 +1,11 @@
+Step 4 of responding to a Single Audit finding: draft the Corrective Action Plan with all five required elements under 2 CFR 200.511(c).
+
+The five elements are the finding reference number, the auditee's position (agree or disagree), the specific corrective action, the named responsible party with title, and the target completion date. Vague language like "management will strengthen controls" is not acceptable and produces a follow-up letter from the awarding agency.
+
+Step 5 is committing realistic timelines. Aggressive but achievable — typically 30 to 180 days depending on complexity. A policy update closes in 30. A system implementation may need 180. Missed CAP deadlines become a finding in the next year's audit, which is how organizations end up in repeat-finding territory.
+
+The package is due the earlier of 30 days after the auditor's report or nine months after fiscal year-end, per 2 CFR 200.512(a)(1). The CAP is part of that package and travels with the report to the Federal Audit Clearinghouse at harvester.census.gov.
+
+A strong CAP reads like a project plan, not a compliance document. "The CFO will update the procurement policy by May 31, circulate it with attestations, and present completed attestations to the audit committee at the June meeting" is what auditors and program officers want to see.
+
+#singleaudit #2cfr200 #correctiveactionplan #grantcompliance

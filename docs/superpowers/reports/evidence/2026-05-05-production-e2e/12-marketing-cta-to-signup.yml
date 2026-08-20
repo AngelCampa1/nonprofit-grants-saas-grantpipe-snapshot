@@ -1,0 +1,56 @@
+- generic [ref=e4]:
+    - complementary [ref=e5]:
+        - generic [ref=e8]:
+            - link [ref=e9] [cursor=pointer]:
+                - /url: /app/
+                - img [ref=e10]
+            - generic [ref=e11]:
+                - generic [ref=e12]:
+                    - paragraph [ref=e13]: Grant-funded nonprofit software
+                    - paragraph [ref=e14]: Donors, grants, funds, and compliance in one system.
+                    - paragraph [ref=e15]: Built for nonprofits managing restricted funding, reporting deadlines, and audit work without adding another long setup project.
+                - generic [ref=e16]:
+                    - generic [ref=e17]:
+                        - paragraph [ref=e18]: What changes
+                        - paragraph [ref=e19]: Finance and development stop rebuilding the same answer from different tools.
+                    - generic [ref=e20]:
+                        - generic [ref=e21]:
+                            - paragraph [ref=e22]: Setup
+                            - paragraph [ref=e23]: Guided setup
+                        - generic [ref=e24]:
+                            - paragraph [ref=e25]: Reporting
+                            - paragraph [ref=e26]: Built-in reports
+                        - generic [ref=e27]:
+                            - paragraph [ref=e28]: Pricing
+                            - paragraph [ref=e29]: Flat monthly
+            - generic [ref=e32]: grantpipe.com
+    - generic [ref=e34]:
+        - generic [ref=e35]:
+            - generic [ref=e37]:
+                - paragraph [ref=e38]: Secure account access
+                - heading "Create your GrantPipe account" [level=1] [ref=e39]
+                - paragraph [ref=e40]: Start with a 1-month free trial. No credit card required.
+            - generic [ref=e42]:
+                - generic [ref=e43]:
+                    - generic [ref=e44]: Name
+                    - textbox "Name" [ref=e45]:
+                        - /placeholder: Your full name
+                - generic [ref=e46]:
+                    - generic [ref=e47]: Email
+                    - textbox "Email" [ref=e48]:
+                        - /placeholder: you@example.com
+                - generic [ref=e49]:
+                    - generic [ref=e50]: Password
+                    - textbox "Password" [ref=e51]
+                - button "Create account" [ref=e52]
+                - generic [ref=e57]: or
+                - button "Continue with Google" [ref=e58]:
+                    - img
+                    - text: Continue with Google
+            - generic [ref=e59]:
+                - text: Already have an account?
+                - link "Sign in" [ref=e60] [cursor=pointer]:
+                    - /url: /app/login
+        - generic [ref=e61]:
+            - generic [ref=e62]: Encrypted session
+            - generic [ref=e63]: Reduced-motion safe

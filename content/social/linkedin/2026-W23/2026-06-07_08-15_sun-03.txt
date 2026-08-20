@@ -1,0 +1,11 @@
+Net asset releases need a review trail.
+
+Before releasing restricted funds, confirm:
+
+- which restriction was satisfied
+- what evidence supports that satisfaction
+- what amount is being released
+- which period the release belongs to
+- who reviewed it
+
+The release should be explainable months later.

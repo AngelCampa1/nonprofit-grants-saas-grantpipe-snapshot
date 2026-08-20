@@ -1,0 +1,3 @@
+10%. That is the de minimis indirect cost rate any federal grantee can elect without negotiating a NICRA.
+
+If you are running federal awards with no negotiated rate, you are probably leaving money in the direct-cost column that should be sitting in indirect. Check the award terms before the next drawdown.

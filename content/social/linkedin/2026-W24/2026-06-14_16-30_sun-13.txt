@@ -1,0 +1,11 @@
+The Donor Retention Dashboard Template is not grant compliance content, and that is the point.
+
+Development leaders still need a clean view of:
+
+- retained donors
+- lapsed donors
+- new donors
+- recurring donors
+- upgrade opportunities
+
+A grant calendar still has a relationship side.

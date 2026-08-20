@@ -1,0 +1,15 @@
+{
+  "name": "grantpipe-yt-video-01",
+  "private": true,
+  "version": "1.0.0",
+  "type": "module",
+  "description": "Self-contained Hyperframes production for GrantPipe YouTube video #16: Build a Grant Tracking Spreadsheet (Free Template).",
+  "scripts": {
+    "render": "node render.mjs",
+    "voiceover": "node voiceover.mjs",
+    "assemble": "node assemble.mjs"
+  },
+  "dependencies": {
+    "hyperframes": "^0.6.29"
+  }
+}

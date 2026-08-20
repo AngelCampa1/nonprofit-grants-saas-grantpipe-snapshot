@@ -1,0 +1,283 @@
+1
+00:00:00,000 --> 00:00:04,115
+Setting up new software is where good intentions go to die.
+
+2
+00:00:04,115 --> 00:00:10,811
+You sign up, you get a blank screen, and somewhere there's a spreadsheet you're scared to touch.
+
+3
+00:00:10,811 --> 00:00:12,206
+So let's just do it.
+
+4
+00:00:12,206 --> 00:00:18,344
+In the next few minutes you'll set up your nonprofit and get your donors into GrantPipe.
+
+5
+00:00:18,344 --> 00:00:19,948
+Three fields, one file.
+
+6
+00:00:19,948 --> 00:00:25,249
+And before anything saves, you'll see exactly what GrantPipe is about to do.
+
+7
+00:00:25,249 --> 00:00:26,156
+I built this.
+
+8
+00:00:26,156 --> 00:00:27,760
+Let me show you around.
+
+9
+00:00:27,760 --> 00:00:31,514
+When you first sign in, GrantPipe asks you three things.
+
+10
+00:00:31,514 --> 00:00:32,586
+Not a long form.
+
+11
+00:00:32,586 --> 00:00:32,989
+Three.
+
+12
+00:00:32,989 --> 00:00:34,463
+Your nonprofit's name.
+
+13
+00:00:34,463 --> 00:00:41,100
+This is what shows up on your reports and exports, so spell it the way you want a funder to see it.
+
+14
+00:00:41,100 --> 00:00:43,379
+The month your fiscal year starts.
+
+15
+00:00:43,379 --> 00:00:46,529
+Most nonprofits don't run on a January calendar
+
+16
+00:00:46,529 --> 00:00:50,753
+and that's why year-end numbers can feel impossible to line up.
+
+17
+00:00:50,753 --> 00:00:54,775
+Set it once here, and your dashboards and reports follow it.
+
+18
+00:00:54,775 --> 00:00:55,981
+And your timezone.
+
+19
+00:00:55,981 --> 00:00:58,126
+This one's quiet, but it counts.
+
+20
+00:00:58,126 --> 00:01:01,813
+It's how GrantPipe knows when a deadline is really due.
+
+21
+00:01:01,813 --> 00:01:07,645
+So a report doesn't get marked late just because some server runs on a different clock.
+
+22
+00:01:07,645 --> 00:01:09,187
+That's the whole setup.
+
+23
+00:01:09,187 --> 00:01:11,600
+Save it, and you've got a workspace.
+
+24
+00:01:11,600 --> 00:01:12,540
+Now your data.
+
+25
+00:01:12,540 --> 00:01:17,709
+If you've got a spreadsheet of donors, you are not typing them in one by one.
+
+26
+00:01:17,709 --> 00:01:24,020
+GrantPipe imports four kinds of records: contacts, donations, grants, and grant opportunities.
+
+27
+00:01:24,020 --> 00:01:25,362
+Start with contacts.
+
+28
+00:01:25,362 --> 00:01:30,599
+That's the donor list almost everyone already has sitting in a file somewhere.
+
+29
+00:01:30,599 --> 00:01:35,231
+Came out of Bloomerang, DonorPerfect, or Salesforce's nonprofit pack?
+
+30
+00:01:35,231 --> 00:01:38,587
+Pick that preset, and the columns line up for you.
+
+31
+00:01:38,587 --> 00:01:43,018
+Anything else, like a plain Excel sheet or an old Blackbaud export
+
+32
+00:01:43,018 --> 00:01:46,375
+choose Generic CSV and match the columns yourself.
+
+33
+00:01:46,375 --> 00:01:47,180
+It's simple.
+
+34
+00:01:47,180 --> 00:01:50,000
+And you can download a template to follow.
+
+35
+00:01:50,000 --> 00:01:51,217
+Upload your file.
+
+36
+00:01:51,217 --> 00:01:53,221
+Any CSV up to ten megabytes.
+
+37
+00:01:53,221 --> 00:01:55,727
+Then GrantPipe shows you a preview.
+
+38
+00:01:55,727 --> 00:01:58,733
+Here's the part I want you to relax about.
+
+39
+00:01:58,733 --> 00:02:00,022
+This is a preview.
+
+40
+00:02:00,022 --> 00:02:01,024
+Nothing saves.
+
+41
+00:02:01,024 --> 00:02:05,534
+GrantPipe reads your file and tells you how many rows it found.
+
+42
+00:02:05,534 --> 00:02:11,547
+It shows you the first five, so you can check the columns landed where you expected.
+
+43
+00:02:11,547 --> 00:02:15,770
+If something looks wrong, back out and fix the spreadsheet.
+
+44
+00:02:15,770 --> 00:02:18,132
+Nothing has touched your account.
+
+45
+00:02:18,132 --> 00:02:19,278
+That's the idea.
+
+46
+00:02:19,278 --> 00:02:21,640
+You look before anything happens.
+
+47
+00:02:21,640 --> 00:02:24,368
+When the preview looks right, you commit.
+
+48
+00:02:24,368 --> 00:02:29,758
+Now GrantPipe writes the records, and it tells you the truth about what happened.
+
+49
+00:02:29,758 --> 00:02:30,689
+Three numbers.
+
+50
+00:02:30,689 --> 00:02:31,355
+Two added.
+
+51
+00:02:31,355 --> 00:02:33,218
+Three skipped as duplicates.
+
+52
+00:02:33,218 --> 00:02:39,406
+When GrantPipe spots a contact you already have, it skips it instead of making a second copy.
+
+53
+00:02:39,406 --> 00:02:43,997
+And one failed, with the line and the field, so you know what to fix.
+
+54
+00:02:43,997 --> 00:02:45,927
+A few rows failing is normal.
+
+55
+00:02:45,927 --> 00:02:52,314
+Here, line seven used a contact type GrantPipe doesn't know, so it tells you the two it accepts.
+
+56
+00:02:52,314 --> 00:02:57,038
+A blank required field or a date it can't read fail the same clear way.
+
+57
+00:02:57,038 --> 00:02:59,700
+Fix those lines and re-import just them.
+
+58
+00:02:59,700 --> 00:03:03,892
+GrantPipe logs every import you run right here, with its counts
+
+59
+00:03:03,892 --> 00:03:07,086
+so you've got a record of what came in and when.
+
+60
+00:03:07,086 --> 00:03:08,350
+And there they are.
+
+61
+00:03:08,350 --> 00:03:10,080
+Your donors, in GrantPipe.
+
+62
+00:03:10,080 --> 00:03:12,986
+That's your org set up and your data in.
+
+63
+00:03:12,986 --> 00:03:17,635
+No consultant, no migration project, and nobody had to dread it.
+
+64
+00:03:17,635 --> 00:03:19,233
+One tip before you go.
+
+65
+00:03:19,233 --> 00:03:24,972
+If your spreadsheet is messy, and most are, map your columns before you import.
+
+66
+00:03:24,972 --> 00:03:29,403
+We made a free template for that: the CRM Migration Data Map.
+
+67
+00:03:29,403 --> 00:03:34,053
+It tells you which column goes where and what to clean up first.
+
+68
+00:03:34,053 --> 00:03:34,634
+Want it?
+
+69
+00:03:34,634 --> 00:03:36,668
+We'll send it to your inbox.
+
+70
+00:03:36,668 --> 00:03:41,317
+Next, we'll add your first grant and split it across your funds.
+
+71
+00:03:41,317 --> 00:03:45,240
+That's where GrantPipe really starts earning its keep.

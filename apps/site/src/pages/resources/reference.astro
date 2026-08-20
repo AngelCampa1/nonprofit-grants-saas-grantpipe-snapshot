@@ -1,0 +1,200 @@
+---
+import "../../styles/global.css";
+import { getCollection } from "astro:content";
+import CategoryHub from "@grantpipe/ui/site/hubs/category-hub.astro";
+import Button from "@/components/ui/button.astro";
+import { siteConfig, shouldShowMobileStickyCta } from "@/config/site";
+import { buildResourceHubItems } from "@/lib/resource-hubs";
+import { getContentEntrySlug } from "@/lib/content-entry-slug";
+import ContentCard from "@grantpipe/ui/site/components/content-card.astro";
+import { mapToContentItems, sortByUpdatedAtDesc } from "@grantpipe/ui/site/lib/collections";
+
+const [
+  alternatives,
+  comparisons,
+  pricingBreakdowns,
+  listicles,
+  guides,
+  statePages,
+  cityPages,
+  verticalPages,
+  leadMagnets,
+  personas,
+  workflows,
+  glossary,
+  features,
+  integrations,
+  faqHubs,
+  benchmarks,
+] = await Promise.all([
+  getCollection("alternatives"),
+  getCollection("comparisons"),
+  getCollection("pricing-breakdowns"),
+  getCollection("listicles"),
+  getCollection("guides"),
+  getCollection("state-pages"),
+  getCollection("city-pages"),
+  getCollection("vertical-pages"),
+  getCollection("lead-magnets"),
+  getCollection("personas"),
+  getCollection("workflows"),
+  getCollection("glossary"),
+  getCollection("features"),
+  getCollection("integrations"),
+  getCollection("faq-hubs"),
+  getCollection("benchmarks"),
+]);
+
+const items =
+  buildResourceHubItems({
+    alternatives,
+    comparisons,
+    pricingBreakdowns,
+    listicles,
+    guides,
+    statePages,
+    cityPages,
+    verticalPages,
+    leadMagnets,
+    personas,
+    workflows,
+    glossary,
+    features,
+    integrations,
+    faqHubs,
+    benchmarks,
+  }).get("/resources/reference") ?? [];
+const page = {
+  data: items,
+  currentPage: 1,
+  lastPage: 1,
+  url: { prev: undefined, next: undefined },
+};
+const referenceSections = [
+  {
+    title: "FAQ hubs",
+    description: "Find short answers by topic.",
+    href: "/resources/faq",
+    cta: "See FAQ hubs",
+    items: mapToContentItems(sortByUpdatedAtDesc(faqHubs), (entry) => {
+      return `/resources/faq/${getContentEntrySlug(entry)}`;
+    }),
+  },
+  {
+    title: "Glossary terms",
+    description: "Look up grant and fund words.",
+    href: "/glossary",
+    cta: "See glossary",
+    items: mapToContentItems(sortByUpdatedAtDesc(glossary), (entry) => {
+      return `/glossary/${getContentEntrySlug(entry)}`;
+    }),
+  },
+  {
+    title: "Benchmarks",
+    description: "Check risk with numbers.",
+    href: "/resources/benchmarks",
+    cta: "See benchmarks",
+    items: mapToContentItems(sortByUpdatedAtDesc(benchmarks), (entry) => {
+      return `/resources/benchmarks/${getContentEntrySlug(entry)}`;
+    }),
+  },
+  {
+    title: "Feature pages",
+    description: "See what GrantPipe includes.",
+    href: "/features",
+    cta: "See features",
+    items: mapToContentItems(sortByUpdatedAtDesc(features), (entry) => {
+      return `/features/${getContentEntrySlug(entry)}`;
+    }),
+  },
+  {
+    title: "Integrations",
+    description: "See what GrantPipe connects to.",
+    href: "/integrations",
+    cta: "See integrations",
+    items: mapToContentItems(sortByUpdatedAtDesc(integrations), (entry) => {
+      return `/integrations/${getContentEntrySlug(entry)}`;
+    }),
+  },
+];
+---
+
+<CategoryHub
+  config={siteConfig}
+  title="Reference Library"
+  description="FAQ hubs, glossary definitions, benchmarks, features, and integrations."
+  variant="editorial"
+  items={items}
+  page={page}
+  basePath="/resources/reference"
+  breadcrumbs={[
+    { label: "Home", href: "/" },
+    { label: "Resources", href: "/resources" },
+    { label: "Reference Library", href: "/resources/reference" },
+  ]}
+  emptyStateHeading="No reference entries match this view yet."
+  emptyStateBody="Browse the resources hub for guides, FAQ hubs, glossary terms, and benchmarks."
+  showStickyMobileCta={shouldShowMobileStickyCta("/resources/reference")}
+  renderListing={false}
+>
+  <div slot="intro" class="mb-10 space-y-8">
+    <section class="gp-resource-decision-panel editorial-panel p-6">
+      <p class="gp-proof-label">Pick a path</p>
+      <h2 class="gp-link-card-title">Start with the kind of answer you need.</h2>
+      <p class="gp-link-card-copy mt-3">
+        Use FAQ hubs for questions. Use the glossary for words. Use benchmarks,
+        features, or integrations when the next step is a tool check.
+      </p>
+    </section>
+
+    <section aria-label="Reference paths" data-reference-path-grid>
+      <div class="grid gap-5 lg:grid-cols-2">
+        {referenceSections.map((section) => (
+          <article class="gp-card-base p-5">
+            <div class="flex flex-wrap items-start justify-between gap-3">
+              <div>
+                <p class="gp-proof-label">Reference path</p>
+                <h3 class="mt-2 font-heading text-[length:var(--text-subheading)] font-bold text-brand-text">
+                  {section.title}
+                </h3>
+              </div>
+              <span class="rounded-full border border-[var(--gp-ink-200)] px-3 py-1 text-[length:var(--text-caption)] font-medium text-brand-muted">
+                {section.items.length} {section.items.length === 1 ? "page" : "pages"}
+              </span>
+            </div>
+            <p class="mt-3 text-[length:var(--text-body)] leading-7 text-brand-muted">
+              {section.description}
+            </p>
+            <div class="mt-5 grid gap-3">
+              {section.items.slice(0, 3).map((item) => (
+                <ContentCard item={item} datePrefixText="Updated" />
+              ))}
+            </div>
+            <div class="mt-5 flex flex-wrap gap-2">
+              <a class="gp-filter-chip" href={`${section.href}/`}>{section.cta}</a>
+              {section.items.length > 3 && (
+                <span class="gp-filter-chip" aria-label={`${section.items.length - 3} more pages in ${section.title}`}>
+                  {section.items.length - 3} more
+                </span>
+              )}
+            </div>
+          </article>
+        ))}
+      </div>
+    </section>
+  </div>
+
+  <section slot="cta" class="editorial-panel gp-shared-cta-shell" id="signup">
+    <h2>Start a 1-month free trial when the reference check turns into process work.</h2>
+    <p>
+      Use GrantPipe to connect donor records, grants, funds, evidence, and compliance deadlines in
+      one reviewable workflow.
+    </p>
+    <div class="gp-shared-cta-actions">
+      <Button variant="primary" size="lg" href={siteConfig.funnel.bofu.ctaTarget}>
+        {siteConfig.funnel.bofu.ctaText}
+      </Button>
+      <Button variant="secondary" size="md" href="/product/">See the product walkthrough</Button>
+    </div>
+  </section>
+</CategoryHub>

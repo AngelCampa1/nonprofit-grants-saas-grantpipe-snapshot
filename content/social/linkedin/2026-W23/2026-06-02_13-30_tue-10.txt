@@ -1,0 +1,10 @@
+Restricted fund releases are easy to misstate when the support lives in three places.
+
+We made a Restricted Funds Release Calculator for the review step:
+
+- starting restricted balance
+- qualifying expenses
+- time or purpose restriction
+- release amount
+- remaining balance
+- journal entry support

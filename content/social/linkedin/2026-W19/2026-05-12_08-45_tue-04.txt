@@ -1,0 +1,9 @@
+For every Finance Director who has been told "just put the restricted fund tracking in QuickBooks classes":
+
+Classes work for two restricted funds. Maybe four. Past that, you are stitching reports together by hand every month, and the schedule of activity by net asset class is a manual rebuild.
+
+FASB ASC 958 does not care about your software. It expects two clear categories on the statement of activities: net assets with donor restrictions, net assets without donor restrictions. Plus a roll-forward of releases.
+
+Classes give you the dimensions. They do not give you the schedule. They do not link the donor or grant to the restriction language. They do not flag when a time-restriction expires.
+
+If you are doing this in classes and a spreadsheet, the spreadsheet is the system. QuickBooks is the bookkeeper of the system. Worth naming honestly.

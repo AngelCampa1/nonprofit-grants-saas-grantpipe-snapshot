@@ -1,0 +1,182 @@
+---
+import { getPublicApiBaseUrl } from "@grantpipe/ui/site/lib/public-api-url"
+import "../../styles/global.css"
+import { getCollection, render } from "astro:content"
+import { getContentEntrySlug } from "@/lib/content-entry-slug"
+import ArticleLayout from "@grantpipe/ui/site/layouts/article-layout.astro"
+import { LeadMagnetSignup } from "@grantpipe/ui/site/components/lead-magnet-signup"
+import FaqSection from "@grantpipe/ui/site/components/faq-section.astro"
+import RelatedPages from "@grantpipe/ui/site/components/related-pages.astro"
+import { siteConfig, shouldShowMobileStickyCta } from "@/config/site"
+import AnswerBlock from "@grantpipe/ui/site/seo/answer-block.astro"
+import StatisticCitation from "@grantpipe/ui/site/seo/statistic-citation.astro"
+import { buildFeatureBreadcrumbs } from "@/lib/breadcrumbs"
+import { buildContentMap } from "@/lib/page-helpers"
+import { resolveLeadMagnetOffer, resolveExitLeadMagnetOffer } from "@/lib/lead-magnet-routing"
+import { resolveGrantPipeOgImage } from "@/lib/og-image"
+import { resolveRelatedPageLinks } from "@grantpipe/ui/site/lib/related-page-resolver"
+import TierAvailabilityBadge from "@/components/tier-availability-badge.astro"
+
+export async function getStaticPaths() {
+  const entries = await getCollection("features")
+  return entries.map((entry) => ({
+    params: { slug: getContentEntrySlug(entry) },
+    props: { entry },
+  }))
+}
+
+const { entry } = Astro.props
+const { Content, headings } = await render(entry)
+const { title, description, seoTitle, seoDescription, bluf, buyerStage, publishedAt, updatedAt, lastReviewedAt, verifiedAt, faqs, relatedPages, answers, pricingStats, sourceUrls, entitlement, primaryCta, ctaMode, noindex } = entry.data
+const canonicalPath = `/features/${getContentEntrySlug(entry)}`
+
+const [alternatives, comparisons, pricingBreakdowns, listicles, guides, statePages, cityPages, verticalPages, leadMagnets, personas, workflows, glossary, features, faqHubs, benchmarks] = await Promise.all([
+  getCollection("alternatives"),
+  getCollection("comparisons"),
+  getCollection("pricing-breakdowns"),
+  getCollection("listicles"),
+  getCollection("guides"),
+  getCollection("state-pages"),
+  getCollection("city-pages"),
+  getCollection("vertical-pages"),
+  getCollection("lead-magnets"),
+  getCollection("personas"),
+  getCollection("workflows"),
+  getCollection("glossary"),
+  getCollection("features"),
+  getCollection("faq-hubs"),
+  getCollection("benchmarks"),
+])
+const contentMap = buildContentMap({ alternatives, comparisons, pricingBreakdowns, listicles, guides, statePages, cityPages, verticalPages, leadMagnets, personas, workflows, glossary, features, faqHubs, benchmarks })
+
+const breadcrumbs = buildFeatureBreadcrumbs(title, canonicalPath)
+const softwareApplicationSchema: Record<string, unknown> = {
+  "@context": "https://schema.org",
+  "@type": "SoftwareApplication",
+  name: title,
+  applicationCategory: "BusinessApplication",
+  operatingSystem: "Web",
+  offers: {
+    "@type": "Offer",
+    url: `https://${siteConfig.domain}/pricing/`,
+    availability: "https://schema.org/InStock",
+  },
+}
+const relatedPageLinks = resolveRelatedPageLinks(relatedPages, contentMap)
+const leadMagnet = resolveLeadMagnetOffer(siteConfig, leadMagnets, {
+  family: "guide",
+  explicitSlug: entry.data.leadMagnetSlug,
+  relatedPages,
+})
+const exitLeadMagnet = resolveExitLeadMagnetOffer(siteConfig, leadMagnets, {
+  family: "guide",
+  exitSlug: entry.data.exitMagnetSlug,
+  leadMagnetSlug: entry.data.leadMagnetSlug,
+  relatedPages,
+})
+const publicApiUrl = getPublicApiBaseUrl()
+// Wire frontmatter primaryCta/ctaMode: bofu feature pages with primaryCta="trial"
+// should drive readers to the trial, not a top-funnel guide download.
+const isTrialCta = primaryCta === "trial" || ctaMode === "convert"
+
+---
+
+<ArticleLayout
+  title={title}
+  description={description}
+  seoTitle={seoTitle}
+  seoDescription={seoDescription}
+  bluf={bluf}
+  buyerStage={buyerStage}
+  publishedAt={publishedAt}
+  updatedAt={updatedAt}
+  lastReviewedAt={lastReviewedAt}
+  verifiedAt={verifiedAt}
+  canonicalPath={canonicalPath}
+  config={siteConfig}
+  breadcrumbs={breadcrumbs}
+  schemas={[softwareApplicationSchema]}
+  headings={headings}
+  ogImage={resolveGrantPipeOgImage(canonicalPath)}
+  noindex={noindex}
+  answers={answers?.map(a => ({ question: a.q, answer: a.a }))}
+  sourceUrls={sourceUrls}
+  leadMagnet={exitLeadMagnet}
+  sidebarLeadMagnet={leadMagnet}
+  showStickyMobileCta={shouldShowMobileStickyCta(Astro.url.pathname)}
+  markIntroAsHero
+>
+  <div data-feature-landing-page>
+    {entitlement ? (
+      <TierAvailabilityBadge entitlement={entitlement} />
+    ) : (
+      <TierAvailabilityBadge variant="baseline" />
+    )}
+
+    <Content />
+  </div>
+
+  {isTrialCta ? (
+    <div data-feature-trial-cta class="gp-seo-bottom-cta mt-10">
+      <p class="gp-kicker--accent">Try it free</p>
+      <h2>See this in GrantPipe.</h2>
+      <p>Start a 1-month free trial. No credit card. Test it against your real grants and funds.</p>
+      <div class="gp-shared-cta-actions">
+        <a
+          href={siteConfig.funnel.bofu.ctaTarget}
+          class="btn-primary no-underline"
+          data-cta-button=""
+          data-cta-page-family="feature-landing-page"
+          data-cta-buyer-stage="bofu"
+          data-cta-placement="feature-bottom-primary"
+          data-cta-intent="convert"
+          data-cta-target={siteConfig.funnel.bofu.ctaTarget}
+        >{siteConfig.funnel.bofu.ctaText}</a>
+        <a
+          href="/pricing/"
+          class="gp-mkt-btn ghost no-underline"
+          data-cta-button=""
+          data-cta-page-family="feature-landing-page"
+          data-cta-buyer-stage="bofu"
+          data-cta-placement="feature-bottom-secondary"
+          data-cta-intent="evaluate"
+          data-cta-target="/pricing/"
+        >
+          See plans and pricing
+        </a>
+      </div>
+    </div>
+  ) : (
+    <LeadMagnetSignup
+      client:load
+      apiUrl={publicApiUrl}
+      sourcePage={canonicalPath}
+      leadMagnet={leadMagnet}
+      privacyNote="We'll email the resource and a short follow-up sequence. Unsubscribe any time."
+      trialCtaHref={siteConfig.funnel.bofu.ctaTarget}
+      trialCtaText={siteConfig.funnel.bofu.ctaText}
+    />
+  )}
+
+  {pricingStats?.map((s) => (
+    <StatisticCitation stat={s.stat} source={s.source} sourceUrl={s.sourceUrl} />
+  ))}
+  {answers?.map((a) => (
+    <AnswerBlock question={a.q} answer={a.a} />
+  ))}
+
+  <FaqSection
+    faqs={faqs}
+    heading="Frequently Asked Questions"
+    showBottomCta={false}
+    ctaVariant="compact"
+  />
+
+  {relatedPages.length > 0 && (
+    <RelatedPages
+      pages={relatedPageLinks}
+      stage={buyerStage}
+      variant="editorial"
+    />
+  )}
+</ArticleLayout>

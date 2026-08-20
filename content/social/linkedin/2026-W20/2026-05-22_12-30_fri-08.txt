@@ -1,0 +1,7 @@
+Before: an Executive Director asks "where did the Clinic Capacity grant come from?" and gets "I think it was the foundation we met at that event in March."
+
+After: the grant record shows the funder, the program officer, the introduction source (a board member), the proposal date, and every email since.
+
+The hand-off between Development and Finance is where most grants lose their story. Development knows the relationship history. Finance knows the spend status. Neither knows the whole record.
+
+We built one record per grant that holds both halves. Funder details, period of performance, drawdown schedule, document trail, contact history. One row. Two teams reading the same source.

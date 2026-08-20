@@ -1,0 +1,122 @@
+---
+import PaidSearchLandingPage from "@/components/paid-search-landing-page.astro";
+import type { PaidLandingPageData } from "@/components/paid-search-landing-page.astro";
+
+const page: PaidLandingPageData = {
+  slug: "grant-pipeline-like-donors",
+  title: "Run Grants Like You Run Major Donors | GrantPipe",
+  description:
+    "Track every grant from prospect to award with a stage, a probability, an owner, and a next step. The same discipline you use for major donors, applied to grants.",
+  kicker: "Grant pipeline discipline from prospect to award",
+  headline: "Run grants like you run major donors.",
+  subhead:
+    "One pipeline. One next step. One owner. Track every grant from prospect to award.",
+  primaryCta: "Start 1-month free trial",
+  exitLeadMagnet: {
+    slug: "major-donor-cultivation-playbook",
+    title: "Major Donor Cultivation Playbook",
+    description:
+      "A step-by-step playbook for moving major donor prospects through cultivation stages and applying the same discipline to your grant pipeline.",
+  },
+  trust: "No credit card required. Built for development directors who run both pipelines.",
+  proofCard: {
+    label: "Grant pipeline",
+    status: "On track",
+    rows: [
+      { label: "Prospects in pipeline", value: "14" },
+      { label: "Applications pending", value: "5" },
+      { label: "Awards in post-award", value: "11" },
+      { label: "Next deadline", value: "Sep 3" },
+    ],
+    progressLabel: "Pipeline moving",
+    progress: "85%",
+  },
+  painsTitle: "The grant pipeline has no stage, no owner, and no next step.",
+  pains: [
+    "Major donors have a stage and a next action. Grants live in a spreadsheet.",
+    "No one knows who owns the next step on each grant.",
+    "Deadline alerts sit in one person's inbox and nowhere else.",
+    "Grant probability is a guess because the stages are not tracked.",
+    "You cannot forecast grant revenue the same way you forecast major gifts.",
+  ],
+  workflowTitle: "Apply major-donor discipline to your grant pipeline.",
+  workflowSteps: [
+    {
+      icon: "calendar",
+      heading: "Set a stage and a next step",
+      copy: "Move each grant from prospect through application to award with clear stages.",
+    },
+    {
+      icon: "check",
+      heading: "Assign an owner",
+      copy: "One person owns the next action on each grant so nothing stalls.",
+    },
+    {
+      icon: "report",
+      heading: "Forecast like a pipeline",
+      copy: "Weight grants by stage and probability to build a clean revenue forecast.",
+    },
+  ],
+  featureTitle: "Grant pipeline features development directors actually use.",
+  features: [
+    {
+      icon: "calendar",
+      heading: "Stage and probability tracking",
+      copy: "Track each grant by stage from prospect to award with a probability on each.",
+    },
+    {
+      icon: "check",
+      heading: "Next-step and owner fields",
+      copy: "Every grant has a next action and a due date. One person owns it.",
+    },
+    {
+      icon: "report",
+      heading: "Revenue forecast view",
+      copy: "See weighted grant revenue alongside major-donor pipeline totals.",
+    },
+  ],
+  proofTitle: "Discipline in the pipeline means fewer missed grants and better forecasts.",
+  proofPoints: [
+    {
+      value: "8 to 25",
+      label: "is the typical grant portfolio size for a development director running a $2M to $10M shop.",
+      source: "GrantPipe ICP research — development director profile",
+    },
+    {
+      value: "1 owner",
+      label: "per grant means the next step does not fall through when a staffer is out or leaves.",
+      source: "GrantPipe grants pipeline workflow",
+    },
+    {
+      value: "1 pipeline",
+      label: "tracks donor cultivation and grant prospects together so revenue forecasts are complete.",
+      source: "GrantPipe development dashboard",
+    },
+  ],
+  trustLabels: ["Stage and probability tracking", "Owner and next-step fields", "Donor and grant pipeline unified"],
+  faqTitle: "Questions about running a grant pipeline like a donor pipeline.",
+  faqs: [
+    {
+      q: "Can we track grant prospects before we apply?",
+      a: "Yes. Add a funder at any stage from prospect research through post-award. Track it all the way through.",
+    },
+    {
+      q: "Does it handle multi-year grants?",
+      a: "Yes. Multi-year awards stay in the pipeline through each renewal cycle. Each cycle has its own stages and deadlines.",
+    },
+    {
+      q: "Will it replace our spreadsheet right away?",
+      a: "You can import your active grant list by CSV. The pipeline can be set up in the trial. There is no paid setup.",
+    },
+    {
+      q: "Does it post grant revenue to our accounting system?",
+      a: "No. GrantPipe does not connect to QuickBooks right now. Record grant details in GrantPipe. Keep journal entries in QuickBooks.",
+    },
+  ],
+  finalTitle: "Move your top five grants into a real pipeline today.",
+  finalBody:
+    "Import your active grant list. Set a stage, a next step, and an owner on each one. See a weighted forecast in the same session.",
+};
+---
+
+<PaidSearchLandingPage page={page} />

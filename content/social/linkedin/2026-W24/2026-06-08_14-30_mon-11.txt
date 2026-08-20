@@ -1,0 +1,11 @@
+Donor-to-grant reconciliation is boring until the numbers disagree in public.
+
+The template should answer:
+
+- What did Development enter?
+- What did Finance record?
+- What does the award document say?
+- Is the amount pledged, awarded, received, or released?
+- Who changed the record after review?
+
+GrantPipe has a Donor-to-Grant Reconciliation Template for teams cleaning up CRM, fund, and grant records before board or audit season.

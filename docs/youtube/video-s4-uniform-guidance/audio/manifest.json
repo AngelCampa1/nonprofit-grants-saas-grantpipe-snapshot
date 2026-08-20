@@ -1,0 +1,72 @@
+[
+  {
+    "id": "00",
+    "title": "One rulebook for federal money",
+    "slug": "one-rulebook-for-federal-money",
+    "chars": 677,
+    "voice": "Laomedeia",
+    "model": "gemini-3.1-flash-tts-preview",
+    "file": "audio/chapter-00.mp3",
+    "text": "If your nonprofit takes federal money, one rulebook covers all of it. It's called the Uniform Guidance. The official name is two C F R two hundred. Most people never read it. They just hear the word compliance and tense up. Today I'll explain what's actually in it. Plain English, about seven minutes, no lawyer-speak. And I'll show you the four numbers that changed in twenty twenty-four. A lot of advice online still uses the old ones. Quick note on where I'm coming from. I build grant compliance software. To build it, I had to learn exactly what these rules require. I'm not an auditor, and I won't talk like one. You're getting the version a busy director actually needs."
+  },
+  {
+    "id": "01",
+    "title": "What the Uniform Guidance is",
+    "slug": "what-the-uniform-guidance-is",
+    "chars": 694,
+    "voice": "Laomedeia",
+    "model": "gemini-3.1-flash-tts-preview",
+    "file": "audio/chapter-01.mp3",
+    "text": "So what is it? The Uniform Guidance is one rulebook for federal grants. The federal budget office, called O M B, wrote it. It covers grants and the agreements that come with them. Back in twenty thirteen, the rules were a mess. There were eight separate rulebooks. Which one applied depended on who you were and what kind of cost you had. The Uniform Guidance pulled all eight into one. People nicknamed it the Super Circular. It took effect in twenty fourteen. And it doesn't just bind you. It binds the federal agency that gives the money. It binds any group in the middle that passes the money down, like a state. And it binds anyone you hand the money to next. Same rulebook, top to bottom."
+  },
+  {
+    "id": "02",
+    "title": "One rulebook, three jobs",
+    "slug": "one-rulebook-three-jobs",
+    "chars": 487,
+    "voice": "Laomedeia",
+    "model": "gemini-3.1-flash-tts-preview",
+    "file": "audio/chapter-02.mp3",
+    "text": "The rulebook is long. But you really live in three parts of it. The first part is how you run the grant. The day to day. How you buy things, how you keep records, how you report. The second part is what you're allowed to charge to the grant. This is the money part. It trips people up the most. The third part is who checks your work. That's the audit. We'll get to it at the end. Run it, cost it, prove it. Keep those three jobs straight and you understand the shape of the whole thing."
+  },
+  {
+    "id": "03",
+    "title": "The cost test",
+    "slug": "the-cost-test",
+    "chars": 740,
+    "voice": "Laomedeia",
+    "model": "gemini-3.1-flash-tts-preview",
+    "file": "audio/chapter-03.mp3",
+    "text": "Let's do the money part, because it's the one you touch every day. Before you charge a cost to a federal grant, it has to pass three words. Reasonable. Allocable. Allowable. Reasonable means a careful person would spend about that much. Allocable means the cost really belongs to this grant, not some other program. Allowable means the rules don't forbid it. Some things, like alcohol or lobbying, are simply out. There are two kinds of cost. Direct costs you can tie to one project, like a program staffer's pay. Indirect costs keep the whole place running, like rent and bookkeeping. You can't pin those to one grant. So you recover them with an indirect rate. Hold that thought. The indirect rate is one of the numbers that just changed."
+  },
+  {
+    "id": "04",
+    "title": "The four numbers that changed in 2024",
+    "slug": "the-four-numbers-that-changed-in-2024",
+    "chars": 1031,
+    "voice": "Laomedeia",
+    "model": "gemini-3.1-flash-tts-preview",
+    "file": "audio/chapter-04.mp3",
+    "text": "In twenty twenty-four, O M B rewrote the rulebook in plainer language and raised a bunch of thresholds. Most of them kick in for awards given out on or after October first, twenty twenty-four. Here are the four that matter most to you. One. If you don't have a negotiated rate, you can now charge an indirect rate of up to fifteen percent. It used to be ten. That's real money back for overhead, and you don't have to negotiate for it. Two. The line for what counts as equipment went from five thousand dollars to ten thousand. So something that costs, say, eight thousand dollars used to be tracked as equipment, with all the rules that brings. Now it's just a supply. Less paperwork. Three. When you pass money to a subgrantee, the first fifty thousand dollars of that subaward counts toward your indirect base. It used to be only twenty-five thousand. So you can recover a bit more overhead on your bigger partnerships. Four. The big one. The single audit threshold went from seven hundred fifty thousand dollars to one million."
+  },
+  {
+    "id": "05",
+    "title": "The single audit",
+    "slug": "the-single-audit",
+    "chars": 733,
+    "voice": "Laomedeia",
+    "model": "gemini-3.1-flash-tts-preview",
+    "file": "audio/chapter-05.mp3",
+    "text": "So what's a single audit? It's one outside audit of your whole group, not a separate audit of each grant. One audit covers everything federal. Here's the trigger. If you spend one million dollars or more in federal money in a single year, you need one. Notice the word spend. It's about what you actually spent that year, not what you were promised. This one follows your fiscal year. It applies to fiscal years that start on or after October first, twenty twenty-four. A single audit has to be done by an independent C P A. They follow the government's audit standards and file the result in a federal database. It's a real piece of work. The line moved up to one million. So some smaller groups that used to need one don't anymore."
+  },
+  {
+    "id": "06",
+    "title": "What to remember",
+    "slug": "what-to-remember",
+    "chars": 641,
+    "voice": "Laomedeia",
+    "model": "gemini-3.1-flash-tts-preview",
+    "file": "audio/chapter-06.mp3",
+    "text": "So that's the Uniform Guidance. One rulebook for federal money. Three jobs. Run the grant, charge it right, and prove it in an audit. And as of twenty twenty-four, four of the numbers moved up in your favor. You don't need a consultant to start. You need to know which rules apply to your grants. And you need a system that keeps the proof ready. That's the kind of thing we built GrantPipe to handle. But the knowledge matters more than any tool. If you want a simple place to start, we made a free Grant Compliance Checklist. It covers the basics so nothing slips. We'll send it to your inbox. Thanks for watching, and good luck out there."
+  }
+]

@@ -1,0 +1,12 @@
+We put public pricing on GrantPipe because grant-funded nonprofits should not need a sales call to learn whether the tool is financially possible.
+
+That is a product decision and a trust decision.
+
+The buyer still has hard work to do:
+
+- clean imports
+- restriction review
+- grant setup
+- report calendar cleanup
+
+But the price should not be hidden behind a demo gate.

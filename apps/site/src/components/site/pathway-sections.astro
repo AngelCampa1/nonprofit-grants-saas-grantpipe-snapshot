@@ -1,0 +1,41 @@
+---
+import ContentCard from "@grantpipe/ui/site/components/content-card.astro"
+import type { PathwaySection } from "@/lib/hub-path-sections"
+
+interface Props {
+  sections: PathwaySection[]
+  ariaLabel: string
+}
+
+const { sections, ariaLabel } = Astro.props
+---
+
+<section aria-label={ariaLabel} class="space-y-8" data-pathway-section-grid>
+  {
+    sections.map((section) => (
+      <section id={section.id} class="editorial-panel p-5 sm:p-6">
+        <div class="mb-5 flex flex-wrap items-start justify-between gap-4">
+          <div class="max-w-2xl">
+            <p class="gp-proof-label">{section.items.length} paths</p>
+            <h2 class="gp-link-card-title">{section.title}</h2>
+            <p class="gp-link-card-copy mt-3">{section.description}</p>
+          </div>
+          <a
+            href={section.ctaHref}
+            class="gp-link-chip no-underline"
+            aria-label={`${section.ctaLabel}: ${section.title}`}
+          >
+            {section.ctaLabel}
+          </a>
+        </div>
+        <div class="hub-grid grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
+          {section.items.map((item) => (
+            <div class="scroll-in h-full">
+              <ContentCard item={item} />
+            </div>
+          ))}
+        </div>
+      </section>
+    ))
+  }
+</section>

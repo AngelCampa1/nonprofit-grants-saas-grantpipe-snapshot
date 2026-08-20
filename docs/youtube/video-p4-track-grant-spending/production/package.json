@@ -1,0 +1,16 @@
+{
+  "name": "grantpipe-yt-video-p4",
+  "private": true,
+  "version": "1.0.0",
+  "type": "module",
+  "description": "Self-contained Hyperframes production for GrantPipe YouTube video P4: How to Track Grant Spending Without Losing Your Mind (concept-then-demo, real-app capture).",
+  "scripts": {
+    "voiceover": "node ../../_lib/voiceover-gemini.mjs",
+    "durations": "node build-durations.mjs",
+    "compositions": "node build-compositions.mjs",
+    "srt": "node gen-srt.mjs"
+  },
+  "dependencies": {
+    "hyperframes": "^0.6.29"
+  }
+}

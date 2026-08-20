@@ -1,0 +1,10 @@
+Four checks before you close the month on grant activity.
+
+1. Bank deposits tie to grant receipts in the general ledger.
+2. Grant expenses tie to the correct fund code.
+3. Restricted balances match expected remaining balances.
+4. Drawdowns are supported by posted expenditures.
+
+That sequence is plain. It is also where the audit trail starts.
+
+Do it monthly and year-end gets quieter.

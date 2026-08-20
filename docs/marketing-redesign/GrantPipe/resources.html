@@ -1,0 +1,764 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Resources — GrantPipe</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Spectral:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="gp-shared.css" />
+    <style>
+      .page-head {
+        padding: 64px 0 36px;
+      }
+      .page-head h1 {
+        font-family: var(--display);
+        font-weight: 600;
+        font-size: clamp(36px, 4.6vw, 56px);
+        line-height: 1.06;
+        letter-spacing: -0.02em;
+        margin: 14px 0 12px;
+        max-width: 720px;
+      }
+      .page-head p.lede {
+        max-width: 640px;
+        font-size: 18px;
+        color: var(--ink-700);
+        margin: 0;
+      }
+
+      /* category chips */
+      .cat-bar {
+        display: flex;
+        gap: 8px;
+        flex-wrap: wrap;
+        padding: 8px 0 32px;
+        border-bottom: 1px solid var(--ink-100);
+        margin-bottom: 36px;
+      }
+      .chip {
+        border: 1px solid var(--ink-200);
+        background: var(--card);
+        padding: 7px 14px;
+        border-radius: 999px;
+        font-family: var(--body);
+        font-size: 13px;
+        font-weight: 500;
+        color: var(--ink-700);
+        cursor: pointer;
+        transition: all 0.15s ease;
+      }
+      .chip:hover {
+        border-color: var(--emerald-300, var(--emerald-500));
+        color: var(--emerald-700);
+      }
+      .chip.active {
+        background: var(--emerald-700);
+        color: #fff;
+        border-color: var(--emerald-700);
+      }
+      .chip .ct {
+        font-family: var(--mono);
+        font-size: 10.5px;
+        opacity: 0.7;
+        margin-left: 4px;
+      }
+
+      /* featured */
+      .featured {
+        display: grid;
+        grid-template-columns: minmax(0, 1.4fr) minmax(0, 1fr);
+        gap: 28px;
+        margin-bottom: 56px;
+      }
+      @media (max-width: 880px) {
+        .featured {
+          grid-template-columns: 1fr;
+        }
+      }
+      .feat-hero {
+        background: var(--paper-2);
+        color: var(--ink-900);
+        border: 1px solid var(--ink-100);
+        border-radius: var(--rad-lg);
+        padding: 36px;
+        display: flex;
+        flex-direction: column;
+        gap: 14px;
+        position: relative;
+        overflow: hidden;
+        min-height: 320px;
+      }
+      .feat-hero::before {
+        content: "";
+        position: absolute;
+        right: -100px;
+        bottom: -100px;
+        width: 280px;
+        height: 280px;
+        border-radius: 50%;
+        background: radial-gradient(circle, rgba(6, 95, 70, 0.06), transparent 60%);
+      }
+      .feat-hero .kind {
+        font-family: var(--mono);
+        font-size: 11px;
+        letter-spacing: 0.08em;
+        text-transform: uppercase;
+        color: var(--emerald-700);
+      }
+      .feat-hero h2 {
+        font-family: var(--display);
+        font-weight: 600;
+        font-size: 32px;
+        line-height: 1.12;
+        letter-spacing: -0.015em;
+        margin: 0;
+        max-width: 480px;
+      }
+      .feat-hero p {
+        color: var(--ink-700);
+        font-size: 15.5px;
+        margin: 0;
+        max-width: 540px;
+      }
+      .feat-hero .meta {
+        margin-top: auto;
+        font-family: var(--mono);
+        font-size: 11px;
+        color: var(--ink-500);
+        display: flex;
+        gap: 14px;
+        align-items: center;
+      }
+      .feat-hero .meta .sep {
+        opacity: 0.4;
+      }
+
+      .feat-side {
+        display: grid;
+        grid-template-rows: 1fr 1fr;
+        gap: 18px;
+      }
+      .feat-side .card {
+        padding: 22px;
+      }
+
+      .res-grid {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 18px;
+      }
+      @media (max-width: 980px) {
+        .res-grid {
+          grid-template-columns: repeat(2, 1fr);
+        }
+      }
+      @media (max-width: 600px) {
+        .res-grid {
+          grid-template-columns: 1fr;
+        }
+      }
+      .card {
+        background: var(--card);
+        border: 1px solid var(--ink-100);
+        border-radius: var(--rad-lg);
+        padding: 24px;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        transition:
+          border-color 0.15s ease,
+          box-shadow 0.15s ease,
+          transform 0.15s ease;
+      }
+      .card:hover {
+        border-color: var(--emerald-100);
+        box-shadow: var(--shadow);
+        transform: translateY(-1px);
+      }
+      .card .kind {
+        font-family: var(--mono);
+        font-size: 10.5px;
+        letter-spacing: 0.08em;
+        text-transform: uppercase;
+        color: var(--emerald-700);
+      }
+      .card h3 {
+        font-family: var(--display);
+        font-weight: 600;
+        font-size: 19px;
+        line-height: 1.18;
+        letter-spacing: -0.01em;
+        margin: 0;
+        color: var(--ink-900);
+      }
+      .card p {
+        font-size: 14px;
+        color: var(--ink-700);
+        margin: 0;
+      }
+      .card .meta {
+        margin-top: auto;
+        padding-top: 14px;
+        font-family: var(--mono);
+        font-size: 11px;
+        color: var(--ink-500);
+        display: flex;
+        gap: 10px;
+        align-items: center;
+      }
+      .card .meta .sep {
+        color: var(--ink-200);
+      }
+      .card .thumb {
+        height: 86px;
+        border-radius: var(--rad-sm);
+        background: var(--paper-2);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: var(--emerald-700);
+        font-family: var(--display);
+        font-size: 28px;
+        border: 1px solid var(--ink-100);
+        margin-bottom: 4px;
+      }
+      .card.template .thumb {
+        background: var(--gold-50);
+        color: var(--gold-700);
+        border-color: var(--gold-100);
+      }
+      .card.guide .thumb {
+        background: var(--emerald-50);
+        color: var(--emerald-700);
+        border-color: var(--emerald-100);
+      }
+      .card.video .thumb {
+        background: #1f2d28;
+        color: var(--gold-500);
+        border-color: #1f2d28;
+      }
+      .card.note .thumb {
+        background: var(--paper-2);
+        color: var(--ink-700);
+      }
+
+      /* templates strip */
+      .templates {
+        background: var(--paper-2);
+        border-radius: var(--rad-lg);
+        padding: 40px 36px;
+        margin: 56px 0;
+      }
+      .templates h2 {
+        font-family: var(--display);
+        font-weight: 600;
+        font-size: 28px;
+        line-height: 1.12;
+        letter-spacing: -0.015em;
+        margin: 0 0 8px;
+      }
+      .templates p {
+        color: var(--ink-700);
+        margin: 0 0 24px;
+        max-width: 580px;
+      }
+      .tpl-grid {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 12px;
+      }
+      @media (max-width: 880px) {
+        .tpl-grid {
+          grid-template-columns: repeat(2, 1fr);
+        }
+      }
+      .tpl {
+        background: var(--card);
+        border: 1px solid var(--ink-100);
+        border-radius: var(--rad);
+        padding: 16px;
+        display: flex;
+        gap: 12px;
+        align-items: flex-start;
+      }
+      .tpl .ext {
+        width: 36px;
+        height: 44px;
+        border-radius: 4px;
+        background: var(--card);
+        border: 1px solid var(--ink-200);
+        display: grid;
+        place-items: center;
+        font-family: var(--mono);
+        font-size: 9px;
+        font-weight: 600;
+        color: var(--emerald-700);
+        flex-shrink: 0;
+        position: relative;
+      }
+      .tpl .ext::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 10px;
+        height: 10px;
+        background: linear-gradient(225deg, var(--paper-2) 50%, transparent 50%);
+        border-bottom: 1px solid var(--ink-200);
+        border-left: 1px solid var(--ink-200);
+      }
+      .tpl h4 {
+        font-family: var(--body);
+        font-weight: 600;
+        font-size: 14px;
+        margin: 0 0 4px;
+        color: var(--ink-900);
+      }
+      .tpl p {
+        margin: 0;
+        font-size: 12.5px;
+        color: var(--ink-500);
+      }
+
+      /* newsletter */
+      .news {
+        background: var(--emerald-900);
+        color: #fff;
+        border-radius: var(--rad-lg);
+        padding: 48px 40px;
+        margin-bottom: 80px;
+        display: grid;
+        grid-template-columns: minmax(0, 1.2fr) minmax(0, 1fr);
+        gap: 32px;
+        align-items: center;
+        position: relative;
+        overflow: hidden;
+      }
+      @media (max-width: 880px) {
+        .news {
+          grid-template-columns: 1fr;
+          padding: 36px 28px;
+        }
+      }
+      .news::before {
+        content: "";
+        position: absolute;
+        left: -120px;
+        top: -120px;
+        width: 320px;
+        height: 320px;
+        border-radius: 50%;
+        background: radial-gradient(circle, rgba(184, 137, 40, 0.18), transparent 60%);
+      }
+      .news h2 {
+        font-family: var(--display);
+        font-weight: 600;
+        font-size: 28px;
+        line-height: 1.15;
+        letter-spacing: -0.015em;
+        margin: 0 0 8px;
+        position: relative;
+      }
+      .news p {
+        color: #c0d6cc;
+        margin: 0;
+        position: relative;
+      }
+      .news form {
+        display: flex;
+        gap: 8px;
+        position: relative;
+        background: rgba(255, 255, 255, 0.06);
+        padding: 6px;
+        border-radius: 999px;
+        border: 1px solid rgba(255, 255, 255, 0.1);
+      }
+      .news input {
+        flex: 1;
+        min-width: 0;
+        border: 0;
+        background: transparent;
+        padding: 10px 16px;
+        font: inherit;
+        font-size: 14px;
+        color: #fff;
+        outline: none;
+      }
+      .news input::placeholder {
+        color: #8eb4a3;
+      }
+      .news button {
+        border: 0;
+        background: var(--gold-600);
+        color: var(--emerald-900);
+        padding: 0 22px;
+        height: 40px;
+        border-radius: 999px;
+        font-weight: 700;
+        font-size: 14px;
+        font-family: var(--body);
+        cursor: pointer;
+      }
+      .news button:hover {
+        background: var(--gold-500);
+      }
+    </style>
+  </head>
+  <body data-screen-label="Resources">
+    <header class="top">
+      <div class="wrap top-inner">
+        <a class="brand" href="GrantPipe Landing v2 Dashboard.html">
+          <span class="brand-mark">G</span>
+          GrantPipe
+        </a>
+        <nav>
+          <a href="GrantPipe Landing v2 Dashboard.html">Product</a>
+          <a href="resources.html" style="color: var(--emerald-700)">Resources</a>
+          <a href="pricing.html">Pricing</a>
+          <a href="compare.html">Compare</a>
+        </nav>
+        <div class="top-cta">
+          <a class="btn btn-link" href="#">Sign in</a>
+          <a class="btn btn-primary" href="#">Start free trial</a>
+        </div>
+      </div>
+    </header>
+
+    <section class="page-head">
+      <div class="wrap">
+        <span class="eyebrow"><span class="dot"></span>Resources</span>
+        <h1>Field-tested guides for nonprofit grant programs.</h1>
+        <p class="lede">
+          Templates, walkthroughs, and the occasional opinion—written for the program managers,
+          finance leads, and EDs who actually run the work.
+        </p>
+      </div>
+    </section>
+
+    <div class="wrap">
+      <div class="cat-bar">
+        <button class="chip active">All <span class="ct">24</span></button>
+        <button class="chip">Guides <span class="ct">8</span></button>
+        <button class="chip">Templates <span class="ct">6</span></button>
+        <button class="chip">Compliance <span class="ct">5</span></button>
+        <button class="chip">Federal grants <span class="ct">3</span></button>
+        <button class="chip">Walkthroughs <span class="ct">2</span></button>
+      </div>
+
+      <!-- featured row -->
+      <div class="featured">
+        <article class="feat-hero">
+          <div class="kind">Featured guide</div>
+          <h2>The nonprofit grant pipeline, end to end.</h2>
+          <p>
+            A complete walkthrough of how to run grants from prospect research to final
+            report—stages, owners, restricted-fund tracking, and what to hand your auditor. Written
+            for teams of 2–20.
+          </p>
+          <div class="meta">
+            <span>Guide</span><span class="sep">·</span><span>22 min read</span
+            ><span class="sep">·</span><span>Updated Apr 2026</span>
+          </div>
+        </article>
+        <div class="feat-side">
+          <article class="card guide">
+            <div class="kind">Guide</div>
+            <h3>FASB ASC 958 in plain English (for grant managers)</h3>
+            <p>
+              What restricted-fund accounting actually requires, and the four mistakes I see most
+              often.
+            </p>
+            <div class="meta">
+              <span>Compliance</span><span class="sep">·</span><span>11 min read</span>
+            </div>
+          </article>
+          <article class="card video">
+            <div class="kind">Walkthrough</div>
+            <h3>Importing a messy grant tracker spreadsheet, on screen</h3>
+            <p>
+              I take a real (anonymized) tracker and bring it into GrantPipe in 18 minutes. No
+              edits.
+            </p>
+            <div class="meta"><span>Video</span><span class="sep">·</span><span>18 min</span></div>
+          </article>
+        </div>
+      </div>
+
+      <!-- main grid -->
+      <h2
+        style="
+          font-family: var(--display);
+          font-weight: 600;
+          font-size: 24px;
+          letter-spacing: -0.015em;
+          margin: 0 0 18px;
+        "
+      >
+        Latest
+      </h2>
+      <div class="res-grid">
+        <article class="card guide">
+          <div
+            class="thumb"
+            style="font-family: var(--mono); font-size: 13px; letter-spacing: 0.04em"
+          >
+            GUIDE
+          </div>
+          <div class="kind">Guide</div>
+          <h3>Reading a Grants.gov NOFO without losing a weekend</h3>
+          <p>
+            The five sections that actually matter, and the ones you can skim. With a sample NOFO
+            marked up.
+          </p>
+          <div class="meta">
+            <span>Federal grants</span><span class="sep">·</span><span>9 min</span>
+          </div>
+        </article>
+        <article class="card guide">
+          <div
+            class="thumb"
+            style="font-family: var(--mono); font-size: 13px; letter-spacing: 0.04em"
+          >
+            GUIDE
+          </div>
+          <div class="kind">Guide</div>
+          <h3>Restricted vs. unrestricted: the audit trail that saves you</h3>
+          <p>
+            What documentation auditors expect for every restricted dollar—and how to keep it
+            without a separate spreadsheet.
+          </p>
+          <div class="meta">
+            <span>Compliance</span><span class="sep">·</span><span>14 min</span>
+          </div>
+        </article>
+        <article class="card note">
+          <div
+            class="thumb"
+            style="font-family: var(--mono); font-size: 13px; letter-spacing: 0.04em"
+          >
+            NOTE
+          </div>
+          <div class="kind">Field note</div>
+          <h3>Why nonprofits over-buy CRM (and under-build pipeline)</h3>
+          <p>An honest take after watching a dozen orgs spend a year configuring Salesforce.</p>
+          <div class="meta"><span>Opinion</span><span class="sep">·</span><span>6 min</span></div>
+        </article>
+        <article class="card template">
+          <div
+            class="thumb"
+            style="font-family: var(--mono); font-size: 13px; letter-spacing: 0.04em"
+          >
+            TMPL
+          </div>
+          <div class="kind">Template</div>
+          <h3>Board-ready grants report (Q1 / Q2 / Q3 / Q4)</h3>
+          <p>The exact one-page format I use with founding customers. Drop your numbers in.</p>
+          <div class="meta">
+            <span>Template</span><span class="sep">·</span><span>Google Docs</span>
+          </div>
+        </article>
+        <article class="card guide">
+          <div
+            class="thumb"
+            style="font-family: var(--mono); font-size: 13px; letter-spacing: 0.04em"
+          >
+            GUIDE
+          </div>
+          <div class="kind">Guide</div>
+          <h3>Building a grant calendar your team will actually use</h3>
+          <p>
+            Cadence, owners, automated reminders, and the hand-off ritual that prevents missed
+            deadlines.
+          </p>
+          <div class="meta">
+            <span>Operations</span><span class="sep">·</span><span>10 min</span>
+          </div>
+        </article>
+        <article class="card video">
+          <div
+            class="thumb"
+            style="font-family: var(--mono); font-size: 13px; letter-spacing: 0.04em"
+          >
+            VIDEO
+          </div>
+          <div class="kind">Walkthrough</div>
+          <h3>Restricted-fund position in 60 seconds</h3>
+          <p>
+            How to read the restricted-funds panel and answer the question your treasurer always
+            asks.
+          </p>
+          <div class="meta"><span>Video</span><span class="sep">·</span><span>1 min</span></div>
+        </article>
+        <article class="card guide">
+          <div
+            class="thumb"
+            style="font-family: var(--mono); font-size: 13px; letter-spacing: 0.04em"
+          >
+            GUIDE
+          </div>
+          <div class="kind">Guide</div>
+          <h3>Indirect cost rates: when to negotiate, when to accept</h3>
+          <p>
+            A practical decision tree based on grant size, funder type, and your fiscal capacity.
+          </p>
+          <div class="meta">
+            <span>Federal grants</span><span class="sep">·</span><span>13 min</span>
+          </div>
+        </article>
+        <article class="card note">
+          <div
+            class="thumb"
+            style="font-family: var(--mono); font-size: 13px; letter-spacing: 0.04em"
+          >
+            NOTE
+          </div>
+          <div class="kind">Field note</div>
+          <h3>The Monday-morning grants meeting, and how to delete it</h3>
+          <p>
+            A short essay on standing meetings that exist because the data is in four different
+            places.
+          </p>
+          <div class="meta">
+            <span>Operations</span><span class="sep">·</span><span>5 min</span>
+          </div>
+        </article>
+        <article class="card guide">
+          <div
+            class="thumb"
+            style="font-family: var(--mono); font-size: 13px; letter-spacing: 0.04em"
+          >
+            GUIDE
+          </div>
+          <div class="kind">Guide</div>
+          <h3>Writing a logic model your funder will actually read</h3>
+          <p>
+            Outputs, outcomes, indicators—with three real examples (workforce, health,
+            conservation).
+          </p>
+          <div class="meta">
+            <span>Reporting</span><span class="sep">·</span><span>16 min</span>
+          </div>
+        </article>
+      </div>
+
+      <!-- templates -->
+      <section class="templates">
+        <h2>Free templates</h2>
+        <p>
+          Battle-tested formats you can copy today, no signup. If you adopt GrantPipe, these are
+          already built in.
+        </p>
+        <div class="tpl-grid">
+          <div class="tpl">
+            <div class="ext">XLSX</div>
+            <div>
+              <h4>Grant tracker (transition-ready)</h4>
+              <p>The spreadsheet I hand to teams as step zero. Imports cleanly into GrantPipe.</p>
+            </div>
+          </div>
+          <div class="tpl">
+            <div class="ext">DOC</div>
+            <div>
+              <h4>Funder briefing one-pager</h4>
+              <p>For prospect calls. Mission · need · ask · evidence · CTA.</p>
+            </div>
+          </div>
+          <div class="tpl">
+            <div class="ext">XLSX</div>
+            <div>
+              <h4>Restricted fund ledger</h4>
+              <p>Per-grant restricted-balance worksheet that mirrors ASC 958 reporting.</p>
+            </div>
+          </div>
+          <div class="tpl">
+            <div class="ext">PDF</div>
+            <div>
+              <h4>Board grants report</h4>
+              <p>One-page quarterly format. Pipeline, awards, restricted position, risks.</p>
+            </div>
+          </div>
+          <div class="tpl">
+            <div class="ext">DOC</div>
+            <div>
+              <h4>Final report checklist</h4>
+              <p>
+                Outputs, outcomes, financials, supporting docs—federal &amp; foundation variants.
+              </p>
+            </div>
+          </div>
+          <div class="tpl">
+            <div class="ext">XLSX</div>
+            <div>
+              <h4>Grant calendar (12-month)</h4>
+              <p>Deadlines, owners, statuses. Color-coded. Updates as you mark things done.</p>
+            </div>
+          </div>
+          <div class="tpl">
+            <div class="ext">DOC</div>
+            <div>
+              <h4>LOI / inquiry letter template</h4>
+              <p>Two-page format with editor's notes on what funders actually look for.</p>
+            </div>
+          </div>
+          <div class="tpl">
+            <div class="ext">PDF</div>
+            <div>
+              <h4>Audit prep checklist</h4>
+              <p>The 14 documents your auditor will ask for. Get ahead of it.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- newsletter -->
+      <section class="news">
+        <div>
+          <h2>One email a month. Real practice, no fluff.</h2>
+          <p>
+            What I'm seeing across founding customers, what's changing in federal grants, and the
+            occasional template. Unsubscribe anytime.
+          </p>
+        </div>
+        <form
+          onsubmit="
+            event.preventDefault();
+            this.querySelector('button').textContent = 'Thanks!';
+            this.querySelector('input').value = '';
+          "
+        >
+          <input type="email" required placeholder="you@nonprofit.org" aria-label="Email" />
+          <button type="submit">Subscribe</button>
+        </form>
+      </section>
+    </div>
+
+    <footer>
+      <div class="wrap foot-inner">
+        <div class="brand"><span class="brand-mark">G</span> GrantPipe</div>
+        <div class="foot-links">
+          <a href="GrantPipe Landing v2 Dashboard.html">Product</a>
+          <a href="pricing.html">Pricing</a>
+          <a href="resources.html">Resources</a>
+          <a href="compare.html">Compare</a>
+          <a href="#">Privacy</a>
+        </div>
+        <div>© 2026 GrantPipe · Made with care for nonprofits</div>
+      </div>
+    </footer>
+
+    <script>
+      // simple chip filter visual state
+      document.querySelectorAll(".chip").forEach((c) =>
+        c.addEventListener("click", () => {
+          document.querySelectorAll(".chip").forEach((o) => o.classList.remove("active"));
+          c.classList.add("active");
+        }),
+      );
+    </script>
+  </body>
+</html>

@@ -1,0 +1,10 @@
+Weekly reconciliation should answer more than "does the ledger tie?"
+
+For active grants, ask:
+
+- do expenditures match the award budget?
+- does cash drawn match actual need?
+- does match documentation support the claimed amount?
+- do reporting totals agree with the general ledger?
+
+The math can tie and still be incomplete.

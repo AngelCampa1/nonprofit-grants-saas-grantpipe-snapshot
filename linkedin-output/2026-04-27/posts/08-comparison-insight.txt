@@ -1,0 +1,11 @@
+Salesforce Nonprofit runs $60–$165 per user per month plus $30K–$100K in implementation. Blackbaud runs $5,000–$15,000+ per year with multi-year contracts and exit penalties.
+
+Both are designed for large nonprofits. Salesforce gives flexibility at high implementation cost — and you need an admin or managed services to keep it running. Blackbaud gives nonprofit specificity with a legacy interface and contract lock-in.
+
+The mid-sized question is rarely "which one." It's "do we have the administrative capacity to operate either of these without burning a development hire on system maintenance." Under $5M annual revenue, both are usually oversized. Over $20M with dedicated dev ops and IT, the comparison is worth running carefully.
+
+Between those two thresholds is the awkward middle where the platforms over-serve and the spreadsheets under-serve. That gap is where most $500K–$10M nonprofits actually live.
+
+What's your administrative capacity look like — are you sizing the tool to the work, or sizing the work to the tool you bought.
+
+#nonprofittech #salesforce #blackbaud #nonprofitcrm

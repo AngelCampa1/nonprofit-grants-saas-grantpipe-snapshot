@@ -1,0 +1,7 @@
+Period of performance: the start and end dates inside which a grantor will reimburse allowable costs.
+
+Spend a dollar one day before the start date and it is a pre-award cost, allowable only with prior written approval.
+
+Spend a dollar one day after the end date and it is unallowable, full stop, with no recourse.
+
+The dates are not suggestions. They are reimbursement boundaries. Put them on the calendar the day the award letter arrives, not the week before closeout.

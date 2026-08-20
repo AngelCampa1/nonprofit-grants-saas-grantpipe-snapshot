@@ -1,0 +1,7 @@
+Restricted fund question for Tuesday morning:
+
+Is that balance restricted by the donor, designated by the board, or just labeled that way in a spreadsheet?
+
+Those are not the same thing under FASB ASC 958.
+
+The label matters because the board can reverse its own designation. It cannot rewrite a donor restriction.

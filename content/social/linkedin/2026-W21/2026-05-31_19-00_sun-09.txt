@@ -1,0 +1,9 @@
+Quick check before Monday: do you know the current drawdown status on every active federal award?
+
+Not the budget. The drawdown. How much you have actually pulled from the payment system, against how much you have spent in the general ledger.
+
+If those two numbers drift apart for more than a quarter, two things start happening. The Federal Financial Report (the FFR, formerly SF-425) gets harder to file because Box 10 lines stop reconciling cleanly. And cash on hand gets out of sync with what the award lets you draw, which can either look like an unallowable advance or like you are losing interest you could have earned.
+
+A good rhythm is monthly. Match expenses to drawdowns the same week you close the month. Document any timing differences with a one-line note.
+
+It is a 30-minute habit that prevents a 30-hour audit conversation.

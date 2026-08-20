@@ -1,0 +1,1545 @@
+---
+import "../styles/global.css"
+import BaseLayout from "@grantpipe/ui/site/layouts/base-layout.astro"
+import SiteHeader from "@grantpipe/ui/site/components/site-header.astro"
+import SiteFooter from "@grantpipe/ui/site/components/site-footer.astro"
+import Button from "@/components/ui/button.astro"
+import Card from "@/components/ui/card.astro"
+import { grantPipeTrialCopy, siteConfig, getSignupCtaTarget, shouldShowMobileStickyCta } from "@/config/site"
+import { getAppLoginUrl } from "@/lib/app-url"
+import { ensureTrailingSlash } from "@grantpipe/ui/site/lib/meta"
+import { ExitIntentPopup } from "@grantpipe/ui/site/components/exit-intent-popup"
+import { resolveExitPopupProps } from "@grantpipe/ui/site/lib/exit-popup-props"
+import { getPublicApiBaseUrl } from "@grantpipe/ui/site/lib/public-api-url"
+import { getCollection } from "astro:content"
+import { resolveExitLeadMagnetOffer } from "@/lib/lead-magnet-routing"
+import { getPricingPlan, getPlanDisplayPrice } from "../../../../packages/shared/src/pricing"
+
+const auditReadyPlan = getPricingPlan("audit_ready")
+const auditReadyMonthlyPrice = getPlanDisplayPrice("audit_ready", "monthly")
+
+const canonicalUrl = ensureTrailingSlash(`https://${siteConfig.domain}/books`)
+const leadMagnets = await getCollection("lead-magnets")
+const exitLeadMagnet = resolveExitLeadMagnetOffer(siteConfig, leadMagnets, { family: "solution" })
+const exitPopupProps = siteConfig.exitPopup?.enabled !== false ? resolveExitPopupProps(siteConfig) : undefined
+const publicApiUrl = getPublicApiBaseUrl()
+const signupHref = getSignupCtaTarget({ plan: "audit_ready" })
+
+const coaRows = [
+  { code: "1010", name: "Cash - Operating", type: "Asset" },
+  { code: "1020", name: "Cash - Restricted", type: "Asset" },
+  { code: "1200", name: "Accounts Receivable - Grants", type: "Asset" },
+  { code: "1500", name: "Prepaid Expenses", type: "Asset" },
+  { code: "2000", name: "Accounts Payable", type: "Liability" },
+  { code: "2100", name: "Accrued Liabilities", type: "Liability" },
+  { code: "3000", name: "Net Assets Without Donor Restrictions", type: "Net Assets" },
+  { code: "3100", name: "Net Assets Without Restrictions - Released", type: "Net Assets" },
+  { code: "3200", name: "Net Assets With Donor Restrictions - Released", type: "Net Assets" },
+  { code: "3500", name: "Net Assets With Donor Restrictions", type: "Net Assets" },
+  { code: "4000", name: "Contributions - Unrestricted", type: "Revenue" },
+  { code: "4010", name: "Contributions - Restricted", type: "Revenue" },
+  { code: "4100", name: "Government Grant Revenue", type: "Revenue" },
+  { code: "5000", name: "Program Expense", type: "Expense" },
+  { code: "5100", name: "Management & General Expense", type: "Expense" },
+  { code: "5200", name: "Fundraising Expense", type: "Expense" },
+]
+
+const faqs = [
+  {
+    q: "Does QuickBooks stay?",
+    a: "GrantPipe Books has native accounting records. It does not sync with QuickBooks right now. Payroll and bill pay stay in the tools you already use.",
+  },
+  {
+    q: "Can I import my existing chart of accounts?",
+    a: "Yes. You can upload a CSV of your current COA and map account codes to the GrantPipe account types. The nonprofit seed COA is a starting point, not a requirement.",
+  },
+  {
+    q: "What about my CPA?",
+    a: "Your CPA can pull reports any time. GrantPipe Books exports the trial balance as a CSV file. It exports the three FASB statements too. Your auditor can check them on their own.",
+  },
+  {
+    q: "Is this audit-ready?",
+    a: "Every journal entry has a time stamp. Each entry links to its source: a donation, an expense, or a manual entry. No one can edit or delete an entry. A fix posts as a new reversing entry. The original stays in the ledger. That is the audit trail.",
+  },
+  {
+    q: "Does GrantPipe Books handle payroll?",
+    a: "No. Payroll is out of scope for v1. Payroll journal entries can be entered manually as expense entries. We will add payroll provider integrations in a later phase.",
+  },
+  {
+    q: "What happens to my existing donation and expense history when I enable Books?",
+    a: "The opening-balance seeder walks you through a dry run first. It shows you how many donations and expenses will be posted, and generates estimated journal entries for review. You confirm before any entries are written.",
+  },
+]
+
+type AccountType = (typeof coaRows)[number]["type"]
+const accountBadgeClass: Record<AccountType, string> = {
+  Asset: "gp-books-coa-badge gp-books-coa-badge--asset",
+  Liability: "gp-books-coa-badge gp-books-coa-badge--liability",
+  "Net Assets": "gp-books-coa-badge gp-books-coa-badge--neutral",
+  Revenue: "gp-books-coa-badge gp-books-coa-badge--revenue",
+  Expense: "gp-books-coa-badge gp-books-coa-badge--expense",
+}
+
+const reconcileSteps = [
+  {
+    title: "Import",
+    body: "Upload a CSV or OFX file from your bank. GrantPipe parses debit/credit conventions automatically and deduplicates against prior imports.",
+  },
+  {
+    title: "Match",
+    body: "Each bank transaction shows as unmatched, matched, or ignored. Match a transaction to an existing journal line, or create a new manual entry directly from the unmatched view.",
+  },
+  {
+    title: "Reconcile",
+    body: "Enter the statement ending balance. GrantPipe checks that cleared transactions equal the GL cash balance. When it balances, lock the reconciliation. Matched entries cannot be edited without an admin override.",
+  },
+]
+
+const closeItems = [
+  { label: "Bank accounts reconciled", done: true },
+  { label: "Unapplied bank transactions", done: true, note: "0 remaining" },
+  { label: "Adjusting entries reviewed", done: false, note: "2 pending" },
+  { label: "Recurring templates processed", done: true, note: "3 of 3 run" },
+]
+
+const auditPoints = [
+  {
+    label: "Source linking",
+    body: "Every auto-posted JE is linked to the donation or expense record that triggered it. One click from the journal to the source.",
+  },
+  {
+    label: "Activity log",
+    body: "Every create, update, reverse, or close event is logged with a before/after diff, user ID, and timestamp. The log is append-only.",
+  },
+  {
+    label: "Tamper-evident reversals",
+    body: "Journal entries cannot be deleted. Corrections use a reversal: a new JE that offsets the original. The original remains in the ledger.",
+  },
+  {
+    label: "Reconciliation locks",
+    body: "Matched entries are locked after bank reconciliation is completed. Editing a locked entry requires admin override with a stated reason.",
+  },
+]
+
+const sfpRows = [
+  { label: "Cash and cash equivalents", without: 182400, with: 96500 },
+  { label: "Grants receivable", without: 41200, with: 68900 },
+  { label: "Prepaid expenses", without: 8100, with: 0 },
+]
+const sfpLiabilities = [
+  { label: "Accounts payable", without: 22600, with: 0 },
+  { label: "Accrued liabilities", without: 13750, with: 0 },
+]
+const sfpAssetsWithout = sfpRows.reduce((sum, row) => sum + row.without, 0)
+const sfpAssetsWith = sfpRows.reduce((sum, row) => sum + row.with, 0)
+const sfpLiabilitiesWithout = sfpLiabilities.reduce((sum, row) => sum + row.without, 0)
+const sfpNetAssetsWithout = sfpAssetsWithout - sfpLiabilitiesWithout
+const sfpNetAssetsWith = sfpAssetsWith
+const sfpTotalAssets = sfpAssetsWithout + sfpAssetsWith
+const sfpTotalLiabilities = sfpLiabilitiesWithout
+const sfpTotalNetAssets = sfpNetAssetsWithout + sfpNetAssetsWith
+const formatUsd = (cents: number) => `$${cents.toLocaleString("en-US")}`
+
+const coaTree = [
+  {
+    code: "1000",
+    name: "Assets",
+    children: [
+      { code: "1010", name: "Cash - Operating" },
+      { code: "1020", name: "Cash - Restricted" },
+      { code: "1200", name: "Grants Receivable" },
+    ],
+  },
+  {
+    code: "3000",
+    name: "Net Assets",
+    children: [
+      { code: "3000", name: "Without Donor Restrictions" },
+      { code: "3500", name: "With Donor Restrictions" },
+    ],
+  },
+  {
+    code: "4000",
+    name: "Revenue",
+    children: [
+      { code: "4010", name: "Contributions - Restricted" },
+      { code: "4100", name: "Government Grant Revenue" },
+    ],
+  },
+]
+
+const restrictedRollforward = [
+  { label: "Beginning restricted balance", amount: 214000, kind: "start" },
+  { label: "Youth STEM renewal (award)", amount: 125000, kind: "in" },
+  { label: "Food access expansion (award)", amount: 84200, kind: "in" },
+  { label: "Released to operations (program spend)", amount: -96700, kind: "out" },
+  { label: "Ending restricted balance", amount: 326500, kind: "end" },
+]
+
+const auditTrailEvents = [
+  { time: "9:14 AM", label: "Donation posted", detail: "JE-1042 - Food access expansion, $4,200 restricted" },
+  { time: "9:14 AM", label: "Fund tagged", detail: "Linked to grant record GR-2091 automatically" },
+  { time: "2:37 PM", label: "Correction filed", detail: "JE-1042-R reverses original; both entries remain visible" },
+  { time: "2:38 PM", label: "Reconciliation locked", detail: "Bank match confirmed; entry now requires admin override to edit" },
+]
+
+const jsonLd = {
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "WebPage",
+      "@id": canonicalUrl,
+      name: "GrantPipe Books: Fund Accounting for Nonprofits",
+      description:
+        "GrantPipe Books adds FASB ASC 958 double-entry fund accounting to the GrantPipe compliance-first grant management system. The pricing page shows where Books is included.",
+      url: canonicalUrl,
+      inLanguage: "en-US",
+      publisher: {
+        "@type": "Organization",
+        name: siteConfig.name,
+        url: `https://${siteConfig.domain}`,
+      },
+    },
+    {
+      "@type": "FAQPage",
+      mainEntity: faqs.map((faq) => ({
+        "@type": "Question",
+        name: faq.q,
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: faq.a,
+        },
+      })),
+    },
+  ],
+}
+---
+
+<BaseLayout
+  title="GrantPipe Books: Fund Accounting Built for Nonprofits"
+  description="FASB ASC 958 double-entry fund accounting built into GrantPipe. One system for donors, grants, restricted funds, and financial statements. Plan details on the pricing page."
+  canonicalUrl={canonicalUrl}
+  siteName={siteConfig.name}
+  ogType="website"
+  twitterSite={siteConfig.social?.twitterHandle}
+  theme={siteConfig.theme}
+  fonts={siteConfig.theme.fonts}
+  themeColor={siteConfig.theme.primary}
+  appleTouchIcon={siteConfig.appleTouchIcon}
+  showStickyMobileCta={shouldShowMobileStickyCta("/books")}
+  stickyCtaText={siteConfig.funnel.bofu.ctaText}
+  stickyCtaTarget={getSignupCtaTarget()}
+>
+  <script is:inline type="application/ld+json" set:html={JSON.stringify(jsonLd)} slot="head" />
+
+  <SiteHeader
+    slot="header"
+    siteName={siteConfig.name}
+    navItems={siteConfig.nav?.items}
+    ctaText={siteConfig.funnel.bofu.ctaText}
+    ctaHref={getSignupCtaTarget()}
+    loginHref={getAppLoginUrl()}
+    logoLight={siteConfig.logo?.light}
+  >
+  </SiteHeader>
+
+  <section class="gp-section" data-section="hero">
+      <div class="gp-wrap gp-books-hero">
+        <div class="gp-books-hero__lede scroll-in">
+          <p class="gp-eyebrow-pill">GrantPipe Books</p>
+          <h1>Fund accounting inside GrantPipe. Restricted money stays tied to each record.</h1>
+          <p class="gp-books-hero__sub">
+            GrantPipe spans eight modules. Books is the fund-accounting module. It ties restricted
+            money to each donation, grant, expense, release, and proof trail. QuickBooks stays as
+            the accounting system.
+          </p>
+          <div class="gp-hero-actions">
+            <Button
+              href={signupHref}
+              data-ph-capture-attribute-source="books-hero"
+            >
+              Start {auditReadyPlan.name}: {auditReadyMonthlyPrice}
+            </Button>
+            <Button href="/pricing/" variant="secondary">Review all plans</Button>
+          </div>
+          <p class="gp-books-hero__note">{grantPipeTrialCopy}</p>
+        </div>
+
+        <aside class="gp-books-hero__aside" aria-label="What finance teams get">
+          <Card variant="feature">
+            <p class="gp-proof-label">What finance teams get</p>
+            <div class="gp-books-hero__aside-items">
+              <div>
+                <p class="gp-books-aside-eyebrow">Statement output</p>
+                <p class="gp-books-aside-title">
+                  Financial position, activities, and functional expenses from one dataset.
+                </p>
+              </div>
+              <div>
+                <p class="gp-books-aside-eyebrow">Migration path</p>
+                <p class="gp-books-aside-title">
+                  Seed opening balances, review the dry run, then turn on posting.
+                </p>
+              </div>
+            </div>
+          </Card>
+
+          <Card>
+            <p class="gp-proof-label">Premium plan fit</p>
+            <p class="gp-books-aside-title">
+              Good fit if you want accounting in the same product as fundraising and grant tracking.
+            </p>
+            <p class="gp-books-aside-body">
+              Books is for teams that are done moving donor records, class tags, and exports between
+              separate systems.
+            </p>
+            <Button href={signupHref} variant="secondary" size="sm" class="gp-books-aside-cta">
+              Start the {auditReadyPlan.name} trial
+            </Button>
+          </Card>
+        </aside>
+      </div>
+    </section>
+
+    <section class="gp-section alt" data-section="auto-posting">
+      <div class="gp-wrap">
+        <div class="gp-section-head center scroll-in">
+          <p class="gp-eyebrow-pill">The wedge</p>
+          <h2>QuickBooks does not know about your restricted funds. GrantPipe does.</h2>
+          <p>
+            QuickBooks records the accounting entry. GrantPipe keeps the donor, grant, restriction,
+            and proof record beside it. Finance and fundraising can check the story behind the
+            number.
+          </p>
+        </div>
+
+        <div class="gp-books-compare-grid">
+          <Card>
+            <p class="gp-books-compare__label">Without GrantPipe Books</p>
+            <h3 class="gp-books-compare__title">Four manual steps per donation</h3>
+            <ol class="gp-books-compare__list">
+              <li><span class="gp-books-compare__num">1.</span>Record donation in your CRM or spreadsheet</li>
+              <li><span class="gp-books-compare__num">2.</span>Open QuickBooks and find the accounting entry</li>
+              <li><span class="gp-books-compare__num">3.</span>Manually apply a class tag to track the restricted fund</li>
+              <li><span class="gp-books-compare__num">4.</span>Hope the tag stays accurate when the record is updated later</li>
+            </ol>
+          </Card>
+
+          <Card variant="feature">
+            <p class="gp-books-compare__label gp-books-compare__label--accent">With GrantPipe Books</p>
+            <h3 class="gp-books-compare__title">One entry. Books posts the rest.</h3>
+            <ol class="gp-books-compare__list">
+              <li><span class="gp-books-compare__num gp-books-compare__num--accent">1.</span>Record donation in GrantPipe (restricted or unrestricted)</li>
+              <li><span class="gp-books-compare__num gp-books-compare__num--muted">↳</span>Books posts the entry on its own, tagged to the fund</li>
+              <li><span class="gp-books-compare__num gp-books-compare__num--muted">↳</span>Log an expense on that fund and the release entry posts too</li>
+              <li><span class="gp-books-compare__num gp-books-compare__num--muted">↳</span>QuickBooks sync is not available right now</li>
+            </ol>
+          </Card>
+        </div>
+      </div>
+    </section>
+
+    <section class="gp-section" data-section="statements" id="statements">
+      <div class="gp-wrap">
+        <div class="gp-section-head center scroll-in">
+          <p class="gp-eyebrow-pill">Financial statements</p>
+          <h2>All three FASB ASC 958 statements, built from live data.</h2>
+          <p>
+            No manual exports. No spreadsheet formulas. The numbers come from the same GL that
+            processes every donation and expense.
+          </p>
+        </div>
+
+        <div
+          class="gp-books-visual gp-books-sfp scroll-in"
+          role="img"
+          aria-label="Sample Statement of Financial Position showing assets, liabilities, and net assets split between with-donor-restrictions and without-donor-restrictions columns, with total assets equal to total liabilities plus net assets"
+        >
+          <div class="gp-books-visual__chrome" aria-hidden="true">
+            <span></span><span></span><span></span>
+            <strong>Statement of Financial Position - Sample data</strong>
+          </div>
+          <div class="gp-books-sfp__table-wrap" aria-hidden="true">
+            <table class="gp-books-sfp__table">
+              <thead>
+                <tr>
+                  <th scope="col"></th>
+                  <th scope="col">Without restrictions</th>
+                  <th scope="col">With restrictions</th>
+                  <th scope="col">Total</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr class="gp-books-sfp__group"><td colspan="4">Assets</td></tr>
+                {sfpRows.map((row) => (
+                  <tr>
+                    <td>{row.label}</td>
+                    <td>{formatUsd(row.without)}</td>
+                    <td>{formatUsd(row.with)}</td>
+                    <td>{formatUsd(row.without + row.with)}</td>
+                  </tr>
+                ))}
+                <tr class="gp-books-sfp__subtotal">
+                  <td>Total assets</td>
+                  <td>{formatUsd(sfpAssetsWithout)}</td>
+                  <td>{formatUsd(sfpAssetsWith)}</td>
+                  <td>{formatUsd(sfpTotalAssets)}</td>
+                </tr>
+                <tr class="gp-books-sfp__group"><td colspan="4">Liabilities</td></tr>
+                {sfpLiabilities.map((row) => (
+                  <tr>
+                    <td>{row.label}</td>
+                    <td>{formatUsd(row.without)}</td>
+                    <td>{formatUsd(row.with)}</td>
+                    <td>{formatUsd(row.without + row.with)}</td>
+                  </tr>
+                ))}
+                <tr class="gp-books-sfp__subtotal">
+                  <td>Total liabilities</td>
+                  <td>{formatUsd(sfpLiabilitiesWithout)}</td>
+                  <td>{formatUsd(0)}</td>
+                  <td>{formatUsd(sfpTotalLiabilities)}</td>
+                </tr>
+                <tr class="gp-books-sfp__subtotal">
+                  <td>Net assets</td>
+                  <td>{formatUsd(sfpNetAssetsWithout)}</td>
+                  <td>{formatUsd(sfpNetAssetsWith)}</td>
+                  <td>{formatUsd(sfpTotalNetAssets)}</td>
+                </tr>
+                <tr class="gp-books-sfp__balance">
+                  <td>Total liabilities + net assets</td>
+                  <td></td>
+                  <td></td>
+                  <td>{formatUsd(sfpTotalLiabilities + sfpTotalNetAssets)}</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          <p class="gp-books-visual__footnote" aria-hidden="true">
+            Assets ({formatUsd(sfpTotalAssets)}) = liabilities + net assets ({formatUsd(sfpTotalLiabilities + sfpTotalNetAssets)}). Illustrative sample data.
+          </p>
+        </div>
+
+        <div class="gp-books-statements-grid">
+          <Card as="article">
+            <p class="gp-books-stmt__code">SFP</p>
+            <h3 class="gp-books-stmt__title">Statement of Financial Position</h3>
+            <p class="gp-books-stmt__body">
+              The nonprofit balance sheet. Shows assets, liabilities, and net assets split between
+              with-donor-restrictions and without-donor-restrictions at any point in time.
+            </p>
+            <p class="gp-books-stmt__body">
+              GrantPipe validates that assets equal liabilities plus net assets on every generation.
+              If the GL is out of balance, the system tells you why.
+            </p>
+          </Card>
+          <Card as="article">
+            <p class="gp-books-stmt__code">SOA</p>
+            <h3 class="gp-books-stmt__title">Statement of Activities</h3>
+            <p class="gp-books-stmt__body">
+              Revenue and expenses in three columns: without donor restrictions, with donor
+              restrictions, and total. Releases from restriction appear as a positive line in the
+              unrestricted column and a corresponding negative line in the restricted column.
+            </p>
+            <p class="gp-books-stmt__body">
+              Shows beginning net assets, change for the period, and ending net assets per
+              restriction class.
+            </p>
+          </Card>
+          <Card as="article">
+            <p class="gp-books-stmt__code">SFE</p>
+            <h3 class="gp-books-stmt__title">Statement of Functional Expenses</h3>
+            <p class="gp-books-stmt__body">
+              Required by ASU 2016-14 for all nonprofits. Shows expense accounts broken down by
+              functional class: Program, Management &amp; General, and Fundraising. Includes a total
+              column.
+            </p>
+            <p class="gp-books-stmt__body">
+              The functional class is tagged on each expense record at entry time, so the SFE
+              generates directly from the journal without manual allocation.
+            </p>
+          </Card>
+        </div>
+
+        <p class="gp-books-stmt__footnote">
+          All three statements export to CSV. Print-formatted PDF output is on the roadmap.
+        </p>
+      </div>
+    </section>
+
+    <section class="gp-section alt" data-section="coa">
+      <div class="gp-wrap">
+        <div class="gp-section-head center scroll-in">
+          <span class="gp-icon-chip gp-icon-chip--primary" aria-hidden="true">$</span>
+          <p class="gp-eyebrow-pill">Chart of accounts</p>
+          <h2>A nonprofit COA seeded on day one.</h2>
+          <p>
+            The moment you enable GrantPipe Books, a double-entry chart of accounts pre-built for
+            FASB ASC 958 is ready to use. You can customize account names, add sub-accounts, or
+            import your own COA from a CSV export.
+          </p>
+        </div>
+
+        <div
+          class="gp-books-visual gp-books-coa-tree scroll-in"
+          role="img"
+          aria-label="Sample chart of accounts tree showing top-level Assets, Net Assets, and Revenue accounts each expanded into nonprofit-specific sub-accounts"
+        >
+          <div class="gp-books-visual__chrome" aria-hidden="true">
+            <span></span><span></span><span></span>
+            <strong>Chart of accounts - Sample data</strong>
+          </div>
+          <div class="gp-books-coa-tree__body" aria-hidden="true">
+            {coaTree.map((group) => (
+              <div class="gp-books-coa-tree__group">
+                <p class="gp-books-coa-tree__parent">
+                  <span class="gp-books-coa-tree__code">{group.code}</span>
+                  {group.name}
+                </p>
+                <ul class="gp-books-coa-tree__children">
+                  {group.children.map((child) => (
+                    <li>
+                      <span class="gp-books-coa-tree__code">{child.code}</span>
+                      {child.name}
+                    </li>
+                  ))}
+                </ul>
+              </div>
+            ))}
+          </div>
+        </div>
+
+        <div class="gp-books-coa-table-wrap">
+          <table class="gp-books-coa-table">
+            <thead>
+              <tr>
+                <th scope="col">Code</th>
+                <th scope="col">Account Name</th>
+                <th scope="col">Type</th>
+              </tr>
+            </thead>
+            <tbody>
+              {coaRows.map((row) => (
+                <tr>
+                  <td class="gp-books-coa-code">{row.code}</td>
+                  <td>{row.name}</td>
+                  <td>
+                    <span class={accountBadgeClass[row.type as AccountType]}>{row.type}</span>
+                  </td>
+                </tr>
+              ))}
+            </tbody>
+          </table>
+        </div>
+        <p class="gp-books-stmt__footnote">
+          Partial list. The full seed COA includes sub-accounts for common program types.
+        </p>
+      </div>
+    </section>
+
+    <section class="gp-section" data-section="bank-reconciliation">
+      <div class="gp-wrap">
+        <div class="gp-section-head center scroll-in">
+          <p class="gp-eyebrow-pill">Bank reconciliation</p>
+          <h2>Import, match, reconcile. Three steps. One screen.</h2>
+          <p>
+            No live bank feed in v1. Upload your bank's CSV or OFX export, then match transactions
+            to existing journal entries or create new ones for anything the GL does not yet cover.
+          </p>
+        </div>
+
+        <div class="gp-books-steps">
+          {reconcileSteps.map((step, i) => (
+            <div class="gp-books-step">
+              <span class="gp-books-step__num" aria-hidden="true">{i + 1}</span>
+              <h3 class="gp-books-step__title">{step.title}</h3>
+              <p class="gp-books-step__body">{step.body}</p>
+            </div>
+          ))}
+        </div>
+
+        <div
+          class="gp-books-visual gp-books-rollforward scroll-in"
+          role="img"
+          aria-label="Sample restricted fund rollforward showing the beginning restricted balance, two grant awards added, program spend released to operations, and the ending restricted balance"
+        >
+          <div class="gp-books-visual__chrome" aria-hidden="true">
+            <span></span><span></span><span></span>
+            <strong>Restricted balance rollforward - Sample data</strong>
+          </div>
+          <div class="gp-books-rollforward__rows" aria-hidden="true">
+            {restrictedRollforward.map((row) => {
+              const pct = Math.min(100, Math.round((Math.abs(row.amount) / 326500) * 100)) || 4
+              return (
+                <div class:list={["gp-books-rollforward__row", `is-${row.kind}`]}>
+                  <span class="gp-books-rollforward__label">{row.label}</span>
+                  <span class="gp-books-rollforward__bar-track">
+                    <i class="gp-books-rollforward__bar" style={`--bar: ${pct}%`}></i>
+                  </span>
+                  <span class="gp-books-rollforward__amount">
+                    {row.amount < 0 ? `-${formatUsd(Math.abs(row.amount))}` : formatUsd(row.amount)}
+                  </span>
+                </div>
+              )
+            })}
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="gp-section alt" data-section="period-close">
+      <div class="gp-wrap">
+        <div class="gp-books-close-grid">
+          <div class="scroll-in">
+            <p class="gp-eyebrow-pill">Period close</p>
+            <h2 class="gp-books-section-title">See everything that needs attention before you close a period.</h2>
+            <ul class="gp-list--accent gp-books-close-summary">
+              <li>Every unreconciled bank account and unapplied transaction, surfaced before lock.</li>
+              <li>Pending adjusting entries and open recurring templates, in one checklist.</li>
+              <li>Once closed, journal entries for those dates are blocked and the trial balance is a stable snapshot.</li>
+            </ul>
+          </div>
+          <Card class="scroll-in">
+            <p class="gp-books-compare__label">Close checklist: January 2026</p>
+            <ul class="gp-books-close-list">
+              {closeItems.map((item) => (
+                <li>
+                  <span
+                    class:list={["gp-books-close-bullet", item.done && "is-done"]}
+                    aria-hidden="true"
+                  >{item.done ? "✓" : "○"}</span>
+                  <span>
+                    <span class="gp-books-close-label">{item.label}</span>
+                    {item.note && <span class="gp-books-close-note">{item.note}</span>}
+                  </span>
+                </li>
+              ))}
+            </ul>
+            <div class="gp-books-close-footer">
+              <p>2 items require attention before this period can be closed.</p>
+            </div>
+          </Card>
+        </div>
+      </div>
+    </section>
+
+    <section class="gp-section" data-section="audit-posture">
+      <div class="gp-wrap">
+        <div class="gp-section-head center scroll-in">
+          <p class="gp-eyebrow-pill">Audit posture</p>
+          <h2>Every entry timestamped. Every change logged. Reconciled entries locked.</h2>
+          <p>
+            Auditors ask for the transaction, the source document, the date posted, and who
+            approved it. GrantPipe Books surfaces all of that without a manual lookup.
+          </p>
+        </div>
+
+        <div class="gp-books-stat-row scroll-in">
+          <div class="gp-stat-callout">
+            <span class="gp-stat-callout__value">0</span>
+            <span class="gp-stat-callout__label">Deleted journal entries. Ever. Corrections post as reversals.</span>
+          </div>
+          <hr class="gp-hairline--accent" />
+        </div>
+
+        <div
+          class="gp-books-visual gp-books-audit-trail scroll-in"
+          role="img"
+          aria-label="Sample audit trail timeline showing a donation posted, automatically tagged to its fund, corrected with a reversing entry, and then locked after bank reconciliation"
+        >
+          <div class="gp-books-visual__chrome" aria-hidden="true">
+            <span></span><span></span><span></span>
+            <strong>Audit trail - JE-1042 - Sample data</strong>
+          </div>
+          <ol class="gp-books-audit-trail__list" aria-hidden="true">
+            {auditTrailEvents.map((event) => (
+              <li>
+                <span class="gp-books-audit-trail__dot"></span>
+                <span class="gp-books-audit-trail__time">{event.time}</span>
+                <span class="gp-books-audit-trail__label">{event.label}</span>
+                <span class="gp-books-audit-trail__detail">{event.detail}</span>
+              </li>
+            ))}
+          </ol>
+        </div>
+
+        <div class="gp-books-audit-grid">
+          {auditPoints.map((item) => (
+            <Card>
+              <p class="gp-books-audit__label">{item.label}</p>
+              <p class="gp-books-audit__body">{item.body}</p>
+            </Card>
+          ))}
+        </div>
+      </div>
+    </section>
+
+    <section class="gp-section alt" data-section="faq" id="faq">
+      <div class="gp-wrap gp-books-faq">
+        <div class="gp-section-head center scroll-in">
+          <p class="gp-eyebrow-pill">FAQ</p>
+          <h2>Common questions about GrantPipe Books</h2>
+        </div>
+
+        <dl class="gp-books-faq-list">
+          {faqs.map((faq) => (
+            <Card as="div" class="gp-books-faq-item">
+              <dt>{faq.q}</dt>
+              <dd>{faq.a}</dd>
+            </Card>
+          ))}
+        </dl>
+      </div>
+    </section>
+
+    <section class="gp-section" data-section="pricing-cta">
+      <div class="gp-wrap gp-books-pricing-cta scroll-in">
+        <p class="gp-eyebrow-pill">Pricing</p>
+        <h2>GrantPipe Books is included in {auditReadyPlan.name}.</h2>
+        <p>
+          Donor management, grant tracking, restricted fund tracking, compliance reporting, and
+          FASB ASC 958 fund accounting all live in one GrantPipe account when your plan includes
+          the relevant modules. QuickBooks stays outside GrantPipe for now.
+        </p>
+        <div class="gp-hero-actions gp-hero-actions--center">
+          <Button
+            href={signupHref}
+            data-ph-capture-attribute-source="books-pricing-cta"
+          >
+            Start {auditReadyPlan.name}: {auditReadyMonthlyPrice}
+          </Button>
+          <Button href="/pricing/" variant="secondary">Compare all plans</Button>
+        </div>
+        <p class="gp-books-hero__note">{grantPipeTrialCopy}</p>
+      </div>
+    </section>
+
+  <SiteFooter
+    slot="footer"
+    siteName={siteConfig.name}
+    tagline={siteConfig.tagline}
+    linkGroups={siteConfig.footer?.linkGroups}
+    legalLinks={siteConfig.footer?.legalLinks}
+    logoLight={siteConfig.logo?.light}
+  />
+  {exitPopupProps && (
+    <ExitIntentPopup
+      client:idle
+      apiUrl={publicApiUrl}
+      {...exitPopupProps}
+      leadMagnet={exitLeadMagnet}
+    />
+  )}
+</BaseLayout>
+
+<style>
+  /* Page-scoped composition for /books. Uses canonical tokens only. */
+  .gp-books-hero {
+    display: grid;
+    gap: 2rem;
+    grid-template-columns: 1fr;
+  }
+
+  @media (min-width: 1024px) {
+    .gp-books-hero {
+      grid-template-columns: minmax(0, 1.08fr) minmax(20rem, 0.92fr);
+      align-items: start;
+      gap: 2.5rem;
+    }
+  }
+
+  .gp-books-hero__lede h1 {
+    font-family: var(--font-heading);
+    font-size: clamp(2.4rem, 5vw, 4rem);
+    font-weight: 600;
+    line-height: 1.04;
+    letter-spacing: -0.02em;
+    color: var(--gp-ink-900);
+    margin-top: 14px;
+  }
+
+  .gp-books-hero__sub {
+    margin-top: 18px;
+    max-width: 44rem;
+    color: var(--gp-ink-700);
+    font-size: 1.05rem;
+    line-height: 1.7;
+  }
+
+  .gp-books-hero__note {
+    margin-top: 14px;
+    color: var(--gp-ink-500);
+    font-size: 0.9rem;
+    line-height: 1.55;
+  }
+
+  .gp-books-hero__aside {
+    display: grid;
+    gap: 1rem;
+  }
+
+  .gp-books-hero__aside-items {
+    margin-top: 14px;
+    display: grid;
+    gap: 1rem;
+  }
+
+  .gp-books-aside-eyebrow {
+    font-family: var(--font-mono, ui-monospace, monospace);
+    font-size: 0.7rem;
+    text-transform: uppercase;
+    letter-spacing: 0.18em;
+    color: var(--gp-ink-500);
+    margin: 0;
+  }
+
+  .gp-books-aside-title {
+    margin-top: 0.625rem;
+    font-family: var(--font-heading);
+    font-size: 1.25rem;
+    font-weight: 600;
+    line-height: 1.2;
+    color: var(--gp-ink-900);
+  }
+
+  .gp-books-aside-body {
+    margin-top: 0.625rem;
+    color: var(--gp-ink-700);
+    font-size: 0.9rem;
+    line-height: 1.65;
+  }
+
+  .gp-books-aside-cta {
+    margin-top: 18px;
+  }
+
+  /* Hero actions modifier: centred for closing CTA section. */
+  .gp-hero-actions--center {
+    justify-content: center;
+  }
+
+  /* Two-card compare grid. */
+  .gp-books-compare-grid {
+    margin-top: 2.5rem;
+    display: grid;
+    gap: 18px;
+    grid-template-columns: 1fr;
+  }
+
+  @media (min-width: 768px) {
+    .gp-books-compare-grid {
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+  }
+
+  .gp-books-compare__label {
+    font-family: var(--font-mono, ui-monospace, monospace);
+    font-size: 0.7rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.14em;
+    color: var(--gp-ink-500);
+    margin: 0;
+  }
+
+  .gp-books-compare__label--accent {
+    color: var(--gp-emerald-600);
+  }
+
+  .gp-books-compare__title {
+    margin-top: 0.5rem;
+    font-family: var(--font-heading);
+    font-size: 1.15rem;
+    font-weight: 600;
+    color: var(--gp-ink-900);
+  }
+
+  .gp-books-compare__list {
+    margin-top: 1rem;
+    display: grid;
+    gap: 0.625rem;
+    list-style: none;
+    padding: 0;
+    color: var(--gp-ink-600);
+    font-size: 0.9rem;
+    line-height: 1.55;
+  }
+
+  .gp-books-compare__list li {
+    display: flex;
+    gap: 0.5rem;
+  }
+
+  .gp-books-compare__num {
+    flex-shrink: 0;
+    font-family: var(--font-mono, ui-monospace, monospace);
+    color: var(--gp-ink-400);
+  }
+
+  .gp-books-compare__num--accent {
+    color: var(--gp-emerald-600);
+  }
+
+  .gp-books-compare__num--muted {
+    color: var(--gp-ink-300);
+  }
+
+  /* Three-card statements grid. */
+  .gp-books-statements-grid {
+    margin-top: 2.5rem;
+    display: grid;
+    gap: 18px;
+    grid-template-columns: 1fr;
+  }
+
+  @media (min-width: 768px) {
+    .gp-books-statements-grid {
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+    }
+  }
+
+  .gp-books-stmt__code {
+    font-family: var(--font-mono, ui-monospace, monospace);
+    font-size: 0.7rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.14em;
+    color: var(--gp-ink-500);
+    margin: 0;
+  }
+
+  .gp-books-stmt__title {
+    margin-top: 0.5rem;
+    font-family: var(--font-heading);
+    font-size: 1.1rem;
+    font-weight: 700;
+    color: var(--gp-ink-900);
+  }
+
+  .gp-books-stmt__body {
+    margin-top: 0.75rem;
+    color: var(--gp-ink-600);
+    font-size: 0.9rem;
+    line-height: 1.6;
+  }
+
+  .gp-books-stmt__footnote {
+    margin-top: 1.5rem;
+    text-align: center;
+    color: var(--gp-ink-500);
+    font-size: 0.875rem;
+  }
+
+  /* Section title used in close-grid (left column). */
+  .gp-books-section-title {
+    margin-top: 14px;
+    font-family: var(--font-heading);
+    font-size: clamp(1.6rem, 3vw, 2.2rem);
+    font-weight: 600;
+    line-height: 1.1;
+    color: var(--gp-ink-900);
+  }
+
+  .gp-books-section-body {
+    margin-top: 14px;
+    color: var(--gp-ink-700);
+    font-size: 1rem;
+    line-height: 1.7;
+  }
+
+  /* COA table. */
+  .gp-books-coa-table-wrap {
+    margin-top: 2.5rem;
+    overflow-x: auto;
+    border: 1px solid var(--gp-ink-100);
+    border-radius: var(--radius-lg);
+    background: var(--gp-card);
+    box-shadow: var(--shadow-card);
+  }
+
+  .gp-books-coa-table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 0.9rem;
+  }
+
+  .gp-books-coa-table thead tr {
+    background: var(--gp-paper-2);
+  }
+
+  .gp-books-coa-table th {
+    padding: 0.75rem 1rem;
+    text-align: left;
+    font-weight: 600;
+    color: var(--gp-ink-700);
+    border-bottom: 1px solid var(--gp-ink-100);
+  }
+
+  .gp-books-coa-table td {
+    padding: 0.625rem 1rem;
+    color: var(--gp-ink-700);
+    border-bottom: 1px solid var(--gp-ink-100);
+  }
+
+  .gp-books-coa-table tbody tr:last-child td {
+    border-bottom: none;
+  }
+
+  .gp-books-coa-code {
+    font-family: var(--font-mono, ui-monospace, monospace);
+    color: var(--gp-ink-600);
+  }
+
+  .gp-books-coa-badge {
+    display: inline-block;
+    border-radius: var(--radius-full);
+    padding: 2px 10px;
+    font-size: 0.7rem;
+    font-weight: 600;
+    line-height: 1.6;
+  }
+
+  .gp-books-coa-badge--asset {
+    background: var(--gp-emerald-50);
+    color: var(--gp-emerald-700);
+  }
+
+  .gp-books-coa-badge--liability {
+    background: var(--color-error-100);
+    color: var(--color-error-700);
+  }
+
+  .gp-books-coa-badge--neutral {
+    background: var(--gp-paper-2);
+    color: var(--gp-ink-600);
+  }
+
+  .gp-books-coa-badge--revenue {
+    background: var(--gp-emerald-100);
+    color: var(--gp-emerald-700);
+  }
+
+  .gp-books-coa-badge--expense {
+    background: var(--gp-gold-50);
+    color: var(--gp-gold-800);
+  }
+
+  /* Bank reconciliation three-step. */
+  .gp-books-steps {
+    margin-top: 2.5rem;
+    display: grid;
+    gap: 1.5rem;
+    grid-template-columns: 1fr;
+  }
+
+  @media (min-width: 768px) {
+    .gp-books-steps {
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+    }
+  }
+
+  .gp-books-step__num {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 2.5rem;
+    height: 2.5rem;
+    border-radius: var(--radius-full);
+    background: var(--gp-emerald-600);
+    color: var(--gp-paper);
+    font-family: var(--font-heading);
+    font-weight: 700;
+    font-size: 1.05rem;
+  }
+
+  .gp-books-step__title {
+    margin-top: 14px;
+    font-family: var(--font-heading);
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: var(--gp-ink-900);
+  }
+
+  .gp-books-step__body {
+    margin-top: 0.5rem;
+    color: var(--gp-ink-600);
+    font-size: 0.9rem;
+    line-height: 1.65;
+  }
+
+  /* Period close grid (text + checklist card). */
+  .gp-books-close-grid {
+    display: grid;
+    gap: 2rem;
+    grid-template-columns: 1fr;
+  }
+
+  @media (min-width: 768px) {
+    .gp-books-close-grid {
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      align-items: center;
+      gap: 48px;
+    }
+  }
+
+  .gp-books-close-list {
+    margin-top: 18px;
+    list-style: none;
+    padding: 0;
+    display: grid;
+    gap: 0.75rem;
+  }
+
+  .gp-books-close-list li {
+    display: flex;
+    gap: 0.75rem;
+    font-size: 0.9rem;
+    color: var(--gp-ink-700);
+  }
+
+  .gp-books-close-bullet {
+    flex-shrink: 0;
+    margin-top: 2px;
+    font-size: 1rem;
+    color: var(--gp-gold-700);
+  }
+
+  .gp-books-close-bullet.is-done {
+    color: var(--gp-emerald-600);
+  }
+
+  .gp-books-close-label {
+    font-weight: 500;
+    color: var(--gp-ink-900);
+  }
+
+  .gp-books-close-note {
+    margin-left: 0.5rem;
+    color: var(--gp-ink-500);
+  }
+
+  .gp-books-close-footer {
+    margin-top: 1.5rem;
+    padding-top: 1rem;
+    border-top: 1px solid var(--gp-ink-100);
+    color: var(--gp-ink-500);
+    font-size: 0.8rem;
+  }
+
+  /* Audit posture cards. */
+  .gp-books-audit-grid {
+    margin-top: 2.5rem;
+    display: grid;
+    gap: 18px;
+    grid-template-columns: 1fr;
+  }
+
+  @media (min-width: 640px) {
+    .gp-books-audit-grid {
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+  }
+
+  @media (min-width: 1024px) {
+    .gp-books-audit-grid {
+      grid-template-columns: repeat(4, minmax(0, 1fr));
+    }
+  }
+
+  .gp-books-audit__label {
+    font-family: var(--font-mono, ui-monospace, monospace);
+    font-size: 0.7rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.14em;
+    color: var(--gp-emerald-600);
+    margin: 0;
+  }
+
+  .gp-books-audit__body {
+    margin-top: 0.625rem;
+    color: var(--gp-ink-600);
+    font-size: 0.875rem;
+    line-height: 1.6;
+  }
+
+  /* FAQ list. */
+  .gp-books-faq {
+    max-width: 760px;
+  }
+
+  .gp-books-faq-list {
+    margin-top: 36px;
+    display: grid;
+    gap: 18px;
+  }
+
+  .gp-books-faq-item dt {
+    font-family: var(--font-heading);
+    font-size: 1rem;
+    font-weight: 600;
+    color: var(--gp-ink-900);
+  }
+
+  .gp-books-faq-item dd {
+    margin: 0.625rem 0 0;
+    color: var(--gp-ink-600);
+    font-size: 0.9rem;
+    line-height: 1.65;
+  }
+
+  /* Closing pricing CTA section. */
+  .gp-books-pricing-cta {
+    max-width: 760px;
+    text-align: center;
+  }
+
+  .gp-books-pricing-cta h2 {
+    margin-top: 14px;
+    font-family: var(--font-heading);
+    font-size: clamp(1.8rem, 3.4vw, 2.4rem);
+    font-weight: 600;
+    color: var(--gp-ink-900);
+  }
+
+  .gp-books-pricing-cta > p {
+    margin-top: 1rem;
+    color: var(--gp-ink-700);
+    font-size: 1rem;
+    line-height: 1.7;
+  }
+
+  /* ===================================================================
+     CODED VISUALS
+     -------------------------------------------------------------------
+     Shared chrome shell (browser-bar aesthetic borrowed from the homepage
+     dashboard-mock) for the illustrative fund-accounting visuals below.
+     All figures are labeled sample data; internals are aria-hidden with a
+     single role="img" + aria-label describing the whole visual.
+     =================================================================== */
+  .gp-books-visual {
+    margin-top: 2.5rem;
+    border: 1px solid var(--gp-ink-100);
+    border-radius: var(--radius-lg);
+    background: var(--gp-card);
+    box-shadow: var(--shadow-card);
+    overflow: hidden;
+  }
+
+  .gp-books-visual__chrome {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    padding: 0.7rem 1rem;
+    background: var(--gp-paper-2);
+    border-bottom: 1px solid var(--gp-ink-100);
+  }
+
+  .gp-books-visual__chrome span {
+    width: 9px;
+    height: 9px;
+    border-radius: var(--radius-full);
+    background: var(--gp-ink-200);
+  }
+
+  .gp-books-visual__chrome strong {
+    margin-left: 10px;
+    font-family: var(--font-mono, ui-monospace, monospace);
+    font-size: 0.7rem;
+    font-weight: 600;
+    letter-spacing: 0.02em;
+    color: var(--gp-ink-500);
+  }
+
+  .gp-books-visual__footnote {
+    padding: 0.75rem 1rem 1rem;
+    color: var(--gp-ink-500);
+    font-size: 0.8rem;
+    font-family: var(--font-mono, ui-monospace, monospace);
+  }
+
+  /* -- SFP mini statement table -- */
+  .gp-books-sfp__table-wrap {
+    overflow-x: auto;
+  }
+
+  .gp-books-sfp__table {
+    width: 100%;
+    min-width: 32rem;
+    border-collapse: collapse;
+    font-size: 0.85rem;
+  }
+
+  .gp-books-sfp__table th {
+    padding: 0.6rem 1rem;
+    text-align: right;
+    font-weight: 600;
+    color: var(--gp-ink-600);
+    font-family: var(--font-mono, ui-monospace, monospace);
+    font-size: 0.7rem;
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+    border-bottom: 1px solid var(--gp-ink-100);
+  }
+
+  .gp-books-sfp__table th:first-child {
+    text-align: left;
+  }
+
+  .gp-books-sfp__table td {
+    padding: 0.5rem 1rem;
+    text-align: right;
+    color: var(--gp-ink-700);
+    font-family: var(--font-mono, ui-monospace, monospace);
+    border-bottom: 1px solid var(--gp-ink-100);
+  }
+
+  .gp-books-sfp__table td:first-child {
+    text-align: left;
+    font-family: var(--font-body);
+    color: var(--gp-ink-700);
+  }
+
+  .gp-books-sfp__group td {
+    background: var(--gp-paper-2);
+    font-family: var(--font-body);
+    font-weight: 600;
+    color: var(--gp-ink-900);
+    text-align: left;
+  }
+
+  .gp-books-sfp__subtotal td {
+    font-weight: 700;
+    color: var(--gp-ink-900);
+  }
+
+  .gp-books-sfp__subtotal td:first-child {
+    font-family: var(--font-body);
+  }
+
+  .gp-books-sfp__balance td {
+    font-weight: 700;
+    color: var(--gp-emerald-700);
+    border-bottom: none;
+    border-top: 2px solid var(--gp-emerald-600);
+  }
+
+  .gp-books-sfp__balance td:first-child {
+    font-family: var(--font-body);
+  }
+
+  /* -- Chart of accounts tree -- */
+  .gp-books-coa-tree__body {
+    padding: 1.25rem 1rem;
+    display: grid;
+    gap: 1.25rem;
+  }
+
+  @media (min-width: 768px) {
+    .gp-books-coa-tree__body {
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+    }
+  }
+
+  .gp-books-coa-tree__parent {
+    margin: 0;
+    font-family: var(--font-heading);
+    font-weight: 600;
+    font-size: 0.95rem;
+    color: var(--gp-ink-900);
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+  }
+
+  .gp-books-coa-tree__children {
+    margin: 0.5rem 0 0;
+    padding-left: 1.1rem;
+    border-left: 2px solid var(--gp-emerald-100);
+    list-style: none;
+    display: grid;
+    gap: 0.4rem;
+  }
+
+  .gp-books-coa-tree__children li {
+    font-size: 0.85rem;
+    color: var(--gp-ink-600);
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+  }
+
+  .gp-books-coa-tree__code {
+    font-family: var(--font-mono, ui-monospace, monospace);
+    font-size: 0.7rem;
+    color: var(--gp-ink-400);
+    flex-shrink: 0;
+  }
+
+  /* -- Restricted balance rollforward -- */
+  .gp-books-rollforward__rows {
+    padding: 1.25rem 1rem;
+    display: grid;
+    gap: 0.85rem;
+  }
+
+  .gp-books-rollforward__row {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr);
+    gap: 0.35rem;
+  }
+
+  @media (min-width: 640px) {
+    .gp-books-rollforward__row {
+      grid-template-columns: minmax(10rem, 14rem) minmax(0, 1fr) minmax(6rem, auto);
+      align-items: center;
+      gap: 0.75rem;
+    }
+  }
+
+  .gp-books-rollforward__label {
+    font-size: 0.85rem;
+    color: var(--gp-ink-700);
+  }
+
+  .gp-books-rollforward__row.is-start .gp-books-rollforward__label,
+  .gp-books-rollforward__row.is-end .gp-books-rollforward__label {
+    font-weight: 600;
+    color: var(--gp-ink-900);
+  }
+
+  @property --bar {
+    syntax: "<percentage>";
+    inherits: true;
+    initial-value: 0%;
+  }
+
+  .gp-books-rollforward__bar-track {
+    display: block;
+    height: 8px;
+    border-radius: var(--radius-full);
+    background: var(--gp-paper-2);
+    overflow: hidden;
+  }
+
+  .gp-books-rollforward__bar {
+    display: block;
+    height: 100%;
+    width: var(--bar, 0%);
+    border-radius: var(--radius-full);
+    background: var(--gp-emerald-400);
+  }
+
+  .gp-books-rollforward__row.is-out .gp-books-rollforward__bar {
+    background: var(--gp-gold-500, var(--color-accent-500));
+  }
+
+  .gp-books-rollforward__row.is-start .gp-books-rollforward__bar,
+  .gp-books-rollforward__row.is-end .gp-books-rollforward__bar {
+    background: var(--gp-emerald-600);
+  }
+
+  :root.js .gp-books-rollforward__bar {
+    --bar: 0% !important;
+    transition: --bar 900ms ease;
+  }
+
+  :root.js .scroll-in.visible .gp-books-rollforward__bar {
+    --bar: revert !important;
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    .gp-books-rollforward__bar,
+    :root.js .gp-books-rollforward__bar,
+    :root.js .scroll-in.visible .gp-books-rollforward__bar {
+      --bar: revert !important;
+      width: var(--bar, 0%);
+      transition: none;
+    }
+  }
+
+  .gp-books-rollforward__amount {
+    font-family: var(--font-mono, ui-monospace, monospace);
+    font-size: 0.85rem;
+    font-weight: 600;
+    color: var(--gp-ink-900);
+    text-align: right;
+  }
+
+  .gp-books-rollforward__row.is-out .gp-books-rollforward__amount {
+    color: var(--gp-gold-800, var(--color-accent-700));
+  }
+
+  /* -- Audit trail timeline -- */
+  .gp-books-audit-trail__list {
+    margin: 0;
+    padding: 1.25rem 1rem 1.25rem 2.25rem;
+    list-style: none;
+    display: grid;
+    gap: 1.1rem;
+    position: relative;
+  }
+
+  .gp-books-audit-trail__list li {
+    position: relative;
+    display: grid;
+    grid-template-columns: auto 1fr;
+    gap: 0.25rem 0.75rem;
+  }
+
+  .gp-books-audit-trail__list li:not(:last-child)::after {
+    content: "";
+    position: absolute;
+    left: -1.55rem;
+    top: 1rem;
+    bottom: -1.1rem;
+    width: 2px;
+    background: var(--gp-emerald-100);
+  }
+
+  .gp-books-audit-trail__dot {
+    position: absolute;
+    left: -1.85rem;
+    top: 0.2rem;
+    width: 10px;
+    height: 10px;
+    border-radius: var(--radius-full);
+    background: var(--gp-emerald-600);
+  }
+
+  .gp-books-audit-trail__time {
+    grid-column: 1;
+    font-family: var(--font-mono, ui-monospace, monospace);
+    font-size: 0.7rem;
+    color: var(--gp-ink-500);
+  }
+
+  .gp-books-audit-trail__label {
+    grid-column: 2;
+    font-weight: 600;
+    font-size: 0.9rem;
+    color: var(--gp-ink-900);
+  }
+
+  .gp-books-audit-trail__detail {
+    grid-column: 1 / -1;
+    font-size: 0.825rem;
+    color: var(--gp-ink-600);
+    line-height: 1.5;
+  }
+
+  /* -- Stat callout row (audit posture) -- */
+  .gp-books-stat-row {
+    margin-top: 2.5rem;
+    display: grid;
+    justify-items: center;
+    gap: 1rem;
+    text-align: center;
+  }
+
+  /* -- Accent list summary (period close) -- */
+  .gp-books-close-summary {
+    margin-top: 18px;
+    max-width: 34rem;
+  }
+</style>

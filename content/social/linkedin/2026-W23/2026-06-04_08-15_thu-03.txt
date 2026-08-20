@@ -1,0 +1,5 @@
+Board packets get better when the grant page has an exception column.
+
+The board does not need every invoice.
+
+It does need to know which awards are off pace, which restricted balances changed, which reports are coming due, and what leadership needs to decide before the next meeting.

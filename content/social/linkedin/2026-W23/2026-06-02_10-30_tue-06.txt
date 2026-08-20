@@ -1,0 +1,15 @@
+SEFA prep starts with identifiers, not totals.
+
+For each federal award, capture:
+
+- federal agency
+- pass-through entity, if any
+- Assistance Listing Number
+- program name
+- cluster, if applicable
+- expenditures
+- amount passed to subrecipients
+
+2 CFR 200.510(b) tells you what belongs on the schedule.
+
+The cleaner the identifiers are at award setup, the less archaeology happens during single audit prep.

@@ -1,0 +1,9 @@
+For the Development Director who is told, every quarter, "just configure the CRM to track that."
+
+Donor CRMs were built around a contact record. Name, address, gift history, household, communication preferences. Everything hangs off the person.
+
+A grant is not a person. A grant is a contract with a period of performance, a budget by line item, a restricted purpose, a quarterly FFR cadence, and a closeout package. The funder is a contact. The grant is not.
+
+So you bolt fields onto the organization record. Award amount. Start date. End date. Then finance asks for a spend-down by line item against the approved budget, with releases from restriction, and the bolt-on falls over.
+
+This is a data model problem, not a configuration problem. The grant needs to be a first-class entity, not a custom field on a contact.

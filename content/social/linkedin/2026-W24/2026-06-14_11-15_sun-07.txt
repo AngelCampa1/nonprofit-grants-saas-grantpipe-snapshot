@@ -1,0 +1,9 @@
+GrantPipe includes Grants.gov federal opportunity search.
+
+That is the searchable federal source.
+
+Non-federal opportunities can be tracked manually or imported from CSV. Foundation prospect context can use public nonprofit filings where available.
+
+That boundary matters.
+
+We are not claiming a proprietary private foundation database. We are building the operating record around opportunities, awards, restrictions, reports, and evidence.

@@ -1,0 +1,11 @@
+We decided early not to charge a setup fee. Here is the thinking.
+
+A setup fee on a $329-a-month product is a way of saying we know onboarding is hard, please pay us for the friction. That is the wrong incentive. If onboarding is hard, fix onboarding. Do not bill for it.
+
+So we built CSV import for donors and grants on day one, scoped V1 to eight modules so the configuration surface stays small, and made the trial run on real data without a kickoff call. The trial is a month, no card. If it does not load and feel useful inside that month, no setup fee was going to save us.
+
+The other thing a setup fee does is filter out the orgs we want most. A $500K-budget shop that just got off Salesforce is not paying a four-figure setup fee to try the next thing. They have already paid that bill.
+
+See current offer terms at grantpipe.com/pricing.
+
+Public pricing at grantpipe.com/pricing if you want to see the rest.

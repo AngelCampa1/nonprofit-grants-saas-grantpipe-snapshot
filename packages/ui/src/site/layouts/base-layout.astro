@@ -1,0 +1,400 @@
+---
+import { ClientRouter } from "astro:transitions"
+import MetaTags from "../seo/meta-tags.astro"
+import SchemaMarkup from "../seo/schema-markup.astro"
+import StickyMobileCta from "../components/sticky-mobile-cta.astro"
+import { buildGoogleFontsUrl, buildFontCssOverrides, DEFAULT_FONTS } from "../lib/fonts"
+import {
+  buildPostHogBootstrapScript,
+  resolvePostHogBootstrapConfig,
+} from "../lib/analytics"
+import { buildBingUetScript } from "../lib/bing-uet"
+import {
+  buildChunkRecoveryScript,
+  buildDocumentBootstrapScript,
+  buildScrollRevealScript,
+} from "../lib/base-layout-scripts"
+import { ensureTrailingSlash } from "../lib/meta"
+import { generateThemeCSS } from "../lib/generate-theme-css"
+import { buildGraph, buildSitewideSchemas } from "../lib/schema-graph"
+import type { SiteAuthor, SiteTheme } from "../types"
+
+interface Props {
+  title: string
+  description: string
+  canonicalUrl?: string
+  siteName: string
+  ogImage?: string
+  ogImageWidth?: number
+  ogImageHeight?: number
+  ogImageAlt?: string
+  publishedAt?: string
+  updatedAt?: string
+  noindex?: boolean
+  ogType?: string
+  twitterSite?: string
+  articleAuthor?: string
+  articleSection?: string
+  articleTags?: string[]
+  themeColor?: string
+  appleTouchIcon?: string
+  showHeader?: boolean
+  showFooter?: boolean
+  theme?: SiteTheme
+  fonts?: { heading: string; body: string; mono?: string }
+  siteUrl?: string
+  siteLogo?: string
+  siteFounder?: SiteAuthor
+  siteSameAs?: string[]
+  suppressSitewideSchema?: boolean
+  preserveMetaTagCopy?: boolean
+  prevUrl?: string
+  nextUrl?: string
+  analyticsEnabled?: boolean
+  rssUrl?: string
+  enableScrollReveal?: boolean
+  disableAiSdrWidget?: boolean
+  /** Renders the sticky mobile CTA bar at the bottom of the viewport on small screens. */
+  showStickyMobileCta?: boolean
+  /** CTA button label for the sticky mobile bar. Defaults to "Start free trial". */
+  stickyCtaText?: string
+  /** CTA button href for the sticky mobile bar. Defaults to "/signup". */
+  stickyCtaTarget?: string
+}
+const {
+  showHeader = true,
+  showFooter = true,
+  disableAiSdrWidget = false,
+  showStickyMobileCta = false,
+  stickyCtaText = "Start free trial",
+  stickyCtaTarget = "/signup",
+  theme,
+  fonts,
+  themeColor,
+  appleTouchIcon,
+  prevUrl,
+  nextUrl,
+  analyticsEnabled = true,
+  rssUrl,
+  enableScrollReveal = true,
+  siteName,
+  siteUrl,
+  siteLogo,
+  siteFounder,
+  siteSameAs,
+  suppressSitewideSchema = false,
+  canonicalUrl: rawCanonicalUrl,
+  preserveMetaTagCopy = false,
+  ...props
+} = Astro.props
+const canonicalUrl = rawCanonicalUrl ? ensureTrailingSlash(rawCanonicalUrl) : undefined
+const resolvedRssUrl = rssUrl && siteUrl && rssUrl.startsWith("/")
+  ? new URL(rssUrl, siteUrl).toString()
+  : rssUrl
+
+const sitewideGraph = !suppressSitewideSchema && siteUrl
+  ? buildGraph(
+      buildSitewideSchemas({
+        siteName,
+        siteUrl,
+        logoUrl: siteLogo,
+        founder: siteFounder,
+        sameAs: siteSameAs,
+      }),
+    )
+  : undefined
+
+const resolvedFonts = fonts ?? DEFAULT_FONTS
+const fontsUrl = buildGoogleFontsUrl(resolvedFonts)
+const fontCssOverrides = buildFontCssOverrides(resolvedFonts)
+const themeCss = theme ? generateThemeCSS(theme) : ""
+const documentBootstrapScript = buildDocumentBootstrapScript()
+const chunkRecoveryScript = buildChunkRecoveryScript()
+const scrollRevealScript = buildScrollRevealScript()
+const postHogBootstrapConfig = resolvePostHogBootstrapConfig(
+  import.meta.env.PUBLIC_POSTHOG_KEY,
+  import.meta.env.PUBLIC_POSTHOG_HOST,
+)
+const postHogBootstrapScript = buildPostHogBootstrapScript(
+  siteName,
+  postHogBootstrapConfig.apiKey,
+  postHogBootstrapConfig.apiHost,
+)
+const bingUetScript = buildBingUetScript(import.meta.env.PUBLIC_BING_UET_ID)
+
+---
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    {appleTouchIcon && <link rel="apple-touch-icon" href={appleTouchIcon} />}
+    <link rel="sitemap" href="/sitemap-index.xml" />
+    {resolvedRssUrl && <link rel="alternate" type="application/rss+xml" title={`${siteName} RSS Feed`} href={resolvedRssUrl} />}
+    {themeColor && <meta name="theme-color" content={themeColor} />}
+    <MetaTags
+      siteName={siteName}
+      canonicalUrl={canonicalUrl}
+      siteUrl={siteUrl}
+      preserveAuthoredMetadata={preserveMetaTagCopy}
+      {...props}
+    />
+    {sitewideGraph && <SchemaMarkup graph={sitewideGraph} />}
+    <ClientRouter />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preload" as="style" href={fontsUrl} />
+    <link rel="stylesheet" href={fontsUrl} media="print" onload="this.media='all'" />
+    <noscript><link rel="stylesheet" href={fontsUrl} /></noscript>
+    <style set:html={fontCssOverrides} />
+    {themeCss && <style set:html={themeCss} />}
+    {/* Safe-area CSS custom properties for notched/dynamic-island devices. Used
+        by sticky-mobile-cta and any other component that needs to respect the
+        iOS safe area. The env() values resolve at paint time; the fallback 0px
+        applies on non-notched browsers. */}
+    <style is:inline set:html={":root{--safe-area-inset-top:env(safe-area-inset-top,0px);--safe-area-inset-right:env(safe-area-inset-right,0px);--safe-area-inset-bottom:env(safe-area-inset-bottom,0px);--safe-area-inset-left:env(safe-area-inset-left,0px)}"} />
+    <script is:inline set:html={documentBootstrapScript} />
+    <script is:inline set:html={chunkRecoveryScript} />
+    {analyticsEnabled && import.meta.env.PROD && (
+      <script>
+        import { initSentry } from "../lib/sentry-client";
+        const siteName = document.body.getAttribute("data-site-name") ?? "unknown";
+        initSentry(siteName);
+      </script>
+    )}
+    {analyticsEnabled && import.meta.env.PROD && postHogBootstrapConfig.apiKey && postHogBootstrapScript && (
+      <script is:inline set:html={postHogBootstrapScript} />
+    )}
+    {analyticsEnabled && import.meta.env.PROD && (
+      <script>
+        import { initCroTracking } from "../lib/cro-tracker";
+        initCroTracking();
+      </script>
+    )}
+    {analyticsEnabled && import.meta.env.PROD && (
+      <script is:inline set:html={bingUetScript} />
+    )}
+    <slot name="head" />
+    {prevUrl && <link rel="prev" href={prevUrl} />}
+    {nextUrl && <link rel="next" href={nextUrl} />}
+  </head>
+  <body class="bg-brand-surface text-brand-text min-h-screen font-body antialiased" data-site-name={siteName}>
+    <a
+      href="#main-content"
+      class="sr-only focus:not-sr-only focus:fixed focus:top-4 focus:left-4 focus:z-50 focus:px-4 focus:py-2 focus:bg-brand-primary focus:text-neutral-50 focus:rounded-sm focus:text-sm focus:font-medium focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[var(--gp-emerald-600)] focus-visible:ring-offset-2 focus-visible:ring-offset-[var(--gp-paper)]"
+    >
+      Skip to main content
+    </a>
+    {showHeader && <slot name="header" />}
+    <main id="main-content" class="overflow-x-hidden" data-pagefind-body>
+      <slot />
+    </main>
+    {showFooter && <slot name="footer" />}
+    {!disableAiSdrWidget && (
+      <>
+        <div id="ventora-ai-sdr-root" data-product-id="grantpipe"></div>
+        <script is:inline>
+          (function () {
+        var root = document.getElementById("ventora-ai-sdr-root");
+        if (!root) return;
+        var widgetScriptSrc = "https://ventora-ai-sdr-worker.example-account.workers.dev/client/ai-sdr.global.js";
+        // The worker bundle renders a fully self-contained launcher + fixed panel.
+        // The site only owns the lazy-load launcher ("Ask GrantPipe") and drives the
+        // widget through its open()/close()/isOpen() handle. We suppress the worker's
+        // own launcher (we provide ours) and its founder-handoff pill (removed by
+        // product decision) via CSS; the grantpipe green brand preset is applied by
+        // the worker automatically from productId.
+        var css = "#ventora-ai-sdr-root{position:fixed;right:20px;bottom:20px;z-index:2147483000;font-family:Inter,system-ui,sans-serif}#ventora-ai-sdr-root button{font:inherit}#ventora-ai-sdr-toggle{min-height:48px;border:1px solid rgba(21,128,61,.22);border-radius:999px;background:#15803d;color:#fff;box-shadow:0 18px 40px rgba(21,128,61,.25);padding:13px 17px;font-weight:800;cursor:pointer;transition:transform .16s ease,box-shadow .16s ease}#ventora-ai-sdr-toggle:hover{transform:translateY(-1px);box-shadow:0 20px 46px rgba(21,128,61,.31)}#ventora-ai-sdr-toggle:focus-visible{outline:3px solid rgba(21,128,61,.28);outline-offset:2px}#ventora-ai-sdr-error{margin-top:10px;max-width:288px;border:1px solid #f3c9c9;border-radius:10px;background:#fff;padding:10px 12px;font-size:13px;line-height:1.45;color:#b91c1c;box-shadow:0 16px 40px rgba(16,32,21,.14)}[data-ai-sdr-launcher]{display:none!important}[data-ai-sdr-handoff-button]{display:none!important}@media(max-width:480px){#ventora-ai-sdr-root{right:12px;bottom:88px}#ventora-ai-sdr-toggle{padding:10px 14px;font-size:13px}}";
+        var style = document.createElement("style");
+        style.textContent = css;
+        document.head.appendChild(style);
+        root.innerHTML = '<button id="ventora-ai-sdr-toggle" type="button" aria-expanded="false">Ask GrantPipe</button><div id="ventora-ai-sdr-error" role="alert" hidden></div>';
+        var toggle = document.getElementById("ventora-ai-sdr-toggle");
+        var errorBox = document.getElementById("ventora-ai-sdr-error");
+        var widget = null;
+        var widgetScriptPromise = null;
+        var booting = false;
+        function showError() {
+          if (!errorBox) return;
+          errorBox.textContent = "Assistant failed to load. Refresh and try again.";
+          errorBox.hidden = false;
+        }
+        function clearError() {
+          if (!errorBox) return;
+          errorBox.textContent = "";
+          errorBox.hidden = true;
+        }
+        function isOpen() {
+          return widget !== null && typeof widget.isOpen === "function" && widget.isOpen();
+        }
+        function effectivelyClosed() {
+          // The worker keeps isOpen() true through its close/exit animation, so the
+          // handle alone lags reality by ~1s+ on close. Once the panel is hidden or
+          // animating out, treat the widget as closed regardless of isOpen(); this
+          // drives both aria-expanded and focus restoration off the panel's real
+          // state instead of the stale handle.
+          var panel = root.querySelector("[data-ai-sdr-panel]");
+          if (panel) {
+            var state = panel.getAttribute("data-state");
+            if (panel.hidden || state === "exiting" || state === "closing" || state === "closed") {
+              return true;
+            }
+          }
+          return !isOpen();
+        }
+        function reflectExpanded() {
+          if (toggle) toggle.setAttribute("aria-expanded", effectivelyClosed() ? "false" : "true");
+        }
+        var panelObserver = null;
+        function syncFromPanel() {
+          reflectExpanded();
+          // The worker restores focus to its OWN launcher on close, which we hide
+          // via CSS, so focus can fall to <body>. When the widget closes (including
+          // via the worker's own close button or Escape), pull focus back to our
+          // visible toggle if it was orphaned to <body> or trapped in the panel.
+          if (effectivelyClosed() && toggle) {
+            var active = document.activeElement;
+            var panel = root.querySelector("[data-ai-sdr-panel]");
+            if (active === null || active === document.body || (panel && panel.contains(active))) {
+              toggle.focus();
+            }
+          }
+        }
+        function watchPanel() {
+          if (panelObserver || typeof MutationObserver === "undefined") return;
+          var panel = root.querySelector("[data-ai-sdr-panel]");
+          if (!panel) return;
+          panelObserver = new MutationObserver(syncFromPanel);
+          panelObserver.observe(panel, { attributes: true, attributeFilter: ["hidden", "data-state"] });
+        }
+        function trackWidgetError(stage) {
+          try {
+            if (window.posthog && typeof window.posthog.capture === "function") {
+              window.posthog.capture("ai_sdr_widget_error", { stage: stage, surface: "marketing-site" });
+            }
+          } catch (err) {
+            /* analytics must never break the widget */
+          }
+        }
+        function waitForWidgetScript() {
+          if (window.VentoraAiSdr) return Promise.resolve();
+          if (widgetScriptPromise) return widgetScriptPromise;
+          widgetScriptPromise = new Promise(function (resolve, reject) {
+            var script = document.createElement("script");
+            script.src = widgetScriptSrc;
+            script.defer = true;
+            script.crossOrigin = "anonymous";
+            script.onload = function () {
+              resolve();
+            };
+            script.onerror = function () {
+              widgetScriptPromise = null;
+              reject(new Error("AI SDR widget script failed"));
+            };
+            document.head.appendChild(script);
+          });
+          return widgetScriptPromise;
+        }
+        function createWidget() {
+          if (widget) return true;
+          if (!window.VentoraAiSdr) return false;
+          widget = window.VentoraAiSdr.createAiSdrWidget({
+            target: root,
+            api: { baseUrl: "/api/ai-sdr" },
+            session: { productId: "grantpipe", metadata: { surface: "marketing-site" } },
+            copy: { emptySuggestions: ["Track a restricted fund", "Prep for a report deadline"] }
+          });
+          return true;
+        }
+        function openWidget() {
+          if (!widget) return;
+          // Reflect open intent on the launcher immediately: the worker renders its
+          // panel container synchronously, but open() only resolves after session
+          // creation, so without this aria-expanded lags the visible panel by the
+          // network round-trip. The reject path below resets it if open() fails.
+          if (toggle) toggle.setAttribute("aria-expanded", "true");
+          var opening = Promise.resolve(widget.open());
+          // Start observing the panel NOW, not only once open() resolves. The panel
+          // exists synchronously, and the user can close (Escape / the worker's own
+          // in-panel close button) during the ~1s session-creation window; if the
+          // observer only started in .then(), aria-expanded would stay "true" over an
+          // already-hidden panel until open() finally settled. watchPanel() is
+          // idempotent, so the .then/.catch calls below are harmless retries in case
+          // the panel mounts a tick late.
+          watchPanel();
+          opening
+            .then(function () {
+              watchPanel();
+              reflectExpanded();
+            })
+            .catch(function () {
+              watchPanel();
+              showError();
+              reflectExpanded();
+              if (toggle) toggle.focus();
+              trackWidgetError("open");
+            });
+        }
+        function closeWidget() {
+          if (!widget) return;
+          // Mirror the optimistic open path: reflect the closed state immediately.
+          // widget.close() hides the panel at once but keeps isOpen() true through the
+          // exit animation, so deferring to reflectExpanded()/isOpen() here would strand
+          // aria-expanded="true" over an invisible panel. syncFromPanel keeps worker-
+          // driven closes correct via the panel's hidden/exiting state.
+          if (toggle) toggle.setAttribute("aria-expanded", "false");
+          widget.close();
+          if (toggle) toggle.focus();
+        }
+        function boot() {
+          if (booting) return;
+          booting = true;
+          clearError();
+          waitForWidgetScript()
+            .then(function () {
+              booting = false;
+              if (!createWidget()) {
+                showError();
+                trackWidgetError("load");
+                return;
+              }
+              openWidget();
+            })
+            .catch(function () {
+              booting = false;
+              showError();
+              trackWidgetError("load");
+            });
+        }
+        function onToggle() {
+          clearError();
+          if (widget) {
+            if (isOpen()) {
+              closeWidget();
+            } else {
+              openWidget();
+            }
+            return;
+          }
+          boot();
+        }
+        toggle.addEventListener("click", onToggle);
+        document.addEventListener("keydown", function (event) {
+          if (event.key === "Escape" && isOpen()) {
+            event.stopPropagation();
+            closeWidget();
+          }
+        });
+          })();
+        </script>
+      </>
+    )}
+    {showStickyMobileCta && (
+      <StickyMobileCta ctaText={stickyCtaText} ctaTarget={stickyCtaTarget} />
+    )}
+    {enableScrollReveal && (
+      <script is:inline set:html={scrollRevealScript} />
+    )}
+  </body>
+</html>

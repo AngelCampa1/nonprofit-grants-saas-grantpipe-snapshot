@@ -1,0 +1,1 @@
+ALTER TABLE "restriction_releases" ADD COLUMN "source" text DEFAULT 'manual' NOT NULL;

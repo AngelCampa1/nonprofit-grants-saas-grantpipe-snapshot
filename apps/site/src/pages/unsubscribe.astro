@@ -1,0 +1,60 @@
+---
+import { getPublicApiBaseUrl } from "@grantpipe/ui/site/lib/public-api-url"
+import "../styles/global.css"
+import BaseLayout from "@grantpipe/ui/site/layouts/base-layout.astro"
+import SiteHeader from "@grantpipe/ui/site/components/site-header.astro"
+import SiteFooter from "@grantpipe/ui/site/components/site-footer.astro"
+import { UnsubscribePage } from "@grantpipe/ui/site/components/unsubscribe-handler"
+import { siteConfig, getSignupCtaTarget } from "@/config/site"
+import { getAppLoginUrl } from "@/lib/app-url"
+const publicApiUrl = getPublicApiBaseUrl()
+
+---
+
+<BaseLayout
+  title={`Unsubscribe | ${siteConfig.name}`}
+  description="Manage your GrantPipe email preferences."
+  canonicalUrl={`https://${siteConfig.domain}/unsubscribe/`}
+  siteName={siteConfig.name}
+  ogType="website"
+  twitterSite={siteConfig.social?.twitterHandle}
+  theme={siteConfig.theme}
+  themeColor={siteConfig.theme.primary}
+  appleTouchIcon={siteConfig.appleTouchIcon}
+  noindex={true}
+  fonts={siteConfig.theme.fonts}
+>
+  <SiteHeader
+    slot="header"
+    siteName={siteConfig.name}
+    navItems={siteConfig.nav?.items}
+    ctaText={siteConfig.funnel.bofu.ctaText}
+    ctaHref={getSignupCtaTarget()}
+    loginHref={getAppLoginUrl()}
+    logoLight={siteConfig.logo?.light}
+  >
+  </SiteHeader>
+
+  <div class="flex min-h-[60vh] items-center justify-center px-4">
+    <div class="w-full max-w-md py-16 text-center">
+      <p class="editorial-kicker mb-4 justify-center">Email preferences</p>
+      <h1 class="font-heading mb-3 text-3xl font-bold text-brand-text">
+        Update your subscription
+      </h1>
+      <p class="mb-8 text-base text-brand-muted">
+        Manage which GrantPipe emails you receive, or unsubscribe entirely. Changes take effect immediately.
+      </p>
+      <UnsubscribePage client:load apiUrl={publicApiUrl} />
+    </div>
+  </div>
+
+  <SiteFooter
+    slot="footer"
+    siteName={siteConfig.name}
+    tagline={siteConfig.tagline}
+    linkGroups={siteConfig.footer?.linkGroups}
+    legalLinks={siteConfig.footer?.legalLinks}
+    contactEmail={siteConfig.contactEmail}
+    logoLight={siteConfig.logo?.light}
+  />
+</BaseLayout>

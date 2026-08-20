@@ -1,0 +1,19847 @@
+import type { MarketingKnowledgeIndex } from "../types";
+
+export const MARKETING_KNOWLEDGE_INDEX: MarketingKnowledgeIndex = {
+  generatedAt: "2026-05-09",
+  entries: [
+  {
+    "id": "alternatives:airtable-alternative-nonprofit-database",
+    "title": "Airtable Alternative for Nonprofit Database Management",
+    "collection": "alternatives",
+    "slug": "airtable-alternative-nonprofit-database",
+    "path": "alternatives/airtable-alternative-nonprofit-database.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "alternatives:amplifund-alternative",
+    "title": "Best AmpliFund Alternative for Nonprofits Managing Federal Grants (2026)",
+    "collection": "alternatives",
+    "slug": "amplifund-alternative",
+    "path": "alternatives/amplifund-alternative.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "alternatives:aplos-alternative-donor-grant-management",
+    "title": "Best Aplos Alternative for Nonprofits Managing Donors and Grants Together",
+    "collection": "alternatives",
+    "slug": "aplos-alternative-donor-grant-management",
+    "path": "alternatives/aplos-alternative-donor-grant-management.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "alternatives:apricot-bonterra-alternative",
+    "title": "Apricot by Bonterra Alternative: When Case Management Software Isn't Enough",
+    "collection": "alternatives",
+    "slug": "apricot-bonterra-alternative",
+    "path": "alternatives/apricot-bonterra-alternative.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "alternatives:blackbaud-alternative",
+    "title": "Best Blackbaud Alternative for Mid-Sized Nonprofits",
+    "collection": "alternatives",
+    "slug": "blackbaud-alternative",
+    "path": "alternatives/blackbaud-alternative.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "alternatives:blackbaud-alternative-mid-size-nonprofits",
+    "title": "Blackbaud Alternative for Mid-Size Nonprofits: GrantPipe vs Raiser's Edge",
+    "collection": "alternatives",
+    "slug": "blackbaud-alternative-mid-size-nonprofits",
+    "path": "alternatives/blackbaud-alternative-mid-size-nonprofits.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "alternatives:bloomerang-alternative",
+    "title": "Best Bloomerang Alternative for Nonprofits That Manage Grants",
+    "collection": "alternatives",
+    "slug": "bloomerang-alternative",
+    "path": "alternatives/bloomerang-alternative.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "alternatives:bloomerang-alternative-active-grants",
+    "title": "Best Bloomerang Alternative When You're Managing Active Grants",
+    "collection": "alternatives",
+    "slug": "bloomerang-alternative-active-grants",
+    "path": "alternatives/bloomerang-alternative-active-grants.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "alternatives:bloomerang-alternative-executive-directors",
+    "title": "Bloomerang Alternative for Executive Directors: GrantPipe vs Bloomerang",
+    "collection": "alternatives",
+    "slug": "bloomerang-alternative-executive-directors",
+    "path": "alternatives/bloomerang-alternative-executive-directors.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "alternatives:bonterra-alternative",
+    "title": "Best Bonterra Alternative for Grant-Funded Nonprofits",
+    "collection": "alternatives",
+    "slug": "bonterra-alternative",
+    "path": "alternatives/bonterra-alternative.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "alternatives:charityengine-alternative",
+    "title": "CharityEngine Alternative: When Fundraising Power Is Not Enough for Grant-Active Nonprofits",
+    "collection": "alternatives",
+    "slug": "charityengine-alternative",
+    "path": "alternatives/charityengine-alternative.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "alternatives:classy-alternative",
+    "title": "Best Classy Alternative for Nonprofits That Need More Than Campaign Pages",
+    "collection": "alternatives",
+    "slug": "classy-alternative",
+    "path": "alternatives/classy-alternative.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "alternatives:donorbox-alternative",
+    "title": "Best Donorbox Alternative for Nonprofits Growing Beyond the Donation Form",
+    "collection": "alternatives",
+    "slug": "donorbox-alternative",
+    "path": "alternatives/donorbox-alternative.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "alternatives:donorperfect-alternative",
+    "title": "DonorPerfect Alternative: Transparent Pricing and Full Grant Compliance",
+    "collection": "alternatives",
+    "slug": "donorperfect-alternative",
+    "path": "alternatives/donorperfect-alternative.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "alternatives:donorperfect-alternative-restricted-funds",
+    "title": "Best DonorPerfect Alternative for Restricted Fund Tracking",
+    "collection": "alternatives",
+    "slug": "donorperfect-alternative-restricted-funds",
+    "path": "alternatives/donorperfect-alternative-restricted-funds.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "alternatives:ecivis-alternative",
+    "title": "Best eCivis Alternative for Nonprofits and Local Government Grants (2026)",
+    "collection": "alternatives",
+    "slug": "ecivis-alternative",
+    "path": "alternatives/ecivis-alternative.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "alternatives:every-action-alternative",
+    "title": "Best EveryAction Alternative for Nonprofits Without a Campaign Arm",
+    "collection": "alternatives",
+    "slug": "every-action-alternative",
+    "path": "alternatives/every-action-alternative.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "alternatives:fluxx-alternative",
+    "title": "Best Fluxx Alternative for Nonprofits That Receive Grants (2026)",
+    "collection": "alternatives",
+    "slug": "fluxx-alternative",
+    "path": "alternatives/fluxx-alternative.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "alternatives:foundant-alternative",
+    "title": "Best Foundant Alternative for Mid-Sized Nonprofits (2026)",
+    "collection": "alternatives",
+    "slug": "foundant-alternative",
+    "path": "alternatives/foundant-alternative.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "alternatives:funraise-alternative",
+    "title": "Best Funraise Alternative for Nonprofits Ready to Grow Beyond the Form",
+    "collection": "alternatives",
+    "slug": "funraise-alternative",
+    "path": "alternatives/funraise-alternative.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "alternatives:givebutter-alternative",
+    "title": "Best Givebutter Alternative When You Need Donor Management and Grant Compliance",
+    "collection": "alternatives",
+    "slug": "givebutter-alternative",
+    "path": "alternatives/givebutter-alternative.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "alternatives:givebutter-alternative-donor-crm-grant-workflows",
+    "title": "Best Givebutter Alternative When You Need a Full Donor CRM and Grant Workflows",
+    "collection": "alternatives",
+    "slug": "givebutter-alternative-donor-crm-grant-workflows",
+    "path": "alternatives/givebutter-alternative-donor-crm-grant-workflows.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "alternatives:google-sheets-alternative-grant-tracking",
+    "title": "Beyond Google Sheets: Grant Tracking Software for Growing Nonprofits",
+    "collection": "alternatives",
+    "slug": "google-sheets-alternative-grant-tracking",
+    "path": "alternatives/google-sheets-alternative-grant-tracking.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "alternatives:granthub-alternative",
+    "title": "Best GrantHub Alternative for Nonprofits That Need Donor CRM and Compliance",
+    "collection": "alternatives",
+    "slug": "granthub-alternative",
+    "path": "alternatives/granthub-alternative.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "alternatives:granthub-alternative-restricted-funds",
+    "title": "Best GrantHub Alternative for Nonprofits Tracking Restricted Funds",
+    "collection": "alternatives",
+    "slug": "granthub-alternative-restricted-funds",
+    "path": "alternatives/granthub-alternative-restricted-funds.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "alternatives:hubspot-nonprofit-alternative",
+    "title": "HubSpot for Nonprofits Alternative: Why Grant-Reliant Orgs Look Elsewhere",
+    "collection": "alternatives",
+    "slug": "hubspot-nonprofit-alternative",
+    "path": "alternatives/hubspot-nonprofit-alternative.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "alternatives:instrumentl-alternative",
+    "title": "Best Instrumentl Alternative for Grant Compliance (2026)",
+    "collection": "alternatives",
+    "slug": "instrumentl-alternative",
+    "path": "alternatives/instrumentl-alternative.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "alternatives:instrumentl-alternative-grant-compliance",
+    "title": "Best Instrumentl Alternative for Post-Award Grant Compliance",
+    "collection": "alternatives",
+    "slug": "instrumentl-alternative-grant-compliance",
+    "path": "alternatives/instrumentl-alternative-grant-compliance.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "alternatives:keela-alternative",
+    "title": "Best Keela Alternative for Grant-Receiving Nonprofits",
+    "collection": "alternatives",
+    "slug": "keela-alternative",
+    "path": "alternatives/keela-alternative.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "alternatives:keela-alternative-grant-compliance",
+    "title": "Keela Alternative for Grant Compliance: GrantPipe vs Keela",
+    "collection": "alternatives",
+    "slug": "keela-alternative-grant-compliance",
+    "path": "alternatives/keela-alternative-grant-compliance.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "alternatives:keela-alternative-grant-funded-nonprofits",
+    "title": "Best Keela Alternative for Grant-Funded Nonprofits",
+    "collection": "alternatives",
+    "slug": "keela-alternative-grant-funded-nonprofits",
+    "path": "alternatives/keela-alternative-grant-funded-nonprofits.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "alternatives:kindful-alternative",
+    "title": "Best Kindful Alternative for Nonprofits (After the Bloomerang Acquisition)",
+    "collection": "alternatives",
+    "slug": "kindful-alternative",
+    "path": "alternatives/kindful-alternative.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "alternatives:little-green-light-alternative",
+    "title": "Best Little Green Light Alternative When You Start Managing Grants",
+    "collection": "alternatives",
+    "slug": "little-green-light-alternative",
+    "path": "alternatives/little-green-light-alternative.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "alternatives:little-green-light-alternative-3-active-grants",
+    "title": "Best Little Green Light Alternative When You Manage 3 or More Active Grants",
+    "collection": "alternatives",
+    "slug": "little-green-light-alternative-3-active-grants",
+    "path": "alternatives/little-green-light-alternative-3-active-grants.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "alternatives:memberclicks-alternative",
+    "title": "MemberClicks Alternative: Grant-Focused Nonprofits Need Different Software",
+    "collection": "alternatives",
+    "slug": "memberclicks-alternative",
+    "path": "alternatives/memberclicks-alternative.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "alternatives:microsoft-dynamics-nonprofit-alternative",
+    "title": "Microsoft Dynamics Nonprofit Alternative: Purpose-Built vs. Enterprise ERP",
+    "collection": "alternatives",
+    "slug": "microsoft-dynamics-nonprofit-alternative",
+    "path": "alternatives/microsoft-dynamics-nonprofit-alternative.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "alternatives:monday-com-alternative-grant-tracking",
+    "title": "Monday.com Alternative for Grant Tracking: Why Nonprofits Switch",
+    "collection": "alternatives",
+    "slug": "monday-com-alternative-grant-tracking",
+    "path": "alternatives/monday-com-alternative-grant-tracking.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "alternatives:neon-crm-alternative",
+    "title": "Neon CRM Alternative for Nonprofits That Need Grant Compliance",
+    "collection": "alternatives",
+    "slug": "neon-crm-alternative",
+    "path": "alternatives/neon-crm-alternative.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "alternatives:neon-crm-alternative-grant-compliance",
+    "title": "Best Neon CRM Alternative for Grant Compliance",
+    "collection": "alternatives",
+    "slug": "neon-crm-alternative-grant-compliance",
+    "path": "alternatives/neon-crm-alternative-grant-compliance.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "alternatives:neon-one-alternative",
+    "title": "Best Neon One Alternative for Nonprofits Tired of Multi-Module Sprawl",
+    "collection": "alternatives",
+    "slug": "neon-one-alternative",
+    "path": "alternatives/neon-one-alternative.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "alternatives:network-for-good-alternative",
+    "title": "Network for Good Alternative: What Changed After the Bonterra Acquisition",
+    "collection": "alternatives",
+    "slug": "network-for-good-alternative",
+    "path": "alternatives/network-for-good-alternative.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "alternatives:nimble-ams-alternative",
+    "title": "Best Nimble AMS Alternative for Nonprofits That Do Not Need Association Management",
+    "collection": "alternatives",
+    "slug": "nimble-ams-alternative",
+    "path": "alternatives/nimble-ams-alternative.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "alternatives:notion-alternative-grant-management",
+    "title": "Notion Alternative for Grant Management: When Wiki Tools Aren't Enough",
+    "collection": "alternatives",
+    "slug": "notion-alternative-grant-management",
+    "path": "alternatives/notion-alternative-grant-management.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "alternatives:qgiv-alternative",
+    "title": "Best Qgiv Alternative for Nonprofits (After the Bloomerang Acquisition)",
+    "collection": "alternatives",
+    "slug": "qgiv-alternative",
+    "path": "alternatives/qgiv-alternative.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "alternatives:quickbooks-alternative-restricted-grant-funds",
+    "title": "Best QuickBooks Alternative for Nonprofits Tracking Restricted Grant Funds",
+    "collection": "alternatives",
+    "slug": "quickbooks-alternative-restricted-grant-funds",
+    "path": "alternatives/quickbooks-alternative-restricted-grant-funds.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "alternatives:sage-intacct-alternative-mid-sized-nonprofits",
+    "title": "Sage Intacct Alternative for Mid-Sized Grant-Funded Nonprofits",
+    "collection": "alternatives",
+    "slug": "sage-intacct-alternative-mid-sized-nonprofits",
+    "path": "alternatives/sage-intacct-alternative-mid-sized-nonprofits.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "alternatives:salesforce-nonprofit-alternative",
+    "title": "Best Salesforce Nonprofit Cloud Alternative Without the Consultants",
+    "collection": "alternatives",
+    "slug": "salesforce-nonprofit-alternative",
+    "path": "alternatives/salesforce-nonprofit-alternative.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "alternatives:salesforce-nonprofit-alternative-no-consultants",
+    "title": "Salesforce Nonprofit Alternative Without Consultants: GrantPipe vs NPSP",
+    "collection": "alternatives",
+    "slug": "salesforce-nonprofit-alternative-no-consultants",
+    "path": "alternatives/salesforce-nonprofit-alternative-no-consultants.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "alternatives:smartsimple-alternative-mid-market-nonprofits",
+    "title": "SmartSimple Alternative for Mid-Market Nonprofits",
+    "collection": "alternatives",
+    "slug": "smartsimple-alternative-mid-market-nonprofits",
+    "path": "alternatives/smartsimple-alternative-mid-market-nonprofits.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "alternatives:submittable-alternative",
+    "title": "Best Submittable Alternative for Grant-Receiving Nonprofits (2026)",
+    "collection": "alternatives",
+    "slug": "submittable-alternative",
+    "path": "alternatives/submittable-alternative.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "alternatives:virtuous-alternative",
+    "title": "Best Virtuous Alternative for Nonprofits That Need Grant Compliance",
+    "collection": "alternatives",
+    "slug": "virtuous-alternative",
+    "path": "alternatives/virtuous-alternative.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "alternatives:virtuous-alternative-grant-compliance-needs",
+    "title": "Best Virtuous Alternative for Nonprofits With Grant Compliance Needs",
+    "collection": "alternatives",
+    "slug": "virtuous-alternative-grant-compliance-needs",
+    "path": "alternatives/virtuous-alternative-grant-compliance-needs.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "alternatives:wave-accounting-alternative-nonprofits",
+    "title": "Wave Accounting Alternative for Nonprofits: When Free Accounting Is Not Enough",
+    "collection": "alternatives",
+    "slug": "wave-accounting-alternative-nonprofits",
+    "path": "alternatives/wave-accounting-alternative-nonprofits.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "alternatives:wild-apricot-alternative",
+    "title": "Wild Apricot Alternative for Nonprofits: What to Use Instead",
+    "collection": "alternatives",
+    "slug": "wild-apricot-alternative",
+    "path": "alternatives/wild-apricot-alternative.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "alternatives:wizehive-alternative",
+    "title": "Best WizeHive Zengine Alternative for Nonprofits (2026)",
+    "collection": "alternatives",
+    "slug": "wizehive-alternative",
+    "path": "alternatives/wizehive-alternative.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "alternatives:zoho-nonprofit-alternative",
+    "title": "Zoho CRM for Nonprofits Alternative: When Customization Costs More Than It Saves",
+    "collection": "alternatives",
+    "slug": "zoho-nonprofit-alternative",
+    "path": "alternatives/zoho-nonprofit-alternative.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "benchmarks:chicago-nonprofit-sector-benchmarks-2026",
+    "title": "Chicago Nonprofit Sector Benchmarks 2026",
+    "collection": "benchmarks",
+    "slug": "chicago-nonprofit-sector-benchmarks-2026",
+    "path": "benchmarks/chicago-nonprofit-sector-benchmarks-2026.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "benchmarks:donor-retention-benchmarks-2026",
+    "title": "Nonprofit Donor Retention Benchmarks 2026",
+    "collection": "benchmarks",
+    "slug": "donor-retention-benchmarks-2026",
+    "path": "benchmarks/donor-retention-benchmarks-2026.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "benchmarks:grant-compliance-benchmarks-2026",
+    "title": "Grant Compliance Benchmarks 2026",
+    "collection": "benchmarks",
+    "slug": "grant-compliance-benchmarks-2026",
+    "path": "benchmarks/grant-compliance-benchmarks-2026.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "benchmarks:grant-funding-benchmarks-2026",
+    "title": "Grant Funding Benchmarks 2026: Revenue Composition, Concentration Risk, and Win Rates by Nonprofit Type",
+    "collection": "benchmarks",
+    "slug": "grant-funding-benchmarks-2026",
+    "path": "benchmarks/grant-funding-benchmarks-2026.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "benchmarks:houston-nonprofit-sector-benchmarks-2026",
+    "title": "Houston Nonprofit Sector Benchmarks 2026",
+    "collection": "benchmarks",
+    "slug": "houston-nonprofit-sector-benchmarks-2026",
+    "path": "benchmarks/houston-nonprofit-sector-benchmarks-2026.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "benchmarks:jacksonville-nonprofit-sector-benchmarks-2026",
+    "title": "Jacksonville nonprofit sector benchmarks 2026",
+    "collection": "benchmarks",
+    "slug": "jacksonville-nonprofit-sector-benchmarks-2026",
+    "path": "benchmarks/jacksonville-nonprofit-sector-benchmarks-2026.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "benchmarks:los-angeles-nonprofit-sector-benchmarks-2026",
+    "title": "Los Angeles Nonprofit Sector Benchmarks 2026",
+    "collection": "benchmarks",
+    "slug": "los-angeles-nonprofit-sector-benchmarks-2026",
+    "path": "benchmarks/los-angeles-nonprofit-sector-benchmarks-2026.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "benchmarks:memphis-nonprofit-sector-benchmarks-2026",
+    "title": "Memphis nonprofit sector benchmarks 2026",
+    "collection": "benchmarks",
+    "slug": "memphis-nonprofit-sector-benchmarks-2026",
+    "path": "benchmarks/memphis-nonprofit-sector-benchmarks-2026.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "benchmarks:nonprofit-accounting-software-benchmarks-2026",
+    "title": "Nonprofit Accounting Software Benchmarks 2026",
+    "collection": "benchmarks",
+    "slug": "nonprofit-accounting-software-benchmarks-2026",
+    "path": "benchmarks/nonprofit-accounting-software-benchmarks-2026.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "benchmarks:nonprofit-audit-benchmarks-2026",
+    "title": "Nonprofit Single Audit Benchmarks 2026",
+    "collection": "benchmarks",
+    "slug": "nonprofit-audit-benchmarks-2026",
+    "path": "benchmarks/nonprofit-audit-benchmarks-2026.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "benchmarks:nonprofit-crm-adoption-benchmarks-2026",
+    "title": "Nonprofit CRM Adoption Benchmarks 2026",
+    "collection": "benchmarks",
+    "slug": "nonprofit-crm-adoption-benchmarks-2026",
+    "path": "benchmarks/nonprofit-crm-adoption-benchmarks-2026.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "benchmarks:nonprofit-financial-health-benchmarks-2026",
+    "title": "Nonprofit Financial Health Benchmarks 2026: Operating Reserves, Liquidity, and Structural Deficit Rates",
+    "collection": "benchmarks",
+    "slug": "nonprofit-financial-health-benchmarks-2026",
+    "path": "benchmarks/nonprofit-financial-health-benchmarks-2026.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "benchmarks:nonprofit-overhead-rate-benchmarks",
+    "title": "Nonprofit Overhead Rate Benchmarks 2026: What the Numbers Actually Mean",
+    "collection": "benchmarks",
+    "slug": "nonprofit-overhead-rate-benchmarks",
+    "path": "benchmarks/nonprofit-overhead-rate-benchmarks.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "benchmarks:nyc-nonprofit-sector-benchmarks-2026",
+    "title": "NYC Nonprofit Sector Benchmarks 2026",
+    "collection": "benchmarks",
+    "slug": "nyc-nonprofit-sector-benchmarks-2026",
+    "path": "benchmarks/nyc-nonprofit-sector-benchmarks-2026.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "benchmarks:raleigh-nonprofit-sector-benchmarks-2026",
+    "title": "Raleigh nonprofit sector benchmarks 2026",
+    "collection": "benchmarks",
+    "slug": "raleigh-nonprofit-sector-benchmarks-2026",
+    "path": "benchmarks/raleigh-nonprofit-sector-benchmarks-2026.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "benchmarks:washington-dc-nonprofit-sector-benchmarks-2026",
+    "title": "DC Nonprofit Sector Benchmarks 2026",
+    "collection": "benchmarks",
+    "slug": "washington-dc-nonprofit-sector-benchmarks-2026",
+    "path": "benchmarks/washington-dc-nonprofit-sector-benchmarks-2026.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "city-pages:albuquerque",
+    "title": "Nonprofit Grant & Donor Management Software for Albuquerque",
+    "collection": "city-pages",
+    "slug": "albuquerque",
+    "path": "city-pages/albuquerque.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "city-pages:anaheim",
+    "title": "Nonprofit grant and donor management software for Anaheim",
+    "collection": "city-pages",
+    "slug": "anaheim",
+    "path": "city-pages/anaheim.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "city-pages:anchorage",
+    "title": "Nonprofit Grant & Donor Management Software for Anchorage",
+    "collection": "city-pages",
+    "slug": "anchorage",
+    "path": "city-pages/anchorage.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "city-pages:arlington",
+    "title": "Nonprofit grant and donor management software for Arlington",
+    "collection": "city-pages",
+    "slug": "arlington",
+    "path": "city-pages/arlington.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "city-pages:atlanta",
+    "title": "Nonprofit Grant & Donor Management Software for Atlanta",
+    "collection": "city-pages",
+    "slug": "atlanta",
+    "path": "city-pages/atlanta.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "city-pages:aurora",
+    "title": "Nonprofit grant and donor management software for Aurora",
+    "collection": "city-pages",
+    "slug": "aurora",
+    "path": "city-pages/aurora.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "city-pages:austin",
+    "title": "Nonprofit Grant & Donor Management Software for Austin",
+    "collection": "city-pages",
+    "slug": "austin",
+    "path": "city-pages/austin.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "city-pages:bakersfield",
+    "title": "Nonprofit grant and donor management software for Bakersfield",
+    "collection": "city-pages",
+    "slug": "bakersfield",
+    "path": "city-pages/bakersfield.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "city-pages:baltimore",
+    "title": "Nonprofit Grant & Donor Management Software for Baltimore",
+    "collection": "city-pages",
+    "slug": "baltimore",
+    "path": "city-pages/baltimore.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "city-pages:baton-rouge",
+    "title": "Nonprofit grant and donor management software for Baton Rouge",
+    "collection": "city-pages",
+    "slug": "baton-rouge",
+    "path": "city-pages/baton-rouge.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "city-pages:boise",
+    "title": "Nonprofit grant and donor management software for Boise",
+    "collection": "city-pages",
+    "slug": "boise",
+    "path": "city-pages/boise.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "city-pages:boston",
+    "title": "Nonprofit Grant & Donor Management Software for Boston",
+    "collection": "city-pages",
+    "slug": "boston",
+    "path": "city-pages/boston.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "city-pages:buffalo",
+    "title": "Nonprofit grant and donor management software for Buffalo",
+    "collection": "city-pages",
+    "slug": "buffalo",
+    "path": "city-pages/buffalo.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "city-pages:chandler",
+    "title": "Nonprofit grant and donor management software for Chandler",
+    "collection": "city-pages",
+    "slug": "chandler",
+    "path": "city-pages/chandler.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "city-pages:charlotte",
+    "title": "Nonprofit Grant & Donor Management Software for Charlotte",
+    "collection": "city-pages",
+    "slug": "charlotte",
+    "path": "city-pages/charlotte.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "city-pages:chesapeake",
+    "title": "Nonprofit grant and donor management software for Chesapeake",
+    "collection": "city-pages",
+    "slug": "chesapeake",
+    "path": "city-pages/chesapeake.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "city-pages:chicago",
+    "title": "Nonprofit Grant & Donor Management Software for Chicago",
+    "collection": "city-pages",
+    "slug": "chicago",
+    "path": "city-pages/chicago.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "city-pages:chula-vista",
+    "title": "Nonprofit grant and donor management software for Chula Vista",
+    "collection": "city-pages",
+    "slug": "chula-vista",
+    "path": "city-pages/chula-vista.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "city-pages:cincinnati",
+    "title": "Nonprofit grant and donor management software for Cincinnati",
+    "collection": "city-pages",
+    "slug": "cincinnati",
+    "path": "city-pages/cincinnati.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "city-pages:cleveland",
+    "title": "Nonprofit Grant & Donor Management Software for Cleveland",
+    "collection": "city-pages",
+    "slug": "cleveland",
+    "path": "city-pages/cleveland.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "city-pages:colorado-springs",
+    "title": "Nonprofit grant and donor management software for Colorado Springs",
+    "collection": "city-pages",
+    "slug": "colorado-springs",
+    "path": "city-pages/colorado-springs.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "city-pages:columbus",
+    "title": "Nonprofit Grant & Donor Management Software for Columbus, OH",
+    "collection": "city-pages",
+    "slug": "columbus",
+    "path": "city-pages/columbus.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "city-pages:corpus-christi",
+    "title": "Nonprofit grant and donor management software for Corpus Christi",
+    "collection": "city-pages",
+    "slug": "corpus-christi",
+    "path": "city-pages/corpus-christi.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "city-pages:dallas",
+    "title": "Nonprofit Grant & Donor Management Software for Dallas",
+    "collection": "city-pages",
+    "slug": "dallas",
+    "path": "city-pages/dallas.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "city-pages:denver",
+    "title": "Nonprofit Grant & Donor Management Software for Denver",
+    "collection": "city-pages",
+    "slug": "denver",
+    "path": "city-pages/denver.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "city-pages:detroit",
+    "title": "Nonprofit Grant & Donor Management Software for Detroit",
+    "collection": "city-pages",
+    "slug": "detroit",
+    "path": "city-pages/detroit.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "city-pages:durham",
+    "title": "Nonprofit grant and donor management software for Durham",
+    "collection": "city-pages",
+    "slug": "durham",
+    "path": "city-pages/durham.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "city-pages:el-paso",
+    "title": "Nonprofit grant and donor management software for El Paso",
+    "collection": "city-pages",
+    "slug": "el-paso",
+    "path": "city-pages/el-paso.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "city-pages:fort-wayne",
+    "title": "Nonprofit grant and donor management software for Fort Wayne",
+    "collection": "city-pages",
+    "slug": "fort-wayne",
+    "path": "city-pages/fort-wayne.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "city-pages:fort-worth",
+    "title": "Nonprofit grant and donor management software for Fort Worth",
+    "collection": "city-pages",
+    "slug": "fort-worth",
+    "path": "city-pages/fort-worth.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "city-pages:fremont",
+    "title": "Nonprofit grant and donor management software for Fremont",
+    "collection": "city-pages",
+    "slug": "fremont",
+    "path": "city-pages/fremont.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "city-pages:fresno",
+    "title": "Nonprofit grant and donor management software for Fresno",
+    "collection": "city-pages",
+    "slug": "fresno",
+    "path": "city-pages/fresno.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "city-pages:garland",
+    "title": "Nonprofit grant and donor management software for Garland",
+    "collection": "city-pages",
+    "slug": "garland",
+    "path": "city-pages/garland.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "city-pages:gilbert",
+    "title": "Nonprofit grant and donor management software for Gilbert",
+    "collection": "city-pages",
+    "slug": "gilbert",
+    "path": "city-pages/gilbert.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "city-pages:glendale-az",
+    "title": "Nonprofit grant and donor management software for Glendale",
+    "collection": "city-pages",
+    "slug": "glendale-az",
+    "path": "city-pages/glendale-az.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "city-pages:greensboro",
+    "title": "Nonprofit grant and donor management software for Greensboro",
+    "collection": "city-pages",
+    "slug": "greensboro",
+    "path": "city-pages/greensboro.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "city-pages:henderson",
+    "title": "Nonprofit grant and donor management software for Henderson",
+    "collection": "city-pages",
+    "slug": "henderson",
+    "path": "city-pages/henderson.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "city-pages:hialeah",
+    "title": "Nonprofit grant and donor management software for Hialeah",
+    "collection": "city-pages",
+    "slug": "hialeah",
+    "path": "city-pages/hialeah.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "city-pages:honolulu",
+    "title": "Nonprofit Grant & Donor Management Software for Honolulu",
+    "collection": "city-pages",
+    "slug": "honolulu",
+    "path": "city-pages/honolulu.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "city-pages:houston",
+    "title": "Nonprofit Grant & Donor Management Software for Houston",
+    "collection": "city-pages",
+    "slug": "houston",
+    "path": "city-pages/houston.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "city-pages:indianapolis",
+    "title": "Nonprofit Grant & Donor Management Software for Indianapolis",
+    "collection": "city-pages",
+    "slug": "indianapolis",
+    "path": "city-pages/indianapolis.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "city-pages:irvine",
+    "title": "Nonprofit grant and donor management software for Irvine",
+    "collection": "city-pages",
+    "slug": "irvine",
+    "path": "city-pages/irvine.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "city-pages:irving",
+    "title": "Nonprofit grant and donor management software for Irving",
+    "collection": "city-pages",
+    "slug": "irving",
+    "path": "city-pages/irving.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "city-pages:jacksonville",
+    "title": "Nonprofit grant and donor management software for Jacksonville",
+    "collection": "city-pages",
+    "slug": "jacksonville",
+    "path": "city-pages/jacksonville.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "city-pages:jersey-city",
+    "title": "Nonprofit grant and donor management software for Jersey City",
+    "collection": "city-pages",
+    "slug": "jersey-city",
+    "path": "city-pages/jersey-city.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "city-pages:kansas-city",
+    "title": "Nonprofit Grant & Donor Management Software for Kansas City",
+    "collection": "city-pages",
+    "slug": "kansas-city",
+    "path": "city-pages/kansas-city.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "city-pages:laredo",
+    "title": "Nonprofit grant and donor management software for Laredo",
+    "collection": "city-pages",
+    "slug": "laredo",
+    "path": "city-pages/laredo.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "city-pages:las-vegas",
+    "title": "Nonprofit Grant & Donor Management Software for Las Vegas",
+    "collection": "city-pages",
+    "slug": "las-vegas",
+    "path": "city-pages/las-vegas.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "city-pages:lexington",
+    "title": "Nonprofit grant and donor management software for Lexington",
+    "collection": "city-pages",
+    "slug": "lexington",
+    "path": "city-pages/lexington.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "city-pages:lincoln",
+    "title": "Nonprofit grant and donor management software for Lincoln",
+    "collection": "city-pages",
+    "slug": "lincoln",
+    "path": "city-pages/lincoln.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "city-pages:long-beach",
+    "title": "Nonprofit grant and donor management software for Long Beach",
+    "collection": "city-pages",
+    "slug": "long-beach",
+    "path": "city-pages/long-beach.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "city-pages:los-angeles",
+    "title": "Nonprofit Grant & Donor Management Software for Los Angeles",
+    "collection": "city-pages",
+    "slug": "los-angeles",
+    "path": "city-pages/los-angeles.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "city-pages:louisville",
+    "title": "Nonprofit grant and donor management software for Louisville",
+    "collection": "city-pages",
+    "slug": "louisville",
+    "path": "city-pages/louisville.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "city-pages:lubbock",
+    "title": "Nonprofit grant and donor management software for Lubbock",
+    "collection": "city-pages",
+    "slug": "lubbock",
+    "path": "city-pages/lubbock.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "city-pages:madison",
+    "title": "Nonprofit grant and donor management software for Madison",
+    "collection": "city-pages",
+    "slug": "madison",
+    "path": "city-pages/madison.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "city-pages:memphis",
+    "title": "Nonprofit grant and donor management software for Memphis",
+    "collection": "city-pages",
+    "slug": "memphis",
+    "path": "city-pages/memphis.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "city-pages:mesa",
+    "title": "Nonprofit grant and donor management software for Mesa",
+    "collection": "city-pages",
+    "slug": "mesa",
+    "path": "city-pages/mesa.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "city-pages:miami",
+    "title": "Nonprofit Grant & Donor Management Software for Miami",
+    "collection": "city-pages",
+    "slug": "miami",
+    "path": "city-pages/miami.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "city-pages:milwaukee",
+    "title": "Nonprofit Grant & Donor Management Software for Milwaukee",
+    "collection": "city-pages",
+    "slug": "milwaukee",
+    "path": "city-pages/milwaukee.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "city-pages:minneapolis",
+    "title": "Nonprofit Grant & Donor Management Software for Minneapolis",
+    "collection": "city-pages",
+    "slug": "minneapolis",
+    "path": "city-pages/minneapolis.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "city-pages:nashville",
+    "title": "Nonprofit Grant & Donor Management Software for Nashville",
+    "collection": "city-pages",
+    "slug": "nashville",
+    "path": "city-pages/nashville.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "city-pages:new-orleans",
+    "title": "Nonprofit Grant & Donor Management Software for New Orleans",
+    "collection": "city-pages",
+    "slug": "new-orleans",
+    "path": "city-pages/new-orleans.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "city-pages:new-york-city",
+    "title": "Nonprofit Grant & Donor Management Software for New York City",
+    "collection": "city-pages",
+    "slug": "new-york-city",
+    "path": "city-pages/new-york-city.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "city-pages:newark",
+    "title": "Nonprofit grant and donor management software for Newark",
+    "collection": "city-pages",
+    "slug": "newark",
+    "path": "city-pages/newark.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "city-pages:norfolk",
+    "title": "Nonprofit grant and donor management software for Norfolk",
+    "collection": "city-pages",
+    "slug": "norfolk",
+    "path": "city-pages/norfolk.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "city-pages:north-las-vegas",
+    "title": "Nonprofit grant and donor management software for North Las Vegas",
+    "collection": "city-pages",
+    "slug": "north-las-vegas",
+    "path": "city-pages/north-las-vegas.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "city-pages:oakland",
+    "title": "Nonprofit grant and donor management software for Oakland",
+    "collection": "city-pages",
+    "slug": "oakland",
+    "path": "city-pages/oakland.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "city-pages:oklahoma-city",
+    "title": "Nonprofit grant and donor management software for Oklahoma City",
+    "collection": "city-pages",
+    "slug": "oklahoma-city",
+    "path": "city-pages/oklahoma-city.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "city-pages:omaha",
+    "title": "Nonprofit grant and donor management software for Omaha",
+    "collection": "city-pages",
+    "slug": "omaha",
+    "path": "city-pages/omaha.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "city-pages:orlando",
+    "title": "Nonprofit Grant & Donor Management Software for Orlando",
+    "collection": "city-pages",
+    "slug": "orlando",
+    "path": "city-pages/orlando.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "city-pages:philadelphia",
+    "title": "Nonprofit Grant & Donor Management Software for Philadelphia",
+    "collection": "city-pages",
+    "slug": "philadelphia",
+    "path": "city-pages/philadelphia.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "city-pages:phoenix",
+    "title": "Nonprofit Grant & Donor Management Software for Phoenix",
+    "collection": "city-pages",
+    "slug": "phoenix",
+    "path": "city-pages/phoenix.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "city-pages:pittsburgh",
+    "title": "Nonprofit Grant & Donor Management Software for Pittsburgh",
+    "collection": "city-pages",
+    "slug": "pittsburgh",
+    "path": "city-pages/pittsburgh.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "city-pages:plano",
+    "title": "Nonprofit grant and donor management software for Plano",
+    "collection": "city-pages",
+    "slug": "plano",
+    "path": "city-pages/plano.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "city-pages:portland",
+    "title": "Nonprofit Grant & Donor Management Software for Portland, OR",
+    "collection": "city-pages",
+    "slug": "portland",
+    "path": "city-pages/portland.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "city-pages:raleigh",
+    "title": "Nonprofit grant and donor management software for Raleigh",
+    "collection": "city-pages",
+    "slug": "raleigh",
+    "path": "city-pages/raleigh.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "city-pages:reno",
+    "title": "Nonprofit grant and donor management software for Reno",
+    "collection": "city-pages",
+    "slug": "reno",
+    "path": "city-pages/reno.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "city-pages:richmond-va",
+    "title": "Nonprofit grant and donor management software for Richmond",
+    "collection": "city-pages",
+    "slug": "richmond-va",
+    "path": "city-pages/richmond-va.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "city-pages:riverside",
+    "title": "Nonprofit grant and donor management software for Riverside",
+    "collection": "city-pages",
+    "slug": "riverside",
+    "path": "city-pages/riverside.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "city-pages:sacramento",
+    "title": "Nonprofit Grant & Donor Management Software for Sacramento",
+    "collection": "city-pages",
+    "slug": "sacramento",
+    "path": "city-pages/sacramento.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "city-pages:salt-lake-city",
+    "title": "Nonprofit Grant & Donor Management Software for Salt Lake City",
+    "collection": "city-pages",
+    "slug": "salt-lake-city",
+    "path": "city-pages/salt-lake-city.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "city-pages:san-antonio",
+    "title": "Nonprofit Grant & Donor Management Software for San Antonio",
+    "collection": "city-pages",
+    "slug": "san-antonio",
+    "path": "city-pages/san-antonio.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "city-pages:san-diego",
+    "title": "Nonprofit Grant & Donor Management Software for San Diego",
+    "collection": "city-pages",
+    "slug": "san-diego",
+    "path": "city-pages/san-diego.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "city-pages:san-francisco",
+    "title": "Nonprofit Grant & Donor Management Software for San Francisco",
+    "collection": "city-pages",
+    "slug": "san-francisco",
+    "path": "city-pages/san-francisco.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "city-pages:san-jose",
+    "title": "Nonprofit Grant & Donor Management Software for San Jose",
+    "collection": "city-pages",
+    "slug": "san-jose",
+    "path": "city-pages/san-jose.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "city-pages:santa-ana",
+    "title": "Nonprofit grant and donor management software for Santa Ana",
+    "collection": "city-pages",
+    "slug": "santa-ana",
+    "path": "city-pages/santa-ana.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "city-pages:scottsdale",
+    "title": "Nonprofit grant and donor management software for Scottsdale",
+    "collection": "city-pages",
+    "slug": "scottsdale",
+    "path": "city-pages/scottsdale.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "city-pages:seattle",
+    "title": "Nonprofit Grant & Donor Management Software for Seattle",
+    "collection": "city-pages",
+    "slug": "seattle",
+    "path": "city-pages/seattle.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "city-pages:spokane",
+    "title": "Nonprofit grant and donor management software for Spokane",
+    "collection": "city-pages",
+    "slug": "spokane",
+    "path": "city-pages/spokane.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "city-pages:st-louis",
+    "title": "Nonprofit Grant & Donor Management Software for St. Louis",
+    "collection": "city-pages",
+    "slug": "st-louis",
+    "path": "city-pages/st-louis.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "city-pages:st-paul",
+    "title": "Nonprofit grant and donor management software for St. Paul",
+    "collection": "city-pages",
+    "slug": "st-paul",
+    "path": "city-pages/st-paul.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "city-pages:st-petersburg",
+    "title": "Nonprofit grant and donor management software for St. Petersburg",
+    "collection": "city-pages",
+    "slug": "st-petersburg",
+    "path": "city-pages/st-petersburg.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "city-pages:stockton",
+    "title": "Nonprofit grant and donor management software for Stockton",
+    "collection": "city-pages",
+    "slug": "stockton",
+    "path": "city-pages/stockton.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "city-pages:tampa",
+    "title": "Nonprofit Grant & Donor Management Software for Tampa",
+    "collection": "city-pages",
+    "slug": "tampa",
+    "path": "city-pages/tampa.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "city-pages:tucson",
+    "title": "Nonprofit grant and donor management software for Tucson",
+    "collection": "city-pages",
+    "slug": "tucson",
+    "path": "city-pages/tucson.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "city-pages:tulsa",
+    "title": "Nonprofit grant and donor management software for Tulsa",
+    "collection": "city-pages",
+    "slug": "tulsa",
+    "path": "city-pages/tulsa.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "city-pages:virginia-beach",
+    "title": "Nonprofit grant and donor management software for Virginia Beach",
+    "collection": "city-pages",
+    "slug": "virginia-beach",
+    "path": "city-pages/virginia-beach.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "city-pages:washington-dc",
+    "title": "Nonprofit Grant & Donor Management Software for Washington, DC",
+    "collection": "city-pages",
+    "slug": "washington-dc",
+    "path": "city-pages/washington-dc.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "city-pages:wichita",
+    "title": "Nonprofit grant and donor management software for Wichita",
+    "collection": "city-pages",
+    "slug": "wichita",
+    "path": "city-pages/wichita.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "city-pages:winston-salem",
+    "title": "Nonprofit grant and donor management software for Winston-Salem",
+    "collection": "city-pages",
+    "slug": "winston-salem",
+    "path": "city-pages/winston-salem.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "comparisons:amplifund-vs-fluxx",
+    "title": "AmpliFund vs Fluxx: Grant Management Comparison [2026]",
+    "collection": "comparisons",
+    "slug": "amplifund-vs-fluxx",
+    "path": "comparisons/amplifund-vs-fluxx.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "comparisons:aplos-vs-quickbooks-nonprofit",
+    "title": "Aplos vs QuickBooks for Nonprofits: Fund Accounting vs General Ledger [2026]",
+    "collection": "comparisons",
+    "slug": "aplos-vs-quickbooks-nonprofit",
+    "path": "comparisons/aplos-vs-quickbooks-nonprofit.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "comparisons:blackbaud-nxt-vs-raisers-edge",
+    "title": "Blackbaud Raiser's Edge NXT vs Raiser's Edge: Cloud Migration Compared [2026]",
+    "collection": "comparisons",
+    "slug": "blackbaud-nxt-vs-raisers-edge",
+    "path": "comparisons/blackbaud-nxt-vs-raisers-edge.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "comparisons:blackbaud-vs-bloomerang",
+    "title": "Blackbaud vs Bloomerang: Pricing, Contracts, and Grant Fit [2026]",
+    "collection": "comparisons",
+    "slug": "blackbaud-vs-bloomerang",
+    "path": "comparisons/blackbaud-vs-bloomerang.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "comparisons:bloomerang-vs-donorperfect",
+    "title": "Bloomerang vs DonorPerfect: Which Nonprofit CRM Fits Your Organization?",
+    "collection": "comparisons",
+    "slug": "bloomerang-vs-donorperfect",
+    "path": "comparisons/bloomerang-vs-donorperfect.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "comparisons:bloomerang-vs-keela-for-eds",
+    "title": "Bloomerang vs Keela for Executive Directors: Which Nonprofit CRM Is Right for You?",
+    "collection": "comparisons",
+    "slug": "bloomerang-vs-keela-for-eds",
+    "path": "comparisons/bloomerang-vs-keela-for-eds.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "comparisons:bloomerang-vs-keela-grant-reliant",
+    "title": "Bloomerang vs Keela: Which Donor CRM Handles Grants Better?",
+    "collection": "comparisons",
+    "slug": "bloomerang-vs-keela-grant-reliant",
+    "path": "comparisons/bloomerang-vs-keela-grant-reliant.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "comparisons:bloomerang-vs-little-green-light",
+    "title": "Bloomerang vs Little Green Light [2026]",
+    "collection": "comparisons",
+    "slug": "bloomerang-vs-little-green-light",
+    "path": "comparisons/bloomerang-vs-little-green-light.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "comparisons:bloomerang-vs-network-for-good",
+    "title": "Bloomerang vs Network for Good: Which Nonprofit CRM Fits Your Organization?",
+    "collection": "comparisons",
+    "slug": "bloomerang-vs-network-for-good",
+    "path": "comparisons/bloomerang-vs-network-for-good.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "comparisons:bloomerang-vs-salesforce-nonprofit",
+    "title": "Bloomerang vs Salesforce Nonprofit: Total Cost and Grant Fit [2026]",
+    "collection": "comparisons",
+    "slug": "bloomerang-vs-salesforce-nonprofit",
+    "path": "comparisons/bloomerang-vs-salesforce-nonprofit.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "comparisons:givebutter-vs-bloomerang",
+    "title": "Givebutter vs Bloomerang: Pricing, CRM Depth, and Grant Fit [2026]",
+    "collection": "comparisons",
+    "slug": "givebutter-vs-bloomerang",
+    "path": "comparisons/givebutter-vs-bloomerang.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "comparisons:grantpipe-vs-airtable",
+    "title": "GrantPipe vs Airtable: Purpose-Built vs Configurable Database",
+    "collection": "comparisons",
+    "slug": "grantpipe-vs-airtable",
+    "path": "comparisons/grantpipe-vs-airtable.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "comparisons:grantpipe-vs-amplifund",
+    "title": "GrantPipe vs AmpliFund: Enterprise Grant Management vs Mid-Sized Nonprofit Operations [2026]",
+    "collection": "comparisons",
+    "slug": "grantpipe-vs-amplifund",
+    "path": "comparisons/grantpipe-vs-amplifund.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "comparisons:grantpipe-vs-aplos",
+    "title": "GrantPipe vs Aplos: Fund Accounting vs Unified Donor + Grant + Compliance [2026]",
+    "collection": "comparisons",
+    "slug": "grantpipe-vs-aplos",
+    "path": "comparisons/grantpipe-vs-aplos.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "comparisons:grantpipe-vs-blackbaud",
+    "title": "GrantPipe vs Blackbaud: Mid-Market Clarity vs Ecosystem Depth [2026]",
+    "collection": "comparisons",
+    "slug": "grantpipe-vs-blackbaud",
+    "path": "comparisons/grantpipe-vs-blackbaud.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "comparisons:grantpipe-vs-blackbaud-finance-development",
+    "title": "GrantPipe vs. Blackbaud for Finance and Development Teams",
+    "collection": "comparisons",
+    "slug": "grantpipe-vs-blackbaud-finance-development",
+    "path": "comparisons/grantpipe-vs-blackbaud-finance-development.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "comparisons:grantpipe-vs-bloomerang",
+    "title": "GrantPipe vs Bloomerang: Donor CRM vs Donor-Plus-Grant Workflow [2026]",
+    "collection": "comparisons",
+    "slug": "grantpipe-vs-bloomerang",
+    "path": "comparisons/grantpipe-vs-bloomerang.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "comparisons:grantpipe-vs-box-for-evidence-bundles",
+    "title": "GrantPipe vs Box for Nonprofit Audit Evidence Bundles",
+    "collection": "comparisons",
+    "slug": "grantpipe-vs-box-for-evidence-bundles",
+    "path": "comparisons/grantpipe-vs-box-for-evidence-bundles.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "comparisons:grantpipe-vs-charityengine",
+    "title": "GrantPipe vs CharityEngine: Unified Mid-Market vs Enterprise Salesforce-Adjacent CRM [2026]",
+    "collection": "comparisons",
+    "slug": "grantpipe-vs-charityengine",
+    "path": "comparisons/grantpipe-vs-charityengine.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "comparisons:grantpipe-vs-docsend-for-funder-reviews",
+    "title": "GrantPipe vs DocSend for Nonprofit Funder Grant Reviews",
+    "collection": "comparisons",
+    "slug": "grantpipe-vs-docsend-for-funder-reviews",
+    "path": "comparisons/grantpipe-vs-docsend-for-funder-reviews.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "comparisons:grantpipe-vs-donorperfect",
+    "title": "GrantPipe vs DonorPerfect: Mature Donor CRM vs Unified Grant Operations [2026]",
+    "collection": "comparisons",
+    "slug": "grantpipe-vs-donorperfect",
+    "path": "comparisons/grantpipe-vs-donorperfect.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "comparisons:grantpipe-vs-donorperfect-executive-directors",
+    "title": "GrantPipe vs. DonorPerfect: An Executive Director's Perspective",
+    "collection": "comparisons",
+    "slug": "grantpipe-vs-donorperfect-executive-directors",
+    "path": "comparisons/grantpipe-vs-donorperfect-executive-directors.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "comparisons:grantpipe-vs-dropbox-for-audit-prep",
+    "title": "GrantPipe vs Dropbox for Nonprofit Audit Preparation",
+    "collection": "comparisons",
+    "slug": "grantpipe-vs-dropbox-for-audit-prep",
+    "path": "comparisons/grantpipe-vs-dropbox-for-audit-prep.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "comparisons:grantpipe-vs-ecivis",
+    "title": "GrantPipe vs eCivis: Federal Grant Management for Nonprofits vs Government [2026]",
+    "collection": "comparisons",
+    "slug": "grantpipe-vs-ecivis",
+    "path": "comparisons/grantpipe-vs-ecivis.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "comparisons:grantpipe-vs-financial-edge-nxt",
+    "title": "GrantPipe vs. Financial Edge NXT: Grant Management Fills the Gap Accounting Software Leaves",
+    "collection": "comparisons",
+    "slug": "grantpipe-vs-financial-edge-nxt",
+    "path": "comparisons/grantpipe-vs-financial-edge-nxt.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "comparisons:grantpipe-vs-foundant",
+    "title": "GrantPipe vs Foundant: Grant Lifecycle Manager vs Unified Donor and Grant Operations [2026]",
+    "collection": "comparisons",
+    "slug": "grantpipe-vs-foundant",
+    "path": "comparisons/grantpipe-vs-foundant.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "comparisons:grantpipe-vs-givebutter",
+    "title": "GrantPipe vs Givebutter: Nonprofit Software Comparison [2026]",
+    "collection": "comparisons",
+    "slug": "grantpipe-vs-givebutter",
+    "path": "comparisons/grantpipe-vs-givebutter.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "comparisons:grantpipe-vs-instrumentl",
+    "title": "GrantPipe vs Instrumentl: Pre-Award Workflow vs Grant Operations [2026]",
+    "collection": "comparisons",
+    "slug": "grantpipe-vs-instrumentl",
+    "path": "comparisons/grantpipe-vs-instrumentl.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "comparisons:grantpipe-vs-keela",
+    "title": "GrantPipe vs Keela: Nonprofit CRM Comparison [2026]",
+    "collection": "comparisons",
+    "slug": "grantpipe-vs-keela",
+    "path": "comparisons/grantpipe-vs-keela.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "comparisons:grantpipe-vs-little-green-light",
+    "title": "GrantPipe vs Little Green Light: Nonprofit CRM Comparison [2026]",
+    "collection": "comparisons",
+    "slug": "grantpipe-vs-little-green-light",
+    "path": "comparisons/grantpipe-vs-little-green-light.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "comparisons:grantpipe-vs-monday-com",
+    "title": "GrantPipe vs Monday.com: Grant Management vs Project Management",
+    "collection": "comparisons",
+    "slug": "grantpipe-vs-monday-com",
+    "path": "comparisons/grantpipe-vs-monday-com.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "comparisons:grantpipe-vs-neon-crm",
+    "title": "GrantPipe vs Neon CRM: Nonprofit CRM Comparison [2026]",
+    "collection": "comparisons",
+    "slug": "grantpipe-vs-neon-crm",
+    "path": "comparisons/grantpipe-vs-neon-crm.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "comparisons:grantpipe-vs-netsuite-nonprofit",
+    "title": "GrantPipe vs NetSuite Nonprofit: Mid-Market Operations vs Enterprise ERP [2026]",
+    "collection": "comparisons",
+    "slug": "grantpipe-vs-netsuite-nonprofit",
+    "path": "comparisons/grantpipe-vs-netsuite-nonprofit.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "comparisons:grantpipe-vs-network-for-good",
+    "title": "GrantPipe vs Network for Good: Nonprofit CRM Comparison [2026]",
+    "collection": "comparisons",
+    "slug": "grantpipe-vs-network-for-good",
+    "path": "comparisons/grantpipe-vs-network-for-good.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "comparisons:grantpipe-vs-sage-intacct-auditor-portal",
+    "title": "GrantPipe vs Sage Intacct: External Reviewer Access and Audit Preparation",
+    "collection": "comparisons",
+    "slug": "grantpipe-vs-sage-intacct-auditor-portal",
+    "path": "comparisons/grantpipe-vs-sage-intacct-auditor-portal.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "comparisons:grantpipe-vs-salesforce-nonprofit",
+    "title": "GrantPipe vs Salesforce Nonprofit: Configuration Freedom vs Mid-Market Simplicity [2026]",
+    "collection": "comparisons",
+    "slug": "grantpipe-vs-salesforce-nonprofit",
+    "path": "comparisons/grantpipe-vs-salesforce-nonprofit.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "comparisons:grantpipe-vs-salesforce-nonprofit-grant-funded-teams",
+    "title": "GrantPipe vs. Salesforce Nonprofit for Grant-Funded Nonprofits",
+    "collection": "comparisons",
+    "slug": "grantpipe-vs-salesforce-nonprofit-grant-funded-teams",
+    "path": "comparisons/grantpipe-vs-salesforce-nonprofit-grant-funded-teams.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "comparisons:grantpipe-vs-salesforce-npsp",
+    "title": "GrantPipe vs Salesforce NPSP: Right-Sized vs Enterprise CRM",
+    "collection": "comparisons",
+    "slug": "grantpipe-vs-salesforce-npsp",
+    "path": "comparisons/grantpipe-vs-salesforce-npsp.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "comparisons:grantpipe-vs-sharefile-for-nonprofit-audits",
+    "title": "GrantPipe vs ShareFile for Nonprofit Audit Preparation",
+    "collection": "comparisons",
+    "slug": "grantpipe-vs-sharefile-for-nonprofit-audits",
+    "path": "comparisons/grantpipe-vs-sharefile-for-nonprofit-audits.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "comparisons:grantpipe-vs-smartsimple",
+    "title": "GrantPipe vs SmartSimple: Mid-Market Grant Management Compared [2026]",
+    "collection": "comparisons",
+    "slug": "grantpipe-vs-smartsimple",
+    "path": "comparisons/grantpipe-vs-smartsimple.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "comparisons:grantpipe-vs-spreadsheets",
+    "title": "Grant Tracking Software vs Spreadsheets: When It's Time to Switch",
+    "collection": "comparisons",
+    "slug": "grantpipe-vs-spreadsheets",
+    "path": "comparisons/grantpipe-vs-spreadsheets.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "comparisons:grantpipe-vs-submittable",
+    "title": "GrantPipe vs Submittable: Application Intake vs Donor and Grant Operations [2026]",
+    "collection": "comparisons",
+    "slug": "grantpipe-vs-submittable",
+    "path": "comparisons/grantpipe-vs-submittable.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "comparisons:grantpipe-vs-virtuous",
+    "title": "GrantPipe vs Virtuous: Nonprofit CRM Comparison [2026]",
+    "collection": "comparisons",
+    "slug": "grantpipe-vs-virtuous",
+    "path": "comparisons/grantpipe-vs-virtuous.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "comparisons:grantpipe-vs-wizehive",
+    "title": "GrantPipe vs WizeHive: Grant Management for Mid-Sized Nonprofits [2026]",
+    "collection": "comparisons",
+    "slug": "grantpipe-vs-wizehive",
+    "path": "comparisons/grantpipe-vs-wizehive.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "comparisons:instrumentl-vs-foundant",
+    "title": "Instrumentl vs Foundant: Grant Management Comparison [2026]",
+    "collection": "comparisons",
+    "slug": "instrumentl-vs-foundant",
+    "path": "comparisons/instrumentl-vs-foundant.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "comparisons:instrumentl-vs-foundant-mid-market",
+    "title": "Instrumentl vs Foundant GrantHub: Which Grant Tool Fits Mid-Sized Nonprofits?",
+    "collection": "comparisons",
+    "slug": "instrumentl-vs-foundant-mid-market",
+    "path": "comparisons/instrumentl-vs-foundant-mid-market.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "comparisons:keela-vs-bloomerang",
+    "title": "Keela vs Bloomerang: Two Mid-Market Donor CRMs Compared",
+    "collection": "comparisons",
+    "slug": "keela-vs-bloomerang",
+    "path": "comparisons/keela-vs-bloomerang.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "comparisons:keela-vs-little-green-light-eds",
+    "title": "Keela vs Little Green Light for Executive Directors: Budget CRM Comparison",
+    "collection": "comparisons",
+    "slug": "keela-vs-little-green-light-eds",
+    "path": "comparisons/keela-vs-little-green-light-eds.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "comparisons:little-green-light-vs-neoncrm",
+    "title": "Little Green Light vs NeonCRM: Small Nonprofit CRM Showdown",
+    "collection": "comparisons",
+    "slug": "little-green-light-vs-neoncrm",
+    "path": "comparisons/little-green-light-vs-neoncrm.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "comparisons:quickbooks-vs-sage-intacct-nonprofits",
+    "title": "QuickBooks vs Sage Intacct for Nonprofits: When to Upgrade [2026]",
+    "collection": "comparisons",
+    "slug": "quickbooks-vs-sage-intacct-nonprofits",
+    "path": "comparisons/quickbooks-vs-sage-intacct-nonprofits.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "comparisons:salesforce-nonprofit-vs-blackbaud",
+    "title": "Salesforce Nonprofit Cloud vs Blackbaud: Two Enterprise Options Compared",
+    "collection": "comparisons",
+    "slug": "salesforce-nonprofit-vs-blackbaud",
+    "path": "comparisons/salesforce-nonprofit-vs-blackbaud.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "comparisons:salesforce-vs-blackbaud-nonprofit-crm",
+    "title": "Salesforce vs Blackbaud for Nonprofits [2026]",
+    "collection": "comparisons",
+    "slug": "salesforce-vs-blackbaud-nonprofit-crm",
+    "path": "comparisons/salesforce-vs-blackbaud-nonprofit-crm.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "faq-hubs:california-nonprofit-faq",
+    "title": "California Nonprofit Compliance FAQ: Charitable Solicitation Registration, RRF-1, and Audit Thresholds",
+    "collection": "faq-hubs",
+    "slug": "california-nonprofit-faq",
+    "path": "faq-hubs/california-nonprofit-faq.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "faq-hubs:california-nonprofit-grant-compliance-faq",
+    "title": "California Nonprofit Grant Compliance FAQ: AG Registration, RRF-1, Audits, and State Programs",
+    "collection": "faq-hubs",
+    "slug": "california-nonprofit-grant-compliance-faq",
+    "path": "faq-hubs/california-nonprofit-grant-compliance-faq.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "faq-hubs:faq-austin-nonprofit-compliance",
+    "title": "FAQ: Austin Nonprofit Compliance - TX State and Travis County Requirements",
+    "collection": "faq-hubs",
+    "slug": "faq-austin-nonprofit-compliance",
+    "path": "faq-hubs/faq-austin-nonprofit-compliance.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "faq-hubs:faq-baltimore-nonprofit-compliance",
+    "title": "FAQ: Baltimore Nonprofit Compliance - MD State and Baltimore City Requirements",
+    "collection": "faq-hubs",
+    "slug": "faq-baltimore-nonprofit-compliance",
+    "path": "faq-hubs/faq-baltimore-nonprofit-compliance.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "faq-hubs:faq-california-nonprofit-grant-compliance",
+    "title": "California Nonprofit Grant Compliance FAQ: 12 Answers on RRF-1, CT-TR-1, and AG Registry",
+    "collection": "faq-hubs",
+    "slug": "faq-california-nonprofit-grant-compliance",
+    "path": "faq-hubs/faq-california-nonprofit-grant-compliance.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "faq-hubs:faq-charlotte-nonprofit-compliance",
+    "title": "FAQ: Charlotte Nonprofit Compliance - NC State and Mecklenburg County Requirements",
+    "collection": "faq-hubs",
+    "slug": "faq-charlotte-nonprofit-compliance",
+    "path": "faq-hubs/faq-charlotte-nonprofit-compliance.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "faq-hubs:faq-cleveland-nonprofit-registration",
+    "title": "FAQ: Cleveland Nonprofit Registration - OH State and Cuyahoga County Filings",
+    "collection": "faq-hubs",
+    "slug": "faq-cleveland-nonprofit-registration",
+    "path": "faq-hubs/faq-cleveland-nonprofit-registration.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "faq-hubs:faq-columbus-nonprofit-compliance",
+    "title": "FAQ: Columbus Nonprofit Compliance - OH State and Franklin County Requirements",
+    "collection": "faq-hubs",
+    "slug": "faq-columbus-nonprofit-compliance",
+    "path": "faq-hubs/faq-columbus-nonprofit-compliance.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "faq-hubs:faq-dc-federal-grant-compliance",
+    "title": "DC Federal Grant Compliance FAQ: 12 Answers on Single Audit, Pass-Through, and DC OAG Solicitation",
+    "collection": "faq-hubs",
+    "slug": "faq-dc-federal-grant-compliance",
+    "path": "faq-hubs/faq-dc-federal-grant-compliance.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "faq-hubs:faq-denver-nonprofit-registration",
+    "title": "FAQ: Denver Nonprofit Registration - Colorado Requirements and City Licensing",
+    "collection": "faq-hubs",
+    "slug": "faq-denver-nonprofit-registration",
+    "path": "faq-hubs/faq-denver-nonprofit-registration.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "faq-hubs:faq-detroit-nonprofit-compliance",
+    "title": "FAQ: Detroit Nonprofit Compliance - MI State and Wayne County Requirements",
+    "collection": "faq-hubs",
+    "slug": "faq-detroit-nonprofit-compliance",
+    "path": "faq-hubs/faq-detroit-nonprofit-compliance.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "faq-hubs:faq-development-operations",
+    "title": "Development Operations FAQ: 20 Questions Nonprofits Ask About Running a Modern Dev Shop",
+    "collection": "faq-hubs",
+    "slug": "faq-development-operations",
+    "path": "faq-hubs/faq-development-operations.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "faq-hubs:faq-donor-management-software",
+    "title": "Donor Management Software FAQ: 13 Questions Before You Switch Platforms",
+    "collection": "faq-hubs",
+    "slug": "faq-donor-management-software",
+    "path": "faq-hubs/faq-donor-management-software.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "faq-hubs:faq-florida-nonprofit-solicitation",
+    "title": "Florida Nonprofit Solicitation FAQ: 12 Answers on FDACS and Form CH-14",
+    "collection": "faq-hubs",
+    "slug": "faq-florida-nonprofit-solicitation",
+    "path": "faq-hubs/faq-florida-nonprofit-solicitation.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "faq-hubs:faq-georgia-nonprofit-registration",
+    "title": "Georgia Nonprofit Registration FAQ: 12 Answers on Secretary of State Charities Division",
+    "collection": "faq-hubs",
+    "slug": "faq-georgia-nonprofit-registration",
+    "path": "faq-hubs/faq-georgia-nonprofit-registration.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "faq-hubs:faq-grant-compliance",
+    "title": "Grant Compliance FAQ: 18 Questions Grants Managers Ask Every Award Cycle",
+    "collection": "faq-hubs",
+    "slug": "faq-grant-compliance",
+    "path": "faq-hubs/faq-grant-compliance.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "faq-hubs:faq-grant-lifecycle",
+    "title": "Grant Lifecycle FAQ: 12 Questions About Managing Grants From Award to Closeout",
+    "collection": "faq-hubs",
+    "slug": "faq-grant-lifecycle",
+    "path": "faq-hubs/faq-grant-lifecycle.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "faq-hubs:faq-grant-proposal-budget",
+    "title": "Grant Budget FAQ: 12 Questions About Building Proposal Budgets That Get Approved",
+    "collection": "faq-hubs",
+    "slug": "faq-grant-proposal-budget",
+    "path": "faq-hubs/faq-grant-proposal-budget.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "faq-hubs:faq-grant-proposal-writing",
+    "title": "Grant Proposal Writing FAQ: 13 Questions Grant Writers Ask Before Every Submission",
+    "collection": "faq-hubs",
+    "slug": "faq-grant-proposal-writing",
+    "path": "faq-hubs/faq-grant-proposal-writing.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "faq-hubs:faq-grant-writing",
+    "title": "Grant Writing FAQ: 20 Questions Nonprofit Writers Ask Before Submitting",
+    "collection": "faq-hubs",
+    "slug": "faq-grant-writing",
+    "path": "faq-hubs/faq-grant-writing.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "faq-hubs:faq-houston-nonprofit-compliance",
+    "title": "FAQ: Houston Nonprofit Compliance - TX State Requirements and Harris County Contracts",
+    "collection": "faq-hubs",
+    "slug": "faq-houston-nonprofit-compliance",
+    "path": "faq-hubs/faq-houston-nonprofit-compliance.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "faq-hubs:faq-illinois-nonprofit-registration",
+    "title": "Illinois Nonprofit Registration FAQ: 12 Answers on AG Charitable Trust Bureau and AG990-IL",
+    "collection": "faq-hubs",
+    "slug": "faq-illinois-nonprofit-registration",
+    "path": "faq-hubs/faq-illinois-nonprofit-registration.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "faq-hubs:faq-indianapolis-nonprofit-compliance",
+    "title": "FAQ: Indianapolis Nonprofit Compliance - IN State and Marion County Requirements",
+    "collection": "faq-hubs",
+    "slug": "faq-indianapolis-nonprofit-compliance",
+    "path": "faq-hubs/faq-indianapolis-nonprofit-compliance.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "faq-hubs:faq-jacksonville-nonprofit-grants",
+    "title": "Jacksonville nonprofit grants and compliance FAQ",
+    "collection": "faq-hubs",
+    "slug": "faq-jacksonville-nonprofit-grants",
+    "path": "faq-hubs/faq-jacksonville-nonprofit-grants.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "faq-hubs:faq-major-gifts",
+    "title": "Major Gifts FAQ: 19 Questions Nonprofits Ask About Building a Major Gifts Program",
+    "collection": "faq-hubs",
+    "slug": "faq-major-gifts",
+    "path": "faq-hubs/faq-major-gifts.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "faq-hubs:faq-massachusetts-nonprofit-compliance",
+    "title": "Massachusetts Nonprofit Compliance FAQ: 12 Answers on Form PC and AG Public Charities Division",
+    "collection": "faq-hubs",
+    "slug": "faq-massachusetts-nonprofit-compliance",
+    "path": "faq-hubs/faq-massachusetts-nonprofit-compliance.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "faq-hubs:faq-membership-management-software",
+    "title": "Membership Management Software FAQ: 11 Questions Before Choosing a Platform",
+    "collection": "faq-hubs",
+    "slug": "faq-membership-management-software",
+    "path": "faq-hubs/faq-membership-management-software.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "faq-hubs:faq-memphis-foundation-grants",
+    "title": "Memphis nonprofit grants and compliance FAQ",
+    "collection": "faq-hubs",
+    "slug": "faq-memphis-foundation-grants",
+    "path": "faq-hubs/faq-memphis-foundation-grants.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "faq-hubs:faq-miami-nonprofit-compliance",
+    "title": "FAQ: Miami Nonprofit Compliance - FL Solicitation and Miami-Dade Requirements",
+    "collection": "faq-hubs",
+    "slug": "faq-miami-nonprofit-compliance",
+    "path": "faq-hubs/faq-miami-nonprofit-compliance.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "faq-hubs:faq-minnesota-nonprofit-compliance",
+    "title": "Minnesota Nonprofit Compliance FAQ: 12 Answers on AG Charities Division Registration",
+    "collection": "faq-hubs",
+    "slug": "faq-minnesota-nonprofit-compliance",
+    "path": "faq-hubs/faq-minnesota-nonprofit-compliance.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "faq-hubs:faq-nashville-nonprofit-compliance",
+    "title": "FAQ: Nashville Nonprofit Compliance - TN State and Davidson County Requirements",
+    "collection": "faq-hubs",
+    "slug": "faq-nashville-nonprofit-compliance",
+    "path": "faq-hubs/faq-nashville-nonprofit-compliance.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "faq-hubs:faq-nonprofit-accounting-software",
+    "title": "Nonprofit Accounting Software FAQ: 15 Questions Finance Staff Ask Before Choosing a Platform",
+    "collection": "faq-hubs",
+    "slug": "faq-nonprofit-accounting-software",
+    "path": "faq-hubs/faq-nonprofit-accounting-software.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "faq-hubs:faq-nonprofit-audit",
+    "title": "Nonprofit Audit FAQ: 14 Questions Finance Staff Ask Before, During, and After",
+    "collection": "faq-hubs",
+    "slug": "faq-nonprofit-audit",
+    "path": "faq-hubs/faq-nonprofit-audit.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "faq-hubs:faq-nonprofit-crm",
+    "title": "Nonprofit CRM FAQ: 14 Questions Development Directors Ask Before Buying",
+    "collection": "faq-hubs",
+    "slug": "faq-nonprofit-crm",
+    "path": "faq-hubs/faq-nonprofit-crm.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "faq-hubs:faq-nonprofit-financial-statements",
+    "title": "Nonprofit Financial Statements FAQ: 13 Questions Boards and Funders Ask",
+    "collection": "faq-hubs",
+    "slug": "faq-nonprofit-financial-statements",
+    "path": "faq-hubs/faq-nonprofit-financial-statements.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "faq-hubs:faq-nonprofit-strategic-planning",
+    "title": "Nonprofit Strategic Planning FAQ: 11 Questions Every Executive Director Asks",
+    "collection": "faq-hubs",
+    "slug": "faq-nonprofit-strategic-planning",
+    "path": "faq-hubs/faq-nonprofit-strategic-planning.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "faq-hubs:faq-nyc-nonprofit-compliance",
+    "title": "NYC Nonprofit Compliance FAQ: 12 Questions on State CHAR500 + City DCWP/DOHMH Requirements",
+    "collection": "faq-hubs",
+    "slug": "faq-nyc-nonprofit-compliance",
+    "path": "faq-hubs/faq-nyc-nonprofit-compliance.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "faq-hubs:faq-phoenix-nonprofit-registration",
+    "title": "FAQ: Phoenix Nonprofit Registration - AZ Requirements and Maricopa County",
+    "collection": "faq-hubs",
+    "slug": "faq-phoenix-nonprofit-registration",
+    "path": "faq-hubs/faq-phoenix-nonprofit-registration.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "faq-hubs:faq-planned-giving",
+    "title": "Planned Giving FAQ: 19 Questions Nonprofits Ask About Bequests, CGAs, and Legacy Programs",
+    "collection": "faq-hubs",
+    "slug": "faq-planned-giving",
+    "path": "faq-hubs/faq-planned-giving.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "faq-hubs:faq-portland-nonprofit-registration",
+    "title": "FAQ: Portland Nonprofit Registration - Oregon Requirements and Multnomah County",
+    "collection": "faq-hubs",
+    "slug": "faq-portland-nonprofit-registration",
+    "path": "faq-hubs/faq-portland-nonprofit-registration.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "faq-hubs:faq-raleigh-nonprofit-compliance",
+    "title": "Raleigh nonprofit grants and compliance FAQ",
+    "collection": "faq-hubs",
+    "slug": "faq-raleigh-nonprofit-compliance",
+    "path": "faq-hubs/faq-raleigh-nonprofit-compliance.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "faq-hubs:faq-restricted-funds",
+    "title": "Restricted Funds FAQ: 12 Questions About Donor and Grant Restrictions",
+    "collection": "faq-hubs",
+    "slug": "faq-restricted-funds",
+    "path": "faq-hubs/faq-restricted-funds.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "faq-hubs:faq-richmond-va-nonprofit-grants",
+    "title": "Richmond nonprofit grants and compliance FAQ",
+    "collection": "faq-hubs",
+    "slug": "faq-richmond-va-nonprofit-grants",
+    "path": "faq-hubs/faq-richmond-va-nonprofit-grants.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "faq-hubs:faq-san-antonio-nonprofit-compliance",
+    "title": "FAQ: San Antonio Nonprofit Compliance - TX State and Bexar County Requirements",
+    "collection": "faq-hubs",
+    "slug": "faq-san-antonio-nonprofit-compliance",
+    "path": "faq-hubs/faq-san-antonio-nonprofit-compliance.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "faq-hubs:faq-seattle-nonprofit-compliance",
+    "title": "FAQ: Seattle Nonprofit Compliance - WA State Filings and King County Requirements",
+    "collection": "faq-hubs",
+    "slug": "faq-seattle-nonprofit-compliance",
+    "path": "faq-hubs/faq-seattle-nonprofit-compliance.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "faq-hubs:faq-texas-nonprofit-compliance",
+    "title": "Texas Nonprofit Compliance FAQ: 12 Answers on Public Safety Solicitation Act and Comptroller Filings",
+    "collection": "faq-hubs",
+    "slug": "faq-texas-nonprofit-compliance",
+    "path": "faq-hubs/faq-texas-nonprofit-compliance.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "faq-hubs:faq-tulsa-nonprofit-grants",
+    "title": "Tulsa nonprofit grants and compliance FAQ",
+    "collection": "faq-hubs",
+    "slug": "faq-tulsa-nonprofit-grants",
+    "path": "faq-hubs/faq-tulsa-nonprofit-grants.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "faq-hubs:faq-washington-state-nonprofit-compliance",
+    "title": "Washington State Nonprofit Compliance FAQ: 12 Answers on Charities Program Annual Renewal",
+    "collection": "faq-hubs",
+    "slug": "faq-washington-state-nonprofit-compliance",
+    "path": "faq-hubs/faq-washington-state-nonprofit-compliance.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "faq-hubs:florida-nonprofit-faq",
+    "title": "Florida Nonprofit Compliance FAQ: CH-14 Charitable Solicitation, FDACS Renewal, and Audit Thresholds",
+    "collection": "faq-hubs",
+    "slug": "florida-nonprofit-faq",
+    "path": "faq-hubs/florida-nonprofit-faq.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "faq-hubs:florida-nonprofit-grant-compliance-faq",
+    "title": "Florida Nonprofit Grant Compliance FAQ: SCH Registration, Audit Thresholds, and State Programs",
+    "collection": "faq-hubs",
+    "slug": "florida-nonprofit-grant-compliance-faq",
+    "path": "faq-hubs/florida-nonprofit-grant-compliance-faq.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "faq-hubs:georgia-nonprofit-faq",
+    "title": "Georgia Nonprofit Compliance FAQ: Charitable Solicitation Registration, Form C-100, and Audit Thresholds",
+    "collection": "faq-hubs",
+    "slug": "georgia-nonprofit-faq",
+    "path": "faq-hubs/georgia-nonprofit-faq.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "faq-hubs:georgia-nonprofit-grant-compliance-faq",
+    "title": "Georgia Nonprofit Grant Compliance FAQ: SOS Registration, Audit Thresholds, and State Programs",
+    "collection": "faq-hubs",
+    "slug": "georgia-nonprofit-grant-compliance-faq",
+    "path": "faq-hubs/georgia-nonprofit-grant-compliance-faq.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "faq-hubs:illinois-nonprofit-faq",
+    "title": "Illinois Nonprofit Compliance FAQ: 501(c)(3) Requirements, AG990-IL, and Audit Thresholds",
+    "collection": "faq-hubs",
+    "slug": "illinois-nonprofit-faq",
+    "path": "faq-hubs/illinois-nonprofit-faq.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "faq-hubs:illinois-nonprofit-grant-compliance-faq",
+    "title": "Illinois Nonprofit Grant Compliance FAQ: AG-990-IL, Audit Thresholds, and State Programs",
+    "collection": "faq-hubs",
+    "slug": "illinois-nonprofit-grant-compliance-faq",
+    "path": "faq-hubs/illinois-nonprofit-grant-compliance-faq.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "faq-hubs:massachusetts-nonprofit-faq",
+    "title": "Massachusetts Nonprofit Compliance FAQ: Charitable Solicitation Registration, Form PC, and Audit Thresholds",
+    "collection": "faq-hubs",
+    "slug": "massachusetts-nonprofit-faq",
+    "path": "faq-hubs/massachusetts-nonprofit-faq.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "faq-hubs:massachusetts-nonprofit-grant-compliance-faq",
+    "title": "Massachusetts Nonprofit Grant Compliance FAQ: PC Form, Audit Thresholds, and State Programs",
+    "collection": "faq-hubs",
+    "slug": "massachusetts-nonprofit-grant-compliance-faq",
+    "path": "faq-hubs/massachusetts-nonprofit-grant-compliance-faq.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "faq-hubs:new-york-nonprofit-faq",
+    "title": "New York Nonprofit Compliance FAQ: CHAR500, Audit Thresholds, and Charities Bureau Registration",
+    "collection": "faq-hubs",
+    "slug": "new-york-nonprofit-faq",
+    "path": "faq-hubs/new-york-nonprofit-faq.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "faq-hubs:new-york-nonprofit-grant-compliance-faq",
+    "title": "New York Nonprofit Grant Compliance FAQ: CHAR500, Audit Thresholds, NPRA, and State Programs",
+    "collection": "faq-hubs",
+    "slug": "new-york-nonprofit-grant-compliance-faq",
+    "path": "faq-hubs/new-york-nonprofit-grant-compliance-faq.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "faq-hubs:north-carolina-nonprofit-faq",
+    "title": "North Carolina Nonprofit Compliance FAQ: Charitable Solicitation, CSL Registration, and Audit Thresholds",
+    "collection": "faq-hubs",
+    "slug": "north-carolina-nonprofit-faq",
+    "path": "faq-hubs/north-carolina-nonprofit-faq.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "faq-hubs:north-carolina-nonprofit-grant-compliance-faq",
+    "title": "North Carolina Nonprofit Grant Compliance FAQ: SOS Registration, Audit Thresholds, and State Programs",
+    "collection": "faq-hubs",
+    "slug": "north-carolina-nonprofit-grant-compliance-faq",
+    "path": "faq-hubs/north-carolina-nonprofit-grant-compliance-faq.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "faq-hubs:ohio-nonprofit-faq",
+    "title": "Ohio Nonprofit Compliance FAQ: 501(c)(3) Requirements, Charitable Registration, and Audit Thresholds",
+    "collection": "faq-hubs",
+    "slug": "ohio-nonprofit-faq",
+    "path": "faq-hubs/ohio-nonprofit-faq.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "faq-hubs:ohio-nonprofit-grant-compliance-faq",
+    "title": "Ohio Nonprofit Grant Compliance FAQ: AG Registration, Audit Thresholds, and State Programs",
+    "collection": "faq-hubs",
+    "slug": "ohio-nonprofit-grant-compliance-faq",
+    "path": "faq-hubs/ohio-nonprofit-grant-compliance-faq.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "faq-hubs:pennsylvania-nonprofit-faq",
+    "title": "Pennsylvania Nonprofit Compliance FAQ: BCO-10, Charitable Solicitation Registration, and Audit Thresholds",
+    "collection": "faq-hubs",
+    "slug": "pennsylvania-nonprofit-faq",
+    "path": "faq-hubs/pennsylvania-nonprofit-faq.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "faq-hubs:pennsylvania-nonprofit-grant-compliance-faq",
+    "title": "Pennsylvania Nonprofit Grant Compliance FAQ: BCO-10, Audit Thresholds, and State Programs",
+    "collection": "faq-hubs",
+    "slug": "pennsylvania-nonprofit-grant-compliance-faq",
+    "path": "faq-hubs/pennsylvania-nonprofit-grant-compliance-faq.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "faq-hubs:texas-nonprofit-faq",
+    "title": "Texas Nonprofit Compliance FAQ: Registration, Form 202, and Public Solicitation Rules",
+    "collection": "faq-hubs",
+    "slug": "texas-nonprofit-faq",
+    "path": "faq-hubs/texas-nonprofit-faq.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "faq-hubs:texas-nonprofit-grant-compliance-faq",
+    "title": "Texas Nonprofit Grant Compliance FAQ: Registration, Audit Thresholds, and State Programs",
+    "collection": "faq-hubs",
+    "slug": "texas-nonprofit-grant-compliance-faq",
+    "path": "faq-hubs/texas-nonprofit-grant-compliance-faq.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "features:accounting-anomaly-detector",
+    "title": "Catch Booking Mistakes Before Your Auditor Does",
+    "collection": "features",
+    "slug": "accounting-anomaly-detector",
+    "path": "features/accounting-anomaly-detector.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "features:acknowledgment-year-end-statement-run",
+    "title": "Create donor year-end statements",
+    "collection": "features",
+    "slug": "acknowledgment-year-end-statement-run",
+    "path": "features/acknowledgment-year-end-statement-run.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "features:ai-award-document-intake",
+    "title": "AI Award Document Intake",
+    "collection": "features",
+    "slug": "ai-award-document-intake",
+    "path": "features/ai-award-document-intake.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "features:ask-your-ledger",
+    "title": "Ask Finance Questions",
+    "collection": "features",
+    "slug": "ask-your-ledger",
+    "path": "features/ask-your-ledger.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "features:audit-readiness-score-binder-starter",
+    "title": "See Your Audit Readiness Score",
+    "collection": "features",
+    "slug": "audit-readiness-score-binder-starter",
+    "path": "features/audit-readiness-score-binder-starter.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "features:audit-trail-activity-log",
+    "title": "Audit Trail and Activity Log",
+    "collection": "features",
+    "slug": "audit-trail-activity-log",
+    "path": "features/audit-trail-activity-log.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "features:auditor-funder-portal",
+    "title": "Auditor & Funder Portal",
+    "collection": "features",
+    "slug": "auditor-funder-portal",
+    "path": "features/auditor-funder-portal.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "features:board-member-portal",
+    "title": "Share board packets without full app access",
+    "collection": "features",
+    "slug": "board-member-portal",
+    "path": "features/board-member-portal.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "features:board-packet-composer",
+    "title": "Build the board packet from live records",
+    "collection": "features",
+    "slug": "board-packet-composer",
+    "path": "features/board-packet-composer.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "features:compliance-deadline-radar",
+    "title": "See Every Compliance Deadline in One List",
+    "collection": "features",
+    "slug": "compliance-deadline-radar",
+    "path": "features/compliance-deadline-radar.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "features:configurable-dashboard-role-home",
+    "title": "Configure each team's dashboard home",
+    "collection": "features",
+    "slug": "configurable-dashboard-role-home",
+    "path": "features/configurable-dashboard-role-home.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "features:cross-entity-report-builder",
+    "title": "Build Custom Reports Faster",
+    "collection": "features",
+    "slug": "cross-entity-report-builder",
+    "path": "features/cross-entity-report-builder.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "features:csv-donor-import",
+    "title": "CSV Donor Import for Nonprofits",
+    "collection": "features",
+    "slug": "csv-donor-import",
+    "path": "features/csv-donor-import.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "features:custom-fields",
+    "title": "Custom Fields in GrantPipe",
+    "collection": "features",
+    "slug": "custom-fields",
+    "path": "features/custom-fields.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "features:data-migration-onboarding-studio",
+    "title": "Move Your Nonprofit Data Into GrantPipe",
+    "collection": "features",
+    "slug": "data-migration-onboarding-studio",
+    "path": "features/data-migration-onboarding-studio.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "features:donor-lapse-early-warning",
+    "title": "Catch Lapsing Donors Before They Leave",
+    "collection": "features",
+    "slug": "donor-lapse-early-warning",
+    "path": "features/donor-lapse-early-warning.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "features:donor-retention-reporting",
+    "title": "Donor Retention Reporting",
+    "collection": "features",
+    "slug": "donor-retention-reporting",
+    "path": "features/donor-retention-reporting.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "features:donor-segmentation",
+    "title": "Donor Segmentation in GrantPipe",
+    "collection": "features",
+    "slug": "donor-segmentation",
+    "path": "features/donor-segmentation.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "features:functional-expense-allocation-studio",
+    "title": "Split Shared Nonprofit Expenses Without Spreadsheets",
+    "collection": "features",
+    "slug": "functional-expense-allocation-studio",
+    "path": "features/functional-expense-allocation-studio.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "features:funder-reporting-templates",
+    "title": "Funder Reporting Templates",
+    "collection": "features",
+    "slug": "funder-reporting-templates",
+    "path": "features/funder-reporting-templates.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "features:grant-budget-sentinel",
+    "title": "Catch Budget Risk Early",
+    "collection": "features",
+    "slug": "grant-budget-sentinel",
+    "path": "features/grant-budget-sentinel.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "features:grant-calendar-deadline-alerts",
+    "title": "Grant Calendar and Deadline Alerts",
+    "collection": "features",
+    "slug": "grant-calendar-deadline-alerts",
+    "path": "features/grant-calendar-deadline-alerts.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "features:grant-drawdowns-reimbursements",
+    "title": "Grant Drawdown and Reimbursement Request Tracking",
+    "collection": "features",
+    "slug": "grant-drawdowns-reimbursements",
+    "path": "features/grant-drawdowns-reimbursements.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "features:grant-pipeline-management",
+    "title": "Grant Pipeline Management for Nonprofits",
+    "collection": "features",
+    "slug": "grant-pipeline-management",
+    "path": "features/grant-pipeline-management.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "features:guided-onboarding-import-setup",
+    "title": "Guided Onboarding, Import, and Setup",
+    "collection": "features",
+    "slug": "guided-onboarding-import-setup",
+    "path": "features/guided-onboarding-import-setup.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "features:multi-entity-consolidation",
+    "title": "Planned Multi-Entity Consolidation for Nonprofits",
+    "collection": "features",
+    "slug": "multi-entity-consolidation",
+    "path": "features/multi-entity-consolidation.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "features:outbound-donor-email-mail-merge",
+    "title": "Email selected donors from the donor record",
+    "collection": "features",
+    "slug": "outbound-donor-email-mail-merge",
+    "path": "features/outbound-donor-email-mail-merge.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "features:outcome-impact-measurement-layer",
+    "title": "Track Grant Outcomes",
+    "collection": "features",
+    "slug": "outcome-impact-measurement-layer",
+    "path": "features/outcome-impact-measurement-layer.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "features:payroll-allocation",
+    "title": "Payroll Allocation Across Grants",
+    "collection": "features",
+    "slug": "payroll-allocation",
+    "path": "features/payroll-allocation.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "features:pledge-multi-year-commitment-tracker",
+    "title": "Track Multi-Year Pledges Without Booking Revenue Twice",
+    "collection": "features",
+    "slug": "pledge-multi-year-commitment-tracker",
+    "path": "features/pledge-multi-year-commitment-tracker.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "features:proposal-report-drafting-assistant",
+    "title": "Draft Grant Reports From Records",
+    "collection": "features",
+    "slug": "proposal-report-drafting-assistant",
+    "path": "features/proposal-report-drafting-assistant.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "features:reimbursement-cash-flow-radar",
+    "title": "Find Reimbursement Cash Gaps",
+    "collection": "features",
+    "slug": "reimbursement-cash-flow-radar",
+    "path": "features/reimbursement-cash-flow-radar.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "features:restricted-fund-tracking",
+    "title": "Restricted Fund Tracking for Nonprofits",
+    "collection": "features",
+    "slug": "restricted-fund-tracking",
+    "path": "features/restricted-fund-tracking.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "features:restriction-auto-classifier",
+    "title": "Restriction Auto-Classifier for Nonprofit Gifts",
+    "collection": "features",
+    "slug": "restriction-auto-classifier",
+    "path": "features/restriction-auto-classifier.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "features:restriction-aware-gl-classification",
+    "title": "Restriction-Aware Gift-to-GL Classification for Nonprofits",
+    "collection": "features",
+    "slug": "restriction-aware-gl-classification",
+    "path": "features/restriction-aware-gl-classification.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "features:role-based-permissions",
+    "title": "Role-Based Permissions in GrantPipe",
+    "collection": "features",
+    "slug": "role-based-permissions",
+    "path": "features/role-based-permissions.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "features:sefa-builder-single-audit-tripwire",
+    "title": "Build a SEFA Draft",
+    "collection": "features",
+    "slug": "sefa-builder-single-audit-tripwire",
+    "path": "features/sefa-builder-single-audit-tripwire.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "features:soft-credit-tracking",
+    "title": "Soft Credit Tracking in GrantPipe",
+    "collection": "features",
+    "slug": "soft-credit-tracking",
+    "path": "features/soft-credit-tracking.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "features:subrecipient-monitoring",
+    "title": "Subrecipient Monitoring",
+    "collection": "features",
+    "slug": "subrecipient-monitoring",
+    "path": "features/subrecipient-monitoring.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "glossary:acfr-annual-comprehensive-financial-report",
+    "title": "ACFR: Annual Comprehensive Financial Report Definition",
+    "collection": "glossary",
+    "slug": "acfr-annual-comprehensive-financial-report",
+    "path": "glossary/acfr-annual-comprehensive-financial-report.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "glossary:annual-fund",
+    "title": "Annual Fund: Definition for Nonprofits",
+    "collection": "glossary",
+    "slug": "annual-fund",
+    "path": "glossary/annual-fund.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "glossary:auditor-funder-portal",
+    "title": "Auditor & Funder Portal",
+    "collection": "glossary",
+    "slug": "auditor-funder-portal",
+    "path": "glossary/auditor-funder-portal.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "glossary:award-period",
+    "title": "Award Period (Period of Performance)",
+    "collection": "glossary",
+    "slug": "award-period",
+    "path": "glossary/award-period.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "glossary:board-governance",
+    "title": "Board Governance: Definition for Nonprofits",
+    "collection": "glossary",
+    "slug": "board-governance",
+    "path": "glossary/board-governance.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "glossary:carryover",
+    "title": "Grant Budget Carryover",
+    "collection": "glossary",
+    "slug": "carryover",
+    "path": "glossary/carryover.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "glossary:case-for-support",
+    "title": "Case for Support: Definition for Nonprofits",
+    "collection": "glossary",
+    "slug": "case-for-support",
+    "path": "glossary/case-for-support.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "glossary:cfda-assistance-listing-number",
+    "title": "CFDA / Assistance Listing Number: Definition",
+    "collection": "glossary",
+    "slug": "cfda-assistance-listing-number",
+    "path": "glossary/cfda-assistance-listing-number.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "glossary:closeout",
+    "title": "Grant Closeout",
+    "collection": "glossary",
+    "slug": "closeout",
+    "path": "glossary/closeout.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "glossary:cognizant-agency",
+    "title": "Cognizant Agency: Definition for Nonprofits",
+    "collection": "glossary",
+    "slug": "cognizant-agency",
+    "path": "glossary/cognizant-agency.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "glossary:compliance-supplement",
+    "title": "OMB Compliance Supplement",
+    "collection": "glossary",
+    "slug": "compliance-supplement",
+    "path": "glossary/compliance-supplement.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "glossary:cost-share",
+    "title": "Cost Share: Definition for Federal Grants",
+    "collection": "glossary",
+    "slug": "cost-share",
+    "path": "glossary/cost-share.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "glossary:de-minimis-indirect-cost-rate",
+    "title": "De Minimis Indirect Cost Rate: Definition",
+    "collection": "glossary",
+    "slug": "de-minimis-indirect-cost-rate",
+    "path": "glossary/de-minimis-indirect-cost-rate.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "glossary:donor-advised-fund",
+    "title": "Donor Advised Fund: Definition for Nonprofits",
+    "collection": "glossary",
+    "slug": "donor-advised-fund",
+    "path": "glossary/donor-advised-fund.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "glossary:donor-attrition",
+    "title": "Donor Attrition: Definition for Nonprofits",
+    "collection": "glossary",
+    "slug": "donor-attrition",
+    "path": "glossary/donor-attrition.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "glossary:drawdown",
+    "title": "Grant Drawdown",
+    "collection": "glossary",
+    "slug": "drawdown",
+    "path": "glossary/drawdown.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "glossary:evidence-bundle",
+    "title": "Evidence Bundle",
+    "collection": "glossary",
+    "slug": "evidence-bundle",
+    "path": "glossary/evidence-bundle.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "glossary:expenditure-report",
+    "title": "Grant Expenditure Report",
+    "collection": "glossary",
+    "slug": "expenditure-report",
+    "path": "glossary/expenditure-report.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "glossary:external-review-session",
+    "title": "External Review Session",
+    "collection": "glossary",
+    "slug": "external-review-session",
+    "path": "glossary/external-review-session.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "glossary:federal-audit-clearinghouse",
+    "title": "Federal Audit Clearinghouse (FAC)",
+    "collection": "glossary",
+    "slug": "federal-audit-clearinghouse",
+    "path": "glossary/federal-audit-clearinghouse.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "glossary:fiscal-sponsorship",
+    "title": "Fiscal Sponsorship: Definition for Nonprofits",
+    "collection": "glossary",
+    "slug": "fiscal-sponsorship",
+    "path": "glossary/fiscal-sponsorship.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "glossary:form-990",
+    "title": "Form 990: Definition and Purpose",
+    "collection": "glossary",
+    "slug": "form-990",
+    "path": "glossary/form-990.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "glossary:functional-expense-allocation",
+    "title": "Functional Expense Allocation: Program, M&G, and Fundraising Under FASB ASC 958",
+    "collection": "glossary",
+    "slug": "functional-expense-allocation",
+    "path": "glossary/functional-expense-allocation.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "glossary:fund-accounting",
+    "title": "Fund Accounting",
+    "collection": "glossary",
+    "slug": "fund-accounting",
+    "path": "glossary/fund-accounting.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "glossary:grant-administration",
+    "title": "Grant Administration: Definition and Compliance Obligations",
+    "collection": "glossary",
+    "slug": "grant-administration",
+    "path": "glossary/grant-administration.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "glossary:grant-award-letter",
+    "title": "Grant Award Letter",
+    "collection": "glossary",
+    "slug": "grant-award-letter",
+    "path": "glossary/grant-award-letter.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "glossary:grant-compliance",
+    "title": "Grant Compliance",
+    "collection": "glossary",
+    "slug": "grant-compliance",
+    "path": "glossary/grant-compliance.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "glossary:grant-lifecycle",
+    "title": "Grant Lifecycle: The Six Stages from Pre-Award to Post-Closeout",
+    "collection": "glossary",
+    "slug": "grant-lifecycle",
+    "path": "glossary/grant-lifecycle.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "glossary:grant-pipeline",
+    "title": "Grant Pipeline",
+    "collection": "glossary",
+    "slug": "grant-pipeline",
+    "path": "glossary/grant-pipeline.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "glossary:grant-subaward",
+    "title": "Subaward",
+    "collection": "glossary",
+    "slug": "grant-subaward",
+    "path": "glossary/grant-subaward.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "glossary:grantmaking",
+    "title": "Grantmaking: Definition, IRC Compliance, and Accounting Treatment",
+    "collection": "glossary",
+    "slug": "grantmaking",
+    "path": "glossary/grantmaking.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "glossary:in-kind-contributions",
+    "title": "In-Kind Contributions",
+    "collection": "glossary",
+    "slug": "in-kind-contributions",
+    "path": "glossary/in-kind-contributions.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "glossary:indirect-cost-rate",
+    "title": "Indirect Cost Rate: Definition for Nonprofits",
+    "collection": "glossary",
+    "slug": "indirect-cost-rate",
+    "path": "glossary/indirect-cost-rate.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "glossary:logic-model",
+    "title": "Logic Model: Definition for Nonprofits",
+    "collection": "glossary",
+    "slug": "logic-model",
+    "path": "glossary/logic-model.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "glossary:management-decision",
+    "title": "Audit Management Decision",
+    "collection": "glossary",
+    "slug": "management-decision",
+    "path": "glossary/management-decision.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "glossary:matching-funds",
+    "title": "Matching Funds: Definition for Grant Recipients",
+    "collection": "glossary",
+    "slug": "matching-funds",
+    "path": "glossary/matching-funds.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "glossary:modified-total-direct-costs-mtdc",
+    "title": "Modified Total Direct Costs (MTDC): Definition, Exclusions, and Use",
+    "collection": "glossary",
+    "slug": "modified-total-direct-costs-mtdc",
+    "path": "glossary/modified-total-direct-costs-mtdc.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "glossary:moves-management",
+    "title": "Moves Management: Definition for Nonprofits",
+    "collection": "glossary",
+    "slug": "moves-management",
+    "path": "glossary/moves-management.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "glossary:negotiated-indirect-cost-rate-agreement",
+    "title": "Negotiated Indirect Cost Rate Agreement (NICRA)",
+    "collection": "glossary",
+    "slug": "negotiated-indirect-cost-rate-agreement",
+    "path": "glossary/negotiated-indirect-cost-rate-agreement.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "glossary:net-assets-with-donor-restrictions",
+    "title": "Net Assets With Donor Restrictions: Definition",
+    "collection": "glossary",
+    "slug": "net-assets-with-donor-restrictions",
+    "path": "glossary/net-assets-with-donor-restrictions.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "glossary:net-assets-without-donor-restrictions",
+    "title": "Net Assets Without Donor Restrictions: Definition",
+    "collection": "glossary",
+    "slug": "net-assets-without-donor-restrictions",
+    "path": "glossary/net-assets-without-donor-restrictions.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "glossary:no-cost-extension",
+    "title": "No-Cost Extension (NCE)",
+    "collection": "glossary",
+    "slug": "no-cost-extension",
+    "path": "glossary/no-cost-extension.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "glossary:nonprofit-financial-statements",
+    "title": "Nonprofit Financial Statements: The Four Required Reports Under FASB ASC 958",
+    "collection": "glossary",
+    "slug": "nonprofit-financial-statements",
+    "path": "glossary/nonprofit-financial-statements.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "glossary:ntee-code",
+    "title": "NTEE Code: Definition and Lookup",
+    "collection": "glossary",
+    "slug": "ntee-code",
+    "path": "glossary/ntee-code.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "glossary:pass-through-entity",
+    "title": "Pass-Through Entity: Definition, Uniform Guidance Duties, and FAC/SEFA Reporting",
+    "collection": "glossary",
+    "slug": "pass-through-entity",
+    "path": "glossary/pass-through-entity.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "glossary:planned-giving",
+    "title": "Planned Giving: Definition for Nonprofits",
+    "collection": "glossary",
+    "slug": "planned-giving",
+    "path": "glossary/planned-giving.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "glossary:post-award-management",
+    "title": "Post-Award Grant Management",
+    "collection": "glossary",
+    "slug": "post-award-management",
+    "path": "glossary/post-award-management.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "glossary:program-income",
+    "title": "Program Income",
+    "collection": "glossary",
+    "slug": "program-income",
+    "path": "glossary/program-income.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "glossary:program-officer",
+    "title": "Program Officer: Definition for Nonprofits",
+    "collection": "glossary",
+    "slug": "program-officer",
+    "path": "glossary/program-officer.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "glossary:program-service-revenue",
+    "title": "Program Service Revenue: Definition on Form 990",
+    "collection": "glossary",
+    "slug": "program-service-revenue",
+    "path": "glossary/program-service-revenue.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "glossary:prospect-research",
+    "title": "Prospect Research: Definition for Nonprofits",
+    "collection": "glossary",
+    "slug": "prospect-research",
+    "path": "glossary/prospect-research.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "glossary:questioned-costs",
+    "title": "Questioned Costs: Definition in Single Audits",
+    "collection": "glossary",
+    "slug": "questioned-costs",
+    "path": "glossary/questioned-costs.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "glossary:restricted-contribution",
+    "title": "Restricted Contribution: Definition for Nonprofits",
+    "collection": "glossary",
+    "slug": "restricted-contribution",
+    "path": "glossary/restricted-contribution.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "glossary:restricted-fund",
+    "title": "Restricted Fund",
+    "collection": "glossary",
+    "slug": "restricted-fund",
+    "path": "glossary/restricted-fund.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "glossary:schedule-a-form-990",
+    "title": "Schedule A (Form 990): Public Charity Status Definition",
+    "collection": "glossary",
+    "slug": "schedule-a-form-990",
+    "path": "glossary/schedule-a-form-990.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "glossary:sf-425",
+    "title": "SF-425 Federal Financial Report",
+    "collection": "glossary",
+    "slug": "sf-425",
+    "path": "glossary/sf-425.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "glossary:single-audit",
+    "title": "Single Audit",
+    "collection": "glossary",
+    "slug": "single-audit",
+    "path": "glossary/single-audit.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "glossary:spend-down",
+    "title": "Grant Spend-Down",
+    "collection": "glossary",
+    "slug": "spend-down",
+    "path": "glossary/spend-down.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "glossary:subrecipient-vs-contractor",
+    "title": "Subrecipient vs Contractor: The 2 CFR 200.331 Five-Part Test",
+    "collection": "glossary",
+    "slug": "subrecipient-vs-contractor",
+    "path": "glossary/subrecipient-vs-contractor.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "glossary:temporarily-restricted-net-assets",
+    "title": "Temporarily Restricted Net Assets: Pre-2018 FASB Definition",
+    "collection": "glossary",
+    "slug": "temporarily-restricted-net-assets",
+    "path": "glossary/temporarily-restricted-net-assets.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "glossary:theory-of-change",
+    "title": "Theory of Change: Definition for Nonprofits",
+    "collection": "glossary",
+    "slug": "theory-of-change",
+    "path": "glossary/theory-of-change.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "glossary:time-and-effort-certification",
+    "title": "Time and Effort Certification",
+    "collection": "glossary",
+    "slug": "time-and-effort-certification",
+    "path": "glossary/time-and-effort-certification.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "glossary:uei-sam-gov",
+    "title": "UEI (Unique Entity Identifier): Definition and SAM.gov Registration",
+    "collection": "glossary",
+    "slug": "uei-sam-gov",
+    "path": "glossary/uei-sam-gov.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "glossary:unallowable-costs",
+    "title": "Unallowable Costs: Definition Under 2 CFR 200",
+    "collection": "glossary",
+    "slug": "unallowable-costs",
+    "path": "glossary/unallowable-costs.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "glossary:uniform-guidance",
+    "title": "Uniform Guidance (2 CFR Part 200)",
+    "collection": "glossary",
+    "slug": "uniform-guidance",
+    "path": "glossary/uniform-guidance.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "glossary:unrelated-business-taxable-income",
+    "title": "Unrelated Business Taxable Income (UBTI): Definition",
+    "collection": "glossary",
+    "slug": "unrelated-business-taxable-income",
+    "path": "glossary/unrelated-business-taxable-income.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "guides:2-cfr-200-procurement-file-checklist",
+    "title": "2 CFR 200 Procurement File Checklist",
+    "collection": "guides",
+    "slug": "2-cfr-200-procurement-file-checklist",
+    "path": "guides/2-cfr-200-procurement-file-checklist.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "guides:2-cfr-200-subpart-d-procurement-standards",
+    "title": "2 CFR 200 Subpart D: Federal Procurement Standards",
+    "collection": "guides",
+    "slug": "2-cfr-200-subpart-d-procurement-standards",
+    "path": "guides/2-cfr-200-subpart-d-procurement-standards.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "guides:2-cfr-200-subpart-e-cost-principles",
+    "title": "2 CFR 200 Subpart E: Cost Principles for Federal Awards",
+    "collection": "guides",
+    "slug": "2-cfr-200-subpart-e-cost-principles",
+    "path": "guides/2-cfr-200-subpart-e-cost-principles.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "guides:501c3-application-step-by-step-guide",
+    "title": "How to Apply for 501(c)(3) Status: A Step-by-Step Guide",
+    "collection": "guides",
+    "slug": "501c3-application-step-by-step-guide",
+    "path": "guides/501c3-application-step-by-step-guide.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "guides:990-vs-990ez-which-to-file",
+    "title": "Form 990 vs. 990-EZ: Which One Your Nonprofit Has to File",
+    "collection": "guides",
+    "slug": "990-vs-990ez-which-to-file",
+    "path": "guides/990-vs-990ez-which-to-file.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "guides:accounting-for-restricted-funds-in-nonprofit",
+    "title": "Accounting for Restricted Funds in a Nonprofit: The Complete Framework",
+    "collection": "guides",
+    "slug": "accounting-for-restricted-funds-in-nonprofit",
+    "path": "guides/accounting-for-restricted-funds-in-nonprofit.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "guides:affordable-housing-hud-cpd-compliance-guide",
+    "title": "Affordable Housing and HUD CPD Compliance: CDBG, HOME, ESG, and CoC",
+    "collection": "guides",
+    "slug": "affordable-housing-hud-cpd-compliance-guide",
+    "path": "guides/affordable-housing-hud-cpd-compliance-guide.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "guides:after-school-programs-21st-century-community-learning-centers-compliance-guide",
+    "title": "21st Century Community Learning Centers (21st CCLC) Compliance Guide",
+    "collection": "guides",
+    "slug": "after-school-programs-21st-century-community-learning-centers-compliance-guide",
+    "path": "guides/after-school-programs-21st-century-community-learning-centers-compliance-guide.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "guides:ai-for-grant-writing-guide",
+    "title": "AI for Grant Writing: A Practical Guide for Nonprofits in 2026",
+    "collection": "guides",
+    "slug": "ai-for-grant-writing-guide",
+    "path": "guides/ai-for-grant-writing-guide.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "guides:ai-tools-for-nonprofits-practical-guide",
+    "title": "AI Tools for Nonprofits: What Actually Works in 2026",
+    "collection": "guides",
+    "slug": "ai-tools-for-nonprofits-practical-guide",
+    "path": "guides/ai-tools-for-nonprofits-practical-guide.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "guides:alabama-charitable-registration-guide",
+    "title": "Alabama Charitable Registration Filing Guide for Nonprofits",
+    "collection": "guides",
+    "slug": "alabama-charitable-registration-guide",
+    "path": "guides/alabama-charitable-registration-guide.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "guides:alaska-charitable-registration-guide",
+    "title": "Alaska Form 08-4351 Charitable Registration Guide",
+    "collection": "guides",
+    "slug": "alaska-charitable-registration-guide",
+    "path": "guides/alaska-charitable-registration-guide.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "guides:albuquerque-nonprofit-accounting-guide",
+    "title": "Albuquerque Nonprofit Accounting: Tribal Grants, Federal Land Management, and NM State Requirements",
+    "collection": "guides",
+    "slug": "albuquerque-nonprofit-accounting-guide",
+    "path": "guides/albuquerque-nonprofit-accounting-guide.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "guides:allowable-costs-federal-grants",
+    "title": "Allowable Costs on Federal Grants: What 2 CFR 200 Requires",
+    "collection": "guides",
+    "slug": "allowable-costs-federal-grants",
+    "path": "guides/allowable-costs-federal-grants.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "guides:americorps-fiscal-reporting",
+    "title": "AmeriCorps Fiscal Reporting Requirements",
+    "collection": "guides",
+    "slug": "americorps-fiscal-reporting",
+    "path": "guides/americorps-fiscal-reporting.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "guides:americorps-member-timekeeping-guide",
+    "title": "AmeriCorps Member Timekeeping Guide",
+    "collection": "guides",
+    "slug": "americorps-member-timekeeping-guide",
+    "path": "guides/americorps-member-timekeeping-guide.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "guides:anchorage-nonprofit-grant-writing-guide",
+    "title": "Anchorage Grant Writing: Rasmuson Foundation, Alaska Community Foundation, and ANTHC",
+    "collection": "guides",
+    "slug": "anchorage-nonprofit-grant-writing-guide",
+    "path": "guides/anchorage-nonprofit-grant-writing-guide.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "guides:annual-fund-calendar-timeline",
+    "title": "Annual Fund Calendar: The Year-Round Timeline That Actually Works",
+    "collection": "guides",
+    "slug": "annual-fund-calendar-timeline",
+    "path": "guides/annual-fund-calendar-timeline.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "guides:annual-fund-what-it-is-how-to-build-one",
+    "title": "What Is an Annual Fund? How to Build One for Your Nonprofit",
+    "collection": "guides",
+    "slug": "annual-fund-what-it-is-how-to-build-one",
+    "path": "guides/annual-fund-what-it-is-how-to-build-one.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "guides:arizona-nonprofit-audit-requirements",
+    "title": "Arizona Nonprofit Audit Requirements: 2026 Thresholds, Statute, and Deadlines",
+    "collection": "guides",
+    "slug": "arizona-nonprofit-audit-requirements",
+    "path": "guides/arizona-nonprofit-audit-requirements.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "guides:arizona-nonprofit-startup-guide",
+    "title": "How to Start a Nonprofit in Arizona: A Founder's Guide",
+    "collection": "guides",
+    "slug": "arizona-nonprofit-startup-guide",
+    "path": "guides/arizona-nonprofit-startup-guide.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "guides:arkansas-charitable-registration-guide",
+    "title": "Arkansas Charitable Registration Filing Guide for Nonprofits",
+    "collection": "guides",
+    "slug": "arkansas-charitable-registration-guide",
+    "path": "guides/arkansas-charitable-registration-guide.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "guides:arlington-tx-cdbg-compliance-guide",
+    "title": "Arlington nonprofit grant compliance and audit readiness guide",
+    "collection": "guides",
+    "slug": "arlington-tx-cdbg-compliance-guide",
+    "path": "guides/arlington-tx-cdbg-compliance-guide.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "guides:atlanta-foundation-grants-guide",
+    "title": "Atlanta Foundation Grants: A 2026 Guide for Nonprofits",
+    "collection": "guides",
+    "slug": "atlanta-foundation-grants-guide",
+    "path": "guides/atlanta-foundation-grants-guide.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "guides:audit-ready-grant-expense-sampling-guide",
+    "title": "Audit-Ready Grant Expense Sampling Guide",
+    "collection": "guides",
+    "slug": "audit-ready-grant-expense-sampling-guide",
+    "path": "guides/audit-ready-grant-expense-sampling-guide.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "guides:audit-trail-requirements-for-grant-software",
+    "title": "Audit Trail Requirements for Grant Software",
+    "collection": "guides",
+    "slug": "audit-trail-requirements-for-grant-software",
+    "path": "guides/audit-trail-requirements-for-grant-software.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "guides:auditor-confirmation-request-nonprofit-guide",
+    "title": "Auditor Confirmation Request Nonprofit Guide",
+    "collection": "guides",
+    "slug": "auditor-confirmation-request-nonprofit-guide",
+    "path": "guides/auditor-confirmation-request-nonprofit-guide.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "guides:auditor-read-only-access-software-guide",
+    "title": "Auditor Read-Only Access Software Guide",
+    "collection": "guides",
+    "slug": "auditor-read-only-access-software-guide",
+    "path": "guides/auditor-read-only-access-software-guide.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "guides:austin-nonprofit-fundraising-strategy-guide",
+    "title": "Austin Nonprofit Fundraising Strategy: Tech-Sector Giving, Dell Foundation Cultivation, and Local Funder Dynamics",
+    "collection": "guides",
+    "slug": "austin-nonprofit-fundraising-strategy-guide",
+    "path": "guides/austin-nonprofit-fundraising-strategy-guide.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "guides:bakersfield-nonprofit-audit-readiness-guide",
+    "title": "Bakersfield nonprofit grant compliance and audit readiness guide",
+    "collection": "guides",
+    "slug": "bakersfield-nonprofit-audit-readiness-guide",
+    "path": "guides/bakersfield-nonprofit-audit-readiness-guide.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "guides:baltimore-government-grants-nonprofits-guide",
+    "title": "Baltimore Government Grants for Nonprofits: BCHD, DHCD, and State Pass-Through",
+    "collection": "guides",
+    "slug": "baltimore-government-grants-nonprofits-guide",
+    "path": "guides/baltimore-government-grants-nonprofits-guide.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "guides:bank-reconciliation-audit-evidence-guide",
+    "title": "Bank Reconciliation Audit Evidence Guide",
+    "collection": "guides",
+    "slug": "bank-reconciliation-audit-evidence-guide",
+    "path": "guides/bank-reconciliation-audit-evidence-guide.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "guides:bay-area-foundation-grants-guide",
+    "title": "Bay Area Foundation Grants: A 2026 Guide for Nonprofits",
+    "collection": "guides",
+    "slug": "bay-area-foundation-grants-guide",
+    "path": "guides/bay-area-foundation-grants-guide.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "guides:board-designated-funds-policy-guide",
+    "title": "Board Designated Funds Policy Guide",
+    "collection": "guides",
+    "slug": "board-designated-funds-policy-guide",
+    "path": "guides/board-designated-funds-policy-guide.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "guides:board-financial-report-what-to-include",
+    "title": "Board Financial Reports: What to Include at Every Meeting",
+    "collection": "guides",
+    "slug": "board-financial-report-what-to-include",
+    "path": "guides/board-financial-report-what-to-include.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "guides:board-fundraising-give-or-get-policy",
+    "title": "Board Give-or-Get Policy: How to Set, Implement, and Enforce Board Fundraising Expectations",
+    "collection": "guides",
+    "slug": "board-fundraising-give-or-get-policy",
+    "path": "guides/board-fundraising-give-or-get-policy.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "guides:board-packet-restricted-funds-section-guide",
+    "title": "Board Packet Restricted Funds Section Guide",
+    "collection": "guides",
+    "slug": "board-packet-restricted-funds-section-guide",
+    "path": "guides/board-packet-restricted-funds-section-guide.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "guides:boston-cdbg-hud-compliance-guide",
+    "title": "Boston CDBG and HUD Compliance: A 2026 Guide for Subrecipients",
+    "collection": "guides",
+    "slug": "boston-cdbg-hud-compliance-guide",
+    "path": "guides/boston-cdbg-hud-compliance-guide.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "guides:boston-foundation-grants-guide",
+    "title": "Boston Foundation Grants: A 2026 Guide for Nonprofits",
+    "collection": "guides",
+    "slug": "boston-foundation-grants-guide",
+    "path": "guides/boston-foundation-grants-guide.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "guides:boston-nonprofit-fundraising-strategy-guide",
+    "title": "Boston Nonprofit Fundraising Strategy: University Endowment Adjacency, Barr Foundation, and Major Donor Cultivation",
+    "collection": "guides",
+    "slug": "boston-nonprofit-fundraising-strategy-guide",
+    "path": "guides/boston-nonprofit-fundraising-strategy-guide.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "guides:buffalo-foundation-grants-guide",
+    "title": "Buffalo nonprofit grants: local funder and public program guide",
+    "collection": "guides",
+    "slug": "buffalo-foundation-grants-guide",
+    "path": "guides/buffalo-foundation-grants-guide.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "guides:california-grant-management-software",
+    "title": "California Grant Management Software for Nonprofits [2026]",
+    "collection": "guides",
+    "slug": "california-grant-management-software",
+    "path": "guides/california-grant-management-software.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "guides:california-nonprofit-startup-guide",
+    "title": "How to Start a Nonprofit in California: A Founder's Guide",
+    "collection": "guides",
+    "slug": "california-nonprofit-startup-guide",
+    "path": "guides/california-nonprofit-startup-guide.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "guides:california-rrf-1-bay-area-nonprofits",
+    "title": "California RRF-1 for Bay Area Nonprofits: Annual Renewal, CT-TR-1, and Audit Triggers",
+    "collection": "guides",
+    "slug": "california-rrf-1-bay-area-nonprofits",
+    "path": "guides/california-rrf-1-bay-area-nonprofits.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "guides:california-rrf-1-charitable-registration-guide",
+    "title": "California RRF-1 Charitable Registration Guide: Annual Renewal for Nonprofits",
+    "collection": "guides",
+    "slug": "california-rrf-1-charitable-registration-guide",
+    "path": "guides/california-rrf-1-charitable-registration-guide.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "guides:california-si-100-statement-of-information-guide",
+    "title": "California Form SI-100 Filing Guide for Nonprofits",
+    "collection": "guides",
+    "slug": "california-si-100-statement-of-information-guide",
+    "path": "guides/california-si-100-statement-of-information-guide.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "guides:california-state-grant-programs-for-nonprofits",
+    "title": "California State Grant Programs for Nonprofits: 2026 Funder Landscape",
+    "collection": "guides",
+    "slug": "california-state-grant-programs-for-nonprofits",
+    "path": "guides/california-state-grant-programs-for-nonprofits.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "guides:capacity-building-grants-guide",
+    "title": "Capacity Building Grants: What They Fund and How to Position For Them",
+    "collection": "guides",
+    "slug": "capacity-building-grants-guide",
+    "path": "guides/capacity-building-grants-guide.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "guides:capital-campaign-planning-guide",
+    "title": "Capital Campaign Planning Guide for Nonprofits",
+    "collection": "guides",
+    "slug": "capital-campaign-planning-guide",
+    "path": "guides/capital-campaign-planning-guide.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "guides:capital-campaign-restricted-funds-accounting-guide",
+    "title": "Capital Campaign Restricted Funds Accounting Guide",
+    "collection": "guides",
+    "slug": "capital-campaign-restricted-funds-accounting-guide",
+    "path": "guides/capital-campaign-restricted-funds-accounting-guide.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "guides:case-for-support-how-to-write",
+    "title": "How to Write a Case for Support That Works for Major Gifts and Grant Applications",
+    "collection": "guides",
+    "slug": "case-for-support-how-to-write",
+    "path": "guides/case-for-support-how-to-write.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "guides:case-note-quality-checklist-for-grants",
+    "title": "Case Note Quality Checklist for Grants",
+    "collection": "guides",
+    "slug": "case-note-quality-checklist-for-grants",
+    "path": "guides/case-note-quality-checklist-for-grants.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "guides:cash-flow-forecast-reimbursement-grants",
+    "title": "Cash Flow Forecast for Reimbursement Grants",
+    "collection": "guides",
+    "slug": "cash-flow-forecast-reimbursement-grants",
+    "path": "guides/cash-flow-forecast-reimbursement-grants.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "guides:cash-management-policy-federal-grants-guide",
+    "title": "Cash Management Policy for Federal Grants",
+    "collection": "guides",
+    "slug": "cash-management-policy-federal-grants-guide",
+    "path": "guides/cash-management-policy-federal-grants-guide.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "guides:cash-vs-accrual-for-grant-accounting",
+    "title": "Cash vs Accrual for Grant Accounting: Nonprofit Guide",
+    "collection": "guides",
+    "slug": "cash-vs-accrual-for-grant-accounting",
+    "path": "guides/cash-vs-accrual-for-grant-accounting.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "guides:cdbg-community-development-block-grants-nonprofits",
+    "title": "CDBG Grants for Nonprofits: How Community Development Block Grants Work",
+    "collection": "guides",
+    "slug": "cdbg-community-development-block-grants-nonprofits",
+    "path": "guides/cdbg-community-development-block-grants-nonprofits.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "guides:cdbg-reimbursement-request-checklist",
+    "title": "CDBG Reimbursement Request Checklist",
+    "collection": "guides",
+    "slug": "cdbg-reimbursement-request-checklist",
+    "path": "guides/cdbg-reimbursement-request-checklist.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "guides:cdc-public-health-grants-nonprofits",
+    "title": "CDC Public Health Grants for Nonprofits: Programs and Compliance",
+    "collection": "guides",
+    "slug": "cdc-public-health-grants-nonprofits",
+    "path": "guides/cdc-public-health-grants-nonprofits.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "guides:charlotte-nonprofit-grant-writing-guide",
+    "title": "Charlotte Grant Writing: Duke Endowment, Foundation For The Carolinas, and Belk Foundation",
+    "collection": "guides",
+    "slug": "charlotte-nonprofit-grant-writing-guide",
+    "path": "guides/charlotte-nonprofit-grant-writing-guide.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "guides:chatgpt-for-nonprofits-use-cases",
+    "title": "ChatGPT for Nonprofits: 12 Practical Use Cases (and 4 to Avoid)",
+    "collection": "guides",
+    "slug": "chatgpt-for-nonprofits-use-cases",
+    "path": "guides/chatgpt-for-nonprofits-use-cases.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "guides:chicago-cdbg-pass-through-compliance-guide",
+    "title": "Chicago CDBG Pass-Through Compliance: A 2026 Guide for Subrecipients",
+    "collection": "guides",
+    "slug": "chicago-cdbg-pass-through-compliance-guide",
+    "path": "guides/chicago-cdbg-pass-through-compliance-guide.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "guides:chicago-foundation-grants-guide",
+    "title": "Chicago Foundation Grants: A 2026 Guide for Nonprofits",
+    "collection": "guides",
+    "slug": "chicago-foundation-grants-guide",
+    "path": "guides/chicago-foundation-grants-guide.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "guides:chicago-nonprofit-fundraising-strategy-guide",
+    "title": "Chicago Nonprofit Fundraising Strategy: Galas, Corporate Giving, and Foundation Cultivation",
+    "collection": "guides",
+    "slug": "chicago-nonprofit-fundraising-strategy-guide",
+    "path": "guides/chicago-nonprofit-fundraising-strategy-guide.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "guides:cincinnati-foundation-grants-guide",
+    "title": "Cincinnati nonprofit grants: local funder and public program guide",
+    "collection": "guides",
+    "slug": "cincinnati-foundation-grants-guide",
+    "path": "guides/cincinnati-foundation-grants-guide.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "guides:cleveland-nonprofit-fundraising-strategy-guide",
+    "title": "Cleveland Nonprofit Fundraising Strategy: Cleveland Foundation, Gund, and Corporate Giving",
+    "collection": "guides",
+    "slug": "cleveland-nonprofit-fundraising-strategy-guide",
+    "path": "guides/cleveland-nonprofit-fundraising-strategy-guide.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "guides:cms-fqhc-grants-nonprofits",
+    "title": "CMS and FQHC Grants for Health Nonprofits: Programs and Compliance",
+    "collection": "guides",
+    "slug": "cms-fqhc-grants-nonprofits",
+    "path": "guides/cms-fqhc-grants-nonprofits.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "guides:cognizant-agency-for-indirect-costs",
+    "title": "Cognizant Agency for Indirect Costs: Nonprofit Guide",
+    "collection": "guides",
+    "slug": "cognizant-agency-for-indirect-costs",
+    "path": "guides/cognizant-agency-for-indirect-costs.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "guides:colorado-charitable-registration-guide",
+    "title": "Colorado Charitable Registration Filing Guide for Nonprofits",
+    "collection": "guides",
+    "slug": "colorado-charitable-registration-guide",
+    "path": "guides/colorado-charitable-registration-guide.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "guides:colorado-nonprofit-audit-requirements",
+    "title": "Colorado Nonprofit Audit Requirements: 2026 Thresholds, Statute, and Deadlines",
+    "collection": "guides",
+    "slug": "colorado-nonprofit-audit-requirements",
+    "path": "guides/colorado-nonprofit-audit-requirements.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "guides:colorado-nonprofit-startup-guide",
+    "title": "How to Start a Nonprofit in Colorado: 2026 Founder's Guide",
+    "collection": "guides",
+    "slug": "colorado-nonprofit-startup-guide",
+    "path": "guides/colorado-nonprofit-startup-guide.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "guides:colorado-springs-nonprofit-accounting-guide",
+    "title": "Colorado Springs nonprofit grant compliance and audit readiness guide",
+    "collection": "guides",
+    "slug": "colorado-springs-nonprofit-accounting-guide",
+    "path": "guides/colorado-springs-nonprofit-accounting-guide.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "guides:colorado-state-grant-programs-for-nonprofits",
+    "title": "Colorado State Grant Programs for Nonprofits: 2026 Funder Landscape",
+    "collection": "guides",
+    "slug": "colorado-state-grant-programs-for-nonprofits",
+    "path": "guides/colorado-state-grant-programs-for-nonprofits.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "guides:columbus-nonprofit-startup-guide",
+    "title": "How to Start a Nonprofit in Columbus: Ohio Registration, Franklin County, and 501(c)(3)",
+    "collection": "guides",
+    "slug": "columbus-nonprofit-startup-guide",
+    "path": "guides/columbus-nonprofit-startup-guide.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "guides:common-single-audit-findings",
+    "title": "Common Single Audit Findings: What They Are and How to Prevent Them",
+    "collection": "guides",
+    "slug": "common-single-audit-findings",
+    "path": "guides/common-single-audit-findings.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "guides:community-foundation-grants-guide",
+    "title": "Community Foundation Grants: How They Work and How to Apply",
+    "collection": "guides",
+    "slug": "community-foundation-grants-guide",
+    "path": "guides/community-foundation-grants-guide.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "guides:community-health-centers-hrsa-330-reporting-guide",
+    "title": "Community Health Centers and HRSA Section 330: UDS Reporting and Compliance",
+    "collection": "guides",
+    "slug": "community-health-centers-hrsa-330-reporting-guide",
+    "path": "guides/community-health-centers-hrsa-330-reporting-guide.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "guides:compliance-first-grant-management-system",
+    "title": "Compliance-First Grant Management System",
+    "collection": "guides",
+    "slug": "compliance-first-grant-management-system",
+    "path": "guides/compliance-first-grant-management-system.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "guides:connecticut-annual-report-guide",
+    "title": "Connecticut Nonprofit Annual Report: 2026 Filing Guide",
+    "collection": "guides",
+    "slug": "connecticut-annual-report-guide",
+    "path": "guides/connecticut-annual-report-guide.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "guides:connecticut-charitable-registration-guide",
+    "title": "Connecticut Charitable Registration Filing Guide for Nonprofits",
+    "collection": "guides",
+    "slug": "connecticut-charitable-registration-guide",
+    "path": "guides/connecticut-charitable-registration-guide.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "guides:connecticut-nonprofit-audit-requirements",
+    "title": "Connecticut Nonprofit Audit Requirements: 2026 Thresholds, Statute, and Deadlines",
+    "collection": "guides",
+    "slug": "connecticut-nonprofit-audit-requirements",
+    "path": "guides/connecticut-nonprofit-audit-requirements.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "guides:connecticut-nonprofit-startup-guide",
+    "title": "How to Start a Nonprofit in Connecticut: Step-by-Step Formation Guide",
+    "collection": "guides",
+    "slug": "connecticut-nonprofit-startup-guide",
+    "path": "guides/connecticut-nonprofit-startup-guide.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "guides:corporate-grants-foundation-vs-matching",
+    "title": "Corporate Foundation Grants vs. Matching Programs: How Corporate Giving Actually Works",
+    "collection": "guides",
+    "slug": "corporate-grants-foundation-vs-matching",
+    "path": "guides/corporate-grants-foundation-vs-matching.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "guides:corporate-matching-gift-programs-nonprofits",
+    "title": "Corporate Matching Gift Programs: How to Capture Unclaimed Matching Gifts",
+    "collection": "guides",
+    "slug": "corporate-matching-gift-programs-nonprofits",
+    "path": "guides/corporate-matching-gift-programs-nonprofits.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "guides:corporate-partnership-strategy-nonprofits",
+    "title": "Corporate Partnerships for Nonprofits: A Working Strategy",
+    "collection": "guides",
+    "slug": "corporate-partnership-strategy-nonprofits",
+    "path": "guides/corporate-partnership-strategy-nonprofits.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "guides:cost-allocation-plan-nonprofit-guide",
+    "title": "Cost Allocation Plan for Nonprofits: How to Build One That Survives an Audit",
+    "collection": "guides",
+    "slug": "cost-allocation-plan-nonprofit-guide",
+    "path": "guides/cost-allocation-plan-nonprofit-guide.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "guides:cost-sharing-commitment-tracker-nonprofits",
+    "title": "Cost Sharing Commitment Tracker for Nonprofits",
+    "collection": "guides",
+    "slug": "cost-sharing-commitment-tracker-nonprofits",
+    "path": "guides/cost-sharing-commitment-tracker-nonprofits.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "guides:cost-transfer-policy-nonprofits",
+    "title": "Cost Transfer Policy for Federal Grants: Nonprofit Template",
+    "collection": "guides",
+    "slug": "cost-transfer-policy-nonprofits",
+    "path": "guides/cost-transfer-policy-nonprofits.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "guides:dallas-nonprofit-grant-writing-guide",
+    "title": "Dallas Grant Writing: Communities Foundation of Texas, Hoblitzelle, and Meadows Foundation",
+    "collection": "guides",
+    "slug": "dallas-nonprofit-grant-writing-guide",
+    "path": "guides/dallas-nonprofit-grant-writing-guide.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "guides:data-quality-review-before-grant-report-guide",
+    "title": "Data Quality Review Before a Grant Report",
+    "collection": "guides",
+    "slug": "data-quality-review-before-grant-report-guide",
+    "path": "guides/data-quality-review-before-grant-report-guide.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "guides:dc-federal-pass-through-funding-nonprofits-guide",
+    "title": "DC Federal Pass-Through Funding for Nonprofits: A 2026 Guide",
+    "collection": "guides",
+    "slug": "dc-federal-pass-through-funding-nonprofits-guide",
+    "path": "guides/dc-federal-pass-through-funding-nonprofits-guide.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "guides:dc-medicaid-cms-grant-compliance-guide",
+    "title": "DC Medicaid and CMS Grant Compliance: A 2026 Guide for Community-Based Orgs",
+    "collection": "guides",
+    "slug": "dc-medicaid-cms-grant-compliance-guide",
+    "path": "guides/dc-medicaid-cms-grant-compliance-guide.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "guides:deferred-revenue-vs-conditional-grants-guide",
+    "title": "Deferred Revenue vs Conditional Grants Guide",
+    "collection": "guides",
+    "slug": "deferred-revenue-vs-conditional-grants-guide",
+    "path": "guides/deferred-revenue-vs-conditional-grants-guide.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "guides:demographic-data-collection-grant-reporting-guide",
+    "title": "Demographic Data Collection for Grant Reporting",
+    "collection": "guides",
+    "slug": "demographic-data-collection-grant-reporting-guide",
+    "path": "guides/demographic-data-collection-grant-reporting-guide.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "guides:denver-foundation-grants-guide",
+    "title": "Denver Foundation Grants: A 2026 Guide for Nonprofits",
+    "collection": "guides",
+    "slug": "denver-foundation-grants-guide",
+    "path": "guides/denver-foundation-grants-guide.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "guides:denver-nonprofit-audit-readiness-guide",
+    "title": "Denver Nonprofit Audit Readiness: Colorado Thresholds, Daniels Fund Prep, and Federal Single Audit",
+    "collection": "guides",
+    "slug": "denver-nonprofit-audit-readiness-guide",
+    "path": "guides/denver-nonprofit-audit-readiness-guide.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "guides:detroit-nonprofit-grant-writing-guide",
+    "title": "Detroit Grant Writing: Kresge Foundation, Ford Foundation, and Community Foundation for SE Michigan",
+    "collection": "guides",
+    "slug": "detroit-nonprofit-grant-writing-guide",
+    "path": "guides/detroit-nonprofit-grant-writing-guide.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "guides:development-committee-nonprofit-guide",
+    "title": "Development Committee: Structure, Responsibilities, and Effective Practices",
+    "collection": "guides",
+    "slug": "development-committee-nonprofit-guide",
+    "path": "guides/development-committee-nonprofit-guide.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "guides:development-director-job-description-guide",
+    "title": "Development Director Responsibilities: A Complete Job Description Guide",
+    "collection": "guides",
+    "slug": "development-director-job-description-guide",
+    "path": "guides/development-director-job-description-guide.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "guides:development-finance-weekly-grant-handoff-guide",
+    "title": "Development Finance Weekly Grant Handoff Guide",
+    "collection": "guides",
+    "slug": "development-finance-weekly-grant-handoff-guide",
+    "path": "guides/development-finance-weekly-grant-handoff-guide.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "guides:development-metrics-kpis-guide",
+    "title": "Nonprofit Development KPIs and Metrics: A Practical Guide",
+    "collection": "guides",
+    "slug": "development-metrics-kpis-guide",
+    "path": "guides/development-metrics-kpis-guide.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "guides:development-operations-infrastructure",
+    "title": "Development Operations: The Infrastructure That Multiplies Fundraising Capacity",
+    "collection": "guides",
+    "slug": "development-operations-infrastructure",
+    "path": "guides/development-operations-infrastructure.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "guides:doj-ovc-vawa-reporting-requirements",
+    "title": "DOJ OVC and VAWA Grant Reporting Requirements",
+    "collection": "guides",
+    "slug": "doj-ovc-vawa-reporting-requirements",
+    "path": "guides/doj-ovc-vawa-reporting-requirements.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "guides:doj-vawa-grant-financial-file-guide",
+    "title": "DOJ VAWA Grant Financial File Guide",
+    "collection": "guides",
+    "slug": "doj-vawa-grant-financial-file-guide",
+    "path": "guides/doj-vawa-grant-financial-file-guide.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "guides:donor-advised-fund-donors-guide",
+    "title": "Donor Advised Funds for Nonprofits: A Practical Guide",
+    "collection": "guides",
+    "slug": "donor-advised-fund-donors-guide",
+    "path": "guides/donor-advised-fund-donors-guide.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "guides:donor-advised-fund-grant-restriction-guide",
+    "title": "Donor Advised Fund Grant Restriction Guide",
+    "collection": "guides",
+    "slug": "donor-advised-fund-grant-restriction-guide",
+    "path": "guides/donor-advised-fund-grant-restriction-guide.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "guides:donor-crm-migration-preparation",
+    "title": "Donor CRM Migration: How to Prepare So It Doesn't Become a Disaster",
+    "collection": "guides",
+    "slug": "donor-crm-migration-preparation",
+    "path": "guides/donor-crm-migration-preparation.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "guides:donor-crm-vs-grant-management-system",
+    "title": "Donor CRM vs Grant Management System",
+    "collection": "guides",
+    "slug": "donor-crm-vs-grant-management-system",
+    "path": "guides/donor-crm-vs-grant-management-system.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "guides:donor-data-privacy-governance",
+    "title": "Donor Data Privacy for Nonprofits: A Practical Governance Guide",
+    "collection": "guides",
+    "slug": "donor-data-privacy-governance",
+    "path": "guides/donor-data-privacy-governance.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "guides:donor-management-software-mistakes",
+    "title": "5 Donor Management Software Mistakes Development Directors Regret",
+    "collection": "guides",
+    "slug": "donor-management-software-mistakes",
+    "path": "guides/donor-management-software-mistakes.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "guides:donor-restricted-grant-reconciliation-guide",
+    "title": "Donor Restricted Grant Reconciliation Guide",
+    "collection": "guides",
+    "slug": "donor-restricted-grant-reconciliation-guide",
+    "path": "guides/donor-restricted-grant-reconciliation-guide.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "guides:donor-restricted-vs-board-designated-funds",
+    "title": "Donor-Restricted vs Board-Designated Funds: The Legal Distinction",
+    "collection": "guides",
+    "slug": "donor-restricted-vs-board-designated-funds",
+    "path": "guides/donor-restricted-vs-board-designated-funds.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "guides:donor-restriction-coding-in-crm-guide",
+    "title": "Donor Restriction Coding in CRM Guide",
+    "collection": "guides",
+    "slug": "donor-restriction-coding-in-crm-guide",
+    "path": "guides/donor-restriction-coding-in-crm-guide.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "guides:donor-restriction-release-policy-guide",
+    "title": "Donor Restriction Release Policy Guide",
+    "collection": "guides",
+    "slug": "donor-restriction-release-policy-guide",
+    "path": "guides/donor-restriction-release-policy-guide.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "guides:donor-retention-reporting-for-boards",
+    "title": "Donor Retention Reports Your Board Needs",
+    "collection": "guides",
+    "slug": "donor-retention-reporting-for-boards",
+    "path": "guides/donor-retention-reporting-for-boards.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "guides:donor-retention-strategies",
+    "title": "Nonprofit Donor Retention Strategies That Actually Work",
+    "collection": "guides",
+    "slug": "donor-retention-strategies",
+    "path": "guides/donor-retention-strategies.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "guides:donor-stewardship-plan-12-month-guide",
+    "title": "Donor Stewardship: How to Build a 12-Month Plan",
+    "collection": "guides",
+    "slug": "donor-stewardship-plan-12-month-guide",
+    "path": "guides/donor-stewardship-plan-12-month-guide.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "guides:donor-thank-you-letter-templates-examples",
+    "title": "Donor Thank You Letter Templates: 8 Examples for Different Situations",
+    "collection": "guides",
+    "slug": "donor-thank-you-letter-templates-examples",
+    "path": "guides/donor-thank-you-letter-templates-examples.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "guides:donor-upgrade-appeal-how-to-write",
+    "title": "How to Write a Donor Upgrade Appeal That Converts",
+    "collection": "guides",
+    "slug": "donor-upgrade-appeal-how-to-write",
+    "path": "guides/donor-upgrade-appeal-how-to-write.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "guides:donor-wealth-screening-guide",
+    "title": "Donor Wealth Screening: What It Is and How to Use It",
+    "collection": "guides",
+    "slug": "donor-wealth-screening-guide",
+    "path": "guides/donor-wealth-screening-guide.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "guides:eda-economic-development-grants",
+    "title": "EDA Economic Development Grants for Nonprofits: Programs and Compliance",
+    "collection": "guides",
+    "slug": "eda-economic-development-grants",
+    "path": "guides/eda-economic-development-grants.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "guides:el-paso-cdbg-compliance-guide",
+    "title": "El Paso nonprofit grant compliance and audit readiness guide",
+    "collection": "guides",
+    "slug": "el-paso-cdbg-compliance-guide",
+    "path": "guides/el-paso-cdbg-compliance-guide.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "guides:endowment-vs-board-designated-funds-guide",
+    "title": "Endowment vs Board Designated Funds Guide",
+    "collection": "guides",
+    "slug": "endowment-vs-board-designated-funds-guide",
+    "path": "guides/endowment-vs-board-designated-funds-guide.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "guides:epa-environmental-education-grant-reporting-guide",
+    "title": "EPA Environmental Education Grant Reporting Guide",
+    "collection": "guides",
+    "slug": "epa-environmental-education-grant-reporting-guide",
+    "path": "guides/epa-environmental-education-grant-reporting-guide.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "guides:epa-grants-nonprofits-guide",
+    "title": "EPA Grants for Nonprofits: Programs, Eligibility, and Compliance",
+    "collection": "guides",
+    "slug": "epa-grants-nonprofits-guide",
+    "path": "guides/epa-grants-nonprofits-guide.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "guides:evaluation-plan-for-grant-proposal",
+    "title": "Evaluation Plan for a Grant Proposal: How to Write One Without a Research Team",
+    "collection": "guides",
+    "slug": "evaluation-plan-for-grant-proposal",
+    "path": "guides/evaluation-plan-for-grant-proposal.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "guides:excel-grant-management-vs-software",
+    "title": "Excel for Grant Management vs Software: When to Switch and Why",
+    "collection": "guides",
+    "slug": "excel-grant-management-vs-software",
+    "path": "guides/excel-grant-management-vs-software.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "guides:executive-compensation-reasonableness-nonprofit-board",
+    "title": "Executive Compensation Reasonableness for Nonprofit Boards",
+    "collection": "guides",
+    "slug": "executive-compensation-reasonableness-nonprofit-board",
+    "path": "guides/executive-compensation-reasonableness-nonprofit-board.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "guides:executive-director-grant-pipeline-review-guide",
+    "title": "Executive Director Grant Pipeline Review Guide",
+    "collection": "guides",
+    "slug": "executive-director-grant-pipeline-review-guide",
+    "path": "guides/executive-director-grant-pipeline-review-guide.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "guides:executive-director-grant-risk-briefing-guide",
+    "title": "Executive Director Grant Risk Briefing Guide",
+    "collection": "guides",
+    "slug": "executive-director-grant-risk-briefing-guide",
+    "path": "guides/executive-director-grant-risk-briefing-guide.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "guides:fasb-asc-958-nonprofit-reporting",
+    "title": "FASB ASC 958: What Nonprofits Need to Know About Financial Reporting Standards",
+    "collection": "guides",
+    "slug": "fasb-asc-958-nonprofit-reporting",
+    "path": "guides/fasb-asc-958-nonprofit-reporting.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "guides:federal-award-closeout-document-retention-guide",
+    "title": "Federal Award Closeout and Document Retention Guide",
+    "collection": "guides",
+    "slug": "federal-award-closeout-document-retention-guide",
+    "path": "guides/federal-award-closeout-document-retention-guide.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "guides:federal-award-closeout-final-invoice-guide",
+    "title": "Federal Award Closeout Final Invoice Guide",
+    "collection": "guides",
+    "slug": "federal-award-closeout-final-invoice-guide",
+    "path": "guides/federal-award-closeout-final-invoice-guide.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "guides:federal-grant-drawdown-controls-checklist",
+    "title": "Federal Grant Drawdown Controls Checklist",
+    "collection": "guides",
+    "slug": "federal-grant-drawdown-controls-checklist",
+    "path": "guides/federal-grant-drawdown-controls-checklist.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "guides:federal-grant-equipment-tagging-inventory-guide",
+    "title": "Federal Grant Equipment Tagging and Inventory Guide",
+    "collection": "guides",
+    "slug": "federal-grant-equipment-tagging-inventory-guide",
+    "path": "guides/federal-grant-equipment-tagging-inventory-guide.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "guides:federal-grant-record-retention-exceptions-guide",
+    "title": "Federal Grant Record Retention Exceptions Guide",
+    "collection": "guides",
+    "slug": "federal-grant-record-retention-exceptions-guide",
+    "path": "guides/federal-grant-record-retention-exceptions-guide.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "guides:federal-grant-reporting-requirements",
+    "title": "Federal Grant Reporting Requirements: A Compliance Reference",
+    "collection": "guides",
+    "slug": "federal-grant-reporting-requirements",
+    "path": "guides/federal-grant-reporting-requirements.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "guides:federal-procurement-thresholds-micro-small-large",
+    "title": "Federal Procurement Thresholds 2026: Micro-Purchase and SAT Rules",
+    "collection": "guides",
+    "slug": "federal-procurement-thresholds-micro-small-large",
+    "path": "guides/federal-procurement-thresholds-micro-small-large.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "guides:federal-vs-foundation-grants-key-differences",
+    "title": "Federal vs Foundation Grants: Key Differences for Nonprofits",
+    "collection": "guides",
+    "slug": "federal-vs-foundation-grants-key-differences",
+    "path": "guides/federal-vs-foundation-grants-key-differences.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "guides:fema-nonprofit-security-grant-file-guide",
+    "title": "FEMA Nonprofit Security Grant File Guide",
+    "collection": "guides",
+    "slug": "fema-nonprofit-security-grant-file-guide",
+    "path": "guides/fema-nonprofit-security-grant-file-guide.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "guides:ffata-subaward-reporting-over-25k",
+    "title": "FFATA Subaward Reporting for Federal subawards over $50,000",
+    "collection": "guides",
+    "slug": "ffata-subaward-reporting-over-25k",
+    "path": "guides/ffata-subaward-reporting-over-25k.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "guides:finance-committee-grant-oversight-checklist",
+    "title": "Finance Committee Grant Oversight Checklist",
+    "collection": "guides",
+    "slug": "finance-committee-grant-oversight-checklist",
+    "path": "guides/finance-committee-grant-oversight-checklist.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "guides:fiscal-sponsorship-what-it-is-when-to-use",
+    "title": "Fiscal Sponsorship for Nonprofits: What It Is and When to Use It",
+    "collection": "guides",
+    "slug": "fiscal-sponsorship-what-it-is-when-to-use",
+    "path": "guides/fiscal-sponsorship-what-it-is-when-to-use.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "guides:florida-dr-5-sales-tax-exemption-guide",
+    "title": "Florida Form DR-5 Sales Tax Exemption Guide for Nonprofits",
+    "collection": "guides",
+    "slug": "florida-dr-5-sales-tax-exemption-guide",
+    "path": "guides/florida-dr-5-sales-tax-exemption-guide.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "guides:florida-grant-management-software",
+    "title": "Florida Grant Management Software: 2026 Buyer's Guide for Nonprofits",
+    "collection": "guides",
+    "slug": "florida-grant-management-software",
+    "path": "guides/florida-grant-management-software.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "guides:florida-nonprofit-startup-guide",
+    "title": "How to Start a Nonprofit in Florida: 2026 Step-by-Step Guide",
+    "collection": "guides",
+    "slug": "florida-nonprofit-startup-guide",
+    "path": "guides/florida-nonprofit-startup-guide.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "guides:florida-solicitation-of-contributions-act-guide",
+    "title": "Florida Solicitation of Contributions Act: Miami, Tampa, Orlando Guide",
+    "collection": "guides",
+    "slug": "florida-solicitation-of-contributions-act-guide",
+    "path": "guides/florida-solicitation-of-contributions-act-guide.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "guides:florida-solicitation-of-contributions-guide",
+    "title": "Florida Solicitation of Contributions Act: Nonprofit Filing Guide",
+    "collection": "guides",
+    "slug": "florida-solicitation-of-contributions-guide",
+    "path": "guides/florida-solicitation-of-contributions-guide.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "guides:florida-state-grant-programs-for-nonprofits",
+    "title": "Florida State Grant Programs for Nonprofits: 2026 Funder Landscape",
+    "collection": "guides",
+    "slug": "florida-state-grant-programs-for-nonprofits",
+    "path": "guides/florida-state-grant-programs-for-nonprofits.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "guides:food-banks-usda-tefap-reporting-guide",
+    "title": "Food Banks and USDA TEFAP Reporting: A Practical Compliance Guide",
+    "collection": "guides",
+    "slug": "food-banks-usda-tefap-reporting-guide",
+    "path": "guides/food-banks-usda-tefap-reporting-guide.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "guides:form-990-ez-filing-guide",
+    "title": "Form 990-EZ Filing: Nonprofit Guide for Mid-Sized Orgs",
+    "collection": "guides",
+    "slug": "form-990-ez-filing-guide",
+    "path": "guides/form-990-ez-filing-guide.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "guides:form-990-filing-guide",
+    "title": "Form 990 Filing: Complete 2026 Nonprofit Guide",
+    "collection": "guides",
+    "slug": "form-990-filing-guide",
+    "path": "guides/form-990-filing-guide.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "guides:form-990-pf-private-foundations-guide",
+    "title": "Form 990-PF Filing: Private Foundation Guide",
+    "collection": "guides",
+    "slug": "form-990-pf-private-foundations-guide",
+    "path": "guides/form-990-pf-private-foundations-guide.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "guides:form-990-t-unrelated-business-income",
+    "title": "Form 990-T and Unrelated Business Income: Nonprofit Guide",
+    "collection": "guides",
+    "slug": "form-990-t-unrelated-business-income",
+    "path": "guides/form-990-t-unrelated-business-income.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "guides:fort-worth-foundation-grants-guide",
+    "title": "Fort Worth nonprofit grants: local funder and public program guide",
+    "collection": "guides",
+    "slug": "fort-worth-foundation-grants-guide",
+    "path": "guides/fort-worth-foundation-grants-guide.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "guides:foundation-accounting-basics",
+    "title": "Foundation Accounting: How Private Foundations Track Grants, Investments, and Distributions",
+    "collection": "guides",
+    "slug": "foundation-accounting-basics",
+    "path": "guides/foundation-accounting-basics.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "guides:foundation-directory-online-guide",
+    "title": "Foundation Directory Online: A Practical Guide for Nonprofit Grant Research",
+    "collection": "guides",
+    "slug": "foundation-directory-online-guide",
+    "path": "guides/foundation-directory-online-guide.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "guides:foundation-fit-checklist-for-nonprofit-grants",
+    "title": "Foundation Fit Checklist for Nonprofit Grants",
+    "collection": "guides",
+    "slug": "foundation-fit-checklist-for-nonprofit-grants",
+    "path": "guides/foundation-fit-checklist-for-nonprofit-grants.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "guides:fresno-nonprofit-grants-guide",
+    "title": "Fresno nonprofit grants: local funder and public program guide",
+    "collection": "guides",
+    "slug": "fresno-nonprofit-grants-guide",
+    "path": "guides/fresno-nonprofit-grants-guide.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "guides:functional-expense-tieout-checklist",
+    "title": "Functional Expense Tie-Out Checklist",
+    "collection": "guides",
+    "slug": "functional-expense-tieout-checklist",
+    "path": "guides/functional-expense-tieout-checklist.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "guides:funder-communications-best-practices",
+    "title": "Funder Communications Best Practices: Reports, Updates, and Stewardship",
+    "collection": "guides",
+    "slug": "funder-communications-best-practices",
+    "path": "guides/funder-communications-best-practices.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "guides:funder-reporting-requirements-matrix-guide",
+    "title": "Funder Reporting Requirements Matrix Guide",
+    "collection": "guides",
+    "slug": "funder-reporting-requirements-matrix-guide",
+    "path": "guides/funder-reporting-requirements-matrix-guide.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "guides:funder-reporting-templates",
+    "title": "Funder Reporting Templates: What to Include and How to Structure Each Report Type",
+    "collection": "guides",
+    "slug": "funder-reporting-templates",
+    "path": "guides/funder-reporting-templates.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "guides:funder-site-visit-preparation-checklist",
+    "title": "Funder Site Visit Preparation Checklist",
+    "collection": "guides",
+    "slug": "funder-site-visit-preparation-checklist",
+    "path": "guides/funder-site-visit-preparation-checklist.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "guides:funding-management-software-guide",
+    "title": "Funding Management Software: What Organizations With Multiple Funding Streams Need",
+    "collection": "guides",
+    "slug": "funding-management-software-guide",
+    "path": "guides/funding-management-software-guide.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "guides:fundraising-during-budget-uncertainty",
+    "title": "Nonprofit Fundraising During Budget Uncertainty",
+    "collection": "guides",
+    "slug": "fundraising-during-budget-uncertainty",
+    "path": "guides/fundraising-during-budget-uncertainty.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "guides:georgia-charitable-solicitation-guide",
+    "title": "Georgia Charitable Solicitation Registration Guide",
+    "collection": "guides",
+    "slug": "georgia-charitable-solicitation-guide",
+    "path": "guides/georgia-charitable-solicitation-guide.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "guides:georgia-grant-management-software",
+    "title": "Georgia Grant Management Software: 2026 Buyer's Guide for Nonprofits",
+    "collection": "guides",
+    "slug": "georgia-grant-management-software",
+    "path": "guides/georgia-grant-management-software.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "guides:georgia-nonprofit-startup-guide",
+    "title": "How to Start a Nonprofit in Georgia: Step-by-Step Guide",
+    "collection": "guides",
+    "slug": "georgia-nonprofit-startup-guide",
+    "path": "guides/georgia-nonprofit-startup-guide.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "guides:georgia-state-grant-programs-for-nonprofits",
+    "title": "Georgia State Grant Programs for Nonprofits: 2026 Funder Landscape",
+    "collection": "guides",
+    "slug": "georgia-state-grant-programs-for-nonprofits",
+    "path": "guides/georgia-state-grant-programs-for-nonprofits.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "guides:giving-tuesday-strategy-nonprofit",
+    "title": "Giving Tuesday Strategy for Nonprofits: Making It Worth Your Time",
+    "collection": "guides",
+    "slug": "giving-tuesday-strategy-nonprofit",
+    "path": "guides/giving-tuesday-strategy-nonprofit.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "guides:grant-accounting-software-guide",
+    "title": "Grant Accounting Software: Fund-Level Tracking That General Accounting Tools Can't Do",
+    "collection": "guides",
+    "slug": "grant-accounting-software-guide",
+    "path": "guides/grant-accounting-software-guide.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "guides:grant-administration-software-guide",
+    "title": "Grant Administration Software: What It Does and How It Differs From Grant Discovery",
+    "collection": "guides",
+    "slug": "grant-administration-software-guide",
+    "path": "guides/grant-administration-software-guide.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "guides:grant-amendment-request-template-guide",
+    "title": "Grant Amendment Request Template Guide",
+    "collection": "guides",
+    "slug": "grant-amendment-request-template-guide",
+    "path": "guides/grant-amendment-request-template-guide.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "guides:grant-application-go-no-go-checklist",
+    "title": "Grant Application Go No Go Checklist",
+    "collection": "guides",
+    "slug": "grant-application-go-no-go-checklist",
+    "path": "guides/grant-application-go-no-go-checklist.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "guides:grant-award-acceptance-checklist",
+    "title": "Grant Award Acceptance Checklist for Nonprofits",
+    "collection": "guides",
+    "slug": "grant-award-acceptance-checklist",
+    "path": "guides/grant-award-acceptance-checklist.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "guides:grant-award-letter-intake-checklist",
+    "title": "Grant Award Letter Intake Checklist",
+    "collection": "guides",
+    "slug": "grant-award-letter-intake-checklist",
+    "path": "guides/grant-award-letter-intake-checklist.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "guides:grant-budget-amendment-process",
+    "title": "Grant Budget Amendment Process for Nonprofits",
+    "collection": "guides",
+    "slug": "grant-budget-amendment-process",
+    "path": "guides/grant-budget-amendment-process.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "guides:grant-budget-justification-how-to-write",
+    "title": "Grant Budget Justification: How to Write One That Gets Approved",
+    "collection": "guides",
+    "slug": "grant-budget-justification-how-to-write",
+    "path": "guides/grant-budget-justification-how-to-write.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "guides:grant-budget-modification-rules",
+    "title": "Grant Budget Modifications: Rules, Prior Approval, and Documentation",
+    "collection": "guides",
+    "slug": "grant-budget-modification-rules",
+    "path": "guides/grant-budget-modification-rules.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "guides:grant-budget-to-actual-review-guide",
+    "title": "Grant Budget to Actual Review Guide",
+    "collection": "guides",
+    "slug": "grant-budget-to-actual-review-guide",
+    "path": "guides/grant-budget-to-actual-review-guide.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "guides:grant-budget-tracking",
+    "title": "Grant Budget Tracking: What It Is and How to Do It Without Audit Risk",
+    "collection": "guides",
+    "slug": "grant-budget-tracking",
+    "path": "guides/grant-budget-tracking.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "guides:grant-budget-variance-explanation-guide",
+    "title": "Grant Budget Variance Explanation Guide",
+    "collection": "guides",
+    "slug": "grant-budget-variance-explanation-guide",
+    "path": "guides/grant-budget-variance-explanation-guide.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "guides:grant-calendar-system-requirements-guide",
+    "title": "Grant Calendar System Requirements Guide",
+    "collection": "guides",
+    "slug": "grant-calendar-system-requirements-guide",
+    "path": "guides/grant-calendar-system-requirements-guide.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "guides:grant-cash-advance-vs-reimbursement-guide",
+    "title": "Grant Cash Advance vs Reimbursement Guide",
+    "collection": "guides",
+    "slug": "grant-cash-advance-vs-reimbursement-guide",
+    "path": "guides/grant-cash-advance-vs-reimbursement-guide.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "guides:grant-closeout-checklist",
+    "title": "Grant Closeout Checklist for Nonprofits",
+    "collection": "guides",
+    "slug": "grant-closeout-checklist",
+    "path": "guides/grant-closeout-checklist.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "guides:grant-closeout-lessons-learned-template-guide",
+    "title": "Grant Closeout Lessons Learned Template Guide",
+    "collection": "guides",
+    "slug": "grant-closeout-lessons-learned-template-guide",
+    "path": "guides/grant-closeout-lessons-learned-template-guide.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "guides:grant-closeout-procedures",
+    "title": "Grant Closeout Procedures: A Checklist for Nonprofits",
+    "collection": "guides",
+    "slug": "grant-closeout-procedures",
+    "path": "guides/grant-closeout-procedures.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "guides:grant-closeout-retrospective-template-guide",
+    "title": "Grant Closeout Retrospective Template Guide",
+    "collection": "guides",
+    "slug": "grant-closeout-retrospective-template-guide",
+    "path": "guides/grant-closeout-retrospective-template-guide.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "guides:grant-compliance-101-for-nonprofits",
+    "title": "Grant Compliance 101: What Happens After You Win the Grant",
+    "collection": "guides",
+    "slug": "grant-compliance-101-for-nonprofits",
+    "path": "guides/grant-compliance-101-for-nonprofits.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "guides:grant-compliance-audit-preparation",
+    "title": "Grant Compliance Audit Prep for Nonprofits",
+    "collection": "guides",
+    "slug": "grant-compliance-audit-preparation",
+    "path": "guides/grant-compliance-audit-preparation.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "guides:grant-compliance-calendar-board-summary-guide",
+    "title": "Grant Compliance Calendar Board Summary Guide",
+    "collection": "guides",
+    "slug": "grant-compliance-calendar-board-summary-guide",
+    "path": "guides/grant-compliance-calendar-board-summary-guide.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "guides:grant-compliance-file-index-template-guide",
+    "title": "Grant Compliance File Index Template Guide",
+    "collection": "guides",
+    "slug": "grant-compliance-file-index-template-guide",
+    "path": "guides/grant-compliance-file-index-template-guide.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "guides:grant-compliance-for-environmental-nonprofits",
+    "title": "Grant Compliance for Environmental Nonprofits: EPA Requirements and Reporting",
+    "collection": "guides",
+    "slug": "grant-compliance-for-environmental-nonprofits",
+    "path": "guides/grant-compliance-for-environmental-nonprofits.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "guides:grant-compliance-for-food-banks",
+    "title": "Grant Compliance for Food Banks: Federal Programs and Documentation Requirements",
+    "collection": "guides",
+    "slug": "grant-compliance-for-food-banks",
+    "path": "guides/grant-compliance-for-food-banks.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "guides:grant-compliance-for-youth-nonprofits",
+    "title": "Grant Compliance for Youth Programs: Documentation and Reporting Requirements",
+    "collection": "guides",
+    "slug": "grant-compliance-for-youth-nonprofits",
+    "path": "guides/grant-compliance-for-youth-nonprofits.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "guides:grant-compliance-mistakes",
+    "title": "9 Grant Compliance Mistakes That Produce Audit Findings (and How to Prevent Each)",
+    "collection": "guides",
+    "slug": "grant-compliance-mistakes",
+    "path": "guides/grant-compliance-mistakes.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "guides:grant-compliance-software-for-nonprofits",
+    "title": "Grant Compliance Software for Nonprofits: What It Must Do and How to Evaluate It",
+    "collection": "guides",
+    "slug": "grant-compliance-software-for-nonprofits",
+    "path": "guides/grant-compliance-software-for-nonprofits.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "guides:grant-compliance-training-plan-small-team",
+    "title": "Grant Compliance Training Plan for Small Teams",
+    "collection": "guides",
+    "slug": "grant-compliance-training-plan-small-team",
+    "path": "guides/grant-compliance-training-plan-small-team.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "guides:grant-compliance-vs-grant-management-software",
+    "title": "Grant Compliance Software vs Grant Management Software: What's the Difference?",
+    "collection": "guides",
+    "slug": "grant-compliance-vs-grant-management-software",
+    "path": "guides/grant-compliance-vs-grant-management-software.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "guides:grant-contract-review-finance-checklist",
+    "title": "Grant Contract Review Finance Checklist",
+    "collection": "guides",
+    "slug": "grant-contract-review-finance-checklist",
+    "path": "guides/grant-contract-review-finance-checklist.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "guides:grant-deadline-calendar-software-requirements",
+    "title": "Grant Deadline Calendar Buying Checklist",
+    "collection": "guides",
+    "slug": "grant-deadline-calendar-software-requirements",
+    "path": "guides/grant-deadline-calendar-software-requirements.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "guides:grant-deadline-escalation-policy-guide",
+    "title": "Grant Deadline Escalation Policy Guide",
+    "collection": "guides",
+    "slug": "grant-deadline-escalation-policy-guide",
+    "path": "guides/grant-deadline-escalation-policy-guide.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "guides:grant-document-management-system-requirements",
+    "title": "Grant Document Management System Requirements",
+    "collection": "guides",
+    "slug": "grant-document-management-system-requirements",
+    "path": "guides/grant-document-management-system-requirements.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "guides:grant-document-naming-convention",
+    "title": "Grant Document Naming Convention for Nonprofit Teams",
+    "collection": "guides",
+    "slug": "grant-document-naming-convention",
+    "path": "guides/grant-document-naming-convention.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "guides:grant-documentation-checklist-audit-ready",
+    "title": "Grant Documentation Checklist: How to Stay Audit-Ready",
+    "collection": "guides",
+    "slug": "grant-documentation-checklist-audit-ready",
+    "path": "guides/grant-documentation-checklist-audit-ready.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "guides:grant-draw-down-vs-reimbursement",
+    "title": "Grant Drawdown vs Reimbursement: Nonprofit Cash Flow Guide",
+    "collection": "guides",
+    "slug": "grant-draw-down-vs-reimbursement",
+    "path": "guides/grant-draw-down-vs-reimbursement.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "guides:grant-expense-approval-workflow-guide",
+    "title": "Grant Expense Approval Workflow Guide",
+    "collection": "guides",
+    "slug": "grant-expense-approval-workflow-guide",
+    "path": "guides/grant-expense-approval-workflow-guide.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "guides:grant-file-owner-transition-checklist",
+    "title": "Grant File Owner Transition Checklist",
+    "collection": "guides",
+    "slug": "grant-file-owner-transition-checklist",
+    "path": "guides/grant-file-owner-transition-checklist.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "guides:grant-funded-payroll-allocation-guide",
+    "title": "Grant Funded Payroll Allocation Guide",
+    "collection": "guides",
+    "slug": "grant-funded-payroll-allocation-guide",
+    "path": "guides/grant-funded-payroll-allocation-guide.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "guides:grant-funded-program-shared-cost-allocation-guide",
+    "title": "Grant Funded Program Shared Cost Allocation Guide",
+    "collection": "guides",
+    "slug": "grant-funded-program-shared-cost-allocation-guide",
+    "path": "guides/grant-funded-program-shared-cost-allocation-guide.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "guides:grant-funded-staff-time-certification-guide",
+    "title": "Grant Funded Staff Time Certification Guide",
+    "collection": "guides",
+    "slug": "grant-funded-staff-time-certification-guide",
+    "path": "guides/grant-funded-staff-time-certification-guide.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "guides:grant-funded-travel-cost-documentation-guide",
+    "title": "Grant-Funded Travel Cost Documentation Guide",
+    "collection": "guides",
+    "slug": "grant-funded-travel-cost-documentation-guide",
+    "path": "guides/grant-funded-travel-cost-documentation-guide.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "guides:grant-funder-relationship-management",
+    "title": "Funder Relationship Management: Building Long-Term Institutional Donor Relationships",
+    "collection": "guides",
+    "slug": "grant-funder-relationship-management",
+    "path": "guides/grant-funder-relationship-management.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "guides:grant-letter-of-inquiry-template-guide",
+    "title": "Grant Letter of Inquiry Template: What to Include and What to Leave Out",
+    "collection": "guides",
+    "slug": "grant-letter-of-inquiry-template-guide",
+    "path": "guides/grant-letter-of-inquiry-template-guide.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "guides:grant-lifecycle-guide",
+    "title": "The Grant Lifecycle: Every Stage From Pre-Award to Post-Closeout",
+    "collection": "guides",
+    "slug": "grant-lifecycle-guide",
+    "path": "guides/grant-lifecycle-guide.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "guides:grant-lifecycle-management",
+    "title": "Grant Lifecycle Management: How High-Compliance Organizations Handle Post-Award",
+    "collection": "guides",
+    "slug": "grant-lifecycle-management",
+    "path": "guides/grant-lifecycle-management.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "guides:grant-loi-guide",
+    "title": "Grant LOI: What It Is, When Funders Require One, and How to Write It",
+    "collection": "guides",
+    "slug": "grant-loi-guide",
+    "path": "guides/grant-loi-guide.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "guides:grant-management-best-practices",
+    "title": "Grant Management Best Practices: 6 Things High-Compliance Nonprofits Do Differently",
+    "collection": "guides",
+    "slug": "grant-management-best-practices",
+    "path": "guides/grant-management-best-practices.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "guides:grant-management-demo-script-for-nonprofits",
+    "title": "Grant Management Demo Script for Nonprofits",
+    "collection": "guides",
+    "slug": "grant-management-demo-script-for-nonprofits",
+    "path": "guides/grant-management-demo-script-for-nonprofits.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "guides:grant-management-software-features-2026",
+    "title": "Grant Management Software Features That Actually Matter in 2026",
+    "collection": "guides",
+    "slug": "grant-management-software-features-2026",
+    "path": "guides/grant-management-software-features-2026.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "guides:grant-management-software-for-nonprofits",
+    "title": "Grant Management Software for Nonprofits: What It Does and What to Look For",
+    "collection": "guides",
+    "slug": "grant-management-software-for-nonprofits",
+    "path": "guides/grant-management-software-for-nonprofits.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "guides:grant-management-software-roi-how-to-calculate",
+    "title": "How to Calculate Grant Management Software ROI: A Practical Framework",
+    "collection": "guides",
+    "slug": "grant-management-software-roi-how-to-calculate",
+    "path": "guides/grant-management-software-roi-how-to-calculate.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "guides:grant-management-software-vs-grant-compliance-software",
+    "title": "Grant Management Software vs Grant Compliance Software [2026 Buyer's Guide]",
+    "collection": "guides",
+    "slug": "grant-management-software-vs-grant-compliance-software",
+    "path": "guides/grant-management-software-vs-grant-compliance-software.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "guides:grant-management-spreadsheet-risk-checklist",
+    "title": "Grant Management Spreadsheet Risk Checklist",
+    "collection": "guides",
+    "slug": "grant-management-spreadsheet-risk-checklist",
+    "path": "guides/grant-management-spreadsheet-risk-checklist.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "guides:grant-management-user-acceptance-test-plan",
+    "title": "Grant Management User Acceptance Test Plan",
+    "collection": "guides",
+    "slug": "grant-management-user-acceptance-test-plan",
+    "path": "guides/grant-management-user-acceptance-test-plan.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "guides:grant-narrative-writing-practical-guide",
+    "title": "Grant Narrative Writing: A Practical Guide for Nonprofits",
+    "collection": "guides",
+    "slug": "grant-narrative-writing-practical-guide",
+    "path": "guides/grant-narrative-writing-practical-guide.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "guides:grant-program-management",
+    "title": "Grant Program Management: What It Means to Run a Grant Program (Not Just Receive One)",
+    "collection": "guides",
+    "slug": "grant-program-management",
+    "path": "guides/grant-program-management.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "guides:grant-proposal-budget-review-checklist",
+    "title": "Grant Proposal Budget Review Checklist",
+    "collection": "guides",
+    "slug": "grant-proposal-budget-review-checklist",
+    "path": "guides/grant-proposal-budget-review-checklist.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "guides:grant-proposal-examples-annotated",
+    "title": "Grant Proposal Examples: What Actually Wins, Annotated",
+    "collection": "guides",
+    "slug": "grant-proposal-examples-annotated",
+    "path": "guides/grant-proposal-examples-annotated.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "guides:grant-proposal-mistakes",
+    "title": "8 Grant Proposal Mistakes That Produce Rejections and Compliance Problems",
+    "collection": "guides",
+    "slug": "grant-proposal-mistakes",
+    "path": "guides/grant-proposal-mistakes.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "guides:grant-proposal-template-guide",
+    "title": "Grant Proposal Template: The Structure That Works Across Most Funders",
+    "collection": "guides",
+    "slug": "grant-proposal-template-guide",
+    "path": "guides/grant-proposal-template-guide.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "guides:grant-proposal-writing-guide",
+    "title": "Grant Proposal Writing: What Program Officers Actually Review",
+    "collection": "guides",
+    "slug": "grant-proposal-writing-guide",
+    "path": "guides/grant-proposal-writing-guide.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "guides:grant-prospect-research-scorecard-nonprofits",
+    "title": "Grant Prospect Research Scorecard for Nonprofits",
+    "collection": "guides",
+    "slug": "grant-prospect-research-scorecard-nonprofits",
+    "path": "guides/grant-prospect-research-scorecard-nonprofits.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "guides:grant-prospecting-workflow-for-mid-sized-nonprofits",
+    "title": "Grant Prospecting Workflow for Mid-Sized Nonprofits",
+    "collection": "guides",
+    "slug": "grant-prospecting-workflow-for-mid-sized-nonprofits",
+    "path": "guides/grant-prospecting-workflow-for-mid-sized-nonprofits.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "guides:grant-receivable-aging-report-guide",
+    "title": "Grant Receivable Aging Report Guide",
+    "collection": "guides",
+    "slug": "grant-receivable-aging-report-guide",
+    "path": "guides/grant-receivable-aging-report-guide.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "guides:grant-reimbursement-backup-documentation-guide",
+    "title": "Grant Reimbursement Backup Documentation Guide",
+    "collection": "guides",
+    "slug": "grant-reimbursement-backup-documentation-guide",
+    "path": "guides/grant-reimbursement-backup-documentation-guide.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "guides:grant-renewal-operations-cadence",
+    "title": "Grant Renewal Operations Cadence: A Year-Round Operating Calendar",
+    "collection": "guides",
+    "slug": "grant-renewal-operations-cadence",
+    "path": "guides/grant-renewal-operations-cadence.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "guides:grant-renewal-risk-review-guide",
+    "title": "Grant Renewal Risk Review Guide",
+    "collection": "guides",
+    "slug": "grant-renewal-risk-review-guide",
+    "path": "guides/grant-renewal-risk-review-guide.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "guides:grant-renewal-strategy-guide",
+    "title": "Grant Renewal Strategy: How to Turn First Grants Into Multi-Year Relationships",
+    "collection": "guides",
+    "slug": "grant-renewal-strategy-guide",
+    "path": "guides/grant-renewal-strategy-guide.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "guides:grant-report-narrative-evidence-binder-guide",
+    "title": "Grant Report Narrative Evidence Binder Guide",
+    "collection": "guides",
+    "slug": "grant-report-narrative-evidence-binder-guide",
+    "path": "guides/grant-report-narrative-evidence-binder-guide.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "guides:grant-reporting-101",
+    "title": "Grant Reporting 101: What Nonprofits Need to Know",
+    "collection": "guides",
+    "slug": "grant-reporting-101",
+    "path": "guides/grant-reporting-101.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "guides:grant-reporting-calendar-template",
+    "title": "Grant Reporting Calendar: How to Set One Up and What to Track",
+    "collection": "guides",
+    "slug": "grant-reporting-calendar-template",
+    "path": "guides/grant-reporting-calendar-template.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "guides:grant-reporting-examples",
+    "title": "Grant Reporting Examples: What a Real Report Looks Like",
+    "collection": "guides",
+    "slug": "grant-reporting-examples",
+    "path": "guides/grant-reporting-examples.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "guides:grant-reporting-kpi-dashboard-guide",
+    "title": "Grant Reporting KPI Dashboard Guide",
+    "collection": "guides",
+    "slug": "grant-reporting-kpi-dashboard-guide",
+    "path": "guides/grant-reporting-kpi-dashboard-guide.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "guides:grant-reporting-workflow-automation-checklist",
+    "title": "Grant Reporting Workflow Automation Checklist",
+    "collection": "guides",
+    "slug": "grant-reporting-workflow-automation-checklist",
+    "path": "guides/grant-reporting-workflow-automation-checklist.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "guides:grant-revenue-recognition-asc-958-605",
+    "title": "Grant Revenue Recognition Under ASC 958-605 (ASU 2018-08)",
+    "collection": "guides",
+    "slug": "grant-revenue-recognition-asc-958-605",
+    "path": "guides/grant-revenue-recognition-asc-958-605.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "guides:grant-site-visit-preparation-guide",
+    "title": "Grant Site Visit Preparation: What Funders Are Really Looking For",
+    "collection": "guides",
+    "slug": "grant-site-visit-preparation-guide",
+    "path": "guides/grant-site-visit-preparation-guide.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "guides:grant-software-types-crm-accounting-discovery",
+    "title": "Grant Software Types: CRM, Accounting, and Discovery Compared",
+    "collection": "guides",
+    "slug": "grant-software-types-crm-accounting-discovery",
+    "path": "guides/grant-software-types-crm-accounting-discovery.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "guides:grant-spenddown-dashboard-guide",
+    "title": "Grant Spenddown Dashboard Guide",
+    "collection": "guides",
+    "slug": "grant-spenddown-dashboard-guide",
+    "path": "guides/grant-spenddown-dashboard-guide.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "guides:grant-team-roles-and-responsibilities-matrix",
+    "title": "Grant Team Roles and Responsibilities Matrix",
+    "collection": "guides",
+    "slug": "grant-team-roles-and-responsibilities-matrix",
+    "path": "guides/grant-team-roles-and-responsibilities-matrix.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "guides:grant-tracker-guide",
+    "title": "Grant Tracker: How to Build a System That Surfaces Problems Before Closeout",
+    "collection": "guides",
+    "slug": "grant-tracker-guide",
+    "path": "guides/grant-tracker-guide.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "guides:grant-tracking-guide",
+    "title": "Grant Tracking: A Complete System for Staying Compliant Across All Active Awards",
+    "collection": "guides",
+    "slug": "grant-tracking-guide",
+    "path": "guides/grant-tracking-guide.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "guides:grant-tracking-mistakes",
+    "title": "7 Grant Tracking Mistakes That Lead to Missed Deadlines and Clawbacks",
+    "collection": "guides",
+    "slug": "grant-tracking-mistakes",
+    "path": "guides/grant-tracking-mistakes.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "guides:grant-writing-certification-guide",
+    "title": "Grant Writing Certification: What It Is, Who Offers It, and Whether You Need One",
+    "collection": "guides",
+    "slug": "grant-writing-certification-guide",
+    "path": "guides/grant-writing-certification-guide.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "guides:grant-writing-courses-for-nonprofits",
+    "title": "Grant Writing Courses for Nonprofits: A Practical Comparison",
+    "collection": "guides",
+    "slug": "grant-writing-courses-for-nonprofits",
+    "path": "guides/grant-writing-courses-for-nonprofits.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "guides:grant-writing-team-structure",
+    "title": "Grant Writing Team Structure: How to Organize Roles, Pipelines, and Capacity",
+    "collection": "guides",
+    "slug": "grant-writing-team-structure",
+    "path": "guides/grant-writing-team-structure.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "guides:grantmaking-software-guide",
+    "title": "Grantmaking Software: What Foundations Need to Manage Grant Programs at Scale",
+    "collection": "guides",
+    "slug": "grantmaking-software-guide",
+    "path": "guides/grantmaking-software-guide.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "guides:grantpipe-for-executive-directors-30-days",
+    "title": "GrantPipe for Executive Directors: Your First 30 Days",
+    "collection": "guides",
+    "slug": "grantpipe-for-executive-directors-30-days",
+    "path": "guides/grantpipe-for-executive-directors-30-days.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "guides:grants-manager-job-description-guide",
+    "title": "Grants Manager Job Description: Responsibilities, Salary, and Hiring Guide",
+    "collection": "guides",
+    "slug": "grants-manager-job-description-guide",
+    "path": "guides/grants-manager-job-description-guide.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "guides:grants-manager-vs-development-director",
+    "title": "Grants Manager vs Development Director: Roles, Responsibilities, and Hiring Decisions",
+    "collection": "guides",
+    "slug": "grants-manager-vs-development-director",
+    "path": "guides/grants-manager-vs-development-director.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "guides:hawaii-charitable-registration-guide",
+    "title": "Hawaii Charitable Registration Filing Guide for Nonprofits",
+    "collection": "guides",
+    "slug": "hawaii-charitable-registration-guide",
+    "path": "guides/hawaii-charitable-registration-guide.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "guides:head-start-non-federal-share-guide",
+    "title": "Head Start Non-Federal Share Guide",
+    "collection": "guides",
+    "slug": "head-start-non-federal-share-guide",
+    "path": "guides/head-start-non-federal-share-guide.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "guides:hhs-acf-grants-nonprofits",
+    "title": "HHS ACF Grants for Nonprofits: Programs, Eligibility, and Compliance",
+    "collection": "guides",
+    "slug": "hhs-acf-grants-nonprofits",
+    "path": "guides/hhs-acf-grants-nonprofits.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "guides:honolulu-nonprofit-startup-guide",
+    "title": "How to Start a Nonprofit in Honolulu: Hawaii Registration, OHA, and 501(c)(3)",
+    "collection": "guides",
+    "slug": "honolulu-nonprofit-startup-guide",
+    "path": "guides/honolulu-nonprofit-startup-guide.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "guides:houston-nonprofit-accounting-guide",
+    "title": "Houston Nonprofit Accounting: Oil & Gas Funder Cycles, Harris County Contracts, and Federal Pass-Through",
+    "collection": "guides",
+    "slug": "houston-nonprofit-accounting-guide",
+    "path": "guides/houston-nonprofit-accounting-guide.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "guides:how-to-apply-for-government-grants-nonprofits",
+    "title": "How to Apply for Government Grants as a Nonprofit",
+    "collection": "guides",
+    "slug": "how-to-apply-for-government-grants-nonprofits",
+    "path": "guides/how-to-apply-for-government-grants-nonprofits.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "guides:how-to-approach-a-foundation",
+    "title": "How to Approach a Foundation for a Grant: A Practical Sequence",
+    "collection": "guides",
+    "slug": "how-to-approach-a-foundation",
+    "path": "guides/how-to-approach-a-foundation.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "guides:how-to-approve-grant-spending-before-an-audit-finding",
+    "title": "How to Approve Grant Spending Before It Becomes an Audit Finding",
+    "collection": "guides",
+    "slug": "how-to-approve-grant-spending-before-an-audit-finding",
+    "path": "guides/how-to-approve-grant-spending-before-an-audit-finding.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "guides:how-to-build-a-development-team",
+    "title": "How to Build a Nonprofit Development Team: Roles, Sequence, and Scaling",
+    "collection": "guides",
+    "slug": "how-to-build-a-development-team",
+    "path": "guides/how-to-build-a-development-team.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "guides:how-to-build-a-grant-compliance-program-from-scratch",
+    "title": "How to Build a Grant Compliance Program From Scratch",
+    "collection": "guides",
+    "slug": "how-to-build-a-grant-compliance-program-from-scratch",
+    "path": "guides/how-to-build-a-grant-compliance-program-from-scratch.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "guides:how-to-build-a-grant-spend-down-report",
+    "title": "How to Build a Grant Spend-Down Report",
+    "collection": "guides",
+    "slug": "how-to-build-a-grant-spend-down-report",
+    "path": "guides/how-to-build-a-grant-spend-down-report.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "guides:how-to-build-a-monthly-grant-reconciliation-routine",
+    "title": "How to Build a Monthly Grant Reconciliation Routine",
+    "collection": "guides",
+    "slug": "how-to-build-a-monthly-grant-reconciliation-routine",
+    "path": "guides/how-to-build-a-monthly-grant-reconciliation-routine.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "guides:how-to-calculate-donor-retention-rate",
+    "title": "How to Calculate Donor Retention Rate (With Formula and Example)",
+    "collection": "guides",
+    "slug": "how-to-calculate-donor-retention-rate",
+    "path": "guides/how-to-calculate-donor-retention-rate.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "guides:how-to-choose-nonprofit-crm",
+    "title": "How to Choose a Nonprofit CRM: A Decision Framework for Development Directors",
+    "collection": "guides",
+    "slug": "how-to-choose-nonprofit-crm",
+    "path": "guides/how-to-choose-nonprofit-crm.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "guides:how-to-conduct-a-subrecipient-risk-assessment",
+    "title": "How to Conduct a Subrecipient Risk Assessment",
+    "collection": "guides",
+    "slug": "how-to-conduct-a-subrecipient-risk-assessment",
+    "path": "guides/how-to-conduct-a-subrecipient-risk-assessment.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "guides:how-to-create-donation-receipt-irs-compliant",
+    "title": "How to Create an IRS-Compliant Donation Receipt for Your Nonprofit",
+    "collection": "guides",
+    "slug": "how-to-create-donation-receipt-irs-compliant",
+    "path": "guides/how-to-create-donation-receipt-irs-compliant.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "guides:how-to-design-a-restricted-funds-executive-dashboard",
+    "title": "How to Design a Restricted Funds Dashboard for Executive Directors",
+    "collection": "guides",
+    "slug": "how-to-design-a-restricted-funds-executive-dashboard",
+    "path": "guides/how-to-design-a-restricted-funds-executive-dashboard.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "guides:how-to-document-personnel-costs-on-federal-grants-daily",
+    "title": "How to Document Personnel Costs on Federal Grants Every Pay Period",
+    "collection": "guides",
+    "slug": "how-to-document-personnel-costs-on-federal-grants-daily",
+    "path": "guides/how-to-document-personnel-costs-on-federal-grants-daily.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "guides:how-to-find-grants-for-nonprofits",
+    "title": "How to Find Grants for Nonprofits: A Practical Prospecting Guide",
+    "collection": "guides",
+    "slug": "how-to-find-grants-for-nonprofits",
+    "path": "guides/how-to-find-grants-for-nonprofits.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "guides:how-to-handle-disallowed-costs-on-a-federal-grant",
+    "title": "How to Handle Disallowed Costs on a Federal Grant",
+    "collection": "guides",
+    "slug": "how-to-handle-disallowed-costs-on-a-federal-grant",
+    "path": "guides/how-to-handle-disallowed-costs-on-a-federal-grant.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "guides:how-to-maintain-sefa-records-between-audits",
+    "title": "How to Maintain SEFA Records Between Audits",
+    "collection": "guides",
+    "slug": "how-to-maintain-sefa-records-between-audits",
+    "path": "guides/how-to-maintain-sefa-records-between-audits.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "guides:how-to-manage-a-grant-rebudget-request",
+    "title": "How to Manage a Grant Rebudget Request",
+    "collection": "guides",
+    "slug": "how-to-manage-a-grant-rebudget-request",
+    "path": "guides/how-to-manage-a-grant-rebudget-request.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "guides:how-to-manage-grant-closeout-record-retention",
+    "title": "How to Manage Grant Closeout Record Retention",
+    "collection": "guides",
+    "slug": "how-to-manage-grant-closeout-record-retention",
+    "path": "guides/how-to-manage-grant-closeout-record-retention.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "guides:how-to-migrate-from-salesforce-npsp",
+    "title": "How to Migrate from Salesforce NPSP: What the Nonprofit Cloud Transition Actually Costs",
+    "collection": "guides",
+    "slug": "how-to-migrate-from-salesforce-npsp",
+    "path": "guides/how-to-migrate-from-salesforce-npsp.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "guides:how-to-onboard-a-new-grants-manager",
+    "title": "How to Onboard a New Grants Manager Without Losing Institutional Knowledge",
+    "collection": "guides",
+    "slug": "how-to-onboard-a-new-grants-manager",
+    "path": "guides/how-to-onboard-a-new-grants-manager.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "guides:how-to-prepare-an-sf-425-step-by-step",
+    "title": "How to Prepare an SF-425 Federal Financial Report, Step by Step",
+    "collection": "guides",
+    "slug": "how-to-prepare-an-sf-425-step-by-step",
+    "path": "guides/how-to-prepare-an-sf-425-step-by-step.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "guides:how-to-prepare-for-a-program-officer-site-visit",
+    "title": "How to Prepare for a Program Officer Site Visit",
+    "collection": "guides",
+    "slug": "how-to-prepare-for-a-program-officer-site-visit",
+    "path": "guides/how-to-prepare-for-a-program-officer-site-visit.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "guides:how-to-present-grant-financials-at-a-board-meeting",
+    "title": "How to Present Grant Financials at a Board Meeting",
+    "collection": "guides",
+    "slug": "how-to-present-grant-financials-at-a-board-meeting",
+    "path": "guides/how-to-present-grant-financials-at-a-board-meeting.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "guides:how-to-reconcile-donor-crm-with-restricted-grant-funds",
+    "title": "How to Reconcile Donor CRM Data with Restricted Grant Funds",
+    "collection": "guides",
+    "slug": "how-to-reconcile-donor-crm-with-restricted-grant-funds",
+    "path": "guides/how-to-reconcile-donor-crm-with-restricted-grant-funds.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "guides:how-to-request-a-no-cost-extension",
+    "title": "How to Request a No-Cost Extension on a Federal Grant",
+    "collection": "guides",
+    "slug": "how-to-request-a-no-cost-extension",
+    "path": "guides/how-to-request-a-no-cost-extension.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "guides:how-to-research-foundation-grants",
+    "title": "How to Research Foundation Grants: Finding Funders That Actually Fit",
+    "collection": "guides",
+    "slug": "how-to-research-foundation-grants",
+    "path": "guides/how-to-research-foundation-grants.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "guides:how-to-respond-to-grant-rejection",
+    "title": "How to Respond to a Grant Rejection (and When to Try Again)",
+    "collection": "guides",
+    "slug": "how-to-respond-to-grant-rejection",
+    "path": "guides/how-to-respond-to-grant-rejection.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "guides:how-to-run-a-grant-kickoff-meeting",
+    "title": "How to Run a Grant Kickoff Meeting That Actually Prevents Problems",
+    "collection": "guides",
+    "slug": "how-to-run-a-grant-kickoff-meeting",
+    "path": "guides/how-to-run-a-grant-kickoff-meeting.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "guides:how-to-set-up-a-grant-compliance-calendar",
+    "title": "How to Set Up a Grant Compliance Calendar",
+    "collection": "guides",
+    "slug": "how-to-set-up-a-grant-compliance-calendar",
+    "path": "guides/how-to-set-up-a-grant-compliance-calendar.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "guides:how-to-set-up-a-new-grant-award-in-your-system",
+    "title": "How to Set Up a New Grant Award in Your Grant Management System",
+    "collection": "guides",
+    "slug": "how-to-set-up-a-new-grant-award-in-your-system",
+    "path": "guides/how-to-set-up-a-new-grant-award-in-your-system.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "guides:how-to-set-up-grant-spending-controls-and-approvals",
+    "title": "How to Set Up Grant Spending Controls and Approvals",
+    "collection": "guides",
+    "slug": "how-to-set-up-grant-spending-controls-and-approvals",
+    "path": "guides/how-to-set-up-grant-spending-controls-and-approvals.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "guides:how-to-track-federal-grant-draws-and-reimbursements",
+    "title": "How to Track Federal Grant Draws and Reimbursements",
+    "collection": "guides",
+    "slug": "how-to-track-federal-grant-draws-and-reimbursements",
+    "path": "guides/how-to-track-federal-grant-draws-and-reimbursements.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "guides:how-to-track-grant-reporting-deadlines-across-a-team",
+    "title": "How to Track Grant Reporting Deadlines Across a Team",
+    "collection": "guides",
+    "slug": "how-to-track-grant-reporting-deadlines-across-a-team",
+    "path": "guides/how-to-track-grant-reporting-deadlines-across-a-team.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "guides:how-to-write-a-grant-closeout-narrative",
+    "title": "How to Write a Grant Closeout Narrative",
+    "collection": "guides",
+    "slug": "how-to-write-a-grant-closeout-narrative",
+    "path": "guides/how-to-write-a-grant-closeout-narrative.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "guides:how-to-write-a-grant-progress-report",
+    "title": "How to Write a Grant Progress Report That Strengthens the Relationship",
+    "collection": "guides",
+    "slug": "how-to-write-a-grant-progress-report",
+    "path": "guides/how-to-write-a-grant-progress-report.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "guides:how-to-write-donor-thank-you-letter",
+    "title": "How to Write a Donor Thank You Letter That Actually Builds Relationships",
+    "collection": "guides",
+    "slug": "how-to-write-donor-thank-you-letter",
+    "path": "guides/how-to-write-donor-thank-you-letter.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "guides:hrsa-health-center-grant-drawdown-guide",
+    "title": "HRSA Health Center Grant Drawdown Guide",
+    "collection": "guides",
+    "slug": "hrsa-health-center-grant-drawdown-guide",
+    "path": "guides/hrsa-health-center-grant-drawdown-guide.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "guides:hrsa-ryan-white-part-a-reporting",
+    "title": "HRSA Ryan White Part A Reporting Requirements",
+    "collection": "guides",
+    "slug": "hrsa-ryan-white-part-a-reporting",
+    "path": "guides/hrsa-ryan-white-part-a-reporting.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "guides:hud-coc-match-documentation-guide",
+    "title": "HUD CoC Match Documentation Guide",
+    "collection": "guides",
+    "slug": "hud-coc-match-documentation-guide",
+    "path": "guides/hud-coc-match-documentation-guide.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "guides:hud-continuum-of-care-reporting",
+    "title": "HUD Continuum of Care (CoC) Reporting Requirements",
+    "collection": "guides",
+    "slug": "hud-continuum-of-care-reporting",
+    "path": "guides/hud-continuum-of-care-reporting.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "guides:illinois-ag-501c3-registration-chicago-guide",
+    "title": "Illinois AG Charitable Trust Registration: A Chicago Nonprofit Guide",
+    "collection": "guides",
+    "slug": "illinois-ag-501c3-registration-chicago-guide",
+    "path": "guides/illinois-ag-501c3-registration-chicago-guide.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "guides:illinois-ag990-il-filing-guide",
+    "title": "Illinois AG990-IL Filing Guide: Annual Charitable Report for Nonprofits",
+    "collection": "guides",
+    "slug": "illinois-ag990-il-filing-guide",
+    "path": "guides/illinois-ag990-il-filing-guide.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "guides:illinois-cor-pmt-1-charity-bureau-fee-guide",
+    "title": "Illinois COR PMT-1 Charity Bureau Fee Filing Guide",
+    "collection": "guides",
+    "slug": "illinois-cor-pmt-1-charity-bureau-fee-guide",
+    "path": "guides/illinois-cor-pmt-1-charity-bureau-fee-guide.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "guides:illinois-grant-management-software",
+    "title": "Illinois Grant Management Software: 2026 Buyer's Guide for Nonprofits",
+    "collection": "guides",
+    "slug": "illinois-grant-management-software",
+    "path": "guides/illinois-grant-management-software.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "guides:illinois-nonprofit-startup-guide",
+    "title": "How to Start a Nonprofit in Illinois: Step-by-Step Formation Guide",
+    "collection": "guides",
+    "slug": "illinois-nonprofit-startup-guide",
+    "path": "guides/illinois-nonprofit-startup-guide.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "guides:in-kind-match-documentation-nonprofits",
+    "title": "In-Kind Match Documentation for Nonprofits",
+    "collection": "guides",
+    "slug": "in-kind-match-documentation-nonprofits",
+    "path": "guides/in-kind-match-documentation-nonprofits.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "guides:indiana-nonprofit-audit-requirements",
+    "title": "Indiana Nonprofit Audit Requirements: 2026 Thresholds, Statute, and Deadlines",
+    "collection": "guides",
+    "slug": "indiana-nonprofit-audit-requirements",
+    "path": "guides/indiana-nonprofit-audit-requirements.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "guides:indiana-nonprofit-startup-guide",
+    "title": "How to Start a Nonprofit in Indiana: Step-by-Step Formation Guide",
+    "collection": "guides",
+    "slug": "indiana-nonprofit-startup-guide",
+    "path": "guides/indiana-nonprofit-startup-guide.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "guides:indianapolis-nonprofit-grant-writing-guide",
+    "title": "Indianapolis Grant Writing: Lilly Endowment, CICF, and Lumina Foundation",
+    "collection": "guides",
+    "slug": "indianapolis-nonprofit-grant-writing-guide",
+    "path": "guides/indianapolis-nonprofit-grant-writing-guide.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "guides:indirect-cost-rate-explained",
+    "title": "Indirect Cost Rate for Nonprofits: De Minimis, NICRA, and How to Calculate",
+    "collection": "guides",
+    "slug": "indirect-cost-rate-explained",
+    "path": "guides/indirect-cost-rate-explained.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "guides:individual-giving-vs-grants-strategy",
+    "title": "Individual Giving vs. Grants: Balancing Your Revenue Mix",
+    "collection": "guides",
+    "slug": "individual-giving-vs-grants-strategy",
+    "path": "guides/individual-giving-vs-grants-strategy.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "guides:integrated-donor-grant-management-roi",
+    "title": "The ROI of Integrated Donor and Grant Management: A Builder's Math",
+    "collection": "guides",
+    "slug": "integrated-donor-grant-management-roi",
+    "path": "guides/integrated-donor-grant-management-roi.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "guides:iowa-charitable-registration-guide",
+    "title": "Iowa Charitable Registration Filing Guide for Nonprofits",
+    "collection": "guides",
+    "slug": "iowa-charitable-registration-guide",
+    "path": "guides/iowa-charitable-registration-guide.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "guides:jacksonville-grant-programs-for-nonprofits",
+    "title": "Jacksonville nonprofit grants: local funder and public program guide",
+    "collection": "guides",
+    "slug": "jacksonville-grant-programs-for-nonprofits",
+    "path": "guides/jacksonville-grant-programs-for-nonprofits.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "guides:kansas-charitable-registration-guide",
+    "title": "Kansas Charitable Registration Filing Guide for Nonprofits",
+    "collection": "guides",
+    "slug": "kansas-charitable-registration-guide",
+    "path": "guides/kansas-charitable-registration-guide.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "guides:kansas-city-nonprofit-startup-guide",
+    "title": "How to Start a Nonprofit in Kansas City: MO/KS Dual-State Registration and 501(c)(3)",
+    "collection": "guides",
+    "slug": "kansas-city-nonprofit-startup-guide",
+    "path": "guides/kansas-city-nonprofit-startup-guide.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "guides:kentucky-charitable-registration-guide",
+    "title": "Kentucky Charitable Registration Filing Guide for Nonprofits",
+    "collection": "guides",
+    "slug": "kentucky-charitable-registration-guide",
+    "path": "guides/kentucky-charitable-registration-guide.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "guides:kentucky-nonprofit-startup-guide",
+    "title": "How to Start a Nonprofit in Kentucky: Step-by-Step Formation Guide",
+    "collection": "guides",
+    "slug": "kentucky-nonprofit-startup-guide",
+    "path": "guides/kentucky-nonprofit-startup-guide.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "guides:la-county-mental-health-grants-compliance-guide",
+    "title": "LA County DMH Grant Compliance: A 2026 Guide for Contractors",
+    "collection": "guides",
+    "slug": "la-county-mental-health-grants-compliance-guide",
+    "path": "guides/la-county-mental-health-grants-compliance-guide.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "guides:las-vegas-nonprofit-fundraising-strategy-guide",
+    "title": "Las Vegas Nonprofit Fundraising: Gaming CSR, Nevada Community Foundation, and Resort Corridor Giving",
+    "collection": "guides",
+    "slug": "las-vegas-nonprofit-fundraising-strategy-guide",
+    "path": "guides/las-vegas-nonprofit-fundraising-strategy-guide.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "guides:liheap-subrecipient-monitoring-guide",
+    "title": "LIHEAP Subrecipient Monitoring Guide",
+    "collection": "guides",
+    "slug": "liheap-subrecipient-monitoring-guide",
+    "path": "guides/liheap-subrecipient-monitoring-guide.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "guides:logic-model-to-grant-reporting-guide",
+    "title": "Logic Model to Grant Reporting Guide",
+    "collection": "guides",
+    "slug": "logic-model-to-grant-reporting-guide",
+    "path": "guides/logic-model-to-grant-reporting-guide.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "guides:long-beach-city-contract-compliance-guide",
+    "title": "Long Beach nonprofit grant compliance and audit readiness guide",
+    "collection": "guides",
+    "slug": "long-beach-city-contract-compliance-guide",
+    "path": "guides/long-beach-city-contract-compliance-guide.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "guides:los-angeles-foundation-grants-guide",
+    "title": "Los Angeles Foundation Grants: A 2026 Guide for Nonprofits",
+    "collection": "guides",
+    "slug": "los-angeles-foundation-grants-guide",
+    "path": "guides/los-angeles-foundation-grants-guide.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "guides:los-angeles-government-grants-nonprofits-guide",
+    "title": "Los Angeles Government Grants for Nonprofits: County DCFS, LAHSA, and City Funding",
+    "collection": "guides",
+    "slug": "los-angeles-government-grants-nonprofits-guide",
+    "path": "guides/los-angeles-government-grants-nonprofits-guide.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "guides:louisiana-charitable-registration-guide",
+    "title": "Louisiana Charitable Registration Filing Guide for Nonprofits",
+    "collection": "guides",
+    "slug": "louisiana-charitable-registration-guide",
+    "path": "guides/louisiana-charitable-registration-guide.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "guides:louisville-foundation-grants-guide",
+    "title": "Louisville nonprofit grants: local funder and public program guide",
+    "collection": "guides",
+    "slug": "louisville-foundation-grants-guide",
+    "path": "guides/louisville-foundation-grants-guide.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "guides:low-risk-auditee-criteria",
+    "title": "Low-Risk Auditee Criteria: Qualifying for Reduced Single Audit Coverage",
+    "collection": "guides",
+    "slug": "low-risk-auditee-criteria",
+    "path": "guides/low-risk-auditee-criteria.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "guides:maine-charitable-solicitation-registration-guide",
+    "title": "Maine Charitable Registration Filing Guide for Nonprofits",
+    "collection": "guides",
+    "slug": "maine-charitable-solicitation-registration-guide",
+    "path": "guides/maine-charitable-solicitation-registration-guide.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "guides:major-donor-qualification-guide",
+    "title": "Major Donor Qualification: How to Build a Real Prospect Pipeline",
+    "collection": "guides",
+    "slug": "major-donor-qualification-guide",
+    "path": "guides/major-donor-qualification-guide.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "guides:major-gift-cultivation-practical-guide",
+    "title": "Major Gift Cultivation: A Practical Approach for Nonprofits Without a Full Development Team",
+    "collection": "guides",
+    "slug": "major-gift-cultivation-practical-guide",
+    "path": "guides/major-gift-cultivation-practical-guide.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "guides:major-gift-moves-management-framework",
+    "title": "Moves Management for Major Gifts: A Working Framework",
+    "collection": "guides",
+    "slug": "major-gift-moves-management-framework",
+    "path": "guides/major-gift-moves-management-framework.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "guides:management-letter-response-tracker-guide",
+    "title": "Management Letter Response Tracker Guide",
+    "collection": "guides",
+    "slug": "management-letter-response-tracker-guide",
+    "path": "guides/management-letter-response-tracker-guide.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "guides:maryland-cor-92-charitable-registration-guide",
+    "title": "Maryland Form COR-92 Charitable Registration Guide",
+    "collection": "guides",
+    "slug": "maryland-cor-92-charitable-registration-guide",
+    "path": "guides/maryland-cor-92-charitable-registration-guide.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "guides:maryland-nonprofit-audit-requirements",
+    "title": "Maryland Nonprofit Audit Requirements: 2026 Thresholds, Statute, and Deadlines",
+    "collection": "guides",
+    "slug": "maryland-nonprofit-audit-requirements",
+    "path": "guides/maryland-nonprofit-audit-requirements.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "guides:maryland-nonprofit-startup-guide",
+    "title": "How to Start a Nonprofit in Maryland: 2026 Founder's Guide",
+    "collection": "guides",
+    "slug": "maryland-nonprofit-startup-guide",
+    "path": "guides/maryland-nonprofit-startup-guide.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "guides:massachusetts-form-pc-annual-report-guide",
+    "title": "Massachusetts Form PC Annual Report Guide for Nonprofits",
+    "collection": "guides",
+    "slug": "massachusetts-form-pc-annual-report-guide",
+    "path": "guides/massachusetts-form-pc-annual-report-guide.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "guides:massachusetts-grant-management-software",
+    "title": "Massachusetts Grant Management Software: 2026 Buyer's Guide for Nonprofits",
+    "collection": "guides",
+    "slug": "massachusetts-grant-management-software",
+    "path": "guides/massachusetts-grant-management-software.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "guides:massachusetts-nonprofit-startup-guide",
+    "title": "How to Start a Nonprofit in Massachusetts: A Founder's Guide",
+    "collection": "guides",
+    "slug": "massachusetts-nonprofit-startup-guide",
+    "path": "guides/massachusetts-nonprofit-startup-guide.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "guides:massachusetts-state-grant-programs-for-nonprofits",
+    "title": "Massachusetts State Grant Programs for Nonprofits: 2026 Funder Landscape",
+    "collection": "guides",
+    "slug": "massachusetts-state-grant-programs-for-nonprofits",
+    "path": "guides/massachusetts-state-grant-programs-for-nonprofits.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "guides:match-tracking-cash-vs-in-kind",
+    "title": "Grant Match Requirements: Tracking Cash vs In-Kind Contributions",
+    "collection": "guides",
+    "slug": "match-tracking-cash-vs-in-kind",
+    "path": "guides/match-tracking-cash-vs-in-kind.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "guides:matching-gift-vs-matching-grant-guide",
+    "title": "Matching Gift vs Matching Grant Guide",
+    "collection": "guides",
+    "slug": "matching-gift-vs-matching-grant-guide",
+    "path": "guides/matching-gift-vs-matching-grant-guide.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "guides:memphis-foundation-grants-guide",
+    "title": "Memphis nonprofit grants: local funder and public program guide",
+    "collection": "guides",
+    "slug": "memphis-foundation-grants-guide",
+    "path": "guides/memphis-foundation-grants-guide.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "guides:mesa-nonprofit-audit-readiness-guide",
+    "title": "Mesa nonprofit grant compliance and audit readiness guide",
+    "collection": "guides",
+    "slug": "mesa-nonprofit-audit-readiness-guide",
+    "path": "guides/mesa-nonprofit-audit-readiness-guide.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "guides:miami-government-grants-nonprofits-guide",
+    "title": "Miami-Dade Government Grants for Nonprofits: Children's Trust, Beacon Council, and HUD Entitlement",
+    "collection": "guides",
+    "slug": "miami-government-grants-nonprofits-guide",
+    "path": "guides/miami-government-grants-nonprofits-guide.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "guides:michigan-charitable-solicitations-license",
+    "title": "Michigan Charitable Solicitations License: Nonprofit Guide",
+    "collection": "guides",
+    "slug": "michigan-charitable-solicitations-license",
+    "path": "guides/michigan-charitable-solicitations-license.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "guides:michigan-nonprofit-audit-requirements",
+    "title": "Michigan Nonprofit Audit Requirements: 2026 Thresholds, Statute, and Deadlines",
+    "collection": "guides",
+    "slug": "michigan-nonprofit-audit-requirements",
+    "path": "guides/michigan-nonprofit-audit-requirements.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "guides:michigan-nonprofit-startup-guide",
+    "title": "How to Start a Nonprofit in Michigan: A Founder's Guide",
+    "collection": "guides",
+    "slug": "michigan-nonprofit-startup-guide",
+    "path": "guides/michigan-nonprofit-startup-guide.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "guides:michigan-state-grant-programs-for-nonprofits",
+    "title": "Michigan State Grant Programs for Nonprofits: 2026 Funder Landscape",
+    "collection": "guides",
+    "slug": "michigan-state-grant-programs-for-nonprofits",
+    "path": "guides/michigan-state-grant-programs-for-nonprofits.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "guides:micro-purchase-documentation-nonprofits",
+    "title": "Micro-Purchase Documentation for Nonprofits",
+    "collection": "guides",
+    "slug": "micro-purchase-documentation-nonprofits",
+    "path": "guides/micro-purchase-documentation-nonprofits.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "guides:mid-level-donor-program-guide",
+    "title": "Mid-Level Donor Programs: The Overlooked Middle of Your Donor Pyramid",
+    "collection": "guides",
+    "slug": "mid-level-donor-program-guide",
+    "path": "guides/mid-level-donor-program-guide.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "guides:migrating-from-bloomerang-to-grantpipe",
+    "title": "Migrating from Bloomerang to GrantPipe: What to Expect",
+    "collection": "guides",
+    "slug": "migrating-from-bloomerang-to-grantpipe",
+    "path": "guides/migrating-from-bloomerang-to-grantpipe.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "guides:migrating-from-spreadsheets-to-grant-management",
+    "title": "Migrating from Spreadsheets to Grant Management Software",
+    "collection": "guides",
+    "slug": "migrating-from-spreadsheets-to-grant-management",
+    "path": "guides/migrating-from-spreadsheets-to-grant-management.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "guides:milwaukee-nonprofit-grant-writing-guide",
+    "title": "Milwaukee Grant Writing: Bradley Foundation, Greater Milwaukee Foundation, and Northwestern Mutual",
+    "collection": "guides",
+    "slug": "milwaukee-nonprofit-grant-writing-guide",
+    "path": "guides/milwaukee-nonprofit-grant-writing-guide.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "guides:minneapolis-foundation-grants-guide",
+    "title": "Twin Cities Foundation Grants: A 2026 Guide for Nonprofits",
+    "collection": "guides",
+    "slug": "minneapolis-foundation-grants-guide",
+    "path": "guides/minneapolis-foundation-grants-guide.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "guides:minneapolis-nonprofit-accounting-guide",
+    "title": "Minneapolis Nonprofit Accounting: McKnight Reporting, Bush Foundation Cycles, and MN State Requirements",
+    "collection": "guides",
+    "slug": "minneapolis-nonprofit-accounting-guide",
+    "path": "guides/minneapolis-nonprofit-accounting-guide.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "guides:minnesota-charitable-registration-guide",
+    "title": "Minnesota Charitable Registration Filing Guide for Nonprofits",
+    "collection": "guides",
+    "slug": "minnesota-charitable-registration-guide",
+    "path": "guides/minnesota-charitable-registration-guide.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "guides:minnesota-nonprofit-audit-requirements",
+    "title": "Minnesota Nonprofit Audit Requirements: 2026 Thresholds, Statute, and Deadlines",
+    "collection": "guides",
+    "slug": "minnesota-nonprofit-audit-requirements",
+    "path": "guides/minnesota-nonprofit-audit-requirements.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "guides:minnesota-nonprofit-startup-guide",
+    "title": "How to Start a Nonprofit in Minnesota: 501(c)(3) Requirements",
+    "collection": "guides",
+    "slug": "minnesota-nonprofit-startup-guide",
+    "path": "guides/minnesota-nonprofit-startup-guide.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "guides:minnesota-state-grant-programs-for-nonprofits",
+    "title": "Minnesota State Grant Programs for Nonprofits: 2026 Funder Landscape",
+    "collection": "guides",
+    "slug": "minnesota-state-grant-programs-for-nonprofits",
+    "path": "guides/minnesota-state-grant-programs-for-nonprofits.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "guides:mississippi-charitable-registration-guide",
+    "title": "Mississippi Charitable Registration Filing Guide for Nonprofits",
+    "collection": "guides",
+    "slug": "mississippi-charitable-registration-guide",
+    "path": "guides/mississippi-charitable-registration-guide.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "guides:missouri-nonprofit-audit-requirements",
+    "title": "Missouri Nonprofit Audit Requirements: 2026 Thresholds, Statute, and Deadlines",
+    "collection": "guides",
+    "slug": "missouri-nonprofit-audit-requirements",
+    "path": "guides/missouri-nonprofit-audit-requirements.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "guides:missouri-nonprofit-startup-guide",
+    "title": "How to Start a Nonprofit in Missouri: 2026 Founder's Guide",
+    "collection": "guides",
+    "slug": "missouri-nonprofit-startup-guide",
+    "path": "guides/missouri-nonprofit-startup-guide.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "guides:monthly-donor-upgrade-strategy",
+    "title": "Upgrading Monthly Donors: A Practical Strategy for Sustainer Growth",
+    "collection": "guides",
+    "slug": "monthly-donor-upgrade-strategy",
+    "path": "guides/monthly-donor-upgrade-strategy.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "guides:monthly-giving-program-complete-guide",
+    "title": "Monthly Giving Programs: How to Launch and Grow Recurring Donors",
+    "collection": "guides",
+    "slug": "monthly-giving-program-complete-guide",
+    "path": "guides/monthly-giving-program-complete-guide.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "guides:multi-year-grant-strategy",
+    "title": "Multi-Year Grant Strategy: Planning, Managing, and Renewing Multi-Year Awards",
+    "collection": "guides",
+    "slug": "multi-year-grant-strategy",
+    "path": "guides/multi-year-grant-strategy.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "guides:nashville-nonprofit-startup-guide",
+    "title": "How to Start a Nonprofit in Nashville: Tennessee Registration, Davidson County, and 501(c)(3)",
+    "collection": "guides",
+    "slug": "nashville-nonprofit-startup-guide",
+    "path": "guides/nashville-nonprofit-startup-guide.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "guides:nea-grants-arts-nonprofits",
+    "title": "NEA Grants for Arts Organizations: How to Apply and What to Expect",
+    "collection": "guides",
+    "slug": "nea-grants-arts-nonprofits",
+    "path": "guides/nea-grants-arts-nonprofits.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "guides:net-asset-release-workflow",
+    "title": "Net Asset Release: When and How Nonprofits Release Restricted Funds",
+    "collection": "guides",
+    "slug": "net-asset-release-workflow",
+    "path": "guides/net-asset-release-workflow.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "guides:net-grant-problem-compliance-costs",
+    "title": "The Net Grant Problem: Why a $50K Grant Is Really Worth $40K",
+    "collection": "guides",
+    "slug": "net-grant-problem-compliance-costs",
+    "path": "guides/net-grant-problem-compliance-costs.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "guides:nevada-charitable-solicitation-registration-guide",
+    "title": "Nevada Charitable Registration Filing Guide for Nonprofits",
+    "collection": "guides",
+    "slug": "nevada-charitable-solicitation-registration-guide",
+    "path": "guides/nevada-charitable-solicitation-registration-guide.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "guides:new-development-director-90-day-plan",
+    "title": "The New Development Director 90-Day Plan: A Practical Onboarding Guide",
+    "collection": "guides",
+    "slug": "new-development-director-90-day-plan",
+    "path": "guides/new-development-director-90-day-plan.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "guides:new-jersey-cri-300r-guide",
+    "title": "New Jersey CRI-300R Filing: Complete Nonprofit Guide",
+    "collection": "guides",
+    "slug": "new-jersey-cri-300r-guide",
+    "path": "guides/new-jersey-cri-300r-guide.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "guides:new-jersey-nonprofit-audit-requirements",
+    "title": "New Jersey Nonprofit Audit Requirements: 2026 Thresholds, Statute, and Deadlines",
+    "collection": "guides",
+    "slug": "new-jersey-nonprofit-audit-requirements",
+    "path": "guides/new-jersey-nonprofit-audit-requirements.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "guides:new-jersey-nonprofit-startup-guide",
+    "title": "How to Start a Nonprofit in New Jersey: Step-by-Step Formation Guide",
+    "collection": "guides",
+    "slug": "new-jersey-nonprofit-startup-guide",
+    "path": "guides/new-jersey-nonprofit-startup-guide.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "guides:new-jersey-state-grant-programs-for-nonprofits",
+    "title": "New Jersey State Grant Programs for Nonprofits: 2026 Funder Landscape",
+    "collection": "guides",
+    "slug": "new-jersey-state-grant-programs-for-nonprofits",
+    "path": "guides/new-jersey-state-grant-programs-for-nonprofits.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "guides:new-mexico-charitable-registration-guide",
+    "title": "New Mexico Charitable Registration Filing Guide for Nonprofits",
+    "collection": "guides",
+    "slug": "new-mexico-charitable-registration-guide",
+    "path": "guides/new-mexico-charitable-registration-guide.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "guides:new-orleans-nonprofit-accounting-guide",
+    "title": "New Orleans Nonprofit Accounting: Disaster Recovery Funds, Gulf Coast Compliance, and LA State Requirements",
+    "collection": "guides",
+    "slug": "new-orleans-nonprofit-accounting-guide",
+    "path": "guides/new-orleans-nonprofit-accounting-guide.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "guides:new-york-char410-registration-guide",
+    "title": "New York CHAR410 Filing Guide: Initial Charity Registration",
+    "collection": "guides",
+    "slug": "new-york-char410-registration-guide",
+    "path": "guides/new-york-char410-registration-guide.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "guides:new-york-char500-filing-guide",
+    "title": "New York CHAR500 Filing Guide: Due Date, Fees, and Audit Rules",
+    "collection": "guides",
+    "slug": "new-york-char500-filing-guide",
+    "path": "guides/new-york-char500-filing-guide.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "guides:new-york-grant-management-software",
+    "title": "New York Grant Management Software: A Practical Comparison for 2026",
+    "collection": "guides",
+    "slug": "new-york-grant-management-software",
+    "path": "guides/new-york-grant-management-software.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "guides:new-york-nonprofit-startup-guide",
+    "title": "How to Start a Nonprofit in New York: A Founder's Guide",
+    "collection": "guides",
+    "slug": "new-york-nonprofit-startup-guide",
+    "path": "guides/new-york-nonprofit-startup-guide.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "guides:new-york-state-grant-programs-for-nonprofits",
+    "title": "New York State Grant Programs for Nonprofits: 2026 Funder Landscape",
+    "collection": "guides",
+    "slug": "new-york-state-grant-programs-for-nonprofits",
+    "path": "guides/new-york-state-grant-programs-for-nonprofits.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "guides:newark-nonprofit-city-grant-compliance-guide",
+    "title": "Newark nonprofit grant compliance and audit readiness guide",
+    "collection": "guides",
+    "slug": "newark-nonprofit-city-grant-compliance-guide",
+    "path": "guides/newark-nonprofit-city-grant-compliance-guide.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "guides:nonprofit-accounting-software-guide",
+    "title": "Nonprofit Accounting Software: What Fund Accounting Actually Requires",
+    "collection": "guides",
+    "slug": "nonprofit-accounting-software-guide",
+    "path": "guides/nonprofit-accounting-software-guide.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "guides:nonprofit-accounting-software-mistakes",
+    "title": "7 Nonprofit Accounting Software Mistakes That Lead to Audit Findings",
+    "collection": "guides",
+    "slug": "nonprofit-accounting-software-mistakes",
+    "path": "guides/nonprofit-accounting-software-mistakes.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "guides:nonprofit-accounts-receivable-grant-reimbursement-guide",
+    "title": "Nonprofit Accounts Receivable Grant Reimbursement Guide",
+    "collection": "guides",
+    "slug": "nonprofit-accounts-receivable-grant-reimbursement-guide",
+    "path": "guides/nonprofit-accounts-receivable-grant-reimbursement-guide.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "guides:nonprofit-annual-report-guide-template",
+    "title": "Nonprofit Annual Report: What to Include and How to Structure It",
+    "collection": "guides",
+    "slug": "nonprofit-annual-report-guide-template",
+    "path": "guides/nonprofit-annual-report-guide-template.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "guides:nonprofit-audit-checklist-guide",
+    "title": "Nonprofit Audit Checklist: 47 Items Your Finance Team Needs Before Fieldwork Begins",
+    "collection": "guides",
+    "slug": "nonprofit-audit-checklist-guide",
+    "path": "guides/nonprofit-audit-checklist-guide.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "guides:nonprofit-audit-committee-calendar-guide",
+    "title": "Nonprofit Audit Committee Calendar Guide",
+    "collection": "guides",
+    "slug": "nonprofit-audit-committee-calendar-guide",
+    "path": "guides/nonprofit-audit-committee-calendar-guide.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "guides:nonprofit-audit-evidence-binder",
+    "title": "Nonprofit Audit Evidence Binder: What to Include and How to Organize",
+    "collection": "guides",
+    "slug": "nonprofit-audit-evidence-binder",
+    "path": "guides/nonprofit-audit-evidence-binder.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "guides:nonprofit-audit-guide",
+    "title": "Nonprofit Audit: What It Covers, What It Costs, and How to Prepare",
+    "collection": "guides",
+    "slug": "nonprofit-audit-guide",
+    "path": "guides/nonprofit-audit-guide.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "guides:nonprofit-audit-mistakes",
+    "title": "8 Nonprofit Audit Preparation Mistakes That Turn a Clean Audit Into a Finding",
+    "collection": "guides",
+    "slug": "nonprofit-audit-mistakes",
+    "path": "guides/nonprofit-audit-mistakes.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "guides:nonprofit-audit-readiness",
+    "title": "Nonprofit Audit Readiness: What to Prepare, When to Start, and What Auditors Actually Request",
+    "collection": "guides",
+    "slug": "nonprofit-audit-readiness",
+    "path": "guides/nonprofit-audit-readiness.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "guides:nonprofit-audit-request-list-response-guide",
+    "title": "Nonprofit Audit Request List Response Guide",
+    "collection": "guides",
+    "slug": "nonprofit-audit-request-list-response-guide",
+    "path": "guides/nonprofit-audit-request-list-response-guide.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "guides:nonprofit-audit-requirements-by-state",
+    "title": "Nonprofit Audit Requirements by State: 2026 Thresholds and Rules",
+    "collection": "guides",
+    "slug": "nonprofit-audit-requirements-by-state",
+    "path": "guides/nonprofit-audit-requirements-by-state.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "guides:nonprofit-audit-sample-selection-prep-guide",
+    "title": "Nonprofit Audit Sample Selection Prep Guide",
+    "collection": "guides",
+    "slug": "nonprofit-audit-sample-selection-prep-guide",
+    "path": "guides/nonprofit-audit-sample-selection-prep-guide.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "guides:nonprofit-board-compensation-review-file-guide",
+    "title": "Nonprofit Board Compensation Review File Guide",
+    "collection": "guides",
+    "slug": "nonprofit-board-compensation-review-file-guide",
+    "path": "guides/nonprofit-board-compensation-review-file-guide.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "guides:nonprofit-board-finance-dashboard-template-guide",
+    "title": "Nonprofit Board Finance Dashboard Template Guide",
+    "collection": "guides",
+    "slug": "nonprofit-board-finance-dashboard-template-guide",
+    "path": "guides/nonprofit-board-finance-dashboard-template-guide.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "guides:nonprofit-board-grant-reporting-dashboard",
+    "title": "Nonprofit Board Grant Reporting Dashboard: What to Show and What to Skip",
+    "collection": "guides",
+    "slug": "nonprofit-board-grant-reporting-dashboard",
+    "path": "guides/nonprofit-board-grant-reporting-dashboard.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "guides:nonprofit-board-grant-risk-register-guide",
+    "title": "Nonprofit Board Grant Risk Register Guide",
+    "collection": "guides",
+    "slug": "nonprofit-board-grant-risk-register-guide",
+    "path": "guides/nonprofit-board-grant-risk-register-guide.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "guides:nonprofit-board-minutes-grant-approvals-checklist",
+    "title": "Nonprofit Board Minutes Grant Approvals Checklist",
+    "collection": "guides",
+    "slug": "nonprofit-board-minutes-grant-approvals-checklist",
+    "path": "guides/nonprofit-board-minutes-grant-approvals-checklist.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "guides:nonprofit-board-treasurer-transition-checklist",
+    "title": "Nonprofit Board Treasurer Transition Checklist",
+    "collection": "guides",
+    "slug": "nonprofit-board-treasurer-transition-checklist",
+    "path": "guides/nonprofit-board-treasurer-transition-checklist.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "guides:nonprofit-bookkeeping-basics-for-development",
+    "title": "Nonprofit Bookkeeping Basics: What Development Directors Need to Know",
+    "collection": "guides",
+    "slug": "nonprofit-bookkeeping-basics-for-development",
+    "path": "guides/nonprofit-bookkeeping-basics-for-development.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "guides:nonprofit-budget-mistakes",
+    "title": "8 Nonprofit Budget Mistakes That Cause Restricted Grant Overspending and Failed Year-End Close",
+    "collection": "guides",
+    "slug": "nonprofit-budget-mistakes",
+    "path": "guides/nonprofit-budget-mistakes.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "guides:nonprofit-budget-software-guide",
+    "title": "Nonprofit Budget Software: What It Does and When Spreadsheets Stop Working",
+    "collection": "guides",
+    "slug": "nonprofit-budget-software-guide",
+    "path": "guides/nonprofit-budget-software-guide.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "guides:nonprofit-budget-template-guide",
+    "title": "Nonprofit Budget Template: How to Build One That Doesn't Hide Restricted Fund Constraints",
+    "collection": "guides",
+    "slug": "nonprofit-budget-template-guide",
+    "path": "guides/nonprofit-budget-template-guide.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "guides:nonprofit-budget-types-explained",
+    "title": "Nonprofit Budget Types Explained: Operating, Program, Capital, Cash Flow",
+    "collection": "guides",
+    "slug": "nonprofit-budget-types-explained",
+    "path": "guides/nonprofit-budget-types-explained.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "guides:nonprofit-bylaws-how-to-write-template",
+    "title": "Nonprofit Bylaws: What to Include and How to Write Them",
+    "collection": "guides",
+    "slug": "nonprofit-bylaws-how-to-write-template",
+    "path": "guides/nonprofit-bylaws-how-to-write-template.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "guides:nonprofit-cash-flow-warning-signs-grants",
+    "title": "Nonprofit Cash Flow Warning Signs for Grants",
+    "collection": "guides",
+    "slug": "nonprofit-cash-flow-warning-signs-grants",
+    "path": "guides/nonprofit-cash-flow-warning-signs-grants.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "guides:nonprofit-cash-reserve-policy-grant-funded",
+    "title": "Cash Reserve Policy for Grant-Funded Nonprofits",
+    "collection": "guides",
+    "slug": "nonprofit-cash-reserve-policy-grant-funded",
+    "path": "guides/nonprofit-cash-reserve-policy-grant-funded.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "guides:nonprofit-chart-of-accounts-grants-funds-guide",
+    "title": "Chart of Accounts for Grants and Funds Guide",
+    "collection": "guides",
+    "slug": "nonprofit-chart-of-accounts-grants-funds-guide",
+    "path": "guides/nonprofit-chart-of-accounts-grants-funds-guide.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "guides:nonprofit-chart-of-accounts-restricted-funds",
+    "title": "Nonprofit Chart of Accounts for Restricted Funds",
+    "collection": "guides",
+    "slug": "nonprofit-chart-of-accounts-restricted-funds",
+    "path": "guides/nonprofit-chart-of-accounts-restricted-funds.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "guides:nonprofit-client-counting-rules-guide",
+    "title": "Nonprofit Client Counting Rules Guide",
+    "collection": "guides",
+    "slug": "nonprofit-client-counting-rules-guide",
+    "path": "guides/nonprofit-client-counting-rules-guide.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "guides:nonprofit-conflict-of-interest-annual-disclosure-guide",
+    "title": "Nonprofit Conflict of Interest Annual Disclosure Guide",
+    "collection": "guides",
+    "slug": "nonprofit-conflict-of-interest-annual-disclosure-guide",
+    "path": "guides/nonprofit-conflict-of-interest-annual-disclosure-guide.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "guides:nonprofit-cost-allocation-policy-sample-outline",
+    "title": "Nonprofit Cost Allocation Policy Sample Outline",
+    "collection": "guides",
+    "slug": "nonprofit-cost-allocation-policy-sample-outline",
+    "path": "guides/nonprofit-cost-allocation-policy-sample-outline.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "guides:nonprofit-crm-data-cleanup-before-grant-season",
+    "title": "Nonprofit CRM Data Cleanup Before Grant Season",
+    "collection": "guides",
+    "slug": "nonprofit-crm-data-cleanup-before-grant-season",
+    "path": "guides/nonprofit-crm-data-cleanup-before-grant-season.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "guides:nonprofit-crm-data-hygiene-guide",
+    "title": "Nonprofit CRM Data Hygiene: Duplicates, Decay, and the Reports That Lie",
+    "collection": "guides",
+    "slug": "nonprofit-crm-data-hygiene-guide",
+    "path": "guides/nonprofit-crm-data-hygiene-guide.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "guides:nonprofit-crm-features",
+    "title": "Nonprofit CRM Features: What to Look For Before You Buy",
+    "collection": "guides",
+    "slug": "nonprofit-crm-features",
+    "path": "guides/nonprofit-crm-features.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "guides:nonprofit-crm-grant-tracking-requirements",
+    "title": "Nonprofit CRM Grant Tracking Requirements",
+    "collection": "guides",
+    "slug": "nonprofit-crm-grant-tracking-requirements",
+    "path": "guides/nonprofit-crm-grant-tracking-requirements.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "guides:nonprofit-crm-implementation-mistakes",
+    "title": "7 Nonprofit CRM Implementation Mistakes That Break Grant Compliance",
+    "collection": "guides",
+    "slug": "nonprofit-crm-implementation-mistakes",
+    "path": "guides/nonprofit-crm-implementation-mistakes.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "guides:nonprofit-crm-implementation-plan",
+    "title": "Nonprofit CRM Implementation Plan for Mid-Sized Teams",
+    "collection": "guides",
+    "slug": "nonprofit-crm-implementation-plan",
+    "path": "guides/nonprofit-crm-implementation-plan.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "guides:nonprofit-crm-market-2026",
+    "title": "The $846M Nonprofit CRM Market: Who's Winning, Who's Losing, and What's Next",
+    "collection": "guides",
+    "slug": "nonprofit-crm-market-2026",
+    "path": "guides/nonprofit-crm-market-2026.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "guides:nonprofit-crm-pricing-guide",
+    "title": "Nonprofit CRM Pricing Guide: 2026 Costs by Donor Count",
+    "collection": "guides",
+    "slug": "nonprofit-crm-pricing-guide",
+    "path": "guides/nonprofit-crm-pricing-guide.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "guides:nonprofit-crm-satisfaction-ratings-2026",
+    "title": "Nonprofit CRM Satisfaction Ratings: What 5,000+ Reviews Actually Say [2026]",
+    "collection": "guides",
+    "slug": "nonprofit-crm-satisfaction-ratings-2026",
+    "path": "guides/nonprofit-crm-satisfaction-ratings-2026.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "guides:nonprofit-crm-selection-checklist-eds",
+    "title": "Nonprofit CRM Selection Checklist for EDs [2026]",
+    "collection": "guides",
+    "slug": "nonprofit-crm-selection-checklist-eds",
+    "path": "guides/nonprofit-crm-selection-checklist-eds.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "guides:nonprofit-crm-total-cost-ownership",
+    "title": "Nonprofit CRM Total Cost of Ownership: The Real Price of 'Free' and 'Affordable'",
+    "collection": "guides",
+    "slug": "nonprofit-crm-total-cost-ownership",
+    "path": "guides/nonprofit-crm-total-cost-ownership.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "guides:nonprofit-data-dictionary-for-grant-reporting",
+    "title": "Nonprofit Data Dictionary for Grant Reporting",
+    "collection": "guides",
+    "slug": "nonprofit-data-dictionary-for-grant-reporting",
+    "path": "guides/nonprofit-data-dictionary-for-grant-reporting.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "guides:nonprofit-data-management-guide",
+    "title": "Nonprofit Data Management: Building Donor and Grant Records That Survive Staff Turnover",
+    "collection": "guides",
+    "slug": "nonprofit-data-management-guide",
+    "path": "guides/nonprofit-data-management-guide.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "guides:nonprofit-data-migration-cleanup-checklist",
+    "title": "Nonprofit Data Migration Cleanup Checklist",
+    "collection": "guides",
+    "slug": "nonprofit-data-migration-cleanup-checklist",
+    "path": "guides/nonprofit-data-migration-cleanup-checklist.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "guides:nonprofit-development-plan-how-to-write",
+    "title": "Nonprofit Development Plan: How to Write One That Actually Gets Used",
+    "collection": "guides",
+    "slug": "nonprofit-development-plan-how-to-write",
+    "path": "guides/nonprofit-development-plan-how-to-write.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "guides:nonprofit-document-permission-model-guide",
+    "title": "Nonprofit Document Permission Model Guide",
+    "collection": "guides",
+    "slug": "nonprofit-document-permission-model-guide",
+    "path": "guides/nonprofit-document-permission-model-guide.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "guides:nonprofit-donor-restriction-intake-form-guide",
+    "title": "Nonprofit Donor Restriction Intake Form Guide",
+    "collection": "guides",
+    "slug": "nonprofit-donor-restriction-intake-form-guide",
+    "path": "guides/nonprofit-donor-restriction-intake-form-guide.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "guides:nonprofit-email-marketing-complete-guide",
+    "title": "Nonprofit Email Marketing: A Practical Guide for Development Teams",
+    "collection": "guides",
+    "slug": "nonprofit-email-marketing-complete-guide",
+    "path": "guides/nonprofit-email-marketing-complete-guide.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "guides:nonprofit-financial-health-indicators-guide",
+    "title": "Nonprofit Financial Health Indicators: The Dashboard Funders Build About You",
+    "collection": "guides",
+    "slug": "nonprofit-financial-health-indicators-guide",
+    "path": "guides/nonprofit-financial-health-indicators-guide.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "guides:nonprofit-financial-management-software",
+    "title": "Nonprofit Financial Management Software: When You Need More Than QuickBooks",
+    "collection": "guides",
+    "slug": "nonprofit-financial-management-software",
+    "path": "guides/nonprofit-financial-management-software.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "guides:nonprofit-financial-policy-review-calendar",
+    "title": "Nonprofit Financial Policy Review Calendar",
+    "collection": "guides",
+    "slug": "nonprofit-financial-policy-review-calendar",
+    "path": "guides/nonprofit-financial-policy-review-calendar.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "guides:nonprofit-financial-ratios-guide",
+    "title": "Nonprofit Financial Ratios: The Numbers Funders Actually Calculate",
+    "collection": "guides",
+    "slug": "nonprofit-financial-ratios-guide",
+    "path": "guides/nonprofit-financial-ratios-guide.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "guides:nonprofit-financial-report-guide",
+    "title": "How to Build a Nonprofit Financial Report That Boards Can Use",
+    "collection": "guides",
+    "slug": "nonprofit-financial-report-guide",
+    "path": "guides/nonprofit-financial-report-guide.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "guides:nonprofit-financial-reporting-mistakes",
+    "title": "8 Nonprofit Financial Reporting Mistakes That Derail Board Meetings and Trigger Auditor Questions",
+    "collection": "guides",
+    "slug": "nonprofit-financial-reporting-mistakes",
+    "path": "guides/nonprofit-financial-reporting-mistakes.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "guides:nonprofit-financial-statements-guide",
+    "title": "Nonprofit Financial Statements: The Four Reports and What Each Must Show",
+    "collection": "guides",
+    "slug": "nonprofit-financial-statements-guide",
+    "path": "guides/nonprofit-financial-statements-guide.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "guides:nonprofit-fiscal-year-end-close-checklist",
+    "title": "Nonprofit Fiscal Year-End Close Checklist",
+    "collection": "guides",
+    "slug": "nonprofit-fiscal-year-end-close-checklist",
+    "path": "guides/nonprofit-fiscal-year-end-close-checklist.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "guides:nonprofit-form-990-board-review-checklist",
+    "title": "Nonprofit Form 990 Board Review Checklist",
+    "collection": "guides",
+    "slug": "nonprofit-form-990-board-review-checklist",
+    "path": "guides/nonprofit-form-990-board-review-checklist.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "guides:nonprofit-fund-accounting-month-end-tieout-guide",
+    "title": "Nonprofit Fund Accounting Month-End Tieout Guide",
+    "collection": "guides",
+    "slug": "nonprofit-fund-accounting-month-end-tieout-guide",
+    "path": "guides/nonprofit-fund-accounting-month-end-tieout-guide.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "guides:nonprofit-fundraising-strategy-complete-guide",
+    "title": "Nonprofit Fundraising Strategy: Building a Diversified Development Program",
+    "collection": "guides",
+    "slug": "nonprofit-fundraising-strategy-complete-guide",
+    "path": "guides/nonprofit-fundraising-strategy-complete-guide.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "guides:nonprofit-grant-calendar-quarterly-planning-guide",
+    "title": "Nonprofit Grant Calendar Quarterly Planning Guide",
+    "collection": "guides",
+    "slug": "nonprofit-grant-calendar-quarterly-planning-guide",
+    "path": "guides/nonprofit-grant-calendar-quarterly-planning-guide.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "guides:nonprofit-grant-closeout-calendar",
+    "title": "Nonprofit Grant Closeout Calendar",
+    "collection": "guides",
+    "slug": "nonprofit-grant-closeout-calendar",
+    "path": "guides/nonprofit-grant-closeout-calendar.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "guides:nonprofit-grant-compliance-guide",
+    "title": "Nonprofit Grant Compliance Requirements: The Complete Software Buyer's Guide",
+    "collection": "guides",
+    "slug": "nonprofit-grant-compliance-guide",
+    "path": "guides/nonprofit-grant-compliance-guide.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "guides:nonprofit-grant-policy-manual-outline",
+    "title": "Nonprofit Grant Policy Manual Outline",
+    "collection": "guides",
+    "slug": "nonprofit-grant-policy-manual-outline",
+    "path": "guides/nonprofit-grant-policy-manual-outline.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "guides:nonprofit-grant-readiness-self-assessment",
+    "title": "Nonprofit Grant Readiness Self Assessment",
+    "collection": "guides",
+    "slug": "nonprofit-grant-readiness-self-assessment",
+    "path": "guides/nonprofit-grant-readiness-self-assessment.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "guides:nonprofit-grant-report-cover-letter-guide",
+    "title": "Nonprofit Grant Report Cover Letter Guide",
+    "collection": "guides",
+    "slug": "nonprofit-grant-report-cover-letter-guide",
+    "path": "guides/nonprofit-grant-report-cover-letter-guide.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "guides:nonprofit-grants-meeting-agenda-template-guide",
+    "title": "Nonprofit Grants Meeting Agenda Template Guide",
+    "collection": "guides",
+    "slug": "nonprofit-grants-meeting-agenda-template-guide",
+    "path": "guides/nonprofit-grants-meeting-agenda-template-guide.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "guides:nonprofit-impact-report-how-to-create",
+    "title": "Nonprofit Impact Reports: What to Include and How to Create One",
+    "collection": "guides",
+    "slug": "nonprofit-impact-report-how-to-create",
+    "path": "guides/nonprofit-impact-report-how-to-create.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "guides:nonprofit-indirect-cost-recovery-board-guide",
+    "title": "Nonprofit Indirect Cost Recovery Board Guide",
+    "collection": "guides",
+    "slug": "nonprofit-indirect-cost-recovery-board-guide",
+    "path": "guides/nonprofit-indirect-cost-recovery-board-guide.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "guides:nonprofit-integration-tax",
+    "title": "The Nonprofit Integration Tax: When 5+ Systems Cost More Than One",
+    "collection": "guides",
+    "slug": "nonprofit-integration-tax",
+    "path": "guides/nonprofit-integration-tax.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "guides:nonprofit-internal-controls-small-finance-team",
+    "title": "Nonprofit Internal Controls for a Small Finance Team",
+    "collection": "guides",
+    "slug": "nonprofit-internal-controls-small-finance-team",
+    "path": "guides/nonprofit-internal-controls-small-finance-team.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "guides:nonprofit-journal-entry-approval-evidence-guide",
+    "title": "Nonprofit Journal Entry Approval Evidence Guide",
+    "collection": "guides",
+    "slug": "nonprofit-journal-entry-approval-evidence-guide",
+    "path": "guides/nonprofit-journal-entry-approval-evidence-guide.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "guides:nonprofit-match-source-allowability-guide",
+    "title": "Nonprofit Match Source Allowability Guide",
+    "collection": "guides",
+    "slug": "nonprofit-match-source-allowability-guide",
+    "path": "guides/nonprofit-match-source-allowability-guide.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "guides:nonprofit-monthly-close-grant-checklist",
+    "title": "Nonprofit Monthly Close Grant Checklist",
+    "collection": "guides",
+    "slug": "nonprofit-monthly-close-grant-checklist",
+    "path": "guides/nonprofit-monthly-close-grant-checklist.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "guides:nonprofit-net-asset-rollforward-guide",
+    "title": "Nonprofit Net Asset Rollforward Guide",
+    "collection": "guides",
+    "slug": "nonprofit-net-asset-rollforward-guide",
+    "path": "guides/nonprofit-net-asset-rollforward-guide.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "guides:nonprofit-overhead-myth-guide",
+    "title": "The Nonprofit Overhead Myth: A Practical Guide for Funders and Boards",
+    "collection": "guides",
+    "slug": "nonprofit-overhead-myth-guide",
+    "path": "guides/nonprofit-overhead-myth-guide.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "guides:nonprofit-program-budget-template-guide",
+    "title": "Nonprofit Program Budget Template Guide",
+    "collection": "guides",
+    "slug": "nonprofit-program-budget-template-guide",
+    "path": "guides/nonprofit-program-budget-template-guide.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "guides:nonprofit-reserve-fund-guide",
+    "title": "Nonprofit Reserve Fund Guide: How Much, How Built, How Governed",
+    "collection": "guides",
+    "slug": "nonprofit-reserve-fund-guide",
+    "path": "guides/nonprofit-reserve-fund-guide.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "guides:nonprofit-restricted-fund-tracking-guide",
+    "title": "Restricted Fund Tracking for Nonprofits [2026]",
+    "collection": "guides",
+    "slug": "nonprofit-restricted-fund-tracking-guide",
+    "path": "guides/nonprofit-restricted-fund-tracking-guide.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "guides:nonprofit-software-board-approval-business-case",
+    "title": "Nonprofit Software Board Approval Business Case",
+    "collection": "guides",
+    "slug": "nonprofit-software-board-approval-business-case",
+    "path": "guides/nonprofit-software-board-approval-business-case.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "guides:nonprofit-software-budget-justification",
+    "title": "How to Justify Software Costs to Your Board",
+    "collection": "guides",
+    "slug": "nonprofit-software-budget-justification",
+    "path": "guides/nonprofit-software-budget-justification.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "guides:nonprofit-software-evaluation-for-executive-directors",
+    "title": "Software Evaluation Guide for Nonprofit EDs",
+    "collection": "guides",
+    "slug": "nonprofit-software-evaluation-for-executive-directors",
+    "path": "guides/nonprofit-software-evaluation-for-executive-directors.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "guides:nonprofit-software-implementation-risk-register",
+    "title": "Nonprofit Software Implementation Risk Register",
+    "collection": "guides",
+    "slug": "nonprofit-software-implementation-risk-register",
+    "path": "guides/nonprofit-software-implementation-risk-register.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "guides:nonprofit-software-security-guide",
+    "title": "Nonprofit Software Security and Compliance: What to Demand from Your Vendors",
+    "collection": "guides",
+    "slug": "nonprofit-software-security-guide",
+    "path": "guides/nonprofit-software-security-guide.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "guides:nonprofit-software-selection-committee-guide",
+    "title": "Nonprofit Software Selection Committee Guide",
+    "collection": "guides",
+    "slug": "nonprofit-software-selection-committee-guide",
+    "path": "guides/nonprofit-software-selection-committee-guide.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "guides:nonprofit-strategic-plan-guide",
+    "title": "Nonprofit Strategic Plan: A Practical Framework for Organizations That Actually Execute",
+    "collection": "guides",
+    "slug": "nonprofit-strategic-plan-guide",
+    "path": "guides/nonprofit-strategic-plan-guide.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "guides:nonprofit-strategic-plan-template-guide",
+    "title": "Nonprofit Strategic Plan Template: The Structure That Produces Executable Plans",
+    "collection": "guides",
+    "slug": "nonprofit-strategic-plan-template-guide",
+    "path": "guides/nonprofit-strategic-plan-template-guide.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "guides:nonprofit-strategic-planning-mistakes",
+    "title": "7 Strategic Planning Mistakes That Make Your Nonprofit's Plan Obsolete Within 18 Months",
+    "collection": "guides",
+    "slug": "nonprofit-strategic-planning-mistakes",
+    "path": "guides/nonprofit-strategic-planning-mistakes.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "guides:nonprofit-system-of-record-decision-guide",
+    "title": "Nonprofit System of Record Decision Guide",
+    "collection": "guides",
+    "slug": "nonprofit-system-of-record-decision-guide",
+    "path": "guides/nonprofit-system-of-record-decision-guide.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "guides:nonprofit-technology-stack-guide",
+    "title": "The Nonprofit Technology Stack: A Practical Guide for $500K-$10M Organizations",
+    "collection": "guides",
+    "slug": "nonprofit-technology-stack-guide",
+    "path": "guides/nonprofit-technology-stack-guide.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "guides:nonprofit-temporarily-restricted-funds-close-guide",
+    "title": "Temporarily Restricted Funds Close Guide",
+    "collection": "guides",
+    "slug": "nonprofit-temporarily-restricted-funds-close-guide",
+    "path": "guides/nonprofit-temporarily-restricted-funds-close-guide.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "guides:north-carolina-charitable-registration-guide",
+    "title": "North Carolina Charitable Solicitation License: Filing Guide",
+    "collection": "guides",
+    "slug": "north-carolina-charitable-registration-guide",
+    "path": "guides/north-carolina-charitable-registration-guide.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "guides:north-carolina-grant-management-software",
+    "title": "North Carolina Grant Management Software: 2026 Buyer's Guide for Nonprofits",
+    "collection": "guides",
+    "slug": "north-carolina-grant-management-software",
+    "path": "guides/north-carolina-grant-management-software.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "guides:north-carolina-nonprofit-startup-guide",
+    "title": "How to Start a Nonprofit in North Carolina: 2026 Step-by-Step Guide",
+    "collection": "guides",
+    "slug": "north-carolina-nonprofit-startup-guide",
+    "path": "guides/north-carolina-nonprofit-startup-guide.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "guides:north-carolina-state-grant-programs-for-nonprofits",
+    "title": "North Carolina State Grant Programs for Nonprofits: 2026 Funder Landscape",
+    "collection": "guides",
+    "slug": "north-carolina-state-grant-programs-for-nonprofits",
+    "path": "guides/north-carolina-state-grant-programs-for-nonprofits.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "guides:npsp-to-agentforce-migration-cost",
+    "title": "NPSP to Agentforce: What the Salesforce Nonprofit Migration Actually Costs in 2026",
+    "collection": "guides",
+    "slug": "npsp-to-agentforce-migration-cost",
+    "path": "guides/npsp-to-agentforce-migration-cost.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "guides:nsf-grants-nonprofits",
+    "title": "NSF Grants for Nonprofits: STEM Programs and Compliance",
+    "collection": "guides",
+    "slug": "nsf-grants-nonprofits",
+    "path": "guides/nsf-grants-nonprofits.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "guides:nyc-charitable-registration-char500-guide",
+    "title": "NYC + NY State Charitable Registration: The CHAR500 and Article 7-A Guide",
+    "collection": "guides",
+    "slug": "nyc-charitable-registration-char500-guide",
+    "path": "guides/nyc-charitable-registration-char500-guide.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "guides:nyc-community-foundation-grants-guide",
+    "title": "NYC Community Foundation Grants: A 2026 Guide for Nonprofits",
+    "collection": "guides",
+    "slug": "nyc-community-foundation-grants-guide",
+    "path": "guides/nyc-community-foundation-grants-guide.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "guides:nyc-doh-grant-compliance-guide",
+    "title": "NYC DOHMH Grant Compliance: A 2026 Guide for Contractors",
+    "collection": "guides",
+    "slug": "nyc-doh-grant-compliance-guide",
+    "path": "guides/nyc-doh-grant-compliance-guide.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "guides:nyc-government-grants-nonprofits-guide",
+    "title": "NYC Government Grants for Nonprofits: HHS Accelerator, DCLA, and City Council Funding",
+    "collection": "guides",
+    "slug": "nyc-government-grants-nonprofits-guide",
+    "path": "guides/nyc-government-grants-nonprofits-guide.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "guides:oakland-foundation-grants-guide",
+    "title": "Oakland nonprofit grants: local funder and public program guide",
+    "collection": "guides",
+    "slug": "oakland-foundation-grants-guide",
+    "path": "guides/oakland-foundation-grants-guide.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "guides:ohio-charitable-registration-guide",
+    "title": "Ohio Charitable Registration: Nonprofit Filing Guide",
+    "collection": "guides",
+    "slug": "ohio-charitable-registration-guide",
+    "path": "guides/ohio-charitable-registration-guide.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "guides:ohio-grant-management-software",
+    "title": "Ohio Grant Management Software: A Practical Buying Guide for 2026",
+    "collection": "guides",
+    "slug": "ohio-grant-management-software",
+    "path": "guides/ohio-grant-management-software.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "guides:ohio-nonprofit-startup-guide",
+    "title": "How to Start a Nonprofit in Ohio: Step-by-Step Guide",
+    "collection": "guides",
+    "slug": "ohio-nonprofit-startup-guide",
+    "path": "guides/ohio-nonprofit-startup-guide.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "guides:ohio-state-grant-programs-for-nonprofits",
+    "title": "Ohio State Grant Programs for Nonprofits: 2026 Funder Landscape",
+    "collection": "guides",
+    "slug": "ohio-state-grant-programs-for-nonprofits",
+    "path": "guides/ohio-state-grant-programs-for-nonprofits.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "guides:ojjdp-juvenile-justice-grants-nonprofits",
+    "title": "OJJDP Juvenile Justice Grants for Nonprofits: Programs and Compliance",
+    "collection": "guides",
+    "slug": "ojjdp-juvenile-justice-grants-nonprofits",
+    "path": "guides/ojjdp-juvenile-justice-grants-nonprofits.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "guides:oklahoma-charitable-registration-guide",
+    "title": "Oklahoma Charitable Registration Filing Guide for Nonprofits",
+    "collection": "guides",
+    "slug": "oklahoma-charitable-registration-guide",
+    "path": "guides/oklahoma-charitable-registration-guide.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "guides:oklahoma-city-audit-readiness-guide",
+    "title": "Oklahoma City nonprofit grant compliance and audit readiness guide",
+    "collection": "guides",
+    "slug": "oklahoma-city-audit-readiness-guide",
+    "path": "guides/oklahoma-city-audit-readiness-guide.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "guides:omaha-foundation-grants-guide",
+    "title": "Omaha nonprofit grants: local funder and public program guide",
+    "collection": "guides",
+    "slug": "omaha-foundation-grants-guide",
+    "path": "guides/omaha-foundation-grants-guide.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "guides:operating-support-vs-program-grants",
+    "title": "Operating Support vs. Program Grants: Why the Difference Determines Your Sustainability",
+    "collection": "guides",
+    "slug": "operating-support-vs-program-grants",
+    "path": "guides/operating-support-vs-program-grants.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "guides:oregon-nonprofit-audit-requirements",
+    "title": "Oregon Nonprofit Audit Requirements: 2026 Thresholds, Statute, and Deadlines",
+    "collection": "guides",
+    "slug": "oregon-nonprofit-audit-requirements",
+    "path": "guides/oregon-nonprofit-audit-requirements.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "guides:oregon-nonprofit-startup-guide",
+    "title": "How to Start a Nonprofit in Oregon: Step-by-Step Formation Guide",
+    "collection": "guides",
+    "slug": "oregon-nonprofit-startup-guide",
+    "path": "guides/oregon-nonprofit-startup-guide.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "guides:orlando-nonprofit-grant-writing-guide",
+    "title": "Orlando Grant Writing: Central Florida Foundation, Edyth Bush, Disney, and Darden Foundation",
+    "collection": "guides",
+    "slug": "orlando-nonprofit-grant-writing-guide",
+    "path": "guides/orlando-nonprofit-grant-writing-guide.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "guides:outcome-verification-file-guide-nonprofits",
+    "title": "Outcome Verification File Guide for Nonprofits",
+    "collection": "guides",
+    "slug": "outcome-verification-file-guide-nonprofits",
+    "path": "guides/outcome-verification-file-guide-nonprofits.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "guides:pass-through-entity-monitoring-calendar-guide",
+    "title": "Pass-Through Entity Monitoring Calendar Guide",
+    "collection": "guides",
+    "slug": "pass-through-entity-monitoring-calendar-guide",
+    "path": "guides/pass-through-entity-monitoring-calendar-guide.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "guides:peer-to-peer-fundraising-guide",
+    "title": "Peer-to-Peer Fundraising for Nonprofits: What Works and What Doesn't",
+    "collection": "guides",
+    "slug": "peer-to-peer-fundraising-guide",
+    "path": "guides/peer-to-peer-fundraising-guide.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "guides:pennsylvania-bco-10-charitable-registration-guide",
+    "title": "Pennsylvania BCO-10 Charitable Registration Guide",
+    "collection": "guides",
+    "slug": "pennsylvania-bco-10-charitable-registration-guide",
+    "path": "guides/pennsylvania-bco-10-charitable-registration-guide.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "guides:pennsylvania-grant-management-software",
+    "title": "Pennsylvania Grant Management Software: 2026 Buyer's Guide for Nonprofits",
+    "collection": "guides",
+    "slug": "pennsylvania-grant-management-software",
+    "path": "guides/pennsylvania-grant-management-software.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "guides:pennsylvania-nonprofit-audit-requirements",
+    "title": "Pennsylvania Nonprofit Audit Requirements: 2026 Thresholds, Statute, and Deadlines",
+    "collection": "guides",
+    "slug": "pennsylvania-nonprofit-audit-requirements",
+    "path": "guides/pennsylvania-nonprofit-audit-requirements.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "guides:pennsylvania-nonprofit-startup-guide",
+    "title": "How to Start a Nonprofit in Pennsylvania (2026 Guide)",
+    "collection": "guides",
+    "slug": "pennsylvania-nonprofit-startup-guide",
+    "path": "guides/pennsylvania-nonprofit-startup-guide.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "guides:pennsylvania-state-grant-programs-for-nonprofits",
+    "title": "Pennsylvania State Grant Programs for Nonprofits: 2026 Funder Landscape",
+    "collection": "guides",
+    "slug": "pennsylvania-state-grant-programs-for-nonprofits",
+    "path": "guides/pennsylvania-state-grant-programs-for-nonprofits.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "guides:philadelphia-nonprofit-fundraising-strategy-guide",
+    "title": "Philadelphia Nonprofit Fundraising Strategy: Pew, Lenfest, William Penn, and the Philly Giving Cycle",
+    "collection": "guides",
+    "slug": "philadelphia-nonprofit-fundraising-strategy-guide",
+    "path": "guides/philadelphia-nonprofit-fundraising-strategy-guide.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "guides:phoenix-nonprofit-startup-guide",
+    "title": "How to Start a Nonprofit in Phoenix: Arizona Registration, City Licensing, and 501(c)(3)",
+    "collection": "guides",
+    "slug": "phoenix-nonprofit-startup-guide",
+    "path": "guides/phoenix-nonprofit-startup-guide.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "guides:pittsburgh-nonprofit-grant-writing-guide",
+    "title": "Pittsburgh Grant Writing: Heinz Endowments, Pittsburgh Foundation, and Hillman Foundation",
+    "collection": "guides",
+    "slug": "pittsburgh-nonprofit-grant-writing-guide",
+    "path": "guides/pittsburgh-nonprofit-grant-writing-guide.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "guides:planned-giving-outreach-strategy",
+    "title": "Planned Giving Outreach Strategy: How to Build a Working Pipeline",
+    "collection": "guides",
+    "slug": "planned-giving-outreach-strategy",
+    "path": "guides/planned-giving-outreach-strategy.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "guides:planned-giving-program-setup-guide",
+    "title": "Planned Giving: How to Start a Bequest Program Without a Dedicated Staff Member",
+    "collection": "guides",
+    "slug": "planned-giving-program-setup-guide",
+    "path": "guides/planned-giving-program-setup-guide.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "guides:pledge-allowance-restricted-funds-guide",
+    "title": "Pledge Allowance Restricted Funds Guide",
+    "collection": "guides",
+    "slug": "pledge-allowance-restricted-funds-guide",
+    "path": "guides/pledge-allowance-restricted-funds-guide.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "guides:portland-nonprofit-grant-writing-guide",
+    "title": "Portland Grant Writing: Meyer Memorial Trust, Collins Foundation, and Oregon Community Foundation",
+    "collection": "guides",
+    "slug": "portland-nonprofit-grant-writing-guide",
+    "path": "guides/portland-nonprofit-grant-writing-guide.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "guides:prior-approval-federal-grants-guide",
+    "title": "Prior Approval Guide for Federal Grants",
+    "collection": "guides",
+    "slug": "prior-approval-federal-grants-guide",
+    "path": "guides/prior-approval-federal-grants-guide.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "guides:private-foundation-grants-guide",
+    "title": "Private Foundation Grants: How They Differ and How to Win Them",
+    "collection": "guides",
+    "slug": "private-foundation-grants-guide",
+    "path": "guides/private-foundation-grants-guide.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "guides:procurement-card-controls-for-grant-funded-expenses",
+    "title": "Procurement Card Controls for Grant-Funded Expenses",
+    "collection": "guides",
+    "slug": "procurement-card-controls-for-grant-funded-expenses",
+    "path": "guides/procurement-card-controls-for-grant-funded-expenses.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "guides:program-attendance-records-grant-evidence-guide",
+    "title": "Program Attendance Records as Grant Evidence",
+    "collection": "guides",
+    "slug": "program-attendance-records-grant-evidence-guide",
+    "path": "guides/program-attendance-records-grant-evidence-guide.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "guides:program-cost-per-beneficiary-guide",
+    "title": "Program Cost per Beneficiary: How to Calculate It Without Lying",
+    "collection": "guides",
+    "slug": "program-cost-per-beneficiary-guide",
+    "path": "guides/program-cost-per-beneficiary-guide.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "guides:program-income-reporting-uniform-guidance",
+    "title": "Program Income Reporting Under Uniform Guidance",
+    "collection": "guides",
+    "slug": "program-income-reporting-uniform-guidance",
+    "path": "guides/program-income-reporting-uniform-guidance.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "guides:program-outcome-metrics-for-grant-reporting",
+    "title": "Program Outcome Metrics for Grant Reporting",
+    "collection": "guides",
+    "slug": "program-outcome-metrics-for-grant-reporting",
+    "path": "guides/program-outcome-metrics-for-grant-reporting.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "guides:prospect-research-step-by-step-process",
+    "title": "Prospect Research for Nonprofits: A Practical Step-by-Step Process",
+    "collection": "guides",
+    "slug": "prospect-research-step-by-step-process",
+    "path": "guides/prospect-research-step-by-step-process.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "guides:public-support-test-schedule-a-nonprofits",
+    "title": "Public Support Test and Schedule A for Public Charities",
+    "collection": "guides",
+    "slug": "public-support-test-schedule-a-nonprofits",
+    "path": "guides/public-support-test-schedule-a-nonprofits.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "guides:quickbooks-classes-are-not-fund-accounting",
+    "title": "Why QuickBooks Classes Are Not Fund Accounting",
+    "collection": "guides",
+    "slug": "quickbooks-classes-are-not-fund-accounting",
+    "path": "guides/quickbooks-classes-are-not-fund-accounting.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "guides:raleigh-foundation-grants-guide",
+    "title": "Raleigh nonprofit grants: local funder and public program guide",
+    "collection": "guides",
+    "slug": "raleigh-foundation-grants-guide",
+    "path": "guides/raleigh-foundation-grants-guide.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "guides:release-from-restriction-journal-entry-guide",
+    "title": "Release From Restriction Journal Entry Guide",
+    "collection": "guides",
+    "slug": "release-from-restriction-journal-entry-guide",
+    "path": "guides/release-from-restriction-journal-entry-guide.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "guides:restricted-fund-accounting-basics",
+    "title": "Restricted Fund Accounting Basics for Nonprofits",
+    "collection": "guides",
+    "slug": "restricted-fund-accounting-basics",
+    "path": "guides/restricted-fund-accounting-basics.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "guides:restricted-fund-accounting-software-for-nonprofits",
+    "title": "Restricted Fund Accounting Software for Nonprofits [2026 Guide]",
+    "collection": "guides",
+    "slug": "restricted-fund-accounting-software-for-nonprofits",
+    "path": "guides/restricted-fund-accounting-software-for-nonprofits.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "guides:restricted-fund-dashboard-for-executive-directors",
+    "title": "Executive Director Restricted Fund Briefing Template",
+    "collection": "guides",
+    "slug": "restricted-fund-dashboard-for-executive-directors",
+    "path": "guides/restricted-fund-dashboard-for-executive-directors.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "guides:restricted-fund-error-correction-guide",
+    "title": "Restricted Fund Error Correction Guide",
+    "collection": "guides",
+    "slug": "restricted-fund-error-correction-guide",
+    "path": "guides/restricted-fund-error-correction-guide.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "guides:restricted-fund-month-end-close-checklist",
+    "title": "Restricted Fund Month-End Close Checklist for Nonprofits",
+    "collection": "guides",
+    "slug": "restricted-fund-month-end-close-checklist",
+    "path": "guides/restricted-fund-month-end-close-checklist.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "guides:restricted-fund-reconciliation-template-guide",
+    "title": "Restricted Fund Reconciliation Template Guide",
+    "collection": "guides",
+    "slug": "restricted-fund-reconciliation-template-guide",
+    "path": "guides/restricted-fund-reconciliation-template-guide.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "guides:restricted-fund-release-board-report-template-guide",
+    "title": "Restricted Fund Release Board Report Template Guide",
+    "collection": "guides",
+    "slug": "restricted-fund-release-board-report-template-guide",
+    "path": "guides/restricted-fund-release-board-report-template-guide.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "guides:restricted-fund-tracking",
+    "title": "Restricted Fund Tracking: What Nonprofits Get Wrong and How to Fix It",
+    "collection": "guides",
+    "slug": "restricted-fund-tracking",
+    "path": "guides/restricted-fund-tracking.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "guides:restricted-fund-tracking-for-nonprofits",
+    "title": "Restricted Fund Tracking for Nonprofits: FASB ASC 958, Common Failures, and What Works",
+    "collection": "guides",
+    "slug": "restricted-fund-tracking-for-nonprofits",
+    "path": "guides/restricted-fund-tracking-for-nonprofits.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "guides:restricted-gift-agreement-review-checklist",
+    "title": "Restricted Gift Agreement Review Checklist",
+    "collection": "guides",
+    "slug": "restricted-gift-agreement-review-checklist",
+    "path": "guides/restricted-gift-agreement-review-checklist.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "guides:restricted-net-assets-board-report-guide",
+    "title": "Restricted Net Assets Board Report Guide",
+    "collection": "guides",
+    "slug": "restricted-net-assets-board-report-guide",
+    "path": "guides/restricted-net-assets-board-report-guide.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "guides:rhode-island-charitable-registration-guide",
+    "title": "Rhode Island Charitable Registration Filing Guide for Nonprofits",
+    "collection": "guides",
+    "slug": "rhode-island-charitable-registration-guide",
+    "path": "guides/rhode-island-charitable-registration-guide.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "guides:richmond-va-foundation-grants-guide",
+    "title": "Richmond nonprofit grants: local funder and public program guide",
+    "collection": "guides",
+    "slug": "richmond-va-foundation-grants-guide",
+    "path": "guides/richmond-va-foundation-grants-guide.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "guides:riverside-nonprofit-grants-guide",
+    "title": "Riverside nonprofit grants: local funder and public program guide",
+    "collection": "guides",
+    "slug": "riverside-nonprofit-grants-guide",
+    "path": "guides/riverside-nonprofit-grants-guide.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "guides:sacramento-nonprofit-startup-guide",
+    "title": "How to Start a Nonprofit in Sacramento: California AG, State Capital Proximity, and 501(c)(3)",
+    "collection": "guides",
+    "slug": "sacramento-nonprofit-startup-guide",
+    "path": "guides/sacramento-nonprofit-startup-guide.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "guides:salesforce-nonprofit-cost",
+    "title": "Salesforce Nonprofit Cost [2026 Breakdown]",
+    "collection": "guides",
+    "slug": "salesforce-nonprofit-cost",
+    "path": "guides/salesforce-nonprofit-cost.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "guides:salesforce-npsp-guide",
+    "title": "Salesforce Nonprofit Success Pack (NPSP): What It Is and What It Costs",
+    "collection": "guides",
+    "slug": "salesforce-npsp-guide",
+    "path": "guides/salesforce-npsp-guide.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "guides:salt-lake-city-nonprofit-grant-writing-guide",
+    "title": "Salt Lake City Grant Writing: Eccles Foundation, Sorenson, and LDS Charities Adjacency",
+    "collection": "guides",
+    "slug": "salt-lake-city-nonprofit-grant-writing-guide",
+    "path": "guides/salt-lake-city-nonprofit-grant-writing-guide.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "guides:samhsa-grants-nonprofits-how-to-apply",
+    "title": "SAMHSA Grants for Nonprofits: How to Apply and Stay Compliant",
+    "collection": "guides",
+    "slug": "samhsa-grants-nonprofits-how-to-apply",
+    "path": "guides/samhsa-grants-nonprofits-how-to-apply.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "guides:san-antonio-nonprofit-accounting-guide",
+    "title": "San Antonio Nonprofit Accounting: Military Base Contracting, Kronkosky Foundation, and TX State Requirements",
+    "collection": "guides",
+    "slug": "san-antonio-nonprofit-accounting-guide",
+    "path": "guides/san-antonio-nonprofit-accounting-guide.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "guides:san-diego-nonprofit-fundraising-strategy-guide",
+    "title": "San Diego Nonprofit Fundraising: Military Community, Qualcomm Legacy, and Foundation Cultivation",
+    "collection": "guides",
+    "slug": "san-diego-nonprofit-fundraising-strategy-guide",
+    "path": "guides/san-diego-nonprofit-fundraising-strategy-guide.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "guides:san-francisco-grant-compliance-city-contracts-guide",
+    "title": "San Francisco City Contract Compliance: HSA, DPH, and MOHCD Subrecipient Requirements",
+    "collection": "guides",
+    "slug": "san-francisco-grant-compliance-city-contracts-guide",
+    "path": "guides/san-francisco-grant-compliance-city-contracts-guide.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "guides:san-francisco-nonprofit-startup-guide",
+    "title": "How to Start a Nonprofit in San Francisco: 501(c)(3), California AG, and City Requirements",
+    "collection": "guides",
+    "slug": "san-francisco-nonprofit-startup-guide",
+    "path": "guides/san-francisco-nonprofit-startup-guide.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "guides:san-jose-nonprofit-startup-guide",
+    "title": "How to Start a Nonprofit in San Jose: California AG, Silicon Valley Funders, and 501(c)(3)",
+    "collection": "guides",
+    "slug": "san-jose-nonprofit-startup-guide",
+    "path": "guides/san-jose-nonprofit-startup-guide.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "guides:seattle-foundation-grants-guide",
+    "title": "Seattle Foundation Grants: A 2026 Guide for Nonprofits",
+    "collection": "guides",
+    "slug": "seattle-foundation-grants-guide",
+    "path": "guides/seattle-foundation-grants-guide.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "guides:seattle-nonprofit-fundraising-strategy-guide",
+    "title": "Seattle Nonprofit Fundraising Strategy: Tech Philanthropy, Boeing Legacy, and Gates Adjacency",
+    "collection": "guides",
+    "slug": "seattle-nonprofit-fundraising-strategy-guide",
+    "path": "guides/seattle-nonprofit-fundraising-strategy-guide.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "guides:sefa-footnote-disclosure-checklist",
+    "title": "SEFA Footnote Disclosure Checklist",
+    "collection": "guides",
+    "slug": "sefa-footnote-disclosure-checklist",
+    "path": "guides/sefa-footnote-disclosure-checklist.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "guides:sefa-preparation-checklist",
+    "title": "SEFA Preparation Checklist for Nonprofits",
+    "collection": "guides",
+    "slug": "sefa-preparation-checklist",
+    "path": "guides/sefa-preparation-checklist.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "guides:sf-425-federal-financial-report",
+    "title": "SF-425 Federal Financial Report: A Field-by-Field Guide for Nonprofits",
+    "collection": "guides",
+    "slug": "sf-425-federal-financial-report",
+    "path": "guides/sf-425-federal-financial-report.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "guides:sf-425-line-item-review-guide",
+    "title": "SF-425 Line Item Review Guide",
+    "collection": "guides",
+    "slug": "sf-425-line-item-review-guide",
+    "path": "guides/sf-425-line-item-review-guide.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "guides:single-audit-data-collection-form-sf-sac-guide",
+    "title": "SF-SAC Data Collection Form: Single Audit Filing Guide",
+    "collection": "guides",
+    "slug": "single-audit-data-collection-form-sf-sac-guide",
+    "path": "guides/single-audit-data-collection-form-sf-sac-guide.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "guides:single-audit-findings-corrective-action-plan",
+    "title": "Single Audit Findings Corrective Action Plan",
+    "collection": "guides",
+    "slug": "single-audit-findings-corrective-action-plan",
+    "path": "guides/single-audit-findings-corrective-action-plan.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "guides:single-audit-pbc-request-checklist",
+    "title": "Single Audit PBC Request Checklist",
+    "collection": "guides",
+    "slug": "single-audit-pbc-request-checklist",
+    "path": "guides/single-audit-pbc-request-checklist.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "guides:single-audit-threshold-1m",
+    "title": "Single Audit Threshold: $1,000,000",
+    "collection": "guides",
+    "slug": "single-audit-threshold-1m",
+    "path": "guides/single-audit-threshold-1m.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "guides:social-media-fundraising-nonprofits",
+    "title": "Social Media Fundraising for Nonprofits: What Actually Works",
+    "collection": "guides",
+    "slug": "social-media-fundraising-nonprofits",
+    "path": "guides/social-media-fundraising-nonprofits.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "guides:spreadsheet-to-grant-management-migration-plan",
+    "title": "Spreadsheet to Grant Management Migration Plan",
+    "collection": "guides",
+    "slug": "spreadsheet-to-grant-management-migration-plan",
+    "path": "guides/spreadsheet-to-grant-management-migration-plan.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "guides:st-louis-nonprofit-fundraising-strategy-guide",
+    "title": "St. Louis Nonprofit Fundraising Strategy: Danforth Foundation, Emerson, and Regional Arts",
+    "collection": "guides",
+    "slug": "st-louis-nonprofit-fundraising-strategy-guide",
+    "path": "guides/st-louis-nonprofit-fundraising-strategy-guide.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "guides:st-paul-nonprofit-audit-readiness-guide",
+    "title": "St. Paul nonprofit grant compliance and audit readiness guide",
+    "collection": "guides",
+    "slug": "st-paul-nonprofit-audit-readiness-guide",
+    "path": "guides/st-paul-nonprofit-audit-readiness-guide.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "guides:statement-of-activities-nonprofit-guide",
+    "title": "Statement of Activities for Nonprofits: How to Read It and What Funders Look For",
+    "collection": "guides",
+    "slug": "statement-of-activities-nonprofit-guide",
+    "path": "guides/statement-of-activities-nonprofit-guide.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "guides:subaward-invoice-review-checklist",
+    "title": "Subaward Invoice Review Checklist",
+    "collection": "guides",
+    "slug": "subaward-invoice-review-checklist",
+    "path": "guides/subaward-invoice-review-checklist.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "guides:subrecipient-monitoring-plan-for-nonprofits",
+    "title": "Subrecipient Monitoring Plan for Nonprofits",
+    "collection": "guides",
+    "slug": "subrecipient-monitoring-plan-for-nonprofits",
+    "path": "guides/subrecipient-monitoring-plan-for-nonprofits.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "guides:subrecipient-monitoring-requirements-uniform-guidance",
+    "title": "Subrecipient Monitoring Requirements Under 2 CFR 200.331 and 200.332",
+    "collection": "guides",
+    "slug": "subrecipient-monitoring-requirements-uniform-guidance",
+    "path": "guides/subrecipient-monitoring-requirements-uniform-guidance.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "guides:subrecipient-risk-assessment-scoring-guide",
+    "title": "Subrecipient Risk Assessment Scoring Guide",
+    "collection": "guides",
+    "slug": "subrecipient-risk-assessment-scoring-guide",
+    "path": "guides/subrecipient-risk-assessment-scoring-guide.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "guides:survey-consent-language-grant-reporting-guide",
+    "title": "Survey Consent Language for Grant Reporting",
+    "collection": "guides",
+    "slug": "survey-consent-language-grant-reporting-guide",
+    "path": "guides/survey-consent-language-grant-reporting-guide.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "guides:sustainer-program-operations",
+    "title": "Sustainer Program Operations: Running a Recurring Donor Program That Compounds",
+    "collection": "guides",
+    "slug": "sustainer-program-operations",
+    "path": "guides/sustainer-program-operations.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "guides:switching-from-bloomerang",
+    "title": "Switching from Bloomerang: What Grant-Heavy Nonprofits Miss and How to Migrate",
+    "collection": "guides",
+    "slug": "switching-from-bloomerang",
+    "path": "guides/switching-from-bloomerang.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "guides:switching-from-donorperfect",
+    "title": "DonorPerfect Alternative for Grant Compliance: What's Missing and How to Migrate",
+    "collection": "guides",
+    "slug": "switching-from-donorperfect",
+    "path": "guides/switching-from-donorperfect.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "guides:switching-from-granthub",
+    "title": "Switching from GrantHub: A Migration Guide for Nonprofits",
+    "collection": "guides",
+    "slug": "switching-from-granthub",
+    "path": "guides/switching-from-granthub.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "guides:switching-from-neon-one",
+    "title": "Switching from Neon One: Migration Guide for Mid-Sized Nonprofits [2026]",
+    "collection": "guides",
+    "slug": "switching-from-neon-one",
+    "path": "guides/switching-from-neon-one.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "guides:switching-from-spreadsheets-to-crm",
+    "title": "Switching from Spreadsheets to a Nonprofit CRM",
+    "collection": "guides",
+    "slug": "switching-from-spreadsheets-to-crm",
+    "path": "guides/switching-from-spreadsheets-to-crm.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "guides:tampa-nonprofit-startup-guide",
+    "title": "How to Start a Nonprofit in Tampa: Florida Registration, Hillsborough County, and 501(c)(3)",
+    "collection": "guides",
+    "slug": "tampa-nonprofit-startup-guide",
+    "path": "guides/tampa-nonprofit-startup-guide.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "guides:tax-acknowledgment-letters-when-what-how",
+    "title": "Donation Tax Acknowledgment Letters: What You Must Include (and When)",
+    "collection": "guides",
+    "slug": "tax-acknowledgment-letters-when-what-how",
+    "path": "guides/tax-acknowledgment-letters-when-what-how.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "guides:temporarily-restricted-donation-thank-you-receipt-guide",
+    "title": "Temporarily Restricted Donation Thank You Receipt Guide",
+    "collection": "guides",
+    "slug": "temporarily-restricted-donation-thank-you-receipt-guide",
+    "path": "guides/temporarily-restricted-donation-thank-you-receipt-guide.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "guides:temporarily-restricted-net-assets",
+    "title": "Temporarily Restricted Net Assets: What the Old FASB Term Still Means in Practice",
+    "collection": "guides",
+    "slug": "temporarily-restricted-net-assets",
+    "path": "guides/temporarily-restricted-net-assets.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "guides:tennessee-nonprofit-audit-requirements",
+    "title": "Tennessee Nonprofit Audit Requirements: 2026 Thresholds, Statute, and Deadlines",
+    "collection": "guides",
+    "slug": "tennessee-nonprofit-audit-requirements",
+    "path": "guides/tennessee-nonprofit-audit-requirements.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "guides:tennessee-nonprofit-startup-guide",
+    "title": "How to Start a Nonprofit in Tennessee: 2026 Step-by-Step Guide",
+    "collection": "guides",
+    "slug": "tennessee-nonprofit-startup-guide",
+    "path": "guides/tennessee-nonprofit-startup-guide.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "guides:texas-charitable-registration-houston-dallas-austin-guide",
+    "title": "Texas Charitable Solicitation: Houston, Dallas, and Austin Guide",
+    "collection": "guides",
+    "slug": "texas-charitable-registration-houston-dallas-austin-guide",
+    "path": "guides/texas-charitable-registration-houston-dallas-austin-guide.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "guides:texas-form-802-periodic-report-guide",
+    "title": "Texas Form 802 Periodic Report Filing Guide for Nonprofits",
+    "collection": "guides",
+    "slug": "texas-form-802-periodic-report-guide",
+    "path": "guides/texas-form-802-periodic-report-guide.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "guides:texas-grant-management-software",
+    "title": "Texas Grant Management Software for Nonprofits [2026]",
+    "collection": "guides",
+    "slug": "texas-grant-management-software",
+    "path": "guides/texas-grant-management-software.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "guides:texas-nonprofit-startup-guide",
+    "title": "How to Start a Nonprofit in Texas: A Founder's Guide",
+    "collection": "guides",
+    "slug": "texas-nonprofit-startup-guide",
+    "path": "guides/texas-nonprofit-startup-guide.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "guides:texas-state-grant-programs-for-nonprofits",
+    "title": "Texas State Grant Programs for Nonprofits: 2026 Funder Landscape",
+    "collection": "guides",
+    "slug": "texas-state-grant-programs-for-nonprofits",
+    "path": "guides/texas-state-grant-programs-for-nonprofits.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "guides:time-and-effort-certification-federal-grants",
+    "title": "Time and Effort Certification for Federal Grants",
+    "collection": "guides",
+    "slug": "time-and-effort-certification-federal-grants",
+    "path": "guides/time-and-effort-certification-federal-grants.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "guides:tracking-temporarily-restricted-contributions",
+    "title": "Tracking Donor-Restricted Contributions for Nonprofits",
+    "collection": "guides",
+    "slug": "tracking-temporarily-restricted-contributions",
+    "path": "guides/tracking-temporarily-restricted-contributions.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "guides:true-cost-nonprofit-software-tco-guide",
+    "title": "The True Cost of Nonprofit Software: A TCO Framework for Decision-Makers",
+    "collection": "guides",
+    "slug": "true-cost-nonprofit-software-tco-guide",
+    "path": "guides/true-cost-nonprofit-software-tco-guide.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "guides:tucson-nonprofit-audit-readiness-guide",
+    "title": "Tucson nonprofit grant compliance and audit readiness guide",
+    "collection": "guides",
+    "slug": "tucson-nonprofit-audit-readiness-guide",
+    "path": "guides/tucson-nonprofit-audit-readiness-guide.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "guides:tulsa-foundation-grants-guide",
+    "title": "Tulsa nonprofit grants: local funder and public program guide",
+    "collection": "guides",
+    "slug": "tulsa-foundation-grants-guide",
+    "path": "guides/tulsa-foundation-grants-guide.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "guides:unduplicated-client-count-grant-reporting-guide",
+    "title": "Unduplicated Client Count Grant Reporting Guide",
+    "collection": "guides",
+    "slug": "unduplicated-client-count-grant-reporting-guide",
+    "path": "guides/unduplicated-client-count-grant-reporting-guide.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "guides:unified-donor-grant-management-guide",
+    "title": "Unified Donor and Grant Management: A Buyer's Guide",
+    "collection": "guides",
+    "slug": "unified-donor-grant-management-guide",
+    "path": "guides/unified-donor-grant-management-guide.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "guides:uniform-guidance-2-cfr-200-practical-guide",
+    "title": "2 CFR 200 (Uniform Guidance): A Practical Guide for Nonprofit Operators",
+    "collection": "guides",
+    "slug": "uniform-guidance-2-cfr-200-practical-guide",
+    "path": "guides/uniform-guidance-2-cfr-200-practical-guide.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "guides:usda-community-facilities-grant-closeout-guide",
+    "title": "USDA Community Facilities Grant Closeout Guide",
+    "collection": "guides",
+    "slug": "usda-community-facilities-grant-closeout-guide",
+    "path": "guides/usda-community-facilities-grant-closeout-guide.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "guides:usda-rural-development-grants-nonprofits",
+    "title": "USDA Rural Development Grants for Nonprofits: Programs and Compliance",
+    "collection": "guides",
+    "slug": "usda-rural-development-grants-nonprofits",
+    "path": "guides/usda-rural-development-grants-nonprofits.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "guides:utah-charitable-registration-guide",
+    "title": "Utah Charitable Registration Filing Guide for Nonprofits",
+    "collection": "guides",
+    "slug": "utah-charitable-registration-guide",
+    "path": "guides/utah-charitable-registration-guide.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "guides:virginia-beach-nonprofit-grants-guide",
+    "title": "Virginia Beach nonprofit grants: local funder and public program guide",
+    "collection": "guides",
+    "slug": "virginia-beach-nonprofit-grants-guide",
+    "path": "guides/virginia-beach-nonprofit-grants-guide.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "guides:virginia-charitable-registration-guide",
+    "title": "Virginia Charitable Registration: Nonprofit Filing Guide",
+    "collection": "guides",
+    "slug": "virginia-charitable-registration-guide",
+    "path": "guides/virginia-charitable-registration-guide.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "guides:virginia-nonprofit-audit-requirements",
+    "title": "Virginia Nonprofit Audit Requirements: 2026 Thresholds, Statute, and Deadlines",
+    "collection": "guides",
+    "slug": "virginia-nonprofit-audit-requirements",
+    "path": "guides/virginia-nonprofit-audit-requirements.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "guides:virginia-nonprofit-startup-guide",
+    "title": "How to Start a Nonprofit in Virginia: 2026 Founder's Guide",
+    "collection": "guides",
+    "slug": "virginia-nonprofit-startup-guide",
+    "path": "guides/virginia-nonprofit-startup-guide.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "guides:virginia-state-grant-programs-for-nonprofits",
+    "title": "Virginia State Grant Programs for Nonprofits: 2026 Funder Landscape",
+    "collection": "guides",
+    "slug": "virginia-state-grant-programs-for-nonprofits",
+    "path": "guides/virginia-state-grant-programs-for-nonprofits.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "guides:washington-dc-nonprofit-accounting-guide",
+    "title": "DC Nonprofit Accounting: Federal Subrecipient Requirements, OCFO Reporting, and District Compliance",
+    "collection": "guides",
+    "slug": "washington-dc-nonprofit-accounting-guide",
+    "path": "guides/washington-dc-nonprofit-accounting-guide.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "guides:washington-nonprofit-audit-requirements",
+    "title": "Washington Nonprofit Audit Requirements: 2026 Thresholds, Statute, and Deadlines",
+    "collection": "guides",
+    "slug": "washington-nonprofit-audit-requirements",
+    "path": "guides/washington-nonprofit-audit-requirements.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "guides:washington-nonprofit-startup-guide",
+    "title": "How to Start a Nonprofit in Washington State: A 2026 Guide",
+    "collection": "guides",
+    "slug": "washington-nonprofit-startup-guide",
+    "path": "guides/washington-nonprofit-startup-guide.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "guides:washington-state-grant-programs-for-nonprofits",
+    "title": "Washington State Grant Programs for Nonprofits: 2026 Funder Landscape",
+    "collection": "guides",
+    "slug": "washington-state-grant-programs-for-nonprofits",
+    "path": "guides/washington-state-grant-programs-for-nonprofits.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "guides:west-virginia-charitable-registration-guide",
+    "title": "West Virginia Charitable Registration Filing Guide for Nonprofits",
+    "collection": "guides",
+    "slug": "west-virginia-charitable-registration-guide",
+    "path": "guides/west-virginia-charitable-registration-guide.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "guides:what-auditors-ask-for-most-often",
+    "title": "What Nonprofit Auditors Request: A Full Audit Prep List",
+    "collection": "guides",
+    "slug": "what-auditors-ask-for-most-often",
+    "path": "guides/what-auditors-ask-for-most-often.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "guides:what-is-a-nonprofit-crm",
+    "title": "What Is a Nonprofit CRM? A Practical Definition for Development Teams",
+    "collection": "guides",
+    "slug": "what-is-a-nonprofit-crm",
+    "path": "guides/what-is-a-nonprofit-crm.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "guides:what-is-grant-reporting",
+    "title": "What Is Grant Reporting? A Plain-Language Guide for Nonprofits",
+    "collection": "guides",
+    "slug": "what-is-grant-reporting",
+    "path": "guides/what-is-grant-reporting.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "guides:what-is-grants-management",
+    "title": "What Is Grants Management? Post-Award Operations Explained",
+    "collection": "guides",
+    "slug": "what-is-grants-management",
+    "path": "guides/what-is-grants-management.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "guides:why-nonprofit-crm-implementations-fail",
+    "title": "Why Nonprofit CRM Implementations Fail: The 50% Problem",
+    "collection": "guides",
+    "slug": "why-nonprofit-crm-implementations-fail",
+    "path": "guides/why-nonprofit-crm-implementations-fail.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "guides:why-nonprofits-switching-crm-2026",
+    "title": "Why Half of Nonprofits Are About to Switch Their CRM [2026 Data]",
+    "collection": "guides",
+    "slug": "why-nonprofits-switching-crm-2026",
+    "path": "guides/why-nonprofits-switching-crm-2026.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "guides:wichita-foundation-grants-guide",
+    "title": "Wichita nonprofit grants: local funder and public program guide",
+    "collection": "guides",
+    "slug": "wichita-foundation-grants-guide",
+    "path": "guides/wichita-foundation-grants-guide.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "guides:wisconsin-nonprofit-audit-requirements",
+    "title": "Wisconsin Nonprofit Audit Requirements: 2026 Thresholds, Statute, and Deadlines",
+    "collection": "guides",
+    "slug": "wisconsin-nonprofit-audit-requirements",
+    "path": "guides/wisconsin-nonprofit-audit-requirements.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "guides:wisconsin-nonprofit-startup-guide",
+    "title": "How to Start a Nonprofit in Wisconsin: Step-by-Step Formation Guide",
+    "collection": "guides",
+    "slug": "wisconsin-nonprofit-startup-guide",
+    "path": "guides/wisconsin-nonprofit-startup-guide.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "guides:workforce-development-wioa-title-i-reporting-guide",
+    "title": "WIOA Title I Reporting: Adult, Dislocated Worker, and Youth Programs",
+    "collection": "guides",
+    "slug": "workforce-development-wioa-title-i-reporting-guide",
+    "path": "guides/workforce-development-wioa-title-i-reporting-guide.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "guides:year-end-giving-campaign-guide",
+    "title": "Year-End Giving Campaign Guide for Nonprofits",
+    "collection": "guides",
+    "slug": "year-end-giving-campaign-guide",
+    "path": "guides/year-end-giving-campaign-guide.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "guides:year-end-restricted-fund-rollforward-guide",
+    "title": "Year-End Restricted Fund Rollforward Guide",
+    "collection": "guides",
+    "slug": "year-end-restricted-fund-rollforward-guide",
+    "path": "guides/year-end-restricted-fund-rollforward-guide.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "integrations:classy",
+    "title": "GrantPipe + Classy Integration",
+    "collection": "integrations",
+    "slug": "classy",
+    "path": "integrations/classy.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "integrations:constant-contact",
+    "title": "GrantPipe + Constant Contact Integration",
+    "collection": "integrations",
+    "slug": "constant-contact",
+    "path": "integrations/constant-contact.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "integrations:donorbox",
+    "title": "GrantPipe + Donorbox Integration",
+    "collection": "integrations",
+    "slug": "donorbox",
+    "path": "integrations/donorbox.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "integrations:double-the-donation",
+    "title": "GrantPipe + Double the Donation Integration",
+    "collection": "integrations",
+    "slug": "double-the-donation",
+    "path": "integrations/double-the-donation.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "integrations:eventbrite",
+    "title": "GrantPipe + Eventbrite Integration",
+    "collection": "integrations",
+    "slug": "eventbrite",
+    "path": "integrations/eventbrite.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "integrations:hubspot",
+    "title": "GrantPipe + HubSpot Integration",
+    "collection": "integrations",
+    "slug": "hubspot",
+    "path": "integrations/hubspot.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "integrations:mailchimp",
+    "title": "Mailchimp Integration | GrantPipe",
+    "collection": "integrations",
+    "slug": "mailchimp",
+    "path": "integrations/mailchimp.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "integrations:salesforce",
+    "title": "GrantPipe + Salesforce Integration",
+    "collection": "integrations",
+    "slug": "salesforce",
+    "path": "integrations/salesforce.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "integrations:zapier",
+    "title": "Zapier Integration | GrantPipe",
+    "collection": "integrations",
+    "slug": "zapier",
+    "path": "integrations/zapier.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "lead-magnets:2-cfr-200-audit-prep-checklist",
+    "title": "2 CFR 200 Audit Prep Checklist",
+    "collection": "lead-magnets",
+    "slug": "2-cfr-200-audit-prep-checklist",
+    "path": "lead-magnets/2-cfr-200-audit-prep-checklist.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "lead-magnets:501c3-application-checklist",
+    "title": "501(c)(3) Application Checklist",
+    "collection": "lead-magnets",
+    "slug": "501c3-application-checklist",
+    "path": "lead-magnets/501c3-application-checklist.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "lead-magnets:ai-tools-evaluation-scorecard-nonprofits",
+    "title": "AI Tools Evaluation Scorecard for Nonprofits",
+    "collection": "lead-magnets",
+    "slug": "ai-tools-evaluation-scorecard-nonprofits",
+    "path": "lead-magnets/ai-tools-evaluation-scorecard-nonprofits.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "lead-magnets:alabama-compliance-checklist",
+    "title": "Alabama Charitable Organization Compliance Checklist",
+    "collection": "lead-magnets",
+    "slug": "alabama-compliance-checklist",
+    "path": "lead-magnets/alabama-compliance-checklist.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "lead-magnets:arizona-compliance-checklist",
+    "title": "Arizona Nonprofit Annual Corporation Report Compliance Checklist",
+    "collection": "lead-magnets",
+    "slug": "arizona-compliance-checklist",
+    "path": "lead-magnets/arizona-compliance-checklist.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "lead-magnets:atlanta-grant-deadline-calendar-2026",
+    "title": "Atlanta Grant Deadline Calendar 2026",
+    "collection": "lead-magnets",
+    "slug": "atlanta-grant-deadline-calendar-2026",
+    "path": "lead-magnets/atlanta-grant-deadline-calendar-2026.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "lead-magnets:audit-prep-week-by-week-checklist",
+    "title": "4-Week Audit Preparation Checklist",
+    "collection": "lead-magnets",
+    "slug": "audit-prep-week-by-week-checklist",
+    "path": "lead-magnets/audit-prep-week-by-week-checklist.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "lead-magnets:auditor-evidence-checklist",
+    "title": "Auditor Evidence Checklist",
+    "collection": "lead-magnets",
+    "slug": "auditor-evidence-checklist",
+    "path": "lead-magnets/auditor-evidence-checklist.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "lead-magnets:award-setup-worksheet",
+    "title": "Award Setup Worksheet",
+    "collection": "lead-magnets",
+    "slug": "award-setup-worksheet",
+    "path": "lead-magnets/award-setup-worksheet.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "lead-magnets:board-approval-memo-software-template",
+    "title": "Board Approval Memo Template for Software Purchase",
+    "collection": "lead-magnets",
+    "slug": "board-approval-memo-software-template",
+    "path": "lead-magnets/board-approval-memo-software-template.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "lead-magnets:board-fundraising-toolkit",
+    "title": "Board Fundraising Toolkit",
+    "collection": "lead-magnets",
+    "slug": "board-fundraising-toolkit",
+    "path": "lead-magnets/board-fundraising-toolkit.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "lead-magnets:boston-foundation-funder-map-2026",
+    "title": "Boston Foundation Funder Map 2026",
+    "collection": "lead-magnets",
+    "slug": "boston-foundation-funder-map-2026",
+    "path": "lead-magnets/boston-foundation-funder-map-2026.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "lead-magnets:california-compliance-checklist",
+    "title": "California Charitable Solicitation Registration Compliance Checklist",
+    "collection": "lead-magnets",
+    "slug": "california-compliance-checklist",
+    "path": "lead-magnets/california-compliance-checklist.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "lead-magnets:cdbg-compliance-worksheet",
+    "title": "CDBG Compliance Worksheet",
+    "collection": "lead-magnets",
+    "slug": "cdbg-compliance-worksheet",
+    "path": "lead-magnets/cdbg-compliance-worksheet.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "lead-magnets:chicago-foundation-funder-map-2026",
+    "title": "Chicago Foundation Funder Map 2026",
+    "collection": "lead-magnets",
+    "slug": "chicago-foundation-funder-map-2026",
+    "path": "lead-magnets/chicago-foundation-funder-map-2026.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "lead-magnets:colorado-compliance-checklist",
+    "title": "Colorado Charitable Solicitations Annual Renewal Compliance Checklist",
+    "collection": "lead-magnets",
+    "slug": "colorado-compliance-checklist",
+    "path": "lead-magnets/colorado-compliance-checklist.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "lead-magnets:connecticut-compliance-checklist",
+    "title": "Connecticut CPC-63 Charitable Registration Compliance Checklist",
+    "collection": "lead-magnets",
+    "slug": "connecticut-compliance-checklist",
+    "path": "lead-magnets/connecticut-compliance-checklist.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "lead-magnets:corporate-partnership-proposal-template",
+    "title": "Corporate Partnership Proposal Template",
+    "collection": "lead-magnets",
+    "slug": "corporate-partnership-proposal-template",
+    "path": "lead-magnets/corporate-partnership-proposal-template.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "lead-magnets:cost-allocation-plan-worksheet",
+    "title": "Cost Allocation Plan Worksheet",
+    "collection": "lead-magnets",
+    "slug": "cost-allocation-plan-worksheet",
+    "path": "lead-magnets/cost-allocation-plan-worksheet.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "lead-magnets:crm-migration-data-map-template",
+    "title": "CRM Migration Data Map Template",
+    "collection": "lead-magnets",
+    "slug": "crm-migration-data-map-template",
+    "path": "lead-magnets/crm-migration-data-map-template.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "lead-magnets:dallas-foundation-funder-map-2026",
+    "title": "Dallas Foundation Funder Map 2026",
+    "collection": "lead-magnets",
+    "slug": "dallas-foundation-funder-map-2026",
+    "path": "lead-magnets/dallas-foundation-funder-map-2026.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "lead-magnets:dc-federal-pass-through-pipeline-worksheet",
+    "title": "DC Federal Pass-Through Pipeline Worksheet",
+    "collection": "lead-magnets",
+    "slug": "dc-federal-pass-through-pipeline-worksheet",
+    "path": "lead-magnets/dc-federal-pass-through-pipeline-worksheet.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "lead-magnets:denver-foundation-funder-map-2026",
+    "title": "Denver Foundation Funder Map 2026",
+    "collection": "lead-magnets",
+    "slug": "denver-foundation-funder-map-2026",
+    "path": "lead-magnets/denver-foundation-funder-map-2026.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "lead-magnets:development-operations-self-audit",
+    "title": "Development Operations Self-Audit",
+    "collection": "lead-magnets",
+    "slug": "development-operations-self-audit",
+    "path": "lead-magnets/development-operations-self-audit.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "lead-magnets:donor-management-maturity-assessment",
+    "title": "Donor Management Maturity Assessment",
+    "collection": "lead-magnets",
+    "slug": "donor-management-maturity-assessment",
+    "path": "lead-magnets/donor-management-maturity-assessment.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "lead-magnets:donor-retention-dashboard-template",
+    "title": "Donor Retention Dashboard Template",
+    "collection": "lead-magnets",
+    "slug": "donor-retention-dashboard-template",
+    "path": "lead-magnets/donor-retention-dashboard-template.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "lead-magnets:donor-retention-playbook",
+    "title": "Donor Retention Playbook for Mid-Sized Nonprofits",
+    "collection": "lead-magnets",
+    "slug": "donor-retention-playbook",
+    "path": "lead-magnets/donor-retention-playbook.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "lead-magnets:donor-stewardship-plan-template",
+    "title": "Donor Stewardship Plan Template",
+    "collection": "lead-magnets",
+    "slug": "donor-stewardship-plan-template",
+    "path": "lead-magnets/donor-stewardship-plan-template.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "lead-magnets:donor-thank-you-letter-template-pack",
+    "title": "Donor Thank-You Letter Template Pack",
+    "collection": "lead-magnets",
+    "slug": "donor-thank-you-letter-template-pack",
+    "path": "lead-magnets/donor-thank-you-letter-template-pack.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "lead-magnets:donor-to-grant-reconciliation-template",
+    "title": "Donor-to-Grant Reconciliation Template",
+    "collection": "lead-magnets",
+    "slug": "donor-to-grant-reconciliation-template",
+    "path": "lead-magnets/donor-to-grant-reconciliation-template.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "lead-magnets:external-reviewer-access-policy-template",
+    "title": "External Reviewer Access Policy Template",
+    "collection": "lead-magnets",
+    "slug": "external-reviewer-access-policy-template",
+    "path": "lead-magnets/external-reviewer-access-policy-template.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "lead-magnets:fasb-asc-958-quick-reference",
+    "title": "FASB ASC 958 Quick Reference",
+    "collection": "lead-magnets",
+    "slug": "fasb-asc-958-quick-reference",
+    "path": "lead-magnets/fasb-asc-958-quick-reference.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "lead-magnets:federal-grant-application-checklist",
+    "title": "Federal Grant Application Checklist",
+    "collection": "lead-magnets",
+    "slug": "federal-grant-application-checklist",
+    "path": "lead-magnets/federal-grant-application-checklist.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "lead-magnets:florida-compliance-checklist",
+    "title": "Florida Charitable Solicitation Registration Compliance Checklist",
+    "collection": "lead-magnets",
+    "slug": "florida-compliance-checklist",
+    "path": "lead-magnets/florida-compliance-checklist.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "lead-magnets:funder-monitoring-evidence-template",
+    "title": "Funder Monitoring Evidence Template",
+    "collection": "lead-magnets",
+    "slug": "funder-monitoring-evidence-template",
+    "path": "lead-magnets/funder-monitoring-evidence-template.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "lead-magnets:funder-prospecting-research-template",
+    "title": "Funder Prospecting Research Template",
+    "collection": "lead-magnets",
+    "slug": "funder-prospecting-research-template",
+    "path": "lead-magnets/funder-prospecting-research-template.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "lead-magnets:funder-report-template",
+    "title": "Funder Report Template",
+    "collection": "lead-magnets",
+    "slug": "funder-report-template",
+    "path": "lead-magnets/funder-report-template.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "lead-magnets:funder-stewardship-calendar-template",
+    "title": "Funder Stewardship Calendar Template",
+    "collection": "lead-magnets",
+    "slug": "funder-stewardship-calendar-template",
+    "path": "lead-magnets/funder-stewardship-calendar-template.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "lead-magnets:georgia-compliance-checklist",
+    "title": "Georgia Charitable Solicitation Registration Compliance Checklist",
+    "collection": "lead-magnets",
+    "slug": "georgia-compliance-checklist",
+    "path": "lead-magnets/georgia-compliance-checklist.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "lead-magnets:grant-budget-amendment-request-template",
+    "title": "Grant Budget Amendment Request Template",
+    "collection": "lead-magnets",
+    "slug": "grant-budget-amendment-request-template",
+    "path": "lead-magnets/grant-budget-amendment-request-template.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "lead-magnets:grant-budget-template",
+    "title": "Grant Budget Template",
+    "collection": "lead-magnets",
+    "slug": "grant-budget-template",
+    "path": "lead-magnets/grant-budget-template.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "lead-magnets:grant-budget-tracking-template",
+    "title": "Grant Budget Tracking Template",
+    "collection": "lead-magnets",
+    "slug": "grant-budget-tracking-template",
+    "path": "lead-magnets/grant-budget-tracking-template.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "lead-magnets:grant-closeout-checklist",
+    "title": "Grant Closeout Checklist",
+    "collection": "lead-magnets",
+    "slug": "grant-closeout-checklist",
+    "path": "lead-magnets/grant-closeout-checklist.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "lead-magnets:grant-compliance-checklist",
+    "title": "Nonprofit Grant Compliance Checklist",
+    "collection": "lead-magnets",
+    "slug": "grant-compliance-checklist",
+    "path": "lead-magnets/grant-compliance-checklist.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "lead-magnets:grant-compliance-cost-audit",
+    "title": "Grant Compliance Cost Audit",
+    "collection": "lead-magnets",
+    "slug": "grant-compliance-cost-audit",
+    "path": "lead-magnets/grant-compliance-cost-audit.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "lead-magnets:grant-compliance-readiness-quiz",
+    "title": "Grant Compliance Readiness Quiz",
+    "collection": "lead-magnets",
+    "slug": "grant-compliance-readiness-quiz",
+    "path": "lead-magnets/grant-compliance-readiness-quiz.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "lead-magnets:grant-file-audit-checklist",
+    "title": "Grant File Audit Checklist",
+    "collection": "lead-magnets",
+    "slug": "grant-file-audit-checklist",
+    "path": "lead-magnets/grant-file-audit-checklist.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "lead-magnets:grant-kickoff-meeting-template",
+    "title": "Grant Kickoff Meeting Template",
+    "collection": "lead-magnets",
+    "slug": "grant-kickoff-meeting-template",
+    "path": "lead-magnets/grant-kickoff-meeting-template.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "lead-magnets:grant-narrative-template-pack",
+    "title": "Grant Narrative Template Pack",
+    "collection": "lead-magnets",
+    "slug": "grant-narrative-template-pack",
+    "path": "lead-magnets/grant-narrative-template-pack.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "lead-magnets:grant-pipeline-forecasting-worksheet",
+    "title": "Grant Pipeline Forecasting Worksheet",
+    "collection": "lead-magnets",
+    "slug": "grant-pipeline-forecasting-worksheet",
+    "path": "lead-magnets/grant-pipeline-forecasting-worksheet.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "lead-magnets:grant-proposal-budget-template",
+    "title": "Grant Proposal Budget Template",
+    "collection": "lead-magnets",
+    "slug": "grant-proposal-budget-template",
+    "path": "lead-magnets/grant-proposal-budget-template.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "lead-magnets:grant-proposal-sample-pack",
+    "title": "Grant Proposal Sample Pack",
+    "collection": "lead-magnets",
+    "slug": "grant-proposal-sample-pack",
+    "path": "lead-magnets/grant-proposal-sample-pack.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "lead-magnets:grant-reporting-calendar-template",
+    "title": "Grant Reporting Calendar Template",
+    "collection": "lead-magnets",
+    "slug": "grant-reporting-calendar-template",
+    "path": "lead-magnets/grant-reporting-calendar-template.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "lead-magnets:grant-reporting-deadlines-tracker",
+    "title": "Grant Reporting Deadlines Tracker",
+    "collection": "lead-magnets",
+    "slug": "grant-reporting-deadlines-tracker",
+    "path": "lead-magnets/grant-reporting-deadlines-tracker.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "lead-magnets:grant-software-roi-calculator",
+    "title": "Grant Software ROI Calculator",
+    "collection": "lead-magnets",
+    "slug": "grant-software-roi-calculator",
+    "path": "lead-magnets/grant-software-roi-calculator.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "lead-magnets:grant-spend-down-tracker",
+    "title": "Grant Spend-Down Tracker",
+    "collection": "lead-magnets",
+    "slug": "grant-spend-down-tracker",
+    "path": "lead-magnets/grant-spend-down-tracker.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "lead-magnets:grant-staff-time-tracking-template",
+    "title": "Grant Staff Time Tracking Template",
+    "collection": "lead-magnets",
+    "slug": "grant-staff-time-tracking-template",
+    "path": "lead-magnets/grant-staff-time-tracking-template.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "lead-magnets:grant-tracking-template",
+    "title": "Grant Tracking Spreadsheet",
+    "collection": "lead-magnets",
+    "slug": "grant-tracking-template",
+    "path": "lead-magnets/grant-tracking-template.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "lead-magnets:granthub-migration-checklist",
+    "title": "GrantHub Migration Checklist",
+    "collection": "lead-magnets",
+    "slug": "granthub-migration-checklist",
+    "path": "lead-magnets/granthub-migration-checklist.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "lead-magnets:houston-grant-deadline-calendar-2026",
+    "title": "Houston Grant Deadline Calendar 2026",
+    "collection": "lead-magnets",
+    "slug": "houston-grant-deadline-calendar-2026",
+    "path": "lead-magnets/houston-grant-deadline-calendar-2026.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "lead-magnets:illinois-compliance-checklist",
+    "title": "Illinois Charitable Solicitation Registration Compliance Checklist",
+    "collection": "lead-magnets",
+    "slug": "illinois-compliance-checklist",
+    "path": "lead-magnets/illinois-compliance-checklist.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "lead-magnets:indiana-compliance-checklist",
+    "title": "Indiana Nonprofit Business Entity Report Compliance Checklist",
+    "collection": "lead-magnets",
+    "slug": "indiana-compliance-checklist",
+    "path": "lead-magnets/indiana-compliance-checklist.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "lead-magnets:indirect-cost-rate-negotiation-worksheet",
+    "title": "Indirect Cost Rate Negotiation Worksheet",
+    "collection": "lead-magnets",
+    "slug": "indirect-cost-rate-negotiation-worksheet",
+    "path": "lead-magnets/indirect-cost-rate-negotiation-worksheet.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "lead-magnets:iowa-compliance-checklist",
+    "title": "Iowa Nonprofit Biennial Report Compliance Checklist",
+    "collection": "lead-magnets",
+    "slug": "iowa-compliance-checklist",
+    "path": "lead-magnets/iowa-compliance-checklist.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "lead-magnets:jacksonville-grant-deadline-calendar-2026",
+    "title": "Jacksonville Grant Deadline Calendar 2026",
+    "collection": "lead-magnets",
+    "slug": "jacksonville-grant-deadline-calendar-2026",
+    "path": "lead-magnets/jacksonville-grant-deadline-calendar-2026.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "lead-magnets:kentucky-compliance-checklist",
+    "title": "Kentucky Nonprofit Annual Report Compliance Checklist",
+    "collection": "lead-magnets",
+    "slug": "kentucky-compliance-checklist",
+    "path": "lead-magnets/kentucky-compliance-checklist.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "lead-magnets:los-angeles-foundation-funder-map-2026",
+    "title": "Los Angeles Foundation Funder Map 2026",
+    "collection": "lead-magnets",
+    "slug": "los-angeles-foundation-funder-map-2026",
+    "path": "lead-magnets/los-angeles-foundation-funder-map-2026.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "lead-magnets:louisiana-compliance-checklist",
+    "title": "Louisiana Charitable Organization Compliance Checklist",
+    "collection": "lead-magnets",
+    "slug": "louisiana-compliance-checklist",
+    "path": "lead-magnets/louisiana-compliance-checklist.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "lead-magnets:major-donor-cultivation-playbook",
+    "title": "Major Donor Cultivation Playbook",
+    "collection": "lead-magnets",
+    "slug": "major-donor-cultivation-playbook",
+    "path": "lead-magnets/major-donor-cultivation-playbook.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "lead-magnets:maryland-compliance-checklist",
+    "title": "Maryland COF-85 Charitable Registration Compliance Checklist",
+    "collection": "lead-magnets",
+    "slug": "maryland-compliance-checklist",
+    "path": "lead-magnets/maryland-compliance-checklist.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "lead-magnets:massachusetts-compliance-checklist",
+    "title": "Massachusetts Charitable Solicitation Registration Compliance Checklist",
+    "collection": "lead-magnets",
+    "slug": "massachusetts-compliance-checklist",
+    "path": "lead-magnets/massachusetts-compliance-checklist.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "lead-magnets:michigan-compliance-checklist",
+    "title": "Michigan CTS-02 Charitable Registration Compliance Checklist",
+    "collection": "lead-magnets",
+    "slug": "michigan-compliance-checklist",
+    "path": "lead-magnets/michigan-compliance-checklist.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "lead-magnets:minneapolis-foundation-funder-map-2026",
+    "title": "Minneapolis Foundation Funder Map 2026",
+    "collection": "lead-magnets",
+    "slug": "minneapolis-foundation-funder-map-2026",
+    "path": "lead-magnets/minneapolis-foundation-funder-map-2026.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "lead-magnets:minnesota-compliance-checklist",
+    "title": "Minnesota Charitable Organization Annual Report Compliance Checklist",
+    "collection": "lead-magnets",
+    "slug": "minnesota-compliance-checklist",
+    "path": "lead-magnets/minnesota-compliance-checklist.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "lead-magnets:missouri-compliance-checklist",
+    "title": "Missouri Charitable Organization Compliance Checklist",
+    "collection": "lead-magnets",
+    "slug": "missouri-compliance-checklist",
+    "path": "lead-magnets/missouri-compliance-checklist.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "lead-magnets:monthly-giving-program-launch-checklist",
+    "title": "Monthly Giving Program Launch Checklist",
+    "collection": "lead-magnets",
+    "slug": "monthly-giving-program-launch-checklist",
+    "path": "lead-magnets/monthly-giving-program-launch-checklist.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "lead-magnets:new-development-director-90-day-checklist",
+    "title": "New Development Director 90-Day Checklist",
+    "collection": "lead-magnets",
+    "slug": "new-development-director-90-day-checklist",
+    "path": "lead-magnets/new-development-director-90-day-checklist.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "lead-magnets:new-jersey-compliance-checklist",
+    "title": "New Jersey CRI-300R Charitable Registration Compliance Checklist",
+    "collection": "lead-magnets",
+    "slug": "new-jersey-compliance-checklist",
+    "path": "lead-magnets/new-jersey-compliance-checklist.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "lead-magnets:new-york-compliance-checklist",
+    "title": "New York Charitable Solicitation Registration Compliance Checklist",
+    "collection": "lead-magnets",
+    "slug": "new-york-compliance-checklist",
+    "path": "lead-magnets/new-york-compliance-checklist.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "lead-magnets:no-cost-extension-request-template",
+    "title": "No-Cost Extension Request Template",
+    "collection": "lead-magnets",
+    "slug": "no-cost-extension-request-template",
+    "path": "lead-magnets/no-cost-extension-request-template.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "lead-magnets:nonprofit-audit-readiness-assessment",
+    "title": "Nonprofit Audit Readiness Assessment",
+    "collection": "lead-magnets",
+    "slug": "nonprofit-audit-readiness-assessment",
+    "path": "lead-magnets/nonprofit-audit-readiness-assessment.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "lead-magnets:nonprofit-crm-cost-calculator",
+    "title": "Nonprofit CRM Cost Calculator",
+    "collection": "lead-magnets",
+    "slug": "nonprofit-crm-cost-calculator",
+    "path": "lead-magnets/nonprofit-crm-cost-calculator.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "lead-magnets:nonprofit-crm-evaluation-scorecard",
+    "title": "Nonprofit CRM Evaluation Scorecard",
+    "collection": "lead-magnets",
+    "slug": "nonprofit-crm-evaluation-scorecard",
+    "path": "lead-magnets/nonprofit-crm-evaluation-scorecard.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "lead-magnets:nonprofit-crm-market-report-2026",
+    "title": "Nonprofit CRM Market Report 2026",
+    "collection": "lead-magnets",
+    "slug": "nonprofit-crm-market-report-2026",
+    "path": "lead-magnets/nonprofit-crm-market-report-2026.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "lead-magnets:nonprofit-development-plan-template",
+    "title": "Nonprofit Development Plan Template",
+    "collection": "lead-magnets",
+    "slug": "nonprofit-development-plan-template",
+    "path": "lead-magnets/nonprofit-development-plan-template.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "lead-magnets:nonprofit-financial-health-scorecard",
+    "title": "Nonprofit Financial Health Scorecard",
+    "collection": "lead-magnets",
+    "slug": "nonprofit-financial-health-scorecard",
+    "path": "lead-magnets/nonprofit-financial-health-scorecard.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "lead-magnets:nonprofit-financial-report-template",
+    "title": "Nonprofit Financial Report Template",
+    "collection": "lead-magnets",
+    "slug": "nonprofit-financial-report-template",
+    "path": "lead-magnets/nonprofit-financial-report-template.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "lead-magnets:nonprofit-software-needs-assessment",
+    "title": "Nonprofit Software Needs Assessment",
+    "collection": "lead-magnets",
+    "slug": "nonprofit-software-needs-assessment",
+    "path": "lead-magnets/nonprofit-software-needs-assessment.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "lead-magnets:nonprofit-technology-evaluation-worksheet",
+    "title": "Nonprofit Technology Evaluation Worksheet",
+    "collection": "lead-magnets",
+    "slug": "nonprofit-technology-evaluation-worksheet",
+    "path": "lead-magnets/nonprofit-technology-evaluation-worksheet.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "lead-magnets:north-carolina-compliance-checklist",
+    "title": "North Carolina Charitable Solicitation Registration Compliance Checklist",
+    "collection": "lead-magnets",
+    "slug": "north-carolina-compliance-checklist",
+    "path": "lead-magnets/north-carolina-compliance-checklist.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "lead-magnets:nyc-foundation-funder-map-2026",
+    "title": "NYC Foundation Funder Map 2026",
+    "collection": "lead-magnets",
+    "slug": "nyc-foundation-funder-map-2026",
+    "path": "lead-magnets/nyc-foundation-funder-map-2026.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "lead-magnets:ohio-compliance-checklist",
+    "title": "Ohio Charitable Solicitation Registration Compliance Checklist",
+    "collection": "lead-magnets",
+    "slug": "ohio-compliance-checklist",
+    "path": "lead-magnets/ohio-compliance-checklist.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "lead-magnets:oklahoma-compliance-checklist",
+    "title": "Oklahoma Charitable Organization Compliance Checklist",
+    "collection": "lead-magnets",
+    "slug": "oklahoma-compliance-checklist",
+    "path": "lead-magnets/oklahoma-compliance-checklist.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "lead-magnets:oregon-compliance-checklist",
+    "title": "Oregon CT-12 Charitable Registration Compliance Checklist",
+    "collection": "lead-magnets",
+    "slug": "oregon-compliance-checklist",
+    "path": "lead-magnets/oregon-compliance-checklist.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "lead-magnets:pennsylvania-compliance-checklist",
+    "title": "Pennsylvania Charitable Solicitation Registration Compliance Checklist",
+    "collection": "lead-magnets",
+    "slug": "pennsylvania-compliance-checklist",
+    "path": "lead-magnets/pennsylvania-compliance-checklist.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "lead-magnets:philadelphia-grant-deadline-calendar-2026",
+    "title": "Philadelphia Grant Deadline Calendar 2026",
+    "collection": "lead-magnets",
+    "slug": "philadelphia-grant-deadline-calendar-2026",
+    "path": "lead-magnets/philadelphia-grant-deadline-calendar-2026.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "lead-magnets:phoenix-foundation-funder-map-2026",
+    "title": "Phoenix Foundation Funder Map 2026",
+    "collection": "lead-magnets",
+    "slug": "phoenix-foundation-funder-map-2026",
+    "path": "lead-magnets/phoenix-foundation-funder-map-2026.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "lead-magnets:raleigh-foundation-funder-map-2026",
+    "title": "Raleigh Foundation Funder Map 2026",
+    "collection": "lead-magnets",
+    "slug": "raleigh-foundation-funder-map-2026",
+    "path": "lead-magnets/raleigh-foundation-funder-map-2026.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "lead-magnets:restricted-fund-tracking-spreadsheet",
+    "title": "Restricted Fund Tracking Spreadsheet",
+    "collection": "lead-magnets",
+    "slug": "restricted-fund-tracking-spreadsheet",
+    "path": "lead-magnets/restricted-fund-tracking-spreadsheet.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "lead-magnets:restricted-funds-release-calculator",
+    "title": "Restricted Funds Release Calculator",
+    "collection": "lead-magnets",
+    "slug": "restricted-funds-release-calculator",
+    "path": "lead-magnets/restricted-funds-release-calculator.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "lead-magnets:salesforce-npsp-migration-map",
+    "title": "Salesforce NPSP Migration Map",
+    "collection": "lead-magnets",
+    "slug": "salesforce-npsp-migration-map",
+    "path": "lead-magnets/salesforce-npsp-migration-map.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "lead-magnets:san-antonio-grant-deadline-calendar-2026",
+    "title": "San Antonio Grant Deadline Calendar 2026",
+    "collection": "lead-magnets",
+    "slug": "san-antonio-grant-deadline-calendar-2026",
+    "path": "lead-magnets/san-antonio-grant-deadline-calendar-2026.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "lead-magnets:san-diego-foundation-funder-map-2026",
+    "title": "San Diego Foundation Funder Map 2026",
+    "collection": "lead-magnets",
+    "slug": "san-diego-foundation-funder-map-2026",
+    "path": "lead-magnets/san-diego-foundation-funder-map-2026.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "lead-magnets:seattle-foundation-funder-map-2026",
+    "title": "Seattle Foundation Funder Map 2026",
+    "collection": "lead-magnets",
+    "slug": "seattle-foundation-funder-map-2026",
+    "path": "lead-magnets/seattle-foundation-funder-map-2026.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "lead-magnets:sefa-prep-worksheet",
+    "title": "SEFA Prep Worksheet",
+    "collection": "lead-magnets",
+    "slug": "sefa-prep-worksheet",
+    "path": "lead-magnets/sefa-prep-worksheet.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "lead-magnets:sf-425-reporting-checklist",
+    "title": "SF-425 Reporting Checklist",
+    "collection": "lead-magnets",
+    "slug": "sf-425-reporting-checklist",
+    "path": "lead-magnets/sf-425-reporting-checklist.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "lead-magnets:single-audit-prep-timeline",
+    "title": "Single Audit Prep Timeline",
+    "collection": "lead-magnets",
+    "slug": "single-audit-prep-timeline",
+    "path": "lead-magnets/single-audit-prep-timeline.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "lead-magnets:south-carolina-compliance-checklist",
+    "title": "South Carolina Public Charities Compliance Checklist",
+    "collection": "lead-magnets",
+    "slug": "south-carolina-compliance-checklist",
+    "path": "lead-magnets/south-carolina-compliance-checklist.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "lead-magnets:subrecipient-agreement-checklist",
+    "title": "Subrecipient Agreement Checklist",
+    "collection": "lead-magnets",
+    "slug": "subrecipient-agreement-checklist",
+    "path": "lead-magnets/subrecipient-agreement-checklist.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "lead-magnets:subrecipient-monitoring-checklist",
+    "title": "Subrecipient Monitoring Checklist",
+    "collection": "lead-magnets",
+    "slug": "subrecipient-monitoring-checklist",
+    "path": "lead-magnets/subrecipient-monitoring-checklist.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "lead-magnets:tennessee-compliance-checklist",
+    "title": "Tennessee SS-6001 Charitable Registration Compliance Checklist",
+    "collection": "lead-magnets",
+    "slug": "tennessee-compliance-checklist",
+    "path": "lead-magnets/tennessee-compliance-checklist.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "lead-magnets:texas-compliance-checklist",
+    "title": "Texas Charitable Solicitation Registration Compliance Checklist",
+    "collection": "lead-magnets",
+    "slug": "texas-compliance-checklist",
+    "path": "lead-magnets/texas-compliance-checklist.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "lead-magnets:time-and-effort-certification-template",
+    "title": "Time and Effort Certification Template",
+    "collection": "lead-magnets",
+    "slug": "time-and-effort-certification-template",
+    "path": "lead-magnets/time-and-effort-certification-template.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "lead-magnets:virginia-compliance-checklist",
+    "title": "Virginia Form 102 Charitable Registration Compliance Checklist",
+    "collection": "lead-magnets",
+    "slug": "virginia-compliance-checklist",
+    "path": "lead-magnets/virginia-compliance-checklist.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "lead-magnets:washington-compliance-checklist",
+    "title": "Washington Charitable Solicitation Registration Compliance Checklist",
+    "collection": "lead-magnets",
+    "slug": "washington-compliance-checklist",
+    "path": "lead-magnets/washington-compliance-checklist.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "lead-magnets:wisconsin-compliance-checklist",
+    "title": "Wisconsin Form 1952 Charitable Registration Compliance Checklist",
+    "collection": "lead-magnets",
+    "slug": "wisconsin-compliance-checklist",
+    "path": "lead-magnets/wisconsin-compliance-checklist.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "lead-magnets:year-end-campaign-toolkit",
+    "title": "Year-End Campaign Toolkit",
+    "collection": "lead-magnets",
+    "slug": "year-end-campaign-toolkit",
+    "path": "lead-magnets/year-end-campaign-toolkit.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "listicles:best-ai-tools-for-nonprofits-2026",
+    "title": "8 Best AI Tools for Nonprofits in 2026 (Tested and Ranked)",
+    "collection": "listicles",
+    "slug": "best-ai-tools-for-nonprofits-2026",
+    "path": "listicles/best-ai-tools-for-nonprofits-2026.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "listicles:best-board-management-software-nonprofits",
+    "title": "5 Best Board Management Software Tools for Nonprofits [2026]",
+    "collection": "listicles",
+    "slug": "best-board-management-software-nonprofits",
+    "path": "listicles/best-board-management-software-nonprofits.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "listicles:best-crm-for-major-gift-officers",
+    "title": "Best CRM for Major Gift Officers in 2026",
+    "collection": "listicles",
+    "slug": "best-crm-for-major-gift-officers",
+    "path": "listicles/best-crm-for-major-gift-officers.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "listicles:best-crm-for-nonprofit-organizations",
+    "title": "Best CRM for Nonprofit Organizations in 2026: Grant Compliance Included",
+    "collection": "listicles",
+    "slug": "best-crm-for-nonprofit-organizations",
+    "path": "listicles/best-crm-for-nonprofit-organizations.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "listicles:best-donation-receipt-software-nonprofits",
+    "title": "Best Donation Receipt Software for Nonprofits: 5 Options That Handle IRS Requirements",
+    "collection": "listicles",
+    "slug": "best-donation-receipt-software-nonprofits",
+    "path": "listicles/best-donation-receipt-software-nonprofits.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "listicles:best-donor-crm-atlanta-nonprofits",
+    "title": "Best Donor CRM for Atlanta Nonprofits in 2026",
+    "collection": "listicles",
+    "slug": "best-donor-crm-atlanta-nonprofits",
+    "path": "listicles/best-donor-crm-atlanta-nonprofits.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "listicles:best-donor-management-no-consultants",
+    "title": "Best Donor Management Software That Requires No Consultants",
+    "collection": "listicles",
+    "slug": "best-donor-management-no-consultants",
+    "path": "listicles/best-donor-management-no-consultants.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "listicles:best-donor-management-software-affordable",
+    "title": "Best Affordable Donor Management Software for Nonprofits (2026)",
+    "collection": "listicles",
+    "slug": "best-donor-management-software-affordable",
+    "path": "listicles/best-donor-management-software-affordable.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "listicles:best-donor-management-software-boston",
+    "title": "Best Donor Management Software for Boston Nonprofits in 2026",
+    "collection": "listicles",
+    "slug": "best-donor-management-software-boston",
+    "path": "listicles/best-donor-management-software-boston.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "listicles:best-donor-management-software-for-nonprofits",
+    "title": "Best Donor Management Software for Nonprofits in 2026: Ranked for Development Teams",
+    "collection": "listicles",
+    "slug": "best-donor-management-software-for-nonprofits",
+    "path": "listicles/best-donor-management-software-for-nonprofits.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "listicles:best-donor-management-software-nyc-nonprofits",
+    "title": "Best Donor Management Software for NYC Nonprofits in 2026",
+    "collection": "listicles",
+    "slug": "best-donor-management-software-nyc-nonprofits",
+    "path": "listicles/best-donor-management-software-nyc-nonprofits.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "listicles:best-donor-management-software-san-francisco",
+    "title": "Best Donor Management Software for San Francisco Nonprofits in 2026",
+    "collection": "listicles",
+    "slug": "best-donor-management-software-san-francisco",
+    "path": "listicles/best-donor-management-software-san-francisco.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "listicles:best-donor-management-software-small-nonprofits",
+    "title": "Best Donor Management Software for Small Nonprofits in 2026: Under $200/Month",
+    "collection": "listicles",
+    "slug": "best-donor-management-software-small-nonprofits",
+    "path": "listicles/best-donor-management-software-small-nonprofits.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "listicles:best-federal-grant-management-software",
+    "title": "Best Federal Grant Management Software for Nonprofits [2026]",
+    "collection": "listicles",
+    "slug": "best-federal-grant-management-software",
+    "path": "listicles/best-federal-grant-management-software.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "listicles:best-free-nonprofit-accounting-software",
+    "title": "Best Free Nonprofit Accounting Software in 2026: What Free Gets You (and What It Doesn't)",
+    "collection": "listicles",
+    "slug": "best-free-nonprofit-accounting-software",
+    "path": "listicles/best-free-nonprofit-accounting-software.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "listicles:best-fund-accounting-software-massachusetts-nonprofits",
+    "title": "Best Fund Accounting Software for Massachusetts Nonprofits in 2026",
+    "collection": "listicles",
+    "slug": "best-fund-accounting-software-massachusetts-nonprofits",
+    "path": "listicles/best-fund-accounting-software-massachusetts-nonprofits.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "listicles:best-fund-accounting-software-nonprofits",
+    "title": "Best Fund Accounting Software for Nonprofits (2026)",
+    "collection": "listicles",
+    "slug": "best-fund-accounting-software-nonprofits",
+    "path": "listicles/best-fund-accounting-software-nonprofits.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "listicles:best-funding-management-software-nonprofits",
+    "title": "Best Funding Management Software for Nonprofits With Mixed Revenue Streams",
+    "collection": "listicles",
+    "slug": "best-funding-management-software-nonprofits",
+    "path": "listicles/best-funding-management-software-nonprofits.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "listicles:best-grant-administration-software",
+    "title": "Best Grant Administration Software for Nonprofits Managing Federal and Foundation Awards",
+    "collection": "listicles",
+    "slug": "best-grant-administration-software",
+    "path": "listicles/best-grant-administration-software.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "listicles:best-grant-compliance-software",
+    "title": "Best Grant Compliance Software for Nonprofits [2026]",
+    "collection": "listicles",
+    "slug": "best-grant-compliance-software",
+    "path": "listicles/best-grant-compliance-software.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "listicles:best-grant-compliance-software-philadelphia",
+    "title": "Best Grant Compliance Software for Philadelphia Nonprofits in 2026",
+    "collection": "listicles",
+    "slug": "best-grant-compliance-software-philadelphia",
+    "path": "listicles/best-grant-compliance-software-philadelphia.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "listicles:best-grant-compliance-software-texas-nonprofits",
+    "title": "Best Grant Compliance Software for Texas Nonprofits in 2026",
+    "collection": "listicles",
+    "slug": "best-grant-compliance-software-texas-nonprofits",
+    "path": "listicles/best-grant-compliance-software-texas-nonprofits.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "listicles:best-grant-management-for-federal-awards",
+    "title": "Best Grant Management Software for Federal Awards in 2026",
+    "collection": "listicles",
+    "slug": "best-grant-management-for-federal-awards",
+    "path": "listicles/best-grant-management-for-federal-awards.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "listicles:best-grant-management-software",
+    "title": "5 Best Grant Management Software [2026 Ranked]",
+    "collection": "listicles",
+    "slug": "best-grant-management-software",
+    "path": "listicles/best-grant-management-software.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "listicles:best-grant-management-software-california-nonprofits",
+    "title": "Best Grant Management Software for California Nonprofits in 2026",
+    "collection": "listicles",
+    "slug": "best-grant-management-software-california-nonprofits",
+    "path": "listicles/best-grant-management-software-california-nonprofits.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "listicles:best-grant-management-software-development-directors",
+    "title": "Best Grant Management Software for Development Directors (2026)",
+    "collection": "listicles",
+    "slug": "best-grant-management-software-development-directors",
+    "path": "listicles/best-grant-management-software-development-directors.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "listicles:best-grant-management-software-for-compliance",
+    "title": "Best Grant Management Software for Compliance-Focused Nonprofits (2026)",
+    "collection": "listicles",
+    "slug": "best-grant-management-software-for-compliance",
+    "path": "listicles/best-grant-management-software-for-compliance.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "listicles:best-grant-management-software-minneapolis",
+    "title": "Best Grant Management Software for Minneapolis Nonprofits in 2026",
+    "collection": "listicles",
+    "slug": "best-grant-management-software-minneapolis",
+    "path": "listicles/best-grant-management-software-minneapolis.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "listicles:best-grant-management-software-small-nonprofits",
+    "title": "Best Grant Management Software for Small Nonprofits [2026 Pricing Comparison]",
+    "collection": "listicles",
+    "slug": "best-grant-management-software-small-nonprofits",
+    "path": "listicles/best-grant-management-software-small-nonprofits.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "listicles:best-grant-management-software-washington-dc-federal",
+    "title": "Best Grant Management Software for DC Federal Grantees in 2026",
+    "collection": "listicles",
+    "slug": "best-grant-management-software-washington-dc-federal",
+    "path": "listicles/best-grant-management-software-washington-dc-federal.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "listicles:best-grant-reporting-software-for-nonprofits",
+    "title": "Best Grant Reporting Software for Nonprofits (2026)",
+    "collection": "listicles",
+    "slug": "best-grant-reporting-software-for-nonprofits",
+    "path": "listicles/best-grant-reporting-software-for-nonprofits.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "listicles:best-grant-research-databases-free-paid",
+    "title": "Best Grant Research Databases for Nonprofits: Free and Paid Options [2026]",
+    "collection": "listicles",
+    "slug": "best-grant-research-databases-free-paid",
+    "path": "listicles/best-grant-research-databases-free-paid.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "listicles:best-grant-software-mountain-west-nonprofits",
+    "title": "Best Grant Software for Mountain West Nonprofits in 2026",
+    "collection": "listicles",
+    "slug": "best-grant-software-mountain-west-nonprofits",
+    "path": "listicles/best-grant-software-mountain-west-nonprofits.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "listicles:best-grant-tracking-for-federal-awards",
+    "title": "Best Grant Tracking Software for Federal Awards (2026)",
+    "collection": "listicles",
+    "slug": "best-grant-tracking-for-federal-awards",
+    "path": "listicles/best-grant-tracking-for-federal-awards.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "listicles:best-grant-tracking-software-complete",
+    "title": "Best Grant Tracking Software in 2026: For Nonprofits That Receive (Not Award) Grants",
+    "collection": "listicles",
+    "slug": "best-grant-tracking-software-complete",
+    "path": "listicles/best-grant-tracking-software-complete.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "listicles:best-grant-tracking-software-eds",
+    "title": "Best Grant Tracking Software for Executive Directors in 2026",
+    "collection": "listicles",
+    "slug": "best-grant-tracking-software-eds",
+    "path": "listicles/best-grant-tracking-software-eds.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "listicles:best-grant-tracking-software-for-nonprofits",
+    "title": "Best Grant Tracking Software for Nonprofits (2026)",
+    "collection": "listicles",
+    "slug": "best-grant-tracking-software-for-nonprofits",
+    "path": "listicles/best-grant-tracking-software-for-nonprofits.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "listicles:best-grant-tracking-software-los-angeles",
+    "title": "Best Grant Tracking Software for Los Angeles Nonprofits in 2026",
+    "collection": "listicles",
+    "slug": "best-grant-tracking-software-los-angeles",
+    "path": "listicles/best-grant-tracking-software-los-angeles.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "listicles:best-grant-tracking-software-pacific-northwest-nonprofits",
+    "title": "Best Grant Tracking Software for Pacific Northwest Nonprofits in 2026",
+    "collection": "listicles",
+    "slug": "best-grant-tracking-software-pacific-northwest-nonprofits",
+    "path": "listicles/best-grant-tracking-software-pacific-northwest-nonprofits.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "listicles:best-grant-tracking-software-san-antonio",
+    "title": "Best Grant Tracking Software for San Antonio Nonprofits in 2026",
+    "collection": "listicles",
+    "slug": "best-grant-tracking-software-san-antonio",
+    "path": "listicles/best-grant-tracking-software-san-antonio.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "listicles:best-grant-writing-software-nonprofits",
+    "title": "Best Grant Writing Software for Nonprofits in 2026",
+    "collection": "listicles",
+    "slug": "best-grant-writing-software-nonprofits",
+    "path": "listicles/best-grant-writing-software-nonprofits.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "listicles:best-granthub-replacement-after-pro-sunset",
+    "title": "Best GrantHub Replacement After the Pro Sunset (2026)",
+    "collection": "listicles",
+    "slug": "best-granthub-replacement-after-pro-sunset",
+    "path": "listicles/best-granthub-replacement-after-pro-sunset.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "listicles:best-grantmaking-software-for-foundations",
+    "title": "Best Grantmaking Software for Foundations in 2026: Application to Closeout",
+    "collection": "listicles",
+    "slug": "best-grantmaking-software-for-foundations",
+    "path": "listicles/best-grantmaking-software-for-foundations.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "listicles:best-nonprofit-accounting-software",
+    "title": "Best Nonprofit Accounting Software in 2026: Fund Accounting vs. Bookkeeping Tools",
+    "collection": "listicles",
+    "slug": "best-nonprofit-accounting-software",
+    "path": "listicles/best-nonprofit-accounting-software.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "listicles:best-nonprofit-accounting-software-denver",
+    "title": "Best Nonprofit Accounting Software for Denver Nonprofits in 2026",
+    "collection": "listicles",
+    "slug": "best-nonprofit-accounting-software-denver",
+    "path": "listicles/best-nonprofit-accounting-software-denver.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "listicles:best-nonprofit-accounting-software-nyc",
+    "title": "Best Nonprofit Accounting Software for NYC Nonprofits in 2026",
+    "collection": "listicles",
+    "slug": "best-nonprofit-accounting-software-nyc",
+    "path": "listicles/best-nonprofit-accounting-software-nyc.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "listicles:best-nonprofit-accounting-software-phoenix",
+    "title": "Best Nonprofit Accounting Software for Phoenix Nonprofits in 2026",
+    "collection": "listicles",
+    "slug": "best-nonprofit-accounting-software-phoenix",
+    "path": "listicles/best-nonprofit-accounting-software-phoenix.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "listicles:best-nonprofit-accounting-tools-finance-staff",
+    "title": "Best Nonprofit Accounting Tools for Finance Staff (2026)",
+    "collection": "listicles",
+    "slug": "best-nonprofit-accounting-tools-finance-staff",
+    "path": "listicles/best-nonprofit-accounting-tools-finance-staff.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "listicles:best-nonprofit-budget-software",
+    "title": "Best Nonprofit Budget Software in 2026: Tools That Handle Restricted Fund Constraints",
+    "collection": "listicles",
+    "slug": "best-nonprofit-budget-software",
+    "path": "listicles/best-nonprofit-budget-software.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "listicles:best-nonprofit-crm-atlanta-grant-compliance",
+    "title": "Best Nonprofit CRM with Grant Compliance for Atlanta Nonprofits in 2026",
+    "collection": "listicles",
+    "slug": "best-nonprofit-crm-atlanta-grant-compliance",
+    "path": "listicles/best-nonprofit-crm-atlanta-grant-compliance.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "listicles:best-nonprofit-crm-chicago",
+    "title": "Best Nonprofit CRM for Chicago Organizations in 2026",
+    "collection": "listicles",
+    "slug": "best-nonprofit-crm-chicago",
+    "path": "listicles/best-nonprofit-crm-chicago.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "listicles:best-nonprofit-crm-executive-directors",
+    "title": "Best Nonprofit CRMs for Executive Directors (2026)",
+    "collection": "listicles",
+    "slug": "best-nonprofit-crm-executive-directors",
+    "path": "listicles/best-nonprofit-crm-executive-directors.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "listicles:best-nonprofit-crm-houston",
+    "title": "Best Nonprofit CRM for Houston Nonprofits in 2026",
+    "collection": "listicles",
+    "slug": "best-nonprofit-crm-houston",
+    "path": "listicles/best-nonprofit-crm-houston.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "listicles:best-nonprofit-crm-nashville",
+    "title": "Best Nonprofit CRM for Nashville Nonprofits in 2026",
+    "collection": "listicles",
+    "slug": "best-nonprofit-crm-nashville",
+    "path": "listicles/best-nonprofit-crm-nashville.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "listicles:best-nonprofit-crm-small-organizations",
+    "title": "Best CRM for Small Nonprofits: 2026 Shortlist",
+    "collection": "listicles",
+    "slug": "best-nonprofit-crm-small-organizations",
+    "path": "listicles/best-nonprofit-crm-small-organizations.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "listicles:best-nonprofit-crm-under-100-month",
+    "title": "Best Nonprofit CRM Under $100/Month: 5 Options for Budget-Conscious EDs",
+    "collection": "listicles",
+    "slug": "best-nonprofit-crm-under-100-month",
+    "path": "listicles/best-nonprofit-crm-under-100-month.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "listicles:best-nonprofit-crm-with-grant-compliance",
+    "title": "Best Nonprofit CRM With Grant Compliance (2026)",
+    "collection": "listicles",
+    "slug": "best-nonprofit-crm-with-grant-compliance",
+    "path": "listicles/best-nonprofit-crm-with-grant-compliance.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "listicles:best-nonprofit-crm-with-grant-management",
+    "title": "Best Nonprofit CRM With Grant Management (2026)",
+    "collection": "listicles",
+    "slug": "best-nonprofit-crm-with-grant-management",
+    "path": "listicles/best-nonprofit-crm-with-grant-management.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "listicles:best-nonprofit-database-software",
+    "title": "Best Nonprofit Database Software in 2026: CRM vs. Donor Database vs. Grant System",
+    "collection": "listicles",
+    "slug": "best-nonprofit-database-software",
+    "path": "listicles/best-nonprofit-database-software.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "listicles:best-nonprofit-email-marketing-software",
+    "title": "6 Best Nonprofit Email Marketing Software Tools [2026]",
+    "collection": "listicles",
+    "slug": "best-nonprofit-email-marketing-software",
+    "path": "listicles/best-nonprofit-email-marketing-software.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "listicles:best-nonprofit-financial-management-software",
+    "title": "Best Nonprofit Financial Management Software in 2026: From Bookkeeping to Full Fund Accounting",
+    "collection": "listicles",
+    "slug": "best-nonprofit-financial-management-software",
+    "path": "listicles/best-nonprofit-financial-management-software.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "listicles:best-nonprofit-software-2026",
+    "title": "Best Nonprofit Software in 2026: 10 Tools Across CRM, Grants, Fundraising, and Accounting",
+    "collection": "listicles",
+    "slug": "best-nonprofit-software-2026",
+    "path": "listicles/best-nonprofit-software-2026.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "listicles:best-nonprofit-software-500k-10m-budget",
+    "title": "Best Nonprofit Software for $500K-$10M Budgets: 2026 Guide for Executive Directors",
+    "collection": "listicles",
+    "slug": "best-nonprofit-software-500k-10m-budget",
+    "path": "listicles/best-nonprofit-software-500k-10m-budget.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "listicles:best-nonprofit-software-chicago-grant-funded",
+    "title": "Best Nonprofit Software for Chicago Grant-Funded Organizations in 2026",
+    "collection": "listicles",
+    "slug": "best-nonprofit-software-chicago-grant-funded",
+    "path": "listicles/best-nonprofit-software-chicago-grant-funded.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "listicles:best-nonprofit-software-dallas-faith-based",
+    "title": "Best Nonprofit Software for Dallas Faith-Based Organizations in 2026",
+    "collection": "listicles",
+    "slug": "best-nonprofit-software-dallas-faith-based",
+    "path": "listicles/best-nonprofit-software-dallas-faith-based.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "listicles:best-nonprofit-software-dc-federal-grantees",
+    "title": "Best Nonprofit Software for DC Federal Grantees in 2026",
+    "collection": "listicles",
+    "slug": "best-nonprofit-software-dc-federal-grantees",
+    "path": "listicles/best-nonprofit-software-dc-federal-grantees.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "listicles:best-nonprofit-software-detroit-community-development",
+    "title": "Best Nonprofit Software for Detroit Community Development Organizations in 2026",
+    "collection": "listicles",
+    "slug": "best-nonprofit-software-detroit-community-development",
+    "path": "listicles/best-nonprofit-software-detroit-community-development.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "listicles:best-nonprofit-software-florida-grant-funded",
+    "title": "Best Nonprofit Software for Florida Grant-Funded Organizations in 2026",
+    "collection": "listicles",
+    "slug": "best-nonprofit-software-florida-grant-funded",
+    "path": "listicles/best-nonprofit-software-florida-grant-funded.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "listicles:best-nonprofit-software-miami-bilingual",
+    "title": "Best Nonprofit Software for Miami Bilingual Nonprofits in 2026",
+    "collection": "listicles",
+    "slug": "best-nonprofit-software-miami-bilingual",
+    "path": "listicles/best-nonprofit-software-miami-bilingual.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "listicles:best-nonprofit-software-portland-environmental",
+    "title": "Best Nonprofit Software for Portland Environmental Organizations in 2026",
+    "collection": "listicles",
+    "slug": "best-nonprofit-software-portland-environmental",
+    "path": "listicles/best-nonprofit-software-portland-environmental.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "listicles:best-nonprofit-software-rural-alaska-hawaii",
+    "title": "Best Nonprofit Software for Rural Alaska and Hawaii Organizations in 2026",
+    "collection": "listicles",
+    "slug": "best-nonprofit-software-rural-alaska-hawaii",
+    "path": "listicles/best-nonprofit-software-rural-alaska-hawaii.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "listicles:best-nonprofit-software-seattle-tech-nonprofits",
+    "title": "Best Nonprofit Software for Seattle Tech-Adjacent Nonprofits in 2026",
+    "collection": "listicles",
+    "slug": "best-nonprofit-software-seattle-tech-nonprofits",
+    "path": "listicles/best-nonprofit-software-seattle-tech-nonprofits.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "listicles:best-peer-to-peer-fundraising-platforms",
+    "title": "6 Best Peer-to-Peer Fundraising Platforms for Nonprofits [2026]",
+    "collection": "listicles",
+    "slug": "best-peer-to-peer-fundraising-platforms",
+    "path": "listicles/best-peer-to-peer-fundraising-platforms.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "listicles:best-prospect-research-tools-nonprofits",
+    "title": "5 Best Prospect Research Tools for Nonprofits [2026]",
+    "collection": "listicles",
+    "slug": "best-prospect-research-tools-nonprofits",
+    "path": "listicles/best-prospect-research-tools-nonprofits.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "listicles:best-restricted-fund-tracking-software-for-nonprofits",
+    "title": "Best Restricted Fund Tracking Software for Nonprofits (2026)",
+    "collection": "listicles",
+    "slug": "best-restricted-fund-tracking-software-for-nonprofits",
+    "path": "listicles/best-restricted-fund-tracking-software-for-nonprofits.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "listicles:best-restricted-fund-tracking-twin-cities-nonprofits",
+    "title": "Best Restricted Fund Tracking Software for Twin Cities Nonprofits in 2026",
+    "collection": "listicles",
+    "slug": "best-restricted-fund-tracking-twin-cities-nonprofits",
+    "path": "listicles/best-restricted-fund-tracking-twin-cities-nonprofits.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "listicles:best-software-for-community-foundations",
+    "title": "Best Software for Community Foundations in 2026",
+    "collection": "listicles",
+    "slug": "best-software-for-community-foundations",
+    "path": "listicles/best-software-for-community-foundations.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "listicles:best-software-for-nonprofits-that-manage-donors-and-grants",
+    "title": "Best Software for Nonprofits That Manage Donors and Grants (2026)",
+    "collection": "listicles",
+    "slug": "best-software-for-nonprofits-that-manage-donors-and-grants",
+    "path": "listicles/best-software-for-nonprofits-that-manage-donors-and-grants.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "listicles:best-software-hud-cdbg-grant-compliance",
+    "title": "Best Software for HUD CDBG Grant Compliance (2026)",
+    "collection": "listicles",
+    "slug": "best-software-hud-cdbg-grant-compliance",
+    "path": "listicles/best-software-hud-cdbg-grant-compliance.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "listicles:best-software-samhsa-grantees",
+    "title": "Best Grant Management Software for SAMHSA Grantees (2026)",
+    "collection": "listicles",
+    "slug": "best-software-samhsa-grantees",
+    "path": "listicles/best-software-samhsa-grantees.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "listicles:california-top-foundation-grants",
+    "title": "California Nonprofit Grants: 10 Foundations Funding California Causes",
+    "collection": "listicles",
+    "slug": "california-top-foundation-grants",
+    "path": "listicles/california-top-foundation-grants.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "listicles:donor-management-software-comparison",
+    "title": "Donor Management Software Comparison: 6 Platforms Reviewed for Nonprofits (2026)",
+    "collection": "listicles",
+    "slug": "donor-management-software-comparison",
+    "path": "listicles/donor-management-software-comparison.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "listicles:florida-top-foundation-grants",
+    "title": "Florida Foundation Grants: 7 Largest Funders for Nonprofits in 2026",
+    "collection": "listicles",
+    "slug": "florida-top-foundation-grants",
+    "path": "listicles/florida-top-foundation-grants.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "listicles:free-nonprofit-crm",
+    "title": "Actually Free Nonprofit CRMs [2026 Compared]",
+    "collection": "listicles",
+    "slug": "free-nonprofit-crm",
+    "path": "listicles/free-nonprofit-crm.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "listicles:free-nonprofit-templates-development-director",
+    "title": "25 Free Nonprofit Templates Every Development Director Needs",
+    "collection": "listicles",
+    "slug": "free-nonprofit-templates-development-director",
+    "path": "listicles/free-nonprofit-templates-development-director.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "listicles:georgia-top-foundation-grants",
+    "title": "Georgia Foundation Grants: 6 Largest Funders for Nonprofits in 2026",
+    "collection": "listicles",
+    "slug": "georgia-top-foundation-grants",
+    "path": "listicles/georgia-top-foundation-grants.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "listicles:illinois-top-foundation-grants",
+    "title": "Illinois Foundation Grants: 7 Largest Funders for Nonprofits in 2026",
+    "collection": "listicles",
+    "slug": "illinois-top-foundation-grants",
+    "path": "listicles/illinois-top-foundation-grants.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "listicles:massachusetts-top-foundation-grants",
+    "title": "Massachusetts Foundation Grants: 9 Largest Funders for Nonprofits in 2026",
+    "collection": "listicles",
+    "slug": "massachusetts-top-foundation-grants",
+    "path": "listicles/massachusetts-top-foundation-grants.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "listicles:new-york-top-foundation-grants",
+    "title": "Top New York Foundation Grants for Nonprofits in 2026",
+    "collection": "listicles",
+    "slug": "new-york-top-foundation-grants",
+    "path": "listicles/new-york-top-foundation-grants.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "listicles:nonprofit-crm-comparison",
+    "title": "6 Nonprofit CRMs Compared [2026 Side-by-Side]",
+    "collection": "listicles",
+    "slug": "nonprofit-crm-comparison",
+    "path": "listicles/nonprofit-crm-comparison.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "listicles:nonprofit-crm-reviews",
+    "title": "Nonprofit CRM Reviews: 5 Systems Rated on Pricing, Grants, and Fit [2026]",
+    "collection": "listicles",
+    "slug": "nonprofit-crm-reviews",
+    "path": "listicles/nonprofit-crm-reviews.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "listicles:north-carolina-top-foundation-grants",
+    "title": "Top 7 North Carolina Foundation Grants for Nonprofits in 2026",
+    "collection": "listicles",
+    "slug": "north-carolina-top-foundation-grants",
+    "path": "listicles/north-carolina-top-foundation-grants.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "listicles:ohio-top-foundation-grants",
+    "title": "Top Ohio Foundation Grants for Nonprofits in 2026",
+    "collection": "listicles",
+    "slug": "ohio-top-foundation-grants",
+    "path": "listicles/ohio-top-foundation-grants.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "listicles:pennsylvania-top-foundation-grants",
+    "title": "Pennsylvania Foundation Grants: 7 Largest Funders for Nonprofits in 2026",
+    "collection": "listicles",
+    "slug": "pennsylvania-top-foundation-grants",
+    "path": "listicles/pennsylvania-top-foundation-grants.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "listicles:texas-top-foundation-grants",
+    "title": "Top Texas Foundation Grants for Nonprofits [2026]",
+    "collection": "listicles",
+    "slug": "texas-top-foundation-grants",
+    "path": "listicles/texas-top-foundation-grants.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "listicles:top-foundation-grants-mid-atlantic",
+    "title": "Top Foundation Grants in the Mid-Atlantic: 2026 Funder Guide",
+    "collection": "listicles",
+    "slug": "top-foundation-grants-mid-atlantic",
+    "path": "listicles/top-foundation-grants-mid-atlantic.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "listicles:top-foundation-grants-midwest",
+    "title": "Top Foundation Grants in the Midwest: 2026 Funder Guide",
+    "collection": "listicles",
+    "slug": "top-foundation-grants-midwest",
+    "path": "listicles/top-foundation-grants-midwest.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "listicles:top-foundation-grants-mountain-west",
+    "title": "Top Foundation Grants in the Mountain West: 2026 Funder Guide",
+    "collection": "listicles",
+    "slug": "top-foundation-grants-mountain-west",
+    "path": "listicles/top-foundation-grants-mountain-west.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "listicles:top-foundation-grants-new-england",
+    "title": "Top Foundation Grants in the New England: 2026 Funder Guide",
+    "collection": "listicles",
+    "slug": "top-foundation-grants-new-england",
+    "path": "listicles/top-foundation-grants-new-england.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "listicles:top-foundation-grants-northeast",
+    "title": "Top Foundation Grants in the Northeast: 2026 Funder Guide",
+    "collection": "listicles",
+    "slug": "top-foundation-grants-northeast",
+    "path": "listicles/top-foundation-grants-northeast.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "listicles:top-foundation-grants-pacific-northwest",
+    "title": "Top Foundation Grants in the Pacific Northwest: 2026 Funder Guide",
+    "collection": "listicles",
+    "slug": "top-foundation-grants-pacific-northwest",
+    "path": "listicles/top-foundation-grants-pacific-northwest.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "listicles:top-foundation-grants-south",
+    "title": "Top Foundation Grants in the South: 2026 Funder Guide",
+    "collection": "listicles",
+    "slug": "top-foundation-grants-south",
+    "path": "listicles/top-foundation-grants-south.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "listicles:top-foundation-grants-southeast",
+    "title": "Top Foundation Grants in the Southeast: 2026 Funder Guide",
+    "collection": "listicles",
+    "slug": "top-foundation-grants-southeast",
+    "path": "listicles/top-foundation-grants-southeast.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "listicles:top-foundation-grants-southwest",
+    "title": "Top Foundation Grants in the Southwest: 2026 Funder Guide",
+    "collection": "listicles",
+    "slug": "top-foundation-grants-southwest",
+    "path": "listicles/top-foundation-grants-southwest.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "listicles:top-foundation-grants-west",
+    "title": "Top Foundation Grants in the West: 2026 Funder Guide",
+    "collection": "listicles",
+    "slug": "top-foundation-grants-west",
+    "path": "listicles/top-foundation-grants-west.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "personas:board-treasurers",
+    "title": "GrantPipe for Board Treasurers",
+    "collection": "personas",
+    "slug": "board-treasurers",
+    "path": "personas/board-treasurers.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "personas:development-directors",
+    "title": "GrantPipe for Development Directors",
+    "collection": "personas",
+    "slug": "development-directors",
+    "path": "personas/development-directors.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "personas:executive-directors",
+    "title": "GrantPipe for Executive Directors",
+    "collection": "personas",
+    "slug": "executive-directors",
+    "path": "personas/executive-directors.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "personas:finance-operations-staff",
+    "title": "GrantPipe for Finance and Operations Staff",
+    "collection": "personas",
+    "slug": "finance-operations-staff",
+    "path": "personas/finance-operations-staff.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "personas:grant-writers",
+    "title": "GrantPipe for Grant Writers",
+    "collection": "personas",
+    "slug": "grant-writers",
+    "path": "personas/grant-writers.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "personas:grants-managers",
+    "title": "GrantPipe for Grants Managers",
+    "collection": "personas",
+    "slug": "grants-managers",
+    "path": "personas/grants-managers.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "personas:operations-managers",
+    "title": "GrantPipe for Operations Managers",
+    "collection": "personas",
+    "slug": "operations-managers",
+    "path": "personas/operations-managers.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "personas:program-directors",
+    "title": "GrantPipe for Program Directors",
+    "collection": "personas",
+    "slug": "program-directors",
+    "path": "personas/program-directors.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "pricing-breakdowns:airtable-nonprofit-pricing",
+    "title": "Airtable Pricing for Nonprofits: What You Actually Pay (2026)",
+    "collection": "pricing-breakdowns",
+    "slug": "airtable-nonprofit-pricing",
+    "path": "pricing-breakdowns/airtable-nonprofit-pricing.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "pricing-breakdowns:amplifund-pricing",
+    "title": "AmpliFund Pricing Breakdown: What Bonterra's Grants Platform Costs (2026)",
+    "collection": "pricing-breakdowns",
+    "slug": "amplifund-pricing",
+    "path": "pricing-breakdowns/amplifund-pricing.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "pricing-breakdowns:blackbaud-pricing",
+    "title": "Blackbaud Pricing Breakdown: What Raiser's Edge Actually Costs",
+    "collection": "pricing-breakdowns",
+    "slug": "blackbaud-pricing",
+    "path": "pricing-breakdowns/blackbaud-pricing.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "pricing-breakdowns:blackbaud-pricing-hidden-costs",
+    "title": "Blackbaud Pricing and Hidden Costs: What Nonprofits Actually Pay",
+    "collection": "pricing-breakdowns",
+    "slug": "blackbaud-pricing-hidden-costs",
+    "path": "pricing-breakdowns/blackbaud-pricing-hidden-costs.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "pricing-breakdowns:bloomerang-pricing",
+    "title": "Bloomerang Pricing Breakdown: What It Actually Costs in 2026",
+    "collection": "pricing-breakdowns",
+    "slug": "bloomerang-pricing",
+    "path": "pricing-breakdowns/bloomerang-pricing.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "pricing-breakdowns:bloomerang-pricing-for-mid-size",
+    "title": "Bloomerang Pricing for Mid-Size Nonprofits: Complete Cost Breakdown",
+    "collection": "pricing-breakdowns",
+    "slug": "bloomerang-pricing-for-mid-size",
+    "path": "pricing-breakdowns/bloomerang-pricing-for-mid-size.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "pricing-breakdowns:charityengine-pricing",
+    "title": "CharityEngine Pricing Breakdown: What It Actually Costs in 2026",
+    "collection": "pricing-breakdowns",
+    "slug": "charityengine-pricing",
+    "path": "pricing-breakdowns/charityengine-pricing.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "pricing-breakdowns:donorperfect-pricing",
+    "title": "DonorPerfect Pricing Breakdown: What It Actually Costs in 2026",
+    "collection": "pricing-breakdowns",
+    "slug": "donorperfect-pricing",
+    "path": "pricing-breakdowns/donorperfect-pricing.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "pricing-breakdowns:ecivis-pricing",
+    "title": "eCivis Pricing: Grant Management Cost Breakdown for Nonprofits",
+    "collection": "pricing-breakdowns",
+    "slug": "ecivis-pricing",
+    "path": "pricing-breakdowns/ecivis-pricing.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "pricing-breakdowns:fluxx-pricing",
+    "title": "Fluxx Pricing Breakdown: What Grantmaker Software Actually Costs (2026)",
+    "collection": "pricing-breakdowns",
+    "slug": "fluxx-pricing",
+    "path": "pricing-breakdowns/fluxx-pricing.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "pricing-breakdowns:foundant-pricing",
+    "title": "Foundant Pricing Breakdown: What GLM and GrantHub Actually Cost (2026)",
+    "collection": "pricing-breakdowns",
+    "slug": "foundant-pricing",
+    "path": "pricing-breakdowns/foundant-pricing.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "pricing-breakdowns:granthub-pricing",
+    "title": "GrantHub Pricing: Foundant Grant Tracker Cost Breakdown",
+    "collection": "pricing-breakdowns",
+    "slug": "granthub-pricing",
+    "path": "pricing-breakdowns/granthub-pricing.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "pricing-breakdowns:instrumentl-pricing",
+    "title": "Instrumentl Pricing Breakdown: What Grant-Seeking Nonprofits Actually Pay",
+    "collection": "pricing-breakdowns",
+    "slug": "instrumentl-pricing",
+    "path": "pricing-breakdowns/instrumentl-pricing.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "pricing-breakdowns:keela-pricing",
+    "title": "Keela Pricing Breakdown: Tiers, Features, and Limitations",
+    "collection": "pricing-breakdowns",
+    "slug": "keela-pricing",
+    "path": "pricing-breakdowns/keela-pricing.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "pricing-breakdowns:little-green-light-pricing",
+    "title": "Little Green Light Pricing: Official 2026 Tiers, Users, Fees, and Grant Fit",
+    "collection": "pricing-breakdowns",
+    "slug": "little-green-light-pricing",
+    "path": "pricing-breakdowns/little-green-light-pricing.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "pricing-breakdowns:monday-com-nonprofit-pricing",
+    "title": "Monday.com Nonprofit Pricing: What Organizations Actually Pay",
+    "collection": "pricing-breakdowns",
+    "slug": "monday-com-nonprofit-pricing",
+    "path": "pricing-breakdowns/monday-com-nonprofit-pricing.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "pricing-breakdowns:neon-crm-pricing",
+    "title": "Neon CRM Pricing Breakdown: What It Actually Costs in 2026",
+    "collection": "pricing-breakdowns",
+    "slug": "neon-crm-pricing",
+    "path": "pricing-breakdowns/neon-crm-pricing.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "pricing-breakdowns:network-for-good-pricing",
+    "title": "Network for Good Pricing Breakdown: What It Actually Costs in 2026",
+    "collection": "pricing-breakdowns",
+    "slug": "network-for-good-pricing",
+    "path": "pricing-breakdowns/network-for-good-pricing.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "pricing-breakdowns:salesforce-nonprofit-pricing",
+    "title": "Salesforce Nonprofit Cloud Pricing: The True Cost of Ownership",
+    "collection": "pricing-breakdowns",
+    "slug": "salesforce-nonprofit-pricing",
+    "path": "pricing-breakdowns/salesforce-nonprofit-pricing.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "pricing-breakdowns:salesforce-nonprofit-true-cost",
+    "title": "Salesforce Nonprofit True Cost: What EDs Pay Beyond the Free License",
+    "collection": "pricing-breakdowns",
+    "slug": "salesforce-nonprofit-true-cost",
+    "path": "pricing-breakdowns/salesforce-nonprofit-true-cost.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "pricing-breakdowns:submittable-pricing",
+    "title": "Submittable Pricing Breakdown: What Nonprofits Actually Pay (2026)",
+    "collection": "pricing-breakdowns",
+    "slug": "submittable-pricing",
+    "path": "pricing-breakdowns/submittable-pricing.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "pricing-breakdowns:virtuous-pricing",
+    "title": "Virtuous CRM Pricing: What Nonprofits Actually Pay",
+    "collection": "pricing-breakdowns",
+    "slug": "virtuous-pricing",
+    "path": "pricing-breakdowns/virtuous-pricing.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "pricing-breakdowns:wild-apricot-pricing",
+    "title": "Wild Apricot Pricing: What It Costs in 2026 (and What's Not Listed)",
+    "collection": "pricing-breakdowns",
+    "slug": "wild-apricot-pricing",
+    "path": "pricing-breakdowns/wild-apricot-pricing.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "state-pages:alabama",
+    "title": "Grant Management Software for Alabama Nonprofits",
+    "collection": "state-pages",
+    "slug": "alabama",
+    "path": "state-pages/alabama.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "state-pages:alaska",
+    "title": "Grant Management Software for Alaska Nonprofits",
+    "collection": "state-pages",
+    "slug": "alaska",
+    "path": "state-pages/alaska.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "state-pages:arizona",
+    "title": "Grant Management Software for Arizona Nonprofits",
+    "collection": "state-pages",
+    "slug": "arizona",
+    "path": "state-pages/arizona.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "state-pages:arkansas",
+    "title": "Grant Management Software for Arkansas Nonprofits",
+    "collection": "state-pages",
+    "slug": "arkansas",
+    "path": "state-pages/arkansas.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "state-pages:california",
+    "title": "Grant Management Software for California Nonprofits",
+    "collection": "state-pages",
+    "slug": "california",
+    "path": "state-pages/california.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "state-pages:colorado",
+    "title": "Nonprofit Software for Colorado Organizations",
+    "collection": "state-pages",
+    "slug": "colorado",
+    "path": "state-pages/colorado.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "state-pages:connecticut",
+    "title": "Grant Management Software for Connecticut Nonprofits",
+    "collection": "state-pages",
+    "slug": "connecticut",
+    "path": "state-pages/connecticut.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "state-pages:delaware",
+    "title": "Grant Management Software for Delaware Nonprofits",
+    "collection": "state-pages",
+    "slug": "delaware",
+    "path": "state-pages/delaware.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "state-pages:district-of-columbia",
+    "title": "Nonprofit Software for District of Columbia Organizations",
+    "collection": "state-pages",
+    "slug": "district-of-columbia",
+    "path": "state-pages/district-of-columbia.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "state-pages:florida",
+    "title": "Grant Management Software for Florida Nonprofits",
+    "collection": "state-pages",
+    "slug": "florida",
+    "path": "state-pages/florida.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "state-pages:georgia",
+    "title": "Grant Management Software for Georgia Nonprofits",
+    "collection": "state-pages",
+    "slug": "georgia",
+    "path": "state-pages/georgia.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "state-pages:hawaii",
+    "title": "Grant Management Software for Hawaii Nonprofits",
+    "collection": "state-pages",
+    "slug": "hawaii",
+    "path": "state-pages/hawaii.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "state-pages:idaho",
+    "title": "Grant Management Software for Idaho Nonprofits",
+    "collection": "state-pages",
+    "slug": "idaho",
+    "path": "state-pages/idaho.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "state-pages:illinois",
+    "title": "Grant Management Software for Illinois Nonprofits",
+    "collection": "state-pages",
+    "slug": "illinois",
+    "path": "state-pages/illinois.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "state-pages:indiana",
+    "title": "Grant Management Software for Indiana Nonprofits",
+    "collection": "state-pages",
+    "slug": "indiana",
+    "path": "state-pages/indiana.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "state-pages:iowa",
+    "title": "Grant Management Software for Iowa Nonprofits",
+    "collection": "state-pages",
+    "slug": "iowa",
+    "path": "state-pages/iowa.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "state-pages:kansas",
+    "title": "Grant Management Software for Kansas Nonprofits",
+    "collection": "state-pages",
+    "slug": "kansas",
+    "path": "state-pages/kansas.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "state-pages:kentucky",
+    "title": "Grant Management Software for Kentucky Nonprofits",
+    "collection": "state-pages",
+    "slug": "kentucky",
+    "path": "state-pages/kentucky.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "state-pages:louisiana",
+    "title": "Grant Management Software for Louisiana Nonprofits",
+    "collection": "state-pages",
+    "slug": "louisiana",
+    "path": "state-pages/louisiana.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "state-pages:maine",
+    "title": "Grant Management Software for Maine Nonprofits",
+    "collection": "state-pages",
+    "slug": "maine",
+    "path": "state-pages/maine.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "state-pages:maryland",
+    "title": "Nonprofit Software for Maryland Organizations",
+    "collection": "state-pages",
+    "slug": "maryland",
+    "path": "state-pages/maryland.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "state-pages:massachusetts",
+    "title": "Nonprofit Software for Massachusetts Organizations",
+    "collection": "state-pages",
+    "slug": "massachusetts",
+    "path": "state-pages/massachusetts.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "state-pages:metro-atlanta",
+    "title": "Grant Management Software for Atlanta Nonprofits",
+    "collection": "state-pages",
+    "slug": "metro-atlanta",
+    "path": "state-pages/metro-atlanta.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "state-pages:metro-bay-area",
+    "title": "Grant Management Software for San Francisco Bay Area Nonprofits",
+    "collection": "state-pages",
+    "slug": "metro-bay-area",
+    "path": "state-pages/metro-bay-area.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "state-pages:metro-boston",
+    "title": "Grant Management Software for Boston Nonprofits",
+    "collection": "state-pages",
+    "slug": "metro-boston",
+    "path": "state-pages/metro-boston.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "state-pages:metro-chicago",
+    "title": "Grant Management Software for Chicago Nonprofits",
+    "collection": "state-pages",
+    "slug": "metro-chicago",
+    "path": "state-pages/metro-chicago.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "state-pages:metro-dallas-fort-worth",
+    "title": "Grant Management Software for Dallas-Fort Worth Nonprofits",
+    "collection": "state-pages",
+    "slug": "metro-dallas-fort-worth",
+    "path": "state-pages/metro-dallas-fort-worth.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "state-pages:metro-denver",
+    "title": "Grant Management Software for Denver Nonprofits",
+    "collection": "state-pages",
+    "slug": "metro-denver",
+    "path": "state-pages/metro-denver.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "state-pages:metro-houston",
+    "title": "Grant Management Software for Houston Nonprofits",
+    "collection": "state-pages",
+    "slug": "metro-houston",
+    "path": "state-pages/metro-houston.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "state-pages:metro-los-angeles",
+    "title": "Grant Management Software for Los Angeles Nonprofits",
+    "collection": "state-pages",
+    "slug": "metro-los-angeles",
+    "path": "state-pages/metro-los-angeles.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "state-pages:metro-miami",
+    "title": "Grant Management Software for Miami Nonprofits",
+    "collection": "state-pages",
+    "slug": "metro-miami",
+    "path": "state-pages/metro-miami.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "state-pages:metro-new-york-city",
+    "title": "Grant Management Software for New York City Nonprofits",
+    "collection": "state-pages",
+    "slug": "metro-new-york-city",
+    "path": "state-pages/metro-new-york-city.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "state-pages:metro-philadelphia",
+    "title": "Grant Management Software for Philadelphia Nonprofits",
+    "collection": "state-pages",
+    "slug": "metro-philadelphia",
+    "path": "state-pages/metro-philadelphia.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "state-pages:metro-phoenix",
+    "title": "Grant Management Software for Phoenix Nonprofits",
+    "collection": "state-pages",
+    "slug": "metro-phoenix",
+    "path": "state-pages/metro-phoenix.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "state-pages:metro-portland",
+    "title": "Grant Management Software for Portland Nonprofits",
+    "collection": "state-pages",
+    "slug": "metro-portland",
+    "path": "state-pages/metro-portland.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "state-pages:metro-seattle",
+    "title": "Grant Management Software for Seattle Nonprofits",
+    "collection": "state-pages",
+    "slug": "metro-seattle",
+    "path": "state-pages/metro-seattle.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "state-pages:metro-twin-cities",
+    "title": "Grant Management Software for Twin Cities Nonprofits",
+    "collection": "state-pages",
+    "slug": "metro-twin-cities",
+    "path": "state-pages/metro-twin-cities.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "state-pages:michigan",
+    "title": "Nonprofit Software for Michigan Organizations",
+    "collection": "state-pages",
+    "slug": "michigan",
+    "path": "state-pages/michigan.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "state-pages:minnesota",
+    "title": "Nonprofit Software for Minnesota Organizations",
+    "collection": "state-pages",
+    "slug": "minnesota",
+    "path": "state-pages/minnesota.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "state-pages:mississippi",
+    "title": "Grant Management Software for Mississippi Nonprofits",
+    "collection": "state-pages",
+    "slug": "mississippi",
+    "path": "state-pages/mississippi.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "state-pages:missouri",
+    "title": "Grant Management Software for Missouri Nonprofits",
+    "collection": "state-pages",
+    "slug": "missouri",
+    "path": "state-pages/missouri.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "state-pages:montana",
+    "title": "Grant Management Software for Montana Nonprofits",
+    "collection": "state-pages",
+    "slug": "montana",
+    "path": "state-pages/montana.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "state-pages:nebraska",
+    "title": "Grant Management Software for Nebraska Nonprofits",
+    "collection": "state-pages",
+    "slug": "nebraska",
+    "path": "state-pages/nebraska.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "state-pages:nevada",
+    "title": "Grant Management Software for Nevada Nonprofits",
+    "collection": "state-pages",
+    "slug": "nevada",
+    "path": "state-pages/nevada.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "state-pages:new-hampshire",
+    "title": "Grant Management Software for New Hampshire Nonprofits",
+    "collection": "state-pages",
+    "slug": "new-hampshire",
+    "path": "state-pages/new-hampshire.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "state-pages:new-jersey",
+    "title": "Grant Management Software for New Jersey Nonprofits",
+    "collection": "state-pages",
+    "slug": "new-jersey",
+    "path": "state-pages/new-jersey.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "state-pages:new-mexico",
+    "title": "Grant Management Software for New Mexico Nonprofits",
+    "collection": "state-pages",
+    "slug": "new-mexico",
+    "path": "state-pages/new-mexico.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "state-pages:new-york",
+    "title": "Grant Management Software for New York Nonprofits",
+    "collection": "state-pages",
+    "slug": "new-york",
+    "path": "state-pages/new-york.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "state-pages:north-carolina",
+    "title": "Grant Management Software for North Carolina Nonprofits",
+    "collection": "state-pages",
+    "slug": "north-carolina",
+    "path": "state-pages/north-carolina.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "state-pages:north-dakota",
+    "title": "Grant Management Software for North Dakota Nonprofits",
+    "collection": "state-pages",
+    "slug": "north-dakota",
+    "path": "state-pages/north-dakota.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "state-pages:ohio",
+    "title": "Grant Management Software for Ohio Nonprofits",
+    "collection": "state-pages",
+    "slug": "ohio",
+    "path": "state-pages/ohio.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "state-pages:oklahoma",
+    "title": "Grant Management Software for Oklahoma Nonprofits",
+    "collection": "state-pages",
+    "slug": "oklahoma",
+    "path": "state-pages/oklahoma.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "state-pages:oregon",
+    "title": "Grant Management Software for Oregon Nonprofits",
+    "collection": "state-pages",
+    "slug": "oregon",
+    "path": "state-pages/oregon.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "state-pages:pennsylvania",
+    "title": "Grant Management Software for Pennsylvania Nonprofits",
+    "collection": "state-pages",
+    "slug": "pennsylvania",
+    "path": "state-pages/pennsylvania.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "state-pages:rhode-island",
+    "title": "Grant Management Software for Rhode Island Nonprofits",
+    "collection": "state-pages",
+    "slug": "rhode-island",
+    "path": "state-pages/rhode-island.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "state-pages:south-carolina",
+    "title": "Grant Management Software for South Carolina Nonprofits",
+    "collection": "state-pages",
+    "slug": "south-carolina",
+    "path": "state-pages/south-carolina.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "state-pages:south-dakota",
+    "title": "Grant Management Software for South Dakota Nonprofits",
+    "collection": "state-pages",
+    "slug": "south-dakota",
+    "path": "state-pages/south-dakota.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "state-pages:tennessee",
+    "title": "Grant Management Software for Tennessee Nonprofits",
+    "collection": "state-pages",
+    "slug": "tennessee",
+    "path": "state-pages/tennessee.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "state-pages:texas",
+    "title": "Grant Management Software for Texas Nonprofits",
+    "collection": "state-pages",
+    "slug": "texas",
+    "path": "state-pages/texas.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "state-pages:utah",
+    "title": "Grant Management Software for Utah Nonprofits",
+    "collection": "state-pages",
+    "slug": "utah",
+    "path": "state-pages/utah.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "state-pages:vermont",
+    "title": "Grant Management Software for Vermont Nonprofits",
+    "collection": "state-pages",
+    "slug": "vermont",
+    "path": "state-pages/vermont.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "state-pages:virginia",
+    "title": "Nonprofit Software for Virginia Organizations",
+    "collection": "state-pages",
+    "slug": "virginia",
+    "path": "state-pages/virginia.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "state-pages:washington",
+    "title": "Nonprofit Software for Washington State Organizations",
+    "collection": "state-pages",
+    "slug": "washington",
+    "path": "state-pages/washington.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "state-pages:west-virginia",
+    "title": "Grant Management Software for West Virginia Nonprofits",
+    "collection": "state-pages",
+    "slug": "west-virginia",
+    "path": "state-pages/west-virginia.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "state-pages:wisconsin",
+    "title": "Grant Management Software for Wisconsin Nonprofits",
+    "collection": "state-pages",
+    "slug": "wisconsin",
+    "path": "state-pages/wisconsin.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "state-pages:wyoming",
+    "title": "Grant Management Software for Wyoming Nonprofits",
+    "collection": "state-pages",
+    "slug": "wyoming",
+    "path": "state-pages/wyoming.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "vertical-pages:addiction-recovery-nashville-samhsa-compliance",
+    "title": "Nashville Addiction Recovery: SAMHSA Compliance Software",
+    "collection": "vertical-pages",
+    "slug": "addiction-recovery-nashville-samhsa-compliance",
+    "path": "vertical-pages/addiction-recovery-nashville-samhsa-compliance.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "vertical-pages:addiction-recovery-nonprofits",
+    "title": "Grant Compliance Software for Addiction Recovery and Substance Use Nonprofits",
+    "collection": "vertical-pages",
+    "slug": "addiction-recovery-nonprofits",
+    "path": "vertical-pages/addiction-recovery-nonprofits.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "vertical-pages:adult-literacy-nonprofits",
+    "title": "Grant Compliance Software for Adult Literacy and Education Nonprofits",
+    "collection": "vertical-pages",
+    "slug": "adult-literacy-nonprofits",
+    "path": "vertical-pages/adult-literacy-nonprofits.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "vertical-pages:affordable-housing",
+    "title": "Grant Management for Affordable Housing Nonprofits",
+    "collection": "vertical-pages",
+    "slug": "affordable-housing",
+    "path": "vertical-pages/affordable-housing.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "vertical-pages:affordable-housing-nonprofits-nyc-hud-compliance",
+    "title": "Affordable Housing Nonprofits in NYC: HUD/CDBG Compliance Software",
+    "collection": "vertical-pages",
+    "slug": "affordable-housing-nonprofits-nyc-hud-compliance",
+    "path": "vertical-pages/affordable-housing-nonprofits-nyc-hud-compliance.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "vertical-pages:after-school-programs",
+    "title": "Grant Management for After-School and Youth Programs",
+    "collection": "vertical-pages",
+    "slug": "after-school-programs",
+    "path": "vertical-pages/after-school-programs.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "vertical-pages:animal-rescue",
+    "title": "Grant Management for Animal Rescue Nonprofits",
+    "collection": "vertical-pages",
+    "slug": "animal-rescue",
+    "path": "vertical-pages/animal-rescue.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "vertical-pages:arts-organizations",
+    "title": "Grant Management for Arts and Cultural Organizations",
+    "collection": "vertical-pages",
+    "slug": "arts-organizations",
+    "path": "vertical-pages/arts-organizations.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "vertical-pages:arts-organizations-nyc-nysca-compliance",
+    "title": "NYC Arts Organizations: NYSCA + DCLA Compliance Software",
+    "collection": "vertical-pages",
+    "slug": "arts-organizations-nyc-nysca-compliance",
+    "path": "vertical-pages/arts-organizations-nyc-nysca-compliance.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "vertical-pages:church-donor-software",
+    "title": "Church Donor Software: Managing Tithes, Offerings, and Grants",
+    "collection": "vertical-pages",
+    "slug": "church-donor-software",
+    "path": "vertical-pages/church-donor-software.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "vertical-pages:churches",
+    "title": "Grant Management for Churches and Religious Organizations",
+    "collection": "vertical-pages",
+    "slug": "churches",
+    "path": "vertical-pages/churches.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "vertical-pages:community-health-centers",
+    "title": "Grant Management for Community Health Centers",
+    "collection": "vertical-pages",
+    "slug": "community-health-centers",
+    "path": "vertical-pages/community-health-centers.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "vertical-pages:community-health-centers-los-angeles-hrsa-compliance",
+    "title": "LA Community Health Centers: HRSA Section 330 Compliance Software",
+    "collection": "vertical-pages",
+    "slug": "community-health-centers-los-angeles-hrsa-compliance",
+    "path": "vertical-pages/community-health-centers-los-angeles-hrsa-compliance.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "vertical-pages:conservation-land-trust-nonprofits",
+    "title": "Grant Management for Conservation and Land Trust Organizations",
+    "collection": "vertical-pages",
+    "slug": "conservation-land-trust-nonprofits",
+    "path": "vertical-pages/conservation-land-trust-nonprofits.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "vertical-pages:disability-services",
+    "title": "Grant Compliance for Disability Services Organizations",
+    "collection": "vertical-pages",
+    "slug": "disability-services",
+    "path": "vertical-pages/disability-services.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "vertical-pages:domestic-violence-shelters",
+    "title": "Grant Compliance for Domestic Violence Shelters",
+    "collection": "vertical-pages",
+    "slug": "domestic-violence-shelters",
+    "path": "vertical-pages/domestic-violence-shelters.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "vertical-pages:domestic-violence-shelters-miami-vawa-compliance",
+    "title": "Miami Domestic Violence Shelters: VAWA and FVPSA Compliance Software",
+    "collection": "vertical-pages",
+    "slug": "domestic-violence-shelters-miami-vawa-compliance",
+    "path": "vertical-pages/domestic-violence-shelters-miami-vawa-compliance.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "vertical-pages:early-childhood-education",
+    "title": "Grant Compliance for Early Childhood Education Nonprofits",
+    "collection": "vertical-pages",
+    "slug": "early-childhood-education",
+    "path": "vertical-pages/early-childhood-education.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "vertical-pages:early-childhood-education-denver-headstart-compliance",
+    "title": "Denver Early Childhood Education: Head Start Compliance Software",
+    "collection": "vertical-pages",
+    "slug": "early-childhood-education-denver-headstart-compliance",
+    "path": "vertical-pages/early-childhood-education-denver-headstart-compliance.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "vertical-pages:environmental-nonprofits",
+    "title": "Grant Management for Environmental Nonprofits",
+    "collection": "vertical-pages",
+    "slug": "environmental-nonprofits",
+    "path": "vertical-pages/environmental-nonprofits.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "vertical-pages:environmental-nonprofits-bay-area-epa-compliance",
+    "title": "Bay Area Environmental Nonprofits: EPA Grant Compliance Software",
+    "collection": "vertical-pages",
+    "slug": "environmental-nonprofits-bay-area-epa-compliance",
+    "path": "vertical-pages/environmental-nonprofits-bay-area-epa-compliance.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "vertical-pages:faith-based-social-services",
+    "title": "Grant Management for Faith-Based Social Service Organizations",
+    "collection": "vertical-pages",
+    "slug": "faith-based-social-services",
+    "path": "vertical-pages/faith-based-social-services.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "vertical-pages:federal-grantees-audit-portal",
+    "title": "Auditor & Funder Portal for Federal Grantees: Controlled External Access Under Uniform Guidance",
+    "collection": "vertical-pages",
+    "slug": "federal-grantees-audit-portal",
+    "path": "vertical-pages/federal-grantees-audit-portal.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "vertical-pages:food-banks",
+    "title": "Grant Management for Food Banks and Hunger Relief Organizations",
+    "collection": "vertical-pages",
+    "slug": "food-banks",
+    "path": "vertical-pages/food-banks.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "vertical-pages:food-banks-atlanta-usda-tefap-compliance",
+    "title": "Atlanta Food Banks: USDA / TEFAP Compliance Software",
+    "collection": "vertical-pages",
+    "slug": "food-banks-atlanta-usda-tefap-compliance",
+    "path": "vertical-pages/food-banks-atlanta-usda-tefap-compliance.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "vertical-pages:foundations-grant-monitoring-portal",
+    "title": "Grant Monitoring Portal for Foundation Grantees: Giving Program Officers Controlled Access",
+    "collection": "vertical-pages",
+    "slug": "foundations-grant-monitoring-portal",
+    "path": "vertical-pages/foundations-grant-monitoring-portal.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "vertical-pages:grant-funded-nonprofits",
+    "title": "Grant Management for Grant-Funded Nonprofits",
+    "collection": "vertical-pages",
+    "slug": "grant-funded-nonprofits",
+    "path": "vertical-pages/grant-funded-nonprofits.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "vertical-pages:healthcare-nonprofit-audit-portal",
+    "title": "Audit Portal for Healthcare Nonprofits: External Reviewer Access Under HRSA and Medicaid",
+    "collection": "vertical-pages",
+    "slug": "healthcare-nonprofit-audit-portal",
+    "path": "vertical-pages/healthcare-nonprofit-audit-portal.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "vertical-pages:healthcare-nonprofits",
+    "title": "Grant Management for Healthcare Nonprofits and Community Health Centers",
+    "collection": "vertical-pages",
+    "slug": "healthcare-nonprofits",
+    "path": "vertical-pages/healthcare-nonprofits.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "vertical-pages:healthcare-nonprofits-houston-hrsa-compliance",
+    "title": "Houston Healthcare Nonprofits: HRSA and FQHC Compliance Software",
+    "collection": "vertical-pages",
+    "slug": "healthcare-nonprofits-houston-hrsa-compliance",
+    "path": "vertical-pages/healthcare-nonprofits-houston-hrsa-compliance.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "vertical-pages:homeless-shelters",
+    "title": "Grant Management for Homeless Shelters and Housing Nonprofits",
+    "collection": "vertical-pages",
+    "slug": "homeless-shelters",
+    "path": "vertical-pages/homeless-shelters.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "vertical-pages:homeless-shelters-los-angeles-lahsa-compliance",
+    "title": "LA Homeless Shelters: LAHSA and HUD CoC Compliance Software",
+    "collection": "vertical-pages",
+    "slug": "homeless-shelters-los-angeles-lahsa-compliance",
+    "path": "vertical-pages/homeless-shelters-los-angeles-lahsa-compliance.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "vertical-pages:immigration-services-dallas-orr-compliance",
+    "title": "Dallas Immigration Services: ORR and Refugee Resettlement Compliance Software",
+    "collection": "vertical-pages",
+    "slug": "immigration-services-dallas-orr-compliance",
+    "path": "vertical-pages/immigration-services-dallas-orr-compliance.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "vertical-pages:immigration-services-nonprofits",
+    "title": "Grant Compliance Software for Immigration Services Nonprofits",
+    "collection": "vertical-pages",
+    "slug": "immigration-services-nonprofits",
+    "path": "vertical-pages/immigration-services-nonprofits.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "vertical-pages:international-development-nonprofits",
+    "title": "Grant Management for International Development Nonprofits",
+    "collection": "vertical-pages",
+    "slug": "international-development-nonprofits",
+    "path": "vertical-pages/international-development-nonprofits.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "vertical-pages:legal-aid-organizations",
+    "title": "GrantPipe for Legal Aid Organizations",
+    "collection": "vertical-pages",
+    "slug": "legal-aid-organizations",
+    "path": "vertical-pages/legal-aid-organizations.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "vertical-pages:legal-aid-organizations-dc-lsc-compliance",
+    "title": "DC Legal Aid Organizations: LSC Compliance Software",
+    "collection": "vertical-pages",
+    "slug": "legal-aid-organizations-dc-lsc-compliance",
+    "path": "vertical-pages/legal-aid-organizations-dc-lsc-compliance.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "vertical-pages:lgbtq-service-organizations",
+    "title": "Grant Compliance Software for LGBTQ+ Service Organizations",
+    "collection": "vertical-pages",
+    "slug": "lgbtq-service-organizations",
+    "path": "vertical-pages/lgbtq-service-organizations.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "vertical-pages:memphis-health-and-human-services-nonprofits",
+    "title": "Memphis health and human services: grant compliance software workflow",
+    "collection": "vertical-pages",
+    "slug": "memphis-health-and-human-services-nonprofits",
+    "path": "vertical-pages/memphis-health-and-human-services-nonprofits.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "vertical-pages:mental-health-nonprofits",
+    "title": "Grant Management for Mental Health Nonprofits",
+    "collection": "vertical-pages",
+    "slug": "mental-health-nonprofits",
+    "path": "vertical-pages/mental-health-nonprofits.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "vertical-pages:mental-health-nonprofits-boston-samhsa-compliance",
+    "title": "Boston Mental Health Nonprofits: SAMHSA Compliance Software",
+    "collection": "vertical-pages",
+    "slug": "mental-health-nonprofits-boston-samhsa-compliance",
+    "path": "vertical-pages/mental-health-nonprofits-boston-samhsa-compliance.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "vertical-pages:museums-and-cultural-institutions",
+    "title": "Grant Management for Museums and Cultural Institutions",
+    "collection": "vertical-pages",
+    "slug": "museums-and-cultural-institutions",
+    "path": "vertical-pages/museums-and-cultural-institutions.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "vertical-pages:oakland-housing-nonprofits-cdbg-compliance",
+    "title": "Oakland housing nonprofits: grant compliance software workflow",
+    "collection": "vertical-pages",
+    "slug": "oakland-housing-nonprofits-cdbg-compliance",
+    "path": "vertical-pages/oakland-housing-nonprofits-cdbg-compliance.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "vertical-pages:public-charter-schools",
+    "title": "GrantPipe for Public Charter Schools",
+    "collection": "vertical-pages",
+    "slug": "public-charter-schools",
+    "path": "vertical-pages/public-charter-schools.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "vertical-pages:public-charter-schools-chicago-isbe-compliance",
+    "title": "Chicago Charter Schools: ISBE and CPS Compliance Software",
+    "collection": "vertical-pages",
+    "slug": "public-charter-schools-chicago-isbe-compliance",
+    "path": "vertical-pages/public-charter-schools-chicago-isbe-compliance.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "vertical-pages:raleigh-education-nonprofits-grant-compliance",
+    "title": "Raleigh education nonprofits: grant compliance software workflow",
+    "collection": "vertical-pages",
+    "slug": "raleigh-education-nonprofits-grant-compliance",
+    "path": "vertical-pages/raleigh-education-nonprofits-grant-compliance.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "vertical-pages:re-entry-reintegration-nonprofits",
+    "title": "Grant Compliance Software for Re-Entry and Criminal Justice Nonprofits",
+    "collection": "vertical-pages",
+    "slug": "re-entry-reintegration-nonprofits",
+    "path": "vertical-pages/re-entry-reintegration-nonprofits.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "vertical-pages:refugee-resettlement-nonprofits",
+    "title": "Grant Compliance Software for Refugee Resettlement Nonprofits",
+    "collection": "vertical-pages",
+    "slug": "refugee-resettlement-nonprofits",
+    "path": "vertical-pages/refugee-resettlement-nonprofits.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "vertical-pages:refugee-services-seattle-orr-compliance",
+    "title": "Seattle Refugee Services: ORR Compliance Software",
+    "collection": "vertical-pages",
+    "slug": "refugee-services-seattle-orr-compliance",
+    "path": "vertical-pages/refugee-services-seattle-orr-compliance.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "vertical-pages:richmond-va-health-nonprofits-grant-reporting",
+    "title": "Richmond health nonprofits: grant compliance software workflow",
+    "collection": "vertical-pages",
+    "slug": "richmond-va-health-nonprofits-grant-reporting",
+    "path": "vertical-pages/richmond-va-health-nonprofits-grant-reporting.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "vertical-pages:rural-development-nonprofits",
+    "title": "Grant Management for Rural Development Nonprofits",
+    "collection": "vertical-pages",
+    "slug": "rural-development-nonprofits",
+    "path": "vertical-pages/rural-development-nonprofits.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "vertical-pages:senior-services-nonprofits",
+    "title": "Grant Compliance Software for Senior Services and Elder Care Nonprofits",
+    "collection": "vertical-pages",
+    "slug": "senior-services-nonprofits",
+    "path": "vertical-pages/senior-services-nonprofits.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "vertical-pages:senior-services-phoenix-acl-compliance",
+    "title": "Phoenix Senior Services: ACL and Area Agency on Aging Compliance Software",
+    "collection": "vertical-pages",
+    "slug": "senior-services-phoenix-acl-compliance",
+    "path": "vertical-pages/senior-services-phoenix-acl-compliance.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "vertical-pages:tribal-indigenous-nonprofits",
+    "title": "Grant Compliance Software for Tribal and Indigenous Nonprofits",
+    "collection": "vertical-pages",
+    "slug": "tribal-indigenous-nonprofits",
+    "path": "vertical-pages/tribal-indigenous-nonprofits.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "vertical-pages:tulsa-arts-organizations-foundation-grants",
+    "title": "Tulsa arts organizations: grant compliance software workflow",
+    "collection": "vertical-pages",
+    "slug": "tulsa-arts-organizations-foundation-grants",
+    "path": "vertical-pages/tulsa-arts-organizations-foundation-grants.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "vertical-pages:veterans-services",
+    "title": "Grant Management for Veterans Service Organizations",
+    "collection": "vertical-pages",
+    "slug": "veterans-services",
+    "path": "vertical-pages/veterans-services.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "vertical-pages:workforce-development",
+    "title": "Grant Management for Workforce Development Organizations",
+    "collection": "vertical-pages",
+    "slug": "workforce-development",
+    "path": "vertical-pages/workforce-development.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "vertical-pages:workforce-development-houston-doleta-compliance",
+    "title": "Houston Workforce Development DOLETA / WIOA Compliance Software",
+    "collection": "vertical-pages",
+    "slug": "workforce-development-houston-doleta-compliance",
+    "path": "vertical-pages/workforce-development-houston-doleta-compliance.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "vertical-pages:youth-programs",
+    "title": "Grant Management for Youth Programs and After-School Organizations",
+    "collection": "vertical-pages",
+    "slug": "youth-programs",
+    "path": "vertical-pages/youth-programs.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "vertical-pages:youth-services-chicago-21st-cclc-compliance",
+    "title": "Chicago Youth Services 21st CCLC Compliance Software",
+    "collection": "vertical-pages",
+    "slug": "youth-services-chicago-21st-cclc-compliance",
+    "path": "vertical-pages/youth-services-chicago-21st-cclc-compliance.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "workflows:approve-grant-budget-revision",
+    "title": "Approve a Grant Budget Revision",
+    "collection": "workflows",
+    "slug": "approve-grant-budget-revision",
+    "path": "workflows/approve-grant-budget-revision.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "workflows:approve-grant-expense-before-payment",
+    "title": "Approve Grant Expense Before Payment",
+    "collection": "workflows",
+    "slug": "approve-grant-expense-before-payment",
+    "path": "workflows/approve-grant-expense-before-payment.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "workflows:archive-old-grant-spreadsheets-after-migration",
+    "title": "Archive Old Grant Spreadsheets After Migration",
+    "collection": "workflows",
+    "slug": "archive-old-grant-spreadsheets-after-migration",
+    "path": "workflows/archive-old-grant-spreadsheets-after-migration.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "workflows:arizona-charitable-registration-workflow",
+    "title": "Arizona Charitable Solicitation Workflow: What Actually Applies After the 2013 Repeal",
+    "collection": "workflows",
+    "slug": "arizona-charitable-registration-workflow",
+    "path": "workflows/arizona-charitable-registration-workflow.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "workflows:assemble-doj-vawa-financial-report-file",
+    "title": "Assemble a DOJ VAWA Financial Report File",
+    "collection": "workflows",
+    "slug": "assemble-doj-vawa-financial-report-file",
+    "path": "workflows/assemble-doj-vawa-financial-report-file.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "workflows:assemble-program-outcome-evidence",
+    "title": "Assemble Program Outcome Evidence",
+    "collection": "workflows",
+    "slug": "assemble-program-outcome-evidence",
+    "path": "workflows/assemble-program-outcome-evidence.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "workflows:budget-reclass-fiscal-year-end",
+    "title": "Workflow: Reclass Grant Budget at Fiscal Year-End",
+    "collection": "workflows",
+    "slug": "budget-reclass-fiscal-year-end",
+    "path": "workflows/budget-reclass-fiscal-year-end.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "workflows:build-epa-grant-reporting-calendar",
+    "title": "Build an EPA Grant Reporting Calendar",
+    "collection": "workflows",
+    "slug": "build-epa-grant-reporting-calendar",
+    "path": "workflows/build-epa-grant-reporting-calendar.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "workflows:build-form-990-board-review-packet",
+    "title": "How to Build a Form 990 Board Review Packet",
+    "collection": "workflows",
+    "slug": "build-form-990-board-review-packet",
+    "path": "workflows/build-form-990-board-review-packet.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "workflows:build-quarterly-grant-report-calendar",
+    "title": "Build a Quarterly Grant Report Calendar",
+    "collection": "workflows",
+    "slug": "build-quarterly-grant-report-calendar",
+    "path": "workflows/build-quarterly-grant-report-calendar.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "workflows:build-sefa-support-binder",
+    "title": "Build a SEFA Support Binder",
+    "collection": "workflows",
+    "slug": "build-sefa-support-binder",
+    "path": "workflows/build-sefa-support-binder.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "workflows:california-charitable-registration-workflow",
+    "title": "California Charitable Registration Workflow: CT-1 Through RRF-1",
+    "collection": "workflows",
+    "slug": "california-charitable-registration-workflow",
+    "path": "workflows/california-charitable-registration-workflow.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "workflows:certify-grant-funded-staff-time",
+    "title": "Certify Grant Funded Staff Time",
+    "collection": "workflows",
+    "slug": "certify-grant-funded-staff-time",
+    "path": "workflows/certify-grant-funded-staff-time.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "workflows:clean-client-counts-before-reporting",
+    "title": "Clean Client Counts Before Reporting",
+    "collection": "workflows",
+    "slug": "clean-client-counts-before-reporting",
+    "path": "workflows/clean-client-counts-before-reporting.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "workflows:clean-crm-restriction-codes-before-import",
+    "title": "Clean CRM Restriction Codes Before Import",
+    "collection": "workflows",
+    "slug": "clean-crm-restriction-codes-before-import",
+    "path": "workflows/clean-crm-restriction-codes-before-import.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "workflows:close-federal-award-file",
+    "title": "Close a Federal Award File",
+    "collection": "workflows",
+    "slug": "close-federal-award-file",
+    "path": "workflows/close-federal-award-file.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "workflows:close-usda-community-facilities-grant",
+    "title": "Close a USDA Community Facilities Grant",
+    "collection": "workflows",
+    "slug": "close-usda-community-facilities-grant",
+    "path": "workflows/close-usda-community-facilities-grant.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "workflows:colorado-charitable-registration-workflow",
+    "title": "Colorado Charitable Registration Workflow: CCSA Registration and Annual Renewal",
+    "collection": "workflows",
+    "slug": "colorado-charitable-registration-workflow",
+    "path": "workflows/colorado-charitable-registration-workflow.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "workflows:connecticut-charitable-registration-workflow",
+    "title": "Connecticut Charitable Registration Workflow: DCP Public Charities Unit",
+    "collection": "workflows",
+    "slug": "connecticut-charitable-registration-workflow",
+    "path": "workflows/connecticut-charitable-registration-workflow.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "workflows:cost-transfer-post-closeout",
+    "title": "Workflow: Cost Transfer After Grant Closeout",
+    "collection": "workflows",
+    "slug": "cost-transfer-post-closeout",
+    "path": "workflows/cost-transfer-post-closeout.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "workflows:create-grant-document-retention-schedule",
+    "title": "Create a Grant Document Retention Schedule",
+    "collection": "workflows",
+    "slug": "create-grant-document-retention-schedule",
+    "path": "workflows/create-grant-document-retention-schedule.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "workflows:decide-grant-go-no-go",
+    "title": "Decide Grant Go No Go",
+    "collection": "workflows",
+    "slug": "decide-grant-go-no-go",
+    "path": "workflows/decide-grant-go-no-go.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "workflows:define-grant-reporting-kpis",
+    "title": "Define Grant Reporting KPIs",
+    "collection": "workflows",
+    "slug": "define-grant-reporting-kpis",
+    "path": "workflows/define-grant-reporting-kpis.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "workflows:document-match-source-before-reporting",
+    "title": "Document a Match Source Before Reporting",
+    "collection": "workflows",
+    "slug": "document-match-source-before-reporting",
+    "path": "workflows/document-match-source-before-reporting.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "workflows:document-shared-cost-allocation-for-grants",
+    "title": "Document Shared Cost Allocation for Grants",
+    "collection": "workflows",
+    "slug": "document-shared-cost-allocation-for-grants",
+    "path": "workflows/document-shared-cost-allocation-for-grants.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "workflows:document-subrecipient-risk-review",
+    "title": "Document a Subrecipient Risk Review",
+    "collection": "workflows",
+    "slug": "document-subrecipient-risk-review",
+    "path": "workflows/document-subrecipient-risk-review.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "workflows:donor-refund",
+    "title": "Workflow: Processing a Nonprofit Donor Refund",
+    "collection": "workflows",
+    "slug": "donor-refund",
+    "path": "workflows/donor-refund.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "workflows:federal-grant-equipment-inventory-disposition",
+    "title": "Federal Grant Equipment Inventory and Disposition",
+    "collection": "workflows",
+    "slug": "federal-grant-equipment-inventory-disposition",
+    "path": "workflows/federal-grant-equipment-inventory-disposition.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "workflows:florida-charitable-registration-workflow",
+    "title": "Florida Charitable Registration Workflow: CH-14 Through Annual Renewal",
+    "collection": "workflows",
+    "slug": "florida-charitable-registration-workflow",
+    "path": "workflows/florida-charitable-registration-workflow.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "workflows:functional-expense-allocation-methodology",
+    "title": "Functional Expense Allocation Methodology",
+    "collection": "workflows",
+    "slug": "functional-expense-allocation-methodology",
+    "path": "workflows/functional-expense-allocation-methodology.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "workflows:georgia-charitable-registration-workflow",
+    "title": "Georgia Charitable Registration Workflow: Form C-100 Through Biennial Renewal",
+    "collection": "workflows",
+    "slug": "georgia-charitable-registration-workflow",
+    "path": "workflows/georgia-charitable-registration-workflow.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "workflows:how-to-apply-for-cdbg-grant",
+    "title": "How to Apply for a CDBG Grant as a Nonprofit: Step-by-Step",
+    "collection": "workflows",
+    "slug": "how-to-apply-for-cdbg-grant",
+    "path": "workflows/how-to-apply-for-cdbg-grant.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "workflows:how-to-apply-for-samhsa-grant",
+    "title": "How to Apply for a SAMHSA Grant: Step-by-Step Process",
+    "collection": "workflows",
+    "slug": "how-to-apply-for-samhsa-grant",
+    "path": "workflows/how-to-apply-for-samhsa-grant.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "workflows:how-to-build-funder-stewardship-plan",
+    "title": "How to Build a Funder Stewardship Plan: Step-by-Step Workflow",
+    "collection": "workflows",
+    "slug": "how-to-build-funder-stewardship-plan",
+    "path": "workflows/how-to-build-funder-stewardship-plan.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "workflows:how-to-build-grant-proposal-budget",
+    "title": "How to Build a Grant Proposal Budget That Passes Reviewer Scrutiny",
+    "collection": "workflows",
+    "slug": "how-to-build-grant-proposal-budget",
+    "path": "workflows/how-to-build-grant-proposal-budget.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "workflows:how-to-build-nonprofit-financial-report-for-board",
+    "title": "How to Build a Nonprofit Financial Report for the Board: A Monthly Preparation Workflow",
+    "collection": "workflows",
+    "slug": "how-to-build-nonprofit-financial-report-for-board",
+    "path": "workflows/how-to-build-nonprofit-financial-report-for-board.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "workflows:how-to-build-nonprofit-strategic-plan",
+    "title": "How to Build a Nonprofit Strategic Plan: A 9-Step Process That Produces an Executable Document",
+    "collection": "workflows",
+    "slug": "how-to-build-nonprofit-strategic-plan",
+    "path": "workflows/how-to-build-nonprofit-strategic-plan.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "workflows:how-to-conduct-nonprofit-board-financial-review",
+    "title": "How to Conduct a Nonprofit Board Financial Review: A Monthly Preparation Checklist",
+    "collection": "workflows",
+    "slug": "how-to-conduct-nonprofit-board-financial-review",
+    "path": "workflows/how-to-conduct-nonprofit-board-financial-review.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "workflows:how-to-conduct-prospect-research-session",
+    "title": "How to Conduct a Prospect Research Session: Step-by-Step Workflow",
+    "collection": "workflows",
+    "slug": "how-to-conduct-prospect-research-session",
+    "path": "workflows/how-to-conduct-prospect-research-session.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "workflows:how-to-create-nonprofit-budget",
+    "title": "How to Build a Nonprofit Budget: A Step-by-Step Process for Finance Staff",
+    "collection": "workflows",
+    "slug": "how-to-create-nonprofit-budget",
+    "path": "workflows/how-to-create-nonprofit-budget.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "workflows:how-to-evaluate-grant-management-software",
+    "title": "How to Evaluate Grant Management Software: A Step-by-Step Selection Process",
+    "collection": "workflows",
+    "slug": "how-to-evaluate-grant-management-software",
+    "path": "workflows/how-to-evaluate-grant-management-software.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "workflows:how-to-launch-donor-upgrade-appeal",
+    "title": "How to Launch a Donor Upgrade Appeal: Step-by-Step Workflow",
+    "collection": "workflows",
+    "slug": "how-to-launch-donor-upgrade-appeal",
+    "path": "workflows/how-to-launch-donor-upgrade-appeal.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "workflows:how-to-prepare-for-audit-with-grantpipe-portal",
+    "title": "How to Prepare for an Audit Using the GrantPipe Portal: Step-by-Step Workflow",
+    "collection": "workflows",
+    "slug": "how-to-prepare-for-audit-with-grantpipe-portal",
+    "path": "workflows/how-to-prepare-for-audit-with-grantpipe-portal.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "workflows:how-to-reactivate-lapsed-donors",
+    "title": "How to Reactivate Lapsed Donors: A Step-by-Step Process",
+    "collection": "workflows",
+    "slug": "how-to-reactivate-lapsed-donors",
+    "path": "workflows/how-to-reactivate-lapsed-donors.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "workflows:how-to-run-grant-renewal-process",
+    "title": "How to Run a Grant Renewal Process: Step-by-Step Workflow",
+    "collection": "workflows",
+    "slug": "how-to-run-grant-renewal-process",
+    "path": "workflows/how-to-run-grant-renewal-process.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "workflows:how-to-send-year-end-tax-acknowledgment-letters",
+    "title": "How to Send Year-End Tax Acknowledgment Letters: A Step-by-Step Workflow",
+    "collection": "workflows",
+    "slug": "how-to-send-year-end-tax-acknowledgment-letters",
+    "path": "workflows/how-to-send-year-end-tax-acknowledgment-letters.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "workflows:how-to-set-up-donor-management-software",
+    "title": "How to Set Up Donor Management Software: A Step-by-Step Implementation Workflow",
+    "collection": "workflows",
+    "slug": "how-to-set-up-donor-management-software",
+    "path": "workflows/how-to-set-up-donor-management-software.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "workflows:how-to-set-up-grant-tracking-spreadsheet",
+    "title": "How to Set Up a Grant Tracking Spreadsheet (and When to Replace It With Software)",
+    "collection": "workflows",
+    "slug": "how-to-set-up-grant-tracking-spreadsheet",
+    "path": "workflows/how-to-set-up-grant-tracking-spreadsheet.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "workflows:how-to-set-up-monthly-giving-program",
+    "title": "How to Set Up a Monthly Giving Program: Step-by-Step",
+    "collection": "workflows",
+    "slug": "how-to-set-up-monthly-giving-program",
+    "path": "workflows/how-to-set-up-monthly-giving-program.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "workflows:how-to-transition-from-grant-spreadsheet-to-software",
+    "title": "How to Transition From a Grant Tracking Spreadsheet to Software: A Migration Workflow",
+    "collection": "workflows",
+    "slug": "how-to-transition-from-grant-spreadsheet-to-software",
+    "path": "workflows/how-to-transition-from-grant-spreadsheet-to-software.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "workflows:how-to-write-grant-loi-step-by-step",
+    "title": "How to Write a Grant LOI: A Step-by-Step Process From Research to Submission",
+    "collection": "workflows",
+    "slug": "how-to-write-grant-loi-step-by-step",
+    "path": "workflows/how-to-write-grant-loi-step-by-step.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "workflows:how-to-write-grant-narrative-step-by-step",
+    "title": "How to Write a Grant Narrative: Step-by-Step Process",
+    "collection": "workflows",
+    "slug": "how-to-write-grant-narrative-step-by-step",
+    "path": "workflows/how-to-write-grant-narrative-step-by-step.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "workflows:illinois-charitable-registration-workflow",
+    "title": "Illinois Charitable Registration Workflow: CO-1 Through AG990-IL",
+    "collection": "workflows",
+    "slug": "illinois-charitable-registration-workflow",
+    "path": "workflows/illinois-charitable-registration-workflow.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "workflows:in-kind-contribution-valuation",
+    "title": "Workflow: In-Kind Contribution Valuation",
+    "collection": "workflows",
+    "slug": "in-kind-contribution-valuation",
+    "path": "workflows/in-kind-contribution-valuation.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "workflows:indiana-charitable-registration-workflow",
+    "title": "Indiana Charitable Registration Workflow: What Indiana Actually Requires",
+    "collection": "workflows",
+    "slug": "indiana-charitable-registration-workflow",
+    "path": "workflows/indiana-charitable-registration-workflow.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "workflows:intake-donor-restriction-before-deposit",
+    "title": "Intake a Donor Restriction Before Deposit",
+    "collection": "workflows",
+    "slug": "intake-donor-restriction-before-deposit",
+    "path": "workflows/intake-donor-restriction-before-deposit.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "workflows:intake-new-grant-award-letter",
+    "title": "Intake a New Grant Award Letter",
+    "collection": "workflows",
+    "slug": "intake-new-grant-award-letter",
+    "path": "workflows/intake-new-grant-award-letter.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "workflows:kentucky-charitable-registration-workflow",
+    "title": "Kentucky Charitable Registration Workflow: AG Office of Consumer Protection",
+    "collection": "workflows",
+    "slug": "kentucky-charitable-registration-workflow",
+    "path": "workflows/kentucky-charitable-registration-workflow.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "workflows:lock-quarterly-grant-report-data",
+    "title": "Lock Quarterly Grant Report Data",
+    "collection": "workflows",
+    "slug": "lock-quarterly-grant-report-data",
+    "path": "workflows/lock-quarterly-grant-report-data.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "workflows:map-spreadsheet-grants-to-system-fields",
+    "title": "Map Spreadsheet Grants to System Fields",
+    "collection": "workflows",
+    "slug": "map-spreadsheet-grants-to-system-fields",
+    "path": "workflows/map-spreadsheet-grants-to-system-fields.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "workflows:maryland-charitable-registration-workflow",
+    "title": "Maryland Charitable Registration Workflow: Form COR-92 and Annual Renewal",
+    "collection": "workflows",
+    "slug": "maryland-charitable-registration-workflow",
+    "path": "workflows/maryland-charitable-registration-workflow.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "workflows:massachusetts-charitable-registration-workflow",
+    "title": "Massachusetts Charitable Registration Workflow: Initial Registration Through Form PC",
+    "collection": "workflows",
+    "slug": "massachusetts-charitable-registration-workflow",
+    "path": "workflows/massachusetts-charitable-registration-workflow.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "workflows:michigan-charitable-registration-workflow",
+    "title": "Michigan Charitable Registration Workflow: CTS-01 Through CTS-02",
+    "collection": "workflows",
+    "slug": "michigan-charitable-registration-workflow",
+    "path": "workflows/michigan-charitable-registration-workflow.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "workflows:minnesota-charitable-registration-workflow",
+    "title": "Minnesota Charitable Registration Workflow: AG Registration and Annual Renewal",
+    "collection": "workflows",
+    "slug": "minnesota-charitable-registration-workflow",
+    "path": "workflows/minnesota-charitable-registration-workflow.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "workflows:missouri-charitable-registration-workflow",
+    "title": "Missouri Charitable Registration Workflow: AG Initial Filing and Annual Renewal",
+    "collection": "workflows",
+    "slug": "missouri-charitable-registration-workflow",
+    "path": "workflows/missouri-charitable-registration-workflow.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "workflows:monitor-liheap-subrecipient-file",
+    "title": "Monitor a LIHEAP Subrecipient File",
+    "collection": "workflows",
+    "slug": "monitor-liheap-subrecipient-file",
+    "path": "workflows/monitor-liheap-subrecipient-file.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "workflows:negotiate-indirect-cost-rate-nicra",
+    "title": "How to Negotiate a NICRA (Negotiated Indirect Cost Rate Agreement)",
+    "collection": "workflows",
+    "slug": "negotiate-indirect-cost-rate-nicra",
+    "path": "workflows/negotiate-indirect-cost-rate-nicra.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "workflows:new-jersey-charitable-registration-workflow",
+    "title": "New Jersey Charitable Registration Workflow: CRI-150I Through CRI-200 / CRI-300R",
+    "collection": "workflows",
+    "slug": "new-jersey-charitable-registration-workflow",
+    "path": "workflows/new-jersey-charitable-registration-workflow.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "workflows:new-york-charitable-registration-workflow",
+    "title": "New York CHAR500 Workflow: CHAR410 Through Annual Renewal",
+    "collection": "workflows",
+    "slug": "new-york-charitable-registration-workflow",
+    "path": "workflows/new-york-charitable-registration-workflow.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "workflows:north-carolina-charitable-registration-workflow",
+    "title": "North Carolina Charitable Solicitation Registration: Form CSL Workflow",
+    "collection": "workflows",
+    "slug": "north-carolina-charitable-registration-workflow",
+    "path": "workflows/north-carolina-charitable-registration-workflow.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "workflows:ohio-charitable-registration-workflow",
+    "title": "Ohio Charitable Registration Workflow: Initial Filing Through Annual Renewal",
+    "collection": "workflows",
+    "slug": "ohio-charitable-registration-workflow",
+    "path": "workflows/ohio-charitable-registration-workflow.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "workflows:oregon-charitable-registration-workflow",
+    "title": "Oregon CT-12 Charitable Registration Workflow: Annual Filing with the DOJ",
+    "collection": "workflows",
+    "slug": "oregon-charitable-registration-workflow",
+    "path": "workflows/oregon-charitable-registration-workflow.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "workflows:payroll-allocation-across-grants",
+    "title": "Workflow: Allocating Payroll Across Multiple Grants",
+    "collection": "workflows",
+    "slug": "payroll-allocation-across-grants",
+    "path": "workflows/payroll-allocation-across-grants.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "workflows:pennsylvania-charitable-registration-workflow",
+    "title": "Workflow: Pennsylvania BCO-10 Charitable Registration (Step-by-Step)",
+    "collection": "workflows",
+    "slug": "pennsylvania-charitable-registration-workflow",
+    "path": "workflows/pennsylvania-charitable-registration-workflow.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "workflows:perform-monthly-grant-drawdown-reconciliation",
+    "title": "How to Perform a Monthly Grant Drawdown Reconciliation",
+    "collection": "workflows",
+    "slug": "perform-monthly-grant-drawdown-reconciliation",
+    "path": "workflows/perform-monthly-grant-drawdown-reconciliation.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "workflows:pledge-write-off",
+    "title": "Workflow: Nonprofit Pledge Write-Off Process",
+    "collection": "workflows",
+    "slug": "pledge-write-off",
+    "path": "workflows/pledge-write-off.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "workflows:prepare-corrective-action-plan-response",
+    "title": "Prepare a Corrective Action Plan Response",
+    "collection": "workflows",
+    "slug": "prepare-corrective-action-plan-response",
+    "path": "workflows/prepare-corrective-action-plan-response.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "workflows:prepare-fema-nsgp-equipment-records",
+    "title": "Prepare FEMA NSGP Equipment Records",
+    "collection": "workflows",
+    "slug": "prepare-fema-nsgp-equipment-records",
+    "path": "workflows/prepare-fema-nsgp-equipment-records.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "workflows:prepare-final-invoice-for-grant-closeout",
+    "title": "Prepare a Final Invoice for Grant Closeout",
+    "collection": "workflows",
+    "slug": "prepare-final-invoice-for-grant-closeout",
+    "path": "workflows/prepare-final-invoice-for-grant-closeout.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "workflows:prepare-funder-site-visit-file",
+    "title": "Prepare Funder Site Visit File",
+    "collection": "workflows",
+    "slug": "prepare-funder-site-visit-file",
+    "path": "workflows/prepare-funder-site-visit-file.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "workflows:prepare-grant-reimbursement-backup",
+    "title": "Prepare Grant Reimbursement Backup",
+    "collection": "workflows",
+    "slug": "prepare-grant-reimbursement-backup",
+    "path": "workflows/prepare-grant-reimbursement-backup.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "workflows:prepare-grant-renewal-risk-brief",
+    "title": "Prepare a Grant Renewal Risk Brief",
+    "collection": "workflows",
+    "slug": "prepare-grant-renewal-risk-brief",
+    "path": "workflows/prepare-grant-renewal-risk-brief.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "workflows:prepare-hrsa-drawdown-support",
+    "title": "Prepare HRSA Drawdown Support",
+    "collection": "workflows",
+    "slug": "prepare-hrsa-drawdown-support",
+    "path": "workflows/prepare-hrsa-drawdown-support.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "workflows:prepare-restriction-release-board-schedule",
+    "title": "Prepare a Restriction Release Board Schedule",
+    "collection": "workflows",
+    "slug": "prepare-restriction-release-board-schedule",
+    "path": "workflows/prepare-restriction-release-board-schedule.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "workflows:prepare-sefa-for-single-audit",
+    "title": "How to Prepare the SEFA for a Single Audit",
+    "collection": "workflows",
+    "slug": "prepare-sefa-for-single-audit",
+    "path": "workflows/prepare-sefa-for-single-audit.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "workflows:prepare-sf-425-quarterly-report",
+    "title": "Prepare an SF-425 Quarterly Report",
+    "collection": "workflows",
+    "slug": "prepare-sf-425-quarterly-report",
+    "path": "workflows/prepare-sf-425-quarterly-report.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "workflows:program-income-reporting",
+    "title": "Workflow: Program Income Reporting",
+    "collection": "workflows",
+    "slug": "program-income-reporting",
+    "path": "workflows/program-income-reporting.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "workflows:reconcile-americorps-member-timesheets",
+    "title": "Reconcile AmeriCorps Member Timesheets",
+    "collection": "workflows",
+    "slug": "reconcile-americorps-member-timesheets",
+    "path": "workflows/reconcile-americorps-member-timesheets.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "workflows:reconcile-restricted-grant-cash",
+    "title": "Reconcile Restricted Grant Cash",
+    "collection": "workflows",
+    "slug": "reconcile-restricted-grant-cash",
+    "path": "workflows/reconcile-restricted-grant-cash.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "workflows:respond-to-single-audit-finding",
+    "title": "How to Respond to a Single Audit Finding",
+    "collection": "workflows",
+    "slug": "respond-to-single-audit-finding",
+    "path": "workflows/respond-to-single-audit-finding.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "workflows:review-federal-drawdown-before-request",
+    "title": "Review a Federal Drawdown Before Request",
+    "collection": "workflows",
+    "slug": "review-federal-drawdown-before-request",
+    "path": "workflows/review-federal-drawdown-before-request.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "workflows:review-grant-proposal-budget-before-submit",
+    "title": "Review a Grant Proposal Budget Before Submit",
+    "collection": "workflows",
+    "slug": "review-grant-proposal-budget-before-submit",
+    "path": "workflows/review-grant-proposal-budget-before-submit.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "workflows:review-hud-coc-match-before-reporting",
+    "title": "Review HUD CoC Match Before Reporting",
+    "collection": "workflows",
+    "slug": "review-hud-coc-match-before-reporting",
+    "path": "workflows/review-hud-coc-match-before-reporting.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "workflows:review-pass-through-report-before-submit",
+    "title": "Review a Pass-Through Report Before Submit",
+    "collection": "workflows",
+    "slug": "review-pass-through-report-before-submit",
+    "path": "workflows/review-pass-through-report-before-submit.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "workflows:review-program-attendance-evidence",
+    "title": "Review Program Attendance Evidence",
+    "collection": "workflows",
+    "slug": "review-program-attendance-evidence",
+    "path": "workflows/review-program-attendance-evidence.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "workflows:review-restricted-gift-agreement",
+    "title": "Review a Restricted Gift Agreement",
+    "collection": "workflows",
+    "slug": "review-restricted-gift-agreement",
+    "path": "workflows/review-restricted-gift-agreement.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "workflows:review-subaward-invoice-before-payment",
+    "title": "Review Subaward Invoice Before Payment",
+    "collection": "workflows",
+    "slug": "review-subaward-invoice-before-payment",
+    "path": "workflows/review-subaward-invoice-before-payment.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "workflows:run-grant-readiness-self-assessment",
+    "title": "Run a Grant Readiness Self Assessment",
+    "collection": "workflows",
+    "slug": "run-grant-readiness-self-assessment",
+    "path": "workflows/run-grant-readiness-self-assessment.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "workflows:run-grant-software-user-acceptance-test",
+    "title": "Run a Grant Software User Acceptance Test",
+    "collection": "workflows",
+    "slug": "run-grant-software-user-acceptance-test",
+    "path": "workflows/run-grant-software-user-acceptance-test.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "workflows:screen-foundation-grant-fit-before-writing",
+    "title": "Screen Foundation Grant Fit Before Writing",
+    "collection": "workflows",
+    "slug": "screen-foundation-grant-fit-before-writing",
+    "path": "workflows/screen-foundation-grant-fit-before-writing.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "workflows:subaward-budget-modification",
+    "title": "Workflow: Subaward Budget Modification Process",
+    "collection": "workflows",
+    "slug": "subaward-budget-modification",
+    "path": "workflows/subaward-budget-modification.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "workflows:submit-cdbg-reimbursement-package",
+    "title": "Submit a CDBG Reimbursement Package",
+    "collection": "workflows",
+    "slug": "submit-cdbg-reimbursement-package",
+    "path": "workflows/submit-cdbg-reimbursement-package.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "workflows:submit-grant-amendment-request",
+    "title": "Submit a Grant Amendment Request",
+    "collection": "workflows",
+    "slug": "submit-grant-amendment-request",
+    "path": "workflows/submit-grant-amendment-request.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "workflows:submit-sf-sac-single-audit-data-collection",
+    "title": "How to Submit the SF-SAC (Single Audit Data Collection Form)",
+    "collection": "workflows",
+    "slug": "submit-sf-sac-single-audit-data-collection",
+    "path": "workflows/submit-sf-sac-single-audit-data-collection.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "workflows:tennessee-charitable-registration-workflow",
+    "title": "Tennessee Charitable Solicitation Registration: Complete Workflow",
+    "collection": "workflows",
+    "slug": "tennessee-charitable-registration-workflow",
+    "path": "workflows/tennessee-charitable-registration-workflow.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "workflows:test-cash-draw-timing-before-request",
+    "title": "Test Cash Draw Timing Before Request",
+    "collection": "workflows",
+    "slug": "test-cash-draw-timing-before-request",
+    "path": "workflows/test-cash-draw-timing-before-request.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "workflows:test-grant-management-user-permissions",
+    "title": "Test Grant Management User Permissions",
+    "collection": "workflows",
+    "slug": "test-grant-management-user-permissions",
+    "path": "workflows/test-grant-management-user-permissions.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "workflows:test-head-start-non-federal-share-file",
+    "title": "Test a Head Start Non-Federal Share File",
+    "collection": "workflows",
+    "slug": "test-head-start-non-federal-share-file",
+    "path": "workflows/test-head-start-non-federal-share-file.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "workflows:test-procurement-file-before-audit",
+    "title": "Test a Procurement File Before Audit",
+    "collection": "workflows",
+    "slug": "test-procurement-file-before-audit",
+    "path": "workflows/test-procurement-file-before-audit.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "workflows:texas-charitable-registration-workflow",
+    "title": "Texas Charitable Registration Workflow: Form 202 and Chapter 1803",
+    "collection": "workflows",
+    "slug": "texas-charitable-registration-workflow",
+    "path": "workflows/texas-charitable-registration-workflow.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "workflows:tie-out-restricted-funds-at-month-end",
+    "title": "Tie Out Restricted Funds at Month End",
+    "collection": "workflows",
+    "slug": "tie-out-restricted-funds-at-month-end",
+    "path": "workflows/tie-out-restricted-funds-at-month-end.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "workflows:time-and-effort-certification",
+    "title": "Workflow: Time and Effort Certification",
+    "collection": "workflows",
+    "slug": "time-and-effort-certification",
+    "path": "workflows/time-and-effort-certification.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "workflows:track-donor-pledges-vs-payments",
+    "title": "How to Track Donor Pledges vs Payments",
+    "collection": "workflows",
+    "slug": "track-donor-pledges-vs-payments",
+    "path": "workflows/track-donor-pledges-vs-payments.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "workflows:verify-outcome-data-before-submission",
+    "title": "Verify Outcome Data Before Submission",
+    "collection": "workflows",
+    "slug": "verify-outcome-data-before-submission",
+    "path": "workflows/verify-outcome-data-before-submission.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "workflows:virginia-charitable-registration-workflow",
+    "title": "Virginia Charitable Registration Workflow: VDACS Form 102 and Annual Renewals",
+    "collection": "workflows",
+    "slug": "virginia-charitable-registration-workflow",
+    "path": "workflows/virginia-charitable-registration-workflow.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "workflows:washington-charitable-registration-workflow",
+    "title": "Washington Charitable Solicitation Registration: Step-by-Step Workflow",
+    "collection": "workflows",
+    "slug": "washington-charitable-registration-workflow",
+    "path": "workflows/washington-charitable-registration-workflow.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "workflows:wisconsin-charitable-registration-workflow",
+    "title": "Wisconsin Charitable Registration Workflow: Form 308 with the DFI",
+    "collection": "workflows",
+    "slug": "wisconsin-charitable-registration-workflow",
+    "path": "workflows/wisconsin-charitable-registration-workflow.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  },
+  {
+    "id": "workflows:year-end-restricted-release",
+    "title": "Workflow: Year-End Release of Restricted Net Assets",
+    "collection": "workflows",
+    "slug": "year-end-restricted-release",
+    "path": "workflows/year-end-restricted-release.md",
+    "consumers": [
+      "public-marketing",
+      "ai-sdr"
+    ],
+    "visibility": "public",
+    "safety": "public-safe"
+  }
+],
+};
+
+export const PUBLIC_KNOWLEDGE_INDEX: MarketingKnowledgeIndex = MARKETING_KNOWLEDGE_INDEX;

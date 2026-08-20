@@ -1,0 +1,92 @@
+---
+import { GRANTPIPE_GUARANTEE_STACK } from "../../../../packages/shared/src/pricing";
+---
+
+<div class="gp-offer-stack" data-section="offer-stack">
+  <article class="gp-offer-card gp-offer-card--wide">
+    <span class="gp-type-label">{GRANTPIPE_GUARANTEE_STACK.name}</span>
+    <h3 class="gp-offer-card__title">{GRANTPIPE_GUARANTEE_STACK.headline}</h3>
+    <p class="gp-offer-card__body">{GRANTPIPE_GUARANTEE_STACK.summary}</p>
+    <div class="gp-offer-card__terms">
+      {
+        GRANTPIPE_GUARANTEE_STACK.items.map((item) => (
+          <div>
+            <strong>{item.title}</strong>
+            <span>{item.body}</span>
+          </div>
+        ))
+      }
+    </div>
+  </article>
+</div>
+
+<style>
+  .gp-offer-stack {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    gap: 1.25rem;
+    margin-block: var(--space-6, 1.5rem);
+  }
+  .gp-offer-card {
+    border: 1px solid var(--site-primary-200, #a7f3d0);
+    border-radius: 8px;
+    padding: 1.25rem 1.5rem;
+    background: var(--site-surface, #fbfaf6);
+  }
+  .gp-offer-card--wide {
+    grid-column: 1 / -1;
+  }
+  .gp-offer-card--accent {
+    border-color: var(--site-accent, #b88928);
+    background: color-mix(in srgb, var(--site-accent, #b88928) 6%, var(--site-surface, #fbfaf6));
+  }
+  .gp-offer-card__icon {
+    font-size: 1.25rem;
+    font-weight: 700;
+    color: var(--site-primary-600, #059669);
+    margin-bottom: 0.5rem;
+    display: block;
+  }
+  .gp-offer-card--accent .gp-offer-card__icon {
+    color: var(--site-accent, #b88928);
+  }
+  .gp-offer-card__title {
+    font-size: 1rem;
+    font-weight: 700;
+    color: var(--site-text, #0e1a16);
+    margin-bottom: 0.375rem;
+  }
+  .gp-offer-card__body {
+    font-size: 0.875rem;
+    color: var(--site-muted, #5b6e66);
+    line-height: 1.5;
+    margin: 0;
+  }
+  .gp-offer-card__terms {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    gap: 0.75rem;
+    margin-top: 1rem;
+  }
+  .gp-offer-card__terms div {
+    border-top: 1px solid var(--site-primary-100, #d1fae5);
+    padding-top: 0.75rem;
+  }
+  .gp-offer-card__terms strong {
+    display: block;
+    font-size: 0.875rem;
+    color: var(--site-text, #0e1a16);
+    margin-bottom: 0.25rem;
+  }
+  .gp-offer-card__terms span {
+    color: var(--site-muted, #5b6e66);
+    font-size: 0.8125rem;
+    line-height: 1.45;
+  }
+  .gp-offer-card__deadline {
+    font-size: 0.75rem;
+    color: var(--site-accent, #b88928);
+    font-weight: 600;
+    margin: 0.25rem 0 0;
+  }
+</style>

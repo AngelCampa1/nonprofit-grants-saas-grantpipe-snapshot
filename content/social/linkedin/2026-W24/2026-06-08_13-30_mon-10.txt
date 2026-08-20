@@ -1,0 +1,14 @@
+Executive Directors do not need a 30-row transaction dump in the board packet.
+
+They need the grant portfolio view:
+
+- active awards
+- restricted balances
+- budget spent vs. time elapsed
+- next reporting dates
+- open compliance concerns
+- renewals or gaps in the next 12 months
+
+The board can govern from that.
+
+Staff can keep the transaction detail where it belongs.

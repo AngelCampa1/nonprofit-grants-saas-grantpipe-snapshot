@@ -1,0 +1,5 @@
+UEI is not just a registration detail.
+
+The Unique Entity ID follows your organization through SAM.gov, federal awards, subawards, and reporting records.
+
+If the UEI, legal name, and award identifiers do not match across files, small admin errors can slow federal grant work.

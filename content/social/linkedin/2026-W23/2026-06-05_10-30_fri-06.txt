@@ -1,0 +1,5 @@
+The SF-425 Reporting Checklist is for the form line that causes too much cleanup: 10f.
+
+Line 10f is cumulative federal expenditures for the full period of performance, not only the current quarter.
+
+The checklist walks through the tie-out before submission.

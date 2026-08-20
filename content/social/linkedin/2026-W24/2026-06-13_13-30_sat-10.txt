@@ -1,0 +1,7 @@
+A CRM migration map should include the grant data the CRM did not really hold.
+
+Do not map only contacts, gifts, and notes.
+
+Map funder records, grant IDs, award terms, restriction purposes, fund codes, reporting deadlines, and document locations.
+
+Otherwise the migration looks complete on donor day one and incomplete on grant report day thirty.

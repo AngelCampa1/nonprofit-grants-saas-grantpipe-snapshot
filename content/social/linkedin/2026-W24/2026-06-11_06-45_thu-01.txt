@@ -1,0 +1,5 @@
+Quick check: can your SF-425 cash drawn number tie to the general ledger without a side spreadsheet?
+
+Start with cash received. Then cumulative expenditures. Then unliquidated obligations.
+
+If those three numbers need three different owners to explain them, the report is already carrying reconciliation risk.

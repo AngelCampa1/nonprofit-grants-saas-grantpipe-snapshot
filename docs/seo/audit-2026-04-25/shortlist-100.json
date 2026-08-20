@@ -1,0 +1,2002 @@
+[
+  {
+    "slug": "connecticut-annual-report-guide",
+    "cluster": "guides",
+    "targetKeyword": "connecticut annual report nonprofit",
+    "monthlyVolume": 210,
+    "intent": "informational",
+    "title": "Connecticut Nonprofit Annual Report: 2026 Filing Guide",
+    "seoTitle": "Connecticut Nonprofit Annual Report Filing Guide (2026)",
+    "metaDescription": "How to file Connecticut's nonprofit annual report and charitable registration. Deadlines, fees, forms, and common rejection reasons — written for mid-sized nonprofits.",
+    "bluf": "Connecticut's annual report plus CPCS charitable registration trip up more mid-sized nonprofits than any other New England state — here's the clean path through both.",
+    "primaryCta": "See how GrantPipe tracks state filings",
+    "buyerStage": "awareness",
+    "topicCluster": "state-compliance",
+    "relatedSlugs": [
+      "state-pages/connecticut",
+      "guides/california-rrf-1-charitable-registration-guide",
+      "guides/nonprofit-grant-compliance-guide"
+    ],
+    "dfsNotes": "Volume estimated; DFS 401. State-level compliance queries historically 150-400/mo."
+  },
+  {
+    "slug": "new-jersey-cri-300r-guide",
+    "cluster": "guides",
+    "targetKeyword": "new jersey cri-300r",
+    "monthlyVolume": 170,
+    "intent": "informational",
+    "title": "New Jersey CRI-300R Filing: Complete Nonprofit Guide",
+    "seoTitle": "New Jersey CRI-300R Charitable Registration Guide (2026)",
+    "metaDescription": "Line-by-line walkthrough of New Jersey's CRI-300R renewal form for charitable organizations. Fees, audit thresholds, and how to avoid late penalties.",
+    "bluf": "The CRI-300R's audit-threshold question is the single biggest source of NJ charitable-registration rejections.",
+    "primaryCta": "Track state filings in GrantPipe",
+    "buyerStage": "awareness",
+    "topicCluster": "state-compliance",
+    "relatedSlugs": [
+      "state-pages/new-jersey",
+      "guides/pennsylvania-bco-10-charitable-registration-guide",
+      "guides/new-york-char500-filing-guide"
+    ],
+    "dfsNotes": "Form-number query; commercial-compliance intent."
+  },
+  {
+    "slug": "florida-solicitation-of-contributions-guide",
+    "cluster": "guides",
+    "targetKeyword": "florida solicitation of contributions act",
+    "monthlyVolume": 260,
+    "intent": "informational",
+    "title": "Florida Solicitation of Contributions Act: Nonprofit Filing Guide",
+    "seoTitle": "Florida Solicitation of Contributions Act Guide (2026)",
+    "metaDescription": "Florida's charitable solicitation registration under Chapter 496 — who must register, exemptions, and renewal requirements for nonprofits.",
+    "bluf": "Florida's Chapter 496 exemptions catch more nonprofits off-guard than the main registration itself.",
+    "primaryCta": "See GrantPipe state-filings tracker",
+    "buyerStage": "awareness",
+    "topicCluster": "state-compliance",
+    "relatedSlugs": [
+      "state-pages/florida",
+      "guides/california-rrf-1-charitable-registration-guide",
+      "guides/nonprofit-grant-compliance-guide"
+    ],
+    "dfsNotes": "Steady informational volume."
+  },
+  {
+    "slug": "virginia-charitable-registration-guide",
+    "cluster": "guides",
+    "targetKeyword": "virginia charitable registration",
+    "monthlyVolume": 140,
+    "intent": "informational",
+    "title": "Virginia Charitable Registration: Nonprofit Filing Guide",
+    "seoTitle": "Virginia Charitable Registration Filing Guide (2026)",
+    "metaDescription": "Virginia's OCRP registration process, fees, audit thresholds, and renewal deadlines for nonprofits soliciting in the Commonwealth.",
+    "bluf": "Virginia's OCRP treats audits differently than federal uniform guidance — here's what changes for small nonprofits.",
+    "primaryCta": "Track Virginia deadlines in GrantPipe",
+    "buyerStage": "awareness",
+    "topicCluster": "state-compliance",
+    "relatedSlugs": [
+      "state-pages/virginia",
+      "guides/connecticut-annual-report-guide",
+      "guides/nonprofit-grant-compliance-guide"
+    ],
+    "dfsNotes": "State-level query."
+  },
+  {
+    "slug": "ohio-charitable-registration-guide",
+    "cluster": "guides",
+    "targetKeyword": "ohio charitable registration",
+    "monthlyVolume": 170,
+    "intent": "informational",
+    "title": "Ohio Charitable Registration: Nonprofit Filing Guide",
+    "seoTitle": "Ohio Charitable Registration Guide (2026)",
+    "metaDescription": "Ohio Attorney General charitable registration and annual financial report requirements. Form CFR-1, deadlines, and fee schedule.",
+    "bluf": "Ohio's CFR-1 annual financial report is due earlier than most — May 15, not November.",
+    "primaryCta": "See GrantPipe compliance calendar",
+    "buyerStage": "awareness",
+    "topicCluster": "state-compliance",
+    "relatedSlugs": [
+      "state-pages/ohio",
+      "guides/illinois-ag990-il-filing-guide",
+      "guides/nonprofit-grant-compliance-guide"
+    ],
+    "dfsNotes": "State-level query."
+  },
+  {
+    "slug": "georgia-charitable-solicitation-guide",
+    "cluster": "guides",
+    "targetKeyword": "georgia charitable solicitation registration",
+    "monthlyVolume": 130,
+    "intent": "informational",
+    "title": "Georgia Charitable Solicitation Registration Guide",
+    "seoTitle": "Georgia Charitable Solicitation Registration Guide (2026)",
+    "metaDescription": "Georgia Secretary of State charitable solicitations registration for nonprofits. Exemptions, fees, and annual renewal requirements.",
+    "bluf": "Georgia exempts religious organizations but not their affiliated foundations — a common filing mistake.",
+    "primaryCta": "See GrantPipe state filings",
+    "buyerStage": "awareness",
+    "topicCluster": "state-compliance",
+    "relatedSlugs": [
+      "state-pages/georgia",
+      "guides/florida-solicitation-of-contributions-guide",
+      "guides/nonprofit-grant-compliance-guide"
+    ],
+    "dfsNotes": "State-level compliance."
+  },
+  {
+    "slug": "michigan-charitable-solicitations-license",
+    "cluster": "guides",
+    "targetKeyword": "michigan charitable solicitations license",
+    "monthlyVolume": 150,
+    "intent": "informational",
+    "title": "Michigan Charitable Solicitations License: Nonprofit Guide",
+    "seoTitle": "Michigan Charitable Solicitations License Guide (2026)",
+    "metaDescription": "Michigan's charitable solicitations license through the Attorney General. Who needs one, exemptions, renewal, and common mistakes.",
+    "bluf": "Michigan splits oversight between the Department of LARA and the AG — your registration can pass one and fail the other.",
+    "primaryCta": "Track state filings",
+    "buyerStage": "awareness",
+    "topicCluster": "state-compliance",
+    "relatedSlugs": [
+      "state-pages/michigan",
+      "guides/ohio-charitable-registration-guide",
+      "guides/nonprofit-grant-compliance-guide"
+    ],
+    "dfsNotes": "State-level query."
+  },
+  {
+    "slug": "north-carolina-charitable-registration-guide",
+    "cluster": "guides",
+    "targetKeyword": "north carolina charitable solicitation license",
+    "monthlyVolume": 140,
+    "intent": "informational",
+    "title": "North Carolina Charitable Solicitation License: Filing Guide",
+    "seoTitle": "North Carolina Charitable Solicitation License Guide (2026)",
+    "metaDescription": "North Carolina Secretary of State charitable solicitation licensing: exemptions, fees, and annual renewal for nonprofits.",
+    "bluf": "North Carolina's license is required before you solicit — not after — and backdated registrations are rejected.",
+    "primaryCta": "Track state filings",
+    "buyerStage": "awareness",
+    "topicCluster": "state-compliance",
+    "relatedSlugs": [
+      "state-pages/north-carolina",
+      "guides/virginia-charitable-registration-guide",
+      "guides/nonprofit-grant-compliance-guide"
+    ],
+    "dfsNotes": "State-level query."
+  },
+  {
+    "slug": "form-990-filing-guide",
+    "cluster": "guides",
+    "targetKeyword": "form 990 filing guide",
+    "monthlyVolume": 1600,
+    "intent": "informational",
+    "title": "Form 990 Filing: Complete 2026 Nonprofit Guide",
+    "seoTitle": "Form 990 Filing Guide for Nonprofits (2026)",
+    "metaDescription": "Who files Form 990 vs 990-EZ vs 990-N, schedules required, deadlines, and the most-cited IRS audit triggers.",
+    "bluf": "Form 990 Schedule B donor disclosure changed in 2022 and most software still gets it wrong.",
+    "primaryCta": "See GrantPipe compliance tools",
+    "buyerStage": "awareness",
+    "topicCluster": "federal-compliance",
+    "relatedSlugs": [
+      "guides/nonprofit-grant-compliance-guide",
+      "guides/fasb-asc-958-nonprofit-reporting",
+      "glossary/form-990"
+    ],
+    "dfsNotes": "High-volume top-of-funnel query."
+  },
+  {
+    "slug": "form-990-ez-filing-guide",
+    "cluster": "guides",
+    "targetKeyword": "form 990-ez filing guide",
+    "monthlyVolume": 720,
+    "intent": "informational",
+    "title": "Form 990-EZ Filing: Nonprofit Guide for Mid-Sized Orgs",
+    "seoTitle": "Form 990-EZ Filing Guide for Nonprofits (2026)",
+    "metaDescription": "Who qualifies for Form 990-EZ vs full 990, filing deadlines, common errors, and when upgrading to 990 is required.",
+    "bluf": "Most nonprofits crossing $200K in gross receipts still mistakenly file 990-EZ for one more year.",
+    "primaryCta": "See GrantPipe compliance tools",
+    "buyerStage": "awareness",
+    "topicCluster": "federal-compliance",
+    "relatedSlugs": [
+      "guides/form-990-filing-guide",
+      "glossary/form-990",
+      "guides/nonprofit-grant-compliance-guide"
+    ],
+    "dfsNotes": "Steady volume."
+  },
+  {
+    "slug": "form-990-t-unrelated-business-income",
+    "cluster": "guides",
+    "targetKeyword": "form 990-t unrelated business income",
+    "monthlyVolume": 480,
+    "intent": "informational",
+    "title": "Form 990-T and Unrelated Business Income: Nonprofit Guide",
+    "seoTitle": "Form 990-T Filing Guide: Unrelated Business Income (2026)",
+    "metaDescription": "When nonprofits must file Form 990-T, what counts as UBI, the $1,000 gross income threshold, and separate-activity rules.",
+    "bluf": "The post-TCJA silo rule means one losing rental property can't offset a winning parking lot anymore.",
+    "primaryCta": "See GrantPipe reporting",
+    "buyerStage": "awareness",
+    "topicCluster": "federal-compliance",
+    "relatedSlugs": [
+      "guides/form-990-filing-guide",
+      "glossary/unrelated-business-taxable-income",
+      "guides/nonprofit-grant-compliance-guide"
+    ],
+    "dfsNotes": "Niche but high-intent finance query."
+  },
+  {
+    "slug": "form-990-pf-private-foundations-guide",
+    "cluster": "guides",
+    "targetKeyword": "form 990-pf filing",
+    "monthlyVolume": 590,
+    "intent": "informational",
+    "title": "Form 990-PF Filing: Private Foundation Guide",
+    "seoTitle": "Form 990-PF Filing Guide for Private Foundations (2026)",
+    "metaDescription": "Form 990-PF requirements for private foundations: 5% distribution rule, excise tax calculation, and Schedule B disclosures.",
+    "bluf": "The 5% distribution requirement calculation trips up foundations every year — the denominator rarely matches what you think it is.",
+    "primaryCta": "See GrantPipe foundation tools",
+    "buyerStage": "awareness",
+    "topicCluster": "federal-compliance",
+    "relatedSlugs": [
+      "guides/form-990-filing-guide",
+      "guides/fasb-asc-958-nonprofit-reporting",
+      "glossary/form-990"
+    ],
+    "dfsNotes": "Foundation audience."
+  },
+  {
+    "slug": "sefa-preparation-checklist",
+    "cluster": "guides",
+    "targetKeyword": "sefa preparation",
+    "monthlyVolume": 260,
+    "intent": "informational",
+    "title": "SEFA Preparation Checklist for Nonprofits",
+    "seoTitle": "SEFA Preparation Checklist: Schedule of Federal Awards (2026)",
+    "metaDescription": "Step-by-step Schedule of Expenditures of Federal Awards (SEFA) preparation for single audits. What goes in each column, pass-through rules, and cluster identification.",
+    "bluf": "The SEFA cluster-identification rule is where 80% of audit findings originate.",
+    "primaryCta": "Prep audits with GrantPipe",
+    "buyerStage": "consideration",
+    "topicCluster": "federal-compliance",
+    "relatedSlugs": [
+      "guides/single-audit-threshold-1m",
+      "workflows/prepare-sefa-for-single-audit",
+      "guides/uniform-guidance-2-cfr-200-practical-guide"
+    ],
+    "dfsNotes": "High-intent audit query."
+  },
+  {
+    "slug": "single-audit-data-collection-form-sf-sac-guide",
+    "cluster": "guides",
+    "targetKeyword": "sf-sac data collection form",
+    "monthlyVolume": 390,
+    "intent": "informational",
+    "title": "SF-SAC Data Collection Form: Single Audit Filing Guide",
+    "seoTitle": "SF-SAC Single Audit Data Collection Form Guide (2026)",
+    "metaDescription": "Completing the Federal Audit Clearinghouse SF-SAC for single audits. What auditors sign, what auditees sign, and the 30-day filing window.",
+    "bluf": "The SF-SAC dual-signature flow is the single most common reason audits sit unfiled past the deadline.",
+    "primaryCta": "Prep audits with GrantPipe",
+    "buyerStage": "consideration",
+    "topicCluster": "federal-compliance",
+    "relatedSlugs": [
+      "workflows/submit-sf-sac-single-audit-data-collection",
+      "guides/sefa-preparation-checklist",
+      "guides/single-audit-threshold-1m"
+    ],
+    "dfsNotes": "Specific form query."
+  },
+  {
+    "slug": "low-risk-auditee-criteria",
+    "cluster": "guides",
+    "targetKeyword": "low risk auditee criteria",
+    "monthlyVolume": 320,
+    "intent": "informational",
+    "title": "Low-Risk Auditee Criteria: Qualifying for Reduced Single Audit Coverage",
+    "seoTitle": "Low-Risk Auditee Criteria (2 CFR 200.520) Guide",
+    "metaDescription": "The five criteria under 2 CFR 200.520 that qualify a nonprofit as a low-risk auditee, reducing major-program audit coverage from 40% to 20%.",
+    "bluf": "Missing low-risk auditee status costs mid-sized nonprofits $8-15K per audit cycle in avoidable testing.",
+    "primaryCta": "See GrantPipe audit tools",
+    "buyerStage": "consideration",
+    "topicCluster": "federal-compliance",
+    "relatedSlugs": [
+      "guides/single-audit-threshold-1m",
+      "guides/uniform-guidance-2-cfr-200-practical-guide",
+      "guides/sefa-preparation-checklist"
+    ],
+    "dfsNotes": "Specific compliance query."
+  },
+  {
+    "slug": "2-cfr-200-subpart-e-cost-principles",
+    "cluster": "guides",
+    "targetKeyword": "2 cfr 200 subpart e cost principles",
+    "monthlyVolume": 420,
+    "intent": "informational",
+    "title": "2 CFR 200 Subpart E: Cost Principles for Federal Awards",
+    "seoTitle": "2 CFR 200 Subpart E Cost Principles Guide (2026)",
+    "metaDescription": "The full Subpart E cost principles — allowable, allocable, reasonable, and consistently applied. Section-by-section breakdown for nonprofits.",
+    "bluf": "Subpart E's 'reasonable' test is subjective in theory and brutal in audit practice.",
+    "primaryCta": "See GrantPipe compliance",
+    "buyerStage": "awareness",
+    "topicCluster": "federal-compliance",
+    "relatedSlugs": [
+      "guides/uniform-guidance-2-cfr-200-practical-guide",
+      "guides/allowable-costs-federal-grants",
+      "guides/2-cfr-200-subpart-d-procurement-standards"
+    ],
+    "dfsNotes": "Specific regulatory query."
+  },
+  {
+    "slug": "2-cfr-200-subpart-d-procurement-standards",
+    "cluster": "guides",
+    "targetKeyword": "2 cfr 200 procurement standards",
+    "monthlyVolume": 360,
+    "intent": "informational",
+    "title": "2 CFR 200 Subpart D: Federal Procurement Standards",
+    "seoTitle": "2 CFR 200 Procurement Standards (Subpart D) Guide (2026)",
+    "metaDescription": "Federal procurement standards under Subpart D: five procurement methods, thresholds, and the documentation that keeps your next audit clean.",
+    "bluf": "The 2024 Uniform Guidance revision raised the simplified acquisition threshold — your written procurement policy may be out of date.",
+    "primaryCta": "See GrantPipe procurement tools",
+    "buyerStage": "awareness",
+    "topicCluster": "federal-compliance",
+    "relatedSlugs": [
+      "guides/federal-procurement-thresholds-micro-small-large",
+      "guides/uniform-guidance-2-cfr-200-practical-guide",
+      "guides/2-cfr-200-subpart-e-cost-principles"
+    ],
+    "dfsNotes": "Specific regulatory query."
+  },
+  {
+    "slug": "federal-procurement-thresholds-micro-small-large",
+    "cluster": "guides",
+    "targetKeyword": "federal procurement thresholds 2 cfr 200",
+    "monthlyVolume": 280,
+    "intent": "informational",
+    "title": "Federal Procurement Thresholds: Micro, Small, and Large Purchase Rules",
+    "seoTitle": "Federal Procurement Thresholds Guide (Micro/Small/Large) 2026",
+    "metaDescription": "Post-2024 Uniform Guidance procurement thresholds: $10K micro-purchase, $250K simplified acquisition, and documentation requirements at each tier.",
+    "bluf": "The 2024 threshold increase to $250K simplified acquisition materially changed how mid-sized nonprofits document purchases.",
+    "primaryCta": "See compliance tools",
+    "buyerStage": "awareness",
+    "topicCluster": "federal-compliance",
+    "relatedSlugs": [
+      "guides/2-cfr-200-subpart-d-procurement-standards",
+      "guides/uniform-guidance-2-cfr-200-practical-guide",
+      "guides/allowable-costs-federal-grants"
+    ],
+    "dfsNotes": "Specific regulatory query."
+  },
+  {
+    "slug": "hrsa-ryan-white-part-a-reporting",
+    "cluster": "guides",
+    "targetKeyword": "ryan white part a reporting",
+    "monthlyVolume": 180,
+    "intent": "informational",
+    "title": "HRSA Ryan White Part A Reporting Requirements",
+    "seoTitle": "Ryan White Part A Reporting Guide for HRSA Grantees (2026)",
+    "metaDescription": "Ryan White Part A HIV/AIDS grant reporting: RSR, PSRA, allowable costs, and 75/25 core medical services rule.",
+    "bluf": "The 75/25 core-medical-services rule is a pass/fail audit point that cuts funding mid-cycle if missed.",
+    "primaryCta": "Track reports in GrantPipe",
+    "buyerStage": "consideration",
+    "topicCluster": "program-reporting",
+    "relatedSlugs": [
+      "vertical-pages/community-health-centers",
+      "guides/community-health-centers-hrsa-330-reporting-guide",
+      "guides/federal-grant-reporting-requirements"
+    ],
+    "dfsNotes": "Program-specific audience."
+  },
+  {
+    "slug": "hud-continuum-of-care-reporting",
+    "cluster": "guides",
+    "targetKeyword": "hud coc reporting",
+    "monthlyVolume": 260,
+    "intent": "informational",
+    "title": "HUD Continuum of Care (CoC) Reporting Requirements",
+    "seoTitle": "HUD Continuum of Care (CoC) Grant Reporting Guide (2026)",
+    "metaDescription": "HUD CoC grant reporting: HMIS data quality, APR, LOCCS drawdowns, and match documentation for homeless services nonprofits.",
+    "bluf": "HUD's CoC match requirement is in-kind-heavy and under-documented at nearly every homeless services nonprofit.",
+    "primaryCta": "Track CoC reports",
+    "buyerStage": "consideration",
+    "topicCluster": "program-reporting",
+    "relatedSlugs": [
+      "vertical-pages/homeless-shelters",
+      "guides/affordable-housing-hud-cpd-compliance-guide",
+      "guides/federal-grant-reporting-requirements"
+    ],
+    "dfsNotes": "Program-specific audience."
+  },
+  {
+    "slug": "doj-ovc-vawa-reporting-requirements",
+    "cluster": "guides",
+    "targetKeyword": "vawa grant reporting",
+    "monthlyVolume": 150,
+    "intent": "informational",
+    "title": "DOJ OVC and VAWA Grant Reporting Requirements",
+    "seoTitle": "DOJ OVC / VAWA Grant Reporting Guide for Nonprofits (2026)",
+    "metaDescription": "Victims of Crime Act and Violence Against Women Act grant reporting: PMT, semi-annual progress reports, match, and confidentiality rules.",
+    "bluf": "VAWA's confidentiality rule prohibits sharing client identifiers with funders — most CRMs leak them by default.",
+    "primaryCta": "See GrantPipe privacy controls",
+    "buyerStage": "consideration",
+    "topicCluster": "program-reporting",
+    "relatedSlugs": [
+      "vertical-pages/domestic-violence-shelters",
+      "guides/federal-grant-reporting-requirements",
+      "guides/nonprofit-grant-compliance-guide"
+    ],
+    "dfsNotes": "Program-specific audience."
+  },
+  {
+    "slug": "americorps-fiscal-reporting",
+    "cluster": "guides",
+    "targetKeyword": "americorps fiscal reporting",
+    "monthlyVolume": 210,
+    "intent": "informational",
+    "title": "AmeriCorps Fiscal Reporting Requirements",
+    "seoTitle": "AmeriCorps Fiscal Reporting Guide for Grantees (2026)",
+    "metaDescription": "AmeriCorps grantee fiscal reporting: PER, FFR, match documentation, and member support costs classification.",
+    "bluf": "AmeriCorps treats member living allowances differently from salaries — mis-classifying them triggers disallowed costs.",
+    "primaryCta": "Track AmeriCorps reports",
+    "buyerStage": "consideration",
+    "topicCluster": "program-reporting",
+    "relatedSlugs": [
+      "guides/federal-grant-reporting-requirements",
+      "guides/sf-425-federal-financial-report",
+      "guides/allowable-costs-federal-grants"
+    ],
+    "dfsNotes": "Program-specific audience."
+  },
+  {
+    "slug": "cost-transfer-policy-nonprofits",
+    "cluster": "guides",
+    "targetKeyword": "cost transfer policy federal grants",
+    "monthlyVolume": 170,
+    "intent": "informational",
+    "title": "Cost Transfer Policy for Federal Grants: Nonprofit Template",
+    "seoTitle": "Cost Transfer Policy for Federal Grants (Nonprofit Template 2026)",
+    "metaDescription": "A written cost transfer policy is required under 2 CFR 200. Template, 120-day rule, and documentation that survives audit.",
+    "bluf": "Cost transfers over 90 days old are a top-five audit finding and nearly always preventable.",
+    "primaryCta": "See GrantPipe policy templates",
+    "buyerStage": "consideration",
+    "topicCluster": "federal-compliance",
+    "relatedSlugs": [
+      "guides/2-cfr-200-subpart-e-cost-principles",
+      "guides/allowable-costs-federal-grants",
+      "workflows/cost-transfer-post-closeout"
+    ],
+    "dfsNotes": "Compliance-intent query."
+  },
+  {
+    "slug": "time-and-effort-certification-federal-grants",
+    "cluster": "guides",
+    "targetKeyword": "time and effort certification federal grants",
+    "monthlyVolume": 280,
+    "intent": "informational",
+    "title": "Time and Effort Certification for Federal Grants",
+    "seoTitle": "Time and Effort Certification Guide (Federal Grants 2026)",
+    "metaDescription": "Time and effort certification under 2 CFR 200.430: who signs, frequency, after-the-fact rule, and acceptable documentation.",
+    "bluf": "The 'after-the-fact' rule means forecasted budgets can't satisfy time and effort — yet that's what most nonprofits do.",
+    "primaryCta": "See GrantPipe T&E tools",
+    "buyerStage": "consideration",
+    "topicCluster": "federal-compliance",
+    "relatedSlugs": [
+      "workflows/time-and-effort-certification",
+      "guides/2-cfr-200-subpart-e-cost-principles",
+      "guides/allowable-costs-federal-grants"
+    ],
+    "dfsNotes": "High-intent compliance query."
+  },
+  {
+    "slug": "program-income-reporting-uniform-guidance",
+    "cluster": "guides",
+    "targetKeyword": "program income uniform guidance",
+    "monthlyVolume": 220,
+    "intent": "informational",
+    "title": "Program Income Reporting Under Uniform Guidance",
+    "seoTitle": "Program Income Reporting Guide (2 CFR 200.307) 2026",
+    "metaDescription": "Program income under 2 CFR 200.307: three treatment methods (additive, deductive, matching), reporting on FFR, and post-award period rules.",
+    "bluf": "The additive-vs-deductive election is made up front and most federal program officers never ask — until audit.",
+    "primaryCta": "See GrantPipe tools",
+    "buyerStage": "consideration",
+    "topicCluster": "federal-compliance",
+    "relatedSlugs": [
+      "workflows/program-income-reporting",
+      "guides/sf-425-federal-financial-report",
+      "guides/uniform-guidance-2-cfr-200-practical-guide"
+    ],
+    "dfsNotes": "Specific regulatory query."
+  },
+  {
+    "slug": "nonprofit-fiscal-year-end-close-checklist",
+    "cluster": "guides",
+    "targetKeyword": "nonprofit fiscal year end close",
+    "monthlyVolume": 480,
+    "intent": "informational",
+    "title": "Nonprofit Fiscal Year-End Close Checklist",
+    "seoTitle": "Nonprofit Fiscal Year-End Close Checklist (2026)",
+    "metaDescription": "Complete FY close checklist for nonprofits: restricted fund release, grant reconciliation, accrual entries, audit prep, and board reporting.",
+    "bluf": "Most nonprofit FY closes fail the first audit pass because the restricted-fund release didn't reconcile to the grant schedule.",
+    "primaryCta": "See GrantPipe close tools",
+    "buyerStage": "consideration",
+    "topicCluster": "fund-accounting",
+    "relatedSlugs": [
+      "guides/restricted-fund-month-end-close-checklist",
+      "workflows/year-end-restricted-release",
+      "guides/nonprofit-audit-readiness"
+    ],
+    "dfsNotes": "Annual search spike."
+  },
+  {
+    "slug": "grant-draw-down-vs-reimbursement",
+    "cluster": "guides",
+    "targetKeyword": "grant drawdown vs reimbursement",
+    "monthlyVolume": 150,
+    "intent": "informational",
+    "title": "Grant Drawdown vs Reimbursement: Nonprofit Cash Flow Guide",
+    "seoTitle": "Grant Drawdown vs Reimbursement: Federal Award Cash Flow",
+    "metaDescription": "Drawdown vs reimbursement: how federal grant cash flow works, interest earnings rules, and LOCCS vs ASAP vs PMS walkthroughs.",
+    "bluf": "Nonprofits drawing down more than 3 days of cash-on-hand generate interest that must be returned — quarterly.",
+    "primaryCta": "See GrantPipe drawdown tools",
+    "buyerStage": "awareness",
+    "topicCluster": "fund-accounting",
+    "relatedSlugs": [
+      "workflows/perform-monthly-grant-drawdown-reconciliation",
+      "guides/sf-425-federal-financial-report",
+      "guides/nonprofit-grant-compliance-guide"
+    ],
+    "dfsNotes": "Specific finance query."
+  },
+  {
+    "slug": "cash-vs-accrual-for-grant-accounting",
+    "cluster": "guides",
+    "targetKeyword": "cash vs accrual grant accounting",
+    "monthlyVolume": 180,
+    "intent": "informational",
+    "title": "Cash vs Accrual for Grant Accounting: Nonprofit Guide",
+    "seoTitle": "Cash vs Accrual for Grant Accounting (Nonprofit Guide 2026)",
+    "metaDescription": "Which basis of accounting is required for federal grants, how GAAP differs from tax basis, and why FFR drawdowns force accrual conversion.",
+    "bluf": "Federal grant reporting is accrual-based even when your books are cash — the reconciliation is where audits die.",
+    "primaryCta": "See GrantPipe reporting",
+    "buyerStage": "awareness",
+    "topicCluster": "fund-accounting",
+    "relatedSlugs": [
+      "guides/fasb-asc-958-nonprofit-reporting",
+      "guides/grant-revenue-recognition-asc-958-605",
+      "guides/restricted-fund-accounting-basics"
+    ],
+    "dfsNotes": "Common accounting question."
+  },
+  {
+    "slug": "nonprofit-chart-of-accounts-restricted-funds",
+    "cluster": "guides",
+    "targetKeyword": "nonprofit chart of accounts restricted funds",
+    "monthlyVolume": 390,
+    "intent": "informational",
+    "title": "Nonprofit Chart of Accounts for Restricted Funds",
+    "seoTitle": "Nonprofit Chart of Accounts for Restricted Funds (2026)",
+    "metaDescription": "Design a chart of accounts that cleanly tracks restricted vs unrestricted net assets, with segment-dimension examples for QuickBooks and Sage Intacct.",
+    "bluf": "Adding restriction as an account segment — not a class or location — is the single biggest upgrade most nonprofits can make.",
+    "primaryCta": "See GrantPipe design patterns",
+    "buyerStage": "awareness",
+    "topicCluster": "fund-accounting",
+    "relatedSlugs": [
+      "guides/restricted-fund-accounting-basics",
+      "guides/quickbooks-classes-are-not-fund-accounting",
+      "guides/fasb-asc-958-nonprofit-reporting"
+    ],
+    "dfsNotes": "Steady accounting query."
+  },
+  {
+    "slug": "cognizant-agency-for-indirect-costs",
+    "cluster": "guides",
+    "targetKeyword": "cognizant agency indirect cost",
+    "monthlyVolume": 320,
+    "intent": "informational",
+    "title": "Cognizant Agency for Indirect Costs: Nonprofit Guide",
+    "seoTitle": "Cognizant Agency for Indirect Costs Guide (2026)",
+    "metaDescription": "Which federal agency is your cognizant agency for indirect cost rate negotiation, how to find it, and how rate approvals cross agencies.",
+    "bluf": "Most nonprofits don't know their cognizant agency until they need an indirect rate — by which point negotiation is eight months out.",
+    "primaryCta": "See GrantPipe tools",
+    "buyerStage": "awareness",
+    "topicCluster": "federal-compliance",
+    "relatedSlugs": [
+      "guides/indirect-cost-rate-explained",
+      "workflows/negotiate-indirect-cost-rate-nicra",
+      "glossary/cognizant-agency"
+    ],
+    "dfsNotes": "Specific compliance term."
+  },
+  {
+    "slug": "indirect-cost-rate",
+    "cluster": "glossary",
+    "targetKeyword": "indirect cost rate definition",
+    "monthlyVolume": 590,
+    "intent": "informational",
+    "title": "Indirect Cost Rate: Definition for Nonprofits",
+    "seoTitle": "Indirect Cost Rate Definition (Nonprofit Glossary)",
+    "metaDescription": "The indirect cost rate is the percentage of indirect costs recoverable under a federal award, expressed as a ratio against a direct-cost base.",
+    "bluf": "The indirect cost rate answers one question: what percentage of overhead can this grant pay for?",
+    "primaryCta": "Learn more in the guide",
+    "buyerStage": "awareness",
+    "topicCluster": "glossary",
+    "relatedSlugs": [
+      "guides/indirect-cost-rate-explained",
+      "glossary/de-minimis-indirect-cost-rate",
+      "guides/cognizant-agency-for-indirect-costs"
+    ],
+    "dfsNotes": "Glossary complement to existing guide."
+  },
+  {
+    "slug": "de-minimis-indirect-cost-rate",
+    "cluster": "glossary",
+    "targetKeyword": "de minimis indirect cost rate",
+    "monthlyVolume": 390,
+    "intent": "informational",
+    "title": "De Minimis Indirect Cost Rate: Definition",
+    "seoTitle": "De Minimis Indirect Cost Rate (10% / 15%) Glossary",
+    "metaDescription": "The de minimis indirect cost rate is a federally-authorized flat rate nonprofits can claim without negotiation — recently raised from 10% to 15% MTDC.",
+    "bluf": "The 2024 Uniform Guidance update raised the de minimis rate from 10% to 15% MTDC.",
+    "primaryCta": "See indirect-cost calculator",
+    "buyerStage": "awareness",
+    "topicCluster": "glossary",
+    "relatedSlugs": [
+      "glossary/indirect-cost-rate",
+      "guides/indirect-cost-rate-explained",
+      "glossary/modified-total-direct-costs-mtdc"
+    ],
+    "dfsNotes": "Term traffic has doubled since 2024 rule change."
+  },
+  {
+    "slug": "cognizant-agency",
+    "cluster": "glossary",
+    "targetKeyword": "cognizant agency definition",
+    "monthlyVolume": 210,
+    "intent": "informational",
+    "title": "Cognizant Agency: Definition for Nonprofits",
+    "seoTitle": "Cognizant Agency Definition (Nonprofit Glossary)",
+    "metaDescription": "A cognizant agency is the federal agency assigned to negotiate and approve a nonprofit's indirect cost rate on behalf of all federal awards.",
+    "bluf": "Your cognizant agency is usually the federal agency from which you receive the largest dollar value of direct funding.",
+    "primaryCta": "See indirect-cost guide",
+    "buyerStage": "awareness",
+    "topicCluster": "glossary",
+    "relatedSlugs": [
+      "guides/cognizant-agency-for-indirect-costs",
+      "guides/indirect-cost-rate-explained",
+      "glossary/indirect-cost-rate"
+    ],
+    "dfsNotes": "Glossary entry."
+  },
+  {
+    "slug": "questioned-costs",
+    "cluster": "glossary",
+    "targetKeyword": "questioned costs audit",
+    "monthlyVolume": 280,
+    "intent": "informational",
+    "title": "Questioned Costs: Definition in Single Audits",
+    "seoTitle": "Questioned Costs Definition (Single Audit Glossary)",
+    "metaDescription": "A questioned cost is an expenditure flagged by an auditor as potentially unallowable, unsupported, or unreasonable — subject to federal-agency determination.",
+    "bluf": "Questioned costs are not the same as disallowed costs — the federal agency makes the final call.",
+    "primaryCta": "See audit guide",
+    "buyerStage": "awareness",
+    "topicCluster": "glossary",
+    "relatedSlugs": [
+      "guides/common-single-audit-findings",
+      "guides/nonprofit-audit-readiness",
+      "guides/allowable-costs-federal-grants"
+    ],
+    "dfsNotes": "Audit-context term."
+  },
+  {
+    "slug": "matching-funds",
+    "cluster": "glossary",
+    "targetKeyword": "matching funds grant",
+    "monthlyVolume": 880,
+    "intent": "informational",
+    "title": "Matching Funds: Definition for Grant Recipients",
+    "seoTitle": "Matching Funds Definition (Grant Glossary)",
+    "metaDescription": "Matching funds are non-federal resources — cash or in-kind — a grantee must contribute to a federally funded project, documented at the award rate.",
+    "bluf": "Match must be verifiable, allowable, and from non-federal sources — the third requirement is where most nonprofits stumble.",
+    "primaryCta": "See match-tracking guide",
+    "buyerStage": "awareness",
+    "topicCluster": "glossary",
+    "relatedSlugs": [
+      "guides/match-tracking-cash-vs-in-kind",
+      "glossary/cost-share",
+      "guides/nonprofit-grant-compliance-guide"
+    ],
+    "dfsNotes": "High-volume term."
+  },
+  {
+    "slug": "cost-share",
+    "cluster": "glossary",
+    "targetKeyword": "cost share definition grant",
+    "monthlyVolume": 320,
+    "intent": "informational",
+    "title": "Cost Share: Definition for Federal Grants",
+    "seoTitle": "Cost Share Definition (Federal Grant Glossary)",
+    "metaDescription": "Cost share is the portion of project costs not borne by the federal government — committed either as mandatory match or voluntary contribution.",
+    "bluf": "Voluntary committed cost share becomes binding once written into a federal award — many nonprofits don't realize this.",
+    "primaryCta": "See match guide",
+    "buyerStage": "awareness",
+    "topicCluster": "glossary",
+    "relatedSlugs": [
+      "glossary/matching-funds",
+      "guides/match-tracking-cash-vs-in-kind",
+      "guides/uniform-guidance-2-cfr-200-practical-guide"
+    ],
+    "dfsNotes": "Glossary entry."
+  },
+  {
+    "slug": "unallowable-costs",
+    "cluster": "glossary",
+    "targetKeyword": "unallowable costs federal grant",
+    "monthlyVolume": 260,
+    "intent": "informational",
+    "title": "Unallowable Costs: Definition Under 2 CFR 200",
+    "seoTitle": "Unallowable Costs Definition (Federal Grant Glossary)",
+    "metaDescription": "Unallowable costs are expenses 2 CFR 200 prohibits from federal award charges — including alcohol, bad debt, contributions, and lobbying.",
+    "bluf": "Unallowable does not mean un-tracked — they must be recorded, not hidden.",
+    "primaryCta": "See allowable costs guide",
+    "buyerStage": "awareness",
+    "topicCluster": "glossary",
+    "relatedSlugs": [
+      "guides/allowable-costs-federal-grants",
+      "glossary/questioned-costs",
+      "guides/2-cfr-200-subpart-e-cost-principles"
+    ],
+    "dfsNotes": "Glossary entry."
+  },
+  {
+    "slug": "net-assets-with-donor-restrictions",
+    "cluster": "glossary",
+    "targetKeyword": "net assets with donor restrictions",
+    "monthlyVolume": 720,
+    "intent": "informational",
+    "title": "Net Assets With Donor Restrictions: Definition",
+    "seoTitle": "Net Assets With Donor Restrictions (ASC 958 Glossary)",
+    "metaDescription": "Net assets with donor restrictions are contributions a donor has limited by purpose, time, or both — tracked separately under FASB ASC 958.",
+    "bluf": "The ASC 2016-14 update replaced 'temporarily' and 'permanently restricted' with a single 'with donor restrictions' net asset class.",
+    "primaryCta": "See restricted-fund guide",
+    "buyerStage": "awareness",
+    "topicCluster": "glossary",
+    "relatedSlugs": [
+      "guides/restricted-fund-accounting-basics",
+      "guides/fasb-asc-958-nonprofit-reporting",
+      "glossary/net-assets-without-donor-restrictions"
+    ],
+    "dfsNotes": "High-volume accounting term."
+  },
+  {
+    "slug": "net-assets-without-donor-restrictions",
+    "cluster": "glossary",
+    "targetKeyword": "net assets without donor restrictions",
+    "monthlyVolume": 480,
+    "intent": "informational",
+    "title": "Net Assets Without Donor Restrictions: Definition",
+    "seoTitle": "Net Assets Without Donor Restrictions (ASC 958 Glossary)",
+    "metaDescription": "Net assets without donor restrictions are resources a nonprofit can use at its own discretion — including board-designated amounts.",
+    "bluf": "Board-designated is not the same as donor-restricted — board designations live inside 'without restrictions.'",
+    "primaryCta": "See restricted-fund guide",
+    "buyerStage": "awareness",
+    "topicCluster": "glossary",
+    "relatedSlugs": [
+      "guides/donor-restricted-vs-board-designated-funds",
+      "glossary/net-assets-with-donor-restrictions",
+      "guides/fasb-asc-958-nonprofit-reporting"
+    ],
+    "dfsNotes": "Paired with above."
+  },
+  {
+    "slug": "donor-advised-fund",
+    "cluster": "glossary",
+    "targetKeyword": "donor advised fund",
+    "monthlyVolume": 14800,
+    "intent": "informational",
+    "title": "Donor Advised Fund: Definition for Nonprofits",
+    "seoTitle": "Donor Advised Fund (DAF) Definition (Nonprofit Glossary)",
+    "metaDescription": "A donor-advised fund is a charitable giving account held by a sponsoring 501(c)(3) that allows donors to recommend grants over time.",
+    "bluf": "DAFs now contribute 22% of all individual giving in the US — and almost none of it shows up in donor-CRM source fields correctly.",
+    "primaryCta": "See donor segmentation",
+    "buyerStage": "awareness",
+    "topicCluster": "glossary",
+    "relatedSlugs": [
+      "glossary/planned-giving",
+      "guides/donor-retention-strategies",
+      "guides/donor-restricted-vs-board-designated-funds"
+    ],
+    "dfsNotes": "High-volume term."
+  },
+  {
+    "slug": "planned-giving",
+    "cluster": "glossary",
+    "targetKeyword": "planned giving definition",
+    "monthlyVolume": 2900,
+    "intent": "informational",
+    "title": "Planned Giving: Definition for Nonprofits",
+    "seoTitle": "Planned Giving Definition (Nonprofit Fundraising Glossary)",
+    "metaDescription": "Planned giving encompasses charitable gifts structured to take effect later — bequests, charitable remainder trusts, life insurance, and retirement-plan designations.",
+    "bluf": "The average bequest is 200 to 300 times the size of the donor's annual gift.",
+    "primaryCta": "See planned giving tools",
+    "buyerStage": "awareness",
+    "topicCluster": "glossary",
+    "relatedSlugs": [
+      "glossary/donor-advised-fund",
+      "guides/donor-retention-strategies",
+      "guides/how-to-calculate-donor-retention-rate"
+    ],
+    "dfsNotes": "High-volume fundraising term."
+  },
+  {
+    "slug": "form-990",
+    "cluster": "glossary",
+    "targetKeyword": "form 990 definition",
+    "monthlyVolume": 2400,
+    "intent": "informational",
+    "title": "Form 990: Definition and Purpose",
+    "seoTitle": "Form 990 Definition (IRS Nonprofit Glossary)",
+    "metaDescription": "IRS Form 990 is the annual information return tax-exempt organizations file disclosing financials, governance, and programs.",
+    "bluf": "Form 990 is a public document — donors, watchdogs, and journalists read it before they talk to you.",
+    "primaryCta": "See 990 filing guide",
+    "buyerStage": "awareness",
+    "topicCluster": "glossary",
+    "relatedSlugs": [
+      "guides/form-990-filing-guide",
+      "guides/form-990-ez-filing-guide",
+      "glossary/schedule-a-form-990"
+    ],
+    "dfsNotes": "High-volume term."
+  },
+  {
+    "slug": "ntee-code",
+    "cluster": "glossary",
+    "targetKeyword": "ntee code",
+    "monthlyVolume": 1900,
+    "intent": "informational",
+    "title": "NTEE Code: Definition and Lookup",
+    "seoTitle": "NTEE Code Definition (Nonprofit Classification Glossary)",
+    "metaDescription": "NTEE codes classify nonprofits by mission area under the National Taxonomy of Exempt Entities — used by IRS, funders, and state regulators.",
+    "bluf": "Your NTEE code determines which funders see you in database searches — most nonprofits have never reviewed theirs.",
+    "primaryCta": "Update records in GrantPipe",
+    "buyerStage": "awareness",
+    "topicCluster": "glossary",
+    "relatedSlugs": [
+      "guides/form-990-filing-guide",
+      "guides/grant-prospecting-workflow-for-mid-sized-nonprofits",
+      "guides/nonprofit-grant-compliance-guide"
+    ],
+    "dfsNotes": "High-volume."
+  },
+  {
+    "slug": "uei-sam-gov",
+    "cluster": "glossary",
+    "targetKeyword": "uei sam.gov",
+    "monthlyVolume": 8100,
+    "intent": "informational",
+    "title": "UEI (Unique Entity Identifier): Definition and SAM.gov Registration",
+    "seoTitle": "UEI (Unique Entity Identifier) Definition + SAM.gov Guide",
+    "metaDescription": "The Unique Entity Identifier replaced DUNS in 2022 and is required for all federal grant recipients via SAM.gov registration.",
+    "bluf": "No UEI, no federal funds — and annual SAM.gov renewal lapses lock organizations out mid-award.",
+    "primaryCta": "Track UEI renewals",
+    "buyerStage": "awareness",
+    "topicCluster": "glossary",
+    "relatedSlugs": [
+      "guides/federal-grant-reporting-requirements",
+      "guides/grant-award-acceptance-checklist",
+      "guides/uniform-guidance-2-cfr-200-practical-guide"
+    ],
+    "dfsNotes": "Very high volume."
+  },
+  {
+    "slug": "cfda-assistance-listing-number",
+    "cluster": "glossary",
+    "targetKeyword": "cfda number assistance listing",
+    "monthlyVolume": 590,
+    "intent": "informational",
+    "title": "CFDA / Assistance Listing Number: Definition",
+    "seoTitle": "CFDA (Assistance Listing) Number Definition (Grant Glossary)",
+    "metaDescription": "The CFDA number — now called the Assistance Listing Number (ALN) — uniquely identifies a federal assistance program in the SAM.gov catalog.",
+    "bluf": "CFDA was renamed Assistance Listing in 2019 — many grant agreements still use the old label.",
+    "primaryCta": "See SEFA guide",
+    "buyerStage": "awareness",
+    "topicCluster": "glossary",
+    "relatedSlugs": [
+      "guides/sefa-preparation-checklist",
+      "glossary/uei-sam-gov",
+      "guides/federal-grant-reporting-requirements"
+    ],
+    "dfsNotes": "Specific term."
+  },
+  {
+    "slug": "acfr-annual-comprehensive-financial-report",
+    "cluster": "glossary",
+    "targetKeyword": "acfr annual comprehensive financial report",
+    "monthlyVolume": 720,
+    "intent": "informational",
+    "title": "ACFR: Annual Comprehensive Financial Report Definition",
+    "seoTitle": "ACFR Definition: Annual Comprehensive Financial Report",
+    "metaDescription": "The Annual Comprehensive Financial Report (formerly CAFR) is the government/quasi-government equivalent of audited financial statements, published under GASB.",
+    "bluf": "ACFR is mostly a governmental term, but hybrid nonprofits with quasi-public funding encounter it in pass-through agreements.",
+    "primaryCta": "See audit readiness",
+    "buyerStage": "awareness",
+    "topicCluster": "glossary",
+    "relatedSlugs": [
+      "guides/nonprofit-audit-readiness",
+      "guides/fasb-asc-958-nonprofit-reporting",
+      "guides/single-audit-threshold-1m"
+    ],
+    "dfsNotes": "Government-sector term."
+  },
+  {
+    "slug": "program-service-revenue",
+    "cluster": "glossary",
+    "targetKeyword": "program service revenue 990",
+    "monthlyVolume": 320,
+    "intent": "informational",
+    "title": "Program Service Revenue: Definition on Form 990",
+    "seoTitle": "Program Service Revenue Definition (Form 990 Glossary)",
+    "metaDescription": "Program service revenue is income from activities that directly further a nonprofit's exempt purpose — reported on Form 990 Part VIII Line 2.",
+    "bluf": "Program service revenue is not unrelated business income — the distinction is where nonprofits over-file 990-T.",
+    "primaryCta": "See 990 filing guide",
+    "buyerStage": "awareness",
+    "topicCluster": "glossary",
+    "relatedSlugs": [
+      "guides/form-990-filing-guide",
+      "guides/form-990-t-unrelated-business-income",
+      "glossary/unrelated-business-taxable-income"
+    ],
+    "dfsNotes": "Glossary entry."
+  },
+  {
+    "slug": "unrelated-business-taxable-income",
+    "cluster": "glossary",
+    "targetKeyword": "unrelated business taxable income",
+    "monthlyVolume": 1300,
+    "intent": "informational",
+    "title": "Unrelated Business Taxable Income (UBTI): Definition",
+    "seoTitle": "UBTI Definition (Unrelated Business Taxable Income)",
+    "metaDescription": "UBTI is income a tax-exempt organization earns from a regularly-carried-on trade or business not substantially related to exempt purposes.",
+    "bluf": "The three-part UBTI test — regularly carried on, trade or business, unrelated — must all be met; missing one collapses the claim.",
+    "primaryCta": "See 990-T guide",
+    "buyerStage": "awareness",
+    "topicCluster": "glossary",
+    "relatedSlugs": [
+      "guides/form-990-t-unrelated-business-income",
+      "glossary/program-service-revenue",
+      "guides/form-990-filing-guide"
+    ],
+    "dfsNotes": "High-volume tax term."
+  },
+  {
+    "slug": "restricted-contribution",
+    "cluster": "glossary",
+    "targetKeyword": "restricted contribution definition",
+    "monthlyVolume": 260,
+    "intent": "informational",
+    "title": "Restricted Contribution: Definition for Nonprofits",
+    "seoTitle": "Restricted Contribution Definition (Nonprofit Accounting)",
+    "metaDescription": "A restricted contribution is a gift with donor-imposed stipulations limiting use by purpose or time, recognized under FASB ASC 958.",
+    "bluf": "Board-imposed limits don't create restricted contributions — only donor-imposed stipulations do.",
+    "primaryCta": "See restricted fund guide",
+    "buyerStage": "awareness",
+    "topicCluster": "glossary",
+    "relatedSlugs": [
+      "guides/restricted-fund-accounting-basics",
+      "glossary/net-assets-with-donor-restrictions",
+      "guides/donor-restricted-vs-board-designated-funds"
+    ],
+    "dfsNotes": "Accounting glossary."
+  },
+  {
+    "slug": "schedule-a-form-990",
+    "cluster": "glossary",
+    "targetKeyword": "schedule a form 990",
+    "monthlyVolume": 1000,
+    "intent": "informational",
+    "title": "Schedule A (Form 990): Public Charity Status Definition",
+    "seoTitle": "Schedule A (Form 990) Public Charity Status Test Glossary",
+    "metaDescription": "Schedule A establishes a 501(c)(3) organization's public charity status via the one-third public support test or 10% facts-and-circumstances test.",
+    "bluf": "Failing the public support test two years in a row reclassifies you as a private foundation — a far more restrictive regime.",
+    "primaryCta": "See 990 guide",
+    "buyerStage": "awareness",
+    "topicCluster": "glossary",
+    "relatedSlugs": [
+      "guides/form-990-filing-guide",
+      "guides/form-990-pf-private-foundations-guide",
+      "glossary/form-990"
+    ],
+    "dfsNotes": "High-volume tax term."
+  },
+  {
+    "slug": "budget-reclass-fiscal-year-end",
+    "cluster": "workflows",
+    "targetKeyword": "grant budget reclass fiscal year end",
+    "monthlyVolume": 70,
+    "intent": "commercial",
+    "title": "Workflow: Reclass Grant Budget at Fiscal Year-End",
+    "seoTitle": "Grant Budget Fiscal Year-End Reclass Workflow",
+    "metaDescription": "Step-by-step workflow for reclassifying grant budgets at FY-end: reconcile expenditures, book cross-year adjustments, and document for audit.",
+    "bluf": "Cross-fiscal-year budget reclasses are where the restricted-fund roll-forward always breaks.",
+    "primaryCta": "Try the GrantPipe workflow",
+    "buyerStage": "consideration",
+    "topicCluster": "workflows",
+    "relatedSlugs": [
+      "guides/grant-budget-amendment-process",
+      "workflows/year-end-restricted-release",
+      "guides/nonprofit-fiscal-year-end-close-checklist"
+    ],
+    "dfsNotes": "Low volume, high-intent operational."
+  },
+  {
+    "slug": "subaward-budget-modification",
+    "cluster": "workflows",
+    "targetKeyword": "subaward budget modification",
+    "monthlyVolume": 90,
+    "intent": "commercial",
+    "title": "Workflow: Subaward Budget Modification Process",
+    "seoTitle": "Subaward Budget Modification Workflow (Nonprofit)",
+    "metaDescription": "Modifying a subrecipient's budget under a pass-through agreement: thresholds requiring approval, prior approval matrix, and amendment paperwork.",
+    "bluf": "Subrecipients rarely ask for modifications early enough — the pass-through's approval clock is the bottleneck.",
+    "primaryCta": "Try the GrantPipe workflow",
+    "buyerStage": "consideration",
+    "topicCluster": "workflows",
+    "relatedSlugs": [
+      "guides/subrecipient-monitoring-requirements-uniform-guidance",
+      "guides/grant-budget-amendment-process",
+      "glossary/pass-through-entity"
+    ],
+    "dfsNotes": "Operational intent."
+  },
+  {
+    "slug": "cost-transfer-post-closeout",
+    "cluster": "workflows",
+    "targetKeyword": "cost transfer after grant closeout",
+    "monthlyVolume": 60,
+    "intent": "commercial",
+    "title": "Workflow: Cost Transfer After Grant Closeout",
+    "seoTitle": "Post-Closeout Cost Transfer Workflow (Federal Grants)",
+    "metaDescription": "Handling a necessary cost transfer after a federal grant has closed: federal agency notification, prior approval, and documentation.",
+    "bluf": "Post-closeout cost transfers require federal prior approval in writing — most are time-barred before anyone asks.",
+    "primaryCta": "Try the GrantPipe workflow",
+    "buyerStage": "consideration",
+    "topicCluster": "workflows",
+    "relatedSlugs": [
+      "guides/cost-transfer-policy-nonprofits",
+      "guides/grant-closeout-procedures",
+      "guides/allowable-costs-federal-grants"
+    ],
+    "dfsNotes": "Edge-case operational."
+  },
+  {
+    "slug": "pledge-write-off",
+    "cluster": "workflows",
+    "targetKeyword": "pledge write off nonprofit",
+    "monthlyVolume": 110,
+    "intent": "commercial",
+    "title": "Workflow: Nonprofit Pledge Write-Off Process",
+    "seoTitle": "Nonprofit Pledge Write-Off Workflow (ASC 958)",
+    "metaDescription": "Writing off an uncollectible pledge under ASC 958: collectibility analysis, bad-debt allowance, reversing entry, and donor-relations implications.",
+    "bluf": "Pledge write-offs are an asset-side entry, not a revenue reversal — most CRMs book them the wrong direction.",
+    "primaryCta": "Try the GrantPipe workflow",
+    "buyerStage": "consideration",
+    "topicCluster": "workflows",
+    "relatedSlugs": [
+      "workflows/track-donor-pledges-vs-payments",
+      "guides/fasb-asc-958-nonprofit-reporting",
+      "guides/grant-revenue-recognition-asc-958-605"
+    ],
+    "dfsNotes": "Operational intent."
+  },
+  {
+    "slug": "donor-refund",
+    "cluster": "workflows",
+    "targetKeyword": "donor refund nonprofit",
+    "monthlyVolume": 170,
+    "intent": "commercial",
+    "title": "Workflow: Processing a Nonprofit Donor Refund",
+    "seoTitle": "Nonprofit Donor Refund Workflow (Tax Receipt Reversal)",
+    "metaDescription": "Processing a donor refund: tax-receipt reversal, payment-processor refund, board policy triggers, and year-end 990 implications.",
+    "bluf": "Refunds crossing a tax year require a 1099-style correction to the donor's prior receipt — easy to miss.",
+    "primaryCta": "Try the GrantPipe workflow",
+    "buyerStage": "consideration",
+    "topicCluster": "workflows",
+    "relatedSlugs": [
+      "workflows/track-donor-pledges-vs-payments",
+      "guides/donor-retention-strategies",
+      "features/audit-trail-activity-log"
+    ],
+    "dfsNotes": "Operational, transactional-adjacent."
+  },
+  {
+    "slug": "in-kind-contribution-valuation",
+    "cluster": "workflows",
+    "targetKeyword": "in kind contribution valuation",
+    "monthlyVolume": 590,
+    "intent": "informational",
+    "title": "Workflow: In-Kind Contribution Valuation",
+    "seoTitle": "In-Kind Contribution Valuation Workflow (ASU 2020-07)",
+    "metaDescription": "Valuing in-kind gifts under ASU 2020-07: fair value techniques, disclosure requirements, and donor-acknowledgment letters.",
+    "bluf": "ASU 2020-07 requires category-level disclosure of in-kind contributions even if your audit firm doesn't mention it.",
+    "primaryCta": "Try the GrantPipe workflow",
+    "buyerStage": "consideration",
+    "topicCluster": "workflows",
+    "relatedSlugs": [
+      "guides/match-tracking-cash-vs-in-kind",
+      "guides/fasb-asc-958-nonprofit-reporting",
+      "glossary/matching-funds"
+    ],
+    "dfsNotes": "Steady volume."
+  },
+  {
+    "slug": "year-end-restricted-release",
+    "cluster": "workflows",
+    "targetKeyword": "year end restricted net asset release",
+    "monthlyVolume": 130,
+    "intent": "commercial",
+    "title": "Workflow: Year-End Release of Restricted Net Assets",
+    "seoTitle": "Year-End Restricted Net Asset Release Workflow",
+    "metaDescription": "Releasing restricted net assets at year-end: tying releases to grant-expenditure evidence, reclassification entries, and board reporting.",
+    "bluf": "Releases must be supported by dated expenditure evidence — not by a journal entry alone.",
+    "primaryCta": "Try the GrantPipe workflow",
+    "buyerStage": "consideration",
+    "topicCluster": "workflows",
+    "relatedSlugs": [
+      "guides/net-asset-release-workflow",
+      "guides/restricted-fund-month-end-close-checklist",
+      "guides/nonprofit-fiscal-year-end-close-checklist"
+    ],
+    "dfsNotes": "Operational intent."
+  },
+  {
+    "slug": "payroll-allocation-across-grants",
+    "cluster": "workflows",
+    "targetKeyword": "payroll allocation across grants",
+    "monthlyVolume": 150,
+    "intent": "commercial",
+    "title": "Workflow: Allocating Payroll Across Multiple Grants",
+    "seoTitle": "Payroll Allocation Across Grants Workflow",
+    "metaDescription": "Allocating payroll across multiple federal awards: base-salary splits, fringe pools, time-and-effort reconciliation, and month-end trueup.",
+    "bluf": "Payroll allocations must reconcile to time-and-effort certs monthly — not quarterly, despite common practice.",
+    "primaryCta": "Try the GrantPipe workflow",
+    "buyerStage": "consideration",
+    "topicCluster": "workflows",
+    "relatedSlugs": [
+      "guides/time-and-effort-certification-federal-grants",
+      "workflows/time-and-effort-certification",
+      "features/payroll-allocation"
+    ],
+    "dfsNotes": "Operational."
+  },
+  {
+    "slug": "time-and-effort-certification",
+    "cluster": "workflows",
+    "targetKeyword": "time and effort certification workflow",
+    "monthlyVolume": 80,
+    "intent": "commercial",
+    "title": "Workflow: Time and Effort Certification",
+    "seoTitle": "Time and Effort Certification Workflow (Federal Grants)",
+    "metaDescription": "Running monthly and semi-annual time-and-effort certifications that satisfy 2 CFR 200.430 — templates, sign-offs, and reconciliation to payroll.",
+    "bluf": "Semi-annual certifications are allowed only for employees on a single federal award — most nonprofits over-use them.",
+    "primaryCta": "Try the GrantPipe workflow",
+    "buyerStage": "consideration",
+    "topicCluster": "workflows",
+    "relatedSlugs": [
+      "guides/time-and-effort-certification-federal-grants",
+      "workflows/payroll-allocation-across-grants",
+      "guides/2-cfr-200-subpart-e-cost-principles"
+    ],
+    "dfsNotes": "Paired with guide."
+  },
+  {
+    "slug": "program-income-reporting",
+    "cluster": "workflows",
+    "targetKeyword": "program income reporting workflow",
+    "monthlyVolume": 70,
+    "intent": "commercial",
+    "title": "Workflow: Program Income Reporting",
+    "seoTitle": "Program Income Reporting Workflow (2 CFR 200.307)",
+    "metaDescription": "Recording, reporting, and disposing of program income from federal awards: tracking elections, FFR line 10, and post-award disposition.",
+    "bluf": "Once you elect additive or deductive treatment, it's binding for the life of the award.",
+    "primaryCta": "Try the GrantPipe workflow",
+    "buyerStage": "consideration",
+    "topicCluster": "workflows",
+    "relatedSlugs": [
+      "guides/program-income-reporting-uniform-guidance",
+      "guides/sf-425-federal-financial-report",
+      "guides/federal-grant-reporting-requirements"
+    ],
+    "dfsNotes": "Operational."
+  },
+  {
+    "slug": "csv-donor-import",
+    "cluster": "features",
+    "targetKeyword": "csv donor import nonprofit",
+    "monthlyVolume": 390,
+    "intent": "commercial",
+    "title": "CSV Donor Import for Nonprofits",
+    "seoTitle": "CSV Donor Import: Migrate Donors From Spreadsheets or Legacy CRM",
+    "metaDescription": "Import your donor list from CSV with validation, de-duplication, and field mapping. No consultants, no migration fees — under 15 minutes.",
+    "bluf": "Most CRM import failures come from one cause: inconsistent household formatting in the source file.",
+    "primaryCta": "Try CSV import",
+    "buyerStage": "decision",
+    "topicCluster": "features",
+    "relatedSlugs": [
+      "guides/how-to-migrate-from-salesforce-npsp",
+      "guides/switching-from-spreadsheets-to-crm",
+      "features/audit-trail-activity-log"
+    ],
+    "dfsNotes": "Commercial-intent feature."
+  },
+  {
+    "slug": "custom-fields",
+    "cluster": "features",
+    "targetKeyword": "nonprofit crm custom fields",
+    "monthlyVolume": 210,
+    "intent": "commercial",
+    "title": "Custom Fields in GrantPipe",
+    "seoTitle": "Custom Fields for Nonprofit CRM: Donors, Grants, Gifts",
+    "metaDescription": "Add unlimited custom fields to donors, grants, and gifts. Per-org definitions, typed values, and reporting without re-architecting your data.",
+    "bluf": "Custom fields should extend the data model — not replace it. GrantPipe separates the two.",
+    "primaryCta": "See custom fields",
+    "buyerStage": "decision",
+    "topicCluster": "features",
+    "relatedSlugs": [
+      "features/audit-trail-activity-log",
+      "features/donor-retention-reporting",
+      "guides/nonprofit-crm-features"
+    ],
+    "dfsNotes": "Mid-funnel feature."
+  },
+  {
+    "slug": "grant-calendar-deadline-alerts",
+    "cluster": "features",
+    "targetKeyword": "grant deadline tracker",
+    "monthlyVolume": 480,
+    "intent": "commercial",
+    "title": "Grant Calendar and Deadline Alerts",
+    "seoTitle": "Grant Calendar + Deadline Alerts for Nonprofits",
+    "metaDescription": "Track grant application, report, and drawdown deadlines with automated email + in-app alerts. Never miss a funder deadline again.",
+    "bluf": "A single missed grant report can cost more than a year of software.",
+    "primaryCta": "See grant calendar",
+    "buyerStage": "decision",
+    "topicCluster": "features",
+    "relatedSlugs": [
+      "guides/grant-reporting-calendar-template",
+      "features/grant-pipeline-management",
+      "features/funder-reporting-templates"
+    ],
+    "dfsNotes": "Strong commercial intent."
+  },
+  {
+    "slug": "donor-segmentation",
+    "cluster": "features",
+    "targetKeyword": "donor segmentation software",
+    "monthlyVolume": 720,
+    "intent": "commercial",
+    "title": "Donor Segmentation in GrantPipe",
+    "seoTitle": "Donor Segmentation Software for Nonprofits",
+    "metaDescription": "Segment donors by giving history, recency, source, custom fields, and cohort. Saved segments drive outreach lists and board dashboards.",
+    "bluf": "The average mid-sized nonprofit uses three segments. The best use fifteen.",
+    "primaryCta": "See donor segmentation",
+    "buyerStage": "decision",
+    "topicCluster": "features",
+    "relatedSlugs": [
+      "guides/donor-retention-strategies",
+      "guides/donor-retention-reporting-for-boards",
+      "features/donor-retention-reporting"
+    ],
+    "dfsNotes": "Feature-commercial query."
+  },
+  {
+    "slug": "soft-credit-tracking",
+    "cluster": "features",
+    "targetKeyword": "soft credit tracking nonprofit",
+    "monthlyVolume": 210,
+    "intent": "commercial",
+    "title": "Soft Credit Tracking in GrantPipe",
+    "seoTitle": "Soft Credit Tracking for Nonprofit Donors",
+    "metaDescription": "Attribute gifts to the advising donor while preserving the hard credit for the donor of record. DAF and matching-gift workflows supported.",
+    "bluf": "Getting soft credits right is how you keep major donors credited for DAF gifts without misstating 990 totals.",
+    "primaryCta": "See soft credits",
+    "buyerStage": "decision",
+    "topicCluster": "features",
+    "relatedSlugs": [
+      "glossary/donor-advised-fund",
+      "guides/donor-retention-strategies",
+      "features/donor-retention-reporting"
+    ],
+    "dfsNotes": "Commercial intent."
+  },
+  {
+    "slug": "multi-entity-consolidation",
+    "cluster": "features",
+    "targetKeyword": "nonprofit multi entity consolidation",
+    "monthlyVolume": 170,
+    "intent": "commercial",
+    "title": "Multi-Entity Consolidation for Nonprofits",
+    "seoTitle": "Multi-Entity Consolidation Software for Nonprofits",
+    "metaDescription": "Consolidate donors, grants, and funds across a 501(c)(3), 501(c)(4), and related foundations. Entity-scoped permissions and rollup reporting.",
+    "bluf": "Related-entity consolidation breaks cleanly when you can see both hard credits and intercompany eliminations in one view.",
+    "primaryCta": "See multi-entity",
+    "buyerStage": "decision",
+    "topicCluster": "features",
+    "relatedSlugs": [
+      "features/audit-trail-activity-log",
+      "guides/fasb-asc-958-nonprofit-reporting",
+      "guides/nonprofit-crm-features"
+    ],
+    "dfsNotes": "Niche but high-intent."
+  },
+  {
+    "slug": "role-based-permissions",
+    "cluster": "features",
+    "targetKeyword": "nonprofit crm user permissions",
+    "monthlyVolume": 260,
+    "intent": "commercial",
+    "title": "Role-Based Permissions in GrantPipe",
+    "seoTitle": "Role-Based Permissions for Nonprofit CRM",
+    "metaDescription": "Admin / Editor / Viewer roles with row-level org scoping. No custom permission sets required — just grant the role and move on.",
+    "bluf": "Permission systems that need a consultant to configure are permission systems the average nonprofit never locks down.",
+    "primaryCta": "See permissions",
+    "buyerStage": "decision",
+    "topicCluster": "features",
+    "relatedSlugs": [
+      "features/audit-trail-activity-log",
+      "guides/nonprofit-software-evaluation-for-executive-directors",
+      "guides/why-nonprofit-crm-implementations-fail"
+    ],
+    "dfsNotes": "Commercial."
+  },
+  {
+    "slug": "payroll-allocation",
+    "cluster": "features",
+    "targetKeyword": "nonprofit payroll allocation software",
+    "monthlyVolume": 140,
+    "intent": "commercial",
+    "title": "Payroll Allocation Across Grants",
+    "seoTitle": "Nonprofit Payroll Allocation Across Grants (Software)",
+    "metaDescription": "Allocate payroll across multiple federal awards with monthly time-and-effort reconciliation, built for Uniform Guidance audit.",
+    "bluf": "Most nonprofit payroll allocations live in a finance spreadsheet that never agrees to the CRM grant ledger.",
+    "primaryCta": "See payroll allocation",
+    "buyerStage": "decision",
+    "topicCluster": "features",
+    "relatedSlugs": [
+      "workflows/payroll-allocation-across-grants",
+      "guides/time-and-effort-certification-federal-grants",
+      "features/audit-trail-activity-log"
+    ],
+    "dfsNotes": "Commercial."
+  },
+  {
+    "slug": "xero",
+    "cluster": "integrations",
+    "targetKeyword": "xero nonprofit integration",
+    "monthlyVolume": 390,
+    "intent": "commercial",
+    "title": "GrantPipe + Xero Integration",
+    "seoTitle": "Xero Integration for Nonprofits + GrantPipe",
+    "metaDescription": "Sync donations, grants, and restricted-fund releases between Xero and GrantPipe. Two-way posting, tracking categories, and month-end close support.",
+    "bluf": "Xero's tracking categories are the cleanest path to restricted-fund segregation under $500K revenue.",
+    "primaryCta": "Connect Xero",
+    "buyerStage": "decision",
+    "topicCluster": "integrations",
+    "relatedSlugs": [
+      "integrations/quickbooks-online",
+      "integrations/sage-intacct",
+      "guides/nonprofit-chart-of-accounts-restricted-funds"
+    ],
+    "dfsNotes": "Commercial integration query."
+  },
+  {
+    "slug": "netsuite",
+    "cluster": "integrations",
+    "targetKeyword": "netsuite nonprofit integration",
+    "monthlyVolume": 320,
+    "intent": "commercial",
+    "title": "GrantPipe + NetSuite Integration",
+    "seoTitle": "NetSuite Integration for Nonprofits + GrantPipe",
+    "metaDescription": "Sync grants, donors, and gifts between NetSuite (SuiteSuccess for Nonprofits) and GrantPipe. Classes, departments, and custom segments supported.",
+    "bluf": "NetSuite handles multi-entity cleanly — GrantPipe adds the donor side without duplicating your GL.",
+    "primaryCta": "Connect NetSuite",
+    "buyerStage": "decision",
+    "topicCluster": "integrations",
+    "relatedSlugs": [
+      "integrations/sage-intacct",
+      "features/multi-entity-consolidation",
+      "guides/nonprofit-chart-of-accounts-restricted-funds"
+    ],
+    "dfsNotes": "Commercial integration."
+  },
+  {
+    "slug": "stripe",
+    "cluster": "integrations",
+    "targetKeyword": "stripe nonprofit integration",
+    "monthlyVolume": 590,
+    "intent": "commercial",
+    "title": "GrantPipe + Stripe Integration",
+    "seoTitle": "Stripe Integration for Nonprofit Donations + GrantPipe",
+    "metaDescription": "Record Stripe donations in GrantPipe with automatic receipt generation, fee pass-through, and recurring-gift handling.",
+    "bluf": "Stripe at 2.2% (nonprofit rate) beats most processors — the CRM integration is where the operational savings appear.",
+    "primaryCta": "Connect Stripe",
+    "buyerStage": "decision",
+    "topicCluster": "integrations",
+    "relatedSlugs": [
+      "features/donor-segmentation",
+      "guides/donor-retention-strategies",
+      "integrations/quickbooks-online"
+    ],
+    "dfsNotes": "High volume."
+  },
+  {
+    "slug": "classy",
+    "cluster": "integrations",
+    "targetKeyword": "classy crm integration",
+    "monthlyVolume": 260,
+    "intent": "commercial",
+    "title": "GrantPipe + Classy Integration",
+    "seoTitle": "Classy Integration for Nonprofit CRM + GrantPipe",
+    "metaDescription": "Sync Classy donations, peer-to-peer campaigns, and recurring gifts into GrantPipe with donor de-duplication.",
+    "bluf": "Classy gives you the campaign page — GrantPipe gives you the donor-lifetime view across campaigns.",
+    "primaryCta": "Connect Classy",
+    "buyerStage": "decision",
+    "topicCluster": "integrations",
+    "relatedSlugs": [
+      "integrations/stripe",
+      "features/donor-segmentation",
+      "guides/donor-retention-strategies"
+    ],
+    "dfsNotes": "Commercial."
+  },
+  {
+    "slug": "donorbox",
+    "cluster": "integrations",
+    "targetKeyword": "donorbox crm integration",
+    "monthlyVolume": 320,
+    "intent": "commercial",
+    "title": "GrantPipe + Donorbox Integration",
+    "seoTitle": "Donorbox Integration for Nonprofit CRM + GrantPipe",
+    "metaDescription": "Flow Donorbox donations and recurring gifts into GrantPipe with de-duplication and acknowledgment automation.",
+    "bluf": "Donorbox keeps donation collection simple — GrantPipe keeps retention measurable.",
+    "primaryCta": "Connect Donorbox",
+    "buyerStage": "decision",
+    "topicCluster": "integrations",
+    "relatedSlugs": [
+      "integrations/stripe",
+      "features/donor-segmentation",
+      "guides/donor-retention-strategies"
+    ],
+    "dfsNotes": "Commercial."
+  },
+  {
+    "slug": "constant-contact",
+    "cluster": "integrations",
+    "targetKeyword": "constant contact nonprofit integration",
+    "monthlyVolume": 210,
+    "intent": "commercial",
+    "title": "GrantPipe + Constant Contact Integration",
+    "seoTitle": "Constant Contact Integration for Nonprofits + GrantPipe",
+    "metaDescription": "Sync donor segments from GrantPipe to Constant Contact lists with consent management and suppression handling.",
+    "bluf": "Good list hygiene beats good subject lines — GrantPipe keeps suppression and unsubscribe state authoritative.",
+    "primaryCta": "Connect Constant Contact",
+    "buyerStage": "decision",
+    "topicCluster": "integrations",
+    "relatedSlugs": [
+      "integrations/mailchimp",
+      "features/donor-segmentation",
+      "guides/donor-retention-strategies"
+    ],
+    "dfsNotes": "Commercial."
+  },
+  {
+    "slug": "hubspot",
+    "cluster": "integrations",
+    "targetKeyword": "hubspot nonprofit integration",
+    "monthlyVolume": 480,
+    "intent": "commercial",
+    "title": "GrantPipe + HubSpot Integration",
+    "seoTitle": "HubSpot Integration for Nonprofits + GrantPipe",
+    "metaDescription": "Two-way sync between HubSpot contacts and GrantPipe donors. Keep fundraising in GrantPipe and marketing in HubSpot without duplication.",
+    "bluf": "HubSpot is great for marketing pipelines but incomplete as a fundraising CRM — pair it, don't force it.",
+    "primaryCta": "Connect HubSpot",
+    "buyerStage": "decision",
+    "topicCluster": "integrations",
+    "relatedSlugs": [
+      "alternatives/hubspot-nonprofit-alternative",
+      "features/donor-segmentation",
+      "integrations/mailchimp"
+    ],
+    "dfsNotes": "High volume."
+  },
+  {
+    "slug": "salesforce",
+    "cluster": "integrations",
+    "targetKeyword": "salesforce nonprofit data sync",
+    "monthlyVolume": 320,
+    "intent": "commercial",
+    "title": "GrantPipe + Salesforce Integration",
+    "seoTitle": "Salesforce Integration for Nonprofit CRM Migration",
+    "metaDescription": "Migrate or sync from Salesforce NPSP into GrantPipe. Map contacts, accounts, opportunities, and soft credits with full audit trail.",
+    "bluf": "Most Salesforce-to-GrantPipe migrations finish in under 60 days without consultants.",
+    "primaryCta": "Start Salesforce migration",
+    "buyerStage": "decision",
+    "topicCluster": "integrations",
+    "relatedSlugs": [
+      "guides/how-to-migrate-from-salesforce-npsp",
+      "alternatives/salesforce-nonprofit-alternative",
+      "guides/npsp-to-agentforce-migration-cost"
+    ],
+    "dfsNotes": "High-intent commercial."
+  },
+  {
+    "slug": "eventbrite",
+    "cluster": "integrations",
+    "targetKeyword": "eventbrite nonprofit crm",
+    "monthlyVolume": 170,
+    "intent": "commercial",
+    "title": "GrantPipe + Eventbrite Integration",
+    "seoTitle": "Eventbrite Integration for Nonprofit Events + GrantPipe",
+    "metaDescription": "Sync Eventbrite ticket sales and attendees into GrantPipe as donor records, with separate attendee/donor deduplication.",
+    "bluf": "Event attendees are pre-qualified donors — most CRMs lose them because the import treats them as one-time.",
+    "primaryCta": "Connect Eventbrite",
+    "buyerStage": "decision",
+    "topicCluster": "integrations",
+    "relatedSlugs": [
+      "integrations/stripe",
+      "features/donor-segmentation",
+      "guides/donor-retention-strategies"
+    ],
+    "dfsNotes": "Commercial."
+  },
+  {
+    "slug": "double-the-donation",
+    "cluster": "integrations",
+    "targetKeyword": "double the donation integration",
+    "monthlyVolume": 260,
+    "intent": "commercial",
+    "title": "GrantPipe + Double the Donation Integration",
+    "seoTitle": "Double the Donation (360MatchPro) Integration + GrantPipe",
+    "metaDescription": "Surface matching-gift eligibility on donation forms and track match submissions through GrantPipe reporting.",
+    "bluf": "Corporate matching programs leave $4-7 billion unclaimed annually — the integration is how you claw it back.",
+    "primaryCta": "Connect Double the Donation",
+    "buyerStage": "decision",
+    "topicCluster": "integrations",
+    "relatedSlugs": [
+      "features/donor-segmentation",
+      "guides/donor-retention-strategies",
+      "integrations/stripe"
+    ],
+    "dfsNotes": "Commercial."
+  },
+  {
+    "slug": "kindful-alternative",
+    "cluster": "alternatives",
+    "targetKeyword": "kindful alternative",
+    "monthlyVolume": 320,
+    "intent": "commercial",
+    "title": "Kindful Alternative: GrantPipe for Nonprofits",
+    "seoTitle": "Kindful Alternative for Nonprofits (2026)",
+    "metaDescription": "Kindful was acquired and features are frozen. GrantPipe is a modern alternative with built-in grant compliance and restricted-fund tracking.",
+    "bluf": "Bloomerang acquired Kindful in 2021 — most of the feature roadmap has moved upstream to Bloomerang.",
+    "primaryCta": "Try GrantPipe free",
+    "buyerStage": "decision",
+    "topicCluster": "alternatives",
+    "relatedSlugs": [
+      "alternatives/bloomerang-alternative",
+      "alternatives/donorperfect-alternative",
+      "comparisons/grantpipe-vs-bloomerang"
+    ],
+    "dfsNotes": "Acquired product — migration intent."
+  },
+  {
+    "slug": "qgiv-alternative",
+    "cluster": "alternatives",
+    "targetKeyword": "qgiv alternative",
+    "monthlyVolume": 170,
+    "intent": "commercial",
+    "title": "Qgiv Alternative: GrantPipe for Nonprofits",
+    "seoTitle": "Qgiv Alternative for Nonprofits (2026)",
+    "metaDescription": "Qgiv was acquired by Bloomerang in 2024. GrantPipe is a modern alternative with built-in grant compliance plus the donor side.",
+    "bluf": "The 2024 Bloomerang-Qgiv merger creates an opening for standalone donor management.",
+    "primaryCta": "Try GrantPipe free",
+    "buyerStage": "decision",
+    "topicCluster": "alternatives",
+    "relatedSlugs": [
+      "alternatives/bloomerang-alternative",
+      "alternatives/kindful-alternative",
+      "comparisons/grantpipe-vs-bloomerang"
+    ],
+    "dfsNotes": "Acquisition-driven migration."
+  },
+  {
+    "slug": "funraise-alternative",
+    "cluster": "alternatives",
+    "targetKeyword": "funraise alternative",
+    "monthlyVolume": 110,
+    "intent": "commercial",
+    "title": "Funraise Alternative: GrantPipe for Nonprofits",
+    "seoTitle": "Funraise Alternative for Nonprofits (2026)",
+    "metaDescription": "Funraise focuses on fundraising forms. GrantPipe covers donors + grants + compliance in one system.",
+    "bluf": "Funraise solves the checkout. GrantPipe solves what you do with the donor after the checkout.",
+    "primaryCta": "Try GrantPipe free",
+    "buyerStage": "decision",
+    "topicCluster": "alternatives",
+    "relatedSlugs": [
+      "alternatives/givebutter-alternative",
+      "alternatives/bloomerang-alternative",
+      "comparisons/givebutter-vs-bloomerang"
+    ],
+    "dfsNotes": "Commercial."
+  },
+  {
+    "slug": "classy-alternative",
+    "cluster": "alternatives",
+    "targetKeyword": "classy alternative",
+    "monthlyVolume": 390,
+    "intent": "commercial",
+    "title": "Classy Alternative: GrantPipe for Nonprofits",
+    "seoTitle": "Classy Alternative for Nonprofits (2026)",
+    "metaDescription": "Classy is GoFundMe-owned and campaign-centric. GrantPipe is a full donor + grant platform built for mid-sized nonprofits.",
+    "bluf": "Classy is strong on peer-to-peer. GrantPipe is strong on donor retention and compliance.",
+    "primaryCta": "Try GrantPipe free",
+    "buyerStage": "decision",
+    "topicCluster": "alternatives",
+    "relatedSlugs": [
+      "alternatives/givebutter-alternative",
+      "alternatives/bloomerang-alternative",
+      "integrations/classy"
+    ],
+    "dfsNotes": "Commercial."
+  },
+  {
+    "slug": "donorbox-alternative",
+    "cluster": "alternatives",
+    "targetKeyword": "donorbox alternative",
+    "monthlyVolume": 320,
+    "intent": "commercial",
+    "title": "Donorbox Alternative: GrantPipe for Nonprofits",
+    "seoTitle": "Donorbox Alternative for Nonprofits (2026)",
+    "metaDescription": "Donorbox handles donation forms well but isn't a CRM. GrantPipe is the next step when you outgrow the form.",
+    "bluf": "Most nonprofits outgrow Donorbox around the $500K revenue mark — that's when GrantPipe earns its place.",
+    "primaryCta": "Try GrantPipe free",
+    "buyerStage": "decision",
+    "topicCluster": "alternatives",
+    "relatedSlugs": [
+      "integrations/donorbox",
+      "alternatives/givebutter-alternative",
+      "alternatives/bloomerang-alternative"
+    ],
+    "dfsNotes": "Commercial."
+  },
+  {
+    "slug": "every-action-alternative",
+    "cluster": "alternatives",
+    "targetKeyword": "every action alternative",
+    "monthlyVolume": 210,
+    "intent": "commercial",
+    "title": "EveryAction Alternative: GrantPipe for Nonprofits",
+    "seoTitle": "EveryAction Alternative for Nonprofits (2026)",
+    "metaDescription": "EveryAction (Bonterra) is advocacy-first and expensive for mid-sized nonprofits. GrantPipe offers a cleaner path for donor + grant workflows.",
+    "bluf": "EveryAction's advocacy strength doesn't justify the pricing for nonprofits without a campaign arm.",
+    "primaryCta": "Try GrantPipe free",
+    "buyerStage": "decision",
+    "topicCluster": "alternatives",
+    "relatedSlugs": [
+      "alternatives/network-for-good-alternative",
+      "alternatives/salesforce-nonprofit-alternative",
+      "alternatives/bloomerang-alternative"
+    ],
+    "dfsNotes": "Commercial."
+  },
+  {
+    "slug": "neon-one-alternative",
+    "cluster": "alternatives",
+    "targetKeyword": "neon one alternative",
+    "monthlyVolume": 260,
+    "intent": "commercial",
+    "title": "Neon One Alternative: GrantPipe for Nonprofits",
+    "seoTitle": "Neon One Alternative for Nonprofits (2026)",
+    "metaDescription": "Neon One bundles many modules with variable quality. GrantPipe is a tighter donor + grant platform without the sprawl.",
+    "bluf": "Neon One's acquisitions (CiviCRM, Arts People) mean you're buying different codebases bolted together.",
+    "primaryCta": "Try GrantPipe free",
+    "buyerStage": "decision",
+    "topicCluster": "alternatives",
+    "relatedSlugs": [
+      "alternatives/neon-crm-alternative",
+      "alternatives/bloomerang-alternative",
+      "alternatives/little-green-light-alternative"
+    ],
+    "dfsNotes": "Commercial."
+  },
+  {
+    "slug": "nimble-ams-alternative",
+    "cluster": "alternatives",
+    "targetKeyword": "nimble ams alternative",
+    "monthlyVolume": 110,
+    "intent": "commercial",
+    "title": "Nimble AMS Alternative: GrantPipe for Mission-Driven Orgs",
+    "seoTitle": "Nimble AMS Alternative for Nonprofits (2026)",
+    "metaDescription": "Nimble AMS is association-focused and Salesforce-dependent. GrantPipe is purpose-built for nonprofits without the Salesforce overhead.",
+    "bluf": "Nimble AMS inherits every Salesforce consulting problem — GrantPipe skips that entire layer.",
+    "primaryCta": "Try GrantPipe free",
+    "buyerStage": "decision",
+    "topicCluster": "alternatives",
+    "relatedSlugs": [
+      "alternatives/salesforce-nonprofit-alternative",
+      "guides/how-to-migrate-from-salesforce-npsp",
+      "alternatives/blackbaud-alternative"
+    ],
+    "dfsNotes": "Commercial niche."
+  },
+  {
+    "slug": "grantpipe-vs-keela",
+    "cluster": "comparisons",
+    "targetKeyword": "grantpipe vs keela",
+    "monthlyVolume": 40,
+    "intent": "commercial",
+    "title": "GrantPipe vs Keela: Nonprofit CRM Comparison",
+    "seoTitle": "GrantPipe vs Keela: Feature + Pricing Comparison (2026)",
+    "metaDescription": "Side-by-side comparison of GrantPipe and Keela for mid-sized nonprofits. Features, pricing, grant compliance, and migration friction.",
+    "bluf": "Keela is strong on fundraising basics. GrantPipe adds the compliance layer most mid-sized nonprofits eventually need.",
+    "primaryCta": "Try GrantPipe free",
+    "buyerStage": "decision",
+    "topicCluster": "comparisons",
+    "relatedSlugs": [
+      "alternatives/keela-alternative",
+      "comparisons/keela-vs-bloomerang",
+      "comparisons/grantpipe-vs-bloomerang"
+    ],
+    "dfsNotes": "Low volume, high intent BOFU."
+  },
+  {
+    "slug": "grantpipe-vs-little-green-light",
+    "cluster": "comparisons",
+    "targetKeyword": "grantpipe vs little green light",
+    "monthlyVolume": 30,
+    "intent": "commercial",
+    "title": "GrantPipe vs Little Green Light: Nonprofit CRM Comparison",
+    "seoTitle": "GrantPipe vs Little Green Light: Comparison (2026)",
+    "metaDescription": "GrantPipe vs Little Green Light for mid-sized nonprofits. Features, pricing, grant compliance, and reporting depth.",
+    "bluf": "Little Green Light is great for small organizations. GrantPipe carries you past $500K budget without replatforming.",
+    "primaryCta": "Try GrantPipe free",
+    "buyerStage": "decision",
+    "topicCluster": "comparisons",
+    "relatedSlugs": [
+      "alternatives/little-green-light-alternative",
+      "comparisons/bloomerang-vs-little-green-light",
+      "comparisons/grantpipe-vs-bloomerang"
+    ],
+    "dfsNotes": "Low volume, high intent."
+  },
+  {
+    "slug": "grantpipe-vs-neon-crm",
+    "cluster": "comparisons",
+    "targetKeyword": "grantpipe vs neon crm",
+    "monthlyVolume": 30,
+    "intent": "commercial",
+    "title": "GrantPipe vs Neon CRM: Nonprofit CRM Comparison",
+    "seoTitle": "GrantPipe vs Neon CRM: Comparison (2026)",
+    "metaDescription": "GrantPipe vs Neon CRM for mid-sized nonprofits. Features, pricing, reporting, and grant compliance.",
+    "bluf": "Neon CRM's module pricing adds up fast. GrantPipe keeps grants + donors in one price.",
+    "primaryCta": "Try GrantPipe free",
+    "buyerStage": "decision",
+    "topicCluster": "comparisons",
+    "relatedSlugs": [
+      "alternatives/neon-crm-alternative",
+      "alternatives/neon-one-alternative",
+      "comparisons/grantpipe-vs-bloomerang"
+    ],
+    "dfsNotes": "Low volume BOFU."
+  },
+  {
+    "slug": "grantpipe-vs-virtuous",
+    "cluster": "comparisons",
+    "targetKeyword": "grantpipe vs virtuous",
+    "monthlyVolume": 30,
+    "intent": "commercial",
+    "title": "GrantPipe vs Virtuous: Nonprofit CRM Comparison",
+    "seoTitle": "GrantPipe vs Virtuous: Comparison (2026)",
+    "metaDescription": "GrantPipe vs Virtuous CRM for mid-sized nonprofits. Features, pricing, donor engagement, and grant tracking.",
+    "bluf": "Virtuous is engagement-heavy but grant-light. GrantPipe covers both sides.",
+    "primaryCta": "Try GrantPipe free",
+    "buyerStage": "decision",
+    "topicCluster": "comparisons",
+    "relatedSlugs": [
+      "alternatives/virtuous-alternative",
+      "comparisons/grantpipe-vs-bloomerang",
+      "comparisons/grantpipe-vs-donorperfect"
+    ],
+    "dfsNotes": "Low volume BOFU."
+  },
+  {
+    "slug": "grantpipe-vs-givebutter",
+    "cluster": "comparisons",
+    "targetKeyword": "grantpipe vs givebutter",
+    "monthlyVolume": 40,
+    "intent": "commercial",
+    "title": "GrantPipe vs Givebutter: Nonprofit Software Comparison",
+    "seoTitle": "GrantPipe vs Givebutter: Comparison (2026)",
+    "metaDescription": "GrantPipe vs Givebutter for mid-sized nonprofits. CRM depth, grant compliance, and when to graduate from free tools.",
+    "bluf": "Givebutter wins on free-tier generosity. GrantPipe wins once you need grants or restricted-fund tracking.",
+    "primaryCta": "Try GrantPipe free",
+    "buyerStage": "decision",
+    "topicCluster": "comparisons",
+    "relatedSlugs": [
+      "alternatives/givebutter-alternative",
+      "comparisons/givebutter-vs-bloomerang",
+      "comparisons/grantpipe-vs-bloomerang"
+    ],
+    "dfsNotes": "Low volume BOFU."
+  },
+  {
+    "slug": "grantpipe-vs-network-for-good",
+    "cluster": "comparisons",
+    "targetKeyword": "grantpipe vs network for good",
+    "monthlyVolume": 30,
+    "intent": "commercial",
+    "title": "GrantPipe vs Network for Good: Nonprofit CRM Comparison",
+    "seoTitle": "GrantPipe vs Network for Good: Comparison (2026)",
+    "metaDescription": "GrantPipe vs Network for Good (Bonterra) for mid-sized nonprofits. Features, pricing, and migration considerations.",
+    "bluf": "Network for Good is rebranded Bonterra — the rebrand doesn't change the feature ceiling.",
+    "primaryCta": "Try GrantPipe free",
+    "buyerStage": "decision",
+    "topicCluster": "comparisons",
+    "relatedSlugs": [
+      "alternatives/network-for-good-alternative",
+      "comparisons/bloomerang-vs-network-for-good",
+      "comparisons/grantpipe-vs-bloomerang"
+    ],
+    "dfsNotes": "Low volume BOFU."
+  },
+  {
+    "slug": "instrumentl-vs-foundant",
+    "cluster": "comparisons",
+    "targetKeyword": "instrumentl vs foundant",
+    "monthlyVolume": 90,
+    "intent": "commercial",
+    "title": "Instrumentl vs Foundant: Grant Management Comparison",
+    "seoTitle": "Instrumentl vs Foundant: Grant Software Comparison (2026)",
+    "metaDescription": "Instrumentl vs Foundant grant management platforms. Grant discovery vs grant administration — two different jobs.",
+    "bluf": "Instrumentl finds grants. Foundant manages them. Most nonprofits need both plus a donor CRM.",
+    "primaryCta": "See GrantPipe",
+    "buyerStage": "consideration",
+    "topicCluster": "comparisons",
+    "relatedSlugs": [
+      "alternatives/instrumentl-alternative",
+      "alternatives/foundant-alternative",
+      "comparisons/grantpipe-vs-instrumentl"
+    ],
+    "dfsNotes": "Competitor-vs-competitor query."
+  },
+  {
+    "slug": "amplifund-vs-fluxx",
+    "cluster": "comparisons",
+    "targetKeyword": "amplifund vs fluxx",
+    "monthlyVolume": 70,
+    "intent": "commercial",
+    "title": "AmpliFund vs Fluxx: Grant Management Comparison",
+    "seoTitle": "AmpliFund vs Fluxx: Grant Software Comparison (2026)",
+    "metaDescription": "AmpliFund vs Fluxx for grant management. Pricing, complexity, time-to-value, and which fits mid-sized nonprofits.",
+    "bluf": "AmpliFund and Fluxx are both enterprise-first — mid-sized nonprofits rarely fit either cleanly.",
+    "primaryCta": "See GrantPipe",
+    "buyerStage": "consideration",
+    "topicCluster": "comparisons",
+    "relatedSlugs": [
+      "alternatives/amplifund-alternative",
+      "alternatives/fluxx-alternative",
+      "comparisons/grantpipe-vs-amplifund"
+    ],
+    "dfsNotes": "Competitor-vs-competitor query."
+  },
+  {
+    "slug": "ecivis-pricing",
+    "cluster": "pricing-breakdowns",
+    "targetKeyword": "ecivis pricing",
+    "monthlyVolume": 170,
+    "intent": "commercial",
+    "title": "eCivis Pricing: Grant Management Cost Breakdown",
+    "seoTitle": "eCivis Pricing Breakdown (2026): Full Cost Analysis",
+    "metaDescription": "eCivis grant management pricing for nonprofits and government agencies: tiers, implementation costs, and hidden fees.",
+    "bluf": "eCivis is government-priced — nonprofit-only orgs rarely see the list price drop below $25K/year.",
+    "primaryCta": "See GrantPipe pricing",
+    "buyerStage": "decision",
+    "topicCluster": "pricing",
+    "relatedSlugs": [
+      "alternatives/ecivis-alternative",
+      "pricing-breakdowns/amplifund-pricing",
+      "pricing-breakdowns/fluxx-pricing"
+    ],
+    "dfsNotes": "Commercial pricing query."
+  },
+  {
+    "slug": "granthub-pricing",
+    "cluster": "pricing-breakdowns",
+    "targetKeyword": "granthub pricing",
+    "monthlyVolume": 110,
+    "intent": "commercial",
+    "title": "GrantHub Pricing: Foundant Grant Tracker Cost Breakdown",
+    "seoTitle": "GrantHub Pricing Breakdown (2026): Full Cost Analysis",
+    "metaDescription": "Foundant GrantHub pricing for nonprofits: tiers, user fees, and when the price crosses into Foundant GLM territory.",
+    "bluf": "GrantHub scales per-user and per-grant — the price curve bends sharply around 50 active grants.",
+    "primaryCta": "See GrantPipe pricing",
+    "buyerStage": "decision",
+    "topicCluster": "pricing",
+    "relatedSlugs": [
+      "alternatives/granthub-alternative",
+      "pricing-breakdowns/foundant-pricing",
+      "pricing-breakdowns/instrumentl-pricing"
+    ],
+    "dfsNotes": "Commercial pricing query."
+  },
+  {
+    "slug": "best-fund-accounting-software-nonprofits",
+    "cluster": "listicles",
+    "targetKeyword": "best fund accounting software nonprofits",
+    "monthlyVolume": 1300,
+    "intent": "commercial",
+    "title": "Best Fund Accounting Software for Nonprofits (2026)",
+    "seoTitle": "Best Fund Accounting Software for Nonprofits (2026)",
+    "metaDescription": "The top fund accounting platforms for nonprofits in 2026: Sage Intacct, NetSuite, QuickBooks, Xero, and specialty options — with real pricing and restricted-fund notes.",
+    "bluf": "True fund accounting isn't QuickBooks with classes — here's what to look for instead.",
+    "primaryCta": "See GrantPipe",
+    "buyerStage": "consideration",
+    "topicCluster": "listicles",
+    "relatedSlugs": [
+      "guides/restricted-fund-accounting-software-for-nonprofits",
+      "guides/quickbooks-classes-are-not-fund-accounting",
+      "guides/nonprofit-chart-of-accounts-restricted-funds"
+    ],
+    "dfsNotes": "High-volume commercial listicle."
+  },
+  {
+    "slug": "best-grant-tracking-for-federal-awards",
+    "cluster": "listicles",
+    "targetKeyword": "best grant tracking software federal awards",
+    "monthlyVolume": 390,
+    "intent": "commercial",
+    "title": "Best Grant Tracking Software for Federal Awards (2026)",
+    "seoTitle": "Best Grant Tracking Software for Federal Awards (2026)",
+    "metaDescription": "The grant tracking platforms built for federal-award compliance: SF-425, SEFA, time-and-effort, and indirect-rate support ranked side-by-side.",
+    "bluf": "Most grant-tracking software skips the federal compliance layer — a handful actually handle it.",
+    "primaryCta": "See GrantPipe",
+    "buyerStage": "consideration",
+    "topicCluster": "listicles",
+    "relatedSlugs": [
+      "guides/federal-grant-reporting-requirements",
+      "guides/sf-425-federal-financial-report",
+      "guides/uniform-guidance-2-cfr-200-practical-guide"
+    ],
+    "dfsNotes": "Commercial listicle."
+  },
+  {
+    "slug": "legal-aid-organizations",
+    "cluster": "vertical-pages",
+    "targetKeyword": "nonprofit crm legal aid organizations",
+    "monthlyVolume": 210,
+    "intent": "commercial",
+    "title": "GrantPipe for Legal Aid Organizations",
+    "seoTitle": "Nonprofit CRM + Grant Compliance for Legal Aid Organizations",
+    "metaDescription": "Legal aid nonprofits juggle LSC reporting, IOLTA funding, and client confidentiality. GrantPipe handles all three without ballooning costs.",
+    "bluf": "LSC grantees fail audits on the same three things every year — and every one is a documentation problem, not a practice problem.",
+    "primaryCta": "Try GrantPipe free",
+    "buyerStage": "consideration",
+    "topicCluster": "verticals",
+    "relatedSlugs": [
+      "vertical-pages/domestic-violence-shelters",
+      "vertical-pages/disability-services",
+      "guides/federal-grant-reporting-requirements"
+    ],
+    "dfsNotes": "Vertical audience."
+  },
+  {
+    "slug": "public-charter-schools",
+    "cluster": "vertical-pages",
+    "targetKeyword": "charter school donor management",
+    "monthlyVolume": 170,
+    "intent": "commercial",
+    "title": "GrantPipe for Public Charter Schools",
+    "seoTitle": "Nonprofit CRM + Grant Compliance for Charter Schools",
+    "metaDescription": "Public charter schools run donor, grant, and federal Title/IDEA funds in parallel. GrantPipe keeps all three reconciled without replacing your SIS.",
+    "bluf": "Charter schools that separate SIS data from donor data reconcile Title I and ESSER faster every single time.",
+    "primaryCta": "Try GrantPipe free",
+    "buyerStage": "consideration",
+    "topicCluster": "verticals",
+    "relatedSlugs": [
+      "vertical-pages/after-school-programs",
+      "vertical-pages/early-childhood-education",
+      "guides/education-gear-up-reporting"
+    ],
+    "dfsNotes": "Vertical audience."
+  }
+]

@@ -1,0 +1,9 @@
+Grants.gov is for federal opportunity search and applications.
+
+Post-award reporting lives elsewhere.
+
+HHS may use PMS or GrantSolutions. HUD may use IDIS or DRGR. DOJ uses JustGrants.
+
+That split matters because a grant calendar that only tracks application deadlines is half a calendar.
+
+For active federal awards, track the reporting portal, login owner, report type, due date, and backup owner in the same record as the award.

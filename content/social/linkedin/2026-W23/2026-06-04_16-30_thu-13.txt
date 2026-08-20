@@ -1,0 +1,9 @@
+We model grants and funds as separate records in GrantPipe.
+
+That was intentional.
+
+A grant is an award with deadlines, terms, reports, evidence, and performance dates.
+
+A fund is a restricted pool of money with releases, balances, and accounting meaning.
+
+They relate to each other, but they are not the same thing.

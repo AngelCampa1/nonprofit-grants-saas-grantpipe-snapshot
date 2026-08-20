@@ -1,0 +1,33 @@
+- generic [ref=e15]:
+    - generic [ref=e16]:
+        - generic [ref=e17]:
+            - link "GrantPipe home" [ref=e18] [cursor=pointer]:
+                - /url: /app/
+                - img [ref=e19]
+            - generic [ref=e20]:
+                - paragraph [ref=e21]: Secure account access
+                - heading "Welcome back" [level=1] [ref=e22]
+                - paragraph [ref=e23]: Sign in to continue to your workspace.
+        - generic [ref=e25]:
+            - generic [ref=e26]:
+                - generic [ref=e27]: Email
+                - textbox "Email" [ref=e28]:
+                    - /placeholder: you@example.com
+            - generic [ref=e29]:
+                - generic [ref=e30]:
+                    - generic [ref=e31]: Password
+                    - link "Forgot password?" [ref=e32] [cursor=pointer]:
+                        - /url: /app/forgot-password
+                - textbox "Password" [ref=e33]
+            - button "Sign in" [ref=e34]
+            - generic [ref=e39]: or
+            - button "Continue with Google" [ref=e40]:
+                - img
+                - text: Continue with Google
+        - generic [ref=e41]:
+            - text: Don't have an account?
+            - link "Create an account" [ref=e42] [cursor=pointer]:
+                - /url: /app/signup
+    - generic [ref=e43]:
+        - generic [ref=e44]: Encrypted session
+        - generic [ref=e45]: Reduced-motion safe

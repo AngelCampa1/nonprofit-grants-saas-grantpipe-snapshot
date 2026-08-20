@@ -1,0 +1,13 @@
+Address loan and loan guarantee programs separately on the SEFA.
+
+Federal loans get specialized SEFA treatment under 2 CFR 200.502. The outstanding balance at year-end plus new loans received during the year is typically reportable, not just current-year cash receipts.
+
+This applies to PPP loans, SBA programs, USDA rural development loans, and similar federal lending. Organizations treating these as cash transactions on the SEFA understate program expenditures.
+
+The reportable figure has three components in most cases: prior-year outstanding loan balance carried forward, new principal disbursed during the fiscal year, and any forgiven amounts recognized in the current period.
+
+Consult 2 CFR 200.502 and the auditor before finalizing the schedule. Loan reporting rules vary by program type, and the OMB Compliance Supplement clarifies treatment for the largest federal lending programs each year.
+
+Organizations with any federal loan activity should confirm treatment before SEFA delivery to the auditor — getting it wrong on a loan line can shift major-program determination.
+
+#singleaudit #sefa #grantcompliance #federalgrants

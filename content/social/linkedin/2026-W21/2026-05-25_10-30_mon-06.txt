@@ -1,0 +1,7 @@
+Definition: release from restriction.
+
+When a donor-restricted contribution has been spent on the purpose the donor named, you reclassify it from "net assets with donor restrictions" to "net assets without donor restrictions" on the statement of activities.
+
+It is not a transfer of cash. It is an accounting recognition that the restriction has been satisfied.
+
+Orgs that skip a review schedule accumulate drift. The result: restricted fund balances drift from reality.

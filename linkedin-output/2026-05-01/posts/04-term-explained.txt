@@ -1,0 +1,13 @@
+Questioned costs.
+
+Defined at 2 CFR 200.516, a questioned cost is an expenditure flagged during a single audit because it appears unallowable, unsupported, or unreasonable.
+
+Three categories. Unallowable: violates statute, regulation, or terms of the award. Unsupported: missing documentation. Unreasonable: exceeds what a prudent person would incur in similar circumstances.
+
+The reporting threshold is $25,000 per federal program. When questioned costs attributable to a single program exceed that, they are listed in the Schedule of Findings and Questioned Costs.
+
+Two examples that show up frequently. An auditor finds $32,000 in payroll charged to a federal award without time-and-effort documentation — reported as unsupported, exceeds threshold. A nonprofit charges $18,000 in alcohol-related catering to a training grant — unallowable, under threshold, still disclosed.
+
+Questioned costs are not automatic disallowances. The pass-through entity or federal agency makes the final determination. The audit just flags them.
+
+#singleaudit #grantcompliance #2cfr200 #federalgrants

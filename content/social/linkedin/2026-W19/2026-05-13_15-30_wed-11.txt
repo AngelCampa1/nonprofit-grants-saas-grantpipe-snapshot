@@ -1,0 +1,5 @@
+When a CRM does not surface grant deadlines, somebody on the Development team is keeping a personal spreadsheet to fill the gap. That is the integration tax of running a donor CRM and a grant tracker side by side.
+
+The CRM has the data. It just does not have the calendar. So the calendar gets rebuilt by hand.
+
+Paid in hours, not dollars.

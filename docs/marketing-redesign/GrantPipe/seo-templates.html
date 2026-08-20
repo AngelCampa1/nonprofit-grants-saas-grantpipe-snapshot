@@ -1,0 +1,2912 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>GrantPipe — SEO Page Templates</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Spectral:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://unpkg.com/react@18.3.1/umd/react.development.js"
+      integrity="sha384-hD6/rw4ppMLGNu3tX5cjIb+uRZ7UkRJ6BPkLpg4hAu/6onKUg4lLsHAs9EBPT82L"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://unpkg.com/react-dom@18.3.1/umd/react-dom.development.js"
+      integrity="sha384-u6aeetuaXnQ38mYT8rp6sbXaQe3NL9t+IBXmnYxwkUI2Hw4bsp2Wvmx4yRQF1uAm"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://unpkg.com/@babel/standalone@7.29.0/babel.min.js"
+      integrity="sha384-m08KidiNqLdpJqLq95G/LEi8Qvjl/xUYll3QILypMoQ65QorJ9Lvtp2RXYGBFj1y"
+      crossorigin="anonymous"
+    ></script>
+    <script type="text/babel" src="design-canvas.jsx"></script>
+    <style>
+      /* ---- brand tokens ---- */
+      :root {
+        --e9: #033a2c;
+        --e8: #054b39;
+        --e7: #065f46;
+        --e6: #0a7553;
+        --e5: #10906a;
+        --e1: #d4ebe1;
+        --e0: #ecf6f1;
+        --g7: #8d6a1f;
+        --g6: #b88928;
+        --g5: #d6a13a;
+        --g1: #f5e8c6;
+        --g0: #faf3df;
+        --k9: #0e1a16;
+        --k7: #2a3a33;
+        --k5: #5b6e66;
+        --k3: #97a59f;
+        --k2: #c9d2cd;
+        --k1: #e3e9e6;
+        --paper: #fbfaf6;
+        --paper2: #f4f1e9;
+        --card: #fff;
+        --danger: #b8442d;
+        --warn: #c98a2b;
+        --r: 10px;
+        --rlg: 14px;
+        --sh: 0 1px 2px rgba(14, 26, 22, 0.05), 0 8px 24px -10px rgba(14, 26, 22, 0.12);
+        --shlg: 0 2px 4px rgba(14, 26, 22, 0.06), 0 24px 60px -20px rgba(14, 26, 22, 0.2);
+        --display: "Spectral", Georgia, serif;
+        --body: "Manrope", system-ui, sans-serif;
+        --mono: "JetBrains Mono", monospace;
+      }
+      *,
+      *::before,
+      *::after {
+        box-sizing: border-box;
+      }
+      body {
+        margin: 0;
+        padding: 0;
+        font-family: var(--body);
+        background: #e8e4db;
+      }
+
+      /* ---- shared article shell ---- */
+      .art {
+        width: 860px;
+        background: var(--paper);
+        font-family: var(--body);
+        font-size: 15px;
+        line-height: 1.6;
+        color: var(--k9);
+        -webkit-font-smoothing: antialiased;
+        border-radius: var(--rlg);
+        overflow: hidden;
+        box-shadow: var(--shlg);
+      }
+      /* topbar */
+      .topbar {
+        height: 52px;
+        background: var(--paper);
+        border-bottom: 1px solid var(--k1);
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 0 24px;
+        position: sticky;
+        top: 0;
+        z-index: 10;
+        backdrop-filter: blur(8px);
+        background: color-mix(in oklab, var(--paper) 92%, transparent);
+      }
+      .topbar-brand {
+        display: inline-flex;
+        align-items: center;
+        gap: 8px;
+        font-family: var(--display);
+        font-weight: 600;
+        font-size: 18px;
+      }
+      .topbar-mark {
+        width: 22px;
+        height: 22px;
+        border-radius: 5px;
+        background: var(--e7);
+        color: var(--g5);
+        font-family: var(--mono);
+        font-size: 11px;
+        font-weight: 700;
+        display: grid;
+        place-items: center;
+      }
+      .topbar nav {
+        display: flex;
+        gap: 20px;
+        font-size: 13px;
+        font-weight: 500;
+        color: var(--k7);
+      }
+      .topbar-cta {
+        display: flex;
+        gap: 8px;
+        align-items: center;
+      }
+      .btn {
+        display: inline-flex;
+        align-items: center;
+        gap: 6px;
+        height: 34px;
+        padding: 0 14px;
+        border-radius: 999px;
+        font-family: var(--body);
+        font-weight: 600;
+        font-size: 13px;
+        border: 1px solid transparent;
+        cursor: default;
+        white-space: nowrap;
+      }
+      .btn-p {
+        background: var(--e7);
+        color: #fff;
+      }
+      .btn-g {
+        background: transparent;
+        color: var(--k9);
+        border-color: var(--k2);
+      }
+
+      /* breadcrumb */
+      .crumb {
+        padding: 10px 24px;
+        font-family: var(--mono);
+        font-size: 11px;
+        color: var(--k5);
+        border-bottom: 1px solid var(--k1);
+        display: flex;
+        gap: 6px;
+        align-items: center;
+      }
+      .crumb span {
+        color: var(--k3);
+      }
+
+      /* two-col layout */
+      .layout {
+        display: grid;
+        grid-template-columns: minmax(0, 1fr) 240px;
+        gap: 0;
+      }
+      .main {
+        padding: 32px 28px 56px;
+        min-width: 0;
+      }
+      .sidebar {
+        padding: 24px 20px;
+        border-left: 1px solid var(--k1);
+        background: var(--paper2);
+        display: flex;
+        flex-direction: column;
+        gap: 18px;
+      }
+
+      /* eyebrow */
+      .eyebrow {
+        display: inline-flex;
+        align-items: center;
+        gap: 7px;
+        font-family: var(--mono);
+        font-size: 11px;
+        font-weight: 500;
+        color: var(--e7);
+        text-transform: uppercase;
+        letter-spacing: 0.08em;
+        padding: 5px 10px;
+        border-radius: 999px;
+        background: var(--e0);
+        border: 1px solid var(--e1);
+        margin-bottom: 10px;
+      }
+      .dot {
+        width: 5px;
+        height: 5px;
+        border-radius: 50%;
+        background: var(--e6);
+      }
+
+      /* headings */
+      h1.ph {
+        font-family: var(--display);
+        font-weight: 600;
+        font-size: clamp(26px, 3.2vw, 36px);
+        line-height: 1.08;
+        letter-spacing: -0.02em;
+        margin: 0 0 14px;
+        color: var(--k9);
+      }
+      h1.ph em {
+        font-style: italic;
+        color: var(--e7);
+      }
+      h2.sh {
+        font-family: var(--display);
+        font-weight: 600;
+        font-size: 22px;
+        line-height: 1.15;
+        letter-spacing: -0.01em;
+        margin: 28px 0 10px;
+        color: var(--k9);
+      }
+      h3.th {
+        font-family: var(--body);
+        font-weight: 700;
+        font-size: 16px;
+        margin: 20px 0 8px;
+      }
+      p.bluf {
+        font-size: 16px;
+        color: var(--k7);
+        line-height: 1.6;
+        padding: 14px 16px;
+        background: var(--e0);
+        border-left: 3px solid var(--e7);
+        border-radius: 0 var(--r) var(--r) 0;
+        margin: 0 0 22px;
+      }
+      p.body {
+        font-size: 14.5px;
+        color: var(--k7);
+        margin: 0 0 14px;
+        line-height: 1.65;
+      }
+      p.body:last-child {
+        margin-bottom: 0;
+      }
+
+      /* inline CTA */
+      .inline-cta {
+        background: var(--e9);
+        color: #fff;
+        border-radius: var(--rlg);
+        padding: 20px 22px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 16px;
+        margin: 24px 0;
+      }
+      .inline-cta p {
+        margin: 0;
+        font-size: 14px;
+        color: #c0d6cc;
+        line-height: 1.4;
+      }
+      .inline-cta strong {
+        display: block;
+        font-family: var(--display);
+        font-size: 18px;
+        margin-bottom: 4px;
+      }
+      .inline-cta .btn-p {
+        background: var(--g6);
+        color: var(--e9);
+      }
+
+      /* stat pills */
+      .stats {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 10px;
+        margin: 20px 0;
+      }
+      .stat {
+        background: var(--card);
+        border: 1px solid var(--k1);
+        border-radius: var(--r);
+        padding: 12px 14px;
+      }
+      .stat .v {
+        font-family: var(--display);
+        font-weight: 600;
+        font-size: 26px;
+        color: var(--e7);
+        line-height: 1;
+      }
+      .stat .l {
+        font-family: var(--mono);
+        font-size: 10px;
+        text-transform: uppercase;
+        letter-spacing: 0.06em;
+        color: var(--k5);
+        margin-top: 4px;
+      }
+
+      /* comparison table */
+      .ctable {
+        background: var(--card);
+        border: 1px solid var(--k1);
+        border-radius: var(--r);
+        overflow: hidden;
+        margin: 18px 0;
+        font-size: 13px;
+      }
+      .ctable table {
+        border-collapse: collapse;
+        width: 100%;
+      }
+      .ctable thead th {
+        background: var(--paper2);
+        font-family: var(--mono);
+        font-size: 10px;
+        text-transform: uppercase;
+        letter-spacing: 0.06em;
+        color: var(--k5);
+        padding: 10px 12px;
+        border-bottom: 1px solid var(--k1);
+        text-align: left;
+        font-weight: 500;
+      }
+      .ctable thead th.us {
+        color: var(--e7);
+        background: color-mix(in oklab, var(--e0) 60%, var(--card));
+      }
+      .ctable tbody td {
+        padding: 9px 12px;
+        border-bottom: 1px solid var(--k1);
+        color: var(--k7);
+        vertical-align: top;
+      }
+      .ctable tbody tr:last-child td {
+        border-bottom: none;
+      }
+      .ctable tbody td.us {
+        background: color-mix(in oklab, var(--e0) 40%, var(--card));
+      }
+      .ctable .yes {
+        color: var(--e7);
+        font-weight: 600;
+      }
+      .ctable .no {
+        color: var(--k3);
+      }
+      .ctable tbody tr.cat td {
+        background: var(--paper2);
+        font-family: var(--mono);
+        font-size: 10px;
+        text-transform: uppercase;
+        letter-spacing: 0.06em;
+        color: var(--k5);
+        font-weight: 500;
+        padding: 7px 12px;
+      }
+
+      /* pros/cons */
+      .proscons {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 12px;
+        margin: 18px 0;
+      }
+      .pc {
+        background: var(--card);
+        border: 1px solid var(--k1);
+        border-radius: var(--r);
+        padding: 14px 16px;
+      }
+      .pc h4 {
+        font-size: 13px;
+        font-weight: 700;
+        margin: 0 0 10px;
+        color: var(--k9);
+      }
+      .pc ul {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        display: grid;
+        gap: 7px;
+      }
+      .pc li {
+        display: flex;
+        gap: 8px;
+        font-size: 13px;
+        color: var(--k7);
+        align-items: flex-start;
+        line-height: 1.4;
+      }
+      .pc li svg {
+        flex-shrink: 0;
+        margin-top: 2px;
+      }
+      .pc.good .pc-mark {
+        color: var(--e6);
+      }
+      .pc.bad .pc-mark {
+        color: var(--danger);
+      }
+
+      /* FAQ */
+      .faq-list {
+        display: grid;
+        gap: 3px;
+        margin: 16px 0;
+      }
+      .faq-item {
+        background: var(--card);
+        border: 1px solid var(--k1);
+        border-radius: var(--r);
+        padding: 0 14px;
+      }
+      .faq-q {
+        font-weight: 600;
+        font-size: 14px;
+        padding: 12px 0;
+        color: var(--k9);
+      }
+      .faq-a {
+        font-size: 13.5px;
+        color: var(--k7);
+        padding-bottom: 12px;
+        line-height: 1.55;
+      }
+
+      /* data table (compliance / program) */
+      .dtable {
+        background: var(--card);
+        border: 1px solid var(--k1);
+        border-radius: var(--r);
+        overflow: hidden;
+        margin: 16px 0;
+      }
+      .dtable table {
+        border-collapse: collapse;
+        width: 100%;
+        font-size: 12.5px;
+      }
+      .dtable thead th {
+        background: var(--paper2);
+        font-family: var(--mono);
+        font-size: 10px;
+        text-transform: uppercase;
+        letter-spacing: 0.06em;
+        color: var(--k5);
+        padding: 9px 12px;
+        border-bottom: 1px solid var(--k1);
+        font-weight: 500;
+        text-align: left;
+      }
+      .dtable tbody td {
+        padding: 8px 12px;
+        border-bottom: 1px solid var(--k1);
+        color: var(--k7);
+      }
+      .dtable tbody tr:last-child td {
+        border-bottom: none;
+      }
+
+      /* sidebar widgets */
+      .sw {
+        background: var(--card);
+        border: 1px solid var(--k1);
+        border-radius: var(--r);
+        padding: 14px;
+      }
+      .sw h4 {
+        font-family: var(--mono);
+        font-size: 10px;
+        text-transform: uppercase;
+        letter-spacing: 0.08em;
+        color: var(--k5);
+        margin: 0 0 10px;
+      }
+      .sw ul {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        display: grid;
+        gap: 6px;
+      }
+      .sw li {
+        font-size: 13px;
+        color: var(--k7);
+        display: flex;
+        gap: 6px;
+        align-items: flex-start;
+      }
+      .sw li svg {
+        flex-shrink: 0;
+        color: var(--e6);
+        margin-top: 2px;
+      }
+      .sw-cta {
+        background: var(--card);
+        border: 1px solid var(--k1);
+        border-radius: var(--r);
+        padding: 16px;
+        text-align: center;
+      }
+      .sw-cta h4 {
+        color: var(--k9);
+        font-family: var(--display);
+        font-size: 16px;
+        font-weight: 600;
+        margin: 0 0 6px;
+        letter-spacing: -0.01em;
+      }
+      .sw-cta p {
+        color: var(--k5);
+        font-size: 12.5px;
+        margin: 0 0 12px;
+        line-height: 1.4;
+      }
+      .sw-cta .btn-p {
+        background: var(--e7);
+        color: #fff;
+        width: 100%;
+        justify-content: center;
+      }
+      .sw-cta .fine {
+        font-family: var(--mono);
+        font-size: 10px;
+        color: var(--k3);
+        margin-top: 6px;
+      }
+      .sw-meta {
+        font-family: var(--mono);
+        font-size: 11px;
+        color: var(--k5);
+        line-height: 1.8;
+      }
+      .sw-meta .lbl {
+        color: var(--k3);
+      }
+
+      /* listicle tool card */
+      .tool-card {
+        background: var(--card);
+        border: 1px solid var(--k1);
+        border-radius: var(--r);
+        padding: 18px 20px;
+        margin: 0 0 12px;
+      }
+      .tool-card.top {
+        border-color: var(--e7);
+        box-shadow: 0 0 0 3px var(--e0);
+      }
+      .tool-head {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        gap: 12px;
+        margin-bottom: 8px;
+      }
+      .tool-name {
+        font-family: var(--display);
+        font-weight: 600;
+        font-size: 18px;
+        margin: 0;
+        letter-spacing: -0.01em;
+      }
+      .tool-price {
+        font-family: var(--mono);
+        font-size: 12px;
+        color: var(--k5);
+        text-align: right;
+      }
+      .tool-badge {
+        font-family: var(--mono);
+        font-size: 10px;
+        font-weight: 600;
+        background: var(--e7);
+        color: #fff;
+        padding: 2px 8px;
+        border-radius: 999px;
+        letter-spacing: 0.06em;
+        text-transform: uppercase;
+        display: inline-block;
+        margin-bottom: 6px;
+      }
+      .tool-sum {
+        font-size: 13.5px;
+        color: var(--k7);
+        margin: 0 0 10px;
+        line-height: 1.5;
+      }
+      .tool-verdict {
+        background: var(--paper2);
+        border-radius: 6px;
+        padding: 8px 12px;
+        font-size: 13px;
+        font-style: italic;
+        color: var(--k7);
+      }
+
+      /* feature mock */
+      .feat-mock {
+        background: var(--e9);
+        border-radius: var(--r);
+        padding: 16px 18px;
+        margin: 16px 0;
+        overflow: hidden;
+      }
+      .feat-mock .mock-row {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 7px 10px;
+        background: rgba(255, 255, 255, 0.06);
+        border-radius: 6px;
+        margin-bottom: 6px;
+        font-size: 12.5px;
+        color: #d4ebe1;
+      }
+      .feat-mock .mock-row:last-child {
+        margin-bottom: 0;
+      }
+      .feat-mock .mock-bar {
+        height: 5px;
+        border-radius: 3px;
+        background: rgba(255, 255, 255, 0.12);
+        flex: 1;
+        margin: 0 10px;
+        overflow: hidden;
+      }
+      .feat-mock .mock-fill {
+        height: 100%;
+        border-radius: 3px;
+        background: var(--e5);
+      }
+      .feat-mock .mock-fill.warn {
+        background: var(--g5);
+      }
+      .feat-mock .mock-fill.over {
+        background: var(--danger);
+      }
+      .feat-mock .mock-pct {
+        font-family: var(--mono);
+        font-size: 11px;
+        color: var(--g5);
+      }
+
+      /* persona pain points */
+      .pain-list {
+        background: var(--card);
+        border: 1px solid var(--k1);
+        border-radius: var(--r);
+        padding: 14px 16px;
+        margin: 16px 0;
+      }
+      .pain-list ul {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        display: grid;
+        gap: 8px;
+      }
+      .pain-list li {
+        display: flex;
+        gap: 10px;
+        font-size: 13.5px;
+        color: var(--k7);
+        align-items: flex-start;
+        line-height: 1.45;
+        padding-bottom: 8px;
+        border-bottom: 1px dashed var(--k1);
+      }
+      .pain-list li:last-child {
+        border-bottom: none;
+        padding-bottom: 0;
+      }
+      .pain-num {
+        font-family: var(--mono);
+        font-size: 11px;
+        font-weight: 600;
+        color: var(--g6);
+        min-width: 20px;
+        margin-top: 1px;
+      }
+
+      /* guide TOC */
+      .toc {
+        background: var(--paper2);
+        border: 1px solid var(--k1);
+        border-radius: var(--r);
+        padding: 14px 16px;
+        margin: 14px 0 24px;
+      }
+      .toc h4 {
+        font-family: var(--mono);
+        font-size: 10px;
+        text-transform: uppercase;
+        letter-spacing: 0.08em;
+        color: var(--k5);
+        margin: 0 0 10px;
+      }
+      .toc ol {
+        padding-left: 18px;
+        margin: 0;
+        display: grid;
+        gap: 5px;
+      }
+      .toc li {
+        font-size: 13px;
+        color: var(--e7);
+        line-height: 1.35;
+      }
+
+      /* pill / badge */
+      .pill {
+        display: inline-block;
+        font-family: var(--mono);
+        font-size: 10px;
+        font-weight: 500;
+        padding: 2px 7px;
+        border-radius: 999px;
+        border: 1px solid var(--k2);
+        color: var(--k7);
+        text-transform: uppercase;
+        letter-spacing: 0.04em;
+      }
+      .pill.em {
+        background: var(--e0);
+        border-color: var(--e1);
+        color: var(--e7);
+      }
+      .pill.gd {
+        background: var(--g0);
+        border-color: var(--g1);
+        color: var(--g7);
+      }
+      .pill.dk {
+        background: var(--e9);
+        border-color: var(--e9);
+        color: #fff;
+      }
+
+      /* local funders list (city page) */
+      .funder-list {
+        background: var(--card);
+        border: 1px solid var(--k1);
+        border-radius: var(--r);
+        overflow: hidden;
+        margin: 16px 0;
+      }
+      .funder-row {
+        display: grid;
+        grid-template-columns: 1fr auto auto;
+        gap: 10px;
+        padding: 9px 14px;
+        border-bottom: 1px solid var(--k1);
+        align-items: center;
+        font-size: 13px;
+      }
+      .funder-row:last-child {
+        border-bottom: none;
+      }
+      .funder-row .fn {
+        font-weight: 600;
+        color: var(--k9);
+      }
+      .funder-row .ft {
+        font-family: var(--mono);
+        font-size: 10.5px;
+        color: var(--k5);
+      }
+      .funder-row .fa {
+        font-family: var(--mono);
+        font-size: 12px;
+        color: var(--e7);
+        font-weight: 600;
+      }
+
+      /* state compliance table */
+      .comp-row {
+        display: grid;
+        grid-template-columns: 1.2fr 1fr 0.8fr;
+        padding: 8px 12px;
+        border-bottom: 1px solid var(--k1);
+        font-size: 12.5px;
+        align-items: center;
+        background: var(--card);
+      }
+      .comp-row.head {
+        background: var(--paper2);
+        font-family: var(--mono);
+        font-size: 10px;
+        text-transform: uppercase;
+        letter-spacing: 0.06em;
+        color: var(--k5);
+        font-weight: 500;
+      }
+      .comp-row:last-child {
+        border-bottom: none;
+      }
+      .comp-wrap {
+        border: 1px solid var(--k1);
+        border-radius: var(--r);
+        overflow: hidden;
+        margin: 14px 0;
+      }
+
+      /* vertical program list */
+      .prog-list {
+        background: var(--card);
+        border: 1px solid var(--k1);
+        border-radius: var(--r);
+        padding: 14px 16px;
+        margin: 16px 0;
+      }
+      .prog-list ul {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        display: grid;
+        gap: 8px;
+      }
+      .prog-list li {
+        display: flex;
+        gap: 8px;
+        align-items: flex-start;
+        font-size: 13.5px;
+        color: var(--k7);
+        padding-bottom: 8px;
+        border-bottom: 1px dashed var(--k1);
+      }
+      .prog-list li:last-child {
+        border-bottom: none;
+        padding-bottom: 0;
+      }
+      .prog-list .tag {
+        font-family: var(--mono);
+        font-size: 10px;
+        color: var(--g7);
+        background: var(--g0);
+        border: 1px solid var(--g1);
+        padding: 1px 6px;
+        border-radius: 999px;
+        margin-top: 2px;
+        flex-shrink: 0;
+      }
+
+      /* vert comparison side-by-side hero */
+      .versus {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 10px;
+        margin: 16px 0;
+      }
+      .versus-card {
+        background: var(--card);
+        border: 1px solid var(--k1);
+        border-radius: var(--r);
+        padding: 14px 16px;
+      }
+      .versus-card.us {
+        background: var(--e9);
+        color: #fff;
+        border-color: var(--e9);
+      }
+      .versus-card .vc-label {
+        font-family: var(--mono);
+        font-size: 10px;
+        text-transform: uppercase;
+        letter-spacing: 0.08em;
+        color: var(--k5);
+        margin-bottom: 4px;
+      }
+      .versus-card.us .vc-label {
+        color: var(--g5);
+      }
+      .versus-card h4 {
+        font-family: var(--display);
+        font-weight: 600;
+        font-size: 17px;
+        margin: 0 0 10px;
+        letter-spacing: -0.01em;
+      }
+      .versus-card.us h4 {
+        color: #fff;
+      }
+      .versus-card ul {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        display: grid;
+        gap: 7px;
+      }
+      .versus-card li {
+        display: flex;
+        gap: 7px;
+        font-size: 12.5px;
+        line-height: 1.4;
+        color: var(--k7);
+      }
+      .versus-card.us li {
+        color: #c0d6cc;
+      }
+      .versus-card li svg {
+        flex-shrink: 0;
+        margin-top: 2px;
+      }
+      .versus-card.us li svg {
+        color: var(--g5);
+      }
+      .versus-card li svg.bad {
+        color: var(--danger);
+      }
+
+      /* readability score bar (guide) */
+      .meta-row {
+        display: flex;
+        gap: 16px;
+        align-items: center;
+        flex-wrap: wrap;
+        padding: 10px 0 16px;
+        border-bottom: 1px solid var(--k1);
+        margin-bottom: 20px;
+        font-family: var(--mono);
+        font-size: 11px;
+        color: var(--k5);
+      }
+      .meta-row .sep {
+        color: var(--k2);
+      }
+
+      /* guide key-takeaway box */
+      .tldr {
+        background: var(--paper2);
+        border: 1px solid var(--k1);
+        border-radius: var(--r);
+        padding: 14px 16px;
+        margin: 0 0 22px;
+      }
+      .tldr h4 {
+        font-family: var(--mono);
+        font-size: 10px;
+        text-transform: uppercase;
+        letter-spacing: 0.08em;
+        color: var(--k5);
+        margin: 0 0 8px;
+      }
+      .tldr ul {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        display: grid;
+        gap: 6px;
+      }
+      .tldr li {
+        display: flex;
+        gap: 8px;
+        font-size: 13.5px;
+        color: var(--k7);
+        align-items: flex-start;
+        line-height: 1.4;
+      }
+      .tldr li svg {
+        flex-shrink: 0;
+        color: var(--e6);
+        margin-top: 3px;
+      }
+
+      /* glossary term (feature page) */
+      .glossary {
+        display: grid;
+        gap: 8px;
+        margin: 14px 0;
+      }
+      .gloss {
+        background: var(--card);
+        border: 1px solid var(--k1);
+        border-radius: var(--r);
+        padding: 12px 14px;
+      }
+      .gloss dt {
+        font-weight: 700;
+        font-size: 14px;
+        color: var(--k9);
+        margin-bottom: 4px;
+      }
+      .gloss dd {
+        font-size: 13px;
+        color: var(--k7);
+        margin: 0;
+        line-height: 1.5;
+      }
+
+      /* the type label ribbon at top of each artboard */
+      .tpl-label {
+        background: var(--e9);
+        color: #fff;
+        padding: 8px 20px;
+        font-family: var(--mono);
+        font-size: 11px;
+        letter-spacing: 0.08em;
+        text-transform: uppercase;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
+      .tpl-label .count {
+        font-size: 10px;
+        color: var(--g5);
+      }
+
+      /* section divider inside article */
+      .sec-div {
+        margin: 22px 0;
+        border: 0;
+        border-top: 1px solid var(--k1);
+      }
+
+      /* funnel CTA bottom bar */
+      .cta-bar {
+        background: var(--e9);
+        padding: 20px 24px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 16px;
+      }
+      .cta-bar p {
+        margin: 0;
+        color: #c0d6cc;
+        font-size: 13.5px;
+        max-width: 460px;
+        line-height: 1.4;
+      }
+      .cta-bar strong {
+        display: block;
+        color: #fff;
+        font-family: var(--display);
+        font-size: 18px;
+        margin-bottom: 3px;
+      }
+      .cta-bar .btn-p {
+        background: var(--g6);
+        color: var(--e9);
+      }
+    </style>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="text/babel">
+      const CHECK = () => (
+        <svg width="13" height="13" viewBox="0 0 14 14" fill="none">
+          <path
+            d="M2 7.5l3 3 7-7"
+            stroke="currentColor"
+            strokeWidth="2"
+            strokeLinecap="round"
+            strokeLinejoin="round"
+          />
+        </svg>
+      );
+      const X = () => (
+        <svg width="13" height="13" viewBox="0 0 14 14" fill="none">
+          <path
+            d="M2 2l10 10M12 2L2 12"
+            stroke="currentColor"
+            strokeWidth="2"
+            strokeLinecap="round"
+          />
+        </svg>
+      );
+
+      /* ======================================================
+   SHARED CHROME
+====================================================== */
+      const TopBar = () => (
+        <div className="topbar">
+          <span className="topbar-brand">
+            <span className="topbar-mark">G</span>GrantPipe
+          </span>
+          <nav>
+            <span>Product</span>
+            <span>Resources</span>
+            <span>Pricing</span>
+            <span>Compare</span>
+          </nav>
+          <div className="topbar-cta">
+            <span className="btn btn-g" style={{ fontSize: 12, height: 30, padding: "0 10px" }}>
+              Sign in
+            </span>
+            <span className="btn btn-p" style={{ fontSize: 12, height: 30, padding: "0 10px" }}>
+              Start free trial
+            </span>
+          </div>
+        </div>
+      );
+
+      const Crumb = ({ items }) => (
+        <div className="crumb">
+          {items.map((it, i) => (
+            <React.Fragment key={i}>
+              {i > 0 && <span>›</span>}
+              {it}
+            </React.Fragment>
+          ))}
+        </div>
+      );
+
+      const SidebarCta = () => (
+        <div className="sw-cta">
+          <h4>Start free trial</h4>
+          <p>1 month free, no card. Imports your existing tracker.</p>
+          <div
+            className="btn btn-p"
+            style={{ width: "100%", justifyContent: "center", height: 36 }}
+          >
+            Start free trial
+          </div>
+          <div className="fine">No setup fees · Unlimited users</div>
+        </div>
+      );
+
+      const SidebarMeta = ({ items }) => (
+        <div className="sw">
+          <h4>Page details</h4>
+          <div className="sw-meta">
+            {items.map((it, i) => (
+              <div key={i}>
+                <span className="lbl">{it.l}: </span>
+                {it.v}
+              </div>
+            ))}
+          </div>
+        </div>
+      );
+
+      const SidebarRelated = ({ links }) => (
+        <div className="sw">
+          <h4>Related</h4>
+          <ul>
+            {links.map((l, i) => (
+              <li key={i}>
+                <svg width="10" height="10" viewBox="0 0 10 10" fill="none">
+                  <path
+                    d="M2 5h6M5 2l3 3-3 3"
+                    stroke="currentColor"
+                    strokeWidth="1.5"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                  />
+                </svg>
+                {l}
+              </li>
+            ))}
+          </ul>
+        </div>
+      );
+
+      const CtaBar = ({ title, sub }) => (
+        <div className="cta-bar">
+          <div>
+            <strong>{title}</strong>
+            <p>{sub}</p>
+          </div>
+          <div className="btn btn-p" style={{ height: 38, padding: "0 18px", fontSize: 13 }}>
+            Start free trial →
+          </div>
+        </div>
+      );
+
+      /* ======================================================
+   T01 — ALTERNATIVE PAGE
+====================================================== */
+      const T01 = () => (
+        <div className="art">
+          <div className="tpl-label">
+            <span>01 · Alternative page</span>
+            <span className="count">/compare/alternatives/[competitor]</span>
+          </div>
+          <TopBar />
+          <Crumb items={["Compare", "Alternatives", "Bloomerang Alternative"]} />
+          <div className="layout">
+            <main className="main">
+              <span className="eyebrow">
+                <span className="dot" />
+                Alternatives
+              </span>
+              <h1 className="ph">
+                Best <em>Bloomerang Alternative</em> for Grant-Funded Nonprofits
+              </h1>
+              <div className="meta-row">
+                <span>Updated Apr 2026</span>
+                <span className="sep">·</span>
+                <span>10 min read</span>
+                <span className="sep">·</span>
+                <span className="pill em">BOFU</span>
+                <span className="pill">Comparison</span>
+              </div>
+              <p className="bluf">
+                Bloomerang is a solid donor CRM, but it treats grants as an afterthought. If your
+                nonprofit manages restricted funds and needs compliance tracking, you need a
+                platform built for both. GrantPipe manages donors and grants in one system with
+                compliance reporting from day one.
+              </p>
+              <h2 className="sh">Why nonprofits outgrow Bloomerang</h2>
+              <p className="body">
+                Bloomerang built its reputation on donor retention analytics. For organizations that
+                rely primarily on individual giving, it does that job well. The problem shows up
+                when your organization starts managing grants—there's no native grant lifecycle
+                tracking, no restricted fund allocation, and no compliance reporting.
+              </p>
+              <div className="proscons">
+                <div className="pc bad">
+                  <h4>Bloomerang</h4>
+                  <ul>
+                    <li>
+                      <svg
+                        className="pc-mark"
+                        width="13"
+                        height="13"
+                        viewBox="0 0 14 14"
+                        fill="none"
+                      >
+                        <path
+                          d="M2 2l10 10M12 2L2 12"
+                          stroke="currentColor"
+                          strokeWidth="2"
+                          strokeLinecap="round"
+                        />
+                      </svg>
+                      No grant lifecycle management
+                    </li>
+                    <li>
+                      <svg
+                        className="pc-mark"
+                        width="13"
+                        height="13"
+                        viewBox="0 0 14 14"
+                        fill="none"
+                      >
+                        <path
+                          d="M2 2l10 10M12 2L2 12"
+                          stroke="currentColor"
+                          strokeWidth="2"
+                          strokeLinecap="round"
+                        />
+                      </svg>
+                      No restricted fund tracking
+                    </li>
+                    <li>
+                      <svg
+                        className="pc-mark"
+                        width="13"
+                        height="13"
+                        viewBox="0 0 14 14"
+                        fill="none"
+                      >
+                        <path
+                          d="M2 2l10 10M12 2L2 12"
+                          stroke="currentColor"
+                          strokeWidth="2"
+                          strokeLinecap="round"
+                        />
+                      </svg>
+                      Per-record pricing scales poorly
+                    </li>
+                    <li>
+                      <svg
+                        className="pc-mark"
+                        width="13"
+                        height="13"
+                        viewBox="0 0 14 14"
+                        fill="none"
+                      >
+                        <path
+                          d="M2 2l10 10M12 2L2 12"
+                          stroke="currentColor"
+                          strokeWidth="2"
+                          strokeLinecap="round"
+                        />
+                      </svg>
+                      Compliance reporting requires 3rd-party tools
+                    </li>
+                  </ul>
+                </div>
+                <div className="pc good">
+                  <h4>GrantPipe</h4>
+                  <ul>
+                    <li>
+                      <svg
+                        className="pc-mark"
+                        width="13"
+                        height="13"
+                        viewBox="0 0 14 14"
+                        fill="none"
+                      >
+                        <path
+                          d="M2 7.5l3 3 7-7"
+                          stroke="currentColor"
+                          strokeWidth="2"
+                          strokeLinecap="round"
+                          strokeLinejoin="round"
+                        />
+                      </svg>
+                      Donor CRM + grant pipeline unified
+                    </li>
+                    <li>
+                      <svg
+                        className="pc-mark"
+                        width="13"
+                        height="13"
+                        viewBox="0 0 14 14"
+                        fill="none"
+                      >
+                        <path
+                          d="M2 7.5l3 3 7-7"
+                          stroke="currentColor"
+                          strokeWidth="2"
+                          strokeLinecap="round"
+                          strokeLinejoin="round"
+                        />
+                      </svg>
+                      Restricted fund tracking native (ASC 958)
+                    </li>
+                    <li>
+                      <svg
+                        className="pc-mark"
+                        width="13"
+                        height="13"
+                        viewBox="0 0 14 14"
+                        fill="none"
+                      >
+                        <path
+                          d="M2 7.5l3 3 7-7"
+                          stroke="currentColor"
+                          strokeWidth="2"
+                          strokeLinecap="round"
+                          strokeLinejoin="round"
+                        />
+                      </svg>
+                      Unlimited users, flat pricing
+                    </li>
+                    <li>
+                      <svg
+                        className="pc-mark"
+                        width="13"
+                        height="13"
+                        viewBox="0 0 14 14"
+                        fill="none"
+                      >
+                        <path
+                          d="M2 7.5l3 3 7-7"
+                          stroke="currentColor"
+                          strokeWidth="2"
+                          strokeLinecap="round"
+                          strokeLinejoin="round"
+                        />
+                      </svg>
+                      Audit-ready exports in one click
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <h2 className="sh">How they compare</h2>
+              <div className="ctable">
+                <table>
+                  <thead>
+                    <tr>
+                      <th>Feature</th>
+                      <th>Bloomerang</th>
+                      <th className="us">GrantPipe</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>Donor CRM</td>
+                      <td className="yes">●</td>
+                      <td className="us yes">●</td>
+                    </tr>
+                    <tr>
+                      <td>Grant pipeline</td>
+                      <td className="no">—</td>
+                      <td className="us yes">●</td>
+                    </tr>
+                    <tr>
+                      <td>Restricted fund tracking</td>
+                      <td className="no">—</td>
+                      <td className="us yes">●</td>
+                    </tr>
+                    <tr>
+                      <td>Federal grants search</td>
+                      <td className="no">—</td>
+                      <td className="us yes">●</td>
+                    </tr>
+                    <tr>
+                      <td>Audit-ready exports</td>
+                      <td className="no">—</td>
+                      <td className="us yes">●</td>
+                    </tr>
+                    <tr>
+                      <td>Unlimited users</td>
+                      <td className="no">—</td>
+                      <td className="us yes">●</td>
+                    </tr>
+                    <tr>
+                      <td>Starting price</td>
+                      <td>1125/mo</td>
+                      <td className="us">1129/mo annual</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+              <h2 className="sh">Frequently asked questions</h2>
+              <div className="faq-list">
+                {[
+                  {
+                    q: "Does Bloomerang track grant compliance?",
+                    a: "No. Bloomerang is focused on donor retention analytics. It does not have native grant lifecycle management, restricted fund tracking, or compliance reporting.",
+                  },
+                  {
+                    q: "Can I migrate from Bloomerang to GrantPipe?",
+                    a: "Yes. We support data migration from Bloomerang exports. Donor records, gift history, and contact data all transfer.",
+                  },
+                ].map((f, i) => (
+                  <div className="faq-item" key={i}>
+                    <div className="faq-q">{f.q}</div>
+                    <div className="faq-a">{f.a}</div>
+                  </div>
+                ))}
+              </div>
+            </main>
+            <aside className="sidebar">
+              <SidebarCta />
+              <SidebarMeta
+                items={[
+                  { l: "Competitor", v: "Bloomerang" },
+                  { l: "Pricing", v: "1125–1249/mo" },
+                  { l: "Stage", v: "BOFU" },
+                  { l: "Updated", v: "Apr 2026" },
+                ]}
+              />
+              <SidebarRelated
+                links={[
+                  "GrantPipe vs Bloomerang",
+                  "Bloomerang pricing breakdown",
+                  "Best Donor CRM alternatives",
+                  "Switch from Bloomerang",
+                ]}
+              />
+            </aside>
+          </div>
+          <CtaBar
+            title="See your own grants in GrantPipe."
+            sub="1-month free trial. We'll import your existing tracker on the first call. No credit card required."
+          />
+        </div>
+      );
+
+      /* ======================================================
+   T02 — COMPARISON PAGE
+====================================================== */
+      const T02 = () => (
+        <div className="art">
+          <div className="tpl-label">
+            <span>02 · Comparison page</span>
+            <span className="count">/compare/versus/grantpipe-vs-[competitor]</span>
+          </div>
+          <TopBar />
+          <Crumb items={["Compare", "Versus", "GrantPipe vs Bloomerang"]} />
+          <div className="layout">
+            <main className="main">
+              <span className="eyebrow">
+                <span className="dot" />
+                Head-to-head
+              </span>
+              <h1 className="ph">
+                <em>GrantPipe vs Bloomerang:</em> Donor CRM vs Donor-Plus-Grant Workflow [2026]
+              </h1>
+              <div className="meta-row">
+                <span>Updated Apr 2026</span>
+                <span className="sep">·</span>
+                <span>12 min read</span>
+                <span className="sep">·</span>
+                <span className="pill gd">BOFU</span>
+              </div>
+              <p className="bluf">
+                Bloomerang is stronger when the nonprofit wants a lighter donor CRM and does not
+                need grant-heavy operations. GrantPipe is stronger when donor context, restricted
+                funds, reporting deadlines, and active grants need to live in one workflow instead
+                of across a CRM, spreadsheets, and accounting side files.
+              </p>
+              <div className="versus">
+                <div className="versus-card">
+                  <div className="vc-label">Bloomerang</div>
+                  <h4>Donor-first, lighter lift</h4>
+                  <ul>
+                    <li>
+                      <svg width="13" height="13" viewBox="0 0 14 14" fill="none">
+                        <path
+                          d="M2 7.5l3 3 7-7"
+                          stroke="currentColor"
+                          strokeWidth="2"
+                          strokeLinecap="round"
+                          strokeLinejoin="round"
+                        />
+                      </svg>
+                      Clean donor CRM interface
+                    </li>
+                    <li>
+                      <svg width="13" height="13" viewBox="0 0 14 14" fill="none">
+                        <path
+                          d="M2 7.5l3 3 7-7"
+                          stroke="currentColor"
+                          strokeWidth="2"
+                          strokeLinecap="round"
+                          strokeLinejoin="round"
+                        />
+                      </svg>
+                      Strong retention analytics
+                    </li>
+                    <li>
+                      <svg className="bad" width="13" height="13" viewBox="0 0 14 14" fill="none">
+                        <path
+                          d="M2 2l10 10M12 2L2 12"
+                          stroke="currentColor"
+                          strokeWidth="2"
+                          strokeLinecap="round"
+                        />
+                      </svg>
+                      Grants spill into spreadsheets
+                    </li>
+                    <li>
+                      <svg className="bad" width="13" height="13" viewBox="0 0 14 14" fill="none">
+                        <path
+                          d="M2 2l10 10M12 2L2 12"
+                          stroke="currentColor"
+                          strokeWidth="2"
+                          strokeLinecap="round"
+                        />
+                      </svg>
+                      Restricted funds not modeled
+                    </li>
+                  </ul>
+                </div>
+                <div className="versus-card us">
+                  <div className="vc-label">GrantPipe</div>
+                  <h4>One record for everyone</h4>
+                  <ul>
+                    <li>
+                      <svg width="13" height="13" viewBox="0 0 14 14" fill="none">
+                        <path
+                          d="M2 7.5l3 3 7-7"
+                          stroke="currentColor"
+                          strokeWidth="2"
+                          strokeLinecap="round"
+                          strokeLinejoin="round"
+                        />
+                      </svg>
+                      Donor CRM + grants unified
+                    </li>
+                    <li>
+                      <svg width="13" height="13" viewBox="0 0 14 14" fill="none">
+                        <path
+                          d="M2 7.5l3 3 7-7"
+                          stroke="currentColor"
+                          strokeWidth="2"
+                          strokeLinecap="round"
+                          strokeLinejoin="round"
+                        />
+                      </svg>
+                      Restricted fund tracking native
+                    </li>
+                    <li>
+                      <svg width="13" height="13" viewBox="0 0 14 14" fill="none">
+                        <path
+                          d="M2 7.5l3 3 7-7"
+                          stroke="currentColor"
+                          strokeWidth="2"
+                          strokeLinecap="round"
+                          strokeLinejoin="round"
+                        />
+                      </svg>
+                      Board, funder, audit: same answer
+                    </li>
+                    <li>
+                      <svg width="13" height="13" viewBox="0 0 14 14" fill="none">
+                        <path
+                          d="M2 7.5l3 3 7-7"
+                          stroke="currentColor"
+                          strokeWidth="2"
+                          strokeLinecap="round"
+                          strokeLinejoin="round"
+                        />
+                      </svg>
+                      Unlimited users on all plans
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div className="ctable">
+                <table>
+                  <thead>
+                    <tr>
+                      <th>Feature</th>
+                      <th className="us">GrantPipe</th>
+                      <th>Bloomerang</th>
+                      <th>Why it matters</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>Core job</td>
+                      <td className="us">Donor CRM + grant operations</td>
+                      <td>Donor CRM + fundraising</td>
+                      <td>Depends on whether grants are central</td>
+                    </tr>
+                    <tr>
+                      <td>Restricted-fund visibility</td>
+                      <td className="us yes">Native</td>
+                      <td className="no">Not included</td>
+                      <td>Finance + board need a live answer</td>
+                    </tr>
+                    <tr>
+                      <td>Compliance reporting</td>
+                      <td className="us yes">Built-in</td>
+                      <td className="no">Not positioned</td>
+                      <td>Grant teams feel this after award</td>
+                    </tr>
+                    <tr>
+                      <td>Federal grants search</td>
+                      <td className="us yes">Included</td>
+                      <td className="no">—</td>
+                      <td>Reduces prospecting overhead</td>
+                    </tr>
+                    <tr>
+                      <td>Starting price</td>
+                      <td className="us">1129/mo annual</td>
+                      <td>1125/mo</td>
+                      <td>Compare total workflow cost</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+              <h2 className="sh">When each product wins</h2>
+              <p className="body">
+                <strong>Choose Bloomerang</strong> if the organization mainly needs donor
+                management, fundraising reporting, and a lighter CRM. The product is clean and staff
+                get productive quickly.
+              </p>
+              <p className="body">
+                <strong>Choose GrantPipe</strong> if the real bottleneck is the handoff between
+                donor work, active grants, restricted funds, and reporting obligations that now
+                spill into spreadsheets.
+              </p>
+            </main>
+            <aside className="sidebar">
+              <SidebarCta />
+              <div className="sw">
+                <h4>Verdict</h4>
+                <p style={{ fontSize: 13, color: "var(--k7)", margin: 0, lineHeight: 1.5 }}>
+                  Choose Bloomerang for donor-only orgs. Choose GrantPipe when grants + restricted
+                  funds create recurring reporting pressure.
+                </p>
+              </div>
+              <SidebarRelated
+                links={[
+                  "Bloomerang alternative",
+                  "GrantPipe vs Salesforce NPSP",
+                  "GrantPipe pricing",
+                  "Restricted fund tracking",
+                ]}
+              />
+            </aside>
+          </div>
+          <CtaBar
+            title="Stop rebuilding the same report every month."
+            sub="Start a 1-month free trial. No credit card, no setup fees. Unlimited users."
+          />
+        </div>
+      );
+
+      /* ======================================================
+   T03 — STATE PAGE
+====================================================== */
+      const T03 = () => (
+        <div className="art">
+          <div className="tpl-label">
+            <span>03 · State page</span>
+            <span className="count">/nonprofit-software/[state]</span>
+          </div>
+          <TopBar />
+          <Crumb items={["Nonprofit Software", "California"]} />
+          <div className="layout">
+            <main className="main">
+              <span className="eyebrow">
+                <span className="dot" />
+                California
+              </span>
+              <h1 className="ph">
+                Grant Management Software for <em>California Nonprofits</em>
+              </h1>
+              <div className="meta-row">
+                <span>Updated Apr 2026</span>
+                <span className="sep">·</span>
+                <span>CA · 180,000 nonprofits</span>
+                <span className="sep">·</span>
+                <span className="pill">TOFU</span>
+              </div>
+              <p className="bluf">
+                California nonprofits managing state and federal grants face dual fiscal calendars,
+                strict AG registration requirements, and compliance obligations from multiple
+                agencies. Grant management software reduces the administrative overhead of tracking
+                all of them.
+              </p>
+              <div className="stats">
+                <div className="stat">
+                  <div className="v">180k</div>
+                  <div className="l">Nonprofits in CA</div>
+                </div>
+                <div className="stat">
+                  <div className="v">Jul 1</div>
+                  <div className="l">State fiscal year start</div>
+                </div>
+                <div className="stat">
+                  <div className="v">4.5mo</div>
+                  <div className="l">RRF-1 filing window</div>
+                </div>
+              </div>
+              <h2 className="sh">California compliance requirements</h2>
+              <div className="comp-wrap">
+                <div className="comp-row head">
+                  <span>Requirement</span>
+                  <span>Threshold</span>
+                  <span>Deadline</span>
+                </div>
+                <div className="comp-row">
+                  <span>Annual RRF-1 Renewal</span>
+                  <span>All registered charities</span>
+                  <span>4.5 mo after FYE</span>
+                </div>
+                <div className="comp-row">
+                  <span>Audited financials</span>
+                  <span>Revenue &gt; 12M</span>
+                  <span>With RRF-1</span>
+                </div>
+                <div className="comp-row">
+                  <span>Reviewed financials</span>
+                  <span>Revenue 150K–12M</span>
+                  <span>With RRF-1</span>
+                </div>
+                <div className="comp-row">
+                  <span>Form 990 filing</span>
+                  <span>Most nonprofits</span>
+                  <span>4.5 mo after FYE</span>
+                </div>
+              </div>
+              <h2 className="sh">Dual fiscal calendar problem</h2>
+              <p className="body">
+                California nonprofits receiving both state and federal grants operate on two
+                separate fiscal calendars simultaneously. State grants (CDSS, CalOES, CalTrans)
+                follow July 1–June 30. Federal grants follow October 1–September 30. Tracking both
+                in spreadsheets creates missed deadlines.
+              </p>
+              <h2 className="sh">Frequently asked questions</h2>
+              <div className="faq-list">
+                {[
+                  {
+                    q: "What compliance requirements do California nonprofits face?",
+                    a: "California nonprofits must register with the AG Registry of Charitable Trusts, file annual RRF-1 forms, and meet program-specific reporting requirements for any state or federal grants received.",
+                  },
+                  {
+                    q: "How do California nonprofits manage dual state and federal grant reporting?",
+                    a: "A dedicated grant management system tracks each award's requirements independently, generates funder-specific financial reports, and flags upcoming deadlines across both fiscal calendars.",
+                  },
+                ].map((f, i) => (
+                  <div className="faq-item" key={i}>
+                    <div className="faq-q">{f.q}</div>
+                    <div className="faq-a">{f.a}</div>
+                  </div>
+                ))}
+              </div>
+            </main>
+            <aside className="sidebar">
+              <SidebarCta />
+              <div className="sw">
+                <h4>Top California metros</h4>
+                <ul>
+                  {[
+                    "Los Angeles (45k orgs)",
+                    "Bay Area (28k orgs)",
+                    "San Diego (12k orgs)",
+                    "Sacramento (8.5k orgs)",
+                  ].map((m, i) => (
+                    <li key={i}>
+                      <CHECK />
+                      {m}
+                    </li>
+                  ))}
+                </ul>
+              </div>
+              <SidebarRelated
+                links={[
+                  "California grant programs guide",
+                  "RRF-1 filing guide",
+                  "Best grant software (CA)",
+                  "GrantPipe pricing",
+                ]}
+              />
+            </aside>
+          </div>
+          <CtaBar
+            title="Built for California's dual-calendar compliance."
+            sub="Track state and federal grant deadlines in one system. 1-month free trial, no credit card."
+          />
+        </div>
+      );
+
+      /* ======================================================
+   T04 — CITY PAGE
+====================================================== */
+      const T04 = () => (
+        <div className="art">
+          <div className="tpl-label">
+            <span>04 · City page</span>
+            <span className="count">/nonprofit-software/[city]</span>
+          </div>
+          <TopBar />
+          <Crumb items={["Nonprofit Software", "Massachusetts", "Boston"]} />
+          <div className="layout">
+            <main className="main">
+              <span className="eyebrow">
+                <span className="dot" />
+                Boston
+              </span>
+              <h1 className="ph">
+                Nonprofit Grant &amp; Donor Software for <em>Boston</em>
+              </h1>
+              <div className="meta-row">
+                <span>Updated Apr 2026</span>
+                <span className="sep">·</span>
+                <span>16,500 nonprofits</span>
+                <span className="sep">·</span>
+                <span className="pill">TOFU</span>
+              </div>
+              <p className="bluf">
+                Boston's nonprofit sector is anchored by a uniquely deep foundation and university
+                funder community. Mid-sized organizations balance MA AGO Form PC compliance, Boston
+                Public Health Commission contracts, and substantial federal research pass-through.
+              </p>
+              <h2 className="sh">Top Boston-area funders</h2>
+              <div className="funder-list">
+                {[
+                  { n: "The Boston Foundation", t: "Community fdn", a: "1170M/yr" },
+                  { n: "Barr Foundation", t: "Private fdn", a: "180M/yr" },
+                  { n: "Klarman Family Foundation", t: "Private fdn", a: "140M/yr" },
+                  { n: "United Way Mass Bay", t: "United Way", a: "—" },
+                  { n: "The Yawkey Foundation", t: "Private fdn", a: "130M/yr" },
+                ].map((f, i) => (
+                  <div className="funder-row" key={i}>
+                    <span className="fn">{f.n}</span>
+                    <span className="ft">{f.t}</span>
+                    <span className="fa">{f.a}</span>
+                  </div>
+                ))}
+              </div>
+              <h2 className="sh">Boston-specific compliance notes</h2>
+              <p className="body">
+                <strong>MA Form PC + Form 3:</strong> Two separate annual filings required — one
+                with the AG's Non-Profit Division (Form PC), one with the Secretary of State (Form
+                3). Missing either creates compliance gaps. The 4.5-month deadline assumes the audit
+                is complete.
+              </p>
+              <p className="body">
+                <strong>Boston Public Health Commission:</strong> BPHC contracts carry program-level
+                cost-category reporting plus monthly invoicing — heavier than most peer metros.
+              </p>
+              <h2 className="sh">Frequently asked questions</h2>
+              <div className="faq-list">
+                {[
+                  {
+                    q: "What is the difference between MA Form PC and Form 3?",
+                    a: "Form PC is the AGO filing for charitable trust regulation; Form 3 is the Secretary of State filing for corporate annual reporting. Both are required annually for MA-registered charities.",
+                  },
+                  {
+                    q: "What is the most common compliance failure for Boston nonprofits?",
+                    a: "Form PC late filings tied to audit timing. The 4.5-month deadline assumes the audit is complete; many mid-sized organizations cut it close.",
+                  },
+                ].map((f, i) => (
+                  <div className="faq-item" key={i}>
+                    <div className="faq-q">{f.q}</div>
+                    <div className="faq-a">{f.a}</div>
+                  </div>
+                ))}
+              </div>
+            </main>
+            <aside className="sidebar">
+              <SidebarCta />
+              <div className="sw">
+                <h4>Boston compliance checklist</h4>
+                <ul>
+                  {[
+                    "MA Form PC (AGO)",
+                    "MA Form 3 (Sec of State)",
+                    "BPHC monthly invoicing",
+                    "Federal research pass-through readiness",
+                    "Dual fiscal calendar tracking",
+                  ].map((c, i) => (
+                    <li key={i}>
+                      <CHECK />
+                      {c}
+                    </li>
+                  ))}
+                </ul>
+              </div>
+              <SidebarRelated
+                links={[
+                  "Massachusetts state guide",
+                  "Best grant software (Boston)",
+                  "Boston Foundation grants guide",
+                  "Federal pass-through compliance",
+                ]}
+              />
+            </aside>
+          </div>
+          <CtaBar
+            title="Manage Boston's dual MA filings and federal pass-through in one place."
+            sub="1-month free trial. Imports your existing tracker. No credit card required."
+          />
+        </div>
+      );
+
+      /* ======================================================
+   T05 — VERTICAL PAGE
+====================================================== */
+      const T05 = () => (
+        <div className="art">
+          <div className="tpl-label">
+            <span>05 · Vertical page</span>
+            <span className="count">/solutions/[sector]</span>
+          </div>
+          <TopBar />
+          <Crumb items={["Solutions", "Food Banks"]} />
+          <div className="layout">
+            <main className="main">
+              <span className="eyebrow">
+                <span className="dot" />
+                Food Banks &amp; Hunger Relief
+              </span>
+              <h1 className="ph">
+                Grant Management for <em>Food Banks</em> and Hunger Relief Organizations
+              </h1>
+              <div className="meta-row">
+                <span>Updated Apr 2026</span>
+                <span className="sep">·</span>
+                <span>~60,000 orgs</span>
+                <span className="sep">·</span>
+                <span className="pill">TOFU</span>
+              </div>
+              <p className="bluf">
+                Food banks typically manage USDA TEFAP, FEMA EFSP, CDBG, and foundation grants
+                simultaneously—each with different compliance requirements, reporting formats, and
+                deadlines that a single spreadsheet-based system cannot reliably track.
+              </p>
+              <h2 className="sh">Common grant programs for food banks</h2>
+              <div className="prog-list">
+                <ul>
+                  {[
+                    {
+                      t: "USDA TEFAP (federal)",
+                      d: "Monthly + annual distribution reporting, inventory tracking, eligibility verification",
+                    },
+                    { t: "FEMA EFSP", d: "Quarterly expenditure tracking by allowed categories" },
+                    {
+                      t: "CDBG (Community Development Block Grants)",
+                      d: "Varies by state and local program",
+                    },
+                    {
+                      t: "Feeding America network grants",
+                      d: "Network-specific metrics and mid-year/final reports",
+                    },
+                    {
+                      t: "Private foundation grants",
+                      d: "Program metrics + financial report, annual or semi-annual",
+                    },
+                  ].map((p, i) => (
+                    <li key={i}>
+                      <span className="tag">GRANT</span>
+                      <div>
+                        <strong style={{ display: "block", fontSize: 13.5, color: "var(--k9)" }}>
+                          {p.t}
+                        </strong>
+                        <span style={{ fontSize: 13, color: "var(--k5)" }}>{p.d}</span>
+                      </div>
+                    </li>
+                  ))}
+                </ul>
+              </div>
+              <h2 className="sh">Compliance complexity by program</h2>
+              <div className="dtable">
+                <table>
+                  <thead>
+                    <tr>
+                      <th>Funding Source</th>
+                      <th>Compliance</th>
+                      <th>Reporting</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>USDA TEFAP</td>
+                      <td>Inventory + distribution logs</td>
+                      <td>Monthly + annual</td>
+                    </tr>
+                    <tr>
+                      <td>FEMA EFSP</td>
+                      <td>Expenditure by category</td>
+                      <td>Quarterly</td>
+                    </tr>
+                    <tr>
+                      <td>State grants</td>
+                      <td>Varies by program</td>
+                      <td>Quarterly / semi-annual</td>
+                    </tr>
+                    <tr>
+                      <td>Foundation grants</td>
+                      <td>Program metrics + financials</td>
+                      <td>Mid-year + final</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+              <h2 className="sh">Frequently asked questions</h2>
+              <div className="faq-list">
+                {[
+                  {
+                    q: "What compliance requirements are unique to food banks?",
+                    a: "Food banks receiving USDA TEFAP must track commodity distribution in detail—pounds by food category, eligibility verification records, and inventory management. FEMA EFSP adds quarterly expenditure tracking by allowed categories.",
+                  },
+                ].map((f, i) => (
+                  <div className="faq-item" key={i}>
+                    <div className="faq-q">{f.q}</div>
+                    <div className="faq-a">{f.a}</div>
+                  </div>
+                ))}
+              </div>
+            </main>
+            <aside className="sidebar">
+              <SidebarCta />
+              <div className="sw">
+                <h4>Key pain points</h4>
+                <ul>
+                  {[
+                    "USDA TEFAP compliance",
+                    "Multi-funder reporting formats",
+                    "Donated food inventory + monetary grants",
+                    "Seasonal demand vs. restricted funds",
+                  ].map((p, i) => (
+                    <li key={i}>
+                      <CHECK />
+                      {p}
+                    </li>
+                  ))}
+                </ul>
+              </div>
+              <SidebarRelated
+                links={[
+                  "USDA TEFAP compliance guide",
+                  "Federal grant management",
+                  "Restricted fund tracking",
+                  "Food bank grant calendar template",
+                ]}
+              />
+            </aside>
+          </div>
+          <CtaBar
+            title="One system for TEFAP, EFSP, CDBG, and foundation grants."
+            sub="GrantPipe tracks each fund separately, generates funder-specific reports, and flags every deadline. 1-month free trial."
+          />
+        </div>
+      );
+
+      /* ======================================================
+   T06 — PERSONA PAGE
+====================================================== */
+      const T06 = () => (
+        <div className="art">
+          <div className="tpl-label">
+            <span>06 · Persona page</span>
+            <span className="count">/for/[role]</span>
+          </div>
+          <TopBar />
+          <Crumb items={["For", "Grants Managers"]} />
+          <div className="layout">
+            <main className="main">
+              <span className="eyebrow">
+                <span className="dot" />
+                For Grants Managers
+              </span>
+              <h1 className="ph">
+                GrantPipe for <em>Grants Managers</em>
+              </h1>
+              <div className="meta-row">
+                <span>Updated Apr 2026</span>
+                <span className="sep">·</span>
+                <span>Role: Grants Manager</span>
+                <span className="sep">·</span>
+                <span className="pill em">MOFU</span>
+              </div>
+              <p className="bluf">
+                Grants managers at mid-sized nonprofits own a portfolio of 5–40 active awards. The
+                daily job is restricted fund tracking, drawdown timing, budget modification
+                approvals, and hitting SF-425, RPPR, and funder-specific deadlines. GrantPipe
+                consolidates all of it into one system so a single staffer can manage the portfolio
+                without a consultant.
+              </p>
+              <h2 className="sh">What keeps you up at night</h2>
+              <div className="pain-list">
+                <ul>
+                  {[
+                    "Tracking 10+ active grants in spreadsheets that break when cells get overwritten",
+                    "Reconciling QuickBooks classes to funder budget line items every month",
+                    "Missing SF-425 quarterly deadlines because reminders live in Outlook",
+                    "Recreating audit documentation under time pressure every spring",
+                    "No single view of drawdown timing vs. expenditures vs. cash on hand per grant",
+                  ].map((p, i) => (
+                    <li key={i}>
+                      <span className="pain-num">0{i + 1}</span>
+                      {p}
+                    </li>
+                  ))}
+                </ul>
+              </div>
+              <h2 className="sh">How GrantPipe maps to your job</h2>
+              <div className="dtable">
+                <table>
+                  <thead>
+                    <tr>
+                      <th>Feature</th>
+                      <th>What it replaces</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>
+                        <strong>Grant registry + funder metadata</strong>
+                      </td>
+                      <td>One record per award with CFDA, reporting cadence, budget by line</td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <strong>Restricted fund ledger</strong>
+                      </td>
+                      <td>
+                        Every expenditure tied to a grant — auditor question answered in minutes
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <strong>Reporting calendar + owners</strong>
+                      </td>
+                      <td>Replaces Outlook reminders; shows reports due 30/60/90 days out</td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <strong>Budget vs. actual by grant</strong>
+                      </td>
+                      <td>Under-spend and over-spend visible before the month closes</td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <strong>Audit documentation vault</strong>
+                      </td>
+                      <td>Time records, invoices, approvals attached to the relevant grant</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+              <h2 className="sh">By the numbers</h2>
+              <div className="stats">
+                <div className="stat">
+                  <div className="v">6–8h</div>
+                  <div className="l">Reporting per grant/yr (CEP)</div>
+                </div>
+                <div className="stat">
+                  <div className="v">17%</div>
+                  <div className="l">Federal spend w/ audit findings (GAO 2024)</div>
+                </div>
+                <div className="stat">
+                  <div className="v">2×</div>
+                  <div className="l">Portfolio capacity with software</div>
+                </div>
+              </div>
+              <h2 className="sh">Frequently asked questions</h2>
+              <div className="faq-list">
+                {[
+                  {
+                    q: "Can one grants manager cover a 15M portfolio in GrantPipe?",
+                    a: "Yes. The platform is designed so a single grants manager with 10–30 active awards can run reporting, drawdown reconciliation, and audit prep without a dedicated admin or external consultant.",
+                  },
+                  {
+                    q: "How is GrantPipe different from grant accounting in QuickBooks?",
+                    a: "QuickBooks classes can track cost by grant, but they do not enforce restricted fund separation, track reporting deadlines, produce funder-formatted reports, or store the supporting documentation an auditor requires.",
+                  },
+                ].map((f, i) => (
+                  <div className="faq-item" key={i}>
+                    <div className="faq-q">{f.q}</div>
+                    <div className="faq-a">{f.a}</div>
+                  </div>
+                ))}
+              </div>
+            </main>
+            <aside className="sidebar">
+              <SidebarCta />
+              <div className="sw">
+                <h4>Key terms</h4>
+                <dl style={{ margin: 0, display: "grid", gap: 8 }}>
+                  {[
+                    {
+                      t: "SF-425",
+                      d: "Federal Financial Report — quarterly or semi-annual for most federal awards",
+                    },
+                    {
+                      t: "Drawdown reconciliation",
+                      d: "Matching cash drawn vs. expenditures posted to the GL",
+                    },
+                    {
+                      t: "SEFA",
+                      d: "Schedule of Expenditures of Federal Awards — required with Single Audit",
+                    },
+                  ].map((g, i) => (
+                    <div key={i}>
+                      <dt style={{ fontWeight: 700, fontSize: 12, color: "var(--k9)" }}>{g.t}</dt>
+                      <dd style={{ margin: 0, fontSize: 12, color: "var(--k5)", lineHeight: 1.4 }}>
+                        {g.d}
+                      </dd>
+                    </div>
+                  ))}
+                </dl>
+              </div>
+              <SidebarRelated
+                links={[
+                  "SF-425 reporting guide",
+                  "Single Audit threshold guide",
+                  "Restricted fund tracking",
+                  "Grant compliance checklist (free)",
+                ]}
+              />
+            </aside>
+          </div>
+          <CtaBar
+            title="Run a 13M–115M portfolio without a consultant."
+            sub="GrantPipe is built for the grants manager currently running a portfolio on a shared drive and inherited it that way. 1-month free trial."
+          />
+        </div>
+      );
+
+      /* ======================================================
+   T07 — FEATURE PAGE
+====================================================== */
+      const T07 = () => (
+        <div className="art">
+          <div className="tpl-label">
+            <span>07 · Feature page</span>
+            <span className="count">/features/[feature-slug]</span>
+          </div>
+          <TopBar />
+          <Crumb items={["Product", "Features", "Restricted Fund Tracking"]} />
+          <div className="layout">
+            <main className="main">
+              <span className="eyebrow">
+                <span className="dot" />
+                Feature
+              </span>
+              <h1 className="ph">
+                <em>Restricted Fund Tracking</em> for Nonprofits
+              </h1>
+              <div className="meta-row">
+                <span>Updated Apr 2026</span>
+                <span className="sep">·</span>
+                <span className="pill em">FASB ASC 958</span>
+                <span className="pill dk">Native feature</span>
+              </div>
+              <p className="bluf">
+                Per-grant ledgers, real-time restriction balances, and FASB ASC 958 net asset
+                release workflows built into the donor system—not bolted onto a spreadsheet.
+              </p>
+
+              <div className="feat-mock">
+                {[
+                  { name: "Packard — Ocean program", pct: 42, cls: "" },
+                  { name: "EPA Watershed grant", pct: 78, cls: "warn" },
+                  { name: "Local Family Foundation", pct: 14, cls: "" },
+                  { name: "Bloomberg — Civic Data", pct: 96, cls: "over" },
+                ].map((f, i) => (
+                  <div className="mock-row" key={i}>
+                    <span
+                      style={{
+                        width: 180,
+                        overflow: "hidden",
+                        textOverflow: "ellipsis",
+                        whiteSpace: "nowrap",
+                      }}
+                    >
+                      {f.name}
+                    </span>
+                    <div className="mock-bar">
+                      <div className="mock-fill" style={{ width: `1{f.pct}%` }} />
+                    </div>
+                    <span className="mock-pct">{f.pct}%</span>
+                  </div>
+                ))}
+              </div>
+
+              <h2 className="sh">How it works</h2>
+              <p className="body">
+                Create a fund record with funder, amount, start/end date, and restriction type.
+                Define allowable expense categories. As expenses post, allocate them to one or more
+                funds—splits are supported per line. The system posts a net asset release journal
+                entry equal to the allocated amount. The fund ledger updates in real time.
+              </p>
+              <div className="ctable">
+                <table>
+                  <thead>
+                    <tr>
+                      <th>Capability</th>
+                      <th>Spreadsheet</th>
+                      <th>Generalist CRM</th>
+                      <th className="us">GrantPipe</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>Per-grant ledger</td>
+                      <td>Manual tab</td>
+                      <td className="no">—</td>
+                      <td className="us yes">Native</td>
+                    </tr>
+                    <tr>
+                      <td>FASB ASC 958 release</td>
+                      <td>Manual journal</td>
+                      <td className="no">—</td>
+                      <td className="us yes">Auto on expense post</td>
+                    </tr>
+                    <tr>
+                      <td>Over-obligation block</td>
+                      <td className="no">No</td>
+                      <td className="no">No</td>
+                      <td className="us yes">Yes</td>
+                    </tr>
+                    <tr>
+                      <td>Audit evidence pull</td>
+                      <td>Rebuild from tabs</td>
+                      <td>Custom report</td>
+                      <td className="us yes">One-click export</td>
+                    </tr>
+                    <tr>
+                      <td>Live board-ready balance</td>
+                      <td>Stale</td>
+                      <td>Partial</td>
+                      <td className="us yes">Live</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+              <h2 className="sh">Key terms</h2>
+              <div className="glossary">
+                {[
+                  {
+                    t: "Net asset release",
+                    d: "Under FASB ASC 958-205, funds with donor restrictions are released to without-restriction status when the purpose or time condition is satisfied. In GrantPipe, releases post automatically when a qualifying expense is allocated.",
+                  },
+                  {
+                    t: "Drawdown reconciliation",
+                    d: "Monthly process of matching cash drawn from a federal payment system against actual expenditures posted to the GL.",
+                  },
+                  {
+                    t: "SEFA",
+                    d: "Schedule of Expenditures of Federal Awards. Required with Single Audit, listing every federal award expended during the fiscal year.",
+                  },
+                ].map((g, i) => (
+                  <div className="gloss" key={i}>
+                    <dt>{g.t}</dt>
+                    <dd>{g.d}</dd>
+                  </div>
+                ))}
+              </div>
+            </main>
+            <aside className="sidebar">
+              <SidebarCta />
+              <div className="sw">
+                <h4>What this replaces</h4>
+                <ul>
+                  {[
+                    "Per-grant spreadsheet tab",
+                    "Monthly journal entry to release funds",
+                    "Two-day spend-down rebuild",
+                    "Audit finding on missing releases",
+                  ].map((r, i) => (
+                    <li key={i}>
+                      <CHECK />
+                      {r}
+                    </li>
+                  ))}
+                </ul>
+              </div>
+              <SidebarRelated
+                links={[
+                  "Grant pipeline management",
+                  "Funder reporting templates",
+                  "Audit trail & activity log",
+                  "FASB ASC 958 guide",
+                ]}
+              />
+            </aside>
+          </div>
+          <CtaBar
+            title="The restriction balance your board sees should match the one your auditor sees."
+            sub="GrantPipe makes that automatic. Start a 1-month free trial, no credit card."
+          />
+        </div>
+      );
+
+      /* ======================================================
+   T08 — GUIDE PAGE
+====================================================== */
+      const T08 = () => (
+        <div className="art">
+          <div className="tpl-label">
+            <span>08 · Guide page</span>
+            <span className="count">/resources/guides/[guide-slug]</span>
+          </div>
+          <TopBar />
+          <Crumb items={["Resources", "Guides", "Restricted Fund Accounting"]} />
+          <div className="layout">
+            <main className="main">
+              <span className="eyebrow">
+                <span className="dot" />
+                Guide
+              </span>
+              <h1 className="ph">
+                Accounting for <em>Restricted Funds</em> in Nonprofits
+              </h1>
+              <div className="meta-row">
+                <span>Updated Apr 2026</span>
+                <span className="sep">·</span>
+                <span>16 min read</span>
+                <span className="sep">·</span>
+                <span className="pill">TOFU</span>
+                <span className="pill gd">Compliance</span>
+              </div>
+              <div className="toc">
+                <h4>In this guide</h4>
+                <ol>
+                  <li>What "restricted" means under FASB ASC 958</li>
+                  <li>Temporarily vs. permanently restricted net assets</li>
+                  <li>How net asset releases work</li>
+                  <li>Common audit findings and how to avoid them</li>
+                  <li>Software vs. spreadsheets: what changes at scale</li>
+                </ol>
+              </div>
+              <div className="tldr">
+                <h4>TL;DR</h4>
+                <ul>
+                  {[
+                    'FASB ASC 958-205 requires nonprofits to classify net assets as "with" or "without" donor restrictions',
+                    "Net asset releases must be recorded when purpose or time conditions are satisfied",
+                    "The most common audit finding is commingling restricted and unrestricted funds",
+                    "Software automates the release entry; spreadsheets do not",
+                  ].map((t, i) => (
+                    <li key={i}>
+                      <svg width="13" height="13" viewBox="0 0 14 14" fill="none">
+                        <path
+                          d="M2 7.5l3 3 7-7"
+                          stroke="currentColor"
+                          strokeWidth="2"
+                          strokeLinecap="round"
+                          strokeLinejoin="round"
+                        />
+                      </svg>
+                      {t}
+                    </li>
+                  ))}
+                </ul>
+              </div>
+              <h2 className="sh">What "restricted" means under FASB ASC 958</h2>
+              <p className="body">
+                A restricted fund is money your organization has accepted with strings attached. A
+                federal grant restricted to a housing program, a donor gift restricted to
+                scholarships, a board-designated reserve — each carries a promise about how the
+                money will be used. FASB ASC 958-205 formalizes this by requiring nonprofits to
+                classify net assets into two buckets: <em>with donor restrictions</em> and{" "}
+                <em>without donor restrictions</em>.
+              </p>
+              <p className="body">
+                The requirement is simple to state and surprisingly hard to execute when grants,
+                individual gifts, and board designations are tracked in separate systems.
+              </p>
+              <h2 className="sh">Common audit findings</h2>
+              <div className="dtable">
+                <table>
+                  <thead>
+                    <tr>
+                      <th>Finding</th>
+                      <th>Root cause</th>
+                      <th>How to prevent</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>Commingled restricted funds</td>
+                      <td>No per-grant ledger</td>
+                      <td>Separate ledger per fund</td>
+                    </tr>
+                    <tr>
+                      <td>Missing net asset release</td>
+                      <td>Manual process forgotten</td>
+                      <td>Automate on expense post</td>
+                    </tr>
+                    <tr>
+                      <td>Over-obligation</td>
+                      <td>No spend guard</td>
+                      <td>Block at allocation time</td>
+                    </tr>
+                    <tr>
+                      <td>Missing SEFA line</td>
+                      <td>Fragmented systems</td>
+                      <td>Single source of record</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+              <h2 className="sh">Frequently asked questions</h2>
+              <div className="faq-list">
+                {[
+                  {
+                    q: "What is a net asset release?",
+                    a: "Under FASB ASC 958-205, funds held with donor restrictions are released to without-restriction status when the purpose or time condition is satisfied. In GrantPipe, releases post automatically when a qualifying expense is allocated.",
+                  },
+                  {
+                    q: "Does QuickBooks handle restricted fund tracking?",
+                    a: "QuickBooks classes can tag transactions, but do not enforce restrictions or generate ASC 958 releases. A dedicated compliance layer holds the restriction model above the GL.",
+                  },
+                ].map((f, i) => (
+                  <div className="faq-item" key={i}>
+                    <div className="faq-q">{f.q}</div>
+                    <div className="faq-a">{f.a}</div>
+                  </div>
+                ))}
+              </div>
+              <div className="inline-cta">
+                <div>
+                  <strong>Free: Grant Compliance Checklist</strong>
+                  <p>
+                    The 14 documents your auditor will ask for. Download as PDF — no signup
+                    required.
+                  </p>
+                </div>
+                <div className="btn btn-p">Download free →</div>
+              </div>
+            </main>
+            <aside className="sidebar">
+              <SidebarCta />
+              <div className="sw">
+                <h4>Related guides</h4>
+                <ul>
+                  {[
+                    "FASB ASC 958 in plain English",
+                    "Single Audit threshold guide",
+                    "SF-425 Federal Financial Report",
+                    "Program allocation & budget vs actual",
+                    "Cash vs. accrual for grant accounting",
+                  ].map((g, i) => (
+                    <li key={i}>
+                      <svg width="10" height="10" viewBox="0 0 10 10" fill="none">
+                        <path
+                          d="M2 5h6M5 2l3 3-3 3"
+                          stroke="currentColor"
+                          strokeWidth="1.5"
+                          strokeLinecap="round"
+                          strokeLinejoin="round"
+                        />
+                      </svg>
+                      {g}
+                    </li>
+                  ))}
+                </ul>
+              </div>
+              <div className="sw">
+                <h4>Free resource</h4>
+                <p style={{ fontSize: 13, color: "var(--k7)", margin: "0 0 8px", lineHeight: 1.4 }}>
+                  Grant Compliance Checklist — 14 items your auditor expects.
+                </p>
+                <div
+                  className="btn btn-g"
+                  style={{ width: "100%", justifyContent: "center", fontSize: 12, height: 32 }}
+                >
+                  Download free PDF
+                </div>
+              </div>
+            </aside>
+          </div>
+          <CtaBar
+            title="Stop reconciling restriction balances by hand."
+            sub="GrantPipe automates net asset releases, tracks restricted balances per grant, and exports audit evidence in one click."
+          />
+        </div>
+      );
+
+      /* ======================================================
+   T09 — LISTICLE PAGE
+====================================================== */
+      const T09 = () => (
+        <div className="art">
+          <div className="tpl-label">
+            <span>09 · Listicle / best-of page</span>
+            <span className="count">/resources/best/[slug]</span>
+          </div>
+          <TopBar />
+          <Crumb items={["Resources", "Best", "Best Grant Management Software"]} />
+          <div className="layout">
+            <main className="main">
+              <span className="eyebrow">
+                <span className="dot" />
+                Roundup
+              </span>
+              <h1 className="ph">
+                5 Best <em>Grant Management Software</em> [2026 Ranked]
+              </h1>
+              <div className="meta-row">
+                <span>Updated Apr 2026</span>
+                <span className="sep">·</span>
+                <span>18 min read</span>
+                <span className="sep">·</span>
+                <span className="pill">MOFU</span>
+                <span className="pill gd">Comparison</span>
+              </div>
+              <p className="bluf">
+                Most grant management software is built for foundations awarding grants, not
+                nonprofits receiving them. GrantPipe is the only platform that combines donor CRM
+                with post-award grant compliance for recipients. Spreadsheets remain the default—and
+                the biggest compliance risk.
+              </p>
+              <div className="ctable" style={{ marginBottom: 18 }}>
+                <table>
+                  <thead>
+                    <tr>
+                      <th>Tool</th>
+                      <th>Starting price</th>
+                      <th>Built for</th>
+                      <th className="us">Donor CRM</th>
+                      <th>Post-award compliance</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>
+                        <strong>GrantPipe</strong>
+                      </td>
+                      <td>1129/mo annual</td>
+                      <td>Grant recipients</td>
+                      <td className="us yes">Yes</td>
+                      <td className="yes">Automated</td>
+                    </tr>
+                    <tr>
+                      <td>Instrumentl</td>
+                      <td>1299/mo</td>
+                      <td>Grant seekers</td>
+                      <td>No</td>
+                      <td>Limited</td>
+                    </tr>
+                    <tr>
+                      <td>Foundant GrantHub</td>
+                      <td>195/mo</td>
+                      <td>Grant seekers</td>
+                      <td>No</td>
+                      <td>Limited</td>
+                    </tr>
+                    <tr>
+                      <td>Submittable</td>
+                      <td>~110k/yr</td>
+                      <td>Grantmakers</td>
+                      <td>No</td>
+                      <td>Funder-side only</td>
+                    </tr>
+                    <tr>
+                      <td>Salesforce + config</td>
+                      <td>160/user + 130k impl.</td>
+                      <td>General CRM</td>
+                      <td>Yes</td>
+                      <td>Requires consultant</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+
+              {[
+                {
+                  rank: 1,
+                  name: "GrantPipe",
+                  price: "1165–1665/mo annual",
+                  top: true,
+                  badge: "Best for grant recipients",
+                  sum: "A purpose-built platform for grant-receiving nonprofits that combines donor CRM with restricted fund tracking, compliance automation, and compliance reporting.",
+                  pros: [
+                    "Unified donor CRM and grant management",
+                    "Compliance automation for restricted funds",
+                    "Audit-ready reports tied to specific grants",
+                  ],
+                  cons: [
+                    "Less suited to nonprofits only needing grant prospecting",
+                    "Teams needing deep integrations should verify fit",
+                  ],
+                  verdict:
+                    "Best for nonprofits that want donor CRM and grant compliance in one system.",
+                },
+                {
+                  rank: 2,
+                  name: "Instrumentl",
+                  price: "1299/mo",
+                  top: false,
+                  badge: "Best for pre-award prospecting",
+                  sum: "AI-powered grant matching across 450k+ funders. Strong for pre-award work, limited post-award depth.",
+                  pros: ["AI grant matching", "Unified pipeline for discovery + deadlines"],
+                  cons: ["No donor CRM or restricted fund tracking", "Focused on pre-award only"],
+                  verdict: "Best for nonprofits focused on finding and applying for grants.",
+                },
+              ].map((t) => (
+                <div className={`tool-card1{t.top?' top':''}`} key={t.rank}>
+                  {t.top && <span className="tool-badge">Editor's pick #{t.rank}</span>}
+                  <div className="tool-head">
+                    <div>
+                      <p className="tool-name">
+                        {t.rank}. {t.name}
+                      </p>
+                      <span style={{ fontSize: 12, color: "var(--k5)", fontFamily: "var(--mono)" }}>
+                        {t.badge}
+                      </span>
+                    </div>
+                    <div className="tool-price">{t.price}</div>
+                  </div>
+                  <p className="tool-sum">{t.sum}</p>
+                  <div className="proscons" style={{ marginBottom: 10 }}>
+                    <div className="pc good">
+                      <h4>Pros</h4>
+                      <ul>
+                        {t.pros.map((p, i) => (
+                          <li key={i}>
+                            <svg
+                              className="pc-mark"
+                              width="13"
+                              height="13"
+                              viewBox="0 0 14 14"
+                              fill="none"
+                            >
+                              <path
+                                d="M2 7.5l3 3 7-7"
+                                stroke="currentColor"
+                                strokeWidth="2"
+                                strokeLinecap="round"
+                                strokeLinejoin="round"
+                              />
+                            </svg>
+                            {p}
+                          </li>
+                        ))}
+                      </ul>
+                    </div>
+                    <div className="pc bad">
+                      <h4>Cons</h4>
+                      <ul>
+                        {t.cons.map((c, i) => (
+                          <li key={i}>
+                            <svg
+                              className="pc-mark"
+                              width="13"
+                              height="13"
+                              viewBox="0 0 14 14"
+                              fill="none"
+                            >
+                              <path
+                                d="M2 2l10 10M12 2L2 12"
+                                stroke="currentColor"
+                                strokeWidth="2"
+                                strokeLinecap="round"
+                              />
+                            </svg>
+                            {c}
+                          </li>
+                        ))}
+                      </ul>
+                    </div>
+                  </div>
+                  <div className="tool-verdict">⚑ {t.verdict}</div>
+                </div>
+              ))}
+
+              <h2 className="sh">Frequently asked questions</h2>
+              <div className="faq-list">
+                {[
+                  {
+                    q: "What's the difference between grantmaker and grant-recipient software?",
+                    a: "Grantmaker software (Submittable, Fluxx) manages reviewing applications and awarding grants. Grant-recipient software manages what happens after you receive a grant: restricted funds, expenditure documentation, compliance reporting, audit prep.",
+                  },
+                  {
+                    q: "How many grants before software is worth it?",
+                    a: "There's no universal threshold. A single complex federal grant with quarterly reporting may justify dedicated software. Five small foundation grants with basic annual reports might be manageable in spreadsheets. The relevant question is: what is your audit risk and administrative cost right now?",
+                  },
+                ].map((f, i) => (
+                  <div className="faq-item" key={i}>
+                    <div className="faq-q">{f.q}</div>
+                    <div className="faq-a">{f.a}</div>
+                  </div>
+                ))}
+              </div>
+            </main>
+            <aside className="sidebar">
+              <SidebarCta />
+              <div className="sw">
+                <h4>Quick verdict</h4>
+                <ul>
+                  {[
+                    { l: "Best overall (recipients)", v: "GrantPipe" },
+                    { l: "Best for prospecting", v: "Instrumentl" },
+                    { l: "Best budget option", v: "Foundant GrantHub" },
+                    { l: "Enterprise (complex)", v: "Salesforce NPSP" },
+                  ].map((r, i) => (
+                    <li key={i} style={{ flexDirection: "column", gap: 1 }}>
+                      <span
+                        style={{
+                          fontFamily: "var(--mono)",
+                          fontSize: 10,
+                          color: "var(--k5)",
+                          textTransform: "uppercase",
+                          letterSpacing: ".06em",
+                        }}
+                      >
+                        {r.l}
+                      </span>
+                      <span style={{ fontWeight: 600, color: "var(--k9)", fontSize: 13 }}>
+                        {r.v}
+                      </span>
+                    </li>
+                  ))}
+                </ul>
+              </div>
+              <SidebarRelated
+                links={[
+                  "Best grant tracking software",
+                  "Grant compliance software",
+                  "Instrumentl alternative",
+                  "GrantPipe vs spreadsheets",
+                ]}
+              />
+            </aside>
+          </div>
+          <CtaBar
+            title="GrantPipe is the only platform that does donors + grants + compliance."
+            sub="Start a 1-month free trial. No credit card. Import your existing tracker on day one."
+          />
+        </div>
+      );
+
+      /* ======================================================
+   CANVAS
+====================================================== */
+      const ARTBOARDS = [
+        { id: "t01", label: "01 Alternative", width: 860, height: 1600, el: <T01 /> },
+        { id: "t02", label: "02 Comparison", width: 860, height: 1500, el: <T02 /> },
+        { id: "t03", label: "03 State", width: 860, height: 1400, el: <T03 /> },
+        { id: "t04", label: "04 City", width: 860, height: 1400, el: <T04 /> },
+        { id: "t05", label: "05 Vertical", width: 860, height: 1500, el: <T05 /> },
+        { id: "t06", label: "06 Persona", width: 860, height: 1600, el: <T06 /> },
+        { id: "t07", label: "07 Feature", width: 860, height: 1600, el: <T07 /> },
+        { id: "t08", label: "08 Guide", width: 860, height: 1700, el: <T08 /> },
+        { id: "t09", label: "09 Listicle", width: 860, height: 1900, el: <T09 /> },
+      ];
+
+      ReactDOM.createRoot(document.getElementById("root")).render(
+        <DCSection id="main" title="GrantPipe SEO Page Templates">
+          {ARTBOARDS.map((ab) => (
+            <DCArtboard key={ab.id} id={ab.id} label={ab.label} width={ab.width} height={ab.height}>
+              {ab.el}
+            </DCArtboard>
+          ))}
+        </DCSection>,
+      );
+    </script>
+  </body>
+</html>

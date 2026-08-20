@@ -1,0 +1,122 @@
+---
+import PaidSearchLandingPage from "@/components/paid-search-landing-page.astro";
+import type { PaidLandingPageData } from "@/components/paid-search-landing-page.astro";
+
+const page: PaidLandingPageData = {
+  slug: "match-every-drawdown",
+  title: "Match Every Federal Drawdown to Real Spend | GrantPipe",
+  description:
+    "Pull federal cash with a clean spend total per grant. Match every drawdown to actual spend before it becomes a 2 CFR 200.305 cash-management finding.",
+  kicker: "Drawdown reconciliation",
+  headline: "Match every drawdown to real spend.",
+  subhead:
+    "Pull federal cash with a clean spend total per grant. Stay off the audit finding list.",
+  primaryCta: "Start 1-month free trial",
+  exitLeadMagnet: {
+    slug: "grant-spend-down-tracker",
+    title: "Grant Spend-Down Tracker",
+    description:
+      "A tracker that matches federal cash drawdowns to grant spend, with fields for each award, period, and 2 CFR 200.305 records.",
+  },
+  trust: "No credit card required. Keep QuickBooks separate. No setup project needed.",
+  proofCard: {
+    label: "Drawdown record",
+    status: "Matched",
+    rows: [
+      { label: "Drawdowns this quarter", value: "6" },
+      { label: "Matched to spend", value: "6 / 6" },
+      { label: "Open variances", value: "0" },
+      { label: "Last reconciled", value: "Jun 15" },
+    ],
+    progressLabel: "Drawdowns matched",
+    progress: "100%",
+  },
+  painsTitle: "Pulling cash with no spend total per grant is a finding waiting to happen.",
+  pains: [
+    "2 CFR 200.305 requires cash drawn to match actual spending within a few days.",
+    "QuickBooks class reports show activity but not grant-level spend totals.",
+    "A mismatch found at audit means a repayment demand and a corrective action plan.",
+    "Reconciling each drawdown by hand takes hours every month.",
+    "When a grant spans two fiscal years, the spreadsheet logic breaks.",
+  ],
+  workflowTitle: "Reconcile every drawdown before it becomes a finding.",
+  workflowSteps: [
+    {
+      icon: "ledger",
+      heading: "Log the drawdown",
+      copy: "Record each cash pull with the award, period, and amount requested.",
+    },
+    {
+      icon: "balance",
+      heading: "Match to spend",
+      copy: "Compare the drawn amount to the actual spend total per grant for the period.",
+    },
+    {
+      icon: "check",
+      heading: "Document the match",
+      copy: "Attach the spend report and drawdown confirmation to the grant record.",
+    },
+  ],
+  featureTitle: "The drawdown controls a federal grant requires.",
+  features: [
+    {
+      icon: "ledger",
+      heading: "Drawdown log",
+      copy: "Track each cash request with the award, period, and amount in one place.",
+    },
+    {
+      icon: "balance",
+      heading: "Spend-to-cash match",
+      copy: "See the spend total for each grant next to the cash drawn in the period.",
+    },
+    {
+      icon: "evidence",
+      heading: "Documentation attached",
+      copy: "Keep the spend report and drawdown confirmation tied to the award record.",
+    },
+  ],
+  proofTitle: "Cash management compliance starts with the drawdown match.",
+  proofPoints: [
+    {
+      value: "2 CFR 200.305",
+      label: "requires federal cash to be drawn only to meet immediate disbursement needs.",
+      source: "Uniform Guidance, 2 CFR 200.305 cash management",
+    },
+    {
+      value: "1 record",
+      label: "per grant holds the drawdown log, spend total, and match documentation together.",
+      source: "GrantPipe drawdown reconciliation workflow",
+    },
+    {
+      value: "0 journals",
+      label: "are written back. GrantPipe records the match for review; accounting stays in QuickBooks.",
+      source: "GrantPipe accounting integration boundary",
+    },
+  ],
+  trustLabels: ["2 CFR 200.305 aware", "Keep QuickBooks separate", "Drawdown matched to spend"],
+  faqTitle: "Answers for finance teams managing federal cash drawdowns.",
+  faqs: [
+    {
+      q: "Does GrantPipe replace QuickBooks?",
+      a: "GrantPipe has native accounting records, but it does not sync with QuickBooks right now. It holds the drawdown log and spend match record alongside the grant file.",
+    },
+    {
+      q: "Will it post entries back to QuickBooks?",
+      a: "No. GrantPipe does not connect to QuickBooks right now. Keep journal entries in QuickBooks. Record each drawdown match in GrantPipe.",
+    },
+    {
+      q: "What is a cash-management finding?",
+      a: "2 CFR 200.305 sets the rule. Draw federal cash only to cover spending already made. Pulling cash too far ahead of spend is a finding. Auditors flag it in a Single Audit.",
+    },
+    {
+      q: "Can I track drawdowns across multiple federal awards?",
+      a: "Yes. Each federal grant has its own drawdown log and spend-match record. You can review all awards in one place.",
+    },
+  ],
+  finalTitle: "Start with the grant with the next drawdown due. Reconcile it clean.",
+  finalBody:
+    "GrantPipe keeps the spend total and drawdown record for each grant in one place. Match the cash before you pull it.",
+};
+---
+
+<PaidSearchLandingPage page={page} />

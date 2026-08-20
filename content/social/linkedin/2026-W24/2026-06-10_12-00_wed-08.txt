@@ -1,0 +1,11 @@
+We built GrantPipe around a many-to-many relationship between grants and funds.
+
+That is not a database flourish.
+
+It is how the work behaves.
+
+One program can be funded by a federal award, a foundation grant, and donor-restricted gifts.
+
+One grant can support several funds or cost centers.
+
+If the model cannot express that, the spreadsheet comes back.

@@ -1,0 +1,1995 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>GrantPipe — Landing Wireframes</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Caveat:wght@400;600;700&family=Kalam:wght@300;400;700&family=Architects+Daughter&family=JetBrains+Mono:wght@400;600&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      :root {
+        --ink: #1a1a1a;
+        --ink-soft: #3d3d3d;
+        --ink-faint: #8a8a8a;
+        --paper: #fafaf7;
+        --paper-2: #f1efe8;
+        --rule: #1a1a1a;
+        --accent: #d97757; /* warm terracotta — sparingly */
+        --accent-2: #e8c547; /* mustard highlighter */
+        --accent-3: #6b8e7f; /* sage */
+        --hand: "Kalam", cursive;
+        --display: "Caveat", cursive;
+        --note: "Architects Daughter", cursive;
+        --mono: "JetBrains Mono", monospace;
+      }
+      * {
+        box-sizing: border-box;
+      }
+      html,
+      body {
+        margin: 0;
+        padding: 0;
+        background: var(--paper);
+        color: var(--ink);
+        font-family: var(--hand);
+      }
+      body {
+        padding: 32px 24px 120px;
+      }
+
+      /* ——— page header ——— */
+      .page-head {
+        max-width: 1280px;
+        margin: 0 auto 28px;
+      }
+      .page-head h1 {
+        font-family: var(--display);
+        font-weight: 700;
+        font-size: 56px;
+        margin: 0 0 4px;
+        letter-spacing: -0.5px;
+      }
+      .page-head p {
+        font-family: var(--note);
+        font-size: 16px;
+        color: var(--ink-soft);
+        margin: 0;
+        max-width: 720px;
+      }
+      .meta-row {
+        display: flex;
+        gap: 18px;
+        align-items: baseline;
+        margin-top: 12px;
+        flex-wrap: wrap;
+      }
+      .meta-row .pill {
+        font-family: var(--mono);
+        font-size: 11px;
+        padding: 4px 10px;
+        border: 1.5px solid var(--ink);
+        border-radius: 999px;
+        background: var(--paper);
+      }
+
+      /* ——— tabs ——— */
+      .tabs {
+        display: flex;
+        gap: 0;
+        max-width: 1280px;
+        margin: 0 auto 24px;
+        border-bottom: 2px solid var(--ink);
+        flex-wrap: wrap;
+      }
+      .tab {
+        font-family: var(--hand);
+        font-size: 18px;
+        font-weight: 700;
+        padding: 10px 18px 8px;
+        border: 2px solid var(--ink);
+        border-bottom: none;
+        background: var(--paper-2);
+        cursor: pointer;
+        margin-right: 6px;
+        margin-bottom: -2px;
+        border-radius: 8px 8px 0 0;
+        color: var(--ink-soft);
+        transform: rotate(-0.4deg);
+        transition: transform 0.1s;
+      }
+      .tab:nth-child(2n) {
+        transform: rotate(0.3deg);
+      }
+      .tab:hover {
+        background: var(--paper);
+        color: var(--ink);
+      }
+      .tab.active {
+        background: var(--paper);
+        color: var(--ink);
+        transform: rotate(0deg) translateY(-2px);
+        box-shadow: 2px -2px 0 var(--ink);
+      }
+      .tab small {
+        display: block;
+        font-family: var(--note);
+        font-weight: 400;
+        font-size: 11px;
+        color: var(--ink-faint);
+        margin-top: 2px;
+      }
+      .tab.active small {
+        color: var(--ink-soft);
+      }
+
+      /* ——— canvas ——— */
+      .canvas {
+        max-width: 1280px;
+        margin: 0 auto;
+      }
+      .panel {
+        display: none;
+      }
+      .panel.active {
+        display: block;
+        animation: fade 0.25s ease;
+      }
+      @keyframes fade {
+        from {
+          opacity: 0;
+          transform: translateY(4px);
+        }
+        to {
+          opacity: 1;
+          transform: none;
+        }
+      }
+
+      /* ——— wireframe primitives (sketchy) ——— */
+      .frame {
+        background: var(--paper);
+        border: 2.5px solid var(--ink);
+        border-radius: 14px;
+        padding: 28px;
+        position: relative;
+        box-shadow: 6px 6px 0 var(--ink);
+      }
+      .frame.tilt-l {
+        transform: rotate(-0.2deg);
+      }
+      .frame.tilt-r {
+        transform: rotate(0.2deg);
+      }
+
+      .frame-label {
+        position: absolute;
+        top: -14px;
+        left: 28px;
+        background: var(--paper);
+        padding: 0 10px;
+        font-family: var(--mono);
+        font-size: 11px;
+        color: var(--ink-soft);
+        letter-spacing: 0.5px;
+      }
+      .frame-note {
+        position: absolute;
+        top: -16px;
+        right: 24px;
+        background: var(--accent-2);
+        border: 2px solid var(--ink);
+        padding: 4px 10px;
+        font-family: var(--note);
+        font-size: 12px;
+        transform: rotate(2deg);
+      }
+
+      /* sketchy underlines & strokes via SVG-ish hand styling */
+      .scribble-underline {
+        background-image: linear-gradient(
+          transparent 60%,
+          var(--accent-2) 60%,
+          var(--accent-2) 90%,
+          transparent 90%
+        );
+        padding: 0 2px;
+      }
+      .strike {
+        text-decoration: line-through;
+        text-decoration-thickness: 2px;
+        color: var(--ink-faint);
+      }
+
+      /* placeholder boxes */
+      .ph {
+        border: 2px dashed var(--ink-soft);
+        border-radius: 6px;
+        background: repeating-linear-gradient(135deg, var(--paper) 0 8px, var(--paper-2) 8px 10px);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-family: var(--mono);
+        font-size: 11px;
+        color: var(--ink-soft);
+        text-align: center;
+        padding: 8px;
+      }
+      .ph.solid {
+        background: var(--paper-2);
+        border-style: solid;
+      }
+      .ph.solid-ink {
+        background: var(--ink);
+        color: var(--paper);
+        border-color: var(--ink);
+      }
+      .ph.accent {
+        background: color-mix(in oklab, var(--accent) 18%, var(--paper));
+        border-color: var(--accent);
+        border-style: solid;
+      }
+
+      /* hand-drawn nav bar */
+      .nav {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 14px 0 18px;
+        border-bottom: 2px solid var(--ink);
+        margin-bottom: 22px;
+      }
+      .logo {
+        font-family: var(--display);
+        font-size: 28px;
+        font-weight: 700;
+        display: flex;
+        align-items: center;
+        gap: 8px;
+      }
+      .logo-mark {
+        width: 26px;
+        height: 26px;
+        border: 2.5px solid var(--ink);
+        border-radius: 6px;
+        background: var(--accent-2);
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        font-family: var(--mono);
+        font-size: 14px;
+        font-weight: 700;
+        transform: rotate(-4deg);
+      }
+      .nav-links {
+        display: flex;
+        gap: 22px;
+        font-family: var(--hand);
+        font-size: 16px;
+        font-weight: 400;
+      }
+      .nav-links span {
+        cursor: default;
+      }
+      .btn {
+        font-family: var(--hand);
+        font-weight: 700;
+        font-size: 15px;
+        border: 2.5px solid var(--ink);
+        background: var(--paper);
+        padding: 8px 16px;
+        border-radius: 8px;
+        box-shadow: 3px 3px 0 var(--ink);
+        cursor: default;
+        display: inline-flex;
+        align-items: center;
+        gap: 6px;
+        transform: rotate(-0.3deg);
+      }
+      .btn.primary {
+        background: var(--ink);
+        color: var(--paper);
+      }
+      .btn.accent {
+        background: var(--accent-2);
+      }
+      .btn.sage {
+        background: var(--accent-3);
+        color: var(--paper);
+      }
+      .btn.sm {
+        padding: 5px 11px;
+        font-size: 13px;
+        box-shadow: 2px 2px 0 var(--ink);
+      }
+      .btn.lg {
+        padding: 12px 22px;
+        font-size: 18px;
+        box-shadow: 4px 4px 0 var(--ink);
+      }
+
+      /* ——— shared section helpers ——— */
+      h2.h-display {
+        font-family: var(--display);
+        font-weight: 700;
+        font-size: 64px;
+        line-height: 0.95;
+        margin: 0 0 14px;
+        letter-spacing: -1px;
+      }
+      h2.h-display .accent {
+        color: var(--accent);
+      }
+      p.lede {
+        font-family: var(--hand);
+        font-weight: 300;
+        font-size: 19px;
+        line-height: 1.5;
+        max-width: 540px;
+        color: var(--ink-soft);
+        margin: 0 0 22px;
+      }
+      .eyebrow {
+        font-family: var(--mono);
+        font-size: 11px;
+        letter-spacing: 1.5px;
+        color: var(--ink-soft);
+        margin-bottom: 14px;
+        text-transform: uppercase;
+      }
+      .arrow {
+        display: inline-block;
+        transform: rotate(-8deg);
+        font-family: var(--display);
+        color: var(--accent);
+        font-size: 22px;
+      }
+      .annot {
+        font-family: var(--note);
+        font-size: 13px;
+        color: var(--ink-soft);
+      }
+      .annot::before {
+        content: "↳ ";
+        color: var(--accent);
+        font-weight: 700;
+      }
+
+      /* —————— DENSITY MODES (driven by tweaks) —————— */
+      body[data-density="spacious"] .frame {
+        padding: 44px;
+      }
+      body[data-density="dense"] .frame {
+        padding: 18px;
+      }
+      body[data-density="dense"] h2.h-display {
+        font-size: 48px;
+      }
+      body[data-density="dense"] p.lede {
+        font-size: 16px;
+      }
+
+      /* —————— TONE MODES —————— */
+      body[data-tone="serious"] {
+        --hand: "Inter", system-ui, sans-serif;
+        --display: "Inter", system-ui, sans-serif;
+        --note: "JetBrains Mono", monospace;
+      }
+      body[data-tone="serious"] .frame {
+        box-shadow: none;
+        border-width: 1.5px;
+        transform: none !important;
+      }
+      body[data-tone="serious"] .btn {
+        box-shadow: none;
+        border-width: 1.5px;
+        transform: none;
+      }
+      body[data-tone="serious"] .logo-mark {
+        transform: none;
+      }
+      body[data-tone="serious"] h2.h-display {
+        letter-spacing: -2px;
+        font-weight: 800;
+      }
+      body[data-tone="serious"] .scribble-underline {
+        background: none;
+        border-bottom: 3px solid var(--accent);
+        padding-bottom: 2px;
+      }
+
+      body[data-tone="playful"] {
+        --accent: #ff6b6b;
+        --accent-2: #ffd93d;
+        --accent-3: #6bcb77;
+      }
+      body[data-tone="playful"] .frame {
+        box-shadow: 8px 8px 0 var(--accent);
+      }
+      body[data-tone="playful"] .btn.primary {
+        background: var(--accent);
+        color: var(--paper);
+      }
+
+      /* persona swaps the hero copy */
+      .persona-hide {
+        display: none;
+      }
+      body[data-persona="manager"] .for-manager {
+        display: inherit;
+      }
+      body[data-persona="manager"] .for-manager.persona-hide {
+        display: block;
+      }
+      body[data-persona="finance"] .for-finance.persona-hide {
+        display: block;
+      }
+      body[data-persona="ed"] .for-ed.persona-hide {
+        display: block;
+      }
+
+      /* —————— DIRECTION 1: Pipeline metaphor (split-screen kanban hero) —————— */
+      .d1-hero {
+        display: grid;
+        grid-template-columns: 0.95fr 1.1fr;
+        gap: 36px;
+        align-items: center;
+        padding: 28px 8px;
+      }
+      .d1-pipe {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 10px;
+      }
+      .d1-col {
+        background: var(--paper-2);
+        border: 2px solid var(--ink);
+        border-radius: 8px;
+        padding: 10px 8px;
+        min-height: 280px;
+      }
+      .d1-col-title {
+        font-family: var(--mono);
+        font-size: 10px;
+        text-transform: uppercase;
+        letter-spacing: 0.8px;
+        color: var(--ink-soft);
+        margin-bottom: 8px;
+        padding-bottom: 6px;
+        border-bottom: 1.5px dashed var(--ink-soft);
+        display: flex;
+        justify-content: space-between;
+      }
+      .d1-card {
+        background: var(--paper);
+        border: 1.5px solid var(--ink);
+        border-radius: 6px;
+        padding: 8px 9px;
+        margin-bottom: 8px;
+        font-family: var(--hand);
+        font-size: 13px;
+        line-height: 1.25;
+        box-shadow: 1.5px 1.5px 0 var(--ink);
+      }
+      .d1-card .amt {
+        font-family: var(--mono);
+        font-size: 11px;
+        color: var(--accent);
+        display: block;
+        margin-top: 3px;
+      }
+      .d1-card.hot {
+        background: color-mix(in oklab, var(--accent-2) 50%, var(--paper));
+      }
+      .d1-card.win {
+        background: color-mix(in oklab, var(--accent-3) 35%, var(--paper));
+      }
+      .d1-trust {
+        display: flex;
+        gap: 18px;
+        margin-top: 28px;
+        align-items: center;
+        flex-wrap: wrap;
+      }
+      .d1-trust .ph {
+        width: 80px;
+        height: 28px;
+      }
+
+      .d1-features {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 18px;
+        margin-top: 32px;
+      }
+      .d1-feat-card {
+        border: 2px solid var(--ink);
+        border-radius: 10px;
+        padding: 18px;
+        background: var(--paper);
+      }
+      .d1-feat-card .num {
+        font-family: var(--display);
+        font-size: 36px;
+        color: var(--accent);
+        line-height: 1;
+      }
+      .d1-feat-card h4 {
+        font-family: var(--hand);
+        font-weight: 700;
+        font-size: 17px;
+        margin: 6px 0 6px;
+      }
+      .d1-feat-card p {
+        font-family: var(--hand);
+        font-size: 13px;
+        line-height: 1.4;
+        color: var(--ink-soft);
+        margin: 0;
+        font-weight: 300;
+      }
+
+      /* —————— DIRECTION 2: Editorial / story-driven —————— */
+      .d2-hero {
+        text-align: center;
+        padding: 60px 20px 40px;
+        border-bottom: 2px dashed var(--ink-soft);
+      }
+      .d2-hero h2 {
+        font-size: 96px;
+        margin-bottom: 18px;
+      }
+      .d2-hero p.lede {
+        margin: 0 auto 26px;
+        font-size: 22px;
+      }
+      .d2-cta-row {
+        display: flex;
+        gap: 14px;
+        justify-content: center;
+        align-items: center;
+      }
+      .d2-story {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 24px;
+        padding: 36px 8px;
+      }
+      .d2-step {
+        position: relative;
+        padding: 18px 6px 6px;
+      }
+      .d2-step .step-num {
+        position: absolute;
+        top: -8px;
+        left: 0;
+        font-family: var(--display);
+        font-size: 78px;
+        font-weight: 700;
+        color: var(--accent);
+        opacity: 0.35;
+        line-height: 1;
+      }
+      .d2-step h4 {
+        position: relative;
+        font-family: var(--hand);
+        font-weight: 700;
+        font-size: 22px;
+        margin: 50px 0 8px;
+      }
+      .d2-step p {
+        font-family: var(--hand);
+        font-weight: 300;
+        font-size: 15px;
+        line-height: 1.5;
+        color: var(--ink-soft);
+        margin: 0;
+      }
+      .d2-step .ph {
+        height: 130px;
+        margin-top: 14px;
+      }
+      .d2-quote {
+        background: var(--paper-2);
+        border: 2px solid var(--ink);
+        border-radius: 12px;
+        padding: 32px;
+        margin-top: 30px;
+        display: grid;
+        grid-template-columns: 1fr 200px;
+        gap: 22px;
+        align-items: center;
+      }
+      .d2-quote q {
+        font-family: var(--display);
+        font-size: 32px;
+        line-height: 1.15;
+        quotes: "“" "”";
+      }
+      .d2-quote cite {
+        font-family: var(--note);
+        font-size: 13px;
+        color: var(--ink-soft);
+        display: block;
+        margin-top: 12px;
+        font-style: normal;
+      }
+
+      /* —————— DIRECTION 3: Data-dense / dashboard preview —————— */
+      .d3-hero {
+        display: grid;
+        grid-template-columns: 0.85fr 1.15fr;
+        gap: 28px;
+        padding: 18px 4px;
+        align-items: stretch;
+      }
+      .d3-left h2 {
+        font-size: 50px;
+      }
+      .d3-stats {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 10px;
+        margin-top: 22px;
+      }
+      .d3-stat {
+        border: 2px solid var(--ink);
+        padding: 12px;
+        border-radius: 8px;
+      }
+      .d3-stat .v {
+        font-family: var(--display);
+        font-size: 36px;
+        line-height: 1;
+        color: var(--accent);
+      }
+      .d3-stat .l {
+        font-family: var(--mono);
+        font-size: 10px;
+        letter-spacing: 0.8px;
+        color: var(--ink-soft);
+        margin-top: 6px;
+        text-transform: uppercase;
+      }
+
+      .d3-dash {
+        border: 2px solid var(--ink);
+        border-radius: 10px;
+        padding: 0;
+        background: var(--paper-2);
+        overflow: hidden;
+        display: flex;
+        flex-direction: column;
+      }
+      .d3-dash-head {
+        background: var(--ink);
+        color: var(--paper);
+        padding: 8px 14px;
+        display: flex;
+        gap: 6px;
+        align-items: center;
+        font-family: var(--mono);
+        font-size: 11px;
+      }
+      .d3-dash-head .dot {
+        width: 8px;
+        height: 8px;
+        border-radius: 50%;
+        background: var(--paper);
+        opacity: 0.5;
+      }
+      .d3-dash-body {
+        padding: 14px;
+        display: grid;
+        grid-template-rows: auto 1fr auto;
+        gap: 12px;
+        flex: 1;
+      }
+      .d3-kpi-row {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 8px;
+      }
+      .d3-kpi {
+        background: var(--paper);
+        border: 1.5px solid var(--ink-soft);
+        padding: 8px;
+        border-radius: 6px;
+      }
+      .d3-kpi .n {
+        font-family: var(--mono);
+        font-size: 16px;
+        font-weight: 700;
+      }
+      .d3-kpi .lab {
+        font-family: var(--mono);
+        font-size: 9px;
+        color: var(--ink-soft);
+        text-transform: uppercase;
+        letter-spacing: 0.6px;
+      }
+      .d3-table {
+        background: var(--paper);
+        border: 1.5px solid var(--ink-soft);
+        border-radius: 6px;
+        overflow: hidden;
+        font-family: var(--mono);
+        font-size: 11px;
+      }
+      .d3-row {
+        display: grid;
+        grid-template-columns: 1.5fr 1fr 0.7fr 0.7fr;
+        padding: 7px 10px;
+        border-bottom: 1px dashed var(--ink-faint);
+        align-items: center;
+      }
+      .d3-row:last-child {
+        border-bottom: none;
+      }
+      .d3-row.head {
+        background: var(--paper-2);
+        font-size: 9px;
+        color: var(--ink-soft);
+        text-transform: uppercase;
+        letter-spacing: 0.6px;
+      }
+      .d3-pill {
+        display: inline-block;
+        font-size: 9px;
+        padding: 2px 6px;
+        border-radius: 999px;
+        border: 1px solid var(--ink-soft);
+      }
+      .d3-pill.win {
+        background: color-mix(in oklab, var(--accent-3) 30%, var(--paper));
+        border-color: var(--accent-3);
+      }
+      .d3-pill.hot {
+        background: color-mix(in oklab, var(--accent) 25%, var(--paper));
+        border-color: var(--accent);
+      }
+      .d3-chart {
+        background: var(--paper);
+        border: 1.5px solid var(--ink-soft);
+        border-radius: 6px;
+        padding: 8px 10px;
+        height: 80px;
+        position: relative;
+      }
+      .d3-chart svg {
+        width: 100%;
+        height: 100%;
+        display: block;
+      }
+
+      .d3-grid-features {
+        margin-top: 28px;
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 12px;
+      }
+      .d3-mini {
+        border: 1.5px solid var(--ink);
+        padding: 12px;
+        border-radius: 8px;
+        background: var(--paper);
+      }
+      .d3-mini h5 {
+        font-family: var(--mono);
+        font-size: 10px;
+        letter-spacing: 0.8px;
+        margin: 0 0 6px;
+        color: var(--accent);
+        text-transform: uppercase;
+      }
+      .d3-mini p {
+        font-family: var(--hand);
+        font-size: 13px;
+        line-height: 1.35;
+        margin: 0;
+      }
+
+      /* —————— DIRECTION 4: Problem/solution checklist —————— */
+      .d4-hero {
+        padding: 30px 8px 20px;
+      }
+      .d4-cols {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 28px;
+        margin-top: 24px;
+      }
+      .d4-card {
+        border: 2.5px solid var(--ink);
+        border-radius: 12px;
+        padding: 22px 22px 18px;
+      }
+      .d4-card.bad {
+        background: color-mix(in oklab, #d4524a 9%, var(--paper));
+      }
+      .d4-card.good {
+        background: color-mix(in oklab, var(--accent-3) 14%, var(--paper));
+      }
+      .d4-card h3 {
+        font-family: var(--display);
+        font-size: 30px;
+        margin: 0 0 10px;
+      }
+      .d4-card h3 small {
+        font-family: var(--note);
+        font-size: 13px;
+        color: var(--ink-soft);
+        display: block;
+        font-weight: 400;
+      }
+      .d4-list {
+        list-style: none;
+        padding: 0;
+        margin: 14px 0 0;
+        font-family: var(--hand);
+        font-size: 16px;
+        line-height: 1.45;
+      }
+      .d4-list li {
+        padding: 8px 0 8px 32px;
+        position: relative;
+        border-bottom: 1.5px dashed var(--ink-faint);
+      }
+      .d4-list li:last-child {
+        border-bottom: none;
+      }
+      .d4-list li::before {
+        position: absolute;
+        left: 4px;
+        top: 7px;
+        font-family: var(--display);
+        font-size: 22px;
+        font-weight: 700;
+      }
+      .d4-list.bad li::before {
+        content: "✗";
+        color: #d4524a;
+      }
+      .d4-list.good li::before {
+        content: "✓";
+        color: var(--accent-3);
+      }
+      .d4-cta {
+        margin-top: 32px;
+        padding: 26px;
+        border: 2.5px solid var(--ink);
+        border-radius: 12px;
+        background: var(--ink);
+        color: var(--paper);
+        display: grid;
+        grid-template-columns: 1fr auto;
+        gap: 24px;
+        align-items: center;
+      }
+      .d4-cta h3 {
+        font-family: var(--display);
+        font-size: 38px;
+        margin: 0;
+      }
+      .d4-cta p {
+        font-family: var(--hand);
+        font-weight: 300;
+        font-size: 15px;
+        margin: 4px 0 0;
+        opacity: 0.85;
+      }
+
+      /* —————— DIRECTION 5: Playful / illustrated metaphor —————— */
+      .d5-hero {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 30px;
+        align-items: center;
+        padding: 22px 0;
+      }
+      .d5-illu {
+        height: 380px;
+        border: 2.5px solid var(--ink);
+        border-radius: 14px;
+        background: linear-gradient(
+          180deg,
+          color-mix(in oklab, var(--accent-2) 35%, var(--paper)) 0%,
+          var(--paper) 100%
+        );
+        position: relative;
+        overflow: hidden;
+        padding: 18px;
+      }
+      .d5-illu .pipe-svg {
+        position: absolute;
+        inset: 0;
+        width: 100%;
+        height: 100%;
+      }
+      .d5-illu .stage-tag {
+        position: absolute;
+        background: var(--paper);
+        border: 2px solid var(--ink);
+        padding: 4px 9px;
+        font-family: var(--note);
+        font-size: 12px;
+        border-radius: 6px;
+        box-shadow: 2px 2px 0 var(--ink);
+      }
+      .d5-illu .coin {
+        position: absolute;
+        width: 36px;
+        height: 36px;
+        border-radius: 50%;
+        background: var(--accent-2);
+        border: 2.5px solid var(--ink);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-family: var(--mono);
+        font-weight: 700;
+        font-size: 14px;
+        box-shadow: 2px 2px 0 var(--ink);
+      }
+
+      .d5-loop {
+        margin-top: 28px;
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 16px;
+      }
+      .d5-step {
+        text-align: center;
+        padding: 16px 10px;
+        border: 2px solid var(--ink);
+        border-radius: 10px;
+        background: var(--paper);
+        position: relative;
+      }
+      .d5-step .ico {
+        width: 56px;
+        height: 56px;
+        margin: 0 auto 10px;
+        border-radius: 50%;
+        background: var(--paper-2);
+        border: 2px solid var(--ink);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-family: var(--display);
+        font-size: 28px;
+        color: var(--accent);
+      }
+      .d5-step h5 {
+        font-family: var(--hand);
+        font-weight: 700;
+        font-size: 16px;
+        margin: 0 0 4px;
+      }
+      .d5-step p {
+        font-family: var(--hand);
+        font-weight: 300;
+        font-size: 13px;
+        line-height: 1.4;
+        color: var(--ink-soft);
+        margin: 0;
+      }
+
+      .d5-band {
+        margin-top: 28px;
+        padding: 28px;
+        border: 2.5px solid var(--ink);
+        border-radius: 14px;
+        background: color-mix(in oklab, var(--accent-3) 18%, var(--paper));
+        text-align: center;
+      }
+      .d5-band h3 {
+        font-family: var(--display);
+        font-size: 44px;
+        margin: 0 0 6px;
+      }
+
+      /* —————— footer-ish strip per direction —————— */
+      .closing-row {
+        margin-top: 24px;
+        padding: 18px 22px;
+        border: 2px dashed var(--ink-soft);
+        border-radius: 10px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        font-family: var(--mono);
+        font-size: 11px;
+        color: var(--ink-soft);
+        flex-wrap: wrap;
+        gap: 12px;
+      }
+
+      /* —————— side-by-side overview tab —————— */
+      .overview {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(360px, 1fr));
+        gap: 22px;
+      }
+      .ov-card {
+        border: 2px solid var(--ink);
+        border-radius: 12px;
+        background: var(--paper);
+        padding: 16px 18px;
+        box-shadow: 4px 4px 0 var(--ink);
+      }
+      .ov-card h4 {
+        font-family: var(--display);
+        font-size: 28px;
+        margin: 0 0 4px;
+      }
+      .ov-card .tag {
+        font-family: var(--mono);
+        font-size: 10px;
+        color: var(--accent);
+        text-transform: uppercase;
+        letter-spacing: 1px;
+      }
+      .ov-card p {
+        font-family: var(--hand);
+        font-size: 14px;
+        line-height: 1.45;
+        color: var(--ink-soft);
+        font-weight: 300;
+      }
+      .ov-card .ph {
+        height: 110px;
+        margin: 12px 0;
+      }
+      .ov-card ul {
+        font-family: var(--hand);
+        font-size: 13px;
+        padding-left: 18px;
+        margin: 6px 0 0;
+      }
+      .ov-card ul li {
+        margin-bottom: 4px;
+      }
+      .ov-card .pros {
+        color: var(--accent-3);
+        font-weight: 700;
+      }
+      .ov-card .watch {
+        color: var(--accent);
+        font-weight: 700;
+      }
+
+      /* small screens */
+      @media (max-width: 900px) {
+        .d1-hero,
+        .d3-hero,
+        .d5-hero,
+        .d4-cols {
+          grid-template-columns: 1fr;
+        }
+        .d1-features,
+        .d2-story {
+          grid-template-columns: 1fr 1fr;
+        }
+        .d3-grid-features {
+          grid-template-columns: 1fr 1fr;
+        }
+        .d5-loop {
+          grid-template-columns: 1fr 1fr;
+        }
+      }
+    </style>
+  </head>
+  <body data-tone="hand" data-density="default" data-persona="manager">
+    <header class="page-head">
+      <h1>GrantPipe — Landing Page Wireframes</h1>
+      <p>
+        Five rough takes on the marketing homepage. Each explores a different way to introduce the
+        product to grant managers at nonprofits. Goal: a strong first impression — clear value, real
+        screenshot energy, calm tone. Click tabs to compare; use the Tweaks panel to flip tone,
+        density, or persona.
+      </p>
+      <div class="meta-row">
+        <span class="pill">5 directions</span>
+        <span class="pill">b&amp;w lo-fi</span>
+        <span class="pill">2026-05-02</span>
+        <span class="pill">audience: grant manager · nonprofit</span>
+      </div>
+    </header>
+
+    <nav class="tabs" id="tabs">
+      <button class="tab active" data-tab="overview">Overview <small>compare all 5</small></button>
+      <button class="tab" data-tab="d1">
+        01 · Pipeline <small>kanban hero, structured</small>
+      </button>
+      <button class="tab" data-tab="d2">
+        02 · Editorial <small>story-driven, big type</small>
+      </button>
+      <button class="tab" data-tab="d3">
+        03 · Dashboard <small>data-dense, product-forward</small>
+      </button>
+      <button class="tab" data-tab="d4">
+        04 · Before / After <small>problem-solution clarity</small>
+      </button>
+      <button class="tab" data-tab="d5">
+        05 · Playful Pipe <small>illustrated metaphor</small>
+      </button>
+    </nav>
+
+    <main class="canvas">
+      <!-- ============== OVERVIEW ============== -->
+      <section class="panel active" data-panel="overview">
+        <div class="overview">
+          <article class="ov-card">
+            <span class="tag">Direction 01</span>
+            <h4>Pipeline</h4>
+            <p>
+              Lead with a live-feeling kanban of grants moving through stages. Visual proof of the
+              product's core mental model, right in the hero.
+            </p>
+            <div class="ph">[mini kanban thumb]</div>
+            <ul>
+              <li><span class="pros">Pro:</span> instantly explains what the product is</li>
+              <li><span class="watch">Watch:</span> can feel busy if not curated</li>
+            </ul>
+          </article>
+
+          <article class="ov-card">
+            <span class="tag">Direction 02</span>
+            <h4>Editorial</h4>
+            <p>
+              Big confident headline, calm whitespace, a story told in three chapters. Treats the
+              homepage like an op-ed, not a feature dump.
+            </p>
+            <div class="ph">[centered hero thumb]</div>
+            <ul>
+              <li><span class="pros">Pro:</span> warm, human, memorable</li>
+              <li><span class="watch">Watch:</span> less product proof above the fold</li>
+            </ul>
+          </article>
+
+          <article class="ov-card">
+            <span class="tag">Direction 03</span>
+            <h4>Dashboard</h4>
+            <p>
+              Data-dense. The hero IS the product — KPIs, a grants table, a forecast chart. For
+              visitors who want proof fast.
+            </p>
+            <div class="ph">[dashboard thumb]</div>
+            <ul>
+              <li><span class="pros">Pro:</span> credibility with finance &amp; ops folks</li>
+              <li><span class="watch">Watch:</span> can intimidate first-time browsers</li>
+            </ul>
+          </article>
+
+          <article class="ov-card">
+            <span class="tag">Direction 04</span>
+            <h4>Before / After</h4>
+            <p>
+              Two columns: "spreadsheets &amp; shared drives" vs. "GrantPipe." Names the pain
+              explicitly, then resolves it. Conversion-focused.
+            </p>
+            <div class="ph">[two-column compare]</div>
+            <ul>
+              <li><span class="pros">Pro:</span> very clear &quot;why switch&quot;</li>
+              <li><span class="watch">Watch:</span> negative framing — keep it kind</li>
+            </ul>
+          </article>
+
+          <article class="ov-card">
+            <span class="tag">Direction 05</span>
+            <h4>Playful Pipe</h4>
+            <p>
+              An actual illustrated pipe with grants flowing through it. Friendlier, more brandable.
+              Loosens the &quot;serious software&quot; tone a bit.
+            </p>
+            <div class="ph">[illustrated pipe thumb]</div>
+            <ul>
+              <li><span class="pros">Pro:</span> distinct, memorable, ownable</li>
+              <li><span class="watch">Watch:</span> some nonprofits skew conservative</li>
+            </ul>
+          </article>
+
+          <article class="ov-card" style="background: var(--ink); color: var(--paper)">
+            <span class="tag" style="color: var(--accent-2)">Recommendation</span>
+            <h4 style="color: var(--paper)">Likely winner: 01 + 04</h4>
+            <p style="color: rgba(250, 250, 247, 0.85)">
+              Pipeline hero (01) gives the strongest product-truth above the fold. The Before/After
+              block from (04) makes a great mid-page section. Editorial (02) fits if brand voice
+              leans warmer.
+            </p>
+            <p class="annot" style="color: var(--accent-2); margin-top: 14px">
+              Tweak panel → try Serious tone for nonprofit board demos, Playful for ICP video.
+            </p>
+          </article>
+        </div>
+
+        <div class="closing-row">
+          <span>↻ click any tab above to drill in</span>
+          <span>tweaks panel → bottom-right corner</span>
+        </div>
+      </section>
+
+      <!-- ============== DIRECTION 1 — PIPELINE ============== -->
+      <section class="panel" data-panel="d1">
+        <div class="frame tilt-l">
+          <span class="frame-label">DIRECTION 01 — pipeline hero</span>
+          <span class="frame-note">show the product on first scroll</span>
+
+          <div class="nav">
+            <div class="logo"><span class="logo-mark">G</span> GrantPipe</div>
+            <div class="nav-links">
+              <span>Product</span><span>Pricing</span><span>Resources</span><span>Customers</span>
+            </div>
+            <div style="display: flex; gap: 8px">
+              <span class="btn sm">Sign in</span>
+              <span class="btn sm primary">Book a demo</span>
+            </div>
+          </div>
+
+          <div class="d1-hero">
+            <div>
+              <div class="eyebrow">Nonprofit grant management</div>
+              <h2 class="h-display for-manager persona-hide">
+                Every grant.<br /><span class="scribble-underline">In one pipeline.</span>
+              </h2>
+              <h2 class="h-display for-finance persona-hide">
+                Restricted funds,<br /><span class="scribble-underline">finally tracked.</span>
+              </h2>
+              <h2 class="h-display for-ed persona-hide">
+                Board-ready<br /><span class="scribble-underline">grant reporting.</span>
+              </h2>
+              <p class="lede">
+                Track every application, deadline, restriction, and report — without the spreadsheet
+                sprawl. Built for nonprofit grant teams.
+              </p>
+              <div style="display: flex; gap: 14px; align-items: center">
+                <span class="btn lg primary">Start free trial →</span>
+                <span class="btn lg">See it in action</span>
+              </div>
+              <p class="annot" style="margin-top: 18px">
+                14-day trial · no credit card · imports your existing tracker
+              </p>
+
+              <div class="d1-trust">
+                <span
+                  style="
+                    font-family: var(--mono);
+                    font-size: 10px;
+                    color: var(--ink-soft);
+                    letter-spacing: 1px;
+                  "
+                  >TRUSTED BY 200+ NONPROFITS</span
+                >
+                <div class="ph">[logo]</div>
+                <div class="ph">[logo]</div>
+                <div class="ph">[logo]</div>
+                <div class="ph">[logo]</div>
+              </div>
+            </div>
+
+            <div>
+              <div class="d1-pipe">
+                <div class="d1-col">
+                  <div class="d1-col-title"><span>Researching</span><span>4</span></div>
+                  <div class="d1-card">
+                    Mellon Foundation — Arts initiative<span class="amt"
+                      >$ 75,000 · due Jun 14</span
+                    >
+                  </div>
+                  <div class="d1-card">
+                    Hewlett — Climate &amp; comm.<span class="amt">$ 120,000 · due Jul 02</span>
+                  </div>
+                  <div class="d1-card">
+                    Knight Local News<span class="amt">$ 40,000 · due Jul 18</span>
+                  </div>
+                </div>
+                <div class="d1-col">
+                  <div class="d1-col-title"><span>Drafting</span><span>3</span></div>
+                  <div class="d1-card hot">
+                    Ford — Civic engagement <em>(Lily)</em
+                    ><span class="amt">$ 200,000 · due May 30 ⚠</span>
+                  </div>
+                  <div class="d1-card">
+                    Surdna — Sustainable env.<span class="amt">$ 90,000 · due Jun 06</span>
+                  </div>
+                  <div class="d1-card">
+                    State DOH — RFA-24<span class="amt">$ 65,000 · due Jun 20</span>
+                  </div>
+                </div>
+                <div class="d1-col">
+                  <div class="d1-col-title"><span>Submitted</span><span>5</span></div>
+                  <div class="d1-card">
+                    Bloomberg Philanthropies<span class="amt">$ 250,000</span>
+                  </div>
+                  <div class="d1-card">
+                    Kresge — Human services<span class="amt">$ 85,000</span>
+                  </div>
+                  <div class="d1-card">RWJF — Health equity<span class="amt">$ 150,000</span></div>
+                </div>
+                <div class="d1-col">
+                  <div class="d1-col-title"><span>Awarded</span><span>2</span></div>
+                  <div class="d1-card win">
+                    Packard — Ocean conserv.<span class="amt">✓ $ 110,000</span>
+                  </div>
+                  <div class="d1-card win">
+                    Local Family Fdn.<span class="amt">✓ $ 25,000</span>
+                  </div>
+                  <div class="ph" style="height: 60px; margin-top: 10px">
+                    [restricted funds tile]
+                  </div>
+                </div>
+              </div>
+              <p class="annot" style="text-align: right; margin-top: 8px">
+                live-feel hero — pipeline IS the proof
+              </p>
+            </div>
+          </div>
+
+          <div class="d1-features">
+            <div class="d1-feat-card">
+              <span class="num">01</span>
+              <h4>Pipeline tracking</h4>
+              <p>Stages, owners, deadlines, attachments. Drag a card; everyone sees it.</p>
+            </div>
+            <div class="d1-feat-card">
+              <span class="num">02</span>
+              <h4>Restricted funds</h4>
+              <p>Tie every dollar to its grant restrictions. Report against them in one click.</p>
+            </div>
+            <div class="d1-feat-card">
+              <span class="num">03</span>
+              <h4>Compliance &amp; reporting</h4>
+              <p>
+                Deliverables, narrative drafts, financial reports — never miss a funder check-in.
+              </p>
+            </div>
+          </div>
+
+          <div class="closing-row">
+            <span>nav · hero · pipeline preview · trust · 3 features · footer cta</span>
+            <span>≈ 1 above-the-fold + 3 sections + footer</span>
+          </div>
+        </div>
+      </section>
+
+      <!-- ============== DIRECTION 2 — EDITORIAL ============== -->
+      <section class="panel" data-panel="d2">
+        <div class="frame tilt-r">
+          <span class="frame-label">DIRECTION 02 — editorial</span>
+          <span class="frame-note">warmer, mission-aligned tone</span>
+
+          <div class="nav">
+            <div class="logo"><span class="logo-mark">G</span> GrantPipe</div>
+            <div class="nav-links">
+              <span>Why</span><span>How it works</span><span>Pricing</span><span>Customers</span>
+            </div>
+            <div style="display: flex; gap: 8px">
+              <span class="btn sm">Sign in</span><span class="btn sm primary">Get started</span>
+            </div>
+          </div>
+
+          <div class="d2-hero">
+            <div class="eyebrow">For nonprofit grant teams</div>
+            <h2 class="h-display for-manager persona-hide">
+              Spend less time<br /><span class="strike">chasing spreadsheets,</span><br /><span
+                class="scribble-underline"
+                >more time on mission.</span
+              >
+            </h2>
+            <h2 class="h-display for-finance persona-hide">
+              Restricted funds,<br /><span class="scribble-underline">unrestricted clarity.</span>
+            </h2>
+            <h2 class="h-display for-ed persona-hide">
+              A grant program<br />your board <span class="scribble-underline">trusts.</span>
+            </h2>
+            <p class="lede">
+              GrantPipe is a calm, clear home for every grant your team manages — from first lead to
+              final report. Built specifically for nonprofits.
+            </p>
+            <div class="d2-cta-row">
+              <span class="btn lg primary">Book a 20-min demo</span>
+              <span class="annot" style="font-size: 15px"
+                >or watch the 90-second tour <span class="arrow">↗</span></span
+              >
+            </div>
+          </div>
+
+          <div class="d2-story">
+            <div class="d2-step">
+              <span class="step-num">1</span>
+              <h4>See every opportunity</h4>
+              <p>
+                Bring leads from emails, the federal register, and your network into one tidy
+                intake.
+              </p>
+              <div class="ph">[intake screenshot]</div>
+            </div>
+            <div class="d2-step">
+              <span class="step-num">2</span>
+              <h4>Move work forward</h4>
+              <p>
+                Pipeline stages, owners, narrative drafts, attachments. No more &quot;which doc is
+                current?&quot;
+              </p>
+              <div class="ph">[pipeline screenshot]</div>
+            </div>
+            <div class="d2-step">
+              <span class="step-num">3</span>
+              <h4>Honor the restriction</h4>
+              <p>
+                Track restricted dollars from award through reporting. Stay compliant by default.
+              </p>
+              <div class="ph">[restricted funds screenshot]</div>
+            </div>
+          </div>
+
+          <div class="d2-quote">
+            <div>
+              <q
+                >We replaced four spreadsheets, a shared drive, and a dread-filled Monday meeting
+                with GrantPipe.</q
+              >
+              <cite
+                >— Director of Development, mid-size human-services nonprofit (placeholder
+                testimonial)</cite
+              >
+            </div>
+            <div class="ph" style="height: 110px">[headshot or org logo]</div>
+          </div>
+
+          <div class="closing-row">
+            <span>nav · centered hero · 3-step story · testimonial · footer cta</span>
+            <span>tone: warm, calm, op-ed-like</span>
+          </div>
+        </div>
+      </section>
+
+      <!-- ============== DIRECTION 3 — DASHBOARD ============== -->
+      <section class="panel" data-panel="d3">
+        <div class="frame tilt-l">
+          <span class="frame-label">DIRECTION 03 — dashboard preview</span>
+          <span class="frame-note">data-dense, product-forward</span>
+
+          <div class="nav">
+            <div class="logo"><span class="logo-mark">G</span> GrantPipe</div>
+            <div class="nav-links">
+              <span>Product</span><span>Solutions</span><span>Pricing</span><span>Docs</span
+              ><span>Customers</span>
+            </div>
+            <div style="display: flex; gap: 8px">
+              <span class="btn sm">Sign in</span><span class="btn sm primary">Try free</span>
+            </div>
+          </div>
+
+          <div class="d3-hero">
+            <div class="d3-left">
+              <div class="eyebrow">Grants CRM · Restricted funds · Reporting</div>
+              <h2 class="h-display for-manager persona-hide">
+                The operating system for nonprofit
+                <span class="scribble-underline">grant teams.</span>
+              </h2>
+              <h2 class="h-display for-finance persona-hide">
+                One place for restricted dollars, deliverables &amp;
+                <span class="scribble-underline">audit prep.</span>
+              </h2>
+              <h2 class="h-display for-ed persona-hide">
+                Pipeline, fundraising forecast, board
+                <span class="scribble-underline">reporting.</span>
+              </h2>
+              <p class="lede">
+                Pipeline tracking, restricted-fund accounting, compliance, and forecasting — built
+                for the realities of nonprofit grant work.
+              </p>
+              <div style="display: flex; gap: 10px">
+                <span class="btn primary">Start free</span>
+                <span class="btn">Live product tour</span>
+              </div>
+              <div class="d3-stats">
+                <div class="d3-stat">
+                  <div class="v">$48M</div>
+                  <div class="l">tracked YTD</div>
+                </div>
+                <div class="d3-stat">
+                  <div class="v">200+</div>
+                  <div class="l">nonprofits</div>
+                </div>
+                <div class="d3-stat">
+                  <div class="v">3.2k</div>
+                  <div class="l">active grants</div>
+                </div>
+                <div class="d3-stat">
+                  <div class="v">9 hrs</div>
+                  <div class="l">/ wk saved (avg)</div>
+                </div>
+              </div>
+            </div>
+
+            <!-- mock dashboard -->
+            <div class="d3-dash">
+              <div class="d3-dash-head">
+                <span class="dot"></span><span class="dot"></span><span class="dot"></span>
+                <span style="margin-left: 14px">app.grantpipe.com / dashboard</span>
+              </div>
+              <div class="d3-dash-body">
+                <div class="d3-kpi-row">
+                  <div class="d3-kpi">
+                    <div class="n">$2.4M</div>
+                    <div class="lab">in pipeline</div>
+                  </div>
+                  <div class="d3-kpi">
+                    <div class="n">$890k</div>
+                    <div class="lab">awarded YTD</div>
+                  </div>
+                  <div class="d3-kpi">
+                    <div class="n">37%</div>
+                    <div class="lab">win rate</div>
+                  </div>
+                  <div class="d3-kpi">
+                    <div class="n">5</div>
+                    <div class="lab">due ≤ 14d ⚠</div>
+                  </div>
+                </div>
+                <div class="d3-table">
+                  <div class="d3-row head">
+                    <span>Grant</span><span>Funder</span><span>Stage</span><span>Due</span>
+                  </div>
+                  <div class="d3-row">
+                    <span>Civic Engagement '26</span><span>Ford Fdn.</span
+                    ><span><span class="d3-pill hot">Drafting</span></span
+                    ><span>May 30</span>
+                  </div>
+                  <div class="d3-row">
+                    <span>Climate Comm.</span><span>Hewlett</span
+                    ><span><span class="d3-pill">Research</span></span
+                    ><span>Jul 02</span>
+                  </div>
+                  <div class="d3-row">
+                    <span>Ocean Conserv.</span><span>Packard</span
+                    ><span><span class="d3-pill win">Awarded</span></span
+                    ><span>—</span>
+                  </div>
+                  <div class="d3-row">
+                    <span>Health Equity</span><span>RWJF</span
+                    ><span><span class="d3-pill">Submitted</span></span
+                    ><span>—</span>
+                  </div>
+                </div>
+                <div class="d3-chart">
+                  <svg viewBox="0 0 320 80" preserveAspectRatio="none">
+                    <path
+                      d="M0,60 C40,55 60,30 100,35 C140,40 160,15 200,20 C240,25 270,8 320,12"
+                      fill="none"
+                      stroke="#1a1a1a"
+                      stroke-width="1.5"
+                    />
+                    <path
+                      d="M0,70 C40,65 60,50 100,52 C140,54 160,40 200,42 C240,44 270,32 320,30 L320,80 L0,80 Z"
+                      fill="#d97757"
+                      opacity="0.18"
+                    />
+                  </svg>
+                  <span
+                    style="
+                      position: absolute;
+                      top: 6px;
+                      left: 10px;
+                      font-family: var(--mono);
+                      font-size: 9px;
+                      color: var(--ink-soft);
+                      text-transform: uppercase;
+                      letter-spacing: 0.6px;
+                    "
+                    >12-mo forecast</span
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="d3-grid-features">
+            <div class="d3-mini">
+              <h5>Pipeline</h5>
+              <p>Kanban + table view of every grant.</p>
+            </div>
+            <div class="d3-mini">
+              <h5>Restricted funds</h5>
+              <p>Track each dollar to its restriction.</p>
+            </div>
+            <div class="d3-mini">
+              <h5>Reporting</h5>
+              <p>Funder reports &amp; board exports.</p>
+            </div>
+            <div class="d3-mini">
+              <h5>Forecasting</h5>
+              <p>Probability-weighted revenue.</p>
+            </div>
+            <div class="d3-mini">
+              <h5>Compliance</h5>
+              <p>Deliverables &amp; audit-ready trails.</p>
+            </div>
+            <div class="d3-mini">
+              <h5>Integrations</h5>
+              <p>QuickBooks, Slack, Drive, Outlook.</p>
+            </div>
+            <div class="d3-mini">
+              <h5>Roles &amp; access</h5>
+              <p>Read-only board portal included.</p>
+            </div>
+            <div class="d3-mini">
+              <h5>Templates</h5>
+              <p>LOI, narrative, budget starters.</p>
+            </div>
+          </div>
+
+          <div class="closing-row">
+            <span>nav · split hero (copy + dashboard) · stats · 8 mini-features</span>
+            <span>strongest for finance &amp; ops decision-makers</span>
+          </div>
+        </div>
+      </section>
+
+      <!-- ============== DIRECTION 4 — BEFORE / AFTER ============== -->
+      <section class="panel" data-panel="d4">
+        <div class="frame tilt-r">
+          <span class="frame-label">DIRECTION 04 — before / after</span>
+          <span class="frame-note">conversion-focused, names the pain</span>
+
+          <div class="nav">
+            <div class="logo"><span class="logo-mark">G</span> GrantPipe</div>
+            <div class="nav-links">
+              <span>Why GrantPipe</span><span>Features</span><span>Pricing</span
+              ><span>Customers</span>
+            </div>
+            <div style="display: flex; gap: 8px">
+              <span class="btn sm">Sign in</span><span class="btn sm primary">Start free</span>
+            </div>
+          </div>
+
+          <div class="d4-hero" style="text-align: center">
+            <div class="eyebrow">stop running grants out of a spreadsheet</div>
+            <h2 class="h-display for-manager persona-hide" style="margin: 0 auto">
+              There is a better way<br />to run a grant program.
+            </h2>
+            <h2 class="h-display for-finance persona-hide" style="margin: 0 auto">
+              Your auditor will thank you.
+            </h2>
+            <h2 class="h-display for-ed persona-hide" style="margin: 0 auto">
+              Walk into your next board meeting <span class="scribble-underline">prepared.</span>
+            </h2>
+            <p class="lede" style="margin: 14px auto 22px">
+              GrantPipe replaces the patchwork of spreadsheets, shared drives, and sticky-note
+              deadlines with one calm system built for nonprofit grant teams.
+            </p>
+            <div style="display: flex; gap: 14px; justify-content: center">
+              <span class="btn lg primary">Get a personal demo</span>
+              <span class="btn lg">14-day free trial</span>
+            </div>
+          </div>
+
+          <div class="d4-cols">
+            <div class="d4-card bad">
+              <h3>Before<small>spreadsheets &amp; vibes</small></h3>
+              <ul class="d4-list bad">
+                <li>"Master tracker v7_FINAL_real.xlsx"</li>
+                <li>Deadlines lost in inbox threads</li>
+                <li>Restricted funds reconciled by hand at year-end</li>
+                <li>Board reports take 3 days to assemble</li>
+                <li>One person leaves → context disappears</li>
+                <li>No clear pipeline forecast</li>
+              </ul>
+            </div>
+            <div class="d4-card good">
+              <h3>With GrantPipe<small>one shared system</small></h3>
+              <ul class="d4-list good">
+                <li>Single pipeline of every grant, every stage</li>
+                <li>Deadlines, owners &amp; reminders, automatic</li>
+                <li>Restrictions tracked dollar-by-dollar</li>
+                <li>Board reports export in one click</li>
+                <li>Knowledge stays with the org, not a person</li>
+                <li>Probability-weighted revenue forecast</li>
+              </ul>
+            </div>
+          </div>
+
+          <div
+            style="
+              margin-top: 28px;
+              display: grid;
+              grid-template-columns: repeat(3, 1fr);
+              gap: 16px;
+            "
+          >
+            <div class="ph" style="height: 86px">[customer logo]</div>
+            <div class="ph" style="height: 86px">[customer logo]</div>
+            <div class="ph" style="height: 86px">[customer logo]</div>
+          </div>
+
+          <div class="d4-cta">
+            <div>
+              <h3>See your own grants in GrantPipe.</h3>
+              <p>
+                Bring your existing tracker. We'll import it on a 20-minute call. Walk out with a
+                working pipeline.
+              </p>
+            </div>
+            <span class="btn lg accent">Book a demo →</span>
+          </div>
+
+          <div class="closing-row">
+            <span>nav · centered hero · before/after · logo bar · final cta</span>
+            <span>strongest for skeptical buyers comparing tools</span>
+          </div>
+        </div>
+      </section>
+
+      <!-- ============== DIRECTION 5 — PLAYFUL PIPE ============== -->
+      <section class="panel" data-panel="d5">
+        <div class="frame tilt-l">
+          <span class="frame-label">DIRECTION 05 — illustrated metaphor</span>
+          <span class="frame-note">distinct, brandable, friendlier</span>
+
+          <div class="nav">
+            <div class="logo"><span class="logo-mark">G</span> GrantPipe</div>
+            <div class="nav-links">
+              <span>Product</span><span>Pricing</span><span>Stories</span><span>About</span>
+            </div>
+            <div style="display: flex; gap: 8px">
+              <span class="btn sm">Sign in</span><span class="btn sm primary">Try free</span>
+            </div>
+          </div>
+
+          <div class="d5-hero">
+            <div>
+              <div class="eyebrow">grants in · funded mission out</div>
+              <h2 class="h-display for-manager persona-hide">
+                Grants flow.<br />Mission <span class="scribble-underline">funded.</span>
+              </h2>
+              <h2 class="h-display for-finance persona-hide">
+                Every dollar,<br /><span class="scribble-underline">tracked &amp; tied.</span>
+              </h2>
+              <h2 class="h-display for-ed persona-hide">
+                From lead to <span class="scribble-underline">legacy.</span>
+              </h2>
+              <p class="lede">
+                Move every grant from idea to award to report through one friendly pipeline. Built
+                with — and for — small nonprofit teams.
+              </p>
+              <div style="display: flex; gap: 12px; align-items: center">
+                <span class="btn lg primary">Start your trial</span>
+                <span class="btn lg sage">Watch the tour</span>
+              </div>
+              <p class="annot" style="margin-top: 18px">
+                no card · keep your data · cancel anytime
+              </p>
+            </div>
+
+            <div class="d5-illu">
+              <svg
+                class="pipe-svg"
+                viewBox="0 0 500 380"
+                preserveAspectRatio="none"
+                aria-hidden="true"
+              >
+                <!-- pipe body -->
+                <path
+                  d="M30 80 Q 130 80 160 160 Q 190 240 280 240 Q 380 240 410 320"
+                  fill="none"
+                  stroke="#1a1a1a"
+                  stroke-width="22"
+                  stroke-linecap="round"
+                />
+                <path
+                  d="M30 80 Q 130 80 160 160 Q 190 240 280 240 Q 380 240 410 320"
+                  fill="none"
+                  stroke="#fafaf7"
+                  stroke-width="14"
+                  stroke-linecap="round"
+                />
+                <!-- inlets -->
+                <circle cx="30" cy="80" r="14" fill="#1a1a1a" />
+                <circle
+                  cx="410"
+                  cy="320"
+                  r="16"
+                  fill="#d97757"
+                  stroke="#1a1a1a"
+                  stroke-width="2.5"
+                />
+                <!-- joints -->
+                <circle cx="160" cy="160" r="9" fill="#1a1a1a" />
+                <circle cx="280" cy="240" r="9" fill="#1a1a1a" />
+              </svg>
+              <span class="stage-tag" style="top: 50px; left: 14px">📥 Lead</span>
+              <span class="stage-tag" style="top: 132px; left: 130px; transform: rotate(-3deg)"
+                >✍ Drafting</span
+              >
+              <span class="stage-tag" style="top: 218px; left: 250px; transform: rotate(2deg)"
+                >📨 Submitted</span
+              >
+              <span class="stage-tag" style="bottom: 40px; right: 14px; background: var(--accent-2)"
+                >🏆 Awarded</span
+              >
+              <div class="coin" style="top: 96px; left: 90px">$</div>
+              <div class="coin" style="top: 188px; left: 200px">$</div>
+              <div
+                class="coin"
+                style="top: 248px; left: 330px; background: var(--accent-3); color: var(--paper)"
+              >
+                $
+              </div>
+              <p class="annot" style="position: absolute; bottom: 8px; left: 18px; font-size: 11px">
+                ↳ would be a real, animated illustration in hi-fi
+              </p>
+            </div>
+          </div>
+
+          <div class="d5-loop">
+            <div class="d5-step">
+              <div class="ico">①</div>
+              <h5>Discover</h5>
+              <p>Pull leads from RFPs, federal register, your network.</p>
+            </div>
+            <div class="d5-step">
+              <div class="ico">②</div>
+              <h5>Apply</h5>
+              <p>Draft, route, attach. One source of truth.</p>
+            </div>
+            <div class="d5-step">
+              <div class="ico">③</div>
+              <h5>Steward</h5>
+              <p>Track restrictions &amp; deliverables in real time.</p>
+            </div>
+            <div class="d5-step">
+              <div class="ico">④</div>
+              <h5>Report</h5>
+              <p>Funder &amp; board reports without the panic.</p>
+            </div>
+          </div>
+
+          <div class="d5-band">
+            <h3>Made by people who've run grant programs.</h3>
+            <p class="annot" style="font-size: 14px">
+              Built with a small group of nonprofit partners. Pricing scales with org size, not
+              seats.
+            </p>
+            <div style="margin-top: 14px"><span class="btn primary lg">Meet the team →</span></div>
+          </div>
+
+          <div class="closing-row">
+            <span>nav · illustrated hero · 4-step loop · personal band · footer</span>
+            <span>distinct + memorable; pair with serious case studies</span>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- React + Babel for tweaks -->
+    <script
+      src="https://unpkg.com/react@18.3.1/umd/react.development.js"
+      integrity="sha384-hD6/rw4ppMLGNu3tX5cjIb+uRZ7UkRJ6BPkLpg4hAu/6onKUg4lLsHAs9EBPT82L"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://unpkg.com/react-dom@18.3.1/umd/react-dom.development.js"
+      integrity="sha384-u6aeetuaXnQ38mYT8rp6sbXaQe3NL9t+IBXmnYxwkUI2Hw4bsp2Wvmx4yRQF1uAm"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://unpkg.com/@babel/standalone@7.29.0/babel.min.js"
+      integrity="sha384-m08KidiNqLdpJqLq95G/LEi8Qvjl/xUYll3QILypMoQ65QorJ9Lvtp2RXYGBFj1y"
+      crossorigin="anonymous"
+    ></script>
+    <script type="text/babel" src="tweaks-panel.jsx"></script>
+
+    <script>
+      // ——— tab switching ———
+      document.getElementById("tabs").addEventListener("click", (e) => {
+        const btn = e.target.closest(".tab");
+        if (!btn) return;
+        document.querySelectorAll(".tab").forEach((t) => t.classList.remove("active"));
+        document.querySelectorAll(".panel").forEach((p) => p.classList.remove("active"));
+        btn.classList.add("active");
+        document.querySelector(`.panel[data-panel="${btn.dataset.tab}"]`).classList.add("active");
+        window.scrollTo({ top: 0, behavior: "instant" });
+      });
+    </script>
+
+    <script type="text/babel">
+      const TWEAK_DEFAULTS = /*EDITMODE-BEGIN*/ {
+        tone: "hand",
+        density: "default",
+        persona: "manager",
+        showAnnotations: true,
+      }; /*EDITMODE-END*/
+
+      function App() {
+        const [tweaks, setTweak] = useTweaks(TWEAK_DEFAULTS);
+
+        React.useEffect(() => {
+          document.body.dataset.tone = tweaks.tone;
+          document.body.dataset.density = tweaks.density;
+          document.body.dataset.persona = tweaks.persona;
+          document.body.style.setProperty(
+            "--annot-display",
+            tweaks.showAnnotations ? "inline" : "none",
+          );
+        }, [tweaks]);
+
+        React.useEffect(() => {
+          const id = "annot-toggle-style";
+          let el = document.getElementById(id);
+          if (!el) {
+            el = document.createElement("style");
+            el.id = id;
+            document.head.appendChild(el);
+          }
+          el.textContent = tweaks.showAnnotations
+            ? ""
+            : ".annot, .frame-note, .frame-label { display: none !important; }";
+        }, [tweaks.showAnnotations]);
+
+        return (
+          <TweaksPanel title="Tweaks" defaultPos={{ right: 20, bottom: 20 }}>
+            <TweakSection title="Tone">
+              <TweakRadio
+                value={tweaks.tone}
+                onChange={(v) => setTweak("tone", v)}
+                options={[
+                  { value: "hand", label: "Sketchy" },
+                  { value: "serious", label: "Serious" },
+                  { value: "playful", label: "Playful" },
+                ]}
+              />
+              <p style={{ fontSize: 11, color: "#888", margin: "6px 0 0" }}>
+                Sketchy = wireframe vibe. Serious = clean sans. Playful = brighter accents.
+              </p>
+            </TweakSection>
+
+            <TweakSection title="Density">
+              <TweakRadio
+                value={tweaks.density}
+                onChange={(v) => setTweak("density", v)}
+                options={[
+                  { value: "dense", label: "Dense" },
+                  { value: "default", label: "Default" },
+                  { value: "spacious", label: "Spacious" },
+                ]}
+              />
+            </TweakSection>
+
+            <TweakSection title="Hero copy persona">
+              <TweakRadio
+                value={tweaks.persona}
+                onChange={(v) => setTweak("persona", v)}
+                options={[
+                  { value: "manager", label: "Grant manager" },
+                  { value: "finance", label: "Finance / ops" },
+                  { value: "ed", label: "Exec Dir." },
+                ]}
+              />
+              <p style={{ fontSize: 11, color: "#888", margin: "6px 0 0" }}>
+                Hero headline shifts to speak to the visitor type.
+              </p>
+            </TweakSection>
+
+            <TweakSection title="Wireframe chrome">
+              <TweakToggle
+                checked={tweaks.showAnnotations}
+                onChange={(v) => setTweak("showAnnotations", v)}
+                label="Show frame labels & notes"
+              />
+            </TweakSection>
+          </TweaksPanel>
+        );
+      }
+
+      const root = ReactDOM.createRoot(document.createElement("div"));
+      document.body.appendChild(
+        root._internalRoot ? root._internalRoot.containerInfo : document.createElement("div"),
+      );
+      ReactDOM.createRoot(document.body.appendChild(document.createElement("div"))).render(<App />);
+    </script>
+  </body>
+</html>

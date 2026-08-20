@@ -1,0 +1,186 @@
+# LinkedIn Posts — 2026-05-18
+
+---
+
+**Post 1 — STAT_BOMB**
+
+42% of non-government funders cap indirect cost allowances at 10% or less — while actual nonprofit overhead runs 25–35%.
+
+That gap is not hypothetical. It shows up every grant cycle as unreimbursed costs your organization absorbs.
+The MacArthur Foundation has publicly stated that 29% is the minimum for a financially healthy nonprofit.
+The OMB de minimis rate is 15% — a floor, not a target.
+When only 20% of grants include enough overhead coverage, the math compounds quietly across a grant portfolio.
+Budget-vs-actual tracking that surfaces this line item per award is the first step to quantifying the real net grant value.
+A $50,000 award with $10,000 in compliance costs is effectively a $40,000 grant — every grant manager should know that number before acceptance.
+
+GrantPipe tracks expenditures against approved budget lines in real time, so indirect cost shortfalls appear in the dashboard before they compound. See how it works at grantpipe.com.
+
+#grantcompliance #nonprofitfinance #restrictedFunds #indirectcosts
+
+---
+
+**Post 2 — MYTH_BUSTER**
+
+The myth: if a cost is necessary for the grant, it is allowable under 2 CFR 200 Subpart E.
+
+The reality: a cost must pass four separate tests simultaneously.
+Necessary and reasonable — the prudent-person standard, evaluated at the time of purchase, not in hindsight.
+Conforms to limitations — the award terms can prohibit a cost even if it passes the reasonableness test.
+Consistently applied — a cost type treated as indirect for non-federal work cannot be claimed as direct on a federal award.
+Adequately documented — no documentation means no deduction, regardless of whether the cost was legitimate.
+
+Cost allowability and allocability findings represent over 40% of all questioned cost findings in federal single audits, per GAO's annual high-risk program analysis.
+The most commonly disallowed items: entertainment, alcohol (never allowable under 200.423), lobbying, and compensation above established organizational pay scales.
+Passing the necessity test while failing documentation is a compliance finding. Both matter.
+
+Which of the four tests does your team check most consistently?
+
+#federalgrants #2cfr200 #grantcompliance #singleaudit
+
+---
+
+**Post 3 — WORKFLOW_STEP**
+
+A release from restriction is not a revenue event. It is a reclassification — and the date it is posted matters.
+
+Under FASB ASC 958-205, a restricted net asset releases when the donor-imposed stipulation expires or is fulfilled — not when the accountant gets to the journal entry.
+For purpose restrictions, the release date is the date the last qualifying expenditure was incurred.
+For time restrictions, the release date is the date the restriction expired.
+Releasing the full grant balance at year-end without verifying that expenditures equal or exceed the release amount is the most common error in this workflow.
+If $80,000 was received and $65,000 was spent, only $65,000 releases — the remaining $15,000 carries forward as restricted.
+The audit file needs the GL expenditure detail, the donor agreement, the dated journal entry, and the roll-forward schedule that ties to the GL.
+
+Do your restricted fund release entries carry a supporting expenditure schedule, or is the journal entry standing alone?
+
+#restrictedFunds #asc958 #nonprofitaccounting #grantcompliance
+
+---
+
+**Post 4 — TERM_EXPLAINED**
+
+Program income is the grant compliance category that most organizations undercount — not because they ignore it, but because the definition is broader than it sounds.
+
+"Program income" under 2 CFR 200.307 means gross income earned from activities supported by the federal award during the period of performance.
+Not net of expenses. Gross. If participants pay a $50 registration fee for a grant-funded training program, $50 is the program income figure — not $50 minus delivery costs.
+Insurance reimbursements (Medicaid, Medicare, private) for services delivered under a federally-funded health grant are typically program income.
+Proceeds from selling items fabricated with grant funds are program income.
+There are three treatment methods: deduction (default), addition, and cost-sharing. If the grant agreement is silent, the deduction method applies automatically.
+Unreported program income is a compliance finding under 2 CFR 200.307 even if the money was used appropriately.
+The finding is not misuse — it is failure to report and formally apply the required treatment method.
+
+The communication gap between program staff who know income was earned and finance staff who prepare the SF-425 is the most common failure point.
+
+#federalgrants #programincome #2cfr200 #grantcompliance
+
+---
+
+**Post 5 — TOOL_TEARDOWN**
+
+Blackbaud does not publish pricing. Every organization negotiates blind.
+
+Mid-sized nonprofits ($500K–$10M) report paying $5,000–$15,000/year in base licensing for Raiser's Edge NXT.
+Implementation with a certified partner runs $10,000–$50,000+ — required, not optional.
+Year-one total cost typically lands between $20,000 and $65,000 for a mid-market organization.
+Multi-year contracts are standard, early termination carries penalties, and annual price increases of 5–10% are built in.
+Online giving forms, email marketing, and advanced analytics are frequently separate paid add-ons not included in base pricing.
+Raiser's Edge NXT does not include grant compliance at any tier — restricted fund tracking and compliance reporting require manual workarounds.
+
+The headline monthly equivalent looks manageable until you model year-one cost in three buckets: subscription, implementation effort, and ongoing process overhead.
+
+What was the actual year-one cost when your organization last adopted a platform like this?
+
+#nonprofitsoftware #blackbaud #raisersedge #nonprofitfinance
+
+---
+
+**Post 6 — VERTICAL_HOOK**
+
+A mid-sized food bank can be running five separate federal compliance frameworks simultaneously — each with different deadlines, different documentation requirements, and different contacts.
+
+USDA TEFAP requires pounds-by-category commodity distribution logs, eligibility verification records, and storage documentation.
+FEMA EFSP requires expenditure tracking by allowed categories on a quarterly basis — and reports go to the local board, not the state agency.
+CDBG, Feeding America network allocations, and foundation grants each add another set of reporting requirements.
+TEFAP reports typically go to the state TEFAP agency; EFSP reports go to the local EFSP board and National Board.
+These are separate systems with separate contacts, separate formats, and separate consequences for missed deadlines.
+Seasonal demand spikes in December and summer create pressure to reallocate restricted funds quickly — but grant restrictions do not flex for demand patterns.
+
+The cumulative administrative load is what breaks spreadsheet-based compliance management for food banks, not any single grant's complexity.
+
+How many separate compliance frameworks is your team tracking today?
+
+#foodbanks #hungerrelief #grantcompliance #nonprofitoperations
+
+---
+
+**Post 7 — FREE_RESOURCE**
+
+Under 2 CFR 200.308, a grant budget modification requires prior approval when it involves a change in scope, a key personnel change, or a transfer that exceeds the award's rebudgeting threshold — commonly 10% of the total award.
+
+The threshold applies cumulatively, not per transaction.
+A series of small transfers that each fall below 10% can collectively exceed it if you are not tracking the running total.
+Every modification below the threshold still needs to be documented internally in a cumulative log — the absence of that log is a compliance finding when the award is reviewed.
+The formal request must describe the specific change (exact categories, dollar amounts, direction of transfer), justify the operational need, and demonstrate the modification does not alter project scope or objectives.
+Do not spend from modified budget categories until the approval is received and filed.
+
+A free grant budget amendment request template covering all six required sections — including the cumulative modification log — is available at grantpipe.com/free.
+
+#federalgrants #budgetmodification #2cfr200 #grantcompliance
+
+---
+
+**Post 8 — COMPARISON_INSIGHT**
+
+Givebutter vs Bloomerang is often framed as "free vs $125/month." The more accurate frame is: a fundraising platform vs a donor CRM.
+
+Givebutter earns revenue through optional donor tips at checkout — no subscription, but standard payment processing fees (2.9% + $0.30) apply.
+It runs campaigns, events, peer-to-peer fundraising, and livestreams well. Donor CRM depth is basic — no segmentation, no at-risk dashboards, no lapsed donor workflows.
+Bloomerang starts at $125/month and scales by constituent records. The at-risk donor dashboard and multi-year giving analytics are the main arguments for the subscription cost.
+Only 33.3% of nonprofits rate their CRM systems as effective, per the Fifty & Fifty 2025 Nonprofit Peer Report.
+Neither platform includes grant lifecycle management or restricted fund compliance.
+Organizations receiving restricted grants manage compliance separately from both — either in a third system or in spreadsheets.
+
+If grant compliance is a material part of your development operation, that gap is worth weighing in any platform comparison.
+
+#nonprofitCRM #givebutter #bloomerang #grantmanagement
+
+---
+
+**Post 9 — LIST_POST**
+
+GrantHub Pro was sunset January 31, 2026. Before picking the replacement, answer one question: were you primarily using GrantHub for pipeline tracking, or for post-award compliance?
+
+Most GrantHub users fell into two groups.
+Group one tracked applications, deadline calendars, and funder contacts — and managed post-award compliance separately in spreadsheets.
+Group two wanted both in one place and lived with the gap.
+For group one, almost any modern grant tracking tool replicates the visible function. For group two, a replacement that only covers pipeline management re-creates the original problem.
+Five tools worth evaluating: GrantPipe (post-award compliance + donor CRM), Instrumentl (pre-award discovery), Salesforce Nonprofit (configurable, heavy implementation), Neon CRM (donor-first, minimal compliance depth), Submittable (grantmaker-side only — not a recipient tool).
+Salesforce Nonprofit typically requires $20,000–$50,000+ in implementation consulting before it is usable for mid-sized compliance workflows.
+Submittable is the funder's portal. You submit to it as an applicant — you would not own a subscription.
+
+The migration window is the opportunity to close the compliance gap, not just replicate a sunset product's features.
+
+#granthub #grantmanagement #nonprofitsoftware #grantcompliance
+
+---
+
+**Post 10 — HOW_TO**
+
+How to build a grant reporting calendar that actually prevents missed deadlines — step by step.
+
+Step 1: Pull every active grant agreement and extract every required report. Do not rely on memory. Federal notices of award, foundation grant letters, and state passthrough subgrant agreements each specify their own schedules.
+
+Step 2: For each report, record five things: due date, report type (financial or programmatic), submission method (portal URL, email, mail), responsible person, and current status. Financial and programmatic reports for the same grant often have different due dates and different owners.
+
+Step 3: Set internal lead-time reminders at 30 days and 10 days before each external deadline. The 30-day trigger is for data collection; the 10-day trigger is for drafting and review.
+
+Step 4: Identify deadline stacking periods 60–90 days in advance. Federal fiscal year end (September 30) and calendar year end (December 31) routinely stack multiple reports in the same two-week window.
+
+Step 5: Update the calendar immediately when an amendment arrives, a no-cost extension changes the period-of-performance end date, or a program officer confirms a deadline change in writing. A calendar built at award inception and never updated gives false confidence.
+
+Step 6: Connect each calendar entry to the underlying grant file — prior reports, performance measures, budget-vs-actual data, and portal login credentials. The deadline alert is useless if the responsible person cannot find the grant file.
+
+Final reports for federal awards are typically due within 120 days of the period-of-performance end date. Missing a federal deadline generates a delinquency flag that can suspend draw-down access and affect future award eligibility.
+
+GrantPipe centralizes the reporting calendar alongside the grant file, budget tracking, and compliance documentation — so the alert and the supporting data are in the same place. Try it free at grantpipe.com.
+
+#grantreporting #grantcompliance #nonprofitoperations #grantsmanagement

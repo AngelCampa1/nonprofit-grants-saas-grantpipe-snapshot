@@ -1,0 +1,11 @@
+The Award Setup Worksheet is a first-30-days document.
+
+Use it when the grant is awarded, before the details scatter:
+
+- funder and award ID
+- period of performance
+- approved budget
+- reporting cadence
+- indirect cost treatment
+- restriction purpose
+- owner for each deadline

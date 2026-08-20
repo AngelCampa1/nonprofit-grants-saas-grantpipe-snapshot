@@ -1,0 +1,3 @@
+Most restricted-fund tracking does not break at year end. It breaks the day a single donor gift funds two programs and the gift entry form has one program field.
+
+The workaround becomes the system. The system becomes the audit finding.

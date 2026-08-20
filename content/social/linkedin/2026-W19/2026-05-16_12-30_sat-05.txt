@@ -1,0 +1,13 @@
+Five things that catch small nonprofits off guard on their first federal pass-through award.
+
+1. The pass-through entity (the state or county) is your funder for compliance purposes, but the federal rules still apply. You owe 2 CFR 200 even though your check came from the state.
+
+2. Your UEI on SAM.gov has to be active and matching the legal name on the subaward. Mismatch on a single character delays drawdowns.
+
+3. Period of performance starts on the federal award date the prime received, not the date your subaward letter is signed. Pre-award costs are not automatically allowable just because they happened after you signed.
+
+4. The 15% de minimis indirect rate is available if you have never had a negotiated rate. If you ever negotiated one, even for a closed grant, you cannot fall back to de minimis without re-negotiating.
+
+5. FFATA reporting at $30,000 obligated lives with the prime, but the prime will ask you for the data. Have your DUNS-era history, board comp, and primary place of performance ready.
+
+None of this is in the award letter. It is in the federal regulations the award letter incorporates by reference. Saturday is a fine day to read them.

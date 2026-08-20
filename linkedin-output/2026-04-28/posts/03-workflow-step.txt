@@ -1,0 +1,11 @@
+Step 2 of a nonprofit pledge write-off: determine the treatment under FASB ASC 958-605 before you book the entry.
+
+The instinct from for-profit accounting is to debit bad debt expense and credit the receivable. Under ASC 958, that is wrong. The write-off of an unconditional pledge receivable reduces the allowance for uncollectible pledges and the pledge receivable — provided the allowance was appropriately estimated when the pledge was originally recorded. It is contra-revenue mechanics, not an operating expense.
+
+If the original allowance was set to zero, the write-off has nowhere to go but contribution revenue. Organizations that use a blanket zero-allowance policy create exactly that scenario: every write-off becomes a reduction to current-year contribution revenue on the Statement of Activities.
+
+Step 3 is approval. Typical thresholds under ASC 958-605 documentation discipline: under $1,000 approved by the finance director, $1,000 to $10,000 by the executive director, over $10,000 by the board. Whatever your policy specifies, the written approval must precede the journal entry.
+
+Multi-year pledges add one more wrinkle. Per ASC 958-605-30-6, multi-year pledges carry a present-value discount that unwinds annually. When the pledge is written off, the unamortized discount on the unpaid portion must be eliminated proportionally. Leaving it in place overstates the discount contra-asset.
+
+#nonprofitaccounting #fasb #pledges #asc958

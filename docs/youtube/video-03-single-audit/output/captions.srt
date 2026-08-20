@@ -1,0 +1,675 @@
+1
+00:00:00,000 --> 00:00:06,338
+If you've heard that the magic number for a federal single audit is seven hundred and fifty thousand dollars
+
+2
+00:00:06,338 --> 00:00:08,098
+hold on, because that changed.
+
+3
+00:00:08,098 --> 00:00:10,622
+The number that matters now is one million.
+
+4
+00:00:10,622 --> 00:00:13,028
+And if your nonprofit is anywhere near it
+
+5
+00:00:13,028 --> 00:00:19,365
+that difference decides whether you're about to spend the next few months in an audit you didn't budget for.
+
+6
+00:00:19,365 --> 00:00:21,243
+So let's clear this up properly.
+
+7
+00:00:21,243 --> 00:00:25,234
+In the next ten minutes I'll explain what a single audit actually is
+
+8
+00:00:25,234 --> 00:00:29,224
+who is required to get one, the exact dollar figure that triggers it
+
+9
+00:00:29,224 --> 00:00:31,806
+and what the auditor does once you're in it.
+
+10
+00:00:31,806 --> 00:00:35,151
+No jargon for its own sake, and no pitch to hire anybody.
+
+11
+00:00:35,151 --> 00:00:37,264
+Quick note on where I'm coming from.
+
+12
+00:00:37,264 --> 00:00:39,200
+I build grant compliance software
+
+13
+00:00:39,200 --> 00:00:44,540
+so my job is to model these federal rules precisely enough that a computer can follow them.
+
+14
+00:00:44,540 --> 00:00:47,768
+I'm not an auditor, and I'm not going to talk like one.
+
+15
+00:00:47,768 --> 00:00:51,641
+You're getting the version a busy finance director actually needs.
+
+16
+00:00:51,641 --> 00:00:56,032
+Let's start with what the thing even is, because the name is misleading.
+
+17
+00:00:56,032 --> 00:00:59,690
+A single audit is not a small audit, and it's not one audit.
+
+18
+00:00:59,690 --> 00:01:06,398
+It's called "single" because it rolls what used to be a pile of separate agency audits into one yearly review.
+
+19
+00:01:06,398 --> 00:01:08,228
+A single audit has two halves.
+
+20
+00:01:08,228 --> 00:01:13,594
+The first half is the part you might already know: an audit of your financial statements
+
+21
+00:01:13,594 --> 00:01:16,948
+the normal question of whether your books are accurate.
+
+22
+00:01:16,948 --> 00:01:19,814
+The second half is the one that catches people.
+
+23
+00:01:19,814 --> 00:01:22,619
+It's a compliance audit of your federal money.
+
+24
+00:01:22,619 --> 00:01:25,241
+Did you spend it on what you said you would
+
+25
+00:01:25,241 --> 00:01:30,302
+did you follow the rules attached to each award, and can you prove it with records.
+
+26
+00:01:30,302 --> 00:01:32,315
+That second half is the real work
+
+27
+00:01:32,315 --> 00:01:39,266
+and it's why a single audit is a much bigger deal than the financial audit many nonprofits already get every year.
+
+28
+00:01:39,266 --> 00:01:41,706
+The rules come from the Single Audit Act
+
+29
+00:01:41,706 --> 00:01:46,096
+which Congress passed in nineteen eighty-four and amended in ninety-six.
+
+30
+00:01:46,096 --> 00:01:49,694
+Today they live in a regulation called the Uniform Guidance
+
+31
+00:01:49,694 --> 00:01:54,999
+specifically Title two of the Code of Federal Regulations, Part two hundred, Subpart F.
+
+32
+00:01:54,999 --> 00:02:00,792
+If you've been doing this a while and you remember something called Circular A-one-thirty-three
+
+33
+00:02:00,792 --> 00:02:02,195
+that's the old version.
+
+34
+00:02:02,195 --> 00:02:03,414
+Same idea, new home.
+
+35
+00:02:03,414 --> 00:02:07,988
+When somebody on your board says "the A-133 audit," this is what they mean.
+
+36
+00:02:07,988 --> 00:02:09,966
+So who actually has to do this.
+
+37
+00:02:09,966 --> 00:02:12,008
+Here's the rule in one sentence.
+
+38
+00:02:12,008 --> 00:02:18,453
+If your organization spends one million dollars or more in federal awards during a single fiscal year
+
+39
+00:02:18,453 --> 00:02:21,898
+you are required to have a single audit for that year.
+
+40
+00:02:21,898 --> 00:02:25,791
+That one-million-dollar figure is the headline, and it's new.
+
+41
+00:02:25,791 --> 00:02:29,875
+For years the threshold sat at seven hundred and fifty thousand.
+
+42
+00:02:29,875 --> 00:02:33,958
+The 2024 update to the Uniform Guidance raised it to one million
+
+43
+00:02:33,958 --> 00:02:39,127
+and that change takes effect for fiscal years beginning on or after October first
+
+44
+00:02:39,127 --> 00:02:40,339
+twenty twenty-four.
+
+45
+00:02:40,339 --> 00:02:41,233
+In plain terms
+
+46
+00:02:41,233 --> 00:02:46,656
+for most organizations that means fiscal years ending on or after September thirtieth
+
+47
+00:02:46,656 --> 00:02:47,869
+twenty twenty-five.
+
+48
+00:02:47,869 --> 00:02:52,846
+So a lot of the advice still floating around online is quoting the old number.
+
+49
+00:02:52,846 --> 00:02:58,908
+If a video or a checklist tells you the line is seven hundred fifty thousand, it's out of date.
+
+50
+00:02:58,908 --> 00:03:00,630
+One more piece of the "who.
+
+51
+00:03:00,630 --> 00:03:05,161
+" The single audit applies to what the rules call non-federal entities.
+
+52
+00:03:05,161 --> 00:03:10,457
+That's nonprofits, states, local governments, tribal governments, and universities.
+
+53
+00:03:10,457 --> 00:03:13,967
+It does not apply to for-profit companies the same way.
+
+54
+00:03:13,967 --> 00:03:18,433
+If you're a 501(c)(3) spending federal money, you're squarely in scope
+
+55
+00:03:18,433 --> 00:03:21,177
+and the threshold is that same one million.
+
+56
+00:03:21,177 --> 00:03:25,799
+Now the part people get wrong, and it's the most expensive thing to misread.
+
+57
+00:03:25,799 --> 00:03:28,535
+The trigger is not how much you were awarded.
+
+58
+00:03:28,535 --> 00:03:31,272
+It's not how much cash hit your bank account.
+
+59
+00:03:31,272 --> 00:03:35,954
+It's how much you expended, how much you actually spent, in your fiscal year.
+
+60
+00:03:35,954 --> 00:03:37,900
+This matters in both directions.
+
+61
+00:03:37,900 --> 00:03:45,319
+You could be awarded a two-million-dollar grant that runs over three years and never trip the threshold in any single year
+
+62
+00:03:45,319 --> 00:03:47,934
+because you only spend a portion each year.
+
+63
+00:03:47,934 --> 00:03:55,110
+Or you could draw down several smaller grants quickly and cross one million without any single award looking that big.
+
+64
+00:03:55,110 --> 00:03:59,671
+The rule looks at the total federal money you spent in the year, full stop.
+
+65
+00:03:59,671 --> 00:04:06,238
+So the question to ask every year is not "how big are my grants," it's "how much federal money did we spend.
+
+66
+00:04:06,238 --> 00:04:13,171
+" And spending counts whether the money came straight from a federal agency or passed through somebody else first.
+
+67
+00:04:13,171 --> 00:04:17,914
+If a state agency or another nonprofit hands you federal dollars as a subaward
+
+68
+00:04:17,914 --> 00:04:20,225
+that still counts toward your million.
+
+69
+00:04:20,225 --> 00:04:24,360
+A lot of organizations forget the pass-through money and undercount.
+
+70
+00:04:24,360 --> 00:04:30,016
+The one thing that doesn't count is money you earn as a contractor selling goods or services.
+
+71
+00:04:30,016 --> 00:04:34,637
+So you add up your direct federal awards and your federal pass-through money
+
+72
+00:04:34,637 --> 00:04:37,617
+and that combined number is what you're watching.
+
+73
+00:04:37,617 --> 00:04:43,419
+There's one fork in the road worth knowing, because it can save a smaller organization real money.
+
+74
+00:04:43,419 --> 00:04:47,444
+The default, if you're over the threshold, is the full single audit.
+
+75
+00:04:47,444 --> 00:04:51,115
+But there's a narrower option called a program-specific audit.
+
+76
+00:04:51,115 --> 00:04:57,627
+You can elect the program-specific version only if you spent your federal money under a single federal program
+
+77
+00:04:57,627 --> 00:04:58,278
+not several
+
+78
+00:04:58,278 --> 00:05:04,198
+and as long as no law or award term separately requires you to audit your full financial statements.
+
+79
+00:05:04,198 --> 00:05:07,336
+If all your federal funding flows through one program
+
+80
+00:05:07,336 --> 00:05:13,196
+your auditor can focus the compliance work on just that program instead of your whole organization.
+
+81
+00:05:13,196 --> 00:05:18,643
+Most multi-grant nonprofits won't qualify, because they're running several programs at once.
+
+82
+00:05:18,643 --> 00:05:23,616
+But if you're a smaller shop with one big federal stream, ask your auditor about it.
+
+83
+00:05:23,616 --> 00:05:27,819
+It's a legitimate, lighter path, and it's written right into the rules.
+
+84
+00:05:27,819 --> 00:05:29,498
+Okay, you're over a million.
+
+85
+00:05:29,498 --> 00:05:30,816
+What actually happens.
+
+86
+00:05:30,816 --> 00:05:37,231
+The first thing you'll build is a document called the Schedule of Expenditures of Federal Awards, the SEFA.
+
+87
+00:05:37,231 --> 00:05:44,245
+It's exactly what it sounds like: a complete list of every federal program you spent money on this year and how much.
+
+88
+00:05:44,245 --> 00:05:46,883
+The SEFA is the backbone of the whole audit.
+
+89
+00:05:46,883 --> 00:05:49,581
+If it's wrong, everything downstream is wrong
+
+90
+00:05:49,581 --> 00:05:53,597
+and reconstructing it at year-end is where a lot of the pain lives.
+
+91
+00:05:53,597 --> 00:05:56,055
+Hold that thought, we'll come back to it.
+
+92
+00:05:56,055 --> 00:06:01,211
+Here's the part that surprises people: the auditor does not test every federal dollar.
+
+93
+00:06:01,211 --> 00:06:05,347
+They use what's called a risk-based approach to pick certain programs
+
+94
+00:06:05,347 --> 00:06:08,465
+your "major programs, " for deep compliance testing.
+
+95
+00:06:08,465 --> 00:06:13,380
+Bigger programs and ones with a history of problems are more likely to get picked.
+
+96
+00:06:13,380 --> 00:06:16,378
+So you don't get audited evenly across everything.
+
+97
+00:06:16,378 --> 00:06:20,095
+You get audited where the risk and the money are concentrated.
+
+98
+00:06:20,095 --> 00:06:26,809
+And to be clear about who runs it: a single audit is performed by an independent CPA firm that you hire and pay.
+
+99
+00:06:26,809 --> 00:06:28,967
+The government doesn't send someone.
+
+100
+00:06:28,967 --> 00:06:33,583
+That auditor follows a specific rulebook called Government Auditing Standards
+
+101
+00:06:33,583 --> 00:06:35,801
+which everyone calls the Yellow Book.
+
+102
+00:06:35,801 --> 00:06:42,216
+The independence is the point, which is part of why you can't just have your own bookkeeper sign off on it.
+
+103
+00:06:42,216 --> 00:06:47,409
+When the auditor finds something that doesn't line up, that becomes an audit finding.
+
+104
+00:06:47,409 --> 00:06:53,518
+Maybe a cost you charged to a grant wasn't allowed, or you couldn't produce a receipt to back it up.
+
+105
+00:06:53,518 --> 00:06:59,322
+Money the auditor can't verify, or thinks was spent improperly, gets labeled a questioned cost.
+
+106
+00:06:59,322 --> 00:07:05,615
+And questioned costs are exactly what they sound like: dollars a funder may later ask you to give back.
+
+107
+00:07:05,615 --> 00:07:09,403
+For every finding, you have to write a corrective action plan.
+
+108
+00:07:09,403 --> 00:07:15,818
+That's your written answer: here's what went wrong, here's who owns fixing it, here's when it'll be done.
+
+109
+00:07:15,818 --> 00:07:18,323
+None of this is automatically a disaster.
+
+110
+00:07:18,323 --> 00:07:20,339
+Clean audits happen all the time.
+
+111
+00:07:20,339 --> 00:07:25,532
+But findings follow you, because next year's auditor reads last year's findings first
+
+112
+00:07:25,532 --> 00:07:30,541
+and a pattern of repeat findings is the kind of thing that makes a funder nervous.
+
+113
+00:07:30,541 --> 00:07:33,107
+There's even an upside to a clean history.
+
+114
+00:07:33,107 --> 00:07:37,873
+If you've had clean audits and filed them on time for the past couple of years
+
+115
+00:07:37,873 --> 00:07:40,988
+you may qualify as what's called a low-risk auditee
+
+116
+00:07:40,988 --> 00:07:45,632
+which means the auditor is allowed to test a smaller slice of your programs.
+
+117
+00:07:45,632 --> 00:07:49,786
+So the reward for getting it right is a lighter audit the next year.
+
+118
+00:07:49,786 --> 00:07:53,392
+Once the audit is done, you don't just file it in a drawer.
+
+119
+00:07:53,392 --> 00:07:57,915
+The whole thing, the financial statements, the SEFA, the auditor's reports
+
+120
+00:07:57,915 --> 00:08:00,359
+your findings and corrective action plan
+
+121
+00:08:00,359 --> 00:08:03,476
+plus a summary form called the data collection form
+
+122
+00:08:03,476 --> 00:08:11,116
+all of that gets bundled into a reporting package and submitted electronically to one place: the Federal Audit Clearinghouse.
+
+123
+00:08:11,116 --> 00:08:15,517
+If you've filed before and you're hunting for the old Census Bureau site
+
+124
+00:08:15,517 --> 00:08:22,362
+note that the Clearinghouse moved to the General Services Administration back in October of twenty twenty-three.
+
+125
+00:08:22,362 --> 00:08:24,073
+It now lives at fac dot gov.
+
+126
+00:08:24,073 --> 00:08:27,312
+And there's a deadline that catches people off guard.
+
+127
+00:08:27,312 --> 00:08:33,791
+Your reporting package is due the earlier of two dates: thirty days after you receive the auditor's report
+
+128
+00:08:33,791 --> 00:08:38,191
+or nine months after the end of your fiscal year, whichever comes first.
+
+129
+00:08:38,191 --> 00:08:40,758
+So if your year ends December thirty-first
+
+130
+00:08:40,758 --> 00:08:45,159
+your single audit is generally due by the following September thirtieth.
+
+131
+00:08:45,159 --> 00:08:51,087
+Miss it, and a late filing is itself the kind of thing that can put you on a funder's watch list.
+
+132
+00:08:51,087 --> 00:08:55,399
+I build software for this, so let me be honest about where it gets hard
+
+133
+00:08:55,399 --> 00:08:58,315
+because the rule is simple and the doing is not.
+
+134
+00:08:58,315 --> 00:09:01,352
+The first problem is just knowing where you stand.
+
+135
+00:09:01,352 --> 00:09:04,935
+The threshold is about money expended across the whole year
+
+136
+00:09:04,935 --> 00:09:08,033
+across every federal source including pass-through.
+
+137
+00:09:08,033 --> 00:09:12,163
+If your federal spending lives in a dozen places, a few spreadsheets
+
+138
+00:09:12,163 --> 00:09:14,593
+your accounting system, somebody's email
+
+139
+00:09:14,593 --> 00:09:19,270
+you often can't answer the one question that matters, "did we cross a million
+
+140
+00:09:19,270 --> 00:09:22,367
+" until you sit down at year-end and add it all up.
+
+141
+00:09:22,367 --> 00:09:26,619
+By then it's too late to plan for the audit you just learned you need.
+
+142
+00:09:26,619 --> 00:09:28,927
+The second problem is the SEFA itself.
+
+143
+00:09:28,927 --> 00:09:34,272
+Rebuilding a complete, accurate schedule of every federal dollar by program, at year-end
+
+144
+00:09:34,272 --> 00:09:39,131
+from records that weren't kept with the SEFA in mind, is where teams lose weeks.
+
+145
+00:09:39,131 --> 00:09:41,136
+And the third is the audit trail.
+
+146
+00:09:41,136 --> 00:09:45,266
+When the auditor asks for the documentation behind a questioned cost
+
+147
+00:09:45,266 --> 00:09:51,826
+you're either pulling it up in a minute or you're digging through eighteen months of files hoping it exists.
+
+148
+00:09:51,826 --> 00:09:54,559
+None of that is anyone doing their job badly.
+
+149
+00:09:54,559 --> 00:10:00,329
+It's what happens when a continuous, year-long tracking job gets treated as a year-end project.
+
+150
+00:10:00,329 --> 00:10:02,154
+So here's the honest takeaway.
+
+151
+00:10:02,154 --> 00:10:06,959
+The single audit isn't something to be afraid of, it's something to see coming.
+
+152
+00:10:06,959 --> 00:10:10,121
+The organizations that handle it well aren't smarter
+
+153
+00:10:10,121 --> 00:10:12,737
+they just track federal spending as they go
+
+154
+00:10:12,737 --> 00:10:17,846
+so the SEFA already exists and they always know how close they are to the threshold.
+
+155
+00:10:17,846 --> 00:10:26,422
+That continuous tracking is exactly the thing I build at GrantPipe: federal expenditures totaled across every fund and pass-through as you go
+
+156
+00:10:26,422 --> 00:10:28,611
+the audit trail attached to each one
+
+157
+00:10:28,611 --> 00:10:32,991
+and the SEFA building itself instead of waiting for a year-end scramble.
+
+158
+00:10:32,991 --> 00:10:35,606
+That's the same structure the rules ask for
+
+159
+00:10:35,606 --> 00:10:39,803
+kept current by the system instead of by whoever happens to remember.
+
+160
+00:10:39,803 --> 00:10:41,688
+I'm not going to pitch it here.
+
+161
+00:10:41,688 --> 00:10:48,075
+If you're nowhere near a million, you may not need any of it yet, and that's a perfectly good answer too.
+
+162
+00:10:48,075 --> 00:10:52,697
+What I will give you is the checklist version of everything we just covered.
+
+163
+00:10:52,697 --> 00:10:57,563
+It walks the 2 CFR 200 audit prep: what to gather, what the auditor will ask for
+
+164
+00:10:57,563 --> 00:11:02,246
+and how to sanity-check your SEFA, so you can see how ready you actually are.
+
+165
+00:11:02,246 --> 00:11:02,854
+It's free.
+
+166
+00:11:02,854 --> 00:11:07,599
+Drop your email at the link in the description and I'll send it to your inbox.
+
+167
+00:11:07,599 --> 00:11:11,917
+And if this made the single audit feel less like a black box, subscribe
+
+168
+00:11:11,917 --> 00:11:16,296
+because the next video is how to actually prepare for one, step by step.
+
+169
+00:11:16,296 --> 00:11:21,831
+The version of you whose fiscal year is about to close will be glad you watched this early.

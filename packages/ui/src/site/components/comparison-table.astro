@@ -1,0 +1,209 @@
+---
+import { CheckIconHidden, CrossIconHidden } from "../lib/icons"
+import SchemaMarkup from "../seo/schema-markup.astro"
+import { buildComparisonTableSchema } from "../lib/ai-extractable"
+
+interface ComparisonRow {
+  feature: string
+  values: string[]
+}
+
+interface Props {
+  headers: string[]
+  rows: ComparisonRow[]
+  highlightColumn?: number
+  caption?: string
+  verdict?: string
+  variant?: "default" | "editorial" | "compact"
+}
+
+const {
+  headers,
+  rows,
+  highlightColumn: highlightColumnRaw,
+  caption,
+  verdict,
+  variant = "default",
+} = Astro.props
+
+const highlightColumn =
+  highlightColumnRaw !== undefined && highlightColumnRaw >= 1
+    ? highlightColumnRaw
+    : undefined
+const schema = caption
+  ? buildComparisonTableSchema({ name: caption, description: verdict })
+  : null
+---
+
+{schema && <SchemaMarkup schemas={[schema]} />}
+<div class:list={[
+  variant === "compact" ? "my-6" : "my-8",
+]} itemscope itemtype="https://schema.org/Table">
+  {caption && variant === "editorial" && (
+    <div class="mb-4 max-w-[var(--content-measure)]">
+      <p class="editorial-kicker">Comparison snapshot</p>
+      <p class="mt-4 font-heading text-[length:var(--text-subheading)] font-bold text-brand-text" itemprop="name">
+        {caption}
+      </p>
+    </div>
+  )}
+  <div class:list={[
+    "overflow-x-auto overflow-y-clip [scroll-snap-type:x_mandatory]",
+    variant === "editorial"
+      ? "editorial-panel"
+      : "bg-surface-primary rounded-lg shadow-card border border-[var(--gp-ink-100)]",
+  ]} data-comparison-variant={variant}>
+    <table class="w-full border-collapse text-left">
+      {caption && variant !== "editorial" && (
+        <caption class="text-left font-bold text-brand-text px-4 py-3" itemprop="name">
+          {caption}
+        </caption>
+      )}
+      <thead>
+        <tr>
+          {headers.map((h, i) => (
+            <th
+              scope="col"
+              class:list={[
+                "px-4 py-3 font-heading text-[length:var(--text-label)] font-semibold tracking-[0.03em]",
+                i === 0
+                  ? "sticky left-0 z-10 shadow-[2px_0_8px_var(--shadow-color)]"
+                  : "min-w-[120px] [scroll-snap-align:start]",
+                i === highlightColumn
+                  ? "bg-accent-500 text-neutral-50"
+                  : variant === "editorial"
+                    ? "bg-surface-secondary text-neutral-700"
+                    : "bg-neutral-100 text-neutral-700",
+              ]}
+            >
+              {h}
+            </th>
+          ))}
+        </tr>
+      </thead>
+      <tbody>
+        {rows.map((row, rowIndex) => (
+          <tr
+            class:list={[
+              "group border-b border-neutral-100 transition-colors hover:bg-neutral-100",
+              rowIndex % 2 === 1
+                ? "bg-neutral-50"
+                : "bg-surface-primary",
+            ]}
+          >
+            <th
+              scope="row"
+              class:list={[
+                "px-4 py-3 font-medium text-brand-text sticky left-0 z-10 shadow-[2px_0_8px_var(--shadow-color)] transition-colors group-hover:bg-neutral-100",
+                rowIndex % 2 === 1
+                  ? "bg-neutral-50"
+                  : "bg-surface-primary",
+              ]}
+            >
+              {row.feature}
+            </th>
+            {row.values.map((v, i) => (
+              <td
+                data-column-label={headers[i + 1]}
+                class:list={[
+                  "px-4 py-3 min-w-[120px] [scroll-snap-align:start]",
+                  (i + 1) === highlightColumn
+                    ? "font-semibold bg-accent-50"
+                    : "text-brand-muted",
+                ]}
+              >
+                {v === "\u2713" ? (
+                  <span role="img" aria-label="Supported" class="inline-flex items-center justify-center w-[var(--icon-md)] h-[var(--icon-md)] rounded-full bg-accent-500 text-neutral-50 text-sm font-bold" set:html={CheckIconHidden} />
+                ) : v === "\u2717" ? (
+                  <span role="img" aria-label="Not supported" class="inline-flex items-center justify-center w-[var(--icon-md)] h-[var(--icon-md)] rounded-full bg-error-500 text-neutral-50 text-sm font-bold" set:html={CrossIconHidden} />
+                ) : (
+                  v
+                )}
+              </td>
+            ))}
+          </tr>
+        ))}
+      </tbody>
+    </table>
+  </div>
+  {verdict && (
+    <div class:list={[
+      "mt-6 rounded-md border",
+      variant === "compact"
+        ? "p-3 bg-surface-secondary border-neutral-200"
+        : "p-4 bg-accent-50 border-accent-200",
+    ]}>
+      <p class:list={[
+        "inline-flex items-start gap-2 font-semibold",
+        variant === "compact"
+          ? "text-[length:var(--text-body-sm)] text-brand-text"
+          : "text-[length:var(--text-caption)] text-accent-900",
+      ]}>
+        <span class="mt-0.5 inline-flex items-center justify-center w-5 h-5 rounded-full bg-accent-500 text-neutral-50 text-xs font-bold flex-shrink-0" aria-hidden="true" set:html={CheckIconHidden} />
+        {verdict}
+      </p>
+    </div>
+  )}
+</div>
+
+<style>
+  @media (max-width: 40rem) {
+    [data-comparison-variant="editorial"] {
+      overflow: visible;
+    }
+
+    [data-comparison-variant="editorial"] table,
+    [data-comparison-variant="editorial"] thead,
+    [data-comparison-variant="editorial"] tbody,
+    [data-comparison-variant="editorial"] tr,
+    [data-comparison-variant="editorial"] th,
+    [data-comparison-variant="editorial"] td {
+      display: block;
+      width: 100%;
+    }
+
+    [data-comparison-variant="editorial"] thead {
+      position: absolute;
+      width: 1px;
+      height: 1px;
+      overflow: hidden;
+      clip: rect(0, 0, 0, 0);
+      white-space: nowrap;
+    }
+
+    [data-comparison-variant="editorial"] tbody {
+      display: grid;
+      gap: 0.9rem;
+    }
+
+    [data-comparison-variant="editorial"] tr {
+      border: 1px solid var(--color-neutral-200);
+      border-radius: var(--radius-md);
+      overflow: hidden;
+      background: var(--surface-primary);
+    }
+
+    [data-comparison-variant="editorial"] th[scope="row"] {
+      position: static;
+      box-shadow: none;
+      border-bottom: 1px solid var(--color-neutral-200);
+      background: var(--surface-secondary);
+    }
+
+    [data-comparison-variant="editorial"] td {
+      min-width: 0;
+      padding-top: 0.85rem;
+      padding-bottom: 0.85rem;
+    }
+
+    [data-comparison-variant="editorial"] td::before {
+      content: attr(data-column-label);
+      display: block;
+      margin-bottom: 0.35rem;
+      font-size: var(--text-label);
+      font-weight: 600;
+      letter-spacing: 0.03em;
+      color: var(--color-neutral-600);
+    }
+  }
+</style>

@@ -1,0 +1,15 @@
+# Build tooling — regenerable
+production/node_modules/
+production/.venv/
+production/package-lock.json
+
+# Intermediate render artifacts — regenerable from compositions + audio
+output/chapter-*.mp4
+output/seg-*.mp4
+output/concat.txt
+output/work-*/
+production/frames/
+
+# Keep: the finished deliverables
+!output/grant-budget-template.mp4
+!output/captions.srt

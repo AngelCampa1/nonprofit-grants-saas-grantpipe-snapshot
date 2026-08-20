@@ -1,0 +1,7 @@
+Reimbursement grants create a timing problem.
+
+The organization spends first, documents the cost, submits the request, then waits for payment.
+
+That gap is manageable when requests go out frequently and support is ready.
+
+It gets painful when the reimbursement packet becomes a monthly scavenger hunt.

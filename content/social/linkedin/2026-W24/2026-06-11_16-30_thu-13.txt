@@ -1,0 +1,11 @@
+We modeled grants and funds as separate records in GrantPipe.
+
+A grant is an agreement: funder, award amount, period, reports, amendments.
+
+A fund is a pool of restricted dollars: balance, activity, releases, net asset classification.
+
+They overlap, but they are not the same thing.
+
+That choice made the product harder to build. It also prevents a bad shortcut: treating one grant as one fund forever.
+
+Real restricted fund work is many-to-many. The data model has to admit that.

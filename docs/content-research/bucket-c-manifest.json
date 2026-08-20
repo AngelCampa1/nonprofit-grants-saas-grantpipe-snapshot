@@ -1,0 +1,111 @@
+{
+  "generatedAt": "2026-04-30",
+  "bucket": "C_funder_landscape",
+  "files": [
+    {
+      "state": "Ohio",
+      "stateCode": "OH",
+      "slug": "ohio-state-grant-programs-for-nonprofits",
+      "path": "/Users/angel/Desktop/grantpipe/.worktrees/state-100/apps/site/src/content/guides/ohio-state-grant-programs-for-nonprofits.md",
+      "wordCount": 2132
+    },
+    {
+      "state": "Texas",
+      "stateCode": "TX",
+      "slug": "texas-state-grant-programs-for-nonprofits",
+      "path": "/Users/angel/Desktop/grantpipe/.worktrees/state-100/apps/site/src/content/guides/texas-state-grant-programs-for-nonprofits.md",
+      "wordCount": 2132
+    },
+    {
+      "state": "California",
+      "stateCode": "CA",
+      "slug": "california-state-grant-programs-for-nonprofits",
+      "path": "/Users/angel/Desktop/grantpipe/.worktrees/state-100/apps/site/src/content/guides/california-state-grant-programs-for-nonprofits.md",
+      "wordCount": 2123
+    },
+    {
+      "state": "Florida",
+      "stateCode": "FL",
+      "slug": "florida-state-grant-programs-for-nonprofits",
+      "path": "/Users/angel/Desktop/grantpipe/.worktrees/state-100/apps/site/src/content/guides/florida-state-grant-programs-for-nonprofits.md",
+      "wordCount": 2143
+    },
+    {
+      "state": "New York",
+      "stateCode": "NY",
+      "slug": "new-york-state-grant-programs-for-nonprofits",
+      "path": "/Users/angel/Desktop/grantpipe/.worktrees/state-100/apps/site/src/content/guides/new-york-state-grant-programs-for-nonprofits.md",
+      "wordCount": 2184
+    },
+    {
+      "state": "Pennsylvania",
+      "stateCode": "PA",
+      "slug": "pennsylvania-state-grant-programs-for-nonprofits",
+      "path": "/Users/angel/Desktop/grantpipe/.worktrees/state-100/apps/site/src/content/guides/pennsylvania-state-grant-programs-for-nonprofits.md",
+      "wordCount": 2109
+    },
+    {
+      "state": "Michigan",
+      "stateCode": "MI",
+      "slug": "michigan-state-grant-programs-for-nonprofits",
+      "path": "/Users/angel/Desktop/grantpipe/.worktrees/state-100/apps/site/src/content/guides/michigan-state-grant-programs-for-nonprofits.md",
+      "wordCount": 2100
+    },
+    {
+      "state": "North Carolina",
+      "stateCode": "NC",
+      "slug": "north-carolina-state-grant-programs-for-nonprofits",
+      "path": "/Users/angel/Desktop/grantpipe/.worktrees/state-100/apps/site/src/content/guides/north-carolina-state-grant-programs-for-nonprofits.md",
+      "wordCount": 2147
+    },
+    {
+      "state": "Georgia",
+      "stateCode": "GA",
+      "slug": "georgia-state-grant-programs-for-nonprofits",
+      "path": "/Users/angel/Desktop/grantpipe/.worktrees/state-100/apps/site/src/content/guides/georgia-state-grant-programs-for-nonprofits.md",
+      "wordCount": 2079
+    },
+    {
+      "state": "Virginia",
+      "stateCode": "VA",
+      "slug": "virginia-state-grant-programs-for-nonprofits",
+      "path": "/Users/angel/Desktop/grantpipe/.worktrees/state-100/apps/site/src/content/guides/virginia-state-grant-programs-for-nonprofits.md",
+      "wordCount": 2094
+    },
+    {
+      "state": "Massachusetts",
+      "stateCode": "MA",
+      "slug": "massachusetts-state-grant-programs-for-nonprofits",
+      "path": "/Users/angel/Desktop/grantpipe/.worktrees/state-100/apps/site/src/content/guides/massachusetts-state-grant-programs-for-nonprofits.md",
+      "wordCount": 2081
+    },
+    {
+      "state": "Washington",
+      "stateCode": "WA",
+      "slug": "washington-state-grant-programs-for-nonprofits",
+      "path": "/Users/angel/Desktop/grantpipe/.worktrees/state-100/apps/site/src/content/guides/washington-state-grant-programs-for-nonprofits.md",
+      "wordCount": 2149
+    },
+    {
+      "state": "Colorado",
+      "stateCode": "CO",
+      "slug": "colorado-state-grant-programs-for-nonprofits",
+      "path": "/Users/angel/Desktop/grantpipe/.worktrees/state-100/apps/site/src/content/guides/colorado-state-grant-programs-for-nonprofits.md",
+      "wordCount": 2074
+    },
+    {
+      "state": "Minnesota",
+      "stateCode": "MN",
+      "slug": "minnesota-state-grant-programs-for-nonprofits",
+      "path": "/Users/angel/Desktop/grantpipe/.worktrees/state-100/apps/site/src/content/guides/minnesota-state-grant-programs-for-nonprofits.md",
+      "wordCount": 2103
+    },
+    {
+      "state": "New Jersey",
+      "stateCode": "NJ",
+      "slug": "new-jersey-state-grant-programs-for-nonprofits",
+      "path": "/Users/angel/Desktop/grantpipe/.worktrees/state-100/apps/site/src/content/guides/new-jersey-state-grant-programs-for-nonprofits.md",
+      "wordCount": 2148
+    }
+  ]
+}

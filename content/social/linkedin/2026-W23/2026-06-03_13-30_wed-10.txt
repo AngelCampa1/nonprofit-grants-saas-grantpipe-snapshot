@@ -1,0 +1,12 @@
+Grant reporting dates should not live in one person's calendar.
+
+The Grant Reporting Deadlines Tracker is built for a shared view:
+
+- funder
+- award
+- report type
+- due date
+- owner
+- portal
+- evidence needed
+- submitted date

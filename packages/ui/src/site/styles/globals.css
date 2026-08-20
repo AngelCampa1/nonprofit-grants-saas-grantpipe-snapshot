@@ -1,0 +1,1351 @@
+@plugin "@tailwindcss/typography";
+
+/* ===================================================================
+   TOKENS
+   =================================================================== */
+
+@theme {
+  /* -- Brand color aliases (site-overridable) --
+     Fallbacks use the GrantPipe emerald primary / archival-ochre accent so a
+     missing --site-* var degrades to the brand palette, not a generic blue. */
+  --color-brand-primary: var(--site-primary, #065f46);
+  --color-brand-accent: var(--site-accent, #b88928);
+  --color-brand-surface: var(--site-surface, #fffdfa);
+  --color-brand-text: var(--site-text, #1f2933);
+  --color-brand-muted: var(--site-muted, #66727f);
+
+  /* -- Primary (Emerald) scale -- */
+  --color-primary-50: #ecfdf5;
+  --color-primary-100: #d1fae5;
+  --color-primary-200: #a7f3d0;
+  --color-primary-300: #6ee7b7;
+  --color-primary-400: #34d399;
+  --color-primary-500: #10b981;
+  --color-primary-600: #059669;
+  --color-primary-700: #047857;
+  --color-primary-800: #065f46;
+  --color-primary-900: #064e3b;
+  --color-primary-950: #022c22;
+
+  /* -- Accent (Ochre) scale --
+     Authored in OKLCH (hue ~78) to match packages/ui/src/globals.css so the
+     marketing site and authed app share an identical accent ramp. */
+  --color-accent-50: oklch(0.97 0.025 78);
+  --color-accent-100: oklch(0.94 0.055 78);
+  --color-accent-200: oklch(0.88 0.09 78);
+  --color-accent-300: oklch(0.81 0.12 78);
+  --color-accent-400: oklch(0.74 0.14 78);
+  --color-accent-500: oklch(0.67 0.135 78);
+  --color-accent-600: oklch(0.58 0.12 78);
+  --color-accent-700: oklch(0.48 0.1 78);
+  --color-accent-800: oklch(0.38 0.08 78);
+  --color-accent-900: oklch(0.29 0.06 78);
+  --color-accent-950: oklch(0.2 0.04 78);
+
+  /* -- Neutral (Slate) scale -- */
+  --color-neutral-50: #fbf8f4;
+  --color-neutral-100: #f5efe8;
+  --color-neutral-200: #e7ddd2;
+  --color-neutral-300: #d3c5b7;
+  --color-neutral-400: #ad9d8d;
+  --color-neutral-500: #7d6f63;
+  --color-neutral-600: #62574e;
+  --color-neutral-700: #483f39;
+  --color-neutral-800: #2f2824;
+  --color-neutral-900: #1f1a17;
+  --color-neutral-950: #120f0d;
+
+  /* -- Error (Red) scale -- */
+  --color-error-50: #fef2f2;
+  --color-error-100: #fee2e2;
+  --color-error-200: #fecaca;
+  --color-error-300: #fca5a5;
+  --color-error-400: #f87171;
+  --color-error-500: #ef4444;
+  --color-error-600: #dc2626;
+  --color-error-700: #b91c1c;
+  --color-error-800: #991b1b;
+  --color-error-900: #7f1d1d;
+  --color-error-950: #450a0a;
+
+  /* -- Success (Emerald) scale -- */
+  --color-success-50: #ecfdf5;
+  --color-success-100: #d1fae5;
+  --color-success-200: #a7f3d0;
+  --color-success-300: #6ee7b7;
+  --color-success-400: #34d399;
+  --color-success-500: #10b981;
+  --color-success-600: #059669;
+  --color-success-700: #047857;
+  --color-success-800: #065f46;
+  --color-success-900: #064e3b;
+  --color-success-950: #022c22;
+
+  /* ===================================================================
+     SURFACES
+     =================================================================== */
+
+  /* -- Surface system -- */
+  --surface-primary: #fffdfa;
+  --surface-secondary: var(--site-surface-secondary, #f7f1ea);
+  --surface-elevated: var(--site-surface-elevated, #fffefb);
+  --surface-sunken: var(--site-surface-sunken, #f1e8de);
+  --surface-overlay: rgba(15, 23, 42, 0.5);
+  --surface-glass: var(--site-surface-glass, rgba(255, 253, 250, 0.9));
+  --surface-glass-border: var(--site-surface-glass-border, rgba(255, 250, 244, 0.85));
+
+  /* -- Surface aliases — enable Tailwind v4 utilities like bg-surface-primary -- */
+  --color-surface-primary: var(--surface-primary);
+  --color-surface-secondary: var(--surface-secondary);
+  --color-surface-elevated: var(--surface-elevated);
+  --color-surface-sunken: var(--surface-sunken);
+  --color-surface-overlay: var(--surface-overlay);
+  --color-surface-glass: var(--surface-glass);
+  --color-surface-glass-border: var(--surface-glass-border);
+
+  /* ===================================================================
+     SECTION SURFACE
+     =================================================================== */
+
+  /* D6 fix: the alternating/muted section band previously mixed in only 30%
+     of --color-accent-50 against --surface-secondary, which measured as an
+     imperceptible ~0.982 vs 1.0 srgb delta. Raised to 60% so the rhythm
+     between sections is visible without breaking the restrained brand. */
+  --section-highlight-bg: var(
+    --site-section-highlight-bg,
+    color-mix(in srgb, var(--color-accent-50) 60%, var(--surface-secondary))
+  );
+
+  /* -- Section highlight alias — bg-section-highlight utility -- */
+  --color-section-highlight: var(--section-highlight-bg);
+
+  /* ===================================================================
+     SHADOWS
+     =================================================================== */
+
+  /* -- Shadow system (navy-tinted, never pure black) -- */
+  --shadow-color: rgba(42, 31, 24, 0.08);
+  --shadow-sm: 0 1px 2px 0 rgba(42, 31, 24, 0.05);
+  --shadow-md: 0 8px 18px -14px rgba(42, 31, 24, 0.18), 0 2px 6px -4px rgba(42, 31, 24, 0.12);
+  --shadow-lg: var(
+    --site-shadow-lg,
+    0 18px 40px -26px rgba(42, 31, 24, 0.22),
+    0 8px 18px -14px rgba(42, 31, 24, 0.14)
+  );
+  --shadow-xl: 0 28px 56px -30px rgba(42, 31, 24, 0.22), 0 12px 24px -18px rgba(42, 31, 24, 0.15);
+  --shadow-card: var(
+    --site-shadow-card,
+    0 14px 30px -26px rgba(42, 31, 24, 0.18),
+    0 4px 12px -10px rgba(42, 31, 24, 0.1)
+  );
+  --shadow-inner: inset 0 1px 2px 0 rgba(42, 31, 24, 0.08);
+  /* -- Ambient shadow for floating elements (modals, dropdowns) -- */
+  --shadow-ambient: var(--site-shadow-ambient, 0 24px 48px rgba(42, 31, 24, 0.08));
+  --shadow-glass: 0 16px 32px -24px rgba(42, 31, 24, 0.16);
+
+  /* -- Exit popup tokens -- */
+  --exit-popup-overlay-bg: rgba(15, 23, 42, 0.6);
+  --scrim: color-mix(in srgb, oklch(0.18 0.01 265) 72%, transparent);
+
+  /* -- Border radii — canonical 5-value scale --
+     xs/sm/md/lg/full is the single radius contract for the marketing site.
+     --radius-xl is kept as a backward-compatible alias of --radius-lg so
+     existing `var(--radius-xl)` call sites keep working. The legacy
+     --gp-rad-* tokens alias into this scale via generate-theme-css.ts. */
+  --radius-xs: 6px;
+  --radius-sm: 10px;
+  --radius-md: 14px;
+  --radius-lg: 20px;
+  --radius-xl: var(--radius-lg);
+  --radius-full: 9999px;
+
+  /* -- Card radius (D8 fix) --
+     Cards on the marketing site drifted to hard-coded 14/18/20px radii in
+     different components. --card-radius is the single canonical value every
+     card class must reference, bound to --radius-lg. */
+  --card-radius: var(--radius-lg);
+
+  /* -- Transition tokens -- */
+  --transition-fast: 150ms cubic-bezier(0.22, 1, 0.36, 1);
+  --transition-base: 240ms cubic-bezier(0.22, 1, 0.36, 1);
+  --transition-slow: 420ms cubic-bezier(0.16, 1, 0.3, 1);
+
+  /* -- Typography -- */
+  --font-heading: "Bricolage Grotesque", system-ui, sans-serif;
+  --font-body: "IBM Plex Sans", system-ui, sans-serif;
+  --font-mono: "IBM Plex Mono", ui-monospace, monospace;
+
+  /* -- Type scale (semantic, responsive) -- */
+  --text-hero: clamp(2.75rem, 2.4rem + 2.6vw, 4.5rem);
+  --text-heading: clamp(1.55rem, 1.4rem + 0.9vw, 2.05rem);
+  --text-subheading: clamp(1.2rem, 1.15rem + 0.35vw, 1.4rem);
+  --text-body-lg: 1.125rem;
+  --text-body: 1rem;
+  --text-caption: 0.875rem;
+  --text-label: 0.8125rem;
+  --text-body-sm: 0.8125rem;
+  --text-mono: 0.875rem;
+  --text-kicker: 0.75rem;
+  --text-editorial-title: clamp(1.9rem, 1.6rem + 1.7vw, 2.85rem);
+  --content-measure: 68ch;
+  --content-measure-wide: 78ch;
+
+  /* -- Spacing rhythm -- */
+  --section-py: var(--site-section-py, clamp(3rem, 6vw, 6rem));
+  --section-py-sm: var(--site-section-py-sm, clamp(2rem, 4vw, 3rem));
+  --component-gap: var(--site-component-gap, clamp(1.5rem, 3vw, 2.5rem));
+  --component-gap-sm: var(--site-component-gap-sm, clamp(0.75rem, 1.5vw, 1rem));
+  --component-gap-md: 1.25rem;
+  --component-gap-lg: 2rem;
+  --spacing-4: 1rem;
+  --spacing-6: 1.5rem;
+
+  /* -- Interaction customization hooks -- */
+  --button-hover-scale: var(--site-button-hover-scale, 1);
+  --button-active-scale: var(--site-button-active-scale, 0.97);
+  --card-hover-lift: var(--site-card-hover-lift, 2px);
+  --card-hover-scale: var(--site-card-hover-scale, 1);
+  --cta-pulse-animation: var(--site-cta-pulse-animation, none);
+  --primary-button-bg: var(--site-primary-button-bg, var(--color-primary-800));
+  --primary-button-hover-bg: var(--site-primary-button-hover-bg, var(--color-primary-700));
+  --primary-button-fg: var(--site-primary-button-fg, var(--color-neutral-50));
+  --primary-button-border: var(
+    --site-primary-button-border,
+    1px solid color-mix(in srgb, var(--color-primary-900) 44%, transparent)
+  );
+  --primary-button-shadow: var(
+    --site-primary-button-shadow,
+    0 14px 28px -20px color-mix(in srgb, var(--color-primary-900) 38%, transparent)
+  );
+  --primary-button-radius: var(--site-primary-button-radius, var(--radius-full));
+  --secondary-button-radius: var(--site-secondary-button-radius, var(--radius-full));
+
+  /* -- Icon sizes -- */
+  --icon-sm: 1rem;
+  --icon-md: 1.25rem;
+  --icon-lg: 1.5rem;
+
+  /* -- Animations -- */
+  --animate-fade-in: fade-in 0.5s ease-out;
+  --animate-slide-up: slide-up 0.5s ease-out;
+  --animate-scale-in: scale-in 0.2s ease-out;
+  --animate-accordion-open: accordion-open 0.25s ease-out;
+  --animate-slide-in-right: slide-in-right 0.3s ease-out;
+
+  @keyframes fade-in {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+
+  @keyframes slide-up {
+    from {
+      opacity: 0;
+      transform: translateY(1.5rem);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  @keyframes scale-in {
+    from {
+      opacity: 0;
+      transform: scale(0.95);
+    }
+    to {
+      opacity: 1;
+      transform: scale(1);
+    }
+  }
+
+  @keyframes accordion-open {
+    from {
+      grid-template-rows: 0fr;
+    }
+    to {
+      grid-template-rows: 1fr;
+    }
+  }
+
+  @keyframes slide-in-right {
+    from {
+      transform: translateX(100%);
+    }
+    to {
+      transform: translateX(0);
+    }
+  }
+
+  @keyframes shake {
+    0%,
+    100% {
+      transform: translateX(0);
+    }
+    20% {
+      transform: translateX(-6px);
+    }
+    40% {
+      transform: translateX(6px);
+    }
+    60% {
+      transform: translateX(-4px);
+    }
+    80% {
+      transform: translateX(4px);
+    }
+  }
+}
+
+/* ===================================================================
+   TYPOGRAPHY
+   =================================================================== */
+
+/* -- Font utility classes -- */
+.font-heading {
+  font-family: var(--font-heading);
+}
+.font-body {
+  font-family: var(--font-body);
+}
+.font-mono {
+  font-family: var(--font-mono);
+}
+
+/* ===================================================================
+   EDITORIAL SYSTEM
+   =================================================================== */
+
+.editorial-shell {
+  position: relative;
+}
+
+.editorial-shell > * {
+  position: relative;
+}
+
+.editorial-kicker {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.625rem;
+  font-family: var(--font-body);
+  font-size: 0.78rem;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  text-transform: none;
+  color: var(--color-primary-800);
+}
+
+.editorial-kicker::before {
+  content: "";
+  width: 2.75rem;
+  height: 1px;
+  background: color-mix(in srgb, var(--color-accent-500) 55%, transparent);
+}
+
+.editorial-lede {
+  max-width: var(--content-measure);
+  font-size: clamp(1.05rem, 1.4vw, 1.2rem);
+  line-height: 1.8;
+  color: var(--color-brand-muted);
+}
+
+.editorial-panel {
+  border: 1px solid color-mix(in srgb, var(--color-neutral-200) 78%, transparent);
+  border-radius: var(--radius-lg);
+  background: var(--surface-elevated);
+  box-shadow: var(--shadow-card);
+}
+
+.editorial-panel--soft {
+  background: color-mix(in srgb, var(--surface-secondary) 84%, white 16%);
+  box-shadow: none;
+}
+
+.editorial-rule {
+  height: 1px;
+  border: 0;
+  background: linear-gradient(
+    90deg,
+    transparent 0%,
+    color-mix(in srgb, var(--color-neutral-300) 85%, transparent) 18%,
+    color-mix(in srgb, var(--color-neutral-300) 85%, transparent) 82%,
+    transparent 100%
+  );
+}
+
+.editorial-link {
+  color: var(--color-brand-primary);
+  text-decoration: none;
+  transition:
+    color var(--transition-fast),
+    transform var(--transition-fast);
+}
+
+.editorial-link:hover {
+  color: var(--color-primary-700);
+}
+
+.editorial-grid {
+  display: grid;
+  gap: var(--component-gap);
+}
+
+@media (min-width: 768px) {
+  .editorial-grid--2 {
+    grid-template-columns: minmax(0, 1.3fr) minmax(16rem, 0.7fr);
+    align-items: start;
+  }
+}
+
+/* ===================================================================
+   ACCENT PRIMITIVES (D7 fix)
+   -------------------------------------------------------------------
+   The ochre accent scale (--color-accent-*) was almost never used outside
+   the dashboard mock, so the palette read flat. These primitives give
+   text-heavy sections a restrained, reusable way to bring in the accent
+   color as emphasis — never as decoration. Every color reference below
+   resolves against the existing emerald/ochre ramps and keeps AA contrast
+   on the light surface tokens.
+   =================================================================== */
+
+/* -- Accent kicker/eyebrow — small caps label with an ochre dot -- */
+.gp-kicker--accent {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-family: var(--font-body);
+  font-size: var(--text-kicker);
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--color-accent-800);
+}
+
+.gp-kicker--accent::before {
+  content: "";
+  width: 0.5rem;
+  height: 0.5rem;
+  border-radius: var(--radius-full);
+  background: var(--color-accent-500);
+  flex-shrink: 0;
+}
+
+/* -- Accent icon chip — circular badge for a leading icon -- */
+.gp-icon-chip {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 2.5rem;
+  height: 2.5rem;
+  flex-shrink: 0;
+  border-radius: var(--radius-full);
+  background: color-mix(in srgb, var(--color-accent-100) 70%, var(--surface-primary));
+  color: var(--color-accent-800);
+}
+
+.gp-icon-chip--primary {
+  background: color-mix(in srgb, var(--color-primary-100) 70%, var(--surface-primary));
+  color: var(--color-primary-800);
+}
+
+/* -- Stat callout — large number treatment for proof-point stats -- */
+.gp-stat-callout {
+  display: grid;
+  gap: 0.35rem;
+}
+
+.gp-stat-callout__value {
+  font-family: var(--font-heading);
+  font-size: clamp(2rem, 4vw, 2.75rem);
+  font-weight: 700;
+  line-height: 1;
+  color: var(--color-accent-700);
+}
+
+.gp-stat-callout__label {
+  font-size: var(--text-caption);
+  font-weight: 600;
+  letter-spacing: 0.02em;
+  color: var(--color-brand-muted);
+}
+
+/* -- Accent hairline rule — short, warm divider for emphasis breaks -- */
+.gp-hairline--accent {
+  height: 2px;
+  width: 3rem;
+  border: 0;
+  border-radius: var(--radius-full);
+  background: color-mix(in srgb, var(--color-accent-500) 70%, transparent);
+}
+
+/* -- Accent list marker — replaces default bullets with an ochre tick -- */
+.gp-list--accent {
+  display: grid;
+  gap: 0.65rem;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.gp-list--accent li {
+  position: relative;
+  padding-left: 1.5rem;
+  line-height: 1.6;
+  color: var(--color-brand-text);
+}
+
+.gp-list--accent li::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0.5em;
+  width: 0.6rem;
+  height: 0.6rem;
+  border-radius: var(--radius-full);
+  background: var(--color-accent-500);
+}
+
+/* ===================================================================
+   BUTTONS
+   =================================================================== */
+
+/* -- Button tier system -- */
+.btn-primary {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 0;
+  min-height: 3rem;
+  max-width: 100%;
+  gap: 0.5rem;
+  padding: 0.85rem 1.6rem;
+  font-size: var(--text-body);
+  font-weight: 600;
+  font-family: var(--font-body);
+  line-height: 1.25;
+  color: var(--primary-button-fg);
+  background-color: var(--primary-button-bg);
+  border: var(--primary-button-border);
+  border-radius: var(--primary-button-radius);
+  cursor: pointer;
+  overflow-wrap: normal;
+  white-space: normal;
+  transition:
+    transform var(--transition-fast),
+    box-shadow var(--transition-fast),
+    background-color var(--transition-fast),
+    border-color var(--transition-fast),
+    filter var(--transition-fast);
+}
+.btn-primary:hover {
+  background-color: var(--primary-button-hover-bg);
+  box-shadow: var(--primary-button-shadow);
+  transform: translateY(-1px) scale(var(--button-hover-scale));
+  filter: saturate(1.01);
+}
+.btn-primary:active {
+  transform: scale(var(--button-active-scale));
+  box-shadow: var(--shadow-sm);
+}
+
+.btn-secondary {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 3rem;
+  gap: 0.5rem;
+  padding: 0.8rem 1.4rem;
+  font-size: var(--text-body);
+  font-weight: 600;
+  font-family: var(--font-body);
+  line-height: 1.25;
+  color: var(--color-brand-primary);
+  background-color: color-mix(in srgb, var(--surface-elevated) 92%, var(--surface-primary));
+  border: 1px solid color-mix(in srgb, var(--color-brand-primary) 16%, var(--color-neutral-300));
+  border-radius: var(--secondary-button-radius);
+  cursor: pointer;
+  min-width: 0;
+  max-width: 100%;
+  overflow-wrap: normal;
+  white-space: normal;
+  transition:
+    transform var(--transition-fast),
+    box-shadow var(--transition-fast),
+    background-color var(--transition-fast),
+    color var(--transition-fast);
+}
+.btn-secondary:hover {
+  background-color: color-mix(in srgb, var(--surface-elevated) 78%, var(--color-primary-50));
+  box-shadow: var(--shadow-card);
+  transform: translateY(-1px) scale(var(--button-hover-scale));
+}
+.btn-secondary:active {
+  transform: scale(var(--button-active-scale));
+}
+
+.btn-ghost {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  padding: 0.5rem 1rem;
+  font-size: var(--text-caption);
+  font-weight: 600;
+  font-family: var(--font-body);
+  line-height: 1.25;
+  color: var(--color-brand-primary);
+  background-color: transparent;
+  border: none;
+  /* Pill radius so the .btn-* tier system converges with the .gp-mkt-btn
+     pill vocabulary. .btn-ghost has no fill, so the radius only affects its
+     focus-visible ring shape. */
+  border-radius: var(--radius-full);
+  cursor: pointer;
+  position: relative;
+  text-decoration: none;
+}
+.btn-ghost::after {
+  content: "";
+  position: absolute;
+  bottom: 0.25rem;
+  left: 1rem;
+  right: 1rem;
+  height: 2px;
+  background-color: var(--color-brand-primary);
+  transform: scaleX(0);
+  transition: transform var(--transition-base);
+}
+.btn-ghost:hover::after {
+  transform: scaleX(1);
+}
+
+/* -- Pulse modifier for primary CTA (opt-in urgency signal) -- */
+.btn-primary--pulse {
+  animation: var(--cta-pulse-animation);
+}
+.btn-primary--pulse:hover,
+.btn-primary--pulse:active {
+  animation-play-state: paused;
+}
+
+@keyframes cta-pulse {
+  0%,
+  100% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.015);
+  }
+}
+
+/* -- Button hover utilities (legacy, kept for backward compat) -- */
+.btn-lift {
+  cursor: pointer;
+  transition:
+    transform var(--transition-fast),
+    box-shadow var(--transition-fast);
+}
+.btn-lift:hover {
+  transform: scale(var(--button-hover-scale));
+  box-shadow: var(--shadow-card);
+}
+.btn-lift:active {
+  transform: scale(var(--button-active-scale));
+  box-shadow: var(--shadow-sm);
+}
+
+/* -- Button shimmer (single-pass gleam on hover) -- */
+.btn-shimmer {
+  position: relative;
+  overflow: hidden;
+  isolation: isolate;
+}
+.btn-shimmer::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 60%;
+  height: 100%;
+  background: linear-gradient(
+    120deg,
+    transparent 0%,
+    rgba(255, 255, 255, 0.35) 50%,
+    transparent 100%
+  );
+  transform: translateX(-170%);
+  transition: transform var(--transition-base);
+  pointer-events: none;
+  z-index: 1;
+}
+.btn-shimmer:hover::before {
+  transform: translateX(230%);
+}
+
+/* -- Pause cta-pulse animation on interaction so btn-lift transforms take over -- */
+.cta-pulse:hover,
+.cta-pulse:active {
+  animation-play-state: paused;
+}
+
+/* ===================================================================
+   INTERACTIONS
+   =================================================================== */
+
+/* -- Card hover utilities -- */
+.card-lift {
+  transition:
+    transform var(--transition-base),
+    box-shadow var(--transition-base);
+}
+.card-lift:hover {
+  transform: translateY(calc(var(--card-hover-lift) * -1)) scale(var(--card-hover-scale));
+  box-shadow: var(--shadow-lg);
+}
+
+/* -- Link underline slide-in -- */
+.link-slide {
+  position: relative;
+  text-decoration: none;
+}
+.link-slide::after {
+  content: "";
+  position: absolute;
+  bottom: -1px;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background-color: var(--color-brand-primary);
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform var(--transition-base);
+}
+.link-slide:hover::after {
+  transform: scaleX(1);
+}
+
+/* ===================================================================
+   HORIVA SCOPED EDITORIAL OVERRIDES
+   =================================================================== */
+
+body[data-site-name="Horiva"] {
+  --horiva-glow-top: radial-gradient(
+    circle at top,
+    color-mix(in srgb, var(--color-accent-100) 28%, transparent) 0%,
+    transparent 38rem
+  );
+  --horiva-glow-bottom: radial-gradient(
+    circle at 50% 100%,
+    color-mix(in srgb, var(--color-primary-100) 18%, transparent) 0%,
+    transparent 32rem
+  );
+  --horiva-hairline: color-mix(in srgb, var(--color-accent-300) 44%, transparent);
+  --horiva-rule: color-mix(in srgb, var(--color-primary-200) 48%, transparent);
+  --horiva-soft-panel: color-mix(in srgb, var(--surface-primary) 88%, var(--color-accent-50));
+  --horiva-soft-panel-strong: color-mix(
+    in srgb,
+    var(--surface-primary) 72%,
+    var(--color-accent-50)
+  );
+  background-color: var(--color-brand-surface);
+  background-image: var(--horiva-glow-top), var(--horiva-glow-bottom);
+  background-attachment: fixed;
+}
+
+body[data-site-name="Horiva"] #site-header {
+  background-color: color-mix(in srgb, var(--surface-primary) 82%, transparent);
+  border-color: color-mix(in srgb, var(--horiva-hairline) 70%, transparent);
+}
+
+body[data-site-name="Horiva"] [data-site-header-inner] {
+  min-height: 4.5rem;
+}
+
+body[data-site-name="Horiva"] [data-site-brand] {
+  gap: 0.75rem;
+}
+
+body[data-site-name="Horiva"] [data-site-nav] a {
+  font-size: 0.8rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+body[data-site-name="Horiva"] [data-hero]::after {
+  content: "";
+  position: absolute;
+  inset: auto 0 0;
+  height: 1px;
+  background: linear-gradient(
+    to right,
+    transparent,
+    color-mix(in srgb, var(--color-accent-300) 70%, transparent),
+    transparent
+  );
+  pointer-events: none;
+}
+
+body[data-site-name="Horiva"] [data-hero-content] {
+  max-width: 68rem;
+  padding-top: clamp(4.75rem, 9vw, 7rem);
+}
+
+body[data-site-name="Horiva"] [data-hero-title] {
+  max-width: 12ch;
+  letter-spacing: -0.04em !important;
+}
+
+body[data-site-name="Horiva"] [data-hero-copy] {
+  max-width: 41rem;
+  font-size: clamp(1.1rem, 2vw, 1.3rem);
+  line-height: 1.8;
+}
+
+body[data-site-name="Horiva"] [data-hero-benefits] {
+  max-width: 50rem;
+}
+
+body[data-site-name="Horiva"] [data-hero-benefits] li {
+  border-color: color-mix(in srgb, var(--horiva-hairline) 72%, transparent);
+  background: var(--horiva-soft-panel);
+  box-shadow: var(--shadow-card);
+}
+
+body[data-site-name="Horiva"] [data-hero-trust] {
+  border-color: color-mix(in srgb, var(--horiva-hairline) 90%, transparent);
+  background: color-mix(in srgb, var(--surface-primary) 78%, var(--color-accent-50));
+  font-family: var(--font-body);
+  font-size: var(--text-body-sm);
+  font-weight: 600;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+}
+
+body[data-site-name="Horiva"] [data-editorial-layout],
+body[data-site-name="Horiva"] [data-hub-layout] {
+  position: relative;
+}
+
+body[data-site-name="Horiva"] [data-editorial-article],
+body[data-site-name="Horiva"] [data-hub-hero],
+body[data-site-name="Horiva"] [data-content-card],
+body[data-site-name="Horiva"] [data-hub-card],
+body[data-site-name="Horiva"] [data-sidebar-cta-panel],
+body[data-site-name="Horiva"] [data-footer-email-capture],
+body[data-site-name="Horiva"] [data-footer-brand],
+body[data-site-name="Horiva"] [data-footer-link-group],
+body[data-site-name="Horiva"] [data-toc-panel],
+body[data-site-name="Horiva"] [data-funnel-shell] {
+  border-color: color-mix(in srgb, var(--horiva-hairline) 75%, transparent);
+  background: var(--horiva-soft-panel);
+  box-shadow: var(--shadow-card);
+}
+
+body[data-site-name="Horiva"] [data-editorial-article] {
+  max-width: 46rem;
+}
+
+body[data-site-name="Horiva"] [data-editorial-article] h1,
+body[data-site-name="Horiva"] [data-hub-hero] h1 {
+  max-width: 14ch;
+  letter-spacing: -0.035em;
+  line-height: 0.98;
+}
+
+body[data-site-name="Horiva"] [data-article-meta] {
+  margin-bottom: 2rem;
+  padding-block: 0.85rem;
+  border-top: 1px solid var(--horiva-rule);
+  border-bottom: 1px solid color-mix(in srgb, var(--horiva-hairline) 70%, transparent);
+}
+
+body[data-site-name="Horiva"] [data-editorial-article] .prose {
+  font-size: 1.05rem;
+  line-height: 1.85;
+}
+
+body[data-site-name="Horiva"] [data-editorial-article] .prose > :where(h2, h3) {
+  scroll-margin-top: 6rem;
+}
+
+body[data-site-name="Horiva"] [data-content-card] {
+  display: flex;
+  min-height: 100%;
+  flex-direction: column;
+  gap: 0.25rem;
+}
+
+body[data-site-name="Horiva"] [data-hub-card] {
+  min-height: 100%;
+}
+
+body[data-site-name="Horiva"] [data-content-card] h3 {
+  line-height: 1.08;
+  letter-spacing: -0.02em;
+}
+
+body[data-site-name="Horiva"] [data-content-card-meta] {
+  margin-top: auto;
+}
+
+body[data-site-name="Horiva"] [data-toc-panel] {
+  border-radius: var(--radius-lg);
+}
+
+body[data-site-name="Horiva"] [data-funnel-shell] {
+  max-width: 46rem;
+  border-radius: calc(var(--radius-xl) + 4px);
+  padding: clamp(1.75rem, 4vw, 2.75rem);
+}
+
+body[data-site-name="Horiva"] [data-sticky-cta] {
+  border-top-color: color-mix(in srgb, var(--horiva-hairline) 82%, transparent);
+  background: color-mix(in srgb, var(--surface-primary) 86%, transparent) !important;
+}
+
+body[data-site-name="Horiva"] [data-site-footer] {
+  background: linear-gradient(
+    180deg,
+    color-mix(in srgb, var(--surface-secondary) 92%, transparent),
+    color-mix(in srgb, var(--surface-primary) 88%, var(--color-accent-50))
+  );
+}
+
+body[data-site-name="Horiva"] [data-footer-brand] span:last-child {
+  letter-spacing: 0.1em;
+}
+
+/* ===================================================================
+   GRANTPIPE MARKETING OVERRIDES
+   =================================================================== */
+
+@keyframes rise-in {
+  from {
+    opacity: 0;
+    transform: translateY(18px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes drift-in {
+  from {
+    opacity: 0;
+    transform: translateY(20px) scale(0.985);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+}
+
+body[data-site-name="GrantPipe"] {
+  background:
+    radial-gradient(
+      circle at top,
+      color-mix(in srgb, var(--color-primary-50) 18%, transparent) 0%,
+      transparent 28rem
+    ),
+    linear-gradient(
+      180deg,
+      color-mix(in srgb, var(--surface-primary) 99%, white),
+      color-mix(in srgb, var(--surface-primary) 97%, var(--surface-secondary))
+    );
+}
+
+body[data-site-name="GrantPipe"] #site-header {
+  background-color: color-mix(in srgb, var(--surface-primary) 97%, transparent);
+  border-color: color-mix(in srgb, var(--color-neutral-300) 58%, transparent);
+}
+
+body[data-site-name="GrantPipe"] [data-site-header-inner] {
+  min-height: 5rem;
+}
+
+body[data-site-name="GrantPipe"] [data-site-nav] a {
+  letter-spacing: 0.02em;
+}
+
+body[data-site-name="GrantPipe"] [data-site-footer] {
+  background: color-mix(in srgb, var(--surface-primary) 99%, var(--surface-secondary));
+}
+
+body[data-site-name="GrantPipe"] [data-hub-card],
+body[data-site-name="GrantPipe"] [data-funnel-shell],
+body[data-site-name="GrantPipe"] [data-editorial-article],
+body[data-site-name="GrantPipe"] [data-toc-panel] {
+  border-color: color-mix(in srgb, var(--color-neutral-300) 60%, transparent);
+  box-shadow: 0 18px 40px -34px rgba(42, 31, 24, 0.22);
+}
+
+body[data-site-name="GrantPipe"] [data-reading-frame] {
+  position: relative;
+}
+
+body[data-site-name="GrantPipe"] [data-editorial-rail] {
+  animation: rise-in 420ms cubic-bezier(0.16, 1, 0.3, 1) both;
+  animation-delay: 120ms;
+}
+
+/*
+ * Editorial sidebar rail: on desktop the CTA/nav card lives in a fixed-width
+ * grid column beside a much taller article body (comparison tables, prose,
+ * FAQ, related pages). Left static, the short card sits at the top and leaves
+ * a long dead gutter running down the whole right side — the content below
+ * reads as "floating in a void". Sticking it to the scroll keeps the rail
+ * present alongside that content and closes the gutter. `align-self: start`
+ * is required so the grid item doesn't stretch full-height (which would give
+ * sticky nothing to travel within). Scoped to the lg breakpoint where the
+ * two-column grid is actually active; below that the rail stacks in flow.
+ * Excludes [data-editorial-rail] (article-layout), which already manages its
+ * own nested sticky and can grow tall enough to hit the tall-sticky trap.
+ */
+@media (min-width: 1024px) {
+  body[data-site-name="GrantPipe"] .article-page-sidebar:not([data-editorial-rail]) {
+    position: sticky;
+    top: 6rem;
+    align-self: start;
+  }
+}
+
+body[data-site-name="GrantPipe"] [data-editorial-article],
+body[data-site-name="GrantPipe"] [data-hub-command-bar],
+body[data-site-name="GrantPipe"] [data-home-product-stage],
+body[data-site-name="GrantPipe"] [data-home-command-deck] {
+  animation: drift-in 560ms cubic-bezier(0.16, 1, 0.3, 1) both;
+}
+
+body[data-site-name="GrantPipe"] [data-cta-motion="settled"] .btn-primary,
+body[data-site-name="GrantPipe"] [data-cta-motion="settled"] .btn-secondary {
+  animation: none;
+}
+
+/* -- Editorial H2 signature: a short ochre accent hairline under each
+   heading, scoped to GrantPipe so the Horiva partner theme is untouched. -- */
+body[data-site-name="GrantPipe"] .prose h2 {
+  margin-top: 2.75em;
+}
+
+body[data-site-name="GrantPipe"] .prose h2::after {
+  content: "";
+  display: block;
+  width: 2.5rem;
+  height: 2px;
+  background: color-mix(in srgb, var(--color-accent-500) 70%, transparent);
+  border-radius: 9999px;
+  margin-top: 0.5rem;
+}
+
+body[data-site-name="GrantPipe"] .prose h2 {
+  font-size: var(--text-heading);
+}
+
+/* -- Lede treatment: the first paragraph of the article body reads larger
+   and calmer than the rest of the prose, like a pull-forward summary line. -- */
+.article-prose > p:first-of-type {
+  font-size: var(--text-body-lg);
+  line-height: 1.7;
+  color: var(--gp-ink-700, var(--color-brand-text));
+}
+
+/* ===================================================================
+   ACCESSIBILITY
+   =================================================================== */
+
+/* -- Focus visible -- */
+:focus-visible {
+  outline: 2px solid color-mix(in srgb, var(--color-brand-primary) 55%, var(--color-accent-500));
+  outline-offset: 3px;
+}
+
+/* -- Scroll-in animation -- */
+.scroll-in {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+:root.js .scroll-in {
+  opacity: 0;
+  transform: translateY(1.5rem);
+  transition:
+    opacity var(--transition-slow),
+    transform var(--transition-slow);
+}
+:root.js .scroll-in.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+:root.js .scroll-in.visible:nth-child(2) {
+  transition-delay: 100ms;
+}
+:root.js .scroll-in.visible:nth-child(3) {
+  transition-delay: 200ms;
+}
+:root.js .scroll-in.visible:nth-child(4) {
+  transition-delay: 300ms;
+}
+:root.js .scroll-in.visible:nth-child(5) {
+  transition-delay: 400ms;
+}
+
+/* ===================================================================
+   PROSE
+   =================================================================== */
+
+/* -- Heading overrides (scale down from page-title tokens) -- */
+.prose h2 {
+  font-family: var(--font-heading);
+  font-size: clamp(1.35rem, 2.5vw, 1.75rem);
+  margin-top: 2.5em;
+  margin-bottom: 0.75em;
+}
+
+.prose h3 {
+  font-family: var(--font-heading);
+  font-size: clamp(1.15rem, 2vw, 1.35rem);
+  margin-top: 2em;
+  margin-bottom: 0.5em;
+}
+
+.prose h4 {
+  font-family: var(--font-heading);
+  font-size: 1.1rem;
+  margin-top: 1.75em;
+  margin-bottom: 0.5em;
+}
+
+/* -- Inline element overrides -- */
+.prose blockquote {
+  border-left: 1px solid
+    color-mix(in srgb, var(--color-accent-500, #b8821f) 70%, var(--surface-primary));
+  background-color: color-mix(
+    in srgb,
+    var(--surface-secondary, #f8fafc) 78%,
+    var(--surface-primary)
+  );
+  padding: 1rem 1.25rem;
+  margin: 1.5rem 0;
+  border-radius: 0 var(--radius-md, 8px) var(--radius-md, 8px) 0;
+}
+
+.prose code {
+  font-family: var(--font-mono, "IBM Plex Mono", ui-monospace, monospace);
+  background-color: var(--surface-sunken, #f1f5f9);
+  padding: 0.125rem 0.375rem;
+  border-radius: var(--radius-sm, 4px);
+  font-size: 0.875em;
+}
+
+.prose strong {
+  color: var(--color-brand-primary, #065f46);
+}
+
+.prose a {
+  color: var(--color-brand-primary, #065f46);
+  text-decoration: underline;
+  text-underline-offset: 2px;
+}
+
+.prose a:hover {
+  color: var(--color-primary-900, #064e3b);
+}
+
+body[data-site-name="GrantPipe"] .prose a {
+  text-underline-offset: 3px;
+  text-decoration-color: color-mix(
+    in srgb,
+    var(--gp-emerald-600, var(--color-brand-primary)) 45%,
+    transparent
+  );
+  transition: text-decoration-color var(--transition-fast, 150ms ease);
+}
+
+body[data-site-name="GrantPipe"] .prose a:hover {
+  text-decoration-color: currentColor;
+}
+
+/* -- Table styling -- */
+.prose table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 1.5em;
+  margin-bottom: 1.5em;
+  font-size: 0.9em;
+  display: block;
+  overflow-x: auto;
+}
+
+.prose thead th {
+  font-family: var(--font-heading);
+  font-weight: 600;
+  text-align: left;
+  padding: 0.75rem 1rem;
+  border-bottom: 2px solid var(--color-neutral-300, #cbd5e1);
+  color: var(--color-brand-text);
+}
+
+.prose tbody td {
+  padding: 0.75rem 1rem;
+  border-bottom: 1px solid var(--color-neutral-200, #e2e8f0);
+  vertical-align: top;
+}
+
+.prose tbody tr:last-child td {
+  border-bottom: none;
+}
+
+.prose tbody tr:nth-child(even) {
+  background-color: var(--surface-secondary, #f8fafc);
+}
+
+/* -- Horizontal rule -- */
+.prose hr {
+  border-color: var(--color-neutral-200, #e2e8f0);
+  margin-top: 2.5em;
+  margin-bottom: 2.5em;
+}
+
+/* -- List tightening -- */
+.prose ol > li,
+.prose ul > li {
+  margin-top: 0.375em;
+  margin-bottom: 0.375em;
+}
+
+/* -- Reduced motion -- */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    transition-duration: 0.01ms !important;
+  }
+  /* Defense-in-depth: match the `:root.js .scroll-in` specificity (0,3,0) so the
+     reduced-motion backstop wins even in the near-impossible window where the
+     `js` class is set but the reveal script never runs. Reveal sections stay
+     visible for reduced-motion users regardless. */
+  :root.js .scroll-in,
+  .scroll-in {
+    opacity: 1;
+    transform: none;
+  }
+  .btn-lift:hover,
+  .btn-lift:active,
+  .card-lift:hover,
+  .btn-primary:hover,
+  .btn-primary:active,
+  .btn-secondary:hover,
+  .btn-secondary:active,
+  .btn-primary--pulse {
+    transform: none;
+    animation: none;
+  }
+}
+
+/* -------------------------------------------------------------------------
+ * Batch 06 — Mobile-first prose typography for editorial article pages.
+ * Applies to ArticleLayout and ListicleLayout prose columns.
+ * font-size 18px on mobile improves readability; scale is added at sm+.
+ * Container uses min(100% - 32px, 38rem) safe-padding pattern on narrow vp.
+ * ------------------------------------------------------------------------- */
+.article-prose {
+  font-size: 1.125rem; /* 18px on mobile — improves readability */
+  line-height: 1.75;
+}
+
+@media (min-width: 640px) {
+  .article-prose {
+    font-size: 1rem; /* revert to prose-lg baseline at sm+ */
+  }
+}
+
+.article-page-body {
+  width: min(100% - 32px, 100%);
+}
+
+@media (max-width: 639px) {
+  .article-page-body {
+    width: min(100% - 32px, 38rem);
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+/* Prose table wrapper — ensure tables inside article content scroll on mobile */
+.article-prose table {
+  display: block;
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+  max-width: 100%;
+}
+
+/* Glossary A-Z jumplink strip — horizontal scroll on mobile, sticky under header */
+.gp-glossary-az-strip {
+  position: sticky;
+  top: var(--site-header-height, 64px);
+  z-index: 10;
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+  scrollbar-width: none;
+  background: var(--gp-paper, #fff);
+  border-bottom: 1px solid var(--gp-ink-100, #e5e7eb);
+  padding: 0 16px;
+  margin: 0 -16px;
+}
+
+.gp-glossary-az-strip::-webkit-scrollbar {
+  display: none;
+}
+
+@media (min-width: 640px) {
+  .gp-glossary-az-strip {
+    margin: 0;
+    padding: 0;
+    position: static;
+    overflow-x: visible;
+  }
+}
+
+.gp-glossary-az-strip__inner {
+  display: flex;
+  flex-wrap: nowrap;
+  gap: 2px;
+  padding: 6px 0;
+  min-width: max-content;
+}
+
+@media (min-width: 640px) {
+  .gp-glossary-az-strip__inner {
+    flex-wrap: wrap;
+    min-width: unset;
+  }
+}
+
+.gp-glossary-az-link {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 3rem; /* 48px tap target */
+  min-height: 3rem; /* 48px tap target */
+  border-radius: 6px;
+  font-family: var(--font-mono, ui-monospace, monospace);
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: var(--gp-ink-600, #6b7280);
+  text-decoration: none;
+  transition:
+    background 0.12s ease,
+    color 0.12s ease;
+}
+
+.gp-glossary-az-link:hover {
+  background: var(--gp-emerald-50, #ecfdf5);
+  color: var(--gp-emerald-700, #047857);
+}

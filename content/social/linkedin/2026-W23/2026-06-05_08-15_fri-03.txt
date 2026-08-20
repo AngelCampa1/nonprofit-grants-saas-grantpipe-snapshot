@@ -1,0 +1,7 @@
+The CRM and the general ledger are allowed to disagree for a few days.
+
+They should not disagree for a quarter.
+
+Gift coding, pledge balances, restricted purposes, and grant reimbursements all need a regular tie-out.
+
+Otherwise the board packet becomes the first place anyone notices two versions of revenue.

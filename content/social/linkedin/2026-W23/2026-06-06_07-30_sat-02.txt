@@ -1,0 +1,12 @@
+Restricted fund schedules should not wait for year-end.
+
+Keep a running view of:
+
+- opening balance
+- new restricted revenue
+- spending tied to the restriction
+- releases
+- ending balance
+- follow-up items
+
+That schedule is easier to review monthly than to recreate after the audit request arrives.

@@ -1,0 +1,156 @@
+{
+  "bucket": "D_metro_pages",
+  "generated": "2026-04-30",
+  "items": [
+    {
+      "slug": "metro-houston",
+      "path": "/Users/angel/Desktop/grantpipe/.worktrees/state-100/apps/site/src/content/state-pages/metro-houston.md",
+      "metro": "Houston",
+      "state": "Texas",
+      "stateCode": "TX",
+      "targetKeyword": "nonprofits in houston",
+      "wordCount": 1799,
+      "buyerStage": "tofu"
+    },
+    {
+      "slug": "metro-dallas-fort-worth",
+      "path": "/Users/angel/Desktop/grantpipe/.worktrees/state-100/apps/site/src/content/state-pages/metro-dallas-fort-worth.md",
+      "metro": "Dallas-Fort Worth",
+      "state": "Texas",
+      "stateCode": "TX",
+      "targetKeyword": "nonprofits in dallas",
+      "wordCount": 1884,
+      "buyerStage": "tofu"
+    },
+    {
+      "slug": "metro-new-york-city",
+      "path": "/Users/angel/Desktop/grantpipe/.worktrees/state-100/apps/site/src/content/state-pages/metro-new-york-city.md",
+      "metro": "New York City",
+      "state": "New York",
+      "stateCode": "NY",
+      "targetKeyword": "nonprofits in nyc",
+      "wordCount": 2015,
+      "buyerStage": "tofu"
+    },
+    {
+      "slug": "metro-los-angeles",
+      "path": "/Users/angel/Desktop/grantpipe/.worktrees/state-100/apps/site/src/content/state-pages/metro-los-angeles.md",
+      "metro": "Los Angeles",
+      "state": "California",
+      "stateCode": "CA",
+      "targetKeyword": "nonprofits in los angeles",
+      "wordCount": 1897,
+      "buyerStage": "tofu"
+    },
+    {
+      "slug": "metro-chicago",
+      "path": "/Users/angel/Desktop/grantpipe/.worktrees/state-100/apps/site/src/content/state-pages/metro-chicago.md",
+      "metro": "Chicago",
+      "state": "Illinois",
+      "stateCode": "IL",
+      "targetKeyword": "nonprofits in chicago",
+      "wordCount": 1867,
+      "buyerStage": "tofu"
+    },
+    {
+      "slug": "metro-bay-area",
+      "path": "/Users/angel/Desktop/grantpipe/.worktrees/state-100/apps/site/src/content/state-pages/metro-bay-area.md",
+      "metro": "San Francisco Bay Area",
+      "state": "California",
+      "stateCode": "CA",
+      "targetKeyword": "san francisco bay area nonprofits",
+      "wordCount": 1994,
+      "buyerStage": "tofu"
+    },
+    {
+      "slug": "metro-boston",
+      "path": "/Users/angel/Desktop/grantpipe/.worktrees/state-100/apps/site/src/content/state-pages/metro-boston.md",
+      "metro": "Boston",
+      "state": "Massachusetts",
+      "stateCode": "MA",
+      "targetKeyword": "nonprofits in boston",
+      "wordCount": 1793,
+      "buyerStage": "tofu"
+    },
+    {
+      "slug": "metro-atlanta",
+      "path": "/Users/angel/Desktop/grantpipe/.worktrees/state-100/apps/site/src/content/state-pages/metro-atlanta.md",
+      "metro": "Atlanta",
+      "state": "Georgia",
+      "stateCode": "GA",
+      "targetKeyword": "nonprofits in atlanta",
+      "wordCount": 1873,
+      "buyerStage": "tofu"
+    },
+    {
+      "slug": "metro-philadelphia",
+      "path": "/Users/angel/Desktop/grantpipe/.worktrees/state-100/apps/site/src/content/state-pages/metro-philadelphia.md",
+      "metro": "Philadelphia",
+      "state": "Pennsylvania",
+      "stateCode": "PA",
+      "targetKeyword": "nonprofits in philadelphia",
+      "wordCount": 1840,
+      "buyerStage": "tofu"
+    },
+    {
+      "slug": "metro-miami",
+      "path": "/Users/angel/Desktop/grantpipe/.worktrees/state-100/apps/site/src/content/state-pages/metro-miami.md",
+      "metro": "Miami",
+      "state": "Florida",
+      "stateCode": "FL",
+      "targetKeyword": "nonprofits in miami",
+      "wordCount": 1830,
+      "buyerStage": "tofu"
+    },
+    {
+      "slug": "metro-seattle",
+      "path": "/Users/angel/Desktop/grantpipe/.worktrees/state-100/apps/site/src/content/state-pages/metro-seattle.md",
+      "metro": "Seattle",
+      "state": "Washington",
+      "stateCode": "WA",
+      "targetKeyword": "nonprofits in seattle",
+      "wordCount": 1835,
+      "buyerStage": "tofu"
+    },
+    {
+      "slug": "metro-denver",
+      "path": "/Users/angel/Desktop/grantpipe/.worktrees/state-100/apps/site/src/content/state-pages/metro-denver.md",
+      "metro": "Denver",
+      "state": "Colorado",
+      "stateCode": "CO",
+      "targetKeyword": "nonprofits in denver",
+      "wordCount": 1828,
+      "buyerStage": "tofu"
+    },
+    {
+      "slug": "metro-phoenix",
+      "path": "/Users/angel/Desktop/grantpipe/.worktrees/state-100/apps/site/src/content/state-pages/metro-phoenix.md",
+      "metro": "Phoenix",
+      "state": "Arizona",
+      "stateCode": "AZ",
+      "targetKeyword": "nonprofits in phoenix",
+      "wordCount": 1805,
+      "buyerStage": "tofu"
+    },
+    {
+      "slug": "metro-twin-cities",
+      "path": "/Users/angel/Desktop/grantpipe/.worktrees/state-100/apps/site/src/content/state-pages/metro-twin-cities.md",
+      "metro": "Twin Cities",
+      "state": "Minnesota",
+      "stateCode": "MN",
+      "targetKeyword": "nonprofits in minneapolis",
+      "wordCount": 1946,
+      "buyerStage": "tofu"
+    },
+    {
+      "slug": "metro-portland",
+      "path": "/Users/angel/Desktop/grantpipe/.worktrees/state-100/apps/site/src/content/state-pages/metro-portland.md",
+      "metro": "Portland",
+      "state": "Oregon",
+      "stateCode": "OR",
+      "targetKeyword": "nonprofits in portland",
+      "wordCount": 1838,
+      "buyerStage": "tofu"
+    }
+  ]
+}

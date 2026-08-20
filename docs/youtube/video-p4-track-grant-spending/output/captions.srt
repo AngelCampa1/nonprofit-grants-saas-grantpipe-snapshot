@@ -1,0 +1,367 @@
+1
+00:00:00,000 --> 00:00:01,259
+You got the grant.
+
+2
+00:00:01,259 --> 00:00:03,008
+Now you have to spend it.
+
+3
+00:00:03,008 --> 00:00:06,507
+And at some point, someone asks a simple question.
+
+4
+00:00:06,507 --> 00:00:10,565
+How much of this grant is left, and where did the rest go?
+
+5
+00:00:10,565 --> 00:00:12,873
+Your bank balance won't tell you.
+
+6
+00:00:12,873 --> 00:00:17,701
+One account holds every grant and your own money, all mixed together.
+
+7
+00:00:17,701 --> 00:00:21,059
+Today I'll show you how to track grant spending.
+
+8
+00:00:21,059 --> 00:00:24,558
+You'll be able to answer that any day of the week.
+
+9
+00:00:24,558 --> 00:00:26,307
+Without losing your mind.
+
+10
+00:00:26,307 --> 00:00:28,825
+Quick note on where I'm coming from.
+
+11
+00:00:28,825 --> 00:00:31,204
+I build grant compliance software.
+
+12
+00:00:31,204 --> 00:00:34,633
+I'm not a former grants officer or an accountant.
+
+13
+00:00:34,633 --> 00:00:36,172
+I won't pretend to be.
+
+14
+00:00:36,172 --> 00:00:39,250
+You're getting the version a busy director needs.
+
+15
+00:00:39,250 --> 00:00:42,995
+So what does tracking grant spending really mean?
+
+16
+00:00:42,995 --> 00:00:46,358
+Every dollar you spend belongs to one grant.
+
+17
+00:00:46,358 --> 00:00:49,339
+The number that matters is what's left.
+
+18
+00:00:49,339 --> 00:00:51,021
+Take the award amount.
+
+19
+00:00:51,021 --> 00:00:53,925
+Subtract what you've spent against it.
+
+20
+00:00:53,925 --> 00:00:56,830
+What's left is your remaining balance.
+
+21
+00:00:56,830 --> 00:00:57,747
+Simple math.
+
+22
+00:00:57,747 --> 00:01:01,798
+It only works if each cost points to the right grant.
+
+23
+00:01:01,798 --> 00:01:05,620
+Get it wrong in two directions, and both cost you.
+
+24
+00:01:05,620 --> 00:01:10,588
+Spend on something the grant doesn't cover, and you eat the cost.
+
+25
+00:01:10,588 --> 00:01:12,881
+Go over the award, same thing.
+
+26
+00:01:12,881 --> 00:01:16,932
+Spend too slowly, and the funder takes the rest back.
+
+27
+00:01:16,932 --> 00:01:19,072
+Your next grant shrinks too.
+
+28
+00:01:19,072 --> 00:01:22,620
+A clear remaining number keeps both from happening.
+
+29
+00:01:22,620 --> 00:01:24,303
+It takes three things.
+
+30
+00:01:24,303 --> 00:01:28,127
+A running total for each grant that you can trust.
+
+31
+00:01:28,127 --> 00:01:31,799
+A list of every cost, so you can show your work.
+
+32
+00:01:31,799 --> 00:01:36,464
+And a sense of pace, so the deadline doesn't sneak up on you.
+
+33
+00:01:36,464 --> 00:01:39,294
+The way this falls apart is familiar.
+
+34
+00:01:39,294 --> 00:01:40,901
+One checking account.
+
+35
+00:01:40,901 --> 00:01:42,507
+Receipts in a drawer.
+
+36
+00:01:42,507 --> 00:01:43,884
+No per-grant view.
+
+37
+00:01:43,884 --> 00:01:46,408
+You feel fine until month eleven.
+
+38
+00:01:46,408 --> 00:01:48,167
+Then you add it all up.
+
+39
+00:01:48,167 --> 00:01:51,762
+You're over on one line, and behind on another.
+
+40
+00:01:51,762 --> 00:01:53,630
+By then it's too late to fix.
+
+41
+00:01:53,630 --> 00:01:57,980
+Let me show you one way to do this, in the real app.
+
+42
+00:01:57,980 --> 00:02:02,665
+Open a grant, and the four numbers sit right at the top.
+
+43
+00:02:02,665 --> 00:02:05,092
+Grant Amount, the full award.
+
+44
+00:02:05,092 --> 00:02:09,275
+Allocated, how much you've assigned to your funds.
+
+45
+00:02:09,275 --> 00:02:11,115
+Unallocated, the rest.
+
+46
+00:02:11,115 --> 00:02:15,298
+And the one you'll watch most, Remaining to Spend.
+
+47
+00:02:15,298 --> 00:02:18,896
+That's the live answer to how much is left.
+
+48
+00:02:18,896 --> 00:02:20,653
+You don't type it in.
+
+49
+00:02:20,653 --> 00:02:26,760
+The app takes the award and subtracts every expense charged to the grant.
+
+50
+00:02:26,760 --> 00:02:29,840
+Spend more, and it ticks down on its own.
+
+51
+00:02:29,840 --> 00:02:32,405
+How does it know what you spent?
+
+52
+00:02:32,405 --> 00:02:35,051
+You tell it, on the Expenses tab.
+
+53
+00:02:35,051 --> 00:02:37,617
+This is every cost on the grant.
+
+54
+00:02:37,617 --> 00:02:41,304
+Each line shows a short note and what it cost.
+
+55
+00:02:41,304 --> 00:02:44,030
+To add one, you open a small form.
+
+56
+00:02:44,030 --> 00:02:46,756
+Amount, date, a quick description.
+
+57
+00:02:46,756 --> 00:02:47,558
+That's it.
+
+58
+00:02:47,558 --> 00:02:50,043
+Save it, and two things happen.
+
+59
+00:02:50,043 --> 00:02:55,415
+The cost joins the list, and Remaining to Spend drops by that much.
+
+60
+00:02:55,415 --> 00:03:00,225
+So the list and the running total stay in step on their own.
+
+61
+00:03:00,225 --> 00:03:03,111
+That list is what you hand a funder.
+
+62
+00:03:03,111 --> 00:03:07,010
+When they ask where the money went, it's right there.
+
+63
+00:03:07,010 --> 00:03:09,045
+Now the part that saves you.
+
+64
+00:03:09,045 --> 00:03:09,409
+Pace.
+
+65
+00:03:09,409 --> 00:03:11,662
+The grant shows your burn rate.
+
+66
+00:03:11,662 --> 00:03:15,587
+That's just how much you spend each month, on average.
+
+67
+00:03:15,587 --> 00:03:17,913
+That one number tells you a lot.
+
+68
+00:03:17,913 --> 00:03:21,983
+At this rate, will you land near zero by the close date?
+
+69
+00:03:21,983 --> 00:03:23,219
+Or run out early?
+
+70
+00:03:23,219 --> 00:03:26,199
+Or sit on money you'll have to give back?
+
+71
+00:03:26,199 --> 00:03:28,525
+The Spend-Down view lays it out.
+
+72
+00:03:28,525 --> 00:03:30,269
+You see the drift early.
+
+73
+00:03:30,269 --> 00:03:32,304
+Early enough to still steer.
+
+74
+00:03:32,304 --> 00:03:33,104
+Quick note.
+
+75
+00:03:33,104 --> 00:03:36,593
+That view comes with the larger GrantPipe plans.
+
+76
+00:03:36,593 --> 00:03:38,060
+Check that it's on yours.
+
+77
+00:03:38,060 --> 00:03:39,778
+So that's the whole job.
+
+78
+00:03:39,778 --> 00:03:44,289
+Tracking grant spending comes down to one number you can trust.
+
+79
+00:03:44,289 --> 00:03:46,151
+What's left on this grant.
+
+80
+00:03:46,151 --> 00:03:50,733
+Tie every cost to its grant, keep the list, and watch your pace.
+
+81
+00:03:50,733 --> 00:03:53,382
+Do that, and report time gets boring.
+
+82
+00:03:53,382 --> 00:03:55,458
+That's exactly what you want.
+
+83
+00:03:55,458 --> 00:03:58,895
+A spreadsheet can carry this while you're small.
+
+84
+00:03:58,895 --> 00:04:02,045
+A system carries it for you when you're not.
+
+85
+00:04:02,045 --> 00:04:05,912
+That's the kind of thing we built GrantPipe to handle.
+
+86
+00:04:05,912 --> 00:04:08,847
+But the habit matters more than the tool.
+
+87
+00:04:08,847 --> 00:04:10,422
+Want a starting point?
+
+88
+00:04:10,422 --> 00:04:12,356
+We made a free spreadsheet.
+
+89
+00:04:12,356 --> 00:04:14,718
+It sets up these columns for you.
+
+90
+00:04:14,718 --> 00:04:16,723
+We'll send it to your inbox.
+
+91
+00:04:16,723 --> 00:04:21,377
+Next up, how to keep this straight across a dozen grants at once.
+
+92
+00:04:21,377 --> 00:04:25,100
+Thanks for watching, and good luck spending it down.

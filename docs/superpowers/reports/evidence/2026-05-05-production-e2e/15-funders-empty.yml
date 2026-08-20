@@ -1,0 +1,52 @@
+- generic [ref=e3]:
+    - generic [ref=e13]:
+        - banner [ref=e14]:
+            - button "Open navigation" [ref=e16]:
+                - img
+            - generic [ref=e17]:
+                - link "Add billing, trial ends in 30 days" [ref=e18] [cursor=pointer]:
+                    - /url: /app/settings#billing
+                    - img [ref=e19]
+                    - generic [ref=e22]: Trial
+                    - generic [ref=e23]: 30d
+                - button "Open command palette" [ref=e24]:
+                    - img
+                - link "Notifications" [ref=e25] [cursor=pointer]:
+                    - /url: /app/notifications
+                    - img
+                - button "Switch to dark theme" [ref=e26]:
+                    - img
+        - main [ref=e28]:
+            - generic [ref=e30]:
+                - generic [ref=e31]:
+                    - paragraph [ref=e32]: Funder workspace
+                    - generic [ref=e33]:
+                        - heading "Funders" [level=1] [ref=e36]
+                        - button "Add funder" [ref=e38]
+                - generic [ref=e40]:
+                    - textbox "Search funders..." [ref=e41]
+                    - combobox "Filter funder type" [ref=e42]:
+                        - generic: All funder types
+                        - img
+                - table [ref=e46]:
+                    - rowgroup [ref=e47]:
+                        - row "Sort by name Sort by type" [ref=e48]:
+                            - columnheader "Sort by name" [ref=e49]:
+                                - button "Sort by name" [ref=e50]:
+                                    - text: Name
+                                    - img [ref=e51]
+                            - columnheader "Sort by type" [ref=e54]:
+                                - button "Sort by type" [ref=e55]:
+                                    - text: Type
+                                    - img [ref=e56]
+                    - rowgroup [ref=e59]:
+                        - row "Your funders live here" [ref=e60]:
+                            - cell "Your funders live here" [ref=e61]:
+                                - region "Your funders live here" [ref=e62]:
+                                    - img [ref=e65]
+                                    - heading "Your funders live here" [level=3] [ref=e69]
+                                    - generic [ref=e70]:
+                                        - button "+ Add a funder" [ref=e71]
+                                        - link "How funders work →" [ref=e72] [cursor=pointer]:
+                                            - /url: /help
+    - region "Notifications alt+T"

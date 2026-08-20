@@ -1,0 +1,9 @@
+We decided early not to fabricate proof.
+
+No fake logos on the homepage. No "trusted by hundreds of nonprofits" line. No anonymized quote that could plausibly be anyone.
+
+The page is early and small today: real followers, real trial users, and neither trial user has agreed to public attribution yet. We will not invent a bigger number to look further along than we are.
+
+Two reasons. First, the people we are building for have signed contracts based on fabricated proof before, and got burned. They can smell it from a long way out. Second, if we lie at the homepage we will lie inside the product, and the product is compliance software. The whole reason it exists is that the numbers have to be true.
+
+So we are going slowly, in public. The followers will come from the work, or they will not come. Either way the line on the page will match what is actually true the day you read it.

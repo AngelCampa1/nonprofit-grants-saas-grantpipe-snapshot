@@ -1,0 +1,125 @@
+---
+import PaidSearchLandingPage from "@/components/paid-search-landing-page.astro";
+import type { PaidLandingPageData } from "@/components/paid-search-landing-page.astro";
+
+const page: PaidLandingPageData = {
+  slug: "nonprofit-crm-no-consultant",
+  title: "The Nonprofit CRM You Run Yourself | GrantPipe",
+  description:
+    "No outside retainer. No admin hire. Set it up in the trial and run your donor, grant, and fund records your way.",
+  kicker: "Nonprofit CRM built for self-sufficient teams",
+  headline: "The nonprofit system you run yourself.",
+  subhead:
+    "No admin to hire. No outside retainer. Set it up and run it your way.",
+  primaryCta: "Start 1-month free trial",
+  exitLeadMagnet: {
+    slug: "nonprofit-crm-cost-calculator",
+    title: "Nonprofit CRM Total Cost Calculator",
+    description:
+      "Calculate the true all-in cost of your current nonprofit CRM, including setup, consultant fees, and staff time, and compare it to alternatives.",
+  },
+  trust: "No credit card required. Built for nonprofits that cannot afford a full-time CRM admin.",
+  proofCard: {
+    label: "Self-run setup status",
+    status: "Live in trial",
+    rows: [
+      { label: "Grants imported", value: "11" },
+      { label: "Donors imported", value: "340" },
+      { label: "Setup hours spent", value: "6" },
+      { label: "Consultant cost", value: "$0" },
+    ],
+    progressLabel: "Running without an admin",
+    progress: "100%",
+  },
+  painsTitle: "Enterprise CRMs were not built for a 15-person nonprofit.",
+  pains: [
+    "Setup cost $20K and you still need a consultant to change a field.",
+    "The admin who knew the system left and no one can run it now.",
+    "You pay for seats and features the team never uses.",
+    "Finance and development are in different systems that never agree.",
+    "Every change requires a support ticket or a paid project.",
+  ],
+  workflowTitle: "Set it up yourself and run it from day one.",
+  workflowSteps: [
+    {
+      icon: "transfer",
+      heading: "Import your data",
+      copy: "Bring donors, grants, and fund records in by CSV in the trial.",
+    },
+    {
+      icon: "ledger",
+      heading: "Run donors and grants together",
+      copy: "One record tracks cultivation, awards, and restricted balances.",
+    },
+    {
+      icon: "check",
+      heading: "Pull reports without IT",
+      copy: "Board packets and funder reports come from the same record.",
+    },
+  ],
+  featureTitle: "Designed for teams with no dedicated CRM staff.",
+  features: [
+    {
+      icon: "transfer",
+      heading: "Self-service import",
+      copy: "Bring your data over by CSV, no migration consultant needed.",
+    },
+    {
+      icon: "ledger",
+      heading: "Donors and grants in one record",
+      copy: "One place for gifts, awards, and restricted fund balances.",
+    },
+    {
+      icon: "report",
+      heading: "Plain-language reports",
+      copy: "Board and funder reports built in, no configuration required.",
+    },
+  ],
+  proofTitle: "GrantPipe is built for staff-led setup without an outside retainer.",
+  proofPoints: [
+    {
+      value: "$15K to $90K",
+      label:
+        "is the typical all-in annual cost for a 10-user enterprise nonprofit CRM, including consultants.",
+      source: "GrantPipe total cost of ownership research",
+    },
+    {
+      value: "Staff-led",
+      label:
+        "setup path in the trial for standard CSV imports.",
+      source: "GrantPipe product workflow",
+    },
+    {
+      value: "No setup fee",
+      label:
+        "for self-serve plans using the standard import path.",
+      source: "GrantPipe pricing model",
+    },
+  ],
+  trustLabels: ["Staff-led setup", "Self-service import", "Built for small teams"],
+  faqTitle: "Questions from executive directors evaluating the switch.",
+  faqs: [
+    {
+      q: "Does migration require a consultant?",
+      a: "No. You can import donors by CSV and bring active grants in yourself during the free trial. There is no paid setup project.",
+    },
+    {
+      q: "What if we have custom fields in our current CRM?",
+      a: "GrantPipe supports custom fields for donors, grants, and contacts. Standard field sets can be mapped during import.",
+    },
+    {
+      q: "Does this replace our accounting system?",
+      a: "No. GrantPipe does not connect to QuickBooks or Sage Intacct right now. Keep your books there. Keep donor, grant, and fund records in GrantPipe.",
+    },
+    {
+      q: "What is the total cost of ownership?",
+      a: "GrantPipe uses flat self-serve plans with unlimited users, no setup fee, and no required consultant retainer for the standard path.",
+    },
+  ],
+  finalTitle: "Set up your first grant and donor import. No outside retainer, no card.",
+  finalBody:
+    "Start the trial and bring your data over yourself with the standard CSV import path.",
+};
+---
+
+<PaidSearchLandingPage page={page} />

@@ -1,0 +1,11 @@
+Custom fields buried in a notes column aren't data. They're archaeology.
+
+Every nonprofit tracks something the standard donor schema doesn't capture — cultivation score, board relationship, interest area, legacy intent, ask amount, fiscal sponsor, project code. When that lives in a free-text "notes" field, it can't be filtered, exported, reported on, or used to segment a campaign. It exists, but only for the person who wrote it down.
+
+The fix is typed custom fields: text, number, date, select, or boolean, defined per entity (donor, grant, gift). Once the field has a type, it shows up in filters and reports the same way the standard fields do. The data stays structured from the moment it's entered.
+
+The discipline is naming and pruning. Every custom field added is a column someone has to maintain. Review the list once a year and delete what no one fills in.
+
+GrantPipe lets you define custom fields on donors, grants, and gifts that flow into filters, exports, and reports alongside the built-in fields — no notes-column workarounds.
+
+#nonprofitcrm #fundraisingoperations #datahygiene #grantpipe

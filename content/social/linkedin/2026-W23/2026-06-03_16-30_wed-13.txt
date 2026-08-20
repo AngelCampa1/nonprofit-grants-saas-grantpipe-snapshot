@@ -1,0 +1,9 @@
+We keep grants and restricted funds separate in GrantPipe because they answer different questions.
+
+A grant asks: who awarded it, what are the dates, what must be reported, what evidence supports it?
+
+A fund asks: what money is restricted, how was it spent, what has been released, what remains?
+
+Blending those records feels simpler at setup.
+
+It gets expensive at reconciliation.

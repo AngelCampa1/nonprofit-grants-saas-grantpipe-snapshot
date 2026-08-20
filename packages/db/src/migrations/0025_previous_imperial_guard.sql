@@ -1,0 +1,1 @@
+ALTER TABLE "organizations" ADD COLUMN "trial_will_end_notified_at" timestamp with time zone;

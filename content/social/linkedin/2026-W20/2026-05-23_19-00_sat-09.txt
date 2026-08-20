@@ -1,0 +1,13 @@
+Period of performance: the start and end dates printed on the federal award notice, between which costs must be incurred to be allowable.
+
+Not the dates the work happens. Not the dates you bill. The dates the obligation is live.
+
+Two things catch organizations off guard.
+
+One. Pre-award costs (anything incurred before the start date) are unallowable unless the agency gives prior written approval, per 2 CFR 200.458. The conversation you had with the program officer in March does not count if the start date is April 1.
+
+Two. The period of performance is not the same as the project period. On multi-year awards you usually get one project period covering the whole thing and annual budget periods inside it.
+
+When the period ends, you have ninety days to submit the closeout package and final FFR. After that, unspent funds get deobligated.
+
+Read the dates. Put them on a calendar.

@@ -1,0 +1,9 @@
+Neon One is not a single product. It is a portfolio assembled through acquisition: Neon CRM at the center, Arts People for arts organizations, Rallybound for peer-to-peer, and a few others stacked around them.
+
+The pitch is vendor consolidation. The reality for buyers is uneven module quality and a UX that varies depending on which acquired team built the surface you are looking at. Cross-module reporting is the place this shows up first — pulling a clean view across donor activity, event registrations, and grant tracking usually requires either a custom report build or an export-to-Excel step.
+
+For organizations that mostly need donor management, Neon CRM on its own is a reasonable choice. For organizations that need donor CRM plus active grant management in one system, the bundle approach asks the buyer to integrate modules that were not designed together.
+
+The tradeoff to know going in: you trade a single login for a sprawl that grows as Neon One acquires more products. Mid-sized nonprofits that already feel stretched thin tend to feel that sprawl most.
+
+#nonprofittech #donorcrm #neonone #grantmanagement

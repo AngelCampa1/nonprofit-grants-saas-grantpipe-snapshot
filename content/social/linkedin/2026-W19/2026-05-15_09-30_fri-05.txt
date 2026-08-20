@@ -1,0 +1,15 @@
+Six items that belong in your audit binder before fieldwork starts. None of these are surprising. All of them get pulled together at the last minute anyway.
+
+1. The signed award letter or contract for every active grant, with any amendments attached in date order.
+
+2. The current period of performance dates, the indirect cost rate in effect (NICRA letter or de minimis 15% election), and the approved budget by category.
+
+3. SF-425 / FFR submissions for the audit period, with the supporting general ledger detail tying each cash-drawn figure to the bank deposit.
+
+4. Time-and-effort certifications for any staff allocated to federal awards, signed at least semi-annually, or after-the-fact certifications if you use a personnel activity reporting system.
+
+5. Procurement file for any single purchase above the simplified acquisition threshold ($250K under current 2 CFR 200), with the three-quote documentation or sole-source justification.
+
+6. Sub-recipient monitoring file: the risk assessment, the executed sub-award agreement, the most recent single audit report from the sub, and the documented review of their financial reports.
+
+The work is not in pulling these together once. The work is in keeping them attached to the award record as they happen, so "audit binder" is a filter on a system, not a binder you assemble in May.

@@ -1,0 +1,13 @@
+Five things to check before submitting a Grants.gov application.
+
+1. SAM.gov registration is active and the UEI matches the application package exactly.
+
+2. The Authorized Organization Representative is the person who will actually sign, not the grant writer.
+
+3. The budget narrative justifies every line, including indirect. If you are using the 15% de minimis rate, name it.
+
+4. The project narrative addresses every selection criterion in the NOFO, in the order the NOFO listed them.
+
+5. You have submitted at least 24 hours before the deadline. Grants.gov queue times spike on the last day, and a "received" timestamp after the cutoff is not received.
+
+None of these are about writing quality. They are about the package being technically valid. Most rejections at the screening stage are technical, not substantive.

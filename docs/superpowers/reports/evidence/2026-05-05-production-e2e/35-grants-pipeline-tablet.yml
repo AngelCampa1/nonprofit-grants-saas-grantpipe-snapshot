@@ -1,0 +1,217 @@
+- generic [ref=e3]:
+    - generic [ref=e18]:
+        - generic [ref=e21]:
+            - generic [ref=e22]:
+                - link "GrantPipe home" [ref=e23] [cursor=pointer]:
+                    - /url: /app/dashboard
+                    - img [ref=e24]
+                    - generic [ref=e25]: GrantPipe
+                - button "Collapse sidebar" [ref=e26]:
+                    - img [ref=e27]
+            - generic [ref=e29]:
+                - link "Dashboard" [ref=e31] [cursor=pointer]:
+                    - /url: /app/dashboard
+                    - img [ref=e33]
+                    - generic [ref=e38]: Dashboard
+                - generic [ref=e39]:
+                    - button "Toggle Fundraising section" [ref=e40]:
+                        - generic [ref=e42]: Fundraising
+                        - img [ref=e43]
+                    - link "Donors" [ref=e45] [cursor=pointer]:
+                        - /url: /app/donors
+                        - img [ref=e47]
+                        - generic [ref=e52]: Donors
+                    - link "Grants" [ref=e53] [cursor=pointer]:
+                        - /url: /app/grants
+                        - img [ref=e55]
+                        - generic [ref=e58]: Grants
+                    - link "Funders" [ref=e59] [cursor=pointer]:
+                        - /url: /app/funders
+                        - img [ref=e61]
+                        - generic [ref=e67]: Funders
+                    - link "Events" [ref=e68] [cursor=pointer]:
+                        - /url: /app/events
+                        - img [ref=e70]
+                        - generic [ref=e72]: Events
+                    - link "Calendar" [ref=e73] [cursor=pointer]:
+                        - /url: /app/calendar
+                        - img [ref=e75]
+                        - generic [ref=e77]: Calendar
+                - generic [ref=e78]:
+                    - button "Toggle Compliance section" [ref=e79]:
+                        - generic [ref=e81]: Compliance
+                        - img [ref=e82]
+                    - link "Funds" [ref=e84] [cursor=pointer]:
+                        - /url: /app/funds
+                        - img [ref=e86]
+                        - generic [ref=e89]: Funds
+                    - link "Programs" [ref=e90] [cursor=pointer]:
+                        - /url: /app/programs
+                        - img [ref=e92]
+                        - generic [ref=e96]: Programs
+                    - link "Reports" [ref=e97] [cursor=pointer]:
+                        - /url: /app/reports
+                        - img [ref=e99]
+                        - generic [ref=e102]: Reports
+                    - link "Cash" [ref=e103] [cursor=pointer]:
+                        - /url: /app/payments
+                        - img [ref=e105]
+                        - generic [ref=e107]: Cash
+                    - link "Activity" [ref=e108] [cursor=pointer]:
+                        - /url: /app/activity
+                        - img [ref=e110]
+                        - generic [ref=e112]: Activity
+                - button "Toggle Accounting section" [ref=e114]:
+                    - generic [ref=e115]:
+                        - generic [ref=e116]: Accounting
+                        - generic [ref=e117]: "11"
+                    - img [ref=e118]
+                - generic [ref=e120]:
+                    - button "Toggle Account section" [ref=e121]:
+                        - generic [ref=e123]: Account
+                        - img [ref=e124]
+                    - link "Import" [ref=e126] [cursor=pointer]:
+                        - /url: /app/import
+                        - img [ref=e128]
+                        - generic [ref=e131]: Import
+                    - link "Notifications" [ref=e132] [cursor=pointer]:
+                        - /url: /app/notifications
+                        - img [ref=e134]
+                        - generic [ref=e137]: Notifications
+                    - link "Settings" [ref=e138] [cursor=pointer]:
+                        - /url: /app/settings
+                        - img [ref=e140]
+                        - generic [ref=e143]: Settings
+            - link "Help" [ref=e145] [cursor=pointer]:
+                - /url: /app/help
+                - img [ref=e147]
+                - generic [ref=e150]: Help
+            - button "Account menu" [ref=e152]:
+                - generic [ref=e154]: PE
+                - generic [ref=e155]:
+                    - generic [ref=e156]: Production E2E 20260505 160129
+                    - generic [ref=e157]: angel+e2e-20260505-160129@grantpipe.com
+        - generic [ref=e158]:
+            - banner [ref=e159]:
+                - generic [ref=e160]:
+                    - link "Add billing, trial ends in 30 days" [ref=e161] [cursor=pointer]:
+                        - /url: /app/settings#billing
+                        - img [ref=e162]
+                        - generic [ref=e165]: Trial
+                        - generic [ref=e166]: 30d
+                    - button "Open command palette" [ref=e167]:
+                        - img
+                    - link "Notifications" [ref=e168] [cursor=pointer]:
+                        - /url: /app/notifications
+                        - img
+                    - button "Switch to dark theme" [ref=e169]:
+                        - img
+            - main [ref=e171]:
+                - generic [ref=e173]:
+                    - generic [ref=e174]:
+                        - paragraph [ref=e175]: Grant pipeline
+                        - generic [ref=e176]:
+                            - heading "Grant Pipeline" [level=1] [ref=e179]
+                            - link "List" [ref=e181] [cursor=pointer]:
+                                - /url: /app/grants
+                    - generic [ref=e184]:
+                        - generic [ref=e186]:
+                            - generic [ref=e187]:
+                                - heading "Operational triage" [level=2] [ref=e188]
+                                - paragraph [ref=e189]: Work left to right by phase. Use each row's next action to decide what needs attention now.
+                            - generic [ref=e190]:
+                                - generic [ref=e191]: 1 active grants
+                                - generic [ref=e192]: 1 need attention
+                                - generic [ref=e193]: Declined archived below
+                        - generic [ref=e194]:
+                            - region "Pre-award" [ref=e195]:
+                                - generic [ref=e197]:
+                                    - generic [ref=e198]:
+                                        - heading "Pre-award" [level=2] [ref=e199]
+                                        - paragraph [ref=e200]: Research, prepare, and submit opportunities before a funding decision.
+                                    - generic [ref=e201]: "1"
+                                - generic [ref=e202]:
+                                    - generic [ref=e203]:
+                                        - generic [ref=e205]:
+                                            - heading "Discovery 1" [level=3] [ref=e206]
+                                            - button "What Discovery means" [ref=e207]:
+                                                - img [ref=e208]
+                                        - generic [ref=e212]:
+                                            - generic [ref=e213]:
+                                                - link "Prod E2E Grant 160129" [ref=e214] [cursor=pointer]:
+                                                    - /url: /app/grants/8febc37b-da9a-4a67-9dab-219306917f0c
+                                                - combobox "Move Prod E2E Grant 160129 to another stage" [ref=e215]:
+                                                    - generic: Discovery
+                                                    - img
+                                            - paragraph [ref=e216]: "Next: confirm fit, deadline, funder requirements, and whether to apply."
+                                    - generic [ref=e217]:
+                                        - generic [ref=e219]:
+                                            - heading "Application 0" [level=3] [ref=e220]
+                                            - button "What Application means" [ref=e221]:
+                                                - img [ref=e222]
+                                        - paragraph [ref=e226]: No applications being prepared.
+                                    - generic [ref=e227]:
+                                        - generic [ref=e229]:
+                                            - heading "Submitted 0" [level=3] [ref=e230]
+                                            - button "What Submitted means" [ref=e231]:
+                                                - img [ref=e232]
+                                        - paragraph [ref=e236]: No submitted applications waiting on a decision.
+                            - region "Award setup" [ref=e237]:
+                                - generic [ref=e239]:
+                                    - generic [ref=e240]:
+                                        - heading "Award setup" [level=2] [ref=e241]
+                                        - paragraph [ref=e242]: Turn approved awards into usable records with restrictions and funds in place.
+                                    - generic [ref=e243]: "0"
+                                - generic [ref=e245]:
+                                    - generic [ref=e247]:
+                                        - heading "Awarded 0" [level=3] [ref=e248]
+                                        - button "What Awarded means" [ref=e249]:
+                                            - img [ref=e250]
+                                    - paragraph [ref=e254]: No newly awarded grants waiting for setup.
+                            - region "Active delivery" [ref=e255]:
+                                - generic [ref=e257]:
+                                    - generic [ref=e258]:
+                                        - heading "Active delivery" [level=2] [ref=e259]
+                                        - paragraph [ref=e260]: Manage work, spending, outcomes, and funder reporting while the award is live.
+                                    - generic [ref=e261]: "0"
+                                - generic [ref=e262]:
+                                    - generic [ref=e263]:
+                                        - generic [ref=e265]:
+                                            - heading "Active 0" [level=3] [ref=e266]
+                                            - button "What Active means" [ref=e267]:
+                                                - img [ref=e268]
+                                        - paragraph [ref=e272]: No grants currently underway.
+                                    - generic [ref=e273]:
+                                        - generic [ref=e275]:
+                                            - heading "Reporting 0" [level=3] [ref=e276]
+                                            - button "What Reporting means" [ref=e277]:
+                                                - img [ref=e278]
+                                        - paragraph [ref=e282]: No grants currently in reporting.
+                            - region "Completion / next cycle" [ref=e283]:
+                                - generic [ref=e285]:
+                                    - generic [ref=e286]:
+                                        - heading "Completion / next cycle" [level=2] [ref=e287]
+                                        - paragraph [ref=e288]: Close out final obligations and decide whether to renew or reapply.
+                                    - generic [ref=e289]: "0"
+                                - generic [ref=e290]:
+                                    - generic [ref=e291]:
+                                        - generic [ref=e293]:
+                                            - heading "Closeout 0" [level=3] [ref=e294]
+                                            - button "What Closeout means" [ref=e295]:
+                                                - img [ref=e296]
+                                        - paragraph [ref=e300]: No grants being closed out.
+                                    - generic [ref=e301]:
+                                        - generic [ref=e303]:
+                                            - heading "Renewal 0" [level=3] [ref=e304]
+                                            - button "What Renewal means" [ref=e305]:
+                                                - img [ref=e306]
+                                        - paragraph [ref=e310]: No grants being renewed or reapplied for.
+                        - button "Archived / declined 0" [ref=e312]:
+                            - generic [ref=e313]:
+                                - img [ref=e314]
+                                - text: Archived / declined
+                            - generic [ref=e316]: "0"
+            - button "Feedback" [active] [ref=e317]:
+                - img [ref=e318]
+                - generic [ref=e320]: Feedback
+    - region "Notifications alt+T"

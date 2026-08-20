@@ -1,0 +1,41 @@
+# Generated / build artifacts
+dist/
+coverage/
+.turbo/
+.wrangler/
+node_modules/
+pnpm-lock.yaml
+
+# TanStack Router generated file
+apps/web/src/routeTree.gen.ts
+
+# Shared knowledge generated files
+packages/shared/src/knowledge/generated/
+
+# Printable lead magnet templates use Markdown fill-in blanks that Prettier
+# rewrites into escaped asterisks.
+apps/site/src/content/lead-magnets/*template.md
+apps/site/src/content/lead-magnets/*worksheet.md
+apps/site/src/content/lead-magnets/*tracker.md
+packages/shared/src/knowledge/marketing/content/lead-magnets/*template.md
+packages/shared/src/knowledge/marketing/content/lead-magnets/*worksheet.md
+packages/shared/src/knowledge/marketing/content/lead-magnets/*tracker.md
+
+# Drizzle migrations (auto-generated SQL)
+packages/db/src/migrations/*.sql
+packages/db/src/migrations/meta/*.json
+
+# Media projects contain generated video/audio assets and renderer-specific HTML.
+media/*/.venv/
+media/*/assets/
+media/*/renders/
+media/*/index.html
+media/*/variants/*.html
+media/*/scripts/*.mjs
+
+# Design handoff and renderer exports are archived source artifacts, not
+# maintained application source.
+docs/Marketing redesign/
+docs/ux impromenets grantpipe/
+docs/youtube/
+output/pdf/

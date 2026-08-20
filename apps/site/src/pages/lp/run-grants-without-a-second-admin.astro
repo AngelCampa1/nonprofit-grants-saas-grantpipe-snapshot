@@ -1,0 +1,122 @@
+---
+import PaidSearchLandingPage from "@/components/paid-search-landing-page.astro";
+import type { PaidLandingPageData } from "@/components/paid-search-landing-page.astro";
+
+const page: PaidLandingPageData = {
+  slug: "run-grants-without-a-second-admin",
+  title: "Run All Your Grants Without a Second Admin | GrantPipe",
+  description:
+    "Manage every grant deadline, report, and restricted fund balance yourself. GrantPipe keeps your whole portfolio in one place so nothing falls through.",
+  kicker: "Grant management for one-person teams",
+  headline: "Run your whole grant portfolio without a second admin.",
+  subhead:
+    "You are the grants team. GrantPipe keeps every deadline, report, and restricted balance in one place. Nothing lives only in your head.",
+  primaryCta: "Start 1-month free trial",
+  exitLeadMagnet: {
+    slug: "grant-reporting-deadlines-tracker",
+    title: "Grant Reporting Deadlines Tracker",
+    description:
+      "Track every funder report due date in one place, with owners and lead time so no deadline slips past a small team.",
+  },
+  trust: "No credit card required. Built for mid-sized nonprofits where one person runs all the grants.",
+  proofCard: {
+    label: "Grants dashboard",
+    status: "On track",
+    rows: [
+      { label: "Open reports", value: "5" },
+      { label: "Awards tracked", value: "12" },
+      { label: "Evidence gaps", value: "1" },
+      { label: "Next deadline", value: "Aug 15" },
+    ],
+    progressLabel: "Portfolio on track",
+    progress: "92%",
+  },
+  painsTitle: "When one person runs every grant, the work lives in their head.",
+  pains: [
+    "Every deadline, rule, and report sits with one person.",
+    "If you take a day off, nothing moves.",
+    "Funder rules are spread across emails and folders.",
+    "Audit prep falls on you alone, all at once.",
+    "There is no backup if you get sick or leave.",
+  ],
+  workflowTitle: "Run the whole portfolio from one place.",
+  workflowSteps: [
+    {
+      icon: "calendar",
+      heading: "See every deadline",
+      copy: "Put all report dates and tasks for each grant in one calendar.",
+    },
+    {
+      icon: "evidence",
+      heading: "Keep proof as you go",
+      copy: "Attach reports, approvals, and files to each grant while you work.",
+    },
+    {
+      icon: "audit",
+      heading: "Stay audit-ready",
+      copy: "Check gaps and due dates before the funder or auditor asks.",
+    },
+  ],
+  featureTitle: "The tools a solo grants manager needs most.",
+  features: [
+    {
+      icon: "calendar",
+      heading: "One deadline list",
+      copy: "Track every funder due date with reminders and grant context.",
+    },
+    {
+      icon: "balance",
+      heading: "Fund balances",
+      copy: "See what is left on each restricted grant without a finance packet.",
+    },
+    {
+      icon: "report",
+      heading: "Handoff-ready records",
+      copy: "Keep each grant's story in one place so anyone can pick it up.",
+    },
+  ],
+  proofTitle: "One person can run many grants when the record does the remembering.",
+  proofPoints: [
+    {
+      value: "1 place",
+      label: "for deadlines, funds, reports, and proof means less lives in your memory.",
+      source: "GrantPipe grants workspace",
+    },
+    {
+      value: "90 days",
+      label: "of forward deadline view gives you time to prepare each report before it is due.",
+      source: "GrantPipe reporting calendar workflow",
+    },
+    {
+      value: "2 CFR 200",
+      label: "sets the federal rules you must document, even on a team of one.",
+      source: "Uniform Guidance, 2 CFR Part 200",
+    },
+  ],
+  trustLabels: ["Built for solo admins", "Restricted fund aware", "Audit-ready evidence"],
+  faqTitle: "Answers for one-person grants teams.",
+  faqs: [
+    {
+      q: "Is setup consultant-led?",
+      a: "No. You can import your active grants, add deadlines, and attach files yourself in the trial. There is no paid setup project.",
+    },
+    {
+      q: "What if I leave or get sick?",
+      a: "Your grants, deadlines, and proof live in one record. Anyone can pick up where you left off.",
+    },
+    {
+      q: "Can I track federal and foundation grants together?",
+      a: "Yes. The same post-award model works for federal, state, and foundation awards.",
+    },
+    {
+      q: "Do I need finance to use it?",
+      a: "No. You can see restricted balances and report status without waiting for a finance packet. It does not replace audit advice.",
+    },
+  ],
+  finalTitle: "Pick one grant. Have its deadlines and proof in place by Friday.",
+  finalBody:
+    "Start with the grant most likely to cause stress. GrantPipe keeps its dates, balances, and files where you and anyone after you can find them.",
+};
+---
+
+<PaidSearchLandingPage page={page} />

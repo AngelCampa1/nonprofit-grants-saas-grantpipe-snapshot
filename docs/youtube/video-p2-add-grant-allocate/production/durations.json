@@ -1,0 +1,47 @@
+{
+  "total": 203.48,
+  "chapters": [
+    {
+      "id": "00",
+      "label": "New money, new rules",
+      "audio": "audio/chapter-00.mp3",
+      "duration": 32,
+      "start": 0
+    },
+    {
+      "id": "01",
+      "label": "Add the grant",
+      "audio": "audio/chapter-01.mp3",
+      "duration": 38,
+      "start": 32
+    },
+    {
+      "id": "02",
+      "label": "Open the grant: the four numbers",
+      "audio": "audio/chapter-02.mp3",
+      "duration": 32.84,
+      "start": 70
+    },
+    {
+      "id": "03",
+      "label": "Split it across funds",
+      "audio": "audio/chapter-03.mp3",
+      "duration": 42.88,
+      "start": 102.84
+    },
+    {
+      "id": "04",
+      "label": "The guardrail",
+      "audio": "audio/chapter-04.mp3",
+      "duration": 32.36,
+      "start": 145.72
+    },
+    {
+      "id": "05",
+      "label": "You're set",
+      "audio": "audio/chapter-05.mp3",
+      "duration": 25.4,
+      "start": 178.08
+    }
+  ]
+}

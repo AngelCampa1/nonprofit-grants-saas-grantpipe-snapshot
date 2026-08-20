@@ -1,0 +1,7 @@
+Before: "We're audit-ready" means a Slack message to Finance asking if Q2 is closed, a phone call to the auditor's office to confirm the start date, and a 4pm meeting where someone says "we'll get back to you on the sub-recipient file."
+
+After: "We're audit-ready" means the binder structure is the same as last year, the documents are linked from the grant record, the prior year findings have a closed-out management response, and the auditor's request list maps cleanly to folders that already exist.
+
+The work between Before and After is not buying software. It is deciding that the trail has to live in one place, and that the place has to be defensible without you in the room.
+
+Every grant management decision since then is downstream of that one.

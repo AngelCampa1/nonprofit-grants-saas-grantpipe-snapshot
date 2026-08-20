@@ -1,0 +1,122 @@
+---
+import PaidSearchLandingPage from "@/components/paid-search-landing-page.astro";
+import type { PaidLandingPageData } from "@/components/paid-search-landing-page.astro";
+
+const page: PaidLandingPageData = {
+  slug: "grant-compliance-software",
+  title: "Grant Compliance Software for Nonprofits | GrantPipe",
+  description:
+    "Track post-award deadlines, evidence, restricted funds, and audit readiness for federal and foundation grants in one GrantPipe workspace.",
+  kicker: "Grant compliance software",
+  headline: "Grant compliance software for deadlines, evidence, and audit readiness.",
+  subhead:
+    "Walk into the audit with every drawdown, deadline, and approval already attached. One workspace for post-award deadlines, restricted fund activity, and the evidence trail.",
+  primaryCta: "Start 1-month free trial",
+  exitLeadMagnet: {
+    slug: "grant-file-audit-checklist",
+    title: "Grant File Audit Checklist",
+    description:
+      "Check every document an audit-ready grant file needs, organized by phase from pre-award through closeout and record retention.",
+  },
+  trust: "No credit card required. Built for mid-sized nonprofits managing restricted grants and funder reporting.",
+  proofCard: {
+    label: "Compliance dashboard",
+    status: "Ready",
+    rows: [
+      { label: "Open reports", value: "7" },
+      { label: "Evidence gaps", value: "2" },
+      { label: "Awards at risk", value: "1" },
+      { label: "Next deadline", value: "Jul 30" },
+    ],
+    progressLabel: "Compliance readiness",
+    progress: "84%",
+  },
+  painsTitle: "Compliance breaks when the deadline list, fund record, and evidence binder are separate.",
+  pains: [
+    "Report deadlines live in calendars with no award context.",
+    "Evidence is collected after the fact instead of during the work.",
+    "Restricted fund status is reviewed separately from compliance status.",
+    "Audit prep depends on rebuilding the story from emails and folders.",
+    "Federal and foundation requirements are tracked in different formats.",
+  ],
+  workflowTitle: "Run post-award compliance as an operating rhythm.",
+  workflowSteps: [
+    {
+      icon: "calendar",
+      heading: "Set obligations",
+      copy: "Capture report deadlines, required evidence, owners, and closeout tasks when the award is created.",
+    },
+    {
+      icon: "evidence",
+      heading: "Collect proof",
+      copy: "Attach documents, approvals, reports, expenses, and notes to the award record while the work happens.",
+    },
+    {
+      icon: "audit",
+      heading: "Review readiness",
+      copy: "See upcoming deadlines, evidence gaps, and audit preparation status before review season starts.",
+    },
+  ],
+  featureTitle: "The post-award controls grants teams need most.",
+  features: [
+    {
+      icon: "calendar",
+      heading: "Reporting calendar",
+      copy: "Track funder deadlines with owners, status, reminders, and linked award context.",
+    },
+    {
+      icon: "evidence",
+      heading: "Evidence binder",
+      copy: "Keep agreements, amendments, approvals, reports, and support attached to the relevant grant.",
+    },
+    {
+      icon: "balance",
+      heading: "Restricted fund view",
+      copy: "Monitor award spend-down and remaining restricted balances without waiting for a manual finance packet.",
+    },
+  ],
+  proofTitle: "Grant compliance is operational work, not a last-minute binder project.",
+  proofPoints: [
+    {
+      value: "2 CFR 200",
+      label: "sets administrative, cost, and audit requirements that federal award recipients need to document.",
+      source: "Uniform Guidance, 2 CFR Part 200",
+    },
+    {
+      value: "90 days",
+      label: "of forward deadline visibility gives teams time to assign owners and collect evidence before reports are due.",
+      source: "GrantPipe reporting calendar workflow",
+    },
+    {
+      value: "1 trail",
+      label: "for deadlines, restricted funds, reports, and evidence makes audit preparation less dependent on memory.",
+      source: "GrantPipe compliance model",
+    },
+  ],
+  trustLabels: ["2 CFR 200 aligned", "Restricted fund aware", "Audit-ready evidence"],
+  faqTitle: "Answers for grants and finance teams.",
+  faqs: [
+    {
+      q: "Is setup consultant-led?",
+      a: "No. The trial is designed for a team to import active awards, add upcoming deadlines, and attach evidence without a paid implementation project.",
+    },
+    {
+      q: "Does GrantPipe cover federal grant compliance?",
+      a: "GrantPipe helps teams organize federal award deadlines, evidence, restricted funds, reporting status, and audit readiness. It does not replace legal or audit advice.",
+    },
+    {
+      q: "Can finance and programs use the same record?",
+      a: "Yes. Grants, restricted funds, reports, documents, and activity history live together so finance and program teams are not reconciling separate trackers.",
+    },
+    {
+      q: "Can we track foundation grants too?",
+      a: "Yes. The same post-award model works for foundation, government, and restricted institutional awards.",
+    },
+  ],
+  finalTitle: "Pick one award. Have its deadlines, evidence, and approvals attached by Friday.",
+  finalBody:
+    "Start with the grant most likely to create audit pressure. GrantPipe keeps the deadlines, restricted balances, and closeout evidence visible to the whole team.",
+};
+---
+
+<PaidSearchLandingPage page={page} />

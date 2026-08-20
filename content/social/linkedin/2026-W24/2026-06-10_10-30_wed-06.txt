@@ -1,0 +1,9 @@
+Cost reimbursement creates a cash timing problem.
+
+The organization spends first, documents the expense, submits the request, then waits for payment.
+
+Advance drawdowns are different. Under 2 CFR 200.305, federal cash advances are tied to immediate need, and excess cash creates interest obligations.
+
+That means the grant file should track more than spend-down.
+
+It should also track request dates, payment dates, and aging reimbursement status.

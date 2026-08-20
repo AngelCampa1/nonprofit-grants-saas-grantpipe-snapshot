@@ -1,0 +1,9 @@
+FFATA reporting is easy to miss because it sits beside, not inside, the usual monitoring routine.
+
+If you are the prime recipient and obligate a federal subaward of $25,000 or more, the report is due through SAM.gov by the end of the month after obligation.
+
+The record needs the FAIN, subrecipient UEI, obligation amount, place of performance, and other required fields.
+
+That is separate from 2 CFR 200.332 monitoring.
+
+Same subaward. Different obligation.

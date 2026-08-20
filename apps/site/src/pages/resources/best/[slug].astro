@@ -1,0 +1,160 @@
+---
+import { getPublicApiBaseUrl } from "@grantpipe/ui/site/lib/public-api-url"
+import "../../../styles/global.css"
+import { getCollection, render } from "astro:content"
+import { getContentEntrySlug } from "@/lib/content-entry-slug"
+import ListicleLayout from "@grantpipe/ui/site/layouts/listicle-layout.astro"
+import { LeadMagnetSignup } from "@grantpipe/ui/site/components/lead-magnet-signup"
+import FaqSection from "@grantpipe/ui/site/components/faq-section.astro"
+import RelatedPages from "@grantpipe/ui/site/components/related-pages.astro"
+import DataTableBlock from "@grantpipe/ui/site/seo/data-table-block.astro"
+import AnswerBlock from "@grantpipe/ui/site/seo/answer-block.astro"
+import StatisticCitation from "@grantpipe/ui/site/seo/statistic-citation.astro"
+import { siteConfig, shouldShowMobileStickyCta } from "@/config/site"
+import { buildListicleBreadcrumbs } from "@/lib/breadcrumbs"
+import { buildContentMap, orderListicleToolsGrantPipeFirst, padToolIndex } from "@/lib/page-helpers"
+import { resolveLeadMagnetOffer, resolveExitLeadMagnetOffer } from "@/lib/lead-magnet-routing"
+import { resolveRelatedPageLinks } from "@grantpipe/ui/site/lib/related-page-resolver"
+import { resolvePricingCopyTokens, resolvePricingCopyTree } from "@/lib/pricing-copy-tokens"
+export async function getStaticPaths() {
+  const entries = await getCollection("listicles")
+  return entries.map((entry) => ({
+    params: { slug: getContentEntrySlug(entry) },
+    props: { entry },
+  }))
+}
+
+const { entry } = Astro.props
+const { Content } = await render(entry)
+const resolvedEntryData = resolvePricingCopyTree(entry.data)
+const { title, description, seoTitle, seoDescription, bluf, buyerStage, publishedAt, updatedAt, lastReviewedAt, verifiedAt, tools, faqs, relatedPages, tableData, answers, pricingStats, sourceUrls } = resolvedEntryData
+const canonicalPath = `/resources/best/${getContentEntrySlug(entry)}`
+
+const [alternatives, comparisons, pricingBreakdowns, listicles, guides, statePages, cityPages, verticalPages, leadMagnets, faqHubs, benchmarks] = await Promise.all([
+  getCollection("alternatives"),
+  getCollection("comparisons"),
+  getCollection("pricing-breakdowns"),
+  getCollection("listicles"),
+  getCollection("guides"),
+  getCollection("state-pages"),
+  getCollection("city-pages"),
+  getCollection("vertical-pages"),
+  getCollection("lead-magnets"),
+  getCollection("faq-hubs"),
+  getCollection("benchmarks"),
+])
+const contentMap = buildContentMap({ alternatives, comparisons, pricingBreakdowns, listicles, guides, statePages, cityPages, verticalPages, leadMagnets, faqHubs, benchmarks })
+
+const breadcrumbs = buildListicleBreadcrumbs(title, canonicalPath)
+const relatedPageLinks = resolveRelatedPageLinks(relatedPages, contentMap)
+const orderedTools = orderListicleToolsGrantPipeFirst(tools)
+const leadMagnet = resolveLeadMagnetOffer(siteConfig, leadMagnets, {
+  family: "listicle",
+  explicitSlug: entry.data.leadMagnetSlug,
+  relatedPages,
+})
+const exitLeadMagnet = resolveExitLeadMagnetOffer(siteConfig, leadMagnets, {
+  family: "listicle",
+  exitSlug: entry.data.exitMagnetSlug,
+  leadMagnetSlug: entry.data.leadMagnetSlug,
+  relatedPages,
+})
+const publicApiUrl = getPublicApiBaseUrl()
+
+---
+
+<ListicleLayout
+  title={title}
+  description={description}
+  seoTitle={seoTitle}
+  seoDescription={seoDescription}
+  bluf={bluf}
+  buyerStage={buyerStage}
+  publishedAt={publishedAt}
+  updatedAt={updatedAt}
+  lastReviewedAt={lastReviewedAt}
+  verifiedAt={verifiedAt}
+  canonicalPath={canonicalPath}
+  config={siteConfig}
+  breadcrumbs={breadcrumbs}
+  tools={orderedTools}
+  answers={answers?.map(a => ({ question: a.q, answer: a.a }))}
+  sourceUrls={sourceUrls}
+  leadMagnet={exitLeadMagnet}
+  sidebarLeadMagnet={leadMagnet}
+  showStickyMobileCta={shouldShowMobileStickyCta(canonicalPath)}
+>
+  {orderedTools.map((tool, i) => (
+    <section class="mb-12">
+      <div class="flex items-start gap-4 mb-3">
+        <span class="font-mono text-4xl font-bold text-neutral-200 leading-none select-none shrink-0">
+          {padToolIndex(i)}
+        </span>
+        <div class="pt-1">
+          {tool.name === "GrantPipe" && (
+            <p class="gp-proof-label mb-1">GrantPipe fit</p>
+          )}
+          <h2 class="font-heading text-2xl font-bold text-brand-text leading-tight">{tool.name}</h2>
+          {tool.name === "GrantPipe" && (
+            <p class="text-sm text-brand-muted mt-1">Built for grant-funded nonprofits comparing donor, grant, fund, and compliance work in one system.</p>
+          )}
+        </div>
+      </div>
+      <p class="text-neutral-600 mb-4 ml-[3.5rem]">{tool.summary}</p>
+      <div class="grid md:grid-cols-2 gap-4 mb-4 ml-[3.5rem]">
+        <div>
+          <h3 class="font-semibold text-success-700 mb-2">Pros</h3>
+          <ul class="space-y-1">{tool.pros.map((p) => <li class="text-sm">&#10003; {p}</li>)}</ul>
+        </div>
+        <div>
+          <h3 class="font-semibold text-error-600 mb-2">Cons</h3>
+          <ul class="space-y-1">{tool.cons.map((c) => <li class="text-sm">&times; {c}</li>)}</ul>
+        </div>
+      </div>
+        <p class="text-sm ml-[3.5rem]"><strong>Pricing:</strong> {resolvePricingCopyTokens(tool.pricing)}</p>
+      <p class="text-sm mt-1 ml-[3.5rem]"><strong>Verdict:</strong> {tool.verdict}</p>
+    </section>
+  ))}
+
+  <Content />
+
+  <LeadMagnetSignup
+    client:load
+    apiUrl={publicApiUrl}
+    sourcePage={canonicalPath}
+    leadMagnet={leadMagnet}
+    privacyNote="We'll email the resource and a short follow-up sequence. Unsubscribe any time."
+    trialCtaHref={siteConfig.funnel.bofu.ctaTarget}
+    trialCtaText={siteConfig.funnel.bofu.ctaText}
+  />
+
+  {pricingStats?.map((s) => (
+    <StatisticCitation stat={s.stat} source={s.source} sourceUrl={s.sourceUrl} />
+  ))}
+    {tableData && (
+      <DataTableBlock
+        name={tableData.name}
+        description={tableData.description}
+        columns={tableData.columns}
+        rows={tableData.rows}
+      />
+    )}
+  {answers?.map((a) => (
+    <AnswerBlock question={a.q} answer={a.a} />
+  ))}
+
+  <FaqSection
+    faqs={faqs}
+    heading="Frequently Asked Questions"
+    showBottomCta={false}
+    ctaVariant="compact"
+  />
+
+  {relatedPages.length > 0 && (
+    <RelatedPages
+      pages={relatedPageLinks}
+      stage={buyerStage}
+      variant="editorial"
+    />
+  )}
+</ListicleLayout>

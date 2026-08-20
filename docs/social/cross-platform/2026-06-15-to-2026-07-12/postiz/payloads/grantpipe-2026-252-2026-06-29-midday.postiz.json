@@ -1,0 +1,52 @@
+{
+  "type": "schedule",
+  "date": "2026-06-29T18:15:00.000Z",
+  "shortLink": false,
+  "tags": [],
+  "posts": [
+    {
+      "integration": {
+        "id": "cmorp6oby03pgmq0ye7e3n7j0"
+      },
+      "value": [
+        {
+          "content": "Keep award renewal plain.\n\nShow old budget. Show new ask.\n\nThen name who owns the next step.",
+          "image": [],
+          "delay": 0
+        }
+      ],
+      "settings": {
+        "__type": "linkedin-page",
+        "post_as_images_carousel": false
+      }
+    },
+    {
+      "integration": {
+        "id": "cmq5aut9y0087mv0yt9otastk"
+      },
+      "value": [
+        {
+          "content": "Keep award renewal simple. Show old budget. Show new ask. Name the next owner.",
+          "image": [],
+          "delay": 0
+        }
+      ],
+      "settings": {
+        "who_can_reply_post": "everyone"
+      }
+    },
+    {
+      "integration": {
+        "id": "cmq5b15k300k4qp0yypplg57c"
+      },
+      "value": [
+        {
+          "content": "For award renewal, keep the file plain. Show old budget. Show new ask. Name the next step.",
+          "image": [],
+          "delay": 0
+        }
+      ],
+      "settings": {}
+    }
+  ]
+}

@@ -1,0 +1,54 @@
+﻿---
+import "../../styles/global.css"
+import { getCollection } from "astro:content"
+import { getContentEntrySlug } from "@/lib/content-entry-slug"
+import CategoryHub from "@grantpipe/ui/site/hubs/category-hub.astro"
+import { shouldShowMobileStickyCta, siteConfig } from "@/config/site"
+import { sortByUpdatedAtDesc, mapToContentItems } from "@grantpipe/ui/site/lib/collections"
+import { resolveExitLeadMagnetOffer } from "@/lib/lead-magnet-routing"
+import PathwaySections from "@/components/site/pathway-sections.astro"
+import { buildIntegrationPathSections } from "@/lib/hub-path-sections"
+
+const leadMagnets = await getCollection("lead-magnets")
+const exitLeadMagnet = resolveExitLeadMagnetOffer(siteConfig, leadMagnets, { family: "solution" })
+const entries = await getCollection("integrations")
+const sorted = sortByUpdatedAtDesc(entries)
+const items = mapToContentItems(sorted, (e) => `/integrations/${getContentEntrySlug(e)}`)
+const integrationPathSections = buildIntegrationPathSections(items)
+const page = {
+  data: items,
+  currentPage: 1,
+  lastPage: 1,
+  url: { prev: undefined, next: undefined },
+}
+---
+
+<CategoryHub
+  config={siteConfig}
+  title="Integrations"
+  description="GrantPipe connects to the email, payments, automation, and donor-platform tools mid-sized nonprofits already use."
+  showStickyMobileCta={shouldShowMobileStickyCta(Astro.url.pathname)}
+  variant="editorial"
+  items={items}
+  page={page}
+  basePath="/integrations"
+  breadcrumbs={[
+    { label: "Home", href: "/" },
+    { label: "Integrations", href: "/integrations" },
+  ]}
+  emptyStateHeading="No integrations match this view yet."
+  emptyStateBody="See the features and product pages for the donor, email, payment, and automation tools GrantPipe currently supports."
+  leadMagnet={exitLeadMagnet}
+  renderListing={false}
+>
+  <div slot="intro" class="space-y-8">
+    <section class="gp-resource-decision-panel editorial-panel p-6">
+      <p class="gp-proof-label">Decision path</p>
+      <h2 class="gp-link-card-title">Start with the tool you use.</h2>
+      <p class="gp-link-card-copy mt-3">
+        Pick gifts, email, or automation. Then open the link that fits.
+      </p>
+    </section>
+    <PathwaySections sections={integrationPathSections} ariaLabel="Integration paths" />
+  </div>
+</CategoryHub>

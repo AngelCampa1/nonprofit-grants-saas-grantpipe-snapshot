@@ -1,0 +1,60 @@
+{
+  "slug": "single-audit",
+  "youtubeId": "AqnkoZGbJY0",
+  "title": "The Single Audit Explained: Who Needs One & Why (2024 Rules)",
+  "shortTitle": "Single Audit Explained",
+  "description": "A plain explanation of what a single audit is, who needs one after the 2024 threshold change, and what auditors test.",
+  "category": "educational",
+  "pillar": "Compliance",
+  "targetKeyword": "single audit",
+  "runtimeSeconds": 682,
+  "publishedAt": "2026-06-09",
+  "chapters": [
+    {
+      "label": "The number that changed: $750k to $1M",
+      "seconds": 0
+    },
+    {
+      "label": "What a single audit actually is",
+      "seconds": 52
+    },
+    {
+      "label": "Who needs one (and the 2024 threshold)",
+      "seconds": 128
+    },
+    {
+      "label": "The word that trips everyone up: \"expended\"",
+      "seconds": 201
+    },
+    {
+      "label": "Single audit vs. program-specific audit",
+      "seconds": 278
+    },
+    {
+      "label": "What the auditor actually tests",
+      "seconds": 328
+    },
+    {
+      "label": "Findings, questioned costs, and corrective action",
+      "seconds": 402
+    },
+    {
+      "label": "How and where you file it",
+      "seconds": 470
+    },
+    {
+      "label": "Where preparing for this breaks down",
+      "seconds": 531
+    },
+    {
+      "label": "Free checklist + what's next",
+      "seconds": 600
+    }
+  ],
+  "targetPages": [
+    "/grant-compliance-software"
+  ],
+  "url": "https://www.youtube.com/watch?v=AqnkoZGbJY0",
+  "embedUrl": "https://www.youtube-nocookie.com/embed/AqnkoZGbJY0?rel=0&playsinline=1",
+  "thumbnailUrl": "https://i.ytimg.com/vi/AqnkoZGbJY0/hqdefault.jpg"
+}

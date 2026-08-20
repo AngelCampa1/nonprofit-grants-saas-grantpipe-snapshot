@@ -1,0 +1,207 @@
+---
+import { getPublicApiBaseUrl } from "../lib/public-api-url"
+import BaseLayout from "./base-layout.astro"
+import BreadcrumbNav from "../components/breadcrumb-nav.astro"
+import BlufBlock from "../seo/bluf-block.astro"
+import SchemaMarkup from "../seo/schema-markup.astro"
+import { buildArticleSchema, mergeFaqSources } from "../lib/schema-builders"
+import { buildGraph, withId } from "../lib/schema-graph"
+import { resolveSchemaImage, buyerStageToSection, ensureTrailingSlash } from "../lib/meta"
+import SiteHeader from "../components/site-header.astro"
+import ArticleMeta from "../components/article-meta.astro"
+import SiteFooter from "../components/site-footer.astro"
+import SidebarCta from "../components/sidebar-cta.astro"
+import { ExitIntentPopup } from "../components/exit-intent-popup"
+import { resolveExitPopupProps } from "../lib/exit-popup-props"
+import { resolveLoginHref } from "../lib/resolve-login-href"
+import { buildBottomCtaProps, buildSidebarCtaProps } from "../lib/sidebar-cta-utils"
+import type { SiteConfig, BuyerStage, FaqItem, LeadMagnetOffer } from "../types"
+
+interface Props {
+  title: string
+  description: string
+  seoTitle?: string
+  seoDescription?: string
+  bluf: string
+  buyerStage?: BuyerStage
+  publishedAt: string
+  updatedAt: string
+  lastReviewedAt?: string
+  verifiedAt?: string
+  canonicalPath: string
+  config: SiteConfig
+  breadcrumbs: { label: string; href: string }[]
+  schemas?: Record<string, unknown>[]
+  ogImage?: string
+  noindex?: boolean
+  answers?: { question: string; answer: string }[]
+  tags?: string[]
+  faqs?: FaqItem[]
+  sourceUrls?: string[]
+  leadMagnet?: LeadMagnetOffer
+  /** Whether to render the sticky mobile CTA bar on this page. */
+  showStickyMobileCta?: boolean
+}
+const { title, description, seoTitle, seoDescription, bluf, buyerStage, publishedAt, updatedAt, lastReviewedAt, verifiedAt, canonicalPath, config, breadcrumbs, schemas = [], ogImage, noindex, answers = [], tags, faqs = [], sourceUrls = [], leadMagnet, showStickyMobileCta = false } = Astro.props
+const exitPopupProps = config.exitPopup?.enabled !== false ? resolveExitPopupProps(config) : undefined
+const sidebarCtaProps = buyerStage ? buildSidebarCtaProps(config, buyerStage) : undefined
+const bottomCtaProps = buildBottomCtaProps(config, buyerStage ?? "bofu", "pricing-breakdown")
+const canonicalUrl = ensureTrailingSlash(`https://${config.domain}${canonicalPath}`)
+
+const orgId = `https://${config.domain}/#organization`
+const articleSchema = buildArticleSchema({
+  headline: title,
+  description,
+  datePublished: publishedAt,
+  dateModified: updatedAt,
+  lastReviewed: lastReviewedAt ?? updatedAt,
+  publisher: { "@id": orgId },
+  author: config.author,
+  image: resolveSchemaImage(config.domain, ogImage, config.defaultOgImage),
+  mainEntityOfPage: canonicalUrl,
+  speakableCssSelectors: [".bluf-block", ".faq-answer", ".answer-block-answer"],
+})
+const faqSchema = mergeFaqSources(faqs, answers)
+const articleId = `${canonicalUrl}#article`
+const graph = buildGraph([
+  withId(articleSchema, articleId),
+  ...schemas,
+  ...(faqSchema ? [faqSchema] : []),
+])
+const publicApiUrl = getPublicApiBaseUrl()
+
+---
+
+<BaseLayout
+  title={seoTitle ?? `${title} | ${config.name}`}
+  description={seoDescription ?? description}
+  canonicalUrl={canonicalUrl}
+  siteName={config.name}
+  publishedAt={publishedAt}
+  updatedAt={updatedAt}
+  twitterSite={config.social?.twitterHandle}
+  articleAuthor={config.author?.name}
+  themeColor={config.theme.primary}
+  ogImage={ogImage}
+  noindex={noindex}
+  theme={config.theme}
+  fonts={config.theme.fonts}
+  preserveMetaTagCopy={seoTitle !== undefined || seoDescription !== undefined || config.preserveMetaTagCopy}
+  appleTouchIcon={config.appleTouchIcon}
+  rssUrl="/rss.xml"
+  siteUrl={`https://${config.domain}`}
+  siteLogo={config.logo?.light ? `https://${config.domain}${config.logo.light}` : undefined}
+  siteFounder={config.author}
+  siteSameAs={config.sameAs}
+  analyticsEnabled={config.analytics?.enabled ?? true}
+  enableScrollReveal={false}
+  articleSection={buyerStage ? buyerStageToSection(buyerStage) : undefined}
+  articleTags={tags}
+  showStickyMobileCta={showStickyMobileCta}
+>
+  <SiteHeader
+    slot="header"
+    siteName={config.name}
+    navItems={config.nav?.items}
+    ctaText={config.funnel.bofu.ctaText}
+    ctaHref={config.funnel.bofu.ctaTarget}
+    loginHref={config.appLoginUrl ?? resolveLoginHref(config.funnel.bofu.ctaTarget)}
+    ctaVariant="primary"
+    ctaPill
+    currentPath={Astro.url.pathname}
+    logoLight={config.logo?.light}
+  />
+  <div
+    data-editorial-layout
+    data-seo-template-shell
+    class:list={[
+      "article-page-shell editorial-shell mx-auto px-4 py-[var(--section-py)]",
+      buyerStage ? "max-w-6xl" : "max-w-5xl",
+    ]}
+  >
+    <div data-editorial-article class="article-page-intro border-b border-[var(--gp-ink-200)] pb-8">
+      <BreadcrumbNav items={breadcrumbs} siteUrl={`https://${config.domain}`} />
+      <div class="mt-4 max-w-[var(--content-measure-wide)]">
+        <h1 class="mb-4 font-heading text-[length:var(--text-editorial-title)] font-bold leading-[1.04] text-brand-text">{title}</h1>
+        <hr class="gp-hairline--accent mb-4" />
+        <ArticleMeta
+          publishedAt={publishedAt}
+          updatedAt={updatedAt}
+          lastReviewedAt={lastReviewedAt}
+          verifiedAt={verifiedAt}
+          sourceUrls={sourceUrls}
+        />
+      </div>
+    </div>
+    <div
+      class:list={[
+        "article-page-grid mt-8",
+        buyerStage && "lg:grid lg:grid-cols-[minmax(0,1fr)_300px] lg:gap-12",
+      ]}
+    >
+      <article class="article-page-body min-w-0 max-w-[var(--content-measure-wide)]">
+        <BlufBlock text={bluf} />
+        <div class="article-prose prose prose-lg max-w-none prose-p:max-w-[var(--content-measure)] prose-li:max-w-[var(--content-measure)]">
+          <slot />
+        </div>
+      </article>
+      {sidebarCtaProps && (
+        <aside data-editorial-sidebar data-seo-sidebar-cta class="article-page-sidebar mt-8 lg:mt-0" aria-label="Get started">
+          <SidebarCta {...sidebarCtaProps} />
+        </aside>
+      )}
+    </div>
+    <section data-seo-bottom-cta class="gp-seo-bottom-cta mt-10">
+      <p class="gp-kicker--accent">{bottomCtaProps.kicker}</p>
+      <h2>{bottomCtaProps.heading}</h2>
+      <p>{bottomCtaProps.subtext}</p>
+      <div class="gp-shared-cta-actions">
+        <a
+          href={bottomCtaProps.primaryCta.target}
+          class="btn-primary no-underline"
+          data-cta-button=""
+          data-cta-page-family={bottomCtaProps.analytics.pageFamily}
+          data-cta-buyer-stage={bottomCtaProps.analytics.buyerStage}
+          data-cta-placement={bottomCtaProps.analytics.placement}
+          data-cta-intent={bottomCtaProps.analytics.intent}
+          data-cta-target={bottomCtaProps.primaryCta.target}
+        >{bottomCtaProps.primaryCta.text}</a>
+        {bottomCtaProps.secondaryCta && bottomCtaProps.secondaryAnalytics && (
+          <a
+            href={bottomCtaProps.secondaryCta.target}
+            class="gp-mkt-btn ghost no-underline"
+            data-cta-button=""
+            data-cta-page-family={bottomCtaProps.secondaryAnalytics.pageFamily}
+            data-cta-buyer-stage={bottomCtaProps.secondaryAnalytics.buyerStage}
+            data-cta-placement={bottomCtaProps.secondaryAnalytics.placement}
+            data-cta-intent={bottomCtaProps.secondaryAnalytics.intent}
+            data-cta-target={bottomCtaProps.secondaryCta.target}
+          >
+            {bottomCtaProps.secondaryCta.text}
+          </a>
+        )}
+      </div>
+    </section>
+  </div>
+  <slot name="sticky-cta" />
+  <SchemaMarkup graph={graph} />
+  {exitPopupProps && (
+    <ExitIntentPopup
+      client:load
+      apiUrl={publicApiUrl}
+      leadMagnet={leadMagnet}
+      {...exitPopupProps}
+    />
+  )}
+  <SiteFooter
+    slot="footer"
+    siteName={config.name}
+    tagline={config.tagline}
+    linkGroups={config.footer?.linkGroups}
+    legalLinks={config.footer?.legalLinks}
+    contactEmail={config.contactEmail}
+    logoLight={config.logo?.light}
+    captureVariant="none"
+    currentPath={Astro.url.pathname}
+  />
+</BaseLayout>

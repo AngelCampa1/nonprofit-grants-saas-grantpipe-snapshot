@@ -1,0 +1,2088 @@
+{
+  "generatedAt": "2026-04-30",
+  "totalCount": 100,
+  "buckets": {
+    "A_filing_forms": [
+      {
+        "slug": "texas-form-802-periodic-report-guide",
+        "collection": "guides",
+        "state": "Texas",
+        "stateCode": "TX",
+        "funnel": "mofu",
+        "targetKeyword": "texas form 802 nonprofit periodic report",
+        "monthlyVolume": 20,
+        "difficulty": 20,
+        "intent": "informational/transactional \u2014 operator searching for filing instructions",
+        "formName": "Form 802 Periodic Report",
+        "agency": "Texas Secretary of State",
+        "relatedPages": [
+          "/nonprofit-software/texas",
+          "/resources/guides/texas-nonprofit-startup-guide",
+          "/resources/guides/nonprofit-audit-requirements-by-state",
+          "/resources/guides/grant-management-software-for-nonprofits",
+          "/resources/best-grant-management-software"
+        ],
+        "rationale": "Long-tail filing form keyword for Texas; high commercial intent (operator about to file). Low difficulty, decisive purchase signal."
+      },
+      {
+        "slug": "california-si-100-statement-of-information-guide",
+        "collection": "guides",
+        "state": "California",
+        "stateCode": "CA",
+        "funnel": "mofu",
+        "targetKeyword": "california form si-100 statement of information",
+        "monthlyVolume": 20,
+        "difficulty": 20,
+        "intent": "informational/transactional \u2014 operator searching for filing instructions",
+        "formName": "Form SI-100",
+        "agency": "California Secretary of State",
+        "relatedPages": [
+          "/nonprofit-software/california",
+          "/resources/guides/california-nonprofit-startup-guide",
+          "/resources/guides/nonprofit-audit-requirements-by-state",
+          "/resources/guides/grant-management-software-for-nonprofits",
+          "/resources/best-grant-management-software"
+        ],
+        "rationale": "Long-tail filing form keyword for California; high commercial intent (operator about to file). Low difficulty, decisive purchase signal."
+      },
+      {
+        "slug": "new-york-char410-registration-guide",
+        "collection": "guides",
+        "state": "New York",
+        "stateCode": "NY",
+        "funnel": "mofu",
+        "targetKeyword": "new york char410 filing",
+        "monthlyVolume": 20,
+        "difficulty": 20,
+        "intent": "informational/transactional \u2014 operator searching for filing instructions",
+        "formName": "CHAR410",
+        "agency": "NY Charities Bureau (Office of the Attorney General)",
+        "relatedPages": [
+          "/nonprofit-software/new-york",
+          "/resources/guides/new-york-nonprofit-startup-guide",
+          "/resources/guides/nonprofit-audit-requirements-by-state",
+          "/resources/guides/grant-management-software-for-nonprofits",
+          "/resources/best-grant-management-software"
+        ],
+        "rationale": "Long-tail filing form keyword for New York; high commercial intent (operator about to file). Low difficulty, decisive purchase signal."
+      },
+      {
+        "slug": "florida-dr-5-sales-tax-exemption-guide",
+        "collection": "guides",
+        "state": "Florida",
+        "stateCode": "FL",
+        "funnel": "mofu",
+        "targetKeyword": "florida form dr-5 nonprofit",
+        "monthlyVolume": 20,
+        "difficulty": 20,
+        "intent": "informational/transactional \u2014 operator searching for filing instructions",
+        "formName": "Form DR-5",
+        "agency": "Florida Department of Revenue",
+        "relatedPages": [
+          "/nonprofit-software/florida",
+          "/resources/guides/florida-nonprofit-startup-guide",
+          "/resources/guides/nonprofit-audit-requirements-by-state",
+          "/resources/guides/grant-management-software-for-nonprofits",
+          "/resources/best-grant-management-software"
+        ],
+        "rationale": "Long-tail filing form keyword for Florida; high commercial intent (operator about to file). Low difficulty, decisive purchase signal."
+      },
+      {
+        "slug": "illinois-cor-pmt-1-charity-bureau-fee-guide",
+        "collection": "guides",
+        "state": "Illinois",
+        "stateCode": "IL",
+        "funnel": "mofu",
+        "targetKeyword": "illinois cor pmt-1 filing",
+        "monthlyVolume": 20,
+        "difficulty": 20,
+        "intent": "informational/transactional \u2014 operator searching for filing instructions",
+        "formName": "COR PMT-1",
+        "agency": "Illinois Attorney General Charity Bureau",
+        "relatedPages": [
+          "/nonprofit-software/illinois",
+          "/resources/guides/illinois-nonprofit-startup-guide",
+          "/resources/guides/nonprofit-audit-requirements-by-state",
+          "/resources/guides/grant-management-software-for-nonprofits",
+          "/resources/best-grant-management-software"
+        ],
+        "rationale": "Long-tail filing form keyword for Illinois; high commercial intent (operator about to file). Low difficulty, decisive purchase signal."
+      },
+      {
+        "slug": "alabama-charitable-registration-guide",
+        "collection": "guides",
+        "state": "Alabama",
+        "stateCode": "AL",
+        "funnel": "mofu",
+        "targetKeyword": "alabama charitable registration filing",
+        "monthlyVolume": 20,
+        "difficulty": 20,
+        "intent": "informational/transactional \u2014 operator searching for filing instructions",
+        "formName": "Charitable Organization Registration Statement",
+        "agency": "Alabama Office of the Attorney General",
+        "relatedPages": [
+          "/nonprofit-software/alabama",
+          "/resources/guides/alabama-nonprofit-startup-guide",
+          "/resources/guides/nonprofit-audit-requirements-by-state",
+          "/resources/guides/grant-management-software-for-nonprofits",
+          "/resources/best-grant-management-software"
+        ],
+        "rationale": "Long-tail filing form keyword for Alabama; high commercial intent (operator about to file). Low difficulty, decisive purchase signal."
+      },
+      {
+        "slug": "alaska-charitable-registration-guide",
+        "collection": "guides",
+        "state": "Alaska",
+        "stateCode": "AK",
+        "funnel": "mofu",
+        "targetKeyword": "alaska charitable registration filing",
+        "monthlyVolume": 20,
+        "difficulty": 20,
+        "intent": "informational/transactional \u2014 operator searching for filing instructions",
+        "formName": "Form 08-4351 (Charitable Organization Registration)",
+        "agency": "Alaska Department of Law",
+        "relatedPages": [
+          "/nonprofit-software/alaska",
+          "/resources/guides/alaska-nonprofit-startup-guide",
+          "/resources/guides/nonprofit-audit-requirements-by-state",
+          "/resources/guides/grant-management-software-for-nonprofits",
+          "/resources/best-grant-management-software"
+        ],
+        "rationale": "Long-tail filing form keyword for Alaska; high commercial intent (operator about to file). Low difficulty, decisive purchase signal."
+      },
+      {
+        "slug": "arkansas-charitable-registration-guide",
+        "collection": "guides",
+        "state": "Arkansas",
+        "stateCode": "AR",
+        "funnel": "mofu",
+        "targetKeyword": "arkansas charitable registration filing",
+        "monthlyVolume": 20,
+        "difficulty": 20,
+        "intent": "informational/transactional \u2014 operator searching for filing instructions",
+        "formName": "Charitable Organization Registration",
+        "agency": "Arkansas Secretary of State",
+        "relatedPages": [
+          "/nonprofit-software/arkansas",
+          "/resources/guides/arkansas-nonprofit-startup-guide",
+          "/resources/guides/nonprofit-audit-requirements-by-state",
+          "/resources/guides/grant-management-software-for-nonprofits",
+          "/resources/best-grant-management-software"
+        ],
+        "rationale": "Long-tail filing form keyword for Arkansas; high commercial intent (operator about to file). Low difficulty, decisive purchase signal."
+      },
+      {
+        "slug": "colorado-charitable-registration-guide",
+        "collection": "guides",
+        "state": "Colorado",
+        "stateCode": "CO",
+        "funnel": "mofu",
+        "targetKeyword": "colorado charitable registration filing",
+        "monthlyVolume": 20,
+        "difficulty": 20,
+        "intent": "informational/transactional \u2014 operator searching for filing instructions",
+        "formName": "Charitable Solicitations Registration",
+        "agency": "Colorado Secretary of State",
+        "relatedPages": [
+          "/nonprofit-software/colorado",
+          "/resources/guides/colorado-nonprofit-startup-guide",
+          "/resources/guides/nonprofit-audit-requirements-by-state",
+          "/resources/guides/grant-management-software-for-nonprofits",
+          "/resources/best-grant-management-software"
+        ],
+        "rationale": "Long-tail filing form keyword for Colorado; high commercial intent (operator about to file). Low difficulty, decisive purchase signal."
+      },
+      {
+        "slug": "connecticut-charitable-registration-guide",
+        "collection": "guides",
+        "state": "Connecticut",
+        "stateCode": "CT",
+        "funnel": "mofu",
+        "targetKeyword": "connecticut charitable registration filing",
+        "monthlyVolume": 20,
+        "difficulty": 20,
+        "intent": "informational/transactional \u2014 operator searching for filing instructions",
+        "formName": "Form CPC-54 (Charitable Organization Registration)",
+        "agency": "CT Department of Consumer Protection",
+        "relatedPages": [
+          "/nonprofit-software/connecticut",
+          "/resources/guides/connecticut-nonprofit-startup-guide",
+          "/resources/guides/nonprofit-audit-requirements-by-state",
+          "/resources/guides/grant-management-software-for-nonprofits",
+          "/resources/best-grant-management-software"
+        ],
+        "rationale": "Long-tail filing form keyword for Connecticut; high commercial intent (operator about to file). Low difficulty, decisive purchase signal."
+      },
+      {
+        "slug": "hawaii-charitable-registration-guide",
+        "collection": "guides",
+        "state": "Hawaii",
+        "stateCode": "HI",
+        "funnel": "mofu",
+        "targetKeyword": "hawaii charitable solicitation registration",
+        "monthlyVolume": 10,
+        "difficulty": 6,
+        "intent": "informational/transactional \u2014 operator searching for filing instructions",
+        "formName": "Charity Registration",
+        "agency": "Hawaii Attorney General Tax & Charities Division",
+        "relatedPages": [
+          "/nonprofit-software/hawaii",
+          "/resources/guides/hawaii-nonprofit-startup-guide",
+          "/resources/guides/nonprofit-audit-requirements-by-state",
+          "/resources/guides/grant-management-software-for-nonprofits",
+          "/resources/best-grant-management-software"
+        ],
+        "rationale": "Long-tail filing form keyword for Hawaii; high commercial intent (operator about to file). Low difficulty, decisive purchase signal."
+      },
+      {
+        "slug": "iowa-charitable-registration-guide",
+        "collection": "guides",
+        "state": "Iowa",
+        "stateCode": "IA",
+        "funnel": "mofu",
+        "targetKeyword": "iowa charitable registration",
+        "monthlyVolume": 10,
+        "difficulty": 20,
+        "intent": "informational/transactional \u2014 operator searching for filing instructions",
+        "formName": "Charitable Solicitation Registration",
+        "agency": "Iowa Secretary of State",
+        "relatedPages": [
+          "/nonprofit-software/iowa",
+          "/resources/guides/iowa-nonprofit-startup-guide",
+          "/resources/guides/nonprofit-audit-requirements-by-state",
+          "/resources/guides/grant-management-software-for-nonprofits",
+          "/resources/best-grant-management-software"
+        ],
+        "rationale": "Long-tail filing form keyword for Iowa; high commercial intent (operator about to file). Low difficulty, decisive purchase signal."
+      },
+      {
+        "slug": "kansas-charitable-registration-guide",
+        "collection": "guides",
+        "state": "Kansas",
+        "stateCode": "KS",
+        "funnel": "mofu",
+        "targetKeyword": "kansas charitable solicitation registration",
+        "monthlyVolume": 10,
+        "difficulty": 1,
+        "intent": "informational/transactional \u2014 operator searching for filing instructions",
+        "formName": "Charitable Organization Registration Statement",
+        "agency": "Kansas Attorney General",
+        "relatedPages": [
+          "/nonprofit-software/kansas",
+          "/resources/guides/kansas-nonprofit-startup-guide",
+          "/resources/guides/nonprofit-audit-requirements-by-state",
+          "/resources/guides/grant-management-software-for-nonprofits",
+          "/resources/best-grant-management-software"
+        ],
+        "rationale": "Long-tail filing form keyword for Kansas; high commercial intent (operator about to file). Low difficulty, decisive purchase signal."
+      },
+      {
+        "slug": "kentucky-charitable-registration-guide",
+        "collection": "guides",
+        "state": "Kentucky",
+        "stateCode": "KY",
+        "funnel": "mofu",
+        "targetKeyword": "kentucky charitable registration ksoa",
+        "monthlyVolume": 20,
+        "difficulty": 20,
+        "intent": "informational/transactional \u2014 operator searching for filing instructions",
+        "formName": "Unified Registration Statement",
+        "agency": "Kentucky Office of the Attorney General",
+        "relatedPages": [
+          "/nonprofit-software/kentucky",
+          "/resources/guides/kentucky-nonprofit-startup-guide",
+          "/resources/guides/nonprofit-audit-requirements-by-state",
+          "/resources/guides/grant-management-software-for-nonprofits",
+          "/resources/best-grant-management-software"
+        ],
+        "rationale": "Long-tail filing form keyword for Kentucky; high commercial intent (operator about to file). Low difficulty, decisive purchase signal."
+      },
+      {
+        "slug": "louisiana-charitable-registration-guide",
+        "collection": "guides",
+        "state": "Louisiana",
+        "stateCode": "LA",
+        "funnel": "mofu",
+        "targetKeyword": "louisiana charitable registration",
+        "monthlyVolume": 20,
+        "difficulty": 12,
+        "intent": "informational/transactional \u2014 operator searching for filing instructions",
+        "formName": "Charitable Organization Registration",
+        "agency": "Louisiana Department of Justice",
+        "relatedPages": [
+          "/nonprofit-software/louisiana",
+          "/resources/guides/louisiana-nonprofit-startup-guide",
+          "/resources/guides/nonprofit-audit-requirements-by-state",
+          "/resources/guides/grant-management-software-for-nonprofits",
+          "/resources/best-grant-management-software"
+        ],
+        "rationale": "Long-tail filing form keyword for Louisiana; high commercial intent (operator about to file). Low difficulty, decisive purchase signal."
+      },
+      {
+        "slug": "maine-charitable-solicitation-registration-guide",
+        "collection": "guides",
+        "state": "Maine",
+        "stateCode": "ME",
+        "funnel": "mofu",
+        "targetKeyword": "maine charitable solicitation registration",
+        "monthlyVolume": 30,
+        "difficulty": 2,
+        "intent": "informational/transactional \u2014 operator searching for filing instructions",
+        "formName": "Charitable Solicitations Registration",
+        "agency": "Maine Department of Professional & Financial Regulation",
+        "relatedPages": [
+          "/nonprofit-software/maine",
+          "/resources/guides/maine-nonprofit-startup-guide",
+          "/resources/guides/nonprofit-audit-requirements-by-state",
+          "/resources/guides/grant-management-software-for-nonprofits",
+          "/resources/best-grant-management-software"
+        ],
+        "rationale": "Long-tail filing form keyword for Maine; high commercial intent (operator about to file). Low difficulty, decisive purchase signal."
+      },
+      {
+        "slug": "maryland-cor-92-charitable-registration-guide",
+        "collection": "guides",
+        "state": "Maryland",
+        "stateCode": "MD",
+        "funnel": "mofu",
+        "targetKeyword": "maryland coR-92 charitable registration",
+        "monthlyVolume": 20,
+        "difficulty": 20,
+        "intent": "informational/transactional \u2014 operator searching for filing instructions",
+        "formName": "Form COR-92",
+        "agency": "Maryland Secretary of State",
+        "relatedPages": [
+          "/nonprofit-software/maryland",
+          "/resources/guides/maryland-nonprofit-startup-guide",
+          "/resources/guides/nonprofit-audit-requirements-by-state",
+          "/resources/guides/grant-management-software-for-nonprofits",
+          "/resources/best-grant-management-software"
+        ],
+        "rationale": "Long-tail filing form keyword for Maryland; high commercial intent (operator about to file). Low difficulty, decisive purchase signal."
+      },
+      {
+        "slug": "minnesota-charitable-registration-guide",
+        "collection": "guides",
+        "state": "Minnesota",
+        "stateCode": "MN",
+        "funnel": "mofu",
+        "targetKeyword": "minnesota charitable registration",
+        "monthlyVolume": 50,
+        "difficulty": 1,
+        "intent": "informational/transactional \u2014 operator searching for filing instructions",
+        "formName": "Charitable Organization Registration Statement",
+        "agency": "Minnesota Attorney General",
+        "relatedPages": [
+          "/nonprofit-software/minnesota",
+          "/resources/guides/minnesota-nonprofit-startup-guide",
+          "/resources/guides/nonprofit-audit-requirements-by-state",
+          "/resources/guides/grant-management-software-for-nonprofits",
+          "/resources/best-grant-management-software"
+        ],
+        "rationale": "Long-tail filing form keyword for Minnesota; high commercial intent (operator about to file). Low difficulty, decisive purchase signal."
+      },
+      {
+        "slug": "mississippi-charitable-registration-guide",
+        "collection": "guides",
+        "state": "Mississippi",
+        "stateCode": "MS",
+        "funnel": "mofu",
+        "targetKeyword": "mississippi charitable registration",
+        "monthlyVolume": 90,
+        "difficulty": 1,
+        "intent": "informational/transactional \u2014 operator searching for filing instructions",
+        "formName": "Charitable Organization Registration Statement",
+        "agency": "Mississippi Secretary of State",
+        "relatedPages": [
+          "/nonprofit-software/mississippi",
+          "/resources/guides/mississippi-nonprofit-startup-guide",
+          "/resources/guides/nonprofit-audit-requirements-by-state",
+          "/resources/guides/grant-management-software-for-nonprofits",
+          "/resources/best-grant-management-software"
+        ],
+        "rationale": "Long-tail filing form keyword for Mississippi; high commercial intent (operator about to file). Low difficulty, decisive purchase signal."
+      },
+      {
+        "slug": "nevada-charitable-solicitation-registration-guide",
+        "collection": "guides",
+        "state": "Nevada",
+        "stateCode": "NV",
+        "funnel": "mofu",
+        "targetKeyword": "nevada charitable solicitation registration",
+        "monthlyVolume": 50,
+        "difficulty": 3,
+        "intent": "informational/transactional \u2014 operator searching for filing instructions",
+        "formName": "Charitable Solicitation Registration Statement",
+        "agency": "Nevada Secretary of State",
+        "relatedPages": [
+          "/nonprofit-software/nevada",
+          "/resources/guides/nevada-nonprofit-startup-guide",
+          "/resources/guides/nonprofit-audit-requirements-by-state",
+          "/resources/guides/grant-management-software-for-nonprofits",
+          "/resources/best-grant-management-software"
+        ],
+        "rationale": "Long-tail filing form keyword for Nevada; high commercial intent (operator about to file). Low difficulty, decisive purchase signal."
+      },
+      {
+        "slug": "new-mexico-charitable-registration-guide",
+        "collection": "guides",
+        "state": "New Mexico",
+        "stateCode": "NM",
+        "funnel": "mofu",
+        "targetKeyword": "new mexico charitable registration",
+        "monthlyVolume": 50,
+        "difficulty": 20,
+        "intent": "informational/transactional \u2014 operator searching for filing instructions",
+        "formName": "Initial Registration of Charitable Organization",
+        "agency": "New Mexico Office of the Attorney General",
+        "relatedPages": [
+          "/nonprofit-software/new-mexico",
+          "/resources/guides/new-mexico-nonprofit-startup-guide",
+          "/resources/guides/nonprofit-audit-requirements-by-state",
+          "/resources/guides/grant-management-software-for-nonprofits",
+          "/resources/best-grant-management-software"
+        ],
+        "rationale": "Long-tail filing form keyword for New Mexico; high commercial intent (operator about to file). Low difficulty, decisive purchase signal."
+      },
+      {
+        "slug": "oklahoma-charitable-registration-guide",
+        "collection": "guides",
+        "state": "Oklahoma",
+        "stateCode": "OK",
+        "funnel": "mofu",
+        "targetKeyword": "oklahoma charitable registration",
+        "monthlyVolume": 50,
+        "difficulty": 5,
+        "intent": "informational/transactional \u2014 operator searching for filing instructions",
+        "formName": "Charitable Organization Registration Statement",
+        "agency": "Oklahoma Secretary of State",
+        "relatedPages": [
+          "/nonprofit-software/oklahoma",
+          "/resources/guides/oklahoma-nonprofit-startup-guide",
+          "/resources/guides/nonprofit-audit-requirements-by-state",
+          "/resources/guides/grant-management-software-for-nonprofits",
+          "/resources/best-grant-management-software"
+        ],
+        "rationale": "Long-tail filing form keyword for Oklahoma; high commercial intent (operator about to file). Low difficulty, decisive purchase signal."
+      },
+      {
+        "slug": "rhode-island-charitable-registration-guide",
+        "collection": "guides",
+        "state": "Rhode Island",
+        "stateCode": "RI",
+        "funnel": "mofu",
+        "targetKeyword": "rhode island charitable registration",
+        "monthlyVolume": 50,
+        "difficulty": 1,
+        "intent": "informational/transactional \u2014 operator searching for filing instructions",
+        "formName": "Charitable Organization Application",
+        "agency": "Rhode Island Department of Business Regulation",
+        "relatedPages": [
+          "/nonprofit-software/rhode-island",
+          "/resources/guides/rhode-island-nonprofit-startup-guide",
+          "/resources/guides/nonprofit-audit-requirements-by-state",
+          "/resources/guides/grant-management-software-for-nonprofits",
+          "/resources/best-grant-management-software"
+        ],
+        "rationale": "Long-tail filing form keyword for Rhode Island; high commercial intent (operator about to file). Low difficulty, decisive purchase signal."
+      },
+      {
+        "slug": "utah-charitable-registration-guide",
+        "collection": "guides",
+        "state": "Utah",
+        "stateCode": "UT",
+        "funnel": "mofu",
+        "targetKeyword": "utah charitable registration",
+        "monthlyVolume": 30,
+        "difficulty": 4,
+        "intent": "informational/transactional \u2014 operator searching for filing instructions",
+        "formName": "Charitable Organization Permit Application",
+        "agency": "Utah Division of Consumer Protection",
+        "relatedPages": [
+          "/nonprofit-software/utah",
+          "/resources/guides/utah-nonprofit-startup-guide",
+          "/resources/guides/nonprofit-audit-requirements-by-state",
+          "/resources/guides/grant-management-software-for-nonprofits",
+          "/resources/best-grant-management-software"
+        ],
+        "rationale": "Long-tail filing form keyword for Utah; high commercial intent (operator about to file). Low difficulty, decisive purchase signal."
+      },
+      {
+        "slug": "west-virginia-charitable-registration-guide",
+        "collection": "guides",
+        "state": "West Virginia",
+        "stateCode": "WV",
+        "funnel": "mofu",
+        "targetKeyword": "west virginia charitable registration",
+        "monthlyVolume": 40,
+        "difficulty": 20,
+        "intent": "informational/transactional \u2014 operator searching for filing instructions",
+        "formName": "Charitable Organization Registration Statement",
+        "agency": "West Virginia Secretary of State",
+        "relatedPages": [
+          "/nonprofit-software/west-virginia",
+          "/resources/guides/west-virginia-nonprofit-startup-guide",
+          "/resources/guides/nonprofit-audit-requirements-by-state",
+          "/resources/guides/grant-management-software-for-nonprofits",
+          "/resources/best-grant-management-software"
+        ],
+        "rationale": "Long-tail filing form keyword for West Virginia; high commercial intent (operator about to file). Low difficulty, decisive purchase signal."
+      }
+    ],
+    "B_audit_thresholds": [
+      {
+        "slug": "pennsylvania-nonprofit-audit-requirements",
+        "collection": "guides",
+        "state": "Pennsylvania",
+        "stateCode": "PA",
+        "funnel": "mofu",
+        "targetKeyword": "pennsylvania nonprofit audit requirements",
+        "monthlyVolume": 20,
+        "difficulty": 20,
+        "intent": "informational \u2014 ED/finance leader confirming audit threshold rules",
+        "relatedPages": [
+          "/nonprofit-software/pennsylvania",
+          "/resources/guides/pennsylvania-nonprofit-startup-guide",
+          "/resources/guides/nonprofit-audit-requirements-by-state",
+          "/resources/guides/grant-management-software-for-nonprofits",
+          "/resources/best-grant-management-software",
+          "/resources/guides/nonprofit-audit-requirements-by-state"
+        ],
+        "rationale": "Pennsylvania has explicit revenue-threshold audit rules. Mid-funnel \u2014 readers usually convert via lead magnet."
+      },
+      {
+        "slug": "new-jersey-nonprofit-audit-requirements",
+        "collection": "guides",
+        "state": "New Jersey",
+        "stateCode": "NJ",
+        "funnel": "mofu",
+        "targetKeyword": "new jersey nonprofit audit requirements",
+        "monthlyVolume": 20,
+        "difficulty": 20,
+        "intent": "informational \u2014 ED/finance leader confirming audit threshold rules",
+        "relatedPages": [
+          "/nonprofit-software/new-jersey",
+          "/resources/guides/new-jersey-nonprofit-startup-guide",
+          "/resources/guides/nonprofit-audit-requirements-by-state",
+          "/resources/guides/grant-management-software-for-nonprofits",
+          "/resources/best-grant-management-software",
+          "/resources/guides/nonprofit-audit-requirements-by-state"
+        ],
+        "rationale": "New Jersey has explicit revenue-threshold audit rules. Mid-funnel \u2014 readers usually convert via lead magnet."
+      },
+      {
+        "slug": "michigan-nonprofit-audit-requirements",
+        "collection": "guides",
+        "state": "Michigan",
+        "stateCode": "MI",
+        "funnel": "mofu",
+        "targetKeyword": "michigan nonprofit audit requirements",
+        "monthlyVolume": 10,
+        "difficulty": 5,
+        "intent": "informational \u2014 ED/finance leader confirming audit threshold rules",
+        "relatedPages": [
+          "/nonprofit-software/michigan",
+          "/resources/guides/michigan-nonprofit-startup-guide",
+          "/resources/guides/nonprofit-audit-requirements-by-state",
+          "/resources/guides/grant-management-software-for-nonprofits",
+          "/resources/best-grant-management-software",
+          "/resources/guides/nonprofit-audit-requirements-by-state"
+        ],
+        "rationale": "Michigan has explicit revenue-threshold audit rules. Mid-funnel \u2014 readers usually convert via lead magnet."
+      },
+      {
+        "slug": "minnesota-nonprofit-audit-requirements",
+        "collection": "guides",
+        "state": "Minnesota",
+        "stateCode": "MN",
+        "funnel": "mofu",
+        "targetKeyword": "minnesota nonprofit audit requirements",
+        "monthlyVolume": 20,
+        "difficulty": 20,
+        "intent": "informational \u2014 ED/finance leader confirming audit threshold rules",
+        "relatedPages": [
+          "/nonprofit-software/minnesota",
+          "/resources/guides/minnesota-nonprofit-startup-guide",
+          "/resources/guides/nonprofit-audit-requirements-by-state",
+          "/resources/guides/grant-management-software-for-nonprofits",
+          "/resources/best-grant-management-software",
+          "/resources/guides/nonprofit-audit-requirements-by-state"
+        ],
+        "rationale": "Minnesota has explicit revenue-threshold audit rules. Mid-funnel \u2014 readers usually convert via lead magnet."
+      },
+      {
+        "slug": "maryland-nonprofit-audit-requirements",
+        "collection": "guides",
+        "state": "Maryland",
+        "stateCode": "MD",
+        "funnel": "mofu",
+        "targetKeyword": "maryland nonprofit audit requirements",
+        "monthlyVolume": 20,
+        "difficulty": 20,
+        "intent": "informational \u2014 ED/finance leader confirming audit threshold rules",
+        "relatedPages": [
+          "/nonprofit-software/maryland",
+          "/resources/guides/maryland-nonprofit-startup-guide",
+          "/resources/guides/nonprofit-audit-requirements-by-state",
+          "/resources/guides/grant-management-software-for-nonprofits",
+          "/resources/best-grant-management-software",
+          "/resources/guides/nonprofit-audit-requirements-by-state"
+        ],
+        "rationale": "Maryland has explicit revenue-threshold audit rules. Mid-funnel \u2014 readers usually convert via lead magnet."
+      },
+      {
+        "slug": "connecticut-nonprofit-audit-requirements",
+        "collection": "guides",
+        "state": "Connecticut",
+        "stateCode": "CT",
+        "funnel": "mofu",
+        "targetKeyword": "connecticut nonprofit audit requirements",
+        "monthlyVolume": 20,
+        "difficulty": 20,
+        "intent": "informational \u2014 ED/finance leader confirming audit threshold rules",
+        "relatedPages": [
+          "/nonprofit-software/connecticut",
+          "/resources/guides/connecticut-nonprofit-startup-guide",
+          "/resources/guides/nonprofit-audit-requirements-by-state",
+          "/resources/guides/grant-management-software-for-nonprofits",
+          "/resources/best-grant-management-software",
+          "/resources/guides/nonprofit-audit-requirements-by-state"
+        ],
+        "rationale": "Connecticut has explicit revenue-threshold audit rules. Mid-funnel \u2014 readers usually convert via lead magnet."
+      },
+      {
+        "slug": "virginia-nonprofit-audit-requirements",
+        "collection": "guides",
+        "state": "Virginia",
+        "stateCode": "VA",
+        "funnel": "mofu",
+        "targetKeyword": "virginia nonprofit audit requirements",
+        "monthlyVolume": 20,
+        "difficulty": 20,
+        "intent": "informational \u2014 ED/finance leader confirming audit threshold rules",
+        "relatedPages": [
+          "/nonprofit-software/virginia",
+          "/resources/guides/virginia-nonprofit-startup-guide",
+          "/resources/guides/nonprofit-audit-requirements-by-state",
+          "/resources/guides/grant-management-software-for-nonprofits",
+          "/resources/best-grant-management-software",
+          "/resources/guides/nonprofit-audit-requirements-by-state"
+        ],
+        "rationale": "Virginia has explicit revenue-threshold audit rules. Mid-funnel \u2014 readers usually convert via lead magnet."
+      },
+      {
+        "slug": "washington-nonprofit-audit-requirements",
+        "collection": "guides",
+        "state": "Washington",
+        "stateCode": "WA",
+        "funnel": "mofu",
+        "targetKeyword": "washington nonprofit audit requirements",
+        "monthlyVolume": 20,
+        "difficulty": 20,
+        "intent": "informational \u2014 ED/finance leader confirming audit threshold rules",
+        "relatedPages": [
+          "/nonprofit-software/washington",
+          "/resources/guides/washington-nonprofit-startup-guide",
+          "/resources/guides/nonprofit-audit-requirements-by-state",
+          "/resources/guides/grant-management-software-for-nonprofits",
+          "/resources/best-grant-management-software",
+          "/resources/guides/nonprofit-audit-requirements-by-state"
+        ],
+        "rationale": "Washington has explicit revenue-threshold audit rules. Mid-funnel \u2014 readers usually convert via lead magnet."
+      },
+      {
+        "slug": "oregon-nonprofit-audit-requirements",
+        "collection": "guides",
+        "state": "Oregon",
+        "stateCode": "OR",
+        "funnel": "mofu",
+        "targetKeyword": "oregon nonprofit audit requirements",
+        "monthlyVolume": 20,
+        "difficulty": 20,
+        "intent": "informational \u2014 ED/finance leader confirming audit threshold rules",
+        "relatedPages": [
+          "/nonprofit-software/oregon",
+          "/resources/guides/oregon-nonprofit-startup-guide",
+          "/resources/guides/nonprofit-audit-requirements-by-state",
+          "/resources/guides/grant-management-software-for-nonprofits",
+          "/resources/best-grant-management-software",
+          "/resources/guides/nonprofit-audit-requirements-by-state"
+        ],
+        "rationale": "Oregon has explicit revenue-threshold audit rules. Mid-funnel \u2014 readers usually convert via lead magnet."
+      },
+      {
+        "slug": "colorado-nonprofit-audit-requirements",
+        "collection": "guides",
+        "state": "Colorado",
+        "stateCode": "CO",
+        "funnel": "mofu",
+        "targetKeyword": "colorado nonprofit audit requirements",
+        "monthlyVolume": 20,
+        "difficulty": 20,
+        "intent": "informational \u2014 ED/finance leader confirming audit threshold rules",
+        "relatedPages": [
+          "/nonprofit-software/colorado",
+          "/resources/guides/colorado-nonprofit-startup-guide",
+          "/resources/guides/nonprofit-audit-requirements-by-state",
+          "/resources/guides/grant-management-software-for-nonprofits",
+          "/resources/best-grant-management-software",
+          "/resources/guides/nonprofit-audit-requirements-by-state"
+        ],
+        "rationale": "Colorado has explicit revenue-threshold audit rules. Mid-funnel \u2014 readers usually convert via lead magnet."
+      },
+      {
+        "slug": "arizona-nonprofit-audit-requirements",
+        "collection": "guides",
+        "state": "Arizona",
+        "stateCode": "AZ",
+        "funnel": "mofu",
+        "targetKeyword": "arizona nonprofit audit requirements",
+        "monthlyVolume": 20,
+        "difficulty": 20,
+        "intent": "informational \u2014 ED/finance leader confirming audit threshold rules",
+        "relatedPages": [
+          "/nonprofit-software/arizona",
+          "/resources/guides/arizona-nonprofit-startup-guide",
+          "/resources/guides/nonprofit-audit-requirements-by-state",
+          "/resources/guides/grant-management-software-for-nonprofits",
+          "/resources/best-grant-management-software",
+          "/resources/guides/nonprofit-audit-requirements-by-state"
+        ],
+        "rationale": "Arizona has explicit revenue-threshold audit rules. Mid-funnel \u2014 readers usually convert via lead magnet."
+      },
+      {
+        "slug": "tennessee-nonprofit-audit-requirements",
+        "collection": "guides",
+        "state": "Tennessee",
+        "stateCode": "TN",
+        "funnel": "mofu",
+        "targetKeyword": "tennessee nonprofit audit requirements",
+        "monthlyVolume": 20,
+        "difficulty": 20,
+        "intent": "informational \u2014 ED/finance leader confirming audit threshold rules",
+        "relatedPages": [
+          "/nonprofit-software/tennessee",
+          "/resources/guides/tennessee-nonprofit-startup-guide",
+          "/resources/guides/nonprofit-audit-requirements-by-state",
+          "/resources/guides/grant-management-software-for-nonprofits",
+          "/resources/best-grant-management-software",
+          "/resources/guides/nonprofit-audit-requirements-by-state"
+        ],
+        "rationale": "Tennessee has explicit revenue-threshold audit rules. Mid-funnel \u2014 readers usually convert via lead magnet."
+      },
+      {
+        "slug": "wisconsin-nonprofit-audit-requirements",
+        "collection": "guides",
+        "state": "Wisconsin",
+        "stateCode": "WI",
+        "funnel": "mofu",
+        "targetKeyword": "wisconsin nonprofit audit requirements",
+        "monthlyVolume": 20,
+        "difficulty": 20,
+        "intent": "informational \u2014 ED/finance leader confirming audit threshold rules",
+        "relatedPages": [
+          "/nonprofit-software/wisconsin",
+          "/resources/guides/wisconsin-nonprofit-startup-guide",
+          "/resources/guides/nonprofit-audit-requirements-by-state",
+          "/resources/guides/grant-management-software-for-nonprofits",
+          "/resources/best-grant-management-software",
+          "/resources/guides/nonprofit-audit-requirements-by-state"
+        ],
+        "rationale": "Wisconsin has explicit revenue-threshold audit rules. Mid-funnel \u2014 readers usually convert via lead magnet."
+      },
+      {
+        "slug": "missouri-nonprofit-audit-requirements",
+        "collection": "guides",
+        "state": "Missouri",
+        "stateCode": "MO",
+        "funnel": "mofu",
+        "targetKeyword": "missouri nonprofit audit requirements",
+        "monthlyVolume": 20,
+        "difficulty": 20,
+        "intent": "informational \u2014 ED/finance leader confirming audit threshold rules",
+        "relatedPages": [
+          "/nonprofit-software/missouri",
+          "/resources/guides/missouri-nonprofit-startup-guide",
+          "/resources/guides/nonprofit-audit-requirements-by-state",
+          "/resources/guides/grant-management-software-for-nonprofits",
+          "/resources/best-grant-management-software",
+          "/resources/guides/nonprofit-audit-requirements-by-state"
+        ],
+        "rationale": "Missouri has explicit revenue-threshold audit rules. Mid-funnel \u2014 readers usually convert via lead magnet."
+      },
+      {
+        "slug": "indiana-nonprofit-audit-requirements",
+        "collection": "guides",
+        "state": "Indiana",
+        "stateCode": "IN",
+        "funnel": "mofu",
+        "targetKeyword": "indiana nonprofit audit requirements",
+        "monthlyVolume": 20,
+        "difficulty": 20,
+        "intent": "informational \u2014 ED/finance leader confirming audit threshold rules",
+        "relatedPages": [
+          "/nonprofit-software/indiana",
+          "/resources/guides/indiana-nonprofit-startup-guide",
+          "/resources/guides/nonprofit-audit-requirements-by-state",
+          "/resources/guides/grant-management-software-for-nonprofits",
+          "/resources/best-grant-management-software",
+          "/resources/guides/nonprofit-audit-requirements-by-state"
+        ],
+        "rationale": "Indiana has explicit revenue-threshold audit rules. Mid-funnel \u2014 readers usually convert via lead magnet."
+      }
+    ],
+    "C_funder_landscape": [
+      {
+        "slug": "ohio-state-grant-programs-for-nonprofits",
+        "collection": "guides",
+        "state": "Ohio",
+        "stateCode": "OH",
+        "funnel": "mofu",
+        "targetKeyword": "ohio state grant programs nonprofits",
+        "monthlyVolume": 20,
+        "difficulty": 20,
+        "intent": "informational \u2014 development director researching state grant funders",
+        "relatedPages": [
+          "/nonprofit-software/ohio",
+          "/resources/guides/ohio-nonprofit-startup-guide",
+          "/resources/guides/nonprofit-audit-requirements-by-state",
+          "/resources/guides/grant-management-software-for-nonprofits",
+          "/resources/best-grant-management-software",
+          "/resources/guides/grant-management-best-practices"
+        ],
+        "rationale": "State grant funder landscape for Ohio \u2014 captures researchers actively planning grant pipelines."
+      },
+      {
+        "slug": "texas-state-grant-programs-for-nonprofits",
+        "collection": "guides",
+        "state": "Texas",
+        "stateCode": "TX",
+        "funnel": "mofu",
+        "targetKeyword": "texas state grant programs nonprofits",
+        "monthlyVolume": 20,
+        "difficulty": 20,
+        "intent": "informational \u2014 development director researching state grant funders",
+        "relatedPages": [
+          "/nonprofit-software/texas",
+          "/resources/guides/texas-nonprofit-startup-guide",
+          "/resources/guides/nonprofit-audit-requirements-by-state",
+          "/resources/guides/grant-management-software-for-nonprofits",
+          "/resources/best-grant-management-software",
+          "/resources/guides/grant-management-best-practices"
+        ],
+        "rationale": "State grant funder landscape for Texas \u2014 captures researchers actively planning grant pipelines."
+      },
+      {
+        "slug": "california-state-grant-programs-for-nonprofits",
+        "collection": "guides",
+        "state": "California",
+        "stateCode": "CA",
+        "funnel": "mofu",
+        "targetKeyword": "california state grant programs nonprofits",
+        "monthlyVolume": 20,
+        "difficulty": 20,
+        "intent": "informational \u2014 development director researching state grant funders",
+        "relatedPages": [
+          "/nonprofit-software/california",
+          "/resources/guides/california-nonprofit-startup-guide",
+          "/resources/guides/nonprofit-audit-requirements-by-state",
+          "/resources/guides/grant-management-software-for-nonprofits",
+          "/resources/best-grant-management-software",
+          "/resources/guides/grant-management-best-practices"
+        ],
+        "rationale": "State grant funder landscape for California \u2014 captures researchers actively planning grant pipelines."
+      },
+      {
+        "slug": "florida-state-grant-programs-for-nonprofits",
+        "collection": "guides",
+        "state": "Florida",
+        "stateCode": "FL",
+        "funnel": "mofu",
+        "targetKeyword": "florida state grant programs nonprofits",
+        "monthlyVolume": 20,
+        "difficulty": 20,
+        "intent": "informational \u2014 development director researching state grant funders",
+        "relatedPages": [
+          "/nonprofit-software/florida",
+          "/resources/guides/florida-nonprofit-startup-guide",
+          "/resources/guides/nonprofit-audit-requirements-by-state",
+          "/resources/guides/grant-management-software-for-nonprofits",
+          "/resources/best-grant-management-software",
+          "/resources/guides/grant-management-best-practices"
+        ],
+        "rationale": "State grant funder landscape for Florida \u2014 captures researchers actively planning grant pipelines."
+      },
+      {
+        "slug": "new-york-state-grant-programs-for-nonprofits",
+        "collection": "guides",
+        "state": "New York",
+        "stateCode": "NY",
+        "funnel": "mofu",
+        "targetKeyword": "new york state grant programs nonprofits",
+        "monthlyVolume": 20,
+        "difficulty": 20,
+        "intent": "informational \u2014 development director researching state grant funders",
+        "relatedPages": [
+          "/nonprofit-software/new-york",
+          "/resources/guides/new-york-nonprofit-startup-guide",
+          "/resources/guides/nonprofit-audit-requirements-by-state",
+          "/resources/guides/grant-management-software-for-nonprofits",
+          "/resources/best-grant-management-software",
+          "/resources/guides/grant-management-best-practices"
+        ],
+        "rationale": "State grant funder landscape for New York \u2014 captures researchers actively planning grant pipelines."
+      },
+      {
+        "slug": "pennsylvania-state-grant-programs-for-nonprofits",
+        "collection": "guides",
+        "state": "Pennsylvania",
+        "stateCode": "PA",
+        "funnel": "mofu",
+        "targetKeyword": "pennsylvania state grant programs nonprofits",
+        "monthlyVolume": 20,
+        "difficulty": 20,
+        "intent": "informational \u2014 development director researching state grant funders",
+        "relatedPages": [
+          "/nonprofit-software/pennsylvania",
+          "/resources/guides/pennsylvania-nonprofit-startup-guide",
+          "/resources/guides/nonprofit-audit-requirements-by-state",
+          "/resources/guides/grant-management-software-for-nonprofits",
+          "/resources/best-grant-management-software",
+          "/resources/guides/grant-management-best-practices"
+        ],
+        "rationale": "State grant funder landscape for Pennsylvania \u2014 captures researchers actively planning grant pipelines."
+      },
+      {
+        "slug": "michigan-state-grant-programs-for-nonprofits",
+        "collection": "guides",
+        "state": "Michigan",
+        "stateCode": "MI",
+        "funnel": "mofu",
+        "targetKeyword": "michigan state grant programs nonprofits",
+        "monthlyVolume": 20,
+        "difficulty": 20,
+        "intent": "informational \u2014 development director researching state grant funders",
+        "relatedPages": [
+          "/nonprofit-software/michigan",
+          "/resources/guides/michigan-nonprofit-startup-guide",
+          "/resources/guides/nonprofit-audit-requirements-by-state",
+          "/resources/guides/grant-management-software-for-nonprofits",
+          "/resources/best-grant-management-software",
+          "/resources/guides/grant-management-best-practices"
+        ],
+        "rationale": "State grant funder landscape for Michigan \u2014 captures researchers actively planning grant pipelines."
+      },
+      {
+        "slug": "north-carolina-state-grant-programs-for-nonprofits",
+        "collection": "guides",
+        "state": "North Carolina",
+        "stateCode": "NC",
+        "funnel": "mofu",
+        "targetKeyword": "north carolina state grant programs nonprofits",
+        "monthlyVolume": 20,
+        "difficulty": 20,
+        "intent": "informational \u2014 development director researching state grant funders",
+        "relatedPages": [
+          "/nonprofit-software/north-carolina",
+          "/resources/guides/north-carolina-nonprofit-startup-guide",
+          "/resources/guides/nonprofit-audit-requirements-by-state",
+          "/resources/guides/grant-management-software-for-nonprofits",
+          "/resources/best-grant-management-software",
+          "/resources/guides/grant-management-best-practices"
+        ],
+        "rationale": "State grant funder landscape for North Carolina \u2014 captures researchers actively planning grant pipelines."
+      },
+      {
+        "slug": "georgia-state-grant-programs-for-nonprofits",
+        "collection": "guides",
+        "state": "Georgia",
+        "stateCode": "GA",
+        "funnel": "mofu",
+        "targetKeyword": "georgia state grant programs nonprofits",
+        "monthlyVolume": 20,
+        "difficulty": 20,
+        "intent": "informational \u2014 development director researching state grant funders",
+        "relatedPages": [
+          "/nonprofit-software/georgia",
+          "/resources/guides/georgia-nonprofit-startup-guide",
+          "/resources/guides/nonprofit-audit-requirements-by-state",
+          "/resources/guides/grant-management-software-for-nonprofits",
+          "/resources/best-grant-management-software",
+          "/resources/guides/grant-management-best-practices"
+        ],
+        "rationale": "State grant funder landscape for Georgia \u2014 captures researchers actively planning grant pipelines."
+      },
+      {
+        "slug": "virginia-state-grant-programs-for-nonprofits",
+        "collection": "guides",
+        "state": "Virginia",
+        "stateCode": "VA",
+        "funnel": "mofu",
+        "targetKeyword": "virginia state grant programs nonprofits",
+        "monthlyVolume": 20,
+        "difficulty": 20,
+        "intent": "informational \u2014 development director researching state grant funders",
+        "relatedPages": [
+          "/nonprofit-software/virginia",
+          "/resources/guides/virginia-nonprofit-startup-guide",
+          "/resources/guides/nonprofit-audit-requirements-by-state",
+          "/resources/guides/grant-management-software-for-nonprofits",
+          "/resources/best-grant-management-software",
+          "/resources/guides/grant-management-best-practices"
+        ],
+        "rationale": "State grant funder landscape for Virginia \u2014 captures researchers actively planning grant pipelines."
+      },
+      {
+        "slug": "massachusetts-state-grant-programs-for-nonprofits",
+        "collection": "guides",
+        "state": "Massachusetts",
+        "stateCode": "MA",
+        "funnel": "mofu",
+        "targetKeyword": "massachusetts state grant programs nonprofits",
+        "monthlyVolume": 20,
+        "difficulty": 20,
+        "intent": "informational \u2014 development director researching state grant funders",
+        "relatedPages": [
+          "/nonprofit-software/massachusetts",
+          "/resources/guides/massachusetts-nonprofit-startup-guide",
+          "/resources/guides/nonprofit-audit-requirements-by-state",
+          "/resources/guides/grant-management-software-for-nonprofits",
+          "/resources/best-grant-management-software",
+          "/resources/guides/grant-management-best-practices"
+        ],
+        "rationale": "State grant funder landscape for Massachusetts \u2014 captures researchers actively planning grant pipelines."
+      },
+      {
+        "slug": "washington-state-grant-programs-for-nonprofits",
+        "collection": "guides",
+        "state": "Washington",
+        "stateCode": "WA",
+        "funnel": "mofu",
+        "targetKeyword": "washington state grant programs nonprofits",
+        "monthlyVolume": 20,
+        "difficulty": 20,
+        "intent": "informational \u2014 development director researching state grant funders",
+        "relatedPages": [
+          "/nonprofit-software/washington",
+          "/resources/guides/washington-nonprofit-startup-guide",
+          "/resources/guides/nonprofit-audit-requirements-by-state",
+          "/resources/guides/grant-management-software-for-nonprofits",
+          "/resources/best-grant-management-software",
+          "/resources/guides/grant-management-best-practices"
+        ],
+        "rationale": "State grant funder landscape for Washington \u2014 captures researchers actively planning grant pipelines."
+      },
+      {
+        "slug": "colorado-state-grant-programs-for-nonprofits",
+        "collection": "guides",
+        "state": "Colorado",
+        "stateCode": "CO",
+        "funnel": "mofu",
+        "targetKeyword": "colorado state grant programs nonprofits",
+        "monthlyVolume": 20,
+        "difficulty": 20,
+        "intent": "informational \u2014 development director researching state grant funders",
+        "relatedPages": [
+          "/nonprofit-software/colorado",
+          "/resources/guides/colorado-nonprofit-startup-guide",
+          "/resources/guides/nonprofit-audit-requirements-by-state",
+          "/resources/guides/grant-management-software-for-nonprofits",
+          "/resources/best-grant-management-software",
+          "/resources/guides/grant-management-best-practices"
+        ],
+        "rationale": "State grant funder landscape for Colorado \u2014 captures researchers actively planning grant pipelines."
+      },
+      {
+        "slug": "minnesota-state-grant-programs-for-nonprofits",
+        "collection": "guides",
+        "state": "Minnesota",
+        "stateCode": "MN",
+        "funnel": "mofu",
+        "targetKeyword": "minnesota state grant programs nonprofits",
+        "monthlyVolume": 20,
+        "difficulty": 20,
+        "intent": "informational \u2014 development director researching state grant funders",
+        "relatedPages": [
+          "/nonprofit-software/minnesota",
+          "/resources/guides/minnesota-nonprofit-startup-guide",
+          "/resources/guides/nonprofit-audit-requirements-by-state",
+          "/resources/guides/grant-management-software-for-nonprofits",
+          "/resources/best-grant-management-software",
+          "/resources/guides/grant-management-best-practices"
+        ],
+        "rationale": "State grant funder landscape for Minnesota \u2014 captures researchers actively planning grant pipelines."
+      },
+      {
+        "slug": "new-jersey-state-grant-programs-for-nonprofits",
+        "collection": "guides",
+        "state": "New Jersey",
+        "stateCode": "NJ",
+        "funnel": "mofu",
+        "targetKeyword": "new jersey state grant programs nonprofits",
+        "monthlyVolume": 20,
+        "difficulty": 20,
+        "intent": "informational \u2014 development director researching state grant funders",
+        "relatedPages": [
+          "/nonprofit-software/new-jersey",
+          "/resources/guides/new-jersey-nonprofit-startup-guide",
+          "/resources/guides/nonprofit-audit-requirements-by-state",
+          "/resources/guides/grant-management-software-for-nonprofits",
+          "/resources/best-grant-management-software",
+          "/resources/guides/grant-management-best-practices"
+        ],
+        "rationale": "State grant funder landscape for New Jersey \u2014 captures researchers actively planning grant pipelines."
+      }
+    ],
+    "D_metro_pages": [
+      {
+        "slug": "metro-houston",
+        "collection": "state-pages",
+        "state": "Houston",
+        "stateCode": "TX",
+        "funnel": "tofu",
+        "targetKeyword": "nonprofits in houston",
+        "monthlyVolume": 1300,
+        "difficulty": 17,
+        "intent": "informational \u2014 local sector orientation",
+        "relatedPages": [
+          "/nonprofit-software/texas",
+          "/resources/guides/grant-management-software-for-nonprofits",
+          "/resources/best-grant-management-software",
+          "/resources/guides/community-foundation-grants-guide",
+          "/resources/guides/grant-management-best-practices"
+        ],
+        "rationale": "High-volume metro TOFU for Houston \u2014 broad sector queries with moderate competition. Funnels to state pages."
+      },
+      {
+        "slug": "metro-dallas-fort-worth",
+        "collection": "state-pages",
+        "state": "Dallas-Fort Worth",
+        "stateCode": "TX",
+        "funnel": "tofu",
+        "targetKeyword": "nonprofits in dallas",
+        "monthlyVolume": 1000,
+        "difficulty": 22,
+        "intent": "informational \u2014 local sector orientation",
+        "relatedPages": [
+          "/nonprofit-software/texas",
+          "/resources/guides/grant-management-software-for-nonprofits",
+          "/resources/best-grant-management-software",
+          "/resources/guides/community-foundation-grants-guide",
+          "/resources/guides/grant-management-best-practices"
+        ],
+        "rationale": "High-volume metro TOFU for Dallas-Fort Worth \u2014 broad sector queries with moderate competition. Funnels to state pages."
+      },
+      {
+        "slug": "metro-new-york-city",
+        "collection": "state-pages",
+        "state": "New York City",
+        "stateCode": "NY",
+        "funnel": "tofu",
+        "targetKeyword": "nonprofits in nyc",
+        "monthlyVolume": 2900,
+        "difficulty": 17,
+        "intent": "informational \u2014 local sector orientation",
+        "relatedPages": [
+          "/nonprofit-software/new-york",
+          "/resources/guides/grant-management-software-for-nonprofits",
+          "/resources/best-grant-management-software",
+          "/resources/guides/community-foundation-grants-guide",
+          "/resources/guides/grant-management-best-practices"
+        ],
+        "rationale": "High-volume metro TOFU for New York City \u2014 broad sector queries with moderate competition. Funnels to state pages."
+      },
+      {
+        "slug": "metro-los-angeles",
+        "collection": "state-pages",
+        "state": "Los Angeles",
+        "stateCode": "CA",
+        "funnel": "tofu",
+        "targetKeyword": "nonprofits in los angeles",
+        "monthlyVolume": 1300,
+        "difficulty": 24,
+        "intent": "informational \u2014 local sector orientation",
+        "relatedPages": [
+          "/nonprofit-software/california",
+          "/resources/guides/grant-management-software-for-nonprofits",
+          "/resources/best-grant-management-software",
+          "/resources/guides/community-foundation-grants-guide",
+          "/resources/guides/grant-management-best-practices"
+        ],
+        "rationale": "High-volume metro TOFU for Los Angeles \u2014 broad sector queries with moderate competition. Funnels to state pages."
+      },
+      {
+        "slug": "metro-chicago",
+        "collection": "state-pages",
+        "state": "Chicago",
+        "stateCode": "IL",
+        "funnel": "tofu",
+        "targetKeyword": "nonprofits in chicago",
+        "monthlyVolume": 1900,
+        "difficulty": 17,
+        "intent": "informational \u2014 local sector orientation",
+        "relatedPages": [
+          "/nonprofit-software/illinois",
+          "/resources/guides/grant-management-software-for-nonprofits",
+          "/resources/best-grant-management-software",
+          "/resources/guides/community-foundation-grants-guide",
+          "/resources/guides/grant-management-best-practices"
+        ],
+        "rationale": "High-volume metro TOFU for Chicago \u2014 broad sector queries with moderate competition. Funnels to state pages."
+      },
+      {
+        "slug": "metro-bay-area",
+        "collection": "state-pages",
+        "state": "San Francisco Bay Area",
+        "stateCode": "CA",
+        "funnel": "tofu",
+        "targetKeyword": "san francisco bay area nonprofits",
+        "monthlyVolume": 720,
+        "difficulty": 16,
+        "intent": "informational \u2014 local sector orientation",
+        "relatedPages": [
+          "/nonprofit-software/california",
+          "/resources/guides/grant-management-software-for-nonprofits",
+          "/resources/best-grant-management-software",
+          "/resources/guides/community-foundation-grants-guide",
+          "/resources/guides/grant-management-best-practices"
+        ],
+        "rationale": "High-volume metro TOFU for San Francisco Bay Area \u2014 broad sector queries with moderate competition. Funnels to state pages."
+      },
+      {
+        "slug": "metro-boston",
+        "collection": "state-pages",
+        "state": "Boston",
+        "stateCode": "MA",
+        "funnel": "tofu",
+        "targetKeyword": "nonprofits in boston",
+        "monthlyVolume": 880,
+        "difficulty": 20,
+        "intent": "informational \u2014 local sector orientation",
+        "relatedPages": [
+          "/nonprofit-software/massachusetts",
+          "/resources/guides/grant-management-software-for-nonprofits",
+          "/resources/best-grant-management-software",
+          "/resources/guides/community-foundation-grants-guide",
+          "/resources/guides/grant-management-best-practices"
+        ],
+        "rationale": "High-volume metro TOFU for Boston \u2014 broad sector queries with moderate competition. Funnels to state pages."
+      },
+      {
+        "slug": "metro-atlanta",
+        "collection": "state-pages",
+        "state": "Atlanta",
+        "stateCode": "GA",
+        "funnel": "tofu",
+        "targetKeyword": "nonprofits in atlanta",
+        "monthlyVolume": 1000,
+        "difficulty": 17,
+        "intent": "informational \u2014 local sector orientation",
+        "relatedPages": [
+          "/nonprofit-software/georgia",
+          "/resources/guides/grant-management-software-for-nonprofits",
+          "/resources/best-grant-management-software",
+          "/resources/guides/community-foundation-grants-guide",
+          "/resources/guides/grant-management-best-practices"
+        ],
+        "rationale": "High-volume metro TOFU for Atlanta \u2014 broad sector queries with moderate competition. Funnels to state pages."
+      },
+      {
+        "slug": "metro-philadelphia",
+        "collection": "state-pages",
+        "state": "Philadelphia",
+        "stateCode": "PA",
+        "funnel": "tofu",
+        "targetKeyword": "nonprofits in philadelphia",
+        "monthlyVolume": 880,
+        "difficulty": 18,
+        "intent": "informational \u2014 local sector orientation",
+        "relatedPages": [
+          "/nonprofit-software/pennsylvania",
+          "/resources/guides/grant-management-software-for-nonprofits",
+          "/resources/best-grant-management-software",
+          "/resources/guides/community-foundation-grants-guide",
+          "/resources/guides/grant-management-best-practices"
+        ],
+        "rationale": "High-volume metro TOFU for Philadelphia \u2014 broad sector queries with moderate competition. Funnels to state pages."
+      },
+      {
+        "slug": "metro-miami",
+        "collection": "state-pages",
+        "state": "Miami",
+        "stateCode": "FL",
+        "funnel": "tofu",
+        "targetKeyword": "nonprofits in miami",
+        "monthlyVolume": 390,
+        "difficulty": 17,
+        "intent": "informational \u2014 local sector orientation",
+        "relatedPages": [
+          "/nonprofit-software/florida",
+          "/resources/guides/grant-management-software-for-nonprofits",
+          "/resources/best-grant-management-software",
+          "/resources/guides/community-foundation-grants-guide",
+          "/resources/guides/grant-management-best-practices"
+        ],
+        "rationale": "High-volume metro TOFU for Miami \u2014 broad sector queries with moderate competition. Funnels to state pages."
+      },
+      {
+        "slug": "metro-seattle",
+        "collection": "state-pages",
+        "state": "Seattle",
+        "stateCode": "WA",
+        "funnel": "tofu",
+        "targetKeyword": "nonprofits in seattle",
+        "monthlyVolume": 720,
+        "difficulty": 15,
+        "intent": "informational \u2014 local sector orientation",
+        "relatedPages": [
+          "/nonprofit-software/washington",
+          "/resources/guides/grant-management-software-for-nonprofits",
+          "/resources/best-grant-management-software",
+          "/resources/guides/community-foundation-grants-guide",
+          "/resources/guides/grant-management-best-practices"
+        ],
+        "rationale": "High-volume metro TOFU for Seattle \u2014 broad sector queries with moderate competition. Funnels to state pages."
+      },
+      {
+        "slug": "metro-denver",
+        "collection": "state-pages",
+        "state": "Denver",
+        "stateCode": "CO",
+        "funnel": "tofu",
+        "targetKeyword": "nonprofits in denver",
+        "monthlyVolume": 590,
+        "difficulty": 18,
+        "intent": "informational \u2014 local sector orientation",
+        "relatedPages": [
+          "/nonprofit-software/colorado",
+          "/resources/guides/grant-management-software-for-nonprofits",
+          "/resources/best-grant-management-software",
+          "/resources/guides/community-foundation-grants-guide",
+          "/resources/guides/grant-management-best-practices"
+        ],
+        "rationale": "High-volume metro TOFU for Denver \u2014 broad sector queries with moderate competition. Funnels to state pages."
+      },
+      {
+        "slug": "metro-phoenix",
+        "collection": "state-pages",
+        "state": "Phoenix",
+        "stateCode": "AZ",
+        "funnel": "tofu",
+        "targetKeyword": "nonprofits in phoenix",
+        "monthlyVolume": 480,
+        "difficulty": 38,
+        "intent": "informational \u2014 local sector orientation",
+        "relatedPages": [
+          "/nonprofit-software/arizona",
+          "/resources/guides/grant-management-software-for-nonprofits",
+          "/resources/best-grant-management-software",
+          "/resources/guides/community-foundation-grants-guide",
+          "/resources/guides/grant-management-best-practices"
+        ],
+        "rationale": "High-volume metro TOFU for Phoenix \u2014 broad sector queries with moderate competition. Funnels to state pages."
+      },
+      {
+        "slug": "metro-twin-cities",
+        "collection": "state-pages",
+        "state": "Twin Cities",
+        "stateCode": "MN",
+        "funnel": "tofu",
+        "targetKeyword": "nonprofits in minneapolis",
+        "monthlyVolume": 390,
+        "difficulty": 25,
+        "intent": "informational \u2014 local sector orientation",
+        "relatedPages": [
+          "/nonprofit-software/minnesota",
+          "/resources/guides/grant-management-software-for-nonprofits",
+          "/resources/best-grant-management-software",
+          "/resources/guides/community-foundation-grants-guide",
+          "/resources/guides/grant-management-best-practices"
+        ],
+        "rationale": "High-volume metro TOFU for Twin Cities \u2014 broad sector queries with moderate competition. Funnels to state pages."
+      },
+      {
+        "slug": "metro-portland",
+        "collection": "state-pages",
+        "state": "Portland",
+        "stateCode": "OR",
+        "funnel": "tofu",
+        "targetKeyword": "nonprofits in portland",
+        "monthlyVolume": 590,
+        "difficulty": 18,
+        "intent": "informational \u2014 local sector orientation",
+        "relatedPages": [
+          "/nonprofit-software/oregon",
+          "/resources/guides/grant-management-software-for-nonprofits",
+          "/resources/best-grant-management-software",
+          "/resources/guides/community-foundation-grants-guide",
+          "/resources/guides/grant-management-best-practices"
+        ],
+        "rationale": "High-volume metro TOFU for Portland \u2014 broad sector queries with moderate competition. Funnels to state pages."
+      }
+    ],
+    "E_lead_magnets": [
+      {
+        "slug": "washington-compliance-checklist",
+        "collection": "lead-magnets",
+        "leadMagnetSlug": "washington-compliance-checklist",
+        "state": "Washington",
+        "stateCode": "WA",
+        "funnel": "bofu",
+        "targetKeyword": "washington nonprofit compliance checklist",
+        "monthlyVolume": 20,
+        "difficulty": 20,
+        "intent": "transactional \u2014 operator wants gated checklist asset",
+        "formName": "Charitable Trust Renewal",
+        "agency": "Washington Secretary of State Charities Program",
+        "relatedPages": [
+          "/nonprofit-software/washington",
+          "/resources/guides/washington-nonprofit-startup-guide",
+          "/resources/guides/nonprofit-audit-requirements-by-state",
+          "/resources/guides/grant-management-software-for-nonprofits",
+          "/resources/best-grant-management-software",
+          "/resources/guides/washington-nonprofit-startup-guide"
+        ],
+        "rationale": "BOFU lead magnet for Washington \u2014 captures emails from compliance-anxious EDs. Pairs with charitable-registration guide."
+      },
+      {
+        "slug": "minnesota-compliance-checklist",
+        "collection": "lead-magnets",
+        "leadMagnetSlug": "minnesota-compliance-checklist",
+        "state": "Minnesota",
+        "stateCode": "MN",
+        "funnel": "bofu",
+        "targetKeyword": "minnesota nonprofit compliance checklist",
+        "monthlyVolume": 20,
+        "difficulty": 20,
+        "intent": "transactional \u2014 operator wants gated checklist asset",
+        "formName": "Charitable Organization Annual Report",
+        "agency": "Minnesota Attorney General Charities Division",
+        "relatedPages": [
+          "/nonprofit-software/minnesota",
+          "/resources/guides/minnesota-nonprofit-startup-guide",
+          "/resources/guides/nonprofit-audit-requirements-by-state",
+          "/resources/guides/grant-management-software-for-nonprofits",
+          "/resources/best-grant-management-software",
+          "/resources/guides/minnesota-nonprofit-startup-guide"
+        ],
+        "rationale": "BOFU lead magnet for Minnesota \u2014 captures emails from compliance-anxious EDs. Pairs with charitable-registration guide."
+      },
+      {
+        "slug": "virginia-compliance-checklist",
+        "collection": "lead-magnets",
+        "leadMagnetSlug": "virginia-compliance-checklist",
+        "state": "Virginia",
+        "stateCode": "VA",
+        "funnel": "bofu",
+        "targetKeyword": "virginia nonprofit compliance checklist",
+        "monthlyVolume": 20,
+        "difficulty": 20,
+        "intent": "transactional \u2014 operator wants gated checklist asset",
+        "formName": "Form 102 (Remittance Form)",
+        "agency": "Virginia Office of Charitable & Regulatory Programs",
+        "relatedPages": [
+          "/nonprofit-software/virginia",
+          "/resources/guides/virginia-nonprofit-startup-guide",
+          "/resources/guides/nonprofit-audit-requirements-by-state",
+          "/resources/guides/grant-management-software-for-nonprofits",
+          "/resources/best-grant-management-software",
+          "/resources/guides/virginia-nonprofit-startup-guide"
+        ],
+        "rationale": "BOFU lead magnet for Virginia \u2014 captures emails from compliance-anxious EDs. Pairs with charitable-registration guide."
+      },
+      {
+        "slug": "new-jersey-compliance-checklist",
+        "collection": "lead-magnets",
+        "leadMagnetSlug": "new-jersey-compliance-checklist",
+        "state": "New Jersey",
+        "stateCode": "NJ",
+        "funnel": "bofu",
+        "targetKeyword": "new jersey nonprofit compliance checklist",
+        "monthlyVolume": 20,
+        "difficulty": 20,
+        "intent": "transactional \u2014 operator wants gated checklist asset",
+        "formName": "CRI-300R Annual Renewal",
+        "agency": "NJ Division of Consumer Affairs Charities Registration",
+        "relatedPages": [
+          "/nonprofit-software/new-jersey",
+          "/resources/guides/new-jersey-nonprofit-startup-guide",
+          "/resources/guides/nonprofit-audit-requirements-by-state",
+          "/resources/guides/grant-management-software-for-nonprofits",
+          "/resources/best-grant-management-software",
+          "/resources/guides/new-jersey-nonprofit-startup-guide"
+        ],
+        "rationale": "BOFU lead magnet for New Jersey \u2014 captures emails from compliance-anxious EDs. Pairs with charitable-registration guide."
+      },
+      {
+        "slug": "michigan-compliance-checklist",
+        "collection": "lead-magnets",
+        "leadMagnetSlug": "michigan-compliance-checklist",
+        "state": "Michigan",
+        "stateCode": "MI",
+        "funnel": "bofu",
+        "targetKeyword": "michigan nonprofit compliance checklist",
+        "monthlyVolume": 20,
+        "difficulty": 20,
+        "intent": "transactional \u2014 operator wants gated checklist asset",
+        "formName": "CTS-02 Annual Financial Report",
+        "agency": "Michigan Attorney General Charitable Trust Section",
+        "relatedPages": [
+          "/nonprofit-software/michigan",
+          "/resources/guides/michigan-nonprofit-startup-guide",
+          "/resources/guides/nonprofit-audit-requirements-by-state",
+          "/resources/guides/grant-management-software-for-nonprofits",
+          "/resources/best-grant-management-software",
+          "/resources/guides/michigan-nonprofit-startup-guide"
+        ],
+        "rationale": "BOFU lead magnet for Michigan \u2014 captures emails from compliance-anxious EDs. Pairs with charitable-registration guide."
+      },
+      {
+        "slug": "maryland-compliance-checklist",
+        "collection": "lead-magnets",
+        "leadMagnetSlug": "maryland-compliance-checklist",
+        "state": "Maryland",
+        "stateCode": "MD",
+        "funnel": "bofu",
+        "targetKeyword": "maryland nonprofit compliance checklist",
+        "monthlyVolume": 20,
+        "difficulty": 20,
+        "intent": "transactional \u2014 operator wants gated checklist asset",
+        "formName": "COF-85 Annual Update of Registration",
+        "agency": "Maryland Secretary of State Charity Division",
+        "relatedPages": [
+          "/nonprofit-software/maryland",
+          "/resources/guides/maryland-nonprofit-startup-guide",
+          "/resources/guides/nonprofit-audit-requirements-by-state",
+          "/resources/guides/grant-management-software-for-nonprofits",
+          "/resources/best-grant-management-software",
+          "/resources/guides/maryland-nonprofit-startup-guide"
+        ],
+        "rationale": "BOFU lead magnet for Maryland \u2014 captures emails from compliance-anxious EDs. Pairs with charitable-registration guide."
+      },
+      {
+        "slug": "colorado-compliance-checklist",
+        "collection": "lead-magnets",
+        "leadMagnetSlug": "colorado-compliance-checklist",
+        "state": "Colorado",
+        "stateCode": "CO",
+        "funnel": "bofu",
+        "targetKeyword": "colorado nonprofit compliance checklist",
+        "monthlyVolume": 20,
+        "difficulty": 20,
+        "intent": "transactional \u2014 operator wants gated checklist asset",
+        "formName": "Charitable Solicitations Annual Renewal",
+        "agency": "Colorado Secretary of State",
+        "relatedPages": [
+          "/nonprofit-software/colorado",
+          "/resources/guides/colorado-nonprofit-startup-guide",
+          "/resources/guides/nonprofit-audit-requirements-by-state",
+          "/resources/guides/grant-management-software-for-nonprofits",
+          "/resources/best-grant-management-software",
+          "/resources/guides/colorado-nonprofit-startup-guide"
+        ],
+        "rationale": "BOFU lead magnet for Colorado \u2014 captures emails from compliance-anxious EDs. Pairs with charitable-registration guide."
+      },
+      {
+        "slug": "arizona-compliance-checklist",
+        "collection": "lead-magnets",
+        "leadMagnetSlug": "arizona-compliance-checklist",
+        "state": "Arizona",
+        "stateCode": "AZ",
+        "funnel": "bofu",
+        "targetKeyword": "arizona nonprofit compliance checklist",
+        "monthlyVolume": 20,
+        "difficulty": 20,
+        "intent": "transactional \u2014 operator wants gated checklist asset",
+        "formName": "Annual Corporation Report",
+        "agency": "Arizona Corporation Commission",
+        "relatedPages": [
+          "/nonprofit-software/arizona",
+          "/resources/guides/arizona-nonprofit-startup-guide",
+          "/resources/guides/nonprofit-audit-requirements-by-state",
+          "/resources/guides/grant-management-software-for-nonprofits",
+          "/resources/best-grant-management-software",
+          "/resources/guides/arizona-nonprofit-startup-guide"
+        ],
+        "rationale": "BOFU lead magnet for Arizona \u2014 captures emails from compliance-anxious EDs. Pairs with charitable-registration guide."
+      },
+      {
+        "slug": "tennessee-compliance-checklist",
+        "collection": "lead-magnets",
+        "leadMagnetSlug": "tennessee-compliance-checklist",
+        "state": "Tennessee",
+        "stateCode": "TN",
+        "funnel": "bofu",
+        "targetKeyword": "tennessee nonprofit compliance checklist",
+        "monthlyVolume": 20,
+        "difficulty": 20,
+        "intent": "transactional \u2014 operator wants gated checklist asset",
+        "formName": "SS-6001 Annual Financial Report",
+        "agency": "Tennessee Secretary of State Division of Charitable Solicitations",
+        "relatedPages": [
+          "/nonprofit-software/tennessee",
+          "/resources/guides/tennessee-nonprofit-startup-guide",
+          "/resources/guides/nonprofit-audit-requirements-by-state",
+          "/resources/guides/grant-management-software-for-nonprofits",
+          "/resources/best-grant-management-software",
+          "/resources/guides/tennessee-nonprofit-startup-guide"
+        ],
+        "rationale": "BOFU lead magnet for Tennessee \u2014 captures emails from compliance-anxious EDs. Pairs with charitable-registration guide."
+      },
+      {
+        "slug": "missouri-compliance-checklist",
+        "collection": "lead-magnets",
+        "leadMagnetSlug": "missouri-compliance-checklist",
+        "state": "Missouri",
+        "stateCode": "MO",
+        "funnel": "bofu",
+        "targetKeyword": "missouri nonprofit compliance checklist",
+        "monthlyVolume": 20,
+        "difficulty": 20,
+        "intent": "transactional \u2014 operator wants gated checklist asset",
+        "formName": "Charitable Organization Annual Renewal",
+        "agency": "Missouri Attorney General",
+        "relatedPages": [
+          "/nonprofit-software/missouri",
+          "/resources/guides/missouri-nonprofit-startup-guide",
+          "/resources/guides/nonprofit-audit-requirements-by-state",
+          "/resources/guides/grant-management-software-for-nonprofits",
+          "/resources/best-grant-management-software",
+          "/resources/guides/missouri-nonprofit-startup-guide"
+        ],
+        "rationale": "BOFU lead magnet for Missouri \u2014 captures emails from compliance-anxious EDs. Pairs with charitable-registration guide."
+      },
+      {
+        "slug": "indiana-compliance-checklist",
+        "collection": "lead-magnets",
+        "leadMagnetSlug": "indiana-compliance-checklist",
+        "state": "Indiana",
+        "stateCode": "IN",
+        "funnel": "bofu",
+        "targetKeyword": "indiana nonprofit compliance checklist",
+        "monthlyVolume": 20,
+        "difficulty": 20,
+        "intent": "transactional \u2014 operator wants gated checklist asset",
+        "formName": "Business Entity Report",
+        "agency": "Indiana Secretary of State",
+        "relatedPages": [
+          "/nonprofit-software/indiana",
+          "/resources/guides/indiana-nonprofit-startup-guide",
+          "/resources/guides/nonprofit-audit-requirements-by-state",
+          "/resources/guides/grant-management-software-for-nonprofits",
+          "/resources/best-grant-management-software",
+          "/resources/guides/indiana-nonprofit-startup-guide"
+        ],
+        "rationale": "BOFU lead magnet for Indiana \u2014 captures emails from compliance-anxious EDs. Pairs with charitable-registration guide."
+      },
+      {
+        "slug": "wisconsin-compliance-checklist",
+        "collection": "lead-magnets",
+        "leadMagnetSlug": "wisconsin-compliance-checklist",
+        "state": "Wisconsin",
+        "stateCode": "WI",
+        "funnel": "bofu",
+        "targetKeyword": "wisconsin nonprofit compliance checklist",
+        "monthlyVolume": 20,
+        "difficulty": 20,
+        "intent": "transactional \u2014 operator wants gated checklist asset",
+        "formName": "Form 1952 Annual Financial Report",
+        "agency": "Wisconsin Department of Financial Institutions",
+        "relatedPages": [
+          "/nonprofit-software/wisconsin",
+          "/resources/guides/wisconsin-nonprofit-startup-guide",
+          "/resources/guides/nonprofit-audit-requirements-by-state",
+          "/resources/guides/grant-management-software-for-nonprofits",
+          "/resources/best-grant-management-software",
+          "/resources/guides/wisconsin-nonprofit-startup-guide"
+        ],
+        "rationale": "BOFU lead magnet for Wisconsin \u2014 captures emails from compliance-anxious EDs. Pairs with charitable-registration guide."
+      },
+      {
+        "slug": "oregon-compliance-checklist",
+        "collection": "lead-magnets",
+        "leadMagnetSlug": "oregon-compliance-checklist",
+        "state": "Oregon",
+        "stateCode": "OR",
+        "funnel": "bofu",
+        "targetKeyword": "oregon nonprofit compliance checklist",
+        "monthlyVolume": 20,
+        "difficulty": 20,
+        "intent": "transactional \u2014 operator wants gated checklist asset",
+        "formName": "CT-12 Annual Report",
+        "agency": "Oregon Department of Justice Charitable Activities Section",
+        "relatedPages": [
+          "/nonprofit-software/oregon",
+          "/resources/guides/oregon-nonprofit-startup-guide",
+          "/resources/guides/nonprofit-audit-requirements-by-state",
+          "/resources/guides/grant-management-software-for-nonprofits",
+          "/resources/best-grant-management-software",
+          "/resources/guides/oregon-nonprofit-startup-guide"
+        ],
+        "rationale": "BOFU lead magnet for Oregon \u2014 captures emails from compliance-anxious EDs. Pairs with charitable-registration guide."
+      },
+      {
+        "slug": "connecticut-compliance-checklist",
+        "collection": "lead-magnets",
+        "leadMagnetSlug": "connecticut-compliance-checklist",
+        "state": "Connecticut",
+        "stateCode": "CT",
+        "funnel": "bofu",
+        "targetKeyword": "connecticut nonprofit compliance checklist",
+        "monthlyVolume": 20,
+        "difficulty": 20,
+        "intent": "transactional \u2014 operator wants gated checklist asset",
+        "formName": "CPC-63 Annual Renewal",
+        "agency": "CT Department of Consumer Protection",
+        "relatedPages": [
+          "/nonprofit-software/connecticut",
+          "/resources/guides/connecticut-nonprofit-startup-guide",
+          "/resources/guides/nonprofit-audit-requirements-by-state",
+          "/resources/guides/grant-management-software-for-nonprofits",
+          "/resources/best-grant-management-software",
+          "/resources/guides/connecticut-nonprofit-startup-guide"
+        ],
+        "rationale": "BOFU lead magnet for Connecticut \u2014 captures emails from compliance-anxious EDs. Pairs with charitable-registration guide."
+      },
+      {
+        "slug": "kentucky-compliance-checklist",
+        "collection": "lead-magnets",
+        "leadMagnetSlug": "kentucky-compliance-checklist",
+        "state": "Kentucky",
+        "stateCode": "KY",
+        "funnel": "bofu",
+        "targetKeyword": "kentucky nonprofit compliance checklist",
+        "monthlyVolume": 20,
+        "difficulty": 20,
+        "intent": "transactional \u2014 operator wants gated checklist asset",
+        "formName": "Annual Report",
+        "agency": "Kentucky Secretary of State",
+        "relatedPages": [
+          "/nonprofit-software/kentucky",
+          "/resources/guides/kentucky-nonprofit-startup-guide",
+          "/resources/guides/nonprofit-audit-requirements-by-state",
+          "/resources/guides/grant-management-software-for-nonprofits",
+          "/resources/best-grant-management-software",
+          "/resources/guides/kentucky-nonprofit-startup-guide"
+        ],
+        "rationale": "BOFU lead magnet for Kentucky \u2014 captures emails from compliance-anxious EDs. Pairs with charitable-registration guide."
+      },
+      {
+        "slug": "alabama-compliance-checklist",
+        "collection": "lead-magnets",
+        "leadMagnetSlug": "alabama-compliance-checklist",
+        "state": "Alabama",
+        "stateCode": "AL",
+        "funnel": "bofu",
+        "targetKeyword": "alabama nonprofit compliance checklist",
+        "monthlyVolume": 20,
+        "difficulty": 20,
+        "intent": "transactional \u2014 operator wants gated checklist asset",
+        "formName": "Charitable Organization Annual Renewal",
+        "agency": "Alabama Attorney General",
+        "relatedPages": [
+          "/nonprofit-software/alabama",
+          "/resources/guides/alabama-nonprofit-startup-guide",
+          "/resources/guides/nonprofit-audit-requirements-by-state",
+          "/resources/guides/grant-management-software-for-nonprofits",
+          "/resources/best-grant-management-software",
+          "/resources/guides/grant-compliance-audit-preparation"
+        ],
+        "rationale": "BOFU lead magnet for Alabama \u2014 captures emails from compliance-anxious EDs. Pairs with charitable-registration guide."
+      },
+      {
+        "slug": "south-carolina-compliance-checklist",
+        "collection": "lead-magnets",
+        "leadMagnetSlug": "south-carolina-compliance-checklist",
+        "state": "South Carolina",
+        "stateCode": "SC",
+        "funnel": "bofu",
+        "targetKeyword": "south carolina nonprofit compliance checklist",
+        "monthlyVolume": 20,
+        "difficulty": 20,
+        "intent": "transactional \u2014 operator wants gated checklist asset",
+        "formName": "Annual Financial Report",
+        "agency": "SC Secretary of State Public Charities Division",
+        "relatedPages": [
+          "/nonprofit-software/south-carolina",
+          "/resources/guides/south-carolina-nonprofit-startup-guide",
+          "/resources/guides/nonprofit-audit-requirements-by-state",
+          "/resources/guides/grant-management-software-for-nonprofits",
+          "/resources/best-grant-management-software",
+          "/resources/guides/grant-compliance-audit-preparation"
+        ],
+        "rationale": "BOFU lead magnet for South Carolina \u2014 captures emails from compliance-anxious EDs. Pairs with charitable-registration guide."
+      },
+      {
+        "slug": "oklahoma-compliance-checklist",
+        "collection": "lead-magnets",
+        "leadMagnetSlug": "oklahoma-compliance-checklist",
+        "state": "Oklahoma",
+        "stateCode": "OK",
+        "funnel": "bofu",
+        "targetKeyword": "oklahoma nonprofit compliance checklist",
+        "monthlyVolume": 20,
+        "difficulty": 20,
+        "intent": "transactional \u2014 operator wants gated checklist asset",
+        "formName": "Charitable Organization Annual Renewal",
+        "agency": "Oklahoma Secretary of State",
+        "relatedPages": [
+          "/nonprofit-software/oklahoma",
+          "/resources/guides/oklahoma-nonprofit-startup-guide",
+          "/resources/guides/nonprofit-audit-requirements-by-state",
+          "/resources/guides/grant-management-software-for-nonprofits",
+          "/resources/best-grant-management-software",
+          "/resources/guides/grant-compliance-audit-preparation"
+        ],
+        "rationale": "BOFU lead magnet for Oklahoma \u2014 captures emails from compliance-anxious EDs. Pairs with charitable-registration guide."
+      },
+      {
+        "slug": "louisiana-compliance-checklist",
+        "collection": "lead-magnets",
+        "leadMagnetSlug": "louisiana-compliance-checklist",
+        "state": "Louisiana",
+        "stateCode": "LA",
+        "funnel": "bofu",
+        "targetKeyword": "louisiana nonprofit compliance checklist",
+        "monthlyVolume": 20,
+        "difficulty": 20,
+        "intent": "transactional \u2014 operator wants gated checklist asset",
+        "formName": "Charitable Organization Annual Renewal",
+        "agency": "Louisiana Department of Justice",
+        "relatedPages": [
+          "/nonprofit-software/louisiana",
+          "/resources/guides/louisiana-nonprofit-startup-guide",
+          "/resources/guides/nonprofit-audit-requirements-by-state",
+          "/resources/guides/grant-management-software-for-nonprofits",
+          "/resources/best-grant-management-software",
+          "/resources/guides/grant-compliance-audit-preparation"
+        ],
+        "rationale": "BOFU lead magnet for Louisiana \u2014 captures emails from compliance-anxious EDs. Pairs with charitable-registration guide."
+      },
+      {
+        "slug": "iowa-compliance-checklist",
+        "collection": "lead-magnets",
+        "leadMagnetSlug": "iowa-compliance-checklist",
+        "state": "Iowa",
+        "stateCode": "IA",
+        "funnel": "bofu",
+        "targetKeyword": "iowa nonprofit compliance checklist",
+        "monthlyVolume": 20,
+        "difficulty": 20,
+        "intent": "transactional \u2014 operator wants gated checklist asset",
+        "formName": "Biennial Report",
+        "agency": "Iowa Secretary of State",
+        "relatedPages": [
+          "/nonprofit-software/iowa",
+          "/resources/guides/iowa-nonprofit-startup-guide",
+          "/resources/guides/nonprofit-audit-requirements-by-state",
+          "/resources/guides/grant-management-software-for-nonprofits",
+          "/resources/best-grant-management-software",
+          "/resources/guides/grant-compliance-audit-preparation"
+        ],
+        "rationale": "BOFU lead magnet for Iowa \u2014 captures emails from compliance-anxious EDs. Pairs with charitable-registration guide."
+      }
+    ],
+    "F_faq_hubs": [
+      {
+        "slug": "texas-nonprofit-grant-compliance-faq",
+        "collection": "guides",
+        "state": "Texas",
+        "stateCode": "TX",
+        "funnel": "tofu",
+        "targetKeyword": "texas nonprofit compliance faq",
+        "monthlyVolume": 30,
+        "difficulty": 15,
+        "intent": "informational \u2014 broad question hub for AI-overview & long-tail capture",
+        "relatedPages": [
+          "/nonprofit-software/texas",
+          "/resources/guides/texas-nonprofit-startup-guide",
+          "/resources/guides/nonprofit-audit-requirements-by-state",
+          "/resources/guides/grant-management-software-for-nonprofits",
+          "/resources/best-grant-management-software",
+          "/resources/lead-magnets/texas-compliance-checklist"
+        ],
+        "rationale": "FAQ hub for Texas \u2014 designed for FAQ schema, AI Overviews, and long-tail aggregation across compliance questions."
+      },
+      {
+        "slug": "california-nonprofit-grant-compliance-faq",
+        "collection": "guides",
+        "state": "California",
+        "stateCode": "CA",
+        "funnel": "tofu",
+        "targetKeyword": "california nonprofit compliance faq",
+        "monthlyVolume": 30,
+        "difficulty": 15,
+        "intent": "informational \u2014 broad question hub for AI-overview & long-tail capture",
+        "relatedPages": [
+          "/nonprofit-software/california",
+          "/resources/guides/california-nonprofit-startup-guide",
+          "/resources/guides/nonprofit-audit-requirements-by-state",
+          "/resources/guides/grant-management-software-for-nonprofits",
+          "/resources/best-grant-management-software",
+          "/resources/lead-magnets/california-compliance-checklist"
+        ],
+        "rationale": "FAQ hub for California \u2014 designed for FAQ schema, AI Overviews, and long-tail aggregation across compliance questions."
+      },
+      {
+        "slug": "new-york-nonprofit-grant-compliance-faq",
+        "collection": "guides",
+        "state": "New York",
+        "stateCode": "NY",
+        "funnel": "tofu",
+        "targetKeyword": "new york nonprofit compliance faq",
+        "monthlyVolume": 30,
+        "difficulty": 15,
+        "intent": "informational \u2014 broad question hub for AI-overview & long-tail capture",
+        "relatedPages": [
+          "/nonprofit-software/new-york",
+          "/resources/guides/new-york-nonprofit-startup-guide",
+          "/resources/guides/nonprofit-audit-requirements-by-state",
+          "/resources/guides/grant-management-software-for-nonprofits",
+          "/resources/best-grant-management-software",
+          "/resources/lead-magnets/new-york-compliance-checklist"
+        ],
+        "rationale": "FAQ hub for New York \u2014 designed for FAQ schema, AI Overviews, and long-tail aggregation across compliance questions."
+      },
+      {
+        "slug": "florida-nonprofit-grant-compliance-faq",
+        "collection": "guides",
+        "state": "Florida",
+        "stateCode": "FL",
+        "funnel": "tofu",
+        "targetKeyword": "florida nonprofit compliance faq",
+        "monthlyVolume": 30,
+        "difficulty": 15,
+        "intent": "informational \u2014 broad question hub for AI-overview & long-tail capture",
+        "relatedPages": [
+          "/nonprofit-software/florida",
+          "/resources/guides/florida-nonprofit-startup-guide",
+          "/resources/guides/nonprofit-audit-requirements-by-state",
+          "/resources/guides/grant-management-software-for-nonprofits",
+          "/resources/best-grant-management-software",
+          "/resources/lead-magnets/florida-compliance-checklist"
+        ],
+        "rationale": "FAQ hub for Florida \u2014 designed for FAQ schema, AI Overviews, and long-tail aggregation across compliance questions."
+      },
+      {
+        "slug": "illinois-nonprofit-grant-compliance-faq",
+        "collection": "guides",
+        "state": "Illinois",
+        "stateCode": "IL",
+        "funnel": "tofu",
+        "targetKeyword": "illinois nonprofit compliance faq",
+        "monthlyVolume": 30,
+        "difficulty": 15,
+        "intent": "informational \u2014 broad question hub for AI-overview & long-tail capture",
+        "relatedPages": [
+          "/nonprofit-software/illinois",
+          "/resources/guides/illinois-nonprofit-startup-guide",
+          "/resources/guides/nonprofit-audit-requirements-by-state",
+          "/resources/guides/grant-management-software-for-nonprofits",
+          "/resources/best-grant-management-software",
+          "/resources/lead-magnets/illinois-compliance-checklist"
+        ],
+        "rationale": "FAQ hub for Illinois \u2014 designed for FAQ schema, AI Overviews, and long-tail aggregation across compliance questions."
+      },
+      {
+        "slug": "ohio-nonprofit-grant-compliance-faq",
+        "collection": "guides",
+        "state": "Ohio",
+        "stateCode": "OH",
+        "funnel": "tofu",
+        "targetKeyword": "ohio nonprofit compliance faq",
+        "monthlyVolume": 30,
+        "difficulty": 15,
+        "intent": "informational \u2014 broad question hub for AI-overview & long-tail capture",
+        "relatedPages": [
+          "/nonprofit-software/ohio",
+          "/resources/guides/ohio-nonprofit-startup-guide",
+          "/resources/guides/nonprofit-audit-requirements-by-state",
+          "/resources/guides/grant-management-software-for-nonprofits",
+          "/resources/best-grant-management-software",
+          "/resources/lead-magnets/ohio-compliance-checklist"
+        ],
+        "rationale": "FAQ hub for Ohio \u2014 designed for FAQ schema, AI Overviews, and long-tail aggregation across compliance questions."
+      },
+      {
+        "slug": "pennsylvania-nonprofit-grant-compliance-faq",
+        "collection": "guides",
+        "state": "Pennsylvania",
+        "stateCode": "PA",
+        "funnel": "tofu",
+        "targetKeyword": "pennsylvania nonprofit compliance faq",
+        "monthlyVolume": 30,
+        "difficulty": 15,
+        "intent": "informational \u2014 broad question hub for AI-overview & long-tail capture",
+        "relatedPages": [
+          "/nonprofit-software/pennsylvania",
+          "/resources/guides/pennsylvania-nonprofit-startup-guide",
+          "/resources/guides/nonprofit-audit-requirements-by-state",
+          "/resources/guides/grant-management-software-for-nonprofits",
+          "/resources/best-grant-management-software",
+          "/resources/lead-magnets/pennsylvania-compliance-checklist"
+        ],
+        "rationale": "FAQ hub for Pennsylvania \u2014 designed for FAQ schema, AI Overviews, and long-tail aggregation across compliance questions."
+      },
+      {
+        "slug": "georgia-nonprofit-grant-compliance-faq",
+        "collection": "guides",
+        "state": "Georgia",
+        "stateCode": "GA",
+        "funnel": "tofu",
+        "targetKeyword": "georgia nonprofit compliance faq",
+        "monthlyVolume": 30,
+        "difficulty": 15,
+        "intent": "informational \u2014 broad question hub for AI-overview & long-tail capture",
+        "relatedPages": [
+          "/nonprofit-software/georgia",
+          "/resources/guides/georgia-nonprofit-startup-guide",
+          "/resources/guides/nonprofit-audit-requirements-by-state",
+          "/resources/guides/grant-management-software-for-nonprofits",
+          "/resources/best-grant-management-software",
+          "/resources/lead-magnets/georgia-compliance-checklist"
+        ],
+        "rationale": "FAQ hub for Georgia \u2014 designed for FAQ schema, AI Overviews, and long-tail aggregation across compliance questions."
+      },
+      {
+        "slug": "north-carolina-nonprofit-grant-compliance-faq",
+        "collection": "guides",
+        "state": "North Carolina",
+        "stateCode": "NC",
+        "funnel": "tofu",
+        "targetKeyword": "north carolina nonprofit compliance faq",
+        "monthlyVolume": 30,
+        "difficulty": 15,
+        "intent": "informational \u2014 broad question hub for AI-overview & long-tail capture",
+        "relatedPages": [
+          "/nonprofit-software/north-carolina",
+          "/resources/guides/north-carolina-nonprofit-startup-guide",
+          "/resources/guides/nonprofit-audit-requirements-by-state",
+          "/resources/guides/grant-management-software-for-nonprofits",
+          "/resources/best-grant-management-software",
+          "/resources/lead-magnets/north-carolina-compliance-checklist"
+        ],
+        "rationale": "FAQ hub for North Carolina \u2014 designed for FAQ schema, AI Overviews, and long-tail aggregation across compliance questions."
+      },
+      {
+        "slug": "massachusetts-nonprofit-grant-compliance-faq",
+        "collection": "guides",
+        "state": "Massachusetts",
+        "stateCode": "MA",
+        "funnel": "tofu",
+        "targetKeyword": "massachusetts nonprofit compliance faq",
+        "monthlyVolume": 30,
+        "difficulty": 15,
+        "intent": "informational \u2014 broad question hub for AI-overview & long-tail capture",
+        "relatedPages": [
+          "/nonprofit-software/massachusetts",
+          "/resources/guides/massachusetts-nonprofit-startup-guide",
+          "/resources/guides/nonprofit-audit-requirements-by-state",
+          "/resources/guides/grant-management-software-for-nonprofits",
+          "/resources/best-grant-management-software",
+          "/resources/lead-magnets/massachusetts-compliance-checklist"
+        ],
+        "rationale": "FAQ hub for Massachusetts \u2014 designed for FAQ schema, AI Overviews, and long-tail aggregation across compliance questions."
+      }
+    ]
+  }
+}

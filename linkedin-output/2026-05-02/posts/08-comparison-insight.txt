@@ -1,0 +1,13 @@
+Bloomerang starts at $125/month. Little Green Light starts at $39/month. Neither manages grants.
+
+Little Green Light is the budget choice for small nonprofits that need a basic donor database — contacts, gifts, pledges, and basic reports. Setup runs 1-3 days. Reporting depth is shallow.
+
+Bloomerang is the mid-tier upgrade. The retention dashboard surfaces at-risk donors, which most nonprofit CRMs ignore entirely. Pricing scales with record count to $249/month. Setup runs 1-2 weeks.
+
+Only 33.3% of nonprofits rate their CRM as effective per the 2025 Fifty & Fifty Nonprofit Peer Report. 46.5% call it neutral. 20.1% call it ineffective.
+
+The shared limitation: neither platform tracks restricted fund expenditures against grant budgets, produces audit-ready compliance reports, or handles the post-award grant lifecycle. Organizations receiving grants run grant management in spreadsheets alongside the CRM and reconcile manually each month.
+
+Choose Little Green Light if budget dominates and the work is donor-only. Choose Bloomerang if retention analytics drive strategy. Choose neither if grants represent more than 20% of revenue — the spreadsheet workaround compounds quickly.
+
+#nonprofitcrm #bloomerang #littlegreenlight #grantmanagement

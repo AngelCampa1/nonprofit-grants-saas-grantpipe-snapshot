@@ -1,0 +1,90 @@
+{
+  "$schema": "https://turbo.build/schema.json",
+  "tasks": {
+    "dev": {
+      "cache": false,
+      "persistent": true
+    },
+    "build": {
+      "dependsOn": ["^build"],
+      "inputs": [
+        "src/**",
+        "scripts/**",
+        "package.json",
+        "tsconfig.json",
+        "tsconfig.*.json",
+        "../../tsconfig.base.json",
+        "vite.config.ts",
+        "astro.config.mjs",
+        "wrangler.toml"
+      ],
+      "outputs": ["dist/**"]
+    },
+    "typecheck": {
+      "dependsOn": ["^typecheck"],
+      "inputs": [
+        "src/**",
+        "scripts/**",
+        "package.json",
+        "tsconfig.json",
+        "tsconfig.*.json",
+        "../../tsconfig.base.json"
+      ]
+    },
+    "lint": {},
+    "knowledge:check": {
+      "dependsOn": [],
+      "inputs": [
+        "src/**",
+        "scripts/**",
+        "package.json",
+        "../../package.json",
+        "../../tsconfig.base.json"
+      ]
+    },
+    "test": {
+      "dependsOn": [],
+      "inputs": [
+        "src/**",
+        "scripts/**",
+        "package.json",
+        "tsconfig.json",
+        "tsconfig.*.json",
+        "../../tsconfig.base.json",
+        "vitest.config.ts",
+        "vitest.config.*.ts"
+      ],
+      "env": [
+        "VITE_POSTHOG_KEY",
+        "VITE_POSTHOG_HOST",
+        "DATABASE_URL",
+        "BETTER_AUTH_SECRET",
+        "SENTRY_DSN",
+        "SENTRY_ENVIRONMENT",
+        "SENTRY_RELEASE"
+      ]
+    },
+    "test:coverage": {
+      "dependsOn": [],
+      "inputs": [
+        "src/**",
+        "scripts/**",
+        "package.json",
+        "tsconfig.json",
+        "tsconfig.*.json",
+        "../../tsconfig.base.json",
+        "vitest.config.ts",
+        "vitest.config.*.ts"
+      ],
+      "env": [
+        "VITE_POSTHOG_KEY",
+        "VITE_POSTHOG_HOST",
+        "DATABASE_URL",
+        "BETTER_AUTH_SECRET",
+        "SENTRY_DSN",
+        "SENTRY_ENVIRONMENT",
+        "SENTRY_RELEASE"
+      ]
+    }
+  }
+}

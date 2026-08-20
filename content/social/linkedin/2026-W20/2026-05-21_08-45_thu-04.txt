@@ -1,0 +1,9 @@
+A fair board question for any Finance Director: "We have $1.2M in restricted net assets on the balance sheet. What does that actually mean?"
+
+Restricted net assets are dollars received but not free to spend. Donors or grant makers tied them to a purpose, time, or both. Under FASB ASC 958, those dollars are reported separately from net assets without donor restrictions.
+
+Two flavors. Purpose-restricted: the Clinic Capacity grant pays for equipment, not general operations. Time-restricted: a $300K pledge, $100K per year for three years.
+
+When the org spends on the right purpose in the right window, dollars release from restriction. The release belongs on the schedule of restricted activity.
+
+The board's real question is behind the question. They want to know how much of that $1.2M is theirs to use this year. The answer is on the spend-down schedule.

@@ -1,0 +1,55 @@
+- generic [ref=e10]:
+    - complementary [ref=e11]:
+        - generic [ref=e14]:
+            - link [ref=e15] [cursor=pointer]:
+                - /url: /app/
+                - img [ref=e16]
+            - generic [ref=e17]:
+                - generic [ref=e18]:
+                    - paragraph [ref=e19]: Grant-funded nonprofit software
+                    - paragraph [ref=e20]: Donors, grants, funds, and compliance in one system.
+                    - paragraph [ref=e21]: Built for nonprofits managing restricted funding, reporting deadlines, and audit work without adding another long setup project.
+                - generic [ref=e22]:
+                    - generic [ref=e23]:
+                        - paragraph [ref=e24]: What changes
+                        - paragraph [ref=e25]: Finance and development stop rebuilding the same answer from different tools.
+                    - generic [ref=e26]:
+                        - generic [ref=e27]:
+                            - paragraph [ref=e28]: Setup
+                            - paragraph [ref=e29]: Guided setup
+                        - generic [ref=e30]:
+                            - paragraph [ref=e31]: Reporting
+                            - paragraph [ref=e32]: Built-in reports
+                        - generic [ref=e33]:
+                            - paragraph [ref=e34]: Pricing
+                            - paragraph [ref=e35]: Flat monthly
+            - generic [ref=e38]: grantpipe.com
+    - generic [ref=e40]:
+        - generic [ref=e41]:
+            - generic [ref=e43]:
+                - paragraph [ref=e44]: Secure account access
+                - heading "Welcome back" [level=1] [ref=e45]
+                - paragraph [ref=e46]: Sign in to continue to your workspace.
+            - generic [ref=e48]:
+                - generic [ref=e49]:
+                    - generic [ref=e50]: Email
+                    - textbox "Email" [ref=e51]:
+                        - /placeholder: you@example.com
+                - generic [ref=e52]:
+                    - generic [ref=e53]:
+                        - generic [ref=e54]: Password
+                        - link "Forgot password?" [ref=e55] [cursor=pointer]:
+                            - /url: /app/forgot-password
+                    - textbox "Password" [ref=e56]
+                - button "Sign in" [ref=e57]
+                - generic [ref=e62]: or
+                - button "Continue with Google" [ref=e63]:
+                    - img
+                    - text: Continue with Google
+            - generic [ref=e64]:
+                - text: Don't have an account?
+                - link "Create an account" [ref=e65] [cursor=pointer]:
+                    - /url: /app/signup
+        - generic [ref=e66]:
+            - generic [ref=e67]: Encrypted session
+            - generic [ref=e68]: Reduced-motion safe

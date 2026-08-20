@@ -1,0 +1,21 @@
+services:
+  postgres:
+    image: postgres:16-alpine
+    container_name: grantpipe-local-postgres
+    restart: unless-stopped
+    ports:
+      - "55439:5432"
+    environment:
+      POSTGRES_DB: grantpipe
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: postgres
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U postgres -d grantpipe"]
+      interval: 5s
+      timeout: 5s
+      retries: 10
+    volumes:
+      - grantpipe-local-postgres-data:/var/lib/postgresql/data
+
+volumes:
+  grantpipe-local-postgres-data:

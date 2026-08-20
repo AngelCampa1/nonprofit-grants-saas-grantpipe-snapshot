@@ -1,0 +1,9 @@
+Program directors own program outcomes and the budget that funds them — usually with no formal finance training and no purpose-built tool for the budget-to-delivery connection.
+
+The standard setup at mid-sized nonprofits: program budget in Excel built from the award template, actuals in QuickBooks, reconciliation once a month if someone has time. When a program director approves a subrecipient invoice or authorizes a venue deposit, there is no live check against the remaining budget line. The check happens 30 days later, by which point the overage is booked.
+
+Cost disallowance was named one of the five most common Single Audit findings in the GAO's April 2024 analysis (GAO-24-106173), contributing to the 17% of federal spending linked to severe findings. The Center for Effective Philanthropy puts reporting alone at 6 to 8 hours per grant per year. Multiply by 10 to 20 active grants and a program director loses one to two weeks annually to report assembly.
+
+Question for the program directors and grants managers reading this: when you approve a vendor invoice, can you see the remaining balance on that grant's budget line right then, or do you find out at month-end. Does the disconnect between program tracking and the GL ever surface a 70%-consumed warning early enough to actually file a budget modification.
+
+#programmanagement #grantcompliance #nonprofitoperations #budgetmanagement

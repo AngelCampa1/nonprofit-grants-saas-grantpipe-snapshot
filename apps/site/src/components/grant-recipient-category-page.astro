@@ -1,0 +1,450 @@
+---
+import { getCollection } from "astro:content";
+import ArticleLayout from "@grantpipe/ui/site/layouts/article-layout.astro";
+import FaqSection from "@grantpipe/ui/site/components/faq-section.astro";
+import RelatedPages from "@grantpipe/ui/site/components/related-pages.astro";
+import DefinitionBlock from "@grantpipe/ui/site/seo/definition-block.astro";
+import AnswerBlock from "@grantpipe/ui/site/seo/answer-block.astro";
+import StatisticCitation from "@grantpipe/ui/site/seo/statistic-citation.astro";
+import { siteConfig, getSignupCtaTarget, shouldShowMobileStickyCta } from "@/config/site";
+import { buildContentMap } from "@/lib/page-helpers";
+import { resolveRelatedPageLinks } from "@grantpipe/ui/site/lib/related-page-resolver";
+import { resolveExitLeadMagnetOffer } from "@/lib/lead-magnet-routing";
+import type { GrantCategoryPageDefinition } from "@/config/grant-recipient-seo";
+import ExplainerVideo from "@/components/explainer-video.astro";
+import PricingSummaryBlock from "@/components/pricing-summary-block.astro";
+import DashboardMock from "@/components/dashboard-mock.astro";
+import ProductSurface from "@/components/product-surface.astro";
+import Button from "@/components/ui/button.astro";
+
+interface Props {
+  page: GrantCategoryPageDefinition;
+}
+
+const { page } = Astro.props;
+
+const [
+  alternatives,
+  comparisons,
+  pricingBreakdowns,
+  listicles,
+  guides,
+  statePages,
+  cityPages,
+  verticalPages,
+  leadMagnets,
+  faqHubs,
+  benchmarks,
+] = await Promise.all([
+  getCollection("alternatives"),
+  getCollection("comparisons"),
+  getCollection("pricing-breakdowns"),
+  getCollection("listicles"),
+  getCollection("guides"),
+  getCollection("state-pages"),
+  getCollection("city-pages"),
+  getCollection("vertical-pages"),
+  getCollection("lead-magnets"),
+  getCollection("faq-hubs"),
+  getCollection("benchmarks"),
+]);
+
+const contentMap = buildContentMap({
+  alternatives,
+  comparisons,
+  pricingBreakdowns,
+  listicles,
+  guides,
+  statePages,
+  cityPages,
+  verticalPages,
+  leadMagnets,
+  faqHubs,
+  benchmarks,
+});
+
+const relatedPageLinks = resolveRelatedPageLinks(
+  page.relatedPages.map((relatedPage) => relatedPage.href),
+  contentMap,
+);
+const exitLeadMagnet = resolveExitLeadMagnetOffer(siteConfig, leadMagnets, {
+  family: "solution",
+});
+
+const breadcrumbs = [
+  { label: "Home", href: "/" },
+  { label: page.title, href: page.href },
+];
+
+const primaryCta =
+  page.primaryCta === "pricing"
+    ? { href: "/pricing", text: "See pricing and fit" }
+    : page.primaryCta === "compare"
+      ? { href: "/compare", text: "Compare category options" }
+      : { href: getSignupCtaTarget(), text: siteConfig.funnel.bofu.ctaText };
+
+const secondaryCta =
+  page.primaryCta === "pricing"
+    ? { href: "/compare", text: "Compare category options" }
+    : page.primaryCta === "compare"
+      ? { href: "/pricing", text: "See pricing and fit" }
+      : { href: "/compare", text: "Compare category options" };
+
+const grantPipeFitSection = page.sections.find((section) =>
+  section.heading.toLowerCase().includes("grantpipe fits"),
+);
+const highIntentVideoPages = new Set([
+  "/grant-management-software",
+  "/grant-compliance-software",
+  "/restricted-fund-tracking-software",
+  "/grant-reporting-software",
+  "/auditor-funder-portal-software",
+]);
+const shouldShowExplainerVideo = highIntentVideoPages.has(page.href);
+
+// Reshape the existing evaluation questions into a compact row list for the
+// product-surface media panel. No new copy or numbers — same strings that
+// already render in the "What to verify" card.
+const evaluationRows = page.evaluationPoints.map((item, index) => ({
+  label: item,
+  status: `Step ${index + 1}`,
+}));
+
+---
+
+<ArticleLayout
+  title={page.title}
+  description={page.description}
+  seoTitle={page.seoTitle}
+  seoDescription={page.seoDescription}
+  bluf={page.bluf}
+  buyerStage={page.buyerStage}
+  publishedAt={page.publishedAt}
+  updatedAt={page.updatedAt}
+  lastReviewedAt={page.lastReviewedAt}
+  verifiedAt={page.verifiedAt}
+  canonicalPath={page.href}
+  config={siteConfig}
+  breadcrumbs={breadcrumbs}
+  sourceUrls={page.sourceUrls}
+  leadMagnet={exitLeadMagnet}
+  showStickyMobileCta={shouldShowMobileStickyCta(Astro.url.pathname)}
+>
+  <section class="editorial-panel editorial-panel--soft gp-cat-overview mb-8 p-6">
+    <p class="gp-eyebrow-pill">Category overview</p>
+    <h2 class="gp-link-card-title mt-4">{page.heroTitle}</h2>
+    <p class="gp-link-card-copy mt-3">{page.heroDescription}</p>
+  </section>
+
+  <section class="gp-feature-split gp-cat-definition mb-8">
+    <div class="gp-feature-split__body">
+      <p class="gp-kicker--accent">{page.definitionTerm}, defined</p>
+      <h2 class="gp-link-card-title mt-3">{page.definitionTerm}</h2>
+      <p class="mt-4 text-[length:var(--text-body)] leading-8 text-brand-text">
+        {page.definition}
+      </p>
+      <hr class="gp-hairline--accent mt-5 mb-5" />
+      <p class="gp-proof-label">Who this fits</p>
+      <ul class="gp-list--accent mt-3">
+        {page.whoItsFor.map((item) => (
+          <li>{item}</li>
+        ))}
+      </ul>
+    </div>
+    <div class="gp-feature-split__media">
+      <ProductSurface label="What to verify" variant="rows" items={evaluationRows} />
+    </div>
+  </section>
+
+  {grantPipeFitSection && (
+    <section class="gp-cat-media mb-8">
+      <div class="gp-cat-media__copy">
+        <p class="gp-eyebrow-pill">Where GrantPipe fits</p>
+        <h2 class="gp-link-card-title mt-4">{grantPipeFitSection.heading}</h2>
+        <div class="mt-4 space-y-4 text-[length:var(--text-body)] leading-8 text-brand-text">
+          {grantPipeFitSection.body.map((paragraph) => (
+            <p>{paragraph}</p>
+          ))}
+        </div>
+        {grantPipeFitSection.bullets && grantPipeFitSection.bullets.length > 0 && (
+          <ul class="mt-5 space-y-3">
+            {grantPipeFitSection.bullets.map((item) => (
+              <li class="gp-list-item">{item}</li>
+            ))}
+          </ul>
+        )}
+      </div>
+      <div class="gp-cat-media__figure" aria-hidden="true">
+        <DashboardMock />
+      </div>
+    </section>
+  )}
+
+  {shouldShowExplainerVideo && (
+    <ExplainerVideo
+      eyebrow="Product overview"
+      title="See where GrantPipe fits"
+      body="Watch the 1-minute overview before comparing tools. It shows how GrantPipe connects donors, grants, restricted funds, reporting, documents, and audit evidence in one workspace."
+      ctaHref={getSignupCtaTarget()}
+      ctaLabel={siteConfig.funnel.bofu.ctaText}
+      variant="editorial"
+    />
+  )}
+
+  <section class="grid gap-5 md:grid-cols-3">
+    <article class="editorial-panel gp-cat-fit-card p-5">
+      <p class="gp-proof-label">Who this fits</p>
+      <ul class="mt-4 space-y-3">
+        {page.whoItsFor.map((item) => (
+          <li class="gp-list-item">{item}</li>
+        ))}
+      </ul>
+    </article>
+    <article class="editorial-panel gp-cat-fit-card gp-cat-fit-card--accent p-5">
+      <p class="gp-proof-label">What to verify</p>
+      <ul class="mt-4 space-y-3">
+        {page.evaluationPoints.map((item) => (
+          <li class="gp-list-item">{item}</li>
+        ))}
+      </ul>
+    </article>
+    <article class="editorial-panel gp-cat-fit-card p-5">
+      <p class="gp-proof-label">Not for</p>
+      <ul class="mt-4 space-y-3">
+        {page.notFor.map((item) => (
+          <li class="gp-list-item">{item}</li>
+        ))}
+      </ul>
+    </article>
+  </section>
+
+  {page.sections
+    .filter((section) => section !== grantPipeFitSection)
+    .map((section, index) => (
+      <section class:list={["gp-cat-prose", index % 2 === 1 && "gp-cat-prose--panel"]}>
+        <hr class="gp-hairline--accent mb-4" />
+        <h2 class="gp-cat-prose__title font-heading font-bold text-brand-text">{section.heading}</h2>
+        <div class="mt-4 space-y-4 text-[length:var(--text-body)] leading-8 text-brand-text">
+          {section.body.map((paragraph) => (
+            <p>{paragraph}</p>
+          ))}
+        </div>
+        {section.bullets && section.bullets.length > 0 && (
+          <ul class="gp-list--accent mt-5">
+            {section.bullets.map((item) => (
+              <li>{item}</li>
+            ))}
+          </ul>
+        )}
+      </section>
+    ))}
+
+  {page.statistics.length > 0 && (
+    <section class="gp-cat-stat-band" aria-label="Category statistics">
+      {page.statistics.map((stat) => (
+        <StatisticCitation stat={stat.stat} source={stat.source} sourceUrl={stat.sourceUrl} />
+      ))}
+    </section>
+  )}
+
+  <DefinitionBlock term={page.definitionTerm} definition={page.definition} />
+
+  {page.answers.map((answer) => (
+    <AnswerBlock question={answer.q} answer={answer.a} />
+  ))}
+
+  <PricingSummaryBlock />
+
+  <slot name="contextual-video" />
+
+  <section class="gp-section--emerald gp-cat-closing-cta rounded-[1.3rem]" id="signup">
+    <p class="gp-kicker--accent">Run it against your own workflow</p>
+    <h2 class="mt-3">Compare the workflow against what you use now.</h2>
+    <p class="mt-3">
+      Use the shortlist and comparison pages below to narrow the field, then start a free trial
+      to test the workflow against your current process.
+    </p>
+    <div class="gp-shared-cta-actions mt-6">
+      <Button variant="primary" href={primaryCta.href}>
+        {primaryCta.text}
+      </Button>
+      <Button variant="ghost" href={secondaryCta.href}>
+        {secondaryCta.text}
+      </Button>
+    </div>
+  </section>
+
+  <FaqSection
+    faqs={page.faqs}
+    heading="Frequently Asked Questions"
+    showBottomCta={false}
+    ctaVariant="compact"
+  />
+
+  <RelatedPages
+    pages={relatedPageLinks}
+    heading="Keep evaluating"
+    variant="editorial"
+  />
+</ArticleLayout>
+
+<style>
+  /* Presentation-only elevation for the SEO category template. All values are
+     bound to the shared design tokens (--gp-*, --text-*, --radius-*, --shadow-*)
+     so the page inherits the unified visual system. No new marketing copy is
+     introduced here — this block only restructures rhythm and hierarchy. */
+
+  .gp-cat-overview {
+    border-left: 3px solid var(--gp-emerald-600);
+  }
+
+  /* Lead media row. The reading column is narrow (often narrower still when a
+     table-of-contents sidebar is present), so the copy stacks above a full-width
+     product mock rather than splitting into two cramped columns. A container
+     query promotes it to a true side-by-side only when the row is genuinely wide
+     enough to keep both the copy and the mock legible. */
+  .gp-cat-media {
+    container-type: inline-size;
+    display: grid;
+    grid-template-columns: minmax(0, 1fr);
+    gap: var(--gp-space-6);
+    align-items: center;
+  }
+
+  @container (min-width: 920px) {
+    .gp-cat-media {
+      grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+      gap: var(--gp-space-7);
+    }
+  }
+
+  .gp-cat-media__figure {
+    min-width: 0;
+  }
+
+  .gp-cat-media__figure :global(.gp-dashboard-body) {
+    min-height: 420px;
+  }
+
+  /* Fit triad: give the middle "What to verify" card a functional ochre accent
+     so the decision-critical column reads as the emphasis, not decoration. */
+  .gp-cat-fit-card {
+    height: 100%;
+  }
+
+  .gp-cat-fit-card--accent {
+    border-color: color-mix(in srgb, var(--gp-gold-600) 32%, var(--gp-ink-100));
+    background: color-mix(in srgb, var(--gp-gold-600) 7%, var(--gp-card));
+    box-shadow: var(--shadow-card);
+    position: relative;
+  }
+
+  .gp-cat-fit-card--accent::before {
+    content: "";
+    position: absolute;
+    inset-block: 0;
+    inset-inline-start: 0;
+    width: 3px;
+    border-start-start-radius: var(--radius-lg);
+    border-end-start-radius: var(--radius-lg);
+    background: var(--gp-gold-600);
+  }
+
+  .gp-cat-fit-card--accent :global(.gp-proof-label) {
+    color: var(--gp-gold-700);
+  }
+
+  /* Prose sections: stronger heading hierarchy + alternating panel treatment so
+     the back half of the page has rhythm instead of one flat text wall. */
+  .gp-cat-prose {
+    margin-top: var(--gp-space-8);
+  }
+
+  .gp-cat-prose__title {
+    font-size: var(--text-editorial-title);
+    line-height: 1.1;
+  }
+
+  .gp-cat-prose--panel {
+    border: 1px solid var(--gp-ink-100);
+    border-radius: var(--radius-lg);
+    background: var(--gp-paper-2);
+    padding: var(--gp-space-6);
+    box-shadow: var(--shadow-sm);
+  }
+
+  @media (min-width: 640px) {
+    .gp-cat-prose--panel {
+      padding: var(--gp-space-7);
+    }
+  }
+
+  /* Statistic proof band: group citations into one bordered band instead of a
+     run of loose stacked cards. */
+  .gp-cat-stat-band {
+    margin-top: var(--gp-space-8);
+    border: 1px solid var(--gp-emerald-100);
+    border-radius: var(--radius-lg);
+    background: color-mix(in srgb, var(--gp-emerald-50) 45%, var(--gp-card));
+    padding: var(--gp-space-5) var(--gp-space-6);
+  }
+
+  .gp-cat-stat-band :global(> div) {
+    margin-block: var(--gp-space-3);
+    background: var(--gp-card);
+  }
+
+  .gp-cat-stat-band :global(> div:first-of-type) {
+    margin-top: 0;
+  }
+
+  .gp-cat-stat-band :global(> div:last-of-type) {
+    margin-bottom: 0;
+  }
+
+  @media (prefers-reduced-motion: no-preference) {
+    .gp-cat-media__figure {
+      transition: transform 0.2s ease;
+    }
+  }
+
+  /* Definition + evaluation split: the template's opening argument (what the
+     category means, who it fits) paired with the evaluation checklist as a
+     product-surface mock, so the page opens with product proof instead of
+     prose alone. */
+  .gp-cat-definition {
+    padding-block: var(--gp-space-2);
+  }
+
+  /* Closing CTA: promote the shared editorial CTA shell to the inverted
+     emerald band used elsewhere on the site, so every category page ends on
+     the same high-contrast, high-intent close instead of a flat bordered box. */
+  .gp-cat-closing-cta {
+    margin-top: var(--gp-space-8);
+    padding: var(--gp-space-7) var(--gp-space-6);
+  }
+
+  @media (min-width: 640px) {
+    .gp-cat-closing-cta {
+      padding: var(--gp-space-8) var(--gp-space-7);
+    }
+  }
+
+  /* The shared ghost button is dark-ink-on-transparent by default, which is
+     near-invisible on the `.gp-section--emerald` dark fill. Match the same
+     white-on-transparent override already used for this pairing on
+     product.astro's closing band. */
+  .gp-cat-closing-cta :global(.gp-mkt-btn.ghost) {
+    border-color: color-mix(in srgb, #ffffff 45%, transparent);
+    color: #ffffff;
+  }
+
+  .gp-cat-closing-cta :global(.gp-mkt-btn.ghost:hover) {
+    background: color-mix(in srgb, #ffffff 12%, transparent);
+    border-color: color-mix(in srgb, #ffffff 65%, transparent);
+  }
+
+  .gp-cat-closing-cta :global(.gp-mkt-btn.ghost:active) {
+    background: color-mix(in srgb, #ffffff 18%, transparent);
+  }
+</style>

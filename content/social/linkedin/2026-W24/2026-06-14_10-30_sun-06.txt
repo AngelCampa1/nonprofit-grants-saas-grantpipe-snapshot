@@ -1,0 +1,13 @@
+A release schedule is a promise to explain later.
+
+For each restricted fund, write:
+
+- source
+- restriction purpose
+- amount released this period
+- evidence for the release
+- remaining balance
+
+That schedule does not need drama.
+
+It needs to reconcile to the statement of activities and survive the question: "Why did this release happen now?"

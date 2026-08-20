@@ -1,0 +1,278 @@
+---
+import SchemaMarkup from "../seo/schema-markup.astro"
+import { buildFaqPageSchema } from "../lib/schema-builders"
+import { PlusIcon, MinusIcon } from "../lib/icons"
+import { resolveFaqHeading } from "../lib/faq-utils"
+import type { FaqItem } from "../types"
+
+interface Props {
+  faqs: FaqItem[]
+  heading?: string
+  bottomCtaHeading?: string
+  bottomCtaText?: string
+  bottomCtaTarget?: string
+  defaultOpenCount?: number
+  emitSchema?: boolean
+  showBottomCta?: boolean
+  ctaVariant?: "solid" | "compact"
+  /**
+   * Stable id prefix used to wire `aria-controls` between each `<summary>`
+   * trigger and its corresponding answer panel. Defaults to a literal — the
+   * IDs must be deterministic so SSR markup is stable and tests are happy.
+   */
+  idPrefix?: string
+}
+
+const {
+  faqs,
+  heading,
+  bottomCtaHeading,
+  bottomCtaText,
+  bottomCtaTarget,
+  defaultOpenCount = 0,
+  emitSchema = true,
+  showBottomCta,
+  ctaVariant = "solid",
+  idPrefix = "faq-item",
+} = Astro.props
+
+const shouldShowBottomCta =
+  showBottomCta ??
+  Boolean(bottomCtaHeading && bottomCtaText && bottomCtaTarget)
+const faqSchema = emitSchema && faqs.length > 0 ? buildFaqPageSchema(faqs) : null
+---
+
+{faqs.length > 0 && (
+  <section
+    data-section="faq"
+    data-faq-section
+    class="faq-section bg-surface-secondary px-4 py-[var(--section-py)]"
+  >
+    <div class="faq-shell mx-auto max-w-4xl">
+      <div class="max-w-[var(--content-measure)]">
+        <p class="editorial-kicker">Frequently asked</p>
+        <h2 class="mt-4 text-balance font-heading text-[length:var(--text-heading)] font-bold text-brand-text">
+          {resolveFaqHeading(heading)}
+        </h2>
+      </div>
+
+      <div
+        class="faq-list mt-[var(--component-gap)] overflow-hidden rounded-lg border border-neutral-200 bg-surface-elevated shadow-card"
+        data-faq-accordion
+      >
+        {faqs.map((faq, index) => {
+          const panelId = `${idPrefix}-${index}-panel`
+          const isInitiallyOpen = index < defaultOpenCount
+          return (
+            <details
+              open={index < defaultOpenCount || undefined}
+              class="faq-item group border-b border-neutral-200 bg-transparent last:border-b-0"
+            >
+              <summary
+                aria-expanded={isInitiallyOpen ? "true" : "false"}
+                aria-controls={panelId}
+                class="faq-trigger flex list-none cursor-pointer items-start justify-between gap-4 px-5 py-4 font-medium text-brand-text focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary-500 focus-visible:ring-offset-2 sm:px-6 sm:py-5"
+              >
+                <span class="max-w-[42rem] leading-6">{faq.q}</span>
+                <span class="mt-0.5 ml-4 flex-shrink-0 select-none text-accent-600" aria-hidden="true">
+                  <span class="group-open:hidden" set:html={PlusIcon} />
+                  <span class="hidden group-open:block" set:html={MinusIcon} />
+                </span>
+              </summary>
+              <div
+                id={panelId}
+                role="region"
+                aria-label={faq.q}
+                data-faq-panel
+                class="faq-panel grid grid-rows-[0fr] transition-[grid-template-rows] duration-200 ease-out group-open:grid-rows-[1fr]"
+              >
+                <div class="overflow-hidden">
+                  <div class="faq-answer border-t border-neutral-200 px-5 pb-5 pt-4 text-[length:var(--text-body)] leading-7 text-brand-muted sm:px-6">
+                    {faq.a}
+                  </div>
+                </div>
+              </div>
+            </details>
+          )
+        })}
+      </div>
+
+      {shouldShowBottomCta && bottomCtaHeading && bottomCtaText && bottomCtaTarget && (
+        ctaVariant === "compact" ? (
+          <div class="mt-8 editorial-panel p-5 md:flex md:items-center md:justify-between md:gap-6">
+            <div class="max-w-[34rem]">
+              <h3 class="font-heading text-[length:var(--text-subheading)] font-bold text-brand-text">
+                {bottomCtaHeading}
+              </h3>
+            </div>
+            <a href={bottomCtaTarget} class="gp-mkt-btn primary md mt-4 no-underline md:mt-0">
+              {bottomCtaText}
+            </a>
+          </div>
+        ) : (
+          <div class="mt-12 rounded-lg border border-accent-200 bg-accent-50 px-8 py-10 text-center shadow-lg">
+            <h3 class="mb-4 font-heading text-[length:var(--text-subheading)] font-bold text-accent-950">
+              {bottomCtaHeading}
+            </h3>
+            <a
+              href={bottomCtaTarget}
+              class="gp-mkt-btn primary lg no-underline"
+            >
+              {bottomCtaText}
+            </a>
+          </div>
+        )
+      )}
+
+      <SchemaMarkup schemas={faqSchema ? [faqSchema] : []} />
+    </div>
+  </section>
+)}
+
+<style>
+  /*
+   * Progressive-enhancement hook: once the script below takes over a panel it
+   * flags it with `data-faq-js-enhanced` and disables the CSS-only
+   * `grid-template-rows` transition (declared inline via Tailwind utilities
+   * above) so the two animation systems never fight each other. If JS is
+   * disabled, or errors before this runs, the CSS transition on
+   * `.faq-panel` remains the (still smooth, no-CLS) fallback.
+   */
+  .faq-panel[data-faq-js-enhanced] {
+    transition: none;
+  }
+
+  /* Quiet, precise easing for the JS-driven height animation — no bounce. */
+  .faq-panel[data-faq-animating] {
+    overflow: hidden;
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    .faq-panel {
+      transition: none !important;
+    }
+  }
+</style>
+
+<script>
+  /*
+   * Accordion semantics:
+   *
+   * - <details> is the native, fully-accessible disclosure pattern. It already
+   *   conveys open/closed state to assistive tech, supports keyboard activation
+   *   (Enter + Space on the <summary>), and — critically for this design —
+   *   allows MULTIPLE items to be open simultaneously by default. There is no
+   *   parent-level "exclusive" group here, so users can compare answers without
+   *   the UI snapping shut on them.
+   *
+   * - We additionally mirror the native open/closed state onto an explicit
+   *   `aria-expanded` attribute on each <summary>, and pair it with the
+   *   `aria-controls` already rendered in the SSR markup. This is belt-and-
+   *   suspenders for older AT that don't yet announce the implicit state of
+   *   <details>, and it lets us assert the contract in tests.
+   *
+   * - Progressive enhancement: markup already ships a CSS-only
+   *   `grid-template-rows: 0fr -> 1fr` transition on `.faq-panel`, driven by
+   *   Tailwind's `group-open:` variant. That alone gives every visitor a
+   *   smooth, no-CLS open/close even with JS disabled or before this script
+   *   runs. When JS *is* available we additionally intercept the native
+   *   `toggle` to run a quiet height animation (via the Web Animations API on
+   *   `max-height`), because Safari's support for animating
+   *   `grid-template-rows` is inconsistent — this keeps the motion looking
+   *   identical across browsers while never introducing layout shift on
+   *   sibling items (only the panel's own block size ever changes, and only
+   *   inside its own `overflow: hidden` box).
+   *
+   * - `prefers-reduced-motion: reduce` disables the height animation in both
+   *   the scoped CSS above (native fallback) and here in the script (JS
+   *   path) — reduced-motion users get an instant open/close either way.
+   *
+   * - Idempotent init: this script runs on first load AND again on
+   *   `astro:page-load` (fired by Astro's ViewTransitions router on every
+   *   soft navigation, and once on the initial hard load). Each accordion
+   *   item is flagged with a `data-faq-js-bound` dataset marker so repeat
+   *   runs never double-bind listeners.
+   */
+  function initFaqAccordions(): void {
+    const prefersReducedMotion = window.matchMedia(
+      "(prefers-reduced-motion: reduce)",
+    ).matches
+
+    const accordions = document.querySelectorAll<HTMLElement>("[data-faq-accordion]")
+    accordions.forEach((accordion) => {
+      const items = accordion.querySelectorAll<HTMLDetailsElement>("details")
+      items.forEach((details) => {
+        const summary = details.querySelector<HTMLElement>("summary")
+        const panel = details.querySelector<HTMLElement>("[data-faq-panel]")
+        if (!summary) return
+
+        const sync = () => {
+          summary.setAttribute("aria-expanded", details.open ? "true" : "false")
+        }
+
+        if (details.dataset.faqJsBound !== "true") {
+          sync()
+          details.addEventListener("toggle", sync)
+          details.dataset.faqJsBound = "true"
+        }
+
+        if (!panel || prefersReducedMotion) return
+        if (panel.dataset.faqJsEnhanced === "true") return
+        panel.dataset.faqJsEnhanced = "true"
+
+        let animation: Animation | null = null
+
+        const currentHeight = () => panel.getBoundingClientRect().height
+
+        const runAnimation = (startHeight: number, endHeight: number, onFinish: () => void) => {
+          animation?.cancel()
+          panel.dataset.faqAnimating = "true"
+          animation = panel.animate(
+            { maxHeight: [`${startHeight}px`, `${endHeight}px`] },
+            { duration: 200, easing: "ease-out" },
+          )
+          animation.onfinish = () => {
+            panel.dataset.faqAnimating = "false"
+            panel.style.maxHeight = ""
+            onFinish()
+          }
+          animation.oncancel = () => {
+            panel.dataset.faqAnimating = "false"
+          }
+        }
+
+        details.addEventListener("click", (event) => {
+          // Only intercept clicks on the summary trigger itself.
+          if (!(event.target instanceof Node) || !summary.contains(event.target)) return
+          event.preventDefault()
+
+          if (details.open) {
+            // Closing: measure current height, force layout to the open
+            // state's height, then animate down to 0 before removing [open].
+            const startHeight = currentHeight()
+            panel.style.maxHeight = `${startHeight}px`
+            requestAnimationFrame(() => {
+              runAnimation(startHeight, 0, () => {
+                details.open = false
+              })
+            })
+          } else {
+            // Opening: set [open] first (synchronously renders content at
+            // its natural height), measure it, then animate from 0.
+            details.open = true
+            const endHeight = currentHeight()
+            panel.style.maxHeight = "0px"
+            requestAnimationFrame(() => {
+              runAnimation(0, endHeight, () => {
+                /* no-op: already open */
+              })
+            })
+          }
+        })
+      })
+    })
+  }
+
+  initFaqAccordions()
+  document.addEventListener("astro:page-load", initFaqAccordions)
+</script>

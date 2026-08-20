@@ -1,0 +1,81 @@
+---
+import { formatArticleDate, normalizeDateInput } from "../lib/dates"
+
+interface Props {
+  publishedAt?: string | Date
+  updatedAt: string | Date
+  lastReviewedAt?: string | Date
+  verifiedAt?: string | Date
+  sourceUrls?: string[]
+}
+const { publishedAt, updatedAt, lastReviewedAt, verifiedAt, sourceUrls = [] } = Astro.props
+const normalizedPublishedAt = publishedAt ? normalizeDateInput(publishedAt) : undefined
+const normalizedUpdatedAt = normalizeDateInput(updatedAt)
+const normalizedReviewedAt = lastReviewedAt ? normalizeDateInput(lastReviewedAt) : undefined
+const normalizedVerifiedAt = verifiedAt ? normalizeDateInput(verifiedAt) : undefined
+
+function getSourceLabel(sourceUrl: string): string {
+  try {
+    return new URL(sourceUrl).hostname.replace(/^www\./u, "")
+  } catch {
+    return sourceUrl
+  }
+}
+
+// Source links are labeled by hostname only, so several deep links on one
+// domain would render the same visible label repeatedly. De-duplicate by
+// display label (first URL wins) so each source domain appears once.
+const seenSourceLabels = new Set<string>()
+const uniqueSourceUrls = sourceUrls.filter((sourceUrl) => {
+  const label = getSourceLabel(sourceUrl)
+  if (seenSourceLabels.has(label)) return false
+  seenSourceLabels.add(label)
+  return true
+})
+---
+<!--
+  Inline meta strip — typographic, no card. Each date value is a real <time>
+  element with a `datetime` attribute so it is machine-readable and
+  screen-reader friendly.
+-->
+<div data-article-meta class="mb-8 flex flex-wrap items-center gap-x-3 gap-y-2 text-[length:var(--text-caption)] text-neutral-500">
+  {normalizedPublishedAt && (
+    <span class="text-[length:var(--text-caption)] text-neutral-500">
+      Published: <time class="font-mono" datetime={normalizedPublishedAt}>{formatArticleDate(normalizedPublishedAt)}</time>
+    </span>
+  )}
+  <span class="flex items-center gap-2 text-[length:var(--text-caption)] text-neutral-500">
+    <svg class="h-4 w-4 shrink-0 text-neutral-400" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+      <rect x="3" y="4" width="18" height="18" rx="2" ry="2" stroke-width="2"></rect>
+      <line x1="16" y1="2" x2="16" y2="6" stroke-width="2"></line>
+      <line x1="8" y1="2" x2="8" y2="6" stroke-width="2"></line>
+      <line x1="3" y1="10" x2="21" y2="10" stroke-width="2"></line>
+    </svg>
+    <span>Last updated: <time class="font-mono" datetime={normalizedUpdatedAt}>{formatArticleDate(normalizedUpdatedAt)}</time></span>
+  </span>
+  {normalizedReviewedAt && (
+    <span class="text-[length:var(--text-caption)] text-neutral-500">
+      Reviewed: <time class="font-mono" datetime={normalizedReviewedAt}>{formatArticleDate(normalizedReviewedAt)}</time>
+    </span>
+  )}
+  {normalizedVerifiedAt && (
+    <span class="text-[length:var(--text-caption)] text-neutral-500">
+      Verified: <time class="font-mono" datetime={normalizedVerifiedAt}>{formatArticleDate(normalizedVerifiedAt)}</time>
+    </span>
+  )}
+  {uniqueSourceUrls.length > 0 && (
+    <span class="flex flex-wrap items-center gap-2 text-[length:var(--text-caption)] text-neutral-500">
+      <span>Sources:</span>
+      {uniqueSourceUrls.map((sourceUrl) => (
+        <a
+          href={sourceUrl}
+          class="font-mono underline decoration-neutral-300 underline-offset-2 transition hover:text-brand-text focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary-500 focus-visible:ring-offset-2 focus-visible:rounded-xs"
+          rel="noreferrer"
+          target="_blank"
+        >
+          {getSourceLabel(sourceUrl)}
+        </a>
+      ))}
+    </span>
+  )}
+</div>

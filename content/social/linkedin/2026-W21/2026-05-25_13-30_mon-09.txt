@@ -1,0 +1,5 @@
+Definition: pre-award costs.
+
+Costs incurred before the official start date of a federal grant. Generally unallowable unless the awarding agency gave prior written approval, or the cost was incurred within 90 days of the start date and falls under 2 CFR 200.458.
+
+Charge them anyway and the auditor will disallow them at closeout. The dollars come back out of unrestricted reserves.

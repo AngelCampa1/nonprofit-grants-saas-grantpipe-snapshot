@@ -1,0 +1,7 @@
+Monday handoff test:
+
+Can Development tell Finance which new gifts are restricted before Finance closes the deposits?
+
+Can Finance tell Development which grant balances changed before the funder update is drafted?
+
+Two small yeses prevent a week of cleanup.

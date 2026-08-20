@@ -1,0 +1,32 @@
+---
+import { parseStatValue } from "../lib/ai-extractable"
+import SchemaMarkup from "./schema-markup.astro"
+import { buildStatisticCitationSchema } from "../lib/schema-builders"
+
+interface Props {
+  stat: string
+  source: string
+  sourceUrl?: string
+  emitSchema?: boolean
+}
+const { stat, source, sourceUrl, emitSchema = true } = Astro.props
+const statValue = parseStatValue(stat)
+const schema = buildStatisticCitationSchema({ stat, source, sourceUrl })
+const isShortStat = stat.length <= 30 && /\d/.test(stat)
+---
+
+{stat && source && (
+  <>
+    <div class="rounded-md bg-surface-secondary shadow-sm px-4 py-3 my-6">
+      {isShortStat ? (
+        <data value={statValue} class="font-mono text-[length:var(--text-heading)] font-bold text-brand-primary leading-tight">{stat}</data>
+      ) : (
+        <data value={statValue} class="block text-[length:var(--text-body-lg)] font-semibold text-brand-text leading-snug">{stat}</data>
+      )}
+      <p class="text-[length:var(--text-caption)] text-neutral-500 mt-1">
+        Source: {sourceUrl ? <a href={sourceUrl} class="underline" target="_blank" rel="noopener noreferrer">{source}</a> : source}
+      </p>
+    </div>
+    {emitSchema && <SchemaMarkup schemas={[schema]} />}
+  </>
+)}

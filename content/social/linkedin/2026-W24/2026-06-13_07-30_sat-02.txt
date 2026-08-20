@@ -1,0 +1,13 @@
+Restricted fund cleanup can be small.
+
+Pick one fund.
+
+Find the source document.
+
+Write the restriction in one plain sentence.
+
+Check the current balance.
+
+Name the release trigger.
+
+That is not a full reconciliation. It is a better record than yesterday.

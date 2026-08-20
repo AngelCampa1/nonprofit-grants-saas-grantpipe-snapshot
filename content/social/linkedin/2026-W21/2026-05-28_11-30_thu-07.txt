@@ -1,0 +1,11 @@
+Most donor CRMs were built to track gifts. Then someone added a "grants" object as a custom record type.
+
+That is the seam where it falls apart.
+
+A grant is not a big donation. It has a period of performance, a budget by line item, restricted-fund allocations, a reporting cadence, and an evidence trail that has to survive an auditor three years from now.
+
+A donation has a date, an amount, an acknowledgment letter, and a soft credit field.
+
+When the second one is the foundation, the first one is always a workaround. The Development Director ends up with a grants pipeline in the CRM, the Finance Director ends up with a parallel ledger in QuickBooks, and the spend-down on restricted dollars happens in a Google Sheet neither of them fully owns.
+
+Different problem, different schema.

@@ -1,0 +1,122 @@
+---
+import PaidSearchLandingPage from "@/components/paid-search-landing-page.astro";
+import type { PaidLandingPageData } from "@/components/paid-search-landing-page.astro";
+
+const page: PaidLandingPageData = {
+  slug: "granthub-migration",
+  title: "GrantHub Migration and Replacement | GrantPipe",
+  description:
+    "Move funders, grants, deadlines, documents, and reporting evidence from GrantHub into a post-award workspace built for restricted funds and compliance.",
+  kicker: "GrantHub migration",
+  headline: "Replacing GrantHub? Keep the pipeline. Add the post-award record.",
+  subhead:
+    "Move grants, deadlines, and reports out of GrantHub without rebuilding from scratch. Add restricted funds, evidence, and the audit trail GrantHub left outside the record.",
+  primaryCta: "Start 1-month free trial",
+  exitLeadMagnet: {
+    slug: "granthub-migration-checklist",
+    title: "GrantHub Migration Checklist",
+    description:
+      "Use a step-by-step migration checklist for export review, field mapping, validation, parallel-period planning, and replacement evaluation.",
+  },
+  trust: "No credit card required. No setup fee. Bring one exported GrantHub file to the trial.",
+  proofCard: {
+    label: "Migration workspace",
+    status: "Mapped",
+    rows: [
+      { label: "Source export", value: "Funders, grants, deadlines" },
+      { label: "Post-award add-ons", value: "Funds, reports, evidence" },
+      { label: "Next report due", value: "30 days" },
+      { label: "Launch path", value: "Review, import, verify" },
+    ],
+    progressLabel: "GrantHub migration readiness",
+    progress: "78%",
+  },
+  painsTitle: "GrantHub kept the pre-award list moving. The post-award record still lands somewhere else.",
+  pains: [
+    "GrantHub stops at award while reports, evidence, and fund balances move to spreadsheets.",
+    "Documents export cleanly, but the audit trail is hard to reconstruct later.",
+    "Deadlines live in one list while actual spending and drawdowns live elsewhere.",
+    "Migration becomes risky when every team has a different field map.",
+    "The next report date matters more than a long implementation project.",
+  ],
+  workflowTitle: "A migration path built around the next reporting deadline.",
+  workflowSteps: [
+    {
+      icon: "transfer",
+      heading: "Export and map",
+      copy: "Bring funders, grants, contacts, deadlines, files, and custom fields forward without rebuilding the pipeline by hand.",
+    },
+    {
+      icon: "ledger",
+      heading: "Add the award controls",
+      copy: "Attach restricted funds, spend-down status, report owners, and evidence requirements to each active award.",
+    },
+    {
+      icon: "check",
+      heading: "Verify and launch",
+      copy: "Review the migrated records, confirm the next 30 days of deadlines, and start working from GrantPipe.",
+    },
+  ],
+  featureTitle: "What GrantHub did not track for you.",
+  features: [
+    {
+      icon: "balance",
+      heading: "Restricted fund balances",
+      copy: "See awarded, spent, remaining, released, and restricted amounts by grant without a month-end spreadsheet rebuild.",
+    },
+    {
+      icon: "calendar",
+      heading: "Reporting evidence",
+      copy: "Keep each report linked to deadlines, source documents, approvals, and the funder record.",
+    },
+    {
+      icon: "audit",
+      heading: "Audit trail",
+      copy: "Record who changed award data, when it changed, and what evidence supports the current record.",
+    },
+  ],
+  proofTitle: "Migration should reduce operational risk, not create another one.",
+  proofPoints: [
+    {
+      value: "CSV import",
+      label: "moves funders, grants, deadlines, contacts, and custom fields out of a GrantHub export without manual re-entry.",
+      source: "GrantPipe import workspace",
+    },
+    {
+      value: "Restricted funds",
+      label: "track awarded, spent, released, and remaining balances by grant. GrantHub does not model this.",
+      source: "GrantPipe fund ledger",
+    },
+    {
+      value: "Audit trail",
+      label: "records who changed each award field, when, and what evidence supports the current value.",
+      source: "GrantPipe activity log",
+    },
+  ],
+  trustLabels: ["GrantHub export mapping", "Post-award controls", "Staff-led setup"],
+  faqTitle: "Answers for teams moving off GrantHub.",
+  faqs: [
+    {
+      q: "How long does migration take?",
+      a: "A small active portfolio can usually be mapped and reviewed in days. Larger archives should be staged so current awards go live first.",
+    },
+    {
+      q: "Will GrantPipe preserve our GrantHub history?",
+      a: "Yes. Exported funders, grants, deadlines, notes, and documents can be mapped into GrantPipe, then extended with restricted fund and reporting records.",
+    },
+    {
+      q: "Can we migrate documents and reports?",
+      a: "Yes. Documents can be attached to the relevant award, report, fund, or audit evidence record so files stay useful after migration.",
+    },
+    {
+      q: "Do we need to replace our accounting system?",
+      a: "No. GrantPipe does not replace your books. It keeps the award, restriction, report, and evidence record aligned with accounting activity.",
+    },
+  ],
+  finalTitle: "Pick one active award. Have its deadlines, funds, and evidence in one place by Friday.",
+  finalBody:
+    "Bring a single GrantHub export and the awards under reporting pressure. GrantPipe holds the deadlines, restricted balances, and evidence GrantHub left outside the record.",
+};
+---
+
+<PaidSearchLandingPage page={page} />

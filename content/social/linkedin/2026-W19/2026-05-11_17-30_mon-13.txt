@@ -1,0 +1,7 @@
+Before: the Development Director closes the grant in the donor CRM. The Finance Director hears about it three weeks later when the cash hits.
+
+After: the award is a single record. Development tracks the pipeline and the funder relationship. Finance tracks the budget, drawdowns, and reporting. Same record, two views, one audit trail.
+
+The hand-off between Development and Finance is where grant compliance breaks down. Not because either team is bad at their job, but because the system makes them work from different copies of the same truth.
+
+If your monthly close includes a reconciling memo that explains why the development pipeline and the GL do not agree, the memo is the smoke. The system architecture is the fire.

@@ -1,0 +1,145 @@
+---
+import "../../styles/global.css";
+import { getVideosByCategory } from "@grantpipe/shared";
+import { siteConfig, getSignupCtaTarget, shouldShowMobileStickyCta } from "@/config/site";
+import { getAppLoginUrl } from "@/lib/app-url";
+import BaseLayout from "@grantpipe/ui/site/layouts/base-layout.astro";
+import SiteFooter from "@grantpipe/ui/site/components/site-footer.astro";
+import SiteHeader from "@grantpipe/ui/site/components/site-header.astro";
+import VideoEmbed from "@/components/video-embed.astro";
+import { videoSchema } from "@/lib/video-schema.ts";
+
+const overviewVideos = getVideosByCategory("overview");
+const educationalVideos = getVideosByCategory("educational");
+const productVideos = getVideosByCategory("product");
+
+const categories = [
+  { key: "overview" as const, heading: "Overview", videos: overviewVideos },
+  { key: "educational" as const, heading: "Learn the rules", videos: educationalVideos },
+  { key: "product" as const, heading: "Using GrantPipe", videos: productVideos },
+];
+---
+
+<BaseLayout
+  title="Video Library | GrantPipe"
+  description="Short videos on grants, restricted funds, compliance, and using GrantPipe. Watch the rules and the product in action."
+  canonicalUrl={`https://${siteConfig.domain}/resources/videos/`}
+  siteName={siteConfig.name}
+  ogType="website"
+  twitterSite={siteConfig.social?.twitterHandle}
+  theme={siteConfig.theme}
+  fonts={siteConfig.theme.fonts}
+  themeColor={siteConfig.theme.primary}
+  appleTouchIcon={siteConfig.appleTouchIcon}
+  siteUrl={`https://${siteConfig.domain}`}
+  siteLogo={siteConfig.logo?.light ? `https://${siteConfig.domain}${siteConfig.logo.light}` : undefined}
+  siteFounder={siteConfig.author}
+  siteSameAs={siteConfig.sameAs}
+  showStickyMobileCta={shouldShowMobileStickyCta("/resources/videos")}
+  stickyCtaText={siteConfig.funnel.bofu.ctaText}
+  stickyCtaTarget={getSignupCtaTarget()}
+>
+  <SiteHeader
+    slot="header"
+    siteName={siteConfig.name}
+    navItems={siteConfig.nav?.items}
+    ctaText={siteConfig.funnel.bofu.ctaText}
+    ctaHref={siteConfig.funnel.bofu.ctaTarget}
+    loginHref={getAppLoginUrl()}
+    ctaVariant="primary"
+    ctaPill
+    currentPath={Astro.url.pathname}
+    logoLight={siteConfig.logo?.light}
+  />
+
+  <main data-marketing-page="resources-videos">
+    <section class="gp-section" data-section="hero">
+      <div class="gp-wrap">
+        <div class="gp-section-head">
+          <p class="gp-eyebrow-pill">Video library</p>
+          <h1>Watch how GrantPipe works</h1>
+          <p>Short videos on grants, funds, and compliance. See the rules and the product in action.</p>
+        </div>
+      </div>
+    </section>
+
+    {categories.map(({ heading, videos }) => (
+      <section class="gp-section" data-section={`videos-${heading.toLowerCase().replace(/\s+/g, "-")}`}>
+        <div class="gp-wrap">
+          <div class="gp-section-head">
+            <h2>{heading}</h2>
+          </div>
+          <div class="gp-resource-grid">
+            {videos.map((video) => (
+              <div class="gp-resource gp-video-card">
+                <VideoEmbed
+                  youtubeId={video.youtubeId}
+                  iframeTitle={video.title}
+                  playLabel={`Play: ${video.shortTitle}`}
+                />
+                <div class="gp-video-card__body">
+                  <h3>{video.shortTitle}</h3>
+                  <p>{video.description}</p>
+                  {video.leadMagnetSlug && (
+                    <a
+                      href={`/free/${video.leadMagnetSlug}/`}
+                      class="gp-mkt-btn gp-mkt-btn--secondary"
+                    >
+                      Get the free template
+                    </a>
+                  )}
+                </div>
+                <script
+                  type="application/ld+json"
+                  set:html={JSON.stringify(videoSchema(video))}
+                />
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+    ))}
+  </main>
+
+  <SiteFooter
+    slot="footer"
+    siteName={siteConfig.name}
+    tagline={siteConfig.tagline}
+    linkGroups={siteConfig.footer?.linkGroups ?? []}
+    legalLinks={siteConfig.footer?.legalLinks ?? []}
+    contactEmail={siteConfig.contactEmail}
+    logoLight={siteConfig.logo?.light}
+    captureVariant="none"
+    currentPath={Astro.url.pathname}
+  />
+</BaseLayout>
+
+<style>
+  .gp-video-card {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  .gp-video-card__body {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+
+  .gp-mkt-btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0.5rem 1.25rem;
+    border-radius: 9999px;
+    font-weight: 500;
+    font-size: 0.875rem;
+    text-decoration: none;
+    width: fit-content;
+  }
+
+  .gp-mkt-btn--secondary {
+    border: 1px solid currentColor;
+  }
+</style>

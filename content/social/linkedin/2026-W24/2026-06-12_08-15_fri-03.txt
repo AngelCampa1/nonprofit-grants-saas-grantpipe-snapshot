@@ -1,0 +1,13 @@
+A clean closeout package answers five questions.
+
+What was awarded?
+
+What changed through amendments?
+
+What was spent, by approved line?
+
+What was delivered?
+
+What evidence supports the spending and the delivery?
+
+If those answers live in separate folders, closeout becomes a search project.

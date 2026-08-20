@@ -1,0 +1,11 @@
+AmpliFund typically runs $15,000 to $50,000 per year, with multi-month implementations.
+
+That price tag exists because AmpliFund (now part of Bonterra) was built for government agencies and large nonprofits managing complex federal portfolios. Budget-versus-actual tied to grant line items, Uniform Guidance awareness, and SF-425-aware workflows are real strengths. Organizations running $10M+ in federal funds get genuine value from the depth.
+
+The mid-sized question is different. If your federal portfolio is two or three grants and your team is one finance person and one program lead, the implementation tax is the actual cost — not the license fee. You pay for capability you cannot operate.
+
+The honest evaluation: list the federal grants you actually manage, the staff hours you have for compliance work, and what your audit findings have looked like for the past three cycles. If the answer is "two grants, one person, no findings," AmpliFund is probably oversized.
+
+If the answer is "fifteen grants across four federal agencies and a single audit every year," it isn't.
+
+#grantmanagementsoftware #federalgrants #nonprofitsoftware #amplifund

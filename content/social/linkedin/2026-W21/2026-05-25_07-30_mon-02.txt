@@ -1,0 +1,13 @@
+$1,000,000.
+
+That is the federal expenditure threshold that triggers a single audit under 2 CFR 200 Subpart F. Total federal awards spent in your fiscal year, not received. Pass-through dollars count.
+
+The math people miss: it is cumulative across all federal sources. A $400K HRSA grant plus a $380K state pass-through that originated federally puts you over the line.
+
+If you are close to the threshold this year, three things to nail down before fiscal close:
+
+1. A clean schedule of expenditures of federal awards (SEFA) by ALN.
+2. Sub-recipient vs vendor classification documented for every payment.
+3. An auditor selected and engaged by month nine. Capacity gets tight in Q4.
+
+The single audit is not punishment. It is the price of federal money. Plan for it like you plan for the 990.

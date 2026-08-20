@@ -1,0 +1,5 @@
+Releases from restriction: the accounting entry that moves dollars from "with donor restrictions" to "without donor restrictions" once you have spent them on the purpose the donor specified.
+
+It is the moment the constraint comes off. The dollars were always yours. They are now also unencumbered.
+
+Most spreadsheets miss this entry. Most audits ask for it.

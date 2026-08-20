@@ -1,0 +1,13 @@
+Myth: software marketed as "grant tracking" handles post-award compliance.
+
+Reality: most of it covers the pre-award pipeline only. Pre-award is grant discovery, application stages, deadline reminders, award decisions. Post-award is restricted fund balances by budget category, expenditures linked to grant lines, and SF-425-ready compliance reports pulled from real posted transactions.
+
+The two are different problems with different data models. A tool that tracks "applied → awarded → reporting" without ever touching the GL is a calendar with a logo. It cannot answer the only question that matters at audit: did the dollars spent against this grant match the approved budget categories.
+
+Three capabilities separate compliance tools from pipeline trackers — restricted fund balance tracking by budget category, expenditure documentation linked to individual grant budget lines, and compliance report generation from actual expenditure data. If a tool cannot do those three, it tracks grants informally.
+
+Foundant GrantHub Pro was sunset January 31, 2026, and never covered restricted fund tracking in the first place. Buyers searching for a GrantHub replacement should be very clear about which problem they are actually solving.
+
+The mistake most buyers make is searching for "grant tracking software" when what they actually need is post-award compliance.
+
+#granttracking #grantcompliance #nonprofitsoftware #postaward

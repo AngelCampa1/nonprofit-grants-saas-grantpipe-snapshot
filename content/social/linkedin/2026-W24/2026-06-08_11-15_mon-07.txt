@@ -1,0 +1,9 @@
+Release from restriction is not new revenue.
+
+Under FASB ASC 958, a release moves donor-restricted net assets into without-donor-restrictions when the purpose or time restriction has been met.
+
+That distinction matters in board reporting.
+
+A $100,000 grant can be real, restricted, and unavailable for general operations at the same time.
+
+The schedule should show what was received, what remains restricted, what was released, and what condition triggered the release.

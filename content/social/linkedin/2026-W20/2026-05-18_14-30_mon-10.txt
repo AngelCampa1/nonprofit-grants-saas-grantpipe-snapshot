@@ -1,0 +1,5 @@
+Picture the scenario: a program officer calls on a Tuesday afternoon because the Performance Progress Report is overdue. The Grants Manager who owned the reporting calendar left in February. Two weeks of scramble follow, ending in a corrective action plan on file with the funder.
+
+The fix is boring. Reporting cadences belong on the award record, not on a person's calendar. When someone leaves, the deadlines do not leave with them.
+
+That is half of what compliance software actually does. The other half is making the deadlines visible without anyone having to ask.

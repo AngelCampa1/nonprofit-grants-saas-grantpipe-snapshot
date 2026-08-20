@@ -1,0 +1,42 @@
+Your bookkeeper hands you a report full of words like restricted, unrestricted, and net assets. Most people nod and move on. This video explains what those words mean, in plain English, in about seven minutes.
+
+A business asks one question at year-end: did we make a profit? A nonprofit has to answer a different one: did we use each dollar the way we promised? Fund accounting is how you answer it. I walk through what it is, why nonprofits need it, and how the reports differ from a regular business, with no jargon for its own sake and no pitch to go hire a big firm.
+
+I build grant compliance software, so I had to learn exactly how this money is supposed to move. I'm not an auditor, and I won't talk like one. You get the version a busy director actually needs.
+
+WHAT'S IN THE VIDEO
+- The one question fund accounting is built to answer, and why it's the wrong fit to judge a nonprofit by profit alone.
+- Restricted vs. unrestricted money in plain words: promised money you have to spend a certain way, and free money you can use wherever the mission needs it.
+- Why a normal income statement can't prove you kept a funder's restriction. The total can look fine while a restricted dollar quietly paid for the wrong thing.
+- The two groups the rules now use, not the old three: net assets with donor restrictions, and net assets without. This change applies to financial years that start after late 2017, so any guide still teaching three buckets is out of date.
+- A worked example: a $50,000 restricted grant and $30,000 in general donations, kept apart, so you can see how the same bank balance holds two very different kinds of money.
+- The report names that change for nonprofits: statement of financial position instead of balance sheet, statement of activities instead of income statement, and net assets instead of equity.
+
+THE ENVELOPE IDEA
+The simplest way to picture fund accounting: one bank account, several envelopes. The money all sits in the same place, but each envelope is labeled with what it's allowed to pay for. Restricted gifts get their own envelope; general donations go in the free one. Fund accounting is just the discipline of never spending from the wrong envelope, and being able to show, at any time, how much is left in each.
+
+WHY OLD GUIDES TRIP PEOPLE UP
+If you've read older nonprofit accounting articles, you may have seen three categories: unrestricted, temporarily restricted, and permanently restricted. That model is out of date. The rules now use two: net assets with donor restrictions, and net assets without. The change applies to financial years that start after late 2017, so plenty of advice still floating around online teaches the old three. It's a small thing to get right, but it's the kind of detail an auditor or a sharp board member will notice, and it's why I call it out in the video.
+
+WHY THE REPORT NAMES MATTER
+The name changes aren't just vocabulary. A statement of financial position and a statement of activities are built to show net assets by restriction, which is the whole point. A regular balance sheet and income statement aren't. So when someone hands you a nonprofit's financials, the report names themselves tell you whether the books are set up to answer the question that actually matters: did each dollar go where it was promised.
+
+WANT A HEAD START?
+We made a free Restricted Fund Tracking Spreadsheet. It sets up the envelopes for you so you can start tracking today. Drop your email and we'll send it to your inbox:
+https://grantpipe.com/free/restricted-fund-tracking-spreadsheet/
+
+WHO THIS IS FOR
+New executive directors, board members, development staff, and anyone who reads a nonprofit's financials and wants to actually understand them. Governments use a different model called GASB, so this is the nonprofit world, not the city-budget one.
+
+GrantPipe is donor management and grant compliance in one place, built for mid-sized nonprofits running real grants. Learn more: https://grantpipe.com
+
+CHAPTERS
+0:00 Two different questions
+0:56 What fund accounting is
+1:54 Why nonprofits need it
+2:49 The building blocks
+4:06 A worked example
+5:10 How it differs from regular accounting
+6:01 One idea to remember
+
+#nonprofit #fundaccounting #nonprofitaccounting #restrictedfunds #netassets #nonprofitfinance #nonprofitbookkeeping #grantcompliance

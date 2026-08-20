@@ -1,0 +1,126 @@
+---
+import "../styles/global.css"
+import BaseLayout from "@grantpipe/ui/site/layouts/base-layout.astro"
+import SiteHeader from "@grantpipe/ui/site/components/site-header.astro"
+import SiteFooter from "@grantpipe/ui/site/components/site-footer.astro"
+import { siteConfig, getSignupCtaTarget } from "@/config/site"
+import { getAppLoginUrl } from "@/lib/app-url"
+---
+
+<BaseLayout
+  title={`Terms of Service | ${siteConfig.name}`}
+  description="GrantPipe terms of service — the rules for using our platform."
+  canonicalUrl={`https://${siteConfig.domain}/terms/`}
+  siteName={siteConfig.name}
+  ogType="website"
+  twitterSite={siteConfig.social?.twitterHandle}
+  theme={siteConfig.theme}
+  themeColor={siteConfig.theme.primary}
+  appleTouchIcon={siteConfig.appleTouchIcon}
+  fonts={siteConfig.theme.fonts}
+>
+  <SiteHeader
+    slot="header"
+    siteName={siteConfig.name}
+    navItems={siteConfig.nav?.items}
+    ctaText={siteConfig.funnel.bofu.ctaText}
+    ctaHref={getSignupCtaTarget()}
+    loginHref={getAppLoginUrl()}
+    logoLight={siteConfig.logo?.light}
+  >
+  </SiteHeader>
+
+  <article class="legal-page mx-auto max-w-3xl px-4 py-16">
+    <header class="legal-page-header">
+      <p class="editorial-kicker mb-3">Legal</p>
+      <h1 class="font-heading text-3xl font-bold text-brand-text">Terms of Service</h1>
+      <p class="legal-page-meta">Last updated: March 2026</p>
+    </header>
+
+    <div class="legal-page-body">
+      <section>
+        <h2>About GrantPipe</h2>
+        <p>By using the GrantPipe site or sharing your email after selecting a plan, you agree to these terms.</p>
+      </section>
+
+      <section>
+        <h2>Free trial</h2>
+        <p>Selecting a plan and sharing your email lets us follow up about GrantPipe availability and pricing. It does not create a paid subscription, and no card is required today.</p>
+      </section>
+
+      <section>
+        <h2>Acceptable use</h2>
+        <p>You agree not to submit false information or use the platform for any unlawful purpose. We reserve the right to suspend or remove accounts at our discretion.</p>
+      </section>
+
+      <section>
+        <h2>No warranty</h2>
+        <p>This site and its content are provided as-is. We make no warranties about the accuracy of information or the availability of the eventual product.</p>
+      </section>
+
+      <section>
+        <h2>Contact</h2>
+        <p>Questions? Email <a href={`mailto:${siteConfig.contactEmail}`}>{siteConfig.contactEmail}</a>.</p>
+      </section>
+    </div>
+  </article>
+
+  <SiteFooter
+    slot="footer"
+    siteName={siteConfig.name}
+    tagline={siteConfig.tagline}
+    linkGroups={siteConfig.footer?.linkGroups}
+    legalLinks={siteConfig.footer?.legalLinks}
+    contactEmail={siteConfig.contactEmail}
+    logoLight={siteConfig.logo?.light}
+  />
+</BaseLayout>
+
+<style>
+  .legal-page-header {
+    padding-bottom: 1.75rem;
+    margin-bottom: 2.5rem;
+    border-bottom: 1px solid var(--gp-ink-100);
+  }
+
+  .legal-page-meta {
+    margin-top: 0.5rem;
+    color: var(--gp-ink-500);
+    font-size: 0.875rem;
+  }
+
+  .legal-page-body {
+    display: grid;
+    gap: 2rem;
+    color: var(--gp-ink-700);
+    line-height: 1.65;
+  }
+
+  .legal-page-body h2 {
+    margin-bottom: 0.6rem;
+    color: var(--color-brand-text);
+    font-family: var(--font-heading);
+    font-size: 1.25rem;
+    font-weight: 700;
+    letter-spacing: -0.005em;
+  }
+
+  .legal-page-body p {
+    /* 18px (1.125rem) on mobile for comfortable reading on small screens */
+    font-size: 1.125rem;
+  }
+
+  .legal-page-body a {
+    color: var(--gp-emerald-600);
+    font-weight: 600;
+    text-decoration: underline;
+    text-decoration-thickness: 1px;
+    text-underline-offset: 3px;
+    transition: color 160ms ease;
+  }
+
+  .legal-page-body a:hover,
+  .legal-page-body a:focus-visible {
+    color: var(--gp-emerald-700);
+  }
+</style>

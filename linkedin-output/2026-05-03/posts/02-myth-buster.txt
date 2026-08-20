@@ -1,0 +1,11 @@
+Myth: eCivis is the obvious choice once a nonprofit grows past spreadsheets.
+
+Reality: eCivis was built for state and local government agencies managing federal pass-throughs at scale. Nonprofits are a secondary market, and pricing reflects that.
+
+G2 and Capterra reviewers report annual costs of $25,000 to $75,000+ for nonprofit-tier deployments. Implementation fees add another $10,000 to $30,000 in year one. Data migration and integration with Sage Intacct or QuickBooks layer on top.
+
+For a nonprofit processing $3M with 10-15 active federal awards, year-one totals land between $47,000 and $90,000.
+
+The fit makes sense above $10M in federal expenditures with multiple subrecipients. Below that, the cost structure buys enterprise-scale software for mid-market needs.
+
+#grantmanagement #ecivis #nonprofitsoftware #pricing

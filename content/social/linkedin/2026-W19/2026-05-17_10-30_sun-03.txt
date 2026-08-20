@@ -1,0 +1,5 @@
+ALN: Assistance Listing Number. The federal program identifier you used to call CFDA.
+
+The number itself did not change when the name did in 2018. 14.218 is still CDBG Entitlement Grants. 93.243 is still SAMHSA's Projects for Assistance in Transition from Homelessness.
+
+If your award letter says CFDA, the funder is using old paperwork. The number is still valid. Match it on assistancelistings.gov to confirm program details before you cite it in a board memo.

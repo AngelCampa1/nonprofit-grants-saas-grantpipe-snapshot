@@ -1,0 +1,16 @@
+{
+  "name": "launch-video",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "npx --yes hyperframes@0.5.7 preview",
+    "check": "npx --yes hyperframes@0.5.7 lint && npx --yes hyperframes@0.5.7 validate && npx --yes hyperframes@0.5.7 inspect --samples 15",
+    "render": "npm run render:landscape && npm run render:portrait",
+    "render:draft": "npm run render:landscape:draft && npm run render:portrait:draft",
+    "render:landscape": "npx --yes hyperframes@0.5.7 render --output renders/grantpipe-launch-landscape.mp4 --quality standard --fps 30",
+    "render:landscape:draft": "npx --yes hyperframes@0.5.7 render --output renders/grantpipe-launch-landscape-draft.mp4 --quality draft --fps 30",
+    "render:portrait": "npx --yes hyperframes@0.5.7 render --composition variants/portrait.html --output renders/grantpipe-launch-portrait.mp4 --quality standard --fps 30",
+    "render:portrait:draft": "npx --yes hyperframes@0.5.7 render --composition variants/portrait.html --output renders/grantpipe-launch-portrait-draft.mp4 --quality draft --fps 30",
+    "publish": "npx --yes hyperframes@0.5.7 publish"
+  }
+}

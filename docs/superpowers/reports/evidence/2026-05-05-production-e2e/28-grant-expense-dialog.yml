@@ -1,0 +1,103 @@
+- generic:
+    - generic:
+        - generic:
+            - generic:
+                - generic:
+                    - banner:
+                        - generic:
+                            - button:
+                                - img
+                        - generic:
+                            - link:
+                                - /url: /app/settings#billing
+                                - img
+                                - generic: Trial
+                                - generic: 30d
+                            - button:
+                                - img
+                            - link:
+                                - /url: /app/notifications
+                                - img
+                            - button:
+                                - img
+                    - generic:
+                        - main:
+                            - generic:
+                                - generic:
+                                    - generic:
+                                        - generic:
+                                            - navigation:
+                                                - list:
+                                                    - listitem:
+                                                        - link:
+                                                            - /url: /app/grants
+                                                            - text: Grants
+                                                    - listitem:
+                                                        - img
+                                                    - listitem:
+                                                        - generic: Prod E2E Grant 160129
+                                        - generic:
+                                            - generic:
+                                                - generic:
+                                                    - heading [level=1]: Prod E2E Grant 160129
+                                                - paragraph: Discovery
+                                            - generic:
+                                                - generic:
+                                                    - generic: Threshold --
+                                                    - button: Share
+                                                    - button: Delete grant
+                                    - generic:
+                                        - generic:
+                                            - generic:
+                                                - generic: Grant Amount
+                                            - generic: Not set
+                                        - generic:
+                                            - generic:
+                                                - generic: Allocated
+                                            - generic: $0
+                                        - generic:
+                                            - generic:
+                                                - generic: Unallocated
+                                            - generic: "--"
+                                        - generic:
+                                            - generic:
+                                                - generic: Remaining to Spend
+                                            - generic: "--"
+                                    - generic:
+                                        - tablist:
+                                            - tab: Overview
+                                            - tab: Allocations
+                                            - tab [selected]: Expenses
+                                            - tab: Impact Metrics
+                                            - tab: Reporting
+                                            - tab: Payments
+                                            - tab: Closeout
+                                            - tab: Spend-Down
+                                            - tab: Restrictions
+                                            - tab: Custom Fields
+                                            - tab: Activity
+                                            - tab: Documents
+                                        - tabpanel:
+                                            - generic:
+                                                - button [expanded]: Add expense
+                                                - paragraph: No expenses recorded yet. Log spending to keep the burn rate and remaining balance accurate.
+            - region "Notifications alt+T"
+    - dialog "Add expense" [ref=e235]:
+        - generic [ref=e236]:
+            - heading "Add expense" [level=2] [ref=e237]
+            - paragraph [ref=e238]: Capture grant spending so burn rate and remaining balance stay accurate.
+        - generic [ref=e239]:
+            - generic [ref=e240]:
+                - generic [ref=e241]: Amount (USD)
+                - spinbutton "Amount (USD)" [active] [ref=e242]
+            - generic [ref=e243]:
+                - generic [ref=e244]: Date
+                - textbox "Date" [ref=e245]
+            - generic [ref=e246]:
+                - generic [ref=e247]: Description
+                - textbox "Description" [ref=e248]:
+                    - /placeholder: What was this expense for?
+            - button "Save expense" [ref=e249]
+        - button "Close" [ref=e250]:
+            - img
+            - generic [ref=e251]: Close

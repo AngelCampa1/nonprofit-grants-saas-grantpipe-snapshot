@@ -1,0 +1,87 @@
+---
+/**
+ * Marketing pill button.
+ *
+ * Renders an `<a>` when `href` is set, otherwise a `<button>`. Styling is
+ * driven entirely by the shared `.gp-mkt-btn` class system in `global.css`
+ * (variant + size modifiers), so this component carries minimal scoped CSS.
+ *
+ * Mobile-first behaviour:
+ * - `min-height: 48px` and `min-width: 48px` are applied unconditionally to
+ *   meet the 48px minimum tap target requirement on all touch devices.
+ * - `mobileFullWidth` (default: true) makes the button `width: 100%` on
+ *   viewports ≤ 639px. Pass `mobileFullWidth={false}` to opt out (e.g. when
+ *   the button is already inside a flex/grid container that constrains width).
+ *   On desktop (≥ 640px) the button always renders inline regardless of this prop.
+ */
+import type { HTMLAttributes } from "astro/types";
+
+type Variant = "primary" | "secondary" | "ghost";
+type Size = "sm" | "md" | "lg";
+
+type AnchorAttrs = Omit<HTMLAttributes<"a">, "class">;
+type ButtonAttrs = Omit<HTMLAttributes<"button">, "class">;
+
+interface Props extends AnchorAttrs, ButtonAttrs {
+  /** Visual tier. Defaults to "primary". */
+  variant?: Variant;
+  /** Sizing scale. Defaults to "md". */
+  size?: Size;
+  /** When set, the button renders as an anchor pointing here. */
+  href?: string | URL;
+  /** Native button type. Ignored when `href` is set. Defaults to "button". */
+  type?: "button" | "submit" | "reset";
+  /** Extra classes appended after the generated `.gp-mkt-btn` classes. */
+  class?: string;
+  /**
+   * When true (the default), the button is `width: 100%` on viewports ≤ 639px.
+   * Pass `false` to preserve intrinsic width on mobile.
+   */
+  mobileFullWidth?: boolean;
+}
+
+const {
+  variant = "primary",
+  size = "md",
+  href,
+  type = "button",
+  class: className,
+  mobileFullWidth = true,
+  ...rest
+} = Astro.props;
+
+const mobileFwClass = mobileFullWidth ? "gp-mkt-btn--mobile-fw" : undefined;
+
+const classes = ["gp-mkt-btn", variant, size, mobileFwClass, className]
+  .filter((value): value is string => Boolean(value))
+  .join(" ");
+---
+
+{
+  href ? (
+    <a class={classes} href={href} {...rest}>
+      <slot />
+    </a>
+  ) : (
+    <button class={classes} type={type} {...rest}>
+      <slot />
+    </button>
+  )
+}
+
+<style is:global>
+  /*
+   * Applied globally so .gp-mkt-btn rules in global.css are not overridden
+   * by specificity. min-height/min-width enforce the 48px tap target.
+   */
+  .gp-mkt-btn {
+    min-height: 48px;
+    min-width: 48px;
+  }
+
+  @media (max-width: 639px) {
+    .gp-mkt-btn--mobile-fw {
+      width: 100%;
+    }
+  }
+</style>

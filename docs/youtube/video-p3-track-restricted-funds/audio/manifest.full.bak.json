@@ -1,0 +1,72 @@
+[
+  {
+    "id": "00",
+    "title": "The question a report can't answer",
+    "slug": "the-question-a-report-can-t-answer",
+    "chars": 606,
+    "voice": "Laomedeia",
+    "model": "gemini-3.1-flash-tts-preview",
+    "file": "audio/chapter-00.mp3",
+    "text": "A restriction is a promise. A funder hands you money and says, use this for one thing only. From then on, you have to answer one question at any moment. How much of that money is left, and can you prove where the rest went? A normal activity report shows what moved. It does not answer that. Today I'll show you how to track restricted funds so you can. Quick note on where I'm coming from. I build grant compliance software. To make a computer follow these rules, I had to learn exactly how this money moves. I'm not an auditor, and I won't talk like one. You're getting the version a busy director needs."
+  },
+  {
+    "id": "01",
+    "title": "What restricted really means",
+    "slug": "what-restricted-really-means",
+    "chars": 510,
+    "voice": "Laomedeia",
+    "model": "gemini-3.1-flash-tts-preview",
+    "file": "audio/chapter-01.mp3",
+    "text": "So, what does restricted actually mean? It means a donor or grantor tied the money to a purpose, or to a time. Only they can lift that limit. Nonprofit books now sort money into two groups. With donor restrictions, and without. Promised money, and free money. If an old guide lists three groups, it's out of date. The rule changed to two. One trap to skip. Money your board sets aside for a rainy day is not restricted. The board can change its own mind later. Only an outside funder can truly restrict a gift."
+  },
+  {
+    "id": "02",
+    "title": "What tracking it actually takes",
+    "slug": "what-tracking-it-actually-takes",
+    "chars": 480,
+    "voice": "Laomedeia",
+    "model": "gemini-3.1-flash-tts-preview",
+    "file": "audio/chapter-02.mp3",
+    "text": "Here's the part people get wrong. To track a restriction, you need a running balance for each award. You start with the award. You add anything new that comes in. You subtract what you spend on the purpose. Accountants call that a release, but it just means the promise is being kept, dollar by dollar. You end with a number you can defend. One big checking account and a memo in your books won't give you that per-promise balance. That's the gap, and it's where audits get tense."
+  },
+  {
+    "id": "03",
+    "title": "Set up the fund",
+    "slug": "set-up-the-fund",
+    "chars": 384,
+    "voice": "Laomedeia",
+    "model": "gemini-3.1-flash-tts-preview",
+    "file": "audio/chapter-03.mp3",
+    "text": "Let me show you one way to do this, in the real app. This is the funds list. Each fund is one promise, with one purpose. To make one, you add a fund, give it a name, and pick its type. Unrestricted, temporarily restricted, or permanently restricted. Same two ideas from before, named the way the rules name them. You can filter the list by type, so the promised money is easy to find."
+  },
+  {
+    "id": "04",
+    "title": "See the balance per award",
+    "slug": "see-the-balance-per-award",
+    "chars": 382,
+    "voice": "Laomedeia",
+    "model": "gemini-3.1-flash-tts-preview",
+    "file": "audio/chapter-04.mp3",
+    "text": "Open a fund, and there's half the answer. Three numbers. Allocated, what came into this fund. Spent, what has gone out. Balance, what's left. You don't type that balance in. The app works it out from the grants feeding the fund and the spending charged against it. Underneath, you can see exactly which grants fund this, and every expense it paid for. That's how much is left, live."
+  },
+  {
+    "id": "05",
+    "title": "Prove the restriction",
+    "slug": "prove-the-restriction",
+    "chars": 516,
+    "voice": "Laomedeia",
+    "model": "gemini-3.1-flash-tts-preview",
+    "file": "audio/chapter-05.mp3",
+    "text": "Now the other half. Can you prove it? Open the Restrictions tab, and there's the same running balance we drew earlier. Beginning, additions, releases, ending, for the restricted award. Below it, the app lists each restriction and what it's for. And it watches your evidence. If you release money and nothing backs it up, the panel flags it right there. So you find the weak spot before an auditor does. This tracking comes with the GrantPipe plans that include restriction lifecycle, so check that it's on your plan."
+  },
+  {
+    "id": "06",
+    "title": "One thing to remember",
+    "slug": "one-thing-to-remember",
+    "chars": 597,
+    "voice": "Laomedeia",
+    "model": "gemini-3.1-flash-tts-preview",
+    "file": "audio/chapter-06.mp3",
+    "text": "So that's it. Tracking restricted funds comes down to one thing. A balance you can defend for every promise. Start it, add to it, release as you spend, and end on a number with the evidence attached. A spreadsheet can carry this while you're small. A system carries it for you when you're not. That's the kind of thing we built GrantPipe to handle. But the discipline matters more than any tool. If you want a starting point, we made a free Restricted Fund Tracking Spreadsheet. It sets up the columns for you. We'll send it to your inbox. Thanks for watching, and good luck keeping your promises."
+  }
+]

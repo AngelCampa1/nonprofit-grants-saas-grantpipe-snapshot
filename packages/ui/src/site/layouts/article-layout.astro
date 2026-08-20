@@ -1,0 +1,251 @@
+---
+import { getPublicApiBaseUrl } from "../lib/public-api-url"
+import BaseLayout from "./base-layout.astro"
+import BreadcrumbNav from "../components/breadcrumb-nav.astro"
+import BlufBlock from "../seo/bluf-block.astro"
+import SchemaMarkup from "../seo/schema-markup.astro"
+import { buildArticleSchema, mergeFaqSources } from "../lib/schema-builders"
+import { buildGraph, withId } from "../lib/schema-graph"
+import { resolveSchemaImage, buyerStageToSection, ensureTrailingSlash } from "../lib/meta"
+import SiteHeader from "../components/site-header.astro"
+import ArticleMeta from "../components/article-meta.astro"
+import SiteFooter from "../components/site-footer.astro"
+import TableOfContents from "../components/table-of-contents.astro"
+import SidebarCta from "../components/sidebar-cta.astro"
+import { ExitIntentPopup } from "../components/exit-intent-popup"
+import { resolveExitPopupProps } from "../lib/exit-popup-props"
+import { resolveLoginHref } from "../lib/resolve-login-href"
+import { buildBottomCtaProps, buildSidebarCtaProps } from "../lib/sidebar-cta-utils"
+import type { SiteConfig, BuyerStage, FaqItem, LeadMagnetOffer } from "../types"
+
+interface Props {
+  title: string
+  description: string
+  seoTitle?: string
+  seoDescription?: string
+  bluf: string
+  buyerStage?: BuyerStage
+  publishedAt: string
+  updatedAt: string
+  lastReviewedAt?: string
+  verifiedAt?: string
+  canonicalPath: string
+  config: SiteConfig
+  breadcrumbs: { label: string; href: string }[]
+  schemas?: Record<string, unknown>[]
+  headings?: { depth: number; slug: string; text: string }[]
+  ogImage?: string
+  noindex?: boolean
+  answers?: { question: string; answer: string }[]
+  faqs?: FaqItem[]
+  tags?: string[]
+  sourceUrls?: string[]
+  leadMagnet?: LeadMagnetOffer
+  /**
+   * Topic-matched lead magnet to show in the sidebar. When present, replaces
+   * the generic trial CTA for tofu/mofu pages with a relevant download offer.
+   */
+  sidebarLeadMagnet?: LeadMagnetOffer & { slug: string }
+  /** Whether to render the sticky mobile CTA bar on this page. */
+  showStickyMobileCta?: boolean
+  /** CTA button label for the sticky mobile bar. Defaults to the config funnel bofu CTA text. */
+  stickyCtaText?: string
+  /** CTA button href for the sticky mobile bar. Defaults to the config funnel bofu CTA target. */
+  stickyCtaTarget?: string
+  /** Whether the article intro should gate the sticky mobile CTA. */
+  markIntroAsHero?: boolean
+}
+const { title, description, seoTitle, seoDescription, bluf, buyerStage, publishedAt, updatedAt, lastReviewedAt, verifiedAt, canonicalPath, config, breadcrumbs, schemas = [], headings, ogImage, noindex, answers = [], faqs = [], tags, sourceUrls = [], leadMagnet, sidebarLeadMagnet, showStickyMobileCta = false, stickyCtaText, stickyCtaTarget, markIntroAsHero = false } = Astro.props
+const exitPopupProps = config.exitPopup?.enabled !== false ? resolveExitPopupProps(config) : undefined
+// Show the topic-matched lead magnet in the sidebar for tofu/mofu pages where a trial CTA is premature.
+// For bofu pages (buyer already evaluating), keep the trial CTA.
+const showLeadMagnetInSidebar = !!sidebarLeadMagnet && buyerStage !== "bofu"
+const sidebarCtaProps = !showLeadMagnetInSidebar && buyerStage ? buildSidebarCtaProps(config, buyerStage) : undefined
+const bottomCtaProps = buildBottomCtaProps(config, buyerStage ?? "bofu", "resource-article")
+const canonicalUrl = ensureTrailingSlash(`https://${config.domain}${canonicalPath}`)
+
+const orgId = `https://${config.domain}/#organization`
+const articleSchema = buildArticleSchema({
+  headline: title,
+  description,
+  datePublished: publishedAt,
+  dateModified: updatedAt,
+  lastReviewed: lastReviewedAt ?? updatedAt,
+  publisher: { "@id": orgId },
+  author: config.author,
+  image: resolveSchemaImage(config.domain, ogImage, config.defaultOgImage),
+  mainEntityOfPage: canonicalUrl,
+  speakableCssSelectors: [".bluf-block", ".faq-answer", ".answer-block-answer"],
+})
+const faqSchema = mergeFaqSources(faqs, answers)
+const articleId = `${canonicalUrl}#article`
+const graph = buildGraph([
+  withId(articleSchema, articleId),
+  ...schemas,
+  ...(faqSchema ? [faqSchema] : []),
+])
+const publicApiUrl = getPublicApiBaseUrl()
+
+---
+
+<BaseLayout
+  title={seoTitle ?? `${title} | ${config.name}`}
+  description={seoDescription ?? description}
+  canonicalUrl={canonicalUrl}
+  siteName={config.name}
+  publishedAt={publishedAt}
+  updatedAt={updatedAt}
+  twitterSite={config.social?.twitterHandle}
+  articleAuthor={config.author?.name}
+  themeColor={config.theme.primary}
+  theme={config.theme}
+  fonts={config.theme.fonts}
+  preserveMetaTagCopy={seoTitle !== undefined || seoDescription !== undefined || config.preserveMetaTagCopy}
+  appleTouchIcon={config.appleTouchIcon}
+  ogImage={ogImage}
+  noindex={noindex}
+  siteUrl={`https://${config.domain}`}
+  siteLogo={config.logo?.light ? `https://${config.domain}${config.logo.light}` : undefined}
+  analyticsEnabled={config.analytics?.enabled ?? true}
+  enableScrollReveal={false}
+  articleSection={buyerStage ? buyerStageToSection(buyerStage) : undefined}
+  articleTags={tags}
+  rssUrl="/rss.xml"
+  siteFounder={config.author}
+  siteSameAs={config.sameAs}
+  showStickyMobileCta={showStickyMobileCta}
+  stickyCtaText={stickyCtaText ?? config.funnel.bofu.ctaText}
+  stickyCtaTarget={stickyCtaTarget ?? config.funnel.bofu.ctaTarget}
+>
+  <SiteHeader
+    slot="header"
+    siteName={config.name}
+    navItems={config.nav?.items}
+    ctaText={config.funnel.bofu.ctaText}
+    ctaHref={config.funnel.bofu.ctaTarget}
+    loginHref={config.appLoginUrl ?? resolveLoginHref(config.funnel.bofu.ctaTarget)}
+    ctaVariant="primary"
+    ctaPill
+    currentPath={Astro.url.pathname}
+    logoLight={config.logo?.light}
+  />
+  <div data-editorial-layout data-seo-template-shell class="article-page-shell editorial-shell mx-auto max-w-6xl px-4 py-[var(--section-py)]">
+    <BreadcrumbNav items={breadcrumbs} siteUrl={`https://${config.domain}`} />
+    <div
+      data-editorial-article
+      data-hero={markIntroAsHero ? true : undefined}
+      class="article-page-intro mt-6 rounded-lg border border-[var(--gp-ink-200)] bg-[var(--gp-card)] px-5 py-6 shadow-card sm:px-6 lg:px-8 lg:py-8"
+    >
+      <h1 class="mb-4 text-balance font-heading text-[length:var(--text-editorial-title)] font-bold leading-[1.04] text-brand-text">{title}</h1>
+      <hr class="gp-hairline--accent mb-4" />
+      <ArticleMeta
+        publishedAt={publishedAt}
+        updatedAt={updatedAt}
+        lastReviewedAt={lastReviewedAt}
+        verifiedAt={verifiedAt}
+        sourceUrls={sourceUrls}
+      />
+    </div>
+    <div
+      data-reading-frame
+      class:list={[
+        "article-page-grid mt-8",
+        ((headings && headings.length > 0) || !!sidebarCtaProps || showLeadMagnetInSidebar)
+          && "lg:grid lg:grid-cols-[minmax(0,1fr)_280px] lg:gap-8 xl:grid-cols-[minmax(0,1fr)_292px]",
+      ]}
+    >
+      <article class="article-page-body min-w-0 max-w-[var(--content-measure-wide)]">
+        <BlufBlock text={bluf} />
+        <div class="article-prose prose prose-lg max-w-none prose-p:max-w-[var(--content-measure)] prose-li:max-w-[var(--content-measure)]">
+          <slot />
+        </div>
+      </article>
+      {((headings && headings.length > 0) || sidebarCtaProps || showLeadMagnetInSidebar) && (
+        <aside data-editorial-sidebar data-editorial-rail data-seo-sidebar-cta aria-label="Sidebar" class="article-page-sidebar mt-8 lg:mt-0 lg:pt-1">
+          {headings && headings.length > 0 && (
+            <TableOfContents headings={headings} />
+          )}
+          {showLeadMagnetInSidebar && sidebarLeadMagnet && (
+            <div class={headings && headings.length > 0 ? "mt-6" : ""}>
+              <aside class="hidden lg:block sticky top-24" data-section="sidebar-lead-magnet" aria-label="Free resource">
+                <div data-sidebar-lead-magnet-panel class="editorial-panel editorial-panel--soft p-6">
+                  <p class="gp-kicker--accent mb-3">Free resource</p>
+                  <p class="mb-4 text-[length:var(--text-sm)] font-semibold leading-snug text-brand-text">{sidebarLeadMagnet.title}</p>
+                  <p class="mb-5 text-[length:var(--text-caption)] leading-6 text-brand-muted">{sidebarLeadMagnet.teaser}</p>
+                  <a
+                    href={`/free/${sidebarLeadMagnet.slug}/`}
+                    class="gp-mkt-btn primary md flex w-full items-center justify-center rounded-full no-underline"
+                    data-cta-button=""
+                    data-cta-page-family="resource-article"
+                    data-cta-buyer-stage={buyerStage ?? "tofu"}
+                    data-cta-placement="sidebar-lead-magnet"
+                    data-cta-intent="educate"
+                    data-cta-target={`/free/${sidebarLeadMagnet.slug}/`}
+                  >
+                    {sidebarLeadMagnet.ctaText}
+                  </a>
+                </div>
+              </aside>
+            </div>
+          )}
+          {sidebarCtaProps && (
+            <div class={headings && headings.length > 0 ? "mt-6" : ""}>
+              <SidebarCta {...sidebarCtaProps} />
+            </div>
+          )}
+        </aside>
+      )}
+    </div>
+    <section data-seo-bottom-cta class="gp-seo-bottom-cta mt-10">
+      <p class="gp-kicker--accent">{bottomCtaProps.kicker}</p>
+      <h2>{bottomCtaProps.heading}</h2>
+      <p>{bottomCtaProps.subtext}</p>
+      <div class="gp-shared-cta-actions">
+        <a
+          href={bottomCtaProps.primaryCta.target}
+          class="btn-primary no-underline"
+          data-cta-button=""
+          data-cta-page-family={bottomCtaProps.analytics.pageFamily}
+          data-cta-buyer-stage={bottomCtaProps.analytics.buyerStage}
+          data-cta-placement={bottomCtaProps.analytics.placement}
+          data-cta-intent={bottomCtaProps.analytics.intent}
+          data-cta-target={bottomCtaProps.primaryCta.target}
+        >{bottomCtaProps.primaryCta.text}</a>
+        {bottomCtaProps.secondaryCta && bottomCtaProps.secondaryAnalytics && (
+          <a
+            href={bottomCtaProps.secondaryCta.target}
+            class="gp-mkt-btn ghost no-underline"
+            data-cta-button=""
+            data-cta-page-family={bottomCtaProps.secondaryAnalytics.pageFamily}
+            data-cta-buyer-stage={bottomCtaProps.secondaryAnalytics.buyerStage}
+            data-cta-placement={bottomCtaProps.secondaryAnalytics.placement}
+            data-cta-intent={bottomCtaProps.secondaryAnalytics.intent}
+            data-cta-target={bottomCtaProps.secondaryCta.target}
+          >
+            {bottomCtaProps.secondaryCta.text}
+          </a>
+        )}
+      </div>
+    </section>
+  </div>
+  <SchemaMarkup graph={graph} />
+  {exitPopupProps && (
+    <ExitIntentPopup
+      client:load
+      apiUrl={publicApiUrl}
+      leadMagnet={leadMagnet}
+      {...exitPopupProps}
+    />
+  )}
+  <SiteFooter
+    slot="footer"
+    siteName={config.name}
+    tagline={config.tagline}
+    linkGroups={config.footer?.linkGroups}
+    legalLinks={config.footer?.legalLinks}
+    contactEmail={config.contactEmail}
+    logoLight={config.logo?.light}
+    captureVariant="none"
+    currentPath={Astro.url.pathname}
+  />
+</BaseLayout>

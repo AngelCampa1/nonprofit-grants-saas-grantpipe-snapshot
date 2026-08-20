@@ -1,0 +1,7 @@
+SF-425 quick check:
+
+Do not fill the federal expenditure field from this quarter's activity alone.
+
+The SF-425 is cumulative, so a period-only number can make a clean grant look off by an entire reporting period.
+
+Before submission, reconcile the report to the grant ledger and draw history.

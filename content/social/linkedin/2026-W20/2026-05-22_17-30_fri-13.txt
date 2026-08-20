@@ -1,0 +1,11 @@
+Four signs your donor CRM is not the right home for grant compliance.
+
+One. You cannot store a period of performance with start, end, and a different fiscal-year overlap, then run a report by federal fiscal year.
+
+Two. You cannot record a single funder award that funds three program funds, with allocations adding up to the award total.
+
+Three. You cannot attach a document, tag it as audit evidence, and produce it later by award and date range without a custom export.
+
+Four. You can store a pipeline stage but not the FFR cadence, the next report due date, and the indirect cost rate as first-class fields.
+
+A donor CRM was built for moves management. Asking it to also handle 2 CFR 200 and FASB ASC 958 is a configuration project that never quite finishes.

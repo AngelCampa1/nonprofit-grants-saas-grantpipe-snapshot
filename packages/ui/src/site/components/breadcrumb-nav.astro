@@ -1,0 +1,58 @@
+---
+import SchemaMarkup from "../seo/schema-markup.astro"
+import { buildBreadcrumbSchema } from "../lib/schema-builders"
+import { ChevronRightIcon } from "../lib/icons"
+import { formatSlugAsLabel } from "../lib/breadcrumbs"
+
+interface BreadcrumbItem {
+  label: string
+  href: string
+}
+
+interface Props {
+  items: BreadcrumbItem[]
+  siteUrl: string
+}
+const { items, siteUrl } = Astro.props
+
+const breadcrumbSchema = buildBreadcrumbSchema(items, siteUrl)
+---
+
+<!--
+  A11y contract:
+  - <nav aria-label="Breadcrumb"> wraps the trail
+  - <ol> conveys ordered hierarchy to assistive tech
+  - aria-current="page" marks the current crumb
+  - SVG ChevronRightIcon separator is decorative (aria-hidden); literal ">" is
+    avoided so screen readers don't announce a punctuation character
+-->
+<nav aria-label="Breadcrumb" class="w-full bg-surface-secondary py-3 text-[length:var(--text-caption)] text-brand-muted">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <ol class="flex flex-wrap items-center gap-1 sm:flex-nowrap sm:overflow-x-auto sm:whitespace-nowrap [scrollbar-width:none] [-ms-overflow-style:none] [&::-webkit-scrollbar]:hidden">
+      {items.map((item, i) => (
+        <li class="flex min-w-0 items-center gap-1">
+          {i > 0 && (
+            <span class="inline-flex h-3.5 w-3.5 shrink-0 items-center justify-center text-neutral-400" aria-hidden="true" set:html={ChevronRightIcon} />
+          )}
+          {i === items.length - 1 ? (
+            <span
+              class="block min-h-12 min-w-12 py-2 font-semibold text-brand-primary break-words max-sm:w-full max-sm:whitespace-normal sm:inline-flex sm:min-w-12 sm:items-center sm:max-w-[220px] sm:truncate"
+              title={formatSlugAsLabel(item.label)}
+              aria-current="page"
+            >
+              {formatSlugAsLabel(item.label)}
+            </span>
+          ) : (
+            <a
+              href={item.href}
+              class="inline-flex min-h-12 min-w-12 shrink-0 items-center rounded-xs px-1 py-2 transition-colors duration-[var(--transition-fast)] hover:text-brand-primary focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary-500 focus-visible:ring-offset-2"
+            >
+              {formatSlugAsLabel(item.label)}
+            </a>
+          )}
+        </li>
+      ))}
+    </ol>
+  </div>
+  <SchemaMarkup schemas={[breadcrumbSchema]} />
+</nav>

@@ -1,0 +1,13 @@
+Audit fees for organizations stuck at the 40 percent major-program coverage threshold typically run $8,000 to $20,000 higher per cycle than for comparable low-risk auditees.
+
+The five low-risk criteria under 2 CFR 200.520 are mostly inside management's control: a clean Single Audit two years running, no material weaknesses in internal controls over major programs, no GAGAS qualified opinion, no fraud findings affecting major programs, and timely Federal Audit Clearinghouse submission.
+
+The catch is that you cannot reverse-engineer eligibility at audit time. The two prior fiscal years either qualify or they do not.
+
+The shops that consistently keep low-risk status track the criteria themselves quarter by quarter, the same way they track cash. The shops that lose it find out from the auditor in March.
+
+Per the AICPA Government Audit Quality Center benchmarking work, the additional testing required for non-low-risk auditees is the single largest avoidable line item in most Single Audit engagements.
+
+GrantPipe surfaces low-risk status indicators alongside grant compliance so the criteria do not get rediscovered at fieldwork.
+
+#singleaudit #grantcompliance #nonprofitfinance #lowriskauditee

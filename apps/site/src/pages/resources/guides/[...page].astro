@@ -1,0 +1,183 @@
+﻿---
+import "../../../styles/global.css"
+import { getCollection } from "astro:content"
+import { getContentEntrySlug } from "@/lib/content-entry-slug"
+import CategoryHub from "@grantpipe/ui/site/hubs/category-hub.astro"
+import PublicSignupCta from "@grantpipe/ui/site/components/public-signup-cta"
+import Button from "@/components/ui/button.astro"
+import { siteConfig, shouldShowMobileStickyCta } from "@/config/site"
+import { hubFaqs } from "@/config/hub-faqs"
+import { sortByUpdatedAtDesc } from "@grantpipe/ui/site/lib/collections"
+import { resolveExitLeadMagnetOffer } from "@/lib/lead-magnet-routing"
+import { buildGuideHubModel } from "@/lib/guide-hub"
+
+export async function getStaticPaths({ paginate }: import("astro").GetStaticPathsOptions) {
+  const entries = await getCollection("guides")
+  const sorted = sortByUpdatedAtDesc(entries)
+  const guideHub = buildGuideHubModel(sorted, (e) => `/resources/guides/${getContentEntrySlug(e)}`)
+  return paginate(guideHub.items, { pageSize: 12 })
+}
+
+const { page } = Astro.props
+const leadMagnets = await getCollection("lead-magnets")
+const guideEntries = await getCollection("guides")
+const guideHub = buildGuideHubModel(sortByUpdatedAtDesc(guideEntries), (entry) => `/resources/guides/${getContentEntrySlug(entry)}`)
+const exitLeadMagnet = resolveExitLeadMagnetOffer(siteConfig, leadMagnets, { family: "guide" })
+---
+
+<CategoryHub
+  config={siteConfig}
+  title="How-To Guides"
+  description="Practical guides for development directors choosing nonprofit software, managing grant compliance, and running a tighter operation."
+  variant="editorial"
+  leadMagnet={exitLeadMagnet}
+  items={page.data}
+  page={page}
+  basePath="/resources/guides"
+  breadcrumbs={[
+    { label: "Home", href: "/" },
+    { label: "Resources", href: "/resources" },
+    { label: "Guides", href: "/resources/guides" },
+  ]}
+  faqs={hubFaqs["/resources/guides"]}
+  emptyStateHeading="No guides match this page yet."
+  emptyStateBody="Browse the full resources hub for related guides, software roundups, and FAQ hubs."
+  showStickyMobileCta={shouldShowMobileStickyCta("/resources/guides")}
+>
+  <section slot="intro" class="mb-10 space-y-10">
+    <section class="gp-resource-decision-panel editorial-panel p-6" aria-label="Guide start">
+      <p class="gp-proof-label">Decision path</p>
+      <h2 class="gp-link-card-title">Use guides when the workflow needs shape before a tool decision.</h2>
+      <p class="gp-link-card-copy mt-3">
+        Start here for grant compliance, restricted funds, CRM replacement, and reporting workflows
+        that need a clearer operating model before pricing or migration comes up.
+        Start with the <a href="/resources/guides/compliance-first-grant-management-system/">compliance-first grant management system guide</a>.
+        It shows what to track before you compare tools.
+      </p>
+    </section>
+
+    <section aria-label="Guide topics">
+      <div class="mb-5 max-w-2xl">
+        <p class="gp-kicker--accent">Topic paths</p>
+        <h2 class="mt-3 font-heading text-[length:var(--text-heading)] font-bold text-brand-text">
+          Pick a guide by topic.
+        </h2>
+        <p class="mt-3 text-brand-muted">
+          Start with the job you need to understand. Each topic shows a short list.
+        </p>
+      </div>
+      <div data-guide-topic-grid class="grid gap-4 md:grid-cols-2">
+        {guideHub.topicSummaries.map((topic) => (
+          <article class="gp-card-base h-full rounded-lg p-5">
+            <div class="flex flex-wrap items-start justify-between gap-3">
+              <div>
+                <p class="gp-proof-label">Topic</p>
+                <h3 class="mt-2 font-heading text-[length:var(--text-subheading)] font-bold text-brand-text">
+                  {topic.title}
+                </h3>
+              </div>
+              <span class="rounded-full border border-[var(--gp-ink-200)] px-3 py-1 text-[length:var(--text-caption)] font-medium text-brand-muted">
+                {topic.totalCount} {topic.totalCount === 1 ? "guide" : "guides"}
+              </span>
+            </div>
+            <p class="mt-3 text-[length:var(--text-body)] leading-7 text-brand-muted">
+              {topic.description}
+            </p>
+            <div class="mt-5 grid gap-2">
+              {topic.previewItems.map((item) => (
+                <a
+                  href={item.href}
+                  class="rounded-full px-3 py-2 text-[length:var(--text-caption)] font-medium text-brand-text no-underline transition-colors hover:bg-[var(--gp-paper-2)] hover:text-brand-primary focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary-500 focus-visible:ring-offset-2"
+                >
+                  {item.title}
+                </a>
+              ))}
+            </div>
+            <div class="mt-5 flex flex-wrap gap-2">
+              <a class="gp-filter-chip" href={`${topic.href}/`}>See topic path</a>
+              {topic.overflowCount > 0 && (
+                <span class="gp-filter-chip" aria-label={`${topic.overflowCount} more guides in this topic`}>
+                  {topic.overflowCount} more
+                </span>
+              )}
+            </div>
+          </article>
+        ))}
+      </div>
+    </section>
+
+    <section aria-label="Guide stages">
+      <div class="mb-5 max-w-2xl">
+        <p class="gp-kicker--accent">Funnel stage</p>
+        <h2 class="mt-3 font-heading text-[length:var(--text-heading)] font-bold text-brand-text">
+          Pick by next step.
+        </h2>
+        <p class="mt-3 text-brand-muted">
+          Use this if you know your next decision.
+        </p>
+      </div>
+      <div data-guide-stage-grid class="grid gap-4 lg:grid-cols-3">
+        {guideHub.stageSections.map((section) => (
+          <article class="gp-card-base h-full rounded-lg p-5">
+            <div class="mb-4 flex flex-wrap items-center justify-between gap-3">
+              <span class="rounded-full border border-[var(--gp-ink-200)] px-3 py-1 text-[length:var(--text-caption)] font-medium text-brand-primary">
+                {section.label}
+              </span>
+              <span class="text-[length:var(--text-caption)] text-brand-muted">
+                {section.totalCount} {section.totalCount === 1 ? "guide" : "guides"}
+              </span>
+            </div>
+            <h3 class="font-heading text-[length:var(--text-subheading)] font-bold text-brand-text">
+              {section.heading}
+            </h3>
+            <p class="mt-3 text-[length:var(--text-body)] leading-7 text-brand-muted">
+              {section.description}
+            </p>
+            <div class="mt-5 grid gap-3">
+              {section.items.map((item) => (
+                <a
+                  href={item.href}
+                  class="rounded-lg border border-[var(--gp-ink-100)] bg-[var(--gp-paper)] p-3 no-underline transition-[border-color,background-color,color] hover:border-[var(--gp-emerald-200)] hover:bg-[var(--gp-paper-2)] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary-500 focus-visible:ring-offset-2"
+                >
+                  <span class="block font-heading text-[length:var(--text-body)] font-bold leading-snug text-brand-text">
+                    {item.title}
+                  </span>
+                  {item.metadata?.timeEstimate && (
+                    <span class="mt-1 block text-[length:var(--text-caption)] text-brand-muted">
+                      {item.metadata.timeEstimate}
+                    </span>
+                  )}
+                </a>
+              ))}
+            </div>
+            <div class="mt-5 flex flex-wrap gap-2">
+              <a class="gp-filter-chip" href={`${section.nextStepHref}/`}>
+                {section.nextStepLabel}
+              </a>
+              {section.overflowCount > 0 && (
+                <span class="gp-filter-chip" aria-label={`${section.overflowCount} more guides in this stage`}>
+                  {section.overflowCount} more
+                </span>
+              )}
+            </div>
+          </article>
+        ))}
+      </div>
+    </section>
+  </section>
+
+  <section slot="cta" class="editorial-panel gp-shared-cta-shell" id="signup">
+    <h2>Start a 1-month free trial when the guide becomes a workflow.</h2>
+    <p>
+      Test donor, grant, restricted-fund, and compliance work together before you commit to a new process.
+    </p>
+    <div class="gp-shared-cta-actions">
+      <PublicSignupCta
+        client:load
+        sourcePage="/resources/guides"
+        buttonText={siteConfig.funnel.bofu.ctaText}
+      />
+      <Button variant="secondary" size="md" href="/product/">See the product walkthrough</Button>
+    </div>
+  </section>
+</CategoryHub>

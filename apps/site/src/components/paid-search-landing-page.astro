@@ -1,0 +1,1601 @@
+---
+import "../styles/global.css";
+import BaseLayout from "@grantpipe/ui/site/layouts/base-layout.astro";
+import { ExitIntentPopup } from "@grantpipe/ui/site/components/exit-intent-popup";
+import { resolveExitPopupProps } from "@grantpipe/ui/site/lib/exit-popup-props";
+import { getPublicApiBaseUrl } from "@grantpipe/ui/site/lib/public-api-url";
+import type { LeadMagnetOffer } from "@grantpipe/ui/site";
+import type { LeadMagnetSlug } from "@grantpipe/shared";
+import Button from "@/components/ui/button.astro";
+import ExplainerVideo from "@/components/explainer-video.astro";
+import ProductSurface from "@/components/product-surface.astro";
+import { getSignupCtaTarget, siteConfig } from "@/config/site";
+import { getImage } from "astro:assets";
+import grantpipeGrantsSrc from "@/assets/grantpipe-grants.png";
+
+type IconName =
+  | "audit"
+  | "balance"
+  | "calendar"
+  | "check"
+  | "evidence"
+  | "ledger"
+  | "report"
+  | "transfer";
+
+export interface PaidLandingPageData {
+  slug: string;
+  title: string;
+  description: string;
+  kicker: string;
+  headline: string;
+  subhead: string;
+  primaryCta: string;
+  exitLeadMagnet: LeadMagnetOffer & { slug: LeadMagnetSlug };
+  trust: string;
+  proofCard: {
+    label: string;
+    status: string;
+    rows: Array<{ label: string; value: string }>;
+    progressLabel: string;
+    progress: string;
+  };
+  painsTitle: string;
+  pains: string[];
+  workflowTitle: string;
+  workflowSteps: Array<{ icon: IconName; heading: string; copy: string }>;
+  featureTitle: string;
+  features: Array<{ icon: IconName; heading: string; copy: string }>;
+  proofTitle: string;
+  proofPoints: Array<{ value: string; label: string; source: string }>;
+  trustLabels: string[];
+  faqTitle: string;
+  faqs: Array<{ q: string; a: string }>;
+  finalTitle: string;
+  finalBody: string;
+}
+
+interface Props {
+  page: PaidLandingPageData;
+}
+
+const { page } = Astro.props;
+const canonicalUrl = `https://${siteConfig.domain}/lp/${page.slug}/`;
+const signupHref = getSignupCtaTarget();
+const exitPopupProps =
+  siteConfig.exitPopup?.enabled !== false ? resolveExitPopupProps(siteConfig) : undefined;
+const publicApiUrl = getPublicApiBaseUrl();
+const faqSchema = {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  mainEntity: page.faqs.map((faq) => ({
+    "@type": "Question",
+    name: faq.q,
+    acceptedAnswer: { "@type": "Answer", text: faq.a },
+  })),
+};
+
+const heroImageAvif = await getImage({
+  src: grantpipeGrantsSrc,
+  format: "avif",
+  widths: [480, 768, 1280],
+  sizes: "(max-width: 899px) 100vw, 56vw",
+});
+
+const heroImageWebp = await getImage({
+  src: grantpipeGrantsSrc,
+  format: "webp",
+  widths: [480, 768, 1280],
+  sizes: "(max-width: 899px) 100vw, 56vw",
+});
+
+const heroImageFallback = await getImage({
+  src: grantpipeGrantsSrc,
+  format: "png",
+  width: 1280,
+});
+
+const productModules: Array<{ label: string; meta: string }> = [
+  { label: "Grants", meta: "Award record" },
+  { label: "Funds", meta: "Restricted balances" },
+  { label: "Deadlines", meta: "Calendar + owners" },
+  { label: "Reports", meta: "SF-425, SEFA, foundation" },
+  { label: "Evidence", meta: "Documents + approvals" },
+  { label: "Drawdowns", meta: "Drawn vs. spent" },
+];
+---
+
+<BaseLayout
+  title={page.title}
+  description={page.description}
+  canonicalUrl={canonicalUrl}
+  siteName={siteConfig.name}
+  ogType="website"
+  twitterSite={siteConfig.social?.twitterHandle}
+  theme={siteConfig.theme}
+  fonts={siteConfig.theme.fonts}
+  themeColor={siteConfig.theme.primary}
+  appleTouchIcon={siteConfig.appleTouchIcon}
+  showFooter={false}
+  noindex={true}
+  siteUrl={`https://${siteConfig.domain}`}
+  siteLogo={siteConfig.logo?.light ? `https://${siteConfig.domain}${siteConfig.logo.light}` : undefined}
+  siteFounder={siteConfig.author}
+  siteSameAs={siteConfig.sameAs}
+  enableScrollReveal={false}
+>
+  <Fragment slot="head">
+    <script type="application/ld+json" set:html={JSON.stringify(faqSchema).replace(/<\//g, "<\\/")} is:inline />
+    <link
+      rel="preload"
+      as="image"
+      type="image/avif"
+      href={heroImageAvif.src}
+      imagesrcset={heroImageAvif.srcSet.attribute}
+      imagesizes="(max-width: 899px) 100vw, 56vw"
+      fetchpriority="high"
+    />
+  </Fragment>
+
+  <header slot="header" class="lp-header">
+    <a href="#main-content" class="lp-skip-link">Skip to main content</a>
+    <div class="lp-shell lp-header-inner">
+      <a class="lp-header-logo" href="/" aria-label="GrantPipe home">
+        <img class="lp-logo-img" src={siteConfig.logo?.light} alt="GrantPipe" width="150" height="32" />
+      </a>
+      <Button
+        variant="primary"
+        size="lg"
+        href={signupHref}
+        class="lp-header-cta"
+        data-preserve-utm
+        data-cta-button
+        data-cta-placement={`lp-${page.slug}-header-primary`}
+        data-cta-section="header"
+        data-cta-intent="convert"
+      >
+        <span class="lp-cta-short">Start free trial</span><span class="lp-cta-long">Start 1-month free trial</span>
+      </Button>
+    </div>
+  </header>
+
+  <div class="lp-page" data-lp-slug={page.slug}>
+    <section class="lp-hero" aria-labelledby="hero-title" data-section-impression="hero">
+      <div class="lp-shell lp-hero-grid">
+        <div class="lp-hero-copy">
+          <p class="lp-kicker">{page.kicker}</p>
+          <h1 id="hero-title">{page.headline}</h1>
+          <p class="lp-subhead">{page.subhead}</p>
+          <ul class="lp-hero-trust-labels" aria-label="Trust indicators">
+            {page.trustLabels.map((label) => (
+              <li>{label}</li>
+            ))}
+          </ul>
+          <div class="lp-actions lp-hero-actions">
+            <Button
+              variant="primary"
+              size="lg"
+              href={signupHref}
+              data-preserve-utm
+              data-cta-button
+              data-cta-placement={`lp-${page.slug}-hero-primary`}
+              data-cta-section="hero"
+              data-cta-intent="convert"
+            >
+              {page.primaryCta}
+            </Button>
+            <p class="lp-microtrust">Free for 1 month. No card. Cancel anytime.</p>
+          </div>
+          <p class="lp-trust">{page.trust}</p>
+          <a
+            href="#workflow-title"
+            class="lp-anchor-link"
+            data-cta-button
+            data-cta-placement={`lp-${page.slug}-hero-scroll`}
+            data-cta-section="hero"
+            data-cta-intent="explore-anchor"
+          >See how it works <span aria-hidden="true">&#8595;</span></a>
+        </div>
+
+        <aside class="lp-dashboard-stage" aria-label={page.proofCard.label}>
+          <div class="lp-dashboard-frame">
+            <div class="lp-dashboard-toolbar" aria-hidden="true">
+              <span></span>
+              <span></span>
+              <span></span>
+            </div>
+            <picture>
+              <source type="image/avif" srcset={heroImageAvif.srcSet.attribute} sizes="(max-width: 899px) 100vw, 56vw" />
+              <source type="image/webp" srcset={heroImageWebp.srcSet.attribute} sizes="(max-width: 899px) 100vw, 56vw" />
+              <img
+                src={heroImageFallback.src}
+                alt="GrantPipe grant dashboard showing award status, deadlines, and grant records"
+                width="1280"
+                height="720"
+                loading="eager"
+                decoding="async"
+                fetchpriority="high"
+              />
+            </picture>
+          </div>
+          <div class="lp-proof-stack">
+            <div class="lp-proof-card">
+              <div class="lp-proof-card-header">
+                <span>{page.proofCard.label}</span>
+                <strong>{page.proofCard.status}</strong>
+              </div>
+              {page.proofCard.rows.map((row) => (
+                <div class="lp-mini-row">
+                  <span>{row.label}</span>
+                  <strong>{row.value}</strong>
+                </div>
+              ))}
+              <div class="lp-progress" aria-label={page.proofCard.progressLabel}>
+                <span class="lp-progress-fill" style={`width: ${page.proofCard.progress}`}></span>
+              </div>
+            </div>
+            <div class="lp-proof-note">
+              <strong>Trial setup path</strong>
+              <span>Import tracker</span>
+              <span>Map deadlines</span>
+              <span>Invite finance</span>
+            </div>
+          </div>
+        </aside>
+      </div>
+    </section>
+
+    <ExplainerVideo
+      eyebrow="Product overview"
+      title="See how GrantPipe keeps grants, funds, and reports connected."
+      body="Watch the workspace flow from award setup to reporting evidence, then start with the live grant creating the most deadline pressure."
+      ctaHref={signupHref}
+      ctaLabel="Start 1-month free trial"
+      preserveUtm={true}
+      ctaPlacement={`lp-${page.slug}-explainer-primary`}
+      ctaSection="explainer"
+      ctaIntent="convert"
+      variant="landing"
+    />
+
+    <section class="lp-section lp-problem" aria-labelledby="problem-title" data-section-impression="problem">
+      <div class="lp-shell">
+        <h2 id="problem-title">{page.painsTitle}</h2>
+        <hr class="gp-hairline--accent lp-problem-hairline" />
+        <ul class="lp-pain-list">
+          {page.pains.map((pain) => (
+            <li>
+              <span aria-hidden="true"></span>
+              <p>{pain}</p>
+            </li>
+          ))}
+        </ul>
+      </div>
+    </section>
+
+    <section class="lp-section" aria-labelledby="workflow-title" data-section-impression="workflow">
+      <div class="lp-shell">
+        <div class="lp-section-heading">
+          <p class="gp-kicker--accent">Workflow</p>
+          <h2 id="workflow-title">{page.workflowTitle}</h2>
+        </div>
+        <div class="gp-step-band lp-workflow-list">
+          {page.workflowSteps.map((step) => (
+            <article class="lp-workflow-step gp-step">
+              <div class={`lp-icon lp-icon-${step.icon}`} aria-hidden="true"></div>
+              <h3>{step.heading}</h3>
+              <p>{step.copy}</p>
+            </article>
+          ))}
+        </div>
+      </div>
+    </section>
+
+    <section class="lp-product-section" aria-labelledby="product-title" data-section-impression="product">
+      <div class="lp-shell lp-product-grid">
+        <div class="lp-section-heading">
+          <p class="lp-kicker">Product view</p>
+          <h2 id="product-title">A grant record your whole team can inspect.</h2>
+          <p class="lp-product-copy">
+            Paid clicks should land on the actual workflow: grants, deadlines, restricted funds, reports, and evidence in one workspace.
+          </p>
+          <Button
+            variant="primary"
+            size="lg"
+            href={signupHref}
+            data-preserve-utm
+            data-cta-button
+            data-cta-placement={`lp-${page.slug}-product-primary`}
+            data-cta-section="product"
+            data-cta-intent="convert"
+          >
+            Start 1-month free trial
+          </Button>
+        </div>
+        <div class="lp-product-modules" aria-label="What's inside the workspace">
+          <p class="lp-product-modules-title">What's inside</p>
+          <ProductSurface
+            label="Workspace modules"
+            variant="rows"
+            items={productModules.map((mod) => ({ label: mod.label, value: mod.meta }))}
+          />
+        </div>
+      </div>
+    </section>
+
+    <section class="lp-section lp-split-section" aria-labelledby="features-title" data-section-impression="features">
+      <div class="lp-shell gp-feature-split lp-split-grid">
+        <div class="gp-feature-split__body">
+          <div class="lp-section-heading">
+            <p class="gp-kicker--accent">What GrantPipe adds</p>
+            <h2 id="features-title">{page.featureTitle}</h2>
+          </div>
+          <div class="lp-feature-list">
+            {page.features.map((feature) => (
+              <article class="lp-feature">
+                <div class={`lp-icon lp-icon-${feature.icon}`} aria-hidden="true"></div>
+                <div>
+                  <h3>{feature.heading}</h3>
+                  <p>{feature.copy}</p>
+                </div>
+              </article>
+            ))}
+          </div>
+        </div>
+        <div class="gp-feature-split__media">
+          <ProductSurface
+            label="Grant controls"
+            variant="rows"
+            items={page.features.map((feature) => ({ label: feature.heading, status: "Live" }))}
+          />
+        </div>
+      </div>
+    </section>
+
+    <section class="lp-proof-section gp-proof-band" aria-labelledby="proof-title" data-section-impression="proof">
+      <div class="lp-shell">
+        <div class="lp-section-heading">
+          <p class="gp-kicker--accent">Why it matters</p>
+          <h2 id="proof-title">{page.proofTitle}</h2>
+        </div>
+        <ul class="lp-stat-list gp-proof-band__grid">
+          {page.proofPoints.map((point) => (
+            <li class="lp-stat gp-proof-stat">
+              <strong class="gp-proof-stat__value">{point.value}</strong>
+              <p class="lp-stat-label gp-proof-stat__label">{point.label}</p>
+              <p class="lp-stat-source">{point.source}</p>
+            </li>
+          ))}
+        </ul>
+      </div>
+    </section>
+
+    <section class="lp-trust-band" aria-label="Compliance and accountability" data-section-impression="trust">
+      <div class="lp-shell lp-trust-band-inner">
+        <p class="lp-trust-built">Public pricing. Compliance-ready. Staff-led setup.</p>
+      </div>
+    </section>
+
+    <section class="lp-section lp-faq" aria-labelledby="faq-title" data-section-impression="faq">
+      <div class="lp-shell">
+        <div class="lp-section-heading">
+          <p class="lp-kicker">Common questions</p>
+          <h2 id="faq-title">{page.faqTitle}</h2>
+        </div>
+        <div class="lp-faq-list">
+          {page.faqs.map((faq) => (
+            <details class="lp-faq-item" data-lp-faq-item>
+              <summary class="lp-faq-q">{faq.q}</summary>
+              <div class="lp-faq-a">{faq.a}</div>
+            </details>
+          ))}
+        </div>
+      </div>
+    </section>
+
+    <section class="lp-final gp-section--emerald" aria-labelledby="final-title" data-section-impression="final">
+      <div class="lp-shell">
+        <p class="gp-kicker--accent">Start with one live award</p>
+        <h2 id="final-title">{page.finalTitle}</h2>
+        <p class="lp-final-body">{page.finalBody}</p>
+        <div class="lp-actions">
+          <Button
+            variant="primary"
+            size="lg"
+            href={signupHref}
+            data-preserve-utm
+            data-cta-button
+            data-cta-placement={`lp-${page.slug}-final-primary`}
+            data-cta-section="final"
+            data-cta-intent="convert"
+          >
+            {page.primaryCta}
+          </Button>
+          <a
+            href="#hero-title"
+            class="lp-anchor-link"
+            data-cta-button
+            data-cta-placement={`lp-${page.slug}-final-scroll`}
+            data-cta-section="final"
+            data-cta-intent="explore-anchor"
+          >See how it works <span aria-hidden="true">&#8593;</span></a>
+        </div>
+        <p class="lp-trust">{page.trust}</p>
+      </div>
+    </section>
+
+    <footer class="lp-footer">
+      <div class="lp-shell lp-footer-inner">
+        <div class="lp-footer-logo">
+          <img class="lp-logo-img" src={siteConfig.logo?.light} alt="GrantPipe" width="150" height="32" loading="lazy" />
+        </div>
+        <p class="lp-footer-trust">Built by Angel Campa, Principal SDET. Public pricing.</p>
+        <nav aria-label="Legal">
+          <a href="/privacy/">Privacy</a>
+          <a href="/terms/">Terms</a>
+        </nav>
+      </div>
+    </footer>
+  </div>
+
+  <div class="lp-mobile-cta" data-mobile-sticky>
+    <Button
+      variant="primary"
+      size="lg"
+      href={signupHref}
+      data-preserve-utm
+      data-cta-button
+      data-cta-placement={`lp-${page.slug}-mobile-sticky-primary`}
+      data-cta-section="mobile-sticky"
+      data-cta-intent="convert"
+    >
+      {page.primaryCta}
+    </Button>
+    <p class="lp-mobile-cta-note">Free for 1 month. No card.</p>
+  </div>
+
+  {exitPopupProps && (
+    <ExitIntentPopup
+      client:load
+      apiUrl={publicApiUrl}
+      leadMagnet={page.exitLeadMagnet}
+      {...exitPopupProps}
+    />
+  )}
+
+  <script is:inline>
+    (() => {
+      const params = new URLSearchParams(window.location.search);
+      const attributionKeys = [
+        "utm_source",
+        "utm_medium",
+        "utm_campaign",
+        "utm_content",
+        "utm_term",
+        "msclkid",
+        "gclid",
+      ];
+      const MAX_VAL_LENGTH = 256;
+      const attribution = attributionKeys
+        .map((key) => {
+          const value = params.get(key);
+          if (!value) return null;
+          return [key, value.slice(0, MAX_VAL_LENGTH)];
+        })
+        .filter(Boolean);
+
+      if (attribution.length > 0) {
+        document.querySelectorAll("[data-preserve-utm]").forEach((link) => {
+          const href = link.getAttribute("href");
+          if (!href || href.startsWith("#") || href.startsWith("mailto:") || href.startsWith("tel:")) {
+            return;
+          }
+          try {
+            const url = new URL(href, window.location.origin);
+            attribution.forEach(([key, value]) => url.searchParams.set(key, value));
+            link.setAttribute("href", url.toString());
+          } catch {
+            // Leave malformed hrefs unchanged.
+          }
+        });
+      }
+
+      const sticky = document.querySelector("[data-mobile-sticky]");
+      const stickyLink = sticky?.querySelector("a");
+      const heroConvertCtas = document.querySelectorAll(
+        '[data-cta-section="hero"][data-cta-intent="convert"]:not([data-cta-section="header"]):not([data-cta-section="mobile-sticky"])',
+      );
+
+      const setStickyHidden = (hidden) => {
+        if (!sticky || !stickyLink) return;
+        sticky.classList.toggle("is-hidden", hidden);
+        sticky.setAttribute("aria-hidden", hidden ? "true" : "false");
+        stickyLink.setAttribute("tabindex", hidden ? "-1" : "0");
+      };
+
+      if (sticky && heroConvertCtas.length > 0 && "IntersectionObserver" in window) {
+        const visibleCtas = new Set();
+        const observer = new IntersectionObserver(
+          (entries) => {
+            entries.forEach((entry) => {
+              if (entry.isIntersecting) visibleCtas.add(entry.target);
+              else visibleCtas.delete(entry.target);
+            });
+            setStickyHidden(visibleCtas.size > 0);
+          },
+          { threshold: 0.1 },
+        );
+        heroConvertCtas.forEach((cta) => observer.observe(cta));
+      } else {
+        setStickyHidden(false);
+      }
+
+      // FAQ open state: open all on >=640px, open first item on mobile
+      const faqItems = document.querySelectorAll("[data-lp-faq-item]");
+      const openFaqs = () => {
+        const isWide = window.matchMedia("(min-width: 640px)").matches;
+        faqItems.forEach((item, index) => {
+          if (isWide) {
+            item.setAttribute("open", "");
+          } else if (index === 0) {
+            item.setAttribute("open", "");
+          } else {
+            item.removeAttribute("open");
+          }
+        });
+      };
+      openFaqs();
+      const mql = window.matchMedia("(min-width: 640px)");
+      mql.addEventListener("change", openFaqs);
+
+      // Section impression tracking
+      const sectionsToTrack = document.querySelectorAll("[data-section-impression]");
+      const seen = new Set();
+      const lpSlug = document.querySelector("[data-lp-slug]")?.getAttribute("data-lp-slug") || "";
+      if (sectionsToTrack.length && "IntersectionObserver" in window) {
+        const sectionObserver = new IntersectionObserver((entries) => {
+          entries.forEach((entry) => {
+            const section = entry.target.getAttribute("data-section-impression");
+            if (entry.isIntersecting && !seen.has(section)) {
+              seen.add(section);
+              try {
+                if (typeof window.posthog?.capture === "function") {
+                  window.posthog.capture("lp_section_view", { section, slug: lpSlug });
+                }
+              } catch {}
+            }
+          });
+        }, { threshold: 0.35 });
+        sectionsToTrack.forEach((s) => sectionObserver.observe(s));
+      }
+    })();
+  </script>
+</BaseLayout>
+
+<style>
+  :global(html) {
+    --paid-lp-mobile-sticky-offset: 0px;
+    scroll-padding-top: clamp(4.5rem, 4.5rem + 1vw, 6rem);
+  }
+
+  :global(body) {
+    background:
+      linear-gradient(180deg, var(--surface-secondary) 0%, var(--surface-primary) 38rem),
+      var(--surface-primary);
+  }
+
+  :global(body #ventora-ai-sdr-root) {
+    z-index: 70;
+  }
+
+  .lp-page {
+    color: var(--color-brand-text);
+  }
+
+  .lp-skip-link {
+    position: absolute;
+    left: -9999px;
+    top: 0;
+    z-index: 100;
+    min-height: 48px;
+    padding: 0.7rem 1rem;
+    background: var(--color-primary-800);
+    color: var(--color-neutral-50);
+    font-weight: 700;
+    border-radius: 0 0 var(--radius-xs) 0;
+  }
+
+  .lp-skip-link:focus {
+    left: 0;
+  }
+
+  .lp-mobile-cta {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 60;
+    display: none;
+    padding: 0.7rem 1rem calc(0.7rem + env(safe-area-inset-bottom));
+    border-top: 1px solid var(--gp-ink-200);
+    background: var(--gp-paper);
+    backdrop-filter: blur(16px);
+    transform: translateY(0);
+    transition:
+      transform 220ms ease,
+      opacity 220ms ease;
+  }
+
+  .lp-mobile-cta.is-hidden {
+    transform: translateY(110%);
+    opacity: 0;
+    pointer-events: none;
+  }
+
+  .lp-mobile-cta-note {
+    margin-top: 0.35rem;
+    color: var(--color-neutral-600);
+    font-size: 0.875rem;
+    line-height: 1.4;
+    text-align: center;
+    white-space: nowrap;
+  }
+
+  .lp-header {
+    position: sticky;
+    top: 0;
+    z-index: 50;
+    background: var(--gp-paper);
+    backdrop-filter: blur(14px);
+    border-bottom: 1px solid var(--gp-ink-200);
+  }
+
+  .lp-header-inner,
+  .lp-footer-inner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1rem;
+    padding: 0.85rem 0;
+  }
+
+  .lp-header-logo,
+  .lp-footer-logo {
+    display: inline-flex;
+    align-items: center;
+    min-height: 48px;
+  }
+
+  .lp-logo-img {
+    display: block;
+    height: 1.7rem;
+    width: auto;
+  }
+
+  .lp-shell {
+    width: min(100% - 2rem, 70rem);
+    margin-inline: auto;
+  }
+
+  /* Header CTA responsive text */
+  .lp-cta-short {
+    display: none;
+  }
+
+  .lp-cta-long {
+    display: inline;
+  }
+
+  .lp-hero {
+    padding: clamp(2.25rem, 8vw, 6rem) 0 clamp(2.5rem, 6vw, 4.5rem);
+  }
+
+  .lp-hero-grid {
+    display: grid;
+    gap: clamp(2rem, 5vw, 4rem);
+    align-items: center;
+  }
+
+  .lp-hero-copy {
+    max-width: 43rem;
+  }
+
+  .lp-kicker {
+    margin: 0;
+    color: var(--gp-emerald-700);
+    font-size: 0.875rem;
+    font-weight: 800;
+    letter-spacing: 0.08em;
+    line-height: 1.2;
+    text-transform: uppercase;
+  }
+
+  h1,
+  h2,
+  h3,
+  p {
+    margin-block: 0;
+  }
+
+  h1 {
+    margin-top: 1rem;
+    max-width: 18ch;
+    font-family: var(--font-heading);
+    font-size: clamp(2.35rem, 7vw, 4.25rem);
+    font-weight: 800;
+    letter-spacing: 0;
+    line-height: 0.98;
+  }
+
+  .lp-subhead {
+    margin-top: 1.4rem;
+    max-width: 39rem;
+    color: var(--color-neutral-700);
+    font-size: clamp(1.04rem, 2.4vw, 1.2rem);
+    line-height: 1.55;
+  }
+
+  /* Hero trust labels chip row (mobile-only, shown inside hero copy) */
+  .lp-hero-trust-labels {
+    display: none;
+    flex-wrap: wrap;
+    gap: 0.5rem 0.75rem;
+    margin: 0.9rem 0 0;
+    padding: 0;
+    list-style: none;
+  }
+
+  .lp-hero-trust-labels li {
+    padding: 0.35rem 0.75rem;
+    border-radius: var(--radius-full);
+    background: var(--gp-emerald-50);
+    border: 1px solid var(--gp-emerald-100);
+    color: var(--color-primary-900);
+    font-size: 0.82rem;
+    font-weight: 700;
+  }
+
+  .lp-actions {
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+    margin-top: 1.65rem;
+  }
+
+  .lp-microtrust {
+    margin-top: 0;
+    color: var(--color-neutral-500);
+    font-size: 0.875rem;
+    line-height: 1.4;
+  }
+
+  .lp-anchor-link {
+    display: inline-flex;
+    align-items: center;
+    min-height: 48px;
+    padding-block: 11px;
+    padding-inline: 0;
+    margin-top: 0.85rem;
+    color: var(--color-primary-800);
+    font-size: 0.9rem;
+    font-weight: 600;
+    text-decoration: underline;
+    text-decoration-thickness: 1px;
+    text-underline-offset: 3px;
+  }
+
+  .lp-anchor-link:hover {
+    color: var(--color-primary-700);
+  }
+
+  .lp-anchor-link:focus-visible {
+    outline: 3px solid var(--gp-gold-500);
+    outline-offset: 3px;
+  }
+
+  .lp-footer a:focus-visible,
+  .lp-trust-built a:focus-visible {
+    outline: 3px solid var(--gp-gold-500);
+    outline-offset: 3px;
+  }
+
+  .lp-trust {
+    margin-top: 0.85rem;
+    color: var(--color-neutral-600);
+    font-size: 0.88rem;
+    line-height: 1.5;
+  }
+
+  .lp-dashboard-stage {
+    position: relative;
+    display: grid;
+    gap: 1rem;
+    align-self: stretch;
+  }
+
+  .lp-dashboard-stage::before {
+    position: absolute;
+    inset: -1.2rem -0.7rem auto auto;
+    z-index: -1;
+    width: 60%;
+    height: 68%;
+    border-radius: var(--radius-lg);
+    background: var(--gp-emerald-100);
+    content: "";
+  }
+
+  .lp-dashboard-frame {
+    overflow: hidden;
+    border: 1px solid var(--gp-emerald-100);
+    border-radius: var(--radius-md);
+    background: var(--gp-paper);
+    /* Deep emerald shadow keeps the dashboard lift subtle; no --gp-* shadow alpha token exists. */
+    box-shadow: 0 26px 62px -40px color-mix(in srgb, var(--gp-emerald-900) 52%, transparent);
+  }
+
+  .lp-dashboard-toolbar {
+    display: flex;
+    gap: 0.38rem;
+    padding: 0.75rem 0.9rem;
+    border-bottom: 1px solid var(--gp-ink-200);
+    background: var(--gp-paper-2);
+  }
+
+  .lp-dashboard-toolbar span {
+    width: 0.55rem;
+    height: 0.55rem;
+    border-radius: var(--radius-full);
+    background: var(--color-primary-300);
+  }
+
+  .lp-dashboard-frame img {
+    display: block;
+    width: 100%;
+    height: auto;
+    aspect-ratio: 16 / 9;
+  }
+
+  .lp-proof-stack {
+    display: grid;
+    gap: 0.85rem;
+  }
+
+  .lp-proof-card {
+    display: grid;
+    gap: 1rem;
+    border: 1px solid var(--gp-ink-200);
+    border-radius: var(--radius-md);
+    background: var(--gp-paper);
+    padding: clamp(1rem, 4vw, 1.4rem);
+    box-shadow: var(--shadow-card);
+  }
+
+  .lp-proof-card-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1rem;
+    padding-bottom: 0.85rem;
+    border-bottom: 1px solid var(--gp-ink-200);
+    font-size: 0.82rem;
+    font-family: var(--font-mono, ui-monospace, monospace);
+  }
+
+  .lp-proof-card-header span,
+  .lp-mini-row span {
+    color: var(--color-neutral-600);
+  }
+
+  .lp-proof-card-header strong {
+    color: var(--color-primary-800);
+    font-family: var(--font-sans, system-ui, sans-serif);
+    font-size: 0.9rem;
+  }
+
+  .lp-mini-row {
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+    gap: 1rem;
+    color: var(--color-brand-text);
+    font-size: 0.88rem;
+  }
+
+  .lp-mini-row strong {
+    font-family: var(--font-mono, ui-monospace, monospace);
+    font-weight: 700;
+    text-align: right;
+  }
+
+  .lp-progress {
+    height: 0.55rem;
+    overflow: hidden;
+    border-radius: var(--radius-full);
+    background: var(--gp-emerald-100);
+  }
+
+  .lp-progress-fill {
+    display: block;
+    height: 100%;
+    border-radius: inherit;
+    background: linear-gradient(90deg, var(--color-primary-700), var(--color-accent-500));
+  }
+
+  .lp-proof-note {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 0.45rem;
+    border: 1px solid var(--gp-emerald-100);
+    border-radius: var(--radius-sm);
+    background: var(--gp-emerald-50);
+    padding: 0.95rem;
+  }
+
+  .lp-proof-note strong {
+    color: var(--color-primary-900);
+    font-family: var(--font-heading);
+    font-size: 1rem;
+    line-height: 1.2;
+  }
+
+  .lp-proof-note span {
+    color: var(--color-neutral-700);
+    font-size: 0.86rem;
+    line-height: 1.4;
+  }
+
+  .lp-section,
+  .lp-product-section,
+  .lp-proof-section,
+  .lp-final {
+    padding: clamp(3rem, 8vw, 5.25rem) 0;
+  }
+
+  .lp-problem {
+    background: var(--gp-paper-2);
+    border-block: 1px solid var(--gp-ink-200);
+  }
+
+  .lp-problem h2,
+  .lp-section-heading h2,
+  .lp-proof-section h2,
+  .lp-final h2 {
+    margin-top: 0.75rem;
+    max-width: 42rem;
+    font-family: var(--font-heading);
+    font-size: clamp(1.95rem, 5vw, 3.05rem);
+    font-weight: 800;
+    letter-spacing: 0;
+    line-height: 1.04;
+  }
+
+  .lp-problem-hairline {
+    margin: 1rem 0 0;
+  }
+
+  .lp-pain-list {
+    display: grid;
+    gap: 0.85rem;
+    margin: 1.6rem 0 0;
+    padding: 0;
+    list-style: none;
+  }
+
+  .lp-pain-list li {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    gap: 0.75rem;
+    align-items: start;
+    color: var(--color-neutral-800);
+    font-size: 1rem;
+    line-height: 1.5;
+  }
+
+  .lp-pain-list span {
+    width: 0.55rem;
+    height: 0.55rem;
+    margin-top: 0.5rem;
+    border-radius: var(--radius-full);
+    background: var(--color-accent-500);
+  }
+
+  .lp-workflow-list,
+  .lp-feature-list,
+  .lp-stat-list {
+    display: grid;
+    gap: 1rem;
+    margin-top: 1.6rem;
+  }
+
+  .lp-workflow-step,
+  .lp-stat {
+    border: 1px solid var(--gp-ink-200);
+    border-radius: var(--radius-sm);
+    background: var(--gp-paper);
+    padding: 1.2rem;
+  }
+
+  .lp-workflow-step h3,
+  .lp-feature h3 {
+    margin-top: 0.65rem;
+    font-family: var(--font-heading);
+    font-size: 1.18rem;
+    font-weight: 800;
+    line-height: 1.2;
+  }
+
+  .lp-workflow-step p,
+  .lp-feature p,
+  .lp-product-copy {
+    margin-top: 0.45rem;
+    color: var(--color-neutral-700);
+    font-size: 0.97rem;
+    line-height: 1.58;
+  }
+
+  .lp-product-section {
+    background: var(--surface-primary);
+  }
+
+  .lp-product-grid {
+    display: grid;
+    gap: 1.6rem;
+    align-items: center;
+  }
+
+  .lp-product-section .gp-mkt-btn {
+    margin-top: 1.4rem;
+  }
+
+  .lp-screenshot-frame {
+    margin: 0;
+    overflow: hidden;
+    border: 1px solid var(--gp-ink-200);
+    border-radius: var(--radius-md);
+    background: var(--gp-paper);
+    box-shadow: var(--shadow-card);
+  }
+
+  .lp-screenshot-frame img {
+    display: block;
+    width: 100%;
+    height: auto;
+    aspect-ratio: 16 / 9;
+  }
+
+  .lp-product-modules {
+    display: grid;
+    gap: 0.95rem;
+    padding: clamp(1.1rem, 4vw, 1.55rem);
+    border: 1px solid var(--gp-ink-200);
+    border-radius: var(--radius-md);
+    background: var(--gp-paper);
+    box-shadow: var(--shadow-card);
+  }
+
+  .lp-product-modules-title {
+    margin: 0;
+    color: var(--gp-emerald-700);
+    font-size: 0.875rem;
+    font-weight: 800;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+  }
+
+  .lp-product-modules-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 0.6rem;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+
+  .lp-product-module {
+    display: grid;
+    gap: 0.18rem;
+    padding: 0.7rem 0.85rem;
+    border: 1px solid var(--gp-emerald-100);
+    border-radius: var(--radius-sm);
+    background: var(--gp-emerald-50);
+  }
+
+  .lp-product-module strong {
+    color: var(--color-primary-900);
+    font-family: var(--font-heading);
+    font-size: 1rem;
+    line-height: 1.2;
+  }
+
+  .lp-product-module span {
+    color: var(--color-neutral-700);
+    font-size: 0.82rem;
+    line-height: 1.35;
+  }
+
+  @media (min-width: 640px) {
+    .lp-product-modules-grid {
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+  }
+
+  @media (min-width: 900px) {
+    .lp-product-modules-grid {
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+    }
+  }
+
+  .lp-split-section {
+    /* Section uses very-low-alpha emerald fill/border; no matching --gp-* alpha tokens exist. */
+    background: color-mix(in srgb, var(--gp-emerald-50) 34%, var(--gp-paper));
+    border-block: 1px solid color-mix(in srgb, var(--color-primary-200) 38%, transparent);
+  }
+
+  .lp-feature {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    gap: 0.95rem;
+    align-items: start;
+    padding: 1.05rem 0;
+    border-top: 1px solid var(--gp-ink-200);
+  }
+
+  .lp-icon {
+    position: relative;
+    width: 2.35rem;
+    height: 2.35rem;
+    border-radius: var(--radius-xs);
+    background: var(--gp-emerald-100);
+    border: 1px solid var(--gp-emerald-100);
+  }
+
+  .lp-icon::before,
+  .lp-icon::after {
+    position: absolute;
+    content: "";
+  }
+
+  .lp-icon-ledger::before,
+  .lp-icon-report::before,
+  .lp-icon-evidence::before {
+    inset: 0.55rem 0.72rem;
+    border: 2px solid var(--color-primary-800);
+    border-left-width: 5px;
+    border-radius: var(--radius-xs);
+  }
+
+  .lp-icon-calendar::before {
+    inset: 0.65rem 0.6rem 0.55rem;
+    border: 2px solid var(--color-primary-800);
+    border-radius: var(--radius-xs);
+  }
+
+  .lp-icon-calendar::after,
+  .lp-icon-ledger::after,
+  .lp-icon-report::after {
+    inset: 1.15rem 0.9rem auto;
+    height: 2px;
+    background: var(--color-primary-800);
+  }
+
+  .lp-icon-balance::before {
+    inset: 0.75rem 0.55rem auto;
+    height: 2px;
+    background: var(--color-primary-800);
+  }
+
+  .lp-icon-balance::after {
+    inset: 0.55rem 1.05rem 0.55rem;
+    border-left: 2px solid var(--color-primary-800);
+  }
+
+  .lp-icon-check::before,
+  .lp-icon-audit::before {
+    inset: 0.62rem;
+    border: 2px solid var(--color-primary-800);
+    border-radius: var(--radius-full);
+  }
+
+  .lp-icon-check::after,
+  .lp-icon-audit::after {
+    left: 0.86rem;
+    top: 0.95rem;
+    width: 0.64rem;
+    height: 0.34rem;
+    border-left: 2px solid var(--color-primary-800);
+    border-bottom: 2px solid var(--color-primary-800);
+    transform: rotate(-45deg);
+  }
+
+  .lp-icon-transfer::before {
+    left: 0.62rem;
+    right: 0.62rem;
+    top: 0.82rem;
+    height: 2px;
+    background: var(--color-primary-800);
+  }
+
+  .lp-icon-transfer::after {
+    right: 0.62rem;
+    top: 0.62rem;
+    width: 0.42rem;
+    height: 0.42rem;
+    border-top: 2px solid var(--color-primary-800);
+    border-right: 2px solid var(--color-primary-800);
+    transform: rotate(45deg);
+  }
+
+  .lp-proof-section {
+    /* Section uses low-alpha gold fill/border across full viewport; no matching --gp-* alpha tokens exist. */
+    background: color-mix(in srgb, var(--gp-gold-50) 48%, var(--gp-paper));
+    border-block: 1px solid color-mix(in srgb, var(--color-accent-200) 44%, transparent);
+  }
+
+  .lp-stat-list {
+    padding: 0;
+    list-style: none;
+  }
+
+  .lp-stat strong {
+    display: block;
+    font-family: var(--font-heading);
+    font-size: clamp(1.75rem, 4vw, 2.3rem);
+    font-weight: 800;
+    color: var(--color-primary-800);
+    line-height: 1.05;
+  }
+
+  .lp-stat-label {
+    margin-top: 0.55rem;
+    color: var(--color-brand-text);
+    font-size: 1rem;
+    line-height: 1.5;
+  }
+
+  .lp-stat-source {
+    margin-top: 0.55rem;
+    color: var(--color-neutral-600);
+    font-size: 0.82rem;
+    line-height: 1.45;
+  }
+
+  .lp-trust-band {
+    padding: clamp(1.6rem, 4vw, 2.4rem) 0;
+    border-bottom: 1px solid var(--gp-ink-200);
+  }
+
+  .lp-trust-band-inner {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+
+  .lp-trust-labels {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem 0.75rem;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+
+  .lp-trust-labels li {
+    padding: 0.35rem 0.75rem;
+    border-radius: var(--radius-full);
+    background: var(--gp-emerald-50);
+    border: 1px solid var(--gp-emerald-100);
+    color: var(--color-primary-900);
+    font-size: 0.82rem;
+    font-weight: 700;
+  }
+
+  .lp-trust-built,
+  .lp-final-body {
+    color: var(--color-neutral-700);
+    font-size: 0.98rem;
+    line-height: 1.6;
+  }
+
+  .lp-trust-built a {
+    color: var(--color-primary-800);
+    font-weight: 700;
+    text-decoration: underline;
+    text-decoration-thickness: 1px;
+    text-underline-offset: 3px;
+  }
+
+  /* FAQ collapsible */
+  .lp-faq-list {
+    display: grid;
+    gap: 0;
+    margin: 1.6rem 0 0;
+  }
+
+  .lp-faq-item {
+    border-top: 1px solid var(--gp-ink-200);
+  }
+
+  .lp-faq-item:last-child {
+    border-bottom: 1px solid var(--gp-ink-200);
+  }
+
+  .lp-faq-q {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1rem;
+    padding: 1.1rem 0 0.4rem;
+    font-family: var(--font-heading);
+    font-size: 1.08rem;
+    font-weight: 800;
+    line-height: 1.3;
+    color: var(--color-brand-text);
+    cursor: pointer;
+    list-style: none;
+  }
+
+  .lp-faq-q::-webkit-details-marker {
+    display: none;
+  }
+
+  .lp-faq-q::after {
+    content: "";
+    flex-shrink: 0;
+    width: 1rem;
+    height: 1rem;
+    border-right: 2.5px solid var(--color-primary-800);
+    border-bottom: 2.5px solid var(--color-primary-800);
+    transform: rotate(45deg);
+    transition: transform 200ms ease;
+  }
+
+  .lp-faq-q:focus-visible {
+    outline: 3px solid var(--gp-gold-500);
+    outline-offset: 3px;
+    border-radius: var(--radius-xs);
+  }
+
+  .lp-faq-item[open] > .lp-faq-q::after {
+    transform: rotate(-135deg);
+  }
+
+  .lp-faq-a {
+    margin: 0 0 1.1rem;
+    color: var(--color-neutral-700);
+    font-size: 0.98rem;
+    line-height: 1.6;
+  }
+
+  .lp-final-body {
+    max-width: 39rem;
+    margin-top: 1rem;
+    font-size: 1.05rem;
+  }
+
+  /* Final CTA sits on the inverted emerald band; the trust line and the
+     scroll-back anchor need light-on-dark treatment to stay legible since
+     .gp-section--emerald only recolors h2/h3/p/.gp-kicker--accent. */
+  .lp-final.gp-section--emerald .lp-trust {
+    color: color-mix(in srgb, #ffffff 74%, var(--gp-emerald-100));
+  }
+
+  .lp-final.gp-section--emerald .lp-anchor-link {
+    color: color-mix(in srgb, #ffffff 92%, var(--gp-emerald-100));
+  }
+
+  .lp-final.gp-section--emerald .lp-anchor-link:hover {
+    color: #ffffff;
+  }
+
+  .lp-footer {
+    padding: 1.5rem 0 2rem;
+    border-top: 1px solid var(--gp-ink-200);
+  }
+
+  .lp-footer-inner {
+    flex-wrap: wrap;
+    row-gap: 0.5rem;
+  }
+
+  .lp-footer-trust {
+    flex-basis: 100%;
+    color: var(--color-neutral-600);
+    font-size: 0.82rem;
+    line-height: 1.5;
+    order: 1;
+  }
+
+  .lp-footer-logo {
+    order: 0;
+  }
+
+  .lp-footer nav {
+    display: flex;
+    gap: 1rem;
+    order: 2;
+  }
+
+  .lp-footer nav a {
+    display: inline-flex;
+    align-items: center;
+    min-height: 48px;
+    min-width: 48px;
+  }
+
+  .lp-trust-built a {
+    padding-block: 8px;
+  }
+
+  .lp-footer nav a {
+    color: var(--color-neutral-700);
+    font-size: 0.92rem;
+    font-weight: 700;
+    text-decoration: none;
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    .lp-mobile-cta {
+      transition: none;
+    }
+    .lp-faq-q::after {
+      transition: none;
+    }
+  }
+
+  @media (min-width: 640px) {
+    .lp-actions {
+      flex-direction: row;
+      flex-wrap: wrap;
+      align-items: center;
+    }
+
+    .lp-trust-band-inner {
+      gap: 2rem;
+    }
+
+    .lp-footer-trust {
+      flex-basis: auto;
+      order: 1;
+    }
+  }
+
+  @media (max-width: 639px) {
+    :global(html) {
+      --paid-lp-mobile-sticky-offset: calc(5.6rem + env(safe-area-inset-bottom));
+      scroll-padding-top: calc(4.75rem + env(safe-area-inset-top, 0px));
+    }
+
+    :global(body #ventora-ai-sdr-root) {
+      bottom: calc(var(--paid-lp-mobile-sticky-offset) + 0.75rem);
+    }
+
+    .lp-page {
+      padding-bottom: calc(5.3rem + env(safe-area-inset-bottom));
+    }
+
+    .lp-mobile-cta {
+      display: block;
+    }
+
+    .lp-mobile-cta .gp-mkt-btn,
+    .lp-actions .gp-mkt-btn {
+      width: 100%;
+    }
+
+    /* Header CTA hidden on mobile; hero + sticky cover conversion */
+    .lp-header-cta {
+      display: none;
+    }
+
+    /* Hero, final, and mobile-sticky primary CTAs must meet 44px tap target */
+    .lp-hero-actions .gp-mkt-btn.primary,
+    .lp-final .lp-actions .gp-mkt-btn.primary,
+    .lp-mobile-cta .gp-mkt-btn {
+      min-height: 48px;
+    }
+
+    .lp-cta-short {
+      display: inline;
+    }
+
+    .lp-cta-long {
+      display: none;
+    }
+
+    .lp-footer-inner {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+
+    /* Hero mobile rhythm */
+    .lp-hero {
+      padding: 1.25rem 0 2rem;
+    }
+
+    h1 {
+      max-width: 15ch;
+    }
+
+    .lp-subhead {
+      margin-top: 0.9rem;
+    }
+
+    .lp-actions {
+      margin-top: 1.1rem;
+    }
+
+    /* Trust labels in hero on mobile */
+    .lp-hero-trust-labels {
+      display: flex;
+    }
+
+    /* Hide dashboard image on mobile, keep proof cards */
+    .lp-dashboard-frame {
+      display: none;
+    }
+
+    /* Drop hero .lp-trust paragraph and "See how it works" anchor on mobile;
+       the SDR widget overlays this area and the sticky CTA covers conversion. */
+    .lp-hero-copy > .lp-trust,
+    .lp-hero-copy > .lp-anchor-link {
+      display: none;
+    }
+  }
+
+  @media (min-width: 900px) {
+    .lp-hero-grid {
+      grid-template-columns: minmax(0, 1fr) minmax(21rem, 0.64fr);
+    }
+
+    .lp-proof-card {
+      justify-self: end;
+    }
+
+    .lp-pain-list {
+      grid-template-columns: repeat(5, minmax(0, 1fr));
+      gap: 1rem;
+    }
+
+    .lp-pain-list li {
+      display: block;
+      padding-top: 1rem;
+      border-top: 2px solid var(--gp-gold-500);
+    }
+
+    .lp-pain-list span {
+      display: none;
+    }
+
+    .lp-workflow-list,
+    .lp-stat-list {
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+    }
+
+    .lp-split-grid {
+      display: grid;
+      grid-template-columns: minmax(0, 0.75fr) minmax(0, 1fr);
+      gap: 4rem;
+      align-items: start;
+    }
+
+    .lp-product-grid {
+      grid-template-columns: minmax(0, 0.68fr) minmax(0, 1fr);
+      gap: 3rem;
+    }
+
+    .lp-feature-list {
+      margin-top: 0;
+    }
+
+    .lp-cta-short {
+      display: none;
+    }
+
+    .lp-cta-long {
+      display: inline;
+    }
+  }
+</style>

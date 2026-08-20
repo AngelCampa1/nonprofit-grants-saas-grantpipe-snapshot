@@ -1,0 +1,17 @@
+Five figures. That is a typical starting point for a Salesforce Nonprofit Cloud implementation invoice at a $3M org. Before the seat licenses. Before the AppExchange add-ons for grant tracking, because NPSP does not really do grants.
+
+The pitch is "configure it however you want."
+
+The bill is the consultant who configures it.
+
+Then the consultant who reconfigures it after the first staff turnover.
+
+Then the consultant who migrates you off when the org realizes 70% of the fields are empty.
+
+Mid-sized nonprofits ($500K to $10M) almost never need that much surface area. They need donors, grants, restricted funds, and compliance reporting in one place, with a price on the website and an interface a new hire can learn in a week.
+
+That is the shape we are building.
+
+See current offer terms at grantpipe.com/pricing.
+
+Public pricing at grantpipe.com/pricing.

@@ -1,0 +1,9 @@
+The math on GrantPipe vs Salesforce NPSP for a $3M nonprofit.
+
+Salesforce NPSP: partner implementation quotes typically land in the five-figure range, before seat licenses. Then AppExchange add-ons for grant tracking, because NPSP does not model grants natively. Then the second consultant engagement six months later when the restricted-fund report still does not tie to the GL.
+
+GrantPipe publishes current plan prices at grantpipe.com/pricing. No setup fee. No implementation consultant required. No AppExchange. Grants and restricted funds are built in from day one.
+
+See current offer terms at grantpipe.com/pricing. The current Growth price is listed at grantpipe.com/pricing.
+
+Public pricing at grantpipe.com/pricing.

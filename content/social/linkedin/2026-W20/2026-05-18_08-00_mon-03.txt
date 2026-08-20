@@ -1,0 +1,9 @@
+Most "grant tracking" inside a donor CRM is a custom field on the gift record. That is not grant tracking. That is a label on a transaction.
+
+A grant has its own life cycle. Application, award, period of performance, draw schedule, reporting cadence, modifications, closeout. Some of that lives years before the cash arrives. Some lives years after.
+
+A donor CRM models the gift, not the obligation. So the workflow ends up split: the development side tracks the relationship in the CRM, and the finance side tracks the dollars in QuickBooks. Both teams maintain a parallel spreadsheet for what neither system carries.
+
+That spreadsheet is the audit trail. The audit trail is not in either system of record. That is the gap.
+
+Two systems of record means no system of record.

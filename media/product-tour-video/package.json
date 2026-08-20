@@ -1,0 +1,21 @@
+{
+  "name": "product-tour-video",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "capture": "node scripts/capture-product-tour.mjs",
+    "voice": "npx --yes hyperframes@0.5.7 tts script.txt --voice af_nova --speed 0.86 --output assets/audio/voice/grantpipe-product-tour-voice.wav",
+    "voice:shorts": "npx --yes hyperframes@0.5.7 tts shorts-script.txt --voice af_nova --speed 1.04 --output assets/audio/voice/grantpipe-product-tour-shorts-voice.wav",
+    "dev": "npx --yes hyperframes@0.5.7 preview",
+    "check": "npx --yes hyperframes@0.5.7 lint && npx --yes hyperframes@0.5.7 validate && npx --yes hyperframes@0.5.7 inspect --samples 18",
+    "check:shorts": "npx --yes hyperframes@0.5.7 render --composition variants/portrait.html --output renders/grantpipe-product-tour-shorts-portrait-check.mp4 --quality draft --fps 30 --strict",
+    "render": "npx --yes hyperframes@0.5.7 render --output renders/grantpipe-product-tour-landscape.mp4 --quality high --video-bitrate 12M --fps 30",
+    "render:shorts": "npx --yes hyperframes@0.5.7 render --composition variants/portrait.html --output renders/grantpipe-product-tour-shorts-portrait.mp4 --quality high --video-bitrate 10M --fps 30",
+    "render:shorts:draft": "npx --yes hyperframes@0.5.7 render --composition variants/portrait.html --output renders/grantpipe-product-tour-shorts-portrait-draft.mp4 --quality draft --fps 30",
+    "render:shorts:final": "npm run render:shorts && npm run normalize:shorts",
+    "render:final": "npm run render && npm run normalize",
+    "render:draft": "npx --yes hyperframes@0.5.7 render --output renders/grantpipe-product-tour-landscape-draft.mp4 --quality draft --fps 30",
+    "normalize": "ffmpeg -y -i renders/grantpipe-product-tour-landscape.mp4 -af loudnorm=I=-16:TP=-1.5:LRA=11 -c:v libx264 -preset slow -b:v 10M -minrate 10M -maxrate 10M -bufsize 10M -x264-params nal-hrd=cbr:filler=1 -pix_fmt yuv420p -c:a aac -b:a 192k renders/grantpipe-product-tour-landscape-normalized.mp4 && node -e \"require('fs').renameSync('renders/grantpipe-product-tour-landscape-normalized.mp4','renders/grantpipe-product-tour-landscape.mp4')\"",
+    "normalize:shorts": "ffmpeg -y -i renders/grantpipe-product-tour-shorts-portrait.mp4 -af loudnorm=I=-16:TP=-1.5:LRA=11 -c:v libx264 -preset slow -b:v 9M -minrate 9M -maxrate 9M -bufsize 9M -x264-params nal-hrd=cbr:filler=1 -pix_fmt yuv420p -c:a aac -b:a 192k renders/grantpipe-product-tour-shorts-portrait-normalized.mp4 && node -e \"require('fs').renameSync('renders/grantpipe-product-tour-shorts-portrait-normalized.mp4','renders/grantpipe-product-tour-shorts-portrait.mp4')\""
+  }
+}

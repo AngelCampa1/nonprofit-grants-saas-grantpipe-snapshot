@@ -1,0 +1,52 @@
+{
+  "type": "schedule",
+  "date": "2026-06-17T18:15:00.000Z",
+  "shortLink": false,
+  "tags": [],
+  "posts": [
+    {
+      "integration": {
+        "id": "cmorp6oby03pgmq0ye7e3n7j0"
+      },
+      "value": [
+        {
+          "content": "Keep draw request plain.\n\nShow real cost. Show cash need.\n\nThen name who owns the next step.",
+          "image": [],
+          "delay": 0
+        }
+      ],
+      "settings": {
+        "__type": "linkedin-page",
+        "post_as_images_carousel": false
+      }
+    },
+    {
+      "integration": {
+        "id": "cmq5aut9y0087mv0yt9otastk"
+      },
+      "value": [
+        {
+          "content": "Keep draw request simple. Show real cost. Show cash need. Name the next owner.",
+          "image": [],
+          "delay": 0
+        }
+      ],
+      "settings": {
+        "who_can_reply_post": "everyone"
+      }
+    },
+    {
+      "integration": {
+        "id": "cmq5b15k300k4qp0yypplg57c"
+      },
+      "value": [
+        {
+          "content": "For draw request, keep the file plain. Show real cost. Show cash need. Name the next step.",
+          "image": [],
+          "delay": 0
+        }
+      ],
+      "settings": {}
+    }
+  ]
+}

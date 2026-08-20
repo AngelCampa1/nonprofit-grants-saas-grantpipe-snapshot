@@ -1,0 +1,82 @@
+{
+  "total": 710.3,
+  "chapters": [
+    {
+      "id": "00",
+      "label": "[0:00] Cold open / Hook",
+      "audio": "audio/chapter-00.mp3",
+      "duration": 73.747,
+      "start": 0
+    },
+    {
+      "id": "01",
+      "label": "[1:10] Chapter 1 — Why most grant budgets get rejected",
+      "audio": "audio/chapter-01.mp3",
+      "duration": 43.654,
+      "start": 73.747
+    },
+    {
+      "id": "02",
+      "label": "[2:05] Chapter 2 — The line items funders expect",
+      "audio": "audio/chapter-02.mp3",
+      "duration": 62.322,
+      "start": 117.401
+    },
+    {
+      "id": "03",
+      "label": "[3:15] Chapter 3 — Personnel and fringe, the biggest number",
+      "audio": "audio/chapter-03.mp3",
+      "duration": 82.756,
+      "start": 179.723
+    },
+    {
+      "id": "04",
+      "label": "[4:35] Chapter 4 — The other direct costs",
+      "audio": "audio/chapter-04.mp3",
+      "duration": 77.23,
+      "start": 262.479
+    },
+    {
+      "id": "05",
+      "label": "[5:50] Chapter 5 — Indirect costs and the de minimis rate",
+      "audio": "audio/chapter-05.mp3",
+      "duration": 77.648,
+      "start": 339.709
+    },
+    {
+      "id": "06",
+      "label": "[7:00] Chapter 6 — Cost share and match",
+      "audio": "audio/chapter-06.mp3",
+      "duration": 56.424,
+      "start": 417.357
+    },
+    {
+      "id": "07",
+      "label": "[8:05] Chapter 7 — The budget narrative",
+      "audio": "audio/chapter-07.mp3",
+      "duration": 66.038,
+      "start": 473.781
+    },
+    {
+      "id": "08",
+      "label": "[9:15] Chapter 8 — Allowable costs and the spending window",
+      "audio": "audio/chapter-08.mp3",
+      "duration": 53.406,
+      "start": 539.819
+    },
+    {
+      "id": "09",
+      "label": "[10:10] Chapter 9 — Where a budget template breaks",
+      "audio": "audio/chapter-09.mp3",
+      "duration": 48.948,
+      "start": 593.225
+    },
+    {
+      "id": "10",
+      "label": "[10:55] Outro / Soft CTA",
+      "audio": "audio/chapter-10.mp3",
+      "duration": 68.127,
+      "start": 642.173
+    }
+  ]
+}

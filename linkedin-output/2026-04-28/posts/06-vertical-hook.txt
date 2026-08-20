@@ -1,0 +1,9 @@
+The NEA awarded $174.5 million to arts organizations across all 50 states in FY2023, and most of those grants required 1:1 matching documented contemporaneously.
+
+That last word — contemporaneously — is where museums get burned. NEA project grants typically require the organization to document non-federal contributions equal to the federal award. Match can come from earned revenue, foundation grants, non-federal government awards, and in-kind contributions. What it cannot do is appear retroactively. An organization that assembles match documentation after the award period ends does not have match documentation; it has a reconstruction project that auditors recognize on sight.
+
+Museums managing NEA, NEH, and IMLS awards simultaneously face three overlapping compliance frameworks under 2 CFR 200, plus state arts council pass-throughs, plus private foundation grants from places like Mellon and Getty. Each one with its own reporting format. NEA reports through REACH. NEH preservation grants restrict funds narrowly to the approved conservation activity — prior approval required before any reallocation. IMLS Museums for America awards layer program-specific deliverables on top of standard 200 financial requirements.
+
+Multi-year exhibition grants compound the problem. Spending in Year 2 on activities budgeted for Year 1 may require prior approval and documented reallocation. Cumulative tracking is not a reporting convenience — it is the compliance mechanism.
+
+#museums #neagrants #nehgrants #culturalinstitutions

@@ -1,0 +1,7 @@
+The Grant Spend-Down Tracker is for the question that comes before panic:
+
+"Are we going to spend this grant correctly before the award ends?"
+
+It tracks approved budget, actuals to date, remaining balance, percentage spent, and projected balance at award end.
+
+It is not a pretty budget report. It is an early warning system.

@@ -1,0 +1,9 @@
+Your CRM is not a compliance-first grant management system.
+
+When the donor CRM gets asked to track grants, the request usually starts honest. A custom field for the funder. A pipeline stage for "submitted". A tag for "restricted".
+
+Six months in you have a Frankenstein. Grant deadlines living in calendar invites. Spend-down schedules in a shared sheet. The actual award letter in someone's inbox. The 990 disclosure pulled from QuickBooks because the CRM never had the dollar figure right.
+
+The fix is not a better field structure. It is admitting that grant compliance is a different shape of work than donor stewardship, and giving it a place to live that knows about period of performance, allowable costs, and FFR cadence.
+
+Donor CRMs do not lose data. They just do not have anywhere to put the data that an auditor needs.

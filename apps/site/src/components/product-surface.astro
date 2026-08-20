@@ -1,0 +1,66 @@
+---
+interface CalendarItem {
+  date: string;
+  label: string;
+}
+
+interface MeterItem {
+  label: string;
+  value: string;
+  pct: number;
+}
+
+interface RowItem {
+  label: string;
+  value?: string;
+  status?: string;
+}
+
+type Props =
+  | { label: string; variant: "calendar"; items: CalendarItem[] }
+  | { label: string; variant: "meter"; items: MeterItem[] }
+  | { label: string; variant: "rows"; items: RowItem[] };
+
+const { label, variant, items } = Astro.props;
+---
+
+<div class="gp-surface">
+  <p class="gp-surface__head">{label}</p>
+  <div class="gp-surface__body">
+    {variant === "calendar" && (
+      <div class="gp-surface-cal">
+        {items.map((item) => (
+          <div class="gp-surface-cal__item">
+            <span class="gp-surface-cal__date">{item.date}</span>
+            <span>{item.label}</span>
+          </div>
+        ))}
+      </div>
+    )}
+    {variant === "meter" && (
+      items.map((item) => {
+        const clampedPct = Math.min(100, Math.max(0, item.pct));
+        return (
+          <div class="gp-surface-meter">
+            <div class="gp-surface-meter__label">
+              <span>{item.label}</span>
+              <span>{item.value}</span>
+            </div>
+            <div class="gp-surface-meter__track">
+              <div class="gp-surface-meter__fill" style={`width:${clampedPct}%`} />
+            </div>
+          </div>
+        );
+      })
+    )}
+    {variant === "rows" && (
+      items.map((item) => (
+        <div class="gp-surface-row">
+          <strong>{item.label}</strong>
+          {item.value && <span>{item.value}</span>}
+          {item.status && <span class="gp-surface-row__status">{item.status}</span>}
+        </div>
+      ))
+    )}
+  </div>
+</div>

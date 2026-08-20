@@ -1,0 +1,37 @@
+Got a grant with strings attached? This video shows the two things you do first in GrantPipe: record the grant, then split its money across the funds it's allowed to pay for. About three minutes, start to finish.
+
+I built GrantPipe, so I'll walk you through it the way I'd show a colleague. A restricted grant isn't just income. It's a promise that this money pays for these things, and the moment you record it you take on the job of proving where every dollar went. This is how you set that up so the proof takes care of itself.
+
+WHAT'S IN THE VIDEO
+- Adding a grant with the short two-step form: name, funder, amount, and status, then the dates. Nothing you don't need.
+- The four numbers on every grant and what each one means: Grant Amount (what was awarded), Allocated (what you've assigned to funds), Unallocated (what's still loose), and Remaining to Spend (what's actually left after spending).
+- Splitting one $60,000 award across two funds and watching the totals update live as you go, so you can see the allocation balance in real time instead of recomputing it by hand.
+- The guardrail that stops you from allocating more than the grant is worth, including the exact message you'll see when you try. This is the rule a spreadsheet can't enforce on its own.
+- Why that one guardrail is the whole reason a tool beats a spreadsheet here: the math can't drift, because the app won't let it.
+
+WHY ALLOCATION MATTERS
+A funder rarely hands you money for one thing. A single award might cover part of a program, part of staff time, and part of overhead, and each slice answers to a different rule. If you track the award as one lump sum, you can't prove you stayed inside any of those slices. Splitting it across funds up front means that when the report comes due, the breakdown is already there. You're not reverse-engineering it from a bank statement at 11pm.
+
+WHY THE FOUR NUMBERS BEAT A SINGLE BALANCE
+A spreadsheet usually shows one number: how much money is in the account. That hides the two questions a funder actually asks. Allocated tells you how much of the award you've committed to specific funds. Unallocated is what's still loose and waiting for a home. Remaining to Spend is what's actually left once real spending is counted. Keeping these four apart means you can answer "is this grant fully assigned?" and "how much can we still spend?" without doing math in your head. When you change an allocation, all four update together, so they can never quietly fall out of sync the way two spreadsheet cells do.
+
+STILL ON A SPREADSHEET?
+We made a free one built for restricted funds: the Restricted Fund Tracking Spreadsheet. It sets up the running balances so you can start today. Drop your email and we'll send it to your inbox:
+https://grantpipe.com/free/restricted-fund-tracking-spreadsheet/
+
+WHO THIS IS FOR
+Executive directors, development directors, grants managers, and finance leads at mid-sized nonprofits running restricted or federal awards. If you've ever had a funder ask how much of their grant is left and had to go digging, this one's for you.
+
+Next video: track what you actually spend against this grant, so you always know what's left.
+
+GrantPipe is donor management and grant compliance in one place, built for mid-sized nonprofits running real grants. Learn more: https://grantpipe.com
+
+CHAPTERS
+0:00 New money, new rules
+0:31 Add the grant
+1:09 The four numbers
+1:41 Split it across funds
+2:24 The guardrail
+2:56 You're set
+
+#nonprofit #nonprofitsoftware #grantmanagement #grantallocation #restrictedfunds #fundaccounting #grantcompliance #nonprofitfinance

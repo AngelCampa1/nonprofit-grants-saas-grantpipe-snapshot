@@ -1,0 +1,154 @@
+---
+const dashboardMetrics = [
+  { label: "Restricted funds", value: "$1.42M", detail: "83% allocated", tone: "stable" },
+  { label: "Active grants", value: "18", detail: "4 due this month", tone: "watch" },
+  { label: "Donor revenue", value: "$286K", detail: "+12% trailing 90 days", tone: "stable" },
+  { label: "Reporting risk", value: "3", detail: "needs finance review", tone: "risk" },
+];
+
+const fundRows = [
+  { fund: "Youth programs", balance: "$418K", grant: "Meyer Family", status: "On track" },
+  { fund: "Housing support", balance: "$296K", grant: "HUD renewal", status: "Review" },
+  { fund: "Food access", balance: "$184K", grant: "County HHS", status: "Ready" },
+];
+
+const pipelineRows = [
+  { due: "May 09", funder: "State Arts Council", stage: "Narrative", owner: "Grants" },
+  { due: "May 14", funder: "HUD Continuum", stage: "Budget proof", owner: "Finance" },
+  { due: "May 21", funder: "Meyer Family", stage: "Board packet", owner: "Ops" },
+];
+
+const mobileChecks = [
+  { label: "Final report", value: "Due May 09" },
+  { label: "Restricted balance", value: "$418K" },
+  { label: "Open documents", value: "6" },
+];
+---
+
+<div
+  role="img"
+  aria-label="Generated GrantPipe product visual showing operations dashboard, grant pipeline, and mobile check views"
+  data-generated-product-stage
+>
+  <div class="gp-stage-shell" aria-hidden="true">
+    <section
+      class="gp-stage-mainshot gp-generated-dashboard"
+      aria-label="Generated GrantPipe operations dashboard visual"
+      data-generated-dashboard
+    >
+      <div class="gp-stage-browser-bar">
+        <span></span>
+        <span></span>
+        <span></span>
+        <strong>Operations dashboard</strong>
+      </div>
+      <div class="gp-generated-topline">
+        <div>
+          <p class="gp-generated-kicker">Today</p>
+          <h2>Grant-funded operating view</h2>
+        </div>
+        <span class="gp-generated-chip">Board packet ready</span>
+      </div>
+      <div class="gp-generated-metrics">
+        {dashboardMetrics.map((metric) => (
+          <article class={`gp-generated-metric is-${metric.tone}`}>
+            <span>{metric.label}</span>
+            <strong>{metric.value}</strong>
+            <small>{metric.detail}</small>
+          </article>
+        ))}
+      </div>
+      <div class="gp-generated-dashboard-grid">
+        <article class="gp-generated-panel">
+          <div class="gp-generated-panel-head">
+            <h3>Restricted fund coverage</h3>
+            <span>Live ledger</span>
+          </div>
+          <div class="gp-generated-bars">
+            <span style="--bar-width: 84%"></span>
+            <span style="--bar-width: 68%"></span>
+            <span style="--bar-width: 49%"></span>
+          </div>
+        </article>
+        <article class="gp-generated-panel">
+          <div class="gp-generated-panel-head">
+            <h3>Reporting queue</h3>
+            <span>3 flagged</span>
+          </div>
+          <ul class="gp-generated-queue">
+            <li><span></span> Budget variance review</li>
+            <li><span></span> Funder narrative draft</li>
+            <li><span></span> Document evidence check</li>
+          </ul>
+        </article>
+      </div>
+      <table class="gp-generated-table">
+        <thead>
+          <tr>
+            <th>Fund</th>
+            <th>Balance</th>
+            <th>Grant</th>
+            <th>Status</th>
+          </tr>
+        </thead>
+        <tbody>
+          {fundRows.map((row) => (
+            <tr>
+              <td>{row.fund}</td>
+              <td>{row.balance}</td>
+              <td>{row.grant}</td>
+              <td><span>{row.status}</span></td>
+            </tr>
+          ))}
+        </tbody>
+      </table>
+    </section>
+
+    <div class="gp-stage-stack">
+      <article class="gp-stage-card gp-generated-pipeline" data-generated-pipeline>
+        <p class="gp-side-label">Grant pipeline</p>
+        <div class="gp-generated-workspace">
+          <div class="gp-generated-panel-head">
+            <h3>Work queue</h3>
+            <span>Next 21 days</span>
+          </div>
+          <div class="gp-generated-pipeline-list">
+            {pipelineRows.map((row) => (
+              <div class="gp-generated-pipeline-row">
+                <time>{row.due}</time>
+                <div>
+                  <strong>{row.funder}</strong>
+                  <span>{row.stage}</span>
+                </div>
+                <em>{row.owner}</em>
+              </div>
+            ))}
+          </div>
+          <div class="gp-generated-document-strip">
+            <span>Budget.xlsx</span>
+            <span>LOA.pdf</span>
+            <span>Report.docx</span>
+          </div>
+        </div>
+      </article>
+
+      <article class="gp-stage-card gp-stage-card-mobile gp-generated-mobile" data-generated-mobile>
+        <p class="gp-side-label">Mobile check</p>
+        <div class="gp-generated-phone">
+          <div class="gp-generated-phone-top"></div>
+          <p>Friday close</p>
+          <h3>3 checks before submission</h3>
+          <div class="gp-generated-mobile-list">
+            {mobileChecks.map((check) => (
+              <div>
+                <span>{check.label}</span>
+                <strong>{check.value}</strong>
+              </div>
+            ))}
+          </div>
+          <span class="gp-generated-phone-action">Review packet</span>
+        </div>
+      </article>
+    </div>
+  </div>
+</div>

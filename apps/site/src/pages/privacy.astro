@@ -1,0 +1,243 @@
+---
+import "../styles/global.css"
+import BaseLayout from "@grantpipe/ui/site/layouts/base-layout.astro"
+import SiteHeader from "@grantpipe/ui/site/components/site-header.astro"
+import SiteFooter from "@grantpipe/ui/site/components/site-footer.astro"
+import { siteConfig, getSignupCtaTarget } from "@/config/site"
+import { getAppLoginUrl } from "@/lib/app-url"
+
+const privacyEmail = `privacy@${siteConfig.domain}`
+---
+
+<BaseLayout
+  title={`Privacy Policy | ${siteConfig.name}`}
+  description="GrantPipe privacy policy — what we collect, why, the legal bases we rely on, who we share it with, and your rights."
+  canonicalUrl={`https://${siteConfig.domain}/privacy/`}
+  siteName={siteConfig.name}
+  ogType="website"
+  twitterSite={siteConfig.social?.twitterHandle}
+  theme={siteConfig.theme}
+  themeColor={siteConfig.theme.primary}
+  appleTouchIcon={siteConfig.appleTouchIcon}
+  fonts={siteConfig.theme.fonts}
+>
+  <SiteHeader
+    slot="header"
+    siteName={siteConfig.name}
+    navItems={siteConfig.nav?.items}
+    ctaText={siteConfig.funnel.bofu.ctaText}
+    ctaHref={getSignupCtaTarget()}
+    loginHref={getAppLoginUrl()}
+    logoLight={siteConfig.logo?.light}
+  >
+  </SiteHeader>
+
+  <article class="legal-page mx-auto max-w-3xl px-4 py-16">
+    <header class="legal-page-header">
+      <p class="editorial-kicker mb-3">Legal</p>
+      <h1 class="font-heading text-3xl font-bold text-brand-text">Privacy Policy</h1>
+      <p class="legal-page-meta">Effective date: 28 May 2026</p>
+      <p class="legal-page-meta">
+        Archived: GrantPipe stopped operating in August 2026. This page is preserved as
+        part of a source snapshot and is not an operative privacy policy.
+      </p>
+    </header>
+
+    <div class="legal-page-body">
+      <section>
+        <h2>1. Who we are &amp; our role</h2>
+        <p>
+          GrantPipe is a donor management and grant compliance platform for nonprofits, operated by
+          Angel Campa ("GrantPipe", "we", "us"). You can reach us at
+          <a href={`mailto:${privacyEmail}`}>{privacyEmail}</a>.
+        </p>
+        <p>
+          We play two distinct roles depending on the data involved:
+        </p>
+        <ul>
+          <li>
+            <strong>As a controller</strong> for the data we collect to run our business — your
+            account details, billing information, marketing-list signups, and product analytics. This
+            policy explains that processing.
+          </li>
+          <li>
+            <strong>As a processor</strong> for the records your organization enters into the app
+            about its own donors, contacts, funders, grants, and uploaded documents. Your
+            organization is the controller of that data and decides how it is used. Our handling of it
+            is governed by our agreement with your organization (including any Data Processing
+            Agreement), not by this policy.
+          </li>
+        </ul>
+      </section>
+
+      <section>
+        <h2>2. What we collect</h2>
+        <p><strong>Account &amp; identity data.</strong> Name, email address, hashed password (or a Google sign-in identifier if you use Google SSO), profile image URL if provided, and email-verification status.</p>
+        <p><strong>Organization data.</strong> Organization name, EIN, address, time zone, fiscal-year settings, logo, plan and subscription status, and team membership/role/permission records.</p>
+        <p><strong>Billing data.</strong> Subscription plan, billing cycle, status, and Stripe customer/subscription identifiers. Card and payment details are entered directly with our payment processor (Stripe) and are not stored on our servers.</p>
+        <p><strong>Session &amp; device data.</strong> Authentication session tokens, and the IP address and user-agent associated with a session.</p>
+        <p><strong>Usage &amp; activity data.</strong> Onboarding and in-app guide progress, an activity/audit log of changes you make, notifications, saved views, and import history.</p>
+        <p><strong>Support &amp; communications.</strong> Feedback you submit and emails we exchange with you.</p>
+        <p><strong>External reviewer data.</strong> If your organization invites an auditor, funder, or board member to review evidence, we store that reviewer's name and email and an access log for their review sessions (IP and user-agent are stored only as a salted hash).</p>
+        <p><strong>Marketing-list data.</strong> If you request a resource or join a list on our marketing site, we collect your email, optional first name, the page you came from, marketing campaign (UTM) parameters, and a consent timestamp.</p>
+        <p><strong>Customer-controlled records (we process, not control).</strong> The donor/contact details, donation history, funder contacts, grant records, and documents your organization uploads. These may contain personal information about your organization's own constituents. We process them only to provide the service. Documents you upload may be sent to our AI extraction provider to auto-populate grant fields (see Sub-processors). Do not upload special-category/sensitive personal data unless your agreement with us permits it.</p>
+      </section>
+
+      <section>
+        <h2>3. How and why we use data, and our legal bases</h2>
+        <p>Where the UK/EU GDPR applies, we rely on the following legal bases (Art. 6(1) GDPR):</p>
+        <ul>
+          <li><strong>Performance of a contract</strong> — to create and operate your account, provide the service, process subscriptions, and provide support.</li>
+          <li><strong>Legitimate interests</strong> — to secure the service, prevent fraud and abuse, maintain audit logs, understand product usage, and improve GrantPipe (balanced against your rights).</li>
+          <li><strong>Consent</strong> — to send marketing emails and resource downloads when you opt in; you can withdraw consent at any time.</li>
+          <li><strong>Legal obligation</strong> — to meet tax, accounting, and other legal requirements.</li>
+        </ul>
+      </section>
+
+      <section>
+        <h2>4. Sub-processors</h2>
+        <p>We use the following service providers to operate GrantPipe. Each receives only the data needed for its function. This list reflects our configuration as of the effective date and may change as the service evolves.</p>
+        <ul>
+          <li><strong>Managed PostgreSQL database hosting provider</strong> — transactional database hosting (US region).</li>
+          <li><strong>Cloudflare</strong> — application/API hosting (Pages, Workers), file storage (R2) for uploaded documents, marketing-list storage (D1), and bot/abuse protection (Turnstile).</li>
+          <li><strong>Stripe</strong> — subscription billing and payment processing.</li>
+          <li><strong>Resend</strong> — transactional and nurture email delivery.</li>
+          <li><strong>Google</strong> — optional Google single sign-on (OAuth).</li>
+          <li><strong>PostHog</strong> — product analytics.</li>
+          <li><strong>Sentry</strong> — error and performance monitoring.</li>
+          <li><strong>OpenRouter</strong> — AI model access used to extract structured fields from grant documents you choose to process.</li>
+        </ul>
+        <p>We do not sell your personal information.</p>
+      </section>
+
+      <section>
+        <h2>5. International transfers</h2>
+        <p>
+          Our infrastructure and several sub-processors are located in the United States, so personal
+          data may be transferred to and processed in the US. Where data is transferred out of the
+          UK/EEA, we rely on appropriate safeguards such as the European Commission's Standard
+          Contractual Clauses (and the UK Addendum) with the relevant provider.
+        </p>
+      </section>
+
+      <section>
+        <h2>6. Data retention</h2>
+        <p>
+          We keep account, organization, and customer-entered records for as long as your account is
+          active. Many records use soft deletion, meaning they are marked deleted and removed from
+          normal use but may persist in backups for a limited period before being purged. When your
+          account is closed, we delete or anonymize personal data within a reasonable period, except
+          where we must retain it to meet legal, tax, accounting, or audit obligations, or to resolve
+          disputes. Marketing-list data is kept until you unsubscribe or request deletion.
+        </p>
+      </section>
+
+      <section>
+        <h2>7. Security</h2>
+        <p>We take reasonable measures to protect personal data. Measures currently in place include:</p>
+        <ul>
+          <li>Encryption of data in transit using TLS.</li>
+          <li>Passwords stored only as salted hashes (we never store plaintext passwords); optional Google SSO.</li>
+          <li>Per-organization data isolation (multi-tenant scoping) and role-based access controls.</li>
+          <li>External-reviewer access via expiring, revocable, hashed tokens, with an access audit log.</li>
+          <li>Signed, time-limited links for sensitive downloads.</li>
+        </ul>
+        <p>No method of transmission or storage is completely secure, and we cannot guarantee absolute security.</p>
+      </section>
+
+      <section>
+        <h2>8. Your rights</h2>
+        <p><strong>Under the UK/EU GDPR</strong>, you may have the right to access, correct, delete, restrict, or object to our processing of your personal data, to data portability, and to withdraw consent. You also have the right to lodge a complaint with your local data protection authority.</p>
+        <p><strong>Under the California Consumer Privacy Act (CCPA/CPRA)</strong>, California residents may have the right to know what personal information we collect and how we use and disclose it, to access and delete it, to correct inaccuracies, and to opt out of "sale" or "sharing" of personal information. We do not sell or share personal information as those terms are defined under the CPRA. We will not discriminate against you for exercising these rights.</p>
+        <p>To exercise any of these rights, email <a href={`mailto:${privacyEmail}`}>{privacyEmail}</a>. If we process data on behalf of your organization (as a processor), we will refer your request to that organization. You can unsubscribe from marketing emails at any time using the link in any such message.</p>
+      </section>
+
+      <section>
+        <h2>9. Children</h2>
+        <p>GrantPipe is a business tool not directed to children. We do not knowingly collect personal information from children under 13 (or under 16 in the EEA/UK). If you believe a child has provided us personal information, contact us and we will delete it.</p>
+      </section>
+
+      <section>
+        <h2>10. Cookies and analytics</h2>
+        <p>We use cookies that are necessary for authentication and to keep you signed in. We use PostHog for product analytics to understand how the site and app are used, and Cloudflare Turnstile to protect public forms from abuse. We do not use advertising cookies or cross-site advertising tracking.</p>
+      </section>
+
+      <section>
+        <h2>11. Changes to this policy</h2>
+        <p>We may update this policy from time to time. When we make material changes, we will update the effective date above and, where appropriate, notify you.</p>
+      </section>
+
+      <section>
+        <h2>12. Contact</h2>
+        <p>Questions or requests about this policy or your data: email <a href={`mailto:${privacyEmail}`}>{privacyEmail}</a>.</p>
+      </section>
+    </div>
+  </article>
+
+  <SiteFooter
+    slot="footer"
+    siteName={siteConfig.name}
+    tagline={siteConfig.tagline}
+    linkGroups={siteConfig.footer?.linkGroups}
+    legalLinks={siteConfig.footer?.legalLinks}
+    contactEmail={siteConfig.contactEmail}
+    logoLight={siteConfig.logo?.light}
+  />
+</BaseLayout>
+
+<style>
+  .legal-page-header {
+    padding-bottom: 1.75rem;
+    margin-bottom: 2.5rem;
+    border-bottom: 1px solid var(--gp-ink-100);
+  }
+
+  .legal-page-meta {
+    margin-top: 0.5rem;
+    color: var(--gp-ink-500);
+    font-size: 0.875rem;
+  }
+
+  .legal-page-body {
+    display: grid;
+    gap: 2rem;
+    color: var(--gp-ink-700);
+    line-height: 1.65;
+  }
+
+  .legal-page-body h2 {
+    margin-bottom: 0.6rem;
+    color: var(--color-brand-text);
+    font-family: var(--font-heading);
+    font-size: 1.25rem;
+    font-weight: 700;
+    letter-spacing: -0.005em;
+  }
+
+  .legal-page-body p {
+    /* 18px (1.125rem) on mobile for comfortable reading on small screens */
+    font-size: 1.125rem;
+  }
+
+  .legal-page-body ul {
+    display: grid;
+    gap: 0.5rem;
+    padding-left: 1.25rem;
+    list-style: disc;
+    font-size: 1.125rem;
+  }
+
+  .legal-page-body a {
+    color: var(--gp-emerald-600);
+    font-weight: 600;
+    text-decoration: underline;
+    text-decoration-thickness: 1px;
+    text-underline-offset: 3px;
+    transition: color 160ms ease;
+  }
+
+  .legal-page-body a:hover,
+  .legal-page-body a:focus-visible {
+    color: var(--gp-emerald-700);
+  }
+</style>

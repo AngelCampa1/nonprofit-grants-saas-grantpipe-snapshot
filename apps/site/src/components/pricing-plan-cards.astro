@@ -1,0 +1,105 @@
+---
+import { getSignupCtaTarget, siteConfig } from "@/config/site";
+import { getPricingTierBindings } from "@/lib/marketed-capabilities";
+import {
+  FOUNDER_CONTACT_EMAIL,
+  FOUNDER_LINKEDIN_URL,
+  getPricingPlan,
+} from "../../../../packages/shared/src/pricing";
+
+interface Props {
+  /** When true, cards show all PLAN_CATALOG features instead of the first N. */
+  showAllFeatures?: boolean;
+  /** Cap number of features rendered per card when showAllFeatures is false. Defaults to 6. */
+  featureLimit?: number;
+  /** Optional id added to the section root for deep links / tests. */
+  sectionId?: string;
+}
+
+const { showAllFeatures = false, featureLimit = 6, sectionId = "plans" } = Astro.props;
+const pricingTierBindings = getPricingTierBindings();
+const tiers = siteConfig.pricingTiers ?? [];
+const founderMailto = `mailto:${FOUNDER_CONTACT_EMAIL}`;
+---
+
+<div class="gp-pricing-grid" data-pricing-cards id={sectionId}>
+  {tiers.map((tier, index) => {
+    const binding = pricingTierBindings[index];
+    if (!binding) {
+      throw new Error(`Missing pricing tier binding at index ${index}`);
+    }
+    const plan = binding.plan;
+    const monthlyHref = getSignupCtaTarget({
+      plan,
+      cycle: "monthly",
+    });
+    const annualHref = getSignupCtaTarget({
+      plan,
+      cycle: "annual",
+    });
+    const features = showAllFeatures ? tier.features : tier.features.slice(0, featureLimit);
+    const catalogPlan = getPricingPlan(plan);
+    const recommendationLabel = tier.highlighted
+      ? "Recommended for active grant teams"
+      : "Focused path";
+    return (
+      <article class:list={["gp-plan-card", tier.highlighted && "is-popular"]}>
+        <span class:list={["gp-plan-badge", !tier.highlighted && "is-muted"]}>
+          {recommendationLabel}
+        </span>
+        <h3>{tier.name}</h3>
+        {tier.bestFit && <p class="gp-type-label">Best for {tier.bestFit}</p>}
+        {tier.description && <p class="gp-plan-desc">{tier.description}</p>}
+        <div class="gp-plan-card__price">
+          <div data-show="annual">
+            <div class="gp-plan-amount">{tier.annualPriceOverride ?? tier.price}</div>
+            <small>20% off monthly</small>
+          </div>
+          <div data-show="monthly">
+            <div class="gp-plan-amount">{tier.price}</div>
+            <small>billed monthly</small>
+          </div>
+          {tier.monthlyPriceCents && (
+            <span class="gp-price-alt">
+              Monthly option: ${(tier.monthlyPriceCents / 100).toLocaleString()}/mo
+            </span>
+          )}
+        </div>
+        <p class="gp-plan-choice-note">
+          <strong>Choose this if</strong> {catalogPlan.chooseThisIf}
+        </p>
+        <ul>
+          {features.map((feature) => <li>{feature}</li>)}
+        </ul>
+        <a
+          class="gp-mkt-btn primary"
+          href={annualHref}
+          data-annual-href={annualHref}
+          data-monthly-href={monthlyHref}
+          data-cta-target={annualHref}
+          data-testid={`pricing-cta-${tier.name.toLowerCase().replaceAll(" ", "-")}`}
+        >
+          {siteConfig.funnel.bofu.ctaText}
+        </a>
+        <p class="gp-plan-trial-note">1-month free trial. No credit card.</p>
+      </article>
+    );
+  })}
+</div>
+
+<div class="gp-enterprise-path">
+  <div>
+    <span class="gp-type-label">Custom path</span>
+    <h3>Need a custom path?</h3>
+    <p>
+      For larger or unusual grant operations, email Angel or connect on LinkedIn.
+      This is not a fourth plan card.
+    </p>
+  </div>
+  <div class="gp-enterprise-path__actions">
+    <a class="gp-mkt-btn secondary" href={founderMailto}>Contact founder</a>
+    <a class="gp-plan-link inline-flex min-h-12 items-center" href={FOUNDER_LINKEDIN_URL}>
+      Connect on LinkedIn
+    </a>
+  </div>
+</div>

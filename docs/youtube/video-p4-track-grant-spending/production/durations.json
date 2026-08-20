@@ -1,0 +1,54 @@
+{
+  "total": 267.2,
+  "chapters": [
+    {
+      "id": "00",
+      "label": "The question your bank balance can't answer",
+      "audio": "audio/chapter-00.mp3",
+      "duration": 39.6,
+      "start": 0
+    },
+    {
+      "id": "01",
+      "label": "What tracking spending really means",
+      "audio": "audio/chapter-01.mp3",
+      "duration": 43.72,
+      "start": 39.6
+    },
+    {
+      "id": "02",
+      "label": "What it actually takes",
+      "audio": "audio/chapter-02.mp3",
+      "duration": 31.36,
+      "start": 83.32
+    },
+    {
+      "id": "03",
+      "label": "The grant's four numbers",
+      "audio": "audio/chapter-03.mp3",
+      "duration": 36.56,
+      "start": 114.68
+    },
+    {
+      "id": "04",
+      "label": "Record what you spend",
+      "audio": "audio/chapter-04.mp3",
+      "duration": 37.52,
+      "start": 151.24
+    },
+    {
+      "id": "05",
+      "label": "Know your pace",
+      "audio": "audio/chapter-05.mp3",
+      "duration": 31.4,
+      "start": 188.76
+    },
+    {
+      "id": "06",
+      "label": "One thing to remember",
+      "audio": "audio/chapter-06.mp3",
+      "duration": 47.04,
+      "start": 220.16
+    }
+  ]
+}

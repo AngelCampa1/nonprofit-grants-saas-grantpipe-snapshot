@@ -1,0 +1,11 @@
+We model grants and funds as separate records in GrantPipe.
+
+That sounds small until you map real nonprofit accounting.
+
+One grant can fund several restricted funds.
+
+One restricted fund can support work under several awards.
+
+Development thinks in funders and awards. Finance thinks in fund balances, releases, and expense coding.
+
+The product has to respect both, or the reconciliation work comes back in spreadsheets.

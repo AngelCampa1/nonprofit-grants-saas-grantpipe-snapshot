@@ -1,0 +1,5 @@
+Picture a $4M human services org where a board member asks the Finance Director how much of the Clinic Capacity grant is left. She says $42K, give or take. The Development Director, in the next chair, says $38K, pulled from the donor CRM that morning. QuickBooks shows $41,847. Three people, three numbers, one grant. None of them were lying. The system was. The grant was funding a program that pulled from two restricted funds, one of which had a partial release in the prior month that nobody had recorded in the CRM.
+
+The conversation ends with someone saying "we just need a single source of truth". And then nothing changes, because the work feels bigger than the daily pain.
+
+It is not bigger. It is one schema decision: grants and funds as separate entities, allocated through a join table.

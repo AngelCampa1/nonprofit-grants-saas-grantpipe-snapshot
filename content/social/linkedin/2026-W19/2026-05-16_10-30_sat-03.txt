@@ -1,0 +1,7 @@
+$1,000,000.
+
+That is the federal funding threshold above which a single audit kicks in under 2 CFR 200 Subpart F. Cross it in a fiscal year and you owe an independent audit covering all your federal awards, not just the one that pushed you over.
+
+Teams tracking the $1M threshold often know the direct spend number. Fewer know that pass-through funds count toward it. State dollars that originated as federal pass-through count too, and that is where orgs get surprised mid-year.
+
+Our 2 CFR 200 Audit Prep Checklist walks the threshold math, the auditor evidence list, and the timeline from "we crossed the line" to "we have a clean opinion."

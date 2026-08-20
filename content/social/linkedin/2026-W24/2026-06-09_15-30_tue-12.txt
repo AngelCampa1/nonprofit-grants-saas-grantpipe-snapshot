@@ -1,0 +1,12 @@
+If your audit binder is just a folder tree, it is missing the hard part.
+
+The hard part is knowing which document answers which auditor request.
+
+GrantPipe's Auditor Evidence Checklist is built around that mapping:
+
+- request
+- owner
+- source record
+- file name
+- status
+- reviewer note

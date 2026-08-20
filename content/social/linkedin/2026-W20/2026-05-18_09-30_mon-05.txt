@@ -1,0 +1,19 @@
+Seven items that show up on almost every single audit finding letter under 2 CFR 200. Worth checking yours against, before fieldwork starts.
+
+1. Procurement file gaps. The award required price quotes from two vendors over the small purchase threshold. The file has one.
+
+2. Time-and-effort certifications signed by the wrong person. Federal rules want first-hand knowledge. A bookkeeper signing for a Program Director does not pass.
+
+3. equipment over $10,000 not on the inventory list, or on the list with no physical tag. The auditor will walk through the building and look.
+
+4. Cost transfers booked more than 90 days after the original posting, with no contemporaneous explanation. Late transfers are presumed unallowable.
+
+5. Sub-recipient monitoring missing. A risk assessment, a monitoring plan, documentation of the work performed.
+
+6. FFATA filings late or missing on first-tier sub-awards over $25,000.
+
+7. Indirect costs charged at a rate that does not match the NICRA, or charged with no NICRA and no 15% de minimis election.
+
+None of these are exotic. They become findings because the documentation lives in someone's head or in an email thread.
+
+The fix is not more rigor at fieldwork. It is the file built on the day the cost was incurred.

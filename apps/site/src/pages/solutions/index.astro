@@ -1,0 +1,255 @@
+---
+import { getPublicApiBaseUrl } from "@grantpipe/ui/site/lib/public-api-url"
+import "../../styles/global.css"
+import { getCollection } from "astro:content"
+import { getContentEntrySlug } from "@/lib/content-entry-slug"
+import BaseLayout from "@grantpipe/ui/site/layouts/base-layout.astro"
+import SiteHeader from "@grantpipe/ui/site/components/site-header.astro"
+import SiteFooter from "@grantpipe/ui/site/components/site-footer.astro"
+import BreadcrumbNav from "@grantpipe/ui/site/components/breadcrumb-nav.astro"
+import FaqSection from "@grantpipe/ui/site/components/faq-section.astro"
+import { ExitIntentPopup } from "@grantpipe/ui/site/components/exit-intent-popup"
+import { resolveExitPopupProps } from "@grantpipe/ui/site/lib/exit-popup-props"
+import { siteConfig, getSignupCtaTarget, shouldShowMobileStickyCta } from "@/config/site"
+import { getAppLoginUrl } from "@/lib/app-url"
+import { resolveExitLeadMagnetOffer } from "@/lib/lead-magnet-routing"
+import type { FaqItem } from "@grantpipe/ui/site"
+import Button from "@/components/ui/button.astro"
+
+const entries = await getCollection("vertical-pages")
+const leadMagnets = await getCollection("lead-magnets")
+const exitLeadMagnet = resolveExitLeadMagnetOffer(siteConfig, leadMagnets, {
+  family: "solution",
+})
+const exitPopupProps = siteConfig.exitPopup?.enabled !== false ? resolveExitPopupProps(siteConfig) : undefined
+const sorted = entries.sort((a, b) => a.data.verticalType.localeCompare(b.data.verticalType))
+
+const faqs: FaqItem[] = [
+  {
+    q: "Does grant management software handle the specific compliance requirements for faith-based organizations like churches?",
+    a: "Faith-based organizations often need designated-fund tracking, grant reporting, and separate operational visibility for unrestricted giving. Software selection matters because many nonprofit CRMs stop at donor records and leave the fund-accounting work outside the platform.",
+  },
+  {
+    q: "What grant tracking features matter most for food banks and hunger relief organizations?",
+    a: "Food banks often manage multiple funders against the same program. The important features are budget tracking by grant, deadline visibility, and reporting support that reduces spreadsheet reconciliation between program delivery and finance.",
+  },
+  {
+    q: "Can youth program nonprofits use grant software to track both restricted grant funds and fee-based program revenue?",
+    a: "Yes, as long as the platform keeps restricted and unrestricted revenue separate while still giving the team one operating view. That is the operational gap many general CRMs leave unresolved.",
+  },
+  {
+    q: "How should arts and cultural nonprofits evaluate grant software given their mix of government, foundation, and corporate funders?",
+    a: "They should prioritize reporting flexibility, attachment of grant documentation, and a workflow that can support different funder formats without forcing the staff to reassemble the same context from separate systems.",
+  },
+]
+const publicApiUrl = getPublicApiBaseUrl()
+
+---
+
+<BaseLayout
+  title={`Nonprofit Software by Organization Type | ${siteConfig.name}`}
+  description="Guidance on compliance-first nonprofit software by organization type, from food banks and churches to arts organizations and healthcare nonprofits."
+  canonicalUrl={`https://${siteConfig.domain}/solutions/`}
+  siteName={siteConfig.name}
+  ogType="website"
+  twitterSite={siteConfig.social?.twitterHandle}
+  theme={siteConfig.theme}
+  themeColor={siteConfig.theme.primary}
+  appleTouchIcon={siteConfig.appleTouchIcon}
+  fonts={siteConfig.theme.fonts}
+  showStickyMobileCta={shouldShowMobileStickyCta(Astro.url.pathname)}
+  stickyCtaText={siteConfig.funnel.bofu.ctaText}
+  stickyCtaTarget={getSignupCtaTarget()}
+>
+  <SiteHeader
+    slot="header"
+    siteName={siteConfig.name}
+    navItems={siteConfig.nav?.items}
+    ctaText={siteConfig.funnel.bofu.ctaText}
+    ctaHref={getSignupCtaTarget()}
+    loginHref={getAppLoginUrl()}
+    logoLight={siteConfig.logo?.light}
+  >
+  </SiteHeader>
+
+  <section class="gp-section">
+  <div class="gp-wrap editorial-shell">
+    <BreadcrumbNav
+      items={[
+        { label: "Home", href: "/" },
+        { label: "Solutions by Organization Type", href: "/solutions" },
+      ]}
+      siteUrl={`https://${siteConfig.domain}`}
+    />
+
+    <section class="editorial-panel editorial-panel--soft px-6 py-7 md:px-8 md:py-8">
+      <header class="gp-page-header mb-0">
+        <p class="gp-page-kicker">Organization types</p>
+        <h1 class="gp-page-title">Nonprofit software guidance by organization type</h1>
+        <p class="gp-page-intro">
+          Different nonprofit models create different reporting pressure. These pages focus on the operational questions that change when grants, donor history, and compliance work need to live in one system.
+        </p>
+      </header>
+
+      <div class="solutions-hero-grid">
+        <div class="gp-surface-note h-full">
+          <p class="gp-proof-label">Workflow lens</p>
+          <p class="gp-section-copy max-w-none">
+            Use these pages to decide whether your organization type needs more than fundraising features. The goal is to understand where restricted funds, funder reporting, and staff handoffs make the software decision materially different.
+          </p>
+        </div>
+        <div class="editorial-panel solutions-fit-panel">
+          <p class="gp-proof-label">Strongest fit</p>
+          <p class="solutions-fit-statement">
+            Teams that need donor workflow and grant compliance in the same operating view.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section class="solutions-intent-row" data-hub-command-bar>
+      <div class="gp-hub-command-bar solutions-intent-bar">
+        <article class="gp-hub-command-card">
+          <p class="gp-proof-label">How to read these pages</p>
+          <h2 class="gp-link-card-title">Look for the handoff that breaks when grants and donors live in separate tools.</h2>
+          <p class="gp-link-card-copy">
+            Match the reporting bottleneck your team already feels, then move to the product walkthrough and pricing before planning a migration.
+          </p>
+        </article>
+      </div>
+    </section>
+
+    <div class="gp-directory-grid mt-10" data-columns="3">
+      {sorted.map((entry) => (
+        <a
+          href={`/solutions/${getContentEntrySlug(entry)}`}
+          class="gp-card interactive scroll-in"
+        >
+          <span class="gp-directory-title">{entry.data.verticalType}</span>
+          <span class="gp-directory-description">{entry.data.description}</span>
+        </a>
+      ))}
+    </div>
+
+    <section class="editorial-panel solutions-cta-panel" id="signup">
+      <h2>Need one platform that fits the way your team works?</h2>
+      <p>
+        GrantPipe is built for nonprofit teams that manage both donors and grants, without treating fund tracking and compliance as a side workflow.
+      </p>
+      <div class="solutions-cta-actions">
+        <Button
+          variant="primary"
+          size="lg"
+          href={getSignupCtaTarget()}
+          data-cta-button=""
+          data-cta-page-family="solutions"
+          data-cta-buyer-stage="bofu"
+          data-cta-placement="solutions-primary"
+          data-cta-intent="convert"
+          data-cta-target={getSignupCtaTarget()}
+        >
+          {siteConfig.funnel.bofu.ctaText}
+        </Button>
+        <Button
+          variant="ghost"
+          size="md"
+          href="/product/"
+          data-cta-button=""
+          data-cta-page-family="solutions"
+          data-cta-buyer-stage="mofu"
+          data-cta-placement="solutions-secondary"
+          data-cta-intent="evaluate"
+          data-cta-target="/product"
+        >
+          See the product walkthrough
+        </Button>
+      </div>
+    </section>
+  </div>
+  </section>
+
+  <FaqSection
+    faqs={faqs}
+    heading="Grant Management by Organization Type"
+    showBottomCta={false}
+    ctaVariant="compact"
+  />
+
+  <SiteFooter
+    slot="footer"
+    siteName={siteConfig.name}
+    tagline={siteConfig.tagline}
+    linkGroups={siteConfig.footer?.linkGroups}
+    legalLinks={siteConfig.footer?.legalLinks}
+    logoLight={siteConfig.logo?.light}
+    captureVariant="compact"
+  />
+  {exitPopupProps && (
+    <ExitIntentPopup
+      client:load
+      apiUrl={publicApiUrl}
+      leadMagnet={exitLeadMagnet}
+      {...exitPopupProps}
+    />
+  )}
+</BaseLayout>
+
+<style>
+  .solutions-hero-grid {
+    margin-top: 1.5rem;
+    display: grid;
+    gap: 1rem;
+  }
+
+  @media (min-width: 1024px) {
+    .solutions-hero-grid {
+      grid-template-columns: minmax(0, 1.2fr) minmax(0, 0.8fr);
+    }
+  }
+
+  .solutions-fit-panel {
+    padding: 1.25rem;
+  }
+
+  .solutions-fit-statement {
+    font-family: var(--font-heading, inherit);
+    font-size: 1.5rem;
+    line-height: 1.25;
+    font-weight: 600;
+    color: var(--gp-ink-900);
+    margin: 0;
+  }
+
+  .solutions-intent-row {
+    margin-top: 2rem;
+  }
+
+  .solutions-intent-bar {
+    grid-template-columns: minmax(0, 1fr);
+  }
+
+  .solutions-cta-panel {
+    margin-top: 3rem;
+    padding: 1.5rem;
+  }
+
+  @media (min-width: 768px) {
+    .solutions-cta-panel {
+      padding: 2rem;
+    }
+  }
+
+  .solutions-cta-actions {
+    margin-top: 1.25rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+  }
+
+  @media (min-width: 640px) {
+    .solutions-cta-actions {
+      flex-direction: row;
+      align-items: center;
+    }
+  }
+</style>

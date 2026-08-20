@@ -1,0 +1,509 @@
+- generic:
+    - generic:
+        - generic:
+            - generic:
+                - generic:
+                    - generic:
+                        - generic:
+                            - generic:
+                                - link:
+                                    - /url: /app/dashboard
+                                    - img
+                                    - generic: GrantPipe
+                                - button:
+                                    - img
+                            - generic:
+                                - generic:
+                                    - link:
+                                        - /url: /app/dashboard
+                                        - generic:
+                                            - img
+                                        - generic: Dashboard
+                                - generic:
+                                    - button:
+                                        - generic:
+                                            - generic: Fundraising
+                                        - img
+                                    - link:
+                                        - /url: /app/donors
+                                        - generic:
+                                            - img
+                                        - generic: Donors
+                                    - link:
+                                        - /url: /app/grants
+                                        - generic:
+                                            - img
+                                        - generic: Grants
+                                    - link:
+                                        - /url: /app/funders
+                                        - generic:
+                                            - img
+                                        - generic: Funders
+                                    - link:
+                                        - /url: /app/events
+                                        - generic:
+                                            - img
+                                        - generic: Events
+                                    - link:
+                                        - /url: /app/calendar
+                                        - generic:
+                                            - img
+                                        - generic: Calendar
+                                - generic:
+                                    - button:
+                                        - generic:
+                                            - generic: Compliance
+                                        - img
+                                    - link:
+                                        - /url: /app/funds
+                                        - generic:
+                                            - img
+                                        - generic: Funds
+                                    - link:
+                                        - /url: /app/programs
+                                        - generic:
+                                            - img
+                                        - generic: Programs
+                                    - link:
+                                        - /url: /app/reports
+                                        - generic:
+                                            - img
+                                        - generic: Reports
+                                    - link:
+                                        - /url: /app/payments
+                                        - generic:
+                                            - img
+                                        - generic: Cash
+                                    - link:
+                                        - /url: /app/activity
+                                        - generic:
+                                            - img
+                                        - generic: Activity
+                                - generic:
+                                    - button:
+                                        - generic:
+                                            - generic: Accounting
+                                            - generic: "11"
+                                        - img
+                                - generic:
+                                    - button:
+                                        - generic:
+                                            - generic: Account
+                                        - img
+                                    - link:
+                                        - /url: /app/import
+                                        - generic:
+                                            - img
+                                        - generic: Import
+                                    - link:
+                                        - /url: /app/notifications
+                                        - generic:
+                                            - img
+                                        - generic: Notifications
+                                    - link:
+                                        - /url: /app/settings
+                                        - generic:
+                                            - img
+                                        - generic: Settings
+                            - generic:
+                                - link:
+                                    - /url: /app/help
+                                    - generic:
+                                        - img
+                                    - generic: Help
+                            - generic:
+                                - button:
+                                    - generic:
+                                        - generic: PE
+                                    - generic:
+                                        - generic: Production E2E 20260505 160129
+                                        - generic: angel+e2e-20260505-160129@grantpipe.com
+                - generic:
+                    - banner:
+                        - generic:
+                            - link:
+                                - /url: /app/settings#billing
+                                - img
+                                - generic: Trial
+                                - generic: 30d
+                            - button:
+                                - img
+                            - link:
+                                - /url: /app/notifications
+                                - img
+                            - button:
+                                - img
+                    - generic:
+                        - main:
+                            - generic:
+                                - generic:
+                                    - generic:
+                                        - paragraph: Tuesday, May 5, 2026
+                                        - generic:
+                                            - generic:
+                                                - generic:
+                                                    - heading [level=1]: Dashboard
+                                                    - button:
+                                                        - img
+                                                - paragraph: Updated May 5, 2026, 10:15 PM UTC
+                                    - region:
+                                        - generic:
+                                            - generic:
+                                                - generic:
+                                                    - heading [level=2]: Executive snapshot
+                                                    - generic: Watch closely
+                                                - paragraph: no board packet generated.
+                                                - generic:
+                                                    - generic:
+                                                        - term: Urgent work
+                                                        - definition: 0 urgent
+                                                    - generic:
+                                                        - term: Upcoming deadlines
+                                                        - definition: 0 next 30 days
+                                            - generic:
+                                                - heading [level=3]: Priority actions
+                                                - generic:
+                                                    - article:
+                                                        - generic:
+                                                            - generic:
+                                                                - link:
+                                                                    - /url: /app/reports
+                                                                    - text: Generate a board packet
+                                                                - paragraph: No board packet has been generated yet.
+                                                            - generic: Watch
+                                    - generic:
+                                        - generic:
+                                            - generic:
+                                                - generic:
+                                                    - generic:
+                                                        - heading [level=2]: Start with these steps
+                                                        - paragraph: 0 of 5 steps complete
+                                                        - paragraph: A short setup path for people who are new to GrantPipe or uneasy with software.
+                                                    - generic:
+                                                        - button: Dismiss all
+                                                        - link:
+                                                            - /url: /app/help
+                                                            - text: Help center
+                                                - generic:
+                                                    - article:
+                                                        - generic: "01"
+                                                        - generic:
+                                                            - heading [level=3]: Confirm organization settings
+                                                            - paragraph: Check your organization name, timezone, and fiscal year before reports depend on them.
+                                                        - generic:
+                                                            - link:
+                                                                - /url: /app/settings
+                                                                - text: Start
+                                                            - button: Mark done
+                                                            - button: Dismiss
+                                                    - article:
+                                                        - generic: "02"
+                                                        - generic:
+                                                            - heading [level=3]: Bring in your first contacts
+                                                            - paragraph: Import a CSV from your old spreadsheet or CRM after previewing it.
+                                                        - generic:
+                                                            - link:
+                                                                - /url: /app/import
+                                                                - text: Start
+                                                            - button: Mark done
+                                                            - button: Dismiss
+                                                    - article:
+                                                        - generic: "03"
+                                                        - generic:
+                                                            - heading [level=3]: Add one grant
+                                                            - paragraph: Create a grant record so deadlines, funds, and reporting have a home.
+                                                        - generic:
+                                                            - link:
+                                                                - /url: /app/grants
+                                                                - text: Start
+                                                            - button: Mark done
+                                                            - button: Dismiss
+                                                    - article:
+                                                        - generic: "04"
+                                                        - generic:
+                                                            - heading [level=3]: Find reports
+                                                            - paragraph: Learn where generated PDFs and exports appear after you create them.
+                                                        - generic:
+                                                            - link:
+                                                                - /url: /app/reports
+                                                                - text: Start
+                                                            - button: Mark done
+                                                            - button: Dismiss
+                                                    - article:
+                                                        - generic: "05"
+                                                        - generic:
+                                                            - heading [level=3]: Open a downloaded report
+                                                            - paragraph: Know where a PDF goes after download and how to open it from your computer.
+                                                        - generic:
+                                                            - link:
+                                                                - /url: /app/help
+                                                                - text: Start
+                                                            - button: Mark done
+                                                            - button: Dismiss
+                                    - generic:
+                                        - link:
+                                            - /url: /app/donors?segment=retained
+                                            - generic:
+                                                - generic: Retention rate
+                                                - generic: 0.0%
+                                                - paragraph: Donors who gave again this fiscal year
+                                        - link:
+                                            - /url: /app/donors?segment=giving_fy_current
+                                            - generic:
+                                                - generic: This FY giving
+                                                - generic: $0
+                                                - paragraph: Current fiscal-year donations booked
+                                        - link:
+                                            - /url: /app/donors?segment=giving_fy_last
+                                            - generic:
+                                                - generic: Last FY giving
+                                                - generic: $0
+                                                - paragraph: Benchmark for year-over-year pacing
+                                        - link:
+                                            - /url: /app/donors?segment=new
+                                            - generic:
+                                                - generic: New donors
+                                                - generic: "1"
+                                                - paragraph: First-time supporters acquired this year
+                                    - link:
+                                        - /url: /app/payments
+                                        - generic:
+                                            - generic: Outstanding Reimbursements
+                                            - generic: $0
+                                            - paragraph: 0 submitted, 0 approved
+                                    - region:
+                                        - generic:
+                                            - generic:
+                                                - heading [level=2]: Grant health
+                                                - paragraph: Control counts for grant risk, deadlines, funds, and audit evidence.
+                                        - generic:
+                                            - generic:
+                                                - term: Overdue grants
+                                                - definition: "0"
+                                            - generic:
+                                                - term: At-risk grants
+                                                - definition: "0"
+                                            - generic:
+                                                - term: Upcoming deadlines
+                                                - definition: "0"
+                                            - generic:
+                                                - term: Restricted funds on watch
+                                                - definition: "0"
+                                            - generic:
+                                                - term: Audit evidence events
+                                                - definition: "0"
+                                    - region:
+                                        - generic:
+                                            - generic:
+                                                - heading [level=2]: Reporting readiness
+                                                - paragraph: No board packet has been generated yet.
+                                            - link:
+                                                - /url: /app/reports
+                                                - text: Open reports
+                                    - generic:
+                                        - region:
+                                            - heading [level=2]: Recent activity
+                                            - list:
+                                                - listitem:
+                                                    - paragraph: Expense Created
+                                                    - time: May 5, 2026, 10:11 PM UTC
+                                                - listitem:
+                                                    - paragraph: Grant Created
+                                                    - time: May 5, 2026, 10:10 PM UTC
+                                                - listitem:
+                                                    - paragraph: Funder Contact Created
+                                                    - time: May 5, 2026, 10:08 PM UTC
+                                                - listitem:
+                                                    - paragraph: Funder Created
+                                                    - time: May 5, 2026, 10:07 PM UTC
+                                                - listitem:
+                                                    - paragraph: Contact Created
+                                                    - time: May 5, 2026, 10:06 PM UTC
+                                                - listitem:
+                                                    - paragraph: Organization Updated
+                                                    - time: May 5, 2026, 10:03 PM UTC
+                                        - region:
+                                            - heading [level=2]: Grant pipeline
+                                            - generic:
+                                                - generic:
+                                                    - paragraph: Donors
+                                                    - generic:
+                                                        - generic: Prospect
+                                                        - generic: "1"
+                                                    - generic:
+                                                        - generic: Cultivation
+                                                        - generic: "0"
+                                                    - generic:
+                                                        - generic: Solicitation
+                                                        - generic: "0"
+                                                    - generic:
+                                                        - generic: Stewardship
+                                                        - generic: "0"
+                                                    - generic:
+                                                        - generic: Donor
+                                                        - generic: "0"
+                                                    - generic:
+                                                        - generic: Lapsed
+                                                        - generic: "0"
+                                                - generic:
+                                                    - paragraph: Grants
+                                                    - generic:
+                                                        - generic: Discovery
+                                                        - generic: "1"
+                                                    - generic:
+                                                        - generic: Application
+                                                        - generic: "0"
+                                                    - generic:
+                                                        - generic: Submitted
+                                                        - generic: "0"
+                                                    - generic:
+                                                        - generic: Awarded
+                                                        - generic: "0"
+                                                    - generic:
+                                                        - generic: Active
+                                                        - generic: "0"
+                                                    - generic:
+                                                        - generic: Reporting
+                                                        - generic: "0"
+                                                    - generic:
+                                                        - generic: Closeout
+                                                        - generic: "0"
+                                                    - generic:
+                                                        - generic: Renewal
+                                                        - generic: "0"
+                                                    - generic:
+                                                        - generic: Declined
+                                                        - generic: "0"
+                                        - region:
+                                            - heading [level=2]: Fund balances
+                                            - generic:
+                                                - paragraph: Fund balances appear after restricted or unrestricted funds are created. Use Funds when you need to track money set aside for a specific purpose.
+                                                - link:
+                                                    - /url: /app/funds
+                                                    - text: Create a fund →
+                    - button:
+                        - img
+                        - generic: Feedback
+            - region "Notifications alt+T"
+    - dialog "Command palette" [ref=e402]:
+        - generic [ref=e403]:
+            - heading "Command palette" [level=2] [ref=e404]
+            - paragraph [ref=e405]: Quick navigation
+        - generic [ref=e406]:
+            - generic [ref=e408]:
+                - img [ref=e409]
+                - combobox [expanded] [active] [ref=e412]
+            - listbox "Suggestions" [ref=e413]:
+                - generic [ref=e414]:
+                    - generic [ref=e415]:
+                        - generic [ref=e416]: General
+                        - group "General" [ref=e417]:
+                            - option "Dashboard" [selected] [ref=e418]:
+                                - img
+                                - generic [ref=e419]: Dashboard
+                    - generic [ref=e420]:
+                        - separator [ref=e421]
+                        - generic [ref=e422]: Fundraising
+                        - group "Fundraising" [ref=e423]:
+                            - option "Donors" [ref=e424]:
+                                - img
+                                - generic [ref=e425]: Donors
+                            - option "Grants" [ref=e426]:
+                                - img
+                                - generic [ref=e427]: Grants
+                            - option "Funders" [ref=e428]:
+                                - img
+                                - generic [ref=e429]: Funders
+                            - option "Events" [ref=e430]:
+                                - img
+                                - generic [ref=e431]: Events
+                            - option "Calendar" [ref=e432]:
+                                - img
+                                - generic [ref=e433]: Calendar
+                    - generic [ref=e434]:
+                        - separator [ref=e435]
+                        - generic [ref=e436]: Compliance
+                        - group "Compliance" [ref=e437]:
+                            - option "Funds" [ref=e438]:
+                                - img
+                                - generic [ref=e439]: Funds
+                            - option "Programs" [ref=e440]:
+                                - img
+                                - generic [ref=e441]: Programs
+                            - option "Reports" [ref=e442]:
+                                - img
+                                - generic [ref=e443]: Reports
+                            - option "Cash" [ref=e444]:
+                                - img
+                                - generic [ref=e445]: Cash
+                            - option "Activity" [ref=e446]:
+                                - img
+                                - generic [ref=e447]: Activity
+                    - generic [ref=e448]:
+                        - separator [ref=e449]
+                        - generic [ref=e450]: Accounting
+                        - group "Accounting" [ref=e451]:
+                            - option "Overview" [ref=e452]:
+                                - img
+                                - generic [ref=e453]: Overview
+                            - option "Chart of Accounts" [ref=e454]:
+                                - img
+                                - generic [ref=e455]: Chart of Accounts
+                            - option "Journal" [ref=e456]:
+                                - img
+                                - generic [ref=e457]: Journal
+                            - option "Ledger" [ref=e458]:
+                                - img
+                                - generic [ref=e459]: Ledger
+                            - option "Trial Balance" [ref=e460]:
+                                - img
+                                - generic [ref=e461]: Trial Balance
+                            - option "Fiscal Periods" [ref=e462]:
+                                - img
+                                - generic [ref=e463]: Fiscal Periods
+                            - option "Financial Position" [ref=e464]:
+                                - img
+                                - generic [ref=e465]: Financial Position
+                            - option "Statement of Activities" [ref=e466]:
+                                - img
+                                - generic [ref=e467]: Statement of Activities
+                            - option "Functional Expenses" [ref=e468]:
+                                - img
+                                - generic [ref=e469]: Functional Expenses
+                            - option "Bank Accounts" [ref=e470]:
+                                - img
+                                - generic [ref=e471]: Bank Accounts
+                            - option "Recurring" [ref=e472]:
+                                - img
+                                - generic [ref=e473]: Recurring
+                    - generic [ref=e474]:
+                        - separator [ref=e475]
+                        - generic [ref=e476]: Account
+                        - group "Account" [ref=e477]:
+                            - option "Import" [ref=e478]:
+                                - img
+                                - generic [ref=e479]: Import
+                            - option "Notifications" [ref=e480]:
+                                - img
+                                - generic [ref=e481]: Notifications
+                            - option "Settings" [ref=e482]:
+                                - img
+                                - generic [ref=e483]: Settings
+                            - option "Help" [ref=e484]:
+                                - img
+                                - generic [ref=e485]: Help
+                    - separator [ref=e486]
+                    - generic [ref=e487]: Actions
+                    - group "Actions" [ref=e488]:
+                        - option "Create donor" [ref=e489]:
+                            - img
+                            - generic [ref=e490]: Create donor
+                        - option "Create grant" [ref=e491]:
+                            - img
+                            - generic [ref=e492]: Create grant
+                        - option "Toggle theme" [ref=e493]:
+                            - img
+                            - generic [ref=e494]: Toggle theme
+        - button "Close" [ref=e495]:
+            - img
+            - generic [ref=e496]: Close

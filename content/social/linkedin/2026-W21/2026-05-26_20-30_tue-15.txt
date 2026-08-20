@@ -1,0 +1,3 @@
+If your monthly close takes longer than five business days at a $2M nonprofit, where is the time actually going?
+
+Likely culprit: not the journal entries. The reconciliation between systems that should already agree.

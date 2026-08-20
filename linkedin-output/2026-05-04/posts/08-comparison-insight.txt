@@ -1,0 +1,9 @@
+Keela ($99–$299/month) and Bloomerang ($125–$249/month) compete directly in the mid-market nonprofit CRM space. Both are cloud-native. Both position as simpler alternatives to Salesforce and Blackbaud.
+
+Keela's differentiator is a modern interface and marketing automation included at base pricing. Bloomerang's differentiator is a donor retention analytics dashboard that tracks retention rates, identifies at-risk donors, and surfaces giving frequency patterns. Per the Fifty & Fifty 2025 Nonprofit Peer Report, only 33.3% of nonprofits rate their CRM as effective — 20.1% find them outright ineffective.
+
+The shared gap between Keela and Bloomerang: neither provides grant lifecycle management or restricted fund compliance tracking. Keela has basic grant recording — deadline tracking, not compliance. Bloomerang has minimal grant features. Organizations that receive restricted foundation or government grants still need a separate system for grant compliance regardless of which of these two they choose.
+
+Choosing between them based on donor management features is a coherent evaluation for fundraising-primary organizations. Adding the grant compliance layer changes the comparison entirely — because neither platform eliminates the need for a separate compliance workflow.
+
+#nonprofitcrm #grantmanagement #keela #bloomerang #nonprofittechnology

@@ -1,0 +1,7 @@
+# Regenerable intermediates — not tracked.
+# Review frame sets (extracted from the final mp4 for whole-video reviews).
+output/_review/
+# Per-chapter silent renders (muxed + concatenated into output/getting-started.mp4).
+output/*.silent.mp4
+# HyperFrames may drop a local node_modules if installed non-npx.
+production/node_modules/

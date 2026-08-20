@@ -1,0 +1,230 @@
+{
+  "01-grants-list": {
+    "addGrant": {
+      "nx": 1637,
+      "ny": 137,
+      "nw": 103,
+      "nh": 36
+    }
+  },
+  "02-create-step1": {
+    "dialog": {
+      "nx": 704,
+      "ny": 288,
+      "nw": 512,
+      "nh": 504
+    },
+    "name": {
+      "nx": 729,
+      "ny": 431,
+      "nw": 462,
+      "nh": 36
+    },
+    "funder": {
+      "nx": 729,
+      "ny": 501,
+      "nw": 246,
+      "nh": 36
+    },
+    "amount": {
+      "nx": 729,
+      "ny": 571,
+      "nw": 462,
+      "nh": 36
+    },
+    "status": {
+      "nx": 729,
+      "ny": 655,
+      "nw": 114,
+      "nh": 36
+    },
+    "meaning": {
+      "nx": 729,
+      "ny": 695,
+      "nw": 462,
+      "nh": 20
+    }
+  },
+  "03-create-step2": {
+    "dialog": {
+      "nx": 704,
+      "ny": 244,
+      "nw": 512,
+      "nh": 592
+    },
+    "startDate": {
+      "nx": 729,
+      "ny": 387,
+      "nw": 462,
+      "nh": 36
+    },
+    "endDate": {
+      "nx": 729,
+      "ny": 457,
+      "nw": 462,
+      "nh": 36
+    }
+  },
+  "04-detail-unallocated": {
+    "cardGrantAmount": {
+      "nx": 404,
+      "ny": 298,
+      "nw": 322,
+      "nh": 134
+    },
+    "cardAllocated": {
+      "nx": 742,
+      "ny": 298,
+      "nw": 322,
+      "nh": 134
+    },
+    "cardUnallocated": {
+      "nx": 1080,
+      "ny": 298,
+      "nw": 322,
+      "nh": 134
+    },
+    "cardRemaining": {
+      "nx": 1418,
+      "ny": 298,
+      "nw": 322,
+      "nh": 134
+    },
+    "cardRow": {
+      "nx": 404,
+      "ny": 298,
+      "nw": 1336,
+      "nh": 134
+    }
+  },
+  "05-alloc1-dialog": {
+    "dialog": {
+      "nx": 704,
+      "ny": 386,
+      "nw": 512,
+      "nh": 308
+    },
+    "fund": {
+      "nx": 729,
+      "ny": 511,
+      "nw": 202,
+      "nh": 36
+    },
+    "amount": {
+      "nx": 729,
+      "ny": 581,
+      "nw": 462,
+      "nh": 36
+    },
+    "desc": {
+      "nx": 729,
+      "ny": 437,
+      "nw": 462,
+      "nh": 40
+    }
+  },
+  "06-detail-after-alloc1": {
+    "cardAllocated": {
+      "nx": 742,
+      "ny": 298,
+      "nw": 322,
+      "nh": 134
+    },
+    "cardUnallocated": {
+      "nx": 1080,
+      "ny": 298,
+      "nw": 322,
+      "nh": 134
+    },
+    "rowCapacity": {
+      "nx": 404,
+      "ny": 578,
+      "nw": 1336,
+      "nh": 114
+    },
+    "cardRow": {
+      "nx": 404,
+      "ny": 298,
+      "nw": 1336,
+      "nh": 134
+    }
+  },
+  "07-alloc2-dialog": {
+    "dialog": {
+      "nx": 704,
+      "ny": 386,
+      "nw": 512,
+      "nh": 308
+    },
+    "fund": {
+      "nx": 729,
+      "ny": 511,
+      "nw": 208,
+      "nh": 36
+    },
+    "amount": {
+      "nx": 729,
+      "ny": 581,
+      "nw": 462,
+      "nh": 36
+    }
+  },
+  "08-detail-fully-allocated": {
+    "cardAllocated": {
+      "nx": 742,
+      "ny": 298,
+      "nw": 322,
+      "nh": 134
+    },
+    "cardUnallocated": {
+      "nx": 1080,
+      "ny": 298,
+      "nw": 322,
+      "nh": 134
+    },
+    "rowCapacity": {
+      "nx": 404,
+      "ny": 578,
+      "nw": 1336,
+      "nh": 114
+    },
+    "rowGeneral": {
+      "nx": 404,
+      "ny": 700,
+      "nw": 1336,
+      "nh": 114
+    },
+    "cardRow": {
+      "nx": 404,
+      "ny": 298,
+      "nw": 1336,
+      "nh": 134
+    }
+  },
+  "09-guardrail-error": {
+    "dialog": {
+      "nx": 704,
+      "ny": 368,
+      "nw": 512,
+      "nh": 344
+    },
+    "alert": {
+      "nx": 729,
+      "ny": 615,
+      "nw": 462,
+      "nh": 20
+    },
+    "fund": {
+      "nx": 729,
+      "ny": 493,
+      "nw": 208,
+      "nh": 36
+    },
+    "amount": {
+      "nx": 729,
+      "ny": 563,
+      "nw": 462,
+      "nh": 36
+    }
+  }
+}

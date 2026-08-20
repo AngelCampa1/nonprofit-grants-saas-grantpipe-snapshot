@@ -1,0 +1,9 @@
+Picture this: the Development Director left in March. The handover was three days.
+
+Now it is May. The Executive Director is reading a funder report request and cannot find the original grant agreement. She knows it exists. She does not know where.
+
+The drive has 11 folders named some variant of "grants". Two are from 2021. Three are duplicates. The current one is in someone's personal Google Drive, shared but not owned by the org.
+
+This is not a discipline problem. It is a system problem. When the place where work happens is also the place where work is recorded, handovers are lossless. When the two are different, every transition leaks information.
+
+Pick a place where the agreement, the budget, the spend, and the reports live in one record. Then handovers take an hour, not three days.

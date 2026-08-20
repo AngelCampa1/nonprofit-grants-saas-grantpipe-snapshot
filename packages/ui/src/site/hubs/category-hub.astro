@@ -1,0 +1,246 @@
+---
+import type { SiteConfig, ContentItem, BreadcrumbItem, FaqItem, LeadMagnetOffer } from "../types"
+import { resolveCanonicalUrl } from "../lib/collections"
+import { shouldShowFaqsOnPage } from "../lib/hub-utils"
+import { buildCollectionPageSchema } from "../lib/schema-builders"
+import { buildGraph, withId } from "../lib/schema-graph"
+import BaseLayout from "../layouts/base-layout.astro"
+import SiteHeader from "../components/site-header.astro"
+import SiteFooter from "../components/site-footer.astro"
+import BreadcrumbNav from "../components/breadcrumb-nav.astro"
+import ContentCard from "../components/content-card.astro"
+import Pagination from "../components/pagination.astro"
+import FaqSection from "../components/faq-section.astro"
+import SchemaMarkup from "../seo/schema-markup.astro"
+import { ExitIntentPopup } from "../components/exit-intent-popup"
+import { resolveExitPopupProps } from "../lib/exit-popup-props"
+import { getPublicApiBaseUrl } from "../lib/public-api-url"
+
+interface PageData {
+  data: ContentItem[]
+  currentPage: number
+  lastPage: number
+  url: {
+    prev: string | undefined
+    next: string | undefined
+  }
+}
+
+interface Props {
+  config: SiteConfig
+  title: string
+  description: string
+  items: ContentItem[]
+  page: PageData
+  basePath: string
+  breadcrumbs: BreadcrumbItem[]
+  canonicalUrl?: string
+  emptyStateHeading: string
+  emptyStateBody: string
+  faqs?: FaqItem[]
+  faqHeading?: string
+  eyebrow?: string
+  variant?: "default" | "editorial"
+  /** Whether to render the sticky mobile CTA bar on this page. */
+  showStickyMobileCta?: boolean
+  /** CTA button label for the sticky mobile bar. Defaults to the config funnel bofu CTA text. */
+  stickyCtaText?: string
+  /** CTA button href for the sticky mobile bar. Defaults to the config funnel bofu CTA target. */
+  stickyCtaTarget?: string
+  /** Optional lead magnet offer to show in the exit-intent popup. */
+  leadMagnet?: LeadMagnetOffer
+  /** Whether to render the default card listing and pagination. */
+  renderListing?: boolean
+}
+
+const {
+  config,
+  title,
+  description,
+  items,
+  page,
+  basePath,
+  breadcrumbs,
+  canonicalUrl,
+  emptyStateHeading,
+  emptyStateBody,
+  faqs = [],
+  faqHeading,
+  eyebrow,
+  variant = "default",
+  showStickyMobileCta = false,
+  stickyCtaText,
+  stickyCtaTarget,
+  leadMagnet,
+  renderListing = true,
+} = Astro.props
+
+const exitPopupProps = config.exitPopup?.enabled !== false ? resolveExitPopupProps(config) : undefined
+const publicApiUrl = getPublicApiBaseUrl()
+
+const resolvedCanonical =
+  canonicalUrl ?? resolveCanonicalUrl(config.domain, basePath, page.currentPage)
+const siteUrl = `https://${config.domain}`
+const collectionSchema = buildCollectionPageSchema({
+  name: title,
+  description,
+  url: resolvedCanonical,
+  items: items.map(item => ({
+    name: item.title,
+    description: item.description,
+    url: `${siteUrl}${item.href}`,
+  })),
+})
+const graph = buildGraph([withId(collectionSchema, `${resolvedCanonical}#collection`)])
+---
+
+<BaseLayout
+  title={`${title}${page.currentPage > 1 ? ` - Page ${page.currentPage}` : ""} | ${config.name}`}
+  description={description}
+  canonicalUrl={resolvedCanonical}
+  siteName={config.name}
+  ogType="website"
+  themeColor={config.theme.primary}
+  theme={config.theme}
+  fonts={config.theme.fonts}
+  appleTouchIcon={config.appleTouchIcon}
+  noindex={page.currentPage > 1}
+  showStickyMobileCta={showStickyMobileCta}
+  stickyCtaText={stickyCtaText ?? config.funnel.bofu.ctaText}
+  stickyCtaTarget={stickyCtaTarget ?? config.funnel.bofu.ctaTarget}
+>
+  {page.url.prev && <link slot="head" rel="prev" href={page.url.prev} />}
+  {page.url.next && <link slot="head" rel="next" href={page.url.next} />}
+  <SiteHeader
+    slot="header"
+    siteName={config.name}
+    navItems={config.nav?.items}
+    ctaText={config.funnel.bofu.ctaText}
+    ctaHref={config.funnel.bofu.ctaTarget}
+    loginHref={config.appLoginUrl}
+    logoLight={config.logo?.light}
+    currentPath={Astro.url.pathname}
+  />
+
+  <div
+    data-hub-layout
+    class:list={[
+      "hub-shell mx-auto px-4 py-[var(--section-py-sm)]",
+      variant === "editorial" ? "max-w-6xl editorial-shell" : "max-w-5xl",
+    ]}
+  >
+    <div class="hub-intro mb-10">
+      <BreadcrumbNav items={breadcrumbs} siteUrl={`https://${config.domain}`} />
+
+      <header
+        data-hub-hero
+        class:list={[
+          "mt-4",
+          variant === "editorial"
+            ? "max-w-[var(--content-measure-wide)]"
+            : "rounded-xl border border-neutral-200 bg-surface-secondary px-6 py-7 shadow-card",
+        ]}
+      >
+        {eyebrow && variant === "editorial" && <p class="gp-kicker--accent">{eyebrow}</p>}
+        <h1
+          class:list={[
+            "font-heading font-bold text-brand-text",
+            variant === "editorial"
+              ? "mt-4 text-[length:var(--text-editorial-title)] leading-[1.04]"
+              : "mb-3 text-[length:var(--text-heading)]",
+          ]}
+        >
+          {title}
+        </h1>
+        <p
+          class:list={[
+            "text-brand-muted",
+            variant === "editorial"
+              ? "editorial-lede"
+              : "max-w-2xl text-[length:var(--text-body-lg)]",
+          ]}
+        >
+          {description}
+        </p>
+        {
+          page.lastPage > 1 && (
+            <p
+              class:list={[
+                "text-[length:var(--text-caption)] text-neutral-500",
+                variant === "editorial"
+                  ? "mt-3 font-medium tracking-[0.03em] text-brand-primary"
+                  : "mt-3 inline-flex rounded-full bg-surface-elevated px-3 py-1",
+              ]}
+            >
+              Page {page.currentPage} of {page.lastPage}
+            </p>
+          )
+        }
+      </header>
+    </div>
+
+    <slot name="intro" />
+    <slot name="filters" />
+
+    {renderListing && (
+      <>
+      {
+      items.length > 0 ? (
+        <section aria-label={`${title} listing`}>
+          <div data-hub-card-grid class="hub-grid grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
+            {items.map((item) => (
+              <div class="scroll-in h-full">
+                <ContentCard item={item} />
+              </div>
+            ))}
+          </div>
+        </section>
+      ) : (
+        <div class="rounded-xl border border-neutral-200 bg-surface-secondary py-16 text-center text-brand-muted shadow-card">
+          <p class="mb-2 text-[length:var(--text-body-lg)] font-medium">{emptyStateHeading}</p>
+          <p class="text-[length:var(--text-caption)]">
+            {emptyStateBody}
+          </p>
+        </div>
+      )
+      }
+
+      <Pagination
+        currentPage={page.currentPage}
+        totalPages={page.lastPage}
+        basePath={basePath}
+      />
+      </>
+    )}
+
+    <slot name="cta" />
+
+    {shouldShowFaqsOnPage(faqs, page.currentPage) && (
+      <FaqSection
+        faqs={faqs}
+        heading={faqHeading}
+        showBottomCta={false}
+        ctaVariant="compact"
+      />
+    )}
+  </div>
+
+  <SiteFooter
+    slot="footer"
+    siteName={config.name}
+    tagline={config.tagline}
+    linkGroups={config.footer?.linkGroups}
+    legalLinks={config.footer?.legalLinks}
+    logoLight={config.logo?.light}
+    captureVariant="compact"
+  />
+  <SchemaMarkup graph={graph} />
+  {exitPopupProps && (
+    <ExitIntentPopup
+      client:idle
+      apiUrl={publicApiUrl}
+      {...exitPopupProps}
+      leadMagnet={leadMagnet}
+    />
+  )}
+</BaseLayout>

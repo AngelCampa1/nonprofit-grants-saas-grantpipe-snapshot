@@ -1,0 +1,48 @@
+{
+  "name": "@grantpipe/site",
+  "private": true,
+  "type": "module",
+  "engines": {
+    "node": ">=20"
+  },
+  "scripts": {
+    "dev": "astro dev",
+    "build": "tsx scripts/assert-turnstile-site-key.ts && tsx scripts/run-build-lead-magnet-pdfs.ts && tsx scripts/clean-dist.ts && node --max-old-space-size=8192 ./node_modules/astro/bin/astro.mjs build --force && pnpm exec tsx ../../scripts/patch-site-canonical-host-redirect.ts",
+    "deploy": "pnpm exec tsx ../../scripts/patch-wrangler-site-custom-domains.ts && pnpm exec tsx ../../scripts/strip-missing-sourcemap-comments.ts dist/server && pnpm exec wrangler deploy --config dist/server/wrangler.json --assets dist/client",
+    "preview": "astro preview",
+    "lint": "eslint src/",
+    "test": "vitest run",
+    "typecheck": "astro check",
+    "test:coverage": "vitest run --coverage",
+    "test:e2e": "node scripts/run-playwright-e2e.mjs"
+  },
+  "dependencies": {
+    "@astrojs/cloudflare": "^13",
+    "@astrojs/react": "^4",
+    "@astrojs/rss": "^4",
+    "@astrojs/sitemap": "^3",
+    "@grantpipe/shared": "workspace:*",
+    "@grantpipe/ui": "workspace:*",
+    "astro": "^6.1.4",
+    "react": "^19",
+    "react-dom": "^19"
+  },
+  "devDependencies": {
+    "@astrojs/check": "^0.9.4",
+    "@playwright/test": "^1.59.1",
+    "@sentry/vite-plugin": "^4.7.1",
+    "@tailwindcss/vite": "^4",
+    "@types/react": "^19",
+    "@types/react-dom": "^19",
+    "@vitest/coverage-v8": "^3",
+    "gray-matter": "^4.0.3",
+    "marked": "^15",
+    "puppeteer": "^23",
+    "tailwindcss": "^4",
+    "tsx": "^4.21.0",
+    "typescript": "^5",
+    "vitest": "^3",
+    "wrangler": "^4.85.0",
+    "zod": "^4.3.6"
+  }
+}

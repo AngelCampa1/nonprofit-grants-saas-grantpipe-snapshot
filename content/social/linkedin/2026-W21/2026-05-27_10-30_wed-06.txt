@@ -1,0 +1,9 @@
+Quick test for any Executive Director.
+
+Open your phone. Time how long it takes you to answer: which restricted funds at our org need to be released this quarter, and for how much?
+
+Under 60 seconds means your tooling is working.
+
+Two minutes means your spreadsheet is working, and you are working harder.
+
+"I'll have to ask Finance" is the answer that should bother you.

@@ -1,0 +1,75 @@
+{
+  "total": 681.831,
+  "chapters": [
+    {
+      "id": "00",
+      "label": "[0:00] Cold open / Hook",
+      "audio": "audio/chapter-00.mp3",
+      "duration": 51.641,
+      "start": 0
+    },
+    {
+      "id": "01",
+      "label": "[1:05] Chapter 1 — What a single audit actually is",
+      "audio": "audio/chapter-01.mp3",
+      "duration": 76.347,
+      "start": 51.641
+    },
+    {
+      "id": "02",
+      "label": "[2:15] Chapter 2 — Who needs one (and the number that just changed)",
+      "audio": "audio/chapter-02.mp3",
+      "duration": 73.189,
+      "start": 127.988
+    },
+    {
+      "id": "03",
+      "label": "[3:30] Chapter 3 — The word that trips everyone up: \"expended\"",
+      "audio": "audio/chapter-03.mp3",
+      "duration": 76.44,
+      "start": 201.177
+    },
+    {
+      "id": "04",
+      "label": "[4:45] Chapter 4 — Single audit vs. program-specific audit",
+      "audio": "audio/chapter-04.mp3",
+      "duration": 50.202,
+      "start": 277.617
+    },
+    {
+      "id": "05",
+      "label": "[5:40] Chapter 5 — What the auditor actually tests",
+      "audio": "audio/chapter-05.mp3",
+      "duration": 74.397,
+      "start": 327.819
+    },
+    {
+      "id": "06",
+      "label": "[7:00] Chapter 6 — Findings, questioned costs, and your corrective action plan",
+      "audio": "audio/chapter-06.mp3",
+      "duration": 67.57,
+      "start": 402.216
+    },
+    {
+      "id": "07",
+      "label": "[8:10] Chapter 7 — How and where you file it",
+      "audio": "audio/chapter-07.mp3",
+      "duration": 61.301,
+      "start": 469.786
+    },
+    {
+      "id": "08",
+      "label": "[9:10] Chapter 8 — Where preparing for this breaks down",
+      "audio": "audio/chapter-08.mp3",
+      "duration": 69.242,
+      "start": 531.087
+    },
+    {
+      "id": "09",
+      "label": "[10:05] Outro / Soft CTA",
+      "audio": "audio/chapter-09.mp3",
+      "duration": 81.502,
+      "start": 600.329
+    }
+  ]
+}

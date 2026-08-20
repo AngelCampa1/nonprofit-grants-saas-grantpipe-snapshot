@@ -1,0 +1,52 @@
+{
+  "type": "schedule",
+  "date": "2026-07-11T22:35:00.000Z",
+  "shortLink": false,
+  "tags": [],
+  "posts": [
+    {
+      "integration": {
+        "id": "cmorp6oby03pgmq0ye7e3n7j0"
+      },
+      "value": [
+        {
+          "content": "End the day with grant record.\n\nSave award fact near report fact.\n\nA clean file helps the next reviewer.",
+          "image": [],
+          "delay": 0
+        }
+      ],
+      "settings": {
+        "__type": "linkedin-page",
+        "post_as_images_carousel": false
+      }
+    },
+    {
+      "integration": {
+        "id": "cmq5aut9y0087mv0yt9otastk"
+      },
+      "value": [
+        {
+          "content": "Close the loop on grant record. Save award fact near report fact.",
+          "image": [],
+          "delay": 0
+        }
+      ],
+      "settings": {
+        "who_can_reply_post": "everyone"
+      }
+    },
+    {
+      "integration": {
+        "id": "cmq5b15k300k4qp0yypplg57c"
+      },
+      "value": [
+        {
+          "content": "Before the day ends, check grant record. Put award fact next to report fact.",
+          "image": [],
+          "delay": 0
+        }
+      ],
+      "settings": {}
+    }
+  ]
+}

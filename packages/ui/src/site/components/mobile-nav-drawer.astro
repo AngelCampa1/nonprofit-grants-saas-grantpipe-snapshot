@@ -1,0 +1,372 @@
+---
+/**
+ * MobileNavDrawer — full-viewport-height drawer that slides in from the right.
+ *
+ * Features:
+ * - Slot-based content: default slot is the drawer body; optional "trigger" slot
+ *   for a custom trigger element (falls back to a hamburger button).
+ * - Full viewport height, opens from the right.
+ * - Focus-trapped when open: Tab and Shift+Tab cycle within the drawer.
+ * - aria-expanded toggle on the trigger button.
+ * - ESC key closes the drawer.
+ * - Click-outside (backdrop) closes the drawer.
+ * - Prevents body scroll while open.
+ * - Trigger hidden at min-width: 768px (desktop nav takes over at md breakpoint).
+ * - Trigger ≥ 48×48px tap target.
+ * - Vanilla JS only — no framework.
+ *
+ * Props:
+ *   - id?: string — unique id for aria relationships. Defaults to "mobile-nav-drawer".
+ *   - drawerLabel?: string — aria-label for the drawer nav element. Defaults to "Navigation".
+ *   - class?: string — extra classes on the trigger wrapper.
+ *
+ * Slots:
+ *   - default — drawer panel content
+ *   - trigger — custom trigger element (replaces the default hamburger; must be
+ *               a <button> with data-mobile-drawer-trigger attribute)
+ *
+ * Usage:
+ *   <MobileNavDrawer id="main-nav-drawer">
+ *     <nav>...</nav>
+ *     <button slot="trigger" data-mobile-drawer-trigger aria-controls="main-nav-drawer">
+ *       Open menu
+ *     </button>
+ *   </MobileNavDrawer>
+ */
+import type { HTMLAttributes } from "astro/types";
+
+type DivAttrs = Omit<HTMLAttributes<"div">, "class">;
+
+interface Props extends DivAttrs {
+  /** Unique drawer id for aria-controls. Defaults to "mobile-nav-drawer". */
+  id?: string;
+  /** aria-label for the inner <nav> / content container. Defaults to "Navigation". */
+  drawerLabel?: string;
+  /** Extra classes on the outer trigger-wrapper div. */
+  class?: string;
+}
+
+const {
+  id = "mobile-nav-drawer",
+  drawerLabel = "Navigation",
+  class: className,
+  ...rest
+} = Astro.props;
+
+const triggerId = `${id}-trigger`;
+const panelId = id;
+---
+
+<div
+  class:list={["mobile-drawer-root", className]}
+  data-mobile-drawer-root
+  data-drawer-id={id}
+  {...rest}
+>
+  {
+    Astro.slots.has("trigger") ? (
+      <slot name="trigger" />
+    ) : (
+      <button
+        type="button"
+        id={triggerId}
+        data-mobile-drawer-trigger
+        aria-label="Open navigation menu"
+        aria-controls={panelId}
+        aria-expanded="false"
+        class="mobile-drawer-hamburger"
+      >
+        <svg
+          class="mobile-drawer-hamburger__icon"
+          xmlns="http://www.w3.org/2000/svg"
+          fill="none"
+          viewBox="0 0 24 24"
+          stroke="currentColor"
+          stroke-width="2"
+          aria-hidden="true"
+        >
+          <path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16" />
+        </svg>
+        <svg
+          class="mobile-drawer-close__icon"
+          xmlns="http://www.w3.org/2000/svg"
+          fill="none"
+          viewBox="0 0 24 24"
+          stroke="currentColor"
+          stroke-width="2"
+          aria-hidden="true"
+        >
+          <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
+        </svg>
+      </button>
+    )
+  }
+
+  <div
+    data-mobile-drawer-overlay
+    class="mobile-drawer-overlay"
+    hidden
+    aria-hidden="true"
+  >
+    <div data-mobile-drawer-backdrop class="mobile-drawer-backdrop"></div>
+    <div
+      id={panelId}
+      role="dialog"
+      aria-label={drawerLabel}
+      aria-modal="true"
+      class="mobile-drawer-panel"
+      tabindex="-1"
+    >
+      <slot />
+    </div>
+  </div>
+</div>
+
+<style>
+  /* Trigger: visible only below 768px. Hidden on desktop. */
+  .mobile-drawer-root {
+    display: flex;
+    align-items: center;
+  }
+
+  .mobile-drawer-hamburger {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 3rem; /* 48px */
+    min-height: 3rem; /* 48px */
+    padding: 0.5rem;
+    border: 1px solid var(--gp-ink-200, #e2e8f0);
+    border-radius: 9999px;
+    background: transparent;
+    color: currentColor;
+    cursor: pointer;
+    transition: background-color 0.15s ease;
+  }
+
+  .mobile-drawer-hamburger:hover {
+    background: var(--gp-paper-2, #f8fafc);
+  }
+
+  .mobile-drawer-hamburger:focus-visible {
+    outline: none;
+    box-shadow:
+      0 0 0 2px var(--gp-paper, #fff),
+      0 0 0 4px var(--gp-emerald-600, #059669);
+  }
+
+  .mobile-drawer-hamburger__icon,
+  .mobile-drawer-close__icon {
+    width: 1.25rem;
+    height: 1.25rem;
+    flex-shrink: 0;
+  }
+
+  /* Close icon hidden by default; shown when drawer is open */
+  .mobile-drawer-close__icon {
+    display: none;
+  }
+
+  [data-mobile-drawer-trigger][aria-expanded="true"] .mobile-drawer-hamburger__icon {
+    display: none;
+  }
+
+  [data-mobile-drawer-trigger][aria-expanded="true"] .mobile-drawer-close__icon {
+    display: block;
+  }
+
+  @media (min-width: 768px) {
+    .mobile-drawer-root {
+      display: none;
+    }
+  }
+
+  /* Overlay: hidden until drawer opens */
+  .mobile-drawer-overlay[hidden] {
+    display: none;
+  }
+
+  .mobile-drawer-overlay {
+    position: fixed;
+    inset: 0;
+    z-index: 60;
+  }
+
+  .mobile-drawer-backdrop {
+    position: absolute;
+    inset: 0;
+    /* Translucent scrim. color-mix avoids needing a new token. */
+    background: color-mix(in srgb, var(--surface-overlay, #000) 56%, transparent);
+    opacity: 0;
+    transition: opacity 0.28s cubic-bezier(0.16, 1, 0.3, 1);
+  }
+
+  .mobile-drawer-panel {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    width: min(20rem, calc(100vw - 3rem));
+    overflow-y: auto;
+    background: var(--gp-card, #fff);
+    border-left: 1px solid var(--gp-ink-200, #e2e8f0);
+    box-shadow: -4px 0 24px color-mix(in srgb, var(--surface-overlay, #000) 12%, transparent);
+    outline: none;
+    transform: translateX(100%);
+    transition: transform 0.32s cubic-bezier(0.16, 1, 0.3, 1);
+  }
+
+  [data-mobile-drawer-overlay].is-open .mobile-drawer-backdrop {
+    opacity: 1;
+  }
+
+  [data-mobile-drawer-overlay].is-open .mobile-drawer-panel {
+    transform: translateX(0);
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    .mobile-drawer-backdrop,
+    .mobile-drawer-panel {
+      transition-duration: 0.01ms;
+    }
+  }
+</style>
+
+<script>
+  import { lockScroll, unlockScroll } from "../lib/scroll-lock";
+
+  const FOCUSABLE_SELECTOR =
+    'button, [href], input, select, textarea, [tabindex]:not([tabindex="-1"])';
+
+  function getFocusable(root: HTMLElement): HTMLElement[] {
+    return Array.from(root.querySelectorAll<HTMLElement>(FOCUSABLE_SELECTOR)).filter(
+      (el) =>
+        !el.hasAttribute("disabled") && el.getAttribute("aria-disabled") !== "true",
+    );
+  }
+
+  function initMobileDrawers() {
+    document.querySelectorAll<HTMLElement>("[data-mobile-drawer-root]").forEach((root) => {
+      if (root.dataset.mobileDrawerBound === "true") return;
+      root.dataset.mobileDrawerBound = "true";
+
+      const trigger = root.querySelector<HTMLButtonElement>("[data-mobile-drawer-trigger]");
+      const overlay = root.querySelector<HTMLElement>("[data-mobile-drawer-overlay]");
+      const backdrop = root.querySelector<HTMLElement>("[data-mobile-drawer-backdrop]");
+      const panel = root.querySelector<HTMLElement>("[role='dialog']");
+
+      if (!trigger || !overlay || !panel) return;
+
+      let isOpen = false;
+      let scrollLocked = false;
+      let closeTimeoutId: ReturnType<typeof setTimeout> | undefined;
+
+      const prefersReducedMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+      // Matches the panel/backdrop transition-duration above; kept in sync manually
+      // since CSS custom properties aren't read back into JS here.
+      const CLOSE_TRANSITION_MS = prefersReducedMotion ? 0 : 320;
+
+      const open = () => {
+        window.clearTimeout(closeTimeoutId);
+        isOpen = true;
+        trigger.setAttribute("aria-expanded", "true");
+        overlay.hidden = false;
+        overlay.removeAttribute("aria-hidden");
+        if (!scrollLocked) {
+          lockScroll();
+          scrollLocked = true;
+        }
+        // Defer the open class to the next frame so the browser registers the
+        // starting (closed) transform/opacity before transitioning to open.
+        requestAnimationFrame(() => {
+          overlay.classList.add("is-open");
+          const first = getFocusable(panel)[0];
+          (first ?? panel).focus();
+        });
+      };
+
+      const close = () => {
+        isOpen = false;
+        trigger.setAttribute("aria-expanded", "false");
+        overlay.classList.remove("is-open");
+        overlay.setAttribute("aria-hidden", "true");
+        if (scrollLocked) {
+          unlockScroll();
+          scrollLocked = false;
+        }
+        trigger.focus({ preventScroll: true });
+        // Wait for the close transition to finish before hiding, so the
+        // slide/fade-out is visible instead of the panel disappearing instantly.
+        window.clearTimeout(closeTimeoutId);
+        closeTimeoutId = setTimeout(() => {
+          if (!isOpen) overlay.hidden = true;
+        }, CLOSE_TRANSITION_MS);
+      };
+
+      trigger.addEventListener("click", () => {
+        if (isOpen) close();
+        else open();
+      });
+
+      backdrop?.addEventListener("click", close);
+
+      const handleKeydown = (e: KeyboardEvent) => {
+        if (!isOpen) return;
+
+        if (e.key === "Escape") {
+          e.preventDefault();
+          close();
+          return;
+        }
+
+        if (e.key === "Tab") {
+          const focusable = getFocusable(panel);
+          if (focusable.length === 0) return;
+          const first = focusable[0];
+          const last = focusable[focusable.length - 1];
+          const active = document.activeElement as HTMLElement | null;
+
+          if (e.shiftKey) {
+            if (active === first) {
+              e.preventDefault();
+              last.focus();
+            }
+          } else {
+            if (active === last) {
+              e.preventDefault();
+              first.focus();
+            }
+          }
+        }
+      };
+      document.addEventListener("keydown", handleKeydown);
+
+      // Close on any link click inside the panel
+      panel.addEventListener("click", (e: MouseEvent) => {
+        if (e.target instanceof HTMLAnchorElement) {
+          close();
+        }
+      });
+
+      // Clean up this init's document-level listeners before the next
+      // ViewTransitions swap so they never accumulate across navigations. A
+      // fresh initMobileDrawers() on the next astro:page-load re-registers them
+      // for the incoming page, so scroll-unlock still runs on every navigation.
+      document.addEventListener(
+        "astro:before-swap",
+        () => {
+          window.clearTimeout(closeTimeoutId);
+          if (scrollLocked) {
+            unlockScroll();
+            scrollLocked = false;
+          }
+          document.removeEventListener("keydown", handleKeydown);
+        },
+        { once: true },
+      );
+    });
+  }
+
+  initMobileDrawers();
+  document.addEventListener("astro:page-load", initMobileDrawers);
+</script>

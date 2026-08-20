@@ -1,0 +1,15 @@
+Six things federal NOFOs hide in the fine print, and where to look for each one.
+
+1. Pre-award costs. Subpart D of 2 CFR 200 says you need prior approval. The NOFO usually buries the rule in a paragraph about budget periods. If you start spending before the award date, you eat the cost.
+
+2. Cost share or match. Sometimes called "applicant contribution." Check whether it is required or just encouraged. The difference is whether you are reporting on it for the next three years.
+
+3. Indirect cost treatment. NICRA, de minimis 15%, or capped at a program-specific rate. The NOFO often references a program statute that overrides the default.
+
+4. Period of performance vs project period. Two different timelines. Money obligated outside one of them is unallowable.
+
+5. Reporting cadence. FFR quarterly is common, but Performance Progress Report intervals vary by agency. Read the terms and conditions, not just the program description.
+
+6. Single audit threshold. $1M in federal awards in a fiscal year triggers it. The NOFO will not tell you. Your aggregate spend will.
+
+The fine print is where the compliance burden actually lives.

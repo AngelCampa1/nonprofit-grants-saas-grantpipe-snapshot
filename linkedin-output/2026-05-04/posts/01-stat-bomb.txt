@@ -1,0 +1,11 @@
+The 2024 OMB revision raised the Single Audit threshold to $1,000,000 — effective for fiscal years ending September 30, 2025 or later.
+
+That change matters for how organizations track federal expenditure totals, not just whether they file. The threshold applies across all federal awards combined, not per grant. An organization holding three federal awards totaling $980,000 is below the line. At $1,000,001, a licensed independent auditor must complete and submit the Single Audit package to the Federal Audit Clearinghouse within 9 months of fiscal year end.
+
+The same revision raised the de minimis indirect cost rate from 10% to 15% under 2 CFR 200.414 — a meaningful shift for organizations that have never negotiated a rate with a cognizant federal agency.
+
+Organizations near the threshold should track cumulative federal expenditures by award, not just by program budget. Crossing the threshold mid-year triggers the Single Audit obligation for the entire fiscal year, not just the portion spent after crossing.
+
+GrantPipe surfaces cumulative federal expenditure totals across all active awards so compliance staff see the threshold approach before the obligation lands.
+
+#grantcompliance #uniformguidance #federalgrants #singleaudit #nonprofitfinance

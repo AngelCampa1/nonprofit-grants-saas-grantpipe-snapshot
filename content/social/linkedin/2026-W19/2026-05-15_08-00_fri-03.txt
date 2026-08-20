@@ -1,0 +1,11 @@
+Three places a grant can live simultaneously:
+
+1. The donor CRM, where the funder is a contact and the award is a soft-credit row.
+2. QuickBooks, where the dollars hit a class or a fund code.
+3. A spreadsheet, where the actual reporting deadlines and budget categories sit.
+
+None of these is wrong. They are each doing one job well.
+
+The problem is that no one of them tells you where the grant stands. To answer "how much of the Clinic Capacity award is left, and what is due next," someone has to stitch all three together.
+
+That stitching is the work. It happens at month-end, at board prep, at audit time, at every report deadline. It is the tax you pay for not having the three things in one place.

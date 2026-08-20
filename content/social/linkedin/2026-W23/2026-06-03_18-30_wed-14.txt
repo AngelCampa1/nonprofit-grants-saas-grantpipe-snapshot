@@ -1,0 +1,12 @@
+Award setup is where later reporting either gets easier or harder.
+
+The Award Setup Worksheet captures the basics before the grant starts moving:
+
+- funder
+- award number
+- period of performance
+- budget lines
+- restrictions
+- reporting dates
+- portal owner
+- evidence folders

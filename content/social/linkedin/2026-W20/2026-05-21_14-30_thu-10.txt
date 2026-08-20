@@ -1,0 +1,9 @@
+Could you produce, in the next ten minutes, the list of every grant with a report due in the next 60 days, the responsible staff member, and the data source each report depends on?
+
+If your team cannot, it is often not because the data is missing. It lives in three places.
+
+Grant agreements in a shared drive organized by funder. Deadlines in someone's Outlook calendar. Data sources in the Finance Director's head and the program team's quarterly spreadsheets.
+
+The list exists. It is just not assembled.
+
+A real audit binder is the assembled version. So is a real reporting calendar. The system that holds the work is whatever lets one person produce that list at 9:32 on a Tuesday, in the ten minutes before the board call starts.

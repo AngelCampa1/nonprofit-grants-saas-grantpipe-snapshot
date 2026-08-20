@@ -1,0 +1,9 @@
+A restricted fund note should say more than "restricted."
+
+Useful notes name the restriction:
+
+"Clinic Capacity grant, personnel and equipment only, award period 2026-01-01 to 2026-12-31."
+
+Even better: attach the source document, budget, and release trigger.
+
+The label tells you to be careful. The evidence tells you what careful means.

@@ -1,0 +1,13 @@
+Network for Good was acquired by Bonterra in 2022, alongside EveryAction, CommunityForce, and Social Solutions.
+
+Before the acquisition, pricing was published in tiers. After the acquisition, pricing moved to a custom contract model requiring a demo. Reviews written before 2022 describe a different product structure than what current prospects encounter in a sales conversation.
+
+What the platform does: fundraising pages, peer-to-peer campaigns, donor email tools. What it has never done: grant prospect tracking, restricted fund management, grant budget-versus-expenditure tracking, or compliance report generation. These were not features removed at acquisition — they were never part of the product.
+
+Transaction fees may apply on processed donations in addition to the subscription cost. The specific fee structure is part of the negotiated contract, not disclosed publicly.
+
+For nonprofits whose primary activity is campaign-based fundraising with no grant compliance requirements, the product is coherent. For organizations receiving restricted foundation or government grants, grant compliance still lives elsewhere — usually in a spreadsheet.
+
+The evaluation question is not whether the platform works for fundraising. It is whether your organization's workflow requires a system that handles restricted grant compliance alongside donor management, or two separate systems with manual reconciliation between them.
+
+#nonprofitcrm #grantmanagement #fundraising #nonprofittechnology

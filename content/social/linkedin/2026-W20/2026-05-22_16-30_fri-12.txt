@@ -1,0 +1,11 @@
+We decided early that grants and funds would be separate entities, not one merged record.
+
+A grant is the award. Specific funder, specific dollar amount, period of performance, set of reports.
+
+A fund is the bucket of restricted dollars on the balance sheet, governed by FASB ASC 958. One fund (say, Clinic Capacity) can be financed by three different grants plus a board designation plus an individual major gift.
+
+Most donor CRMs collapse this into one object called "grant" or "campaign". That works until an auditor asks you to show net assets with donor restrictions by purpose, and the report does not match the general ledger.
+
+We modeled it the way Sage Intacct and Blackbaud Financial Edge do, because that is how the underlying accounting works. A many-to-many between grants and funds, with allocations on top.
+
+The numbers tie to the audited financials without a manual reconciliation.

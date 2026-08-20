@@ -1,0 +1,74 @@
+# GrantPipe — 50 new SEO pages shipped 2026-04-24
+# Generated manifest. One URL per line, grouped by cluster.
+
+## Cluster A — Role landers (personas)
+https://grantpipe.com/for/grants-managers/
+https://grantpipe.com/for/board-treasurers/
+https://grantpipe.com/for/program-directors/
+https://grantpipe.com/for/grant-writers/
+https://grantpipe.com/for/operations-managers/
+
+## Cluster B — Post-award workflows
+https://grantpipe.com/workflows/submit-sf-sac-single-audit-data-collection/
+https://grantpipe.com/workflows/prepare-sefa-for-single-audit/
+https://grantpipe.com/workflows/perform-monthly-grant-drawdown-reconciliation/
+https://grantpipe.com/workflows/track-donor-pledges-vs-payments/
+https://grantpipe.com/workflows/respond-to-single-audit-finding/
+https://grantpipe.com/workflows/negotiate-indirect-cost-rate-nicra/
+
+## Cluster C — Second-tier competitor alternatives
+https://grantpipe.com/compare/alternatives/foundant-alternative/
+https://grantpipe.com/compare/alternatives/wizehive-alternative/
+https://grantpipe.com/compare/alternatives/submittable-alternative/
+https://grantpipe.com/compare/alternatives/fluxx-alternative/
+https://grantpipe.com/compare/alternatives/amplifund-alternative/
+https://grantpipe.com/compare/alternatives/ecivis-alternative/
+
+## Cluster D — Second-tier pricing pages
+https://grantpipe.com/compare/pricing/foundant-pricing/
+https://grantpipe.com/compare/pricing/submittable-pricing/
+https://grantpipe.com/compare/pricing/fluxx-pricing/
+https://grantpipe.com/compare/pricing/amplifund-pricing/
+
+## Cluster E — GrantPipe-vs-tier2 comparisons
+https://grantpipe.com/compare/versus/grantpipe-vs-foundant/
+https://grantpipe.com/compare/versus/grantpipe-vs-submittable/
+https://grantpipe.com/compare/versus/grantpipe-vs-amplifund/
+
+## Cluster F — State × state-form guides
+https://grantpipe.com/resources/guides/illinois-ag990-il-filing-guide/
+https://grantpipe.com/resources/guides/california-rrf-1-charitable-registration-guide/
+https://grantpipe.com/resources/guides/new-york-char500-filing-guide/
+https://grantpipe.com/resources/guides/massachusetts-form-pc-annual-report-guide/
+https://grantpipe.com/resources/guides/pennsylvania-bco-10-charitable-registration-guide/
+
+## Cluster G — Federal program × vertical deep-dives
+https://grantpipe.com/resources/guides/food-banks-usda-tefap-reporting-guide/
+https://grantpipe.com/resources/guides/affordable-housing-hud-cpd-compliance-guide/
+https://grantpipe.com/resources/guides/workforce-development-wioa-title-i-reporting-guide/
+https://grantpipe.com/resources/guides/community-health-centers-hrsa-330-reporting-guide/
+https://grantpipe.com/resources/guides/after-school-programs-21st-century-community-learning-centers-compliance-guide/
+
+## Cluster H — Product feature pages
+https://grantpipe.com/features/restricted-fund-tracking/
+https://grantpipe.com/features/grant-pipeline-management/
+https://grantpipe.com/features/donor-retention-reporting/
+https://grantpipe.com/features/funder-reporting-templates/
+https://grantpipe.com/features/audit-trail-activity-log/
+
+## Cluster I — Integrations
+https://grantpipe.com/integrations/quickbooks-online/
+https://grantpipe.com/integrations/sage-intacct/
+https://grantpipe.com/integrations/mailchimp/
+https://grantpipe.com/integrations/zapier/
+
+## Cluster J — Glossary
+https://grantpipe.com/glossary/modified-total-direct-costs-mtdc/
+https://grantpipe.com/glossary/functional-expense-allocation/
+https://grantpipe.com/glossary/subrecipient-vs-contractor/
+https://grantpipe.com/glossary/pass-through-entity/
+
+## Cluster K — Advanced post-award concept guides
+https://grantpipe.com/resources/guides/subrecipient-monitoring-requirements-uniform-guidance/
+https://grantpipe.com/resources/guides/grant-revenue-recognition-asc-958-605/
+https://grantpipe.com/resources/guides/ffata-subaward-reporting-over-25k/

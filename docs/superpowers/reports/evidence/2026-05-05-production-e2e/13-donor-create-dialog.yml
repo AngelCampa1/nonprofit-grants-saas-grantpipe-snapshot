@@ -1,0 +1,141 @@
+- generic:
+    - generic:
+        - generic:
+            - generic:
+                - generic:
+                    - banner:
+                        - generic:
+                            - button:
+                                - img
+                        - generic:
+                            - link:
+                                - /url: /app/settings#billing
+                                - img
+                                - generic: Trial
+                                - generic: 30d
+                            - button:
+                                - img
+                            - link:
+                                - /url: /app/notifications
+                                - img
+                            - button:
+                                - img
+                    - generic:
+                        - main:
+                            - generic:
+                                - generic:
+                                    - generic:
+                                        - paragraph: Donor workspace
+                                        - generic:
+                                            - generic:
+                                                - generic:
+                                                    - heading [level=1]: Donors
+                                                    - button:
+                                                        - img
+                                            - generic:
+                                                - generic:
+                                                    - generic:
+                                                        - button: Export CSV
+                                                    - button [expanded]: Add contact
+                                    - generic:
+                                        - generic:
+                                            - generic:
+                                                - generic: Total Donors
+                                            - generic:
+                                                - paragraph: "0"
+                                        - generic:
+                                            - generic:
+                                                - generic: New This FY
+                                            - generic:
+                                                - paragraph: "0"
+                                        - generic:
+                                            - generic:
+                                                - generic: Retention Rate
+                                            - generic:
+                                                - paragraph: 0.0%
+                                                - generic:
+                                                    - generic:
+                                                        - application
+                                        - generic:
+                                            - generic:
+                                                - generic: Total Giving This FY
+                                            - generic:
+                                                - paragraph: $0
+                                    - generic:
+                                        - generic:
+                                            - button: Save current filters
+                                    - generic:
+                                        - generic:
+                                            - textbox:
+                                                - /placeholder: Search contacts...
+                                            - combobox:
+                                                - generic:
+                                                    - generic: All stages
+                                                - img
+                                            - combobox:
+                                                - generic: All types
+                                                - img
+                                    - generic:
+                                        - region:
+                                            - generic:
+                                                - generic:
+                                                    - img
+                                            - heading [level=3]: Your donors live here
+                                            - generic:
+                                                - button: + Add a donor
+                                                - button: Import from spreadsheet
+                                                - link:
+                                                    - /url: /help
+                                                    - text: How donor records work →
+                                    - generic:
+                                        - generic: Page 1 of 1
+                                        - generic:
+                                            - button [disabled]: Previous
+                                            - button [disabled]: Next
+            - region "Notifications alt+T"
+    - dialog "Add contact" [ref=e96]:
+        - generic [ref=e97]:
+            - heading "Add contact" [level=2] [ref=e98]
+            - paragraph [ref=e99]: Create a new donor record and add it to this organization.
+        - generic [ref=e100]:
+            - generic [ref=e101]:
+                - generic [ref=e102]: Contact Type
+                - combobox [active] [ref=e103]:
+                    - generic: Individual
+                    - img
+                - combobox [ref=e104]
+            - generic [ref=e105]:
+                - generic [ref=e106]: First Name
+                - textbox "First Name" [ref=e107]:
+                    - /placeholder: Jane
+            - generic [ref=e108]:
+                - generic [ref=e109]: Last Name
+                - textbox "Last Name" [ref=e110]:
+                    - /placeholder: Doe
+            - generic [ref=e111]:
+                - generic [ref=e112]: Email
+                - textbox "Email" [ref=e113]:
+                    - /placeholder: contact@example.com
+            - generic [ref=e114]:
+                - generic [ref=e115]: Phone
+                - textbox "Phone" [ref=e116]:
+                    - /placeholder: +1 (555) 000-0000
+            - generic [ref=e117]:
+                - generic [ref=e118]: Address
+                - textbox "Address" [ref=e119]:
+                    - /placeholder: 123 Main St, City, ST 00000
+            - generic [ref=e120]:
+                - generic [ref=e121]: Pipeline Stage
+                - combobox [ref=e122]:
+                    - generic:
+                        - generic: Prospect
+                    - img
+                - combobox [ref=e123]
+            - generic [ref=e124]:
+                - generic [ref=e125]: Notes
+                - textbox "Notes" [ref=e126]:
+                    - /placeholder: Additional notes...
+            - button "Save Contact" [ref=e127]
+        - button "Close" [ref=e128]:
+            - img
+            - generic [ref=e129]: Close

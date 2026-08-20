@@ -1,0 +1,7 @@
+The Donor-to-Grant Reconciliation Template is for the Friday problem:
+
+The donor CRM says one thing. The general ledger says another. The grant tracker says a third.
+
+The template gives Development and Finance one worksheet for gifts, grants, restrictions, fund codes, and report dates.
+
+It is deliberately unglamorous.

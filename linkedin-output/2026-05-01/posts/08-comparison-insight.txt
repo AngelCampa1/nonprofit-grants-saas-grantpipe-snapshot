@@ -1,0 +1,13 @@
+Givebutter and GrantPipe solve different problems. Putting them head to head only makes sense once you know which problem you actually have.
+
+Givebutter is a fundraising-page tool with a free starting tier. Solid peer-to-peer, event ticketing, embeddable donation forms. The CRM piece is essentially gift record keeping. No grant management, no restricted-fund tracking at any tier — including the paid tiers that start at $29/mo.
+
+GrantPipe runs $329 to $1,079/mo and bundles donor CRM with grant compliance and restricted-fund tracking in one record set.
+
+The decision is not about features. It is about stage.
+
+If the organization is early, primarily event- and campaign-funded, and has no active grant portfolio, Givebutter's free tier is the right call. Pay for tools you need.
+
+Once there are active grants, restricted-fund obligations, or a board asking for a release-from-restriction report, a fundraising-page tool stops being the right tool. The reconciliation work between Givebutter and a separate grant tracker eats the savings.
+
+#nonprofitsoftware #donormanagement #grantmanagement

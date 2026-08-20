@@ -1,0 +1,13 @@
+Bloomerang is a well-designed donor CRM. The retention analytics, constituent timeline, and lapse-tracking tools were built around a real insight: nonprofits lose nearly half their donors every year, and retention is where development economics get solved.
+
+For donor work, the product knows what it is.
+
+The breakdown happens when the same development director managing Bloomerang also manages 3 or more active grants with restricted-fund obligations.
+
+Bloomerang's grant fields are essentially custom fields on a constituent record. They cannot model the funder reporting calendar, restricted-fund balances, allowable cost categories, or the conditional revenue recognition that ASC 958-605 requires.
+
+The choice at that point is binary. Add a separate grant compliance tool and pay for two systems that do not share data. Or move to a platform that handles both donors and grants in one record set.
+
+The two-tool path looks cheaper for about six months. After that, the manual reconciliation between systems usually costs more than either subscription.
+
+#nonprofitsoftware #donorcrm #grantmanagement

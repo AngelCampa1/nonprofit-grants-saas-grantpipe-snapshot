@@ -1,0 +1,7 @@
+A practical audit prep resource: the Auditor Evidence Checklist.
+
+We built it as the document a Finance Director would want the first time their org crosses the $1,000,000 federal expenditure threshold and triggers a Single Audit.
+
+Inside: the twenty-three pieces of evidence a Yellow Book auditor typically requests during fieldwork, organized by the order they tend to ask for them. Each item lists the source system (general ledger, payroll, grants management, procurement), the responsible role, and the regulation that requires retention.
+
+It is not a substitute for an engagement letter. It is what you fill in before the engagement letter arrives, so the first week of fieldwork is calm instead of frantic.

@@ -1,0 +1,11 @@
+Myth: grant reporting software writes your funder reports for you.
+
+Reality: most "grant reporting" tools only track deadlines. The actual report has two halves — a financial section (budget-vs-actual, expenditure documentation) and a narrative section (activities, outputs, outcomes). Reminders don't produce either one.
+
+Software can only generate the financial section if it tracks expenditures against approved budget categories during the grant period. Then the budget-vs-actual table populates from posted transactions linked to the grant.
+
+Tools without expenditure data give you a template. You still fill it in by hand from the GL, line by line, the night before submission.
+
+When evaluating a tool, ask one question: can it produce the budget-vs-actual table from real posted transactions, or is it just a calendar with a logo.
+
+#grantreporting #nonprofitfinance #grantcompliance #funderreporting

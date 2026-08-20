@@ -1,0 +1,130 @@
+- generic:
+    - generic:
+        - generic:
+            - generic:
+                - generic:
+                    - banner:
+                        - generic:
+                            - button:
+                                - img
+                        - generic:
+                            - link:
+                                - /url: /app/settings#billing
+                                - img
+                                - generic: Trial
+                                - generic: 30d
+                            - button:
+                                - img
+                            - link:
+                                - /url: /app/notifications
+                                - img
+                            - button:
+                                - img
+                    - generic:
+                        - main:
+                            - generic:
+                                - generic:
+                                    - generic:
+                                        - paragraph: Grant pipeline
+                                        - generic:
+                                            - generic:
+                                                - generic:
+                                                    - heading [level=1]: Grants
+                                                    - button:
+                                                        - img
+                                            - generic:
+                                                - generic:
+                                                    - button [expanded]: Add grant
+                                    - generic:
+                                        - tablist:
+                                            - tab: Opportunities
+                                            - tab: Pipeline
+                                            - tab [selected]: Portfolio
+                                        - tabpanel:
+                                            - generic:
+                                                - generic:
+                                                    - textbox:
+                                                        - /placeholder: Search grants...
+                                                    - combobox:
+                                                        - generic: All statuses
+                                                        - img
+                                                    - combobox:
+                                                        - generic: All funders
+                                                        - img
+                                                    - combobox:
+                                                        - generic: All thresholds
+                                                        - img
+                                            - generic:
+                                                - generic:
+                                                    - generic:
+                                                        - table:
+                                                            - rowgroup:
+                                                                - row:
+                                                                    - columnheader:
+                                                                        - button:
+                                                                            - text: Name
+                                                                            - img
+                                                                    - columnheader:
+                                                                        - button:
+                                                                            - text: Funder
+                                                                            - img
+                                                                    - columnheader:
+                                                                        - button:
+                                                                            - text: Status
+                                                                            - img
+                                                                    - columnheader:
+                                                                        - button:
+                                                                            - text: Amount
+                                                                            - img
+                                                                    - columnheader:
+                                                                        - button:
+                                                                            - text: Deadline
+                                                                            - img
+                                                            - rowgroup:
+                                                                - row:
+                                                                    - cell:
+                                                                        - region:
+                                                                            - generic:
+                                                                                - generic:
+                                                                                    - img
+                                                                            - heading [level=3]: Your grants live here
+                                                                            - generic:
+                                                                                - button: + Create a grant
+                                                                                - button: Import from spreadsheet
+                                                                                - link:
+                                                                                    - /url: /help
+                                                                                    - text: How grants work →
+            - region "Notifications alt+T"
+    - dialog:
+        - generic:
+            - heading [level=2]: Create grant
+            - paragraph: Set up a new grant record and connect it to the right funder.
+        - generic:
+            - generic:
+                - generic: Grant name
+                - textbox:
+                    - /placeholder: e.g. NSF STEM Education Award 2026
+                    - text: Prod E2E Grant 160129
+            - generic:
+                - generic: Funder
+                - combobox [expanded]:
+                    - generic: Select funder
+                    - img
+                - combobox
+            - generic:
+                - generic:
+                    - generic: Status
+                    - button:
+                        - img
+                - combobox:
+                    - generic: Discovery
+                    - img
+                - combobox
+                - paragraph: You found a possible grant and are deciding if it is worth pursuing.
+            - button: Save grant
+        - button:
+            - img
+            - generic: Close
+    - listbox [ref=e127]:
+        - option "Prod E2E Funder 160129" [active] [ref=e128]:
+            - generic [ref=e130]: Prod E2E Funder 160129

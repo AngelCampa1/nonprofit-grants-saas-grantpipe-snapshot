@@ -1,0 +1,11 @@
+The average mid-sized nonprofit uses three donor segments — everyone, major donors, and lapsed donors. Organizations with strong retention programs use fifteen or more.
+
+The difference is not the technology. It is whether the segmentation tool stays current as donor records change, or whether it requires a manual Excel export every time someone wants a list.
+
+Donor segmentation in GrantPipe is a saved-filter system. Build a segment once using any combination of giving history, recency, source, fund, custom fields, and demographics. The segment stays current automatically as gifts post and contact records update. A segment named "Major Gift Prospects — Not Yet Asked" might filter on lifetime giving between $5,000 and $24,999, last gift within 18 months, no open ask in the pipeline, and a custom field flagging board referral.
+
+The segments drive everything downstream — appeal lists, stewardship workflows, board reports, and renewal campaigns — without re-exporting. When a donor's giving crosses a threshold, they move into the new segment automatically the next time the filter runs.
+
+If your org is operating on three segments because building more is too much work, the tool is the bottleneck.
+
+#donorsegmentation #donormanagement #nonprofitcrm #fundraisingoperations

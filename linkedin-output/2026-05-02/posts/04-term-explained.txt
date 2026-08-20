@@ -1,0 +1,13 @@
+Schedule A is the Form 990 attachment where 501(c)(3) organizations prove they qualify as a public charity under IRC Section 509(a).
+
+The most common path is Section 509(a)(1) combined with Section 170(b)(1)(A)(vi): at least 33.33% of total support over a rolling five-year window must come from public sources.
+
+The 2% cap is where concentrated donor bases get hurt. Contributions from any single source that exceed 2% of total five-year support are capped at the 2% level in the public support numerator. Excess counts in the denominator only.
+
+Program service revenue and investment income count in the denominator (total support) but not in the numerator (public support).
+
+Fail both the one-third test and the 10% facts-and-circumstances test for two consecutive years and the IRS reclassifies the organization as a private foundation by operation of law — triggering the 1.39% excise tax under IRC Section 4940, the 5% minimum distribution requirement, and Form 990-PF filing.
+
+About 100,000 private foundations file Form 990-PF annually compared to 1.5 million public charities. The math behind that ratio runs through Schedule A.
+
+#form990 #publiccharity #scheduleA #nonprofitfinance

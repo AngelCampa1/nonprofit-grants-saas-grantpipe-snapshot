@@ -1,0 +1,54 @@
+{
+  "total": 410.28,
+  "chapters": [
+    {
+      "id": "00",
+      "label": "Two different questions",
+      "audio": "audio/chapter-00.mp3",
+      "duration": 56.8,
+      "start": 0
+    },
+    {
+      "id": "01",
+      "label": "What fund accounting is",
+      "audio": "audio/chapter-01.mp3",
+      "duration": 58.88,
+      "start": 56.8
+    },
+    {
+      "id": "02",
+      "label": "Why nonprofits need it",
+      "audio": "audio/chapter-02.mp3",
+      "duration": 54.6,
+      "start": 115.68
+    },
+    {
+      "id": "03",
+      "label": "The building blocks",
+      "audio": "audio/chapter-03.mp3",
+      "duration": 77.72,
+      "start": 170.28
+    },
+    {
+      "id": "04",
+      "label": "A worked example",
+      "audio": "audio/chapter-04.mp3",
+      "duration": 63.84,
+      "start": 248
+    },
+    {
+      "id": "05",
+      "label": "How it differs from regular accounting",
+      "audio": "audio/chapter-05.mp3",
+      "duration": 51.32,
+      "start": 311.84
+    },
+    {
+      "id": "06",
+      "label": "One idea to remember",
+      "audio": "audio/chapter-06.mp3",
+      "duration": 47.12,
+      "start": 363.16
+    }
+  ]
+}

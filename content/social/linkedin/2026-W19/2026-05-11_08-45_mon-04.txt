@@ -1,0 +1,10 @@
+If your SAM.gov UEI expires the week an award notice lands, drawdowns freeze. The renewal calendar is the highest-impact compliance task most Development offices forget.
+
+SAM.gov registration is annual. It is free. It also takes 7 to 10 business days to process if anything trips the entity validation step, and longer if your bank info or notarized letter does not match.
+
+Two rules that save grief:
+
+1. Renew 60 days before expiration. Not 14.
+2. The UEI lives at the entity level, not the grant level. One nonprofit, one UEI, even across 12 federal awards.
+
+If your renewal date is "I think sometime this summer," log into SAM.gov today and check. The award letter does not wait.

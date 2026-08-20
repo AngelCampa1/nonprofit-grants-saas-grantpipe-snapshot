@@ -1,0 +1,161 @@
+---
+import { filterTocHeadings } from "../lib/headings"
+import type { TocHeading } from "../lib/headings"
+
+interface Props {
+  headings: TocHeading[]
+  label?: string
+}
+const { headings, label = "On this page" } = Astro.props
+const filtered = filterTocHeadings(headings)
+---
+
+{filtered.length > 0 && (
+  <>
+    <details
+      data-toc-panel
+      aria-label="Table of contents"
+      class="mb-5 rounded-lg border border-neutral-200 bg-surface-elevated px-4 py-3 shadow-sm lg:hidden"
+    >
+      <summary class="flex min-h-12 list-none cursor-pointer items-center justify-between gap-3 text-[length:var(--text-caption)] font-semibold tracking-[0.03em] text-brand-primary select-none focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary-500 focus-visible:ring-offset-2 [&::-webkit-details-marker]:hidden">
+        {label}
+      </summary>
+      <ul class="mt-3 space-y-2 border-l border-accent-200">
+        {filtered.map((h) => (
+          <li class={h.depth === 3 ? "pl-6" : "pl-3"}>
+            <a
+              href={`#${h.slug}`}
+              data-toc-link={h.slug}
+              class="flex min-h-12 items-center text-[length:var(--text-caption)] leading-6 text-neutral-700 hover:text-brand-primary transition-colors duration-[var(--transition-fast)] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary-500 focus-visible:ring-offset-2 focus-visible:rounded-xs"
+            >
+              {h.text}
+            </a>
+          </li>
+        ))}
+      </ul>
+    </details>
+    <nav
+      data-toc-panel
+      aria-label="Table of contents"
+      class="sticky top-24 hidden max-h-[calc(100vh-6rem)] overflow-y-auto rounded-lg border border-neutral-200 bg-surface-elevated px-4 py-4 shadow-sm lg:block"
+    >
+      <p class="mb-3 text-[length:var(--text-caption)] font-semibold tracking-[0.03em] text-brand-primary">{label}</p>
+      <ul class="space-y-2 border-l border-accent-200">
+        {filtered.map((h) => (
+          <li class={h.depth === 3 ? "pl-6" : "pl-3"}>
+            <a
+              href={`#${h.slug}`}
+              data-toc-link={h.slug}
+              class="py-1.5 inline-block text-[length:var(--text-caption)] leading-6 text-neutral-700 hover:text-brand-primary transition-colors duration-[var(--transition-fast)] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary-500 focus-visible:ring-offset-2 focus-visible:rounded-xs"
+            >
+              {h.text}
+            </a>
+          </li>
+        ))}
+      </ul>
+    </nav>
+  </>
+)}
+
+<style>
+  /* Active state for the current section in the table of contents. */
+  .toc-active {
+    color: var(--color-brand-primary);
+    font-weight: 600;
+  }
+</style>
+
+<script>
+  let activeTocObserver: IntersectionObserver | null = null
+
+  function initTableOfContents(): void {
+    if (activeTocObserver) {
+      activeTocObserver.disconnect()
+      activeTocObserver = null
+    }
+
+    const tocContainers = document.querySelectorAll<HTMLElement>(
+      'nav[aria-label="Table of contents"]:not([data-toc-js-bound]), details[aria-label="Table of contents"]:not([data-toc-js-bound])'
+    )
+    if (tocContainers.length === 0) return
+    tocContainers.forEach((container) => {
+      container.dataset.tocJsBound = "true"
+    })
+    // Collect all unique TOC links across both containers (mobile + desktop)
+    const allLinks: HTMLAnchorElement[] = []
+    tocContainers.forEach((container) => {
+      container.querySelectorAll<HTMLAnchorElement>('a[href^="#"]').forEach((a) => allLinks.push(a))
+    })
+
+    if (allLinks.length > 0) {
+      // Map from heading id → ALL matching links (could be 2 per heading)
+      const linkMap = new Map<string, HTMLAnchorElement[]>()
+      allLinks.forEach((a) => {
+        const id = a.getAttribute('href')?.slice(1)
+        if (!id) return
+        const existing = linkMap.get(id) ?? []
+        linkMap.set(id, [...existing, a])
+      })
+
+      let activeId: string | null = null
+
+      const setActive = (next: string | null) => {
+        if (next === activeId) return
+        if (activeId) {
+          linkMap.get(activeId)?.forEach((a) => {
+            a.classList.remove('toc-active')
+            a.removeAttribute('aria-current')
+          })
+        }
+        if (next) {
+          linkMap.get(next)?.forEach((a) => {
+            a.classList.add('toc-active')
+            // `aria-current="true"` tells assistive tech which entry maps to
+            // the currently-visible section of the page.
+            a.setAttribute('aria-current', 'true')
+          })
+        }
+        activeId = next
+      }
+
+      const observer = new IntersectionObserver(
+        (entries) => {
+          entries.forEach((entry) => {
+            const target = entry.target as HTMLElement
+            if (entry.isIntersecting) {
+              target.dataset.visible = '1'
+            } else {
+              delete target.dataset.visible
+            }
+          })
+
+          const visibleHeadings = [...document.querySelectorAll('h2[id], h3[id]')].filter(
+            (h) => (h as HTMLElement).dataset.visible === '1'
+          )
+
+          const next = (visibleHeadings[0] as HTMLElement | undefined)?.id ?? null
+          setActive(next)
+        },
+        { rootMargin: '-10% 0px -70% 0px', threshold: 0 }
+      )
+
+      // The observer is torn down on `astro:before-swap` (Astro's ViewTransitions
+      // router fires this before every soft navigation) and re-created by
+      // `initTableOfContents` on `astro:page-load`, so no observer ever leaks
+      // across navigations.
+      activeTocObserver = observer
+      document.querySelectorAll('h2[id], h3[id]').forEach((h) => {
+        if (linkMap.has(h.id)) observer.observe(h)
+      })
+    }
+  }
+
+  initTableOfContents()
+  document.addEventListener("astro:page-load", initTableOfContents)
+  document.addEventListener("astro:before-swap", () => {
+    if (activeTocObserver) {
+      activeTocObserver.disconnect()
+      activeTocObserver = null
+    }
+  })
+</script>

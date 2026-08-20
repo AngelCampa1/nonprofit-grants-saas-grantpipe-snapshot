@@ -1,0 +1,15 @@
+The 2024 Uniform Guidance revision raised the federal single audit threshold to $1,000,000 in federal expenditures.
+
+That change pulled smaller cost-reimbursement awardees out of single-audit scope, but it did not change how revenue gets recognized.
+
+FASB ASU 2018-08 still governs the two tests for grant revenue under ASC 958-605: contribution vs exchange, then conditional vs unconditional.
+
+Cost-reimbursement federal awards are typically conditional contributions. Revenue is recognized only as allowable costs are incurred, not when the award letter arrives.
+
+Finance teams that book the full award upfront overstate revenue and end up restating it during audit fieldwork.
+
+If your grant ledger does not match your expenditure schedule line for line, the conditional accounting is breaking somewhere.
+
+GrantPipe attaches a ledger to each award so revenue recognition tracks expenditures automatically.
+
+#grantcompliance #nonprofitfinance #asc958 #singleaudit

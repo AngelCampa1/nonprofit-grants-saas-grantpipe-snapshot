@@ -1,0 +1,190 @@
+name = "grantpipe-api"
+main = "src/app.ts"
+compatibility_date = "2026-04-01"
+compatibility_flags = ["nodejs_compat"]
+upload_source_maps = true
+
+[version_metadata]
+binding = "CF_VERSION_METADATA"
+
+[vars]
+APP_URL = "http://localhost:3050"
+MARKETING_URL = "http://localhost:4321"
+INTEGRATION_MODE = "mock"
+MAINTENANCE_MODE = "off"
+FEEDBACK_RECIPIENT_EMAIL = "angel.campa@grantpipe.com"
+SENTRY_ENVIRONMENT = "development"
+POSTHOG_API_KEY = "phc_examplePostHogProjectKey0000000000000000"
+POSTHOG_HOST = "https://us.i.posthog.com"
+SEQUENCER_BASE_URL = "https://sequencer.example.com"
+AI_CS_WORKER_ORIGIN = "https://ventora-ai-cs-worker.example-account.workers.dev"
+
+# Hyperdrive binding is only configured for production. Local dev uses a direct
+# Postgres connection via DATABASE_URL and does not route through Hyperdrive.
+
+# Dev cron — enables `wrangler dev --test-scheduled` + curl `/__scheduled` to
+# exercise scheduled jobs locally. This schedule does NOT fire automatically
+# during `wrangler dev`; it only activates when explicitly triggered.
+# Production crons live under [env.production.triggers] below.
+[triggers]
+crons = ["*/10 * * * *"]
+
+[observability]
+enabled = true
+head_sampling_rate = 1 # 100% sampling for initial launch — revisit at scale
+
+[[r2_buckets]]
+binding = "R2"
+bucket_name = "grantpipe-documents"
+
+[[queues.producers]]
+binding = "AWARD_INTAKE_QUEUE"
+queue = "grantpipe-award-intake"
+
+[[durable_objects.bindings]]
+name = "AUTH_RATE_LIMITER"
+class_name = "AuthRateLimiter"
+
+[[migrations]]
+tag = "auth-rate-limiter-v1"
+new_sqlite_classes = ["AuthRateLimiter"]
+
+[[queues.consumers]]
+queue = "grantpipe-award-intake"
+max_batch_size = 5
+max_batch_timeout = 30
+
+[[d1_databases]]
+binding = "MARKETING_DB"
+database_name = "grantpipe-db"
+database_id = "00000000-0000-0000-0000-000000000000"
+migrations_dir = "migrations/d1-marketing"
+
+[env.production]
+workers_dev = false
+
+[env.production.version_metadata]
+binding = "CF_VERSION_METADATA"
+
+[env.production.browser]
+binding = "BROWSER_RENDERING"
+
+[[env.production.routes]]
+pattern = "app.grantpipe.com/api/*"
+zone_name = "grantpipe.com"
+
+[env.production.vars]
+APP_URL = "https://app.grantpipe.com"
+MARKETING_URL = "https://grantpipe.com"
+INTEGRATION_MODE = "real"
+MAINTENANCE_MODE = "off"
+FEEDBACK_RECIPIENT_EMAIL = "angel.campa@grantpipe.com"
+SENTRY_ENVIRONMENT = "production"
+POSTHOG_API_KEY = "phc_examplePostHogProjectKey0000000000000000"
+POSTHOG_HOST = "https://us.i.posthog.com"
+SEQUENCER_BASE_URL = "https://sequencer.example.com"
+AI_CS_WORKER_ORIGIN = "https://ventora-ai-cs-worker.example-account.workers.dev"
+
+# Secrets (set with `wrangler secret put <NAME> --env production`):
+# Audit which of these are actually present on the live Worker with
+# `pnpm run check:prod-secrets` (advisory) or `:strict` (non-zero exit on gaps);
+# `deploy:api` also prints missing secrets after every deploy. This list is the
+# source of truth for that audit — keep scripts/check-prod-secrets.ts in sync.
+#   DATABASE_URL           — managed Postgres connection string. NOTE: production
+#                            connects through the bound HYPERDRIVE resource, so
+#                            this secret is not required at runtime in prod.
+#   BETTER_AUTH_SECRET     — session signing key
+#   SENTRY_DSN             — API error tracking. Fails OPEN: if unset,
+#                            createSentryOptions() returns undefined and the
+#                            Worker runs with no error reporting and no warning.
+#   GOOGLE_CLIENT_ID / GOOGLE_CLIENT_SECRET — Google OAuth
+#   STRIPE_SECRET_KEY / STRIPE_WEBHOOK_SECRET — Stripe
+#   STRIPE_PRICE_{STARTER,GROWTH,AUDIT_READY}_{MONTHLY,ANNUAL} — checkout plan IDs
+#   RESEND_API_KEY         — transactional email
+#   OPENROUTER_API_KEY     — AI award document extraction provider
+#   LEAD_UNSUBSCRIBE_SECRET — HMAC key for signed unsubscribe tokens in nurture
+#                             emails. Falls back to BETTER_AUTH_SECRET if unset,
+#                             but setting it explicitly prevents cross-context
+#                             token reuse.
+#   DOWNLOAD_LINK_SECRET  — HMAC key for signed lead-magnet download tokens.
+#                            Falls back to BETTER_AUTH_SECRET if unset, but
+#                            setting it explicitly is recommended to prevent
+#                            cross-context token reuse.
+#   AI_CS_CLIENT_ASSERTION_SECRET — shared HMAC key for the authenticated
+#                                   Ventora AI-CS proxy.
+#   AI_CS_CONTEXT_SECRET          — shared HMAC key for the AI-CS Worker to
+#                                   call GET /api/ai-cs/context server-to-server.
+#   TURNSTILE_SECRET_KEY          — Cloudflare Turnstile site secret for
+#                                   verifying bot-protection tokens submitted
+#                                   by public forms (leads, feedback). Set with
+#                                   `wrangler secret put TURNSTILE_SECRET_KEY`.
+#                                   When unset, Turnstile verification is
+#                                   bypassed (dev/test mode only).
+#   SEQUENCER_CLIENT_SECRET       — shared secret for Sequencer /api/client/v1
+#                                   calls while Cloudflare Access service tokens
+#                                   are rotated out of band.
+
+# Production KV namespace for feedback rate-limiting.
+# Create with: wrangler kv:namespace create RATE_LIMIT_KV
+# Then replace the id below with the returned namespace id before deploying.
+# Local dev runs without this binding; the route falls back to an in-memory
+# store when `c.env.RATE_LIMIT_KV` is absent.
+[[env.production.durable_objects.bindings]]
+name = "AUTH_RATE_LIMITER"
+class_name = "AuthRateLimiter"
+
+[[env.production.kv_namespaces]]
+binding = "RATE_LIMIT_KV"
+id = "00000000000000000000000000000000"
+
+# Hyperdrive binding for production Postgres connection pooling.
+# During the Supabase cutover, create a new Hyperdrive config from the
+# Supabase Direct connection string and replace this id with the new config id.
+# Do not mutate the old provider's Hyperdrive config in place; keeping it intact
+# preserves the rollback path until Supabase accepts writes.
+# The DB client already prefers HYPERDRIVE.connectionString over DATABASE_URL when present.
+#
+# Query caching MUST stay disabled on this binding
+# (`wrangler hyperdrive update <id> --caching-disabled=true`). Better Auth's
+# drizzle adapter does read-then-write on sign-up (SELECT user → INSERT user);
+# with caching on, the empty pre-insert SELECT is cached for 60s and subsequent
+# sign-in attempts get "User not found" until the TTL expires.
+[[env.production.hyperdrive]]
+binding = "HYPERDRIVE"
+id = "11111111111111111111111111111111"
+
+[[env.production.r2_buckets]]
+binding = "R2"
+bucket_name = "grantpipe-documents"
+
+[[env.production.queues.producers]]
+binding = "AWARD_INTAKE_QUEUE"
+queue = "grantpipe-award-intake"
+
+[[env.production.queues.consumers]]
+queue = "grantpipe-award-intake"
+max_batch_size = 5
+max_batch_timeout = 30
+
+[[env.production.d1_databases]]
+binding = "MARKETING_DB"
+database_name = "grantpipe-db"
+database_id = "00000000-0000-0000-0000-000000000000"
+migrations_dir = "migrations/d1-marketing"
+
+# Cron triggers run only in production to avoid hitting real DB/APIs during local dev.
+#
+# Hourly (every hour at :00). The DB-dependent jobs (tickRecurring,
+# notifications.deadlines, notifications.spend-down,
+# trial-emails.lifecycle) continue to run on the same schedule. Three of the
+# five use `lte(<col>, now())` scheduling semantics, so an hourly fire is fine
+# — each fires at most once per relevant window. The other two are
+# day-granular with `onConflictDoNothing` dedupe on a deterministic key, so
+# firing hourly is idempotent — duplicate inserts collide and no duplicate
+# emails go out.
+#
+# The scheduled handler pre-warms the Postgres pool on a single connection before
+# the fan-out so the cold-wake cost is paid once per fire, not raced across
+# parallel connects.
+[env.production.triggers]
+crons = ["0 * * * *"]

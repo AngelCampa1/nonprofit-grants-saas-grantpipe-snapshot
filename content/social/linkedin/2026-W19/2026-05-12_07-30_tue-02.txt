@@ -1,0 +1,7 @@
+SAM.gov UEI registration expires 12 months after activation. Not 13. Not "around a year". Twelve.
+
+If your UEI lapses, drawdowns stop. New federal awards cannot be made to your org until you renew. The renewal can take a week or more if validation flags anything.
+
+The fix is calendar-cheap. Put the expiration date on a shared calendar with a 60-day lead reminder. Assign it to a specific person, not a role.
+
+Federal grants are not graded on intent. They are graded on documents that exist on a date.

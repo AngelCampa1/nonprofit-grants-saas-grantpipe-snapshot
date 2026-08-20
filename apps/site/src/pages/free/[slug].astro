@@ -1,0 +1,83 @@
+---
+export const prerender = true;
+import "../../styles/global.css"
+import { getCollection, render } from "astro:content"
+import { getContentEntrySlug } from "@/lib/content-entry-slug"
+import LeadMagnetPage from "@grantpipe/ui/site/components/lead-magnet-page.astro"
+import { siteConfig } from "@/config/site"
+import { buildContentMap } from "@/lib/page-helpers"
+import { resolveRelatedPageLinks } from "@grantpipe/ui/site/lib/related-page-resolver"
+import { getVideoByLeadMagnet, type LeadMagnetSlug } from "@grantpipe/shared"
+import VideoEmbed from "@/components/video-embed.astro"
+import { videoSchema } from "@/lib/video-schema"
+
+export async function getStaticPaths() {
+  const entries = await getCollection("lead-magnets")
+  return entries
+    .filter((entry) => getContentEntrySlug(entry) !== "nonprofit-crm-cost-calculator")
+    .map((entry) => ({
+      params: { slug: getContentEntrySlug(entry) },
+      props: { entry },
+    }))
+}
+
+const { entry } = Astro.props
+const { Content } = await render(entry)
+const leadMagnetEntry = { ...entry, slug: getContentEntrySlug(entry) }
+const magnetVideo = getVideoByLeadMagnet(leadMagnetEntry.slug as LeadMagnetSlug)
+const [
+  alternatives,
+  comparisons,
+  pricingBreakdowns,
+  listicles,
+  guides,
+  statePages,
+  cityPages,
+  verticalPages,
+  leadMagnets,
+  faqHubs,
+  benchmarks,
+] = await Promise.all([
+  getCollection("alternatives"),
+  getCollection("comparisons"),
+  getCollection("pricing-breakdowns"),
+  getCollection("listicles"),
+  getCollection("guides"),
+  getCollection("state-pages"),
+  getCollection("city-pages"),
+  getCollection("vertical-pages"),
+  getCollection("lead-magnets"),
+  getCollection("faq-hubs"),
+  getCollection("benchmarks"),
+])
+const contentMap = buildContentMap({
+  alternatives,
+  comparisons,
+  pricingBreakdowns,
+  listicles,
+  guides,
+  statePages,
+  cityPages,
+  verticalPages,
+  leadMagnets,
+  faqHubs,
+  benchmarks,
+})
+const relatedPageLinks = resolveRelatedPageLinks(entry.data.relatedPages, contentMap)
+---
+<LeadMagnetPage entry={leadMagnetEntry} config={siteConfig} relatedPages={relatedPageLinks}>
+  <Content />
+  {magnetVideo && (
+    <section class="mt-8" data-section="contextual-video">
+      <p class="mb-4 text-sm leading-6 text-[color:var(--color-neutral-700)]">
+        Want to see it built? Watch the walkthrough.
+      </p>
+      <VideoEmbed
+        youtubeId={magnetVideo.youtubeId}
+        iframeTitle={magnetVideo.title}
+        playLabel={`Play: ${magnetVideo.shortTitle}`}
+      />
+      <script type="application/ld+json" set:html={JSON.stringify(videoSchema(magnetVideo))} />
+    </section>
+  )}
+</LeadMagnetPage>

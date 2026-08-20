@@ -1,0 +1,109 @@
+---
+import SchemaMarkup from "../seo/schema-markup.astro"
+import { buildItemListSchema } from "../lib/schema-builders"
+import type { BuyerStage, RelatedPage } from "../types"
+import { stageHeading } from "../lib/stage-heading"
+
+interface Props {
+  pages: RelatedPage[]
+  heading?: string
+  stage?: BuyerStage
+  maxItems?: number
+  variant?: "default" | "editorial" | "compact"
+}
+
+const {
+  pages,
+  heading,
+  stage,
+  maxItems = 6,
+  variant = "default",
+} = Astro.props
+
+const displayPages = pages.slice(0, maxItems)
+const resolvedHeading = heading ?? stageHeading(stage)
+const itemListSchema = displayPages.length > 0
+  ? buildItemListSchema(displayPages.map((p) => ({
+      name: p.title,
+      url: p.href,
+      description: p.description,
+    })))
+  : null
+---
+
+{displayPages.length > 0 && (
+  <section
+    class:list={[
+      variant === "compact"
+        ? "mx-auto max-w-3xl px-4 py-8"
+        : "related-pages mx-auto max-w-4xl px-4 py-[var(--section-py-sm)]",
+    ]}
+    aria-labelledby="related-pages-heading"
+  >
+    <div class={variant === "compact" ? "max-w-[var(--content-measure-wide)]" : ""}>
+      {variant === "editorial" && <p class="editorial-kicker">Keep reading</p>}
+      <h2
+        id="related-pages-heading"
+        class:list={[
+          "font-heading font-bold text-brand-text",
+          variant === "compact"
+            ? "mb-4 text-[length:var(--text-body-lg)]"
+            : "mb-[var(--component-gap)] mt-4 text-[length:var(--text-subheading)]",
+        ]}
+      >
+        {resolvedHeading}
+      </h2>
+    </div>
+
+    {variant === "compact" ? (
+      <ul class="grid gap-[var(--component-gap-sm)] list-none p-0">
+        {displayPages.map((page) => (
+          <li>
+            <a
+              href={page.href}
+              class="group block border-b border-neutral-200 py-3 no-underline transition-[color,transform] duration-[var(--transition-base)] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary-500 focus-visible:ring-offset-2 focus-visible:rounded-xs"
+            >
+              <div class="flex items-center justify-between gap-2">
+                <p class="font-heading font-semibold text-brand-text">{page.title}</p>
+                <span class="text-brand-muted transition-transform duration-[var(--transition-fast)] group-hover:translate-x-1" aria-hidden="true">&rarr;</span>
+              </div>
+              {page.description && (
+                <p class="mt-2 line-clamp-2 text-[length:var(--text-caption)] leading-6 text-brand-muted">
+                  {page.description}
+                </p>
+              )}
+            </a>
+          </li>
+        ))}
+      </ul>
+    ) : (
+      <ul class="grid gap-4 md:grid-cols-2 list-none p-0">
+        {displayPages.map((page, index) => (
+          <li>
+            <a
+              href={page.href}
+              class="gp-card-base interactive related-page-item group flex h-full gap-4 no-underline"
+            >
+              <span class="mt-0.5 text-[length:var(--text-caption)] font-semibold uppercase tracking-[0.18em] text-brand-muted">
+                {String(index + 1).padStart(2, "0")}
+              </span>
+              <div class="min-w-0 flex-1">
+                <div class="flex items-center justify-between gap-2">
+                  <p class="font-heading font-semibold text-brand-primary">{page.title}</p>
+                  <span class="text-brand-muted transition-transform duration-[var(--transition-fast)] group-hover:translate-x-1" aria-hidden="true">&rarr;</span>
+                </div>
+                {page.description && (
+                  <p class="mt-2 line-clamp-2 text-[length:var(--text-caption)] text-brand-muted">
+                    {page.description}
+                  </p>
+                )}
+              </div>
+            </a>
+          </li>
+        ))}
+      </ul>
+    )}
+
+    {itemListSchema && <SchemaMarkup schemas={[itemListSchema]} />}
+  </section>
+)}

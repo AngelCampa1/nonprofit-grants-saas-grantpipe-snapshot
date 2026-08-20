@@ -1,0 +1,122 @@
+---
+import PaidSearchLandingPage from "@/components/paid-search-landing-page.astro";
+import type { PaidLandingPageData } from "@/components/paid-search-landing-page.astro";
+
+const page: PaidLandingPageData = {
+  slug: "grant-reporting-software",
+  title: "Grant Reporting Software for Nonprofits | GrantPipe",
+  description:
+    "Manage SF-425, SEFA, drawdown reconciliation, funder reports, and reporting calendars from one post-award GrantPipe workspace.",
+  kicker: "Grant reporting software",
+  headline: "Grant reporting software for SF-425, SEFA, and drawdown reconciliation.",
+  subhead:
+    "Stop assembling SF-425 inputs the night before they're due. Track reporting calendars, SEFA prep, drawdown reconciliation, and the evidence trail in one workspace.",
+  primaryCta: "Start 1-month free trial",
+  exitLeadMagnet: {
+    slug: "sf-425-reporting-checklist",
+    title: "SF-425 Reporting Checklist",
+    description:
+      "Walk through the SF-425 line by line with data sources, common mistakes, and a pre-submission reconciliation checklist.",
+  },
+  trust: "No credit card required. Start with one award, one report, and the next due date.",
+  proofCard: {
+    label: "Reporting calendar",
+    status: "Current",
+    rows: [
+      { label: "Next SF-425", value: "Jul 30" },
+      { label: "SEFA prep", value: "In progress" },
+      { label: "Drawdown check", value: "$179,803" },
+      { label: "Evidence attached", value: "12 files" },
+    ],
+    progressLabel: "Report preparation",
+    progress: "72%",
+  },
+  painsTitle: "Reports are late or fragile when every input lives in a different system.",
+  pains: [
+    "SF-425 inputs are assembled from accounting exports and grant spreadsheets.",
+    "SEFA preparation starts after year-end instead of during award activity.",
+    "Drawdowns are reconciled separately from expenditures and cash on hand.",
+    "Narrative and financial evidence are stored in disconnected folders.",
+    "Calendar reminders do not show whether the report is actually ready.",
+  ],
+  workflowTitle: "Prepare reports from the award record, not from scratch.",
+  workflowSteps: [
+    {
+      icon: "calendar",
+      heading: "Calendar the report",
+      copy: "Track due date, owner, report type, period covered, and dependencies for each funder requirement.",
+    },
+    {
+      icon: "report",
+      heading: "Assemble inputs",
+      copy: "Keep expenditures, drawdowns, restricted funds, and required evidence linked to the report record.",
+    },
+    {
+      icon: "check",
+      heading: "Submit and retain",
+      copy: "Record submission status, attach final reports, and preserve the evidence trail for closeout and audit.",
+    },
+  ],
+  featureTitle: "Reporting controls for federal and foundation awards.",
+  features: [
+    {
+      icon: "report",
+      heading: "SF-425 support",
+      copy: "Organize cash, expenditure, recipient share, program income, and indirect expense inputs for federal financial reports.",
+    },
+    {
+      icon: "balance",
+      heading: "Drawdown reconciliation",
+      copy: "Compare drawn, expended, remaining, and cash timing for active awards before reports are submitted.",
+    },
+    {
+      icon: "ledger",
+      heading: "SEFA preparation",
+      copy: "Keep federal award identifiers, periods, expenditures, and support organized throughout the year.",
+    },
+  ],
+  proofTitle: "Grant reporting quality depends on the record you keep all year.",
+  proofPoints: [
+    {
+      value: "SF-425",
+      label: "requires cash, expenditure, recipient share, program income, and indirect expense details for federal awards.",
+      source: "Federal Financial Report, SF-425 structure",
+    },
+    {
+      value: "SEFA",
+      label: "preparation is cleaner when federal award identifiers and expenditures stay organized before audit season.",
+      source: "Single Audit reporting workflow",
+    },
+    {
+      value: "30 days",
+      label: "of report lead time helps teams reconcile drawdowns, expenses, and evidence before the due date.",
+      source: "GrantPipe reporting calendar workflow",
+    },
+  ],
+  trustLabels: ["SF-425 inputs", "SEFA support", "Drawdown reconciliation"],
+  faqTitle: "Answers for report-heavy grant teams.",
+  faqs: [
+    {
+      q: "Can we use this for foundation reporting?",
+      a: "Yes. The calendar, evidence, and report status model works for foundation, state, local, and federal funders.",
+    },
+    {
+      q: "Can GrantPipe track programmatic reports too?",
+      a: "Yes. Financial and narrative reporting obligations can share the same award calendar, owners, status, documents, and evidence trail.",
+    },
+    {
+      q: "How does drawdown reconciliation work?",
+      a: "GrantPipe keeps drawn, expended, remaining, and evidence context together so teams can spot timing issues before submission.",
+    },
+    {
+      q: "Will GrantPipe file the SF-425 for us?",
+      a: "No. GrantPipe organizes the award data and report inputs so your team can review and submit through the required funder system.",
+    },
+  ],
+  finalTitle: "Pick one report. Have its inputs, drawdowns, and evidence in one place by Friday.",
+  finalBody:
+    "Start with the next SF-425, SEFA prep item, or foundation report. GrantPipe keeps the inputs and evidence assembled so the next cycle is a review, not a scramble.",
+};
+---
+
+<PaidSearchLandingPage page={page} />

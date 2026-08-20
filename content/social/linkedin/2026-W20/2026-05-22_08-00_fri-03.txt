@@ -1,0 +1,9 @@
+Five figures and up. Salesforce Nonprofit Cloud implementation quotes for a $3M nonprofit frequently land in that range, before any annual license fee.
+
+The pitch is "configure the CRM to track grants too." The reality is custom objects, custom fields, custom validation rules, a partner statement of work, and a year of admin time someone has to own.
+
+What you actually need is a place where a $250,000 federal pass-through award has its own record, with the period of performance, the indirect cost rate, the FFR cadence, and a document trail. Plus a place where the program officer's contact information sits next to it.
+
+A donor CRM was built for major gifts and annual fund moves management. Asking it to also be a grant management system is a five-figure ask, every year, in time and consulting fees.
+
+That hand-off problem is what we set out to remove.

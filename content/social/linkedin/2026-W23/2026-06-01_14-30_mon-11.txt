@@ -1,0 +1,9 @@
+The donor record and the grant record should reconcile before year-end.
+
+We made a Donor-to-Grant Reconciliation Template for the messy middle:
+
+- CRM-only records
+- grants-only records
+- amount differences
+- restriction coding differences
+- resolution notes tied to source documents

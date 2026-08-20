@@ -1,0 +1,5 @@
+An audit tab should answer one question fast:
+
+Can a reviewer find the support without asking the same staff member twice?
+
+If the file only works for the person who built it, the file is not organized enough yet.

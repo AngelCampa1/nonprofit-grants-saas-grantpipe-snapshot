@@ -1,0 +1,11 @@
+Picture this:
+
+The grant came through the donor CRM as a $250,000 contact record. The funder is technically a contact. The award is technically a gift. The check is technically a payment.
+
+By the time Finance saw it, the period of performance had already started, the budget categories were not entered anywhere, and nobody had recorded that the funder required a quarterly progress report.
+
+Donor CRMs were built for individual giving. Grants are a different shape of object. They have budgets, periods, allowable cost categories, and reporting cadences that a contact record does not have a place to hold.
+
+You can force the shape. Custom fields, tags, related opportunities. It works until an audit asks for the evidence trail and the answer is "I think it is in the notes field."
+
+The fix is not a better CRM. The fix is acknowledging that grants and funds are separate entities and giving them their own home.

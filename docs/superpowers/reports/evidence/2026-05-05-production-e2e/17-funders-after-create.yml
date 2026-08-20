@@ -1,0 +1,49 @@
+- generic [ref=e3]:
+    - generic [ref=e13]:
+        - banner [ref=e14]:
+            - button "Open navigation" [ref=e16]:
+                - img
+            - generic [ref=e17]:
+                - link "Add billing, trial ends in 30 days" [ref=e18] [cursor=pointer]:
+                    - /url: /app/settings#billing
+                    - img [ref=e19]
+                    - generic [ref=e22]: Trial
+                    - generic [ref=e23]: 30d
+                - button "Open command palette" [ref=e24]:
+                    - img
+                - link "Notifications" [ref=e25] [cursor=pointer]:
+                    - /url: /app/notifications
+                    - img
+                - button "Switch to dark theme" [ref=e26]:
+                    - img
+        - main [ref=e28]:
+            - generic [ref=e30]:
+                - generic [ref=e31]:
+                    - paragraph [ref=e32]: Funder workspace
+                    - generic [ref=e33]:
+                        - heading "Funders" [level=1] [ref=e36]
+                        - button "Add funder" [active] [ref=e38]
+                - generic [ref=e40]:
+                    - textbox "Search funders..." [ref=e41]
+                    - combobox "Filter funder type" [ref=e42]:
+                        - generic: All funder types
+                        - img
+                - table [ref=e46]:
+                    - rowgroup [ref=e47]:
+                        - row "Sort by name Sort by type" [ref=e48]:
+                            - columnheader "Sort by name" [ref=e49]:
+                                - button "Sort by name" [ref=e50]:
+                                    - text: Name
+                                    - img [ref=e51]
+                            - columnheader "Sort by type" [ref=e54]:
+                                - button "Sort by type" [ref=e55]:
+                                    - text: Type
+                                    - img [ref=e56]
+                    - rowgroup [ref=e59]:
+                        - row "Prod E2E Funder 160129 Foundation" [ref=e89]:
+                            - cell "Prod E2E Funder 160129" [ref=e90]:
+                                - link "Prod E2E Funder 160129" [ref=e91] [cursor=pointer]:
+                                    - /url: /app/funders/d870d4c9-09cf-44df-8467-5f07ce4903d3
+                            - cell "Foundation" [ref=e92]:
+                                - generic [ref=e93]: Foundation
+    - region "Notifications alt+T"

@@ -1,0 +1,27 @@
+- generic [ref=e3]:
+    - generic [ref=e13]:
+        - banner [ref=e14]:
+            - button "Open navigation" [ref=e16]:
+                - img
+            - generic [ref=e17]:
+                - link "Add billing, trial ends in 30 days" [ref=e18] [cursor=pointer]:
+                    - /url: /app/settings#billing
+                    - img [ref=e19]
+                    - generic [ref=e22]: Trial
+                    - generic [ref=e23]: 30d
+                - button "Open command palette" [ref=e24]:
+                    - img
+                - link "Notifications" [ref=e25] [cursor=pointer]:
+                    - /url: /app/notifications
+                    - img
+                - button "Switch to dark theme" [ref=e26]:
+                    - img
+        - main [ref=e28]:
+            - generic [ref=e30]:
+                - generic [ref=e31]:
+                    - heading "Evidence bundles" [level=1] [ref=e36]
+                    - button "New bundle" [ref=e37]
+                - alert [ref=e38]:
+                    - paragraph [ref=e40]: Unable to load bundles.
+                    - generic [ref=e41]: "Failed to load bundles: 402"
+    - region "Notifications alt+T"

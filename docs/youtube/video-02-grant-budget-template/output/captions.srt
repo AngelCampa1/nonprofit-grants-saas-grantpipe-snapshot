@@ -1,0 +1,759 @@
+1
+00:00:00,000 --> 00:00:04,1000
+Funders reject more budgets for one quiet reason than for asking for too much money.
+
+2
+00:00:04,1000 --> 00:00:07,024
+The numbers don't match the story.
+
+3
+00:00:07,024 --> 00:00:13,273
+Your proposal promises one thing, your budget adds up to another, and the reviewer notices before you do.
+
+4
+00:00:13,273 --> 00:00:16,785
+Stick around and I'll hand you the finished template, free.
+
+5
+00:00:16,785 --> 00:00:20,773
+But first, let's build a grant budget that actually holds together.
+
+6
+00:00:20,773 --> 00:00:25,059
+If you've ever stared at a blank budget form the night before a deadline
+
+7
+00:00:25,059 --> 00:00:29,820
+padding round numbers until the total looked about right, this video is for you.
+
+8
+00:00:29,820 --> 00:00:33,034
+A grant budget isn't a wish list and it isn't a guess.
+
+9
+00:00:33,034 --> 00:00:37,439
+It's a financial argument, and every line is a claim a reviewer can check.
+
+10
+00:00:37,439 --> 00:00:42,082
+So over the next eleven minutes, let's build a grant budget from a blank sheet
+
+11
+00:00:42,082 --> 00:00:46,308
+the way a reviewer reads it and the way an auditor will check it later.
+
+12
+00:00:46,308 --> 00:00:48,688
+The finished template is genuinely free.
+
+13
+00:00:48,688 --> 00:00:55,176
+Drop your email at the link in the description and I'll send you both the Google Sheets and the Excel version
+
+14
+00:00:55,176 --> 00:00:58,748
+with every line and the budget narrative tab already set up.
+
+15
+00:00:58,748 --> 00:01:00,890
+Quick note on where I'm coming from.
+
+16
+00:01:00,890 --> 00:01:02,855
+I build grant compliance software
+
+17
+00:01:02,855 --> 00:01:06,962
+so I'm going to show you the structure that survives a federal review
+
+18
+00:01:06,962 --> 00:01:09,223
+not just the one that fills the boxes.
+
+19
+00:01:09,223 --> 00:01:12,438
+Everything here works in plain Google Sheets or Excel.
+
+20
+00:01:12,438 --> 00:01:13,747
+No add-ons, no macros.
+
+21
+00:01:13,747 --> 00:01:16,266
+Picture the budget most people hand in.
+
+22
+00:01:16,266 --> 00:01:18,203
+A column of big round numbers.
+
+23
+00:01:18,203 --> 00:01:22,659
+Fifty thousand for staff, ten thousand for supplies, five for travel.
+
+24
+00:01:22,659 --> 00:01:25,694
+It looks clean, and that's exactly the problem.
+
+25
+00:01:25,694 --> 00:01:29,956
+Round numbers tell a reviewer you estimated instead of calculated.
+
+26
+00:01:29,956 --> 00:01:33,120
+A grant budget fails in three predictable places.
+
+27
+00:01:33,120 --> 00:01:36,220
+First, the math doesn't tie back to the proposal
+
+28
+00:01:36,220 --> 00:01:41,192
+so the activities you described don't line up with the dollars you asked for.
+
+29
+00:01:41,192 --> 00:01:47,908
+Second, there's no indirect cost line, so you're quietly funding your own overhead out of program money.
+
+30
+00:01:47,908 --> 00:01:53,591
+Third, there's no narrative, no sentence anywhere explaining how you got to each number.
+
+31
+00:01:53,591 --> 00:01:56,626
+By the end of this, we'll have fixed all three.
+
+32
+00:01:56,626 --> 00:01:57,401
+Let's build.
+
+33
+00:01:57,401 --> 00:01:58,531
+Open a new sheet.
+
+34
+00:01:58,531 --> 00:02:02,384
+Before you type a single dollar, you set up the categories
+
+35
+00:02:02,384 --> 00:02:06,570
+because funders expect the same ones in roughly the same order.
+
+36
+00:02:06,570 --> 00:02:10,224
+Get the skeleton right and the rest is just filling in.
+
+37
+00:02:10,224 --> 00:02:15,872
+These are the standard federal cost categories, and most foundations follow them too.
+
+38
+00:02:15,872 --> 00:02:16,536
+Personnel.
+
+39
+00:02:16,536 --> 00:02:17,599
+Fringe benefits.
+
+40
+00:02:17,599 --> 00:02:18,064
+Travel.
+
+41
+00:02:18,064 --> 00:02:18,729
+Equipment.
+
+42
+00:02:18,729 --> 00:02:19,327
+Supplies.
+
+43
+00:02:19,327 --> 00:02:20,124
+Contractual.
+
+44
+00:02:20,124 --> 00:02:20,523
+Other.
+
+45
+00:02:20,523 --> 00:02:23,047
+And then indirect costs at the bottom.
+
+46
+00:02:23,047 --> 00:02:28,761
+The reason this order matters is that a reviewer reads dozens of budgets in a sitting.
+
+47
+00:02:28,761 --> 00:02:31,951
+When yours uses the categories they already know
+
+48
+00:02:31,951 --> 00:02:36,801
+they can find what they're looking for and trust that you know the rules.
+
+49
+00:02:36,801 --> 00:02:44,043
+A budget organized your own clever way just makes them work harder, and a tired reviewer is not on your side.
+
+50
+00:02:44,043 --> 00:02:46,501
+Down the left, list those categories.
+
+51
+00:02:46,501 --> 00:02:51,750
+Across the top, three columns to start: a description, the math, and the total.
+
+52
+00:02:51,750 --> 00:02:57,331
+The math column is the one almost everyone skips, and it's the one that earns trust.
+
+53
+00:02:57,331 --> 00:02:59,723
+We'll come back to it on every line.
+
+54
+00:02:59,723 --> 00:03:04,979
+Personnel is almost always your largest category, and it's where reviewers look first.
+
+55
+00:03:04,979 --> 00:03:07,485
+So we calculate it, we never estimate it.
+
+56
+00:03:07,485 --> 00:03:11,886
+For each person on the grant, you need three things: their annual salary
+
+57
+00:03:11,886 --> 00:03:16,837
+the percentage of their time the grant pays for, and the math that connects them.
+
+58
+00:03:16,837 --> 00:03:23,315
+Say your program director earns eighty thousand a year and spends a quarter of their time on this project.
+
+59
+00:03:23,315 --> 00:03:28,816
+That's eighty thousand times twenty-five percent, so twenty thousand dollars to the grant.
+
+60
+00:03:28,816 --> 00:03:34,011
+Write that math in the description, the salary and the percent of effort, every time.
+
+61
+00:03:34,011 --> 00:03:36,945
+The percent of effort is a real compliance term.
+
+62
+00:03:36,945 --> 00:03:41,345
+It's the share of a person's total working time that this award pays for
+
+63
+00:03:41,345 --> 00:03:45,502
+and on a federal grant you'll later have to certify it was accurate.
+
+64
+00:03:45,502 --> 00:03:51,552
+So the number you put here is a promise you're making about how someone actually spends their week.
+
+65
+00:03:51,552 --> 00:03:54,242
+Right under personnel comes fringe benefits.
+
+66
+00:03:54,242 --> 00:04:00,965
+Fringe is the real cost of employing someone beyond their salary: payroll taxes, health insurance, retirement.
+
+67
+00:04:00,965 --> 00:04:04,815
+You express it as a percentage of the salaries you're charging.
+
+68
+00:04:04,815 --> 00:04:07,994
+If your organization's fringe rate is thirty percent
+
+69
+00:04:07,994 --> 00:04:13,311
+and you charged twenty thousand in salary to this grant, that's six thousand in fringe.
+
+70
+00:04:13,311 --> 00:04:16,795
+Don't fold benefits into salary and don't leave them out.
+
+71
+00:04:16,795 --> 00:04:17,956
+Both are red flags.
+
+72
+00:04:17,956 --> 00:04:22,479
+Your finance person knows your real fringe rate, so use that, not a guess.
+
+73
+00:04:22,479 --> 00:04:27,165
+Now the rest of your direct costs, the things you buy to run the program.
+
+74
+00:04:27,165 --> 00:04:30,054
+Travel, supplies, contractual, and equipment.
+
+75
+00:04:30,054 --> 00:04:35,511
+The trick on every one of these is the same: break it into units, never one lump sum.
+
+76
+00:04:35,511 --> 00:04:37,822
+Travel isn't "five thousand dollars.
+
+77
+00:04:37,822 --> 00:04:44,370
+" It's three staff, to one conference, at a known airfare, plus hotel nights at a real per-night rate.
+
+78
+00:04:44,370 --> 00:04:49,570
+Supplies is the number of laptops times the price, not "supplies, eight thousand.
+
+79
+00:04:49,570 --> 00:04:54,963
+" Contractual is for the consultants and subcontractors doing defined pieces of work
+
+80
+00:04:54,963 --> 00:04:56,825
+each with a rate and a scope.
+
+81
+00:04:56,825 --> 00:05:00,420
+When you show the units, a reviewer can sanity-check you
+
+82
+00:05:00,420 --> 00:05:04,593
+and passing that check is how you build credibility line by line.
+
+83
+00:05:04,593 --> 00:05:09,087
+One distinction trips people up constantly: equipment versus supplies.
+
+84
+00:05:09,087 --> 00:05:10,563
+Under the federal rules
+
+85
+00:05:10,563 --> 00:05:16,855
+equipment is anything that costs ten thousand dollars or more per unit and lasts more than a year.
+
+86
+00:05:16,855 --> 00:05:19,166
+Below that threshold, it's a supply.
+
+87
+00:05:19,166 --> 00:05:24,558
+This matters more than it sounds, because in a minute we'll calculate indirect costs
+
+88
+00:05:24,558 --> 00:05:28,410
+and equipment gets treated differently from everything else.
+
+89
+00:05:28,410 --> 00:05:31,299
+So a three-hundred-dollar tablet is a supply.
+
+90
+00:05:31,299 --> 00:05:34,894
+A twelve-thousand-dollar piece of lab gear is equipment.
+
+91
+00:05:34,894 --> 00:05:39,709
+Put each in the right row now and the indirect math works itself out later.
+
+92
+00:05:39,709 --> 00:05:45,066
+Here's the line most nonprofits leave money on the table by skipping: indirect costs.
+
+93
+00:05:45,066 --> 00:05:50,234
+These are your real costs of operating that you can't tie to one specific program.
+
+94
+00:05:50,234 --> 00:05:52,755
+Rent, utilities, accounting, the lights.
+
+95
+00:05:52,755 --> 00:05:56,285
+The grant should help pay for them, and if you don't ask
+
+96
+00:05:56,285 --> 00:05:59,625
+you're subsidizing the funder out of your own pocket.
+
+97
+00:05:59,625 --> 00:06:03,974
+If you've never negotiated a formal indirect rate with the government
+
+98
+00:06:03,974 --> 00:06:07,503
+you're allowed to use what's called the de minimis rate.
+
+99
+00:06:07,503 --> 00:06:14,562
+And here's a number a lot of older videos still get wrong: as of the 2024 update to the federal Uniform Guidance
+
+100
+00:06:14,562 --> 00:06:18,659
+that de minimis rate went up from ten percent to fifteen percent.
+
+101
+00:06:18,659 --> 00:06:23,071
+You apply it to something called modified total direct costs, or MTDC.
+
+102
+00:06:23,071 --> 00:06:25,088
+That's most of your direct costs
+
+103
+00:06:25,088 --> 00:06:31,768
+but it deliberately leaves out equipment and the part of any single subaward above fifty thousand dollars.
+
+104
+00:06:31,768 --> 00:06:36,054
+So you total your eligible direct costs, multiply by fifteen percent
+
+105
+00:06:36,054 --> 00:06:39,962
+and that's a legitimate indirect line no funder can argue with
+
+106
+00:06:39,962 --> 00:06:42,546
+because it's written into the regulation.
+
+107
+00:06:42,546 --> 00:06:45,760
+I know this is the driest two minutes of the video.
+
+108
+00:06:45,760 --> 00:06:52,126
+It's also the part that quietly puts thousands of dollars back into your organization on every grant.
+
+109
+00:06:52,126 --> 00:06:57,357
+The template does this calculation for you, so you set your rate once and it flows.
+
+110
+00:06:57,357 --> 00:07:00,911
+Some grants ask you to bring your own money to the table.
+
+111
+00:07:00,911 --> 00:07:02,781
+That's cost sharing, or match.
+
+112
+00:07:02,781 --> 00:07:08,517
+The funder covers part, you cover the rest, and you have to show where your part comes from.
+
+113
+00:07:08,517 --> 00:07:10,200
+Match comes in two flavors.
+
+114
+00:07:10,200 --> 00:07:14,066
+Cash match is real dollars from your budget or another funder.
+
+115
+00:07:14,066 --> 00:07:18,804
+In-kind match is the value of things donated to the project: volunteer hours
+
+116
+00:07:18,804 --> 00:07:20,862
+donated space, pro bono services.
+
+117
+00:07:20,862 --> 00:07:24,104
+Both count, but here's the rule that catches people.
+
+118
+00:07:24,104 --> 00:07:26,535
+If you commit to a match in your budget
+
+119
+00:07:26,535 --> 00:07:30,089
+you are legally on the hook to deliver it and document it
+
+120
+00:07:30,089 --> 00:07:33,269
+the same way you document the grant's own spending.
+
+121
+00:07:33,269 --> 00:07:36,511
+So only put down match you can actually prove later.
+
+122
+00:07:36,511 --> 00:07:40,252
+And one more thing worth knowing: on federal research grants
+
+123
+00:07:40,252 --> 00:07:46,985
+a funder can't use voluntary match as a scoring factor unless a statute and the funding notice both allow it
+
+124
+00:07:46,985 --> 00:07:49,853
+so don't pad your match hoping to look better.
+
+125
+00:07:49,853 --> 00:07:53,781
+Match what's required, document what you match, and stop there.
+
+126
+00:07:53,781 --> 00:07:58,880
+Now the piece that wins or loses more budgets than the math: the budget narrative.
+
+127
+00:07:58,880 --> 00:08:01,181
+Also called the budget justification.
+
+128
+00:08:01,181 --> 00:08:07,648
+It's a short written explanation, line by line, of how you got each number and why the project needs it.
+
+129
+00:08:07,648 --> 00:08:09,762
+Most people treat it as paperwork.
+
+130
+00:08:09,762 --> 00:08:12,125
+Reviewers treat it as the whole point.
+
+131
+00:08:12,125 --> 00:08:13,306
+The rule is simple.
+
+132
+00:08:13,306 --> 00:08:16,042
+Every number in your budget gets a sentence.
+
+133
+00:08:16,042 --> 00:08:17,784
+Not a paragraph, a sentence.
+
+134
+00:08:17,784 --> 00:08:22,882
+"Program director at twenty-five percent effort to supervise curriculum and staff.
+
+135
+00:08:22,882 --> 00:08:28,044
+" "Three round-trip flights to the national convening at four hundred dollars each.
+
+136
+00:08:28,044 --> 00:08:32,707
+" "Fifteen percent de minimis indirect rate on modified total direct costs.
+
+137
+00:08:32,707 --> 00:08:39,174
+" When a reviewer reads a number and immediately finds the sentence that explains it, two things happen.
+
+138
+00:08:39,174 --> 00:08:42,035
+They believe the number, and they believe you.
+
+139
+00:08:42,035 --> 00:08:47,382
+A budget without a narrative is just a reviewer's list of questions you didn't answer.
+
+140
+00:08:47,382 --> 00:08:51,673
+The template gives you a narrative tab already structured by category
+
+141
+00:08:51,673 --> 00:08:54,160
+so you're never staring at a blank page.
+
+142
+00:08:54,160 --> 00:08:59,819
+You fill in one sentence per line as you build the budget, not at midnight before it's due.
+
+143
+00:08:59,819 --> 00:09:03,991
+Two compliance guardrails before we talk about where this breaks.
+
+144
+00:09:03,991 --> 00:09:07,072
+The first is allowable versus unallowable costs.
+
+145
+00:09:07,072 --> 00:09:12,143
+Federal rules are explicit that some things simply cannot be charged to a grant
+
+146
+00:09:12,143 --> 00:09:14,390
+no matter how reasonable they feel.
+
+147
+00:09:14,390 --> 00:09:14,904
+Alcohol.
+
+148
+00:09:14,904 --> 00:09:15,481
+Lobbying.
+
+149
+00:09:15,481 --> 00:09:16,637
+Fundraising costs.
+
+150
+00:09:16,637 --> 00:09:17,856
+Most entertainment.
+
+151
+00:09:17,856 --> 00:09:22,414
+If it's on the unallowable list, it doesn't go in the budget, full stop
+
+152
+00:09:22,414 --> 00:09:27,806
+and slipping one in is the kind of thing that turns a routine review into a finding.
+
+153
+00:09:27,806 --> 00:09:30,373
+The second is the period of performance.
+
+154
+00:09:30,373 --> 00:09:35,380
+That's the window the grant actually covers, the official start and end dates.
+
+155
+00:09:35,380 --> 00:09:40,387
+Money you spend before the start date or after the end date can get disallowed
+
+156
+00:09:40,387 --> 00:09:43,853
+even when the expense itself was perfectly reasonable.
+
+157
+00:09:43,853 --> 00:09:48,347
+So your budget should only contain costs that fall inside that window.
+
+158
+00:09:48,347 --> 00:09:53,225
+It sounds obvious, and it's one of the most common things that gets flagged.
+
+159
+00:09:53,225 --> 00:09:59,227
+I build grant software for a living, so let me be honest about where this template stops working.
+
+160
+00:09:59,227 --> 00:10:01,146
+Because at some point, it will.
+
+161
+00:10:01,146 --> 00:10:04,611
+A budget template is built for one moment: the proposal.
+
+162
+00:10:04,611 --> 00:10:05,601
+It's a snapshot.
+
+163
+00:10:05,601 --> 00:10:12,408
+The trouble starts the day the grant is awarded and the budget has to become a living thing you track against.
+
+164
+00:10:12,408 --> 00:10:14,822
+The first crack is budget versus actual
+
+165
+00:10:14,822 --> 00:10:20,391
+keeping spent amounts current against this plan across a whole year, by category, by hand.
+
+166
+00:10:20,391 --> 00:10:26,208
+The second is when one cost has to split across two grants, and no clean formula allocates it.
+
+167
+00:10:26,208 --> 00:10:27,755
+The third is just volume.
+
+168
+00:10:27,755 --> 00:10:32,272
+A few grants, each with its own budget, its own period, its own narrative
+
+169
+00:10:32,272 --> 00:10:35,985
+and the spreadsheet quietly becomes someone's full-time job.
+
+170
+00:10:35,985 --> 00:10:38,151
+None of that is you doing it wrong.
+
+171
+00:10:38,151 --> 00:10:42,173
+It's a static template doing exactly what a static template does.
+
+172
+00:10:42,173 --> 00:10:47,766
+When you hit that wall, the next step is software that keeps the budget alive after the award.
+
+173
+00:10:47,766 --> 00:10:50,027
+Spent tracked against plan on its own.
+
+174
+00:10:50,027 --> 00:10:53,240
+The indirect rate applied the same way on every grant.
+
+175
+00:10:53,240 --> 00:10:55,858
+Restricted funds kept separate by the system
+
+176
+00:10:55,858 --> 00:11:00,499
+so the budget you proposed and the money you actually spend never drift apart.
+
+177
+00:11:00,499 --> 00:11:02,700
+That's exactly why I built GrantPipe.
+
+178
+00:11:02,700 --> 00:11:05,854
+It's the same structure you just put in this template
+
+179
+00:11:05,854 --> 00:11:11,268
+except it keeps itself current instead of resting on whoever remembers to update the sheet.
+
+180
+00:11:11,268 --> 00:11:13,410
+I'm not going to pitch it hard here.
+
+181
+00:11:13,410 --> 00:11:17,456
+The template you just built is the right tool for your next proposal
+
+182
+00:11:17,456 --> 00:11:20,907
+and when it stops being enough, you'll know where to look.
+
+183
+00:11:20,907 --> 00:11:22,633
+So go grab the free template.
+
+184
+00:11:22,633 --> 00:11:29,118
+Drop your email at the link in the description and I'll send you both the Google Sheets and the Excel version
+
+185
+00:11:29,118 --> 00:11:31,855
+with every line item, the indirect calculation
+
+186
+00:11:31,855 --> 00:11:34,414
+and the budget narrative tab already built.
+
+187
+00:11:34,414 --> 00:11:37,210
+If this saved you a future headache, subscribe.
+
+188
+00:11:37,210 --> 00:11:42,089
+The next video breaks down the single audit, in plain English, without the jargon.
+
+189
+00:11:42,089 --> 00:11:45,897
+Build the budget like a reviewer will read it, because one will.
+
+190
+00:11:45,897 --> 00:11:50,300
+The version of you waiting on an award decision will be very glad you did.

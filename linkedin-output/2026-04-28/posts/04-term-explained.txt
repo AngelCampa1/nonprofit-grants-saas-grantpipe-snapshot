@@ -1,0 +1,11 @@
+A grant expenditure report is not a budget-versus-actual report.
+
+The two documents look similar on paper. Both compare what was spent against the approved budget by category. The difference sits in the legal weight. A budget-versus-actual is an internal management tool. A grant expenditure report is a funder-facing certification — signed, submitted, and binding. Signing it carries compliance responsibility for the truth of the numbers.
+
+For federal awards, the standard expenditure report is the SF-425 Federal Financial Report. Under 2 CFR 200.328, financial reports are due no less than annually and within 90 days of the end of the award period. The SF-425 captures cumulative obligations, period-specific expenditures, federal cash on hand, program income, and indirect cost rate.
+
+The reconciliation rule is non-negotiable. Every dollar shown on the SF-425 must trace to the grantee's general ledger by grant fund code for the corresponding period. A discrepancy between the submitted report and the accounting records is an audit finding. Single audits routinely flag this. The funder may refuse to reimburse the questioned costs and require corrective action.
+
+Practical discipline: pull the GL by grant fund code, reconcile to the planned SF-425 numbers, resolve any variance, then submit. Never the other order.
+
+#sf425 #grantreporting #federalgrants #grantcompliance

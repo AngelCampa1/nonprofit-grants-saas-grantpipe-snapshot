@@ -1,0 +1,122 @@
+---
+import PaidSearchLandingPage from "@/components/paid-search-landing-page.astro";
+import type { PaidLandingPageData } from "@/components/paid-search-landing-page.astro";
+
+const page: PaidLandingPageData = {
+  slug: "board-report-in-an-afternoon",
+  title: "Build the Board Report in an Afternoon | GrantPipe",
+  description:
+    "Stop spending a week stitching donor, grant, and fund data before the board meeting. GrantPipe pulls a live revenue view so you walk in ready.",
+  kicker: "Board reports from live data, not a week of copy-paste",
+  headline: "Build the board report in an afternoon.",
+  subhead:
+    "Pull live numbers, not a week of copy and paste. Walk in ready.",
+  primaryCta: "Start 1-month free trial",
+  exitLeadMagnet: {
+    slug: "board-approval-memo-software-template",
+    title: "Board Approval Memo Template",
+    description:
+      "A ready-to-use memo template for presenting new software to your board, with sections for cost, ROI, and migration plan.",
+  },
+  trust: "No credit card required. Built for development directors who own the board deck.",
+  proofCard: {
+    label: "Board report view",
+    status: "Ready to present",
+    rows: [
+      { label: "Revenue sources tied", value: "3" },
+      { label: "Restricted releases shown", value: "6" },
+      { label: "Hours to build", value: "2.5" },
+      { label: "Board meeting", value: "Tomorrow" },
+    ],
+    progressLabel: "Deck complete",
+    progress: "100%",
+  },
+  painsTitle: "The board deck costs you a week every cycle.",
+  pains: [
+    "Donor data, grant data, and fund data live in three places.",
+    "You copy numbers by hand. Something usually breaks.",
+    "The CFO sees different totals and the board questions both of you.",
+    "Late changes mean a last-minute scramble the night before.",
+    "You present stale data and hope no one asks a follow-up question.",
+  ],
+  workflowTitle: "From live data to board-ready view in one afternoon.",
+  workflowSteps: [
+    {
+      icon: "ledger",
+      heading: "Pull donors, grants, and funds",
+      copy: "One workspace holds gifts, awards, and restricted balances together.",
+    },
+    {
+      icon: "report",
+      heading: "Generate the board view",
+      copy: "One report ties revenue sources to programs without hand calculation.",
+    },
+    {
+      icon: "check",
+      heading: "Walk in confident",
+      copy: "Live numbers mean no last-minute scramble and no mismatched totals.",
+    },
+  ],
+  featureTitle: "What makes the board deck fast and defensible.",
+  features: [
+    {
+      icon: "ledger",
+      heading: "Live revenue dashboard",
+      copy: "Gifts, pledges, grants, and restricted releases in one view.",
+    },
+    {
+      icon: "balance",
+      heading: "Restricted fund balances",
+      copy: "See what each fund has left without waiting for a finance packet.",
+    },
+    {
+      icon: "report",
+      heading: "One-click board view",
+      copy: "A clean summary by program that the board can read in a minute.",
+    },
+  ],
+  proofTitle: "A live record cuts board-prep time from days to hours.",
+  proofPoints: [
+    {
+      value: "4 to 8 hrs",
+      label: "is what development directors typically spend reconciling data before each board meeting.",
+      source: "GrantPipe ICP research — development director pain audit",
+    },
+    {
+      value: "3 systems",
+      label: "is the average number of places nonprofit revenue data lives before it lands in the board deck.",
+      source: "GrantPipe ICP research — development director intake",
+    },
+    {
+      value: "1 view",
+      label: "in GrantPipe shows donors, grants, and restricted fund releases by program in one place.",
+      source: "GrantPipe development dashboard",
+    },
+  ],
+  trustLabels: ["Live data, not copy-paste", "Restricted fund aware", "Board-ready in one afternoon"],
+  faqTitle: "Questions from directors who own the board deck.",
+  faqs: [
+    {
+      q: "Will the numbers match what our CFO shows?",
+      a: "GrantPipe reports from the records entered in GrantPipe. It does not connect to your accounting system or post journal entries.",
+    },
+    {
+      q: "How long does setup take?",
+      a: "You can import active grants and donor segments by CSV. You can have a board view the same day. There is no paid setup project.",
+    },
+    {
+      q: "What if I only have a week before the next board meeting?",
+      a: "Start the trial now. Import your top grants and donor segment. Pull the board view before the meeting.",
+    },
+    {
+      q: "Can I share the view with the ED before the board sees it?",
+      a: "Yes. You can share a read-only link with anyone. They can review the numbers before the meeting.",
+    },
+  ],
+  finalTitle: "Import one grant and one donor segment today. Have the board view by Friday.",
+  finalBody:
+    "Start the trial. Add your active grants and major-donor segment. See a live board-ready view in the same session.",
+};
+---
+
+<PaidSearchLandingPage page={page} />

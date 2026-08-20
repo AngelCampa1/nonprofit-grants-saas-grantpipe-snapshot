@@ -1,0 +1,267 @@
+---
+import { youtubeEmbedUrl } from "@grantpipe/shared";
+
+interface Props {
+  youtubeId: string;
+  iframeTitle?: string;
+  posterSrc?: string;
+  posterAlt?: string;
+  playLabel?: string;
+}
+
+const {
+  youtubeId,
+  iframeTitle = "GrantPipe video",
+  posterSrc,
+  posterAlt = "Video preview",
+  playLabel = "Play video",
+} = Astro.props;
+
+// Builds https://www.youtube-nocookie.com/embed/{id}?rel=0&playsinline=1&autoplay=1
+const embedUrl = youtubeEmbedUrl(youtubeId, { autoplay: true });
+---
+
+<div
+  class="gp-explainer-video__media"
+  data-video-embed
+  data-youtube-embed={embedUrl}
+  data-iframe-title={iframeTitle}
+>
+  {
+    posterSrc ? (
+      <img
+        src={posterSrc}
+        alt={posterAlt}
+        loading="lazy"
+        decoding="async"
+        width="1280"
+        height="720"
+      />
+    ) : (
+      <div class="gp-explainer-video__poster" role="img" aria-label={posterAlt}>
+        <div class="gp-explainer-video__poster-chrome" aria-hidden="true">
+          <span></span>
+          <span></span>
+          <span></span>
+          <strong>GrantPipe</strong>
+        </div>
+        <div class="gp-explainer-video__poster-grid" aria-hidden="true">
+          <div>
+            <small>Grant pipeline</small>
+            <strong>Ready</strong>
+          </div>
+          <div>
+            <small>Reports</small>
+            <strong>Queued</strong>
+          </div>
+          <div>
+            <small>Evidence</small>
+            <strong>Organized</strong>
+          </div>
+        </div>
+      </div>
+    )
+  }
+  <button
+    type="button"
+    class="gp-explainer-video__play"
+    aria-label={playLabel}
+  >
+    <span aria-hidden="true"></span>
+  </button>
+</div>
+
+<script is:inline>
+  document.querySelectorAll("[data-video-embed]").forEach((mediaBlock) => {
+    const playButton = mediaBlock.querySelector(".gp-explainer-video__play");
+    const embedUrl = mediaBlock.getAttribute("data-youtube-embed");
+    const iframeTitle = mediaBlock.getAttribute("data-iframe-title") || "GrantPipe video";
+
+    playButton?.addEventListener(
+      "click",
+      () => {
+        if (!embedUrl || mediaBlock.querySelector("[data-loaded-youtube]")) return;
+
+        const frame = document.createElement("iframe");
+        frame.src = embedUrl;
+        frame.title = iframeTitle;
+        frame.className = "gp-explainer-video__iframe";
+        frame.loading = "lazy";
+        frame.allow = "accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share";
+        frame.allowFullscreen = true;
+        frame.style.display = "block";
+        frame.style.width = "100%";
+        frame.style.height = "100%";
+        frame.style.border = "0";
+        frame.setAttribute("data-loaded-youtube", "true");
+
+        mediaBlock.replaceChildren(frame);
+      },
+      { once: true },
+    );
+  });
+</script>
+
+<style>
+  .gp-explainer-video__media {
+    position: relative;
+    overflow: hidden;
+    aspect-ratio: 16 / 9;
+    border: 1px solid var(--gp-ink-100);
+    border-radius: var(--radius-md);
+    background: var(--gp-ink-900);
+    box-shadow: var(--gp-shadow);
+  }
+
+  .gp-explainer-video__media img,
+  .gp-explainer-video__media :global(.gp-explainer-video__iframe) {
+    display: block;
+    width: 100%;
+    height: 100%;
+    border: 0;
+  }
+
+  .gp-explainer-video__media img {
+    object-fit: cover;
+  }
+
+  .gp-explainer-video__poster {
+    display: grid;
+    height: 100%;
+    align-content: center;
+    gap: 1rem;
+    padding: clamp(1rem, 4vw, 2rem);
+    background:
+      radial-gradient(circle at 18% 22%, rgba(52, 211, 153, 0.2), transparent 28%),
+      linear-gradient(135deg, #102015, #183a2a 58%, #0f2d24);
+    color: var(--gp-paper);
+  }
+
+  .gp-explainer-video__poster-chrome {
+    display: flex;
+    align-items: center;
+    gap: 0.45rem;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.16);
+    padding-bottom: 0.8rem;
+  }
+
+  .gp-explainer-video__poster-chrome span {
+    width: 0.55rem;
+    height: 0.55rem;
+    border-radius: var(--radius-full);
+    background: rgba(255, 255, 255, 0.45);
+  }
+
+  .gp-explainer-video__poster-chrome strong {
+    margin-left: auto;
+    color: rgba(255, 255, 255, 0.78);
+    font-family: var(--font-mono);
+    font-size: 0.7rem;
+    letter-spacing: 0;
+    text-transform: uppercase;
+  }
+
+  .gp-explainer-video__poster-grid {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 0.6rem;
+    min-width: 0;
+  }
+
+  .gp-explainer-video__poster-grid div {
+    min-width: 0;
+    overflow: hidden;
+    border: 1px solid rgba(255, 255, 255, 0.16);
+    border-radius: var(--radius-md);
+    background: rgba(255, 255, 255, 0.08);
+    padding: clamp(0.55rem, 2vw, 0.85rem);
+  }
+
+  .gp-explainer-video__poster-grid small,
+  .gp-explainer-video__poster-grid strong {
+    display: block;
+    min-width: 0;
+    overflow-wrap: anywhere;
+  }
+
+  .gp-explainer-video__poster-grid small {
+    color: rgba(255, 255, 255, 0.72);
+    font-size: var(--text-label, 0.8125rem);
+    line-height: 1.3;
+  }
+
+  .gp-explainer-video__poster-grid strong {
+    margin-top: 0.4rem;
+    color: white;
+    font-family: var(--font-heading);
+    font-size: clamp(1rem, 2.4vw, 1.5rem);
+    font-weight: 600;
+    line-height: 1.15;
+    letter-spacing: 0;
+  }
+
+  .gp-explainer-video__media::after {
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(180deg, transparent 52%, var(--gp-ink-900));
+    content: "";
+    pointer-events: none;
+  }
+
+  .gp-explainer-video__media:has(iframe)::after {
+    display: none;
+  }
+
+  .gp-explainer-video__play {
+    position: absolute;
+    inset: 50% auto auto 50%;
+    z-index: 1;
+    display: inline-flex;
+    width: 4.75rem;
+    height: 4.75rem;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid var(--gp-paper);
+    border-radius: var(--radius-full);
+    background: var(--gp-emerald-700);
+    box-shadow: var(--gp-shadow);
+    cursor: pointer;
+    transform: translate(-50%, -50%);
+    transition:
+      background-color 160ms ease,
+      transform 160ms ease;
+  }
+
+  .gp-explainer-video__play:hover {
+    background: var(--gp-emerald-600);
+    transform: translate(-50%, -50%) scale(1.04);
+  }
+
+  .gp-explainer-video__play:focus-visible {
+    outline: 3px solid var(--gp-paper);
+    outline-offset: 4px;
+  }
+
+  .gp-explainer-video__play span {
+    width: 0;
+    height: 0;
+    margin-left: 0.35rem;
+    border-block: 0.8rem solid transparent;
+    border-left: 1.15rem solid white;
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    .gp-explainer-video__play {
+      transition: none;
+    }
+    .gp-explainer-video__play:hover {
+      transform: translate(-50%, -50%);
+    }
+  }
+
+  @media (max-width: 900px) {
+    .gp-explainer-video__poster-grid {
+      grid-template-columns: 1fr;
+    }
+  }
+</style>

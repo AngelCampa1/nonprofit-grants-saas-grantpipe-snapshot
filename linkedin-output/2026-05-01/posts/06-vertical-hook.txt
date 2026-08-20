@@ -1,0 +1,13 @@
+A mature Federally Qualified Health Center typically manages 15 to 20 simultaneous federal and state awards.
+
+The base HRSA Section 330 grant. HRSA supplemental awards. Ryan White HIV/AIDS program grants across multiple Parts. CDC prevention grants. State health department contracts.
+
+Each award has distinct allowable cost categories, reporting calendars, and matching requirements. HRSA's Uniform Data System reporting intersects with financial compliance, so program data and expenditure data have to reconcile across systems that were never built to talk to each other.
+
+Most donor CRMs cannot support the expenditure coding this requires. Most general accounting systems cannot model funder restrictions in a way that produces a clean spend-down report.
+
+The result at most FQHCs: a finance team running parallel spreadsheets for grant tracking, drawdowns, and UDS-aligned program metrics, reconciled by hand at month-end.
+
+The compliance environment is not getting simpler. The toolset has to.
+
+#fqhc #healthcarenonprofits #hrsa #grantcompliance

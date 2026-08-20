@@ -1,0 +1,9 @@
+We decided early that grants and funds would be separate entities in the schema, joined through a many-to-many allocation table.
+
+It would have been faster to put a fund_id field on the grant record and call it done. One foreign key, one form field, ship it.
+
+But that schema lies the moment a single grant funds two programs and pulls from two restricted funds at different release schedules. Or when one fund pools dollars from a foundation grant, a board-designated transfer, and a major donor's restricted gift, all with different obligations attached.
+
+FASB ASC 958 does not flatten these into one shape. The chart of accounts at any real nonprofit does not flatten them either. Sage Intacct and Blackbaud Financial Edge model them as separate objects for the same reason.
+
+So we did the slower thing. The interface gets to be simple because the data model is honest.

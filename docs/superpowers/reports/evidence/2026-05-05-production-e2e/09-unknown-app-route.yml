@@ -1,0 +1,7 @@
+- generic [ref=e4]:
+    - generic [ref=e5]:
+        - paragraph [ref=e6]: "404"
+        - heading "Page not found" [level=1] [ref=e7]
+        - paragraph [ref=e8]: The page you are looking for does not exist or may have been moved.
+    - link "Back to dashboard" [ref=e9] [cursor=pointer]:
+        - /url: /app/dashboard

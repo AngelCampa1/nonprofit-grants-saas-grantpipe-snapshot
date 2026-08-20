@@ -1,0 +1,7 @@
+Procurement files are easier to build when the purchase happens.
+
+For federal awards, 2 CFR 200.318 sets the general procurement standards.
+
+A clean file can include the purchase request, quotes or selection memo, conflict check, approval, invoice, and proof the cost was charged to the right award.
+
+If the purchase is already in the ledger but the procurement trail is still in inboxes, fix that before fieldwork.

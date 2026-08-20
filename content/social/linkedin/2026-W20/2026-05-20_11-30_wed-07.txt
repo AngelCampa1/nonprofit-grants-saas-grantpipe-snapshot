@@ -1,0 +1,7 @@
+A practical audit prep resource: the Auditor Evidence Checklist.
+
+It is one page. It lists, by category, the documents an auditor will request for a typical single audit on a $1M to $5M nonprofit. Internal controls narrative. Bank reconciliations for every month of the fiscal year. Payroll allocations across federal awards. Procurement files above the simplified acquisition threshold. Equipment inventory. Sub-recipient monitoring documentation. Board minutes approving any award amendments.
+
+For each line, it tells you what counts as adequate evidence and what auditors typically reject.
+
+The point of the checklist is not to teach you what an auditor wants. Your auditor will tell you that. The point is to show you, before audit week, where the gaps are while there is still time to fix them.

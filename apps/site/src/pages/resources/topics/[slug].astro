@@ -1,0 +1,265 @@
+---
+import "../../../styles/global.css";
+import { getCollection } from "astro:content";
+import BaseLayout from "@grantpipe/ui/site/layouts/base-layout.astro";
+import SiteHeader from "@grantpipe/ui/site/components/site-header.astro";
+import SiteFooter from "@grantpipe/ui/site/components/site-footer.astro";
+import BreadcrumbNav from "@grantpipe/ui/site/components/breadcrumb-nav.astro";
+import ContentCard from "@grantpipe/ui/site/components/content-card.astro";
+import FaqSection from "@grantpipe/ui/site/components/faq-section.astro";
+import SchemaMarkup from "@grantpipe/ui/site/seo/schema-markup.astro";
+import Button from "@/components/ui/button.astro";
+import { buildCollectionPageSchema } from "@grantpipe/ui/site/lib/schema-builders";
+import { buildGraph, withId } from "@grantpipe/ui/site/lib/schema-graph";
+import { siteConfig, shouldShowMobileStickyCta } from "@/config/site";
+import { hubFaqs } from "@/config/hub-faqs";
+import {
+  buildTopicHubSections,
+  buildTopicHubItems,
+  topicHubs,
+} from "@/lib/topic-hubs";
+
+export async function getStaticPaths() {
+  return topicHubs.map((hub) => ({
+    params: { slug: hub.slug },
+    props: { hub },
+  }));
+}
+
+const { hub } = Astro.props;
+const siteUrl = `https://${siteConfig.domain}`;
+const canonicalUrl = `${siteUrl}/resources/topics/${hub.slug}/`;
+
+const [
+  alternatives,
+  comparisons,
+  pricingBreakdowns,
+  listicles,
+  guides,
+  statePages,
+  cityPages,
+  verticalPages,
+  leadMagnets,
+  personas,
+  workflows,
+  glossary,
+  features,
+  integrations,
+  faqHubs,
+  benchmarks,
+] = await Promise.all([
+  getCollection("alternatives"),
+  getCollection("comparisons"),
+  getCollection("pricing-breakdowns"),
+  getCollection("listicles"),
+  getCollection("guides"),
+  getCollection("state-pages"),
+  getCollection("city-pages"),
+  getCollection("vertical-pages"),
+  getCollection("lead-magnets"),
+  getCollection("personas"),
+  getCollection("workflows"),
+  getCollection("glossary"),
+  getCollection("features"),
+  getCollection("integrations"),
+  getCollection("faq-hubs"),
+  getCollection("benchmarks"),
+]);
+
+const itemMap = buildTopicHubItems({
+  alternatives,
+  comparisons,
+  pricingBreakdowns,
+  listicles,
+  guides,
+  statePages,
+  cityPages,
+  verticalPages,
+  leadMagnets,
+  personas,
+  workflows,
+  glossary,
+  features,
+  integrations,
+  faqHubs,
+  benchmarks,
+});
+
+const items = (itemMap.get(hub.slug) ?? [])
+  .map((item) => ({
+    ...item,
+    featured: hub.featuredHrefs?.includes(item.href) ?? false,
+  }))
+  .sort((a, b) => Number(b.featured) - Number(a.featured));
+const sections = buildTopicHubSections(items);
+
+const graph = buildGraph([
+  withId(
+    buildCollectionPageSchema({
+      name: hub.heroTitle,
+      description: hub.heroDescription,
+      url: canonicalUrl,
+      items: items.map((item) => ({
+        name: item.title,
+        description: item.description,
+        url: `${siteUrl}${item.href}`,
+      })),
+    }),
+    `${canonicalUrl}#collection`,
+  ),
+]);
+---
+
+<BaseLayout
+  title={`${hub.heroTitle} | ${siteConfig.name}`}
+  description={hub.heroDescription}
+  canonicalUrl={canonicalUrl}
+  siteName={siteConfig.name}
+  ogType="website"
+  themeColor={siteConfig.theme.primary}
+  theme={siteConfig.theme}
+  fonts={siteConfig.theme.fonts}
+  appleTouchIcon={siteConfig.appleTouchIcon}
+  showStickyMobileCta={shouldShowMobileStickyCta(`/resources/topics/${hub.slug}`)}
+  stickyCtaText={siteConfig.funnel.bofu.ctaText}
+  stickyCtaTarget={siteConfig.funnel.bofu.ctaTarget}
+>
+  <SiteHeader
+    slot="header"
+    siteName={siteConfig.name}
+    navItems={siteConfig.nav?.items}
+    ctaText={siteConfig.funnel.bofu.ctaText}
+    ctaHref={siteConfig.funnel.bofu.ctaTarget}
+    currentPath={Astro.url.pathname}
+    loginHref={siteConfig.appLoginUrl}
+    logoLight={siteConfig.logo?.light}
+  >
+  </SiteHeader>
+
+  <div class="mx-auto max-w-6xl px-4 py-[var(--section-py-sm)] editorial-shell">
+    <BreadcrumbNav
+      items={[
+        { label: "Home", href: "/" },
+        { label: "Resources", href: "/resources" },
+        { label: "Topic Hubs", href: "/resources/topics" },
+        { label: hub.title, href: `/resources/topics/${hub.slug}` },
+      ]}
+      siteUrl={siteUrl}
+    />
+
+    <header class="mt-4 grid gap-6 lg:grid-cols-[minmax(0,1.2fr)_minmax(18rem,0.8fr)] lg:items-end">
+      <div class="max-w-[var(--content-measure-wide)]">
+        <p class="editorial-kicker">{hub.eyebrow}</p>
+        <h1 class="mt-4 text-[length:var(--text-editorial-title)] leading-[1.04] font-heading font-bold text-brand-text">
+          {hub.heroTitle}
+        </h1>
+        <p class="editorial-lede mt-4">{hub.heroDescription}</p>
+      </div>
+
+    </header>
+
+    <section class="mt-8 editorial-panel p-6">
+      <h2 class="gp-link-card-title">Start with what's most relevant to where you are now.</h2>
+      <p class="gp-link-card-copy mt-3">
+        Use the explanatory pages if you're still framing the problem. Jump to the comparison
+        pages if you're already evaluating tools. The GrantPipe comparisons are at the bottom
+        if the decision is getting specific.
+      </p>
+    </section>
+
+    <section class="mt-10 space-y-10" aria-label={`${hub.title} content`}>
+      {sections.map((section) => (
+        <section
+          class="editorial-panel p-5 md:p-6"
+          data-topic-path={section.stageLabel.toLowerCase()}
+        >
+          <div class="mb-5 flex flex-col gap-3 md:flex-row md:items-end md:justify-between">
+            <div>
+              <p class="gp-proof-label">{section.stageLabel}</p>
+              <h2 class="gp-link-card-title">{section.title}</h2>
+              <p class="gp-link-card-copy mt-2">{section.description}</p>
+            </div>
+            <a class="gp-filter-chip self-start md:self-auto" href={`${section.browseHref}/`}>
+              See this path
+            </a>
+          </div>
+          <div class="grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
+            {section.items.map((item) => (
+              <ContentCard item={item} />
+            ))}
+          </div>
+          {section.overflowItems.length > 0 && (
+            <details class="mt-5 rounded-[18px] border border-stone-200 bg-white/70 p-4">
+              <summary class="cursor-pointer font-medium text-stone-900">
+                See {section.overflowItems.length} more links
+              </summary>
+              <div class="mt-4 grid gap-3 sm:grid-cols-2 lg:grid-cols-3">
+                {section.overflowItems.map((item) => (
+                  <a
+                    class="rounded-[14px] border border-[var(--gp-ink-200)] bg-[var(--gp-card)] p-3 text-sm font-medium text-brand-text transition hover:border-[var(--gp-emerald-300)] hover:text-primary-700"
+                    href={item.href}
+                  >
+                    {item.title}
+                  </a>
+                ))}
+              </div>
+            </details>
+          )}
+        </section>
+      ))}
+    </section>
+
+    <section class="editorial-panel gp-shared-cta-shell" id="signup">
+      <h2>Start a 1-month free trial when this topic becomes implementation work.</h2>
+      <p>
+        Start a 1-month free trial and run your current donor, grant, and reporting process
+        through a unified workflow.
+      </p>
+      <div class="gp-shared-cta-actions">
+        <Button
+          variant="primary"
+          size="lg"
+          href={siteConfig.funnel.bofu.ctaTarget}
+          data-cta-button=""
+          data-cta-page-family="topics"
+          data-cta-buyer-stage="bofu"
+          data-cta-placement="topic-detail-primary"
+          data-cta-intent="convert"
+          data-cta-target={siteConfig.funnel.bofu.ctaTarget}
+        >
+          {siteConfig.funnel.bofu.ctaText}
+        </Button>
+        <Button
+          variant="secondary"
+          size="md"
+          href="/product/"
+          data-cta-button=""
+          data-cta-page-family="topics"
+          data-cta-buyer-stage="mofu"
+          data-cta-placement="topic-detail-secondary"
+          data-cta-intent="evaluate"
+          data-cta-target="/product/"
+        >
+          See the product walkthrough
+        </Button>
+      </div>
+    </section>
+
+    <FaqSection
+      faqs={hubFaqs[`/resources/topics/${hub.slug}`] ?? []}
+      heading="Frequently Asked Questions"
+      showBottomCta={false}
+      ctaVariant="compact"
+    />
+  </div>
+
+  <SiteFooter
+    slot="footer"
+    siteName={siteConfig.name}
+    tagline={siteConfig.tagline}
+    linkGroups={siteConfig.footer?.linkGroups}
+    legalLinks={siteConfig.footer?.legalLinks}
+    captureVariant="compact"
+  />
+  <SchemaMarkup graph={graph} />
+</BaseLayout>

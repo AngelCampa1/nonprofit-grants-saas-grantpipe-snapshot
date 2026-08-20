@@ -1,0 +1,7 @@
+Your donor CRM can know the funder contact and still miss the grant.
+
+A grant has a period of performance, approved budget, reporting cadence, allowable cost rules, amendments, and closeout package.
+
+A donor record was not designed to carry that shape.
+
+When the grant is flattened into a gift note, the operating record has to be rebuilt later, right when the report needs numbers.

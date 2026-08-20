@@ -1,0 +1,9 @@
+ALN replaced CFDA, but old language sticks around.
+
+That sounds small until a federal award appears one way in the grant file, another way in the SEFA workpaper, and a third way in the board packet.
+
+Pick the identifier format the award uses now.
+
+Keep the legacy reference if it helps.
+
+Do not let identifiers become another reconciliation project.

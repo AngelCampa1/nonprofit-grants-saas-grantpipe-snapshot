@@ -1,0 +1,11 @@
+Donor CRM and grant accounting records describe the same funders from two different operational angles, and that is exactly why they drift apart.
+
+Development enters a gift when the award letter arrives. Finance posts the receipt when cash clears. Two workflows, two timestamps, two restriction classifications, two amounts (pledged versus net of fees). Without an annual reconciliation, the gap compounds until no one can reliably answer "how much restricted funding did we receive from Funder X this year."
+
+Four discrepancy types account for almost all the variance. Type 1: CRM-only — gift entered but never posted in accounting. Type 2: accounting-only — government grant that bypassed development entirely. Type 3: amount mismatch — full pledged amount in CRM, first installment in accounting. Type 4: classification mismatch — development called it unrestricted general support; finance read the grant agreement and coded it restricted.
+
+The tie-breaker is always the source document. Grant agreement section reference, award letter, signed pledge card. Not staff recollection. Run the full reconciliation annually before audit fieldwork. Spot-check monthly for funders representing more than 10% of restricted revenue.
+
+Free download — the Donor-to-Grant Reconciliation Template walks through the matching table, discrepancy classification, resolution documentation, and reconciliation summary: grantpipe.com/lead-magnets/donor-to-grant-reconciliation-template
+
+#donorcrm #grantaccounting #reconciliation #nonprofitfinance

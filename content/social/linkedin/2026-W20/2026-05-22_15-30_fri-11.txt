@@ -1,0 +1,7 @@
+Restricted is not designated.
+
+Donor-restricted: an outside donor put the constraint on the dollars. The org cannot remove it.
+
+Board-designated: the board put the constraint on its own dollars. They can remove it next meeting.
+
+Mix them up on the audit and the auditor fixes it for you.

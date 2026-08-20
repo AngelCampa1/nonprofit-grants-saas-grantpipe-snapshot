@@ -1,0 +1,13 @@
+Development and Finance do not need another handoff spreadsheet.
+
+They need fewer moments where the same grant is re-entered.
+
+The funder contact belongs near the donor history.
+
+The award terms belong near the budget.
+
+The restricted fund belongs near the ledger.
+
+The evidence belongs near the report.
+
+When those records are split, the handoff becomes the control. That is too much pressure for email.

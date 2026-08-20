@@ -1,0 +1,9 @@
+A summer scene from a Development office, in advance.
+
+It is mid-July. The annual report draft is due to the board on August 1. The Executive Director needs four numbers: total raised, donor count, retention rate, average gift.
+
+The donor CRM has three of them. The fourth (retention rate) requires comparing the donor list from this fiscal year against the donor list from last fiscal year, person by person, after removing one-time event ticket buyers and stripping duplicate household records.
+
+This is a four-hour job done by hand. Or a one-click report if your system was built to remember last year's donors as a cohort.
+
+The difference is not effort. It is whether the system was designed for the question.

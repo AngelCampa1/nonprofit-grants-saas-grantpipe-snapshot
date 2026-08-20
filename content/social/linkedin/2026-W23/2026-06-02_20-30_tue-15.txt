@@ -1,0 +1,7 @@
+Quick procurement check:
+
+For federally funded purchases, can you show the purchase method, quotes or bids when required, vendor choice, conflict review, contract, invoice, and payment?
+
+2 CFR 200 procurement rules care about the decision trail.
+
+A good price with no file still creates audit friction.

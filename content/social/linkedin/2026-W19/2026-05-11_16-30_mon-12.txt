@@ -1,0 +1,9 @@
+We made a deliberate choice about what grant compliance looks like in GrantPipe, and we picked the boring shape on purpose.
+
+Federal rules under 2 CFR 200.430 say payroll charged to a federal award has to be supported by records that reflect actual work performed, certified after the fact, signed by someone with first-hand knowledge.
+
+The temptation in software is to make it a real-time timer that pings the employee every hour. We considered it. We threw it out.
+
+Why: nobody at a $4M nonprofit wants a stopwatch. What they need is evidence that shows up when the auditor asks. So we built a compliance calendar that surfaces grant deadlines next to each award record, an activity log that captures document evidence and restricted-fund spend-down as work happens, and an audit trail that is a byproduct of normal operation — not something assembled in a panic before fieldwork.
+
+It is not exciting. It is the thing the auditor will ask for. We would rather get that part right than build a feature that looks impressive in a demo and gets turned off in week two.

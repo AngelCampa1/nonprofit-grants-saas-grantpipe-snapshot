@@ -1,0 +1,37 @@
+- generic [ref=e4]:
+    - complementary [ref=e5]:
+        - generic [ref=e8]:
+            - link [ref=e9] [cursor=pointer]:
+                - /url: /app/
+                - img [ref=e10]
+            - generic [ref=e11]:
+                - generic [ref=e12]:
+                    - paragraph [ref=e13]: Grant-funded nonprofit software
+                    - paragraph [ref=e14]: Donors, grants, funds, and compliance in one system.
+                    - paragraph [ref=e15]: Built for nonprofits managing restricted funding, reporting deadlines, and audit work without adding another long setup project.
+                - generic [ref=e16]:
+                    - generic [ref=e17]:
+                        - paragraph [ref=e18]: What changes
+                        - paragraph [ref=e19]: Finance and development stop rebuilding the same answer from different tools.
+                    - generic [ref=e20]:
+                        - generic [ref=e21]:
+                            - paragraph [ref=e22]: Setup
+                            - paragraph [ref=e23]: Guided setup
+                        - generic [ref=e24]:
+                            - paragraph [ref=e25]: Reporting
+                            - paragraph [ref=e26]: Built-in reports
+                        - generic [ref=e27]:
+                            - paragraph [ref=e28]: Pricing
+                            - paragraph [ref=e29]: Flat monthly
+            - generic [ref=e32]: grantpipe.com
+    - generic [ref=e34]:
+        - generic [ref=e35]:
+            - generic [ref=e37]:
+                - paragraph [ref=e38]: Secure account access
+                - heading "Invalid invite" [level=1] [ref=e46]
+                - paragraph [ref=e40]: Invite not found
+            - link "Back to sign in" [ref=e47] [cursor=pointer]:
+                - /url: /app/login
+        - generic [ref=e43]:
+            - generic [ref=e44]: Encrypted session
+            - generic [ref=e45]: Reduced-motion safe

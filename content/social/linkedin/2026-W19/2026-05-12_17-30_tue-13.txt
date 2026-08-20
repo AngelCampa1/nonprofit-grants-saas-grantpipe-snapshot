@@ -1,0 +1,9 @@
+Three reasons restricted-fund tracking breaks in donor CRMs:
+
+One. Restrictions are properties of the gift, not the donor. A single donor can give a restricted gift this year and an unrestricted gift next. CRMs index on the donor first.
+
+Two. Releases from restriction are events, not statuses. When the Youth STEM program spends $4,200 of a $50,000 restricted grant, that is a release event with a date, an amount, and a reference to the underlying expense. Most CRMs have no event model for this.
+
+Three. The schedule of activity is a financial statement disclosure. It needs to roll up by net asset class, by restriction type, and by fund. CRMs report by donor, by campaign, by appeal. Different axes.
+
+This is not a CRM critique. It is a fit observation. The CRM does what it was built to do. Restricted fund accounting is not on that list.

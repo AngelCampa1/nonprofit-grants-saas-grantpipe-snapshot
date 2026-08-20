@@ -1,0 +1,13 @@
+Indirect cost decisions belong in the grant setup file.
+
+Does the award allow indirect costs?
+
+Are you using a NICRA?
+
+Are you eligible for the de minimis rate?
+
+What base are you applying it to?
+
+If that answer is buried in one Finance note, the SF-425 and SEFA can drift later.
+
+Write the basis once, then use it every time the grant is reported.

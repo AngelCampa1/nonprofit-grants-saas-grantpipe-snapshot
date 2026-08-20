@@ -1,0 +1,11 @@
+$1,000,000.
+
+That is the federal expenditure threshold that triggers a Single Audit under 2 CFR 200 Subpart F. Not awarded. Expended. In a single fiscal year.
+
+Two things people miss:
+
+1. It aggregates across all federal awards, including pass-through dollars from a state agency or another nonprofit. The state CDBG sub-award counts.
+
+2. It is expenditures, not drawdowns. If you accrued $400K of payroll on a federal grant in June but did not draw the cash until July, the June expense still counts in the year it hit your books.
+
+If you are at $600K this fiscal year and a new HRSA award lands in August, plan now. The Single Audit takes 9 months and a firm with Yellow Book qualifications, not a generalist CPA.

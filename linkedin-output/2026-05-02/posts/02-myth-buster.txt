@@ -1,0 +1,15 @@
+Myth: DonorPerfect handles grant compliance because it has a grant tracking module.
+
+DonorPerfect's grant features cover deadline reminders, fund records, and grant status fields. That is calendar tracking, not compliance.
+
+What it does not cover: tracking actual expenditures against approved grant budget lines, flagging over-expenditure on restricted funds, or producing audit-ready reports showing funders how restricted dollars were spent.
+
+Organizations receiving federal grants or multi-year restricted foundation grants typically run compliance documentation in a second system — usually a spreadsheet or the accounting platform — alongside DonorPerfect.
+
+DonorPerfect reports 93% customer retention and a 13-year average tenure. Those numbers reflect mature donor management, not grant compliance depth.
+
+The myth comes from conflating "grant tracking" (knowing when a report is due) with "grant compliance" (proving how every dollar was spent against an approved budget). They are different jobs.
+
+Audit your grant tools by asking: can it produce a funder financial report from system data alone, or does staff rebuild it in Excel each cycle?
+
+#grantcompliance #nonprofittech #donorperfect #restrictedfunds

@@ -1,0 +1,5 @@
+Before: the development team enters a new foundation prospect into the donor CRM. The finance team finds out about the award six weeks later, when the check posts. The budget builds itself in a spreadsheet, after the fact.
+
+After: the prospect, the application, the award letter, and the budget all live on one record from the day the relationship starts. Development sees the cultivation history. Finance sees the obligation, the draw schedule, and the reporting calendar. Same record, two views.
+
+The hand-off stops being a hand-off. It is the same workspace, used differently by two roles.

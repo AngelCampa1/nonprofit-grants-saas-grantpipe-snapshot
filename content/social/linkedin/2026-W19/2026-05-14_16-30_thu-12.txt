@@ -1,0 +1,13 @@
+We decided early that grants and funds would be separate entities in our data model.
+
+A grant is the award. The funder, the budget, the period of performance, the reporting cadence.
+
+A fund is the bucket of restricted dollars on the balance sheet. The release schedule, the purpose constraint, the time constraint.
+
+One grant can feed multiple funds. One fund can be fed by multiple grants. A many-to-many relationship via grant fund allocations.
+
+This is not clever. It is how Sage Intacct and Blackbaud Financial Edge model it, because it is what FASB ASC 958 actually describes. Donor-restricted dollars are a constraint on net assets, not a property of a contract.
+
+A lot of CRMs collapse the two into one record because it is easier to ship. Then the audit comes and the data shape will not bend.
+
+We picked the harder shape because the easier shape is what the user works around for ten years.

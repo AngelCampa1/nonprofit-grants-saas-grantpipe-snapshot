@@ -1,0 +1,11 @@
+Saturday reminder for Development Directors:
+
+Cleaning the database can be real work.
+
+Avoiding donor calls by cleaning the database is something else.
+
+Pick one useful cleanup task and one human task.
+
+Merge five duplicates.
+
+Then send one note to a donor who funded something specific and has not heard the outcome yet.

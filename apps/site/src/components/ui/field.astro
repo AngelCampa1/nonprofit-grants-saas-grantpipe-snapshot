@@ -1,0 +1,66 @@
+---
+/**
+ * Marketing form field primitive.
+ *
+ * Renders a single-line `<input>`, a `<select>`, or a multi-line `<textarea>`
+ * carrying the shared `.gp-field` class. Single-line controls are full pills;
+ * the `.gp-field` system gives `<textarea>` the large (not full) radius.
+ *
+ * `<select>` options are passed through the default slot.
+ *
+ * Mobile-first behaviour:
+ * - `font-size: 16px` minimum prevents iOS from auto-zooming into the field
+ *   when it receives focus (iOS zooms when font-size < 16px).
+ * - `min-height: 48px` satisfies the 48px tap target requirement.
+ * - `width: 100%` by default so fields fill their container on mobile.
+ *   Pass `class="w-auto"` or override in a parent grid to constrain.
+ */
+import type { HTMLAttributes } from "astro/types";
+
+type Control = "input" | "select" | "textarea";
+
+type InputAttrs = Omit<HTMLAttributes<"input">, "class">;
+type SelectAttrs = Omit<HTMLAttributes<"select">, "class">;
+type TextareaAttrs = Omit<HTMLAttributes<"textarea">, "class">;
+
+interface Props extends InputAttrs, SelectAttrs, TextareaAttrs {
+  /** Which native control to render. Defaults to "input". */
+  control?: Control;
+  /** Extra classes appended after `.gp-field`. */
+  class?: string;
+}
+
+const { control = "input", class: className, ...rest } = Astro.props as Props;
+
+const classes = ["gp-field", "gp-field--mobile-safe", className]
+  .filter((value): value is string => Boolean(value))
+  .join(" ");
+---
+
+{
+  control === "textarea" ? (
+    <textarea class={classes} {...rest}>
+      <slot />
+    </textarea>
+  ) : control === "select" ? (
+    <select class={classes} {...rest}>
+      <slot />
+    </select>
+  ) : (
+    <input class={classes} {...rest} />
+  )
+}
+
+<style is:global>
+  /*
+   * Applied globally to override any .gp-field rules in global.css.
+   * font-size: 16px — prevents iOS Safari from auto-zooming on focus.
+   * min-height: 48px — satisfies the 48px minimum tap target requirement.
+   * width: 100% — sensible default for mobile; override in parent context.
+   */
+  .gp-field--mobile-safe {
+    font-size: 16px;
+    min-height: 48px;
+    width: 100%;
+  }
+</style>

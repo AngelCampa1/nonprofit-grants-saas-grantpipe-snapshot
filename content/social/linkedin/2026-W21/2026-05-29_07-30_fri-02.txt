@@ -1,0 +1,11 @@
+An auditor walks in next month. They ask for the spend-down detail on the Federal pass-through award.
+
+The Finance Director opens QuickBooks. The Development Director opens the donor CRM. The grants manager opens a Google Sheet. Three numbers. None match.
+
+This is the moment a small nonprofit team discovers that "we track grants" and "we have an audit trail" are different things.
+
+The audit trail is the receipts. Who spent what, against which budget line, on which date, with which approval, allocated to which fund. Captured at the moment of the transaction with the grant ID attached. Not summarized. Not reconciled later.
+
+If your current setup needs a Friday afternoon and a fresh pot of coffee to produce that detail, you do not have an audit trail. You have a reconstruction project.
+
+May 31 is a good week to find out which one you have.

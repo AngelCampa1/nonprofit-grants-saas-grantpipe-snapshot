@@ -1,0 +1,3145 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>GrantPipe — Landing (Dashboard direction, mid-fi)</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Spectral:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      :root {
+        /* brand */
+        --emerald-900: #033a2c;
+        --emerald-800: #054b39;
+        --emerald-700: #065f46;
+        --emerald-600: #0a7553;
+        --emerald-500: #10906a;
+        --emerald-100: #d4ebe1;
+        --emerald-50: #ecf6f1;
+
+        --gold-700: #8d6a1f;
+        --gold-600: #b88928;
+        --gold-500: #d6a13a;
+        --gold-100: #f5e8c6;
+        --gold-50: #faf3df;
+
+        --ink-900: #0e1a16;
+        --ink-700: #2a3a33;
+        --ink-500: #5b6e66;
+        --ink-300: #97a59f;
+        --ink-200: #c9d2cd;
+        --ink-100: #e3e9e6;
+
+        --paper: #fbfaf6; /* warm off-white */
+        --paper-2: #f4f1e9;
+        --card: #ffffff;
+
+        --danger: #b8442d;
+        --warn: #c98a2b;
+
+        --rad-sm: 6px;
+        --rad: 10px;
+        --rad-lg: 14px;
+
+        --shadow-sm: 0 1px 2px rgba(14, 26, 22, 0.04), 0 1px 1px rgba(14, 26, 22, 0.03);
+        --shadow: 0 1px 2px rgba(14, 26, 22, 0.05), 0 8px 24px -10px rgba(14, 26, 22, 0.12);
+        --shadow-lg: 0 2px 4px rgba(14, 26, 22, 0.06), 0 24px 60px -20px rgba(14, 26, 22, 0.2);
+
+        --display: "Spectral", Georgia, serif;
+        --body: "Manrope", system-ui, -apple-system, sans-serif;
+        --mono: "JetBrains Mono", ui-monospace, monospace;
+      }
+      *,
+      *::before,
+      *::after {
+        box-sizing: border-box;
+      }
+      html,
+      body {
+        margin: 0;
+        padding: 0;
+      }
+      body {
+        background: var(--paper);
+        color: var(--ink-900);
+        font-family: var(--body);
+        font-size: 16px;
+        line-height: 1.55;
+        -webkit-font-smoothing: antialiased;
+        text-rendering: optimizeLegibility;
+      }
+      a {
+        color: inherit;
+        text-decoration: none;
+      }
+      button {
+        font: inherit;
+        cursor: pointer;
+      }
+
+      /* ————————————————————————— layout ————————————————————————— */
+      .wrap {
+        max-width: 1240px;
+        margin: 0 auto;
+        padding: 0 28px;
+      }
+      .wrap-narrow {
+        max-width: 980px;
+        margin: 0 auto;
+        padding: 0 28px;
+      }
+
+      /* ————————————————————————— top nav ————————————————————————— */
+      .top {
+        position: sticky;
+        top: 0;
+        z-index: 30;
+        background: color-mix(in oklab, var(--paper) 88%, transparent);
+        backdrop-filter: blur(10px);
+        border-bottom: 1px solid var(--ink-100);
+      }
+      .top-inner {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        height: 68px;
+      }
+      .brand {
+        display: inline-flex;
+        align-items: center;
+        gap: 10px;
+        font-family: var(--display);
+        font-weight: 600;
+        font-size: 22px;
+        letter-spacing: -0.01em;
+      }
+      .brand-mark {
+        width: 28px;
+        height: 28px;
+        border-radius: 7px;
+        background: var(--emerald-700);
+        display: inline-grid;
+        place-items: center;
+        color: var(--gold-500);
+        font-family: var(--mono);
+        font-weight: 700;
+        font-size: 13px;
+        box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.06);
+      }
+      .top nav {
+        display: flex;
+        gap: 28px;
+      }
+      .top nav a {
+        font-size: 14px;
+        font-weight: 500;
+        color: var(--ink-700);
+      }
+      .top nav a:hover {
+        color: var(--emerald-700);
+      }
+      .top-cta {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+      }
+
+      .btn {
+        display: inline-flex;
+        align-items: center;
+        gap: 8px;
+        height: 40px;
+        padding: 0 18px;
+        border-radius: 999px;
+        font-family: var(--body);
+        font-weight: 600;
+        font-size: 14px;
+        border: 1px solid transparent;
+        transition:
+          transform 0.04s ease,
+          background 0.15s ease,
+          box-shadow 0.15s ease,
+          border-color 0.15s ease;
+        white-space: nowrap;
+      }
+      .btn:active {
+        transform: translateY(1px);
+      }
+      .btn-primary {
+        background: var(--emerald-700);
+        color: #fff;
+        box-shadow: 0 1px 2px rgba(6, 95, 70, 0.18);
+      }
+      .btn-primary:hover {
+        background: var(--emerald-800);
+      }
+      .btn-ghost {
+        background: transparent;
+        color: var(--ink-900);
+        border-color: var(--ink-200);
+      }
+      .btn-ghost:hover {
+        background: var(--paper-2);
+        border-color: var(--ink-300);
+      }
+      .btn-link {
+        background: transparent;
+        color: var(--emerald-700);
+        padding: 0 4px;
+        height: auto;
+      }
+      .btn-link:hover {
+        color: var(--emerald-800);
+      }
+      .btn-lg {
+        height: 50px;
+        padding: 0 26px;
+        font-size: 15px;
+      }
+      .btn-arrow {
+        transition: transform 0.15s ease;
+      }
+      .btn:hover .btn-arrow {
+        transform: translateX(2px);
+      }
+
+      /* ————————————————————————— hero (shared bits) ————————————————————————— */
+      .hero {
+        padding: 56px 0 48px;
+        position: relative;
+        overflow: hidden;
+      }
+      .hero::before {
+        /* subtle paper grid */
+        content: "";
+        position: absolute;
+        inset: 0;
+        background-image:
+          radial-gradient(1px 1px at 20% 30%, rgba(6, 95, 70, 0.06), transparent 50%),
+          radial-gradient(1px 1px at 80% 70%, rgba(184, 137, 40, 0.06), transparent 50%);
+        pointer-events: none;
+      }
+      .eyebrow {
+        display: inline-flex;
+        align-items: center;
+        gap: 8px;
+        font-family: var(--mono);
+        font-size: 12px;
+        font-weight: 500;
+        color: var(--emerald-700);
+        text-transform: uppercase;
+        letter-spacing: 0.08em;
+        padding: 6px 12px;
+        border-radius: 999px;
+        background: var(--emerald-50);
+        border: 1px solid var(--emerald-100);
+      }
+      .eyebrow .dot {
+        width: 6px;
+        height: 6px;
+        border-radius: 50%;
+        background: var(--emerald-600);
+        box-shadow: 0 0 0 3px color-mix(in oklab, var(--emerald-600) 25%, transparent);
+      }
+      h1.display {
+        font-family: var(--display);
+        font-weight: 600;
+        font-size: clamp(40px, 5.6vw, 68px);
+        line-height: 1.04;
+        letter-spacing: -0.02em;
+        margin: 18px 0 18px;
+        color: var(--ink-900);
+      }
+      h1.display em {
+        font-style: italic;
+        color: var(--emerald-700);
+        font-weight: 500;
+      }
+      .lede {
+        font-size: 19px;
+        line-height: 1.55;
+        color: var(--ink-700);
+        max-width: 580px;
+        margin: 0 0 26px;
+      }
+      .cta-row {
+        display: flex;
+        gap: 12px;
+        align-items: center;
+        flex-wrap: wrap;
+      }
+      .cta-fineprint {
+        margin-top: 14px;
+        font-size: 13px;
+        color: var(--ink-500);
+        display: flex;
+        gap: 14px;
+        align-items: center;
+        flex-wrap: wrap;
+      }
+      .cta-fineprint .sep {
+        color: var(--ink-200);
+      }
+      .check {
+        display: inline-flex;
+        align-items: center;
+        gap: 6px;
+        color: var(--ink-700);
+        font-size: 13px;
+      }
+      .check svg {
+        color: var(--emerald-600);
+        flex-shrink: 0;
+      }
+
+      /* ————————————————————————— hero variant: split ————————————————————————— */
+      body[data-hero="split"] .hero-split {
+        display: grid;
+      }
+      body[data-hero="full"] .hero-split {
+        display: none;
+      }
+      body[data-hero="stack"] .hero-split {
+        display: none;
+      }
+
+      body[data-hero="full"] .hero-full {
+        display: block;
+      }
+      body[data-hero="split"] .hero-full {
+        display: none;
+      }
+      body[data-hero="stack"] .hero-full {
+        display: none;
+      }
+
+      body[data-hero="stack"] .hero-stack {
+        display: block;
+      }
+      body[data-hero="split"] .hero-stack {
+        display: none;
+      }
+      body[data-hero="full"] .hero-stack {
+        display: none;
+      }
+
+      .hero-split {
+        grid-template-columns: minmax(0, 0.85fr) minmax(0, 1.25fr);
+        gap: 48px;
+        align-items: center;
+        position: relative;
+      }
+      @media (max-width: 980px) {
+        body[data-hero="split"] .hero-split {
+          grid-template-columns: 1fr;
+          gap: 36px;
+        }
+      }
+
+      /* ————————————————————————— the dashboard mock ————————————————————————— */
+      .dash-shell {
+        background: var(--card);
+        border: 1px solid var(--ink-100);
+        border-radius: var(--rad-lg);
+        box-shadow: var(--shadow-lg);
+        overflow: hidden;
+        position: relative;
+      }
+      .dash-chrome {
+        height: 38px;
+        background: linear-gradient(180deg, #f7f5ee 0%, #efece2 100%);
+        border-bottom: 1px solid var(--ink-100);
+        display: flex;
+        align-items: center;
+        padding: 0 14px;
+        gap: 8px;
+      }
+      .dash-chrome .tl {
+        width: 11px;
+        height: 11px;
+        border-radius: 50%;
+        background: var(--ink-200);
+      }
+      .dash-chrome .tl:nth-child(1) {
+        background: #e6886a;
+      }
+      .dash-chrome .tl:nth-child(2) {
+        background: #e7c060;
+      }
+      .dash-chrome .tl:nth-child(3) {
+        background: #6dbb89;
+      }
+      .dash-url {
+        margin-left: 14px;
+        font-family: var(--mono);
+        font-size: 12px;
+        color: var(--ink-500);
+        background: var(--paper);
+        border: 1px solid var(--ink-100);
+        border-radius: 999px;
+        padding: 4px 12px;
+        flex: 1;
+        max-width: 360px;
+        display: flex;
+        align-items: center;
+        gap: 6px;
+      }
+      .dash-url .lock {
+        color: var(--emerald-600);
+      }
+
+      .dash-app {
+        display: grid;
+        grid-template-columns: 164px minmax(0, 1fr);
+        min-height: 460px;
+      }
+      .dash-side {
+        background: var(--emerald-900);
+        color: #cfe1d8;
+        padding: 18px 14px;
+        display: flex;
+        flex-direction: column;
+        gap: 4px;
+        font-size: 13px;
+      }
+      .dash-side .org {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        padding: 4px 6px 14px;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+        margin-bottom: 10px;
+      }
+      .dash-side .org-mark {
+        width: 26px;
+        height: 26px;
+        border-radius: 6px;
+        background: var(--gold-600);
+        color: var(--emerald-900);
+        display: grid;
+        place-items: center;
+        font-family: var(--display);
+        font-weight: 700;
+        font-size: 13px;
+      }
+      .dash-side .org-name {
+        color: #fff;
+        font-weight: 600;
+        font-size: 13px;
+        line-height: 1.2;
+      }
+      .dash-side .org-sub {
+        font-size: 11px;
+        color: #8eb4a3;
+        font-family: var(--mono);
+      }
+      .dash-side .nav-group-label {
+        font-family: var(--mono);
+        font-size: 10px;
+        letter-spacing: 0.1em;
+        text-transform: uppercase;
+        color: #6f9182;
+        margin: 12px 6px 4px;
+      }
+      .dash-side .nav-item {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        padding: 6px 8px;
+        border-radius: 6px;
+        color: #cfe1d8;
+      }
+      .dash-side .nav-item.active {
+        background: rgba(255, 255, 255, 0.08);
+        color: #fff;
+      }
+      .dash-side .nav-item svg {
+        flex-shrink: 0;
+        opacity: 0.8;
+      }
+      .dash-side .nav-item .badge {
+        margin-left: auto;
+        font-family: var(--mono);
+        font-size: 10px;
+        background: var(--gold-600);
+        color: var(--emerald-900);
+        padding: 1px 6px;
+        border-radius: 999px;
+        font-weight: 600;
+      }
+
+      .dash-main {
+        padding: 22px 24px 24px;
+        background: var(--paper);
+      }
+      .dash-mainhead {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-bottom: 14px;
+      }
+      .dash-mainhead h3 {
+        font-family: var(--display);
+        font-weight: 600;
+        font-size: 22px;
+        margin: 0;
+        letter-spacing: -0.01em;
+      }
+      .dash-mainhead .crumbs {
+        font-family: var(--mono);
+        font-size: 11px;
+        color: var(--ink-500);
+      }
+      .kpi-row {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 10px;
+        margin-bottom: 14px;
+      }
+      .kpi {
+        background: var(--card);
+        border: 1px solid var(--ink-100);
+        border-radius: var(--rad);
+        padding: 12px 14px;
+      }
+      .kpi .lab {
+        font-family: var(--mono);
+        font-size: 10px;
+        letter-spacing: 0.06em;
+        text-transform: uppercase;
+        color: var(--ink-500);
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
+      .kpi .v {
+        font-family: var(--display);
+        font-weight: 600;
+        font-size: 26px;
+        line-height: 1.1;
+        margin-top: 2px;
+        color: var(--ink-900);
+      }
+      .kpi .delta {
+        font-family: var(--mono);
+        font-size: 11px;
+        color: var(--emerald-600);
+      }
+      .kpi .delta.warn {
+        color: var(--warn);
+      }
+
+      .dash-cols {
+        display: grid;
+        grid-template-columns: minmax(0, 1.4fr) minmax(0, 1fr);
+        gap: 12px;
+      }
+      .panel {
+        background: var(--card);
+        border: 1px solid var(--ink-100);
+        border-radius: var(--rad);
+        overflow: hidden;
+      }
+      .panel-head {
+        padding: 10px 14px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        border-bottom: 1px solid var(--ink-100);
+      }
+      .panel-head h4 {
+        font-family: var(--body);
+        font-weight: 600;
+        font-size: 13px;
+        margin: 0;
+        color: var(--ink-900);
+      }
+      .panel-head .more {
+        font-family: var(--mono);
+        font-size: 11px;
+        color: var(--ink-500);
+      }
+
+      .grants-table {
+        font-size: 12.5px;
+      }
+      .grants-row {
+        display: grid;
+        grid-template-columns: minmax(0, 1.4fr) minmax(0, 0.8fr) 76px 70px 56px;
+        gap: 6px;
+        align-items: center;
+        padding: 8px 12px;
+        border-bottom: 1px solid var(--ink-100);
+      }
+      .grants-row:last-child {
+        border-bottom: none;
+      }
+      .grants-row.head {
+        background: var(--paper-2);
+        font-family: var(--mono);
+        font-size: 10px;
+        color: var(--ink-500);
+        text-transform: uppercase;
+        letter-spacing: 0.06em;
+      }
+      .grants-row .nm {
+        font-weight: 600;
+        color: var(--ink-900);
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+      }
+      .grants-row .fnd {
+        color: var(--ink-700);
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+      }
+      .grants-row .amt {
+        font-family: var(--mono);
+        font-size: 11.5px;
+        color: var(--ink-700);
+        text-align: right;
+      }
+      .grants-row .due {
+        font-family: var(--mono);
+        font-size: 11px;
+        color: var(--ink-500);
+      }
+      .grants-row .due.urgent {
+        color: var(--danger);
+        font-weight: 600;
+      }
+
+      .pill {
+        display: inline-block;
+        font-family: var(--mono);
+        font-size: 10px;
+        font-weight: 500;
+        padding: 2px 8px;
+        border-radius: 999px;
+        border: 1px solid var(--ink-200);
+        color: var(--ink-700);
+        text-transform: uppercase;
+        letter-spacing: 0.04em;
+      }
+      .pill.draft {
+        background: var(--gold-50);
+        border-color: var(--gold-100);
+        color: var(--gold-700);
+      }
+      .pill.subm {
+        background: #eaf1f5;
+        border-color: #d4dfe7;
+        color: #356c8a;
+      }
+      .pill.award {
+        background: var(--emerald-50);
+        border-color: var(--emerald-100);
+        color: var(--emerald-700);
+      }
+      .pill.report {
+        background: #f3eaf5;
+        border-color: #e2d3e5;
+        color: #6f3f7c;
+      }
+
+      /* restricted-funds panel */
+      .funds-list {
+        padding: 6px 0;
+      }
+      .fund {
+        padding: 8px 14px;
+        border-bottom: 1px solid var(--ink-100);
+      }
+      .fund:last-child {
+        border-bottom: none;
+      }
+      .fund-top {
+        display: flex;
+        justify-content: space-between;
+        align-items: baseline;
+        font-size: 12.5px;
+      }
+      .fund-name {
+        font-weight: 600;
+        color: var(--ink-900);
+      }
+      .fund-rest {
+        font-family: var(--mono);
+        font-size: 11px;
+        color: var(--ink-500);
+      }
+      .fund-bar {
+        height: 6px;
+        border-radius: 3px;
+        background: var(--ink-100);
+        margin-top: 6px;
+        overflow: hidden;
+        position: relative;
+      }
+      .fund-bar .fill {
+        height: 100%;
+        background: var(--emerald-600);
+        border-radius: 3px;
+      }
+      .fund-bar .fill.warn {
+        background: var(--gold-500);
+      }
+      .fund-bar .fill.over {
+        background: var(--danger);
+      }
+      .fund-meta {
+        display: flex;
+        justify-content: space-between;
+        font-family: var(--mono);
+        font-size: 10.5px;
+        color: var(--ink-500);
+        margin-top: 4px;
+      }
+
+      /* floating activity callout on the dashboard */
+      .dash-toast {
+        position: absolute;
+        right: 16px;
+        bottom: 16px;
+        background: var(--card);
+        border: 1px solid var(--ink-100);
+        border-radius: var(--rad);
+        box-shadow: var(--shadow);
+        padding: 10px 14px;
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        font-size: 13px;
+        max-width: 260px;
+      }
+      .dash-toast .ic {
+        width: 28px;
+        height: 28px;
+        border-radius: 50%;
+        background: var(--emerald-50);
+        color: var(--emerald-700);
+        display: grid;
+        place-items: center;
+        flex-shrink: 0;
+      }
+      .dash-toast strong {
+        font-weight: 600;
+      }
+      .dash-toast small {
+        display: block;
+        color: var(--ink-500);
+        font-family: var(--mono);
+        font-size: 10.5px;
+      }
+
+      /* ————————————————————————— hero variant: full-bleed ————————————————————————— */
+      .hero-full {
+        text-align: center;
+      }
+      .hero-full .lede {
+        margin-left: auto;
+        margin-right: auto;
+        max-width: 660px;
+      }
+      .hero-full .cta-row {
+        justify-content: center;
+      }
+      .hero-full .cta-fineprint {
+        justify-content: center;
+      }
+      .hero-full .dash-wrap-full {
+        margin-top: 50px;
+        position: relative;
+      }
+      .hero-full .dash-shell {
+        margin: 0 auto;
+        max-width: 1180px;
+      }
+
+      /* ————————————————————————— hero variant: stacked ————————————————————————— */
+      .hero-stack {
+        padding-top: 8px;
+      }
+      .hero-stack .lede {
+        font-size: 20px;
+      }
+      .hero-stack .stack-cols {
+        display: grid;
+        grid-template-columns: minmax(0, 1.3fr) minmax(0, 1fr);
+        gap: 50px;
+        align-items: end;
+        margin-bottom: 36px;
+      }
+      @media (max-width: 980px) {
+        .hero-stack .stack-cols {
+          grid-template-columns: 1fr;
+          gap: 24px;
+        }
+      }
+      .stack-bullets {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        display: grid;
+        gap: 10px;
+      }
+      .stack-bullets li {
+        display: flex;
+        gap: 10px;
+        align-items: flex-start;
+        font-size: 14px;
+        color: var(--ink-700);
+      }
+      .stack-bullets svg {
+        color: var(--emerald-600);
+        flex-shrink: 0;
+        margin-top: 2px;
+      }
+
+      /* ————————————————————————— logo strip ————————————————————————— */
+      .logo-strip {
+        border-top: 1px solid var(--ink-100);
+        border-bottom: 1px solid var(--ink-100);
+        padding: 22px 0;
+        margin-top: 56px;
+        background: var(--paper-2);
+      }
+      .logo-strip-inner {
+        display: flex;
+        align-items: center;
+        gap: 38px;
+        flex-wrap: wrap;
+        justify-content: center;
+      }
+      .logo-strip .label {
+        font-family: var(--mono);
+        font-size: 11px;
+        letter-spacing: 0.08em;
+        text-transform: uppercase;
+        color: var(--ink-500);
+      }
+      .logo-ph {
+        height: 24px;
+        padding: 0 14px;
+        display: inline-flex;
+        align-items: center;
+        font-family: var(--display);
+        font-weight: 600;
+        font-size: 16px;
+        color: var(--ink-300);
+        letter-spacing: -0.01em;
+        border-left: 1px solid var(--ink-200);
+      }
+      .logo-ph:first-of-type {
+        border-left: none;
+      }
+
+      /* ————————————————————————— sections ————————————————————————— */
+      section.s {
+        padding: 80px 0;
+      }
+      section.s.alt {
+        background: var(--paper-2);
+      }
+      .s-head {
+        max-width: 720px;
+        margin-bottom: 44px;
+      }
+      .s-head .eyebrow {
+        margin-bottom: 12px;
+      }
+      .s-head h2 {
+        font-family: var(--display);
+        font-weight: 600;
+        font-size: clamp(30px, 3.4vw, 44px);
+        line-height: 1.1;
+        letter-spacing: -0.015em;
+        margin: 0 0 12px;
+      }
+      .s-head p {
+        font-size: 17px;
+        color: var(--ink-700);
+        margin: 0;
+      }
+
+      /* feature grid */
+      .features {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 14px;
+      }
+      @media (max-width: 760px) {
+        .features {
+          grid-template-columns: 1fr;
+        }
+      }
+      .feat {
+        background: var(--card);
+        border: 1px solid var(--ink-100);
+        border-radius: var(--rad-lg);
+        padding: 26px 26px 22px;
+        display: grid;
+        grid-template-rows: auto auto auto 1fr;
+        gap: 8px;
+        transition:
+          border-color 0.15s ease,
+          box-shadow 0.15s ease,
+          transform 0.15s ease;
+      }
+      .feat:hover {
+        border-color: var(--emerald-100);
+        box-shadow: var(--shadow);
+        transform: translateY(-1px);
+      }
+      .feat .ic {
+        width: 36px;
+        height: 36px;
+        border-radius: 8px;
+        background: var(--emerald-50);
+        color: var(--emerald-700);
+        display: grid;
+        place-items: center;
+        margin-bottom: 6px;
+      }
+      .feat h3 {
+        font-family: var(--display);
+        font-weight: 600;
+        font-size: 22px;
+        letter-spacing: -0.01em;
+        margin: 0;
+      }
+      .feat p {
+        color: var(--ink-700);
+        font-size: 15px;
+        margin: 0;
+      }
+      .feat .feat-shot {
+        margin-top: 16px;
+        border: 1px solid var(--ink-100);
+        border-radius: var(--rad-sm);
+        background: var(--paper);
+        height: 130px;
+        padding: 10px;
+        overflow: hidden;
+        position: relative;
+      }
+      .feat .shot-grid {
+        display: grid;
+        gap: 6px;
+        height: 100%;
+      }
+      .feat .shot-row {
+        height: 16px;
+        border-radius: 4px;
+        background: linear-gradient(90deg, var(--paper-2), var(--ink-100));
+      }
+      .feat .shot-row.short {
+        width: 60%;
+      }
+      .feat .shot-row.tag {
+        background: var(--emerald-50);
+        width: 80px;
+        height: 20px;
+        border: 1px solid var(--emerald-100);
+      }
+      .feat .shot-bars {
+        display: grid;
+        grid-template-columns: repeat(8, 1fr);
+        gap: 6px;
+        height: 100%;
+        align-items: end;
+      }
+      .feat .shot-bars span {
+        background: var(--emerald-700);
+        border-radius: 2px 2px 0 0;
+      }
+      .feat .shot-bars span:nth-child(odd) {
+        background: var(--gold-500);
+      }
+
+      /* product proof / metrics ribbon — now paper-toned */
+      .ribbon {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 0;
+        border: 1px solid var(--ink-100);
+        border-radius: var(--rad-lg);
+        background: var(--card);
+        overflow: hidden;
+        margin-bottom: 0;
+      }
+      @media (max-width: 760px) {
+        .ribbon {
+          grid-template-columns: repeat(2, 1fr);
+        }
+      }
+      .ribbon .stat {
+        border-left: 1px solid var(--ink-100);
+        padding: 28px 28px;
+      }
+      .ribbon .stat:first-child {
+        border-left: none;
+      }
+      .ribbon .stat .v {
+        font-family: var(--display);
+        font-weight: 600;
+        font-size: 36px;
+        color: var(--emerald-700);
+        line-height: 1;
+        letter-spacing: -0.01em;
+      }
+      .ribbon .stat .l {
+        color: var(--ink-500);
+        font-size: 13px;
+        margin-top: 6px;
+      }
+
+      /* testimonial */
+      .testimonial {
+        background: var(--card);
+        border: 1px solid var(--ink-100);
+        border-radius: var(--rad-lg);
+        padding: 36px;
+        display: grid;
+        grid-template-columns: minmax(0, 1.4fr) minmax(0, 1fr);
+        gap: 36px;
+        align-items: center;
+      }
+      @media (max-width: 880px) {
+        .testimonial {
+          grid-template-columns: 1fr;
+        }
+      }
+      .testimonial blockquote {
+        font-family: var(--display);
+        font-weight: 500;
+        font-size: 26px;
+        line-height: 1.32;
+        letter-spacing: -0.01em;
+        margin: 0;
+        color: var(--ink-900);
+      }
+      .testimonial blockquote::before {
+        content: "“";
+        color: var(--gold-500);
+        font-size: 1.2em;
+        line-height: 0;
+      }
+      .testimonial cite {
+        font-style: normal;
+        display: block;
+        margin-top: 18px;
+        font-size: 13.5px;
+        color: var(--ink-500);
+      }
+      .testimonial cite strong {
+        color: var(--ink-900);
+        display: block;
+        font-weight: 600;
+      }
+      .testimonial-card {
+        background: var(--paper-2);
+        border: 1px solid var(--ink-100);
+        border-radius: var(--rad);
+        padding: 18px;
+      }
+      .testimonial-card .row {
+        display: flex;
+        justify-content: space-between;
+        padding: 6px 0;
+        font-size: 13px;
+        border-bottom: 1px dashed var(--ink-200);
+      }
+      .testimonial-card .row:last-child {
+        border-bottom: none;
+      }
+      .testimonial-card .row .l {
+        color: var(--ink-500);
+      }
+      .testimonial-card .row .v {
+        font-family: var(--mono);
+        font-weight: 600;
+        color: var(--ink-900);
+      }
+      .testimonial-card .row .v.up {
+        color: var(--emerald-600);
+      }
+
+      /* billing toggle */
+      .billing-toggle {
+        display: inline-flex;
+        align-items: center;
+        gap: 4px;
+        padding: 4px;
+        background: var(--paper-2);
+        border: 1px solid var(--ink-100);
+        border-radius: 999px;
+      }
+      .bt-opt {
+        display: inline-flex;
+        align-items: center;
+        gap: 8px;
+        border: 0;
+        background: transparent;
+        height: 36px;
+        padding: 0 16px;
+        border-radius: 999px;
+        font-family: var(--body);
+        font-weight: 600;
+        font-size: 13px;
+        color: var(--ink-700);
+        cursor: pointer;
+        transition:
+          background 0.15s ease,
+          color 0.15s ease,
+          box-shadow 0.15s ease;
+      }
+      .bt-opt.active {
+        background: var(--card);
+        color: var(--emerald-700);
+        box-shadow: var(--shadow-sm);
+      }
+      .bt-opt .save {
+        font-family: var(--mono);
+        font-size: 10px;
+        font-weight: 600;
+        background: var(--gold-50);
+        color: var(--gold-700);
+        padding: 2px 7px;
+        border-radius: 999px;
+        text-transform: uppercase;
+        letter-spacing: 0.04em;
+      }
+      .price-alt {
+        font-family: var(--mono);
+        font-size: 11px;
+        color: var(--ink-500);
+        margin-top: 2px;
+        min-height: 16px;
+      }
+
+      /* pricing teaser */
+      .pricing {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 12px;
+        margin-top: 30px;
+      }
+      @media (max-width: 1024px) {
+        .pricing {
+          grid-template-columns: repeat(2, 1fr);
+        }
+      }
+      @media (max-width: 560px) {
+        .pricing {
+          grid-template-columns: 1fr;
+        }
+      }
+      .price-card {
+        background: var(--card);
+        border: 1px solid var(--ink-100);
+        border-radius: var(--rad-lg);
+        padding: 22px 22px 26px;
+        position: relative;
+        transition:
+          border-color 0.15s ease,
+          transform 0.15s ease,
+          box-shadow 0.15s ease;
+      }
+      .price-card.high {
+        border-color: var(--emerald-700);
+        box-shadow: 0 0 0 4px var(--emerald-50);
+      }
+      .price-card .badge {
+        position: absolute;
+        top: -10px;
+        left: 22px;
+        background: var(--emerald-700);
+        color: #fff;
+        font-family: var(--mono);
+        font-size: 10px;
+        letter-spacing: 0.06em;
+        padding: 3px 8px;
+        border-radius: 999px;
+        text-transform: uppercase;
+      }
+      .price-card h4 {
+        font-family: var(--display);
+        font-weight: 600;
+        font-size: 20px;
+        margin: 0 0 4px;
+      }
+      .price-card .desc {
+        font-size: 13px;
+        color: var(--ink-500);
+        min-height: 38px;
+      }
+      .price-card .amt {
+        margin: 14px 0 6px;
+        font-family: var(--display);
+        font-weight: 600;
+        font-size: 36px;
+        line-height: 1;
+        color: var(--ink-900);
+        letter-spacing: -0.01em;
+      }
+      .price-card .amt small {
+        font-family: var(--body);
+        font-weight: 500;
+        font-size: 13px;
+        color: var(--ink-500);
+      }
+      .price-card ul {
+        list-style: none;
+        padding: 0;
+        margin: 16px 0 18px;
+        display: grid;
+        gap: 8px;
+        font-size: 13.5px;
+        color: var(--ink-700);
+      }
+      .price-card li {
+        display: flex;
+        align-items: flex-start;
+        gap: 8px;
+      }
+      .price-card li svg {
+        color: var(--emerald-600);
+        flex-shrink: 0;
+        margin-top: 3px;
+      }
+
+      /* final CTA */
+      .final-cta {
+        background: var(--paper-2);
+        color: var(--ink-900);
+        border: 1px solid var(--ink-100);
+        border-radius: var(--rad-lg);
+        padding: 56px 48px;
+        display: grid;
+        grid-template-columns: minmax(0, 1.2fr) minmax(0, 1fr);
+        gap: 36px;
+        align-items: center;
+        position: relative;
+        overflow: hidden;
+      }
+      @media (max-width: 880px) {
+        .final-cta {
+          grid-template-columns: 1fr;
+          padding: 36px 28px;
+        }
+      }
+      .final-cta::before {
+        content: "";
+        position: absolute;
+        right: -120px;
+        top: -120px;
+        width: 380px;
+        height: 380px;
+        border-radius: 50%;
+        background: radial-gradient(circle, rgba(184, 137, 40, 0.2), transparent 60%);
+        pointer-events: none;
+      }
+      .final-cta h2 {
+        font-family: var(--display);
+        font-weight: 600;
+        font-size: clamp(28px, 3vw, 40px);
+        line-height: 1.12;
+        margin: 0 0 12px;
+        letter-spacing: -0.015em;
+      }
+      .final-cta::before {
+        display: none;
+      }
+      .final-cta p {
+        color: var(--ink-700);
+        font-size: 16px;
+        margin: 0;
+        max-width: 540px;
+      }
+      .final-cta h2 {
+        color: var(--ink-900);
+      }
+      .final-cta .btn-primary {
+        background: var(--emerald-700);
+        color: #fff;
+      }
+      .final-cta .btn-primary:hover {
+        background: var(--emerald-800);
+      }
+      .final-cta .btn-ghost {
+        color: var(--ink-900);
+        border-color: var(--ink-200);
+      }
+      .final-cta .btn-ghost:hover {
+        background: var(--paper);
+      }
+      .final-cta .quick {
+        display: grid;
+        gap: 10px;
+        font-size: 14px;
+      }
+      .final-cta .quick .q-row {
+        display: flex;
+        gap: 10px;
+        align-items: flex-start;
+      }
+      .final-cta .quick svg {
+        color: var(--emerald-600);
+        flex-shrink: 0;
+        margin-top: 3px;
+      }
+
+      /* footer */
+      footer {
+        border-top: 1px solid var(--ink-100);
+        padding: 36px 0 28px;
+        font-size: 13px;
+        color: var(--ink-500);
+      }
+      footer .foot-inner {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: wrap;
+        gap: 18px;
+      }
+      footer .foot-links {
+        display: flex;
+        gap: 22px;
+      }
+
+      /* persona-conditional copy */
+      body[data-persona="manager"] .for-manager {
+        display: inline;
+      }
+      body[data-persona="finance"] .for-manager {
+        display: none;
+      }
+      body[data-persona="ed"] .for-manager {
+        display: none;
+      }
+      body[data-persona="manager"] .for-finance {
+        display: none;
+      }
+      body[data-persona="finance"] .for-finance {
+        display: inline;
+      }
+      body[data-persona="ed"] .for-finance {
+        display: none;
+      }
+      body[data-persona="manager"] .for-ed {
+        display: none;
+      }
+      body[data-persona="finance"] .for-ed {
+        display: none;
+      }
+      body[data-persona="ed"] .for-ed {
+        display: inline;
+      }
+
+      /* density */
+      body[data-density="compact"] section.s {
+        padding: 56px 0;
+      }
+      body[data-density="compact"] .hero {
+        padding: 40px 0 32px;
+      }
+      body[data-density="roomy"] section.s {
+        padding: 100px 0;
+      }
+    </style>
+  </head>
+  <body data-hero="split" data-persona="manager" data-density="default">
+    <!-- ————————————————————————— TOP NAV ————————————————————————— -->
+    <header class="top">
+      <div class="wrap top-inner">
+        <a class="brand" href="#" aria-label="GrantPipe home">
+          <span class="brand-mark">G</span>
+          GrantPipe
+        </a>
+        <nav>
+          <a href="#">Product</a>
+          <a href="resources.html">Resources</a>
+          <a href="pricing.html">Pricing</a>
+          <a href="compare.html">Compare</a>
+        </nav>
+        <div class="top-cta">
+          <a class="btn btn-link" href="#">Sign in</a>
+          <a class="btn btn-primary" href="#">Start free trial</a>
+        </div>
+      </div>
+    </header>
+
+    <!-- ————————————————————————— HERO ————————————————————————— -->
+    <section class="hero">
+      <div class="wrap">
+        <!-- VARIANT A: SPLIT (default) -->
+        <div class="hero-split">
+          <div class="hero-copy">
+            <span class="eyebrow"
+              ><span class="dot"></span>Donor CRM · Grant pipeline · Restricted funds</span
+            >
+            <h1 class="display">
+              <span class="for-manager"
+                >Run every grant from <em>lead to last report</em>—in one system.</span
+              >
+              <span class="for-finance"
+                >Restricted dollars, deliverables, and audit trails—<em>finally tracked</em>.</span
+              >
+              <span class="for-ed">A grant program your <em>board trusts</em>.</span>
+            </h1>
+            <p class="lede">
+              <span class="for-manager"
+                >GrantPipe puts donors, federal grant opportunities, restricted funds, and
+                compliance on one record—so funder, board, audit, and finance answers come from the
+                same place.</span
+              >
+              <span class="for-finance"
+                >FASB ASC 958 fund accounting, dollar-by-dollar restriction tracking, and
+                audit-ready exports—all native, not a bolt-on.</span
+              >
+              <span class="for-ed"
+                >Pipeline, forecast, restricted-fund position, and board-ready reports—without
+                rebuilding the story across four tools.</span
+              >
+            </p>
+            <div class="cta-row">
+              <a class="btn btn-primary btn-lg" href="#"
+                >Start 1-month free trial <span class="btn-arrow">→</span></a
+              >
+              <a class="btn btn-ghost btn-lg" href="#">See product walkthrough</a>
+            </div>
+            <div class="cta-fineprint">
+              <span class="check">
+                <svg width="14" height="14" viewBox="0 0 16 16" fill="none">
+                  <path
+                    d="M3 8.5l3 3 7-7"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                </svg>
+                No credit card required
+              </span>
+              <span class="sep">·</span>
+              <span class="check">
+                <svg width="14" height="14" viewBox="0 0 16 16" fill="none">
+                  <path
+                    d="M3 8.5l3 3 7-7"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                </svg>
+                Imports from Bloomerang, DonorPerfect, Salesforce
+              </span>
+              <span class="sep">·</span>
+              <span class="check">
+                <svg width="14" height="14" viewBox="0 0 16 16" fill="none">
+                  <path
+                    d="M3 8.5l3 3 7-7"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                </svg>
+                No setup fees
+              </span>
+            </div>
+          </div>
+
+          <!-- DASHBOARD MOCK -->
+          <div class="dash-wrap" id="dashWrapSplit">
+            <!-- dashboard inserted by template below; re-used in all 3 variants -->
+          </div>
+        </div>
+
+        <!-- VARIANT B: FULL-BLEED -->
+        <div class="hero-full">
+          <span class="eyebrow"
+            ><span class="dot"></span>Donor CRM · Grant pipeline · Restricted funds</span
+          >
+          <h1 class="display">
+            <span class="for-manager"
+              >One system for donors, grants, restricted funds <em>&amp; compliance</em>.</span
+            >
+            <span class="for-finance"
+              >The fund-accounting system <em>your auditor wishes you used</em>.</span
+            >
+            <span class="for-ed"
+              >The grant program your board <em>actually wants to read</em>.</span
+            >
+          </h1>
+          <p class="lede">
+            GrantPipe gives grant-funded nonprofits one record for the funder, the board, the
+            auditor, and finance—so you stop rebuilding the story across a CRM, spreadsheets,
+            accounting files, and shared drives.
+          </p>
+          <div class="cta-row">
+            <a class="btn btn-primary btn-lg" href="#"
+              >Start 1-month free trial <span class="btn-arrow">→</span></a
+            >
+            <a class="btn btn-ghost btn-lg" href="#">See product walkthrough</a>
+          </div>
+          <div class="cta-fineprint">
+            <span class="check">
+              <svg width="14" height="14" viewBox="0 0 16 16" fill="none">
+                <path
+                  d="M3 8.5l3 3 7-7"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+              </svg>
+              No card · No setup fees · Built for nonprofit staff (no admin required)
+            </span>
+          </div>
+          <div class="dash-wrap-full" id="dashWrapFull"></div>
+        </div>
+
+        <!-- VARIANT C: STACKED -->
+        <div class="hero-stack">
+          <div class="stack-cols">
+            <div>
+              <span class="eyebrow"
+                ><span class="dot"></span>For mid-sized grant-funded nonprofits</span
+              >
+              <h1 class="display">
+                <span class="for-manager"
+                  >Donors, grants, and the dollars between them—<em>one record</em>.</span
+                >
+                <span class="for-finance"
+                  >Restricted funds, on the same record as the gift that
+                  <em>created them</em>.</span
+                >
+                <span class="for-ed">Every funder question answered from <em>one place</em>.</span>
+              </h1>
+              <p class="lede">
+                Stop rebuilding the same answer across a CRM, accounting system, spreadsheets, and a
+                shared drive. GrantPipe is the single record that funders, your board, your auditor,
+                and finance all read from.
+              </p>
+            </div>
+            <ul class="stack-bullets">
+              <li>
+                <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
+                  <path
+                    d="M3 8.5l3 3 7-7"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  /></svg
+                >Multi-source grant pipeline - included on every plan
+              </li>
+              <li>
+                <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
+                  <path
+                    d="M3 8.5l3 3 7-7"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  /></svg
+                >FASB ASC 958 double-entry fund accounting, native
+              </li>
+              <li>
+                <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
+                  <path
+                    d="M3 8.5l3 3 7-7"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  /></svg
+                >Restricted-fund tracking, dollar-by-dollar
+              </li>
+              <li>
+                <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
+                  <path
+                    d="M3 8.5l3 3 7-7"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  /></svg
+                >Unlimited users — built for staff, not Salesforce admins
+              </li>
+            </ul>
+          </div>
+          <div class="cta-row" style="margin-bottom: 36px">
+            <a class="btn btn-primary btn-lg" href="#"
+              >Start free trial <span class="btn-arrow">→</span></a
+            >
+            <a class="btn btn-ghost btn-lg" href="#">See product walkthrough</a>
+          </div>
+          <div class="dash-wrap-full" id="dashWrapStack"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- DASHBOARD MOCK TEMPLATE (cloned into each variant slot) -->
+    <template id="dash-template">
+      <div class="dash-shell">
+        <!-- browser chrome -->
+        <div class="dash-chrome">
+          <span class="tl"></span><span class="tl"></span><span class="tl"></span>
+          <span class="dash-url">
+            <span class="lock">●</span>
+            app.grantpipe.com
+            <span style="color: var(--ink-300)">/grants</span>
+          </span>
+        </div>
+
+        <!-- app body: no sidebar, just the main content panel -->
+        <div style="display: grid; grid-template-columns: 164px 1fr">
+          <!-- slim nav sidebar -->
+          <aside class="dash-side" style="padding: 20px 14px">
+            <div class="org" style="padding-bottom: 16px; margin-bottom: 14px">
+              <div class="org-mark">RC</div>
+              <div>
+                <div class="org-name">Riverbend</div>
+                <div class="org-sub">FY26</div>
+              </div>
+            </div>
+            <div class="nav-item active" style="margin-bottom: 2px">
+              <svg width="14" height="14" viewBox="0 0 16 16" fill="none">
+                <path
+                  d="M2 4h12M2 8h12M2 12h12"
+                  stroke="currentColor"
+                  stroke-width="1.5"
+                  stroke-linecap="round"
+                />
+              </svg>
+              Pipeline
+              <span class="badge">12</span>
+            </div>
+            <div class="nav-item" style="margin-bottom: 2px">
+              <svg width="14" height="14" viewBox="0 0 16 16" fill="none">
+                <circle cx="8" cy="5" r="2.5" stroke="currentColor" stroke-width="1.5" />
+                <path
+                  d="M2.5 14c1-2.5 3-4 5.5-4s4.5 1.5 5.5 4"
+                  stroke="currentColor"
+                  stroke-width="1.5"
+                  stroke-linecap="round"
+                />
+              </svg>
+              Donors
+            </div>
+            <div class="nav-item" style="margin-bottom: 2px">
+              <svg width="14" height="14" viewBox="0 0 16 16" fill="none">
+                <circle cx="8" cy="8" r="6" stroke="currentColor" stroke-width="1.5" />
+                <path
+                  d="M8 4v4l2.5 1.5"
+                  stroke="currentColor"
+                  stroke-width="1.5"
+                  stroke-linecap="round"
+                />
+              </svg>
+              Funds
+            </div>
+            <div class="nav-item" style="margin-bottom: 2px">
+              <svg width="14" height="14" viewBox="0 0 16 16" fill="none">
+                <path
+                  d="M3 2h7l3 3v9H3z"
+                  stroke="currentColor"
+                  stroke-width="1.5"
+                  stroke-linejoin="round"
+                />
+              </svg>
+              Reports
+            </div>
+
+            <!-- mini fund balances in sidebar -->
+            <div
+              style="
+                margin-top: 20px;
+                padding-top: 16px;
+                border-top: 1px solid rgba(255, 255, 255, 0.1);
+              "
+            >
+              <div
+                style="
+                  font-family: var(--mono);
+                  font-size: 9px;
+                  text-transform: uppercase;
+                  letter-spacing: 0.08em;
+                  color: #6f9182;
+                  margin-bottom: 10px;
+                "
+              >
+                Restricted funds
+              </div>
+              <div style="margin-bottom: 10px">
+                <div style="font-size: 11px; color: #cfe1d8; margin-bottom: 4px">Packard Ocean</div>
+                <div
+                  style="
+                    height: 4px;
+                    background: rgba(255, 255, 255, 0.1);
+                    border-radius: 2px;
+                    overflow: hidden;
+                  "
+                >
+                  <div
+                    style="
+                      width: 42%;
+                      height: 100%;
+                      background: var(--emerald-500);
+                      border-radius: 2px;
+                    "
+                  ></div>
+                </div>
+                <div
+                  style="font-family: var(--mono); font-size: 9px; color: #6f9182; margin-top: 2px"
+                >
+                  42% · $46k of $110k
+                </div>
+              </div>
+              <div style="margin-bottom: 10px">
+                <div style="font-size: 11px; color: #cfe1d8; margin-bottom: 4px">EPA Watershed</div>
+                <div
+                  style="
+                    height: 4px;
+                    background: rgba(255, 255, 255, 0.1);
+                    border-radius: 2px;
+                    overflow: hidden;
+                  "
+                >
+                  <div
+                    style="
+                      width: 78%;
+                      height: 100%;
+                      background: var(--gold-500);
+                      border-radius: 2px;
+                    "
+                  ></div>
+                </div>
+                <div
+                  style="
+                    font-family: var(--mono);
+                    font-size: 9px;
+                    color: var(--gold-600);
+                    margin-top: 2px;
+                  "
+                >
+                  78% · $59k of $75k
+                </div>
+              </div>
+              <div>
+                <div style="font-size: 11px; color: #cfe1d8; margin-bottom: 4px">
+                  Bloomberg Civic
+                </div>
+                <div
+                  style="
+                    height: 4px;
+                    background: rgba(255, 255, 255, 0.1);
+                    border-radius: 2px;
+                    overflow: hidden;
+                  "
+                >
+                  <div
+                    style="
+                      width: 6%;
+                      height: 100%;
+                      background: var(--emerald-500);
+                      border-radius: 2px;
+                    "
+                  ></div>
+                </div>
+                <div
+                  style="font-family: var(--mono); font-size: 9px; color: #6f9182; margin-top: 2px"
+                >
+                  6% · $15k of $250k
+                </div>
+              </div>
+            </div>
+          </aside>
+
+          <!-- main content -->
+          <main
+            style="
+              background: var(--paper);
+              padding: 24px 24px 20px;
+              display: flex;
+              flex-direction: column;
+              gap: 18px;
+            "
+          >
+            <!-- page header -->
+            <div style="display: flex; align-items: center; justify-content: space-between">
+              <div>
+                <div
+                  style="
+                    font-family: var(--display);
+                    font-weight: 600;
+                    font-size: 18px;
+                    color: var(--ink-900);
+                    letter-spacing: -0.01em;
+                  "
+                >
+                  Grant pipeline
+                </div>
+                <div
+                  style="
+                    font-family: var(--mono);
+                    font-size: 11px;
+                    color: var(--ink-500);
+                    margin-top: 2px;
+                  "
+                >
+                  12 active · 5 deadlines in 14 days
+                </div>
+              </div>
+              <span
+                style="
+                  display: inline-flex;
+                  align-items: center;
+                  gap: 5px;
+                  height: 32px;
+                  padding: 0 14px;
+                  background: var(--emerald-700);
+                  border-radius: 999px;
+                  font-size: 12px;
+                  font-weight: 600;
+                  color: #fff;
+                  font-family: var(--body);
+                "
+              >
+                + New grant
+              </span>
+            </div>
+
+            <!-- KPI strip: 3 cards, big and readable -->
+            <div style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 10px">
+              <div
+                style="
+                  background: var(--card);
+                  border: 1px solid var(--ink-100);
+                  border-radius: 10px;
+                  padding: 14px 16px;
+                "
+              >
+                <div
+                  style="
+                    font-family: var(--mono);
+                    font-size: 10px;
+                    text-transform: uppercase;
+                    letter-spacing: 0.06em;
+                    color: var(--ink-500);
+                    margin-bottom: 6px;
+                  "
+                >
+                  Pipeline value
+                </div>
+                <div
+                  style="
+                    font-family: var(--display);
+                    font-weight: 600;
+                    font-size: 28px;
+                    color: var(--ink-900);
+                    line-height: 1;
+                    letter-spacing: -0.01em;
+                  "
+                >
+                  $2.4M
+                </div>
+                <div
+                  style="
+                    font-family: var(--mono);
+                    font-size: 11px;
+                    color: var(--emerald-600);
+                    margin-top: 5px;
+                  "
+                >
+                  12 active grants
+                </div>
+              </div>
+              <div
+                style="
+                  background: var(--card);
+                  border: 1px solid var(--ink-100);
+                  border-radius: 10px;
+                  padding: 14px 16px;
+                "
+              >
+                <div
+                  style="
+                    font-family: var(--mono);
+                    font-size: 10px;
+                    text-transform: uppercase;
+                    letter-spacing: 0.06em;
+                    color: var(--ink-500);
+                    margin-bottom: 6px;
+                  "
+                >
+                  Awarded YTD
+                </div>
+                <div
+                  style="
+                    font-family: var(--display);
+                    font-weight: 600;
+                    font-size: 28px;
+                    color: var(--ink-900);
+                    line-height: 1;
+                    letter-spacing: -0.01em;
+                  "
+                >
+                  $890k
+                </div>
+                <div
+                  style="
+                    font-family: var(--mono);
+                    font-size: 11px;
+                    color: var(--emerald-600);
+                    margin-top: 5px;
+                  "
+                >
+                  5 grants closed
+                </div>
+              </div>
+              <div
+                style="
+                  background: var(--card);
+                  border: 1px solid var(--ink-100);
+                  border-radius: 10px;
+                  padding: 14px 16px;
+                "
+              >
+                <div
+                  style="
+                    font-family: var(--mono);
+                    font-size: 10px;
+                    text-transform: uppercase;
+                    letter-spacing: 0.06em;
+                    color: var(--ink-500);
+                    margin-bottom: 6px;
+                  "
+                >
+                  Due soon
+                </div>
+                <div
+                  style="
+                    font-family: var(--display);
+                    font-weight: 600;
+                    font-size: 28px;
+                    color: var(--danger);
+                    line-height: 1;
+                    letter-spacing: -0.01em;
+                  "
+                >
+                  5
+                </div>
+                <div
+                  style="
+                    font-family: var(--mono);
+                    font-size: 11px;
+                    color: var(--danger);
+                    margin-top: 5px;
+                  "
+                >
+                  2 overdue
+                </div>
+              </div>
+            </div>
+
+            <!-- grant rows: clean list, 4 rows max -->
+            <div
+              style="
+                background: var(--card);
+                border: 1px solid var(--ink-100);
+                border-radius: 10px;
+                overflow: hidden;
+              "
+            >
+              <!-- header -->
+              <div
+                style="
+                  display: flex;
+                  align-items: center;
+                  justify-content: space-between;
+                  padding: 12px 18px;
+                  border-bottom: 1px solid var(--ink-100);
+                "
+              >
+                <span style="font-weight: 600; font-size: 13px; color: var(--ink-900)"
+                  >Active grants</span
+                >
+                <span style="font-family: var(--mono); font-size: 11px; color: var(--ink-500)"
+                  >View all 12 →</span
+                >
+              </div>
+              <!-- rows -->
+              <div
+                style="
+                  display: flex;
+                  align-items: center;
+                  justify-content: space-between;
+                  padding: 13px 18px;
+                  border-bottom: 1px solid var(--ink-100);
+                "
+              >
+                <div>
+                  <div style="font-weight: 600; font-size: 13.5px; color: var(--ink-900)">
+                    Civic Engagement '26
+                  </div>
+                  <div
+                    style="
+                      font-family: var(--mono);
+                      font-size: 11px;
+                      color: var(--ink-500);
+                      margin-top: 2px;
+                    "
+                  >
+                    Ford Foundation · $200k
+                  </div>
+                </div>
+                <div style="display: flex; align-items: center; gap: 10px">
+                  <span
+                    style="
+                      font-family: var(--mono);
+                      font-size: 11px;
+                      background: var(--gold-50);
+                      border: 1px solid var(--gold-100);
+                      color: var(--gold-700);
+                      padding: 2px 9px;
+                      border-radius: 999px;
+                      text-transform: uppercase;
+                      letter-spacing: 0.04em;
+                      font-weight: 600;
+                      font-size: 10px;
+                    "
+                    >Drafting</span
+                  >
+                  <span
+                    style="
+                      font-family: var(--mono);
+                      font-size: 11px;
+                      color: var(--danger);
+                      font-weight: 600;
+                      white-space: nowrap;
+                      min-width: 46px;
+                      text-align: right;
+                    "
+                    >May 30</span
+                  >
+                </div>
+              </div>
+              <div
+                style="
+                  display: flex;
+                  align-items: center;
+                  justify-content: space-between;
+                  padding: 13px 18px;
+                  border-bottom: 1px solid var(--ink-100);
+                "
+              >
+                <div>
+                  <div style="font-weight: 600; font-size: 13.5px; color: var(--ink-900)">
+                    Ocean Conservation 4yr
+                  </div>
+                  <div
+                    style="
+                      font-family: var(--mono);
+                      font-size: 11px;
+                      color: var(--ink-500);
+                      margin-top: 2px;
+                    "
+                  >
+                    Packard Foundation · $110k
+                  </div>
+                </div>
+                <div style="display: flex; align-items: center; gap: 10px">
+                  <span
+                    style="
+                      font-family: var(--mono);
+                      font-size: 10px;
+                      background: var(--emerald-50);
+                      border: 1px solid var(--emerald-100);
+                      color: var(--emerald-700);
+                      padding: 2px 9px;
+                      border-radius: 999px;
+                      text-transform: uppercase;
+                      letter-spacing: 0.04em;
+                      font-weight: 600;
+                    "
+                    >Awarded</span
+                  >
+                  <span
+                    style="
+                      font-family: var(--mono);
+                      font-size: 11px;
+                      color: var(--ink-300);
+                      min-width: 46px;
+                      text-align: right;
+                    "
+                    >—</span
+                  >
+                </div>
+              </div>
+              <div
+                style="
+                  display: flex;
+                  align-items: center;
+                  justify-content: space-between;
+                  padding: 13px 18px;
+                  border-bottom: 1px solid var(--ink-100);
+                "
+              >
+                <div>
+                  <div style="font-weight: 600; font-size: 13.5px; color: var(--ink-900)">
+                    Health Equity Initiative
+                  </div>
+                  <div
+                    style="
+                      font-family: var(--mono);
+                      font-size: 11px;
+                      color: var(--ink-500);
+                      margin-top: 2px;
+                    "
+                  >
+                    RWJF · $150k
+                  </div>
+                </div>
+                <div style="display: flex; align-items: center; gap: 10px">
+                  <span
+                    style="
+                      font-family: var(--mono);
+                      font-size: 10px;
+                      background: #eaf1f5;
+                      border: 1px solid #d4dfe7;
+                      color: #356c8a;
+                      padding: 2px 9px;
+                      border-radius: 999px;
+                      text-transform: uppercase;
+                      letter-spacing: 0.04em;
+                      font-weight: 600;
+                    "
+                    >Submitted</span
+                  >
+                  <span
+                    style="
+                      font-family: var(--mono);
+                      font-size: 11px;
+                      color: var(--ink-300);
+                      min-width: 46px;
+                      text-align: right;
+                    "
+                    >—</span
+                  >
+                </div>
+              </div>
+              <div
+                style="
+                  display: flex;
+                  align-items: center;
+                  justify-content: space-between;
+                  padding: 13px 18px;
+                "
+              >
+                <div>
+                  <div style="font-weight: 600; font-size: 13.5px; color: var(--ink-900)">
+                    Watershed Stewardship
+                  </div>
+                  <div
+                    style="
+                      font-family: var(--mono);
+                      font-size: 11px;
+                      color: var(--ink-500);
+                      margin-top: 2px;
+                    "
+                  >
+                    EPA / Grants.gov · $75k
+                  </div>
+                </div>
+                <div style="display: flex; align-items: center; gap: 10px">
+                  <span
+                    style="
+                      font-family: var(--mono);
+                      font-size: 10px;
+                      background: #f3eaf5;
+                      border: 1px solid #e2d3e5;
+                      color: #6f3f7c;
+                      padding: 2px 9px;
+                      border-radius: 999px;
+                      text-transform: uppercase;
+                      letter-spacing: 0.04em;
+                      font-weight: 600;
+                    "
+                    >Reporting</span
+                  >
+                  <span
+                    style="
+                      font-family: var(--mono);
+                      font-size: 11px;
+                      color: var(--danger);
+                      font-weight: 600;
+                      min-width: 46px;
+                      text-align: right;
+                    "
+                    >May 15</span
+                  >
+                </div>
+              </div>
+            </div>
+          </main>
+        </div>
+      </div>
+    </template>
+
+    <!-- ————————————————————————— LOGO STRIP ————————————————————————— -->
+    <div class="logo-strip">
+      <div class="wrap logo-strip-inner">
+        <span class="label">Built for nonprofits like</span>
+        <span class="logo-ph">Riverbend</span>
+        <span class="logo-ph">CityServe</span>
+        <span class="logo-ph">Habitat NW</span>
+        <span class="logo-ph">Headwaters</span>
+        <span class="logo-ph">CommunityRise</span>
+        <span class="logo-ph">North Star</span>
+      </div>
+    </div>
+
+    <!-- ————————————————————————— FEATURES ————————————————————————— -->
+    <section class="s">
+      <div class="wrap">
+        <div class="s-head">
+          <span class="eyebrow"><span class="dot"></span>What's inside</span>
+          <h2>Donors, grants, and the dollars between them—on the same record.</h2>
+          <p>
+            Most nonprofit teams glue together a CRM, a fund-accounting system, a Grants.gov tab,
+            and three spreadsheets. GrantPipe collapses all of that into one workspace so funder,
+            board, audit, and finance answers come from the same place.
+          </p>
+        </div>
+
+        <div class="features">
+          <article class="feat">
+            <div class="ic">
+              <svg width="18" height="18" viewBox="0 0 18 18" fill="none">
+                <path
+                  d="M3 4h12M3 9h12M3 14h12"
+                  stroke="currentColor"
+                  stroke-width="1.6"
+                  stroke-linecap="round"
+                />
+              </svg>
+            </div>
+            <h3>Pipeline that maps how grants actually move</h3>
+            <p>
+              Lead → Drafting → Submitted → Awarded → Reporting. Owners, deadlines, attachments, and
+              narrative drafts live on the card—not in someone's inbox.
+            </p>
+            <div class="feat-shot">
+              <!-- mini kanban-style pipeline preview -->
+              <div style="display: flex; gap: 6px; height: 100%">
+                <div
+                  style="
+                    flex: 1;
+                    background: var(--paper-2);
+                    border-radius: 6px;
+                    padding: 8px 6px;
+                    border: 1px solid var(--ink-100);
+                  "
+                >
+                  <div
+                    style="
+                      font-family: var(--mono);
+                      font-size: 9px;
+                      color: var(--ink-500);
+                      text-transform: uppercase;
+                      letter-spacing: 0.06em;
+                      margin-bottom: 6px;
+                    "
+                  >
+                    Drafting
+                  </div>
+                  <div
+                    style="
+                      background: var(--gold-50);
+                      border: 1px solid var(--gold-100);
+                      border-radius: 4px;
+                      padding: 5px 7px;
+                      margin-bottom: 4px;
+                    "
+                  >
+                    <div style="font-size: 10.5px; font-weight: 600; color: var(--ink-900)">
+                      Ford — Civic
+                    </div>
+                    <div style="font-family: var(--mono); font-size: 9px; color: var(--gold-700)">
+                      $200k · May 30
+                    </div>
+                  </div>
+                  <div
+                    style="
+                      background: var(--gold-50);
+                      border: 1px solid var(--gold-100);
+                      border-radius: 4px;
+                      padding: 5px 7px;
+                    "
+                  >
+                    <div style="font-size: 10.5px; font-weight: 600; color: var(--ink-900)">
+                      Hewlett
+                    </div>
+                    <div style="font-family: var(--mono); font-size: 9px; color: var(--gold-700)">
+                      $120k · Jul 2
+                    </div>
+                  </div>
+                </div>
+                <div
+                  style="
+                    flex: 1;
+                    background: var(--paper-2);
+                    border-radius: 6px;
+                    padding: 8px 6px;
+                    border: 1px solid var(--ink-100);
+                  "
+                >
+                  <div
+                    style="
+                      font-family: var(--mono);
+                      font-size: 9px;
+                      color: var(--ink-500);
+                      text-transform: uppercase;
+                      letter-spacing: 0.06em;
+                      margin-bottom: 6px;
+                    "
+                  >
+                    Submitted
+                  </div>
+                  <div
+                    style="
+                      background: var(--card);
+                      border: 1px solid var(--ink-100);
+                      border-radius: 4px;
+                      padding: 5px 7px;
+                      margin-bottom: 4px;
+                    "
+                  >
+                    <div style="font-size: 10.5px; font-weight: 600; color: var(--ink-900)">
+                      RWJF
+                    </div>
+                    <div style="font-family: var(--mono); font-size: 9px; color: var(--ink-500)">
+                      $150k
+                    </div>
+                  </div>
+                </div>
+                <div
+                  style="
+                    flex: 1;
+                    background: var(--paper-2);
+                    border-radius: 6px;
+                    padding: 8px 6px;
+                    border: 1px solid var(--ink-100);
+                  "
+                >
+                  <div
+                    style="
+                      font-family: var(--mono);
+                      font-size: 9px;
+                      color: var(--ink-500);
+                      text-transform: uppercase;
+                      letter-spacing: 0.06em;
+                      margin-bottom: 6px;
+                    "
+                  >
+                    Awarded
+                  </div>
+                  <div
+                    style="
+                      background: var(--emerald-50);
+                      border: 1px solid var(--emerald-100);
+                      border-radius: 4px;
+                      padding: 5px 7px;
+                    "
+                  >
+                    <div style="font-size: 10.5px; font-weight: 600; color: var(--emerald-700)">
+                      Packard ✓
+                    </div>
+                    <div
+                      style="font-family: var(--mono); font-size: 9px; color: var(--emerald-600)"
+                    >
+                      $110k
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <article class="feat">
+            <div class="ic">
+              <svg width="18" height="18" viewBox="0 0 18 18" fill="none">
+                <circle cx="9" cy="9" r="7" stroke="currentColor" stroke-width="1.6" />
+                <path
+                  d="M9 4v5l3 2"
+                  stroke="currentColor"
+                  stroke-width="1.6"
+                  stroke-linecap="round"
+                />
+              </svg>
+            </div>
+            <h3>Restricted funds, dollar-by-dollar</h3>
+            <p>
+              Tag every gift to its restriction. Spend-down is calculated automatically, not
+              reconciled at year-end. FASB ASC 958 fund accounting is native—not a bolt-on.
+            </p>
+            <div class="feat-shot">
+              <div style="display: grid; gap: 10px; padding: 4px 0">
+                <div>
+                  <div
+                    style="
+                      display: flex;
+                      justify-content: space-between;
+                      font-size: 11px;
+                      font-weight: 600;
+                      color: var(--ink-900);
+                      margin-bottom: 4px;
+                    "
+                  >
+                    <span>Packard Ocean</span
+                    ><span style="font-family: var(--mono)">42% · $46k of $110k</span>
+                  </div>
+                  <div
+                    style="
+                      height: 7px;
+                      background: var(--ink-100);
+                      border-radius: 4px;
+                      overflow: hidden;
+                    "
+                  >
+                    <div
+                      style="
+                        height: 100%;
+                        width: 42%;
+                        background: var(--emerald-600);
+                        border-radius: 4px;
+                      "
+                    ></div>
+                  </div>
+                </div>
+                <div>
+                  <div
+                    style="
+                      display: flex;
+                      justify-content: space-between;
+                      font-size: 11px;
+                      font-weight: 600;
+                      color: var(--ink-900);
+                      margin-bottom: 4px;
+                    "
+                  >
+                    <span>EPA Watershed</span
+                    ><span style="font-family: var(--mono); color: var(--warn)"
+                      >78% · $59k of $75k</span
+                    >
+                  </div>
+                  <div
+                    style="
+                      height: 7px;
+                      background: var(--ink-100);
+                      border-radius: 4px;
+                      overflow: hidden;
+                    "
+                  >
+                    <div
+                      style="
+                        height: 100%;
+                        width: 78%;
+                        background: var(--gold-500);
+                        border-radius: 4px;
+                      "
+                    ></div>
+                  </div>
+                </div>
+                <div>
+                  <div
+                    style="
+                      display: flex;
+                      justify-content: space-between;
+                      font-size: 11px;
+                      font-weight: 600;
+                      color: var(--ink-900);
+                      margin-bottom: 4px;
+                    "
+                  >
+                    <span>Bloomberg Civic</span
+                    ><span style="font-family: var(--mono)">6% · $15k of $250k</span>
+                  </div>
+                  <div
+                    style="
+                      height: 7px;
+                      background: var(--ink-100);
+                      border-radius: 4px;
+                      overflow: hidden;
+                    "
+                  >
+                    <div
+                      style="
+                        height: 100%;
+                        width: 6%;
+                        background: var(--emerald-600);
+                        border-radius: 4px;
+                      "
+                    ></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <article class="feat">
+            <div class="ic">
+              <svg width="18" height="18" viewBox="0 0 18 18" fill="none">
+                <path
+                  d="M3 4h7l2 2h3v8H3z"
+                  stroke="currentColor"
+                  stroke-width="1.6"
+                  stroke-linejoin="round"
+                />
+              </svg>
+            </div>
+            <h3>Multi-source grant pipeline, included</h3>
+            <p>
+              Grants.gov search lives inside GrantPipe—on every plan. Save strong fits, convert to a
+              pipeline card, route for review. No extra subscription.
+            </p>
+            <div class="feat-shot">
+              <div style="padding: 6px 0">
+                <div
+                  style="
+                    display: flex;
+                    align-items: center;
+                    gap: 6px;
+                    background: var(--paper-2);
+                    border: 1px solid var(--ink-100);
+                    border-radius: 6px;
+                    padding: 6px 10px;
+                    margin-bottom: 8px;
+                  "
+                >
+                  <svg width="12" height="12" viewBox="0 0 16 16" fill="none">
+                    <circle cx="7" cy="7" r="5" stroke="currentColor" stroke-width="1.5" />
+                    <path
+                      d="M11 11l3 3"
+                      stroke="currentColor"
+                      stroke-width="1.5"
+                      stroke-linecap="round"
+                    />
+                  </svg>
+                  <span style="font-family: var(--mono); font-size: 11px; color: var(--ink-500)"
+                    >Search Grants.gov opportunities...</span
+                  >
+                </div>
+                <div style="display: flex; flex-direction: column; gap: 5px">
+                  <div
+                    style="
+                      background: var(--card);
+                      border: 1px solid var(--ink-100);
+                      border-radius: 5px;
+                      padding: 6px 10px;
+                    "
+                  >
+                    <div style="font-size: 11px; font-weight: 600; color: var(--ink-900)">
+                      HHS — Community Health Workers
+                    </div>
+                    <div
+                      style="
+                        font-family: var(--mono);
+                        font-size: 9.5px;
+                        color: var(--ink-500);
+                        margin-top: 2px;
+                      "
+                    >
+                      CFDA 93.912 · Due Jul 14 · Up to $400k
+                    </div>
+                  </div>
+                  <div
+                    style="
+                      background: var(--card);
+                      border: 1px solid var(--ink-100);
+                      border-radius: 5px;
+                      padding: 6px 10px;
+                    "
+                  >
+                    <div style="font-size: 11px; font-weight: 600; color: var(--ink-900)">
+                      EPA — Environmental Justice
+                    </div>
+                    <div
+                      style="
+                        font-family: var(--mono);
+                        font-size: 9.5px;
+                        color: var(--ink-500);
+                        margin-top: 2px;
+                      "
+                    >
+                      CFDA 66.306 · Due Aug 01 · Up to $200k
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <article class="feat">
+            <div class="ic">
+              <svg width="18" height="18" viewBox="0 0 18 18" fill="none">
+                <path
+                  d="M9 1L2 4v5c0 4 3 7 7 8 4-1 7-4 7-8V4z"
+                  stroke="currentColor"
+                  stroke-width="1.6"
+                  stroke-linejoin="round"
+                />
+                <path
+                  d="M6 9l2 2 4-4"
+                  stroke="currentColor"
+                  stroke-width="1.6"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+              </svg>
+            </div>
+            <h3>Audit-ready by default</h3>
+            <p>
+              Deliverables, narrative drafts, financial reports, board packets — all exported in one
+              click, all backed by an immutable audit trail.
+            </p>
+            <div class="feat-shot">
+              <div style="display: grid; gap: 6px; padding: 4px 0">
+                <div
+                  style="
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                    padding: 5px 8px;
+                    background: var(--emerald-50);
+                    border: 1px solid var(--emerald-100);
+                    border-radius: 5px;
+                  "
+                >
+                  <span style="font-size: 11px; font-weight: 600; color: var(--emerald-700)"
+                    >Packard final report</span
+                  >
+                  <span
+                    style="
+                      font-family: var(--mono);
+                      font-size: 9px;
+                      color: var(--emerald-600);
+                      background: var(--card);
+                      border: 1px solid var(--emerald-100);
+                      padding: 1px 6px;
+                      border-radius: 999px;
+                    "
+                    >Ready</span
+                  >
+                </div>
+                <div
+                  style="
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                    padding: 5px 8px;
+                    background: var(--card);
+                    border: 1px solid var(--ink-100);
+                    border-radius: 5px;
+                  "
+                >
+                  <span style="font-size: 11px; font-weight: 600; color: var(--ink-900)"
+                    >Board packet Q2</span
+                  >
+                  <span
+                    style="
+                      font-family: var(--mono);
+                      font-size: 9px;
+                      color: var(--ink-500);
+                      background: var(--paper-2);
+                      border: 1px solid var(--ink-100);
+                      padding: 1px 6px;
+                      border-radius: 999px;
+                    "
+                    >Draft</span
+                  >
+                </div>
+                <div
+                  style="
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                    padding: 5px 8px;
+                    background: var(--card);
+                    border: 1px solid var(--ink-100);
+                    border-radius: 5px;
+                  "
+                >
+                  <span style="font-size: 11px; font-weight: 600; color: var(--ink-900)"
+                    >SF-425 Federal Report</span
+                  >
+                  <span
+                    style="
+                      font-family: var(--mono);
+                      font-size: 9px;
+                      color: var(--gold-700);
+                      background: var(--gold-50);
+                      border: 1px solid var(--gold-100);
+                      padding: 1px 6px;
+                      border-radius: 999px;
+                    "
+                    >Due May 30</span
+                  >
+                </div>
+                <div
+                  style="
+                    padding: 4px 8px;
+                    font-family: var(--mono);
+                    font-size: 9.5px;
+                    color: var(--ink-500);
+                  "
+                >
+                  ↳ Immutable audit trail · all 14 docs attached
+                </div>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ————————————————————————— PRICING ————————————————————————— -->
+    <section class="s" id="pricing-section">
+      <div class="wrap">
+        <div
+          class="s-head"
+          style="
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-end;
+            gap: 32px;
+            max-width: none;
+            flex-wrap: wrap;
+          "
+        >
+          <div style="max-width: 680px">
+            <span class="eyebrow"><span class="dot"></span>Pricing</span>
+            <h2 style="margin-top: 12px">Transparent plans. Unlimited users. No setup fees.</h2>
+            <p>
+              Pricing scales with how many active grants you run, not how many people use the
+              system. Every plan includes Grants.gov search, non-federal opportunity tracking, donor
+              CRM, restricted-fund tracking, and compliance workflows.
+            </p>
+          </div>
+          <div class="billing-toggle" role="tablist" aria-label="Billing cycle">
+            <button class="bt-opt" data-cycle="monthly" role="tab">Monthly</button>
+            <button class="bt-opt active" data-cycle="annual" role="tab">
+              Annual <span class="save">2 months free</span>
+            </button>
+          </div>
+        </div>
+        <div class="pricing">
+          <div class="price-card">
+            <h4>Starter</h4>
+            <div class="desc">Up to 10 active grants. Tracking and visibility for smaller teams.</div>
+            <div class="amt">
+              $<span class="price-num" data-monthly="199" data-annual="165">165</span
+              ><small>/mo, billed annually</small>
+            </div>
+            <div class="price-alt">$159/mo billed monthly</div>
+            <ul>
+              <li>
+                <svg width="14" height="14" viewBox="0 0 16 16" fill="none">
+                  <path
+                    d="M3 8.5l3 3 7-7"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  /></svg
+                >Donor CRM + grant pipeline
+              </li>
+              <li>
+                <svg width="14" height="14" viewBox="0 0 16 16" fill="none">
+                  <path
+                    d="M3 8.5l3 3 7-7"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  /></svg
+                >Federal grants search
+              </li>
+              <li>
+                <svg width="14" height="14" viewBox="0 0 16 16" fill="none">
+                  <path
+                    d="M3 8.5l3 3 7-7"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  /></svg
+                >Unlimited users
+              </li>
+            </ul>
+            <a class="btn btn-ghost" href="#" style="width: 100%; justify-content: center"
+              >Start free trial</a
+            >
+          </div>
+          <div class="price-card high">
+            <span class="badge">Most popular</span>
+            <h4>Growth</h4>
+            <div class="desc">Up to 50 active grants. Operational control for growing teams.</div>
+            <div class="amt">
+              $<span class="price-num" data-monthly="399" data-annual="329">329</span
+              ><small>/mo, billed annually</small>
+            </div>
+            <div class="price-alt">$299/mo billed monthly</div>
+            <ul>
+              <li>
+                <svg width="14" height="14" viewBox="0 0 16 16" fill="none">
+                  <path
+                    d="M3 8.5l3 3 7-7"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  /></svg
+                >Everything in Starter
+              </li>
+              <li>
+                <svg width="14" height="14" viewBox="0 0 16 16" fill="none">
+                  <path
+                    d="M3 8.5l3 3 7-7"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  /></svg
+                >Deadline reminders &amp; alerts
+              </li>
+              <li>
+                <svg width="14" height="14" viewBox="0 0 16 16" fill="none">
+                  <path
+                    d="M3 8.5l3 3 7-7"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  /></svg
+                >Compliance report packs
+              </li>
+            </ul>
+            <a class="btn btn-primary" href="#" style="width: 100%; justify-content: center"
+              >Start free trial</a
+            >
+          </div>
+          <div class="price-card">
+            <h4>Audit-Ready</h4>
+            <div class="desc">Up to 100 grants + program allocation &amp; financials.</div>
+            <div class="amt">
+              $<span class="price-num" data-monthly="799" data-annual="665">665</span
+              ><small>/mo, billed annually</small>
+            </div>
+            <div class="price-alt">$599/mo billed monthly</div>
+            <ul>
+              <li>
+                <svg width="14" height="14" viewBox="0 0 16 16" fill="none">
+                  <path
+                    d="M3 8.5l3 3 7-7"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  /></svg
+                >Everything in Growth
+              </li>
+              <li>
+                <svg width="14" height="14" viewBox="0 0 16 16" fill="none">
+                  <path
+                    d="M3 8.5l3 3 7-7"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  /></svg
+                >Program allocation &amp; budget vs actual
+              </li>
+              <li>
+                <svg width="14" height="14" viewBox="0 0 16 16" fill="none">
+                  <path
+                    d="M3 8.5l3 3 7-7"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  /></svg
+                >Guided onboarding &amp; import
+              </li>
+            </ul>
+            <a class="btn btn-ghost" href="#" style="width: 100%; justify-content: center"
+              >Start free trial</a
+            >
+          </div>
+          <div class="price-card">
+            <h4>Enterprise</h4>
+            <div class="desc">Custom terms for complex teams.</div>
+            <div class="amt">Custom</div>
+            <div class="price-alt">Talk to us about scale &amp; security</div>
+            <ul>
+              <li>
+                <svg width="14" height="14" viewBox="0 0 16 16" fill="none">
+                  <path
+                    d="M3 8.5l3 3 7-7"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  /></svg
+                >Dedicated implementation
+              </li>
+              <li>
+                <svg width="14" height="14" viewBox="0 0 16 16" fill="none">
+                  <path
+                    d="M3 8.5l3 3 7-7"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  /></svg
+                >SSO &amp; advanced security
+              </li>
+              <li>
+                <svg width="14" height="14" viewBox="0 0 16 16" fill="none">
+                  <path
+                    d="M3 8.5l3 3 7-7"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  /></svg
+                >Custom contracting
+              </li>
+            </ul>
+            <a class="btn btn-ghost" href="#" style="width: 100%; justify-content: center"
+              >Contact us</a
+            >
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ————————————————————————— FINAL CTA ————————————————————————— -->
+    <section class="s alt" style="padding-top: 40px">
+      <div class="wrap">
+        <div class="final-cta">
+          <div>
+            <h2>Bring your tracker. Walk out with a working pipeline.</h2>
+            <p>
+              Start a 1-month free trial. We'll help import your existing tracker so you'll see your
+              own grants in GrantPipe today—no credit card, no setup fees, no Salesforce admin
+              required.
+            </p>
+            <div class="cta-row" style="margin-top: 22px">
+              <a class="btn btn-primary btn-lg" href="#"
+                >Start your 1-month free trial <span class="btn-arrow">→</span></a
+              >
+            </div>
+          </div>
+          <div class="quick">
+            <div class="q-row">
+              <svg width="18" height="18" viewBox="0 0 18 18" fill="none">
+                <path
+                  d="M3 9.5l3 3 9-9"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+              </svg>
+              <span>1-month free trial. No credit card.</span>
+            </div>
+            <div class="q-row">
+              <svg width="18" height="18" viewBox="0 0 18 18" fill="none">
+                <path
+                  d="M3 9.5l3 3 9-9"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+              </svg>
+              <span>Imports from Bloomerang, DonorPerfect, Salesforce, spreadsheets.</span>
+            </div>
+            <div class="q-row">
+              <svg width="18" height="18" viewBox="0 0 18 18" fill="none">
+                <path
+                  d="M3 9.5l3 3 9-9"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+              </svg>
+              <span>Built for nonprofit staff—no Salesforce admin required.</span>
+            </div>
+            <div class="q-row">
+              <svg width="18" height="18" viewBox="0 0 18 18" fill="none">
+                <path
+                  d="M3 9.5l3 3 9-9"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+              </svg>
+              <span>Add billing later if the trial is a fit.</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ————————————————————————— FOOTER ————————————————————————— -->
+    <footer>
+      <div class="wrap foot-inner">
+        <div class="brand"><span class="brand-mark">G</span> GrantPipe</div>
+        <div class="foot-links">
+          <a href="#">Product</a>
+          <a href="pricing.html">Pricing</a>
+          <a href="resources.html">Resources</a>
+          <a href="compare.html">Compare</a>
+          <a href="#">About</a>
+          <a href="#">Privacy</a>
+          <a href="#">Terms</a>
+        </div>
+        <div>© 2026 GrantPipe · Made with care for nonprofits</div>
+      </div>
+    </footer>
+
+    <!-- ————————————————————————— SCRIPTS ————————————————————————— -->
+    <script
+      src="https://unpkg.com/react@18.3.1/umd/react.development.js"
+      integrity="sha384-hD6/rw4ppMLGNu3tX5cjIb+uRZ7UkRJ6BPkLpg4hAu/6onKUg4lLsHAs9EBPT82L"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://unpkg.com/react-dom@18.3.1/umd/react-dom.development.js"
+      integrity="sha384-u6aeetuaXnQ38mYT8rp6sbXaQe3NL9t+IBXmnYxwkUI2Hw4bsp2Wvmx4yRQF1uAm"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://unpkg.com/@babel/standalone@7.29.0/babel.min.js"
+      integrity="sha384-m08KidiNqLdpJqLq95G/LEi8Qvjl/xUYll3QILypMoQ65QorJ9Lvtp2RXYGBFj1y"
+      crossorigin="anonymous"
+    ></script>
+    <script type="text/babel" src="tweaks-panel.jsx"></script>
+
+    <script>
+      // populate dashboard mock into all 3 hero variant slots
+      (function () {
+        const tpl = document.getElementById("dash-template");
+        ["dashWrapSplit", "dashWrapFull", "dashWrapStack"].forEach((id) => {
+          const slot = document.getElementById(id);
+          if (slot) slot.appendChild(tpl.content.cloneNode(true));
+        });
+      })();
+    </script>
+
+    <script type="text/babel">
+      const TWEAK_DEFAULTS = /*EDITMODE-BEGIN*/ {
+        hero: "split",
+        persona: "manager",
+        density: "default",
+      }; /*EDITMODE-END*/
+
+      function App() {
+        const [tweaks, setTweak] = useTweaks(TWEAK_DEFAULTS);
+
+        React.useEffect(() => {
+          document.body.dataset.hero = tweaks.hero;
+          document.body.dataset.persona = tweaks.persona;
+          document.body.dataset.density = tweaks.density;
+        }, [tweaks]);
+
+        return (
+          <TweaksPanel title="Tweaks" defaultPos={{ right: 20, bottom: 20 }}>
+            <TweakSection title="Hero layout">
+              <TweakRadio
+                value={tweaks.hero}
+                onChange={(v) => setTweak("hero", v)}
+                options={[
+                  { value: "split", label: "Split" },
+                  { value: "full", label: "Full-bleed" },
+                  { value: "stack", label: "Stacked" },
+                ]}
+              />
+            </TweakSection>
+            <TweakSection title="Hero copy persona">
+              <TweakRadio
+                value={tweaks.persona}
+                onChange={(v) => setTweak("persona", v)}
+                options={[
+                  { value: "manager", label: "Grant Mgr" },
+                  { value: "finance", label: "Finance" },
+                  { value: "ed", label: "Exec Dir" },
+                ]}
+              />
+            </TweakSection>
+            <TweakSection title="Density">
+              <TweakRadio
+                value={tweaks.density}
+                onChange={(v) => setTweak("density", v)}
+                options={[
+                  { value: "compact", label: "Compact" },
+                  { value: "default", label: "Default" },
+                  { value: "roomy", label: "Roomy" },
+                ]}
+              />
+            </TweakSection>
+          </TweaksPanel>
+        );
+      }
+
+      ReactDOM.createRoot(document.body.appendChild(document.createElement("div"))).render(<App />);
+    </script>
+
+    <script>
+      // Billing toggle
+      (function () {
+        const opts = document.querySelectorAll(".bt-opt");
+        const nums = document.querySelectorAll(".price-num");
+        const smalls = document.querySelectorAll(".price-card .amt small");
+        const alts = document.querySelectorAll(".price-alt");
+        function set(cycle) {
+          opts.forEach((o) => o.classList.toggle("active", o.dataset.cycle === cycle));
+          nums.forEach((n) => {
+            n.textContent = cycle === "annual" ? n.dataset.annual : n.dataset.monthly;
+          });
+          smalls.forEach((s) => {
+            if (s.textContent.includes("/mo")) {
+              s.textContent = cycle === "annual" ? "/mo, billed annually" : "/mo, billed monthly";
+            }
+          });
+          alts.forEach((a) => {
+            const card = a.closest(".price-card");
+            const num = card && card.querySelector(".price-num");
+            if (!num) return;
+            if (cycle === "annual") {
+              a.textContent = "$" + num.dataset.monthly + "/mo billed monthly";
+            } else {
+              a.textContent = "or $" + num.dataset.annual + "/mo billed annually";
+            }
+          });
+        }
+        opts.forEach((o) => o.addEventListener("click", () => set(o.dataset.cycle)));
+      })();
+    </script>
+  </body>
+</html>

@@ -1,0 +1,13 @@
+A board grant dashboard should not look like a funder report.
+
+The board is not approving every invoice.
+
+It needs to see exposure, pacing, restriction, and risk:
+
+- how much is active
+- how much is restricted
+- what is behind plan
+- what report is near due
+- what needs leadership attention
+
+That is enough to govern without asking staff to perform a spreadsheet tour.

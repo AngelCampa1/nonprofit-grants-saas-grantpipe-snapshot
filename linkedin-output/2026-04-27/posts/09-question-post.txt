@@ -1,0 +1,9 @@
+Finance and operations staff at mid-sized nonprofits usually wear three hats: finance, HR, and ops. No dedicated CFO. Often no dedicated controller.
+
+The daily list is QuickBooks reconciliation, grant drawdown processing, payroll allocation across restricted funds, audit prep, and vendor management. Sometimes board reporting. Often benefits administration. The tooling has to enforce documentation without the implementation tax of Sage Intacct or Blackbaud Financial Edge.
+
+Question for the finance/ops people in this network: what's the one task in your week that should be twenty minutes and somehow always becomes two hours.
+
+For me when I've watched this work, it's almost always payroll allocation across restricted funds — because the time-and-effort documentation lives in one system, the GL allocation lives in another, and reconciling them is manual. What's yours.
+
+#nonprofitfinance #fundaccounting #restrictedfunds #nonprofitoperations

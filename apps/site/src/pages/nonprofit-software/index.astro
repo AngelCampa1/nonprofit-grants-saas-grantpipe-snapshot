@@ -1,0 +1,333 @@
+---
+import { getPublicApiBaseUrl } from "@grantpipe/ui/site/lib/public-api-url"
+import "../../styles/global.css"
+import { getCollection } from "astro:content"
+import { getContentEntrySlug } from "@/lib/content-entry-slug"
+import BaseLayout from "@grantpipe/ui/site/layouts/base-layout.astro"
+import SiteHeader from "@grantpipe/ui/site/components/site-header.astro"
+import SiteFooter from "@grantpipe/ui/site/components/site-footer.astro"
+import BreadcrumbNav from "@grantpipe/ui/site/components/breadcrumb-nav.astro"
+import FaqSection from "@grantpipe/ui/site/components/faq-section.astro"
+import { ExitIntentPopup } from "@grantpipe/ui/site/components/exit-intent-popup"
+import { resolveExitPopupProps } from "@grantpipe/ui/site/lib/exit-popup-props"
+import { siteConfig, getSignupCtaTarget, shouldShowMobileStickyCta } from "@/config/site"
+import { getAppLoginUrl } from "@/lib/app-url"
+import { resolveExitLeadMagnetOffer } from "@/lib/lead-magnet-routing"
+import type { FaqItem } from "@grantpipe/ui/site"
+import Button from "@/components/ui/button.astro"
+import { buildNonprofitSoftwareHubModel } from "@/lib/nonprofit-software-hub"
+
+const entries = await getCollection("state-pages")
+const cityEntries = await getCollection("city-pages")
+const leadMagnets = await getCollection("lead-magnets")
+const exitLeadMagnet = resolveExitLeadMagnetOffer(siteConfig, leadMagnets, {
+  family: "state-page",
+})
+const exitPopupProps = siteConfig.exitPopup?.enabled !== false ? resolveExitPopupProps(siteConfig) : undefined
+const nonprofitSoftwareHub = buildNonprofitSoftwareHubModel({
+  stateEntries: entries,
+  cityEntries,
+  stateHrefBuilder: (entry) => `/nonprofit-software/${getContentEntrySlug(entry)}`,
+  cityHrefBuilder: (entry) => `/nonprofit-software/${entry.data.stateSlug}/${entry.data.citySlug}`,
+})
+
+const faqs: FaqItem[] = [
+  {
+    q: "What features should nonprofit finance teams look for in state-specific grant compliance software?",
+    a: "Look for tools that track state-level registration renewal deadlines, generate restricted-fund reports per state requirement, and flag compliance gaps before they become filing problems. Software that auto-populates Form 990 schedules using your existing transaction data saves the most time for multi-state filers.",
+  },
+  {
+    q: "How does grant management software differ from general nonprofit CRM platforms?",
+    a: "General nonprofit CRMs focus on donor relationships and fundraising pipelines. Grant management software goes further: it tracks restricted fund balances against grant budgets, enforces spending rules per grant agreement, generates funder progress reports, and manages grant lifecycle stages from prospecting through closeout. If your organization manages more than three active grants, you need dedicated grant management functionality, not just a contact database.",
+  },
+  {
+    q: "Can one platform handle both donor management and grant compliance, or do nonprofits need separate tools?",
+    a: "Most mid-sized nonprofits end up running two systems, a CRM for donors and a spreadsheet or separate platform for grants, because few tools handle both well. The operational cost is double data entry, mismatched reports, and reconciliation headaches at audit time. Platforms built specifically for the donor-plus-grants workflow consolidate restricted fund tracking and donor records in one database, which reduces reconciliation work and gives finance and development a single source of truth.",
+  },
+  {
+    q: "What is the typical implementation timeline for switching nonprofit grant software?",
+    a: "For a mid-sized nonprofit with a self-serve platform and import tools, the switch usually takes two to four weeks from signup to operational use. Enterprise rollouts with custom integrations or consultant-led onboarding often take much longer. Prioritize platforms that accept direct CSV import if you want a lighter transition.",
+  },
+]
+const publicApiUrl = getPublicApiBaseUrl()
+
+---
+
+<BaseLayout
+  title={`Nonprofit Software by State | ${siteConfig.name}`}
+  description="State-specific guidance on nonprofit donor management, grant compliance software, registration requirements, and operational differences across the U.S."
+  canonicalUrl={`https://${siteConfig.domain}/nonprofit-software/`}
+  siteName={siteConfig.name}
+  ogType="website"
+  twitterSite={siteConfig.social?.twitterHandle}
+  theme={siteConfig.theme}
+  themeColor={siteConfig.theme.primary}
+  appleTouchIcon={siteConfig.appleTouchIcon}
+  fonts={siteConfig.theme.fonts}
+  showStickyMobileCta={shouldShowMobileStickyCta("/nonprofit-software")}
+  stickyCtaText={siteConfig.funnel.bofu.ctaText}
+  stickyCtaTarget={getSignupCtaTarget()}
+>
+  <SiteHeader
+    slot="header"
+    siteName={siteConfig.name}
+    navItems={siteConfig.nav?.items}
+    ctaText={siteConfig.funnel.bofu.ctaText}
+    ctaHref={getSignupCtaTarget()}
+    loginHref={getAppLoginUrl()}
+    logoLight={siteConfig.logo?.light}
+  >
+  </SiteHeader>
+
+  <section class="gp-section">
+  <div class="gp-wrap editorial-shell">
+    <BreadcrumbNav
+      items={[
+        { label: "Home", href: "/" },
+        { label: "Nonprofit Software by State", href: "/nonprofit-software" },
+      ]}
+      siteUrl={`https://${siteConfig.domain}`}
+    />
+
+    <section class="editorial-panel editorial-panel--soft px-6 py-7 md:px-8 md:py-8">
+      <header class="gp-page-header mb-0">
+        <p class="gp-page-kicker">State directory</p>
+        <h1 class="gp-page-title">Nonprofit software guidance by state</h1>
+        <p class="gp-page-intro">
+          Pick the state or city. Start where reporting work is heaviest. Then check the product
+          path.
+        </p>
+      </header>
+
+      <div class="mt-6 grid gap-4 lg:grid-cols-[minmax(0,1.2fr)_minmax(0,0.8fr)]">
+        <div class="gp-surface-note h-full">
+          <p class="gp-proof-label">Reporting lens</p>
+          <p class="gp-section-copy max-w-none">
+            Start where your team files reports, raises money, or manages restricted funds. Each
+            page connects local rules to the software work that follows.
+          </p>
+        </div>
+        <div class="editorial-panel p-5">
+          <p class="gp-proof-label">Strongest fit</p>
+          <p class="font-heading text-2xl font-semibold leading-tight text-brand-text">
+            Teams with grants, donors, and deadlines spread across places.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section class="mt-8" data-hub-command-bar>
+      <div class="gp-hub-command-bar">
+        <article class="gp-hub-command-card">
+          <p class="gp-proof-label">Read by operating footprint.</p>
+          <h2 class="gp-link-card-title">Start where your local work is heaviest.</h2>
+          <p class="gp-link-card-copy">
+            Use regions for a quick path. Use metros when a city drives the grant or donor work.
+          </p>
+        </article>
+        <article class="gp-hub-command-card">
+          <p class="gp-proof-label">Use the page to pressure-test implementation.</p>
+          <p class="gp-link-card-copy">
+            Once a place fits, check the work step. Then compare the rollout path.
+          </p>
+        </article>
+      </div>
+    </section>
+
+    <section class="mt-10" aria-label="State regions">
+      <div class="mb-5 max-w-2xl">
+        <p class="gp-kicker--accent">State paths</p>
+        <h2 class="mt-3 font-heading text-[length:var(--text-heading)] font-bold text-brand-text">
+          Pick a region first.
+        </h2>
+        <p class="mt-3 text-brand-muted">
+          Use this when the full state list is too much.
+        </p>
+      </div>
+      <div data-state-region-grid class="grid gap-4 md:grid-cols-2">
+        {nonprofitSoftwareHub.regionSections.map((region) => (
+          <article class="gp-card-base h-full rounded-lg p-5" id={`region-${region.slug}`}>
+            <div class="flex flex-wrap items-start justify-between gap-3">
+              <div>
+                <p class="gp-proof-label">Region</p>
+                <h3 class="mt-2 font-heading text-[length:var(--text-subheading)] font-bold text-brand-text">
+                  {region.title}
+                </h3>
+              </div>
+              <span class="rounded-full border border-[var(--gp-ink-200)] px-3 py-1 text-[length:var(--text-caption)] font-medium text-brand-muted">
+                {region.stateCount} states
+              </span>
+            </div>
+            <p class="mt-3 text-[length:var(--text-body)] leading-7 text-brand-muted">
+              {region.description}
+            </p>
+            <p class="mt-3 text-[length:var(--text-caption)] text-brand-muted">
+              {region.totalNonprofitCount.toLocaleString()}+ nonprofits. {region.cityCount} city
+              {region.cityCount === 1 ? "" : " guides"}.
+            </p>
+            <div class="mt-5 grid gap-2">
+              {region.states.slice(0, 6).map((state) => (
+                <a
+                  href={state.href}
+                  class="rounded-full px-3 py-2 text-[length:var(--text-caption)] font-medium text-brand-text no-underline transition-colors hover:bg-[var(--gp-paper-2)] hover:text-brand-primary focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary-500 focus-visible:ring-offset-2"
+                >
+                  {state.state}
+                </a>
+              ))}
+            </div>
+            <div class="mt-5">
+              <a class="gp-filter-chip" href={`#all-states-${region.slug}`}>
+                {region.nextStepLabel}
+              </a>
+            </div>
+          </article>
+        ))}
+      </div>
+    </section>
+
+    {nonprofitSoftwareHub.metroHighlights.length > 0 && (
+      <section class="mt-12" aria-label="Major metro guides">
+        <div class="mb-5 max-w-2xl">
+          <p class="gp-kicker--accent">Metro paths</p>
+          <h2 class="mt-3 font-heading text-[length:var(--text-heading)] font-bold text-brand-text">
+            Start with a major city.
+          </h2>
+          <p class="mt-3 text-brand-muted">
+            Use this when one metro owns most of the work.
+          </p>
+        </div>
+        <div data-metro-highlight-grid class="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
+          {nonprofitSoftwareHub.metroHighlights.map((city) => (
+            <a href={city.href} class="gp-card interactive scroll-in">
+              <span class="gp-directory-title">{city.city}</span>
+              <span class="gp-directory-meta">
+                {city.stateCode}, {city.nonprofitCount.toLocaleString()}+ nonprofits
+              </span>
+            </a>
+          ))}
+        </div>
+        {nonprofitSoftwareHub.metroOverflowCount > 0 && (
+          <p class="mt-4 text-[length:var(--text-caption)] text-brand-muted">
+            {nonprofitSoftwareHub.metroOverflowCount} more city guides are grouped by state below.
+          </p>
+        )}
+      </section>
+    )}
+
+    <section class="mt-12" aria-label="All states">
+      <div class="mb-5 max-w-2xl">
+        <p class="gp-kicker--accent">All state guides</p>
+        <h2 class="mt-3 font-heading text-[length:var(--text-heading)] font-bold text-brand-text">
+          Browse every state.
+        </h2>
+        <p class="mt-3 text-brand-muted">
+          Use this when you know the state you need.
+        </p>
+      </div>
+      <div class="gp-directory-grid" data-columns="3">
+        {nonprofitSoftwareHub.regionSections.map((region) => (
+          <section id={`all-states-${region.slug}`} class="contents">
+            {region.states.map((state) => (
+              <a href={state.href} class="gp-card interactive scroll-in">
+                <span class="gp-directory-title">{state.state}</span>
+                <span class="gp-directory-meta">
+                  {state.establishmentCount.toLocaleString()}+ nonprofits
+                </span>
+              </a>
+            ))}
+          </section>
+        ))}
+      </div>
+    </section>
+
+    {nonprofitSoftwareHub.cityStateSections.length > 0 && (
+      <section
+        class="editorial-panel mt-12 p-6 md:p-8"
+        aria-label="City guides by state"
+        data-city-state-directory
+      >
+        <div class="mb-5 max-w-2xl">
+          <p class="gp-kicker--accent">All city guides</p>
+          <h2 class="mt-3 font-heading text-[length:var(--text-heading)] font-bold text-brand-text">
+            Browse cities by state.
+          </h2>
+          <p class="mt-3 text-brand-muted">
+            Use this when a local funder or county rule drives the work.
+          </p>
+        </div>
+        <div class="grid gap-5 md:grid-cols-2">
+          {nonprofitSoftwareHub.cityStateSections.map((section) => (
+            <article class="gp-surface-note">
+              <div class="flex flex-wrap items-center justify-between gap-3">
+                <h3 class="font-heading text-[length:var(--text-subheading)] font-bold text-brand-text">
+                  {section.state}
+                </h3>
+                <a class="gp-filter-chip" href={section.href}>
+                  See state guide
+                </a>
+              </div>
+              <div class="mt-4 flex flex-wrap gap-2">
+                {section.cities.map((city) => (
+                  <a class="gp-filter-chip" href={city.href}>
+                    {city.city}
+                  </a>
+                ))}
+              </div>
+            </article>
+          ))}
+        </div>
+      </section>
+    )}
+
+    <section class="editorial-panel mt-12 p-6 md:p-8" id="signup">
+      <h2>Managing grants across multiple states?</h2>
+      <p>
+        GrantPipe keeps grants, donors, funds, and deadlines in one place. Your team does not
+        need a new sheet for every state.
+      </p>
+      <div class="mt-4 flex flex-col gap-3 sm:flex-row">
+        <Button variant="primary" href={getSignupCtaTarget()}>
+          {siteConfig.funnel.bofu.ctaText}
+        </Button>
+        <Button
+          variant="ghost"
+          href="/product/"
+          data-cta-button=""
+          data-cta-page-family="nonprofit-software"
+          data-cta-buyer-stage="mofu"
+          data-cta-placement="nonprofit-software-secondary"
+          data-cta-intent="evaluate"
+          data-cta-target="/product"
+        >
+          See the product walkthrough
+        </Button>
+      </div>
+    </section>
+  </div>
+  </section>
+
+  <FaqSection
+    faqs={faqs}
+    heading="Nonprofit Software Questions"
+    showBottomCta={false}
+    ctaVariant="compact"
+  />
+
+  <SiteFooter
+    slot="footer"
+    siteName={siteConfig.name}
+    tagline={siteConfig.tagline}
+    linkGroups={siteConfig.footer?.linkGroups}
+    legalLinks={siteConfig.footer?.legalLinks}
+    logoLight={siteConfig.logo?.light}
+    captureVariant="compact"
+  />
+  {exitPopupProps && (
+    <ExitIntentPopup
+      client:load
+      apiUrl={publicApiUrl}
+      leadMagnet={exitLeadMagnet}
+      {...exitPopupProps}
+    />
+  )}
+</BaseLayout>

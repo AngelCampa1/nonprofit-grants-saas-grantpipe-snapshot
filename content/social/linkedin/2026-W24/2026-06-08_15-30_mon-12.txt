@@ -1,0 +1,7 @@
+The phrase "the CRM says $75,000, but the ledger says $50,000" is not a finance argument.
+
+It is a timing question.
+
+Award amount, pledged amount, and received-to-date amount are different fields.
+
+When they share one field, the reconciliation meeting becomes detective work.

@@ -1,0 +1,80 @@
+- generic [ref=e3]:
+    - generic [ref=e13]:
+        - banner [ref=e14]:
+            - button "Open navigation" [ref=e16]:
+                - img
+            - generic [ref=e17]:
+                - link "Add billing, trial ends in 30 days" [ref=e18] [cursor=pointer]:
+                    - /url: /app/settings#billing
+                    - img [ref=e19]
+                    - generic [ref=e22]: Trial
+                    - generic [ref=e23]: 30d
+                - button "Open command palette" [ref=e24]:
+                    - img
+                - link "Notifications" [ref=e25] [cursor=pointer]:
+                    - /url: /app/notifications
+                    - img
+                - button "Switch to dark theme" [ref=e26]:
+                    - img
+        - main [ref=e28]:
+            - generic [ref=e30]:
+                - generic [ref=e31]:
+                    - paragraph [ref=e32]: Grant pipeline
+                    - generic [ref=e33]:
+                        - generic [ref=e35]:
+                            - heading "Grants" [level=1] [ref=e36]
+                            - button "Help for Grants" [ref=e37]:
+                                - img [ref=e38]
+                        - button "Add grant" [ref=e43]
+                - generic [ref=e44]:
+                    - tablist "Grant workspace views" [ref=e45]:
+                        - tab "Opportunities" [ref=e46]
+                        - tab "Pipeline" [ref=e47]
+                        - tab "Portfolio" [selected] [ref=e48]
+                    - tabpanel "Portfolio" [ref=e49]:
+                        - generic [ref=e51]:
+                            - textbox "Search grants..." [ref=e52]
+                            - combobox "Filter status" [ref=e53]:
+                                - generic: All statuses
+                                - img
+                            - combobox "Filter funder" [ref=e54]:
+                                - generic: All funders
+                                - img
+                            - combobox "Filter threshold" [ref=e55]:
+                                - generic: All thresholds
+                                - img
+                        - table [ref=e59]:
+                            - rowgroup [ref=e60]:
+                                - row "Sort by name Sort by funder Sort by status Sort by amount Sort by deadline" [ref=e61]:
+                                    - columnheader "Sort by name" [ref=e62]:
+                                        - button "Sort by name" [ref=e63]:
+                                            - text: Name
+                                            - img [ref=e64]
+                                    - columnheader "Sort by funder" [ref=e67]:
+                                        - button "Sort by funder" [ref=e68]:
+                                            - text: Funder
+                                            - img [ref=e69]
+                                    - columnheader "Sort by status" [ref=e72]:
+                                        - button "Sort by status" [ref=e73]:
+                                            - text: Status
+                                            - img [ref=e74]
+                                    - columnheader "Sort by amount" [ref=e77]:
+                                        - button "Sort by amount" [ref=e78]:
+                                            - text: Amount
+                                            - img [ref=e79]
+                                    - columnheader "Sort by deadline" [ref=e82]:
+                                        - button "Sort by deadline" [ref=e83]:
+                                            - text: Deadline
+                                            - img [ref=e84]
+                            - rowgroup [ref=e87]:
+                                - row "Your grants live here" [ref=e88]:
+                                    - cell "Your grants live here" [ref=e89]:
+                                        - region "Your grants live here" [ref=e90]:
+                                            - img [ref=e93]
+                                            - heading "Your grants live here" [level=3] [ref=e96]
+                                            - generic [ref=e97]:
+                                                - button "+ Create a grant" [ref=e98]
+                                                - button "Import from spreadsheet" [ref=e99]
+                                                - link "How grants work →" [ref=e100] [cursor=pointer]:
+                                                    - /url: /help
+    - region "Notifications alt+T"

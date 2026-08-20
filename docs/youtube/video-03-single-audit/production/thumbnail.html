@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="en"><head><meta charset="UTF-8"/>
+<style>
+@font-face{font-family:'Sora';font-weight:700;src:url('assets/fonts/Sora-700.woff2') format('woff2')}
+@font-face{font-family:'Sora';font-weight:600;src:url('assets/fonts/Sora-600.woff2') format('woff2')}
+@font-face{font-family:'Plex';font-weight:600;src:url('assets/fonts/PlexSans-600.woff2') format('woff2')}
+@font-face{font-family:'Mono';font-weight:500;src:url('assets/fonts/PlexMono-500.woff2') format('woff2')}
+:root{--paper:#faf7f0;--paper2:#f0e9da;--ink:#17211c;--emerald:#065f46;--emerald-d:#053d2e;--emerald-50:#e7f3ee;
+  --ochre:#b9842b;--ochre-50:#f6ecd6;--ochre-line:#e4cf9f;--muted:#6c726a;--line:#e6e0d2;--white:#fff;--red:#b3261e}
+*{margin:0;padding:0;box-sizing:border-box}
+html,body{width:1280px;height:720px;overflow:hidden;font-family:'Plex',sans-serif;color:var(--ink)}
+.bg{position:relative;width:1280px;height:720px;
+  background:radial-gradient(900px 520px at 82% -10%,rgba(6,95,70,.14),transparent 60%),
+    radial-gradient(700px 460px at 0% 110%,rgba(185,132,43,.16),transparent 60%),
+    linear-gradient(180deg,var(--paper),var(--paper2));overflow:hidden}
+.wm{position:absolute;top:34px;left:44px;display:flex;align-items:center;gap:12px;z-index:5}
+.wm .mark{width:36px;height:36px;display:block}
+.wm .name{font-family:'Sora';font-weight:700;font-size:26px}
+.badge{position:absolute;top:34px;right:44px;z-index:5;background:var(--ochre);color:#3a2a07;font-family:'Mono';font-weight:500;font-size:20px;letter-spacing:1px;padding:9px 18px;border-radius:999px;box-shadow:0 10px 24px -10px rgba(185,132,43,.7)}
+.wrap{position:absolute;inset:0;display:flex;align-items:center;justify-content:space-between;padding:0 56px;z-index:2}
+.left{max-width:620px}
+.kick{font-family:'Mono';font-weight:500;font-size:23px;letter-spacing:5px;text-transform:uppercase;color:var(--ochre);margin-bottom:16px}
+.head{font-family:'Sora';font-weight:700;font-size:92px;line-height:.95;letter-spacing:-2.5px}
+.head em{font-style:normal;color:var(--emerald)}
+.sub{margin-top:24px;font-family:'Plex';font-weight:600;font-size:26px;color:var(--muted)}
+.nums{position:relative;display:flex;flex-direction:column;align-items:center;gap:6px;padding:48px 56px;
+  background:var(--white);border:1px solid var(--line);border-radius:24px;box-shadow:0 34px 70px -30px rgba(20,40,30,.55);transform:rotate(2deg)}
+.old{position:relative;font-family:'Sora';font-weight:700;font-size:64px;color:var(--muted);line-height:1}
+.old::after{content:"";position:absolute;left:-8px;right:-8px;top:52%;height:7px;background:var(--red);border-radius:6px}
+.arrow{font-size:40px;color:var(--ochre);line-height:1}
+.new{font-family:'Sora';font-weight:700;font-size:116px;letter-spacing:-3px;color:var(--emerald);line-height:1}
+.tag{margin-top:14px;font-family:'Mono';font-size:18px;color:#7a5410;background:var(--ochre-50);border:1px solid var(--ochre-line);padding:6px 16px;border-radius:999px}
+</style></head>
+<body>
+<div class="bg">
+  <div class="wm"><img class="mark" src="assets/grantpipe-mark.svg" alt="GrantPipe"/><div class="name">GrantPipe</div></div>
+  <div class="badge">2024 RULES</div>
+  <div class="wrap">
+    <div class="left">
+      <div class="kick">The Single Audit</div>
+      <div class="head">Who needs <em>one</em> &amp; why</div>
+      <div class="sub">The federal threshold just changed.</div>
+    </div>
+    <div class="nums">
+      <div class="old">$750,000</div>
+      <div class="arrow">↓</div>
+      <div class="new">$1,000,000</div>
+      <div class="tag">federal funds expended / year</div>
+    </div>
+  </div>
+</div>
+</body></html>

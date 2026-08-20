@@ -1,0 +1,14 @@
+{
+  "extends": ["astro/tsconfigs/strict", "../../tsconfig.base.json"],
+  "exclude": ["worker/**", "dist/**", "coverage/**", ".lead-magnet-pdfs/**", "playwright/**"],
+  "compilerOptions": {
+    "jsx": "react-jsx",
+    "paths": {
+      "@/*": ["./src/*"],
+      "@grantpipe/shared": ["../../packages/shared/src/index.ts"],
+      "@grantpipe/shared/*": ["../../packages/shared/src/*"],
+      "@grantpipe/ui/site": ["../../packages/ui/src/site/index.ts"],
+      "@grantpipe/ui/site/*": ["../../packages/ui/src/site/*"]
+    }
+  }
+}

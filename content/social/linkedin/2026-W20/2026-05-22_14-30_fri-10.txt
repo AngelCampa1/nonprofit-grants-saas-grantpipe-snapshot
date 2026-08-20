@@ -1,0 +1,13 @@
+$1,000,000. That is the federal expenditure threshold that triggers a single audit under the Uniform Guidance.
+
+Cross it in any single fiscal year, across all federal awards (direct and pass-through combined), and your audit shifts scope. New schedules, new fieldwork, new findings categories.
+
+Three things small orgs miss until they are inside it.
+
+The threshold is expenditures, not awards received. A multi-year grant of $300K this year and $500K next crosses in year two.
+
+Pass-through dollars count. State dollars sourced from HHS are federal expenditures on your books for single audit purposes.
+
+The cost is not just the auditor's fee. Internal control narratives, sub-recipient monitoring, time-and-effort, procurement files. None of that gets built two weeks before fieldwork.
+
+If federal expenditures are nearing $600K and rising, start single-audit-ready bookkeeping now.

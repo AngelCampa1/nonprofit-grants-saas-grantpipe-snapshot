@@ -1,0 +1,9 @@
+Before: a grant report cycle that starts with "where is everything?"
+
+Two weeks before the FFR is due, the Finance Director emails the Program Director for the latest spending detail. The Program Director forwards a spreadsheet that is two months stale. The Development Director gets pulled in to confirm a budget number that does not match either of the other two views. Three meetings, four versions of the file, one tired team.
+
+After: a grant report cycle that starts with "is this number right?"
+
+The grant page already shows expenditures by category, drawdowns to date, balance remaining, and the next reporting deadline. The Finance Director opens it, exports the FFR view, and sends it to the Program Director for a sanity check. Twenty minutes, one source, one truth.
+
+The difference is not the people. The difference is whether the system holds the answer or the answer has to be reassembled.

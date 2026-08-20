@@ -1,0 +1,135 @@
+---
+import "../../../styles/global.css";
+import { getCollection } from "astro:content";
+import ContentHub from "@grantpipe/ui/site/hubs/content-hub.astro";
+import Button from "@/components/ui/button.astro";
+import { siteConfig, shouldShowMobileStickyCta } from "@/config/site";
+import { hubFaqs } from "@/config/hub-faqs";
+import { resolveExitLeadMagnetOffer } from "@/lib/lead-magnet-routing";
+import { getTopicHubSummaries } from "@/lib/topic-hubs";
+
+const leadMagnets = await getCollection("lead-magnets");
+const [
+  alternatives,
+  comparisons,
+  pricingBreakdowns,
+  listicles,
+  guides,
+  statePages,
+  cityPages,
+  verticalPages,
+  personas,
+  workflows,
+  glossary,
+  features,
+  integrations,
+  faqHubs,
+  benchmarks,
+] = await Promise.all([
+  getCollection("alternatives"),
+  getCollection("comparisons"),
+  getCollection("pricing-breakdowns"),
+  getCollection("listicles"),
+  getCollection("guides"),
+  getCollection("state-pages"),
+  getCollection("city-pages"),
+  getCollection("vertical-pages"),
+  getCollection("personas"),
+  getCollection("workflows"),
+  getCollection("glossary"),
+  getCollection("features"),
+  getCollection("integrations"),
+  getCollection("faq-hubs"),
+  getCollection("benchmarks"),
+]);
+const categories = getTopicHubSummaries({
+  alternatives,
+  comparisons,
+  pricingBreakdowns,
+  listicles,
+  guides,
+  statePages,
+  cityPages,
+  verticalPages,
+  leadMagnets,
+  personas,
+  workflows,
+  glossary,
+  features,
+  integrations,
+  faqHubs,
+  benchmarks,
+});
+const exitLeadMagnet = resolveExitLeadMagnetOffer(siteConfig, leadMagnets, {
+  family: "guide",
+  exitSlug: "grant-compliance-checklist",
+});
+---
+
+<ContentHub
+  config={siteConfig}
+  title="Topic Hubs"
+  description="Everything a grant-funded nonprofit needs to evaluate software — CRM, grant management, grant compliance, and restricted-fund accounting. Start with the topic that matches your current problem."
+  categories={categories}
+  canonicalUrl={`https://${siteConfig.domain}/resources/topics/`}
+  breadcrumbs={[
+    { label: "Home", href: "/" },
+    { label: "Resources", href: "/resources" },
+    { label: "Topic Hubs", href: "/resources/topics" },
+  ]}
+  faqs={hubFaqs["/resources/topics"]}
+  eyebrow="Resources"
+  variant="editorial"
+  leadMagnet={exitLeadMagnet}
+  showStickyMobileCta={shouldShowMobileStickyCta("/resources/topics")}
+>
+  <section slot="extra" class="mt-8" data-hub-command-bar>
+    <div class="gp-hub-command-bar">
+      <article class="gp-hub-command-card">
+        <p class="gp-proof-label">Where to start</p>
+        <h2 class="gp-link-card-title">Start with the topic that matches your biggest pain point.</h2>
+        <p class="gp-link-card-copy">
+          CRM if you're replacing a donor system. Grant management if the workflow breaks before
+          award. Grant compliance if the pressure starts after funding arrives. Restricted-fund
+          accounting if finance and development can't agree on balances.
+        </p>
+      </article>
+    </div>
+  </section>
+
+  <section slot="cta" class="editorial-panel gp-shared-cta-shell" id="signup">
+    <h2>Start a 1-month free trial when the topic becomes the next project.</h2>
+    <p>
+      Start a 1-month free trial and compare GrantPipe against your current donor, grant, and
+      compliance process.
+    </p>
+    <div class="gp-shared-cta-actions">
+      <Button
+        variant="primary"
+        size="lg"
+        href={siteConfig.funnel.bofu.ctaTarget}
+        data-cta-button=""
+        data-cta-page-family="topics"
+        data-cta-buyer-stage="bofu"
+        data-cta-placement="topics-primary"
+        data-cta-intent="convert"
+        data-cta-target={siteConfig.funnel.bofu.ctaTarget}
+      >
+        {siteConfig.funnel.bofu.ctaText}
+      </Button>
+      <Button
+        variant="secondary"
+        size="md"
+        href="/product/"
+        data-cta-button=""
+        data-cta-page-family="topics"
+        data-cta-buyer-stage="mofu"
+        data-cta-placement="topics-secondary"
+        data-cta-intent="evaluate"
+        data-cta-target="/product/"
+      >
+        See the product walkthrough
+      </Button>
+    </div>
+  </section>
+</ContentHub>

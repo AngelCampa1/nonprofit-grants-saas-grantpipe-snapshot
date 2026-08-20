@@ -1,0 +1,11 @@
+Four reports a board member will ask for in any given quarter, ranked by how often they ask:
+
+1. "How are we doing against budget this year?" Operating budget, actual to date, variance by line. Every meeting.
+
+2. "What is the status of our biggest grants?" The top five awards by dollar value, with period of performance dates, percent spent, and any compliance flags. Most meetings.
+
+3. "How is the donor pipeline looking?" Major gift prospects by stage, year-over-year giving comparison, retention rate. Quarterly.
+
+4. "Where do our restricted funds stand?" Net assets with donor restrictions, by purpose, with current balance and release schedule. Annually, plus any time a major restricted gift is anticipated.
+
+If your monthly close cannot produce the first two without anyone "rebuilding" anything, you have a working system. If the third needs a special pull from the CRM, that is normal. If the fourth requires a finance-team Excel project, the system underneath is not built for the work.

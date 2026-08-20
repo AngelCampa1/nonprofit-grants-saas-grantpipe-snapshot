@@ -1,0 +1,176 @@
+---
+import { getPublicApiBaseUrl } from "@grantpipe/ui/site/lib/public-api-url"
+import "../../../styles/global.css"
+import { getCollection, render } from "astro:content"
+import ComparisonLayout from "@grantpipe/ui/site/layouts/comparison-layout.astro"
+import { LeadMagnetSignup } from "@grantpipe/ui/site/components/lead-magnet-signup"
+import ComparisonTable from "@grantpipe/ui/site/components/comparison-table.astro"
+import FaqSection from "@grantpipe/ui/site/components/faq-section.astro"
+import RelatedPages from "@grantpipe/ui/site/components/related-pages.astro"
+import ProsConsBlock from "@grantpipe/ui/site/seo/pros-cons-block.astro"
+import AnswerBlock from "@grantpipe/ui/site/seo/answer-block.astro"
+import StatisticCitation from "@grantpipe/ui/site/seo/statistic-citation.astro"
+import { siteConfig, getSignupCtaTarget, shouldShowMobileStickyCta } from "@/config/site"
+import { buildAlternativeBreadcrumbs } from "@/lib/breadcrumbs"
+import { buildAlternativeComparisonRows } from "@/lib/comparison-rows"
+import { buildContentMap } from "@/lib/page-helpers"
+import { resolveLeadMagnetOffer, resolveExitLeadMagnetOffer } from "@/lib/lead-magnet-routing"
+import { resolveGrantPipeOgImage } from "@/lib/og-image"
+import { getCompetitorProfile } from "@/config/market-facts"
+import { resolveRelatedPageLinks } from "@grantpipe/ui/site/lib/related-page-resolver"
+import PricingSummaryBlock from "@/components/pricing-summary-block.astro"
+import { resolvePricingCopyTree } from "@/lib/pricing-copy-tokens"
+
+export async function getStaticPaths() {
+  const entries = await getCollection("alternatives")
+  return entries.map((entry) => ({
+    params: { slug: entry.data.competitor.slug },
+    props: { entry },
+  }))
+}
+
+const { entry } = Astro.props
+const { Content } = await render(entry)
+const resolvedEntryData = resolvePricingCopyTree(entry.data)
+const {
+  title,
+  description,
+  seoTitle,
+  seoDescription,
+  bluf,
+  buyerStage,
+  publishedAt,
+  updatedAt,
+  lastReviewedAt,
+  verifiedAt,
+  competitor,
+  faqs = [],
+  relatedPages = [],
+  proscons = [],
+  answers = [],
+  pricingStats = [],
+  sourceUrls = [],
+} = resolvedEntryData
+const canonicalPath = `/compare/alternatives/${competitor.slug}`
+const competitorProfile = getCompetitorProfile(competitor.slug)
+
+const [alternatives, comparisons, pricingBreakdowns, listicles, guides, statePages, cityPages, verticalPages, leadMagnets, faqHubs, benchmarks] = await Promise.all([
+  getCollection("alternatives"),
+  getCollection("comparisons"),
+  getCollection("pricing-breakdowns"),
+  getCollection("listicles"),
+  getCollection("guides"),
+  getCollection("state-pages"),
+  getCollection("city-pages"),
+  getCollection("vertical-pages"),
+  getCollection("lead-magnets"),
+  getCollection("faq-hubs"),
+  getCollection("benchmarks"),
+])
+const contentMap = buildContentMap({ alternatives, comparisons, pricingBreakdowns, listicles, guides, statePages, cityPages, verticalPages, leadMagnets, faqHubs, benchmarks })
+
+const breadcrumbs = buildAlternativeBreadcrumbs(competitor.name, competitor.slug)
+const comparisonRows = buildAlternativeComparisonRows(competitor.slug, competitor.pricing, competitor.setupFee)
+const relatedPageLinks = resolveRelatedPageLinks(relatedPages, contentMap)
+const resolvedSourceUrls = sourceUrls.length > 0 ? sourceUrls : competitorProfile?.sourceUrls ?? []
+const resolvedVerifiedAt = verifiedAt ?? competitorProfile?.verifiedAt
+const resolvedLastReviewedAt = lastReviewedAt ?? resolvedVerifiedAt
+const leadMagnet = resolveLeadMagnetOffer(siteConfig, leadMagnets, {
+  family: "comparison",
+  explicitSlug: entry.data.leadMagnetSlug,
+  relatedPages,
+})
+const exitLeadMagnet = resolveExitLeadMagnetOffer(siteConfig, leadMagnets, {
+  family: "comparison",
+  exitSlug: entry.data.exitMagnetSlug,
+  leadMagnetSlug: entry.data.leadMagnetSlug,
+  relatedPages,
+})
+const publicApiUrl = getPublicApiBaseUrl()
+
+---
+
+<ComparisonLayout
+  title={title}
+  description={description}
+  seoTitle={seoTitle}
+  seoDescription={seoDescription}
+  bluf={bluf}
+  buyerStage={buyerStage}
+  publishedAt={publishedAt}
+  updatedAt={updatedAt}
+  lastReviewedAt={resolvedLastReviewedAt}
+  verifiedAt={resolvedVerifiedAt}
+  canonicalPath={canonicalPath}
+  config={siteConfig}
+  breadcrumbs={breadcrumbs}
+  ogImage={resolveGrantPipeOgImage(canonicalPath)}
+  answers={answers?.map(a => ({ question: a.q, answer: a.a }))}
+  sourceUrls={resolvedSourceUrls}
+  leadMagnet={exitLeadMagnet}
+  showStickyMobileCta={shouldShowMobileStickyCta(canonicalPath)}
+>
+  <div class="editorial-panel editorial-panel--soft mb-8 p-5">
+    <p class="gp-proof-label">Winner: GrantPipe</p>
+    <p class="gp-link-card-copy">{bluf}</p>
+    <a
+      href={siteConfig.funnel.bofu.ctaTarget}
+      class="gp-mkt-btn primary sm mt-4 inline-block no-underline rounded-full"
+      data-cta-button=""
+      data-cta-page-family="compare-alternatives"
+      data-cta-buyer-stage="bofu"
+      data-cta-placement="editorial-panel-cta"
+      data-cta-intent="convert"
+      data-cta-target={siteConfig.funnel.bofu.ctaTarget}
+    >
+      {siteConfig.funnel.bofu.ctaText}
+    </a>
+  </div>
+
+  <ComparisonTable
+    headers={["Feature", competitor.name, siteConfig.name]}
+    rows={comparisonRows}
+    highlightColumn={2}
+    verdict={`${siteConfig.name} keeps donor CRM, grant workflow, and restricted-fund reporting in one system, while ${competitor.name} is a better fit only if its narrower workflow matches your team exactly.`}
+    variant="editorial"
+  />
+
+  <Content />
+
+  <LeadMagnetSignup
+    client:load
+    apiUrl={publicApiUrl}
+    sourcePage={canonicalPath}
+    leadMagnet={leadMagnet}
+    privacyNote="We'll email the resource and a short follow-up sequence. Unsubscribe any time."
+    trialCtaHref={getSignupCtaTarget()}
+    trialCtaText={siteConfig.funnel.bofu.ctaText}
+  />
+
+  {proscons?.map((pc) => (
+    <ProsConsBlock subject={pc.subject} pros={pc.pros} cons={pc.cons} />
+  ))}
+  {pricingStats?.map((s) => (
+    <StatisticCitation stat={s.stat} source={s.source} sourceUrl={s.sourceUrl} />
+  ))}
+  {answers?.map((a) => (
+    <AnswerBlock question={a.q} answer={a.a} />
+  ))}
+
+  <PricingSummaryBlock />
+
+  <FaqSection
+    faqs={faqs}
+    heading="Frequently Asked Questions"
+    showBottomCta={false}
+    ctaVariant="compact"
+  />
+
+  {relatedPages.length > 0 && (
+    <RelatedPages
+      pages={relatedPageLinks}
+      heading="Related Comparisons"
+      variant="editorial"
+    />
+  )}
+</ComparisonLayout>

@@ -1,0 +1,14 @@
+To the Executive Director who has been quoted five-figure implementation fees for a Salesforce NPSP implementation, plus annual license costs on top, plus a part-time admin to keep it running:
+
+The license price is the smallest number on the invoice.
+
+Real cost lines on a typical NPSP rollout for a $3M nonprofit:
+
+- Implementation partner: tens of thousands in implementation fees
+- Licenses: per-user license fees on top, plus add-ons
+- Admin time: 10 to 15 hours a week, indefinitely
+- Re-implementation in year 3 when the original consultant moves on
+
+What you bought was a platform. What you needed was a product. Those are not the same thing.
+
+If your team spends more time configuring the system than using it, the system is the project. The grants and the donors are the side quest.

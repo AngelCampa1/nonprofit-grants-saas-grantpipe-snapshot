@@ -1,0 +1,13 @@
+An Executive Director dashboard should have fewer numbers than the finance workpaper.
+
+That is not dumbing it down.
+
+It is choosing the management view:
+
+- grant exposure
+- restricted balance
+- pacing risk
+- reports due
+- decisions needed
+
+The detail should be available, not pasted into the board view.

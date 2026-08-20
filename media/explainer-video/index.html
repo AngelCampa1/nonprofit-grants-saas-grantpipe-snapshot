@@ -1,0 +1,1252 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=1920, height=1080" />
+    <title>GrantPipe Explainer Video - Landscape</title>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.14.2/dist/gsap.min.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@500;600&family=Manrope:wght@400;500;600;700;800&family=Spectral:wght@500;600;700&display=block"
+      rel="stylesheet"
+    />
+    <style>
+      :root {
+        --paper: #fbfaf6;
+        --paper-2: #f4f1e9;
+        --card: #ffffff;
+        --ink: #0e1a16;
+        --ink-700: #2a3a33;
+        --muted: #46574f;
+        --border: #e3e9e6;
+        --emerald: #047857;
+        --emerald-soft: #ecf6f1;
+        --gold: #d99a18;
+        --gold-soft: #fff7df;
+        --danger: #9f3a2f;
+        --shadow: 0 30px 80px rgba(14, 26, 22, 0.15);
+      }
+
+      * {
+        box-sizing: border-box;
+      }
+
+      html,
+      body {
+        margin: 0;
+        width: 1920px;
+        height: 1080px;
+        overflow: hidden;
+        background: var(--paper);
+        color: var(--ink);
+        font-family: "Manrope", system-ui, sans-serif;
+      }
+
+      #root {
+        position: relative;
+        width: 1920px;
+        height: 1080px;
+        overflow: hidden;
+        background:
+          linear-gradient(180deg, rgba(255, 255, 255, 0.56), rgba(244, 241, 233, 0.72)),
+          var(--paper);
+      }
+
+      .grain {
+        position: absolute;
+        inset: -80px;
+        opacity: 0.42;
+        pointer-events: none;
+        background-image:
+          linear-gradient(rgba(4, 120, 87, 0.026) 1px, transparent 1px),
+          linear-gradient(90deg, rgba(4, 120, 87, 0.026) 1px, transparent 1px);
+        background-size: 72px 72px;
+      }
+
+      .ambient-drift {
+        position: absolute;
+        inset: -18%;
+        opacity: 0.28;
+        pointer-events: none;
+        background:
+          radial-gradient(circle at 24% 34%, rgba(4, 120, 87, 0.18), transparent 28%),
+          radial-gradient(circle at 78% 62%, rgba(184, 137, 40, 0.16), transparent 30%),
+          linear-gradient(112deg, transparent 24%, rgba(4, 120, 87, 0.1) 42%, transparent 58%);
+        filter: blur(3px);
+      }
+
+      .ambient-trace {
+        position: absolute;
+        inset: -12%;
+        opacity: 0.32;
+        pointer-events: none;
+        background-image: repeating-linear-gradient(
+          116deg,
+          transparent 0,
+          transparent 112px,
+          rgba(4, 120, 87, 0.075) 112px,
+          rgba(4, 120, 87, 0.075) 120px,
+          transparent 120px,
+          transparent 284px
+        );
+      }
+
+      .scene {
+        position: absolute;
+        inset: 0;
+        display: flex;
+        width: 100%;
+        height: 100%;
+      }
+
+      .scene-content {
+        display: flex;
+        width: 100%;
+        height: 100%;
+        padding: 86px 118px;
+        gap: 56px;
+      }
+
+      .column {
+        display: flex;
+        flex: 1;
+        flex-direction: column;
+        justify-content: center;
+        min-width: 0;
+        gap: 24px;
+      }
+
+      .centered {
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+      }
+
+      .brand-logo {
+        display: block;
+        width: 440px;
+        height: auto;
+      }
+
+      .eyebrow {
+        display: inline-flex;
+        align-items: center;
+        width: max-content;
+        gap: 10px;
+        padding: 10px 14px;
+        border: 1px solid #d4ebe1;
+        border-radius: 999px;
+        background: var(--emerald-soft);
+        color: var(--emerald);
+        font-family: "JetBrains Mono", ui-monospace, monospace;
+        font-size: 16px;
+        font-weight: 600;
+        text-transform: uppercase;
+      }
+
+      .eyebrow::before {
+        content: "";
+        width: 8px;
+        height: 8px;
+        border-radius: 50%;
+        background: var(--emerald);
+        box-shadow: 0 0 0 4px rgba(4, 120, 87, 0.14);
+      }
+
+      h1,
+      h2 {
+        margin: 0;
+        color: var(--ink);
+        font-family: "Spectral", Georgia, serif;
+        font-weight: 600;
+        letter-spacing: 0;
+      }
+
+      h1 {
+        max-width: 1200px;
+        font-size: 94px;
+        line-height: 1;
+      }
+
+      h2 {
+        max-width: 850px;
+        font-size: 72px;
+        line-height: 1.03;
+      }
+
+      .word {
+        display: inline-block;
+        white-space: nowrap;
+      }
+
+      .char {
+        display: inline-block;
+        transform-origin: 50% 78%;
+        will-change: transform, opacity;
+      }
+
+      .lede {
+        max-width: 780px;
+        margin: 0;
+        color: var(--ink-700);
+        font-size: 30px;
+        line-height: 1.34;
+        font-weight: 500;
+      }
+
+      .caption {
+        display: inline-flex;
+        align-items: center;
+        width: max-content;
+        max-width: 100%;
+        gap: 10px;
+        padding: 12px 16px;
+        border: 1px solid rgba(4, 120, 87, 0.18);
+        border-radius: 999px;
+        background: rgba(255, 255, 255, 0.78);
+        color: var(--ink-700);
+        font-size: 20px;
+        font-weight: 800;
+        box-shadow: 0 12px 28px rgba(14, 26, 22, 0.06);
+      }
+
+      .caption::before {
+        content: "";
+        width: 9px;
+        height: 9px;
+        border-radius: 999px;
+        background: var(--emerald);
+        box-shadow: 0 0 0 5px rgba(4, 120, 87, 0.1);
+      }
+
+      .caption-row {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 12px;
+      }
+
+      .motion-sheen {
+        position: absolute;
+        inset: -20%;
+        opacity: 0;
+        pointer-events: none;
+        background: linear-gradient(105deg, transparent 34%, rgba(4, 120, 87, 0.08) 48%, transparent 62%);
+      }
+
+      .data-dot {
+        position: absolute;
+        z-index: 9;
+        width: 13px;
+        height: 13px;
+        border-radius: 999px;
+        background: var(--emerald);
+        opacity: 0;
+        box-shadow:
+          0 0 0 7px rgba(4, 120, 87, 0.1),
+          0 12px 22px rgba(4, 120, 87, 0.18);
+      }
+
+      .problem-map .dot-one {
+        left: 312px;
+        top: 178px;
+      }
+
+      .problem-map .dot-two {
+        left: 454px;
+        top: 450px;
+      }
+
+      .problem-map .dot-three {
+        left: 556px;
+        top: 604px;
+      }
+
+      .product-stage .dot-one {
+        left: 404px;
+        top: 292px;
+      }
+
+      .product-stage .dot-two {
+        left: 452px;
+        bottom: 242px;
+      }
+
+      .product-stage .dot-three {
+        right: 186px;
+        top: 112px;
+      }
+
+      .system-orbit {
+        position: absolute;
+        inset: 96px 96px 96px 122px;
+        border: 1px dashed rgba(4, 120, 87, 0.18);
+        border-radius: 50%;
+        opacity: 0.72;
+        transform: rotate(-8deg);
+      }
+
+      .problem-map {
+        position: relative;
+        flex: 1.12;
+        min-height: 760px;
+      }
+
+      .system-card {
+        position: absolute;
+        display: flex;
+        flex-direction: column;
+        width: 292px;
+        min-height: 152px;
+        gap: 18px;
+        padding: 22px;
+        border: 1px solid var(--border);
+        border-radius: 18px;
+        background: rgba(255, 255, 255, 0.86);
+        box-shadow: 0 18px 46px rgba(14, 26, 22, 0.1);
+      }
+
+      .system-card .label,
+      .option-card .label,
+      .status-card .label,
+      .metric-card .label {
+        color: #243a32;
+        font-family: "JetBrains Mono", ui-monospace, monospace;
+        font-size: 14px;
+        font-weight: 600;
+        text-transform: uppercase;
+      }
+
+      .system-card strong,
+      .option-card strong,
+      .status-card strong,
+      .metric-card strong {
+        color: var(--ink);
+        font-size: 26px;
+        line-height: 1.12;
+      }
+
+      .system-card.crm {
+        left: 64px;
+        top: 62px;
+      }
+
+      .system-card.spreadsheet {
+        right: 94px;
+        top: 136px;
+      }
+
+      .system-card.accounting {
+        left: 202px;
+        bottom: 122px;
+      }
+
+      .system-card.drive {
+        right: 44px;
+        bottom: 66px;
+      }
+
+      .system-card.deadline {
+        left: 368px;
+        top: 312px;
+        border-color: rgba(217, 154, 24, 0.28);
+        background: rgba(255, 247, 223, 0.88);
+      }
+
+      .broken-line {
+        position: absolute;
+        height: 2px;
+        border-top: 2px dashed rgba(91, 110, 102, 0.34);
+        transform-origin: left center;
+      }
+
+      .line-one {
+        left: 344px;
+        top: 184px;
+        width: 390px;
+        transform: rotate(8deg);
+      }
+
+      .line-two {
+        left: 414px;
+        top: 456px;
+        width: 340px;
+        transform: rotate(-18deg);
+      }
+
+      .line-three {
+        left: 510px;
+        top: 606px;
+        width: 380px;
+        transform: rotate(12deg);
+      }
+
+      .options-grid,
+      .failure-grid {
+        display: grid;
+        flex: 1.1;
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+        align-content: center;
+        gap: 22px;
+      }
+
+      .option-card,
+      .status-card,
+      .metric-card {
+        display: flex;
+        flex-direction: column;
+        gap: 18px;
+        min-height: 310px;
+        padding: 28px;
+        border: 1px solid var(--border);
+        border-radius: 20px;
+        background: rgba(255, 255, 255, 0.86);
+        box-shadow: 0 18px 46px rgba(14, 26, 22, 0.09);
+      }
+
+      .option-card p,
+      .status-card p,
+      .metric-card p {
+        margin: 0;
+        color: var(--muted);
+        font-size: 22px;
+        line-height: 1.28;
+        font-weight: 600;
+      }
+
+      .failure-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+      }
+
+      .status-card {
+        min-height: 235px;
+      }
+
+      .status-card.warning {
+        border-color: rgba(159, 58, 47, 0.24);
+        background: rgba(255, 255, 255, 0.9);
+      }
+
+      .status-dot {
+        display: inline-flex;
+        width: 14px;
+        height: 14px;
+        border-radius: 999px;
+        background: var(--danger);
+        box-shadow: 0 0 0 6px rgba(159, 58, 47, 0.1);
+      }
+
+      .product-stage {
+        position: relative;
+        flex: 1.25;
+        height: 780px;
+        margin: auto 0;
+      }
+
+      .screen {
+        position: absolute;
+        overflow: hidden;
+        border: 1px solid rgba(14, 26, 22, 0.08);
+        border-radius: 24px;
+        background: var(--card);
+        box-shadow: var(--shadow);
+      }
+
+      .screen img {
+        display: block;
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
+      }
+
+      .screen-scan {
+        position: absolute;
+        inset: 0;
+        opacity: 0;
+        pointer-events: none;
+        background: linear-gradient(105deg, transparent 24%, rgba(4, 120, 87, 0.15) 42%, transparent 58%);
+      }
+
+      .screen-target {
+        position: absolute;
+        left: 7%;
+        right: 7%;
+        top: 24%;
+        z-index: 5;
+        height: 12%;
+        border: 2px solid rgba(4, 120, 87, 0.34);
+        border-radius: 12px;
+        opacity: 0;
+        background: rgba(236, 246, 241, 0.18);
+        box-shadow: 0 14px 30px rgba(4, 120, 87, 0.12);
+      }
+
+      .screen-main {
+        right: 0;
+        top: 34px;
+        z-index: 2;
+        width: 790px;
+        height: 506px;
+      }
+
+      .screen-secondary {
+        left: 0;
+        bottom: 34px;
+        z-index: 3;
+        width: 548px;
+        height: 354px;
+      }
+
+      .phone {
+        right: 56px;
+        bottom: 0;
+        z-index: 4;
+        width: 214px;
+        height: 436px;
+        border-radius: 32px;
+      }
+
+      .detail-card {
+        position: absolute;
+        z-index: 5;
+        display: flex;
+        flex-direction: column;
+        gap: 4px;
+        min-width: 252px;
+        padding: 17px 19px;
+        border: 1px solid rgba(4, 120, 87, 0.18);
+        border-radius: 16px;
+        background: rgba(255, 255, 255, 0.94);
+        box-shadow: 0 18px 44px rgba(14, 26, 22, 0.14);
+      }
+
+      .detail-card span {
+        color: var(--muted);
+        font-family: "JetBrains Mono", ui-monospace, monospace;
+        font-size: 13px;
+        font-weight: 600;
+        text-transform: uppercase;
+      }
+
+      .detail-card strong {
+        color: var(--ink);
+        font-size: 23px;
+        line-height: 1.08;
+      }
+
+      .detail-one {
+        right: 42px;
+        top: 76px;
+      }
+
+      .detail-two {
+        left: 82px;
+        bottom: 58px;
+      }
+
+      .detail-three {
+        right: 34px;
+        bottom: 74px;
+      }
+
+      .connector {
+        position: absolute;
+        z-index: 1;
+        height: 3px;
+        border-radius: 999px;
+        background: linear-gradient(90deg, rgba(4, 120, 87, 0), rgba(4, 120, 87, 0.5));
+        transform-origin: left center;
+      }
+
+      .connector.one {
+        left: 412px;
+        top: 294px;
+        width: 320px;
+        transform: rotate(-4deg);
+      }
+
+      .connector.two {
+        left: 446px;
+        bottom: 246px;
+        width: 286px;
+        transform: rotate(16deg);
+      }
+
+      .audit-rail {
+        position: absolute;
+        left: 64px;
+        top: 112px;
+        z-index: 6;
+        width: 330px;
+        padding-left: 26px;
+      }
+
+      .audit-line {
+        position: absolute;
+        left: 6px;
+        top: 18px;
+        width: 3px;
+        height: 224px;
+        border-radius: 999px;
+        background: linear-gradient(180deg, rgba(4, 120, 87, 0.2), rgba(4, 120, 87, 0.62));
+        transform-origin: top center;
+      }
+
+      .audit-event {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        gap: 4px;
+        margin-bottom: 16px;
+        padding: 14px 16px;
+        border: 1px solid rgba(4, 120, 87, 0.16);
+        border-radius: 14px;
+        background: rgba(255, 255, 255, 0.94);
+        box-shadow: 0 14px 34px rgba(14, 26, 22, 0.1);
+      }
+
+      .audit-event::before {
+        content: "";
+        position: absolute;
+        left: -26px;
+        top: 19px;
+        width: 12px;
+        height: 12px;
+        border: 3px solid #ffffff;
+        border-radius: 999px;
+        background: var(--emerald);
+        box-shadow: 0 0 0 5px rgba(4, 120, 87, 0.12);
+      }
+
+      .audit-event span {
+        color: #243a32;
+        font-family: "JetBrains Mono", ui-monospace, monospace;
+        font-size: 12px;
+        font-weight: 700;
+        text-transform: uppercase;
+      }
+
+      .audit-event strong {
+        color: var(--ink);
+        font-size: 18px;
+        line-height: 1.12;
+      }
+
+      .audit-stamp {
+        position: absolute;
+        right: 42px;
+        top: 48px;
+        z-index: 7;
+        padding: 12px 15px;
+        border: 2px solid rgba(4, 120, 87, 0.52);
+        border-radius: 10px;
+        color: var(--emerald);
+        font-family: "JetBrains Mono", ui-monospace, monospace;
+        font-size: 18px;
+        font-weight: 800;
+        letter-spacing: 0.08em;
+        text-transform: uppercase;
+        transform: rotate(-4deg);
+        background: rgba(236, 246, 241, 0.9);
+      }
+
+      .audit-packet {
+        position: absolute;
+        right: 172px;
+        bottom: 16px;
+        z-index: 8;
+        display: grid;
+        width: 178px;
+        gap: 8px;
+        padding: 14px;
+        border: 1px solid rgba(4, 120, 87, 0.2);
+        border-radius: 14px;
+        background: rgba(255, 255, 255, 0.95);
+        box-shadow: 0 18px 44px rgba(14, 26, 22, 0.14);
+      }
+
+      .audit-packet span {
+        height: 8px;
+        border-radius: 999px;
+        background: rgba(4, 120, 87, 0.16);
+      }
+
+      .audit-packet span:nth-child(2) {
+        width: 78%;
+      }
+
+      .audit-packet span:nth-child(3) {
+        width: 54%;
+        background: rgba(184, 137, 40, 0.24);
+      }
+
+      .audit-verify {
+        position: absolute;
+        right: 28px;
+        bottom: 196px;
+        z-index: 9;
+        display: grid;
+        width: 256px;
+        gap: 9px;
+        padding: 16px;
+        border: 1px solid rgba(4, 120, 87, 0.24);
+        border-radius: 16px;
+        background: rgba(255, 255, 255, 0.96);
+        opacity: 0;
+        box-shadow: 0 18px 44px rgba(14, 26, 22, 0.14);
+      }
+
+      .audit-verify span {
+        color: #243a32;
+        font-family: "JetBrains Mono", ui-monospace, monospace;
+        font-size: 12px;
+        font-weight: 800;
+        text-transform: uppercase;
+      }
+
+      .audit-verify i {
+        height: 8px;
+        border-radius: 999px;
+        background: linear-gradient(90deg, rgba(4, 120, 87, 0.88), rgba(4, 120, 87, 0.16));
+        transform: scaleX(0);
+        transform-origin: left center;
+      }
+
+      .metrics-grid {
+        display: grid;
+        flex: 1;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        align-content: center;
+        gap: 20px;
+      }
+
+      .metric-card {
+        min-height: 210px;
+      }
+
+      .outro .scene-content {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+      }
+
+      .trial-chip {
+        display: inline-flex;
+        align-items: center;
+        width: max-content;
+        padding: 13px 18px;
+        border: 1px solid rgba(217, 154, 24, 0.28);
+        border-radius: 999px;
+        background: var(--gold-soft);
+        color: #6b4a12;
+        font-family: "JetBrains Mono", ui-monospace, monospace;
+        font-size: 16px;
+        font-weight: 700;
+        text-transform: uppercase;
+      }
+
+      .cta {
+        position: relative;
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        min-width: 370px;
+        min-height: 84px;
+        padding: 20px 42px;
+        border-radius: 999px;
+        background: var(--emerald);
+        color: var(--ink);
+        font-size: 28px;
+        font-weight: 800;
+        line-height: 1.1;
+        box-shadow: 0 22px 44px rgba(4, 120, 87, 0.22);
+      }
+
+      .cta-label {
+        position: relative;
+        z-index: 2;
+        border-radius: 6px;
+        background: transparent;
+        color: var(--ink);
+      }
+
+      .cta-url {
+        position: absolute;
+        left: 50%;
+        bottom: -42px;
+        z-index: 2;
+        color: var(--ink);
+        font-family: "JetBrains Mono", ui-monospace, monospace;
+        font-size: 22px;
+        font-weight: 700;
+        transform: translateX(-50%);
+        white-space: nowrap;
+      }
+
+      .cta-underline {
+        position: absolute;
+        left: 78px;
+        right: 78px;
+        bottom: -50px;
+        z-index: 1;
+        height: 2px;
+        border-radius: 999px;
+        background: rgba(4, 120, 87, 0.38);
+        transform: scaleX(0);
+        transform-origin: left center;
+      }
+
+      .cta-cursor {
+        position: absolute;
+        right: -13px;
+        top: -13px;
+        z-index: 3;
+        width: 34px;
+        height: 34px;
+        border: 2px solid rgba(4, 120, 87, 0.34);
+        border-radius: 999px;
+        background: rgba(255, 255, 255, 0.96);
+        box-shadow: 0 14px 30px rgba(14, 26, 22, 0.14);
+      }
+
+      .cta-trace {
+        position: absolute;
+        inset: -10px -14px;
+        border: 2px solid rgba(4, 120, 87, 0.18);
+        border-radius: 999px;
+        opacity: 0;
+      }
+    </style>
+  </head>
+  <body>
+    <div
+      id="root"
+      data-composition-id="grantpipe-explainer-landscape"
+      data-width="1920"
+      data-height="1080"
+      data-start="0"
+      data-duration="65"
+    >
+      <audio
+        id="voice-a-energized"
+        class="clip"
+        data-start="0"
+        data-duration="57.248"
+        data-track-index="10"
+        data-volume="1"
+        src="./assets/audio/voice/grantpipe-explainer-voice-a-energized.wav"
+      ></audio>
+      <audio id="sfx-intro" class="clip" data-start="0.2" data-duration="0.8" data-track-index="11" data-volume="0.09" src="./assets/audio/sfx/intro-rise.mp3"></audio>
+      <audio id="sfx-problem" class="clip" data-start="9.55" data-duration="0.8" data-track-index="12" data-volume="0.075" src="./assets/audio/sfx/scene-swipe.mp3"></audio>
+      <audio id="sfx-options" class="clip" data-start="10.55" data-duration="0.48" data-track-index="13" data-volume="0.05" src="./assets/audio/sfx/card-pop.mp3"></audio>
+      <audio id="sfx-failure" class="clip" data-start="20.25" data-duration="0.8" data-track-index="14" data-volume="0.07" src="./assets/audio/sfx/soft-impact.mp3"></audio>
+      <audio id="sfx-product" class="clip" data-start="28.35" data-duration="0.8" data-track-index="15" data-volume="0.08" src="./assets/audio/sfx/screen-slide.mp3"></audio>
+      <audio id="sfx-proof" class="clip" data-start="38.85" data-duration="0.8" data-track-index="16" data-volume="0.07" src="./assets/audio/sfx/data-spark.mp3"></audio>
+      <audio id="sfx-outro" class="clip" data-start="49.2" data-duration="1.08" data-track-index="17" data-volume="0.085" src="./assets/audio/sfx/final-resolve.mp3"></audio>
+      <audio id="sfx-cta" class="clip" data-start="50.55" data-duration="0.48" data-track-index="18" data-volume="0.035" src="./assets/audio/sfx/snap-click.mp3"></audio>
+      <audio id="sfx-audit-1" class="clip" data-start="45.65" data-duration="0.34" data-track-index="19" data-volume="0.075" src="./assets/audio/sfx/text-tick.mp3"></audio>
+      <audio id="sfx-audit-2" class="clip" data-start="46.15" data-duration="0.34" data-track-index="20" data-volume="0.075" src="./assets/audio/sfx/text-tick.mp3"></audio>
+      <audio id="sfx-audit-3" class="clip" data-start="47.35" data-duration="0.5" data-track-index="21" data-volume="0.035" src="./assets/audio/sfx/snap-click.mp3"></audio>
+      <audio id="sfx-flow" class="clip" data-start="32.8" data-duration="0.7" data-track-index="22" data-volume="0.035" src="./assets/audio/sfx/connector-zip.mp3"></audio>
+      <audio id="sfx-audit-4" class="clip" data-start="46.65" data-duration="0.34" data-track-index="23" data-volume="0.075" src="./assets/audio/sfx/text-tick.mp3"></audio>
+      <audio id="sfx-verify" class="clip" data-start="47.75" data-duration="0.5" data-track-index="24" data-volume="0.035" src="./assets/audio/sfx/snap-click.mp3"></audio>
+      <div class="grain"></div>
+      <div class="ambient-drift"></div>
+      <div class="ambient-trace"></div>
+      <div class="motion-sheen"></div>
+
+      <section class="scene problem" id="problem">
+        <div class="scene-content">
+          <div class="column">
+            <span class="eyebrow">The problem</span>
+            <h1>Grant-funded work often gets split across systems.</h1>
+            <p class="lede">The work gets split across the donor CRM, spreadsheets, accounting tools, shared drives, and deadline trackers.</p>
+            <div class="caption-row">
+              <span class="caption">Donor CRM</span>
+              <span class="caption">Grant deadlines</span>
+              <span class="caption">Restricted funds</span>
+              <span class="caption">Evidence trail</span>
+            </div>
+          </div>
+          <div class="problem-map">
+            <div class="system-orbit"></div>
+            <div class="broken-line line-one"></div>
+            <div class="broken-line line-two"></div>
+            <div class="broken-line line-three"></div>
+            <i class="data-dot dot-one"></i>
+            <i class="data-dot dot-two"></i>
+            <i class="data-dot dot-three"></i>
+            <div class="system-card crm">
+              <span class="label">Donor CRM</span>
+              <strong>Relationships and gifts</strong>
+            </div>
+            <div class="system-card spreadsheet">
+              <span class="label">Spreadsheet</span>
+              <strong>Grant deadlines</strong>
+            </div>
+            <div class="system-card deadline">
+              <span class="label">Compliance calendar</span>
+              <strong>Report due soon</strong>
+            </div>
+            <div class="system-card accounting">
+              <span class="label">Accounting</span>
+              <strong>Restricted funds</strong>
+            </div>
+            <div class="system-card drive">
+              <span class="label">Shared drive</span>
+              <strong>Evidence buried in folders</strong>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="scene solutions" id="solutions">
+        <div class="scene-content">
+          <div class="column">
+            <span class="eyebrow">Common fixes</span>
+            <h2>The usual fixes solve pieces.</h2>
+            <p class="lede">A CRM, tracker, or enterprise system can each help. The gap is the handoff between them.</p>
+          </div>
+          <div class="options-grid">
+            <div class="option-card">
+              <span class="label">Donor CRM</span>
+              <strong>Stretch the fundraising tool</strong>
+              <p>Good for relationships. Thin on post-award compliance and restricted funds.</p>
+            </div>
+            <div class="option-card">
+              <span class="label">Grant tracker</span>
+              <strong>Add another standalone system</strong>
+              <p>Deadlines improve, but finance and donor context still live elsewhere.</p>
+            </div>
+            <div class="option-card">
+              <span class="label">Enterprise system</span>
+              <strong>Start a long implementation</strong>
+              <p>Consultants, admins, annual contracts, and more setup before the team can work.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="scene why" id="why">
+        <div class="scene-content">
+          <div class="column">
+            <span class="eyebrow">Why they fall short</span>
+            <h2>They were built around pieces of the work.</h2>
+            <p class="lede">Grant-funded operations need the whole chain connected: donor, award, restricted fund, spend-down, reporting, and audit trail.</p>
+          </div>
+          <div class="failure-grid">
+            <div class="status-card warning">
+              <span class="status-dot"></span>
+              <span class="label">Disconnected status</span>
+              <strong>Board report rebuilt from scratch</strong>
+              <p>Teams reassemble the same story each month because records do not stay connected.</p>
+            </div>
+            <div class="status-card warning">
+              <span class="status-dot"></span>
+              <span class="label">Compliance risk</span>
+              <strong>Reporting evidence found too late</strong>
+              <p>Documents, activity, fund context, and deadlines drift into separate places.</p>
+            </div>
+            <div class="status-card">
+              <span class="label">Duplicate work</span>
+              <strong>One grant, several trackers</strong>
+              <p>Development, finance, and leadership each maintain their own version of truth.</p>
+            </div>
+            <div class="status-card">
+              <span class="label">Missing context</span>
+              <strong>Accounting sees numbers, not workflow</strong>
+              <p>Program teams need spend-down and restrictions without becoming accounting admins.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="scene product" id="product">
+        <div class="scene-content">
+          <div class="column">
+            <img class="brand-logo" src="./assets/grantpipe-logo-light-outro.svg" alt="GrantPipe" />
+            <span class="eyebrow">The GrantPipe fix</span>
+            <h2>One shared workspace for donors, grants, funds, and compliance.</h2>
+            <div class="caption-row">
+              <span class="caption">Donor records</span>
+              <span class="caption">Grant pipeline</span>
+              <span class="caption">Restricted funds</span>
+              <span class="caption">Compliance deadlines</span>
+              <span class="caption">Documents + evidence</span>
+              <span class="caption">Reports</span>
+            </div>
+          </div>
+          <div class="product-stage">
+            <div class="connector one"></div>
+            <div class="connector two"></div>
+            <div class="screen screen-main">
+              <img src="./assets/grantpipe-dashboard-clean.png" alt="" />
+              <div class="screen-scan"></div>
+              <div class="screen-target"></div>
+            </div>
+            <i class="data-dot dot-one"></i>
+            <i class="data-dot dot-two"></i>
+            <i class="data-dot dot-three"></i>
+            <div class="detail-card detail-one">
+              <span>Shared view</span>
+              <strong>What is funded, due, and reportable</strong>
+            </div>
+            <div class="screen screen-secondary">
+              <img src="./assets/grantpipe-grants-clean.png" alt="" />
+              <div class="screen-scan"></div>
+              <div class="screen-target"></div>
+            </div>
+            <div class="screen phone">
+              <img src="./assets/grantpipe-donors-mobile-clean.png" alt="" />
+              <div class="screen-scan"></div>
+              <div class="screen-target"></div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="scene proof" id="proof">
+        <div class="scene-content">
+          <div class="column">
+            <span class="eyebrow">Built for the operating model</span>
+            <h2>Audit evidence becomes part of the workflow.</h2>
+            <p class="lede">Development, finance, and leadership can see the reporting story without rebuilding it every month.</p>
+          </div>
+          <div class="product-stage">
+            <div class="screen screen-main">
+              <img src="./assets/grantpipe-accounting-light-clean.png" alt="" />
+              <div class="screen-scan"></div>
+              <div class="screen-target"></div>
+            </div>
+            <div class="detail-card detail-three">
+              <span>Restricted funds</span>
+              <strong>Balances and activity stay visible</strong>
+            </div>
+            <div class="screen screen-secondary">
+              <img src="./assets/grantpipe-activity-log-clean.png" alt="" />
+              <div class="screen-scan"></div>
+              <div class="screen-target"></div>
+            </div>
+            <div class="detail-card detail-two">
+              <span>Evidence trail</span>
+              <strong>Changes stay tied to records</strong>
+            </div>
+            <div class="audit-rail">
+              <div class="audit-line"></div>
+              <div class="audit-event">
+                <span>Evidence</span>
+                <strong>Document attached</strong>
+              </div>
+              <div class="audit-event">
+                <span>Fund activity</span>
+                <strong>Release logged</strong>
+              </div>
+              <div class="audit-event">
+                <span>Reviewer packet</span>
+                <strong>Ready for audit</strong>
+              </div>
+            </div>
+            <div class="audit-stamp">Audit trail</div>
+            <div class="audit-packet">
+              <span></span>
+              <span></span>
+              <span></span>
+            </div>
+            <div class="audit-verify">
+              <span>Verified packet</span>
+              <i></i>
+              <i></i>
+              <i></i>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="scene outro" id="outro">
+        <div class="scene-content">
+          <span class="trial-chip">One-month free trial</span>
+          <img class="brand-logo" src="./assets/grantpipe-logo-light.svg" alt="GrantPipe" />
+          <h1>Run grants, funds, donors, and compliance in one place.</h1>
+          <div class="caption-row">
+            <span class="caption">No credit card</span>
+            <span class="caption">No setup fee</span>
+          </div>
+          <div class="cta" data-layout-allow-overflow><i class="cta-trace"></i><span class="cta-label" data-layout-ignore>Start free trial</span><span class="cta-url" data-layout-ignore>GrantPipe.com</span><i class="cta-underline"></i><i class="cta-cursor"></i></div>
+        </div>
+      </section>
+    </div>
+
+    <script>
+      window.__timelines = window.__timelines || {};
+
+      const splitHeadline = (selector) => {
+        document.querySelectorAll(selector).forEach((heading) => {
+          const label = heading.textContent.trim();
+          heading.setAttribute("aria-label", label);
+          heading.textContent = "";
+
+          label.split(/(\s+)/).forEach((part) => {
+            if (/^\s+$/.test(part)) {
+              heading.append(document.createTextNode(part));
+              return;
+            }
+
+            const word = document.createElement("span");
+            word.className = "word";
+            word.setAttribute("aria-hidden", "true");
+
+            Array.from(part).forEach((character) => {
+              const char = document.createElement("span");
+              char.className = "char";
+              char.textContent = character;
+              word.append(char);
+            });
+
+            heading.append(word);
+          });
+        });
+      };
+
+      splitHeadline("h1, h2");
+
+      const tl = gsap.timeline({ paused: true });
+      tl.set(["#solutions", "#why", "#product", "#proof", "#outro"], { opacity: 0 });
+      tl.to(".grain", { x: 72, y: -72, duration: 65, ease: "none" }, 0);
+      tl.to(".ambient-drift", { x: 130, y: -92, rotation: 2.4, duration: 65, ease: "none" }, 0);
+      tl.to(".ambient-trace", { x: 520, y: -320, duration: 65, ease: "none" }, 0);
+
+      tl.from("#problem .column > *", { y: 26, opacity: 0, scale: 0.98, stagger: 0.12, duration: 0.5, ease: "power4.out" }, 0.25);
+      tl.from("#problem h1 .char", { y: 30, opacity: 0, rotationX: 28, stagger: 0.006, duration: 0.32, ease: "power4.out" }, 0.5);
+      tl.from("#problem .system-orbit", { scale: 0.78, opacity: 0, duration: 0.55, ease: "power3.out" }, 0.9);
+      tl.from("#problem .broken-line", { scaleX: 0, opacity: 0, stagger: 0.12, duration: 0.48, ease: "power3.out" }, 1.1);
+      tl.from("#problem .system-card", { y: 34, opacity: 0, scale: 0.98, stagger: 0.12, duration: 0.54, ease: "power4.out" }, 1.25);
+      tl.to("#problem .system-orbit", { rotation: 10, duration: 6.2, ease: "none" }, 1.25);
+      tl.to("#problem .problem-map", { x: -36, y: 18, scale: 1.035, duration: 5.35, ease: "none" }, 2.05);
+      tl.to("#problem .broken-line", { opacity: 0.84, scaleX: 1.08, stagger: 0.2, duration: 0.55, yoyo: true, repeat: 3, ease: "power2.inOut" }, 2.25);
+      tl.fromTo("#problem .data-dot", { opacity: 0, scale: 0.65, x: 0 }, { opacity: 1, scale: 1, x: 160, stagger: 0.48, duration: 0.78, yoyo: true, repeat: 1, ease: "power2.inOut" }, 2.1);
+      tl.to("#problem .data-dot", { x: 300, opacity: 0, stagger: 0.38, duration: 0.55, ease: "power2.in" }, 5.15);
+      tl.to("#problem .crm", { y: -26, scale: 1.06, borderColor: "rgba(4, 120, 87, 0.48)", duration: 0.46, yoyo: true, repeat: 1, ease: "power2.inOut" }, 2.25);
+      tl.to("#problem .spreadsheet", { y: -26, scale: 1.06, borderColor: "rgba(4, 120, 87, 0.48)", duration: 0.46, yoyo: true, repeat: 1, ease: "power2.inOut" }, 3.2);
+      tl.to("#problem .accounting", { y: -26, scale: 1.06, borderColor: "rgba(4, 120, 87, 0.48)", duration: 0.46, yoyo: true, repeat: 1, ease: "power2.inOut" }, 4.25);
+      tl.to("#problem .drive", { y: -26, scale: 1.06, borderColor: "rgba(4, 120, 87, 0.48)", duration: 0.46, yoyo: true, repeat: 1, ease: "power2.inOut" }, 5.35);
+      tl.to("#problem .deadline", { rotation: -4, y: -18, scale: 1.075, borderColor: "rgba(184, 137, 40, 0.72)", duration: 0.34, yoyo: true, repeat: 5, ease: "power2.inOut" }, 6.05);
+      tl.to("#problem .caption", { y: -12, scale: 1.05, stagger: 0.18, duration: 0.3, yoyo: true, repeat: 1, ease: "power2.inOut" }, 6.1);
+      tl.to("#problem", { opacity: 0, duration: 0.55, ease: "power2.inOut" }, 9.55);
+      tl.set("#problem", { opacity: 0 }, 10.1);
+
+      tl.to("#solutions", { opacity: 1, duration: 0.25, ease: "power2.out" }, 9.65);
+      tl.from("#solutions .column > *", { y: 28, opacity: 0, scale: 0.98, stagger: 0.12, duration: 0.48, ease: "power4.out" }, 9.9);
+      tl.from("#solutions h2 .char", { y: 26, opacity: 0, rotationX: 28, stagger: 0.008, duration: 0.32, ease: "power4.out" }, 10.1);
+      tl.from("#solutions .option-card", { y: 36, opacity: 0, scale: 0.98, stagger: 0.16, duration: 0.54, ease: "power4.out" }, 10.55);
+      tl.to("#solutions .option-card:nth-child(1)", { y: -14, scale: 1.025, borderColor: "rgba(4, 120, 87, 0.28)", duration: 0.38, yoyo: true, repeat: 1, ease: "power2.inOut" }, 12.4);
+      tl.to("#solutions .options-grid", { y: -12, duration: 3.25, ease: "none" }, 13.0);
+      tl.to("#solutions .option-card:nth-child(2)", { y: -14, scale: 1.025, borderColor: "rgba(4, 120, 87, 0.28)", duration: 0.38, yoyo: true, repeat: 1, ease: "power2.inOut" }, 13.2);
+      tl.to("#solutions .option-card p", { opacity: 0.7, duration: 0.34, stagger: 0.1, yoyo: true, repeat: 3, ease: "power2.inOut" }, 14.0);
+      tl.to("#solutions .option-card:nth-child(3)", { y: -14, scale: 1.025, borderColor: "rgba(4, 120, 87, 0.28)", duration: 0.38, yoyo: true, repeat: 1, ease: "power2.inOut" }, 16.0);
+      tl.to("#solutions .option-card", { y: 10, opacity: 0.76, stagger: 0.09, duration: 0.36, yoyo: true, repeat: 1, ease: "power2.inOut" }, 18.2);
+      tl.to("#solutions", { opacity: 0, duration: 0.55, ease: "power2.inOut" }, 20.05);
+      tl.set("#solutions", { opacity: 0 }, 20.6);
+
+      tl.to("#why", { opacity: 1, duration: 0.25, ease: "power2.out" }, 20.25);
+      tl.from("#why .column > *", { y: 28, opacity: 0, scale: 0.98, stagger: 0.12, duration: 0.48, ease: "power4.out" }, 20.47);
+      tl.from("#why h2 .char", { y: 26, opacity: 0, rotationX: 28, stagger: 0.008, duration: 0.32, ease: "power4.out" }, 20.7);
+      tl.from("#why .status-card", { y: 34, opacity: 0, scale: 0.98, stagger: 0.12, duration: 0.5, ease: "power4.out" }, 21.0);
+      tl.to("#why .failure-grid", { y: -10, duration: 2.6, ease: "none" }, 21.55);
+      tl.to("#why .status-dot", { scale: 1.45, duration: 0.2, yoyo: true, repeat: 1, ease: "power2.inOut" }, 22.8);
+      tl.to("#why .status-card strong", { opacity: 0.74, duration: 0.28, stagger: 0.08, yoyo: true, repeat: 3, ease: "power2.inOut" }, 22.0);
+      tl.to("#why .failure-grid", { x: -10, duration: 3.2, ease: "none" }, 23.7);
+      tl.to("#why .status-card:nth-child(1)", { x: -12, borderColor: "rgba(159, 58, 47, 0.42)", duration: 0.25, yoyo: true, repeat: 3, ease: "power2.inOut" }, 23.5);
+      tl.to("#why .status-card:nth-child(2)", { x: 12, borderColor: "rgba(159, 58, 47, 0.42)", duration: 0.25, yoyo: true, repeat: 3, ease: "power2.inOut" }, 25.1);
+      tl.to("#why .status-card:nth-child(3)", { y: -12, scale: 1.02, duration: 0.34, yoyo: true, repeat: 1, ease: "power2.inOut" }, 26.8);
+      tl.to("#why .status-card:nth-child(4)", { y: -12, scale: 1.02, duration: 0.34, yoyo: true, repeat: 1, ease: "power2.inOut" }, 27.55);
+      tl.to("#why .failure-grid", { x: 12, duration: 1.65, ease: "none" }, 27.8);
+      tl.to("#why .status-card", { opacity: 0.88, stagger: 0.06, duration: 0.22, yoyo: true, repeat: 3, ease: "power2.inOut" }, 28.0);
+      tl.to("#why", { opacity: 0, duration: 0.45, ease: "power2.inOut" }, 28.15);
+      tl.set("#why", { opacity: 0 }, 28.6);
+
+      tl.to("#product", { opacity: 1, duration: 0.25, ease: "power2.out" }, 28.35);
+      tl.from("#product .column > *", { y: 28, opacity: 0, scale: 0.98, stagger: 0.12, duration: 0.48, ease: "power4.out" }, 28.53);
+      tl.from("#product h2 .char", { y: 25, opacity: 0, rotationX: 28, stagger: 0.006, duration: 0.32, ease: "power4.out" }, 28.8);
+      tl.from("#product .screen-main", { x: 110, y: 20, opacity: 0, scale: 0.98, duration: 0.66, ease: "power4.out" }, 29.0);
+      tl.from("#product .screen-secondary", { x: -80, y: 42, opacity: 0, scale: 0.98, duration: 0.62, ease: "power4.out" }, 29.3);
+      tl.from("#product .phone", { y: 70, opacity: 0, scale: 0.97, duration: 0.58, ease: "power4.out" }, 29.6);
+      tl.from("#product .connector", { scaleX: 0, opacity: 0, stagger: 0.08, duration: 0.36, ease: "power4.out" }, 29.9);
+      tl.from("#product .detail-card", { y: 22, opacity: 0, scale: 0.92, duration: 0.42, ease: "back.out(1.35)" }, 30.4);
+      tl.fromTo("#product .screen-scan", { xPercent: -120, opacity: 0 }, { xPercent: 120, opacity: 1, stagger: 0.18, duration: 0.74, ease: "power2.inOut" }, 30.9);
+      tl.to("#product .screen-scan", { opacity: 0, duration: 0.18, ease: "power2.out" }, 32.17);
+      tl.to("#product .screen-main .screen-target", { opacity: 1, y: 34, duration: 0.34, yoyo: true, repeat: 1, ease: "power2.inOut" }, 31.8);
+      tl.to("#product .screen-main", { scale: 1.025, x: -16, duration: 1.1, yoyo: true, repeat: 1, ease: "power2.inOut" }, 31.7);
+      tl.to("#product .connector", { scaleX: 1.08, opacity: 1, duration: 0.32, yoyo: true, repeat: 3, stagger: 0.14, ease: "power2.inOut" }, 32.8);
+      tl.fromTo("#product .data-dot", { opacity: 0, scale: 0.7, x: 0 }, { opacity: 1, scale: 1, x: 224, stagger: 0.18, duration: 0.64, yoyo: true, repeat: 2, ease: "power2.inOut" }, 32.85);
+      tl.fromTo("#product .screen-scan", { xPercent: -120, opacity: 0 }, { xPercent: 120, opacity: 0.92, stagger: 0.12, duration: 0.6, ease: "power2.inOut" }, 34.45);
+      tl.to("#product .screen-scan", { opacity: 0, duration: 0.18, ease: "power2.out" }, 35.43);
+      tl.to("#product .detail-one", { y: -12, scale: 1.045, borderColor: "rgba(4, 120, 87, 0.36)", duration: 0.34, yoyo: true, repeat: 1, ease: "power2.inOut" }, 34.05);
+      tl.to("#product .screen-secondary", { scale: 1.035, x: 14, duration: 0.9, yoyo: true, repeat: 1, ease: "power2.inOut" }, 35.6);
+      tl.to("#product .screen-secondary .screen-target", { opacity: 1, y: 42, duration: 0.34, yoyo: true, repeat: 1, ease: "power2.inOut" }, 35.8);
+      tl.to("#product .phone", { y: -16, scale: 1.035, duration: 0.58, yoyo: true, repeat: 1, ease: "power2.inOut" }, 37.45);
+      tl.to("#product .phone .screen-target", { opacity: 1, y: 46, duration: 0.3, yoyo: true, repeat: 1, ease: "power2.inOut" }, 37.35);
+      tl.to("#product .product-stage", { y: -20, x: -10, duration: 8.9, ease: "power2.inOut" }, 31.75);
+      tl.to("#product", { opacity: 0, duration: 0.55, ease: "power2.inOut" }, 38.55);
+      tl.set("#product", { opacity: 0 }, 39.1);
+
+      tl.to("#proof", { opacity: 1, duration: 0.25, ease: "power2.out" }, 38.85);
+      tl.from("#proof .column > *", { y: 28, opacity: 0, scale: 0.98, stagger: 0.12, duration: 0.48, ease: "power4.out" }, 39.05);
+      tl.from("#proof h2 .char", { y: 25, opacity: 0, rotationX: 28, stagger: 0.007, duration: 0.32, ease: "power4.out" }, 39.28);
+      tl.from("#proof .screen-main", { x: 110, opacity: 0, scale: 0.98, duration: 0.62, ease: "power4.out" }, 39.5);
+      tl.from("#proof .screen-secondary", { x: -80, y: 44, opacity: 0, scale: 0.98, duration: 0.58, ease: "power4.out" }, 39.88);
+      tl.from("#proof .detail-card", { y: 22, opacity: 0, scale: 0.92, stagger: 0.14, duration: 0.42, ease: "back.out(1.35)" }, 40.4);
+      tl.to("#proof .product-stage", { x: -8, y: -14, duration: 7.6, ease: "none" }, 40.65);
+      tl.to("#proof .screen-main", { scale: 1.025, x: -12, duration: 1.1, yoyo: true, repeat: 1, ease: "power2.inOut" }, 41.15);
+      tl.fromTo("#proof .screen-scan", { xPercent: -120, opacity: 0 }, { xPercent: 120, opacity: 0.72, stagger: 0.12, duration: 0.62, ease: "power2.inOut" }, 42.25);
+      tl.to("#proof .screen-scan", { opacity: 0, duration: 0.16, ease: "power2.out" }, 43.1);
+      tl.to("#proof .screen-secondary .screen-target", { opacity: 1, y: 34, duration: 0.32, yoyo: true, repeat: 1, ease: "power2.inOut" }, 43.55);
+      tl.to("#proof .detail-two", { y: -10, scale: 1.04, borderColor: "rgba(4, 120, 87, 0.34)", duration: 0.34, yoyo: true, repeat: 1, ease: "power2.inOut" }, 44.4);
+      tl.from("#proof .audit-line", { scaleY: 0, opacity: 0, duration: 0.7, ease: "power3.out" }, 44.85);
+      tl.from("#proof .audit-event", { x: -34, opacity: 0, scale: 0.94, stagger: 0.48, duration: 0.42, ease: "back.out(1.3)" }, 45.15);
+      tl.to("#proof .audit-event", { y: -8, stagger: 0.12, duration: 0.32, yoyo: true, repeat: 1, ease: "power2.inOut" }, 46.25);
+      tl.fromTo("#proof .screen-scan", { xPercent: -120, opacity: 0 }, { xPercent: 120, opacity: 0.96, stagger: 0.16, duration: 0.72, ease: "power2.inOut" }, 46.05);
+      tl.to("#proof .screen-scan", { opacity: 0, duration: 0.18, ease: "power2.out" }, 46.9);
+      tl.to("#proof .screen-main .screen-target", { opacity: 1, y: 28, duration: 0.32, yoyo: true, repeat: 1, ease: "power2.inOut" }, 46.62);
+      tl.from("#proof .audit-packet", { y: 28, opacity: 0, scale: 0.94, rotation: 4, duration: 0.38, ease: "power4.out" }, 46.86);
+      tl.to("#proof .audit-packet span", { scaleX: 1.22, transformOrigin: "left center", stagger: 0.09, duration: 0.22, yoyo: true, repeat: 1, ease: "power2.inOut" }, 47.18);
+      tl.from("#proof .audit-stamp", { scale: 1.18, opacity: 0, rotation: -12, duration: 0.3, ease: "power4.out" }, 47.34);
+      tl.to("#proof .audit-verify", { opacity: 1, y: -8, duration: 0.32, ease: "power3.out" }, 47.46);
+      tl.to("#proof .audit-verify i", { scaleX: 1, stagger: 0.08, duration: 0.22, ease: "power3.out" }, 47.58);
+      tl.to("#proof", { opacity: 0, duration: 0.5, ease: "power2.inOut" }, 48.85);
+      tl.set("#proof", { opacity: 0 }, 49.35);
+
+      tl.to("#outro", { opacity: 1, duration: 0.32, ease: "power2.out" }, 49.05);
+      tl.set("#outro .cta-label", { color: "#ffffff", backgroundColor: "#065f46" }, 49.05);
+      tl.set("#outro .cta-url", { color: "#065f46" }, 49.05);
+      tl.from("#outro .trial-chip", { y: 18, opacity: 0, scale: 0.96, duration: 0.36, ease: "back.out(1.35)" }, 49.15);
+      tl.from("#outro .brand-logo", { y: 26, opacity: 0, scale: 0.96, duration: 0.52, ease: "back.out(1.35)" }, 49.3);
+      tl.from("#outro h1 .char", { y: 30, opacity: 0, rotationX: 32, stagger: 0.006, duration: 0.34, ease: "power4.out" }, 49.52);
+      tl.from("#outro .cta", { y: 26, opacity: 0, scale: 0.88, duration: 0.28, ease: "back.out(1.5)" }, 49.8);
+      tl.from("#outro .cta-cursor", { x: -90, y: 46, opacity: 0, scale: 0.86, duration: 0.5, ease: "power3.out" }, 50.15);
+      tl.to("#outro .cta", { y: -6, boxShadow: "0 30px 64px rgba(4, 120, 87, 0.32)", duration: 0.34, yoyo: true, repeat: 1, ease: "power2.inOut" }, 50.45);
+      tl.to("#outro .cta-cursor", { x: 12, y: -8, duration: 1.6, ease: "none" }, 50.7);
+      tl.to("#outro .cta-trace", { opacity: 1, scale: 1.06, duration: 0.34, yoyo: true, repeat: 1, ease: "power2.inOut" }, 50.55);
+      tl.to("#outro .cta-underline", { scaleX: 1, duration: 0.62, ease: "power3.out" }, 50.6);
+      tl.from("#outro .caption", { y: 20, opacity: 0, scale: 0.92, stagger: 0.1, duration: 0.38, ease: "back.out(1.3)" }, 51.75);
+      tl.to("#outro .caption", { y: -14, scale: 1.045, stagger: 0.18, duration: 0.32, yoyo: true, repeat: 3, ease: "power2.inOut" }, 52.35);
+      tl.to("#outro .trial-chip", { y: -10, scale: 1.045, duration: 0.3, yoyo: true, repeat: 1, ease: "power2.inOut" }, 53.0);
+      tl.to("#outro h1", { y: -18, scale: 1.018, duration: 10.4, ease: "none" }, 51.0);
+      tl.set(".motion-sheen", { xPercent: -40 }, 53.0);
+      tl.to(".motion-sheen", { opacity: 1, duration: 0.12, ease: "power2.out" }, 53.02);
+      tl.to(".motion-sheen", { xPercent: 62, duration: 3.8, ease: "none" }, 53.02);
+      tl.to(".motion-sheen", { opacity: 0, duration: 0.28, ease: "power2.in" }, 56.62);
+      tl.to("#outro .brand-logo", { y: -10, scale: 1.045, duration: 0.52, yoyo: true, repeat: 3, ease: "power2.inOut" }, 56.85);
+      tl.to("#outro .cta", { y: -12, duration: 4.8, ease: "none" }, 57.4);
+      tl.to("#outro .cta-cursor", { scale: 0.78, duration: 0.16, yoyo: true, repeat: 5, ease: "power2.inOut" }, 58.6);
+      tl.to("#outro .caption", { y: -20, stagger: 0.18, duration: 0.32, yoyo: true, repeat: 3, ease: "power2.inOut" }, 60.4);
+      tl.set(".motion-sheen", { xPercent: -42 }, 61.75);
+      tl.to(".motion-sheen", { opacity: 1, duration: 0.12, ease: "power2.out" }, 61.78);
+      tl.to(".motion-sheen", { xPercent: 62, duration: 3.0, ease: "none" }, 61.78);
+      tl.to(".motion-sheen", { opacity: 0, duration: 0.28, ease: "power2.in" }, 64.48);
+      tl.to("#outro .brand-logo", { y: -15, scale: 1.025, duration: 0.52, yoyo: true, repeat: 2, ease: "power2.inOut" }, 62.35);
+
+      window.__timelines["grantpipe-explainer-landscape"] = tl;
+    </script>
+  </body>
+</html>

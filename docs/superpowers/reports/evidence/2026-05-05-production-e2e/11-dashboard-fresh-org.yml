@@ -1,0 +1,238 @@
+- generic [ref=e3]:
+    - generic [ref=e78]:
+        - banner [ref=e79]:
+            - button "Open navigation" [ref=e81]:
+                - img
+            - generic [ref=e82]:
+                - link "Add billing, trial ends in 30 days" [ref=e83] [cursor=pointer]:
+                    - /url: /app/settings#billing
+                    - img [ref=e84]
+                    - generic [ref=e87]: Trial
+                    - generic [ref=e88]: 30d
+                - button "Open command palette" [ref=e89]:
+                    - img
+                - link "Notifications" [ref=e90] [cursor=pointer]:
+                    - /url: /app/notifications
+                    - img
+                - button "Switch to dark theme" [ref=e91]:
+                    - img
+        - main [ref=e93]:
+            - generic [ref=e95]:
+                - generic [ref=e96]:
+                    - paragraph [ref=e97]: Tuesday, May 5, 2026
+                    - generic [ref=e99]:
+                        - generic [ref=e100]:
+                            - heading "Dashboard" [level=1] [ref=e101]
+                            - button "Help for Dashboard" [ref=e102]:
+                                - img [ref=e103]
+                        - paragraph [ref=e106]: Updated May 5, 2026, 10:04 PM UTC
+                - region "Executive snapshot" [ref=e107]:
+                    - generic [ref=e108]:
+                        - generic [ref=e109]:
+                            - generic [ref=e110]:
+                                - heading "Executive snapshot" [level=2] [ref=e111]
+                                - generic [ref=e112]: Watch closely
+                            - paragraph [ref=e113]: no board packet generated.
+                            - generic [ref=e114]:
+                                - generic [ref=e115]:
+                                    - term [ref=e116]: Urgent work
+                                    - definition [ref=e117]: 0 urgent
+                                - generic [ref=e118]:
+                                    - term [ref=e119]: Upcoming deadlines
+                                    - definition [ref=e120]: 0 next 30 days
+                        - generic [ref=e121]:
+                            - heading "Priority actions" [level=3] [ref=e122]
+                            - article [ref=e124]:
+                                - generic [ref=e125]:
+                                    - generic [ref=e126]:
+                                        - link "Open Generate a board packet" [ref=e127] [cursor=pointer]:
+                                            - /url: /app/reports
+                                            - text: Generate a board packet
+                                        - paragraph [ref=e128]: No board packet has been generated yet.
+                                    - generic [ref=e129]: Watch
+                - generic "Start with these steps" [ref=e131]:
+                    - generic [ref=e132]:
+                        - generic [ref=e133]:
+                            - generic [ref=e134]:
+                                - heading "Start with these steps" [level=2] [ref=e135]
+                                - paragraph [ref=e136]: 0 of 5 steps complete
+                                - paragraph [ref=e137]: A short setup path for people who are new to GrantPipe or uneasy with software.
+                            - generic [ref=e138]:
+                                - button "Dismiss all" [ref=e139]
+                                - link "Help center" [ref=e140] [cursor=pointer]:
+                                    - /url: /app/help
+                        - generic [ref=e141]:
+                            - article [ref=e142]:
+                                - generic [ref=e143]: "01"
+                                - generic [ref=e144]:
+                                    - heading "Confirm organization settings" [level=3] [ref=e145]
+                                    - paragraph [ref=e146]: Check your organization name, timezone, and fiscal year before reports depend on them.
+                                - generic [ref=e147]:
+                                    - link "Start" [ref=e148] [cursor=pointer]:
+                                        - /url: /app/settings
+                                    - button "Mark done" [ref=e149]
+                                    - button "Dismiss" [ref=e150]
+                            - article [ref=e151]:
+                                - generic [ref=e152]: "02"
+                                - generic [ref=e153]:
+                                    - heading "Bring in your first contacts" [level=3] [ref=e154]
+                                    - paragraph [ref=e155]: Import a CSV from your old spreadsheet or CRM after previewing it.
+                                - generic [ref=e156]:
+                                    - link "Start" [ref=e157] [cursor=pointer]:
+                                        - /url: /app/import
+                                    - button "Mark done" [ref=e158]
+                                    - button "Dismiss" [ref=e159]
+                            - article [ref=e160]:
+                                - generic [ref=e161]: "03"
+                                - generic [ref=e162]:
+                                    - heading "Add one grant" [level=3] [ref=e163]
+                                    - paragraph [ref=e164]: Create a grant record so deadlines, funds, and reporting have a home.
+                                - generic [ref=e165]:
+                                    - link "Start" [ref=e166] [cursor=pointer]:
+                                        - /url: /app/grants
+                                    - button "Mark done" [ref=e167]
+                                    - button "Dismiss" [ref=e168]
+                            - article [ref=e169]:
+                                - generic [ref=e170]: "04"
+                                - generic [ref=e171]:
+                                    - heading "Find reports" [level=3] [ref=e172]
+                                    - paragraph [ref=e173]: Learn where generated PDFs and exports appear after you create them.
+                                - generic [ref=e174]:
+                                    - link "Start" [ref=e175] [cursor=pointer]:
+                                        - /url: /app/reports
+                                    - button "Mark done" [ref=e176]
+                                    - button "Dismiss" [ref=e177]
+                            - article [ref=e178]:
+                                - generic [ref=e179]: "05"
+                                - generic [ref=e180]:
+                                    - heading "Open a downloaded report" [level=3] [ref=e181]
+                                    - paragraph [ref=e182]: Know where a PDF goes after download and how to open it from your computer.
+                                - generic [ref=e183]:
+                                    - link "Start" [ref=e184] [cursor=pointer]:
+                                        - /url: /app/help
+                                    - button "Mark done" [ref=e185]
+                                    - button "Dismiss" [ref=e186]
+                - generic [ref=e187]:
+                    - link "Retention rate" [ref=e188] [cursor=pointer]:
+                        - /url: /app/donors?segment=retained
+                        - generic [ref=e189]:
+                            - generic [ref=e190]: Retention rate
+                            - generic [ref=e191]: 0.0%
+                            - paragraph [ref=e192]: Donors who gave again this fiscal year
+                    - link "This FY giving" [ref=e193] [cursor=pointer]:
+                        - /url: /app/donors?segment=giving_fy_current
+                        - generic [ref=e194]:
+                            - generic [ref=e195]: This FY giving
+                            - generic [ref=e196]: $0
+                            - paragraph [ref=e197]: Current fiscal-year donations booked
+                    - link "Last FY giving" [ref=e198] [cursor=pointer]:
+                        - /url: /app/donors?segment=giving_fy_last
+                        - generic [ref=e199]:
+                            - generic [ref=e200]: Last FY giving
+                            - generic [ref=e201]: $0
+                            - paragraph [ref=e202]: Benchmark for year-over-year pacing
+                    - link "New donors" [ref=e203] [cursor=pointer]:
+                        - /url: /app/donors?segment=new
+                        - generic [ref=e204]:
+                            - generic [ref=e205]: New donors
+                            - generic [ref=e206]: "0"
+                            - paragraph [ref=e207]: First-time supporters acquired this year
+                - link "Outstanding reimbursements" [ref=e208] [cursor=pointer]:
+                    - /url: /app/payments
+                    - generic [ref=e209]:
+                        - generic [ref=e210]: Outstanding Reimbursements
+                        - generic [ref=e211]: $0
+                        - paragraph [ref=e212]: 0 submitted, 0 approved
+                - region "Grant health" [ref=e213]:
+                    - generic [ref=e215]:
+                        - heading "Grant health" [level=2] [ref=e216]
+                        - paragraph [ref=e217]: Control counts for grant risk, deadlines, funds, and audit evidence.
+                    - generic [ref=e218]:
+                        - generic [ref=e219]:
+                            - term [ref=e220]: Overdue grants
+                            - definition [ref=e221]: "0"
+                        - generic [ref=e222]:
+                            - term [ref=e223]: At-risk grants
+                            - definition [ref=e224]: "0"
+                        - generic [ref=e225]:
+                            - term [ref=e226]: Upcoming deadlines
+                            - definition [ref=e227]: "0"
+                        - generic [ref=e228]:
+                            - term [ref=e229]: Restricted funds on watch
+                            - definition [ref=e230]: "0"
+                        - generic [ref=e231]:
+                            - term [ref=e232]: Audit evidence events
+                            - definition [ref=e233]: "0"
+                - region "Reporting readiness" [ref=e234]:
+                    - generic [ref=e235]:
+                        - generic [ref=e236]:
+                            - heading "Reporting readiness" [level=2] [ref=e237]
+                            - paragraph [ref=e238]: No board packet has been generated yet.
+                        - link "Open reports" [ref=e239] [cursor=pointer]:
+                            - /url: /app/reports
+                - generic [ref=e240]:
+                    - region "Recent activity" [ref=e241]:
+                        - heading "Recent activity" [level=2] [ref=e242]
+                        - list [ref=e243]:
+                            - listitem [ref=e244]:
+                                - paragraph [ref=e245]: Organization Updated
+                                - time [ref=e246]: May 5, 2026, 10:03 PM UTC
+                    - region "Grant pipeline" [ref=e247]:
+                        - heading "Grant pipeline" [level=2] [ref=e248]
+                        - generic [ref=e249]:
+                            - generic [ref=e250]:
+                                - paragraph [ref=e251]: Donors
+                                - generic [ref=e252]:
+                                    - generic [ref=e253]: Prospect
+                                    - generic [ref=e254]: "0"
+                                - generic [ref=e255]:
+                                    - generic [ref=e256]: Cultivation
+                                    - generic [ref=e257]: "0"
+                                - generic [ref=e258]:
+                                    - generic [ref=e259]: Solicitation
+                                    - generic [ref=e260]: "0"
+                                - generic [ref=e261]:
+                                    - generic [ref=e262]: Stewardship
+                                    - generic [ref=e263]: "0"
+                                - generic [ref=e264]:
+                                    - generic [ref=e265]: Donor
+                                    - generic [ref=e266]: "0"
+                                - generic [ref=e267]:
+                                    - generic [ref=e268]: Lapsed
+                                    - generic [ref=e269]: "0"
+                            - generic [ref=e270]:
+                                - paragraph [ref=e271]: Grants
+                                - generic [ref=e272]:
+                                    - generic [ref=e273]: Discovery
+                                    - generic [ref=e274]: "0"
+                                - generic [ref=e275]:
+                                    - generic [ref=e276]: Application
+                                    - generic [ref=e277]: "0"
+                                - generic [ref=e278]:
+                                    - generic [ref=e279]: Submitted
+                                    - generic [ref=e280]: "0"
+                                - generic [ref=e281]:
+                                    - generic [ref=e282]: Awarded
+                                    - generic [ref=e283]: "0"
+                                - generic [ref=e284]:
+                                    - generic [ref=e285]: Active
+                                    - generic [ref=e286]: "0"
+                                - generic [ref=e287]:
+                                    - generic [ref=e288]: Reporting
+                                    - generic [ref=e289]: "0"
+                                - generic [ref=e290]:
+                                    - generic [ref=e291]: Closeout
+                                    - generic [ref=e292]: "0"
+                                - generic [ref=e293]:
+                                    - generic [ref=e294]: Renewal
+                                    - generic [ref=e295]: "0"
+                                - generic [ref=e296]:
+                                    - generic [ref=e297]: Declined
+                                    - generic [ref=e298]: "0"
+                    - region "Fund balances" [ref=e299]:
+                        - heading "Fund balances" [level=2] [ref=e300]
+                        - generic [ref=e301]:
+                            - paragraph [ref=e302]: Fund balances appear after restricted or unrestricted funds are created. Use Funds when you need to track money set aside for a specific purpose.
+                            - link "Create a fund →" [ref=e303] [cursor=pointer]:
+                                - /url: /app/funds
+    - region "Notifications alt+T"

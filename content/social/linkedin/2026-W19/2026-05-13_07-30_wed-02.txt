@@ -1,0 +1,9 @@
+3 systems. 1 grant. 0 reconciliations.
+
+That is how grant pipeline often gets tracked at mid-sized nonprofits today. The donor CRM holds the funder relationship. QuickBooks holds the dollars. A Google Sheet holds the deadlines.
+
+Hand-offs between Development and Finance are where seams open in mid-sized nonprofits. Numbers drift along the seam. Reports get rebuilt from scratch every month.
+
+The fix is not another integration. It is one workspace where the funder, the award, the budget, the spend, and the report all live as one record. Development sees the relationship. Finance sees the ledger. Both see the same balance.
+
+That is what GrantPipe is. Donors and grants in one system, with restricted-fund tracking that matches FASB ASC 958 instead of bolting on top of it.

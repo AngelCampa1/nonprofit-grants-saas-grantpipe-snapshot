@@ -1,0 +1,1 @@
+ALTER TABLE "grant_fund_allocations" ADD COLUMN "deleted_at" timestamp with time zone;

@@ -1,0 +1,11 @@
+Pass-through entity, defined at 2 CFR 200.1: a non-federal entity that receives a federal award and provides a sub-award to a subrecipient that carries out part of the federal program.
+
+Pass-through status is functional, not optional. The moment a recipient issues a sub-award, it becomes a pass-through entity for that portion of the award and inherits the responsibilities under 2 CFR 200.332.
+
+Two examples that show how broad the definition is. A state department of health receives a $5M HHS grant and sub-awards $3M to 12 county health agencies — the state is the pass-through. A nonprofit receives a $1.2M DOL workforce grant and sub-awards $400,000 to a training partner for one program track — the nonprofit is a pass-through for that $400,000.
+
+The 2 CFR 200.332 obligations include classifying every downstream relationship as subrecipient or contractor, performing risk assessments before issuing sub-awards, and monitoring throughout the period of performance. Pass-through amounts also flow onto the SEFA filed with the Federal Audit Clearinghouse.
+
+If your organization writes checks to a partner under a federal grant, you are probably a pass-through entity. The right time to find out is before the agreement is signed.
+
+#passthroughentity #2cfr200332 #subrecipientmonitoring #grantcompliance

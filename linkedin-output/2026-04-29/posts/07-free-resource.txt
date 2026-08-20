@@ -1,0 +1,11 @@
+A sub-award that is missing a required provision is a compliance finding even when the program runs perfectly.
+
+2 CFR 200.332(a) lists the data elements that every sub-award document must contain before execution: federal award identification number, federal award date, sub-award amount, federal award project description, name of the federal awarding agency, CFDA/Assistance Listing number and title, indirect cost rate, and a statement of applicable requirements. Missing any one of them is a citable finding regardless of how well the subrecipient performs.
+
+The most common gap on the audited list is the indirect cost rate — pass-through entities often leave it blank or use language that does not reference the negotiated rate or the de minimis 15 percent rate at 2 CFR 200.414(f).
+
+The Subrecipient Agreement Checklist walks through every required provision under 2 CFR 200.332(a), the additional provisions that reduce monitoring risk, and program-specific additions that some federal programs require on top of the baseline. Use it before the agreement is signed, not after.
+
+Free download in the resources section of the GrantPipe site.
+
+#subrecipientmonitoring #2cfr200332 #grantcompliance #federalgrants

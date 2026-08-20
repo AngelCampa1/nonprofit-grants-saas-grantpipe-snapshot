@@ -1,0 +1,15 @@
+Picture this:
+
+An auditor walks in. They ask for the spend-down detail on the Federal pass-through grant. The Finance Director opens a spreadsheet. The Development Director opens a different one. The numbers do not match.
+
+Now the audit takes three hours longer than it needed to.
+
+Two spreadsheets is not the bug. The bug is that grant activity lives in two systems with no canonical record. One person tracks the award amount and reports. The other tracks the donor side and the funder relationship. Neither is wrong. Neither is complete.
+
+The fix is not a new spreadsheet. It is one record per grant where the obligation, the spend, the documents, and the report deadlines all sit in the same row, visible to both teams.
+
+That is what we built GrantPipe to be.
+
+See current offer terms at grantpipe.com/pricing.
+
+Start a free trial at app.grantpipe.com. One month, no credit card.

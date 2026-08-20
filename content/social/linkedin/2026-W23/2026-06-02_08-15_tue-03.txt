@@ -1,0 +1,11 @@
+Audit documentation gets weaker when it is stored by personality.
+
+"Ask Maria."
+
+"Check John's folder."
+
+"Finance has the final one."
+
+Those are not records. They are dependencies.
+
+For grant files, store the award, amendment, report, source document, approval, and reconciliation where the next person can find them without knowing office folklore.

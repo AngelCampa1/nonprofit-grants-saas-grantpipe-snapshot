@@ -1,0 +1,9 @@
+Quick check before Monday: do you know your organization's UEI expiration date?
+
+SAM.gov registrations renew every 12 months. If yours lapses in the middle of a draw request, the federal payment system will reject the drawdown. Not delay it. Reject it.
+
+The renewal window opens 60 days before expiration. Missing this surfaces at the worst time: when SAM.gov support is unavailable.
+
+Two minutes on sam.gov this week. Search your entity, note the expiration date, set a calendar reminder for 60 days prior.
+
+That is the whole task. It just has to happen.

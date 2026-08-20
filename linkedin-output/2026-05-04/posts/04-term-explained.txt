@@ -1,0 +1,11 @@
+Net assets without donor restrictions is not the same as cash available.
+
+Under FASB ASC 958-210-45, every nonprofit's net assets fall into one of two classes: with-donor-restrictions or without-donor-restrictions. The without-restrictions class includes unrestricted contributions, program service revenue, government contract revenue, investment returns on unrestricted funds, and board-designated amounts. It is the default — funds land here unless a donor has imposed explicit conditions.
+
+The term replaced "unrestricted net assets" through FASB ASU 2016-14, effective for fiscal years beginning after December 15, 2017. The substance is identical; only the label changed. Using "unrestricted net assets" in an audited financial statement is now an error.
+
+Board designations are the classification that creates the most confusion. A board that votes to designate $250,000 as an operating reserve has created an internal allocation — not a donor restriction. The board can rescind it by resolution at any time. That $250,000 remains within net assets without donor restrictions, disclosed in the footnotes, not moved to a separate net asset class.
+
+FASB ASU 2016-14 added a required liquidity and availability footnote precisely because a $2 million without-restrictions balance may consist largely of fixed assets, vehicles, and long-term receivables. The footnote surfaces what is genuinely accessible within 12 months. High unrestricted net assets without the liquidity footnote tells auditors and board members almost nothing.
+
+#nonprofitaccounting #fasbasc958 #restrictedFunds #nonprofitfinance

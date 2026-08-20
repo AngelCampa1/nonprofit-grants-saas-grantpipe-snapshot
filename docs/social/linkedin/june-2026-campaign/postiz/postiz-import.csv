@@ -1,0 +1,2129 @@
+post_id,scheduled_at_et,scheduled_at_utc,timezone,platform,account,type,integration_id,settings_json,pillar,hook_code,length_code,cta_type,cta_url,claim_sources,export_pattern,humanizer_status,review_status,source_file,post_body
+2026-06-01_06-45_mon-01,2026-06-01 06:45,2026-06-01T10:45:00.000Z,America/New_York,linkedin,GrantPipe company page,post,,"{""__type"":""linkedin-page"",""post_as_images_carousel"":false}",P1,Q,s,none,,grant documentation checklist; june strategy,audit binder checklist,passed,passed,content/social/linkedin/2026-W23/2026-06-01_06-45_mon-01.txt,"Quick check: if an auditor asked for one grant file today, could you produce the award, amendments, ledger, invoices, payroll support, and submitted reports without opening six tabs?
+
+That is the real audit binder test.
+
+The binder is not a folder.
+
+It is a retrieval promise."
+2026-06-01_07-30_mon-02,2026-06-01 07:30,2026-06-01T11:30:00.000Z,America/New_York,linkedin,GrantPipe company page,post,,"{""__type"":""linkedin-page"",""post_as_images_carousel"":false}",P3,C,m,none,,donor-to-grant reconciliation template; product-context,donor CRM to GL reconciliation,passed,passed,content/social/linkedin/2026-W23/2026-06-01_07-30_mon-02.txt,"The donor CRM and the general ledger answer different questions.
+
+The CRM says: who funded us, when did the relationship change, what did we promise?
+
+The GL says: what cash arrived, where was it coded, what restriction class did Finance use?
+
+The risk shows up when those answers drift.
+
+A June 1 check worth doing:
+
+Pick five active funders.
+
+For each one, compare CRM amount, grant record amount, GL receipt, restriction code, and report deadline.
+
+If the same funder has five different names, fix the naming before you build another report."
+2026-06-01_08-15_mon-03,2026-06-01 08:15,2026-06-01T12:15:00.000Z,America/New_York,linkedin,GrantPipe company page,post,,"{""__type"":""linkedin-page"",""post_as_images_carousel"":false}",P5,L,s,none,,june strategy; writer brief,month-start checks,passed,passed,content/social/linkedin/2026-W23/2026-06-01_08-15_mon-03.txt,"Month-start nonprofit ops check:
+
+- Which reports are due in the next 30 days?
+- Which board packet numbers still need Finance signoff?
+- Which restricted balances changed last month?
+- Which donor promises still need acknowledgment?
+- Which grant folders have missing evidence?
+
+June gets easier when this list exists before the inbox starts talking."
+2026-06-01_09-00_mon-04,2026-06-01 09:00,2026-06-01T13:00:00.000Z,America/New_York,linkedin,GrantPipe company page,post,,"{""__type"":""linkedin-page"",""post_as_images_carousel"":false}",P7,L,m,lead_magnet,https://grantpipe.com/free/2-cfr-200-audit-prep-checklist,uniform guidance guide; lead magnet: 2-cfr-200-audit-prep-checklist,lead-magnet teaser,passed,passed,content/social/linkedin/2026-W23/2026-06-01_09-00_mon-04.txt,"2 CFR 200 can feel abstract until audit week.
+
+The useful version is a checklist:
+
+- Is the cost allowable?
+- Is it allocable to the award?
+- Is the amount reasonable?
+- Is the source document attached?
+- Is the report deadline on the calendar?
+
+We made a free 2 CFR 200 Audit Prep Checklist for that exact pass.
+
+Free download, no email required: grantpipe.com/free/2-cfr-200-audit-prep-checklist."
+2026-06-01_09-45_mon-05,2026-06-01 09:45,2026-06-01T13:45:00.000Z,America/New_York,linkedin,GrantPipe company page,post,,"{""__type"":""linkedin-page"",""post_as_images_carousel"":false}",P1,L,l,none,,grant documentation checklist; 2 CFR 200.430,audit binder checklist,passed,passed,content/social/linkedin/2026-W23/2026-06-01_09-45_mon-05.txt,"Seven tabs I would want in a grant audit binder before a reviewer asks.
+
+1. Award record
+
+Notice of award, grant agreement, budget, amendments, no-cost extensions, and approval dates.
+
+2. Financial trail
+
+Ledger detail by grant, invoice or receipt, proof of payment, budget line, and coding.
+
+3. Payroll support
+
+Position description, payroll register, time and effort record, and effort certification for staff charged to the award.
+
+4. Program evidence
+
+Attendance records, participant eligibility files, output data, submitted performance reports, and source records behind totals.
+
+5. Procurement file
+
+Quotes, RFP, vendor selection notes, contract, conflict disclosure, and purchase approval.
+
+6. Reporting history
+
+SF-425 or funder financial reports, program reports, portal confirmations, and any explanation for revised numbers.
+
+7. Correspondence
+
+Program officer emails, approvals, amendment requests, and guidance that changed the work.
+
+The goal is not a pretty binder. The goal is for a person who did not manage the grant to trace the story without asking five staff members to remember what happened."
+2026-06-01_10-30_mon-06,2026-06-01 10:30,2026-06-01T14:30:00.000Z,America/New_York,linkedin,GrantPipe company page,post,,"{""__type"":""linkedin-page"",""post_as_images_carousel"":false}",P4,D,m,none,,federal grant reporting requirements guide; product-context,federal program officer request list,passed,passed,content/social/linkedin/2026-W23/2026-06-01_10-30_mon-06.txt,"Grants.gov is for federal opportunity search and applications.
+
+Post-award reporting lives elsewhere.
+
+HHS may use PMS or GrantSolutions. HUD may use IDIS or DRGR. DOJ uses JustGrants.
+
+That split matters because a grant calendar that only tracks application deadlines is half a calendar.
+
+For active federal awards, track the reporting portal, login owner, report type, due date, and backup owner in the same record as the award."
+2026-06-01_11-15_mon-07,2026-06-01 11:15,2026-06-01T15:15:00.000Z,America/New_York,linkedin,GrantPipe company page,post,,"{""__type"":""linkedin-page"",""post_as_images_carousel"":false}",P1,D,s,none,,allowable costs federal grants guide; 2 CFR 200,source-heavy compliance,passed,passed,content/social/linkedin/2026-W23/2026-06-01_11-15_mon-07.txt,"Allowable, allocable, reasonable.
+
+That is the federal grant cost test in plain English.
+
+Allowable: the award and 2 CFR 200 permit it.
+
+Allocable: the award actually benefited from it.
+
+Reasonable: a prudent person would accept the amount under similar circumstances.
+
+Documentation is not a fourth test.
+
+It is how you prove the first three."
+2026-06-01_12-00_mon-08,2026-06-01 12:00,2026-06-01T16:00:00.000Z,America/New_York,linkedin,GrantPipe company page,post,,"{""__type"":""linkedin-page"",""post_as_images_carousel"":false}",P3,L,m,none,,product-marketing-context; donor-to-grant reconciliation template,Development to Finance handoff,passed,passed,content/social/linkedin/2026-W23/2026-06-01_12-00_mon-08.txt,"Development and Finance do not need the same screen.
+
+They need the same facts.
+
+For a restricted grant, those facts are:
+
+- Funder name
+- Award amount
+- Restriction terms
+- Cash received
+- Expenses incurred
+- Release from restriction
+- Reports due
+- Evidence attached
+
+If Development owns the promise and Finance owns the ledger, the handoff should be a record, not a meeting that happens again every month."
+2026-06-01_12-45_mon-09,2026-06-01 12:45,2026-06-01T16:45:00.000Z,America/New_York,linkedin,GrantPipe company page,post,,"{""__type"":""linkedin-page"",""post_as_images_carousel"":false}",P2,D,s,none,,accounting for restricted funds guide; FASB ASC 958,restricted fund definition,passed,passed,content/social/linkedin/2026-W23/2026-06-01_12-45_mon-09.txt,"Release from restriction is not new revenue.
+
+Under FASB ASC 958, it is a reclassification from net assets with donor restrictions to net assets without donor restrictions after the time or purpose restriction has been satisfied.
+
+That distinction matters in board packets.
+
+If the release is missing, the organization can look restricted on paper even when qualifying program expenses already happened."
+2026-06-01_13-30_mon-10,2026-06-01 13:30,2026-06-01T17:30:00.000Z,America/New_York,linkedin,GrantPipe company page,post,,"{""__type"":""linkedin-page"",""post_as_images_carousel"":false}",P5,Q,s,none,,june strategy; product-marketing context,Executive Director board prep,passed,passed,content/social/linkedin/2026-W23/2026-06-01_13-30_mon-10.txt,"Executive Directors do not need a 40-page finance packet for every board question.
+
+They need a page that answers:
+
+What is funded?
+
+What is restricted?
+
+What is due?
+
+What is late?
+
+What changed since the last meeting?
+
+The board can ask better questions when the packet separates operating cash from restricted money and report deadlines from program plans."
+2026-06-01_14-30_mon-11,2026-06-01 14:30,2026-06-01T18:30:00.000Z,America/New_York,linkedin,GrantPipe company page,post,,"{""__type"":""linkedin-page"",""post_as_images_carousel"":false}",P7,L,m,lead_magnet,https://grantpipe.com/free/donor-to-grant-reconciliation-template,lead magnet: donor-to-grant-reconciliation-template,lead-magnet teaser,passed,passed,content/social/linkedin/2026-W23/2026-06-01_14-30_mon-11.txt,"The donor record and the grant record should reconcile before year-end.
+
+We made a Donor-to-Grant Reconciliation Template for the messy middle:
+
+- CRM-only records
+- grants-only records
+- amount differences
+- restriction coding differences
+- resolution notes tied to source documents
+
+Free download, no email required: grantpipe.com/free/donor-to-grant-reconciliation-template."
+2026-06-01_15-30_mon-12,2026-06-01 15:30,2026-06-01T19:30:00.000Z,America/New_York,linkedin,GrantPipe company page,post,,"{""__type"":""linkedin-page"",""post_as_images_carousel"":false}",P4,D,m,none,,SEFA preparation checklist; SAM.gov Assistance Listings,source-heavy federal,passed,passed,content/social/linkedin/2026-W23/2026-06-01_15-30_mon-12.txt,"UEI belongs in more places than SAM.gov.
+
+For federal and pass-through awards, keep the UEI, Assistance Listing Number, pass-through entity, award number, and period of performance on the grant record.
+
+That data later feeds SEFA prep, subrecipient files, reporting portals, and audit requests.
+
+The time to collect it is award setup, not the week the auditor asks."
+2026-06-01_16-30_mon-13,2026-06-01 16:30,2026-06-01T20:30:00.000Z,America/New_York,linkedin,GrantPipe company page,post,,"{""__type"":""linkedin-page"",""post_as_images_carousel"":false}",P6,F,m,none,,product-marketing context,build-in-public data shape,passed,passed,content/social/linkedin/2026-W23/2026-06-01_16-30_mon-13.txt,"We model grants and funds as separate records in GrantPipe.
+
+That sounds small until you map real nonprofit accounting.
+
+One grant can fund several restricted funds.
+
+One restricted fund can support work under several awards.
+
+Development thinks in funders and awards. Finance thinks in fund balances, releases, and expense coding.
+
+The product has to respect both, or the reconciliation work comes back in spreadsheets."
+2026-06-01_18-30_mon-14,2026-06-01 18:30,2026-06-01T22:30:00.000Z,America/New_York,linkedin,GrantPipe company page,post,,"{""__type"":""linkedin-page"",""post_as_images_carousel"":false}",P3,N,m,none,,product-marketing context; donor-to-grant reconciliation template,three places grant can live,passed,passed,content/social/linkedin/2026-W23/2026-06-01_18-30_mon-14.txt,"A grant can live in four places at once.
+
+In the CRM, it is a relationship.
+
+In the grant tracker, it is a deadline set.
+
+In the accounting system, it is revenue, restriction, and expense coding.
+
+In the shared drive, it is evidence.
+
+If those places disagree, the board packet becomes a negotiation.
+
+The goal is boring: one record that lets each team see its own view without inventing a new truth."
+2026-06-01_20-30_mon-15,2026-06-01 20:30,2026-06-02T00:30:00.000Z,America/New_York,linkedin,GrantPipe company page,post,,"{""__type"":""linkedin-page"",""post_as_images_carousel"":false}",P1,Q,s,none,,federal grant draw tracking workflow; 2 CFR 200.305,SF-425 cash drawn vs GL quick check,passed,passed,content/social/linkedin/2026-W23/2026-06-01_20-30_mon-15.txt,"Quick check for federal cash draws:
+
+Cumulative draws should reconcile to cumulative grant expenditures and any allowed advance cash.
+
+If draws exceed expenses, you may be holding federal cash too long.
+
+If expenses exceed draws, you have a reimbursement timing issue.
+
+Both belong in the monthly close, not in the audit scramble."
+2026-06-02_06-45_tue-01,2026-06-02 06:45,2026-06-02T10:45:00.000Z,America/New_York,linkedin,GrantPipe company page,post,,"{""__type"":""linkedin-page"",""post_as_images_carousel"":false}",P2,Q,s,none,,FASB ASC 958 guide; accounting for restricted funds guide,restricted fund definition,passed,passed,content/social/linkedin/2026-W23/2026-06-02_06-45_tue-01.txt,"Restricted fund question for Tuesday morning:
+
+Is that balance restricted by the donor, designated by the board, or just labeled that way in a spreadsheet?
+
+Those are not the same thing under FASB ASC 958.
+
+The label matters because the board can reverse its own designation. It cannot rewrite a donor restriction."
+2026-06-02_07-30_tue-02,2026-06-02 07:30,2026-06-02T11:30:00.000Z,America/New_York,linkedin,GrantPipe company page,post,,"{""__type"":""linkedin-page"",""post_as_images_carousel"":false}",P5,Q,s,none,,june strategy; writer brief,board packet numbers,passed,passed,content/social/linkedin/2026-W23/2026-06-02_07-30_tue-02.txt,"Board packet numbers should survive five questions:
+
+What changed this month?
+
+Which funds are restricted?
+
+Which reports are late or close?
+
+Which grant balances need Finance review?
+
+Which number should not be repeated externally yet?
+
+A board packet is not better because it is longer. It is better when the caveats are visible before the meeting starts."
+2026-06-02_08-15_tue-03,2026-06-02 08:15,2026-06-02T12:15:00.000Z,America/New_York,linkedin,GrantPipe company page,post,,"{""__type"":""linkedin-page"",""post_as_images_carousel"":false}",P1,C,s,none,,grant documentation checklist,audit binder checklist,passed,passed,content/social/linkedin/2026-W23/2026-06-02_08-15_tue-03.txt,"Audit documentation gets weaker when it is stored by personality.
+
+""Ask Maria.""
+
+""Check John's folder.""
+
+""Finance has the final one.""
+
+Those are not records. They are dependencies.
+
+For grant files, store the award, amendment, report, source document, approval, and reconciliation where the next person can find them without knowing office folklore."
+2026-06-02_09-00_tue-04,2026-06-02 09:00,2026-06-02T13:00:00.000Z,America/New_York,linkedin,GrantPipe company page,post,,"{""__type"":""linkedin-page"",""post_as_images_carousel"":false}",P3,C,m,none,,donor-to-grant reconciliation template,donor CRM to GL reconciliation,passed,passed,content/social/linkedin/2026-W23/2026-06-02_09-00_tue-04.txt,"The CRM amount and the accounting amount can both be right.
+
+The CRM may show the full award.
+
+Accounting may show the first cash installment.
+
+The grant record may show the approved budget.
+
+The board packet may need the remaining spend-down.
+
+Reconciliation is not about forcing one number into every field.
+
+It is about naming what each number means."
+2026-06-02_09-45_tue-05,2026-06-02 09:45,2026-06-02T13:45:00.000Z,America/New_York,linkedin,GrantPipe company page,post,,"{""__type"":""linkedin-page"",""post_as_images_carousel"":false}",P2,D,l,none,,accounting for restricted funds guide; FASB ASU 2018-08,restricted fund release schedules,passed,passed,content/social/linkedin/2026-W23/2026-06-02_09-45_tue-05.txt,"A restricted fund release schedule should answer one question cleanly:
+
+What restriction has actually been satisfied?
+
+For a purpose-restricted grant, the release is tied to qualifying expenses. The program did the work, the cost was allowable, and the documentation supports it.
+
+For a time-restricted gift, the release is tied to the date or period the donor specified.
+
+For a conditional contribution under FASB ASU 2018-08, revenue recognition may wait until the barrier is substantially met.
+
+The release schedule should not be a monthly guess.
+
+It should tie each release to:
+
+- source restriction
+- expense or time trigger
+- amount released
+- journal entry
+- reviewer
+- source document
+
+That lets Finance explain why restricted net assets changed without rebuilding the story from grant folders, donor notes, and old emails."
+2026-06-02_10-30_tue-06,2026-06-02 10:30,2026-06-02T14:30:00.000Z,America/New_York,linkedin,GrantPipe company page,post,,"{""__type"":""linkedin-page"",""post_as_images_carousel"":false}",P4,L,m,none,,SEFA preparation checklist; 2 CFR 200.510(b),source-heavy federal,passed,passed,content/social/linkedin/2026-W23/2026-06-02_10-30_tue-06.txt,"SEFA prep starts with identifiers, not totals.
+
+For each federal award, capture:
+
+- federal agency
+- pass-through entity, if any
+- Assistance Listing Number
+- program name
+- cluster, if applicable
+- expenditures
+- amount passed to subrecipients
+
+2 CFR 200.510(b) tells you what belongs on the schedule.
+
+The cleaner the identifiers are at award setup, the less archaeology happens during single audit prep."
+2026-06-02_11-15_tue-07,2026-06-02 11:15,2026-06-02T15:15:00.000Z,America/New_York,linkedin,GrantPipe company page,post,,"{""__type"":""linkedin-page"",""post_as_images_carousel"":false}",P1,D,m,none,,2 CFR 200.306; uniform guidance guide,matching funds under 2 CFR 200.306,passed,passed,content/social/linkedin/2026-W23/2026-06-02_11-15_tue-07.txt,"Matching funds under 2 CFR 200.306 need the same discipline as direct grant costs.
+
+They must be verifiable, not counted as match for another federal award, necessary and reasonable for the work, and allowed under the award terms.
+
+The risky version is ""we have in-kind support somewhere.""
+
+The better version is a match log with source, date, valuation method, restriction, and reviewer."
+2026-06-02_12-00_tue-08,2026-06-02 12:00,2026-06-02T16:00:00.000Z,America/New_York,linkedin,GrantPipe company page,post,,"{""__type"":""linkedin-page"",""post_as_images_carousel"":false}",P5,Q,s,none,,writer brief; donor stewardship plan lead magnet,ICP work life,passed,passed,content/social/linkedin/2026-W23/2026-06-02_12-00_tue-08.txt,"Development calendar check:
+
+Do your stewardship touches line up with grant reporting dates?
+
+A funder update written two weeks after a clean program report is easier than a relationship note written from memory six months later.
+
+The calendar should hold both kinds of commitments:
+
+- external reporting due dates
+- relationship follow-ups that keep the funder informed before renewal season"
+2026-06-02_12-45_tue-09,2026-06-02 12:45,2026-06-02T16:45:00.000Z,America/New_York,linkedin,GrantPipe company page,post,,"{""__type"":""linkedin-page"",""post_as_images_carousel"":false}",P4,Q,m,none,,uniform guidance guide; federal grant reporting requirements,source-heavy federal,passed,passed,content/social/linkedin/2026-W23/2026-06-02_12-45_tue-09.txt,"Indirect cost decisions belong in the grant setup file.
+
+Does the award allow indirect costs?
+
+Are you using a NICRA?
+
+Are you eligible for the de minimis rate?
+
+What base are you applying it to?
+
+If that answer is buried in one Finance note, the SF-425 and SEFA can drift later.
+
+Write the basis once, then use it every time the grant is reported."
+2026-06-02_13-30_tue-10,2026-06-02 13:30,2026-06-02T17:30:00.000Z,America/New_York,linkedin,GrantPipe company page,post,,"{""__type"":""linkedin-page"",""post_as_images_carousel"":false}",P7,L,m,lead_magnet,https://grantpipe.com/free/restricted-funds-release-calculator,lead magnet: restricted-funds-release-calculator,lead-magnet teaser,passed,passed,content/social/linkedin/2026-W23/2026-06-02_13-30_tue-10.txt,"Restricted fund releases are easy to misstate when the support lives in three places.
+
+We made a Restricted Funds Release Calculator for the review step:
+
+- starting restricted balance
+- qualifying expenses
+- time or purpose restriction
+- release amount
+- remaining balance
+- journal entry support
+
+Free download, no email required: grantpipe.com/free/restricted-funds-release-calculator."
+2026-06-02_14-30_tue-11,2026-06-02 14:30,2026-06-02T18:30:00.000Z,America/New_York,linkedin,GrantPipe company page,post,,"{""__type"":""linkedin-page"",""post_as_images_carousel"":false}",P3,C,s,none,,product-marketing context; donor-to-grant reconciliation template,board packet mismatch,passed,passed,content/social/linkedin/2026-W23/2026-06-02_14-30_tue-11.txt,"A board packet mismatch can start small.
+
+Development reports the award amount.
+
+Finance reports cash received.
+
+Programs report expenses incurred.
+
+The Executive Director asks what is still available.
+
+Those are four related numbers, not one number.
+
+The packet gets clearer when each number has a label and a date."
+2026-06-02_15-30_tue-12,2026-06-02 15:30,2026-06-02T19:30:00.000Z,America/New_York,linkedin,GrantPipe company page,post,,"{""__type"":""linkedin-page"",""post_as_images_carousel"":false}",P7,L,m,lead_magnet,https://grantpipe.com/free/auditor-evidence-checklist,lead magnet: auditor-evidence-checklist; grant documentation checklist,lead-magnet teaser,passed,passed,content/social/linkedin/2026-W23/2026-06-02_15-30_tue-12.txt,"Auditor requests are less stressful when the evidence list already exists.
+
+The Auditor Evidence Checklist covers records reviewers may ask for:
+
+- award documents
+- amendments
+- ledger detail
+- invoices and receipts
+- payroll support
+- time and effort
+- procurement files
+- submitted reports
+
+Free download, no email required: grantpipe.com/free/auditor-evidence-checklist."
+2026-06-02_16-30_tue-13,2026-06-02 16:30,2026-06-02T20:30:00.000Z,America/New_York,linkedin,GrantPipe company page,post,,"{""__type"":""linkedin-page"",""post_as_images_carousel"":false}",P6,F,m,pricing,https://grantpipe.com/pricing,docs/social/linkedin/WRITER-BRIEF.md pricing source,build-in-public pricing,passed,passed,content/social/linkedin/2026-W23/2026-06-02_16-30_tue-13.txt,"We publish GrantPipe pricing because nonprofit software should not require a sales call just to learn the budget range.
+
+With the limited offer, the first-year yearly plan prices are $54/mo Starter, $90/mo Growth, and $180/mo Audit-Ready.
+
+Unlimited users. No setup fee. Month-to-month available. One-month free trial with no credit card.
+
+Limited offer: 80% off your first year on subscriptions. First 300 customers.
+
+Public pricing at grantpipe.com/pricing."
+2026-06-02_18-30_tue-14,2026-06-02 18:30,2026-06-02T22:30:00.000Z,America/New_York,linkedin,GrantPipe company page,post,,"{""__type"":""linkedin-page"",""post_as_images_carousel"":false}",P5,Q,s,none,,grant documentation checklist; june strategy,audit week ritual,passed,passed,content/social/linkedin/2026-W23/2026-06-02_18-30_tue-14.txt,"Audit week ritual that helps before audit week:
+
+Once a month, ask someone outside the grant to pull one file from start to finish.
+
+Can they find the award?
+
+Can they trace one expense?
+
+Can they find the report that used that expense?
+
+Can they see who approved the change?
+
+If the answer depends on memory, the record is not ready yet."
+2026-06-02_20-30_tue-15,2026-06-02 20:30,2026-06-03T00:30:00.000Z,America/New_York,linkedin,GrantPipe company page,post,,"{""__type"":""linkedin-page"",""post_as_images_carousel"":false}",P1,Q,s,none,,uniform guidance guide; 2 CFR 200 procurement standards,quick check,passed,passed,content/social/linkedin/2026-W23/2026-06-02_20-30_tue-15.txt,"Quick procurement check:
+
+For federally funded purchases, can you show the purchase method, quotes or bids when required, vendor choice, conflict review, contract, invoice, and payment?
+
+2 CFR 200 procurement rules care about the decision trail.
+
+A good price with no file still creates audit friction."
+2026-06-03_06-45_wed-01,2026-06-03 06:45,2026-06-03T10:45:00.000Z,America/New_York,linkedin,GrantPipe company page,post,,"{""__type"":""linkedin-page"",""post_as_images_carousel"":false}",P4,Q,s,none,,SF-425 reporting checklist; federal reporting guide,SF-425 cash drawn vs GL quick check,passed,passed,content/social/linkedin/2026-W23/2026-06-03_06-45_wed-01.txt,"SF-425 quick check:
+
+Do not fill the federal expenditure field from this quarter's activity alone.
+
+The SF-425 is cumulative, so a period-only number can make a clean grant look off by an entire reporting period.
+
+Before submission, reconcile the report to the grant ledger and draw history."
+2026-06-03_07-30_wed-02,2026-06-03 07:30,2026-06-03T11:30:00.000Z,America/New_York,linkedin,GrantPipe company page,post,,"{""__type"":""linkedin-page"",""post_as_images_carousel"":false}",P5,Q,s,none,,june strategy; writer brief,board prep question,passed,passed,content/social/linkedin/2026-W23/2026-06-03_07-30_wed-02.txt,"Finance Director morning question:
+
+Which number in the board packet would take the longest to defend?
+
+Start there.
+
+Not because it is wrong.
+
+Because the number that needs the longest explanation should have the clearest source note before anyone asks."
+2026-06-03_08-15_wed-03,2026-06-03 08:15,2026-06-03T12:15:00.000Z,America/New_York,linkedin,GrantPipe company page,post,,"{""__type"":""linkedin-page"",""post_as_images_carousel"":false}",P7,D,m,lead_magnet,https://grantpipe.com/free/sf-425-reporting-checklist,lead magnet: sf-425-reporting-checklist,lead-magnet teaser,passed,passed,content/social/linkedin/2026-W23/2026-06-03_08-15_wed-03.txt,"The SF-425 is easier when you gather the inputs before opening the portal.
+
+Our SF-425 Reporting Checklist walks through the form fields, including award identifiers, cumulative expenditures, unliquidated obligations, match, program income, and pre-submit reconciliation.
+
+Free download, no email required: grantpipe.com/free/sf-425-reporting-checklist."
+2026-06-03_09-00_wed-04,2026-06-03 09:00,2026-06-03T13:00:00.000Z,America/New_York,linkedin,GrantPipe company page,post,,"{""__type"":""linkedin-page"",""post_as_images_carousel"":false}",P3,C,m,none,,product-marketing context; donor-to-grant reconciliation template,Development to Finance handoff,passed,passed,content/social/linkedin/2026-W23/2026-06-03_09-00_wed-04.txt,"Development can own the relationship without owning every compliance detail.
+
+Finance can own the ledger without owning every funder note.
+
+The handoff breaks when each team has a partial truth:
+
+- full award in the CRM
+- cash receipt in accounting
+- report deadline in a spreadsheet
+- evidence in a drive folder
+
+Put the shared facts in one grant record, then let each team work from its own view."
+2026-06-03_09-45_wed-05,2026-06-03 09:45,2026-06-03T13:45:00.000Z,America/New_York,linkedin,GrantPipe company page,post,,"{""__type"":""linkedin-page"",""post_as_images_carousel"":false}",P1,L,l,none,,SF-425 reporting checklist; federal grant draw tracking workflow,SF-425 cash drawn vs GL quick check,passed,passed,content/social/linkedin/2026-W23/2026-06-03_09-45_wed-05.txt,"Before submitting an SF-425, reconcile three stories.
+
+1. The grant ledger
+
+This is the spending story. It should show cumulative expenditures from the beginning of the period of performance through the reporting date.
+
+2. The draw history
+
+This is the cash story. It should show cumulative federal cash received through PMS, ASAP, or the agency payment portal.
+
+3. The award record
+
+This is the permission story. It should show authorized federal funds, budget changes, match requirements, program income treatment, and period dates.
+
+The SF-425 sits where those stories meet.
+
+The federal expenditure field should come from cumulative federal expenditures, not current-quarter activity.
+
+The unliquidated obligations field should include actual commitments, not future plans.
+
+The program income field should not be blank if program income exists.
+
+The report is short. The support behind it is where the discipline lives."
+2026-06-03_10-30_wed-06,2026-06-03 10:30,2026-06-03T14:30:00.000Z,America/New_York,linkedin,GrantPipe company page,post,,"{""__type"":""linkedin-page"",""post_as_images_carousel"":false}",P4,D,m,none,,federal grant reporting requirements guide; product-context,Grants.gov boundary,passed,passed,content/social/linkedin/2026-W23/2026-06-03_10-30_wed-06.txt,"Grants.gov helps you find and apply for federal opportunities.
+
+It does not manage the award after it lands.
+
+Post-award work moves into agency systems, payment systems, reporting portals, local files, and the accounting ledger.
+
+That is why GrantPipe treats Grants.gov search as one part of the pipeline, not the whole grant lifecycle."
+2026-06-03_11-15_wed-07,2026-06-03 11:15,2026-06-03T15:15:00.000Z,America/New_York,linkedin,GrantPipe company page,post,,"{""__type"":""linkedin-page"",""post_as_images_carousel"":false}",P1,D,m,none,,2 CFR 200.430; grant documentation checklist,source-heavy compliance,passed,passed,content/social/linkedin/2026-W23/2026-06-03_11-15_wed-07.txt,"Time and effort records should account for the full compensated activity of staff charged to federal awards.
+
+That is the 2 CFR 200.430 point that gets missed when teams only track the grant-funded slice.
+
+If someone splits time across Clinic Capacity, Youth STEM, and general operations, the record should show the split.
+
+A budget estimate is not the same as after-the-fact support."
+2026-06-03_12-00_wed-08,2026-06-03 12:00,2026-06-03T16:00:00.000Z,America/New_York,linkedin,GrantPipe company page,post,,"{""__type"":""linkedin-page"",""post_as_images_carousel"":false}",P5,C,s,none,,donor thank you letter template pack; writer brief,ICP work life,passed,passed,content/social/linkedin/2026-W23/2026-06-03_12-00_wed-08.txt,"A donor thank-you note should not need a dashboard.
+
+It should need attention.
+
+Use the program name.
+
+Reference the gift purpose.
+
+Name the next honest milestone.
+
+Do not turn every thank-you into a mini annual report.
+
+The better letter tells the donor where their money is going and leaves room for a real follow-up later."
+2026-06-03_12-45_wed-09,2026-06-03 12:45,2026-06-03T16:45:00.000Z,America/New_York,linkedin,GrantPipe company page,post,,"{""__type"":""linkedin-page"",""post_as_images_carousel"":false}",P2,D,s,none,,FASB ASC 958 guide,restricted fund definition,passed,passed,content/social/linkedin/2026-W23/2026-06-03_12-45_wed-09.txt,"Restricted cash can make an organization look more comfortable than it is.
+
+A board packet that shows cash without restriction context can hide the real operating question:
+
+How much is available for general expenditure within the next year?
+
+ASC 958 liquidity disclosures exist for that reason.
+
+Cash balance first. Restriction status right next to it."
+2026-06-03_13-30_wed-10,2026-06-03 13:30,2026-06-03T17:30:00.000Z,America/New_York,linkedin,GrantPipe company page,post,,"{""__type"":""linkedin-page"",""post_as_images_carousel"":false}",P7,L,m,lead_magnet,https://grantpipe.com/free/grant-reporting-deadlines-tracker,lead magnet: grant-reporting-deadlines-tracker,lead-magnet teaser,passed,passed,content/social/linkedin/2026-W23/2026-06-03_13-30_wed-10.txt,"Grant reporting dates should not live in one person's calendar.
+
+The Grant Reporting Deadlines Tracker is built for a shared view:
+
+- funder
+- award
+- report type
+- due date
+- owner
+- portal
+- evidence needed
+- submitted date
+
+Free download, no email required: grantpipe.com/free/grant-reporting-deadlines-tracker."
+2026-06-03_14-30_wed-11,2026-06-03 14:30,2026-06-03T18:30:00.000Z,America/New_York,linkedin,GrantPipe company page,post,,"{""__type"":""linkedin-page"",""post_as_images_carousel"":false}",P3,C,s,none,,product-marketing context,donor plus grant unification,passed,passed,content/social/linkedin/2026-W23/2026-06-03_14-30_wed-11.txt,"When a funder is both a donor relationship and a grant record, do not make staff choose one identity.
+
+The relationship history matters.
+
+The award terms matter.
+
+The restriction matters.
+
+The reporting calendar matters.
+
+One record can carry the shared facts while Development and Finance each see the fields they need to do their work."
+2026-06-03_15-30_wed-12,2026-06-03 15:30,2026-06-03T19:30:00.000Z,America/New_York,linkedin,GrantPipe company page,post,,"{""__type"":""linkedin-page"",""post_as_images_carousel"":false}",P1,D,m,none,,2 CFR 200.332; uniform guidance guide,source-heavy compliance,passed,passed,content/social/linkedin/2026-W23/2026-06-03_15-30_wed-12.txt,"Subrecipient monitoring is not a vibe.
+
+Under 2 CFR 200.332, pass-through entities have to evaluate risk, include required award information, monitor activity, review reports, and follow up when issues appear.
+
+A monthly call may be useful.
+
+It becomes evidence only when the review, decision, and follow-up are documented."
+2026-06-03_16-30_wed-13,2026-06-03 16:30,2026-06-03T20:30:00.000Z,America/New_York,linkedin,GrantPipe company page,post,,"{""__type"":""linkedin-page"",""post_as_images_carousel"":false}",P6,F,m,none,,product-marketing context,build-in-public data shape,passed,passed,content/social/linkedin/2026-W23/2026-06-03_16-30_wed-13.txt,"We keep grants and restricted funds separate in GrantPipe because they answer different questions.
+
+A grant asks: who awarded it, what are the dates, what must be reported, what evidence supports it?
+
+A fund asks: what money is restricted, how was it spent, what has been released, what remains?
+
+Blending those records feels simpler at setup.
+
+It gets expensive at reconciliation."
+2026-06-03_18-30_wed-14,2026-06-03 18:30,2026-06-03T22:30:00.000Z,America/New_York,linkedin,GrantPipe company page,post,,"{""__type"":""linkedin-page"",""post_as_images_carousel"":false}",P7,L,m,lead_magnet,https://grantpipe.com/free/award-setup-worksheet,lead magnet: award-setup-worksheet,lead-magnet teaser,passed,passed,content/social/linkedin/2026-W23/2026-06-03_18-30_wed-14.txt,"Award setup is where later reporting either gets easier or harder.
+
+The Award Setup Worksheet captures the basics before the grant starts moving:
+
+- funder
+- award number
+- period of performance
+- budget lines
+- restrictions
+- reporting dates
+- portal owner
+- evidence folders
+
+Free download, no email required: grantpipe.com/free/award-setup-worksheet."
+2026-06-03_20-30_wed-15,2026-06-03 20:30,2026-06-04T00:30:00.000Z,America/New_York,linkedin,GrantPipe company page,post,,"{""__type"":""linkedin-page"",""post_as_images_carousel"":false}",P5,Q,s,none,,board fundraising toolkit; writer brief,ICP work life,passed,passed,content/social/linkedin/2026-W23/2026-06-03_20-30_wed-15.txt,"Question for the board chair:
+
+Which two introductions would help the Development Director in June?
+
+Not a vague ""open doors"" ask.
+
+Two names.
+
+Why each person matters.
+
+What the next step should be.
+
+Board fundraising gets less awkward when the ask is specific enough to answer."
+2026-06-04_06-45_thu-01,2026-06-04 06:45,2026-06-04T10:45:00.000Z,America/New_York,linkedin,GrantPipe company page,post,,"{""__type"":""linkedin-page"",""post_as_images_carousel"":false}",P1,Q,s,none,,docs/social/linkedin/june-2026-campaign/strategy.md; docs/social/linkedin/june-2026-campaign/writer-brief.md; docs/social/linkedin/WRITER-BRIEF.md; packages/shared/src/knowledge/marketing/content/guides/grant-documentation-checklist-audit-ready.md,quick check compliance artifact,passed,passed,content/social/linkedin/2026-W23/2026-06-04_06-45_thu-01.txt,"Quick check: can every questioned cost in your file point to a source document?
+
+Not a summary.
+Not a screenshot of a total.
+
+The invoice, payment proof, approval, coding, and grant term should live close enough together that a reviewer can follow the dollar without asking your team to rebuild the story."
+2026-06-04_07-30_thu-02,2026-06-04 07:30,2026-06-04T11:30:00.000Z,America/New_York,linkedin,GrantPipe company page,post,,"{""__type"":""linkedin-page"",""post_as_images_carousel"":false}",P3,L,s,none,,docs/social/linkedin/june-2026-campaign/strategy.md; docs/social/linkedin/june-2026-campaign/writer-brief.md; docs/social/linkedin/WRITER-BRIEF.md; .agents/product-marketing-context.md,Development to Finance handoff,passed,passed,content/social/linkedin/2026-W23/2026-06-04_07-30_thu-02.txt,"Development to Finance handoff should not depend on memory.
+
+For each awarded grant, hand over:
+
+- award amount
+- restriction purpose
+- period of performance
+- reporting dates
+- match requirement
+- fund or project code
+- who owns evidence
+
+The cleaner the handoff, the fewer board packet surprises later."
+2026-06-04_08-15_thu-03,2026-06-04 08:15,2026-06-04T12:15:00.000Z,America/New_York,linkedin,GrantPipe company page,post,,"{""__type"":""linkedin-page"",""post_as_images_carousel"":false}",P5,K,s,none,,docs/social/linkedin/june-2026-campaign/strategy.md; docs/social/linkedin/june-2026-campaign/writer-brief.md; docs/social/linkedin/WRITER-BRIEF.md; packages/shared/src/knowledge/marketing/content/guides/nonprofit-board-grant-reporting-dashboard.md,board packet utility,passed,passed,content/social/linkedin/2026-W23/2026-06-04_08-15_thu-03.txt,"Board packets get better when the grant page has an exception column.
+
+The board does not need every invoice.
+
+It does need to know which awards are off pace, which restricted balances changed, which reports are coming due, and what leadership needs to decide before the next meeting."
+2026-06-04_09-00_thu-04,2026-06-04 09:00,2026-06-04T13:00:00.000Z,America/New_York,linkedin,GrantPipe company page,post,,"{""__type"":""linkedin-page"",""post_as_images_carousel"":false}",P2,D,s,none,,docs/social/linkedin/june-2026-campaign/strategy.md; docs/social/linkedin/june-2026-campaign/writer-brief.md; docs/social/linkedin/WRITER-BRIEF.md; packages/shared/src/knowledge/marketing/content/guides/fasb-asc-958-nonprofit-reporting.md,restricted fund definition,passed,passed,content/social/linkedin/2026-W23/2026-06-04_09-00_thu-04.txt,"Restricted funds are not one balance.
+
+A restricted balance needs a reason:
+
+- donor purpose
+- grant purpose
+- time limit
+- release trigger
+- remaining amount
+
+If those details live in separate files, the number may be right while the explanation is still fragile."
+2026-06-04_09-45_thu-05,2026-06-04 09:45,2026-06-04T13:45:00.000Z,America/New_York,linkedin,GrantPipe company page,post,,"{""__type"":""linkedin-page"",""post_as_images_carousel"":false}",P1,L,m,none,,docs/social/linkedin/june-2026-campaign/strategy.md; docs/social/linkedin/june-2026-campaign/writer-brief.md; docs/social/linkedin/WRITER-BRIEF.md; packages/shared/src/knowledge/marketing/content/guides/how-to-handle-disallowed-costs-on-a-federal-grant.md; packages/shared/src/knowledge/marketing/content/guides/allowable-costs-federal-grants.md,questioned costs definition,passed,passed,content/social/linkedin/2026-W23/2026-06-04_09-45_thu-05.txt,"Questioned costs can be a trail problem before they become a repayment problem.
+
+When an auditor questions a cost, the agency has not made a final decision yet. The cost is being challenged because something about it needs support.
+
+Start with four checks:
+
+1. Was the cost allowed by the award and 2 CFR 200 Subpart E?
+2. Did the award actually benefit from the cost?
+3. Would the amount look reasonable to a careful reviewer?
+4. Is the support complete enough to prove the first three answers?
+
+The best time to answer those questions is when the cost is posted.
+
+The second best time is before fieldwork.
+
+The worst time is after the draft finding lands."
+2026-06-04_10-30_thu-06,2026-06-04 10:30,2026-06-04T14:30:00.000Z,America/New_York,linkedin,GrantPipe company page,post,,"{""__type"":""linkedin-page"",""post_as_images_carousel"":false}",P4,D,s,none,,docs/social/linkedin/june-2026-campaign/strategy.md; docs/social/linkedin/june-2026-campaign/writer-brief.md; docs/social/linkedin/WRITER-BRIEF.md; packages/shared/src/knowledge/marketing/content/guides/subrecipient-monitoring-requirements-uniform-guidance.md,source-heavy federal compliance,passed,passed,content/social/linkedin/2026-W23/2026-06-04_10-30_thu-06.txt,"Pass-through awards need their own evidence trail.
+
+Under 2 CFR 200.332, a pass-through entity has to give subrecipients specific federal award data, assess risk, monitor activity, follow up on deficiencies, and issue management decisions when findings apply.
+
+That is not just a contract file.
+
+It is an operating record."
+2026-06-04_11-15_thu-07,2026-06-04 11:15,2026-06-04T15:15:00.000Z,America/New_York,linkedin,GrantPipe company page,post,,"{""__type"":""linkedin-page"",""post_as_images_carousel"":false}",P7,K,s,lead_magnet,https://grantpipe.com/free/2-cfr-200-audit-prep-checklist,docs/social/linkedin/june-2026-campaign/strategy.md; docs/social/linkedin/june-2026-campaign/writer-brief.md; docs/social/linkedin/WRITER-BRIEF.md; packages/shared/src/constants/lead-magnets.ts; packages/shared/src/knowledge/marketing/content/guides/how-to-handle-disallowed-costs-on-a-federal-grant.md,lead magnet teaser,passed,passed,content/social/linkedin/2026-W23/2026-06-04_11-15_thu-07.txt,"The 2 CFR 200 Audit Prep Checklist is built for the week before audit work gets loud.
+
+It covers SEFA records, questioned costs, supporting documents, Subpart F responsibilities, and tie-outs finance teams check before fieldwork.
+
+Free download, no email required: https://grantpipe.com/free/2-cfr-200-audit-prep-checklist"
+2026-06-04_12-00_thu-08,2026-06-04 12:00,2026-06-04T16:00:00.000Z,America/New_York,linkedin,GrantPipe company page,post,,"{""__type"":""linkedin-page"",""post_as_images_carousel"":false}",P3,C,s,none,,docs/social/linkedin/june-2026-campaign/strategy.md; docs/social/linkedin/june-2026-campaign/writer-brief.md; docs/social/linkedin/WRITER-BRIEF.md; .agents/product-marketing.md; .agents/product-marketing-context.md,donor CRM to general ledger reconciliation,passed,passed,content/social/linkedin/2026-W23/2026-06-04_12-00_thu-08.txt,"A donor record can tell you who funded the work.
+
+It may not tell you whether the money is restricted, which report is due, what evidence supports the spending, or whether Finance released the restriction.
+
+That is the gap between donor tracking and grant operations.
+
+The handoff matters because the same dollar has to satisfy more than one audience."
+2026-06-04_12-45_thu-09,2026-06-04 12:45,2026-06-04T16:45:00.000Z,America/New_York,linkedin,GrantPipe company page,post,,"{""__type"":""linkedin-page"",""post_as_images_carousel"":false}",P1,L,s,none,,docs/social/linkedin/june-2026-campaign/strategy.md; docs/social/linkedin/june-2026-campaign/writer-brief.md; docs/social/linkedin/WRITER-BRIEF.md; packages/shared/src/knowledge/marketing/content/guides/grant-documentation-checklist-audit-ready.md,audit binder checklist,passed,passed,content/social/linkedin/2026-W23/2026-06-04_12-45_thu-09.txt,"An evidence trail is only useful if it follows the work.
+
+For grant spending, keep these pieces close:
+
+- award term
+- approved budget line
+- invoice or receipt
+- proof of payment
+- approval
+- coding
+- report where the cost was claimed
+
+If the report number cannot trace back to the transaction, the report is too detached from the record."
+2026-06-04_13-30_thu-10,2026-06-04 13:30,2026-06-04T17:30:00.000Z,America/New_York,linkedin,GrantPipe company page,post,,"{""__type"":""linkedin-page"",""post_as_images_carousel"":false}",P5,Q,s,none,,docs/social/linkedin/june-2026-campaign/strategy.md; docs/social/linkedin/june-2026-campaign/writer-brief.md; docs/social/linkedin/WRITER-BRIEF.md; packages/shared/src/knowledge/marketing/content/guides/nonprofit-board-grant-reporting-dashboard.md,board packet operating check,passed,passed,content/social/linkedin/2026-W23/2026-06-04_13-30_thu-10.txt,"Finance and Development should agree on the grant story before leadership asks.
+
+What was awarded?
+What is restricted?
+What has been spent?
+What remains?
+What is due next?
+
+If those answers differ by department, the board packet becomes reconciliation work instead of management reporting."
+2026-06-04_14-30_thu-11,2026-06-04 14:30,2026-06-04T18:30:00.000Z,America/New_York,linkedin,GrantPipe company page,post,,"{""__type"":""linkedin-page"",""post_as_images_carousel"":false}",P2,D,s,none,,docs/social/linkedin/june-2026-campaign/strategy.md; docs/social/linkedin/june-2026-campaign/writer-brief.md; docs/social/linkedin/WRITER-BRIEF.md; packages/shared/src/knowledge/marketing/content/guides/fasb-asc-958-nonprofit-reporting.md,restricted fund release schedule,passed,passed,content/social/linkedin/2026-W23/2026-06-04_14-30_thu-11.txt,"A release from restriction is not just an accounting entry.
+
+It is the point where the organization says: the donor or grant condition has been met, and the money can move from with donor restrictions to without donor restrictions.
+
+That decision needs support.
+
+Purpose met. Time met. Amount tied out."
+2026-06-04_15-30_thu-12,2026-06-04 15:30,2026-06-04T19:30:00.000Z,America/New_York,linkedin,GrantPipe company page,post,,"{""__type"":""linkedin-page"",""post_as_images_carousel"":false}",P7,B,s,lead_magnet,https://grantpipe.com/free/donor-to-grant-reconciliation-template,docs/social/linkedin/june-2026-campaign/strategy.md; docs/social/linkedin/june-2026-campaign/writer-brief.md; docs/social/linkedin/WRITER-BRIEF.md; packages/shared/src/constants/lead-magnets.ts; packages/shared/src/knowledge/marketing/content/guides/development-operations-infrastructure.md,lead magnet teaser,passed,passed,content/social/linkedin/2026-W23/2026-06-04_15-30_thu-12.txt,"The Donor-to-Grant Reconciliation Template is for the awkward middle.
+
+The CRM has the relationship.
+The ledger has the dollars.
+The grant file has the restriction and reporting trail.
+
+The template gives Development and Finance one worksheet for matching those facts before they drift.
+
+Free download, no email required: https://grantpipe.com/free/donor-to-grant-reconciliation-template"
+2026-06-04_16-30_thu-13,2026-06-04 16:30,2026-06-04T20:30:00.000Z,America/New_York,linkedin,GrantPipe company page,post,,"{""__type"":""linkedin-page"",""post_as_images_carousel"":false}",P6,F,s,none,,docs/social/linkedin/june-2026-campaign/strategy.md; docs/social/linkedin/june-2026-campaign/writer-brief.md; docs/social/linkedin/WRITER-BRIEF.md; .agents/product-marketing.md,builder product decision,passed,passed,content/social/linkedin/2026-W23/2026-06-04_16-30_thu-13.txt,"We model grants and funds as separate records in GrantPipe.
+
+That was intentional.
+
+A grant is an award with deadlines, terms, reports, evidence, and performance dates.
+
+A fund is a restricted pool of money with releases, balances, and accounting meaning.
+
+They relate to each other, but they are not the same thing."
+2026-06-04_18-30_thu-14,2026-06-04 18:30,2026-06-04T22:30:00.000Z,America/New_York,linkedin,GrantPipe company page,post,,"{""__type"":""linkedin-page"",""post_as_images_carousel"":false}",P5,Q,s,none,,docs/social/linkedin/june-2026-campaign/strategy.md; docs/social/linkedin/june-2026-campaign/writer-brief.md; docs/social/linkedin/WRITER-BRIEF.md; .agents/product-marketing-context.md,Executive Director board prep question,passed,passed,content/social/linkedin/2026-W23/2026-06-04_18-30_thu-14.txt,"An Executive Director should be able to ask one grant question without opening five systems.
+
+What is funded?
+What is restricted?
+What is due?
+What is at risk?
+
+Those are operating questions, not database questions.
+
+The hard part is making the answer stay current after the board meeting ends."
+2026-06-04_20-30_thu-15,2026-06-04 20:30,2026-06-05T00:30:00.000Z,America/New_York,linkedin,GrantPipe company page,post,,"{""__type"":""linkedin-page"",""post_as_images_carousel"":false}",P1,Q,s,none,,docs/social/linkedin/june-2026-campaign/strategy.md; docs/social/linkedin/june-2026-campaign/writer-brief.md; docs/social/linkedin/WRITER-BRIEF.md; packages/shared/src/knowledge/marketing/content/guides/grant-documentation-checklist-audit-ready.md,quick check compliance artifact,passed,passed,content/social/linkedin/2026-W23/2026-06-04_20-30_thu-15.txt,"Before you close the day, pick one active award and trace one dollar.
+
+Award term.
+Budget line.
+Expense.
+Payment.
+Report.
+
+If the trail breaks, fix the filing pattern while the transaction is still familiar."
+2026-06-05_06-45_fri-01,2026-06-05 06:45,2026-06-05T10:45:00.000Z,America/New_York,linkedin,GrantPipe company page,post,,"{""__type"":""linkedin-page"",""post_as_images_carousel"":false}",P5,Q,s,none,,docs/social/linkedin/june-2026-campaign/strategy.md; docs/social/linkedin/june-2026-campaign/writer-brief.md; docs/social/linkedin/WRITER-BRIEF.md; packages/shared/src/knowledge/marketing/content/guides/restricted-fund-month-end-close-checklist.md,weekly operating check,passed,passed,content/social/linkedin/2026-W23/2026-06-05_06-45_fri-01.txt,"Friday check for grant-funded teams:
+
+What changed this week that Finance, Development, and leadership all need to know?
+
+One new award.
+One late report.
+One restricted balance shift.
+One missing document.
+
+Small updates are easier than Monday archaeology."
+2026-06-05_07-30_fri-02,2026-06-05 07:30,2026-06-05T11:30:00.000Z,America/New_York,linkedin,GrantPipe company page,post,,"{""__type"":""linkedin-page"",""post_as_images_carousel"":false}",P1,L,s,none,,docs/social/linkedin/june-2026-campaign/strategy.md; docs/social/linkedin/june-2026-campaign/writer-brief.md; docs/social/linkedin/WRITER-BRIEF.md; packages/shared/src/knowledge/marketing/content/guides/how-to-prepare-an-sf-425-step-by-step.md; packages/shared/src/knowledge/marketing/content/guides/allowable-costs-federal-grants.md,weekly reconciliation,passed,passed,content/social/linkedin/2026-W23/2026-06-05_07-30_fri-02.txt,"Weekly reconciliation should answer more than ""does the ledger tie?""
+
+For active grants, ask:
+
+- do expenditures match the award budget?
+- does cash drawn match actual need?
+- does match documentation support the claimed amount?
+- do reporting totals agree with the general ledger?
+
+The math can tie and still be incomplete."
+2026-06-05_08-15_fri-03,2026-06-05 08:15,2026-06-05T12:15:00.000Z,America/New_York,linkedin,GrantPipe company page,post,,"{""__type"":""linkedin-page"",""post_as_images_carousel"":false}",P3,C,s,none,,docs/social/linkedin/june-2026-campaign/strategy.md; docs/social/linkedin/june-2026-campaign/writer-brief.md; docs/social/linkedin/WRITER-BRIEF.md; packages/shared/src/knowledge/marketing/content/guides/development-operations-infrastructure.md,donor CRM to general ledger reconciliation,passed,passed,content/social/linkedin/2026-W23/2026-06-05_08-15_fri-03.txt,"The CRM and the general ledger are allowed to disagree for a few days.
+
+They should not disagree for a quarter.
+
+Gift coding, pledge balances, restricted purposes, and grant reimbursements all need a regular tie-out.
+
+Otherwise the board packet becomes the first place anyone notices two versions of revenue."
+2026-06-05_09-00_fri-04,2026-06-05 09:00,2026-06-05T13:00:00.000Z,America/New_York,linkedin,GrantPipe company page,post,,"{""__type"":""linkedin-page"",""post_as_images_carousel"":false}",P4,D,s,none,,docs/social/linkedin/june-2026-campaign/strategy.md; docs/social/linkedin/june-2026-campaign/writer-brief.md; docs/social/linkedin/WRITER-BRIEF.md; packages/shared/src/knowledge/marketing/content/guides/how-to-maintain-sefa-records-between-audits.md,federal identifier definition,passed,passed,content/social/linkedin/2026-W23/2026-06-05_09-00_fri-04.txt,"Assistance Listing numbers matter.
+
+The old name was CFDA. The current federal term is Assistance Listing.
+
+For SEFA work, pass-through awards, and subrecipient files, that number tells auditors which federal program the money belongs to.
+
+If it is missing from the award file, request it before closeout pressure starts."
+2026-06-05_09-45_fri-05,2026-06-05 09:45,2026-06-05T13:45:00.000Z,America/New_York,linkedin,GrantPipe company page,post,,"{""__type"":""linkedin-page"",""post_as_images_carousel"":false}",P1,L,s,none,,docs/social/linkedin/june-2026-campaign/strategy.md; docs/social/linkedin/june-2026-campaign/writer-brief.md; docs/social/linkedin/WRITER-BRIEF.md; packages/shared/src/knowledge/marketing/content/guides/restricted-fund-month-end-close-checklist.md; packages/shared/src/knowledge/marketing/content/guides/grant-documentation-checklist-audit-ready.md,audit binder checklist,passed,passed,content/social/linkedin/2026-W23/2026-06-05_09-45_fri-05.txt,"No-fire-drill Friday grant check:
+
+1. One report due in the next 30 days
+2. One award near a spend-down problem
+3. One restricted balance that changed this week
+4. One reimbursement request waiting on support
+5. One document gap that would slow audit fieldwork
+
+This is not a big meeting.
+
+It is a way to keep small gaps from becoming a Monday pileup."
+2026-06-05_10-30_fri-06,2026-06-05 10:30,2026-06-05T14:30:00.000Z,America/New_York,linkedin,GrantPipe company page,post,,"{""__type"":""linkedin-page"",""post_as_images_carousel"":false}",P7,D,s,lead_magnet,https://grantpipe.com/free/sf-425-reporting-checklist,docs/social/linkedin/june-2026-campaign/strategy.md; docs/social/linkedin/june-2026-campaign/writer-brief.md; docs/social/linkedin/WRITER-BRIEF.md; packages/shared/src/constants/lead-magnets.ts; packages/shared/src/knowledge/marketing/content/guides/how-to-prepare-an-sf-425-step-by-step.md,lead magnet teaser,passed,passed,content/social/linkedin/2026-W23/2026-06-05_10-30_fri-06.txt,"The SF-425 Reporting Checklist is for the form line that causes too much cleanup: 10f.
+
+Line 10f is cumulative federal expenditures for the full period of performance, not only the current quarter.
+
+The checklist walks through the tie-out before submission.
+
+Free download, no email required: https://grantpipe.com/free/sf-425-reporting-checklist"
+2026-06-05_11-15_fri-07,2026-06-05 11:15,2026-06-05T15:15:00.000Z,America/New_York,linkedin,GrantPipe company page,post,,"{""__type"":""linkedin-page"",""post_as_images_carousel"":false}",P3,C,s,none,,docs/social/linkedin/june-2026-campaign/strategy.md; docs/social/linkedin/june-2026-campaign/writer-brief.md; docs/social/linkedin/WRITER-BRIEF.md; packages/shared/src/knowledge/marketing/content/guides/development-operations-infrastructure.md,Development to Finance handoff,passed,passed,content/social/linkedin/2026-W23/2026-06-05_11-15_fri-07.txt,"Development owns more compliance context than people give it credit for.
+
+It knows the funder relationship, the promised outcome, the reporting language, and the renewal stakes.
+
+Finance owns the dollars, releases, and controls.
+
+The grant file gets stronger when both views sit in the same handoff."
+2026-06-05_12-00_fri-08,2026-06-05 12:00,2026-06-05T16:00:00.000Z,America/New_York,linkedin,GrantPipe company page,post,,"{""__type"":""linkedin-page"",""post_as_images_carousel"":false}",P4,D,s,none,,docs/social/linkedin/june-2026-campaign/strategy.md; docs/social/linkedin/june-2026-campaign/writer-brief.md; docs/social/linkedin/WRITER-BRIEF.md; packages/shared/src/knowledge/marketing/content/guides/grant-draw-down-vs-reimbursement.md,source-heavy federal compliance,passed,passed,content/social/linkedin/2026-W23/2026-06-05_12-00_fri-08.txt,"Reimbursement grants create a timing problem.
+
+The organization spends first, documents the cost, submits the request, then waits for payment.
+
+That gap is manageable when requests go out frequently and support is ready.
+
+It gets painful when the reimbursement packet becomes a monthly scavenger hunt."
+2026-06-05_12-45_fri-09,2026-06-05 12:45,2026-06-05T16:45:00.000Z,America/New_York,linkedin,GrantPipe company page,post,,"{""__type"":""linkedin-page"",""post_as_images_carousel"":false}",P5,K,s,none,,docs/social/linkedin/june-2026-campaign/strategy.md; docs/social/linkedin/june-2026-campaign/writer-brief.md; docs/social/linkedin/WRITER-BRIEF.md; packages/shared/src/knowledge/marketing/content/guides/nonprofit-board-grant-reporting-dashboard.md,board packet utility,passed,passed,content/social/linkedin/2026-W23/2026-06-05_12-45_fri-09.txt,"A board packet should not hide grant pacing.
+
+If a major award is behind spend, ahead of spend, missing support, or carrying an upcoming report, leadership should see it before the funder does.
+
+The board does not need staff-level detail.
+
+It needs exception visibility."
+2026-06-05_13-30_fri-10,2026-06-05 13:30,2026-06-05T17:30:00.000Z,America/New_York,linkedin,GrantPipe company page,post,,"{""__type"":""linkedin-page"",""post_as_images_carousel"":false}",P3,N,s,none,,docs/social/linkedin/june-2026-campaign/strategy.md; docs/social/linkedin/june-2026-campaign/writer-brief.md; docs/social/linkedin/WRITER-BRIEF.md; .agents/product-marketing.md,three places grant can live,passed,passed,content/social/linkedin/2026-W23/2026-06-05_13-30_fri-10.txt,"One grant can live in four places:
+
+The donor or funder relationship.
+The award record.
+The restricted fund balance.
+The accounting ledger.
+
+If those four places do not share identifiers, every report becomes matching work.
+
+That is why naming, coding, and handoff discipline matter."
+2026-06-05_14-30_fri-11,2026-06-05 14:30,2026-06-05T18:30:00.000Z,America/New_York,linkedin,GrantPipe company page,post,,"{""__type"":""linkedin-page"",""post_as_images_carousel"":false}",P2,Q,s,none,,docs/social/linkedin/june-2026-campaign/strategy.md; docs/social/linkedin/june-2026-campaign/writer-brief.md; docs/social/linkedin/WRITER-BRIEF.md; packages/shared/src/knowledge/marketing/content/guides/restricted-fund-month-end-close-checklist.md,restricted balance question,passed,passed,content/social/linkedin/2026-W23/2026-06-05_14-30_fri-11.txt,"Restricted balance reviews need a plain-English answer.
+
+What remains restricted?
+Why is it restricted?
+What condition releases it?
+What changed this month?
+What needs follow-up?
+
+If only Finance can interpret the answer, the rest of the organization will rebuild it in parallel."
+2026-06-05_15-30_fri-12,2026-06-05 15:30,2026-06-05T19:30:00.000Z,America/New_York,linkedin,GrantPipe company page,post,,"{""__type"":""linkedin-page"",""post_as_images_carousel"":false}",P7,K,s,lead_magnet,https://grantpipe.com/free/grant-closeout-checklist,docs/social/linkedin/june-2026-campaign/strategy.md; docs/social/linkedin/june-2026-campaign/writer-brief.md; docs/social/linkedin/WRITER-BRIEF.md; packages/shared/src/constants/lead-magnets.ts; packages/shared/src/knowledge/marketing/content/guides/how-to-manage-grant-closeout-record-retention.md,lead magnet teaser,passed,passed,content/social/linkedin/2026-W23/2026-06-05_15-30_fri-12.txt,"Closeout gets easier when it starts before the final month.
+
+The Grant Closeout Checklist covers final reports, final SF-425 work, remaining obligations, record retention, and the documents that should already be in the file before the award ends.
+
+Free download, no email required: https://grantpipe.com/free/grant-closeout-checklist"
+2026-06-05_16-30_fri-13,2026-06-05 16:30,2026-06-05T20:30:00.000Z,America/New_York,linkedin,GrantPipe company page,post,,"{""__type"":""linkedin-page"",""post_as_images_carousel"":false}",P6,F,s,trial,https://app.grantpipe.com/signup,docs/social/linkedin/june-2026-campaign/strategy.md; docs/social/linkedin/june-2026-campaign/writer-brief.md; docs/social/linkedin/WRITER-BRIEF.md; .agents/product-marketing.md; docs/social/linkedin/WRITER-BRIEF.md,builder pricing decision,passed,passed,content/social/linkedin/2026-W23/2026-06-05_16-30_fri-13.txt,"We put public pricing on GrantPipe because the budget conversation should not require a sales call.
+
+Grant-funded nonprofits already have enough conditional spending decisions.
+
+The product has a one-month free trial, no credit card, unlimited users, no setup fee, and month-to-month billing.
+
+Start a free trial at https://app.grantpipe.com/signup"
+2026-06-05_18-30_fri-14,2026-06-05 18:30,2026-06-05T22:30:00.000Z,America/New_York,linkedin,GrantPipe company page,post,,"{""__type"":""linkedin-page"",""post_as_images_carousel"":false}",P1,L,s,none,,docs/social/linkedin/june-2026-campaign/strategy.md; docs/social/linkedin/june-2026-campaign/writer-brief.md; docs/social/linkedin/WRITER-BRIEF.md; packages/shared/src/knowledge/marketing/content/guides/how-to-handle-disallowed-costs-on-a-federal-grant.md,questioned costs definition,passed,passed,content/social/linkedin/2026-W23/2026-06-05_18-30_fri-14.txt,"A questioned cost response should not start from panic.
+
+Start with the record:
+
+- award term
+- 2 CFR 200 cost principle
+- budget line
+- allocation basis
+- invoice or receipt
+- payment proof
+- approval trail
+
+Then decide whether the cost is defensible, needs correction, or should be repaid."
+2026-06-05_20-30_fri-15,2026-06-05 20:30,2026-06-06T00:30:00.000Z,America/New_York,linkedin,GrantPipe company page,post,,"{""__type"":""linkedin-page"",""post_as_images_carousel"":false}",P5,L,s,none,,docs/social/linkedin/june-2026-campaign/strategy.md; docs/social/linkedin/june-2026-campaign/writer-brief.md; docs/social/linkedin/WRITER-BRIEF.md; packages/shared/src/knowledge/marketing/content/guides/restricted-fund-month-end-close-checklist.md,weekly operating check,passed,passed,content/social/linkedin/2026-W23/2026-06-05_20-30_fri-15.txt,"The best Friday close ritual is boring.
+
+One list of reports due soon.
+One list of document gaps.
+One list of restricted balances that changed.
+One owner for each follow-up.
+
+That is enough to keep Monday from starting with six versions of the same question."
+2026-06-06_06-45_sat-01,2026-06-06 06:45,2026-06-06T10:45:00.000Z,America/New_York,linkedin,GrantPipe company page,post,,"{""__type"":""linkedin-page"",""post_as_images_carousel"":false}",P5,Q,s,none,,docs/social/linkedin/june-2026-campaign/strategy.md; docs/social/linkedin/june-2026-campaign/writer-brief.md; docs/social/linkedin/WRITER-BRIEF.md; packages/shared/src/knowledge/marketing/content/guides/grant-reporting-calendar-template.md,weekend maintenance,passed,passed,content/social/linkedin/2026-W23/2026-06-06_06-45_sat-01.txt,"Saturday maintenance idea:
+
+Open the grant deadline calendar and remove one ambiguity.
+
+Is the due date for a draft, internal review, portal submission, board approval, or funder deadline?
+
+One date can mean five different things. Label it before the week starts."
+2026-06-06_07-30_sat-02,2026-06-06 07:30,2026-06-06T11:30:00.000Z,America/New_York,linkedin,GrantPipe company page,post,,"{""__type"":""linkedin-page"",""post_as_images_carousel"":false}",P2,L,s,none,,docs/social/linkedin/june-2026-campaign/strategy.md; docs/social/linkedin/june-2026-campaign/writer-brief.md; docs/social/linkedin/WRITER-BRIEF.md; packages/shared/src/knowledge/marketing/content/guides/restricted-fund-month-end-close-checklist.md,restricted fund release schedule,passed,passed,content/social/linkedin/2026-W23/2026-06-06_07-30_sat-02.txt,"Restricted fund schedules should not wait for year-end.
+
+Keep a running view of:
+
+- opening balance
+- new restricted revenue
+- spending tied to the restriction
+- releases
+- ending balance
+- follow-up items
+
+That schedule is easier to review monthly than to recreate after the audit request arrives."
+2026-06-06_08-15_sat-03,2026-06-06 08:15,2026-06-06T12:15:00.000Z,America/New_York,linkedin,GrantPipe company page,post,,"{""__type"":""linkedin-page"",""post_as_images_carousel"":false}",P1,Q,s,none,,docs/social/linkedin/june-2026-campaign/strategy.md; docs/social/linkedin/june-2026-campaign/writer-brief.md; docs/social/linkedin/WRITER-BRIEF.md; packages/shared/src/knowledge/marketing/content/guides/grant-documentation-checklist-audit-ready.md,audit binder checklist,passed,passed,content/social/linkedin/2026-W23/2026-06-06_08-15_sat-03.txt,"An audit tab should answer one question fast:
+
+Can a reviewer find the support without asking the same staff member twice?
+
+If the file only works for the person who built it, the file is not organized enough yet."
+2026-06-06_09-00_sat-04,2026-06-06 09:00,2026-06-06T13:00:00.000Z,America/New_York,linkedin,GrantPipe company page,post,,"{""__type"":""linkedin-page"",""post_as_images_carousel"":false}",P4,D,s,none,,docs/social/linkedin/june-2026-campaign/strategy.md; docs/social/linkedin/june-2026-campaign/writer-brief.md; docs/social/linkedin/WRITER-BRIEF.md; packages/shared/src/knowledge/marketing/content/guides/how-to-apply-for-government-grants-nonprofits.md,UEI federal setup,passed,passed,content/social/linkedin/2026-W23/2026-06-06_09-00_sat-04.txt,"UEI is not just a registration detail.
+
+The Unique Entity ID follows your organization through SAM.gov, federal awards, subawards, and reporting records.
+
+If the UEI, legal name, and award identifiers do not match across files, small admin errors can slow federal grant work."
+2026-06-06_09-45_sat-05,2026-06-06 09:45,2026-06-06T13:45:00.000Z,America/New_York,linkedin,GrantPipe company page,post,,"{""__type"":""linkedin-page"",""post_as_images_carousel"":false}",P5,L,s,none,,docs/social/linkedin/june-2026-campaign/strategy.md; docs/social/linkedin/june-2026-campaign/writer-brief.md; docs/social/linkedin/WRITER-BRIEF.md; packages/shared/src/knowledge/marketing/content/guides/nonprofit-board-grant-reporting-dashboard.md,board packet utility,passed,passed,content/social/linkedin/2026-W23/2026-06-06_09-45_sat-05.txt,"Weekend board packet cleanup:
+
+Take one grant page and remove anything the board cannot act on.
+
+Keep:
+
+- active award amount
+- restricted balance
+- spend pace
+- next report
+- material risk
+- decision needed
+
+Move transaction detail to the staff file.
+
+A board dashboard should support oversight, not recreate the work queue."
+2026-06-06_10-30_sat-06,2026-06-06 10:30,2026-06-06T14:30:00.000Z,America/New_York,linkedin,GrantPipe company page,post,,"{""__type"":""linkedin-page"",""post_as_images_carousel"":false}",P7,K,s,lead_magnet,https://grantpipe.com/free/cost-allocation-plan-worksheet,docs/social/linkedin/june-2026-campaign/strategy.md; docs/social/linkedin/june-2026-campaign/writer-brief.md; docs/social/linkedin/WRITER-BRIEF.md; packages/shared/src/constants/lead-magnets.ts; packages/shared/src/knowledge/marketing/content/guides/allowable-costs-federal-grants.md,lead magnet teaser,passed,passed,content/social/linkedin/2026-W23/2026-06-06_10-30_sat-06.txt,"The Cost Allocation Plan Worksheet is for shared costs that touch more than one grant or program.
+
+It helps document the basis for splitting costs, the cost categories involved, and the review trail Finance will need later.
+
+Free download, no email required: https://grantpipe.com/free/cost-allocation-plan-worksheet"
+2026-06-06_11-15_sat-07,2026-06-06 11:15,2026-06-06T15:15:00.000Z,America/New_York,linkedin,GrantPipe company page,post,,"{""__type"":""linkedin-page"",""post_as_images_carousel"":false}",P3,C,s,none,,docs/social/linkedin/june-2026-campaign/strategy.md; docs/social/linkedin/june-2026-campaign/writer-brief.md; docs/social/linkedin/WRITER-BRIEF.md; packages/shared/src/knowledge/marketing/content/guides/grant-documentation-checklist-audit-ready.md,shared drive evidence trail,passed,passed,content/social/linkedin/2026-W23/2026-06-06_11-15_sat-07.txt,"Shared drives are not the problem.
+
+Unlabeled shared drives are.
+
+If the grant folder has final reports, draft reports, receipts, screenshots, award terms, and board approvals in the same pile, search becomes the control.
+
+Search is not a control.
+
+Naming and structure are."
+2026-06-06_12-00_sat-08,2026-06-06 12:00,2026-06-06T16:00:00.000Z,America/New_York,linkedin,GrantPipe company page,post,,"{""__type"":""linkedin-page"",""post_as_images_carousel"":false}",P4,D,s,none,,docs/social/linkedin/june-2026-campaign/strategy.md; docs/social/linkedin/june-2026-campaign/writer-brief.md; docs/social/linkedin/WRITER-BRIEF.md; packages/shared/src/knowledge/marketing/content/guides/grant-tracker-guide.md,period of performance,passed,passed,content/social/linkedin/2026-W23/2026-06-06_12-00_sat-08.txt,"Period of performance is a spending boundary.
+
+Costs before the start date or after the end date are generally not chargeable to the award unless the award terms or agency approval allow it.
+
+That date range should be visible anywhere staff review spending, not buried in the notice of award."
+2026-06-06_12-45_sat-09,2026-06-06 12:45,2026-06-06T16:45:00.000Z,America/New_York,linkedin,GrantPipe company page,post,,"{""__type"":""linkedin-page"",""post_as_images_carousel"":false}",P2,D,s,none,,docs/social/linkedin/june-2026-campaign/strategy.md; docs/social/linkedin/june-2026-campaign/writer-brief.md; docs/social/linkedin/WRITER-BRIEF.md; packages/shared/src/knowledge/marketing/content/guides/fasb-asc-958-nonprofit-reporting.md,FASB ASC 958 definition,passed,passed,content/social/linkedin/2026-W23/2026-06-06_12-45_sat-09.txt,"FASB ASC 958 uses two net asset classes:
+
+With donor restrictions.
+Without donor restrictions.
+
+The hard work is not memorizing the names.
+
+The hard work is keeping each restriction tied to purpose, time, release, and balance so the financial statements have support behind the totals."
+2026-06-06_13-30_sat-10,2026-06-06 13:30,2026-06-06T17:30:00.000Z,America/New_York,linkedin,GrantPipe company page,post,,"{""__type"":""linkedin-page"",""post_as_images_carousel"":false}",P5,D,s,none,,docs/social/linkedin/june-2026-campaign/strategy.md; docs/social/linkedin/june-2026-campaign/writer-brief.md; docs/social/linkedin/WRITER-BRIEF.md; packages/shared/src/knowledge/marketing/content/guides/how-to-write-donor-thank-you-letter.md,donor stewardship rhythm,passed,passed,content/social/linkedin/2026-W23/2026-06-06_13-30_sat-10.txt,"Donor thank-you cleanup is operational work.
+
+A gift acknowledgement should match the donor, amount, date, restriction, and receipt language.
+
+When those details are clean, stewardship gets easier and Finance has fewer year-end questions about restricted gifts."
+2026-06-06_14-30_sat-11,2026-06-06 14:30,2026-06-06T18:30:00.000Z,America/New_York,linkedin,GrantPipe company page,post,,"{""__type"":""linkedin-page"",""post_as_images_carousel"":false}",P7,K,s,lead_magnet,https://grantpipe.com/free/grant-reporting-deadlines-tracker,docs/social/linkedin/june-2026-campaign/strategy.md; docs/social/linkedin/june-2026-campaign/writer-brief.md; docs/social/linkedin/WRITER-BRIEF.md; packages/shared/src/constants/lead-magnets.ts; packages/shared/src/knowledge/marketing/content/guides/grant-reporting-calendar-template.md,lead magnet teaser,passed,passed,content/social/linkedin/2026-W23/2026-06-06_14-30_sat-11.txt,"The Grant Reporting Deadlines Tracker is for keeping report dates out of inbox memory.
+
+Use it for due dates, internal draft dates, owner, report type, data needed, submission portal, and confirmation notes.
+
+Free download, no email required: https://grantpipe.com/free/grant-reporting-deadlines-tracker"
+2026-06-06_15-30_sat-12,2026-06-06 15:30,2026-06-06T19:30:00.000Z,America/New_York,linkedin,GrantPipe company page,post,,"{""__type"":""linkedin-page"",""post_as_images_carousel"":false}",P3,Q,s,none,,docs/social/linkedin/june-2026-campaign/strategy.md; docs/social/linkedin/june-2026-campaign/writer-brief.md; docs/social/linkedin/WRITER-BRIEF.md; packages/shared/src/knowledge/marketing/content/guides/development-operations-infrastructure.md,Development to Finance handoff,passed,passed,content/social/linkedin/2026-W23/2026-06-06_15-30_sat-12.txt,"The Development to Finance handoff should include the promise, not just the payment.
+
+What did the proposal say would happen?
+What restriction came with the award?
+What reporting proof will be needed?
+What budget lines did leadership approve?
+
+Finance cannot code what it cannot see."
+2026-06-06_16-30_sat-13,2026-06-06 16:30,2026-06-06T20:30:00.000Z,America/New_York,linkedin,GrantPipe company page,post,,"{""__type"":""linkedin-page"",""post_as_images_carousel"":false}",P6,F,s,none,,docs/social/linkedin/june-2026-campaign/strategy.md; docs/social/linkedin/june-2026-campaign/writer-brief.md; docs/social/linkedin/WRITER-BRIEF.md; .agents/product-marketing.md,builder product decision,passed,passed,content/social/linkedin/2026-W23/2026-06-06_16-30_sat-13.txt,"We kept grants and funds separate because accounting reality is separate.
+
+One grant can fund more than one restricted fund.
+One fund can relate to more than one grant.
+
+That many-to-many shape is the point.
+
+If the data model flattens it, the team has to unflatten it later in spreadsheets."
+2026-06-06_18-30_sat-14,2026-06-06 18:30,2026-06-06T22:30:00.000Z,America/New_York,linkedin,GrantPipe company page,post,,"{""__type"":""linkedin-page"",""post_as_images_carousel"":false}",P5,L,s,none,,docs/social/linkedin/june-2026-campaign/strategy.md; docs/social/linkedin/june-2026-campaign/writer-brief.md; docs/social/linkedin/WRITER-BRIEF.md; packages/shared/src/knowledge/marketing/content/guides/restricted-fund-month-end-close-checklist.md,weekend maintenance,passed,passed,content/social/linkedin/2026-W23/2026-06-06_18-30_sat-14.txt,"Sunday gets easier when Saturday leaves a short list.
+
+Reports due.
+Documents missing.
+Awards off pace.
+Restricted balances to explain.
+Decisions needed.
+
+Do not write a novel. Write the list that lets Monday start with ownership."
+2026-06-06_20-30_sat-15,2026-06-06 20:30,2026-06-07T00:30:00.000Z,America/New_York,linkedin,GrantPipe company page,post,,"{""__type"":""linkedin-page"",""post_as_images_carousel"":false}",P1,Q,s,none,,docs/social/linkedin/june-2026-campaign/strategy.md; docs/social/linkedin/june-2026-campaign/writer-brief.md; docs/social/linkedin/WRITER-BRIEF.md; packages/shared/src/knowledge/marketing/content/guides/uniform-guidance-2-cfr-200-practical-guide.md; packages/shared/src/knowledge/marketing/content/guides/grant-documentation-checklist-audit-ready.md,quick check compliance artifact,passed,passed,content/social/linkedin/2026-W23/2026-06-06_20-30_sat-15.txt,"Quick retention check:
+
+For federal grants, 2 CFR 200.334 sets a minimum record retention period of three years from the final expenditure report submission date.
+
+Do not count from the award end date.
+
+The final report date starts the clock."
+2026-06-07_06-45_sun-01,2026-06-07 06:45,2026-06-07T10:45:00.000Z,America/New_York,linkedin,GrantPipe company page,post,,"{""__type"":""linkedin-page"",""post_as_images_carousel"":false}",P5,Q,s,none,,docs/social/linkedin/june-2026-campaign/strategy.md; docs/social/linkedin/june-2026-campaign/writer-brief.md; docs/social/linkedin/WRITER-BRIEF.md; packages/shared/src/knowledge/marketing/content/guides/nonprofit-board-grant-reporting-dashboard.md,Sunday prep,passed,passed,content/social/linkedin/2026-W23/2026-06-07_06-45_sun-01.txt,"Sunday prep for a grant-heavy week:
+
+Pick the one question leadership is most likely to ask tomorrow.
+
+What is due?
+What is restricted?
+What is late?
+What changed?
+What needs approval?
+
+Answer that before opening the full work queue."
+2026-06-07_07-30_sun-02,2026-06-07 07:30,2026-06-07T11:30:00.000Z,America/New_York,linkedin,GrantPipe company page,post,,"{""__type"":""linkedin-page"",""post_as_images_carousel"":false}",P1,C,s,none,,docs/social/linkedin/june-2026-campaign/strategy.md; docs/social/linkedin/june-2026-campaign/writer-brief.md; docs/social/linkedin/WRITER-BRIEF.md; packages/shared/src/knowledge/marketing/content/guides/grant-documentation-checklist-audit-ready.md,audit binder checklist,passed,passed,content/social/linkedin/2026-W23/2026-06-07_07-30_sun-02.txt,"The audit binder is not the audit.
+
+The binder is a retrieval system.
+
+It should help a reviewer move from grant agreement to spending support to report submission without depending on staff memory.
+
+If the binder only proves that files exist, it is not doing enough."
+2026-06-07_08-15_sun-03,2026-06-07 08:15,2026-06-07T12:15:00.000Z,America/New_York,linkedin,GrantPipe company page,post,,"{""__type"":""linkedin-page"",""post_as_images_carousel"":false}",P2,L,s,none,,docs/social/linkedin/june-2026-campaign/strategy.md; docs/social/linkedin/june-2026-campaign/writer-brief.md; docs/social/linkedin/WRITER-BRIEF.md; packages/shared/src/knowledge/marketing/content/guides/fasb-asc-958-nonprofit-reporting.md,restricted fund release schedule,passed,passed,content/social/linkedin/2026-W23/2026-06-07_08-15_sun-03.txt,"Net asset releases need a review trail.
+
+Before releasing restricted funds, confirm:
+
+- which restriction was satisfied
+- what evidence supports that satisfaction
+- what amount is being released
+- which period the release belongs to
+- who reviewed it
+
+The release should be explainable months later."
+2026-06-07_09-00_sun-04,2026-06-07 09:00,2026-06-07T13:00:00.000Z,America/New_York,linkedin,GrantPipe company page,post,,"{""__type"":""linkedin-page"",""post_as_images_carousel"":false}",P3,C,s,none,,docs/social/linkedin/june-2026-campaign/strategy.md; docs/social/linkedin/june-2026-campaign/writer-brief.md; docs/social/linkedin/WRITER-BRIEF.md; .agents/product-marketing.md,CRM handles grants myth,passed,passed,content/social/linkedin/2026-W23/2026-06-07_09-00_sun-04.txt,"""Our CRM handles grants"" can be true for pipeline tracking and false for compliance.
+
+The test is simple:
+
+Can it track restrictions, evidence, reporting dates, fund releases, grant spend, reimbursement status, and audit access next to the award?
+
+If not, it handles part of the grant."
+2026-06-07_09-45_sun-05,2026-06-07 09:45,2026-06-07T13:45:00.000Z,America/New_York,linkedin,GrantPipe company page,post,,"{""__type"":""linkedin-page"",""post_as_images_carousel"":false}",P5,L,s,none,,docs/social/linkedin/june-2026-campaign/strategy.md; docs/social/linkedin/june-2026-campaign/writer-brief.md; docs/social/linkedin/WRITER-BRIEF.md; packages/shared/src/knowledge/marketing/content/guides/nonprofit-board-grant-reporting-dashboard.md,board packet utility,passed,passed,content/social/linkedin/2026-W23/2026-06-07_09-45_sun-05.txt,"Board week readiness checklist:
+
+1. Active grants by funder
+2. Restricted balances by purpose
+3. Awards ahead or behind spend pace
+4. Reports due before the next meeting
+5. Document gaps worth leadership attention
+6. Decisions the board can actually make
+
+Cut anything that belongs in the staff workbench.
+
+The board needs the governing view."
+2026-06-07_10-30_sun-06,2026-06-07 10:30,2026-06-07T14:30:00.000Z,America/New_York,linkedin,GrantPipe company page,post,,"{""__type"":""linkedin-page"",""post_as_images_carousel"":false}",P4,D,s,none,,docs/social/linkedin/june-2026-campaign/strategy.md; docs/social/linkedin/june-2026-campaign/writer-brief.md; docs/social/linkedin/WRITER-BRIEF.md; packages/shared/src/knowledge/marketing/content/guides/how-to-prepare-an-sf-425-step-by-step.md,SF-425 quick check,passed,passed,content/social/linkedin/2026-W23/2026-06-07_10-30_sun-06.txt,"SF-425 line 10f should match the general ledger.
+
+It is cumulative federal expenditures for the full period of performance to date.
+
+Before submission, reconcile the amount to the grant-specific ledger report and prior SF-425 totals.
+
+That small check prevents a hard cleanup later."
+2026-06-07_11-15_sun-07,2026-06-07 11:15,2026-06-07T15:15:00.000Z,America/New_York,linkedin,GrantPipe company page,post,,"{""__type"":""linkedin-page"",""post_as_images_carousel"":false}",P7,K,s,lead_magnet,https://grantpipe.com/free/auditor-evidence-checklist,docs/social/linkedin/june-2026-campaign/strategy.md; docs/social/linkedin/june-2026-campaign/writer-brief.md; docs/social/linkedin/WRITER-BRIEF.md; packages/shared/src/constants/lead-magnets.ts; packages/shared/src/knowledge/marketing/content/guides/grant-documentation-checklist-audit-ready.md,lead magnet teaser,passed,passed,content/social/linkedin/2026-W23/2026-06-07_11-15_sun-07.txt,"The Auditor Evidence Checklist is for the request list that arrives with too many folders open.
+
+It organizes award documents, financial support, personnel records, program evidence, procurement files, subrecipient records, and retention notes.
+
+Free download, no email required: https://grantpipe.com/free/auditor-evidence-checklist"
+2026-06-07_12-00_sun-08,2026-06-07 12:00,2026-06-07T16:00:00.000Z,America/New_York,linkedin,GrantPipe company page,post,,"{""__type"":""linkedin-page"",""post_as_images_carousel"":false}",P5,Q,s,none,,docs/social/linkedin/june-2026-campaign/strategy.md; docs/social/linkedin/june-2026-campaign/writer-brief.md; docs/social/linkedin/WRITER-BRIEF.md; packages/shared/src/knowledge/marketing/content/guides/donor-retention-strategies.md,donor stewardship rhythm,passed,passed,content/social/linkedin/2026-W23/2026-06-07_12-00_sun-08.txt,"Lapsed donor work starts with clean segmentation.
+
+Who gave last year but not this year?
+Who gave to a restricted fund?
+Who gave through a family foundation or DAF?
+Who needs a stewardship note before an ask?
+
+The first draft of the list matters more than the cleverness of the appeal."
+2026-06-07_12-45_sun-09,2026-06-07 12:45,2026-06-07T16:45:00.000Z,America/New_York,linkedin,GrantPipe company page,post,,"{""__type"":""linkedin-page"",""post_as_images_carousel"":false}",P3,C,s,none,,docs/social/linkedin/june-2026-campaign/strategy.md; docs/social/linkedin/june-2026-campaign/writer-brief.md; docs/social/linkedin/WRITER-BRIEF.md; packages/shared/src/knowledge/marketing/content/guides/development-operations-infrastructure.md,Development to Finance handoff,passed,passed,content/social/linkedin/2026-W23/2026-06-07_12-45_sun-09.txt,"A shared grant record should reduce translation.
+
+Development should not need to translate funder language into a separate finance tracker.
+
+Finance should not need to translate ledger codes back into a separate grant tracker.
+
+The record should carry both meanings from the start."
+2026-06-07_13-30_sun-10,2026-06-07 13:30,2026-06-07T17:30:00.000Z,America/New_York,linkedin,GrantPipe company page,post,,"{""__type"":""linkedin-page"",""post_as_images_carousel"":false}",P2,Q,s,none,,docs/social/linkedin/june-2026-campaign/strategy.md; docs/social/linkedin/june-2026-campaign/writer-brief.md; docs/social/linkedin/WRITER-BRIEF.md; packages/shared/src/knowledge/marketing/content/guides/fasb-asc-958-nonprofit-reporting.md,ASC 958 liquidity,passed,passed,content/social/linkedin/2026-W23/2026-06-07_13-30_sun-10.txt,"Restricted cash can look comforting and still be unavailable.
+
+The liquidity question is not ""how much cash do we have?""
+
+It is ""how much cash is available for general use within the next year after donor restrictions and board designations are considered?""
+
+ASC 958 makes that distinction matter."
+2026-06-07_14-30_sun-11,2026-06-07 14:30,2026-06-07T18:30:00.000Z,America/New_York,linkedin,GrantPipe company page,post,,"{""__type"":""linkedin-page"",""post_as_images_carousel"":false}",P5,K,s,none,,docs/social/linkedin/june-2026-campaign/strategy.md; docs/social/linkedin/june-2026-campaign/writer-brief.md; docs/social/linkedin/WRITER-BRIEF.md; packages/shared/src/knowledge/marketing/content/guides/nonprofit-board-grant-reporting-dashboard.md,Executive Director board prep question,passed,passed,content/social/linkedin/2026-W23/2026-06-07_14-30_sun-11.txt,"An Executive Director dashboard should have fewer numbers than the finance workpaper.
+
+That is not dumbing it down.
+
+It is choosing the management view:
+
+- grant exposure
+- restricted balance
+- pacing risk
+- reports due
+- decisions needed
+
+The detail should be available, not pasted into the board view."
+2026-06-07_15-30_sun-12,2026-06-07 15:30,2026-06-07T19:30:00.000Z,America/New_York,linkedin,GrantPipe company page,post,,"{""__type"":""linkedin-page"",""post_as_images_carousel"":false}",P7,K,s,lead_magnet,https://grantpipe.com/free/board-fundraising-toolkit,docs/social/linkedin/june-2026-campaign/strategy.md; docs/social/linkedin/june-2026-campaign/writer-brief.md; docs/social/linkedin/WRITER-BRIEF.md; packages/shared/src/constants/lead-magnets.ts; packages/shared/src/knowledge/marketing/content/guides/board-fundraising-give-or-get-policy.md,lead magnet teaser,passed,passed,content/social/linkedin/2026-W23/2026-06-07_15-30_sun-12.txt,"The Board Fundraising Toolkit is for making board fundraising expectations concrete.
+
+It includes give-or-get policy language, board role framing, and practical prompts for introductions and follow-up.
+
+Useful when the board wants to help but needs clearer lanes.
+
+Free download, no email required: https://grantpipe.com/free/board-fundraising-toolkit"
+2026-06-07_16-30_sun-13,2026-06-07 16:30,2026-06-07T20:30:00.000Z,America/New_York,linkedin,GrantPipe company page,post,,"{""__type"":""linkedin-page"",""post_as_images_carousel"":false}",P6,F,s,none,,docs/social/linkedin/june-2026-campaign/strategy.md; docs/social/linkedin/june-2026-campaign/writer-brief.md; docs/social/linkedin/WRITER-BRIEF.md; .agents/product-marketing.md; .agents/product-marketing-context.md,builder honesty,passed,passed,content/social/linkedin/2026-W23/2026-06-07_16-30_sun-13.txt,"We will not dress up GrantPipe's early stage.
+
+No invented quotes.
+No customer names without permission.
+No public metrics used as theater.
+
+Early products should be judged by what they do, what they cost, and whether the builder is honest about the stage of the company."
+2026-06-07_18-30_sun-14,2026-06-07 18:30,2026-06-07T22:30:00.000Z,America/New_York,linkedin,GrantPipe company page,post,,"{""__type"":""linkedin-page"",""post_as_images_carousel"":false}",P5,K,s,none,,docs/social/linkedin/june-2026-campaign/strategy.md; docs/social/linkedin/june-2026-campaign/writer-brief.md; docs/social/linkedin/WRITER-BRIEF.md; packages/shared/src/knowledge/marketing/content/guides/grant-reporting-calendar-template.md,Sunday prep,passed,passed,content/social/linkedin/2026-W23/2026-06-07_18-30_sun-14.txt,"Before Monday starts, label the next grant deadline.
+
+Draft due.
+Internal finance review.
+Executive signoff.
+Portal submission.
+Funder due date.
+
+If the calendar only says ""report due,"" someone still has to translate it under pressure."
+2026-06-07_20-30_sun-15,2026-06-07 20:30,2026-06-08T00:30:00.000Z,America/New_York,linkedin,GrantPipe company page,post,,"{""__type"":""linkedin-page"",""post_as_images_carousel"":false}",P1,Q,s,none,,docs/social/linkedin/june-2026-campaign/strategy.md; docs/social/linkedin/june-2026-campaign/writer-brief.md; docs/social/linkedin/WRITER-BRIEF.md; packages/shared/src/knowledge/marketing/content/guides/grant-documentation-checklist-audit-ready.md,quick check compliance artifact,passed,passed,content/social/linkedin/2026-W23/2026-06-07_20-30_sun-15.txt,"Quick Sunday audit tab check:
+
+Open one active award.
+
+Can you find the agreement, latest budget, last report, support for the last claimed expense, and the next due date in under five minutes?
+
+If not, Monday has a filing task."
+2026-06-08_06-45_mon-01,2026-06-08 06:45,2026-06-08T10:45:00.000Z,America/New_York,linkedin,GrantPipe company page,post,,"{""__type"":""linkedin-page"",""post_as_images_carousel"":false}",P1,Q,s,none,,writer-brief; product-context,quick check artifact post,passed,passed,content/social/linkedin/2026-W24/2026-06-08_06-45_mon-01.txt,"Quick check:
+
+Can every active grant answer these four questions today?
+
+- Award amount
+- Period of performance
+- Next report due
+- Evidence folder location
+
+If one answer lives in the CRM, one in accounting, one in a spreadsheet, and one in someone's inbox, Monday starts with reconciliation instead of management."
+2026-06-08_07-30_mon-02,2026-06-08 07:30,2026-06-08T11:30:00.000Z,America/New_York,linkedin,GrantPipe company page,post,,"{""__type"":""linkedin-page"",""post_as_images_carousel"":false}",P3,C,m,none,,how-to-reconcile-donor-crm-with-restricted-grant-funds.md,donor CRM to general ledger reconciliation,passed,passed,content/social/linkedin/2026-W24/2026-06-08_07-30_mon-02.txt,"The donor CRM and the grant ledger can describe the same funder in different languages.
+
+Development sees Foundation X as a relationship, proposal, award letter, and pledge.
+
+Finance sees a receipt, restriction, fund code, release schedule, and reporting obligation.
+
+Neither view is wrong.
+
+The risk starts when they do not meet.
+
+A monthly reconciliation should match:
+
+- funder name
+- award amount
+- cash received to date
+- restriction classification
+- grant status
+- source document
+
+The source document matters most. If the grant agreement says restricted, the CRM tag should not say unrestricted general support."
+2026-06-08_08-15_mon-03,2026-06-08 08:15,2026-06-08T12:15:00.000Z,America/New_York,linkedin,GrantPipe company page,post,,"{""__type"":""linkedin-page"",""post_as_images_carousel"":false}",P5,K,s,none,,nonprofit-board-grant-reporting-dashboard.md; how-to-present-grant-financials-at-a-board-meeting.md,Executive Director board prep question,passed,passed,content/social/linkedin/2026-W24/2026-06-08_08-15_mon-03.txt,"Board week gets easier when the grant page answers the board's real question:
+
+Are we on track, and where do we need to pay attention?
+
+That means active award amount, percent spent, percent of time elapsed, restricted balance, next report due, and any open compliance issue.
+
+Not every transaction."
+2026-06-08_09-00_mon-04,2026-06-08 09:00,2026-06-08T13:00:00.000Z,America/New_York,linkedin,GrantPipe company page,post,,"{""__type"":""linkedin-page"",""post_as_images_carousel"":false}",P7,C,m,lead_magnet,https://grantpipe.com/resources/audit-prep-week-by-week-checklist,nonprofit-audit-evidence-binder.md; writer-brief,lead magnet teaser,passed,passed,content/social/linkedin/2026-W24/2026-06-08_09-00_mon-04.txt,"Audit prep should not start with a shared drive search.
+
+The useful binder starts with the PBC list, then maps every request to a named file, owner, and source record.
+
+The GrantPipe Audit Prep Week-by-Week Checklist breaks the work into a calmer sequence:
+
+- 90 days before fieldwork
+- 60 days before fieldwork
+- 30 days before fieldwork
+- fieldwork week
+
+Free download, no email required: grantpipe.com/resources/audit-prep-week-by-week-checklist."
+2026-06-08_09-45_mon-05,2026-06-08 09:45,2026-06-08T13:45:00.000Z,America/New_York,linkedin,GrantPipe company page,post,,"{""__type"":""linkedin-page"",""post_as_images_carousel"":false}",P1,N,m,none,,nonprofit-audit-evidence-binder.md,audit binder checklist,passed,passed,content/social/linkedin/2026-W24/2026-06-08_09-45_mon-05.txt,"Six things that belong in the grant audit binder before fieldwork starts:
+
+1. Notice of award and amendments
+2. Grant ledger report
+3. SF-425 or funder financial reports already submitted
+4. Budget vs. actual summary
+5. Time and effort records for grant-funded staff
+6. Procurement records for major purchases
+
+That list is not glamorous. It is the difference between ""here is the support"" and ""we think that file is in a folder somewhere.""
+
+The binder is not a performance.
+
+It is a map from every claim in the grant file to the document that supports it."
+2026-06-08_10-30_mon-06,2026-06-08 10:30,2026-06-08T14:30:00.000Z,America/New_York,linkedin,GrantPipe company page,post,,"{""__type"":""linkedin-page"",""post_as_images_carousel"":false}",P4,D,m,none,,sf-425-federal-financial-report.md,SF-425 cash drawn vs general ledger quick check,passed,passed,content/social/linkedin/2026-W24/2026-06-08_10-30_mon-06.txt,"SF-425 line 10e deserves more respect than it gets.
+
+That line is the federal share of expenditures. On a final SF-425, it is cumulative from the start of the award through the end of the period of performance.
+
+Before submission, compare it to the grant-specific general ledger.
+
+If the form and the ledger do not match, do not explain it later.
+
+Find the variance before the report goes out.
+
+That is the cleaner audit trail."
+2026-06-08_11-15_mon-07,2026-06-08 11:15,2026-06-08T15:15:00.000Z,America/New_York,linkedin,GrantPipe company page,post,,"{""__type"":""linkedin-page"",""post_as_images_carousel"":false}",P2,D,m,none,,fasb-asc-958-nonprofit-reporting.md,restricted fund definition,passed,passed,content/social/linkedin/2026-W24/2026-06-08_11-15_mon-07.txt,"Release from restriction is not new revenue.
+
+Under FASB ASC 958, a release moves donor-restricted net assets into without-donor-restrictions when the purpose or time restriction has been met.
+
+That distinction matters in board reporting.
+
+A $100,000 grant can be real, restricted, and unavailable for general operations at the same time.
+
+The schedule should show what was received, what remains restricted, what was released, and what condition triggered the release."
+2026-06-08_12-00_mon-08,2026-06-08 12:00,2026-06-08T16:00:00.000Z,America/New_York,linkedin,GrantPipe company page,post,,"{""__type"":""linkedin-page"",""post_as_images_carousel"":false}",P3,C,m,none,,product-context; .agents/product-marketing-context.md,donor plus grant unification,passed,passed,content/social/linkedin/2026-W24/2026-06-08_12-00_mon-08.txt,"""One record"" is not the same as ""one login.""
+
+A team can buy five tools with single sign-on and still have five competing versions of the grant story.
+
+The harder question is data shape:
+
+Does the award connect to the fund?
+
+Does the fund connect to spend-down?
+
+Does spend-down connect to the report?
+
+Does the report connect to evidence?
+
+That is the operating problem GrantPipe is built around."
+2026-06-08_12-45_mon-09,2026-06-08 12:45,2026-06-08T16:45:00.000Z,America/New_York,linkedin,GrantPipe company page,post,,"{""__type"":""linkedin-page"",""post_as_images_carousel"":false}",P1,C,m,none,,allowable-costs-federal-grants.md; uniform-guidance-2-cfr-200-practical-guide.md,source-heavy compliance post,passed,passed,content/social/linkedin/2026-W24/2026-06-08_12-45_mon-09.txt,"Allowable is not enough.
+
+For a federal grant cost to survive 2 CFR 200 review, it also has to be allocable, reasonable, consistently treated, and adequately documented.
+
+The allocable part is where messy work hides.
+
+If rent, payroll, software, or supplies benefit multiple programs, the split needs a documented basis.
+
+Convenience is not a cost allocation method.
+
+Time worked, square footage, headcount, or another reasonable basis is much easier to defend."
+2026-06-08_13-30_mon-10,2026-06-08 13:30,2026-06-08T17:30:00.000Z,America/New_York,linkedin,GrantPipe company page,post,,"{""__type"":""linkedin-page"",""post_as_images_carousel"":false}",P5,K,m,none,,nonprofit-board-grant-reporting-dashboard.md; how-to-present-grant-financials-at-a-board-meeting.md,Executive Director board prep question,passed,passed,content/social/linkedin/2026-W24/2026-06-08_13-30_mon-10.txt,"Executive Directors do not need a 30-row transaction dump in the board packet.
+
+They need the grant portfolio view:
+
+- active awards
+- restricted balances
+- budget spent vs. time elapsed
+- next reporting dates
+- open compliance concerns
+- renewals or gaps in the next 12 months
+
+The board can govern from that.
+
+Staff can keep the transaction detail where it belongs."
+2026-06-08_14-30_mon-11,2026-06-08 14:30,2026-06-08T18:30:00.000Z,America/New_York,linkedin,GrantPipe company page,post,,"{""__type"":""linkedin-page"",""post_as_images_carousel"":false}",P7,D,m,lead_magnet,https://grantpipe.com/resources/donor-to-grant-reconciliation-template,how-to-reconcile-donor-crm-with-restricted-grant-funds.md,lead magnet teaser,passed,passed,content/social/linkedin/2026-W24/2026-06-08_14-30_mon-11.txt,"Donor-to-grant reconciliation is boring until the numbers disagree in public.
+
+The template should answer:
+
+- What did Development enter?
+- What did Finance record?
+- What does the award document say?
+- Is the amount pledged, awarded, received, or released?
+- Who changed the record after review?
+
+GrantPipe has a Donor-to-Grant Reconciliation Template for teams cleaning up CRM, fund, and grant records before board or audit season.
+
+Free download, no email required: grantpipe.com/resources/donor-to-grant-reconciliation-template."
+2026-06-08_15-30_mon-12,2026-06-08 15:30,2026-06-08T19:30:00.000Z,America/New_York,linkedin,GrantPipe company page,post,,"{""__type"":""linkedin-page"",""post_as_images_carousel"":false}",P3,S,s,none,,how-to-reconcile-donor-crm-with-restricted-grant-funds.md,donor CRM to general ledger reconciliation,passed,passed,content/social/linkedin/2026-W24/2026-06-08_15-30_mon-12.txt,"The phrase ""the CRM says $75,000, but the ledger says $50,000"" is not a finance argument.
+
+It is a timing question.
+
+Award amount, pledged amount, and received-to-date amount are different fields.
+
+When they share one field, the reconciliation meeting becomes detective work."
+2026-06-08_16-30_mon-13,2026-06-08 16:30,2026-06-08T20:30:00.000Z,America/New_York,linkedin,GrantPipe company page,post,,"{""__type"":""linkedin-page"",""post_as_images_carousel"":false}",P6,F,m,none,,.agents/product-marketing-context.md; docs/social/linkedin/WRITER-BRIEF.md,build-in-public product decision,passed,passed,content/social/linkedin/2026-W24/2026-06-08_16-30_mon-13.txt,"We model grants and funds as separate records in GrantPipe.
+
+That choice is slower to build, but it matches the work.
+
+One grant can fund several restricted funds.
+
+One fund can support work tied to several awards.
+
+A donor restriction can outlive a reporting deadline.
+
+An award can close while the financial statement still needs the right restriction history.
+
+For grant-funded nonprofits, flattening that into one ""grant"" object makes the early screen simpler and the later audit trail worse."
+2026-06-08_18-30_mon-14,2026-06-08 18:30,2026-06-08T22:30:00.000Z,America/New_York,linkedin,GrantPipe company page,post,,"{""__type"":""linkedin-page"",""post_as_images_carousel"":false}",P4,C,m,none,,.agents/product-marketing.md; .agents/product-marketing-context.md,federal grant mechanics,passed,passed,content/social/linkedin/2026-W24/2026-06-08_18-30_mon-14.txt,"Grants.gov search is only the front door.
+
+For federal awards, the harder operating work starts after the opportunity becomes an award:
+
+- UEI and SAM.gov details
+- period of performance
+- ALN or FAIN
+- reporting cadence
+- indirect cost basis
+- pass-through or direct award status
+- closeout deadline
+
+GrantPipe includes Grants.gov federal opportunity search.
+
+The post-award record is where the compliance work has to hold together."
+2026-06-08_20-30_mon-15,2026-06-08 20:30,2026-06-09T00:30:00.000Z,America/New_York,linkedin,GrantPipe company page,post,,"{""__type"":""linkedin-page"",""post_as_images_carousel"":false}",P1,Q,s,none,,nonprofit-audit-evidence-binder.md,quick check artifact post,passed,passed,content/social/linkedin/2026-W24/2026-06-08_20-30_mon-15.txt,"Before you close Monday:
+
+Pick one active award and open the evidence folder.
+
+Can someone outside the grant team find the award letter, current budget, last financial report, last program report, and support for the largest expense?
+
+If not, the issue is not the folder.
+
+The issue is that the evidence trail depends on memory."
+2026-06-09_06-45_tue-01,2026-06-09 06:45,2026-06-09T10:45:00.000Z,America/New_York,linkedin,GrantPipe company page,post,,"{""__type"":""linkedin-page"",""post_as_images_carousel"":false}",P1,D,m,none,,match-tracking-cash-vs-in-kind.md; 2 CFR 200.306,matching funds sourced post,passed,passed,content/social/linkedin/2026-W24/2026-06-09_06-45_tue-01.txt,"Match tracking fails quietly.
+
+The grant can look healthy on spend-down while the required recipient share is behind.
+
+For every match requirement, keep a separate ledger:
+
+- cash match
+- in-kind match
+- valuation basis
+- source document
+- grant period date
+- already claimed elsewhere: yes or no
+
+That last line matters. Under 2 CFR 200.306, the same match cannot satisfy two federal awards."
+2026-06-09_07-30_tue-02,2026-06-09 07:30,2026-06-09T11:30:00.000Z,America/New_York,linkedin,GrantPipe company page,post,,"{""__type"":""linkedin-page"",""post_as_images_carousel"":false}",P2,D,s,none,,fasb-asc-958-nonprofit-reporting.md,restricted fund definition,passed,passed,content/social/linkedin/2026-W24/2026-06-09_07-30_tue-02.txt,"Donor-restricted is not the same as board-designated.
+
+Under ASC 958, donor restrictions come from outside the organization. The board can designate funds internally, but it can also change that designation later.
+
+That difference should show up in the schedule.
+
+If the board packet merges both into ""restricted,"" the cash picture gets muddy fast."
+2026-06-09_08-15_tue-03,2026-06-09 08:15,2026-06-09T12:15:00.000Z,America/New_York,linkedin,GrantPipe company page,post,,"{""__type"":""linkedin-page"",""post_as_images_carousel"":false}",P1,K,m,none,,match-tracking-cash-vs-in-kind.md,matching funds sourced post,passed,passed,content/social/linkedin/2026-W24/2026-06-09_08-15_tue-03.txt,"If a match file has volunteer time in it, check the dates first.
+
+Contemporaneous logs are the point.
+
+A year-end summary that says ""volunteers contributed 400 hours"" is not the same as signed records showing who worked, when, for how long, and on what activity.
+
+The cleaner standard:
+
+Log the time when the work happens.
+
+Document the rate basis when the value is assigned.
+
+Tie both to one award."
+2026-06-09_09-00_tue-04,2026-06-09 09:00,2026-06-09T13:00:00.000Z,America/New_York,linkedin,GrantPipe company page,post,,"{""__type"":""linkedin-page"",""post_as_images_carousel"":false}",P2,D,m,none,,fasb-asc-958-nonprofit-reporting.md; restricted-fund-month-end-close-checklist.md,restricted fund schedule,passed,passed,content/social/linkedin/2026-W24/2026-06-09_09-00_tue-04.txt,"The restricted fund schedule should be readable by someone who was not in the close meeting.
+
+For each fund:
+
+- opening restricted balance
+- new restricted gifts or grants
+- releases from restriction
+- ending restricted balance
+- restriction purpose
+- source document
+
+If the schedule needs oral history to explain it, it is not ready for board or audit use."
+2026-06-09_09-45_tue-05,2026-06-09 09:45,2026-06-09T13:45:00.000Z,America/New_York,linkedin,GrantPipe company page,post,,"{""__type"":""linkedin-page"",""post_as_images_carousel"":false}",P1,N,m,none,,match-tracking-cash-vs-in-kind.md,matching funds sourced post,passed,passed,content/social/linkedin/2026-W24/2026-06-09_09-45_tue-05.txt,"Five match documents I would want before closeout:
+
+1. The award term that creates the match requirement
+2. Cash match ledger by date and source
+3. In-kind logs signed by the contributor
+4. Valuation support for donated services, space, or goods
+5. A note showing the match was not claimed on another federal award
+
+The uncomfortable part is that none of this is difficult.
+
+It just has to exist before closeout pressure starts."
+2026-06-09_10-30_tue-06,2026-06-09 10:30,2026-06-09T14:30:00.000Z,America/New_York,linkedin,GrantPipe company page,post,,"{""__type"":""linkedin-page"",""post_as_images_carousel"":false}",P4,D,m,none,,ffata-subaward-reporting-over-25k.md; 2 CFR Part 170; 2 CFR 200.332,source-heavy federal post,passed,passed,content/social/linkedin/2026-W24/2026-06-09_10-30_tue-06.txt,"FFATA reporting is easy to miss because it sits beside, not inside, the usual monitoring routine.
+
+If you are the prime recipient and obligate a federal subaward of $25,000 or more, the report is due through SAM.gov by the end of the month after obligation.
+
+The record needs the FAIN, subrecipient UEI, obligation amount, place of performance, and other required fields.
+
+That is separate from 2 CFR 200.332 monitoring.
+
+Same subaward. Different obligation."
+2026-06-09_11-15_tue-07,2026-06-09 11:15,2026-06-09T15:15:00.000Z,America/New_York,linkedin,GrantPipe company page,post,,"{""__type"":""linkedin-page"",""post_as_images_carousel"":false}",P5,C,m,none,,nonprofit-board-grant-reporting-dashboard.md,Executive Director board prep question,passed,passed,content/social/linkedin/2026-W24/2026-06-09_11-15_tue-07.txt,"A board grant dashboard should not look like a funder report.
+
+The board is not approving every invoice.
+
+It needs to see exposure, pacing, restriction, and risk:
+
+- how much is active
+- how much is restricted
+- what is behind plan
+- what report is near due
+- what needs leadership attention
+
+That is enough to govern without asking staff to perform a spreadsheet tour."
+2026-06-09_12-00_tue-08,2026-06-09 12:00,2026-06-09T16:00:00.000Z,America/New_York,linkedin,GrantPipe company page,post,,"{""__type"":""linkedin-page"",""post_as_images_carousel"":false}",P3,L,m,none,,how-to-reconcile-donor-crm-with-restricted-grant-funds.md; .agents/product-marketing-context.md,donor plus grant unification,passed,passed,content/social/linkedin/2026-W24/2026-06-09_12-00_tue-08.txt,"Your CRM may know the funder relationship.
+
+Your accounting system may know the cash.
+
+Your shared drive may know the award letter.
+
+Your spreadsheet may know the report due date.
+
+The reconciliation burden is created by the gaps between those records.
+
+GrantPipe's bet is simple: donor records, grants, restricted funds, evidence, and reporting should be connected from the start."
+2026-06-09_12-45_tue-09,2026-06-09 12:45,2026-06-09T16:45:00.000Z,America/New_York,linkedin,GrantPipe company page,post,,"{""__type"":""linkedin-page"",""post_as_images_carousel"":false}",P7,N,m,lead_magnet,https://grantpipe.com/free/grant-compliance-checklist,match-tracking-cash-vs-in-kind.md; writer-brief,lead magnet teaser,passed,passed,content/social/linkedin/2026-W24/2026-06-09_12-45_tue-09.txt,"Grant match has two traps:
+
+The first is cash flow. Can the organization actually supply the required share during the grant period?
+
+The second is proof. Can it show the cash, in-kind value, date, rate basis, and award assignment later?
+
+The Grant Compliance Checklist includes a match documentation section for federal awards.
+
+Free download, no email required: grantpipe.com/free/grant-compliance-checklist."
+2026-06-09_13-30_tue-10,2026-06-09 13:30,2026-06-09T17:30:00.000Z,America/New_York,linkedin,GrantPipe company page,post,,"{""__type"":""linkedin-page"",""post_as_images_carousel"":false}",P6,F,m,none,,docs/social/linkedin/WRITER-BRIEF.md; .agents/product-marketing-context.md,build-in-public product decision,passed,passed,content/social/linkedin/2026-W24/2026-06-09_13-30_tue-10.txt,"We put public pricing on GrantPipe because grant-funded nonprofits should not need a sales call to learn whether the tool is financially possible.
+
+That is a product decision and a trust decision.
+
+The buyer still has hard work to do:
+
+- clean imports
+- restriction review
+- grant setup
+- report calendar cleanup
+
+But the price should not be hidden behind a demo gate."
+2026-06-09_14-30_tue-11,2026-06-09 14:30,2026-06-09T18:30:00.000Z,America/New_York,linkedin,GrantPipe company page,post,,"{""__type"":""linkedin-page"",""post_as_images_carousel"":false}",P3,S,s,none,,how-to-reconcile-donor-crm-with-restricted-grant-funds.md; fasb-asc-958-nonprofit-reporting.md,donor CRM to general ledger reconciliation,passed,passed,content/social/linkedin/2026-W24/2026-06-09_14-30_tue-11.txt,"The donor record can say ""general support"" while the award letter says ""restricted to youth STEM programming.""
+
+The award letter wins.
+
+That is why Development and Finance need a shared review point before a restricted gift becomes board packet data.
+
+The classification is not clerical.
+
+It changes what the organization can spend, release, and report."
+2026-06-09_15-30_tue-12,2026-06-09 15:30,2026-06-09T19:30:00.000Z,America/New_York,linkedin,GrantPipe company page,post,,"{""__type"":""linkedin-page"",""post_as_images_carousel"":false}",P7,C,m,lead_magnet,https://grantpipe.com/resources/auditor-evidence-checklist,nonprofit-audit-evidence-binder.md; writer-brief,lead magnet teaser,passed,passed,content/social/linkedin/2026-W24/2026-06-09_15-30_tue-12.txt,"If your audit binder is just a folder tree, it is missing the hard part.
+
+The hard part is knowing which document answers which auditor request.
+
+GrantPipe's Auditor Evidence Checklist is built around that mapping:
+
+- request
+- owner
+- source record
+- file name
+- status
+- reviewer note
+
+Free download, no email required: grantpipe.com/resources/auditor-evidence-checklist."
+2026-06-09_16-30_tue-13,2026-06-09 16:30,2026-06-09T20:30:00.000Z,America/New_York,linkedin,GrantPipe company page,post,,"{""__type"":""linkedin-page"",""post_as_images_carousel"":false}",P4,D,s,none,,writer-brief; sefa-preparation-checklist.md,federal grant mechanics,passed,passed,content/social/linkedin/2026-W24/2026-06-09_16-30_tue-13.txt,"ALN replaced CFDA, but old language sticks around.
+
+That sounds small until a federal award appears one way in the grant file, another way in the SEFA workpaper, and a third way in the board packet.
+
+Pick the identifier format the award uses now.
+
+Keep the legacy reference if it helps.
+
+Do not let identifiers become another reconciliation project."
+2026-06-09_18-30_tue-14,2026-06-09 18:30,2026-06-09T22:30:00.000Z,America/New_York,linkedin,GrantPipe company page,post,,"{""__type"":""linkedin-page"",""post_as_images_carousel"":false}",P5,Q,s,none,,how-to-present-grant-financials-at-a-board-meeting.md,Executive Director board prep question,passed,passed,content/social/linkedin/2026-W24/2026-06-09_18-30_tue-14.txt,"Before the board meeting, ask one plain question:
+
+Which grant would create the most trouble if a report, renewal, or spend-down issue landed this week?
+
+That is the grant that belongs in the narrative section.
+
+The rest can stay in the table unless it needs a decision."
+2026-06-09_20-30_tue-15,2026-06-09 20:30,2026-06-10T00:30:00.000Z,America/New_York,linkedin,GrantPipe company page,post,,"{""__type"":""linkedin-page"",""post_as_images_carousel"":false}",P7,S,s,none,,match-tracking-cash-vs-in-kind.md,experiment,passed,passed,content/social/linkedin/2026-W24/2026-06-09_20-30_tue-15.txt,"Picture this:
+
+An in-kind match file has signed volunteer logs, but no rate basis.
+
+The hours happened.
+
+The work mattered.
+
+The value is still hard to defend.
+
+For donated services, space, supplies, or equipment, the file needs the valuation support at the time the contribution is recorded."
+2026-06-10_06-45_wed-01,2026-06-10 06:45,2026-06-10T10:45:00.000Z,America/New_York,linkedin,GrantPipe company page,post,,"{""__type"":""linkedin-page"",""post_as_images_carousel"":false}",P7,L,m,lead_magnet,https://grantpipe.com/resources/restricted-fund-month-end-close-checklist,restricted-fund-month-end-close-checklist.md; fasb-asc-958-nonprofit-reporting.md,lead magnet teaser,passed,passed,content/social/linkedin/2026-W24/2026-06-10_06-45_wed-01.txt,"Restricted fund cleanup is easier when the month-end checklist is specific.
+
+The useful version asks:
+
+- Which restricted balances changed?
+- Which releases were recorded?
+- Which award documents support the restriction?
+- Which balances need board explanation?
+
+GrantPipe's Restricted Fund Month-End Close Checklist gives the review a simple shape.
+
+Free download, no email required: grantpipe.com/resources/restricted-fund-month-end-close-checklist."
+2026-06-10_07-30_wed-02,2026-06-10 07:30,2026-06-10T11:30:00.000Z,America/New_York,linkedin,GrantPipe company page,post,,"{""__type"":""linkedin-page"",""post_as_images_carousel"":false}",P1,C,s,none,,sf-425-federal-financial-report.md,SF-425 cash drawn vs general ledger quick check,passed,passed,content/social/linkedin/2026-W24/2026-06-10_07-30_wed-02.txt,"An SF-425 should come from the ledger.
+
+Not from last quarter's form.
+
+Not from a guessed spend-down percentage.
+
+Not from the number that feels close enough.
+
+Run the grant-specific report, check cumulative federal expenditures, compare cash drawn, then submit.
+
+If Box 10e and the grant ledger disagree, the report is not ready."
+2026-06-10_08-15_wed-03,2026-06-10 08:15,2026-06-10T12:15:00.000Z,America/New_York,linkedin,GrantPipe company page,post,,"{""__type"":""linkedin-page"",""post_as_images_carousel"":false}",P2,D,s,none,,fasb-asc-958-nonprofit-reporting.md; restricted-fund-month-end-close-checklist.md,restricted fund schedule,passed,passed,content/social/linkedin/2026-W24/2026-06-10_08-15_wed-03.txt,"The cleanest restricted fund schedule has a boring shape:
+
+Opening balance.
+
+New restricted revenue.
+
+Releases.
+
+Ending balance.
+
+Source document.
+
+Restriction type.
+
+That boring shape is a gift to the Executive Director, the board treasurer, and the auditor reading your internal shorthand for the first time."
+2026-06-10_09-00_wed-04,2026-06-10 09:00,2026-06-10T13:00:00.000Z,America/New_York,linkedin,GrantPipe company page,post,,"{""__type"":""linkedin-page"",""post_as_images_carousel"":false}",P4,C,m,none,,.agents/product-marketing.md; .agents/product-marketing-context.md,federal grant mechanics,passed,passed,content/social/linkedin/2026-W24/2026-06-10_09-00_wed-04.txt,"Federal opportunity search is not the same as federal grant management.
+
+Search helps you find the NOFO.
+
+Management starts when the award creates:
+
+- a period of performance
+- approved budget
+- reporting cadence
+- payment method
+- indirect cost rule
+- closeout deadline
+
+GrantPipe includes Grants.gov federal opportunity search.
+
+It also treats post-award records as first-class work."
+2026-06-10_09-45_wed-05,2026-06-10 09:45,2026-06-10T13:45:00.000Z,America/New_York,linkedin,GrantPipe company page,post,,"{""__type"":""linkedin-page"",""post_as_images_carousel"":false}",P3,N,m,none,,.agents/product-marketing-context.md; nonprofit-audit-evidence-binder.md,artifact checklist,passed,passed,content/social/linkedin/2026-W24/2026-06-10_09-45_wed-05.txt,"Four records I want connected before a grant becomes active:
+
+1. The award record
+2. The restricted fund record
+3. The reporting calendar
+4. The evidence folder
+
+That is the minimum operating map.
+
+The award tells you what was promised.
+
+The fund tells you what can be spent.
+
+The calendar tells you when the funder expects an answer.
+
+The evidence folder proves the answer."
+2026-06-10_10-30_wed-06,2026-06-10 10:30,2026-06-10T14:30:00.000Z,America/New_York,linkedin,GrantPipe company page,post,,"{""__type"":""linkedin-page"",""post_as_images_carousel"":false}",P4,D,m,none,,grant-draw-down-vs-reimbursement.md; 2 CFR 200.305,source-heavy federal post,passed,passed,content/social/linkedin/2026-W24/2026-06-10_10-30_wed-06.txt,"Cost reimbursement creates a cash timing problem.
+
+The organization spends first, documents the expense, submits the request, then waits for payment.
+
+Advance drawdowns are different. Under 2 CFR 200.305, federal cash advances are tied to immediate need, and excess cash creates interest obligations.
+
+That means the grant file should track more than spend-down.
+
+It should also track request dates, payment dates, and aging reimbursement status."
+2026-06-10_11-15_wed-07,2026-06-10 11:15,2026-06-10T15:15:00.000Z,America/New_York,linkedin,GrantPipe company page,post,,"{""__type"":""linkedin-page"",""post_as_images_carousel"":false}",P5,D,m,none,,nonprofit-board-grant-reporting-dashboard.md; how-to-present-grant-financials-at-a-board-meeting.md,Executive Director board prep question,passed,passed,content/social/linkedin/2026-W24/2026-06-10_11-15_wed-07.txt,"Board reporting gets sharper when every grant has a status flag.
+
+Not a mood. A defined flag.
+
+On track: spend and time are aligned.
+
+Needs attention: pacing, documentation, or renewal risk needs leadership review.
+
+Compliance issue: a missed report, finding, late submission, or unresolved funder request exists.
+
+The definitions matter more than the colors."
+2026-06-10_12-00_wed-08,2026-06-10 12:00,2026-06-10T16:00:00.000Z,America/New_York,linkedin,GrantPipe company page,post,,"{""__type"":""linkedin-page"",""post_as_images_carousel"":false}",P6,F,m,none,,.agents/product-marketing-context.md; docs/social/linkedin/WRITER-BRIEF.md,build-in-public product decision,passed,passed,content/social/linkedin/2026-W24/2026-06-10_12-00_wed-08.txt,"We built GrantPipe around a many-to-many relationship between grants and funds.
+
+That is not a database flourish.
+
+It is how the work behaves.
+
+One program can be funded by a federal award, a foundation grant, and donor-restricted gifts.
+
+One grant can support several funds or cost centers.
+
+If the model cannot express that, the spreadsheet comes back."
+2026-06-10_12-45_wed-09,2026-06-10 12:45,2026-06-10T16:45:00.000Z,America/New_York,linkedin,GrantPipe company page,post,,"{""__type"":""linkedin-page"",""post_as_images_carousel"":false}",P7,L,m,lead_magnet,https://grantpipe.com/resources/grant-closeout-checklist,grant-closeout-checklist.md; writer-brief,lead magnet teaser,passed,passed,content/social/linkedin/2026-W24/2026-06-10_12-45_wed-09.txt,"Grant closeout is easier when the file already knows what closeout requires.
+
+Final financial report.
+
+Final program report.
+
+Final draw or reimbursement request.
+
+Equipment disposition notes if applicable.
+
+Unspent balance decision.
+
+Record retention date.
+
+The Grant Closeout Checklist puts those items in one review path.
+
+Free download, no email required: grantpipe.com/resources/grant-closeout-checklist."
+2026-06-10_13-30_wed-10,2026-06-10 13:30,2026-06-10T17:30:00.000Z,America/New_York,linkedin,GrantPipe company page,post,,"{""__type"":""linkedin-page"",""post_as_images_carousel"":false}",P5,C,m,none,,grant-renewal-strategy-guide.md; how-to-present-grant-financials-at-a-board-meeting.md,ICP work life,passed,passed,content/social/linkedin/2026-W24/2026-06-10_13-30_wed-10.txt,"The development calendar and the compliance calendar should talk to each other.
+
+A renewal deadline is not just a fundraising task.
+
+It may depend on whether the last report was accepted, whether spending is on pace, whether match is current, and whether evidence is clean.
+
+That is why grant operations cannot live only in the donor CRM."
+2026-06-10_14-30_wed-11,2026-06-10 14:30,2026-06-10T18:30:00.000Z,America/New_York,linkedin,GrantPipe company page,post,,"{""__type"":""linkedin-page"",""post_as_images_carousel"":false}",P7,D,m,lead_magnet,https://grantpipe.com/resources/award-setup-worksheet,writer-brief; grant-award-acceptance-checklist.md,lead magnet teaser,passed,passed,content/social/linkedin/2026-W24/2026-06-10_14-30_wed-11.txt,"The Award Setup Worksheet is for the moment right after ""we got the grant.""
+
+That is when the record should capture:
+
+- funder
+- award amount
+- restriction
+- period of performance
+- budget categories
+- reporting cadence
+- payment method
+- evidence owner
+
+Free download, no email required: grantpipe.com/resources/award-setup-worksheet."
+2026-06-10_15-30_wed-12,2026-06-10 15:30,2026-06-10T19:30:00.000Z,America/New_York,linkedin,GrantPipe company page,post,,"{""__type"":""linkedin-page"",""post_as_images_carousel"":false}",P3,D,m,none,,docs/social/linkedin/WRITER-BRIEF.md; .agents/product-marketing-context.md,access controls and nonprofit data security,passed,passed,content/social/linkedin/2026-W24/2026-06-10_15-30_wed-12.txt,"Access controls are part of grant operations.
+
+An auditor or funder reviewer may need grant, fund, document, compliance, accounting, and report access.
+
+They do not need donor records, billing, team settings, or admin controls.
+
+That is why GrantPipe's reviewer access is intentionally scoped.
+
+Read-only should mean read-only in the right part of the system."
+2026-06-10_16-30_wed-13,2026-06-10 16:30,2026-06-10T20:30:00.000Z,America/New_York,linkedin,GrantPipe company page,post,,"{""__type"":""linkedin-page"",""post_as_images_carousel"":false}",P6,F,m,none,,.agents/product-marketing-context.md; docs/social/linkedin/WRITER-BRIEF.md,build-in-public product decision,passed,passed,content/social/linkedin/2026-W24/2026-06-10_16-30_wed-13.txt,"I do not want GrantPipe copy to pretend the company has ten years of nonprofit operator history.
+
+It does not.
+
+The honest claim is narrower:
+
+We are building from the workflow shape, the reporting requirements, the accounting standards, and the product decisions we can defend.
+
+That means public pricing, no setup fee, no borrowed credibility, and a trial that has to stand on its own."
+2026-06-10_18-30_wed-14,2026-06-10 18:30,2026-06-10T22:30:00.000Z,America/New_York,linkedin,GrantPipe company page,post,,"{""__type"":""linkedin-page"",""post_as_images_carousel"":false}",P1,D,m,none,,sefa-preparation-checklist.md; uniform-guidance-2-cfr-200-practical-guide.md,SEFA artifact post,passed,passed,content/social/linkedin/2026-W24/2026-06-10_18-30_wed-14.txt,"The SEFA is not just an audit schedule.
+
+It is a test of whether federal award data has been maintained all year:
+
+- federal agency
+- pass-through entity, if any
+- ALN
+- FAIN or award number
+- federal expenditures
+- subrecipient amounts
+
+If that data has to be rebuilt at audit time, the audit is now doing the job the operating system should have done earlier."
+2026-06-10_20-30_wed-15,2026-06-10 20:30,2026-06-11T00:30:00.000Z,America/New_York,linkedin,GrantPipe company page,post,,"{""__type"":""linkedin-page"",""post_as_images_carousel"":false}",P1,Q,s,none,,nonprofit-audit-evidence-binder.md; .agents/product-marketing-context.md,quick check artifact post,passed,passed,content/social/linkedin/2026-W24/2026-06-10_20-30_wed-15.txt,"Wednesday night check:
+
+Open one active grant and ask whether a new staff member could understand it in 10 minutes.
+
+They should see the award, fund, budget, deadline calendar, last report, and evidence status without asking who ""owns the spreadsheet.""
+
+That is the bar."
+2026-06-11_06-45_thu-01,2026-06-11 06:45,2026-06-11T10:45:00.000Z,America/New_York,linkedin,GrantPipe company page,post,,"{""__type"":""linkedin-page"",""post_as_images_carousel"":false}",P1,Q,s,none,,federal-grant-reporting-requirements.md,specific compliance artifact,passed,passed,content/social/linkedin/2026-W24/2026-06-11_06-45_thu-01.txt,"Quick check: can your SF-425 cash drawn number tie to the general ledger without a side spreadsheet?
+
+Start with cash received. Then cumulative expenditures. Then unliquidated obligations.
+
+If those three numbers need three different owners to explain them, the report is already carrying reconciliation risk."
+2026-06-11_07-30_thu-02,2026-06-11 07:30,2026-06-11T11:30:00.000Z,America/New_York,linkedin,GrantPipe company page,post,,"{""__type"":""linkedin-page"",""post_as_images_carousel"":false}",P5,K,s,none,,how-to-build-a-grant-spend-down-report.md,ICP operating utility,passed,passed,content/social/linkedin/2026-W24/2026-06-11_07-30_thu-02.txt,"For the Executive Director asking for spend-down status before a funder call:
+
+The answer should not be ""Finance is pulling it.""
+
+The answer should be a short sentence:
+
+""The Clinic Capacity grant is 61% spent, personnel is behind plan, supplies are on track, and the next report is due July 30.""
+
+That is an operating answer. It tells you the number, the risk, and the next deadline in one breath."
+2026-06-11_08-15_thu-03,2026-06-11 08:15,2026-06-11T12:15:00.000Z,America/New_York,linkedin,GrantPipe company page,post,,"{""__type"":""linkedin-page"",""post_as_images_carousel"":false}",P3,C,s,none,,product-context; grant-compliance-101-for-nonprofits.md,donor CRM to GL reconciliation,passed,passed,content/social/linkedin/2026-W24/2026-06-11_08-15_thu-03.txt,"Your donor CRM can know the funder contact and still miss the grant.
+
+A grant has a period of performance, approved budget, reporting cadence, allowable cost rules, amendments, and closeout package.
+
+A donor record was not designed to carry that shape.
+
+When the grant is flattened into a gift note, the operating record has to be rebuilt later, right when the report needs numbers."
+2026-06-11_09-00_thu-04,2026-06-11 09:00,2026-06-11T13:00:00.000Z,America/New_York,linkedin,GrantPipe company page,post,,"{""__type"":""linkedin-page"",""post_as_images_carousel"":false}",P2,D,s,none,,restricted-fund-tracking-for-nonprofits.md,restricted fund mechanics,passed,passed,content/social/linkedin/2026-W24/2026-06-11_09-00_thu-04.txt,"Release from restriction: the accounting entry that moves dollars from net assets with donor restrictions to net assets without donor restrictions when the condition is satisfied.
+
+The trigger matters.
+
+For a purpose restriction, show the approved activity happened.
+
+For a time restriction, show the time period passed.
+
+""We are close enough to spent down"" is not a trigger."
+2026-06-11_09-45_thu-05,2026-06-11 09:45,2026-06-11T13:45:00.000Z,America/New_York,linkedin,GrantPipe company page,post,,"{""__type"":""linkedin-page"",""post_as_images_carousel"":false}",P1,L,m,none,,federal-grant-reporting-requirements.md,specific compliance artifact,passed,passed,content/social/linkedin/2026-W24/2026-06-11_09-45_thu-05.txt,"Seven things to have ready when a federal program officer asks for status.
+
+1. Award number and ALN.
+2. Period of performance dates.
+3. Approved budget by line.
+4. Spend-down by line.
+5. Last SF-425 submitted.
+6. Open prior approvals or amendments.
+7. Next performance report due date.
+
+That list is not the audit binder. It is the conversation file.
+
+If it takes half a day to assemble, the grant record is not current enough for normal management."
+2026-06-11_10-30_thu-06,2026-06-11 10:30,2026-06-11T14:30:00.000Z,America/New_York,linkedin,GrantPipe company page,post,,"{""__type"":""linkedin-page"",""post_as_images_carousel"":false}",P4,K,m,none,,2 CFR 200.332; federal-grant-reporting-requirements.md,specific compliance artifact,passed,passed,content/social/linkedin/2026-W24/2026-06-11_10-30_thu-06.txt,"If you receive federal funds through a state agency or another nonprofit, read the subaward agreement before the kickoff meeting.
+
+The pass-through entity has to identify the federal award information, including the Assistance Listing Number, award identification, and applicable compliance requirements.
+
+Your calendar should copy those requirements directly from the agreement.
+
+Do not wait for the first monitoring request to learn what passed through."
+2026-06-11_11-15_thu-07,2026-06-11 11:15,2026-06-11T15:15:00.000Z,America/New_York,linkedin,GrantPipe company page,post,,"{""__type"":""linkedin-page"",""post_as_images_carousel"":false}",P7,L,m,lead_magnet,https://grantpipe.com/free/2-cfr-200-audit-prep-checklist,lead-magnets.ts; how-to-build-a-grant-compliance-program-from-scratch.md,lead-magnet teaser,passed,passed,content/social/linkedin/2026-W24/2026-06-11_11-15_thu-07.txt,"The 2 CFR 200 Audit Prep Checklist is built for the week when ""audit prep"" becomes too vague to be useful.
+
+It walks through a working evidence set for federal awards:
+
+- SEFA support
+- allowable cost documentation
+- procurement files under 2 CFR 200.318
+- time-and-effort records
+- subrecipient monitoring evidence
+- closeout files
+
+Free download: grantpipe.com/free/2-cfr-200-audit-prep-checklist."
+2026-06-11_12-00_thu-08,2026-06-11 12:00,2026-06-11T16:00:00.000Z,America/New_York,linkedin,GrantPipe company page,post,,"{""__type"":""linkedin-page"",""post_as_images_carousel"":false}",P1,D,s,none,,2 CFR 200.430; federal-grant-reporting-requirements.md,specific compliance artifact,passed,passed,content/social/linkedin/2026-W24/2026-06-11_12-00_thu-08.txt,"Time-and-effort records are not payroll decoration.
+
+Under 2 CFR 200.430, salaries charged to federal awards need records that reflect the actual work performed.
+
+A payroll register proves someone was paid.
+
+It does not prove which grant paid for which share of their time.
+
+That second proof is where a clean-looking file can get thin."
+2026-06-11_12-45_thu-09,2026-06-11 12:45,2026-06-11T16:45:00.000Z,America/New_York,linkedin,GrantPipe company page,post,,"{""__type"":""linkedin-page"",""post_as_images_carousel"":false}",P4,D,m,none,,federal-grant-reporting-requirements.md; product-context,specific compliance artifact,passed,passed,content/social/linkedin/2026-W24/2026-06-11_12-45_thu-09.txt,"Grants.gov is for finding and applying to federal opportunities.
+
+Post-award reporting happens somewhere else.
+
+SF-425s, drawdowns, performance reports, and closeout steps live in agency systems such as PMS, GrantSolutions, IDIS, DRGR, or JustGrants, depending on the award.
+
+That distinction matters when you build a compliance calendar.
+
+""Submitted in Grants.gov"" is not the end of the operating record."
+2026-06-11_13-30_thu-10,2026-06-11 13:30,2026-06-11T17:30:00.000Z,America/New_York,linkedin,GrantPipe company page,post,,"{""__type"":""linkedin-page"",""post_as_images_carousel"":false}",P2,Q,m,none,,how-to-build-a-monthly-grant-reconciliation-routine.md,restricted fund mechanics,passed,passed,content/social/linkedin/2026-W24/2026-06-11_13-30_thu-10.txt,"Restricted balance check:
+
+Award amount received to date minus cumulative allowable expenditures should equal the remaining restricted balance.
+
+If the accounting balance says something different, pause before month close.
+
+The variance may be a miscoded receipt, an expense charged to the wrong fund, or a journal entry that moved dollars without enough support.
+
+Small variances get expensive when they roll forward."
+2026-06-11_14-30_thu-11,2026-06-11 14:30,2026-06-11T18:30:00.000Z,America/New_York,linkedin,GrantPipe company page,post,,"{""__type"":""linkedin-page"",""post_as_images_carousel"":false}",P7,Q,s,lead_magnet,https://grantpipe.com/free/grant-spend-down-tracker,lead-magnets.ts; how-to-build-a-grant-spend-down-report.md,lead-magnet teaser,passed,passed,content/social/linkedin/2026-W24/2026-06-11_14-30_thu-11.txt,"The Grant Spend-Down Tracker is for the question that comes before panic:
+
+""Are we going to spend this grant correctly before the award ends?""
+
+It tracks approved budget, actuals to date, remaining balance, percentage spent, and projected balance at award end.
+
+It is not a pretty budget report. It is an early warning system.
+
+Free download: grantpipe.com/free/grant-spend-down-tracker."
+2026-06-11_15-30_thu-12,2026-06-11 15:30,2026-06-11T19:30:00.000Z,America/New_York,linkedin,GrantPipe company page,post,,"{""__type"":""linkedin-page"",""post_as_images_carousel"":false}",P3,C,m,none,,product-context; board-financial-report-what-to-include.md,donor CRM to GL reconciliation,passed,passed,content/social/linkedin/2026-W24/2026-06-11_15-30_thu-12.txt,"Development and Finance do not need another handoff spreadsheet.
+
+They need fewer moments where the same grant is re-entered.
+
+The funder contact belongs near the donor history.
+
+The award terms belong near the budget.
+
+The restricted fund belongs near the ledger.
+
+The evidence belongs near the report.
+
+When those records are split, the handoff becomes the control. That is too much pressure for email."
+2026-06-11_16-30_thu-13,2026-06-11 16:30,2026-06-11T20:30:00.000Z,America/New_York,linkedin,GrantPipe company page,post,,"{""__type"":""linkedin-page"",""post_as_images_carousel"":false}",P6,F,m,none,,product-context; restricted-fund-tracking-for-nonprofits.md,builder-honest product decision,passed,passed,content/social/linkedin/2026-W24/2026-06-11_16-30_thu-13.txt,"We modeled grants and funds as separate records in GrantPipe.
+
+A grant is an agreement: funder, award amount, period, reports, amendments.
+
+A fund is a pool of restricted dollars: balance, activity, releases, net asset classification.
+
+They overlap, but they are not the same thing.
+
+That choice made the product harder to build. It also prevents a bad shortcut: treating one grant as one fund forever.
+
+Real restricted fund work is many-to-many. The data model has to admit that."
+2026-06-11_18-30_thu-14,2026-06-11 18:30,2026-06-11T22:30:00.000Z,America/New_York,linkedin,GrantPipe company page,post,,"{""__type"":""linkedin-page"",""post_as_images_carousel"":false}",P5,Q,s,none,,board-financial-report-what-to-include.md,ICP operating utility,passed,passed,content/social/linkedin/2026-W24/2026-06-11_18-30_thu-14.txt,"Board packet test:
+
+Can the narrative paragraph about restricted funds tie to the financial statement line without a manual explanation?
+
+The board may not ask for the schedule by fund.
+
+The auditor may ask for it later.
+
+Write the packet so both readers see the same story."
+2026-06-11_20-30_thu-15,2026-06-11 20:30,2026-06-12T00:30:00.000Z,America/New_York,linkedin,GrantPipe company page,post,,"{""__type"":""linkedin-page"",""post_as_images_carousel"":false}",P1,D,s,none,,grant-closeout-procedures.md,specific compliance artifact,passed,passed,content/social/linkedin/2026-W24/2026-06-11_20-30_thu-15.txt,"Closeout starts before the grant ends.
+
+For federal awards, the closeout clock includes final financial reporting, final performance reporting, liquidation of obligations, and record retention.
+
+Waiting until the last week turns closeout into archaeology.
+
+Start with the grant agreement, the final approved budget, and the last spend-down report. Those three files tell you where to look next."
+2026-06-12_06-45_fri-01,2026-06-12 06:45,2026-06-12T10:45:00.000Z,America/New_York,linkedin,GrantPipe company page,post,,"{""__type"":""linkedin-page"",""post_as_images_carousel"":false}",P5,Q,s,none,,strategy.md; writer-brief.md,ICP operating utility,passed,passed,content/social/linkedin/2026-W24/2026-06-12_06-45_fri-01.txt,"Friday close question:
+
+Which grant report due next week would fail if one person were out Monday?
+
+If the answer is ""none,"" good.
+
+If the answer is a name, the risk is not that person. The risk is the missing backup trail."
+2026-06-12_07-30_fri-02,2026-06-12 07:30,2026-06-12T11:30:00.000Z,America/New_York,linkedin,GrantPipe company page,post,,"{""__type"":""linkedin-page"",""post_as_images_carousel"":false}",P3,C,s,none,,product-context; how-to-build-a-monthly-grant-reconciliation-routine.md,donor CRM to GL reconciliation,passed,passed,content/social/linkedin/2026-W24/2026-06-12_07-30_fri-02.txt,"Monthly reports go sideways when the same number has two homes.
+
+Development has the funder-facing story.
+
+Finance has the ledger.
+
+Program has the activity data.
+
+The report needs all three, but the reconciliation should not happen in the final draft.
+
+Put the grant record together before writing. Numbers first, narrative second."
+2026-06-12_08-15_fri-03,2026-06-12 08:15,2026-06-12T12:15:00.000Z,America/New_York,linkedin,GrantPipe company page,post,,"{""__type"":""linkedin-page"",""post_as_images_carousel"":false}",P1,L,s,none,,grant-closeout-procedures.md,specific compliance artifact,passed,passed,content/social/linkedin/2026-W24/2026-06-12_08-15_fri-03.txt,"A clean closeout package answers five questions.
+
+What was awarded?
+
+What changed through amendments?
+
+What was spent, by approved line?
+
+What was delivered?
+
+What evidence supports the spending and the delivery?
+
+If those answers live in separate folders, closeout becomes a search project."
+2026-06-12_09-00_fri-04,2026-06-12 09:00,2026-06-12T13:00:00.000Z,America/New_York,linkedin,GrantPipe company page,post,,"{""__type"":""linkedin-page"",""post_as_images_carousel"":false}",P5,D,s,none,,board-financial-report-what-to-include.md,ICP operating utility,passed,passed,content/social/linkedin/2026-W24/2026-06-12_09-00_fri-04.txt,"Board-safe numbers are boring in the best way.
+
+They reconcile to the general ledger.
+
+They match the restricted fund schedule.
+
+They use the same grant names Finance uses.
+
+They do not change between the ED narrative and the finance appendix.
+
+If the board packet needs a footnote explaining why two totals differ, fix the totals before the meeting."
+2026-06-12_09-45_fri-05,2026-06-12 09:45,2026-06-12T13:45:00.000Z,America/New_York,linkedin,GrantPipe company page,post,,"{""__type"":""linkedin-page"",""post_as_images_carousel"":false}",P1,L,s,none,,how-to-build-a-monthly-grant-reconciliation-routine.md,specific compliance artifact,passed,passed,content/social/linkedin/2026-W24/2026-06-12_09-45_fri-05.txt,"Four checks before you close the month on grant activity.
+
+1. Bank deposits tie to grant receipts in the general ledger.
+2. Grant expenses tie to the correct fund code.
+3. Restricted balances match expected remaining balances.
+4. Drawdowns are supported by posted expenditures.
+
+That sequence is plain. It is also where the audit trail starts.
+
+Do it monthly and year-end gets quieter."
+2026-06-12_10-30_fri-06,2026-06-12 10:30,2026-06-12T14:30:00.000Z,America/New_York,linkedin,GrantPipe company page,post,,"{""__type"":""linkedin-page"",""post_as_images_carousel"":false}",P4,N,s,none,,federal-grant-reporting-requirements.md,specific compliance artifact,passed,passed,content/social/linkedin/2026-W24/2026-06-12_10-30_fri-06.txt,"The SF-425 has two different rhythms.
+
+Quarterly reports are typically due 30 days after the quarter ends.
+
+The final SF-425 is typically due 90 days after the grant period ends.
+
+Do not put only one deadline on the calendar.
+
+The final report is where unliquidated obligations, program income, and closeout documentation all come back for review."
+2026-06-12_11-15_fri-07,2026-06-12 11:15,2026-06-12T15:15:00.000Z,America/New_York,linkedin,GrantPipe company page,post,,"{""__type"":""linkedin-page"",""post_as_images_carousel"":false}",P7,Q,s,lead_magnet,https://grantpipe.com/free/donor-to-grant-reconciliation-template,lead-magnets.ts; how-to-build-a-monthly-grant-reconciliation-routine.md,lead-magnet teaser,passed,passed,content/social/linkedin/2026-W24/2026-06-12_11-15_fri-07.txt,"The Donor-to-Grant Reconciliation Template is for the Friday problem:
+
+The donor CRM says one thing. The general ledger says another. The grant tracker says a third.
+
+The template gives Development and Finance one worksheet for gifts, grants, restrictions, fund codes, and report dates.
+
+It is deliberately unglamorous.
+
+Free download: grantpipe.com/free/donor-to-grant-reconciliation-template."
+2026-06-12_12-00_fri-08,2026-06-12 12:00,2026-06-12T16:00:00.000Z,America/New_York,linkedin,GrantPipe company page,post,,"{""__type"":""linkedin-page"",""post_as_images_carousel"":false}",P3,L,s,none,,product-context; grant-compliance-101-for-nonprofits.md,donor CRM to GL reconciliation,passed,passed,content/social/linkedin/2026-W24/2026-06-12_12-00_fri-08.txt,"If you import a grant into your CRM, do not stop at the funder name and amount.
+
+Minimum fields worth carrying:
+
+- award ID
+- period of performance
+- approved budget version
+- reporting cadence
+- restriction purpose
+- fund code
+- next report owner
+
+That is the difference between a contact note and a working grant record."
+2026-06-12_12-45_fri-09,2026-06-12 12:45,2026-06-12T16:45:00.000Z,America/New_York,linkedin,GrantPipe company page,post,,"{""__type"":""linkedin-page"",""post_as_images_carousel"":false}",P2,D,s,none,,restricted-fund-tracking-for-nonprofits.md,restricted fund mechanics,passed,passed,content/social/linkedin/2026-W24/2026-06-12_12-45_fri-09.txt,"A restricted fund note should say more than ""restricted.""
+
+Useful notes name the restriction:
+
+""Clinic Capacity grant, personnel and equipment only, award period 2026-01-01 to 2026-12-31.""
+
+Even better: attach the source document, budget, and release trigger.
+
+The label tells you to be careful. The evidence tells you what careful means."
+2026-06-12_13-30_fri-10,2026-06-12 13:30,2026-06-12T17:30:00.000Z,America/New_York,linkedin,GrantPipe company page,post,,"{""__type"":""linkedin-page"",""post_as_images_carousel"":false}",P4,D,s,none,,federal-grant-reporting-requirements.md,specific compliance artifact,passed,passed,content/social/linkedin/2026-W24/2026-06-12_13-30_fri-10.txt,"ALN replaced CFDA as the federal assistance listing identifier.
+
+If you receive a pass-through award, the ALN is not trivia. It tells auditors which federal program is behind the money.
+
+Put it on the grant record.
+
+Put it on the SEFA support file.
+
+Put it in the folder name if that is what your team actually searches.
+
+Tiny identifiers save real time during fieldwork."
+2026-06-12_14-30_fri-11,2026-06-12 14:30,2026-06-12T18:30:00.000Z,America/New_York,linkedin,GrantPipe company page,post,,"{""__type"":""linkedin-page"",""post_as_images_carousel"":false}",P5,L,s,none,,board-financial-report-what-to-include.md,ICP operating utility,passed,passed,content/social/linkedin/2026-W24/2026-06-12_14-30_fri-11.txt,"Finance committee packets should carry one grant-specific page.
+
+Not ten tabs.
+
+One page:
+
+- active grants
+- next reporting deadline
+- restricted balance
+- spend-down risk
+- open compliance items
+
+The full board needs the story. The finance committee needs the control surface.
+
+Give them the page that makes questions easier to ask."
+2026-06-12_15-30_fri-12,2026-06-12 15:30,2026-06-12T19:30:00.000Z,America/New_York,linkedin,GrantPipe company page,post,,"{""__type"":""linkedin-page"",""post_as_images_carousel"":false}",P7,L,s,lead_magnet,https://grantpipe.com/free/auditor-evidence-checklist,lead-magnets.ts; what-auditors-ask-for-most-often.md,lead-magnet teaser,passed,passed,content/social/linkedin/2026-W24/2026-06-12_15-30_fri-12.txt,"The Auditor Evidence Checklist is a practical map of what to keep within reach:
+
+- trial balance and general ledger
+- bank reconciliations
+- grant agreements
+- submitted funder reports
+- payroll and time records
+- board minutes
+- policies
+- SEFA support where federal awards apply
+
+Free download: grantpipe.com/free/auditor-evidence-checklist."
+2026-06-12_16-30_fri-13,2026-06-12 16:30,2026-06-12T20:30:00.000Z,America/New_York,linkedin,GrantPipe company page,post,,"{""__type"":""linkedin-page"",""post_as_images_carousel"":false}",P3,D,s,none,,product-context; restricted-fund-tracking-for-nonprofits.md,donor CRM to GL reconciliation,passed,passed,content/social/linkedin/2026-W24/2026-06-12_16-30_fri-13.txt,"One record should answer two questions.
+
+For Development: who funded this work, why did they care, and what relationship needs stewardship?
+
+For Finance: what restriction governs the dollars, what has been spent, and what report is due?
+
+That is the donor plus grant problem.
+
+The same award has a relationship side and an accounting side. Splitting them guarantees a reconciliation habit."
+2026-06-12_18-30_fri-14,2026-06-12 18:30,2026-06-12T22:30:00.000Z,America/New_York,linkedin,GrantPipe company page,post,,"{""__type"":""linkedin-page"",""post_as_images_carousel"":false}",P6,F,s,none,,docs/social/linkedin/WRITER-BRIEF.md,builder-honest product decision,passed,passed,content/social/linkedin/2026-W24/2026-06-12_18-30_fri-14.txt,"We publish GrantPipe pricing because early trust should not require a sales call.
+
+The current source of truth:
+
+Starter: $39/mo billed annually.
+Growth: $79/mo billed annually.
+Audit Ready: $159/mo billed annually.
+
+Unlimited users. One-month free trial. No credit card to start. No setup fee.
+
+There is enough uncertainty in choosing new software. The price should not be part of it."
+2026-06-12_20-30_fri-15,2026-06-12 20:30,2026-06-13T00:30:00.000Z,America/New_York,linkedin,GrantPipe company page,post,,"{""__type"":""linkedin-page"",""post_as_images_carousel"":false}",P1,Q,s,none,,2 CFR 200.430; federal-grant-reporting-requirements.md,specific compliance artifact,passed,passed,content/social/linkedin/2026-W24/2026-06-12_20-30_fri-15.txt,"Time records are easier to fix on Friday than during audit week.
+
+Before you close the week, pick one federally funded employee and check:
+
+Does the record show actual work performed?
+
+Does it tie to the grant or cost objective?
+
+Is it signed or approved according to policy?
+
+One spot check a week beats one panic sweep a year."
+2026-06-13_06-45_sat-01,2026-06-13 06:45,2026-06-13T10:45:00.000Z,America/New_York,linkedin,GrantPipe company page,post,,"{""__type"":""linkedin-page"",""post_as_images_carousel"":false}",P5,Q,s,none,,strategy.md; writer-brief.md,ICP operating utility,passed,passed,content/social/linkedin/2026-W24/2026-06-13_06-45_sat-01.txt,"Saturday operating check:
+
+Open the grant calendar and look only 30 days ahead.
+
+Reports. Drawdowns. Board approvals. Renewal decisions. Closeout dates.
+
+Do not reorganize the system.
+
+Move one unclear owner to a named owner. That is enough useful work for a quiet morning."
+2026-06-13_07-30_sat-02,2026-06-13 07:30,2026-06-13T11:30:00.000Z,America/New_York,linkedin,GrantPipe company page,post,,"{""__type"":""linkedin-page"",""post_as_images_carousel"":false}",P2,L,s,none,,restricted-fund-tracking-for-nonprofits.md,restricted fund mechanics,passed,passed,content/social/linkedin/2026-W24/2026-06-13_07-30_sat-02.txt,"Restricted fund cleanup can be small.
+
+Pick one fund.
+
+Find the source document.
+
+Write the restriction in one plain sentence.
+
+Check the current balance.
+
+Name the release trigger.
+
+That is not a full reconciliation. It is a better record than yesterday."
+2026-06-13_08-15_sat-03,2026-06-13 08:15,2026-06-13T12:15:00.000Z,America/New_York,linkedin,GrantPipe company page,post,,"{""__type"":""linkedin-page"",""post_as_images_carousel"":false}",P3,C,s,none,,what-auditors-ask-for-most-often.md; product-context,donor CRM to GL reconciliation,passed,passed,content/social/linkedin/2026-W24/2026-06-13_08-15_sat-03.txt,"The shared drive is not the evidence trail.
+
+It can store the evidence. It cannot explain the story by itself.
+
+An auditor opening a folder still needs to know which document supports which report, which expense, which amendment, and which release.
+
+That link has to live somewhere more precise than ""Grants 2026 final final."""
+2026-06-13_09-00_sat-04,2026-06-13 09:00,2026-06-13T13:00:00.000Z,America/New_York,linkedin,GrantPipe company page,post,,"{""__type"":""linkedin-page"",""post_as_images_carousel"":false}",P4,D,s,none,,product-context; federal-grant-reporting-requirements.md,specific compliance artifact,passed,passed,content/social/linkedin/2026-W24/2026-06-13_09-00_sat-04.txt,"UEI cleanup is a decent weekend task.
+
+Check that the UEI on your SAM.gov registration matches the UEI on current federal award documents and pass-through agreements.
+
+Then check who owns the renewal calendar.
+
+The work is administrative, but the cost of a stale registration is operational. It can slow applications, amendments, and payments."
+2026-06-13_09-45_sat-05,2026-06-13 09:45,2026-06-13T13:45:00.000Z,America/New_York,linkedin,GrantPipe company page,post,,"{""__type"":""linkedin-page"",""post_as_images_carousel"":false}",P1,L,s,none,,nonprofit-audit-evidence-binder.md; what-auditors-ask-for-most-often.md,specific compliance artifact,passed,passed,content/social/linkedin/2026-W24/2026-06-13_09-45_sat-05.txt,"Six files worth finding before audit season.
+
+1. Trial balance.
+2. Full general ledger export.
+3. Bank reconciliations.
+4. Grant agreements and amendments.
+5. Submitted financial reports.
+6. Board minutes for budget and grant approvals.
+
+Do not polish them first.
+
+Find them. Name them. Put them where next week's version of you can find them again."
+2026-06-13_10-30_sat-06,2026-06-13 10:30,2026-06-13T14:30:00.000Z,America/New_York,linkedin,GrantPipe company page,post,,"{""__type"":""linkedin-page"",""post_as_images_carousel"":false}",P7,L,s,lead_magnet,https://grantpipe.com/free/auditor-evidence-checklist,lead-magnets.ts; what-auditors-ask-for-most-often.md,lead-magnet teaser,passed,passed,content/social/linkedin/2026-W24/2026-06-13_10-30_sat-06.txt,"The Auditor Evidence Checklist is useful before the auditor asks.
+
+It names the core document categories: GL, trial balance, bank recs, grant agreements, payroll records, board minutes, policies, and SEFA support.
+
+Use it as a gap scan while there is still time to fix the folders.
+
+Free download: grantpipe.com/free/auditor-evidence-checklist."
+2026-06-13_11-15_sat-07,2026-06-13 11:15,2026-06-13T15:15:00.000Z,America/New_York,linkedin,GrantPipe company page,post,,"{""__type"":""linkedin-page"",""post_as_images_carousel"":false}",P5,D,s,none,,docs/social/linkedin/WRITER-BRIEF.md,ICP operating utility,passed,passed,content/social/linkedin/2026-W24/2026-06-13_11-15_sat-07.txt,"A donor stewardship calendar is mostly a promise to your future self.
+
+Thank-you notes.
+
+Mid-year updates.
+
+Report mail dates.
+
+Board introductions.
+
+Renewal asks.
+
+You can keep it in a spreadsheet, a CRM, or a notebook. The tool matters less than the habit: every relationship with a next step, and every next step with an owner."
+2026-06-13_12-00_sat-08,2026-06-13 12:00,2026-06-13T16:00:00.000Z,America/New_York,linkedin,GrantPipe company page,post,,"{""__type"":""linkedin-page"",""post_as_images_carousel"":false}",P4,D,s,none,,federal-grant-reporting-requirements.md; grant-closeout-procedures.md,specific compliance artifact,passed,passed,content/social/linkedin/2026-W24/2026-06-13_12-00_sat-08.txt,"Period of performance is the date range that decides whether a cost belongs on a federal grant.
+
+Not the invoice date alone.
+
+Not the payment date alone.
+
+The work has to be incurred inside the approved period, with liquidation and reporting handled inside the closeout rules.
+
+When you review old invoices, read the service dates first."
+2026-06-13_12-45_sat-09,2026-06-13 12:45,2026-06-13T16:45:00.000Z,America/New_York,linkedin,GrantPipe company page,post,,"{""__type"":""linkedin-page"",""post_as_images_carousel"":false}",P2,D,s,none,,restricted-fund-tracking-for-nonprofits.md,restricted fund mechanics,passed,passed,content/social/linkedin/2026-W24/2026-06-13_12-45_sat-09.txt,"Board-designated is not donor-restricted.
+
+A board can set aside dollars for a building reserve, operating cushion, or future program.
+
+That internal designation still sits inside net assets without donor restrictions under FASB ASC 958.
+
+Donor restrictions come from outside the organization. Board designations come from governance.
+
+Mixing those two makes financial statements harder to read."
+2026-06-13_13-30_sat-10,2026-06-13 13:30,2026-06-13T17:30:00.000Z,America/New_York,linkedin,GrantPipe company page,post,,"{""__type"":""linkedin-page"",""post_as_images_carousel"":false}",P3,C,s,none,,product-context; lead-magnets.ts,donor CRM to GL reconciliation,passed,passed,content/social/linkedin/2026-W24/2026-06-13_13-30_sat-10.txt,"A CRM migration map should include the grant data the CRM did not really hold.
+
+Do not map only contacts, gifts, and notes.
+
+Map funder records, grant IDs, award terms, restriction purposes, fund codes, reporting deadlines, and document locations.
+
+Otherwise the migration looks complete on donor day one and incomplete on grant report day thirty."
+2026-06-13_14-30_sat-11,2026-06-13 14:30,2026-06-13T18:30:00.000Z,America/New_York,linkedin,GrantPipe company page,post,,"{""__type"":""linkedin-page"",""post_as_images_carousel"":false}",P5,K,s,none,,docs/social/linkedin/WRITER-BRIEF.md,ICP operating utility,passed,passed,content/social/linkedin/2026-W24/2026-06-13_14-30_sat-11.txt,"Saturday reminder for Development Directors:
+
+Cleaning the database can be real work.
+
+Avoiding donor calls by cleaning the database is something else.
+
+Pick one useful cleanup task and one human task.
+
+Merge five duplicates.
+
+Then send one note to a donor who funded something specific and has not heard the outcome yet."
+2026-06-13_15-30_sat-12,2026-06-13 15:30,2026-06-13T19:30:00.000Z,America/New_York,linkedin,GrantPipe company page,post,,"{""__type"":""linkedin-page"",""post_as_images_carousel"":false}",P1,D,m,none,,2 CFR 200.318; what-auditors-ask-for-most-often.md,specific compliance artifact,passed,passed,content/social/linkedin/2026-W24/2026-06-13_15-30_sat-12.txt,"Procurement files are easier to build when the purchase happens.
+
+For federal awards, 2 CFR 200.318 sets the general procurement standards.
+
+A clean file can include the purchase request, quotes or selection memo, conflict check, approval, invoice, and proof the cost was charged to the right award.
+
+If the purchase is already in the ledger but the procurement trail is still in inboxes, fix that before fieldwork."
+2026-06-13_16-30_sat-13,2026-06-13 16:30,2026-06-13T20:30:00.000Z,America/New_York,linkedin,GrantPipe company page,post,,"{""__type"":""linkedin-page"",""post_as_images_carousel"":false}",P7,L,s,lead_magnet,https://grantpipe.com/free/cost-allocation-plan-worksheet,lead-magnets.ts; cost-allocation-plan-nonprofit-guide.md,lead-magnet teaser,passed,passed,content/social/linkedin/2026-W24/2026-06-13_16-30_sat-13.txt,"The Cost Allocation Plan Worksheet is for shared costs that refuse to stay in one neat bucket.
+
+Rent. Utilities. Finance staff time. Software. Insurance.
+
+The worksheet prompts the allocation base, the calculation, the approval trail, and the grant restrictions that affect the charge.
+
+Free download: grantpipe.com/free/cost-allocation-plan-worksheet."
+2026-06-13_18-30_sat-14,2026-06-13 18:30,2026-06-13T22:30:00.000Z,America/New_York,linkedin,GrantPipe company page,post,,"{""__type"":""linkedin-page"",""post_as_images_carousel"":false}",P6,F,m,none,,product-context; .agents/product-marketing.md,builder-honest product decision,passed,passed,content/social/linkedin/2026-W24/2026-06-13_18-30_sat-14.txt,"We will not make up proof for GrantPipe.
+
+That means no invented customer quotes, no customer names without permission, no borrowed authority, and no pretending a young product has history it has not earned.
+
+The trade is simple: fewer easy marketing lines, more honest product work.
+
+That is the only way I know to build software that can sit near audits, restricted funds, and board reports without feeling unserious."
+2026-06-13_20-30_sat-15,2026-06-13 20:30,2026-06-14T00:30:00.000Z,America/New_York,linkedin,GrantPipe company page,post,,"{""__type"":""linkedin-page"",""post_as_images_carousel"":false}",P5,S,s,none,,docs/social/linkedin/WRITER-BRIEF.md,ICP operating utility,passed,passed,content/social/linkedin/2026-W24/2026-06-13_20-30_sat-15.txt,"Sunday starts better when Saturday ends clean.
+
+Close the tabs you opened to avoid the real task.
+
+Write the three things Monday needs from you.
+
+Name one grant report, one donor follow-up, and one finance question.
+
+Then stop.
+
+Nonprofit operating work expands into every quiet hour unless someone gives it a boundary."
+2026-06-14_06-45_sun-01,2026-06-14 06:45,2026-06-14T10:45:00.000Z,America/New_York,linkedin,GrantPipe company page,post,,"{""__type"":""linkedin-page"",""post_as_images_carousel"":false}",P5,L,s,none,,strategy.md; writer-brief.md,ICP operating utility,passed,passed,content/social/linkedin/2026-W24/2026-06-14_06-45_sun-01.txt,"Sunday prep:
+
+Open the week ahead and look for the handoffs, not the deadlines.
+
+Who needs a number from Finance?
+
+Who needs a narrative from Program?
+
+Who needs a signature from the ED?
+
+A clean handoff makes the deadline less fragile. Start there."
+2026-06-14_07-30_sun-02,2026-06-14 07:30,2026-06-14T11:30:00.000Z,America/New_York,linkedin,GrantPipe company page,post,,"{""__type"":""linkedin-page"",""post_as_images_carousel"":false}",P3,Q,s,none,,product-context; how-to-build-a-monthly-grant-reconciliation-routine.md,donor CRM to GL reconciliation,passed,passed,content/social/linkedin/2026-W24/2026-06-14_07-30_sun-02.txt,"Monday handoff test:
+
+Can Development tell Finance which new gifts are restricted before Finance closes the deposits?
+
+Can Finance tell Development which grant balances changed before the funder update is drafted?
+
+Two small yeses prevent a week of cleanup."
+2026-06-14_08-15_sun-03,2026-06-14 08:15,2026-06-14T12:15:00.000Z,America/New_York,linkedin,GrantPipe company page,post,,"{""__type"":""linkedin-page"",""post_as_images_carousel"":false}",P1,L,s,none,,nonprofit-audit-evidence-binder.md; what-auditors-ask-for-most-often.md,specific compliance artifact,passed,passed,content/social/linkedin/2026-W24/2026-06-14_08-15_sun-03.txt,"If you only prepare three audit files this weekend, make them these:
+
+1. Trial balance tied to the general ledger.
+2. Bank reconciliations signed and dated.
+3. Grant agreement folder with awards and amendments.
+
+Those files anchor the rest of the audit conversation.
+
+Everything else gets easier when the anchors are findable."
+2026-06-14_09-00_sun-04,2026-06-14 09:00,2026-06-14T13:00:00.000Z,America/New_York,linkedin,GrantPipe company page,post,,"{""__type"":""linkedin-page"",""post_as_images_carousel"":false}",P7,L,s,lead_magnet,https://grantpipe.com/free/audit-prep-week-by-week-checklist,lead-magnets.ts; nonprofit-audit-evidence-binder.md,lead-magnet teaser,passed,passed,content/social/linkedin/2026-W24/2026-06-14_09-00_sun-04.txt,"The Audit Prep Week-by-Week Checklist is built for teams that need a sequence, not another giant request list.
+
+It breaks prep into weekly passes:
+
+- evidence inventory
+- grant files
+- payroll and time records
+- board and policy documents
+- final PBC response review
+
+Free download: grantpipe.com/free/audit-prep-week-by-week-checklist."
+2026-06-14_09-45_sun-05,2026-06-14 09:45,2026-06-14T13:45:00.000Z,America/New_York,linkedin,GrantPipe company page,post,,"{""__type"":""linkedin-page"",""post_as_images_carousel"":false}",P5,L,s,none,,board-financial-report-what-to-include.md,ICP operating utility,passed,passed,content/social/linkedin/2026-W24/2026-06-14_09-45_sun-05.txt,"Five board questions to answer before Monday.
+
+What changed in cash?
+
+Which restricted balances are aging?
+
+Which grant reports are due before the next meeting?
+
+Which renewal decisions need board context?
+
+Which budget variance needs a plain-English explanation?
+
+The board packet should not bury those answers. It should make them impossible to miss."
+2026-06-14_10-30_sun-06,2026-06-14 10:30,2026-06-14T14:30:00.000Z,America/New_York,linkedin,GrantPipe company page,post,,"{""__type"":""linkedin-page"",""post_as_images_carousel"":false}",P2,D,s,none,,restricted-fund-tracking-for-nonprofits.md,restricted fund mechanics,passed,passed,content/social/linkedin/2026-W24/2026-06-14_10-30_sun-06.txt,"A release schedule is a promise to explain later.
+
+For each restricted fund, write:
+
+- source
+- restriction purpose
+- amount released this period
+- evidence for the release
+- remaining balance
+
+That schedule does not need drama.
+
+It needs to reconcile to the statement of activities and survive the question: ""Why did this release happen now?"""
+2026-06-14_11-15_sun-07,2026-06-14 11:15,2026-06-14T15:15:00.000Z,America/New_York,linkedin,GrantPipe company page,post,,"{""__type"":""linkedin-page"",""post_as_images_carousel"":false}",P4,D,m,none,,.agents/product-marketing.md; .agents/product-marketing-context.md,specific compliance artifact,passed,passed,content/social/linkedin/2026-W24/2026-06-14_11-15_sun-07.txt,"GrantPipe includes Grants.gov federal opportunity search.
+
+That is the searchable federal source.
+
+Non-federal opportunities can be tracked manually or imported from CSV. Foundation prospect context can use public nonprofit filings where available.
+
+That boundary matters.
+
+We are not claiming a proprietary private foundation database. We are building the operating record around opportunities, awards, restrictions, reports, and evidence."
+2026-06-14_12-00_sun-08,2026-06-14 12:00,2026-06-14T16:00:00.000Z,America/New_York,linkedin,GrantPipe company page,post,,"{""__type"":""linkedin-page"",""post_as_images_carousel"":false}",P3,Q,s,none,,product-context; restricted-fund-tracking-for-nonprofits.md,donor CRM to GL reconciliation,passed,passed,content/social/linkedin/2026-W24/2026-06-14_12-00_sun-08.txt,"Donor-to-grant reconciliation starts with one blunt question:
+
+Which dollars in the donor system created restrictions in the finance system?
+
+If that link is fuzzy, every later report gets harder.
+
+The thank-you letter, the restricted fund schedule, and the funder report are not separate stories. They are different views of the same commitment."
+2026-06-14_12-45_sun-09,2026-06-14 12:45,2026-06-14T16:45:00.000Z,America/New_York,linkedin,GrantPipe company page,post,,"{""__type"":""linkedin-page"",""post_as_images_carousel"":false}",P5,D,s,none,,board-financial-report-what-to-include.md; docs/social/linkedin/WRITER-BRIEF.md,ICP operating utility,passed,passed,content/social/linkedin/2026-W24/2026-06-14_12-45_sun-09.txt,"A useful development calendar shows more than asks.
+
+It shows stewardship dates, board introductions, grant reports, renewal windows, thank-you letter batches, and finance handoffs.
+
+When a funder relationship also has stewardship work, the calendar should show both.
+
+Put them where the collisions are visible."
+2026-06-14_13-30_sun-10,2026-06-14 13:30,2026-06-14T17:30:00.000Z,America/New_York,linkedin,GrantPipe company page,post,,"{""__type"":""linkedin-page"",""post_as_images_carousel"":false}",P7,L,s,lead_magnet,https://grantpipe.com/free/award-setup-worksheet,lead-magnets.ts; grant-compliance-101-for-nonprofits.md,lead-magnet teaser,passed,passed,content/social/linkedin/2026-W24/2026-06-14_13-30_sun-10.txt,"The Award Setup Worksheet is a first-30-days document.
+
+Use it when the grant is awarded, before the details scatter:
+
+- funder and award ID
+- period of performance
+- approved budget
+- reporting cadence
+- indirect cost treatment
+- restriction purpose
+- owner for each deadline
+
+Free download: grantpipe.com/free/award-setup-worksheet."
+2026-06-14_14-30_sun-11,2026-06-14 14:30,2026-06-14T18:30:00.000Z,America/New_York,linkedin,GrantPipe company page,post,,"{""__type"":""linkedin-page"",""post_as_images_carousel"":false}",P6,F,s,none,,docs/social/linkedin/WRITER-BRIEF.md; product-context,builder-honest product decision,passed,passed,content/social/linkedin/2026-W24/2026-06-14_14-30_sun-11.txt,"Public pricing is a product decision.
+
+So is month-to-month billing.
+
+So is no setup fee.
+
+So is a one-month trial that starts without a credit card.
+
+GrantPipe is still early. That means buyers deserve fewer hidden variables, not more.
+
+When the product is new, the terms should be plain."
+2026-06-14_15-30_sun-12,2026-06-14 15:30,2026-06-14T19:30:00.000Z,America/New_York,linkedin,GrantPipe company page,post,,"{""__type"":""linkedin-page"",""post_as_images_carousel"":false}",P1,D,s,none,,grant-compliance-101-for-nonprofits.md; federal-grant-reporting-requirements.md,specific compliance artifact,passed,passed,content/social/linkedin/2026-W24/2026-06-14_15-30_sun-12.txt,"Questioned cost: a cost an auditor or federal reviewer flags because it may not be allowable, allocable, reasonable, or supported.
+
+It is not automatically a repayment.
+
+It is a demand for evidence.
+
+The best time to prepare that evidence is when the cost is charged, not when the question arrives."
+2026-06-14_16-30_sun-13,2026-06-14 16:30,2026-06-14T20:30:00.000Z,America/New_York,linkedin,GrantPipe company page,post,,"{""__type"":""linkedin-page"",""post_as_images_carousel"":false}",P7,L,s,lead_magnet,https://grantpipe.com/free/donor-retention-dashboard-template,lead-magnets.ts; development-metrics-kpis-guide.md,lead-magnet teaser,passed,passed,content/social/linkedin/2026-W24/2026-06-14_16-30_sun-13.txt,"The Donor Retention Dashboard Template is not grant compliance content, and that is the point.
+
+Development leaders still need a clean view of:
+
+- retained donors
+- lapsed donors
+- new donors
+- recurring donors
+- upgrade opportunities
+
+A grant calendar still has a relationship side.
+
+Free download: grantpipe.com/free/donor-retention-dashboard-template."
+2026-06-14_18-30_sun-14,2026-06-14 18:30,2026-06-14T22:30:00.000Z,America/New_York,linkedin,GrantPipe company page,post,,"{""__type"":""linkedin-page"",""post_as_images_carousel"":false}",P6,F,s,none,,.agents/product-marketing.md; .agents/product-marketing-context.md,builder-honest product decision,passed,passed,content/social/linkedin/2026-W24/2026-06-14_18-30_sun-14.txt,"I would rather say ""we are early"" than pretend GrantPipe has proof it has not earned.
+
+Early means public pricing.
+
+Early means a trial that can run on the buyer's own data, not a staged demo.
+
+Early means writing down the product boundaries, including Grants.gov search for federal opportunities and manual or imported tracking for non-federal ones.
+
+Trust starts with not overstating the product."
+2026-06-14_20-30_sun-15,2026-06-14 20:30,2026-06-15T00:30:00.000Z,America/New_York,linkedin,GrantPipe company page,post,,"{""__type"":""linkedin-page"",""post_as_images_carousel"":false}",P5,L,s,none,,docs/social/linkedin/WRITER-BRIEF.md,ICP operating utility,passed,passed,content/social/linkedin/2026-W24/2026-06-14_20-30_sun-15.txt,"Before Monday starts, write the three lists.
+
+Due this week.
+
+Waiting on someone else.
+
+Needs a decision.
+
+That is enough structure for a nonprofit operating week.
+
+Not perfect. Not fancy. Enough to keep the first meeting from becoming a scavenger hunt."

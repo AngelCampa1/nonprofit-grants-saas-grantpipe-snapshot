@@ -1,0 +1,371 @@
+---
+import "../../styles/global.css";
+import { getCollection } from "astro:content";
+import Button from "@/components/ui/button.astro";
+import { siteConfig, getSignupCtaTarget, shouldShowMobileStickyCta } from "@/config/site";
+import { getAppLoginUrl } from "@/lib/app-url";
+import BaseLayout from "@grantpipe/ui/site/layouts/base-layout.astro";
+import SiteFooter from "@grantpipe/ui/site/components/site-footer.astro";
+import SiteHeader from "@grantpipe/ui/site/components/site-header.astro";
+import { getContentEntrySlug } from "@/lib/content-entry-slug";
+import {
+  getLeadMagnetEntrySlug,
+  resolveFeaturedLeadMagnetSlugs,
+  resolveExitLeadMagnetOffer,
+} from "@/lib/lead-magnet-routing";
+import { ExitIntentPopup } from "@grantpipe/ui/site/components/exit-intent-popup";
+import { resolveExitPopupProps } from "@grantpipe/ui/site/lib/exit-popup-props";
+import { EmailCapture } from "@grantpipe/ui/site";
+import { getPublicApiBaseUrl } from "@grantpipe/ui/site/lib/public-api-url";
+import { buildPublicSignupFlowConfig } from "@grantpipe/ui/site/lib/public-signup-flow";
+import {
+  buildResourceHubSummaries,
+  resourceHubStageLabels,
+  resourceHubs,
+} from "@/lib/resource-hubs";
+
+const [
+  alternatives,
+  comparisons,
+  pricingBreakdowns,
+  listicles,
+  guides,
+  statePages,
+  cityPages,
+  verticalPages,
+  leadMagnets,
+  personas,
+  workflows,
+  glossary,
+  features,
+  integrations,
+  faqHubs,
+  benchmarks,
+] = await Promise.all([
+  getCollection("alternatives"),
+  getCollection("comparisons"),
+  getCollection("pricing-breakdowns"),
+  getCollection("listicles"),
+  getCollection("guides"),
+  getCollection("state-pages"),
+  getCollection("city-pages"),
+  getCollection("vertical-pages"),
+  getCollection("lead-magnets"),
+  getCollection("personas"),
+  getCollection("workflows"),
+  getCollection("glossary"),
+  getCollection("features"),
+  getCollection("integrations"),
+  getCollection("faq-hubs"),
+  getCollection("benchmarks"),
+]);
+const publicApiUrl = getPublicApiBaseUrl();
+const exitLeadMagnet = resolveExitLeadMagnetOffer(siteConfig, leadMagnets, { family: "guide" });
+const exitPopupProps = siteConfig.exitPopup?.enabled !== false ? resolveExitPopupProps(siteConfig) : undefined;
+const signupFlow = buildPublicSignupFlowConfig(siteConfig);
+const resourceHubSummaries = buildResourceHubSummaries({
+  alternatives,
+  comparisons,
+  pricingBreakdowns,
+  listicles,
+  guides,
+  statePages,
+  cityPages,
+  verticalPages,
+  leadMagnets,
+  personas,
+  workflows,
+  glossary,
+  features,
+  integrations,
+  faqHubs,
+  benchmarks,
+});
+const resourceHubByHref = new Map(resourceHubs.map((hub) => [hub.href, hub]));
+const featuredGuide = guides[0];
+const sideGuides = guides.slice(1, 3);
+const gridItems = [...guides.slice(0, 3), ...listicles.slice(0, 3)];
+const featuredLeadMagnets = resolveFeaturedLeadMagnetSlugs(siteConfig)
+  .map((slug) => leadMagnets.find((entry) => getLeadMagnetEntrySlug(entry) === slug))
+  .filter((entry): entry is NonNullable<typeof entry> => entry !== undefined)
+  .slice(0, 4);
+---
+
+<BaseLayout
+  title="Resources & Guides | GrantPipe"
+  description="GrantPipe resources for nonprofit teams evaluating grant management, donor CRM, compliance, restricted funds, and software decisions."
+  canonicalUrl={`https://${siteConfig.domain}/resources/`}
+  siteName={siteConfig.name}
+  ogType="website"
+  twitterSite={siteConfig.social?.twitterHandle}
+  theme={siteConfig.theme}
+  fonts={siteConfig.theme.fonts}
+  themeColor={siteConfig.theme.primary}
+  appleTouchIcon={siteConfig.appleTouchIcon}
+  siteUrl={`https://${siteConfig.domain}`}
+  siteLogo={siteConfig.logo?.light ? `https://${siteConfig.domain}${siteConfig.logo.light}` : undefined}
+  siteFounder={siteConfig.author}
+  siteSameAs={siteConfig.sameAs}
+  showStickyMobileCta={shouldShowMobileStickyCta("/resources")}
+  stickyCtaText={siteConfig.funnel.bofu.ctaText}
+  stickyCtaTarget={getSignupCtaTarget()}
+>
+  <SiteHeader
+    slot="header"
+    siteName={siteConfig.name}
+    navItems={siteConfig.nav?.items}
+    ctaText={siteConfig.funnel.bofu.ctaText}
+    ctaHref={siteConfig.funnel.bofu.ctaTarget}
+    loginHref={getAppLoginUrl()}
+    ctaVariant="primary"
+    ctaPill
+    currentPath={Astro.url.pathname}
+    logoLight={siteConfig.logo?.light}
+  />
+
+  <main data-marketing-page="resources">
+    <section class="gp-section" data-section="hero">
+      <div class="gp-wrap gp-resources-hero">
+        <div class="gp-section-head">
+          <p class="gp-eyebrow-pill">Decision hub</p>
+          <h1>Resources for deciding what changes next.</h1>
+          <p>
+            Use these guides, templates, and comparisons to see what is funded, restricted, due,
+            and ready for review before you move another spreadsheet or donor record.
+          </p>
+          <div class="gp-hero-actions">
+            <Button
+              href={getSignupCtaTarget()}
+              data-cta-button=""
+              data-cta-page-family="resources"
+              data-cta-buyer-stage="bofu"
+              data-cta-placement="resources-hero-primary"
+              data-cta-section="hero"
+              data-cta-intent="convert"
+              data-cta-target={getSignupCtaTarget()}
+            >
+              Start 1-month free trial
+            </Button>
+            <Button
+              href="/pricing/"
+              variant="secondary"
+              data-cta-button=""
+              data-cta-page-family="resources"
+              data-cta-buyer-stage="mofu"
+              data-cta-placement="resources-hero-secondary"
+              data-cta-section="hero"
+              data-cta-intent="evaluate"
+              data-cta-target="/pricing/"
+            >
+              See pricing and fit
+            </Button>
+          </div>
+        </div>
+        <aside class="gp-resources-hero-card" aria-label="Resource paths">
+          <p class="gp-resources-hero-card__title">Where teams start</p>
+          <ul>
+            <li>
+              <a href="/resources/guides/compliance-first-grant-management-system/">
+                <strong>Compliance-first grant management system.</strong>
+                <span>Track the right things first.</span>
+              </a>
+            </li>
+            <li>
+              <a href="/resources/topics/grant-compliance/"><strong>Grant compliance</strong><span>Deadlines, evidence, reports, and audit prep.</span></a>
+            </li>
+            <li>
+              <a href="/resources/topics/restricted-fund-accounting/"><strong>Restricted funds</strong><span>Balances, releases, allocations, and spend-down risk.</span></a>
+            </li>
+            <li>
+              <a href="/resources/topics/nonprofit-crm/"><strong>CRM replacement</strong><span>Donor records, grants, gifts, and migration planning.</span></a>
+            </li>
+            <li>
+              <a href="/resources/best/"><strong>Software comparison</strong><span>Roundups, pricing context, and GrantPipe fit checks.</span></a>
+            </li>
+            <li>
+              <a href="/free/"><strong>Templates</strong><span>Downloadable checklists and worksheets when you need a lighter next step.</span></a>
+            </li>
+          </ul>
+        </aside>
+      </div>
+    </section>
+    <section class="gp-section gp-section-tight" data-section="resource-paths">
+      <div class="gp-wrap">
+        <div class="gp-section-head">
+          <h2>Pick the path that fits the job.</h2>
+          <p>
+            Start with a topic or role. Choose a work step or tool match. Each path gives you the
+            next useful step.
+          </p>
+        </div>
+        <div class="gp-resource-grid">
+          {resourceHubSummaries.map((summary) => {
+            const hub = resourceHubByHref.get(summary.href);
+            return (
+              <article class="gp-resource">
+                <span class="gp-type-label">
+                  {hub ? resourceHubStageLabels[hub.buyerStage] : "Path"}
+                </span>
+                <h3>{summary.name}</h3>
+                <p>{summary.description}</p>
+                <small>{summary.count} {summary.count === 1 ? "page" : "pages"}</small>
+                <div class="gp-chip-row mt-4">
+                  <a class="gp-filter-chip" href={`${summary.href}/`}>See this path</a>
+                  {hub && (
+                    <a class="gp-filter-chip" href={`${hub.nextStepHref}/`}>
+                      {hub.nextStepLabel}
+                    </a>
+                  )}
+                </div>
+              </article>
+            );
+          })}
+        </div>
+      </div>
+    </section>
+
+    <section class="gp-section alt" data-section="featured-resources">
+        <div class="gp-wrap gp-resource-featured">
+        {featuredGuide && (
+          <a href={`/resources/guides/${getContentEntrySlug(featuredGuide)}/`} class="gp-resource">
+            <span class="gp-type-label">GUIDE</span>
+            <h2>{featuredGuide.data.title}</h2>
+            <p>{featuredGuide.data.description}</p>
+            <span class="gp-link-row">Read guide</span>
+          </a>
+        )}
+        <div class="grid gap-4">
+          {sideGuides[0] && (
+            <a href={`/resources/guides/${getContentEntrySlug(sideGuides[0])}/`} class="gp-resource">
+              <span class="gp-type-label">GUIDE</span>
+              <h3>{sideGuides[0].data.title}</h3>
+              <p>{sideGuides[0].data.description}</p>
+            </a>
+          )}
+          <a href="/resources/videos/" class="gp-resource">
+            <span class="gp-type-label">VIDEO</span>
+            <h3>Video library</h3>
+            <p>
+              Short videos on grants, funds, compliance, and the product. Watch the
+              rules and GrantPipe in action.
+            </p>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <section class="gp-section" data-section="resource-grid">
+      <div class="gp-wrap">
+        <div class="gp-section-head">
+          <h2>Browse the current decision set.</h2>
+          <p>
+            Start with the area that is blocking the next decision. No inflated claims, just
+            practical decision support.
+          </p>
+        </div>
+        <div class="gp-resource-grid">
+          {gridItems.map((entry) => {
+            const isListicle = "tools" in entry.data;
+            const slug = getContentEntrySlug(entry);
+            const href = isListicle ? `/resources/best/${slug}/` : `/resources/guides/${slug}/`;
+            return (
+              <a href={href} class="gp-resource">
+                <span class="gp-type-label">{isListicle ? "NOTE" : "GUIDE"}</span>
+                <h3>{entry.data.title}</h3>
+                <p>{entry.data.description}</p>
+                <small>{entry.data.updatedAt}</small>
+              </a>
+            );
+          })}
+        </div>
+      </div>
+    </section>
+
+    <section class="gp-section alt" data-section="templates-strip">
+      <div class="gp-wrap">
+        <div class="gp-section-head">
+          <h2>Free templates</h2>
+          <p>
+            Battle-tested formats you can copy today, no signup. If you adopt
+            GrantPipe, these are already built in.
+          </p>
+        </div>
+        <div class="gp-templates-strip">
+          {featuredLeadMagnets.map((entry) => (
+            <a href={`/free/${getLeadMagnetEntrySlug(entry)}/`} class="gp-resource">
+              <span class="gp-type-label">TMPL</span>
+              <h3>{entry.data.title}</h3>
+              <p>{entry.data.description}</p>
+            </a>
+          ))}
+        </div>
+      </div>
+    </section>
+
+    <section class="gp-section" data-section="newsletter">
+      <div class="gp-wrap">
+        <div class="gp-newsletter">
+          <div>
+            <h2>One email a month. Real practice, no fluff.</h2>
+            <p>
+              What I'm learning while building GrantPipe, what's changing in
+              federal grants, and the occasional template. Unsubscribe anytime.
+            </p>
+          </div>
+          <div class="gp-newsletter-form">
+            <EmailCapture
+              client:visible
+              apiUrl={publicApiUrl}
+              sourcePage="/resources/"
+              surveyQuestions={signupFlow.surveyQuestions}
+              surveyQualification={signupFlow.qualification ?? signupFlow.surveyQualification}
+              qualification={signupFlow.qualification ?? signupFlow.surveyQualification}
+              discoveryCallUrl={signupFlow.discoveryCallUrl}
+              buttonText="Subscribe"
+              placeholder="you@nonprofit.org"
+              privacyNote={signupFlow.privacyNote}
+              errorInvalidEmail={signupFlow.errorInvalidEmail}
+              errorDuplicate={signupFlow.errorDuplicate}
+              errorGeneric={signupFlow.errorGeneric}
+              successMessage={signupFlow.successMessage}
+              surveyPreview={signupFlow.surveyPreview}
+              subtitle={undefined}
+              whatHappensNext={signupFlow.whatHappensNext}
+              qualifiedHeading={signupFlow.qualifiedHeading}
+              qualifiedBody={signupFlow.qualifiedBody}
+              qualifiedCtaText={signupFlow.qualifiedCtaText}
+              qualifiedCtaTarget={signupFlow.qualifiedCtaTarget}
+              qualifiedDismissText={signupFlow.qualifiedDismissText}
+              unqualifiedHeading={signupFlow.unqualifiedHeading}
+              unqualifiedBody={signupFlow.unqualifiedBody}
+              unqualifiedCtaText={signupFlow.unqualifiedCtaText}
+              unqualifiedCtaTarget={signupFlow.unqualifiedCtaTarget}
+              unqualifiedDismissText={signupFlow.unqualifiedDismissText}
+              ariaLabel="Subscribe to GrantPipe resources"
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <SiteFooter
+    slot="footer"
+    siteName={siteConfig.name}
+    tagline={siteConfig.tagline}
+    linkGroups={siteConfig.footer?.linkGroups ?? []}
+    legalLinks={siteConfig.footer?.legalLinks ?? []}
+    contactEmail={siteConfig.contactEmail}
+    logoLight={siteConfig.logo?.light}
+    captureVariant="none"
+    currentPath={Astro.url.pathname}
+  />
+  {exitPopupProps && (
+    <ExitIntentPopup
+      client:idle
+      apiUrl={publicApiUrl}
+      {...exitPopupProps}
+      leadMagnet={exitLeadMagnet}
+    />
+  )}
+</BaseLayout>

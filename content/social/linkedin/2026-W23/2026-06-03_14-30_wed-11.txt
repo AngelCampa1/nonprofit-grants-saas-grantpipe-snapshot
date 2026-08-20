@@ -1,0 +1,11 @@
+When a funder is both a donor relationship and a grant record, do not make staff choose one identity.
+
+The relationship history matters.
+
+The award terms matter.
+
+The restriction matters.
+
+The reporting calendar matters.
+
+One record can carry the shared facts while Development and Finance each see the fields they need to do their work.

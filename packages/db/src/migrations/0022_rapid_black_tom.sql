@@ -1,0 +1,1 @@
+ALTER TABLE "activity_log" ADD COLUMN "entity_label" text;

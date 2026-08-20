@@ -1,0 +1,7 @@
+Every grant cycle generates four versions of the same question: program officer, auditor, board, funder CFO. Same data, four formats.
+
+The program officer asks how the funds were used. The auditor asks where the supporting documents live. The board asks what we learned. The funder's CFO asks for a budget vs actual.
+
+The work is not collecting the data. The work is reformatting the same data four ways, every quarter, for every active grant.
+
+When people say "grant management software", what they usually need is one structured record that can produce all four views without rebuilding from scratch each time. Reporting is not a feature. It is the consequence of having the right data model.

@@ -1,0 +1,287 @@
+1
+00:00:00,000 --> 00:00:01,997
+A restriction is a promise.
+
+2
+00:00:01,997 --> 00:00:06,655
+A funder hands you money and says, use this for one thing only.
+
+3
+00:00:06,655 --> 00:00:11,092
+From then on, you have to answer one question at any moment.
+
+4
+00:00:11,092 --> 00:00:16,269
+How much of that money is left, and can you prove where the rest went?
+
+5
+00:00:16,269 --> 00:00:19,375
+A normal activity report shows what moved.
+
+6
+00:00:19,375 --> 00:00:21,150
+It does not answer that.
+
+7
+00:00:21,150 --> 00:00:25,661
+Today I'll show you how to track restricted funds so you can.
+
+8
+00:00:25,661 --> 00:00:28,323
+Quick note on where I'm coming from.
+
+9
+00:00:28,323 --> 00:00:30,837
+I build grant compliance software.
+
+10
+00:00:30,837 --> 00:00:36,975
+To make a computer follow these rules, I had to learn exactly how this money moves.
+
+11
+00:00:36,975 --> 00:00:40,376
+I'm not an auditor, and I won't talk like one.
+
+12
+00:00:40,376 --> 00:00:43,650
+You're getting the version a busy director needs.
+
+13
+00:00:43,650 --> 00:00:46,632
+So, what does restricted actually mean?
+
+14
+00:00:46,632 --> 00:00:51,986
+It means a donor or grantor tied the money to a purpose, or to a time.
+
+15
+00:00:51,986 --> 00:00:54,280
+Only they can lift that limit.
+
+16
+00:00:54,280 --> 00:00:57,874
+Nonprofit books now sort money into two groups.
+
+17
+00:00:57,874 --> 00:01:00,703
+With donor restrictions, and without.
+
+18
+00:01:00,703 --> 00:01:03,074
+Promised money, and free money.
+
+19
+00:01:03,074 --> 00:01:07,127
+If an old guide lists three groups, it's out of date.
+
+20
+00:01:07,127 --> 00:01:08,963
+The rule changed to two.
+
+21
+00:01:08,963 --> 00:01:10,263
+One trap to skip.
+
+22
+00:01:10,263 --> 00:01:15,004
+Money your board sets aside for a rainy day is not restricted.
+
+23
+00:01:15,004 --> 00:01:18,063
+The board can change its own mind later.
+
+24
+00:01:18,063 --> 00:01:21,460
+Only an outside funder can truly restrict a gift.
+
+25
+00:01:21,460 --> 00:01:23,770
+Here's the part people get wrong.
+
+26
+00:01:23,770 --> 00:01:28,390
+To track a restriction, you need a running balance for each award.
+
+27
+00:01:28,390 --> 00:01:30,140
+You start with the award.
+
+28
+00:01:30,140 --> 00:01:32,590
+You add anything new that comes in.
+
+29
+00:01:32,590 --> 00:01:35,600
+You subtract what you spend on the purpose.
+
+30
+00:01:35,600 --> 00:01:42,250
+Accountants call that a release, but it just means the promise is being kept, dollar by dollar.
+
+31
+00:01:42,250 --> 00:01:44,840
+You end with a number you can defend.
+
+32
+00:01:44,840 --> 00:01:51,140
+One big checking account and a memo in your books won't give you that per-promise balance.
+
+33
+00:01:51,140 --> 00:01:54,150
+That's the gap, and it's where audits get tense.
+
+34
+00:01:54,150 --> 00:01:58,066
+Let me show you one way to do this, in the real app.
+
+35
+00:01:58,066 --> 00:01:59,798
+This is the funds list.
+
+36
+00:01:59,798 --> 00:02:03,035
+Each fund is one promise, with one purpose.
+
+37
+00:02:03,035 --> 00:02:07,779
+To make one, you add a fund, give it a name, and pick its type.
+
+38
+00:02:07,779 --> 00:02:12,599
+Unrestricted, temporarily restricted, or permanently restricted.
+
+39
+00:02:12,599 --> 00:02:16,589
+Both restricted types are promised money from before.
+
+40
+00:02:16,589 --> 00:02:18,924
+Unrestricted is the free money.
+
+41
+00:02:18,924 --> 00:02:23,920
+You can filter the list by type, so the promised money is easy to find.
+
+42
+00:02:23,920 --> 00:02:27,283
+Open a fund, and there's half the answer.
+
+43
+00:02:27,283 --> 00:02:28,432
+Three numbers.
+
+44
+00:02:28,432 --> 00:02:31,385
+Allocated, what came into this fund.
+
+45
+00:02:31,385 --> 00:02:33,436
+Spent, what has gone out.
+
+46
+00:02:33,436 --> 00:02:35,158
+Balance, what's left.
+
+47
+00:02:35,158 --> 00:02:37,701
+You don't type that balance in.
+
+48
+00:02:37,701 --> 00:02:45,084
+The app works it out from the grants feeding the fund and the spending charged against it.
+
+49
+00:02:45,084 --> 00:02:52,139
+Underneath, you can see exactly which grants fund this, and every expense it paid for.
+
+50
+00:02:52,139 --> 00:02:54,250
+That's how much is left, live.
+
+51
+00:02:54,250 --> 00:02:55,569
+Now the other half.
+
+52
+00:02:55,569 --> 00:02:56,749
+Can you prove it?
+
+53
+00:02:56,749 --> 00:03:02,301
+Open the Restrictions tab, and there's the same running balance we drew earlier.
+
+54
+00:03:02,301 --> 00:03:06,813
+Beginning, additions, releases, ending, for the restricted award.
+
+55
+00:03:06,813 --> 00:03:10,908
+Below it, the app lists each restriction and what it's for.
+
+56
+00:03:10,908 --> 00:03:12,921
+And it watches your evidence.
+
+57
+00:03:12,921 --> 00:03:18,265
+If you release money and nothing backs it up, the panel flags it right there.
+
+58
+00:03:18,265 --> 00:03:21,666
+So you find the weak spot before an auditor does.
+
+59
+00:03:21,666 --> 00:03:27,149
+This tracking comes with the GrantPipe plans that include restriction lifecycle
+
+60
+00:03:27,149 --> 00:03:29,020
+so check that it's on your plan.
+
+61
+00:03:29,020 --> 00:03:29,864
+So that's it.
+
+62
+00:03:29,864 --> 00:03:33,110
+Tracking restricted funds comes down to one thing.
+
+63
+00:03:33,110 --> 00:03:35,901
+A balance you can defend for every promise.
+
+64
+00:03:35,901 --> 00:03:41,743
+Start it, add to it, release as you spend, and end on a number with the evidence attached.
+
+65
+00:03:41,743 --> 00:03:44,859
+A spreadsheet can carry this while you're small.
+
+66
+00:03:44,859 --> 00:03:47,715
+A system carries it for you when you're not.
+
+67
+00:03:47,715 --> 00:03:51,221
+That's the kind of thing we built GrantPipe to handle.
+
+68
+00:03:51,221 --> 00:03:54,207
+But the discipline matters more than any tool.
+
+69
+00:03:54,207 --> 00:03:59,530
+If you want a starting point, we made a free Restricted Fund Tracking Spreadsheet.
+
+70
+00:03:59,530 --> 00:04:01,542
+It sets up the columns for you.
+
+71
+00:04:01,542 --> 00:04:03,360
+We'll send it to your inbox.
+
+72
+00:04:03,360 --> 00:04:07,060
+Thanks for watching, and good luck keeping your promises.

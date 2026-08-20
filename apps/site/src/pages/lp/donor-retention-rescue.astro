@@ -1,0 +1,122 @@
+---
+import PaidSearchLandingPage from "@/components/paid-search-landing-page.astro";
+import type { PaidLandingPageData } from "@/components/paid-search-landing-page.astro";
+
+const page: PaidLandingPageData = {
+  slug: "donor-retention-rescue",
+  title: "Catch At-Risk Donors Before They Lapse | GrantPipe",
+  description:
+    "See donors who have gone quiet based on their giving history. GrantPipe surfaces the lapsed list so your team knows who to follow up with first.",
+  kicker: "Catch quiet donors before the next gift is gone",
+  headline: "Catch the at-risk donor before they lapse.",
+  subhead:
+    "See who has gone quiet. Work the lapsed list before the renewal window closes.",
+  primaryCta: "Start 1-month free trial",
+  exitLeadMagnet: {
+    slug: "donor-retention-playbook",
+    title: "Donor Retention Playbook",
+    description:
+      "A step-by-step playbook for spotting quiet donors, working the lapsed list, and asking for the next gift before the renewal window closes.",
+  },
+  trust: "No credit card required. Built for development directors who cannot afford a missed renewal.",
+  proofCard: {
+    label: "At-risk donors",
+    status: "Action needed",
+    rows: [
+      { label: "Lapsing donors", value: "4" },
+      { label: "At-risk donors", value: "7" },
+      { label: "Lapsed donors (90 days)", value: "11" },
+      { label: "Largest gift on list", value: "$3.8K" },
+    ],
+    progressLabel: "At-risk donor list reviewed",
+    progress: "60%",
+  },
+  painsTitle: "Gifts slip because the lapsed list is hard to work.",
+  pains: [
+    "A donor goes quiet and no one sees it until the next campaign.",
+    "The follow-up list lives in a spreadsheet that gets stale fast.",
+    "The lapsed list is a spreadsheet that no one works between campaigns.",
+    "High-value donors get mixed in with every small gift.",
+    "Donor retention sits near 43% and the board keeps asking what happened.",
+  ],
+  workflowTitle: "Surface the at-risk donor. Act before the window closes.",
+  workflowSteps: [
+    {
+      icon: "calendar",
+      heading: "See donors going quiet",
+      copy: "A live view shows donors by lapse risk so the list stays current.",
+    },
+    {
+      icon: "check",
+      heading: "Review gift history",
+      copy: "See last gift date, days since gift, and lifetime giving in one place.",
+    },
+    {
+      icon: "transfer",
+      heading: "Re-engage the lapsed list",
+      copy: "Filter the list by lapse band so staff can work one group at a time.",
+    },
+  ],
+  featureTitle: "Retention tools that surface the donor before the gift is gone.",
+  features: [
+    {
+      icon: "calendar",
+      heading: "At-risk donor view",
+      copy: "See donors who are lapsing, at risk, or already lapsed.",
+    },
+    {
+      icon: "check",
+      heading: "Gift history context",
+      copy: "See last gift date, days since gift, and lifetime giving next to each donor.",
+    },
+    {
+      icon: "transfer",
+      heading: "Lapsed donor filter",
+      copy: "Filter the list by lapse band so staff can work one group at a time.",
+    },
+  ],
+  proofTitle: "Catching the signal early is easier than rebuilding a cold relationship.",
+  proofPoints: [
+    {
+      value: "43%",
+      label: "is the average nonprofit donor retention rate, based on sector reporting.",
+      source: "AFP Fundraising Effectiveness Project, sector median",
+    },
+    {
+      value: "3 bands",
+      label: "show donors as lapsing, at risk, or lapsed so staff can pick a list.",
+      source: "GrantPipe at-risk donor view",
+    },
+    {
+      value: "1 view",
+      label: "shows donor status, last gift, days since gift, and lifetime giving.",
+      source: "GrantPipe at-risk donor view",
+    },
+  ],
+  trustLabels: ["At-risk donor view", "Lapsed donor filter", "Gift history context"],
+  faqTitle: "Questions from directors trying to lift retention.",
+  faqs: [
+    {
+      q: "Does this replace our donor CRM?",
+      a: "GrantPipe is the donor and grant record. Import your existing data by CSV. Run cultivation and retention from one place.",
+    },
+    {
+      q: "Can we import our donor data?",
+      a: "Use CSV import to bring in donor and gift fields your team tracks. Review the import map before you rely on a field.",
+    },
+    {
+      q: "Will it tell us which donors are about to lapse?",
+      a: "Yes. The at-risk donor view filters by lapse band and flags donors approaching the lapse window.",
+    },
+    {
+      q: "Does it post gift data to our accounting system?",
+      a: "No. GrantPipe does not connect to QuickBooks right now. Record gift details in GrantPipe. Keep journal entries in QuickBooks.",
+    },
+  ],
+  finalTitle: "See your at-risk donor list today.",
+  finalBody:
+    "Import your donor data. Open the at-risk donor view. Pick the next donors to call this week.",
+};
+---
+
+<PaidSearchLandingPage page={page} />

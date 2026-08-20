@@ -1,0 +1,1 @@
+CREATE UNIQUE INDEX "report_templates_org_type_idx" ON "report_templates" USING btree ("org_id","type");

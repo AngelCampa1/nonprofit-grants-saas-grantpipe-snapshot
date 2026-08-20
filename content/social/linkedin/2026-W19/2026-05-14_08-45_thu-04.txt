@@ -1,0 +1,7 @@
+Three teams in a $4M nonprofit can produce three different answers to a single restricted-fund question. FASB ASC 958 is why those answers diverge: program spend, fund release, and donor recognition each follow different recognition rules.
+
+Finance is reading net assets with donor restrictions, last reconciled at month-end. The ED is reading a working budget memo from two weeks ago. Development is reading the gift side, before any release from restriction has posted.
+
+This is what FASB ASC 958 actually asks you to track. Restricted dollars sit on the balance sheet until they are released onto the activity statement, when the purpose is satisfied or the time restriction lapses.
+
+If three teams see three numbers, they are seeing three stages of the same lifecycle. One source of truth means one ledger that everyone reads.

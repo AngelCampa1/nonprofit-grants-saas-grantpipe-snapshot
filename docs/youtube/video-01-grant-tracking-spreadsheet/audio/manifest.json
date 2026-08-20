@@ -1,0 +1,82 @@
+[
+  {
+    "id": "00",
+    "title": "[0:00] Cold open / Hook",
+    "slug": "cold-open-hook",
+    "chars": 1260,
+    "file": "audio/chapter-00.mp3",
+    "text": "There's one column missing from almost every grant tracking spreadsheet I've seen. It's also the first thing an auditor asks about. Stick around and I'll hand you the finished template, free. But first, the column that quietly gets nonprofits in trouble. If you're running your grants on a spreadsheet, this is not a knock on you. A spreadsheet is the right place to start. The trouble is that most grant trackers get built like a to-do list. Applied, approved, money received, done. But your funder and your auditor are asking a completely different question, and a to-do list can't answer it. So over the next ten minutes, let's build a grant tracking spreadsheet together, from a blank sheet, the way it should be built if you ever expect to sit across from an auditor. The finished template is genuinely free. Drop your email at the link in the description and I'll send you both the Google Sheets and the Excel version, with every column we build today already in place. Quick note on where I'm coming from. I build grant compliance software, so I'm going to show you the structure that survives an audit, not just the one that looks tidy on a Monday morning. Everything I show you here works in plain Google Sheets or Excel. No add-ons, no special tools."
+  },
+  {
+    "id": "01",
+    "title": "[1:15] Chapter 1 — Why most trackers fail",
+    "slug": "chapter-1-why-most-trackers-fail",
+    "chars": 536,
+    "file": "audio/chapter-01.mp3",
+    "text": "Picture a typical grant tracker for a second. Grant name, funder, award amount, a status column, maybe a due date. All of it tracks whether the money showed up, and nothing about how you're allowed to spend it. That sheet falls apart in three places. You can't tell which dollars are promised to a specific program. You know the award was fifty thousand, but not that you've already burned through forty-eight. And when a number changes, nobody knows who changed it, or when. By the end of this, we'll have fixed all three. Let's build."
+  },
+  {
+    "id": "02",
+    "title": "[2:20] Chapter 2 — The Grant Register",
+    "slug": "chapter-2-the-grant-register",
+    "chars": 1280,
+    "file": "audio/chapter-02.mp3",
+    "text": "Open a new sheet. Your first tab is the Grant Register. One row per grant, and this is your master list. These are the columns that earn their place. Start with a Grant ID, a short code like E-D dash twenty-twenty-six dash oh-one. The funder prefix, the year, then a running number. You'll thank yourself the day you have twenty grants and three of them come from the same funder. Then grant name, funder, and funder type, whether that's federal, state, foundation, or corporate. The funder type matters because the rules change with the source. A federal award comes with a stack of requirements a local family foundation never will. Then the award amount, a start date, and an end date. That window has a name. It's called the period of performance, and spending outside that window is one of the more common things auditors flag. Money you spend the week before the grant officially starts can get disallowed, even when the expense itself was perfectly reasonable. Last, a real status column: Applied, Awarded, Active, Reporting, Closed. A grant isn't finished when the money lands. It's finished when the final report is accepted. The register's taking shape. But we still haven't added the column from the start of this video, and it's the one that matters most. That's next."
+  },
+  {
+    "id": "03",
+    "title": "[3:45] Chapter 3 — Restricted vs. unrestricted (the column everyone forgets)",
+    "slug": "chapter-3-restricted-vs-unrestricted-the",
+    "chars": 1395,
+    "file": "audio/chapter-03.mp3",
+    "text": "Now the column from the very start of this video. Add one called Restricted, with a simple yes-or-no dropdown. Right next to it, add Restriction Purpose. This one column is the whole game. A restricted grant is money a funder gave you for one specific purpose, say your after-school program. You're obligated, legally or by contract, to spend it on that purpose. Unrestricted money you can put toward general operations. Now, a restricted grant can usually cover a fair share of your overhead, things like rent, but only when the award budget actually allows it. Charge general costs the grant never approved, and that isn't a typo. That's a compliance violation. If your organization spends a million dollars or more in federal money in a year, the place that catches it has a name. It's called the single audit, and we'll do a whole video on that one soon. A spreadsheet without this column can't tell you whether you're in trouble. So we add it now, to every grant, on day one. The Restriction Purpose field next to it is where you write the actual sentence from the award letter, in plain language. Future you, eighteen months from now, will not remember the terms. The cell will. One small tip. Use Data, then Data validation, to make Restricted a real dropdown. It stops the typos before they ever happen, and a typo here is the kind of thing that quietly breaks a formula three tabs away."
+  },
+  {
+    "id": "04",
+    "title": "[5:05] Chapter 4 — Budget vs. actual",
+    "slug": "chapter-4-budget-vs-actual",
+    "chars": 1170,
+    "file": "audio/chapter-04.mp3",
+    "text": "Next tab, and this is the one that protects you. Budget versus Actual. Here you track spending against a single grant, not your whole organization, just this one award. Down the left side, list the budget categories the funder approved. Personnel, supplies, travel, whatever the award spells out. Match their wording, not yours. If the award says \"Personnel,\" don't call it \"Staff,\" because at report time you want your line items to line up with theirs exactly. Then three columns across the top: Budgeted, Spent, and Remaining. Remaining is just budgeted minus spent, so let the sheet do the math. Equals B2 minus C2, and copy it down. Why break it out by category instead of one big number? Because many funders approve your budget by category, not just as a lump sum. Say they gave you eight thousand for travel and you spend twelve. Your grand total might still be under budget, but you've overspent a category. With federal awards, for example, once you shift more than about ten percent of the total between categories, you usually need the funder's sign-off first. Tracking by line is how you catch that in March, instead of finding out at the audit in November."
+  },
+  {
+    "id": "05",
+    "title": "[6:25] Chapter 5 — The expense log",
+    "slug": "chapter-5-the-expense-log",
+    "chars": 986,
+    "file": "audio/chapter-05.mp3",
+    "text": "So how does that Spent number fill itself in? With an expense log. One tab, one row for every dollar you charge to a grant. The columns are simple. Date, Grant ID, Category, Vendor, Amount, and a Notes field for the why. The Grant ID is the key that ties everything together. It's how each expense connects back to the right grant in your register, and it's why we gave every grant a code back in chapter two. Over on the Budget versus Actual tab, your Spent column becomes one formula, called SUMIFS. Think of it as a smart total. It scans your whole expense log and pulls only the rows that match this grant and this budget line. Log a receipt, and the budget updates itself. That single connection, expense log feeding the budget, is the difference between a spreadsheet you actually trust and one you rebuild from scratch every quarter. Get this part right and you stop doing math by hand entirely. You just log expenses as they happen, and every other tab stays current on its own."
+  },
+  {
+    "id": "06",
+    "title": "[7:40] Chapter 6 — Deadlines and a one-glance dashboard",
+    "slug": "chapter-6-deadlines-and-a-one-glance-das",
+    "chars": 978,
+    "file": "audio/chapter-06.mp3",
+    "text": "Funders don't only want their money spent correctly. They want to hear about it, on a schedule. So add a Reporting tab. Grant ID, report type, due date, the date you submitted, and a status. Now for a genuinely useful trick: conditional formatting. Select your due-date column and add a rule. If a date falls within the next thirty days, turn it amber. If it's already passed and nothing's been submitted, turn it red. Your deadlines start finding you, instead of you trying to remember them at midnight. A missed report is one of the fastest ways to lose a renewal, and it's completely avoidable. And put a tiny dashboard at the top of your register. Four numbers: total awarded, total spent, the percentage of your funding that's restricted, and how many reports are due in the next thirty days. Those are just a few SUM and COUNTIFS formulas. That's your entire grant portfolio in a single glance, which is exactly the view your executive director or your board will ask for."
+  },
+  {
+    "id": "07",
+    "title": "[8:45] Chapter 7 — Lock it down before it bites you",
+    "slug": "chapter-7-lock-it-down-before-it-bites-y",
+    "chars": 939,
+    "file": "audio/chapter-07.mp3",
+    "text": "Before we talk about where this breaks, here are two minutes that will save you. First, protect the cells that should never change by accident. In Google Sheets that's Data, then Protect sheets and ranges. Lock your award amounts and your formulas, so a well-meaning volunteer can't overwrite the math while they're fixing a vendor name. Second, give people the right level of access. Anyone who only needs to read the numbers gets View access, not Edit. Fewer hands on the keys means fewer mystery changes you can't explain later. Third, name the file like someone will ask you about it, because someday someone will. Pick one pattern, something like Grant Tracker and the year, and save a dated copy at the end of every quarter. When a funder asks what your budget looked like back in June, you can actually show them. None of this is glamorous. It's the difference between a spreadsheet you can defend and one you have to apologize for."
+  },
+  {
+    "id": "08",
+    "title": "[9:45] Chapter 8 — Where the spreadsheet breaks (the honest part)",
+    "slug": "chapter-8-where-the-spreadsheet-breaks-t",
+    "chars": 723,
+    "file": "audio/chapter-08.mp3",
+    "text": "I make grant software for a living, so let me be straight with you about where this spreadsheet stops working. Because at some point, it will. The first crack shows up when more than one person edits the file, and you genuinely can't tell who changed the award amount, or when. There's no audit trail, and the trail is the first thing an auditor asks to see. The second comes when a single expense has to split across two grants, and no clean formula can allocate it cleanly. The third is just volume. Enough grants, and that reporting tab quietly becomes someone's full-time job. None of that is you doing it wrong. It's a spreadsheet doing exactly what a spreadsheet does, right up until your compliance load outgrows it."
+  },
+  {
+    "id": "09",
+    "title": "[10:30] Outro / Soft CTA",
+    "slug": "outro-soft-cta",
+    "chars": 1134,
+    "file": "audio/chapter-09.mp3",
+    "text": "When you hit that wall, the next step is software that keeps the audit trail for you. Every change logged on its own, with a name and a timestamp. Restricted funds kept separate by the system, so you physically can't spend them on the wrong thing. Deadlines tracked without anyone babysitting a tab. That's exactly why I built GrantPipe. It's the same structure you just put in this spreadsheet, except the audit trail and the fund accounting are handled for you, instead of resting on whoever remembers to be careful. I'm not going to pitch it hard here. The spreadsheet you just built is the right tool today, and when it stops being the right tool, you'll know, and you'll know where to look. So go grab the free template. Drop your email at the link in the description and I'll send you both the Google Sheets and the Excel version, with every column we built today already in there. If this saved you a future headache, subscribe. The next video breaks down the single audit, in plain English, without the jargon. Build it right the first time. The version of you sitting across from an auditor someday will be very glad you did."
+  }
+]

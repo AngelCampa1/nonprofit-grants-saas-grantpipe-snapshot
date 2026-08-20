@@ -1,0 +1,13 @@
+Five things a unified donor and grant workspace should do without an export.
+
+1. Look up a donor and see every gift, every grant they made or referred, and every restricted fund they touch.
+
+2. Open a grant record and see live spend-down, next reporting deadline, assigned staff, and attached documents.
+
+3. Run the activity feed on a fund and read the chronological story of how dollars came in and where they went.
+
+4. Filter the donor list by giving capacity and last touch date without leaving the page.
+
+5. Hand a read-only login to your auditor that shows grants, funds, documents, and GL mapping, without exposing donor names or board notes.
+
+Most tools cover one or two. The ones that cover all five feel correct on a Tuesday afternoon when the work is real.

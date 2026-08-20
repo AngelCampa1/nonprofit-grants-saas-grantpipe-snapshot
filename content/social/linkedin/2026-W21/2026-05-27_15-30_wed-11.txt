@@ -1,0 +1,3 @@
+Here is the kind of complaint donor CRMs produce: three versions of the same grant budget. One in QuickBooks, one in a Google Sheet, one in the donor CRM. None of them agree, and none of them is wrong on its own.
+
+That is the story of the integration tax in one paragraph. The tools are fine. The hand-off is the problem.

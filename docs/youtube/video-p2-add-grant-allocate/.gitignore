@@ -1,0 +1,15 @@
+# Regenerable intermediates — not tracked.
+# Review/ground-truth frame sets and SSIM probes extracted from the final mp4 during whole-video reviews.
+output/_bsweep/
+output/_bsweep2/
+output/_ch3/
+output/_probe/
+output/_review/
+output/_seams/
+output/_tail/
+output/_tail2/
+output/_verify/
+# Per-chapter silent renders (muxed + concatenated into output/add-grant-allocate.mp4).
+output/*.silent.mp4
+# HyperFrames may drop a local node_modules if installed non-npx.
+production/node_modules/

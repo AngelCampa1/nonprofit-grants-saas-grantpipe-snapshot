@@ -1,0 +1,13 @@
+We decided early that GrantPipe would not have a sales team.
+
+Not because sales teams are bad. Because the moment we hire one, the product has to support a different kind of conversation than the one the user actually needs.
+
+Sales-led B2B SaaS optimizes for the buyer. The buyer is rarely the operator. In nonprofit software, the buyer is often a board member or an Executive Director, and the operator is the Development Director or the Finance Manager who never sat in the demo.
+
+That is how we end up with products that look great on a slide and feel terrible on a Tuesday morning.
+
+Public pricing. Free trial on real data. Month-to-month billing. No setup fee. The product has to earn the next month every month.
+
+That is the constraint we wanted. Sales-led companies have other constraints, and they are also valid. They are just not the ones I wanted to optimize for.
+
+See current offer terms at grantpipe.com/pricing.

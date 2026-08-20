@@ -1,0 +1,11 @@
+Your CRM may know the funder relationship.
+
+Your accounting system may know the cash.
+
+Your shared drive may know the award letter.
+
+Your spreadsheet may know the report due date.
+
+The reconciliation burden is created by the gaps between those records.
+
+GrantPipe's bet is simple: donor records, grants, restricted funds, evidence, and reporting should be connected from the start.

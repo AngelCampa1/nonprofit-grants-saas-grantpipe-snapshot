@@ -1,0 +1,9 @@
+Before: a Development Director and a Finance Director on a Wednesday call, comparing two spreadsheets both labeled "FY26 grant pipeline." One has 14 grants. The other has 11. Three are missing from each side. Not the same three.
+
+After: one record per grant. One pipeline view for Development. One spend-down view for Finance. The same record, different lenses. The Wednesday call is now five minutes long.
+
+The disagreement was never about the grants. It was about which export was current.
+
+A donor CRM and a finance system are not the same shape as a unified workspace. The integration tax (Zapier, manual exports, monthly reconciliations) costs more than people admit, because most of the cost is in the meetings that exist only to reconcile the two views.
+
+Take the meeting off the calendar. Put the data in one place.

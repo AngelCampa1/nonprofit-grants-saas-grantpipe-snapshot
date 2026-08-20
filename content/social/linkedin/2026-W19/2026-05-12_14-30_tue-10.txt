@@ -1,0 +1,7 @@
+Reconciling a donor CRM to the general ledger can surface three patterns: payments booked to the wrong fund, pledges entered twice, restricted gifts coded as unrestricted.
+
+None of these are unusual. All three surface only when someone compares the two systems row by row.
+
+The quiet cost of running parallel systems is not the integration tax. It is the recurring two-week reconciliation that shows up before every audit, every board meeting, and every 990. The work that produces no new value, only confidence that the existing values are correct.
+
+If you are doing that reconciliation more than once a year, the system count is too high.

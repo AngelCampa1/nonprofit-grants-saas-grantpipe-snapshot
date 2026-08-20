@@ -1,0 +1,7 @@
+For every Finance Director who has been told "just configure the CRM for grant tracking."
+
+Donor CRMs are built around a person or a household. Grants are not people. A grant has a period of performance, a budget across cost categories, a reporting cadence, a fund allocation, and an audit trail. None of those map cleanly to contact records and opportunities.
+
+You can force them in. Custom objects, picklists, formula fields. It works for a quarter. Then a funder asks for cumulative spend by category against budget across two fiscal years, and you spend a Saturday in a spreadsheet rebuilding the answer.
+
+The CRM is not wrong. It was just never the right shape.

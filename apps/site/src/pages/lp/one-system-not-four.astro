@@ -1,0 +1,125 @@
+---
+import PaidSearchLandingPage from "@/components/paid-search-landing-page.astro";
+import type { PaidLandingPageData } from "@/components/paid-search-landing-page.astro";
+
+const page: PaidLandingPageData = {
+  slug: "one-system-not-four",
+  title: "One System Instead of Four | GrantPipe",
+  description:
+    "Bring donor records, grant trackers, fund notes, and team follow-up into one place. Keep your accounting system for the books.",
+  kicker: "Consolidate your nonprofit tech stack",
+  headline: "One system instead of four.",
+  subhead:
+    "Bring donor records, grant trackers, fund notes, and team follow-up into one place.",
+  primaryCta: "Start 1-month free trial",
+  exitLeadMagnet: {
+    slug: "nonprofit-crm-evaluation-scorecard",
+    title: "Nonprofit CRM Evaluation Scorecard",
+    description:
+      "A structured scorecard for comparing nonprofit CRM options on the criteria that matter most: cost, fit, migration risk, and ongoing support burden.",
+  },
+  trust: "No credit card required. Built for executive directors ready to consolidate.",
+  proofCard: {
+    label: "Stack consolidation",
+    status: "Systems reduced",
+    rows: [
+      { label: "Systems before", value: "4" },
+      { label: "Systems after", value: "1" },
+      { label: "Records connected", value: "Yes" },
+      { label: "Board packet prep", value: "2 hrs" },
+    ],
+    progressLabel: "Unified record live",
+    progress: "91%",
+  },
+  painsTitle: "Four systems means four chances for the numbers to disagree.",
+  pains: [
+    "Donors live in the CRM. Grants live in a spreadsheet. They never match.",
+    "Restricted fund balances require a call to finance before every board meeting.",
+    "Funder deadlines sit in one staffer's Outlook calendar.",
+    "The board report takes half a day to pull and still has version errors.",
+    "You pay for four tools and still spend hours reconciling them.",
+  ],
+  workflowTitle: "One record from first gift to final grant report.",
+  workflowSteps: [
+    {
+      icon: "ledger",
+      heading: "Donors and grants in one record",
+      copy: "Major gifts, pledges, and grant awards tracked side by side.",
+    },
+    {
+      icon: "balance",
+      heading: "Restricted fund balances live",
+      copy: "See what each fund has left without a separate accounting pull.",
+    },
+    {
+      icon: "report",
+      heading: "One report for the board",
+      copy: "Revenue, compliance, and program data from the same source.",
+    },
+  ],
+  featureTitle: "Everything your team runs in one place.",
+  features: [
+    {
+      icon: "ledger",
+      heading: "Unified donor and grant record",
+      copy: "Cultivation, awards, and fund releases tracked together.",
+    },
+    {
+      icon: "calendar",
+      heading: "Deadline and task management",
+      copy: "Funder due dates and team tasks in one shared calendar.",
+    },
+    {
+      icon: "audit",
+      heading: "Compliance and evidence in one file",
+      copy: "Grant records include attached proof, so audit prep is a review.",
+    },
+  ],
+  proofTitle: "One system stops the reconciliation cycle before it starts.",
+  proofPoints: [
+    {
+      value: "4 to 8 hrs",
+      label:
+        "is the internal planning range for stitching together a board packet from disconnected systems.",
+      source: "GrantPipe ICP research",
+    },
+    {
+      value: "1 import",
+      label:
+        "brings donors, grants, and fund records into the same workspace in the free trial.",
+      source: "GrantPipe onboarding data",
+    },
+    {
+      value: "$500K to $10M",
+      label:
+        "is the budget range where GrantPipe supports staff-led setup for standard CSV imports.",
+      source: "GrantPipe positioning",
+    },
+  ],
+  trustLabels: ["Donors and grants unified", "Restricted fund tracking", "QuickBooks stays"],
+  faqTitle: "Questions about consolidating your nonprofit tech stack.",
+  faqs: [
+    {
+      q: "Does this replace our accounting system?",
+      a: "No. GrantPipe does not connect to QuickBooks or Sage Intacct right now. Keep your books there. Keep donor, grant, and fund records in GrantPipe.",
+    },
+    {
+      q: "Can we bring data from four different systems?",
+      a: "Yes. You can import donors, grants, and contacts by CSV from your existing tools. Start with one clean export in the trial.",
+    },
+    {
+      q: "What if our board expects us to keep the current CRM?",
+      a: "Start a free trial and run both in parallel. Pull a board report from GrantPipe to show the difference before committing to a full switch.",
+    },
+    {
+      q: "How long until we can retire the spreadsheet?",
+      a: "Start with one active grant and its deadlines. If the view is useful, move the rest of the tracker over in stages.",
+    },
+  ],
+  finalTitle: "Import one grant and one donor segment. See them in the same view.",
+  finalBody:
+    "Start with the two records you check most. Put them in one place and compare the board view against your current process.",
+};
+---
+
+<PaidSearchLandingPage page={page} />

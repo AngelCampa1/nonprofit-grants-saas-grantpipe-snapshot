@@ -1,0 +1,9 @@
+If you have inherited a multi-year pledge that nobody scheduled.
+
+Here is what FASB ASC 958 expects, in plain English.
+
+A multi-year unconditional pledge gets recorded at present value the year it is promised, not the year the cash arrives. The discount unwinds as contribution revenue across the pledge period.
+
+A $300,000 five-year unrestricted pledge does not show up as $60,000 of revenue per year. It shows up as roughly $280,000 of revenue in year one (present value) plus the unwind across years two through five.
+
+Most donor CRMs cannot model this. The next four years of statements rest on the data you put in this week.

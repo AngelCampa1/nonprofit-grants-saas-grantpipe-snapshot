@@ -1,0 +1,148 @@
+# Video #17 — Grant Budget Template Walkthrough (Step by Step)
+
+**Target keyword:** grant budget template
+**Narrator:** female, conversational (ElevenLabs "Bella")
+**Target length:** ~11 min · **Pass:** stop-slop + humanizer applied, tuned for spoken delivery
+**Angle:** Compliance-aware budget walkthrough. Builder voice. Real free template (Excel + Sheets), delivered by email. Honest scale limit, soft GrantPipe outro.
+
+> Narration = plain paragraphs. `[VISUAL: …]` cues drive the Hyperframes build. The TTS pipeline extracts narration paragraphs only.
+
+---
+
+### [0:00] Cold open / Hook
+
+[VISUAL: Dark emerald title card. A grant budget table fades up. The bottom "Total" cell glows ochre, then a red mismatch flag appears next to a separate "Amount Requested" figure that doesn't match.]
+
+Funders reject more budgets for one quiet reason than for asking for too much money. The numbers don't match the story. Your proposal promises one thing, your budget adds up to another, and the reviewer notices before you do. Stick around and I'll hand you the finished template, free. But first, let's build a grant budget that actually holds together.
+
+If you've ever stared at a blank budget form the night before a deadline, padding round numbers until the total looked about right, this video is for you. A grant budget isn't a wish list and it isn't a guess. It's a financial argument, and every line is a claim a reviewer can check.
+
+So over the next eleven minutes, let's build a grant budget from a blank sheet, the way a reviewer reads it and the way an auditor will check it later. The finished template is genuinely free. Drop your email at the link in the description and I'll send you both the Google Sheets and the Excel version, with every line and the budget narrative tab already set up.
+
+[VISUAL: GrantPipe wordmark, small, lower third. A chapter list slides in.]
+
+Quick note on where I'm coming from. I build grant compliance software, so I'm going to show you the structure that survives a federal review, not just the one that fills the boxes. Everything here works in plain Google Sheets or Excel. No add-ons, no macros.
+
+---
+
+### [1:10] Chapter 1 — Why most grant budgets get rejected
+
+[VISUAL: A "typical" padded budget. Round numbers: $50,000, $10,000, $5,000. A red stamp drops: "NOT JUSTIFIED."]
+
+Picture the budget most people hand in. A column of big round numbers. Fifty thousand for staff, ten thousand for supplies, five for travel. It looks clean, and that's exactly the problem. Round numbers tell a reviewer you estimated instead of calculated.
+
+A grant budget fails in three predictable places. First, the math doesn't tie back to the proposal, so the activities you described don't line up with the dollars you asked for. Second, there's no indirect cost line, so you're quietly funding your own overhead out of program money. Third, there's no narrative, no sentence anywhere explaining how you got to each number. By the end of this, we'll have fixed all three. Let's build.
+
+---
+
+### [2:05] Chapter 2 — The line items funders expect
+
+[VISUAL: Blank Google Sheet. Tab renamed "Budget." A standard category list types in one row at a time: Personnel, Fringe Benefits, Travel, Equipment, Supplies, Contractual, Other, Indirect.]
+
+Open a new sheet. Before you type a single dollar, you set up the categories, because funders expect the same ones in roughly the same order. Get the skeleton right and the rest is just filling in.
+
+These are the standard federal cost categories, and most foundations follow them too. Personnel. Fringe benefits. Travel. Equipment. Supplies. Contractual. Other. And then indirect costs at the bottom. The reason this order matters is that a reviewer reads dozens of budgets in a sitting. When yours uses the categories they already know, they can find what they're looking for and trust that you know the rules. A budget organized your own clever way just makes them work harder, and a tired reviewer is not on your side.
+
+Down the left, list those categories. Across the top, three columns to start: a description, the math, and the total. The math column is the one almost everyone skips, and it's the one that earns trust. We'll come back to it on every line.
+
+---
+
+### [3:15] Chapter 3 — Personnel and fringe, the biggest number
+
+[VISUAL: Budget table focused on Personnel rows. Columns: Role, Annual Salary, % Effort, Cost. A formula appears: Salary × % Effort. Then a Fringe row: Personnel subtotal × fringe rate.]
+
+Personnel is almost always your largest category, and it's where reviewers look first. So we calculate it, we never estimate it. For each person on the grant, you need three things: their annual salary, the percentage of their time the grant pays for, and the math that connects them.
+
+Say your program director earns eighty thousand a year and spends a quarter of their time on this project. That's eighty thousand times twenty-five percent, so twenty thousand dollars to the grant. Write that math in the description, the salary and the percent of effort, every time. The percent of effort is a real compliance term. It's the share of a person's total working time that this award pays for, and on a federal grant you'll later have to certify it was accurate. So the number you put here is a promise you're making about how someone actually spends their week.
+
+[VISUAL: A "Fringe Benefits" row fills in. Callout: "Fringe = payroll taxes + benefits, as a % of salary."]
+
+Right under personnel comes fringe benefits. Fringe is the real cost of employing someone beyond their salary: payroll taxes, health insurance, retirement. You express it as a percentage of the salaries you're charging. If your organization's fringe rate is thirty percent, and you charged twenty thousand in salary to this grant, that's six thousand in fringe. Don't fold benefits into salary and don't leave them out. Both are red flags. Your finance person knows your real fringe rate, so use that, not a guess.
+
+---
+
+### [4:35] Chapter 4 — The other direct costs
+
+[VISUAL: Table rows for Travel, Supplies, Contractual, Equipment. An "Equipment vs. Supplies" callout: "Item ≥ $10,000 and lasts > 1 year = Equipment."]
+
+Now the rest of your direct costs, the things you buy to run the program. Travel, supplies, contractual, and equipment. The trick on every one of these is the same: break it into units, never one lump sum.
+
+Travel isn't "five thousand dollars." It's three staff, to one conference, at a known airfare, plus hotel nights at a real per-night rate. Supplies is the number of laptops times the price, not "supplies, eight thousand." Contractual is for the consultants and subcontractors doing defined pieces of work, each with a rate and a scope. When you show the units, a reviewer can sanity-check you, and passing that check is how you build credibility line by line.
+
+[VISUAL: Equipment vs Supplies split animates: a $12,000 lab spectrometer slides to "Equipment," a box of $40 supplies stays in "Supplies."]
+
+One distinction trips people up constantly: equipment versus supplies. Under the federal rules, equipment is anything that costs ten thousand dollars or more per unit and lasts more than a year. Below that threshold, it's a supply. This matters more than it sounds, because in a minute we'll calculate indirect costs, and equipment gets treated differently from everything else. So a three-hundred-dollar tablet is a supply. A twelve-thousand-dollar piece of lab gear is equipment. Put each in the right row now and the indirect math works itself out later.
+
+---
+
+### [5:50] Chapter 5 — Indirect costs and the de minimis rate
+
+[VISUAL: Tab still "Budget." An "Indirect Costs" row at the bottom highlights. A formula: MTDC × 15%. A callout defines MTDC.]
+
+Here's the line most nonprofits leave money on the table by skipping: indirect costs. These are your real costs of operating that you can't tie to one specific program. Rent, utilities, accounting, the lights. The grant should help pay for them, and if you don't ask, you're subsidizing the funder out of your own pocket.
+
+If you've never negotiated a formal indirect rate with the government, you're allowed to use what's called the de minimis rate. And here's a number a lot of older videos still get wrong: as of the 2024 update to the federal Uniform Guidance, that de minimis rate went up from ten percent to fifteen percent. You apply it to something called modified total direct costs, or MTDC. That's most of your direct costs, but it deliberately leaves out equipment and the part of any single subaward above fifty thousand dollars. So you total your eligible direct costs, multiply by fifteen percent, and that's a legitimate indirect line no funder can argue with, because it's written into the regulation.
+
+[VISUAL: MTDC calculation animates: direct costs total, minus equipment, minus subaward over $50k, = MTDC base; then × 15%.]
+
+I know this is the driest two minutes of the video. It's also the part that quietly puts thousands of dollars back into your organization on every grant. The template does this calculation for you, so you set your rate once and it flows.
+
+---
+
+### [7:00] Chapter 6 — Cost share and match
+
+[VISUAL: A "Match / Cost Share" section. Two columns: Cash Match, In-Kind Match. A volunteer hours row converts to a dollar value.]
+
+Some grants ask you to bring your own money to the table. That's cost sharing, or match. The funder covers part, you cover the rest, and you have to show where your part comes from.
+
+Match comes in two flavors. Cash match is real dollars from your budget or another funder. In-kind match is the value of things donated to the project: volunteer hours, donated space, pro bono services. Both count, but here's the rule that catches people. If you commit to a match in your budget, you are legally on the hook to deliver it and document it, the same way you document the grant's own spending. So only put down match you can actually prove later. And one more thing worth knowing: on federal research grants, a funder can't use voluntary match as a scoring factor unless a statute and the funding notice both allow it, so don't pad your match hoping to look better. Match what's required, document what you match, and stop there.
+
+---
+
+### [8:05] Chapter 7 — The budget narrative
+
+[VISUAL: Split view. Left: the budget numbers. Right: a "Budget Narrative" tab where each line gets one sentence of justification, typing in beside its number.]
+
+Now the piece that wins or loses more budgets than the math: the budget narrative. Also called the budget justification. It's a short written explanation, line by line, of how you got each number and why the project needs it. Most people treat it as paperwork. Reviewers treat it as the whole point.
+
+The rule is simple. Every number in your budget gets a sentence. Not a paragraph, a sentence. "Program director at twenty-five percent effort to supervise curriculum and staff." "Three round-trip flights to the national convening at four hundred dollars each." "Fifteen percent de minimis indirect rate on modified total direct costs." When a reviewer reads a number and immediately finds the sentence that explains it, two things happen. They believe the number, and they believe you. A budget without a narrative is just a reviewer's list of questions you didn't answer.
+
+[VISUAL: The template's "Budget Narrative" tab fills in; each row links to its budget line by category.]
+
+The template gives you a narrative tab already structured by category, so you're never staring at a blank page. You fill in one sentence per line as you build the budget, not at midnight before it's due.
+
+---
+
+### [9:15] Chapter 8 — Allowable costs and the spending window
+
+[VISUAL: Two-panel. Left: "Allowable" green checks (program staff, project supplies). Right: "Unallowable" red X's (alcohol, lobbying, fundraising). Below: a "Period of Performance" timeline bar.]
+
+Two compliance guardrails before we talk about where this breaks. The first is allowable versus unallowable costs. Federal rules are explicit that some things simply cannot be charged to a grant, no matter how reasonable they feel. Alcohol. Lobbying. Fundraising costs. Most entertainment. If it's on the unallowable list, it doesn't go in the budget, full stop, and slipping one in is the kind of thing that turns a routine review into a finding.
+
+[VISUAL: The period-of-performance bar highlights a start and end date; a cost dated before the start glows red and is rejected.]
+
+The second is the period of performance. That's the window the grant actually covers, the official start and end dates. Money you spend before the start date or after the end date can get disallowed, even when the expense itself was perfectly reasonable. So your budget should only contain costs that fall inside that window. It sounds obvious, and it's one of the most common things that gets flagged.
+
+---
+
+### [10:10] Chapter 9 — Where a budget template breaks
+
+[VISUAL: The clean budget multiplies into a mess: a "budget vs actual" column appears and drifts out of sync, tabs labeled grant_budget_v2, _final, _FINAL_real.xlsx pile up.]
+
+I build grant software for a living, so let me be honest about where this template stops working. Because at some point, it will.
+
+A budget template is built for one moment: the proposal. It's a snapshot. The trouble starts the day the grant is awarded and the budget has to become a living thing you track against. The first crack is budget versus actual, keeping spent amounts current against this plan across a whole year, by category, by hand. The second is when one cost has to split across two grants, and no clean formula allocates it. The third is just volume. A few grants, each with its own budget, its own period, its own narrative, and the spreadsheet quietly becomes someone's full-time job. None of that is you doing it wrong. It's a static template doing exactly what a static template does.
+
+---
+
+### [10:55] Outro / Soft CTA
+
+[VISUAL: Split screen. The finished budget on the left. On the right, a calm GrantPipe screen showing the same grant's budget tracking spent against plan automatically, with an indirect rate applied across awards.]
+
+When you hit that wall, the next step is software that keeps the budget alive after the award. Spent tracked against plan on its own. The indirect rate applied the same way on every grant. Restricted funds kept separate by the system, so the budget you proposed and the money you actually spend never drift apart. That's exactly why I built GrantPipe. It's the same structure you just put in this template, except it keeps itself current instead of resting on whoever remembers to update the sheet. I'm not going to pitch it hard here. The template you just built is the right tool for your next proposal, and when it stops being enough, you'll know where to look.
+
+So go grab the free template. Drop your email at the link in the description and I'll send you both the Google Sheets and the Excel version, with every line item, the indirect calculation, and the budget narrative tab already built. If this saved you a future headache, subscribe. The next video breaks down the single audit, in plain English, without the jargon.
+
+Build the budget like a reviewer will read it, because one will. The version of you waiting on an award decision will be very glad you did.
+
+[VISUAL: End card. Template link, GrantPipe wordmark, "Next up: The Single Audit, Explained."]

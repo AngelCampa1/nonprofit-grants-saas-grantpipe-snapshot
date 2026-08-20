@@ -1,0 +1,9 @@
+Release from restriction: the accounting entry that moves dollars from net assets with donor restrictions to net assets without donor restrictions when the condition is satisfied.
+
+The trigger matters.
+
+For a purpose restriction, show the approved activity happened.
+
+For a time restriction, show the time period passed.
+
+"We are close enough to spent down" is not a trigger.

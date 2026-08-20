@@ -1,0 +1,529 @@
+---
+import "../styles/global.css";
+import BillingToggle from "@/components/billing-toggle.astro";
+import DashboardMock from "@/components/dashboard-mock.astro";
+import ExplainerVideo from "@/components/explainer-video.astro";
+import FinalCta from "@/components/final-cta.astro";
+import PricingPlanCards from "@/components/pricing-plan-cards.astro";
+import ProductSurface from "@/components/product-surface.astro";
+import { getSignupCtaTarget, siteConfig } from "@/config/site";
+import { getAppLoginUrl } from "@/lib/app-url";
+import { marketingKnowledge } from "@grantpipe/shared/public-kb";
+import BaseLayout from "@grantpipe/ui/site/layouts/base-layout.astro";
+import SiteFooter from "@grantpipe/ui/site/components/site-footer.astro";
+import SiteHeader from "@grantpipe/ui/site/components/site-header.astro";
+import { ExitIntentPopup } from "@grantpipe/ui/site/components/exit-intent-popup";
+import { resolveExitPopupProps } from "@grantpipe/ui/site/lib/exit-popup-props";
+import { getPublicApiBaseUrl } from "@grantpipe/ui/site/lib/public-api-url";
+import { getCollection } from "astro:content";
+import { resolveExitLeadMagnetOffer } from "@/lib/lead-magnet-routing";
+
+const trialHref = getSignupCtaTarget();
+const leadMagnets = await getCollection("lead-magnets");
+const exitLeadMagnet = resolveExitLeadMagnetOffer(siteConfig, leadMagnets, { family: "solution" });
+const exitPopupProps = siteConfig.exitPopup?.enabled !== false ? resolveExitPopupProps(siteConfig) : undefined;
+const publicApiUrl = getPublicApiBaseUrl();
+const pageDescription =
+  "GrantPipe is a compliance-first grant management system for nonprofits. " +
+  "It connects awards, deadlines, restricted funds, donor context, evidence, " +
+  "reports, and audit trails in one workspace.";
+const productTourBody =
+  "A quick walkthrough of how donor records, grant pipelines, restricted " +
+  "funds, compliance deadlines, documents, and reports fit into one " +
+  "operating workspace.";
+const finalCtaBody =
+  "Start a 1-month free trial with the plan you choose. You can bring your " +
+  "current tracker, see real grants in the workspace during the trial, and " +
+  "add billing only if GrantPipe fits.";
+const featureCards = [
+  {
+    title: "Compliance calendar",
+    body:
+      "See report dates, renewal windows, reminder status, and review-ready " +
+      "next steps without asking someone to reconcile inboxes and trackers.",
+    surface: {
+      variant: "calendar" as const,
+      items: [
+        { date: "Jun 20", label: "SF-425 due" },
+        { date: "Queued", label: "Renewal report" },
+        { date: "Ready", label: "Reviewer packet" },
+      ],
+    },
+  },
+  {
+    title: "Evidence trail",
+    body:
+      "Keep documents, report status, reviewer access, and activity history " +
+      "close to the grant and fund records auditors ask about.",
+    surface: {
+      variant: "rows" as const,
+      items: [
+        { label: "Award letter", status: "Ready" },
+        { label: "Budget narrative", status: "Draft" },
+        { label: "SF-425 support", status: "Due" },
+      ],
+    },
+  },
+  {
+    title: "Restricted funds",
+    body:
+      "See restricted balances, fund context under FASB ASC 958, evidence links, " +
+      "additions, releases, and spend-down status. No manual fund schedule rebuilding.",
+    surface: {
+      variant: "meter" as const,
+      items: [
+        { label: "Youth programs", value: "$46k of $110k", pct: 42 },
+        { label: "Federal pass-through", value: "$91k of $125k", pct: 73 },
+        { label: "Clinic capacity", value: "$22k of $31k", pct: 71 },
+      ],
+    },
+  },
+  {
+    title: "Pipeline",
+    body:
+      "Track grant opportunities from drafting through award and reporting " +
+      "with funder, amount, and due-date context in the same view.",
+    surface: {
+      variant: "rows" as const,
+      items: [
+        { label: "Drafting", value: "Youth STEM" },
+        { label: "Submitted", value: "Food access" },
+        { label: "Awarded", value: "Clinic capacity" },
+      ],
+    },
+  },
+  {
+    title: "Federal grants search",
+    body:
+      "Search Grants.gov opportunities, save strong fits, and turn them into " +
+      "grant pipeline records with the original source preserved.",
+    surface: {
+      variant: "rows" as const,
+      items: [
+        { label: "CFDA 93.243 - SAMHSA", status: "Due Jun 20" },
+        { label: "USDA TEFAP support", status: "Due Jul 08" },
+      ],
+    },
+  },
+];
+const fitPoints = [
+  "Built for mid-sized US nonprofits with active grant reporting, " +
+    "restricted funds, and evidence requests.",
+  "Best for shared finance and development workflows where both teams need " +
+    "the same answer about awards, balances, deadlines, and review status.",
+  "Not for fundraising-only teams or organizations that do not manage restricted grants.",
+];
+const objections = [
+  {
+    question: "Can this replace spreadsheets?",
+    answer:
+      "Yes for the tracker work around grants, deadlines, fund balances, " +
+      "evidence, and reporting status. You can still export the data when a " +
+      "board packet, funder file, or finance workbook needs it.",
+  },
+  {
+    question: "Do we need a Salesforce admin?",
+    answer:
+      "No. GrantPipe is built for nonprofit staff who need a working grant " +
+      "and fund workspace without configuring a CRM project first.",
+  },
+  {
+    question: "What happens to our existing tracker?",
+    answer:
+      "Bring it into the trial. Use your current spreadsheet to create " +
+      "GrantPipe records so the trial uses your grants, " +
+      "not a blank demo account.",
+  },
+  {
+    question: "Can finance trust the restricted-fund model?",
+    answer:
+      "Funds are tracked separately from grants, with restrictions, releases, " +
+      "balances, and evidence kept visible for review. That matches how " +
+      "finance needs to explain restricted money.",
+  },
+];
+const workflowLabels = [
+  "Compliance calendar",
+  "Evidence trail",
+  "Restricted funds",
+  "Grant pipeline",
+  "Donor CRM",
+  "Multi-source grant pipeline",
+  "Fund accounting",
+  "Auditor and funder portal",
+];
+const aiBandBody =
+  "GrantPipe reads your award letters and answers ledger questions. You see " +
+  "the source first. Then you confirm. Award intake is on every paid plan. " +
+  "Ask your ledger starts on Growth.";
+const aiCapabilities = [
+  {
+    title: "Read award letters fast",
+    href: "/features/ai-award-document-intake",
+    body:
+      "Upload an award letter. GrantPipe pulls the funder, dates, " +
+      "restrictions, and budget. You check the source snippets. Then it " +
+      "creates the records.",
+    surface: {
+      variant: "rows" as const,
+      items: [
+        { label: "Funder", value: "SAMHSA" },
+        { label: "Report due", value: "Jun 20" },
+        { label: "Restriction", value: "Youth only" },
+      ],
+    },
+  },
+  {
+    title: "Ask your numbers",
+    href: "/features/ask-your-ledger",
+    body:
+      "Ask which grants are over budget. Ask a fund balance. GrantPipe " +
+      "answers from your records. Every answer links to the source.",
+    surface: {
+      variant: "rows" as const,
+      items: [
+        { label: "Over budget", value: "2 grants" },
+        { label: "Youth fund", value: "$46k left" },
+        { label: "Source", status: "linked" },
+      ],
+    },
+  },
+];
+---
+
+<BaseLayout
+  title="Compliance-First Grant Management System | GrantPipe"
+  description={pageDescription}
+  canonicalUrl={`https://${siteConfig.domain}/`}
+  siteName={siteConfig.name}
+  ogType="website"
+  twitterSite={siteConfig.social?.twitterHandle}
+  theme={siteConfig.theme}
+  fonts={siteConfig.theme.fonts}
+  themeColor={siteConfig.theme.primary}
+  appleTouchIcon={siteConfig.appleTouchIcon}
+  siteUrl={`https://${siteConfig.domain}`}
+  siteLogo={siteConfig.logo?.light ? `https://${siteConfig.domain}${siteConfig.logo.light}` : undefined}
+  siteFounder={siteConfig.author}
+  siteSameAs={siteConfig.sameAs}
+>
+  <SiteHeader
+    slot="header"
+    siteName={siteConfig.name}
+    navItems={siteConfig.nav?.items}
+    ctaText={siteConfig.funnel.bofu.ctaText}
+    ctaHref={siteConfig.funnel.bofu.ctaTarget}
+    loginHref={getAppLoginUrl()}
+    ctaVariant="primary"
+    ctaPill
+    currentPath={Astro.url.pathname}
+    logoLight={siteConfig.logo?.light}
+  />
+
+  <main data-marketing-page="home">
+    <section class="gp-hero gp-hero-stagger" data-section="hero" data-hero-variant="split">
+      <div class="gp-wrap gp-hero-grid">
+        <div>
+          <p class="gp-eyebrow-pill gp-hero-stagger__item" style="--stagger-index: 0;">
+            Compliance-first grant management system
+          </p>
+          <h1 class="gp-hero-stagger__title">
+            Keep awards, restrictions, deadlines, and evidence ready for review.
+          </h1>
+          <p class="gp-hero-lede gp-hero-stagger__item" style="--stagger-index: 1;">
+            GrantPipe helps nonprofits manage post-award grant work. Keep awards,
+            restricted funds, and donor context in one workspace. Keep deadlines,
+            evidence, reports, and audit trails there too.
+          </p>
+          <div class="gp-hero-actions gp-hero-stagger__item" style="--stagger-index: 2;">
+            <a class="gp-mkt-btn primary lg" href={trialHref}>Start 1-month free trial &rarr;</a>
+            <a
+              class="gp-mkt-btn ghost lg"
+              href="#product-tour"
+              aria-label="Watch product tour"
+            >
+              Watch the product tour
+            </a>
+          </div>
+          <p class="gp-hero-guide-link gp-hero-stagger__item" style="--stagger-index: 3;">
+            New here? Read the
+            <a href="/resources/guides/compliance-first-grant-management-system/">
+              compliance-first grant management system guide
+            </a>.
+          </p>
+          <div class="gp-fineprint gp-hero-stagger__item" style="--stagger-index: 4;" aria-label="Trial details">
+            <span>No credit card</span>
+            <span>Unlimited users</span>
+            <span>Use your tracker</span>
+            <span>Export anytime</span>
+          </div>
+        </div>
+        <div class="gp-hero-stagger__item" style="--stagger-index: 5;">
+          <DashboardMock />
+        </div>
+      </div>
+    </section>
+
+    <ExplainerVideo
+      id="product-tour"
+      eyebrow="Product overview"
+      title="See GrantPipe in 1 minute"
+      body={productTourBody}
+      ctaHref={getSignupCtaTarget()}
+      ctaLabel="Start 1-month free trial"
+      variant="compact"
+    />
+
+    <section class="gp-section" data-section="ai">
+      <div class="gp-wrap">
+        <div class="gp-section-head scroll-in">
+          <p class="gp-kicker--accent">AI built for compliance</p>
+          <h2>AI does the typing. You stay in control.</h2>
+          <p>{aiBandBody}</p>
+        </div>
+        <div class="gp-feature-grid">
+          {aiCapabilities.map((card) => (
+            <article class="gp-card interactive scroll-in">
+              <span class="gp-icon-chip gp-icon-chip--primary" aria-hidden="true">AI</span>
+              <p class="gp-type-label">AI workflow</p>
+              <h3>{card.title}</h3>
+              <p>{card.body}</p>
+              <ProductSurface label={card.title} {...card.surface} />
+              <a class="gp-mkt-btn ghost" href={card.href} aria-label={`See how ${card.title} works`}>
+                See how it works &rarr;
+              </a>
+            </article>
+          ))}
+        </div>
+      </div>
+    </section>
+
+    <section class="gp-fit-band scroll-in" data-section="fit">
+      <div class="gp-wrap">
+        <p>Fit</p>
+        {fitPoints.map((point) => <span>{point}</span>)}
+      </div>
+    </section>
+
+    <section class="gp-logo-strip scroll-in" data-section="logo-strip">
+      <div class="gp-wrap">
+        <p>Designed around</p>
+        {workflowLabels.map((label) => <span>{label}</span>)}
+      </div>
+    </section>
+
+    <section class="gp-section alt" data-section="features">
+      <div class="gp-wrap">
+        <div class="gp-section-head scroll-in">
+          <h2>Eight connected areas. Clear plan details.</h2>
+          <p>
+            GrantPipe spans compliance calendar work, evidence, restricted funds, grants, donor
+            records, multi-source grant pipeline, fund accounting, and auditor and funder portal
+            work. The pricing page shows what each plan includes. Not every area is in every tier.
+          </p>
+          <hr class="gp-hairline--accent" />
+        </div>
+        <div class="gp-feature-grid gp-feature-grid--triad">
+          {featureCards.map((card) => (
+            <article class="gp-card interactive scroll-in">
+              <span class="gp-icon-chip" aria-hidden="true">{card.title.charAt(0)}</span>
+              <p class="gp-type-label">Workflow</p>
+              <h3>{card.title}</h3>
+              <p>{card.body}</p>
+              <ProductSurface label={card.title} {...card.surface} />
+            </article>
+          ))}
+        </div>
+      </div>
+    </section>
+
+    <section class="gp-section" data-section="objections">
+      <div class="gp-wrap">
+        <div class="gp-section-head gp-objection-head scroll-in">
+          <p class="gp-kicker--accent">Common trial questions</p>
+          <h2>Answers before you move a tracker.</h2>
+          <p>
+            The trial should show whether GrantPipe can carry your grant and restricted-fund
+                  work. These are the questions to answer before you bring finance or leadership
+                  in.
+          </p>
+          <hr class="gp-hairline--accent" />
+        </div>
+        <div class="gp-feature-grid gp-objection-grid">
+          {objections.map((item) => (
+            <article class="gp-card interactive scroll-in">
+              <h3>{item.question}</h3>
+              <p>{item.answer}</p>
+            </article>
+          ))}
+        </div>
+      </div>
+    </section>
+
+    <section class="gp-section alt" data-section="pricing">
+      <div class="gp-wrap" data-billing-controller="annual">
+        <div class="gp-section-head center scroll-in">
+          <h2>Pricing is the next decision after the trial.</h2>
+          <p>
+            Start with your current grant tracker, see whether the workflow fits, then choose
+            the tier that matches the reporting load your team carries.
+          </p>
+          <BillingToggle page="/" />
+        </div>
+        <PricingPlanCards featureLimit={5} />
+        <p class="gp-section-foot center">
+          <a class="gp-mkt-btn ghost" href="/pricing/#plan-comparison-matrix">
+            See the full feature comparison →
+          </a>
+        </p>
+      </div>
+    </section>
+
+    <section class="gp-section gp-section--close scroll-in" data-section="final-cta">
+      <div class="gp-wrap">
+        <FinalCta
+          eyebrow="Trial import promise"
+          title="Bring your current tracker. See real grants in GrantPipe."
+          body={finalCtaBody}
+          primaryHref={trialHref}
+          primaryLabel={marketingKnowledge.ctas.trial.label}
+          secondaryHref="/product/"
+          secondaryLabel="See product walkthrough"
+          items={[
+            "1-month free trial. No credit card.",
+            "Use your current tracker during setup.",
+            "Export anytime if you decide not to continue.",
+            "Add billing only if GrantPipe fits.",
+          ]}
+        />
+      </div>
+    </section>
+  </main>
+
+  <SiteFooter
+    slot="footer"
+    siteName={siteConfig.name}
+    tagline={siteConfig.tagline}
+    linkGroups={siteConfig.footer?.linkGroups ?? []}
+    legalLinks={siteConfig.footer?.legalLinks ?? []}
+    contactEmail={siteConfig.contactEmail}
+    logoLight={siteConfig.logo?.light}
+    captureVariant="none"
+    currentPath={Astro.url.pathname}
+  />
+  {exitPopupProps && (
+    <ExitIntentPopup
+      client:idle
+      apiUrl={publicApiUrl}
+      {...exitPopupProps}
+      leadMagnet={exitLeadMagnet}
+    />
+  )}
+</BaseLayout>
+
+<style>
+  /* Hero entrance stagger — CSS-only, protects LCP.
+     The h1 is excluded from the translateY stagger (opacity-only, minimal
+     delay) since it is the largest-contentful-paint element and must not be
+     delayed by a transform or a long animation-delay chain. */
+  .gp-hero-stagger__title {
+    animation: gp-hero-title-fade 220ms ease-out both;
+  }
+
+  .gp-hero-stagger__item {
+    animation: gp-hero-item-in 420ms ease-out both;
+    animation-delay: calc(var(--stagger-index, 0) * 80ms + 60ms);
+  }
+
+  .gp-hero-guide-link {
+    max-width: 580px;
+    margin-top: var(--gp-space-3);
+    color: var(--gp-ink-600);
+    font-size: 0.98rem;
+    line-height: 1.6;
+  }
+
+  .gp-hero-guide-link a {
+    color: var(--gp-emerald-700);
+    font-weight: 700;
+    text-decoration-color: color-mix(
+      in srgb,
+      var(--gp-emerald-700) 35%,
+      transparent
+    );
+    text-decoration-line: underline;
+    text-decoration-thickness: 0.08em;
+    text-underline-offset: 0.18em;
+  }
+
+  .gp-hero-guide-link a:hover {
+    color: var(--gp-ink-900);
+    text-decoration-color: currentColor;
+  }
+
+  @keyframes gp-hero-title-fade {
+    from {
+      opacity: 0.4;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+
+  @keyframes gp-hero-item-in {
+    from {
+      opacity: 0;
+      transform: translateY(0.75rem);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    .gp-hero-stagger__title,
+    .gp-hero-stagger__item {
+      animation: none;
+      opacity: 1;
+      transform: none;
+    }
+  }
+
+  /* ── Below-fold elevation (presentation only) ──
+     All values bind to the shared tokens (--gp-*, --text-*, --radius-*,
+     --shadow-*, --gp-space-*). No new marketing copy is introduced; this block
+     only restructures rhythm, hierarchy, and emphasis so the below-fold reads
+     as a descending sequence of distinct section types rather than a flat run
+     of equal card grids. */
+
+  /* Eight-module grid: promote to three columns on wide viewports so the five
+     workflow cards read as a balanced 3 + 2 rhythm instead of 2 + 2 with a
+     single orphaned card on the last row. */
+  @media (min-width: 900px) {
+    .gp-feature-grid--triad {
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+    }
+  }
+
+  /* Close section: give the final CTA generous air above it and let its own
+     paper-2 panel sit on the plain paper surface so the card reads as a
+     distinct closing moment (previously it shared the alt background and the
+     panel edge disappeared). */
+  .gp-section--close {
+    padding-top: var(--gp-space-8);
+  }
+
+  @media (min-width: 900px) {
+    .gp-section--close {
+      padding-top: calc(var(--gp-space-8) + var(--gp-space-6));
+    }
+  }
+
+  /* Objection section: a short ochre hairline under the head gives the Q&A
+     block the same functional-accent anchor the feature section carries, so
+     the two white sections no longer read as one undifferentiated run. */
+  .gp-objection-head .gp-hairline--accent {
+    margin-top: var(--gp-space-4);
+  }
+</style>

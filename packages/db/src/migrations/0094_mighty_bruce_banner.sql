@@ -1,0 +1,1 @@
+ALTER TABLE "document_extractions" ADD COLUMN "processing_claim_token" text;

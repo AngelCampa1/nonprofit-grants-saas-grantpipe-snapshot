@@ -1,0 +1,166 @@
+{
+  "generatedAt": "2026-04-30",
+  "count": 20,
+  "states": [
+    {
+      "slug": "washington-compliance-checklist",
+      "state": "Washington",
+      "code": "WA",
+      "formName": "Charitable Trust Renewal",
+      "agency": "Washington Secretary of State Charities Program",
+      "path": "apps/site/src/content/lead-magnets/washington-compliance-checklist.md"
+    },
+    {
+      "slug": "minnesota-compliance-checklist",
+      "state": "Minnesota",
+      "code": "MN",
+      "formName": "Charitable Organization Annual Report",
+      "agency": "Minnesota Attorney General Charities Division",
+      "path": "apps/site/src/content/lead-magnets/minnesota-compliance-checklist.md"
+    },
+    {
+      "slug": "virginia-compliance-checklist",
+      "state": "Virginia",
+      "code": "VA",
+      "formName": "Form 102 (Remittance Form)",
+      "agency": "Virginia Office of Charitable & Regulatory Programs",
+      "path": "apps/site/src/content/lead-magnets/virginia-compliance-checklist.md"
+    },
+    {
+      "slug": "new-jersey-compliance-checklist",
+      "state": "New Jersey",
+      "code": "NJ",
+      "formName": "CRI-300R Annual Renewal",
+      "agency": "NJ Division of Consumer Affairs Charities Registration",
+      "path": "apps/site/src/content/lead-magnets/new-jersey-compliance-checklist.md"
+    },
+    {
+      "slug": "michigan-compliance-checklist",
+      "state": "Michigan",
+      "code": "MI",
+      "formName": "CTS-02 Annual Financial Report",
+      "agency": "Michigan Attorney General Charitable Trust Section",
+      "path": "apps/site/src/content/lead-magnets/michigan-compliance-checklist.md"
+    },
+    {
+      "slug": "maryland-compliance-checklist",
+      "state": "Maryland",
+      "code": "MD",
+      "formName": "COF-85 Annual Update of Registration",
+      "agency": "Maryland Secretary of State Charity Division",
+      "path": "apps/site/src/content/lead-magnets/maryland-compliance-checklist.md"
+    },
+    {
+      "slug": "colorado-compliance-checklist",
+      "state": "Colorado",
+      "code": "CO",
+      "formName": "Charitable Solicitations Annual Renewal",
+      "agency": "Colorado Secretary of State",
+      "path": "apps/site/src/content/lead-magnets/colorado-compliance-checklist.md"
+    },
+    {
+      "slug": "arizona-compliance-checklist",
+      "state": "Arizona",
+      "code": "AZ",
+      "formName": "Annual Corporation Report",
+      "agency": "Arizona Corporation Commission",
+      "path": "apps/site/src/content/lead-magnets/arizona-compliance-checklist.md"
+    },
+    {
+      "slug": "tennessee-compliance-checklist",
+      "state": "Tennessee",
+      "code": "TN",
+      "formName": "SS-6001 Annual Financial Report",
+      "agency": "Tennessee Secretary of State Division of Charitable Solicitations",
+      "path": "apps/site/src/content/lead-magnets/tennessee-compliance-checklist.md"
+    },
+    {
+      "slug": "missouri-compliance-checklist",
+      "state": "Missouri",
+      "code": "MO",
+      "formName": "Charitable Organization Annual Renewal",
+      "agency": "Missouri Attorney General",
+      "path": "apps/site/src/content/lead-magnets/missouri-compliance-checklist.md"
+    },
+    {
+      "slug": "indiana-compliance-checklist",
+      "state": "Indiana",
+      "code": "IN",
+      "formName": "Business Entity Report",
+      "agency": "Indiana Secretary of State",
+      "path": "apps/site/src/content/lead-magnets/indiana-compliance-checklist.md"
+    },
+    {
+      "slug": "wisconsin-compliance-checklist",
+      "state": "Wisconsin",
+      "code": "WI",
+      "formName": "Form 1952 Annual Financial Report",
+      "agency": "Wisconsin Department of Financial Institutions",
+      "path": "apps/site/src/content/lead-magnets/wisconsin-compliance-checklist.md"
+    },
+    {
+      "slug": "oregon-compliance-checklist",
+      "state": "Oregon",
+      "code": "OR",
+      "formName": "CT-12 Annual Report",
+      "agency": "Oregon Department of Justice Charitable Activities Section",
+      "path": "apps/site/src/content/lead-magnets/oregon-compliance-checklist.md"
+    },
+    {
+      "slug": "connecticut-compliance-checklist",
+      "state": "Connecticut",
+      "code": "CT",
+      "formName": "CPC-63 Annual Renewal",
+      "agency": "CT Department of Consumer Protection",
+      "path": "apps/site/src/content/lead-magnets/connecticut-compliance-checklist.md"
+    },
+    {
+      "slug": "kentucky-compliance-checklist",
+      "state": "Kentucky",
+      "code": "KY",
+      "formName": "Annual Report",
+      "agency": "Kentucky Secretary of State",
+      "path": "apps/site/src/content/lead-magnets/kentucky-compliance-checklist.md"
+    },
+    {
+      "slug": "alabama-compliance-checklist",
+      "state": "Alabama",
+      "code": "AL",
+      "formName": "Charitable Organization Annual Renewal",
+      "agency": "Alabama Attorney General",
+      "path": "apps/site/src/content/lead-magnets/alabama-compliance-checklist.md"
+    },
+    {
+      "slug": "south-carolina-compliance-checklist",
+      "state": "South Carolina",
+      "code": "SC",
+      "formName": "Annual Financial Report",
+      "agency": "SC Secretary of State Public Charities Division",
+      "path": "apps/site/src/content/lead-magnets/south-carolina-compliance-checklist.md"
+    },
+    {
+      "slug": "oklahoma-compliance-checklist",
+      "state": "Oklahoma",
+      "code": "OK",
+      "formName": "Charitable Organization Annual Renewal",
+      "agency": "Oklahoma Secretary of State",
+      "path": "apps/site/src/content/lead-magnets/oklahoma-compliance-checklist.md"
+    },
+    {
+      "slug": "louisiana-compliance-checklist",
+      "state": "Louisiana",
+      "code": "LA",
+      "formName": "Charitable Organization Annual Renewal",
+      "agency": "Louisiana Department of Justice",
+      "path": "apps/site/src/content/lead-magnets/louisiana-compliance-checklist.md"
+    },
+    {
+      "slug": "iowa-compliance-checklist",
+      "state": "Iowa",
+      "code": "IA",
+      "formName": "Biennial Report",
+      "agency": "Iowa Secretary of State",
+      "path": "apps/site/src/content/lead-magnets/iowa-compliance-checklist.md"
+    }
+  ]
+}

@@ -1,0 +1,138 @@
+---
+import { getVideo } from "@grantpipe/shared";
+
+import VideoEmbed from "./video-embed.astro";
+
+interface Props {
+  eyebrow?: string;
+  title?: string;
+  body?: string;
+  ctaHref?: string;
+  ctaLabel?: string;
+  id?: string;
+  posterSrc?: string;
+  posterAlt?: string;
+  youtubeId?: string;
+  iframeTitle?: string;
+  playLabel?: string;
+  preserveUtm?: boolean;
+  ctaPlacement?: string;
+  ctaSection?: string;
+  ctaIntent?: string;
+  variant?: "default" | "compact" | "editorial" | "landing";
+}
+
+const overviewVideo = getVideo("one-workspace-overview");
+
+const {
+  eyebrow = "Product overview",
+  title = "See GrantPipe in 1 minute",
+  body = "Watch how donor records, grant pipelines, restricted funds, compliance deadlines, documents, and reports fit into one shared workspace.",
+  ctaHref = "/product/#overview-video",
+  ctaLabel = "Watch the overview",
+  id = "overview-video",
+  posterSrc,
+  posterAlt = "GrantPipe product overview preview",
+  youtubeId = overviewVideo.youtubeId,
+  iframeTitle = "GrantPipe explainer video",
+  playLabel = "Play the GrantPipe explainer video",
+  preserveUtm = false,
+  ctaPlacement,
+  ctaSection,
+  ctaIntent,
+  variant = "default",
+} = Astro.props;
+
+---
+
+<section
+  id={id}
+  class:list={["gp-explainer-video", `gp-explainer-video--${variant}`]}
+  data-explainer-video
+>
+  <div class="gp-explainer-video__copy">
+    <p class="gp-eyebrow-pill">{eyebrow}</p>
+    <h2>{title}</h2>
+    <p>{body}</p>
+    <a
+      class="gp-mkt-btn primary"
+      href={ctaHref}
+      data-preserve-utm={preserveUtm ? true : undefined}
+      data-cta-button={ctaPlacement ? true : undefined}
+      data-cta-placement={ctaPlacement}
+      data-cta-section={ctaSection}
+      data-cta-intent={ctaIntent}
+    >
+      {ctaLabel}
+    </a>
+  </div>
+
+  <VideoEmbed
+    youtubeId={youtubeId}
+    iframeTitle={iframeTitle}
+    posterSrc={posterSrc}
+    posterAlt={posterAlt}
+    playLabel={playLabel}
+  />
+</section>
+
+<style>
+  .gp-explainer-video {
+    display: grid;
+    grid-template-columns: minmax(0, 0.78fr) minmax(0, 1.22fr);
+    align-items: center;
+    gap: clamp(1.25rem, 3vw, 2.5rem);
+    width: min(100% - 56px, 1240px);
+    margin: clamp(3rem, 6vw, 5rem) auto;
+    padding: clamp(1.25rem, 3vw, 2rem);
+    border: 1px solid var(--gp-ink-100);
+    border-radius: var(--radius-lg);
+    background: var(--gp-paper-2);
+    box-shadow: var(--gp-shadow-sm);
+  }
+
+  .gp-explainer-video--compact {
+    margin-top: 2rem;
+  }
+
+  .gp-explainer-video--landing {
+    width: min(100% - 2rem, 1120px);
+    margin-block: 3rem;
+  }
+
+  .gp-explainer-video--editorial {
+    width: 100%;
+    margin-block: 2rem 0;
+  }
+
+  .gp-explainer-video__copy {
+    min-width: 0;
+  }
+
+  .gp-explainer-video__copy h2 {
+    margin-top: 1rem;
+    color: var(--gp-ink-900);
+    font-family: var(--font-heading);
+    font-size: clamp(2rem, 4vw, 3.4rem);
+    font-weight: 600;
+    line-height: 1.06;
+  }
+
+  .gp-explainer-video__copy p:not(.gp-eyebrow-pill) {
+    margin-top: 1rem;
+    color: var(--gp-ink-700);
+    font-size: 1rem;
+    line-height: 1.7;
+  }
+
+  .gp-explainer-video__copy .gp-mkt-btn {
+    margin-top: 1.4rem;
+  }
+
+  @media (max-width: 900px) {
+    .gp-explainer-video {
+      grid-template-columns: 1fr;
+      width: min(100% - 32px, 720px);
+    }
+  }
+</style>

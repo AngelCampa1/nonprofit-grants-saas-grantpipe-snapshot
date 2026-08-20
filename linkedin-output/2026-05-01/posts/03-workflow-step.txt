@@ -1,0 +1,13 @@
+For advance federal awards, interest earned above $500 per year across all awards must be remitted annually to HHS PSC under 2 CFR 200.305(b)(9).
+
+Most mid-sized nonprofits never compute this until the auditor asks.
+
+Steps 5 and 6 of a monthly grant drawdown reconciliation handle it cleanly.
+
+Step 5: calculate interest on advance balances. Pull the average daily cash balance for each advance award, apply the operating account interest rate, accumulate the monthly figure. Twelve clean monthly numbers turn the annual remittance into addition.
+
+Step 6: document variances and reclassifications. If a draw exceeded expenditures, write down whether it was a timing difference, an accrual, or an overdraw requiring return. If expenditures exceeded draws, plan the next draw to close the gap. Every variance gets a written explanation filed with the reconciliation.
+
+Monthly cadence catches errors while they are still fixable. It also makes the quarterly Federal Financial Report a 30-minute task instead of a fire drill.
+
+#grantcompliance #federalgrants #nonprofitfinance #drawdown

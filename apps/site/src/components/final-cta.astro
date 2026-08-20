@@ -1,0 +1,59 @@
+---
+interface Props {
+  eyebrow?: string;
+  title: string;
+  body: string;
+  primaryHref: string;
+  primaryLabel?: string;
+  secondaryHref?: string;
+  secondaryLabel?: string;
+  items: string[];
+  note?: string;
+}
+
+const {
+  eyebrow,
+  title,
+  body,
+  primaryHref,
+  primaryLabel = "Start 1-month free trial",
+  secondaryHref,
+  secondaryLabel,
+  items,
+  note,
+} = Astro.props;
+---
+
+<div class="gp-final-cta">
+  <div>
+    {eyebrow && <p class="gp-eyebrow-pill">{eyebrow}</p>}
+    <h2 class="gp-section-title">{title}</h2>
+    <p class="gp-hero-lede">{body}</p>
+    <div class="gp-final-actions">
+      <a class="gp-mkt-btn primary lg" href={primaryHref}>{primaryLabel}</a>
+      {secondaryHref && secondaryLabel && (
+        <a class="gp-mkt-btn ghost lg" href={secondaryHref}>{secondaryLabel}</a>
+      )}
+    </div>
+    {note && <p class="gp-final-note">{note}</p>}
+  </div>
+  <ul class="gp-final-quick">
+    {items.map((item) => (
+      <li>
+        <span class="gp-final-check-icon" aria-hidden="true">
+          <svg viewBox="0 0 18 18" focusable="false">
+            <path
+              d="M3 9.5l3 3 9-9"
+              fill="none"
+              stroke="currentColor"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+            />
+          </svg>
+        </span>
+        <span>{item}</span>
+      </li>
+    ))}
+  </ul>
+</div>

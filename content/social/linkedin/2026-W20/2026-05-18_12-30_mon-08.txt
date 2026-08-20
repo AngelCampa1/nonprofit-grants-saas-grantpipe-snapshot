@@ -1,0 +1,13 @@
+For the Finance Director who keeps a "grants tab" inside the donor CRM because nobody else will:
+
+You are running an integration tax. Every time the development team adds a new pipeline stage, your tab breaks. Every time finance closes a period, you re-key the totals.
+
+The integration is happening in your head, on a deadline, after hours. That is not a system. That is a person.
+
+The work is real. The system is not.
+
+A unified workspace puts the grant in one place: the relationship view for development, the budget view for finance, the same record underneath. The reconciliation stops being a recurring chore.
+
+See current offer terms at grantpipe.com/pricing.
+
+Start a free trial at app.grantpipe.com. One month, no credit card.

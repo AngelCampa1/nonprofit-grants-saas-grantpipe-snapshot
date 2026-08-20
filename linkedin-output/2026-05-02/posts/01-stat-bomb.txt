@@ -1,0 +1,13 @@
+The micro-purchase threshold under 2 CFR 200.320(a)(1) is $10,000. The simplified acquisition threshold is $250,000.
+
+Purchases between $10,001 and $250,000 require price or rate quotations from an adequate number of qualified sources — generally two to three, documented and retained.
+
+Purchases above $250,000 require sealed bids or competitive proposals depending on contract type. Construction and commodities use sealed bids; professional services use competitive proposals.
+
+The anti-fragmentation rule in 2 CFR 200.323 prohibits splitting a $500,000 project into five $100,000 purchases to dodge the threshold.
+
+Procurement noncompliance is one of the most cited categories in the OMB 2024 Compliance Supplement. Purchases above $25,000 also require a SAM.gov debarment check before award.
+
+Organizations whose written procurement policies were last updated before the 2024 Uniform Guidance revision are likely citing stale figures. GrantPipe maintains the procurement audit trail at transaction level so testing is a query, not a reconstruction.
+
+#grantcompliance #uniformguidance #procurement #2cfr200

@@ -1,0 +1,1 @@
+ALTER TABLE "custom_field_definitions" ADD COLUMN "deleted_at" timestamp with time zone;

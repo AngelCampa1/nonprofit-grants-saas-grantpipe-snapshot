@@ -1,0 +1,16 @@
+Weekend board packet cleanup:
+
+Take one grant page and remove anything the board cannot act on.
+
+Keep:
+
+- active award amount
+- restricted balance
+- spend pace
+- next report
+- material risk
+- decision needed
+
+Move transaction detail to the staff file.
+
+A board dashboard should support oversight, not recreate the work queue.

@@ -1,0 +1,41 @@
+name: Build site artifact
+
+on:
+  workflow_dispatch:
+
+jobs:
+  build-site:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v5
+
+      - name: Set up pnpm
+        uses: pnpm/action-setup@v4
+        with:
+          version: 10.8.0
+
+      - name: Set up Node
+        uses: actions/setup-node@v5
+        with:
+          node-version: "22"
+          cache: pnpm
+
+      - name: Install dependencies
+        run: pnpm install --frozen-lockfile
+
+      - name: Build site
+        env:
+          PUPPETEER_EXECUTABLE_PATH: /usr/bin/google-chrome-stable
+          REQUIRE_LEAD_MAGNET_PDF_BUILD: "1"
+        run: pnpm --filter @grantpipe/site run build
+
+      - name: Upload site artifact
+        uses: actions/upload-artifact@v5
+        with:
+          name: grantpipe-site-artifact
+          path: |
+            apps/site/dist
+            apps/site/.lead-magnet-pdfs
+          if-no-files-found: error
+          include-hidden-files: true

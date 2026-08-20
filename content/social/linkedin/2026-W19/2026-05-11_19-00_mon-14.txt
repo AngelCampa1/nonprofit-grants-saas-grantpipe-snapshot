@@ -1,0 +1,15 @@
+Six things in a federal grant closeout package, due 90 days after the period of performance ends.
+
+1. Final FFR (SF-425), with the cumulative figures and the unobligated balance reported in Box 12.
+
+2. Final Performance Progress Report. What the funder asked for at award, what you actually delivered, and where the variances are.
+
+3. Final invoice or drawdown, reconciled to the GL down to the penny.
+
+4. Equipment inventory if the award funded equipment over the federal threshold, with disposition instructions requested or applied.
+
+5. Sub-recipient closeout confirmations if you passed dollars through.
+
+6. Final indirect cost reconciliation if your NICRA is provisional.
+
+Miss the 90-day window and the funder can deobligate. Deobligation does not just mean the dollars go away. It can show up in the next NOFO scoring.

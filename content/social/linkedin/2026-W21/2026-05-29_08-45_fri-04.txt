@@ -1,0 +1,11 @@
+Spend-down: the act of using restricted dollars on the purpose they were given for, on the schedule the donor or grant requires.
+
+What that actually means in practice:
+
+A $120,000 two-year grant for the Youth STEM program is not $120,000 of revenue today. It is a release schedule. Some of it lands when the time restriction lifts (each month or quarter the program runs). Some of it lands when the purpose restriction is satisfied (when the dollars are actually spent on STEM expenses).
+
+If your books show the full $120,000 as available, the books are wrong.
+
+If your books show $0 until the grant fully ends, the books are also wrong.
+
+The right number sits between those, and it changes every time payroll runs against the program. That is what spend-down tracking is for. Not optional. Not later.

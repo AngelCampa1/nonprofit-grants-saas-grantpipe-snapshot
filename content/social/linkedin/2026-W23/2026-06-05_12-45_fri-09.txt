@@ -1,0 +1,7 @@
+A board packet should not hide grant pacing.
+
+If a major award is behind spend, ahead of spend, missing support, or carrying an upcoming report, leadership should see it before the funder does.
+
+The board does not need staff-level detail.
+
+It needs exception visibility.

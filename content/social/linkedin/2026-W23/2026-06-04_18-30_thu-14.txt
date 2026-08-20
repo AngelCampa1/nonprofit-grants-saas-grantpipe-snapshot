@@ -1,0 +1,10 @@
+An Executive Director should be able to ask one grant question without opening five systems.
+
+What is funded?
+What is restricted?
+What is due?
+What is at risk?
+
+Those are operating questions, not database questions.
+
+The hard part is making the answer stay current after the board meeting ends.

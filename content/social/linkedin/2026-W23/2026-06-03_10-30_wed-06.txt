@@ -1,0 +1,7 @@
+Grants.gov helps you find and apply for federal opportunities.
+
+It does not manage the award after it lands.
+
+Post-award work moves into agency systems, payment systems, reporting portals, local files, and the accounting ledger.
+
+That is why GrantPipe treats Grants.gov search as one part of the pipeline, not the whole grant lifecycle.

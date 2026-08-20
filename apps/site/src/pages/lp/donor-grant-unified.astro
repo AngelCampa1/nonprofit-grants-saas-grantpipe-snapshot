@@ -1,0 +1,122 @@
+---
+import PaidSearchLandingPage from "@/components/paid-search-landing-page.astro";
+import type { PaidLandingPageData } from "@/components/paid-search-landing-page.astro";
+
+const page: PaidLandingPageData = {
+  slug: "donor-grant-unified",
+  title: "Donors, Grants, and Funds in One Place | GrantPipe",
+  description:
+    "Stop reconciling four systems before every board meeting. GrantPipe ties donor gifts, grant awards, and restricted fund balances together so the numbers match.",
+  kicker: "One record for donors, grants, and restricted funds",
+  headline: "Donors, grants, and funds in one place.",
+  subhead:
+    "Pull the board report from one system. The numbers finally match the books.",
+  primaryCta: "Start 1-month free trial",
+  exitLeadMagnet: {
+    slug: "donor-to-grant-reconciliation-template",
+    title: "Donor to Grant Reconciliation Template",
+    description:
+      "A ready-to-use template that maps donor gifts, grant awards, and restricted releases so your board report matches the books.",
+  },
+  trust: "No credit card required. Built for development directors running donors and grants together.",
+  proofCard: {
+    label: "Development dashboard",
+    status: "Board-ready",
+    rows: [
+      { label: "Donor prospects active", value: "84" },
+      { label: "Grants tracked", value: "17" },
+      { label: "Restricted funds open", value: "9" },
+      { label: "Board report due", value: "Oct 10" },
+    ],
+    progressLabel: "Revenue picture complete",
+    progress: "89%",
+  },
+  painsTitle: "Four systems. One board meeting. The numbers rarely line up.",
+  pains: [
+    "Donor data lives in the CRM. Grant data lives in a spreadsheet.",
+    "Restricted fund balances sit in accounting. No one talks to each other.",
+    "You spend four hours reconciling before every board meeting.",
+    "The board questions the numbers when they differ from the CFO.",
+    "You cannot show one clean revenue picture from prospect to restricted release.",
+  ],
+  workflowTitle: "One system from donor cultivation to restricted release.",
+  workflowSteps: [
+    {
+      icon: "ledger",
+      heading: "Track donors and grants together",
+      copy: "See major gifts, pledges, and grant awards in one place.",
+    },
+    {
+      icon: "balance",
+      heading: "Watch restricted balances live",
+      copy: "Know what each restricted fund has left without calling finance.",
+    },
+    {
+      icon: "report",
+      heading: "Pull the board report in minutes",
+      copy: "One view ties gifts, awards, and fund releases to programs.",
+    },
+  ],
+  featureTitle: "What development directors actually need in one system.",
+  features: [
+    {
+      icon: "ledger",
+      heading: "Unified donor and grant record",
+      copy: "Major gifts, multi-year pledges, and grant awards on one screen.",
+    },
+    {
+      icon: "balance",
+      heading: "Restricted fund balances",
+      copy: "See open balances and releases without waiting for a finance packet.",
+    },
+    {
+      icon: "report",
+      heading: "Board-ready revenue view",
+      copy: "One report shows gifts, grants, and restricted funds by program.",
+    },
+  ],
+  proofTitle: "One record stops the reconciliation cycle before it starts.",
+  proofPoints: [
+    {
+      value: "4 to 8 hrs",
+      label: "is how long building the board report by hand can take each cycle.",
+      source: "GrantPipe estimate, manual board-report assembly",
+    },
+    {
+      value: "43%",
+      label: "is the median donor retention rate across nonprofits.",
+      source: "AFP Fundraising Effectiveness Project",
+    },
+    {
+      value: "1 view",
+      label: "shows donors, grants, and restricted funds together so the board report and the books agree.",
+      source: "GrantPipe development dashboard",
+    },
+  ],
+  trustLabels: ["Donor and grant unified", "Restricted fund aware", "Board-report ready"],
+  faqTitle: "Questions from development directors who run donors and grants.",
+  faqs: [
+    {
+      q: "Does this replace our accounting system?",
+      a: "No. GrantPipe does not connect to QuickBooks or Sage Intacct right now. Keep your books there. Keep donor, grant, and fund records in GrantPipe.",
+    },
+    {
+      q: "We already have a donor CRM. Do we have to migrate?",
+      a: "You can import your donor data by CSV. Soft credits, solicitation codes, and custom fields come with it.",
+    },
+    {
+      q: "Can one director run both a major-donor pipeline and a grant portfolio in here?",
+      a: "Yes. That is the core use case. The same workspace tracks donor cultivation stages and grant pipeline stages side by side.",
+    },
+    {
+      q: "What if the ED needs to approve before we buy?",
+      a: "Start a free trial and share the board-report view with your ED. No card needed and no sales call required.",
+    },
+  ],
+  finalTitle: "Start with one grant and one donor segment. See them in the same view.",
+  finalBody:
+    "Import your active grants and your top donor segment. Pull a board-ready view in the same afternoon. No setup project and no credit card.",
+};
+---
+
+<PaidSearchLandingPage page={page} />

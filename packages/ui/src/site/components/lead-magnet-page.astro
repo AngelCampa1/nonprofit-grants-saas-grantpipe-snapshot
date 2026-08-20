@@ -1,0 +1,245 @@
+---
+import { getPublicApiBaseUrl } from "../lib/public-api-url"
+import BaseLayout from "../layouts/base-layout.astro"
+import BreadcrumbNav from "./breadcrumb-nav.astro"
+import BlufBlock from "../seo/bluf-block.astro"
+import SiteHeader from "./site-header.astro"
+import SiteFooter from "./site-footer.astro"
+import { ExitIntentPopup } from "./exit-intent-popup"
+import { GatedContent } from "./gated-content"
+import { resolveExitPopupProps } from "../lib/exit-popup-props"
+import { buildFooterEmailCaptureProps } from "../lib/footer-utils"
+import { buildLeadMagnetDeliveryKey, SIGNED_UP_KEY } from "../lib/exit-popup-utils"
+import { buildLeadMagnetBreadcrumbs } from "../lib/lead-magnet-breadcrumbs"
+import { splitContentAtGate } from "../lib/lead-magnet-utils"
+import { ensureTrailingSlash } from "../lib/meta"
+import type { LeadMagnetOffer, RelatedPage, SiteConfig } from "../types"
+import AnswerBlock from "../seo/answer-block.astro"
+import DefinitionBlock from "../seo/definition-block.astro"
+import ArticleMeta from "./article-meta.astro"
+import FaqSection from "./faq-section.astro"
+import RelatedPages from "./related-pages.astro"
+import { deriveTitleFromHref } from "../lib/related-page-resolver"
+
+interface LeadMagnetData {
+  title: string
+  description: string
+  seoTitle?: string
+  seoDescription?: string
+  publishedAt: string
+  updatedAt: string
+  lastReviewedAt?: string
+  verifiedAt?: string
+  bluf: string
+  freePreviewSections: number
+  ogImage?: string
+  tags?: string[]
+  relatedPages: string[]
+  buyerStage?: "tofu" | "mofu" | "bofu"
+  noindex?: boolean
+  sourceUrls?: string[]
+  answers?: { q: string; a: string }[]
+  faqs?: { q: string; a: string }[]
+  definitions: { term: string; definition: string }[]
+}
+
+interface Props {
+  entry: { data: LeadMagnetData; slug: string }
+  config: SiteConfig
+  headings?: { depth: number; slug: string; text: string }[]
+  hubLabel?: string
+  hubHref?: string
+  relatedPages?: RelatedPage[]
+}
+
+const { entry, config, hubLabel, hubHref, relatedPages } = Astro.props
+const { data } = entry
+const { answers, definitions, faqs, seoTitle, seoDescription } = data
+
+const renderedHtml = await Astro.slots.render("default")
+const { teaser, gated } = splitContentAtGate(renderedHtml, data.freePreviewSections)
+
+const canonicalPath = `/free/${entry.slug}`
+const canonicalUrl = ensureTrailingSlash(`https://${config.domain}${canonicalPath}`)
+
+const breadcrumbs = buildLeadMagnetBreadcrumbs({
+  title: data.title,
+  canonicalPath,
+  hubLabel,
+  hubHref,
+})
+
+const exitPopupProps =
+  config.exitPopup?.enabled !== false ? resolveExitPopupProps(config) : undefined
+const footerEmailCapture = buildFooterEmailCaptureProps(config, Astro.url.origin)
+const leadMagnetDeliveryKey = buildLeadMagnetDeliveryKey(entry.slug)
+const signedUpKey = SIGNED_UP_KEY
+
+const pageLeadMagnet: LeadMagnetOffer = {
+  slug: entry.slug,
+  title: data.title,
+  description: `${data.description} Delivered by email.`,
+  teaser: data.description,
+  headline: `Get the ${data.title}`,
+  ctaText: `Email Me the ${data.title}`,
+  successMessage: "Check your email",
+  successSubMessage: `We're sending ${data.title} now. It usually arrives within a minute.`,
+}
+const publicApiUrl = getPublicApiBaseUrl()
+const relatedPageLinks = relatedPages ?? data.relatedPages.map((href) => ({
+  href,
+  title: deriveTitleFromHref(href),
+}))
+
+---
+
+<BaseLayout
+  title={seoTitle ?? `${data.title} | ${config.name}`}
+  description={seoDescription ?? data.description}
+  canonicalUrl={canonicalUrl}
+  siteName={config.name}
+  publishedAt={data.publishedAt}
+  updatedAt={data.updatedAt}
+  twitterSite={config.social?.twitterHandle}
+  themeColor={config.theme.primary}
+  theme={config.theme}
+  fonts={config.theme.fonts}
+  appleTouchIcon={config.appleTouchIcon}
+  ogImage={data.ogImage}
+  noindex={data.noindex}
+  siteUrl={`https://${config.domain}`}
+  siteLogo={config.logo?.light ? `https://${config.domain}${config.logo.light}` : undefined}
+  preserveMetaTagCopy={
+    seoTitle !== undefined || seoDescription !== undefined || config.preserveMetaTagCopy
+  }
+  analyticsEnabled={config.analytics?.enabled ?? true}
+  articleTags={data.tags}
+  rssUrl="/rss.xml"
+>
+  <Fragment slot="head">
+    <style>
+      [data-lead-magnet-delivered] .lead-magnet-gate { display: none; }
+      .lead-magnet-body {
+        overflow-wrap: anywhere;
+      }
+      .lead-magnet-body :global(table) {
+        display: block;
+        max-width: 100%;
+        overflow-x: auto;
+        white-space: nowrap;
+        -webkit-overflow-scrolling: touch;
+      }
+      .lead-magnet-body :global(th),
+      .lead-magnet-body :global(td) {
+        white-space: normal;
+        min-width: 9rem;
+      }
+    </style>
+  </Fragment>
+  <SiteHeader
+    slot="header"
+    siteName={config.name}
+    navItems={config.nav?.items}
+    ctaText={config.funnel.bofu.ctaText}
+    ctaHref={config.funnel.bofu.ctaTarget}
+    loginHref={config.appLoginUrl}
+    ctaVariant="primary"
+    logoLight={config.logo?.light}
+  />
+  <BreadcrumbNav items={breadcrumbs} siteUrl={`https://${config.domain}`} />
+  <div class="px-4 py-[var(--section-py)] max-w-4xl mx-auto">
+    <h1 class="font-heading text-[length:var(--text-heading)] font-bold text-brand-text mb-4">
+      {data.title}
+    </h1>
+    <ArticleMeta
+      publishedAt={data.publishedAt}
+      updatedAt={data.updatedAt}
+      lastReviewedAt={data.lastReviewedAt}
+      verifiedAt={data.verifiedAt}
+      sourceUrls={data.sourceUrls}
+    />
+    <BlufBlock text={data.bluf} />
+    <script is:inline define:vars={{ leadMagnetDeliveryKey, signedUpKey }}>
+      (function() {
+        try {
+          if (localStorage.getItem(signedUpKey) === "true") {
+            document.currentScript.parentElement.setAttribute("data-lead-magnet-delivered", "");
+            return;
+          }
+
+          const rawDelivery = localStorage.getItem(leadMagnetDeliveryKey);
+          if (!rawDelivery) return;
+
+          const parsedDelivery = JSON.parse(rawDelivery);
+          if (parsedDelivery && typeof parsedDelivery.email === "string") {
+            document.currentScript.parentElement.setAttribute("data-lead-magnet-delivered", "");
+          }
+        } catch(e) {}
+      })();
+    </script>
+    <div class="lead-magnet-body">
+      <GatedContent
+        client:load
+        apiUrl={publicApiUrl}
+        leadMagnetTitle={data.title}
+        description={pageLeadMagnet.description}
+        ctaText={pageLeadMagnet.ctaText ?? "Email Me the PDF"}
+        teaserHtml={teaser}
+        gatedHtml={gated}
+        sourcePage={canonicalPath}
+        magnetSlug={entry.slug}
+      />
+    </div>
+    <section
+      data-section="lead-magnet-next-step"
+      class="mt-10 rounded-lg border border-neutral-200 bg-surface-sunken p-6 sm:p-8"
+    >
+      <p class="gp-proof-label mb-3">Next step</p>
+      <h2 class="font-heading text-2xl font-bold text-brand-text">
+        Put this resource to work in GrantPipe.
+      </h2>
+      <p class="mt-3 max-w-2xl text-[length:var(--text-body)] leading-7 text-brand-muted">
+        Use this resource to spot gaps. Then track the same work in GrantPipe.
+      </p>
+      <a class="btn-primary mt-5 inline-flex" href={config.funnel.bofu.ctaTarget}>
+        Start your free trial
+      </a>
+    </section>
+    {definitions && definitions.map((d) => (
+      <DefinitionBlock term={d.term} definition={d.definition} />
+    ))}
+    {answers && answers.map((a) => (
+      <AnswerBlock question={a.q} answer={a.a} />
+    ))}
+  </div>
+  <FaqSection
+    faqs={faqs ?? []}
+    heading="Frequently Asked Questions"
+    showBottomCta={false}
+    ctaVariant="compact"
+  />
+  {relatedPageLinks.length > 0 && (
+    <RelatedPages
+      pages={relatedPageLinks}
+      stage={data.buyerStage}
+      variant="editorial"
+    />
+  )}
+  {exitPopupProps && (
+    <ExitIntentPopup
+      client:load
+      apiUrl={publicApiUrl}
+      leadMagnet={pageLeadMagnet}
+      {...exitPopupProps}
+    />
+  )}
+  <SiteFooter
+    slot="footer"
+    siteName={config.name}
+    tagline={config.tagline}
+    linkGroups={config.footer?.linkGroups}
+    legalLinks={config.footer?.legalLinks}
+    emailCapture={footerEmailCapture}
+    logoLight={config.logo?.light}
+  />
+</BaseLayout>

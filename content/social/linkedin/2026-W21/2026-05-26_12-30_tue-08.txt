@@ -1,0 +1,7 @@
+Before: the Development Director sends the Finance Director a list of restricted gifts at the end of the month. Finance reconciles against the deposit log. Two of the gifts are coded to the wrong fund. They go back and forth in email for three days.
+
+After: the gift is entered once, with the restricted purpose attached at entry. Finance sees it the moment it posts. The release schedule is computed from the donor's stipulation, not retyped from a paper letter.
+
+The hand-off was the bug. The hand-off was also where errors were found, so removing it required moving the validation upstream, into the moment of entry. Not after.
+
+Restricted-fund coding is not a Finance task or a Development task. It is a single decision made once, at the gift, with both teams looking at the same record.

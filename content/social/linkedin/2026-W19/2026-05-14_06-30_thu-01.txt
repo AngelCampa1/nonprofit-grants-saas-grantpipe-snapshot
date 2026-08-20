@@ -1,0 +1,5 @@
+Your CRM is not the system of record for grants. It is one tool inside it.
+
+Donor tools track relationships and gifts. Grants need budget detail, period of performance, drawdown timing, and an evidence trail.
+
+Different shape of work. Different shape of system.

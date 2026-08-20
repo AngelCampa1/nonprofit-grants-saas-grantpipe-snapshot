@@ -1,0 +1,124 @@
+---
+import PaidSearchLandingPage from "@/components/paid-search-landing-page.astro";
+import type { PaidLandingPageData } from "@/components/paid-search-landing-page.astro";
+
+const page: PaidLandingPageData = {
+  slug: "answer-any-board-question",
+  title: "Answer Board Questions Faster | GrantPipe",
+  description:
+    "Donors, grants, restricted funds, and compliance in one place. Pull the number a board member asks for on the spot, without calling finance first.",
+  kicker: "Confidence for executive directors at the board table",
+  headline: "Answer board questions faster.",
+  subhead:
+    "Donors, grants, funds, and compliance in one place. Pull the answer on the spot.",
+  primaryCta: "Start 1-month free trial",
+  exitLeadMagnet: {
+    slug: "board-approval-memo-software-template",
+    title: "Board Approval Memo: Software Template",
+    description:
+      "A ready-to-use memo template for bringing a new software recommendation to your board for approval.",
+  },
+  trust: "No credit card required. Built for executive directors who need answers fast.",
+  proofCard: {
+    label: "ED dashboard",
+    status: "Board-ready",
+    rows: [
+      { label: "Donor pipeline value", value: "$412K" },
+      { label: "Open grant awards", value: "14" },
+      { label: "Restricted fund balance", value: "$87K" },
+      { label: "Next board meeting", value: "Jul 18" },
+    ],
+    progressLabel: "All numbers current",
+    progress: "96%",
+  },
+  painsTitle: "Board questions should not take a week to answer.",
+  pains: [
+    "The donor number is in the CRM. The grant number is in a spreadsheet.",
+    "Restricted fund balances live in accounting and take a day to pull.",
+    "A board member asks a question and you have to follow up by email.",
+    "Every board packet takes hours because the numbers live in four places.",
+    "Audit findings come from scattered records, not weak programs.",
+  ],
+  workflowTitle: "Pull any number from one place, in real time.",
+  workflowSteps: [
+    {
+      icon: "ledger",
+      heading: "See donors, grants, and funds together",
+      copy: "One view shows pipeline, awards, and restricted balances at once.",
+    },
+    {
+      icon: "report",
+      heading: "Build the board packet fast",
+      copy: "Pull revenue, compliance, and program data from the same record.",
+    },
+    {
+      icon: "audit",
+      heading: "Stay audit-ready all year",
+      copy: "Evidence and deadlines tracked so audit week is a review, not a rebuild.",
+    },
+  ],
+  featureTitle: "What executive directors need at the board table.",
+  features: [
+    {
+      icon: "ledger",
+      heading: "Unified revenue view",
+      copy: "Donors, grants, and restricted funds on one screen, updated as you work.",
+    },
+    {
+      icon: "balance",
+      heading: "Restricted fund balances",
+      copy: "See what each fund has left without waiting for a finance packet.",
+    },
+    {
+      icon: "audit",
+      heading: "Compliance at a glance",
+      copy: "Funder deadlines, evidence gaps, and filing dates in one place.",
+    },
+  ],
+  proofTitle: "Executive directors get answers fast when the record is in one place.",
+  proofPoints: [
+    {
+      value: "1 view",
+      label:
+        "shows donors, grants, and restricted funds so the board report and the books agree.",
+      source: "GrantPipe executive dashboard",
+    },
+    {
+      value: "4 to 8 hrs",
+      label:
+        "is the internal planning range for stitching together a board packet from disconnected systems.",
+      source: "GrantPipe ICP research",
+    },
+    {
+      value: "2 CFR 200",
+      label: "the federal rule that requires written proof for every award.",
+      source: "Uniform Guidance, 2 CFR Part 200",
+    },
+  ],
+  trustLabels: ["Donor and grant unified", "Restricted fund aware", "Audit-ready evidence"],
+  faqTitle: "Questions from executive directors.",
+  faqs: [
+    {
+      q: "Does this replace our accounting system?",
+      a: "No. GrantPipe does not connect to QuickBooks or Sage Intacct right now. Keep your books there. Keep donor, grant, and fund records in GrantPipe.",
+    },
+    {
+      q: "Can I pull a board report from this myself?",
+      a: "Yes. The board view pulls donors, grants, and restricted fund balances into one report without a finance packet.",
+    },
+    {
+      q: "How long does setup take?",
+      a: "Start with active grants and top donors in the trial. The standard setup path is staff-led and does not require a separate setup project.",
+    },
+    {
+      q: "Do I need a dedicated admin to run it?",
+      a: "No. The system is built for organizations where the ED or a single program staff member runs it day to day.",
+    },
+  ],
+  finalTitle: "Import one grant and one donor segment. See the board view.",
+  finalBody:
+    "Start with the numbers your board asks about most. GrantPipe puts them in one place so you can answer on the spot.",
+};
+---
+
+<PaidSearchLandingPage page={page} />

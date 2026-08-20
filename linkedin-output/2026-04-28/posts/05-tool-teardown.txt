@@ -1,0 +1,11 @@
+WizeHive Zengine annual contracts run roughly $15,000 to $40,000, with implementations commonly stretching past 90 days.
+
+Pricing is not published. G2 reviewer estimates and Capterra "Contact Vendor" listings are the public anchors. The product is positioned as a low-code grants platform — every customer configures forms, workflows, and reports themselves or pays WizeHive's services team to do it. Grantmakers running custom application processes, multi-stage review panels, and corporate foundation workflows get genuine value from that flexibility.
+
+The fit problem starts when grant-receiving nonprofits evaluate it on a peer recommendation. Zengine has no donor CRM. Individual gifts, recurring donations, and donor retention live in a separate subscription. The product's language and sales motion are built around the entity cutting checks, not receiving them. For a $500K to $10M nonprofit managing two or three federal grants and a foundation portfolio, the configuration burden is the real cost — not the license fee.
+
+The honest evaluation question: does your workflow genuinely require custom application forms and review panels, or are you a grant recipient looking for compliance and reporting? If it is the second one, a packaged product ships in days, not 90.
+
+GAO-16-573 reports that federal grantees spend a median of 40% of administrative time on compliance documentation. The platform that helps cuts that median, not the platform that takes a quarter to configure.
+
+#grantmanagementsoftware #wizehive #nonprofittech #grantsoftware

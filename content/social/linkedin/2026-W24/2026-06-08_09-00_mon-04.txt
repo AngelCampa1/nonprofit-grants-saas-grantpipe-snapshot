@@ -1,0 +1,10 @@
+Audit prep should not start with a shared drive search.
+
+The useful binder starts with the PBC list, then maps every request to a named file, owner, and source record.
+
+The GrantPipe Audit Prep Week-by-Week Checklist breaks the work into a calmer sequence:
+
+- 90 days before fieldwork
+- 60 days before fieldwork
+- 30 days before fieldwork
+- fieldwork week

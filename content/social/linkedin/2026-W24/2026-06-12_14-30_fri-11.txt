@@ -1,0 +1,15 @@
+Finance committee packets should carry one grant-specific page.
+
+Not ten tabs.
+
+One page:
+
+- active grants
+- next reporting deadline
+- restricted balance
+- spend-down risk
+- open compliance items
+
+The full board needs the story. The finance committee needs the control surface.
+
+Give them the page that makes questions easier to ask.

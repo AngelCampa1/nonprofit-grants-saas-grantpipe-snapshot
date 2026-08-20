@@ -1,0 +1,11 @@
+Four federal grant gotchas that are not in the NOFO.
+
+One. Pre-award costs require explicit prior approval in writing. Spending the day after notification but before the start date is not automatic.
+
+Two. Rebudgeting more than 10% between cost categories needs prior approval on most awards. The 10% applies to the total direct cost budget, not the line item.
+
+Three. Period of performance ends at midnight on the end date in your federal time zone. Costs incurred after that date are not allowable, even if the invoice arrives later.
+
+Four. The 90-day closeout clock starts on the period-of-performance end date. Final FFR, final performance report, equipment inventory, and refund of unused drawdowns all live in that window.
+
+None of these are obscure. They are just not where program staff look. They live in 2 CFR 200 Subparts D and E.

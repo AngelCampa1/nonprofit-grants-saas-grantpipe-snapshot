@@ -1,0 +1,11 @@
+We decided early that grants and funds had to be separate database entities. Not the same thing with a flag.
+
+A grant is an award. It has a funder, a period of performance, a budget, reporting deadlines, and a closeout date. It is a contract.
+
+A fund is a bucket of restricted dollars. It can be funded by one grant, by multiple grants, by a private gift, or by a board designation. The restriction sits on the fund.
+
+A single program (say, Youth STEM) can pull from a federal pass-through grant, a foundation grant, and a private donor's restricted gift. Three sources, one fund, one set of allowable costs to track.
+
+If you model that as one table with a "type" column, you spend the rest of the product's life writing exceptions. We modeled it as two tables connected by an allocation table. Boring. Correct. Matches FASB ASC 958 and how Sage Intacct does it.
+
+Most CRMs do not separate these because they did not start in fund accounting. That is fine for tracking gifts. It is not fine for closing a federal award.

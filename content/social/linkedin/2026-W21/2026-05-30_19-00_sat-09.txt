@@ -1,0 +1,13 @@
+Period of performance: the window of time during which costs charged to a federal grant must be incurred.
+
+Not the date the award letter arrives. Not the date funds hit your bank account. Not the date you submit the final report. It is the start and end date written into the award terms.
+
+Costs incurred outside that window are unallowable. Unallowable means returned to the funder.
+
+Two places this trips orgs up.
+
+Pre-award costs. You cannot charge costs before the start date unless the award explicitly permits it and you have prior written approval.
+
+The closeout window. The period ends, but you have 90 days to liquidate obligations and submit the final FFR. A day-91 invoice for work done in the period is allowable. An invoice for work done after the end date is not.
+
+The audit trail is dated. Obligation, expenditure, liquidation. Three dates per transaction.

@@ -1,0 +1,447 @@
+---
+import "../../styles/global.css";
+import { getCollection } from "astro:content";
+import FinalCta from "@/components/final-cta.astro";
+import FeatureComparisonMatrix from "@/components/feature-comparison-matrix.astro";
+import Button from "@/components/ui/button.astro";
+import { getSignupCtaTarget, shouldShowMobileStickyCta, siteConfig } from "@/config/site";
+import { getAppLoginUrl } from "@/lib/app-url";
+import BaseLayout from "@grantpipe/ui/site/layouts/base-layout.astro";
+import SiteFooter from "@grantpipe/ui/site/components/site-footer.astro";
+import SiteHeader from "@grantpipe/ui/site/components/site-header.astro";
+import { ExitIntentPopup } from "@grantpipe/ui/site/components/exit-intent-popup";
+import { resolveExitPopupProps } from "@grantpipe/ui/site/lib/exit-popup-props";
+import { getPublicApiBaseUrl } from "@grantpipe/ui/site/lib/public-api-url";
+import { resolveExitLeadMagnetOffer } from "@/lib/lead-magnet-routing";
+import { buildCompareHubModel } from "@/lib/compare-hub";
+import { getPricingPlan } from "../../../../../packages/shared/src/pricing";
+const auditReadyPlan = getPricingPlan("audit_ready");
+const leadMagnets = await getCollection("lead-magnets");
+const exitLeadMagnet = resolveExitLeadMagnetOffer(siteConfig, leadMagnets, { family: "comparison" });
+const exitPopupProps = siteConfig.exitPopup?.enabled !== false ? resolveExitPopupProps(siteConfig) : undefined;
+const publicApiUrl = getPublicApiBaseUrl();
+
+const alternatives = await getCollection("alternatives");
+const comparisons = await getCollection("comparisons");
+const pricingBreakdowns = await getCollection("pricing-breakdowns");
+const listicles = await getCollection("listicles");
+const compareHub = buildCompareHubModel({
+  alternatives,
+  comparisons,
+  pricingBreakdowns,
+  roundups: listicles,
+});
+const canonicalUrl = `https://${siteConfig.domain}/compare/`;
+const signupHref = getSignupCtaTarget();
+
+const startHere = [
+  {
+    intent: "replacing a donor CRM",
+    title: "See which CRM gaps matter after the award.",
+    copy: "If donor history is already covered but grant obligations live elsewhere, compare the alternative paths before migrating data.",
+    href: "/compare/alternatives/",
+    cta: "Browse alternatives",
+  },
+  {
+    intent: "comparing two named tools",
+    title: "Read the direct comparison first.",
+    copy: "Use the head-to-head library when the shortlist includes a specific CRM, grant tool, or general CRM.",
+    href: "/compare/versus/",
+    cta: "View comparisons",
+  },
+  {
+    intent: "validating pricing and total cost",
+    title: "Separate subscription price from operating cost.",
+    copy: "Pricing pages should account for setup fees, admin time, reporting workarounds, and contract friction.",
+    href: "/compare/pricing/",
+    cta: "Compare pricing",
+  },
+  {
+    intent: "checking whether GrantPipe fits",
+    title: "Move from research to a real trial workspace.",
+    copy: "Use the trial to test donor records, grants, restricted funds, deadlines, and evidence with your own data.",
+    href: signupHref,
+    cta: "Start 1-month free trial",
+  },
+];
+
+const matrixRows = [
+  ["Donors and grants on one record", "Plan-based", "Partial", "Custom build"],
+  ["Restricted fund lifecycle", "Plan-based", "Limited", "Implementation-dependent"],
+  ["Federal opportunity search", "Included", "Usually separate", "Usually separate"],
+  ["Auditor and funder access", `Included on ${auditReadyPlan.name}`, "Separate workaround", "Custom portal"],
+  ["Setup model", "Staff-led setup. Audit-Ready adds guided onboarding.", "CRM configuration", "Consultant project"],
+];
+
+const headToHead = [
+  {
+    eyebrow: "GrantPipe vs. Bloomerang",
+    title: "Compare a donor-first CRM with a grant operations system.",
+    copy: "Use this when the shortlist includes Bloomerang for donor management, but grant compliance and restricted funds are part of the buying decision.",
+    href: "/compare/grantpipe-vs-bloomerang/",
+  },
+  {
+    eyebrow: "GrantPipe vs. Submittable",
+    title: "Separate applicant-side grant operations from intake workflow.",
+    copy: "Use this when the team needs to understand whether Submittable's application intake model fits the problem they are solving.",
+    href: "/compare/grantpipe-vs-submittable/",
+  },
+  {
+    eyebrow: "GrantPipe vs. donor CRM",
+    title: "Use the CRM for relationships. Use GrantPipe when the relationship has grant obligations attached.",
+    copy: "GrantPipe keeps donor history close to grant budgets, restrictions, evidence, deadlines, and reporting outputs so the team is not rebuilding the same story in spreadsheets.",
+  },
+  {
+    eyebrow: "GrantPipe vs. spreadsheets",
+    title: "Spreadsheets are flexible until every report needs the latest version.",
+    copy: "The redesigned workflow gives staff one operational record for restrictions, spend-down status, funder communication, and compliance follow-up.",
+  },
+  {
+    eyebrow: "GrantPipe vs. custom implementation",
+    title: "Avoid turning a software decision into a systems project.",
+    copy: "GrantPipe is intentionally narrower than a custom platform: it focuses on the donor, grant, fund, and compliance path mid-sized nonprofits need to operate.",
+  },
+];
+---
+
+<BaseLayout
+  title="Compare Nonprofit Software | GrantPipe"
+  description="Compare the GrantPipe compliance-first grant management system with donor CRMs, spreadsheets, and consultant-led nonprofit software builds."
+  canonicalUrl={canonicalUrl}
+  siteName={siteConfig.name}
+  ogType="website"
+  twitterSite={siteConfig.social?.twitterHandle}
+  theme={siteConfig.theme}
+  fonts={siteConfig.theme.fonts}
+  themeColor={siteConfig.theme.primary}
+  appleTouchIcon={siteConfig.appleTouchIcon}
+  siteUrl={`https://${siteConfig.domain}`}
+  siteLogo={siteConfig.logo?.light ? `https://${siteConfig.domain}${siteConfig.logo.light}` : undefined}
+  siteFounder={siteConfig.author}
+  siteSameAs={siteConfig.sameAs}
+  showStickyMobileCta={shouldShowMobileStickyCta(Astro.url.pathname)}
+>
+  <SiteHeader
+    slot="header"
+    siteName={siteConfig.name}
+    navItems={siteConfig.nav?.items}
+    ctaText={siteConfig.funnel.bofu.ctaText}
+    ctaHref={siteConfig.funnel.bofu.ctaTarget}
+    loginHref={getAppLoginUrl()}
+    ctaVariant="primary"
+    ctaPill
+    currentPath={Astro.url.pathname}
+    logoLight={siteConfig.logo?.light}
+  />
+
+  <main class="gp-marketing-shell" data-marketing-page="compare">
+    <section class="gp-section">
+      <div class="gp-wrap gp-hero gp-compare-hero-layout">
+        <div class="gp-hero-copy">
+          <p class="gp-eyebrow-pill">Compare software paths</p>
+          <h1>Compare nonprofit software paths before the shortlist gets noisy.</h1>
+          <p>
+            Use this hub to browse software alternatives, head-to-head comparisons, and pricing
+            breakdowns for grant-funded nonprofits. When the research points toward a connected
+            donor, grant, restricted fund, and compliance workflow, the trial is the next
+            evaluation step.
+          </p>
+          <div class="gp-hero-actions">
+            <Button variant="primary" size="lg" href={signupHref}>Start 1-month free trial</Button>
+            <Button variant="ghost" size="md" href="/pricing/">Compare pricing</Button>
+          </div>
+        </div>
+        <div class="gp-compare-scorecard" aria-label="Comparison focus">
+          <span>Buying criteria</span>
+          <strong>Donors + grants + restricted funds + compliance</strong>
+          <p>A connected operating model instead of a CRM plus spreadsheets plus shared drive folders.</p>
+          <ul>
+            <li><span>Donor CRM</span><strong>Fundraising record</strong></li>
+            <li><span>Spreadsheet</span><strong>Flexible tracker</strong></li>
+            <li><span>Custom build</span><strong>Long project</strong></li>
+            <li><span>GrantPipe</span><strong>Connected grant operations</strong></li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section class="gp-section alt" data-section="alternative-cards">
+      <div class="gp-wrap">
+        <div class="gp-section-head">
+          <h2>The comparison library starts here.</h2>
+          <p>Pick the path that matches the question you are trying to answer.</p>
+        </div>
+        <div data-compare-family-grid class="gp-compare-card-grid" aria-label="Compare paths">
+          {compareHub.familySections.map((card) => (
+            <a href={`${card.href}/`} class="gp-compare-card">
+              <span class="gp-type-label">{card.totalCount} pages</span>
+              <h3>{card.heading}</h3>
+              <p>{card.description}</p>
+              <span class="gp-versus-card__link">
+                {card.label}
+                <span aria-hidden="true" class="gp-versus-card__arrow">&rarr;</span>
+              </span>
+            </a>
+          ))}
+        </div>
+      </div>
+    </section>
+
+    <section class="gp-section" data-section="compare-topics">
+      <div class="gp-wrap">
+        <div class="gp-section-head">
+          <p class="gp-eyebrow-pill">Topic paths</p>
+          <h2>Pick the software area first.</h2>
+          <p>
+            These paths group tool pages by job. Pick one to find the next page faster.
+          </p>
+        </div>
+        <div data-compare-topic-grid class="gp-compare-grid" aria-label="Compare topics">
+          {compareHub.topicSummaries.map((topic) => (
+            <article class="gp-versus-card">
+              <span class="gp-type-label">{topic.totalCount} pages</span>
+              <h3>{topic.title}</h3>
+              <p>{topic.description}</p>
+              <div class="mt-5 grid gap-2">
+                {topic.previewItems.map((item) => (
+                  <a href={item.href} class="gp-versus-card__link">{item.title}</a>
+                ))}
+              </div>
+              {topic.overflowCount > 0 && (
+                <span class="gp-type-label">{topic.overflowCount} more</span>
+              )}
+            </article>
+          ))}
+        </div>
+      </div>
+    </section>
+
+    <section class="gp-section" data-section="start-here">
+      <div class="gp-wrap">
+        <div class="gp-section-head">
+          <p class="gp-eyebrow-pill">Start here</p>
+          <h2>Route the research by intent.</h2>
+          <p>
+            Nonprofit software searches usually start with a tool name, a broken workflow, or a
+            pricing question. Use the closest path first.
+          </p>
+        </div>
+        <div class="gp-compare-grid">
+          {startHere.map((item) => (
+            <article class="gp-versus-card">
+              <span class="gp-type-label">{item.intent}</span>
+              <h3>{item.title}</h3>
+              <p>{item.copy}</p>
+              <a href={item.href} class="gp-versus-card__link">
+                {item.cta}
+                <span aria-hidden="true" class="gp-versus-card__arrow">&rarr;</span>
+              </a>
+            </article>
+          ))}
+        </div>
+      </div>
+    </section>
+
+    <section class="gp-section alt" data-section="compare-stages">
+      <div class="gp-wrap">
+        <div class="gp-section-head">
+          <p class="gp-eyebrow-pill">Next step</p>
+          <h2>Use the step that fits the choice.</h2>
+          <p>Start wide. Compare the list. Then check price and fit.</p>
+        </div>
+        <div data-compare-stage-grid class="gp-compare-grid" aria-label="Compare stages">
+          {compareHub.stageSections.map((section) => (
+            <article class="gp-versus-card">
+              <span class="gp-type-label">{section.label}</span>
+              <h3>{section.heading}</h3>
+              <p>{section.description}</p>
+              <div class="mt-5 grid gap-2">
+                {section.items.map((item) => (
+                  <a href={item.href} class="gp-versus-card__link">{item.title}</a>
+                ))}
+              </div>
+              <a href={`${section.nextStepHref}/`} class="gp-versus-card__link">
+                {section.nextStepLabel}
+                <span aria-hidden="true" class="gp-versus-card__arrow">&rarr;</span>
+              </a>
+            </article>
+          ))}
+        </div>
+      </div>
+    </section>
+
+    <section class="gp-section" data-section="full-feature-matrix">
+      <div class="gp-wrap">
+        <div class="gp-section-head">
+          <h2>Where the operating model changes.</h2>
+          <p>Use the matrix to spot whether the work is native, separate, or custom.</p>
+        </div>
+        <p class="gp-matrix-scroll-hint sm:hidden" aria-hidden="true">&#8592; scroll &#8594;</p>
+        <div class="gp-path-matrix-scroll overflow-x-auto -mx-4 sm:mx-0">
+          <div class="gp-path-matrix" role="table" aria-label="GrantPipe comparison matrix">
+            <div class="gp-path-matrix-row header" role="row">
+              <span role="columnheader" class="gp-path-matrix-sticky-col">Capability</span>
+              <span role="columnheader">GrantPipe</span>
+              <span role="columnheader">Typical CRM</span>
+              <span role="columnheader">Custom build</span>
+            </div>
+            {matrixRows.map((row) => (
+              <div class="gp-path-matrix-row" role="row">
+                {row.map((cell, idx) => <span role="cell" class:list={[idx === 0 && "gp-path-matrix-sticky-col left-0"]}>{cell}</span>)}
+              </div>
+            ))}
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="gp-section" data-section="grantpipe-plan-matrix">
+      <div class="gp-wrap">
+        <FeatureComparisonMatrix
+          heading="GrantPipe plan-by-plan coverage."
+          caption="Once you've narrowed down to GrantPipe, here is what each plan includes, based on the current pricing page and plan catalog."
+        />
+      </div>
+    </section>
+
+    <section class="gp-section alt" data-section="head-to-head">
+      <div class="gp-wrap">
+        <div class="gp-section-head">
+          <h2>Common buying comparisons.</h2>
+          <p>Use these frames when your shortlist mixes different categories of tools.</p>
+        </div>
+        <div class="gp-versus-grid">
+          {headToHead.map((item) => (
+            <article class="gp-versus-card">
+              <span class="gp-type-label">{item.eyebrow}</span>
+              <h3>{item.title}</h3>
+              <p>{item.copy}</p>
+              {"href" in item && (
+                <a href={item.href} class="gp-versus-card__link">
+                  Read comparison
+                  <span aria-hidden="true" class="gp-versus-card__arrow">&rarr;</span>
+                </a>
+              )}
+            </article>
+          ))}
+        </div>
+      </div>
+    </section>
+
+    <section class="gp-section alt" data-section="evaluation-cta">
+      <div class="gp-wrap">
+        <div class="gp-seo-bottom-cta gp-compare-evaluation-cta">
+          <div>
+            <p class="gp-eyebrow-pill">Ready to evaluate the workflow?</p>
+            <h2>Test the connected donor, grant, fund, and compliance record.</h2>
+            <p>
+              The trial is where the comparison stops being abstract. Bring a small sample of
+              donor, grant, restricted fund, and reporting data and see whether the model fits.
+            </p>
+          </div>
+          <div class="gp-hero-actions">
+            <Button variant="primary" size="lg" href={signupHref}>Start 1-month free trial</Button>
+            <Button variant="ghost" size="md" href="/product/#product-tour">See product walkthrough</Button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="gp-section" data-section="where-grantpipe-fits">
+      <div class="gp-wrap gp-fit-grid">
+        <div>
+          <p class="gp-eyebrow-pill">Where GrantPipe fits</p>
+          <h2>Best for teams where grants are not a side workflow.</h2>
+        </div>
+        <div class="gp-fit-list">
+          <p>Choose GrantPipe when donor context, grant deadlines, fund restrictions, and compliance outputs need to stay connected.</p>
+          <p>Keep a donor CRM if fundraising records are the whole workflow and grant compliance is rare or handled by another dedicated system.</p>
+          <p>Consider a custom build only when your process is unique enough to justify implementation cost, ongoing admin, and long-term maintenance.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="gp-section alt" data-section="final-cta">
+      <div class="gp-wrap">
+        <FinalCta
+          title="Not sure which side you're on?"
+          body="Start with the trial if GrantPipe looks close. If the workflow does not match your grants, restrictions, and reporting load, you will know before adding billing."
+          primaryHref={signupHref}
+          secondaryHref="/product/#product-tour"
+          secondaryLabel="See product walkthrough"
+          items={[
+            "1-month free trial. No credit card.",
+            "Imports from Bloomerang, DonorPerfect, Salesforce, spreadsheets.",
+            "Public pricing and plan coverage before you commit.",
+          ]}
+        />
+      </div>
+    </section>
+  </main>
+
+  <SiteFooter
+    slot="footer"
+    siteName={siteConfig.name}
+    tagline={siteConfig.tagline}
+    linkGroups={siteConfig.footer?.linkGroups ?? []}
+    legalLinks={siteConfig.footer?.legalLinks ?? []}
+    contactEmail={siteConfig.contactEmail}
+    logoLight={siteConfig.logo?.light}
+    captureVariant="none"
+    currentPath={Astro.url.pathname}
+  />
+  {exitPopupProps && (
+    <ExitIntentPopup
+      client:idle
+      apiUrl={publicApiUrl}
+      {...exitPopupProps}
+      leadMagnet={exitLeadMagnet}
+    />
+  )}
+</BaseLayout>
+
+<style>
+  .gp-versus-card__link {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.375rem;
+    margin-top: 1rem;
+    color: var(--gp-emerald-700);
+    font-weight: 600;
+    font-size: 0.9375rem;
+    text-decoration: none;
+  }
+
+  .gp-versus-card__link:hover {
+    text-decoration: underline;
+  }
+
+  .gp-versus-card__link:focus-visible {
+    outline: 2px solid var(--gp-emerald-600);
+    outline-offset: 3px;
+    border-radius: var(--radius-xs);
+  }
+
+  .gp-versus-card__arrow {
+    transition: transform 0.15s ease;
+  }
+
+  .gp-versus-card__link:hover .gp-versus-card__arrow {
+    transform: translateX(2px);
+  }
+
+  .gp-matrix-scroll-hint {
+    margin-bottom: 0.5rem;
+    font-size: 0.75rem;
+    color: var(--gp-ink-500);
+    text-align: center;
+    letter-spacing: 0.04em;
+  }
+
+  .gp-path-matrix-sticky-col {
+    position: sticky;
+    left: 0;
+    background: var(--gp-paper-2, #f8f7f3);
+    z-index: 1;
+  }
+</style>

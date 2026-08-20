@@ -1,0 +1,120 @@
+---
+import "../../../styles/global.css";
+import { getCollection } from "astro:content";
+import CategoryHub from "@grantpipe/ui/site/hubs/category-hub.astro";
+import Button from "@/components/ui/button.astro";
+import { siteConfig, shouldShowMobileStickyCta } from "@/config/site";
+import { buildResourceHubItems } from "@/lib/resource-hubs";
+import { resolveExitLeadMagnetOffer } from "@/lib/lead-magnet-routing";
+import PathwaySections from "@/components/site/pathway-sections.astro";
+import { buildFaqPathSections } from "@/lib/hub-path-sections";
+
+const [
+  alternatives,
+  comparisons,
+  pricingBreakdowns,
+  listicles,
+  guides,
+  statePages,
+  cityPages,
+  verticalPages,
+  leadMagnets,
+  personas,
+  workflows,
+  glossary,
+  features,
+  integrations,
+  faqHubs,
+  benchmarks,
+] = await Promise.all([
+  getCollection("alternatives"),
+  getCollection("comparisons"),
+  getCollection("pricing-breakdowns"),
+  getCollection("listicles"),
+  getCollection("guides"),
+  getCollection("state-pages"),
+  getCollection("city-pages"),
+  getCollection("vertical-pages"),
+  getCollection("lead-magnets"),
+  getCollection("personas"),
+  getCollection("workflows"),
+  getCollection("glossary"),
+  getCollection("features"),
+  getCollection("integrations"),
+  getCollection("faq-hubs"),
+  getCollection("benchmarks"),
+]);
+
+const exitLeadMagnet = resolveExitLeadMagnetOffer(siteConfig, leadMagnets, { family: "guide" });
+const items =
+  buildResourceHubItems({
+    alternatives,
+    comparisons,
+    pricingBreakdowns,
+    listicles,
+    guides,
+    statePages,
+    cityPages,
+    verticalPages,
+    leadMagnets,
+    personas,
+    workflows,
+    glossary,
+    features,
+    integrations,
+    faqHubs,
+    benchmarks,
+  }).get("/resources/faq") ?? [];
+const faqPathSections = buildFaqPathSections(items);
+const page = {
+  data: items,
+  currentPage: 1,
+  lastPage: 1,
+  url: { prev: undefined, next: undefined },
+};
+---
+
+<CategoryHub
+  config={siteConfig}
+  title="FAQ Hubs"
+  description="Question-and-answer hubs for nonprofit CRM, grant compliance, donor operations, restricted funds, and local nonprofit requirements."
+  variant="editorial"
+  items={items}
+  page={page}
+  basePath="/resources/faq"
+  breadcrumbs={[
+    { label: "Home", href: "/" },
+    { label: "Resources", href: "/resources" },
+    { label: "FAQ Hubs", href: "/resources/faq" },
+  ]}
+  emptyStateHeading="No FAQ hubs are published yet."
+  emptyStateBody="Check the resources hub for guides, benchmarks, and reference pages while FAQ hubs are being authored."
+  showStickyMobileCta={shouldShowMobileStickyCta("/resources/faq")}
+  leadMagnet={exitLeadMagnet}
+  renderListing={false}
+>
+  <div slot="intro" class="space-y-8">
+    <section class="gp-resource-decision-panel editorial-panel p-6">
+      <p class="gp-proof-label">Decision path</p>
+      <h2 class="gp-link-card-title">Use FAQ hubs when teams need answers.</h2>
+      <p class="gp-link-card-copy mt-3">
+        Pick the question type first. Then open the hub that fits the blocker.
+      </p>
+    </section>
+    <PathwaySections sections={faqPathSections} ariaLabel="FAQ paths" />
+  </div>
+
+  <section slot="cta" class="editorial-panel gp-shared-cta-shell" id="signup">
+    <h2>Start a 1-month free trial once the questions point to a workflow gap.</h2>
+    <p>
+      Test the donor, grant, restricted-fund, and compliance handoffs in GrantPipe with no credit
+      card required.
+    </p>
+    <div class="gp-shared-cta-actions">
+      <Button variant="primary" size="lg" href={siteConfig.funnel.bofu.ctaTarget}>
+        {siteConfig.funnel.bofu.ctaText}
+      </Button>
+      <Button variant="secondary" size="md" href="/product/">See the product walkthrough</Button>
+    </div>
+  </section>
+</CategoryHub>

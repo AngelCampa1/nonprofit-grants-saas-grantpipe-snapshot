@@ -1,0 +1,11 @@
+For the Finance Director walking into audit week with three binders and a sinking feeling.
+
+We wrote an Auditor Evidence Checklist. It walks through what auditors typically request for federally funded programs and where the evidence usually lives.
+
+Inside:
+- The exact docs auditors ask for under 2 CFR 200, organized by sample type
+- A way to map each request to a folder, a person, and a deadline
+- A short script for the moment an auditor asks for something you cannot find in 10 minutes
+- A pre-meeting checklist so the opening conversation does not set the tone for the whole engagement
+
+It is not a magic fix. It is a list that turns a panicked Monday into a quiet one.

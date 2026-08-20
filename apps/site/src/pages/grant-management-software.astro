@@ -1,0 +1,24 @@
+---
+import "../styles/global.css";
+import GrantRecipientCategoryPage from "@/components/grant-recipient-category-page.astro";
+import { getGrantCategoryPage } from "@/config/grant-recipient-seo";
+
+const basePage = getGrantCategoryPage("grant-management-software");
+const page = {
+  ...basePage,
+  heroDescription:
+    "GrantPipe is a compliance-first grant management system. It is grant management software built for compliance. Use this page to check post-award fit, then read the compliance-first grant management system guide. Review awards, restricted funds, evidence, reports, donor context, and audit trails.",
+};
+---
+
+<GrantRecipientCategoryPage page={page}>
+  <section slot="contextual-video" class="editorial-panel mb-8 p-6" data-section="category-guide">
+    <h2 class="gp-link-card-title mb-3">Compliance-first grant management system guide</h2>
+    <p class="text-brand-muted mb-5">
+      Use this guide to define the category before comparing grant software.
+    </p>
+    <a class="gp-mkt-btn secondary" href="/resources/guides/compliance-first-grant-management-system/">
+      Read the guide
+    </a>
+  </section>
+</GrantRecipientCategoryPage>

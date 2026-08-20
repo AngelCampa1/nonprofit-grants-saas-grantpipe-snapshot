@@ -1,0 +1,1 @@
+ALTER TABLE "contacts" ADD COLUMN "email_opt_out" boolean DEFAULT false NOT NULL;

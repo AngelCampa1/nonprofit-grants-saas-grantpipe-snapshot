@@ -1,0 +1,21 @@
+﻿---
+export const prerender = true
+import "../../styles/global.css"
+import { getEntry, render } from "astro:content"
+import { getContentEntrySlug } from "@/lib/content-entry-slug"
+import LeadMagnetPage from "@grantpipe/ui/site/components/lead-magnet-page.astro"
+import { CrmCostCalculator } from "@grantpipe/ui/site/components/crm-cost-calculator"
+import { siteConfig } from "@/config/site"
+
+const entry = await getEntry("lead-magnets", "nonprofit-crm-cost-calculator")
+if (!entry) throw new Error("Calculator entry not found")
+const { Content } = await render(entry)
+const leadMagnetEntry = { ...entry, slug: getContentEntrySlug(entry) }
+const appUrl = siteConfig.funnel.bofu.ctaTarget
+---
+<LeadMagnetPage entry={leadMagnetEntry} config={siteConfig}>
+  <Content />
+</LeadMagnetPage>
+<div class="px-4 max-w-4xl mx-auto pb-16">
+  <CrmCostCalculator client:load appUrl={appUrl} />
+</div>

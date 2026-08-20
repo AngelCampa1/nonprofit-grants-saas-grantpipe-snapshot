@@ -1,0 +1,234 @@
+---
+import {
+  FOUNDER_CONTACT_EMAIL,
+  FOUNDER_LINKEDIN_URL,
+  getPlanListDisplayPrice,
+  getSelfServePlans,
+  type PricingPlan,
+} from "../../../../packages/shared/src/pricing";
+import { getSignupCtaTarget, siteConfig } from "@/config/site";
+
+interface Props {
+  /** Optional heading rendered above the cards. */
+  heading?: string;
+  /** Optional support copy under the heading. */
+  caption?: string;
+  /** Optional id for deep links / tests. */
+  sectionId?: string;
+  /** Highlight a specific tier (renders the "Recommended" badge on it). */
+  recommendedTier?: PricingPlan["tier"];
+}
+
+const {
+  heading = "GrantPipe pricing at a glance",
+  caption = "Every plan includes a 1-month free trial and unlimited users.",
+  sectionId,
+  recommendedTier = "growth",
+} = Astro.props;
+
+const plans = getSelfServePlans();
+const founderMailto = `mailto:${FOUNDER_CONTACT_EMAIL}`;
+---
+
+<section
+  class="gp-pricing-summary"
+  id={sectionId}
+  data-pricing-summary-block
+  data-recommended-tier={recommendedTier}
+>
+  <div class="gp-pricing-summary__head">
+    <h2>{heading}</h2>
+    <p>{caption}</p>
+  </div>
+  <div class="gp-pricing-summary__grid">
+    {plans.map((plan) => {
+      const ctaHref = getSignupCtaTarget({
+        plan: plan.tier,
+        cycle: "annual",
+      });
+      const isRecommended = recommendedTier === plan.tier;
+      const annualListDisplay = getPlanListDisplayPrice(plan.tier, "annual");
+      return (
+        <article
+          class:list={[
+            "gp-pricing-summary__card",
+            (plan.highlighted || isRecommended) && "is-highlighted",
+            isRecommended && "is-recommended",
+          ]}
+          data-plan={plan.tier}
+        >
+          {isRecommended && <span class="gp-pricing-summary__chip">Recommended</span>}
+          {!isRecommended && plan.highlighted && (
+            <span class="gp-pricing-summary__chip">Recommended</span>
+          )}
+          <h3>{plan.name}</h3>
+          <p class="gp-pricing-summary__bestfit">{plan.bestFit}</p>
+          <div class="gp-pricing-summary__price">
+            <strong>{annualListDisplay.price}</strong>
+            <span>{annualListDisplay.billingContext}</span>
+          </div>
+          <a class="gp-mkt-btn primary sm" href={ctaHref}>
+            {siteConfig.funnel.bofu.ctaText}
+          </a>
+        </article>
+      );
+    })}
+  </div>
+  <div class="gp-pricing-summary__enterprise">
+    <div>
+      <span class="gp-pricing-summary__label">Custom path</span>
+      <h3>Need a custom path?</h3>
+      <p>
+        Larger or unusual grant operations can start with a founder conversation. Enterprise is not
+        a fourth self-serve pricing card.
+      </p>
+    </div>
+    <div class="gp-pricing-summary__enterprise-actions">
+      <a class="gp-mkt-btn secondary sm" href={founderMailto}>Contact founder</a>
+      <a class="gp-mkt-btn ghost sm" href={FOUNDER_LINKEDIN_URL}>LinkedIn</a>
+    </div>
+  </div>
+  <div class="gp-pricing-summary__foot">
+    <a class="gp-mkt-btn ghost sm" href="/pricing/">See full plan comparison &rarr;</a>
+  </div>
+</section>
+
+<style>
+  .gp-pricing-summary {
+    margin: 3rem 0;
+    padding: 2rem 1.5rem;
+    border-radius: 1.1rem;
+    background: color-mix(in srgb, var(--surface-secondary, #f6f4ee) 65%, transparent);
+    border: 1px solid color-mix(in srgb, var(--color-neutral-300, #d1d5db) 50%, transparent);
+  }
+  .gp-pricing-summary__head {
+    text-align: center;
+    margin-bottom: 1.5rem;
+  }
+  .gp-pricing-summary__head h2 {
+    margin: 0 0 0.5rem;
+    font-size: clamp(1.4rem, 2vw + 0.5rem, 1.75rem);
+  }
+  .gp-pricing-summary__head p {
+    margin: 0;
+    color: var(--color-neutral-700, #4b5563);
+    max-width: 60ch;
+    margin-inline: auto;
+  }
+  .gp-pricing-summary__grid {
+    display: grid;
+    gap: 1rem;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  }
+  .gp-pricing-summary__card {
+    position: relative;
+    padding: 1.4rem 1.25rem 1.3rem;
+    border-radius: 0.9rem;
+    background: var(--surface-primary, #fffaf2);
+    border: 1px solid color-mix(in srgb, var(--color-neutral-300, #d1d5db) 60%, transparent);
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+    height: 100%;
+  }
+  .gp-pricing-summary__card .gp-mkt-btn {
+    margin-top: auto;
+    width: 100%;
+  }
+  .gp-pricing-summary__card.is-highlighted {
+    border-color: color-mix(in srgb, var(--color-primary-500, #047857) 60%, transparent);
+    box-shadow: 0 14px 32px -28px rgba(4, 120, 87, 0.6);
+  }
+  .gp-pricing-summary__card.is-recommended {
+    border-color: color-mix(in srgb, var(--color-primary-600, #065f46) 70%, transparent);
+  }
+  .gp-pricing-summary__card h3 {
+    margin: 0;
+    font-size: 1.1rem;
+  }
+  .gp-pricing-summary__bestfit {
+    margin: 0;
+    font-size: 0.85rem;
+    color: var(--color-neutral-700, #4b5563);
+  }
+  .gp-pricing-summary__price {
+    display: flex;
+    flex-direction: column;
+    gap: 0.15rem;
+  }
+  .gp-pricing-summary__price strong {
+    font-size: 1.4rem;
+    line-height: 1.1;
+  }
+  .gp-pricing-summary__price span {
+    font-size: 0.78rem;
+    color: var(--color-neutral-700, #4b5563);
+  }
+  .gp-pricing-summary__price .gp-pricing-summary__list {
+    color: var(--color-neutral-600, #4b5563);
+  }
+  .gp-pricing-summary__price .gp-pricing-summary__promo {
+    color: var(--color-primary-800, #064e3b);
+    font-weight: 700;
+  }
+  .gp-pricing-summary__chip {
+    position: absolute;
+    top: 0.6rem;
+    right: 0.6rem;
+    background: color-mix(in srgb, var(--color-primary-100, #d1fae5) 80%, transparent);
+    color: var(--color-primary-800, #064e3b);
+    font-size: 0.7rem;
+    font-weight: 600;
+    padding: 0.2rem 0.55rem;
+    border-radius: 999px;
+    text-transform: uppercase;
+    letter-spacing: 0.04em;
+  }
+  .gp-pricing-summary__enterprise {
+    display: flex;
+    gap: 1rem;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 1rem;
+    padding: 1rem 1.1rem;
+    border-radius: 1rem;
+    border: 1px solid color-mix(in srgb, var(--color-neutral-300, #d1d5db) 60%, transparent);
+    background: color-mix(in srgb, var(--surface-primary, #fffaf2) 70%, transparent);
+  }
+  .gp-pricing-summary__label {
+    display: inline-block;
+    margin-bottom: 0.25rem;
+    color: var(--color-primary-800, #064e3b);
+    font-size: 0.72rem;
+    font-weight: 700;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+  }
+  .gp-pricing-summary__enterprise h3 {
+    margin: 0 0 0.25rem;
+    font-size: 1rem;
+  }
+  .gp-pricing-summary__enterprise p {
+    margin: 0;
+    color: var(--color-neutral-700, #4b5563);
+    font-size: 0.85rem;
+  }
+  .gp-pricing-summary__enterprise-actions {
+    display: flex;
+    flex-shrink: 0;
+    gap: 0.6rem;
+  }
+  .gp-pricing-summary__foot {
+    margin-top: 1.25rem;
+    text-align: center;
+  }
+  @media (max-width: 640px) {
+    .gp-pricing-summary__enterprise {
+      align-items: stretch;
+      flex-direction: column;
+    }
+    .gp-pricing-summary__enterprise-actions {
+      flex-direction: column;
+    }
+  }
+</style>

@@ -1,0 +1,9 @@
+Restricted balance check:
+
+Award amount received to date minus cumulative allowable expenditures should equal the remaining restricted balance.
+
+If the accounting balance says something different, pause before month close.
+
+The variance may be a miscoded receipt, an expense charged to the wrong fund, or a journal entry that moved dollars without enough support.
+
+Small variances get expensive when they roll forward.

@@ -1,0 +1,22 @@
+A restricted fund release schedule should answer one question cleanly:
+
+What restriction has actually been satisfied?
+
+For a purpose-restricted grant, the release is tied to qualifying expenses. The program did the work, the cost was allowable, and the documentation supports it.
+
+For a time-restricted gift, the release is tied to the date or period the donor specified.
+
+For a conditional contribution under FASB ASU 2018-08, revenue recognition may wait until the barrier is substantially met.
+
+The release schedule should not be a monthly guess.
+
+It should tie each release to:
+
+- source restriction
+- expense or time trigger
+- amount released
+- journal entry
+- reviewer
+- source document
+
+That lets Finance explain why restricted net assets changed without rebuilding the story from grant folders, donor notes, and old emails.

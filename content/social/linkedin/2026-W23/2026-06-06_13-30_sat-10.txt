@@ -1,0 +1,5 @@
+Donor thank-you cleanup is operational work.
+
+A gift acknowledgement should match the donor, amount, date, restriction, and receipt language.
+
+When those details are clean, stewardship gets easier and Finance has fewer year-end questions about restricted gifts.

@@ -1,0 +1,11 @@
+Myth: a subrecipient with no single audit history is a low-risk subrecipient.
+
+Reality: 2 CFR 200.332(b) requires the pass-through entity to evaluate risk before issuing the sub-award, and "no audit history" is not the same as "clean audit history." Many smaller subrecipients have never crossed the $1,000,000 single audit threshold in any prior year. The audit silence is informational absence, not risk evidence.
+
+When a subrecipient lacks audit history, the regulation still requires a documented assessment. The weight shifts to the pre-award questionnaire, financial statement review if available, organizational references, and adequacy of financial management systems. A composite risk score under 1.5 across the six factors in 200.332(b) suggests low risk; between 1.5 and 2.5 suggests medium; above 2.5 suggests high.
+
+The most common audit finding on subrecipient monitoring is not that the monitoring was inadequate. It is that the pre-award risk assessment was never done. Auditors look for the document specifically because the regulation requires it before the sub-award is issued — and its absence is an automatic finding that cannot be cured after the fact.
+
+Document the rationale, score each factor, and file the assessment alongside the sub-award agreement. The matrix is the answer when the auditor asks how the risk rating was reached.
+
+#subrecipientmonitoring #2cfr200 #grantcompliance #passthroughentity

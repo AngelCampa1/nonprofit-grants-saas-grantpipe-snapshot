@@ -1,0 +1,11 @@
+WIOA Title I served roughly 5 million participants in PY2022 across Adult, Dislocated Worker, and Youth programs.
+
+That volume runs on two reporting rails most operators treat as separate systems: the Participant Individual Record Layout that feeds the Section 116 performance measures, and the ETA-9130 financial report series that feeds federal cash management.
+
+The shops that avoid ETA findings keep the case file, the data entry, and the cost allocation aligned to the same participant record in real time. The shops with findings reconcile PIRL and 9130 once a quarter and discover gaps no one can explain six months later.
+
+If your case management tool and your accounting system disagree about who was served and how much was spent on them, that's the audit risk.
+
+GrantPipe ties expenditures to grants and participants in one record so the PIRL and 9130 stories tell the same number.
+
+#wioa #grantcompliance #workforcedevelopment #nonprofitfinance

@@ -1,0 +1,12 @@
+Six documents an auditor will ask for in the first thirty minutes of a single audit engagement.
+
+1. The schedule of expenditures of federal awards (SEFA), reconciled to the general ledger.
+2. The internal control narrative covering federal awards. Not a paragraph. A document that names the control, the owner, and the frequency.
+3. Time-and-effort certifications for every employee whose salary touched a federal grant during the fiscal year. Signed, dated, by pay period or semi-annually depending on your method.
+4. The procurement file for any federal purchase over the micro-purchase threshold. Bids, justification, sole-source memos if applicable.
+5. Sub-recipient monitoring documentation. Risk assessment, monitoring plan, and the actual evidence that monitoring happened.
+6. The drawdown log, tied to actual expenditures, for every federal award drawn during the year.
+
+If any of these takes longer than ten minutes to produce, you have already told the auditor where to focus. Audit findings start with the binder that was not ready.
+
+The first rule of audit prep: the auditor is not your enemy, but they are watching how you organize your evidence as closely as they are watching the evidence itself.

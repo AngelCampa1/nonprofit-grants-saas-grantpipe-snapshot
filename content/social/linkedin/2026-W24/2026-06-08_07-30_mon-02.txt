@@ -1,0 +1,20 @@
+The donor CRM and the grant ledger can describe the same funder in different languages.
+
+Development sees Foundation X as a relationship, proposal, award letter, and pledge.
+
+Finance sees a receipt, restriction, fund code, release schedule, and reporting obligation.
+
+Neither view is wrong.
+
+The risk starts when they do not meet.
+
+A monthly reconciliation should match:
+
+- funder name
+- award amount
+- cash received to date
+- restriction classification
+- grant status
+- source document
+
+The source document matters most. If the grant agreement says restricted, the CRM tag should not say unrestricted general support.

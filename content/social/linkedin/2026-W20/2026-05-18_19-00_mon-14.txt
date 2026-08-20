@@ -1,0 +1,13 @@
+Five things a federal program officer can ask for, with little notice, that you should be able to produce within 24 hours.
+
+1. Current period budget vs actual, by line item, with variance explanation for anything over 10%.
+
+2. The supporting payroll allocation for any staff charged to the award, with the time-and-effort certifications behind it.
+
+3. A copy of the procurement file for any single purchase over $10,000, including the vendor selection memo.
+
+4. The Performance Progress Report metrics for the current quarter, even if the report itself is not yet due.
+
+5. The current FFR figures, drawn down through the most recent date, with the unobligated balance reconciled to the GL.
+
+If any of these takes more than a day to produce, the gap is the system, not the team. The data is somewhere. The retrieval time is what changes.

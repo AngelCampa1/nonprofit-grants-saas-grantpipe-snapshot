@@ -1,0 +1,12 @@
+Six things that belong in your audit binder before fieldwork starts, in the order an auditor will ask for them:
+
+1. Trial balance with prior-year comparison, signed by the CFO or Finance lead.
+2. Schedule of net assets with donor restrictions, with a roll-forward of additions, releases, and ending balance per fund.
+3. Grant agreements for every active award, including modifications and amendments. Originals, not summaries.
+4. Schedule of expenditures of federal awards (SEFA) if you crossed the $1,000,000 single audit threshold. With ALN numbers, pass-through identifiers, and direct vs pass-through breakouts.
+5. Board minutes for the audit period, with motions related to budget approval, restricted fund designations, and any related-party disclosures highlighted.
+6. Bank reconciliations for every month, with the reconciler and reviewer initialed.
+
+The binder is not the audit. It is the artifact that proves the audit can move quickly.
+
+If item two takes more than a day to assemble, you do not have a reporting problem. You have a system-of-record problem.

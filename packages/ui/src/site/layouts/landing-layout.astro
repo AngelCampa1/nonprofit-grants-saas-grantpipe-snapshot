@@ -1,0 +1,156 @@
+---
+import { getPublicApiBaseUrl } from "../lib/public-api-url"
+import BaseLayout from "./base-layout.astro"
+import SchemaMarkup from "../seo/schema-markup.astro"
+import { buildOrganizationSchema, buildProductSchema, buildSoftwareApplicationSchema, buildWebSiteSchema, buildFaqPageSchema } from "../lib/schema-builders"
+import { buildLandingSoftwareApplicationProps } from "../lib/landing-schema"
+import { buildGraph, withId } from "../lib/schema-graph"
+import SiteHeader from "../components/site-header.astro"
+import SiteFooter from "../components/site-footer.astro"
+import { ExitIntentPopup } from "../components/exit-intent-popup"
+import { resolveExitPopupProps } from "../lib/exit-popup-props"
+import { resolveLoginHref } from "../lib/resolve-login-href"
+import { ensureTrailingSlash, resolveLandingTitle } from "../lib/meta"
+import type { FaqItem, LeadMagnetOffer, SiteConfig } from "../types"
+
+interface Props {
+  config: SiteConfig
+  publishedAt?: string
+  updatedAt?: string
+  canonicalPath?: string
+  title?: string
+  description?: string
+  seoTitle?: string
+  seoDescription?: string
+  faqs?: FaqItem[]
+  offersUrl?: string
+  preferCategoryTitle?: boolean
+  leadMagnet?: LeadMagnetOffer
+}
+const {
+  config,
+  publishedAt,
+  updatedAt,
+  canonicalPath,
+  title,
+  description,
+  seoTitle,
+  seoDescription,
+  faqs,
+  offersUrl,
+  preferCategoryTitle = false,
+  leadMagnet,
+} = Astro.props
+const exitPopupProps = config.exitPopup?.enabled !== false ? resolveExitPopupProps(config) : undefined
+
+const siteUrl = `https://${config.domain}`
+const canonicalUrl = ensureTrailingSlash(`https://${config.domain}${canonicalPath ?? "/"}`)
+const orgId = `${siteUrl}/#organization`
+const productId = `${siteUrl}/#product`
+const softwareId = `${siteUrl}/#software`
+const websiteId = `${siteUrl}/#website`
+const faqId = `${siteUrl}/#faqpage`
+const landingSoftwareProps = buildLandingSoftwareApplicationProps(config, {
+  canonicalUrl,
+  imageUrl: `${siteUrl}${config.defaultOgImage}`,
+  offersUrl,
+})
+const resolvedFaqs = faqs ?? config.faqs
+
+const schemas = [
+  withId(buildOrganizationSchema({
+    name: config.name,
+    url: siteUrl,
+    founder: config.author,
+    ...(config.sameAs && { sameAs: config.sameAs }),
+    ...(config.contactEmail && { contactPoint: { email: config.contactEmail, type: "customer support" } }),
+    ...(config.areaServed && { areaServed: config.areaServed }),
+    ...(config.logo?.light && { logo: `${siteUrl}${config.logo.light}` }),
+  }), orgId),
+  withId(buildProductSchema({
+    name: config.name,
+    description: config.tagline,
+    url: canonicalUrl,
+    image: `${siteUrl}${config.defaultOgImage}`,
+    category: config.product.category,
+    brand: { name: config.name },
+    offers: config.pricingTiers && config.pricingTiers.length > 0
+      ? config.pricingTiers.map((t) => ({
+          price: t.price,
+          url: config.funnel.bofu.ctaTarget,
+        }))
+      : [{ price: config.product.price, url: config.funnel.bofu.ctaTarget }],
+  }), productId),
+  withId(buildSoftwareApplicationSchema(landingSoftwareProps), softwareId),
+  withId(buildWebSiteSchema({
+    name: config.name,
+    url: siteUrl,
+    description: config.tagline,
+    ...(config.searchPathTemplate && {
+      searchAction: { siteUrl, searchPathTemplate: config.searchPathTemplate }
+    }),
+    publisherId: orgId,
+  }), websiteId),
+  ...(resolvedFaqs.length > 0 ? [withId(buildFaqPageSchema(resolvedFaqs), faqId)] : []),
+]
+const graph = buildGraph(schemas)
+const publicApiUrl = getPublicApiBaseUrl()
+
+---
+
+<BaseLayout
+  title={seoTitle ?? resolveLandingTitle(config, title, preferCategoryTitle)}
+  description={seoDescription ?? description ?? config.metaDescription ?? config.tagline}
+  canonicalUrl={canonicalUrl}
+  siteName={config.name}
+  siteUrl={`https://${config.domain}`}
+  suppressSitewideSchema={true}
+  ogType="website"
+  ogImage={config.defaultOgImage}
+  twitterSite={config.social?.twitterHandle}
+  articleAuthor={config.author?.name}
+  publishedAt={publishedAt}
+  updatedAt={updatedAt}
+  themeColor={config.theme.primary}
+  theme={config.theme}
+  fonts={config.theme.fonts}
+  preserveMetaTagCopy={seoTitle !== undefined || seoDescription !== undefined || config.preserveMetaTagCopy}
+  appleTouchIcon={config.appleTouchIcon}
+  analyticsEnabled={config.analytics?.enabled ?? true}
+  rssUrl="/rss.xml"
+  enableScrollReveal={false}
+>
+  <SiteHeader
+    slot="header"
+    siteName={config.name}
+    navItems={config.nav?.items}
+    ctaText={config.funnel.bofu.ctaText}
+    ctaHref={config.funnel.bofu.ctaTarget}
+    loginHref={config.appLoginUrl ?? resolveLoginHref(config.funnel.bofu.ctaTarget)}
+    ctaVariant="primary"
+    ctaPill
+    currentPath={Astro.url.pathname}
+    logoLight={config.logo?.light}
+  />
+  <slot />
+  <SchemaMarkup graph={graph} />
+  {exitPopupProps && (
+    <ExitIntentPopup
+      client:load
+      apiUrl={publicApiUrl}
+      leadMagnet={leadMagnet}
+      {...exitPopupProps}
+    />
+  )}
+  <SiteFooter
+    slot="footer"
+    siteName={config.name}
+    tagline={config.tagline}
+    linkGroups={config.footer?.linkGroups}
+    legalLinks={config.footer?.legalLinks}
+    contactEmail={config.contactEmail}
+    logoLight={config.logo?.light}
+    captureVariant="none"
+    currentPath={Astro.url.pathname}
+  />
+</BaseLayout>

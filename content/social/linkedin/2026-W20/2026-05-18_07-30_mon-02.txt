@@ -1,0 +1,13 @@
+$25,000.
+
+That is the federal sub-award threshold that triggers FFATA reporting under the Transparency Act. First-tier sub-awards at or above $25K go into FSRS by the end of the month after the obligation.
+
+People miss it because the prime award is huge, the sub-award feels small, and the reporting tool lives outside Grants.gov.
+
+Three things to know:
+
+1. The clock starts on the obligation date, not the cash transfer.
+2. Executive compensation reporting kicks in if 80% of revenue and at least $25M came from federal funds last year.
+3. A missed FFATA report shows up in audit findings as a compliance deficiency, not a financial one. Different remediation, same headache.
+
+Put it on the calendar the day the sub-award is signed. The 30-day window goes faster than you expect.

@@ -1,0 +1,12 @@
+Development can own the relationship without owning every compliance detail.
+
+Finance can own the ledger without owning every funder note.
+
+The handoff breaks when each team has a partial truth:
+
+- full award in the CRM
+- cash receipt in accounting
+- report deadline in a spreadsheet
+- evidence in a drive folder
+
+Put the shared facts in one grant record, then let each team work from its own view.

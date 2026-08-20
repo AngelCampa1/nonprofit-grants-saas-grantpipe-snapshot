@@ -1,0 +1,207 @@
+**Post 1 — STAT_BOMB**
+
+The 21st CCLC single audit threshold rose to $1,000,000 in federal expenditures under the October 2024 Uniform Guidance revision.
+
+If your after-school program was just under the old threshold, that number just changed what you owe the federal government in audit obligations.
+
+21st CCLC operates under ESEA Title IV Part B. Funds flow from USED to state educational agencies, which competitively subaward to LEAs and community-based organizations.
+
+Every subawardee that crosses $1,000,000 in total federal expenditures — across all federal awards, not just 21st CCLC — owes a single audit.
+
+That means the GPRA performance reporting, the Annual Performance Report through 21APR, and the financial side of the award all land in the same audit scope.
+
+Most compliance problems in 21st CCLC programs are documentation problems discovered too late. GrantPipe keeps after-school grant records, restricted fund balances, and APR schedules in one place so the documentation exists before the auditor asks. Try it free at grantpipe.com.
+
+#grantcompliance #21stCCLC #federalgrants #nonprofitfinance
+
+---
+
+**Post 2 — MYTH_BUSTER**
+
+QuickBooks Classes do not maintain a fund balance. This matters more than most finance teams realize.
+
+When a funder asks for the current restricted balance on an active grant, a Class report shows spending categories. It does not show what remains.
+
+To get the answer, someone calculates it manually: starting balance, plus award received, minus all posted expenses. That calculation is a spreadsheet sitting alongside QuickBooks — not the accounting system itself.
+
+For a nonprofit with two simple private foundation grants and patient finance staff, this works. For one managing five or more active awards, at least one of which is federal, the spreadsheet becomes the most important document in the office and the most fragile.
+
+2 CFR 200 requires financial management systems that adequately identify the source and application of funds. A Class-based system with a parallel spreadsheet is often technically compliant but practically fragile.
+
+The signal that QuickBooks is no longer sufficient: staff turnover creates a gap in the institutional knowledge maintaining the spreadsheet, or an auditor makes a comment about fund accounting methodology.
+
+When that signal arrives, the question is whether the organization moves before or after the finding.
+
+#nonprofitfinance #restrictedFunds #fundaccounting #grantcompliance
+
+---
+
+**Post 3 — WORKFLOW_STEP**
+
+Under 2 CFR 200.430, payroll charges to federal grants must reflect actual hours worked — not the budgeted percentage. Here is how to run the monthly allocation correctly.
+
+Step 1: Pull the payroll register for every pay period in the month. Allocation requires employee-level data, not department totals.
+
+Step 2: Determine the allocation basis from actual time records, not the grant budget. The budget is a ceiling, not a basis.
+
+Step 3: Allocate base salary. Each employee's gross wages split by certified time percentages. The sum across all grants must equal total gross wages — no rounding errors.
+
+Step 4: Allocate fringe benefits using the same percentages as salary. If the organization uses a pooled fringe rate, apply it consistently to all grants and document the rate calculation.
+
+Step 5: Calculate indirect cost allocation separately. Apply the negotiated rate (or 15% de minimis under the 2024 Uniform Guidance revision) to the MTDC base for each grant. Do not blend indirect into the direct salary line.
+
+Step 6: Post the journal entry. Each line specifies employee, grant, account, and amount. Attach the payroll register and allocation worksheet.
+
+Step 7: Reconcile to time records. If an employee's timesheet shows 55% on Grant A but payroll posted at 60%, a correcting entry is required before month-end close.
+
+The most common and most expensive error is skipping step 7.
+
+#grantcompliance #payrollallocation #federalgrants #uniformguidance
+
+---
+
+**Post 4 — TERM_EXPLAINED**
+
+"Net assets with donor restrictions" replaced two categories in 2017. Many nonprofits still report it wrong.
+
+FASB ASU 2016-14, effective for fiscal years beginning after December 15, 2017, eliminated "temporarily restricted" and "permanently restricted" as separate balance sheet line items and combined them into a single class: net assets with donor restrictions.
+
+Three types of restrictions create this classification: purpose (spend only on a specific program), time (unavailable until a future date), and perpetual (principal must be held in perpetuity).
+
+The release mechanism: when the donor condition is satisfied — qualifying expenditure made, time elapsed, or event occurred — the organization records "net assets released from restrictions" on the statement of activities.
+
+The most common misconceptions: board-designated funds are not donor-restricted, even if the board labeled them "restricted." Reporting requirements in a grant agreement do not automatically create donor restrictions. Reporting conditions differ from use conditions.
+
+Underwater endowments — where fair value has dropped below the original gift amount — remain in the donor-restricted class under ASU 2016-14, not reclassified elsewhere.
+
+If your audited financial statements still show "temporarily restricted" or "permanently restricted" as line items, that is an error. The transition was required eight fiscal years ago.
+
+#nonprofitaccounting #FASBASC958 #restrictedFunds #nonprofitfinance
+
+---
+
+**Post 5 — TOOL_TEARDOWN**
+
+Little Green Light starts at $45/month and handles individual donor management well. The breaking point is three or more active grants with actual compliance requirements.
+
+LGL's grant record stores funder name, award amount, deadline, and notes. It does not track what happens to the money after the check arrives.
+
+Restricted fund accounting requires knowing the remaining balance on each grant at any point in the award period: what was approved in each budget category, what has been spent, and what is left. LGL does not model this. The grant record shows the award amount and the deadline.
+
+A grants manager maintaining compliance spreadsheets alongside LGL typically invests 4–8 hours per active grant per reporting period for report preparation alone. For an organization with five active grants and quarterly reporting on two of them, that is 15–25 hours per quarter going into compliance administration.
+
+At $50/hour for a grants manager's time, 20 hours of quarterly compliance administration costs $4,000 per year in labor before accounting for the risk cost of a misallocated expenditure becoming an audit finding.
+
+The question is not whether LGL is inexpensive. The question is what the total cost of the LGL-plus-spreadsheets workflow is when staff hours are included.
+
+LGL remains the right tool when grants are simple and compliance lives entirely in the accounting system. When a federal award arrives, or when the portfolio reaches five or more active awards, the workflow math changes.
+
+#nonprofitCRM #grantmanagement #restrictedFunds #grantcompliance
+
+---
+
+**Post 6 — HOW_TO**
+
+Grant closeout is not a single event. Federal grants require submission within 120 days of the period-of-performance end date. Here is the sequence that avoids findings.
+
+Step 1: Reconcile every expenditure against the approved grant budget. Pull all transactions charged to the grant — personnel, direct expenses, indirect costs — and verify each has adequate documentation: invoice, receipt, payroll record, or time sheet.
+
+Step 2: Check each expenditure against approved budget categories. Spending that shifted between line items without documented funder approval can be disallowed even if the total is within the award amount. Verbal approvals from program officers are not documentation.
+
+Step 3: Calculate and report program income if applicable. Revenue generated by program activities during the grant period must be reported and applied per the grant agreement. Failure to report program income is a recurring closeout finding on federal grants.
+
+Step 4: Prepare and submit the final financial report through the funder's designated system. Federal grants use agency-specific portals, not email. The report must reconcile to the dollar against accounting records.
+
+Step 5: Submit the final programmatic report using data collected during the grant period — not reconstructed from memory. Funders compare final numbers against interim reports already on file.
+
+Step 6: Resolve unspent funds according to the grant agreement. Do not assume unspent restricted funds are available for operations. Restricted funds remain restricted until the funder releases them.
+
+Step 7: Archive the complete grant file for a minimum of three years from the date the final expenditure report is submitted. Some federal programs require five to seven years.
+
+The organizations that pass closeout without findings maintained documentation throughout — not retroactively.
+
+#grantcloseout #grantcompliance #federalgrants #nonprofitfinance
+
+---
+
+**Post 7 — FREE_RESOURCE**
+
+A grant budget tracking template serves two purposes at once: internal spend-down monitoring and funder financial report preparation.
+
+The structure that works: one worksheet per active restricted grant, with each approved budget line as a separate row using the exact category names from the grant agreement — not internal chart of accounts names.
+
+Four columns matter most per line: Approved Budget (from the executed agreement), Modification (net changes from approved modifications), Revised Budget (the working number), and Cumulative Actuals to Date (from the accounting system after period close, not estimates).
+
+For federal awards, the template maps directly to SF-425 line items: Personnel, Fringe Benefits, Travel, Equipment, Supplies, Contractual, Other Direct Costs, Indirect Costs.
+
+The variance explanation column is not optional. For any budget line where actual spending is more than 15% above or below expected pace, a specific, dated explanation is required. "Program activities delayed" is not an explanation. "Position vacant April–June; search underway; will modify budget if not filled by Q3" is.
+
+Version the file at every month-end close. An auditor who wants to see what the budget-vs-actual looked like eight months into the award should be able to pull that snapshot without rebuilding it.
+
+The free grant budget tracking template is available at grantpipe.com/free — built to align with SF-425 and support the monthly close process.
+
+#grantbudget #grantcompliance #nonprofitfinance #restrictedFunds
+
+---
+
+**Post 8 — HOW_TO**
+
+A written cost transfer policy is required under 2 CFR 200.302(b)(7). Here is what it must cover and how to build one that survives audit.
+
+Step 1: Write the policy document. Define what constitutes a cost transfer (any journal entry moving a cost between grants or cost centers after original posting), the 90-day timeliness standard, required documentation for each transfer, and the approval hierarchy.
+
+Step 2: Build a standard cost transfer request form. Capture: transfer date, original posting date, amount, original award and account, receiving award and account, reason for original posting, description of benefit to receiving award, and approval signatures. Consistency creates the audit trail.
+
+Step 3: Maintain a central cost transfer log. Every transfer by date, amount, awards affected, and approval status. The log lets auditors test the population without reconstructing individual GL entries — and lets finance staff spot patterns that indicate a systemic cost allocation problem.
+
+Step 4: Apply the 90-day review at each submission. Transfers within 90 days use standard documentation. Transfers over 90 days require expanded justification explaining why the error was not caught sooner. Transfers after period end require prior written federal agency approval before posting.
+
+Step 5: For personnel transfers, attach time records before initiating the transfer. Under 2 CFR 200.430, the receiving award can bear the salary cost only if the employee actually worked on that award during the period being adjusted. Discovering mid-transfer that the time records do not support the reallocation wastes time and creates a problematic paper trail.
+
+Late cost transfers with generic justifications are consistently in the top ten single audit findings for HHS and DOJ grants. The documentation is the compliance — not the transfer itself.
+
+#costTransfers #federalgrants #uniformguidance #grantcompliance
+
+---
+
+**Post 9 — LIST_POST**
+
+Five capabilities that separate grant compliance software from grant tracking software:
+
+1. Restricted fund balance tracking. Not a running list of grants — a running balance per award, by approved budget category, updated as expenses post. A system that shows you award amounts and deadlines is a record-keeping tool.
+
+2. Federal financial reporting support. SF-425 preparation requires cumulative expenditures by category, reconciled against accounting records, submitted through agency-specific portals on a quarterly or semi-annual schedule. Most pre-award pipeline tools do not touch this.
+
+3. Subrecipient monitoring. 2 CFR 200.331 and 200.332 require documented pre-award risk assessment, ongoing monitoring, and single audit verification for subrecipients expending $1,000,000 or more in federal awards annually. This is a compliance obligation, not a relationship management feature.
+
+4. Time-and-effort documentation. Under 2 CFR 200.430, every employee whose salary charges to a federal award needs contemporaneous time records. Retroactive certifications from memory are a common audit finding. The software needs to support the documentation workflow, not just the payroll allocation entry.
+
+5. Audit file organization. A complete, audit-ready grant file contains the award documents, all amendments, all reports, all expenditure documentation, T&E records, and subrecipient files — organized so any auditor can follow the money from award to closeout without staff reconstruction.
+
+Foundant GrantHub Pro reached end-of-life January 31, 2026 and is no longer available. Organizations currently evaluating it should remove it from consideration.
+
+Which of these five is the most common gap in your current system?
+
+#grantcompliancesoftware #federalgrants #grantmanagement #nonprofitfinance
+
+---
+
+**Post 10 — HOW_TO**
+
+FASB ASC 958 governs how every grant-funded U.S. nonprofit presents its financial statements. Here is what ASU 2016-14 requires and where finance teams most often get it wrong.
+
+Step 1: Classify net assets into exactly two classes. With-donor-restrictions (purpose, time, or perpetual) and without-donor-restrictions (everything the board controls, including board designations). Using the old three-class language — unrestricted, temporarily restricted, permanently restricted — in audited statements is an error.
+
+Step 2: Present four financial statements. Statement of Financial Position, Statement of Activities, Statement of Cash Flows, and Statement of Functional Expenses. The functional expense statement allocates costs across program services, management and general, and fundraising — required by ASU 2016-14 for all nonprofits.
+
+Step 3: Record net assets released from restrictions correctly. When a donor condition is satisfied, record "net assets released from restrictions" — a reclassification, not new revenue. Equal decrease in the restricted class and increase in the unrestricted class on the Statement of Activities.
+
+Step 4: Prepare the liquidity disclosure. Quantitative: financial assets available to meet general expenditures within one year, net of donor-restricted and unavailable amounts. Qualitative: how the organization manages liquidity, including credit lines, reserves, and seasonal variations.
+
+Step 5: Allocate functional expenses using actual time and space data, not arbitrary estimates. Auditors test functional allocation methodology. Grants that restrict funds to direct program costs require separating shared overhead accurately.
+
+The most common error: board-designated funds classified as donor-restricted. Boards can set aside reserves by resolution, but those designations live inside without-donor-restrictions — not in the restricted class.
+
+GrantPipe tracks restricted fund balances, releases from restrictions, and audit documentation by donor and restriction type — so the ASC 958 reporting is an output of normal operations, not a reconstruction. Try it free at grantpipe.com.
+
+#FASBASC958 #nonprofitaccounting #restrictedFunds #nonprofitfinance

@@ -1,0 +1,10 @@
+Restricted fund cleanup is easier when the month-end checklist is specific.
+
+The useful version asks:
+
+- Which restricted balances changed?
+- Which releases were recorded?
+- Which award documents support the restriction?
+- Which balances need board explanation?
+
+GrantPipe's Restricted Fund Month-End Close Checklist gives the review a simple shape.

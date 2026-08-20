@@ -1,0 +1,219 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=1920, height=1080"/>
+<script src="../assets/gsap.min.js"></script>
+<style>
+@font-face{font-family:'Sora';font-weight:700;src:url('../assets/fonts/Sora-700.woff2') format('woff2');font-display:block}
+@font-face{font-family:'Sora';font-weight:600;src:url('../assets/fonts/Sora-600.woff2') format('woff2');font-display:block}
+@font-face{font-family:'Plex';font-weight:400;src:url('../assets/fonts/PlexSans-400.woff2') format('woff2');font-display:block}
+@font-face{font-family:'Plex';font-weight:500;src:url('../assets/fonts/PlexSans-500.woff2') format('woff2');font-display:block}
+@font-face{font-family:'Plex';font-weight:600;src:url('../assets/fonts/PlexSans-600.woff2') format('woff2');font-display:block}
+@font-face{font-family:'Mono';font-weight:400;src:url('../assets/fonts/PlexMono-400.woff2') format('woff2');font-display:block}
+@font-face{font-family:'Mono';font-weight:500;src:url('../assets/fonts/PlexMono-500.woff2') format('woff2');font-display:block}
+
+:root{
+  --paper:#faf7f0; --paper2:#f3eee2; --ink:#17211c; --muted:#6c726a;
+  --emerald:#065f46; --emerald-d:#053d2e; --emerald-50:#e7f3ee;
+  --ochre:#b9842b; --ochre-50:#f6ecd6; --ochre-line:#e4cf9f;
+  --red:#b3261e; --red-50:#fbe9e7;
+  --line:#e6e0d2; --line2:#d8d0bd; --white:#fffdf8;
+  --shadow:0 24px 60px -28px rgba(20,40,30,.45), 0 4px 14px -6px rgba(20,40,30,.18);
+}
+*{margin:0;padding:0;box-sizing:border-box}
+html,body{width:1920px;height:1080px;overflow:hidden;background:var(--paper);
+  font-family:'Plex',system-ui,sans-serif;color:var(--ink);-webkit-font-smoothing:antialiased}
+#root{position:relative;width:1920px;height:1080px;
+  background:
+    radial-gradient(1200px 700px at 78% -8%, rgba(6,95,70,.10), transparent 60%),
+    radial-gradient(900px 600px at 8% 108%, rgba(185,132,43,.10), transparent 60%),
+    linear-gradient(180deg,var(--paper),var(--paper2));
+}
+.wordmark{position:absolute;top:54px;left:72px;display:flex;align-items:center;gap:16px;z-index:5}
+.wordmark .mark{width:40px;height:40px;display:block}
+.wordmark .name{font-family:'Sora';font-weight:700;font-size:30px;letter-spacing:-.4px;color:var(--ink)}
+.kicker{position:absolute;top:60px;right:72px;font-family:'Mono';font-weight:500;font-size:19px;letter-spacing:3px;
+  color:var(--emerald);text-transform:uppercase;opacity:.9;z-index:5}
+.stage{position:absolute;inset:0;display:flex;flex-direction:column;align-items:center;justify-content:center;z-index:2}
+.caption{position:absolute;left:72px;bottom:96px;z-index:6;max-width:1500px}
+.caption .chip{display:inline-flex;align-items:center;gap:12px;background:var(--emerald);color:var(--white);
+  font-family:'Mono';font-weight:500;font-size:20px;letter-spacing:2px;text-transform:uppercase;
+  padding:9px 18px;border-radius:999px;box-shadow:var(--shadow)}
+.caption .chip .num{background:var(--ochre);color:#3a2a07;border-radius:999px;padding:1px 11px;font-size:18px}
+.caption .line{margin-top:18px;font-family:'Sora';font-weight:600;font-size:46px;line-height:1.12;letter-spacing:-.6px;
+  color:var(--ink);max-width:1400px}
+.progress{position:absolute;left:72px;right:72px;bottom:58px;height:6px;display:flex;gap:7px;z-index:6}
+.progress .seg{flex:1;height:6px;border-radius:4px;background:var(--line2)}
+.progress .seg.on{background:var(--ochre)}
+.progress .seg.done{background:var(--emerald)}
+
+/* Spreadsheet */
+.sheet{width:1480px;background:var(--white);border-radius:20px;box-shadow:var(--shadow);
+  border:1px solid var(--line);overflow:hidden}
+.sheet .tabs{display:flex;gap:6px;padding:16px 20px;background:linear-gradient(180deg,#fff,#fbf8f1);
+  border-bottom:1px solid var(--line)}
+.sheet .tab{font-family:'Plex';font-weight:600;font-size:20px;color:var(--muted);padding:9px 18px;border-radius:9px}
+.sheet .tab.active{background:var(--emerald-50);color:var(--emerald)}
+table{border-collapse:collapse;width:100%;table-layout:fixed}
+th,td{border:1px solid var(--line);padding:0 18px;height:62px;text-align:left;font-size:24px;
+  white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+th{background:var(--emerald-50);color:var(--emerald-d);font-family:'Plex';font-weight:600;font-size:21px;
+  letter-spacing:.2px}
+td{font-family:'Plex';font-weight:400;color:var(--ink)}
+td.mono,th.mono{font-family:'Mono';font-weight:400}
+td.num{font-family:'Mono';text-align:right}
+.rowhead{width:64px;background:#f7f3ea;color:var(--muted);font-family:'Mono';font-size:18px;text-align:center;
+  padding:0}
+.colidx td,.colidx th{height:40px;background:#f7f3ea;color:var(--muted);font-family:'Mono';font-size:16px;
+  text-align:center;font-weight:400;padding:0}
+.hl-ochre{background:var(--ochre-50)!important;box-shadow:inset 0 0 0 2px var(--ochre)}
+.hl-emerald{background:var(--emerald-50)!important;box-shadow:inset 0 0 0 2px var(--emerald)}
+.hl-red{background:var(--red-50)!important;box-shadow:inset 0 0 0 2px var(--red);color:var(--red)!important}
+.tag{display:inline-block;font-family:'Mono';font-size:18px;padding:2px 12px;border-radius:999px;font-weight:500}
+.tag.yes{background:var(--ochre-50);color:#7a5410;border:1px solid var(--ochre-line)}
+.tag.no{background:#eef0ec;color:var(--muted);border:1px solid var(--line2)}
+.callout{position:absolute;z-index:7;background:var(--ink);color:var(--white);border-radius:14px;
+  padding:18px 22px;font-family:'Plex';font-weight:500;font-size:26px;box-shadow:var(--shadow);max-width:520px;line-height:1.25}
+.callout .k{font-family:'Mono';color:var(--ochre);font-size:18px;letter-spacing:2px;text-transform:uppercase;display:block;margin-bottom:6px}
+.callout::after{content:"";position:absolute;width:18px;height:18px;background:var(--ink);transform:rotate(45deg)}
+.bignum{font-family:'Mono';font-weight:500}
+
+/* Browser-chrome screen frame — FIXED BOX across all chapters.
+   The card sits at a constant top/left/width/height so the video never jumps.
+   Ken-Burns + zoom/pan happen on the INNER .shotzoom wrapper (a transform),
+   never on the <img> (which keeps its natural box). The .shotview clips it. */
+.screen{position:relative;border-radius:18px;overflow:hidden;background:var(--white);
+  box-shadow:var(--shadow);border:1px solid var(--line2)}
+.screen .bar{display:flex;align-items:center;gap:16px;height:54px;padding:0 22px;
+  background:linear-gradient(180deg,#fbf8f1,#f3eee2);border-bottom:1px solid var(--line)}
+.screen .dots{display:flex;gap:10px}
+.screen .dots i{width:14px;height:14px;border-radius:999px;background:var(--line2);display:block}
+.screen .addr{flex:1;display:flex;align-items:center;gap:10px;height:32px;padding:0 18px;
+  background:var(--white);border:1px solid var(--line);border-radius:999px;
+  font-family:'Mono';font-weight:400;font-size:18px;color:var(--muted);max-width:560px;margin:0 auto}
+.screen .addr .lock{color:var(--emerald);font-size:15px}
+/* clipping viewport for the screenshot */
+.screen .shotview{position:relative;width:100%;height:616px;overflow:hidden;background:var(--white)}
+/* transformable inner wrapper — animate THIS (transform only) for zoom/pan/Ken-Burns */
+.screen .shotzoom{position:absolute;top:0;left:0;width:1190px;height:auto;
+  transform-origin:0 0;will-change:transform}
+.screen .shot{display:block;width:1190px;height:auto}
+/* Region spotlight + animated focus ring. Lives INSIDE .shotzoom so it pans/zooms
+   with the screenshot automatically (coords are css px relative to the image). */
+.spot{position:absolute;z-index:6;border:3px solid var(--ochre);border-radius:14px;
+  box-shadow:0 0 0 4px rgba(185,132,43,.18), var(--shadow);pointer-events:none}
+</style>
+</head>
+<body>
+<div id="root" data-composition-id="chapter-04" data-start="0" data-duration="48.44" data-width="1920" data-height="1080">
+  <div id="chrome-wordmark" class="wordmark clip" data-start="0" data-duration="48.44" data-track-index="10"><img class="mark" src="../assets/grantpipe-mark.svg" alt="GrantPipe"/><div class="name">GrantPipe</div></div>
+  <div id="chrome-kicker" class="kicker clip" data-start="0" data-duration="48.44" data-track-index="11">Getting Started</div>
+  
+      <div class="stage" style="gap:0">
+        <div id="res-wrap" style="position:absolute;left:365px;top:120px;width:1190px;opacity:0;"><div class="screen" style="position:relative;width:1190px">
+    <div class="bar">
+      <div class="dots"><i></i><i></i><i></i></div>
+      <div class="addr"><span class="lock">&#x1F512;</span>app.grantpipe.com/import</div>
+    </div>
+    <div class="shotview">
+      <div id="scr-res" class="shotzoom" style=" transform:translate(-388px,-381px) scale(1.49);">
+        <img class="shot" src="../assets/screens/07-import-commit-result.png" alt="Import finished: 2 inserted, 3 duplicates, 1 failed"/>
+        
+      <div id="sp-res" class="spot" style="left:273px;top:521px;width:211px;height:17px;opacity:0"></div>
+      <div id="sp-err" class="spot" style="left:270px;top:545px;width:796px;height:43px;opacity:0"></div>
+      </div>
+    </div>
+  </div></div>
+        <div id="hist-wrap" style="position:absolute;left:365px;top:120px;width:1190px;opacity:0;"><div class="screen" style="position:relative;width:1190px">
+    <div class="bar">
+      <div class="dots"><i></i><i></i><i></i></div>
+      <div class="addr"><span class="lock">&#x1F512;</span>app.grantpipe.com/import</div>
+    </div>
+    <div class="shotview">
+      <div id="scr-hist" class="shotzoom" style=" transform:translate(-521px,-990px) scale(2.4);">
+        <img class="shot" src="../assets/screens/08-import-history.png" alt="Import history with donor-contacts.csv entry"/>
+        <div id="sp-hist" class="spot" style="left:264px;top:522px;width:398px;height:60px;opacity:0"></div>
+      </div>
+    </div>
+  </div></div>
+        <!-- Stat cards sit INSIDE the frame interior (upper band, clear of the frame
+             bottom edge at y=790 and the persistent-caption band at y>=823), so they no
+             longer crowd the caption clear zone — matches ch01's clean reference. -->
+        <div id="stats" style="opacity:0;position:absolute;left:50%;top:188px;transform:translateX(-50%);display:flex;gap:24px;z-index:8">
+          <div id="st-0" style="opacity:0;display:flex;flex-direction:column;align-items:center;gap:4px;background:var(--emerald-50);border:2px solid var(--emerald);border-radius:16px;padding:16px 30px;min-width:190px">
+            <div style="font-family:'Mono';font-weight:500;font-size:58px;line-height:1;color:var(--emerald)">2</div>
+            <div style="font-family:'Plex';font-weight:600;font-size:24px;color:var(--emerald)">inserted</div>
+          </div><div id="st-1" style="opacity:0;display:flex;flex-direction:column;align-items:center;gap:4px;background:var(--ochre-50);border:2px solid #7a5410;border-radius:16px;padding:16px 30px;min-width:190px">
+            <div style="font-family:'Mono';font-weight:500;font-size:58px;line-height:1;color:#7a5410">3</div>
+            <div style="font-family:'Plex';font-weight:600;font-size:24px;color:#7a5410">duplicates</div>
+          </div><div id="st-2" style="opacity:0;display:flex;flex-direction:column;align-items:center;gap:4px;background:var(--red-50);border:2px solid var(--red);border-radius:16px;padding:16px 30px;min-width:190px">
+            <div style="font-family:'Mono';font-weight:500;font-size:58px;line-height:1;color:var(--red)">1</div>
+            <div style="font-family:'Plex';font-weight:600;font-size:24px;color:var(--red)">failed</div>
+          </div>
+        </div>
+      </div>
+      <div id="cap" class="caption clip" data-start="0" data-duration="48.44" data-track-index="8" style="opacity:0">
+    <div class="chip"><span class="num">04</span>Commit and read the result</div>
+    <div class="line">Two added. Three skipped as duplicates. One failed, with the line and field to fix.</div>
+  </div>
+  <div id="chrome-progress" class="clip" data-start="0" data-duration="48.44" data-track-index="7"><div class="progress"><div class="seg done"></div><div class="seg done"></div><div class="seg done"></div><div class="seg done"></div><div class="seg on"></div><div class="seg "></div></div></div>
+</div>
+<script>
+window.__timelines = window.__timelines || {};
+(function(){
+  const tl = gsap.timeline({ paused: true });
+  const D = 48.44;
+  
+      tl.fromTo("#res-wrap",{opacity:0,y:24},{opacity:1,y:0,duration:0.8,ease:"power3.out"},0.3);
+      tl.fromTo("#cap",{opacity:0,y:28},{opacity:1,y:0,duration:0.7,ease:"power2.out"},0.25);
+      tl.fromTo("#sp-res",{opacity:0,scale:0.92},{opacity:1,scale:1,duration:0.5,ease:"back.out(1.5)"},D*0.16);
+      // Three numbers pop in sequence ON the spoken enumeration (chapter-local; global
+      // minus 141.64): "2 inserted" ~9.4s, "3 duplicates" ~9.9s, "1 failed" ~12.0s.
+      // Pulled ~6s earlier than before so the big cards land with the words, not after.
+      tl.fromTo("#stats",{opacity:0},{opacity:1,duration:0.3},9.0);
+      tl.fromTo("#st-0",{opacity:0,y:18,scale:0.9},{opacity:1,y:0,scale:1,duration:0.45,ease:"back.out(1.6)"},9.4);
+      tl.fromTo("#st-1",{opacity:0,y:18,scale:0.9},{opacity:1,y:0,scale:1,duration:0.45,ease:"back.out(1.6)"},9.9);
+      tl.fromTo("#st-2",{opacity:0,y:18,scale:0.9},{opacity:1,y:0,scale:1,duration:0.45,ease:"back.out(1.6)"},12.0);
+      // The summary-line ring (2/3/1) belongs to the earlier enumeration (~global
+      // 150-154, local ~8.4-12.4); clear it before the Line-7 ring lights so the two
+      // never overlap.
+      tl.to("#sp-res",{opacity:0,duration:0.4,ease:"power2.in",overwrite:"auto"},13.4);
+      // M3: the row error ("Line 7, type: Use one of: individual, organization.") is
+      // spoken at "Here, line seven used a contact type..." — captions.srt cue 55,
+      // global 165.93-172.31 = chapter-local 24.29-30.67. Light the Line-7 ring WITH
+      // those words and hold it through the line. zRes frames the banner + error rows at
+      // z=1.46 so the row text reads at 1080p. (Prior code lit it ~10s early at 14.9s.)
+      // Push the result screen in from the wide width-fit (zRes) to the tight error-row
+      // framing (zErr) just before "line seven" is spoken, hold through the line, then
+      // ease back out before the history crossfade so the row text is large while read.
+      tl.set("#scr-res",{transformOrigin:"0 0"},0);
+      // idle drift on the result banner during the ~10s gap before the line-7 push.
+      // Finishes at 22.5 (before the 23.0 zErr push, which then starts from zRes2).
+      tl.fromTo("#scr-res",{transform:"translate(-388px,-381px) scale(1.49)"},{transform:"translate(-420px,-415px) scale(1.54)",duration:9.5,ease:"sine.inOut"},13.0);
+      tl.to("#scr-res",{transform:"translate(-550px,-857px) scale(2.2)",duration:1.2,ease:"power2.inOut"},23.0);
+      tl.fromTo("#sp-err",{opacity:0,scale:0.95},{opacity:1,scale:1,duration:0.5,ease:"power2.out"},24.3);
+      tl.to("#sp-err",{opacity:0,duration:0.4,ease:"power2.in",overwrite:"auto"},31.0);
+      tl.to("#scr-res",{transform:"translate(-388px,-381px) scale(1.49)",duration:1.0,ease:"power2.inOut"},31.2);
+      // transition result -> history: TRUE crossfade so the app screenshot is present
+      // beneath the stat cards at ALL times (history fades IN before result fades OUT).
+      // Fade the cards out together WITH the result screen during the swap so they are
+      // never left floating over bare warm paper.
+      // History must be fully framed BEFORE "GrantPipe logs every import you run right
+      // here" finishes (captions cue 58, global 179.7-183.89 = local 38.06-42.25). Bring
+      // the history screen in at ~34.9s and fade the result+cards out at ~37.8s so the
+      // import-history card is settled and legible across the whole line, then ring its
+      // type/status/counts entry at ~38.6s while the words are spoken.
+      tl.fromTo("#hist-wrap",{opacity:0,y:18},{opacity:1,y:0,duration:0.9,ease:"power3.out"},34.9);
+      tl.to("#res-wrap",{opacity:0,duration:0.7,ease:"power2.in",overwrite:"auto"},37.8);
+      tl.to("#stats",{opacity:0,duration:0.6,ease:"power2.in",overwrite:"auto"},37.8);
+      tl.fromTo("#sp-hist",{opacity:0,scale:0.96},{opacity:1,scale:1,duration:0.6,ease:"back.out(1.4)"},38.6);
+      // idle Ken-Burns on the history entry card so it isn't static for ~13s. Drifts
+      // zHist->zHist2 from after it settles through near chapter end (ring + line in-frame).
+      tl.set("#scr-hist",{transformOrigin:"0 0"},0);
+      tl.fromTo("#scr-hist",{transform:"translate(-521px,-990px) scale(2.4)"},{transform:"translate(-558px,-1044px) scale(2.48)",duration:12.0,ease:"sine.inOut"},35.6);
+  window.__timelines["chapter-04"] = tl;
+})();
+</script>
+</body>
+</html>

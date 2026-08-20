@@ -1,0 +1,12 @@
+Auditor requests are less stressful when the evidence list already exists.
+
+The Auditor Evidence Checklist covers records reviewers may ask for:
+
+- award documents
+- amendments
+- ledger detail
+- invoices and receipts
+- payroll support
+- time and effort
+- procurement files
+- submitted reports

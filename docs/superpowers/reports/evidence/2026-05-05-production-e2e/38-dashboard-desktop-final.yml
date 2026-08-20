@@ -1,0 +1,346 @@
+- generic [ref=e3]:
+    - generic [ref=e18]:
+        - generic [ref=e21]:
+            - generic [ref=e22]:
+                - link "GrantPipe home" [ref=e23] [cursor=pointer]:
+                    - /url: /app/dashboard
+                    - img [ref=e24]
+                    - generic [ref=e25]: GrantPipe
+                - button "Collapse sidebar" [ref=e26]:
+                    - img [ref=e27]
+            - generic [ref=e29]:
+                - link "Dashboard" [ref=e31] [cursor=pointer]:
+                    - /url: /app/dashboard
+                    - img [ref=e33]
+                    - generic [ref=e38]: Dashboard
+                - generic [ref=e39]:
+                    - button "Toggle Fundraising section" [ref=e40]:
+                        - generic [ref=e42]: Fundraising
+                        - img [ref=e43]
+                    - link "Donors" [ref=e45] [cursor=pointer]:
+                        - /url: /app/donors
+                        - img [ref=e47]
+                        - generic [ref=e52]: Donors
+                    - link "Grants" [ref=e53] [cursor=pointer]:
+                        - /url: /app/grants
+                        - img [ref=e55]
+                        - generic [ref=e58]: Grants
+                    - link "Funders" [ref=e59] [cursor=pointer]:
+                        - /url: /app/funders
+                        - img [ref=e61]
+                        - generic [ref=e67]: Funders
+                    - link "Events" [ref=e68] [cursor=pointer]:
+                        - /url: /app/events
+                        - img [ref=e70]
+                        - generic [ref=e72]: Events
+                    - link "Calendar" [ref=e73] [cursor=pointer]:
+                        - /url: /app/calendar
+                        - img [ref=e75]
+                        - generic [ref=e77]: Calendar
+                - generic [ref=e78]:
+                    - button "Toggle Compliance section" [ref=e79]:
+                        - generic [ref=e81]: Compliance
+                        - img [ref=e82]
+                    - link "Funds" [ref=e84] [cursor=pointer]:
+                        - /url: /app/funds
+                        - img [ref=e86]
+                        - generic [ref=e89]: Funds
+                    - link "Programs" [ref=e90] [cursor=pointer]:
+                        - /url: /app/programs
+                        - img [ref=e92]
+                        - generic [ref=e96]: Programs
+                    - link "Reports" [ref=e97] [cursor=pointer]:
+                        - /url: /app/reports
+                        - img [ref=e99]
+                        - generic [ref=e102]: Reports
+                    - link "Cash" [ref=e103] [cursor=pointer]:
+                        - /url: /app/payments
+                        - img [ref=e105]
+                        - generic [ref=e107]: Cash
+                    - link "Activity" [ref=e108] [cursor=pointer]:
+                        - /url: /app/activity
+                        - img [ref=e110]
+                        - generic [ref=e112]: Activity
+                - button "Toggle Accounting section" [ref=e114]:
+                    - generic [ref=e115]:
+                        - generic [ref=e116]: Accounting
+                        - generic [ref=e117]: "11"
+                    - img [ref=e118]
+                - generic [ref=e120]:
+                    - button "Toggle Account section" [ref=e121]:
+                        - generic [ref=e123]: Account
+                        - img [ref=e124]
+                    - link "Import" [ref=e126] [cursor=pointer]:
+                        - /url: /app/import
+                        - img [ref=e128]
+                        - generic [ref=e131]: Import
+                    - link "Notifications" [ref=e132] [cursor=pointer]:
+                        - /url: /app/notifications
+                        - img [ref=e134]
+                        - generic [ref=e137]: Notifications
+                    - link "Settings" [ref=e138] [cursor=pointer]:
+                        - /url: /app/settings
+                        - img [ref=e140]
+                        - generic [ref=e143]: Settings
+            - link "Help" [ref=e145] [cursor=pointer]:
+                - /url: /app/help
+                - img [ref=e147]
+                - generic [ref=e150]: Help
+            - button "Account menu" [ref=e152]:
+                - generic [ref=e154]: PE
+                - generic [ref=e155]:
+                    - generic [ref=e156]: Production E2E 20260505 160129
+                    - generic [ref=e157]: angel+e2e-20260505-160129@grantpipe.com
+        - generic [ref=e158]:
+            - banner [ref=e159]:
+                - generic [ref=e160]:
+                    - link "Add billing, trial ends in 30 days" [ref=e161] [cursor=pointer]:
+                        - /url: /app/settings#billing
+                        - img [ref=e162]
+                        - generic [ref=e165]: Trial
+                        - generic [ref=e166]: 30d
+                    - button "Open command palette" [ref=e167]:
+                        - img
+                    - link "Notifications" [ref=e168] [cursor=pointer]:
+                        - /url: /app/notifications
+                        - img
+                    - button "Switch to dark theme" [ref=e169]:
+                        - img
+            - main [ref=e171]:
+                - generic [ref=e173]:
+                    - generic [ref=e174]:
+                        - paragraph [ref=e175]: Tuesday, May 5, 2026
+                        - generic [ref=e177]:
+                            - generic [ref=e178]:
+                                - heading "Dashboard" [level=1] [ref=e179]
+                                - button "Help for Dashboard" [ref=e180]:
+                                    - img [ref=e181]
+                            - paragraph [ref=e184]: Updated May 5, 2026, 10:15 PM UTC
+                    - region "Executive snapshot" [ref=e185]:
+                        - generic [ref=e186]:
+                            - generic [ref=e187]:
+                                - generic [ref=e188]:
+                                    - heading "Executive snapshot" [level=2] [ref=e189]
+                                    - generic [ref=e190]: Watch closely
+                                - paragraph [ref=e191]: no board packet generated.
+                                - generic [ref=e192]:
+                                    - generic [ref=e193]:
+                                        - term [ref=e194]: Urgent work
+                                        - definition [ref=e195]: 0 urgent
+                                    - generic [ref=e196]:
+                                        - term [ref=e197]: Upcoming deadlines
+                                        - definition [ref=e198]: 0 next 30 days
+                            - generic [ref=e199]:
+                                - heading "Priority actions" [level=3] [ref=e200]
+                                - article [ref=e202]:
+                                    - generic [ref=e203]:
+                                        - generic [ref=e204]:
+                                            - link "Open Generate a board packet" [ref=e205] [cursor=pointer]:
+                                                - /url: /app/reports
+                                                - text: Generate a board packet
+                                            - paragraph [ref=e206]: No board packet has been generated yet.
+                                        - generic [ref=e207]: Watch
+                    - generic "Start with these steps" [ref=e209]:
+                        - generic [ref=e210]:
+                            - generic [ref=e211]:
+                                - generic [ref=e212]:
+                                    - heading "Start with these steps" [level=2] [ref=e213]
+                                    - paragraph [ref=e214]: 0 of 5 steps complete
+                                    - paragraph [ref=e215]: A short setup path for people who are new to GrantPipe or uneasy with software.
+                                - generic [ref=e216]:
+                                    - button "Dismiss all" [ref=e217]
+                                    - link "Help center" [ref=e218] [cursor=pointer]:
+                                        - /url: /app/help
+                            - generic [ref=e219]:
+                                - article [ref=e220]:
+                                    - generic [ref=e221]: "01"
+                                    - generic [ref=e222]:
+                                        - heading "Confirm organization settings" [level=3] [ref=e223]
+                                        - paragraph [ref=e224]: Check your organization name, timezone, and fiscal year before reports depend on them.
+                                    - generic [ref=e225]:
+                                        - link "Start" [ref=e226] [cursor=pointer]:
+                                            - /url: /app/settings
+                                        - button "Mark done" [ref=e227]
+                                        - button "Dismiss" [ref=e228]
+                                - article [ref=e229]:
+                                    - generic [ref=e230]: "02"
+                                    - generic [ref=e231]:
+                                        - heading "Bring in your first contacts" [level=3] [ref=e232]
+                                        - paragraph [ref=e233]: Import a CSV from your old spreadsheet or CRM after previewing it.
+                                    - generic [ref=e234]:
+                                        - link "Start" [ref=e235] [cursor=pointer]:
+                                            - /url: /app/import
+                                        - button "Mark done" [ref=e236]
+                                        - button "Dismiss" [ref=e237]
+                                - article [ref=e238]:
+                                    - generic [ref=e239]: "03"
+                                    - generic [ref=e240]:
+                                        - heading "Add one grant" [level=3] [ref=e241]
+                                        - paragraph [ref=e242]: Create a grant record so deadlines, funds, and reporting have a home.
+                                    - generic [ref=e243]:
+                                        - link "Start" [ref=e244] [cursor=pointer]:
+                                            - /url: /app/grants
+                                        - button "Mark done" [ref=e245]
+                                        - button "Dismiss" [ref=e246]
+                                - article [ref=e247]:
+                                    - generic [ref=e248]: "04"
+                                    - generic [ref=e249]:
+                                        - heading "Find reports" [level=3] [ref=e250]
+                                        - paragraph [ref=e251]: Learn where generated PDFs and exports appear after you create them.
+                                    - generic [ref=e252]:
+                                        - link "Start" [ref=e253] [cursor=pointer]:
+                                            - /url: /app/reports
+                                        - button "Mark done" [ref=e254]
+                                        - button "Dismiss" [ref=e255]
+                                - article [ref=e256]:
+                                    - generic [ref=e257]: "05"
+                                    - generic [ref=e258]:
+                                        - heading "Open a downloaded report" [level=3] [ref=e259]
+                                        - paragraph [ref=e260]: Know where a PDF goes after download and how to open it from your computer.
+                                    - generic [ref=e261]:
+                                        - link "Start" [ref=e262] [cursor=pointer]:
+                                            - /url: /app/help
+                                        - button "Mark done" [ref=e263]
+                                        - button "Dismiss" [ref=e264]
+                    - generic [ref=e265]:
+                        - link "Retention rate" [ref=e266] [cursor=pointer]:
+                            - /url: /app/donors?segment=retained
+                            - generic [ref=e267]:
+                                - generic [ref=e268]: Retention rate
+                                - generic [ref=e269]: 0.0%
+                                - paragraph [ref=e270]: Donors who gave again this fiscal year
+                        - link "This FY giving" [ref=e271] [cursor=pointer]:
+                            - /url: /app/donors?segment=giving_fy_current
+                            - generic [ref=e272]:
+                                - generic [ref=e273]: This FY giving
+                                - generic [ref=e274]: $0
+                                - paragraph [ref=e275]: Current fiscal-year donations booked
+                        - link "Last FY giving" [ref=e276] [cursor=pointer]:
+                            - /url: /app/donors?segment=giving_fy_last
+                            - generic [ref=e277]:
+                                - generic [ref=e278]: Last FY giving
+                                - generic [ref=e279]: $0
+                                - paragraph [ref=e280]: Benchmark for year-over-year pacing
+                        - link "New donors" [ref=e281] [cursor=pointer]:
+                            - /url: /app/donors?segment=new
+                            - generic [ref=e282]:
+                                - generic [ref=e283]: New donors
+                                - generic [ref=e284]: "1"
+                                - paragraph [ref=e285]: First-time supporters acquired this year
+                    - link "Outstanding reimbursements" [ref=e286] [cursor=pointer]:
+                        - /url: /app/payments
+                        - generic [ref=e287]:
+                            - generic [ref=e288]: Outstanding Reimbursements
+                            - generic [ref=e289]: $0
+                            - paragraph [ref=e290]: 0 submitted, 0 approved
+                    - region "Grant health" [ref=e291]:
+                        - generic [ref=e293]:
+                            - heading "Grant health" [level=2] [ref=e294]
+                            - paragraph [ref=e295]: Control counts for grant risk, deadlines, funds, and audit evidence.
+                        - generic [ref=e296]:
+                            - generic [ref=e297]:
+                                - term [ref=e298]: Overdue grants
+                                - definition [ref=e299]: "0"
+                            - generic [ref=e300]:
+                                - term [ref=e301]: At-risk grants
+                                - definition [ref=e302]: "0"
+                            - generic [ref=e303]:
+                                - term [ref=e304]: Upcoming deadlines
+                                - definition [ref=e305]: "0"
+                            - generic [ref=e306]:
+                                - term [ref=e307]: Restricted funds on watch
+                                - definition [ref=e308]: "0"
+                            - generic [ref=e309]:
+                                - term [ref=e310]: Audit evidence events
+                                - definition [ref=e311]: "0"
+                    - region "Reporting readiness" [ref=e312]:
+                        - generic [ref=e313]:
+                            - generic [ref=e314]:
+                                - heading "Reporting readiness" [level=2] [ref=e315]
+                                - paragraph [ref=e316]: No board packet has been generated yet.
+                            - link "Open reports" [ref=e317] [cursor=pointer]:
+                                - /url: /app/reports
+                    - generic [ref=e318]:
+                        - region "Recent activity" [ref=e319]:
+                            - heading "Recent activity" [level=2] [ref=e320]
+                            - list [ref=e321]:
+                                - listitem [ref=e322]:
+                                    - paragraph [ref=e323]: Expense Created
+                                    - time [ref=e324]: May 5, 2026, 10:11 PM UTC
+                                - listitem [ref=e325]:
+                                    - paragraph [ref=e326]: Grant Created
+                                    - time [ref=e327]: May 5, 2026, 10:10 PM UTC
+                                - listitem [ref=e328]:
+                                    - paragraph [ref=e329]: Funder Contact Created
+                                    - time [ref=e330]: May 5, 2026, 10:08 PM UTC
+                                - listitem [ref=e331]:
+                                    - paragraph [ref=e332]: Funder Created
+                                    - time [ref=e333]: May 5, 2026, 10:07 PM UTC
+                                - listitem [ref=e334]:
+                                    - paragraph [ref=e335]: Contact Created
+                                    - time [ref=e336]: May 5, 2026, 10:06 PM UTC
+                                - listitem [ref=e337]:
+                                    - paragraph [ref=e338]: Organization Updated
+                                    - time [ref=e339]: May 5, 2026, 10:03 PM UTC
+                        - region "Grant pipeline" [ref=e340]:
+                            - heading "Grant pipeline" [level=2] [ref=e341]
+                            - generic [ref=e342]:
+                                - generic [ref=e343]:
+                                    - paragraph [ref=e344]: Donors
+                                    - generic [ref=e345]:
+                                        - generic [ref=e346]: Prospect
+                                        - generic [ref=e347]: "1"
+                                    - generic [ref=e348]:
+                                        - generic [ref=e349]: Cultivation
+                                        - generic [ref=e350]: "0"
+                                    - generic [ref=e351]:
+                                        - generic [ref=e352]: Solicitation
+                                        - generic [ref=e353]: "0"
+                                    - generic [ref=e354]:
+                                        - generic [ref=e355]: Stewardship
+                                        - generic [ref=e356]: "0"
+                                    - generic [ref=e357]:
+                                        - generic [ref=e358]: Donor
+                                        - generic [ref=e359]: "0"
+                                    - generic [ref=e360]:
+                                        - generic [ref=e361]: Lapsed
+                                        - generic [ref=e362]: "0"
+                                - generic [ref=e363]:
+                                    - paragraph [ref=e364]: Grants
+                                    - generic [ref=e365]:
+                                        - generic [ref=e366]: Discovery
+                                        - generic [ref=e367]: "1"
+                                    - generic [ref=e368]:
+                                        - generic [ref=e369]: Application
+                                        - generic [ref=e370]: "0"
+                                    - generic [ref=e371]:
+                                        - generic [ref=e372]: Submitted
+                                        - generic [ref=e373]: "0"
+                                    - generic [ref=e374]:
+                                        - generic [ref=e375]: Awarded
+                                        - generic [ref=e376]: "0"
+                                    - generic [ref=e377]:
+                                        - generic [ref=e378]: Active
+                                        - generic [ref=e379]: "0"
+                                    - generic [ref=e380]:
+                                        - generic [ref=e381]: Reporting
+                                        - generic [ref=e382]: "0"
+                                    - generic [ref=e383]:
+                                        - generic [ref=e384]: Closeout
+                                        - generic [ref=e385]: "0"
+                                    - generic [ref=e386]:
+                                        - generic [ref=e387]: Renewal
+                                        - generic [ref=e388]: "0"
+                                    - generic [ref=e389]:
+                                        - generic [ref=e390]: Declined
+                                        - generic [ref=e391]: "0"
+                        - region "Fund balances" [ref=e392]:
+                            - heading "Fund balances" [level=2] [ref=e393]
+                            - generic [ref=e394]:
+                                - paragraph [ref=e395]: Fund balances appear after restricted or unrestricted funds are created. Use Funds when you need to track money set aside for a specific purpose.
+                                - link "Create a fund →" [ref=e396] [cursor=pointer]:
+                                    - /url: /app/funds
+            - button "Feedback" [active] [ref=e397]:
+                - img [ref=e398]
+                - generic [ref=e400]: Feedback
+    - region "Notifications alt+T"

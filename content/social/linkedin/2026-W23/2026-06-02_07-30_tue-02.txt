@@ -1,0 +1,13 @@
+Board packet numbers should survive five questions:
+
+What changed this month?
+
+Which funds are restricted?
+
+Which reports are late or close?
+
+Which grant balances need Finance review?
+
+Which number should not be repeated externally yet?
+
+A board packet is not better because it is longer. It is better when the caveats are visible before the meeting starts.

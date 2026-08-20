@@ -1,0 +1,11 @@
+A loaded hourly rate calculation: annual salary divided by 2,080 hours, multiplied by 1.30 for benefits and payroll tax. A $60,000 finance coordinator costs the organization roughly $37.50 per hour.
+
+If that coordinator spends 10 hours a week on grant reconciliation, funder report assembly, and audit prep, the annual cost is about $19,500. Add the development director's hours, the finance director's audit-prep weekends, and the program staff time on coordination, and the true compliance cost is rarely under $40,000 annually for a $2M-budget nonprofit.
+
+Most finance directors report only the dedicated compliance hours. They miss the funder calls explaining discrepancies, the weekend before audit fieldwork, and the hours answering the development director's questions about fund balances.
+
+GrantPipe published a free Grant Software ROI Calculator that walks through current compliance cost, risk-adjusted error cost, software investment, and a board-ready three-year net benefit summary.
+
+Numbers, not vibes — that is how this decision should be made.
+
+#grantcompliance #nonprofitfinance #softwareroi #boardreporting

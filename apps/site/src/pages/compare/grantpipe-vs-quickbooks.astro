@@ -1,0 +1,933 @@
+---
+import { getPublicApiBaseUrl } from "@grantpipe/ui/site/lib/public-api-url"
+import "../../styles/global.css"
+import { getCollection } from "astro:content"
+import BaseLayout from "@grantpipe/ui/site/layouts/base-layout.astro"
+import SiteHeader from "@grantpipe/ui/site/components/site-header.astro"
+import SiteFooter from "@grantpipe/ui/site/components/site-footer.astro"
+import { ExitIntentPopup } from "@grantpipe/ui/site/components/exit-intent-popup"
+import { resolveExitPopupProps } from "@grantpipe/ui/site/lib/exit-popup-props"
+import { grantPipeTrialCopy, shouldShowMobileStickyCta, siteConfig, getSignupCtaTarget } from "@/config/site"
+import { getPlanDisplayPrice } from "../../../../../packages/shared/src/pricing"
+import { getAppLoginUrl } from "@/lib/app-url"
+import { resolveExitLeadMagnetOffer } from "@/lib/lead-magnet-routing"
+import { ensureTrailingSlash } from "@grantpipe/ui/site/lib/meta"
+import PricingSummaryBlock from "@/components/pricing-summary-block.astro"
+import Button from "@/components/ui/button.astro"
+
+const canonicalUrl = ensureTrailingSlash(`https://${siteConfig.domain}/compare/grantpipe-vs-quickbooks`)
+const signupHref = getSignupCtaTarget({ plan: "audit_ready" })
+const leadMagnets = await getCollection("lead-magnets")
+const exitLeadMagnet = resolveExitLeadMagnetOffer(siteConfig, leadMagnets, {
+  family: "comparison",
+})
+const exitPopupProps = siteConfig.exitPopup?.enabled !== false ? resolveExitPopupProps(siteConfig) : undefined
+
+type CapabilityLevel = "native" | "workaround" | "manual" | "not-applicable"
+
+interface MatrixRow {
+  capability: string
+  description: string
+  grantpipe: { level: CapabilityLevel; label: string }
+  quickbooks: { level: CapabilityLevel; label: string }
+}
+
+const auditReadyPriceLabel = `Audit-Ready at ${getPlanDisplayPrice("audit_ready", "monthly")} - all-in, no add-ons required`
+
+const matrix: MatrixRow[] = [
+  {
+    capability: "Fund accounting (restricted vs. unrestricted)",
+    description:
+      "Tracking donations and expenses by restriction class as required by FASB ASC 958.",
+    grantpipe: { level: "native", label: "Native - restriction tracked on donation record" },
+    quickbooks: {
+      level: "workaround",
+      label: "Classes workaround - class tags approximate restriction tracking",
+    },
+  },
+  {
+    capability: "FASB ASC 958 financial statements",
+    description:
+      "Statement of Financial Position, Statement of Activities, Statement of Functional Expenses.",
+    grantpipe: { level: "native", label: "Generated from live GL - no manual export" },
+    quickbooks: {
+      level: "manual",
+      label: "Manual export and reformatting required - not FASB-native",
+    },
+  },
+  {
+    capability: "Auto-posting from donor records",
+    description: "Donation records trigger balanced GL entries without manual journal entry work.",
+    grantpipe: { level: "native", label: "Auto-posts on create, update, and delete" },
+    quickbooks: { level: "manual", label: "Manual journal entries required for every transaction" },
+  },
+  {
+    capability: "Release-of-restriction journal entries",
+    description:
+      "When a restricted fund is spent, a paired release-of-restriction JE is required by FASB.",
+    grantpipe: {
+      level: "native",
+      label: "Auto-posted when expense is recorded against restricted fund",
+    },
+    quickbooks: {
+      level: "workaround",
+      label: "Requires two manual JEs - class workaround cannot express this natively",
+    },
+  },
+  {
+    capability: "Grant compliance tracking",
+    description: "Budget tracking, deadline management, spend-down reporting by grant.",
+    grantpipe: { level: "native", label: "Built-in grant lifecycle management" },
+    quickbooks: { level: "not-applicable", label: "Not applicable - general accounting tool" },
+  },
+  {
+    capability: "Donor CRM",
+    description: "Donor records, giving history, contact management, communication log.",
+    grantpipe: { level: "native", label: "Built-in donor CRM with full history" },
+    quickbooks: { level: "not-applicable", label: "Not applicable - no donor management" },
+  },
+  {
+    capability: "Audit trail",
+    description: "Activity log linking every financial entry to the person and record that created it.",
+    grantpipe: {
+      level: "native",
+      label: "Append-only activity log with before/after diffs on every record",
+    },
+    quickbooks: {
+      level: "manual",
+      label: "Audit log exists but is not linked to grant or donor source records",
+    },
+  },
+  {
+    capability: "Price point",
+    description: "Total software cost for a typical nonprofit finance team.",
+    grantpipe: {
+      level: "native",
+      label: auditReadyPriceLabel,
+    },
+    quickbooks: {
+      level: "workaround",
+      label:
+        "QBO Advanced ~$235/mo + bookkeeper or CPA time for nonprofit reporting adjustments",
+    },
+  },
+]
+
+const levelMeta: Record<CapabilityLevel, { label: string; className: string }> = {
+  native: { label: "Native", className: "qb-pill qb-pill--native" },
+  workaround: { label: "Workaround", className: "qb-pill qb-pill--workaround" },
+  manual: { label: "Manual", className: "qb-pill qb-pill--manual" },
+  "not-applicable": { label: "N/A", className: "qb-pill qb-pill--na" },
+}
+
+const legendEntries: Array<[CapabilityLevel, string]> = [
+  ["native", "Native support"],
+  ["workaround", "Workaround available"],
+  ["manual", "Manual steps required"],
+  ["not-applicable", "Not applicable"],
+]
+
+const qbWorksWhen = [
+  "Revenue is largely unrestricted",
+  "No active grant portfolio requiring compliance tracking",
+  "Audit requirements are limited or informal",
+  "You have a bookkeeper fluent in QuickBooks nonprofit workarounds",
+  "Payroll and accounts payable integration are primary needs",
+]
+
+const grantpipeFitWhen = [
+  "A material portion of revenue is donor-restricted",
+  "You manage 3+ active grants with compliance and reporting obligations",
+  "Auditors ask for restriction tracking documentation",
+  "Your staff records donations and expenses - not a dedicated bookkeeper",
+  "You want donor CRM and accounting in the same system",
+]
+
+const relatedReading = [
+  {
+    href: "/resources/guides/quickbooks-classes-are-not-fund-accounting/",
+    title: "Why QuickBooks classes are not fund accounting",
+    description:
+      "The technical difference between class tagging and FASB ASC 958 restriction tracking.",
+  },
+  {
+    href: "/books/",
+    title: "GrantPipe Books overview",
+    description:
+      "Auto-posting, the three FASB statements, bank reconciliation, and the COA template.",
+  },
+  {
+    href: "/resources/guides/fasb-asc-958-nonprofit-reporting/",
+    title: "FASB ASC 958 explained",
+    description:
+      "What the standard requires, the two net asset classes, and what auditors expect.",
+  },
+]
+
+const jsonLd = {
+  "@context": "https://schema.org",
+  "@type": "WebPage",
+  "@id": canonicalUrl,
+  name: "GrantPipe vs. QuickBooks for Nonprofits",
+  description:
+    "A capability comparison between GrantPipe Books and QuickBooks Online for nonprofit fund accounting. Covers FASB ASC 958 support, restricted fund tracking, auto-posting, and grant compliance.",
+  url: canonicalUrl,
+  inLanguage: "en-US",
+  publisher: {
+    "@type": "Organization",
+    name: siteConfig.name,
+    url: `https://${siteConfig.domain}`,
+  },
+}
+const publicApiUrl = getPublicApiBaseUrl()
+---
+
+<BaseLayout
+  title="GrantPipe vs. QuickBooks for Nonprofits - Fund Accounting Comparison"
+  description="QuickBooks is a capable general-ledger product. It was not built for FASB ASC 958 restricted fund tracking, release-of-restriction entries, or grant compliance. Here is what that gap costs in practice."
+  canonicalUrl={canonicalUrl}
+  siteName={siteConfig.name}
+  ogType="website"
+  twitterSite={siteConfig.social?.twitterHandle}
+  theme={siteConfig.theme}
+  themeColor={siteConfig.theme.primary}
+  appleTouchIcon={siteConfig.appleTouchIcon}
+  fonts={siteConfig.theme.fonts}
+  showStickyMobileCta={shouldShowMobileStickyCta(Astro.url.pathname)}
+>
+  <script is:inline type="application/ld+json" set:html={JSON.stringify(jsonLd)} slot="head" />
+
+  <SiteHeader
+    slot="header"
+    siteName={siteConfig.name}
+    navItems={siteConfig.nav?.items}
+    ctaText={siteConfig.funnel.bofu.ctaText}
+    ctaHref={getSignupCtaTarget()}
+    loginHref={getAppLoginUrl()}
+    logoLight={siteConfig.logo?.light}
+  >
+  </SiteHeader>
+
+  <main class="gp-marketing-shell" data-marketing-page="compare-quickbooks">
+    <section class="gp-section" data-section="hero">
+      <div class="gp-wrap qb-hero">
+        <nav class="qb-breadcrumb" aria-label="Breadcrumb">
+          <ol>
+            <li><a href="/">Home</a></li>
+            <li aria-hidden="true" class="qb-breadcrumb__sep">/</li>
+            <li><a href="/compare/">Compare</a></li>
+            <li aria-hidden="true" class="qb-breadcrumb__sep">/</li>
+            <li aria-current="page">GrantPipe vs. QuickBooks</li>
+          </ol>
+        </nav>
+
+        <p class="gp-eyebrow-pill">Comparison</p>
+        <h1 class="qb-hero__title">
+          GrantPipe Books vs. QuickBooks Online for nonprofits.
+        </h1>
+        <p class="qb-hero__lede">
+          QuickBooks Online is a solid general-purpose accounting product. Tens of thousands of
+          nonprofits use it because it was the best available option when they started. The
+          question this page answers is what that choice costs when your work involves restricted
+          funds, FASB ASC 958 statements, and grant compliance.
+        </p>
+        <p class="qb-hero__lede qb-hero__lede--muted">
+          This is not a "QuickBooks is bad" argument. QuickBooks does what it was built to do. It
+          was not built for nonprofit fund accounting.
+        </p>
+        <div class="qb-hero__actions">
+          <Button variant="primary" size="lg" href={signupHref} data-ph-capture-attribute-source="qb-compare-hero-cta">
+            Start free trial
+          </Button>
+          <Button variant="ghost" size="md" href="#matrix">
+            See the capability matrix
+          </Button>
+        </div>
+      </div>
+    </section>
+
+    <section class="gp-section alt" data-section="context">
+      <div class="gp-wrap qb-context">
+        <header class="qb-section-head">
+          <h2>Why nonprofits land on QuickBooks</h2>
+        </header>
+        <div class="qb-context__grid">
+          <div class="qb-context__column">
+            <p>
+              QuickBooks is the default accounting tool for small organizations in the U.S. It
+              handles cash flow, invoicing, payroll integrations, bank feeds, and standard financial
+              reporting. CPAs know it. Bookkeepers know it. It costs less than enterprise accounting
+              software.
+            </p>
+            <p>
+              For a nonprofit with no restricted funds, no grant portfolio, and straightforward
+              unrestricted revenue, QuickBooks works adequately. The moment restricted funding
+              enters the picture, the workarounds start.
+            </p>
+          </div>
+          <div class="qb-context__column">
+            <p>
+              The standard workaround is QuickBooks Classes - a cost-center tagging feature that
+              some nonprofits use as a proxy for fund tracking. Classes are not fund accounting.
+              They cannot express the two-column restriction structure that FASB ASC 958 requires,
+              and they cannot post the release-of-restriction entries that auditors look for.
+            </p>
+            <p>That gap is precisely what GrantPipe Books was built to close.</p>
+            <p>
+              <a class="qb-inline-link" href="/resources/guides/quickbooks-classes-are-not-fund-accounting/">
+                Read: Why QuickBooks classes are not fund accounting -&gt;
+              </a>
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="gp-section" data-section="matrix" id="matrix">
+      <div class="gp-wrap qb-matrix-wrap scroll-in">
+        <header class="qb-section-head">
+          <p class="gp-eyebrow-pill">Capability matrix</p>
+          <h2>Feature-by-feature comparison</h2>
+        </header>
+
+        <div class="qb-legend" aria-label="Capability legend">
+          <span class="qb-legend__label">Legend:</span>
+          {legendEntries.map(([level, label]) => (
+            <span class={levelMeta[level].className}>{label}</span>
+          ))}
+        </div>
+
+        <p class="qb-matrix-scroll-hint sm:hidden" aria-hidden="true">&#8592; scroll &#8594;</p>
+        <div class="qb-matrix-scroll overflow-x-auto -mx-4 sm:mx-0">
+          <table class="qb-matrix" aria-label="GrantPipe versus QuickBooks capability matrix">
+            <thead>
+              <tr>
+                <th scope="col" class="qb-matrix__col qb-matrix__col--feature">Capability</th>
+                <th scope="col" class="qb-matrix__col qb-matrix__col--winner">GrantPipe Books</th>
+                <th scope="col" class="qb-matrix__col">QuickBooks Online</th>
+              </tr>
+            </thead>
+            <tbody>
+              {matrix.map((row) => (
+                <tr>
+                  <th scope="row" class="qb-matrix__feature">
+                    <span class="qb-matrix__feature-name">{row.capability}</span>
+                    <span class="qb-matrix__feature-desc">{row.description}</span>
+                  </th>
+                  <td class="qb-matrix__cell qb-matrix__cell--winner">
+                    <span class={levelMeta[row.grantpipe.level].className}>
+                      {levelMeta[row.grantpipe.level].label}
+                    </span>
+                    <span class="qb-matrix__label">{row.grantpipe.label}</span>
+                  </td>
+                  <td class="qb-matrix__cell">
+                    <span class={levelMeta[row.quickbooks.level].className}>
+                      {levelMeta[row.quickbooks.level].label}
+                    </span>
+                    <span class="qb-matrix__label">{row.quickbooks.label}</span>
+                  </td>
+                </tr>
+              ))}
+            </tbody>
+          </table>
+        </div>
+
+        <div class="qb-matrix-cards" role="list">
+          {matrix.map((row) => (
+            <article class="qb-matrix-card" role="listitem">
+              <p class="qb-matrix-card__name">{row.capability}</p>
+              <p class="qb-matrix-card__desc">{row.description}</p>
+              <dl class="qb-matrix-card__grid">
+                <div class="qb-matrix-card__side qb-matrix-card__side--winner">
+                  <dt>GrantPipe</dt>
+                  <dd>
+                    <span class={levelMeta[row.grantpipe.level].className}>
+                      {levelMeta[row.grantpipe.level].label}
+                    </span>
+                    <span class="qb-matrix-card__label">{row.grantpipe.label}</span>
+                  </dd>
+                </div>
+                <div class="qb-matrix-card__side">
+                  <dt>QuickBooks</dt>
+                  <dd>
+                    <span class={levelMeta[row.quickbooks.level].className}>
+                      {levelMeta[row.quickbooks.level].label}
+                    </span>
+                    <span class="qb-matrix-card__label">{row.quickbooks.label}</span>
+                  </dd>
+                </div>
+              </dl>
+            </article>
+          ))}
+        </div>
+      </div>
+    </section>
+
+    <section class="gp-section alt" data-section="verdict">
+      <div class="gp-wrap qb-verdict">
+        <header class="qb-section-head">
+          <h2>When QuickBooks is the right choice, and when it is not</h2>
+        </header>
+        <div class="qb-verdict__grid">
+          <article class="qb-verdict__card">
+            <p class="qb-verdict__eyebrow">QuickBooks works well when</p>
+            <ul class="qb-verdict__list">
+              {qbWorksWhen.map((item) => (
+                <li>
+                  <span class="qb-verdict__bullet" aria-hidden="true">&middot;</span>
+                  <span>{item}</span>
+                </li>
+              ))}
+            </ul>
+          </article>
+          <article class="qb-verdict__card qb-verdict__card--winner">
+            <p class="qb-verdict__eyebrow qb-verdict__eyebrow--winner">
+              GrantPipe Books is the better fit when
+            </p>
+            <ul class="qb-verdict__list">
+              {grantpipeFitWhen.map((item) => (
+                <li>
+                  <span class="qb-verdict__bullet qb-verdict__bullet--winner" aria-hidden="true">+</span>
+                  <span>{item}</span>
+                </li>
+              ))}
+            </ul>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="gp-section" data-section="related">
+      <div class="gp-wrap qb-related">
+        <header class="qb-section-head">
+          <h2>Related reading</h2>
+        </header>
+        <div class="qb-related__grid">
+          {relatedReading.map((link) => (
+            <a class="qb-related__card" href={link.href}>
+              <p class="qb-related__title">{link.title}</p>
+              <p class="qb-related__desc">{link.description}</p>
+            </a>
+          ))}
+        </div>
+      </div>
+    </section>
+
+    <section class="gp-section alt" data-section="cta">
+      <div class="gp-wrap qb-cta">
+        <h2>See the difference with your own grant data.</h2>
+        <p>
+          The {grantPipeTrialCopy.toLowerCase()} uses the plan you choose at signup.
+        </p>
+        <div class="qb-cta__actions">
+          <Button
+            variant="primary"
+            size="lg"
+            href={signupHref}
+            data-ph-capture-attribute-source="qb-compare-cta"
+          >
+            Start free trial
+          </Button>
+          <Button variant="ghost" size="md" href="/pricing/">See pricing</Button>
+        </div>
+      </div>
+    </section>
+
+    <PricingSummaryBlock recommendedTier="audit_ready" />
+  </main>
+
+  <SiteFooter
+    slot="footer"
+    siteName={siteConfig.name}
+    tagline={siteConfig.tagline}
+    linkGroups={siteConfig.footer?.linkGroups ?? []}
+    legalLinks={siteConfig.footer?.legalLinks ?? []}
+    logoLight={siteConfig.logo?.light}
+  />
+  {exitPopupProps && (
+    <ExitIntentPopup
+      client:load
+      apiUrl={publicApiUrl}
+      leadMagnet={exitLeadMagnet}
+      {...exitPopupProps}
+    />
+  )}
+</BaseLayout>
+
+<style>
+  .qb-hero {
+    display: flex;
+    flex-direction: column;
+    gap: 1.25rem;
+    max-width: 56rem;
+  }
+
+  .qb-breadcrumb ol {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 0.5rem;
+    margin: 0 0 0.25rem;
+    padding: 0;
+    list-style: none;
+    font-size: 0.875rem;
+    color: var(--gp-ink-500);
+  }
+
+  .qb-breadcrumb a {
+    display: inline-flex;
+    min-height: 48px;
+    min-width: 48px;
+    align-items: center;
+    color: var(--gp-ink-700);
+    text-decoration: none;
+  }
+
+  .qb-breadcrumb a:hover,
+  .qb-breadcrumb a:focus-visible {
+    color: var(--gp-emerald-700);
+    outline: none;
+  }
+
+  .qb-breadcrumb [aria-current="page"] {
+    color: var(--gp-ink-900);
+    font-weight: 500;
+  }
+
+  .qb-breadcrumb__sep {
+    color: var(--gp-ink-400);
+  }
+
+  .qb-hero__title {
+    font-family: var(--font-heading, inherit);
+    font-size: clamp(2rem, 3.5vw, 3rem);
+    line-height: 1.1;
+    font-weight: 700;
+    color: var(--gp-ink-900);
+    margin: 0;
+  }
+
+  .qb-hero__lede {
+    font-size: 1.125rem;
+    line-height: 1.6;
+    color: var(--gp-ink-700);
+    margin: 0;
+    max-width: 48rem;
+  }
+
+  .qb-hero__lede--muted {
+    font-size: 1rem;
+    color: var(--gp-ink-600);
+  }
+
+  .qb-hero__actions {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.75rem;
+    margin-top: 0.5rem;
+  }
+
+  .qb-section-head {
+    margin-bottom: 1.5rem;
+  }
+
+  .qb-section-head h2 {
+    font-family: var(--font-heading, inherit);
+    font-size: clamp(1.5rem, 2.5vw, 2rem);
+    line-height: 1.2;
+    font-weight: 700;
+    color: var(--gp-ink-900);
+    margin: 0;
+  }
+
+  .qb-section-head .gp-eyebrow-pill {
+    margin-bottom: 0.5rem;
+  }
+
+  .qb-context__grid {
+    display: grid;
+    gap: 2rem;
+  }
+
+  @media (min-width: 768px) {
+    .qb-context__grid {
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+  }
+
+  .qb-context__column {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  .qb-context__column p {
+    margin: 0;
+    color: var(--gp-ink-700);
+    line-height: 1.6;
+  }
+
+  .qb-inline-link {
+    color: var(--gp-emerald-700);
+    font-weight: 500;
+    text-decoration: none;
+  }
+
+  .qb-inline-link:hover {
+    text-decoration: underline;
+  }
+
+  .qb-legend {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 0.5rem;
+    margin-bottom: 1.25rem;
+    font-size: 0.75rem;
+  }
+
+  .qb-legend__label {
+    font-weight: 600;
+    color: var(--gp-ink-600);
+    margin-right: 0.25rem;
+  }
+
+  .qb-pill {
+    display: inline-flex;
+    align-items: center;
+    border-radius: var(--radius-full);
+    padding: 0.25rem 0.625rem;
+    font-size: 0.75rem;
+    font-weight: 600;
+    line-height: 1;
+    white-space: nowrap;
+  }
+
+  .qb-pill--native {
+    background: var(--gp-emerald-50);
+    color: var(--gp-emerald-700);
+  }
+
+  .qb-pill--workaround {
+    background: var(--gp-gold-50);
+    color: var(--gp-gold-800);
+  }
+
+  .qb-pill--manual {
+    background: var(--gp-gold-100);
+    color: var(--gp-gold-800);
+  }
+
+  .qb-pill--na {
+    background: var(--gp-paper-2);
+    color: var(--gp-ink-500);
+  }
+
+  .qb-matrix-scroll {
+    display: none;
+  }
+
+  @media (min-width: 768px) {
+    .qb-matrix-scroll {
+      display: block;
+      overflow: hidden;
+      border: 1px solid var(--gp-ink-100);
+      border-radius: var(--radius-lg);
+      background: var(--gp-card);
+      box-shadow: var(--shadow-card);
+    }
+
+    .qb-matrix-cards {
+      display: none;
+    }
+  }
+
+  .qb-matrix {
+    width: 100%;
+    border-collapse: collapse;
+    text-align: left;
+  }
+
+  .qb-matrix thead th {
+    background: var(--gp-paper-2);
+    padding: 0.875rem 1.25rem;
+    font-family: var(--font-mono, inherit);
+    font-size: 0.6875rem;
+    font-weight: 800;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: var(--gp-ink-600);
+    border-bottom: 1px solid var(--gp-ink-100);
+  }
+
+  .qb-matrix thead .qb-matrix__col--winner {
+    color: var(--gp-emerald-700);
+  }
+
+  .qb-matrix__feature,
+  .qb-matrix__cell {
+    padding: 1rem 1.25rem;
+    border-top: 1px solid var(--gp-ink-100);
+    vertical-align: top;
+    font-weight: 400;
+  }
+
+  .qb-matrix tbody tr:first-child .qb-matrix__feature,
+  .qb-matrix tbody tr:first-child .qb-matrix__cell {
+    border-top: 0;
+  }
+
+  .qb-matrix__cell + .qb-matrix__cell,
+  .qb-matrix__feature + .qb-matrix__cell {
+    border-left: 1px solid var(--gp-ink-100);
+  }
+
+  .qb-matrix__cell--winner {
+    background: var(--gp-emerald-50);
+  }
+
+  .qb-matrix__feature {
+    text-align: left;
+    background: var(--gp-card);
+  }
+
+  .qb-matrix__feature-name {
+    display: block;
+    color: var(--gp-ink-900);
+    font-weight: 600;
+    font-size: 0.9375rem;
+  }
+
+  .qb-matrix__feature-desc {
+    display: block;
+    margin-top: 0.25rem;
+    color: var(--gp-ink-500);
+    font-size: 0.8125rem;
+    line-height: 1.5;
+  }
+
+  .qb-matrix__label {
+    display: block;
+    margin-top: 0.5rem;
+    font-size: 0.8125rem;
+    color: var(--gp-ink-700);
+    line-height: 1.5;
+  }
+
+  .qb-matrix-cards {
+    display: grid;
+    gap: 0.75rem;
+  }
+
+  .qb-matrix-card {
+    border: 1px solid var(--gp-ink-100);
+    border-radius: var(--radius-lg);
+    background: var(--gp-card);
+    box-shadow: var(--shadow-card);
+    padding: 1.25rem;
+  }
+
+  .qb-matrix-card__name {
+    font-weight: 600;
+    color: var(--gp-ink-900);
+    margin: 0;
+    font-size: 0.9375rem;
+  }
+
+  .qb-matrix-card__desc {
+    margin: 0.25rem 0 0;
+    color: var(--gp-ink-500);
+    font-size: 0.8125rem;
+    line-height: 1.5;
+  }
+
+  .qb-matrix-card__grid {
+    margin: 0.875rem 0 0;
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 0.875rem;
+  }
+
+  .qb-matrix-card__side dt {
+    font-size: 0.6875rem;
+    font-weight: 700;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: var(--gp-ink-600);
+    margin-bottom: 0.375rem;
+  }
+
+  .qb-matrix-card__side--winner dt {
+    color: var(--gp-emerald-700);
+  }
+
+  .qb-matrix-card__side dd {
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 0.375rem;
+  }
+
+  .qb-matrix-card__label {
+    color: var(--gp-ink-700);
+    font-size: 0.75rem;
+    line-height: 1.5;
+  }
+
+  .qb-verdict__grid {
+    display: grid;
+    gap: 1.25rem;
+  }
+
+  @media (min-width: 768px) {
+    .qb-verdict__grid {
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+  }
+
+  .qb-verdict__card {
+    border: 1px solid var(--gp-ink-100);
+    border-radius: var(--radius-lg);
+    background: var(--gp-card);
+    box-shadow: var(--shadow-card);
+    padding: 1.5rem;
+  }
+
+  .qb-verdict__card--winner {
+    border-color: var(--gp-emerald-600);
+    box-shadow: 0 0 0 1px var(--gp-emerald-600), var(--shadow-card);
+  }
+
+  .qb-verdict__eyebrow {
+    font-size: 0.75rem;
+    font-weight: 700;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: var(--gp-ink-600);
+    margin: 0 0 1rem;
+  }
+
+  .qb-verdict__eyebrow--winner {
+    color: var(--gp-emerald-700);
+  }
+
+  .qb-verdict__list {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 0.625rem;
+  }
+
+  .qb-verdict__list li {
+    display: grid;
+    grid-template-columns: 1.25rem 1fr;
+    gap: 0.5rem;
+    align-items: start;
+    color: var(--gp-ink-700);
+    font-size: 0.9375rem;
+    line-height: 1.5;
+  }
+
+  .qb-verdict__bullet {
+    color: var(--gp-ink-400);
+    font-weight: 700;
+    line-height: 1.5;
+  }
+
+  .qb-verdict__bullet--winner {
+    color: var(--gp-emerald-600);
+  }
+
+  .qb-related__grid {
+    display: grid;
+    gap: 1rem;
+  }
+
+  @media (min-width: 640px) {
+    .qb-related__grid {
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+  }
+
+  @media (min-width: 1024px) {
+    .qb-related__grid {
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+    }
+  }
+
+  .qb-related__card {
+    display: block;
+    border: 1px solid var(--gp-ink-100);
+    border-radius: var(--radius-lg);
+    background: var(--gp-card);
+    box-shadow: var(--shadow-card);
+    padding: 1.25rem;
+    text-decoration: none;
+    transition: border-color 0.15s ease, transform 0.15s ease, box-shadow 0.15s ease;
+  }
+
+  .qb-related__card:hover {
+    border-color: var(--gp-emerald-600);
+    transform: translateY(-2px);
+    box-shadow: var(--shadow-lg);
+  }
+
+  .qb-related__card:focus-visible {
+    outline: none;
+    border-color: var(--gp-emerald-600);
+    box-shadow: 0 0 0 3px var(--gp-emerald-50);
+  }
+
+  .qb-related__title {
+    margin: 0;
+    color: var(--gp-ink-900);
+    font-weight: 600;
+  }
+
+  .qb-related__desc {
+    margin: 0.375rem 0 0;
+    color: var(--gp-ink-500);
+    font-size: 0.875rem;
+    line-height: 1.5;
+  }
+
+  .qb-cta {
+    text-align: center;
+    max-width: 44rem;
+    margin-inline: auto;
+  }
+
+  .qb-cta h2 {
+    font-family: var(--font-heading, inherit);
+    font-size: clamp(1.75rem, 3vw, 2.5rem);
+    line-height: 1.15;
+    font-weight: 700;
+    color: var(--gp-ink-900);
+    margin: 0;
+  }
+
+  .qb-cta p {
+    margin: 1rem 0 0;
+    color: var(--gp-ink-700);
+    font-size: 1rem;
+    line-height: 1.6;
+  }
+
+  .qb-cta__actions {
+    margin-top: 1.5rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 0.75rem;
+  }
+
+  .qb-matrix-scroll-hint {
+    margin-bottom: 0.5rem;
+    font-size: 0.75rem;
+    color: var(--gp-ink-500);
+    text-align: center;
+    letter-spacing: 0.04em;
+  }
+</style>

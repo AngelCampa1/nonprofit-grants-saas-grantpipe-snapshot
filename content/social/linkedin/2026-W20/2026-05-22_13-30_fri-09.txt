@@ -1,0 +1,3 @@
+If your Development Director left tomorrow, who would know which grant reports are due in June?
+
+If the answer is "her email", the system is a person. People leave. Systems should not.

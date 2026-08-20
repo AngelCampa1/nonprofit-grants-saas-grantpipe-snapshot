@@ -1,0 +1,8 @@
+We kept grants and funds separate because accounting reality is separate.
+
+One grant can fund more than one restricted fund.
+One fund can relate to more than one grant.
+
+That many-to-many shape is the point.
+
+If the data model flattens it, the team has to unflatten it later in spreadsheets.

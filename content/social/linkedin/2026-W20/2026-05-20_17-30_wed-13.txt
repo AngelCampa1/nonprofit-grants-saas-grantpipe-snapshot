@@ -1,0 +1,11 @@
+Five figures.
+
+That is where Salesforce NPSP implementation quotes tend to start for a $3M nonprofit, before the first user logs in. Not the license. The implementation.
+
+That is one Development Coordinator salary for a full year, spent on configuring software the team has not yet learned to use.
+
+The license itself is donated to qualifying 501(c)(3)s through Salesforce.org. So the software cost is zero. The cost is the consultant who sets it up, the consultant who fixes it when it breaks, and the staff time spent learning a CRM that was originally designed for B2B sales and bent into a fundraising shape.
+
+That math works for some orgs. A national with a $20M budget and three full-time database admins, sure. For a $2M org with one Development Director and a half-time bookkeeper, the math is brutal.
+
+The consultant is the competitor. Not Bloomerang. Not Salesforce. The $48K invoice is the thing GrantPipe has to make unnecessary.

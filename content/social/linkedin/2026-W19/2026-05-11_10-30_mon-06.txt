@@ -1,0 +1,7 @@
+Donor-restricted vs board-designated. Two different things.
+
+Donor-restricted: a donor or funder tied the gift to a purpose or time. You cannot move it. FASB ASC 958 calls this "with donor restrictions."
+
+Board-designated: your board chose to set money aside. Same board can move it back. Without donor restrictions, internally earmarked.
+
+The audit cares about the difference. So should the board minutes.

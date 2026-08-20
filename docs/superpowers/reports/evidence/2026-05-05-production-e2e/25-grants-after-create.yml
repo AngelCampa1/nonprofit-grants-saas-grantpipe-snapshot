@@ -1,0 +1,79 @@
+- generic [ref=e3]:
+    - generic [ref=e13]:
+        - banner [ref=e14]:
+            - button "Open navigation" [ref=e16]:
+                - img
+            - generic [ref=e17]:
+                - link "Add billing, trial ends in 30 days" [ref=e18] [cursor=pointer]:
+                    - /url: /app/settings#billing
+                    - img [ref=e19]
+                    - generic [ref=e22]: Trial
+                    - generic [ref=e23]: 30d
+                - button "Open command palette" [ref=e24]:
+                    - img
+                - link "Notifications" [ref=e25] [cursor=pointer]:
+                    - /url: /app/notifications
+                    - img
+                - button "Switch to dark theme" [ref=e26]:
+                    - img
+        - main [ref=e28]:
+            - generic [ref=e30]:
+                - generic [ref=e31]:
+                    - paragraph [ref=e32]: Grant pipeline
+                    - generic [ref=e33]:
+                        - generic [ref=e35]:
+                            - heading "Grants" [level=1] [ref=e36]
+                            - button "Help for Grants" [ref=e37]:
+                                - img [ref=e38]
+                        - button "Add grant" [active] [ref=e43]
+                - generic [ref=e44]:
+                    - tablist "Grant workspace views" [ref=e45]:
+                        - tab "Opportunities" [ref=e46]
+                        - tab "Pipeline" [ref=e47]
+                        - tab "Portfolio" [selected] [ref=e48]
+                    - tabpanel "Portfolio" [ref=e49]:
+                        - generic [ref=e51]:
+                            - textbox "Search grants..." [ref=e52]
+                            - combobox "Filter status" [ref=e53]:
+                                - generic: All statuses
+                                - img
+                            - combobox "Filter funder" [ref=e54]:
+                                - generic: All funders
+                                - img
+                            - combobox "Filter threshold" [ref=e55]:
+                                - generic: All thresholds
+                                - img
+                        - table [ref=e59]:
+                            - rowgroup [ref=e60]:
+                                - row "Sort by name Sort by funder Sort by status Sort by amount Sort by deadline" [ref=e61]:
+                                    - columnheader "Sort by name" [ref=e62]:
+                                        - button "Sort by name" [ref=e63]:
+                                            - text: Name
+                                            - img [ref=e64]
+                                    - columnheader "Sort by funder" [ref=e67]:
+                                        - button "Sort by funder" [ref=e68]:
+                                            - text: Funder
+                                            - img [ref=e69]
+                                    - columnheader "Sort by status" [ref=e72]:
+                                        - button "Sort by status" [ref=e73]:
+                                            - text: Status
+                                            - img [ref=e74]
+                                    - columnheader "Sort by amount" [ref=e77]:
+                                        - button "Sort by amount" [ref=e78]:
+                                            - text: Amount
+                                            - img [ref=e79]
+                                    - columnheader "Sort by deadline" [ref=e82]:
+                                        - button "Sort by deadline" [ref=e83]:
+                                            - text: Deadline
+                                            - img [ref=e84]
+                            - rowgroup [ref=e87]:
+                                - row "Prod E2E Grant 160129 Prod E2E Funder 160129 Discovery -- --" [ref=e131]:
+                                    - cell "Prod E2E Grant 160129" [ref=e132]:
+                                        - link "Prod E2E Grant 160129" [ref=e133] [cursor=pointer]:
+                                            - /url: /app/grants/8febc37b-da9a-4a67-9dab-219306917f0c
+                                    - cell "Prod E2E Funder 160129" [ref=e134]
+                                    - cell "Discovery" [ref=e135]:
+                                        - generic [ref=e136]: Discovery
+                                    - cell "--" [ref=e137]
+                                    - cell "--" [ref=e138]
+    - region "Notifications alt+T"

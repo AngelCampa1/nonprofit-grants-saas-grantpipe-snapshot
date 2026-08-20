@@ -1,0 +1,10 @@
+One grant can live in four places:
+
+The donor or funder relationship.
+The award record.
+The restricted fund balance.
+The accounting ledger.
+
+If those four places do not share identifiers, every report becomes matching work.
+
+That is why naming, coding, and handoff discipline matter.

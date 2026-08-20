@@ -1,0 +1,15 @@
+The board asks: how much of the Smith Foundation grant is left.
+
+Most nonprofits answer that question by exporting two reports, opening a spreadsheet, and reconciling for 20 minutes. The number is stale before the meeting starts.
+
+Restricted fund tracking in GrantPipe attaches a ledger to each grant and donor restriction. Every disbursement posts against the correct restriction at the time it is recorded. The balance owed to the funder is the same number reported to the board.
+
+Net asset releases follow FASB ASC 958 categories. Released-from-restriction journal entries are produced from the same data, not built by hand.
+
+The spend-down report is a query on live data. Open it during the board meeting and the number is current.
+
+This is what makes restricted funds a system of record problem instead of a monthly reconciliation problem.
+
+See how it works at grantpipe.com.
+
+#restrictedfunds #nonprofitfinance #grantcompliance #fasb958

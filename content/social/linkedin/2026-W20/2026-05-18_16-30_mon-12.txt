@@ -1,0 +1,11 @@
+We decided early not to put a hard cap on the trial.
+
+The plan tier says 5 grants. The trial gives you the full app for a month. If you load 8 grants during the trial because that is what your real workload looks like, the app does not stop working. It shows a soft headroom indicator, and the upgrade nudge appears in the right place.
+
+Two reasons for that choice.
+
+One: the trial is supposed to test the app on real data. A hard cap forces a fake test. You either prune your data to fit, or you give up before you have a real read on the product.
+
+Two: a hard cap punishes the moment of truth. The moment somebody loads their actual grant load is the moment the app earns its place. Failing on that moment to enforce a billing rule is a bad trade.
+
+The 5-grant tier is an honest line for steady-state pricing. The trial is for finding out if the line is right for you.

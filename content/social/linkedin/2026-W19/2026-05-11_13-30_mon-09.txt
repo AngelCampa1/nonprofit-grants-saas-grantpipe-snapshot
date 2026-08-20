@@ -1,0 +1,5 @@
+NICRA: a Negotiated Indirect Cost Rate Agreement, in writing, with your federal cognizant agency. Sets the percentage you can charge to indirect.
+
+15% de minimis: the default rate available under 2 CFR 200 if you do not have a NICRA and have never had one. Applies to modified total direct costs.
+
+If you are leaving money on the table at 10%, NICRA is worth the work.

@@ -1,0 +1,416 @@
+---
+import {
+  getFeatureHrefForCapabilityItem,
+  type MarketedCapabilityNarrative,
+} from "@/lib/marketed-capabilities";
+
+interface Props {
+  id: MarketedCapabilityNarrative["slug"];
+  section: MarketedCapabilityNarrative;
+}
+
+const { id, section } = Astro.props;
+
+const capabilityItems = section.items.map((item) => ({
+  label: item,
+  href: getFeatureHrefForCapabilityItem(item),
+}));
+---
+
+<section
+  id={id}
+  class:list={[
+    "gp-proof-surface",
+    `gp-proof-surface--${section.variant}`,
+    "p-6 md:p-8 xl:p-10",
+  ]}
+  data-section={section.slug}
+>
+  <div
+    class:list={[
+      "grid gap-8 xl:items-start",
+      section.variant === "timeline"
+        ? "xl:grid-cols-[minmax(0,0.84fr)_minmax(0,1.16fr)]"
+        : "xl:grid-cols-[minmax(0,0.9fr)_minmax(0,1.1fr)]",
+    ]}
+  >
+    <div>
+      <p class="gp-proof-label">{section.navLabel}</p>
+      <h2 class="gp-section-title mt-3 max-w-[13ch]">{section.heading}</h2>
+      <p class="gp-section-copy mt-4">{section.supportingCopy}</p>
+
+      <div class="mt-6 grid gap-4">
+        <div class="gp-proof-note">
+          <p class="gp-side-label">What this proves</p>
+          <p class="mt-2 text-sm leading-6">{section.proofIntro}</p>
+        </div>
+
+        <ul class="grid gap-3">
+          {section.outcomes.map((item) => (
+            <li class="gp-list-item">{item}</li>
+          ))}
+        </ul>
+
+        <div class="gp-proof-note gp-proof-note--soft">
+          <p class="gp-side-label">Why teams open this section</p>
+          <p class="mt-2 text-sm leading-6">{section.supportText}</p>
+        </div>
+      </div>
+    </div>
+
+    {section.variant === "record" && (
+      <div class="grid gap-4">
+        <div class="grid gap-3 md:grid-cols-3">
+          {section.proofMetrics.map((metric) => (
+            <article class="gp-proof-metric">
+              <p class="gp-side-label">{metric.label}</p>
+              <p class="mt-2 font-heading text-xl leading-tight text-brand-text">
+                {metric.value}
+              </p>
+              <p class="mt-2 text-sm leading-6 text-[color:var(--gp-ink-700)]">{metric.detail}</p>
+            </article>
+          ))}
+        </div>
+
+        <div class="gp-proof-columns">
+          <div class="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
+            {section.proofColumns.map((column) => (
+              <article class="gp-proof-column">
+                <p class="gp-side-label gp-side-label--accent">{column.label}</p>
+                <ul class="mt-3 grid gap-3 text-sm leading-6 text-[color:var(--gp-ink-700)]">
+                  {column.items.map((item) => (
+                    <li class="break-words">{item}</li>
+                  ))}
+                </ul>
+              </article>
+            ))}
+          </div>
+        </div>
+
+        <div class="gp-proof-note">
+          <p class="gp-side-label">Included surface</p>
+          <ul class="mt-3 flex list-none flex-wrap gap-2">
+            {capabilityItems.map((item) => (
+              <li>
+                {item.href ? (
+                  <a href={item.href} class="gp-proof-chip gp-proof-chip--link">{item.label}</a>
+                ) : (
+                  <span class="gp-proof-chip">{item.label}</span>
+                )}
+              </li>
+            ))}
+          </ul>
+        </div>
+      </div>
+    )}
+
+    {section.variant === "workflow" && (
+      <div class="grid gap-4 lg:grid-cols-[minmax(0,1.08fr)_minmax(14rem,0.92fr)]">
+        <div class="gp-proof-steps">
+          <ol class="grid gap-4">
+            {section.proofSteps.map((step) => (
+              <li class="gp-proof-step">
+                <span class="gp-proof-step__index">{step.label}</span>
+                <div>
+                  <p class="text-lg font-semibold text-[color:var(--gp-ink-900)]">{step.title}</p>
+                  <p class="mt-2 text-sm leading-6 text-[color:var(--gp-ink-700)]">{step.detail}</p>
+                </div>
+              </li>
+            ))}
+          </ol>
+        </div>
+
+        <div class="grid gap-3">
+          {section.proofMetrics.map((metric) => (
+            <article class="gp-proof-metric">
+              <p class="gp-side-label">{metric.label}</p>
+              <p class="mt-2 font-heading text-xl leading-tight text-brand-text">
+                {metric.value}
+              </p>
+              <p class="mt-2 text-sm leading-6 text-[color:var(--gp-ink-700)]">{metric.detail}</p>
+            </article>
+          ))}
+          <div class="gp-proof-callout gp-proof-callout--accent">
+            <p class="gp-side-label gp-side-label--gold">Included surface</p>
+            <ul class="mt-3 flex list-none flex-wrap gap-2">
+              {capabilityItems.map((item) => (
+                <li>
+                  {item.href ? (
+                    <a href={item.href} class="gp-proof-chip gp-proof-chip--link">{item.label}</a>
+                  ) : (
+                    <span class="gp-proof-chip">{item.label}</span>
+                  )}
+                </li>
+              ))}
+            </ul>
+          </div>
+        </div>
+      </div>
+    )}
+
+    {section.variant === "report" && (
+      <div class="grid gap-4">
+        <div class="grid gap-3 md:grid-cols-2">
+          {section.proofMetrics.map((metric) => (
+            <article class="gp-proof-metric">
+              <p class="gp-side-label">{metric.label}</p>
+              <p class="mt-2 font-heading text-xl leading-tight text-brand-text">
+                {metric.value}
+              </p>
+              <p class="mt-2 text-sm leading-6 text-[color:var(--gp-ink-700)]">{metric.detail}</p>
+            </article>
+          ))}
+        </div>
+
+        <div class="gp-proof-table">
+          <div class="overflow-x-auto">
+            <table class="min-w-full border-collapse" aria-label="Accounting report output">
+              <thead>
+                <tr class="gp-proof-table__head">
+                  <th class="px-4 py-3 text-left" scope="col">Report output</th>
+                  <th class="px-4 py-3 text-left" scope="col">Source posture</th>
+                </tr>
+              </thead>
+              <tbody>
+                {section.proofRows.map((row) => (
+                  <tr class="gp-proof-table__row">
+                    <th class="px-4 py-4 text-left align-top" scope="row">
+                      <p class="text-base font-semibold text-[color:var(--gp-ink-900)]">{row.label}</p>
+                      <p class="mt-2 text-sm font-normal leading-6 text-[color:var(--gp-ink-700)]">
+                        {row.detail}
+                      </p>
+                    </th>
+                    <td class="px-4 py-4 align-middle">
+                      <span class="gp-proof-status-pill">{row.value}</span>
+                    </td>
+                  </tr>
+                ))}
+              </tbody>
+            </table>
+          </div>
+        </div>
+
+        <div class="gp-proof-note gp-proof-note--soft">
+          <p class="gp-side-label">Included surface</p>
+          <ul class="mt-3 flex list-none flex-wrap gap-2">
+            {capabilityItems.map((item) => (
+              <li>
+                {item.href ? (
+                  <a href={item.href} class="gp-proof-chip gp-proof-chip--link">{item.label}</a>
+                ) : (
+                  <span class="gp-proof-chip">{item.label}</span>
+                )}
+              </li>
+            ))}
+          </ul>
+        </div>
+      </div>
+    )}
+
+    {section.variant === "timeline" && (
+      <div class="grid gap-4 lg:grid-cols-[minmax(0,1.1fr)_minmax(14rem,0.9fr)]">
+        <div class="gp-proof-steps">
+          <ol class="grid gap-4">
+            {section.proofTimeline.map((phase) => (
+              <li class="gp-proof-step gp-proof-step--timeline">
+                <div class="gp-proof-step__label">{phase.label}</div>
+                <div>
+                  <p class="text-lg font-semibold text-[color:var(--gp-ink-900)]">{phase.title}</p>
+                  <p class="mt-2 text-sm leading-6 text-[color:var(--gp-ink-700)]">{phase.detail}</p>
+                </div>
+              </li>
+            ))}
+          </ol>
+        </div>
+
+        <div class="grid gap-3">
+          {section.proofMetrics.map((metric) => (
+            <article class="gp-proof-metric">
+              <p class="gp-side-label">{metric.label}</p>
+              <p class="mt-2 font-heading text-xl leading-tight text-brand-text">
+                {metric.value}
+              </p>
+              <p class="mt-2 text-sm leading-6 text-[color:var(--gp-ink-700)]">{metric.detail}</p>
+            </article>
+          ))}
+          <div class="gp-proof-callout">
+            <p class="gp-side-label gp-side-label--accent">Included surface</p>
+            <ul class="mt-3 flex list-none flex-wrap gap-2">
+              {capabilityItems.map((item) => (
+                <li>
+                  {item.href ? (
+                    <a href={item.href} class="gp-proof-chip gp-proof-chip--link">{item.label}</a>
+                  ) : (
+                    <span class="gp-proof-chip">{item.label}</span>
+                  )}
+                </li>
+              ))}
+            </ul>
+          </div>
+        </div>
+      </div>
+    )}
+  </div>
+</section>
+
+<style>
+  .gp-proof-surface {
+    border: 1px solid var(--gp-ink-100);
+    border-radius: var(--radius-lg);
+    background: var(--gp-card);
+    box-shadow: var(--gp-shadow-sm);
+  }
+  .gp-proof-surface--record {
+    background: linear-gradient(180deg, var(--gp-card), var(--gp-emerald-50));
+  }
+  .gp-proof-surface--workflow {
+    background: linear-gradient(180deg, var(--gp-card), var(--gp-gold-50));
+  }
+  .gp-proof-surface--report {
+    background: linear-gradient(180deg, var(--gp-card), var(--gp-paper-2));
+  }
+  .gp-proof-surface--timeline {
+    background: linear-gradient(180deg, var(--gp-card), var(--gp-emerald-50));
+  }
+
+  .gp-proof-note {
+    padding: 1rem;
+    border-radius: var(--radius-md);
+    background: var(--gp-paper-2);
+    color: var(--gp-ink-700);
+  }
+  .gp-proof-note--soft {
+    background: var(--gp-paper-2);
+  }
+
+  .gp-proof-metric {
+    padding: 1rem;
+    border-radius: var(--radius-md);
+    background: var(--gp-paper-2);
+  }
+
+  .gp-proof-columns {
+    padding: 1rem;
+    border: 1px solid var(--gp-emerald-100);
+    border-radius: var(--radius-lg);
+    background: var(--gp-emerald-50);
+  }
+  .gp-proof-column {
+    min-width: 0;
+    padding: 1rem;
+    border-radius: var(--radius-md);
+    background: var(--gp-card);
+    box-shadow: var(--gp-shadow-sm);
+  }
+
+  .gp-proof-chip {
+    display: inline-flex;
+    min-height: 2.5rem;
+    align-items: center;
+    padding: 0 0.75rem;
+    border-radius: var(--radius-full);
+    border: 1px solid var(--gp-ink-100);
+    background: var(--gp-card);
+    color: var(--gp-ink-700);
+    font-size: 0.875rem;
+    font-weight: 500;
+  }
+  .gp-proof-chip--link {
+    text-decoration: none;
+    transition:
+      background-color 160ms ease,
+      color 160ms ease;
+  }
+  .gp-proof-chip--link:hover {
+    background: var(--gp-emerald-50);
+    color: var(--gp-emerald-800);
+  }
+
+  .gp-proof-steps {
+    padding: 0;
+    background: transparent;
+  }
+  .gp-proof-step {
+    display: grid;
+    gap: 0.75rem;
+    padding: 1rem;
+    border-radius: var(--radius-md);
+    background: var(--gp-paper-2);
+  }
+  @media (min-width: 768px) {
+    .gp-proof-step {
+      grid-template-columns: auto minmax(0, 1fr);
+      align-items: start;
+    }
+    .gp-proof-step--timeline {
+      grid-template-columns: minmax(5rem, auto) minmax(0, 1fr);
+    }
+  }
+  .gp-proof-step__index {
+    display: inline-flex;
+    width: 2.75rem;
+    height: 2.75rem;
+    align-items: center;
+    justify-content: center;
+    border-radius: var(--radius-full);
+    background: var(--gp-gold-100);
+    color: var(--gp-gold-800);
+    font-size: 0.875rem;
+    font-weight: 600;
+  }
+  .gp-proof-step__label {
+    color: var(--gp-emerald-800);
+    font-size: 0.875rem;
+    font-weight: 600;
+    letter-spacing: 0.16em;
+    text-transform: uppercase;
+  }
+
+  .gp-proof-callout {
+    padding: 1rem;
+    border-radius: var(--radius-md);
+    background: var(--gp-emerald-50);
+  }
+  .gp-proof-callout--accent {
+    background: var(--gp-gold-50);
+  }
+
+  .gp-proof-table {
+    overflow: hidden;
+    border: 1px solid var(--gp-ink-100);
+    border-radius: var(--radius-lg);
+    background: var(--gp-card);
+  }
+  .gp-proof-table__head th {
+    border-bottom: 1px solid var(--gp-ink-100);
+    color: var(--gp-ink-600);
+    font-size: 0.75rem;
+    font-weight: 600;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+  }
+  .gp-proof-table__row {
+    border-bottom: 1px solid var(--gp-ink-100);
+  }
+  .gp-proof-table__row:last-child {
+    border-bottom: 0;
+  }
+  .gp-proof-status-pill {
+    display: inline-flex;
+    padding: 0.5rem 0.75rem;
+    border-radius: var(--radius-full);
+    background: var(--gp-emerald-50);
+    color: var(--gp-emerald-800);
+    font-size: 0.75rem;
+    font-weight: 600;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+  }
+
+  .gp-side-label--accent {
+    color: var(--gp-emerald-800);
+  }
+  .gp-side-label--gold {
+    color: var(--gp-gold-800);
+  }
+</style>

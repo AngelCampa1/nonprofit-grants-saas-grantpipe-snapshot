@@ -1,0 +1,54 @@
+﻿---
+import "../../styles/global.css"
+import { getCollection } from "astro:content"
+import { getContentEntrySlug } from "@/lib/content-entry-slug"
+import CategoryHub from "@grantpipe/ui/site/hubs/category-hub.astro"
+import { siteConfig, shouldShowMobileStickyCta } from "@/config/site"
+import { sortByUpdatedAtDesc, mapToContentItems } from "@grantpipe/ui/site/lib/collections"
+import { resolveExitLeadMagnetOffer } from "@/lib/lead-magnet-routing"
+import PathwaySections from "@/components/site/pathway-sections.astro"
+import { buildFeaturePathSections } from "@/lib/hub-path-sections"
+
+const leadMagnets = await getCollection("lead-magnets")
+const exitLeadMagnet = resolveExitLeadMagnetOffer(siteConfig, leadMagnets, { family: "solution" })
+const entries = await getCollection("features")
+const sorted = sortByUpdatedAtDesc(entries)
+const items = mapToContentItems(sorted, (e) => `/features/${getContentEntrySlug(e)}`)
+const featurePathSections = buildFeaturePathSections(items)
+const page = {
+  data: items,
+  currentPage: 1,
+  lastPage: 1,
+  url: { prev: undefined, next: undefined },
+}
+---
+
+<CategoryHub
+  config={siteConfig}
+  title="Features"
+  description="A deeper look at GrantPipe features - donor operations, grant management, restricted-fund accounting, and compliance reporting."
+  variant="editorial"
+  items={items}
+  page={page}
+  basePath="/features"
+  breadcrumbs={[
+    { label: "Home", href: "/" },
+    { label: "Features", href: "/features" },
+  ]}
+  emptyStateHeading="No feature pages match this view yet."
+  emptyStateBody="See the product overview for the donor, grant, restricted-fund, and compliance capabilities GrantPipe ships today."
+  showStickyMobileCta={shouldShowMobileStickyCta(Astro.url.pathname)}
+  leadMagnet={exitLeadMagnet}
+  renderListing={false}
+>
+  <div slot="intro" class="space-y-8">
+    <section class="gp-resource-decision-panel editorial-panel p-6">
+      <p class="gp-proof-label">Decision path</p>
+      <h2 class="gp-link-card-title">Find the work step you need.</h2>
+      <p class="gp-link-card-copy mt-3">
+        Start with grants, donor work, or review prep. Then open the feature that fits.
+      </p>
+    </section>
+    <PathwaySections sections={featurePathSections} ariaLabel="Feature paths" />
+  </div>
+</CategoryHub>

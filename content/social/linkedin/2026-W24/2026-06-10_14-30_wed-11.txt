@@ -1,0 +1,12 @@
+The Award Setup Worksheet is for the moment right after "we got the grant."
+
+That is when the record should capture:
+
+- funder
+- award amount
+- restriction
+- period of performance
+- budget categories
+- reporting cadence
+- payment method
+- evidence owner

@@ -1,0 +1,71 @@
+- generic [ref=e3]:
+    - generic [ref=e13]:
+        - banner [ref=e14]:
+            - button "Open navigation" [ref=e16]:
+                - img
+            - generic [ref=e17]:
+                - link "Add billing, trial ends in 30 days" [ref=e18] [cursor=pointer]:
+                    - /url: /app/settings#billing
+                    - img [ref=e19]
+                    - generic [ref=e22]: Trial
+                    - generic [ref=e23]: 30d
+                - button "Open command palette" [ref=e24]:
+                    - img
+                - link "Notifications" [ref=e25] [cursor=pointer]:
+                    - /url: /app/notifications
+                    - img
+                - button "Switch to dark theme" [ref=e26]:
+                    - img
+        - main [ref=e28]:
+            - generic [ref=e94]:
+                - generic [ref=e95]:
+                    - navigation "breadcrumb" [ref=e97]:
+                        - list [ref=e98]:
+                            - listitem [ref=e99]:
+                                - link "Funders" [ref=e100] [cursor=pointer]:
+                                    - /url: /app/funders
+                            - listitem [ref=e101]:
+                                - img [ref=e102]
+                            - listitem [ref=e104]:
+                                - generic [ref=e105]: Prod E2E Funder 160129
+                    - generic [ref=e106]:
+                        - heading "Prod E2E Funder 160129" [level=1] [ref=e109]
+                        - generic [ref=e111]: Foundation
+                - generic [ref=e112]:
+                    - tablist [ref=e113]:
+                        - tab "Overview" [selected] [ref=e114]
+                        - tab "Program Officers" [ref=e115]
+                        - tab "Grant History" [ref=e116]
+                        - tab "Activity" [ref=e117]
+                        - tab "Documents" [ref=e118]
+                    - tabpanel "Overview" [ref=e119]:
+                        - generic [ref=e120]:
+                            - heading "Funder details" [level=2] [ref=e121]
+                            - generic [ref=e122]:
+                                - generic [ref=e123]:
+                                    - generic [ref=e124]: Funder name
+                                    - textbox "Funder name" [ref=e125]:
+                                        - /placeholder: e.g. National Science Foundation
+                                        - text: Prod E2E Funder 160129
+                                - generic [ref=e126]:
+                                    - generic [ref=e127]: Type
+                                    - combobox "Type" [ref=e128]:
+                                        - generic: Foundation
+                                        - img
+                                    - combobox [ref=e129]
+                                - generic [ref=e130]:
+                                    - generic [ref=e131]: Website
+                                    - textbox "Website" [ref=e132]:
+                                        - /placeholder: https://example.org
+                                - generic [ref=e133]:
+                                    - generic [ref=e134]: Funding priorities
+                                    - textbox "Funding priorities" [ref=e135]:
+                                        - /placeholder: Describe the funder's areas of interest and priorities…
+                                - generic [ref=e136]:
+                                    - generic [ref=e137]: Notes
+                                    - textbox "Notes" [ref=e138]:
+                                        - /placeholder: Internal notes, relationship history, context…
+                                - generic [ref=e139]:
+                                    - button "Save changes" [ref=e140]
+                                    - button "Delete funder" [ref=e141]
+    - region "Notifications alt+T"

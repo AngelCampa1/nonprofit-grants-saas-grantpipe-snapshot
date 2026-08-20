@@ -1,0 +1,11 @@
+- main [ref=e13]:
+    - generic [ref=e15]:
+        - paragraph [ref=e17]: Step 4 of 4
+        - generic [ref=e69]:
+            - paragraph [ref=e70]: What matters most to you right now?
+            - generic [ref=e71]:
+                - button "Track donors" [ref=e72]
+                - button "Manage grants" [ref=e73]
+                - button "Handle restricted funds" [ref=e74]
+            - button "Take me to the dashboard, I'll explore on my own." [ref=e76]
+            - button "← Back" [ref=e77]

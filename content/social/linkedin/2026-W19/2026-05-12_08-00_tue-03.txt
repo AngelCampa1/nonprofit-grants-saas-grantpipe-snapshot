@@ -1,0 +1,5 @@
+An auditor asking which donors funded a specific program last year forces a reconciliation between the donor CRM and the GL. If your org cannot answer it cleanly, it is often because donations and grant-funded program spend live in different systems.
+
+The CRM tracks the relationship. The accounting system tracks the dollar. The grant lives in both and fully in neither. That gap is where audit prep weeks come from.
+
+A unified system does not eliminate the work. It makes the question answerable in one place, by one person, on one screen.
