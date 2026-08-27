@@ -16,9 +16,9 @@ _Captured from the local stack against seeded demo data. Reproduction steps are 
 
 ---
 
-I am a software engineer, not a nonprofit finance veteran, so I treated this as a data-modeling and
-compliance-automation problem. Put donors, grants, restricted funds, ledger, and federal reporting
-in one system, and encode the federal rules in code instead of institutional memory.
+I treated this as a data-modeling and compliance-automation problem: put donors, grants, restricted
+funds, ledger, and federal reporting in one system, and encode 2 CFR Part 200, the federal Uniform
+Guidance that governs nonprofit grants, in code instead of institutional memory.
 
 The most unusual thing in here is a test.
 [`apps/site/src/audit-threshold-amount.test.ts`](apps/site/src/audit-threshold-amount.test.ts)
@@ -199,13 +199,13 @@ the two cross-tenant defects and their fixes are in [SECURITY.md](./portfolio/SE
 
 **Scale**
 
-|                      |                                                                                                                                                                                                                            |
-| -------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| Application source   | **250,218 lines** across 1,117 files                                                                                                                                                                                       |
-| Test code            | **388,074 lines** across 905 files                                                                                                                                                                                         |
-| Tracked files        | 5,639                                                                                                                                                                                                                      |
-| Commits              | **4,266**, April 7 to August 7, 2026 (some breakdowns below, e.g. by git identity, are read as of a slightly earlier boundary commit and cap at 4,264, see [`METRICS.md`](./portfolio/METRICS.md#development-by-identity)) |
-| Churn across history | 3,756,905 added / 412,287 removed                                                                                                                                                                                          |
+|                      |                                                                                                                                                                                                                         |
+| -------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Application source   | **250,218 lines** across 1,117 files                                                                                                                                                                                    |
+| Test code            | **388,074 lines** across 905 files                                                                                                                                                                                      |
+| Tracked files        | 5,639                                                                                                                                                                                                                   |
+| Commits              | **4,266**, April 7 to August 7, 2026 (the by-identity breakdown in [`METRICS.md`](./portfolio/METRICS.md#development-by-identity) is read as of the commit that added the project's engineering docs, 4,264 commits in) |
+| Churn across history | 3,756,905 added / 412,287 removed                                                                                                                                                                                       |
 
 There is more test code here than application code, roughly 1.55 lines of test per line of source.
 That ratio is the honest summary of how this repository was built.
@@ -255,8 +255,7 @@ pay for an untested service. It is enforced by
 [`scripts/lib/coverage-gates.ts`](scripts/lib/coverage-gates.ts) and
 [`apps/web/scripts/verify-coverage-thresholds.mjs`](apps/web/scripts/verify-coverage-thresholds.mjs)
 for changed files, and natively by `vitest.config.ts`'s `thresholds` block in five of the six
-workspaces. One asymmetry worth naming: `apps/web` is gated by the separate script rather than the
-native block, and the root `scripts/` runner has no coverage gate at all.
+workspaces.
 
 The workflow behind those numbers was test-driven development (write the failing test, confirm it
 fails, implement, confirm it passes) with a pre-commit pipeline
